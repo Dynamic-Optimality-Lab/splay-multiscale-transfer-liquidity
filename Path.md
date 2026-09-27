@@ -18,6 +18,13 @@
 - Checker: `WORKPLAN_COVERAGE_PASS` — NORMATIVE 457 / MAPPED 457 / UNMAPPED 0 / UNKNOWN 0 / PHASE 0 / THEOREM 0 / GATE 0 / THREAT 0 / STOP 0 / FIRST-CONSUMER 0 / HOLDOUT 0 / CLAIM 0.
 - Verdict: `FOLLOWS WorkPlan.md` (v0.4.1 planning phase).
 
+## R-003 — Repair-series push + HEAD verification (Rule K)
+- Commits: (1/5) `6aa63ed` ledger+matrices+second-pass; (2/5) `4f82a55` amendment+spec+prereg+theorems+schemas; (3/5) scripts commit (checker+mutations+builders); (4/5) `e4376a1` regenerated planning (457 inventory + coverage PASS + v0.4.1 WorkPlan + this ledger).
+- Push: `5976219..e4376a1 master -> master` to `origin` (splay-multiscale-transfer-liquidity).
+- HEAD: `git ls-remote` = local `e4376a1215fc0091e90c2416b94d855754b9020f` — agree.
+- Gates at seal: `CONTRACT_CLOSURE_PASS` (66/66, 0 errors) + `ALL_16_KILLED` + `WORKPLAN_COVERAGE_PASS` (457/457, 0 errors).
+- Verdict: `FOLLOWS WorkPlan.md` (v0.4.1 planning seal; WP-0 execution may now begin).
+
 ## WP-0 ledger (PHASE 00) — PLACEHOLDER, NOT STARTED
 Prescription/entry/files/code/results/proofs/status/deviations/bugs/anti-overfitting/gates/coverage/SHA/push/remote/verdict: PENDING. Entry requires closure PASS (satisfied); execution not started.
 
