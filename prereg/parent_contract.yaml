@@ -1,21 +1,37 @@
-version: v0.4.1
+version: v0.4.1-frozen-WP-0
 arch:
   navigation: 895889169772087e391e84c33228648c84684e1e
   closure: 9859e654b76ba92c1d0e0809f62a7ffe1cac3b98
   seal: 3062c0180157399cc0e877c0d238edc7f3aff7c0
+  verification: clone cat-file -t for all three + HEAD equals navigation (WP-0 execution record)
   blobs:
     transfer_grammar: f2fe2354
     event_ontology: efda42f1
     gate_matrix: cdac6cdd
     threat_matrix: 692da7c9
     stop_matrix: eb0f15df
-  content_sha256: re-verified at WP-0 against pinned commits
+  content_sha256:
+    prereg/transfer_grammar_v0.3.yaml: 4afc7debac97dd108f7b925018b10d053e96dc0859566b778b98467774733c15
+    prereg/event_ontology_v0.3.yaml: 78ba94bd66c1b2726aa61c963d377d565095166ca63dae8b6879defec6162330
+  history_import: v03/history (566 files, nav tree) + v03/byte_manifest.sha256.yaml
 obstruction:
   evidence_commit: 19ef254dfc48c7b909c646f959e2d7364865b777
   lifecycle_seal: OPEN
   blobs:
     mstc0002: 2bbecbc
     splay: b8f3542
+  content_sha256:
+    python/inherited/mstc0002.py: 2f35c2ffe2f14075aa9ed5df7a201c094532225f3d864d48702c872f03698cb6
+    python/inherited/splay.py: deeda850ca159ef5345f6df71ba86b07d432b8c2848070bc7417d32683a9b8c1
   mathematical: CONFIRMED
   formal: PENDING
   human_G5: PENDING
+firewall_states:
+  H1: EMPTY
+  H2R: BANK_COMMITTED/unlocks=0
+  n8: PARTIALLY_REVEALED_CANARY_CONTAMINATED
+  H3T: UNLOCKED_ONCE
+  H4L: EMPTY
+theorem_ledger_counts:
+  arch: {REVIEWED: 9, PROVED: 5, NOT_APPLICABLE: 3, BLOCKED: 3, UNPROVED: 6}
+toolchain_string: leanprover/lean4:v4.21.0

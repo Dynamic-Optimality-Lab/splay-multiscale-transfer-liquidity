@@ -1,13 +1,16 @@
-version: v0.4.1
+version: v0.4.1-frozen-WP-0
 python: 3.13.7
-python_deps: hashes frozen at WP-0 execution
+python_deps:
+  pyyaml: 6.0.2
+  stdlib: [hashlib, json, subprocess, urllib]
 lean: leanprover/lean4:v4.21.0
-lean_source: obstruction parent lean-toolchain (verified via raw fetch)
-lake: config+manifest frozen at WP-0
-solvers: names/builds/versions frozen at WP-0
-threads: single-thread-deterministic (parallel only via deterministic sharding + sorted
-  reduce)
+lean_source: obstruction parent lean-toolchain (raw fetch verified)
+lake:
+  lakefile: lakefile.lean (root, minimal, frozen here)
+  manifest: lake-manifest.json (root, zero extra deps, frozen here)
+solvers: stdlib-only exact evaluator (no external solver binaries in WP-0 scope)
+threads: single-thread-deterministic (parallel only via deterministic sharding + sorted reduce)
 rng: SHA-256 counter DRBG
-compression: zstd deterministic params frozen at WP-0
+compression: zstd deterministic params (frozen when first used; no zstd artifacts in WP-0)
 hash: SHA-256
-env_vars: recorded per run
+os: win32 (execution host); runtime assumptions recorded per run

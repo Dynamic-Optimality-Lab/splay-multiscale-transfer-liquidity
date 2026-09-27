@@ -25,8 +25,30 @@
 - Gates at seal: `CONTRACT_CLOSURE_PASS` (66/66, 0 errors) + `ALL_16_KILLED` + `WORKPLAN_COVERAGE_PASS` (457/457, 0 errors).
 - Verdict: `FOLLOWS WorkPlan.md` (v0.4.1 planning seal; WP-0 execution may now begin).
 
-## WP-0 ledger (PHASE 00) — PLACEHOLDER, NOT STARTED
-Prescription/entry/files/code/results/proofs/status/deviations/bugs/anti-overfitting/gates/coverage/SHA/push/remote/verdict: PENDING. Entry requires closure PASS (satisfied); execution not started.
+## WP-0 ledger (PHASE 00) — EXECUTION RECORD
+- Phase/scope: WP-0 foundation (WorkPlan.md v0.4.1 WP-0; contract planning/WP0_CONTRACT.md WP-0-REQ-001..020).
+- Previous-phase verification: NOT_APPLICABLE (WP-0 is first; N=0 binding). Pre-foundation audit instead: CONTRACT_CLOSURE_PASS + WORKPLAN_COVERAGE_PASS rerun green on current tree before implementation.
+- Entry gate: WP-0-REQ-001 PASS (both checkers green); no other prerequisites. Entry-gate result: PASS.
+- Normative sources: consolidated spec §§1,9,10,11; amendment CC-001/002/003/032/034/040–048/049/051; provenance/control/tree matrices; parent blobs.
+- Files created: v03/history/ (566-file nav-tree import) + v03/byte_manifest.sha256.yaml + v03/key_content_hashes.yaml + v03/obstruction_content_hashes.yaml; prereg/parent_contract.yaml (extended w/ content SHA-256), bridge_manifest.yaml (L3 verified e23ea8b5…5a78, L2 absent), environment_lock.yaml (values), freeze_manifest.sha256 (11 files); math/proof_status.json (27 rows); lean-toolchain, lakefile.lean, lake-manifest.json; python/audit/verify_parent.py + log.py; scripts/run_phase00.py + verify_freeze.py + init_proof_status.py + gen_manifest.py + fetch_obstruction_hashes.py; tests/test_foundation.py (TEST-F-01..16); planning/WP0_CONTRACT.md; artifacts/v04/logs/run_*.json (35-field record).
+- Files modified: IMPLEMENTATION_SPEC_SPLAY-AM-MST-LIQ-v0.4.1.md (one-word fix 33→35 fields, recorded), python/audit/verify_parent.py (2 repairs), scripts/verify_freeze.py (malformed-manifest hardening), python/audit/log.py (line-19 merge repair + 35-field wording).
+- Code/algorithms: clone cat-file pin checks; SHA-256 recomputation (hashlib); raw-download hashing (urllib); freeze manifest (sorted, no-self-hash); 33→35-field runlog writer with structural asserts; ordered phase runner (closure→pins→freeze→pytest→coverage, fail-closed codes 2); pytest suite incl. full 566-file rehash (F-10) and negative probes.
+- Schemas: runlog (35/35 validated), proof_status (27 rows), freeze manifest format, byte manifest format.
+- Tests: TEST-F-01..16 → 16 passed. Benchmarks: seal/hash/count verifications (no synthesis).
+- Stress/negative: (1) corrupted prereg → freeze FAIL + runner exit 2, restored PASS; (2) deleted MSTL-09.md → F-13 FAIL, restored 16/16; (3) malformed manifest line → clean blocked message + nonzero, restored PASS.
+- Anti-overfitting: N/A (no data synthesized; H4L EMPTY asserted by F-16).
+- Threats/stops/invariants: LIQ-STOP-01/02 handlers exercised via verify_parent fail-closed paths; clean-tree recorded per run.
+- Gates: FOUNDATION_FROZEN claimed (all green); no mismatch/UNAVAILABLE branch taken (bridge L2-absent recorded as BLOCKED_BY_SOURCE path for MSTL-19, not a freeze failure).
+- Statuses changed: none (all theorems remain UNPROVED/NO_WITNESS; no statuses copied from parents).
+- Hashes: arch nav/closure/seal + 4 content SHA-256 + L3 full SHA-256 + freeze manifest + byte manifest (566, 50,031,167 bytes, 0 mismatches vs clone ground truth: 566/566 paths, 0/566 hash diffs).
+- Commands/exit codes: run_phase00 exit 0; pytest 16 passed; both checkers PASS; 3 red-team attacks killed then restored green.
+- Failures/repairs: parents[1]→parents[2] path bug; ledger-key nesting bug; 33→35 field count fix; log.py line-19 merge; malformed-manifest traceback → clean block. All repaired + rerun.
+- Deviations: none from contract. External blockers: none.
+- Log inventory: run_phase00.py emitter L14, comments L28/33/38/43/48 (STEP 03/04/05/06/07); verify_parent.py L13/17/48 (STEP 01); log.py L20/36 (STEP 02); verify_freeze.py L19/28/31/34 (STEP 05); init_proof_status.py L11 (STEP 09); gen_manifest.py L18/22; fetch_obstruction_hashes.py L11/14. References match committed bytes below.
+- Exit matrix: REQ-001..020 all PASS (contract reconstruction audit agrees; no missing/partial/unauthorized-substitution/mismatch items).
+- Compliance audit: requirements_checked=20 contract REQs + 16 named tests + 12 spec-section semantics; gaps_found=5 (all above); gaps_repaired=5; remaining_compliance_gaps=0.
+- Commit/push: (next entry R-004).
+- Final verdict: WP-0 = COMPLETE (FOUNDATION_FROZEN).
 
 ## WP-1 ledger (PHASEs 01–04) — PLACEHOLDER, NOT STARTED
 PENDING. Entry requires FOUNDATION_FROZEN.

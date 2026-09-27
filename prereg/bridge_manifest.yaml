@@ -1,0 +1,12 @@
+version: v0.4.1-frozen-WP-0
+L3:
+  status: PRESENT
+  source: obstruction parent bridge_sources/L3_1907.06310_v1.pdf (git blob c6900c363757991733fd807f771b45f50ad20f9b)
+  bytes: 1431066
+  sha256: e23ea8b58984b9a3530e8bf06aa028645dad420b1af280eeb407f4d2a4495a78
+  verification: WP-0 execution re-downloaded raw bytes; size+SHA match parent record
+L2:
+  status: ABSENT_PAYWALLED
+  consequence: MSTL-19 = BLOCKED_BY_SOURCE; DYNAMIC_OPTIMALITY_PROVED unreachable until versioned source acquisition
+conventions: frozen checklist deferred to WP-6 bridge audit against these pinned bytes
+literature_manifest: [L3-record-above, L2-absent-record]
