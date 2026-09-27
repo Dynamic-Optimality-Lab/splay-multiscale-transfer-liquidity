@@ -133,3 +133,8 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - Commits: 89f463f (WP-2 work) + ledger/record commit.
 - Push: e0b9284..02a67fd master -> master (origin).
 - HEAD: ls-remote 02a67fd == local 02a67fd - agree. Tree clean.
+
+## R-009 - HEAD resync + WorkPlan range fix
+- WorkPlan WP-2 Scope corrected 0..8 -> 0..12 (matches operative spec section 3 + prereg/liquidity_axis.yaml range [0, 12]).
+- R-008 recorded HEAD 02a67fd because 3668db2 was the commit carrying R-008 itself; superseded here.
+- Repair commit 5992c7f pushed 3668db2..5992c7f; ls-remote == local == 5992c7f. Remote/local HEAD now 5992c7f.
