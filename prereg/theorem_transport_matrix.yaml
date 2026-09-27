@@ -1,0 +1,23 @@
+experiment: SPLAY-AM-MST-LIQ-v0.4
+spec_ref: "#13/#42"
+lifecycle: UNPROVED_to_PROVED_to_REVIEWED
+requirement: no_downstream_consume_before_required_status
+bindings:
+  MST0-08U: {class: B_or_A_per_evidence, owner: WP-6}
+  MST0-09: {class: B, owner: WP-4_dev__WP-6_proof}
+  MST0-10: {class: B, owner: WP-2}
+  MST0-11: {class: B, owner: WP-2__WP-6_proof_as_MSTL-11}
+  MST0-13: {class: B, owner: WP-6_as_MSTL-13}
+  MST0-14: {class: C, owner: WP-6_as_MSTL-14}
+  MST0-15: {class: C, owner: WP-6_as_MSTL-15}
+  MST0-16: {class: A, owner: WP-1}
+  MST0-17: {class: D, owner: WP-6_as_MSTL-17}
+  MST0-18: {class: D, owner: WP-6_as_MSTL-18}
+  MST0-19: {class: D, owner: WP-6_as_MSTL-19}
+  MST0-22: {class: C, owner: WP-5_setup__WP-6_proof}
+  MST0-23: {class: guard, owner: WP-4}
+  MST0-24: {class: guard, owner: WP-4}
+  MST0-25: {class: holdout_scope, owner: WP-5}
+  MST0-26: {class: literature_scope, owner: WP-6}
+liq: {LIQ0-01: WP-1, LIQ0-02_to_LIQ0-10: WP-2}
+rule: historical_human_review_never_silently_converted; changed_bytes_need_new_proof_review

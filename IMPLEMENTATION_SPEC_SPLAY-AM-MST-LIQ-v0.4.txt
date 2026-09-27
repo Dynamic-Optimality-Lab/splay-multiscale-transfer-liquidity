@@ -1,0 +1,2454 @@
+# SPLAY-AM-MST-LIQ-v0.4  
+## Liquidity-Aware Multiscale Synchronous Transfer  
+### Activation-Bandwidth Extension of the Splay Pair-Access Transfer Program
+
+**Experiment ID:** `SPLAY-AM-MST-LIQ-v0.4`
+
+**Short name:** `MST-LIQ-v0.4`
+
+**Scientific target:** extend the frozen multiscale synchronous-transfer architecture by exactly one newly justified degree of freedom — **activation bandwidth** — and determine whether a liquidity-aware transfer calculus yields a universal constant-factor Pair-Access theorem and, if all subsequent obligations close, Dynamic Optimality of ordinary bottom-up Splay.
+
+**Primary architecture parent:** `SPLAY-AM-MST-v0.3`
+
+**Parent repository:** `Dynamic-Optimality-Lab/splay-multiscale-transfer`
+
+**Observed parent navigation HEAD at specification authorship:**  
+`895889169772087e391e84c33228648c84684e1e`
+
+This navigation identity is **not** by itself the scientific parent seal. Phase 00 must pin the exact parent commit, final seal, manifest, archive, `Path.md`, `WorkPlan.md`, transfer-calculus ledger, theorem-status report, candidate-set commitment, and normative specification hashes before any scientific execution.
+
+**Required obstruction parent:** the exact sealed/refutation-closure commit of the Dynamic Optimality decision experiment containing the legal MSTC-0002 repayment counterexample and its independent replay.
+
+```text
+obstruction_parent_repo:
+Dynamic-Optimality-Lab/
+Universal-Pair-Access-Closure-and-Dynamic-Optimality-Decision-Program-
+
+obstruction_parent_commit:
+TO_BE_PINNED_FULL_SHA_BEFORE_FOUNDATION_FROZEN
+```
+
+**Normative-parent result imported read-only:** `MSTC-0002 = (P_all,k=6,C=2)`.
+
+**Historical v0.3 claim:** `TRANSFER_CALCULUS_SURVIVES_FINITE_TESTS`.
+
+**Known later obstruction:** the frozen `MSTC-0002` synchronous KEEP repayment rule is false on a legal Pair-Access execution because the ledger possesses sufficient LATENT reserve but cannot activate that reserve quickly enough before a later KEEP discharge.
+
+**New architectural hypothesis:**
+
+\[
+\boxed{
+\text{The missing resource is not only reserve quantity, but reserve liquidity.}
+}
+\]
+
+The original candidate space tracked approximately
+
+\[
+(C,k),
+\]
+
+where
+
+\[
+need=(y-Ca)_+
+\]
+
+and \(k\) bounds LATENT creation.
+
+This experiment expands the candidate architecture to
+
+\[
+\boxed{(P,k,C,\rho)}
+\]
+
+where \(\rho\) is a bounded, local, deterministic, target-blind **activation-bandwidth profile** controlling how much existing LATENT reserve may become ACTIVE at each eligible Splay event.
+
+The scientific interpretation is:
+
+\[
+\boxed{k=\text{wealth creation rate}}
+\]
+
+\[
+\boxed{\rho=\text{liquidity rate}}
+\]
+
+\[
+\boxed{C=\text{competitive exchange rate}}
+\]
+
+The strongest desired terminal claim remains:
+
+\[
+\boxed{\texttt{DYNAMIC\_OPTIMALITY\_PROVED}}
+\]
+
+but only after every required universal theorem and the exact bridge audit close.
+
+---
+
+# 0. Standing scientific rule
+
+This experiment is a **surgical successor**, not a reinterpretation of `MSTC-0002`.
+
+The old calculus remains permanently identified as:
+
+\[
+\boxed{
+MSTC\text{-}0002=(P_{\rm all},k=6,C=2,\rho=\mathrm{FLAT}(1))
+}
+\]
+
+under the expanded vocabulary introduced here.
+
+Its counterexample remains a counterexample.
+
+No artifact may claim that the old candidate “really meant” a higher activation bandwidth.
+
+No old theorem statement, candidate ID, holdout result, human review, final result, or counterexample may be silently rewritten.
+
+The only permitted architectural change is the explicit addition of the activation-bandwidth axis and the minimum schema/operator changes required to represent it.
+
+Any later missing degree of freedom discovered at MST0-15 or beyond requires another versioned successor experiment rather than an in-place enlargement of this grammar.
+
+---
+
+# 1. Purpose
+
+The v0.3 multiscale-transfer experiment found a finite survivor with:
+
+```text
+predicate = P_all
+k = 6
+C = 2
+energy = #LATENT + #ACTIVE
+```
+
+and an activation operator that converted at most one LATENT credit into ACTIVE credit at each eligible transfer event.
+
+Later universal-proof work discovered a legal repayment failure.
+
+The canonical minimized witness is:
+
+```text
+n = 28
+
+H =
+DELETE 27
+DELETE 28
+KEEP   28
+KEEP   27
+```
+
+At the final KEEP:
+
+```text
+a = 2
+y = 15
+need = 11
+pre-access ACTIVE pool = 2
+A activation opportunities = 1
+B activation opportunities = 7
+paid = 10
+margin = paid - need = -1
+```
+
+while substantial LATENT reserve remains available.
+
+Thus the failure is not adequately described as:
+
+```text
+insufficient credit creation
+```
+
+but instead as:
+
+```text
+sufficient stored reserve
++
+insufficient conversion of reserve into spendable ACTIVE credit
+before the repayment deadline
+```
+
+The large-size discovered family exhibits growing negative repayment margins, including the observed sequence:
+
+```text
+n=28   margin=-1
+n=32   margin=-2
+n=40   margin=-4
+n=48   margin=-6
+n=64   margin=-10
+n=96   margin=-18
+n=128  margin=-26
+n=192  margin=-42
+n=256  margin=-58
+n=384  margin=-90
+n=512  margin=-122
+```
+
+These observations are **development evidence**, not a universal theorem unless later proved symbolically.
+
+The exact witness was independently replayed by a differently structured implementation, with agreement on the canonical \(n=28\) witness and larger representatives.
+
+The new experiment therefore asks:
+
+> Can the original multiscale-transfer architecture be repaired by explicitly parameterizing bounded local activation bandwidth, while leaving Splay, Pair Access, T7 injection, T6 discharge, credit support, energy, provenance, and the theorem architecture otherwise unchanged?
+
+---
+
+# 2. Non-goals
+
+This experiment does **not** claim in advance that:
+
+```text
+rho = 2 is correct;
+primitive-rotation weighting is correct;
+k = 6 remains necessary;
+k = 6 is minimal;
+C = 2 must survive;
+faster activation automatically proves repayment;
+finite survival implies MST0-14;
+MST0-14 implies MST0-15;
+MST0-15 implies Pair Access without composition;
+Pair Access implies Dynamic Optimality without the exact bridge;
+the known D,D,K,K witness is fresh evidence;
+the old H3T bank becomes fresh again;
+a proof assistant replaces mathematical review;
+human review replaces kernel checking;
+a counterexample to one transfer calculus disproves Dynamic Optimality.
+```
+
+The \(n=28\) witness motivates the new axis.
+
+It does not determine the winner of the new search.
+
+---
+
+# 3. Immutable inherited semantics
+
+Except where this specification explicitly states otherwise, the following semantics are inherited byte-for-byte or definition-for-definition from the exact sealed parent and must be independently reverified before theorem-facing use.
+
+## 3.1 Splay
+
+Ordinary bottom-up Splay.
+
+Cost:
+
+\[
+c(T,x)=\operatorname{depth}_T(x)+1.
+\]
+
+Cases:
+
+```text
+ROOT
+ZIG-left
+ZIG-right
+LL
+RR
+LR
+RL
+```
+
+Tree semantics, pointer/functional semantics, rotation ordering, reference snapshots, key ordering, and cost convention are not changed.
+
+## 3.2 Pair Access
+
+KEEP:
+
+\[
+(A,B)\mapsto(S_xA,S_xB)
+\]
+
+with
+
+\[
+a=c(A,x),\qquad y=c(B,x).
+\]
+
+DELETE:
+
+\[
+(A,B)\mapsto(S_xA,B)
+\]
+
+with
+
+\[
+a=c(A,x),\qquad y=0.
+\]
+
+## 3.3 Regret
+
+For candidate theorem constant \(C\),
+
+\[
+w_C=y-Ca.
+\]
+
+Repayment requirement:
+
+\[
+\operatorname{required}_C(y,a)
+=
+\max(y-Ca,0).
+\]
+
+## 3.4 Ledger energy
+
+Credit types remain:
+
+```text
+LATENT
+ACTIVE
+SPENT
+```
+
+unless a separately preregistered inherited branch already contains additional signed types.
+
+For unsigned Branch A:
+
+\[
+E(L)=\#LATENT(L)+\#ACTIVE(L).
+\]
+
+Activation does not create energy.
+
+SPENT credits are excluded from available energy exactly as in the inherited calculus.
+
+## 3.5 T7 injection
+
+T7 is unchanged.
+
+Each eligible A-side event injects at most \(k\) LATENT credits at the inherited cycling interior-boundary sites with inherited orientation/support/provenance semantics.
+
+No B-side T7 injection is introduced.
+
+## 3.6 T6 discharge
+
+T6 is unchanged.
+
+If the ACTIVE pool immediately before discharge is \(P\) and the required amount is \(d\), then:
+
+\[
+paid=\min(P,d).
+\]
+
+Discharge converts the selected ACTIVE credits to SPENT under the inherited deterministic ordering.
+
+No LATENT credit may be spent directly.
+
+This rule is central: the liquidity axis changes **when reserve becomes ACTIVE**, not what discharge means.
+
+---
+
+# 4. The only fundamental semantic change: T5 becomes bandwidth-aware
+
+The inherited T5 converts at most one eligible LATENT credit to ACTIVE per invocation.
+
+Define the old operation:
+
+\[
+T5_1(L,m)
+\]
+
+to be the exact inherited T5.
+
+The new operator is deliberately defined by bounded iteration of the old one.
+
+For event \(ev\), candidate activation profile \(\rho\), and mode \(m\):
+
+\[
+\boxed{
+T5_\rho(L,m,ev)
+=
+T5_1^{\,\rho(ev)}(L,m)
+}
+\]
+
+where exponentiation means functional iteration.
+
+This is the primary surgical design choice.
+
+It ensures that the new rule is not an unrelated ledger mutation.
+
+It is literally repeated application of the already-defined activation primitive.
+
+Consequently the following become immediate proof targets:
+
+\[
+E(T5_\rho(L,m,ev))=E(L),
+\]
+
+support is preserved,
+
+provenance is preserved,
+
+mass is preserved,
+
+no SPENT credit is resurrected,
+
+and only LATENT/ACTIVE status may change.
+
+The deterministic activation selection order remains the inherited first-eligible/ledger-order rule.
+
+If fewer than \(\rho(ev)\) LATENT credits are available, all available eligible LATENT credits are activated and no new credit is created.
+
+---
+
+# 5. Formal activation-bandwidth axis
+
+The experiment does not treat \(\rho\) as an arbitrary state-dependent function.
+
+That would create a dangerous overfitting channel.
+
+Instead \(\rho\) belongs to a small preregistered structural family.
+
+Define:
+
+\[
+\mu(ev)=
+\begin{cases}
+0,&ev=\mathrm{ROOT}\text{ or no rotation event},\\
+1,&ev\text{ is a terminal ZIG},\\
+2,&ev\in\{LL,RR,LR,RL\}.
+\end{cases}
+\]
+
+\(\mu(ev)\) is the number of primitive rotations represented by the compressed Splay event.
+
+Two activation families are permitted.
+
+## 5.1 Flat activation
+
+For integer \(r\ge1\):
+
+\[
+\boxed{
+\rho_{\mathrm{flat},r}(ev)=r
+}
+\]
+
+for every eligible non-ROOT StepEv.
+
+Interpretation:
+
+> Activate up to \(r\) credits per compressed StepEv.
+
+The inherited calculus is exactly:
+
+\[
+\rho_{\mathrm{flat},1}.
+\]
+
+## 5.2 Primitive-rotation-weighted activation
+
+For integer \(r\ge1\):
+
+\[
+\boxed{
+\rho_{\mathrm{rot},r}(ev)=r\mu(ev)
+}
+\]
+
+Thus for \(r=1\):
+
+\[
+\rho(ev)=
+\begin{cases}
+1,&ZIG,\\
+2,&LL/RR/LR/RL.
+\end{cases}
+\]
+
+Interpretation:
+
+> Activate up to one credit per primitive rotation represented by the event.
+
+The most structurally motivated new profile is therefore:
+
+\[
+\boxed{\rho_{\mathrm{rot},1}}.
+\]
+
+It is a candidate, not an assumption.
+
+## 5.3 Frozen search range
+
+Before target-guided synthesis the experiment must preregister:
+
+```text
+rho_family ∈ {
+  FLAT,
+  PRIMITIVE_ROTATION
+}
+
+rho_base ∈ {1,2,3,4,5,6}
+```
+
+Candidate profiles are:
+
+\[
+\rho_{\rm flat,r}
+\quad\text{or}\quad
+\rho_{\rm rot,r}.
+\]
+
+Larger activation families require a successor experiment.
+
+No profile may depend on:
+
+```text
+n
+tree identity
+state ID
+cycle ID
+history index
+future key
+candidate residual
+Bellman value
+holdout membership
+support ID
+the amount currently required
+whether the current KEEP would otherwise fail
+```
+
+Availability of LATENT credits may of course limit actual activation.
+
+---
+
+# 6. Candidate identity
+
+A v0.4 transfer calculus is identified by at least:
+
+```text
+calculus_id
+parent_calculus_family
+branch
+predicate P
+injection bound k
+competitive constant C
+activation_family
+activation_base r
+activation_profile hash
+credit types
+support semantics
+scale semantics
+provenance semantics
+T7 definition hash
+T5_rho definition hash
+T6 definition hash
+energy definition
+initialization
+snapshot convention
+mapping version
+ontology version
+```
+
+Conceptually:
+
+\[
+\boxed{
+MSTC^+=(P,k,C,\rho)
+}
+\]
+
+The experiment may display the compact triple
+
+\[
+(C,k,\rho)
+\]
+
+when \(P\) and inherited structural metadata are understood, but frozen candidate identity must include every semantic field.
+
+Changing \(\rho\) creates a new calculus ID.
+
+Changing the activation family creates a new calculus ID.
+
+Changing \(r\) creates a new calculus ID.
+
+Changing T5 selection order creates a new calculus ID.
+
+Changing T7, T6, energy, support, or Pair-Access semantics is **outside this experiment's surgical allowance** unless already permitted by an independently preregistered inherited branch.
+
+---
+
+# 7. Legacy embedding theorem
+
+The experiment must prove before synthesis that the new engine contains the old calculus exactly.
+
+For every legal ledger \(L\), mode \(m\), and non-ROOT event \(ev\):
+
+\[
+\boxed{
+T5_{\rho_{\rm flat,1}}(L,m,ev)
+=
+T5_1(L,m)
+}
+\]
+
+and therefore every complete execution under:
+
+```text
+P = inherited predicate
+k = inherited k
+C = inherited C
+rho = FLAT(1)
+```
+
+must reproduce the old execution exactly.
+
+This is `LIQ0-01 LEGACY_EMBEDDING`.
+
+For `MSTC-0002`:
+
+\[
+\boxed{
+(P_{\rm all},6,2,\rho_{\rm flat,1})
+}
+\]
+
+must reproduce:
+
+```text
+all inherited v0.3 finite records;
+all old ledger transitions;
+the later n=28 legal repayment failure;
+the independent larger counterexample replays.
+```
+
+Failure of this embedding gate means the new implementation changed more than the declared axis and execution stops.
+
+---
+
+# 8. Primitive-rotation multiplicity theorem
+
+The experiment must formally connect compressed StepEv traces to primitive rotations.
+
+Target theorem:
+
+For a valid BST \(T\), present key \(x\), and exact bottom-up Splay trace \(R\),
+
+\[
+\boxed{
+\sum_{ev\in R}\mu(ev)
+=
+\operatorname{depth}_T(x).
+}
+\]
+
+Equivalent case-complete forms are allowed.
+
+A related trace-count theorem may be proved:
+
+\[
+|R|
+=
+\left\lceil
+\frac{\operatorname{depth}_T(x)}{2}
+\right\rceil
+\]
+
+when correct under the exact inherited trace convention.
+
+This statement must be proved or refuted; it may not be assumed from finite testing.
+
+The purpose is to determine whether the old activation rule accidentally activated approximately one credit per **double-step**, while repayment demand scales with primitive-rotation depth.
+
+---
+
+# 9. Liquidity diagnostics
+
+The experiment introduces diagnostics that are explicitly **not theorem premises**.
+
+For a KEEP beginning with ACTIVE pool \(P_0\), requirement \(d\), and \(N\) eligible activation opportunities, define flat activation pressure:
+
+\[
+Q=
+\begin{cases}
+0,&d\le P_0,\\[1mm]
+\left\lceil
+\dfrac{d-P_0}{N}
+\right\rceil,&N>0,\\
++\infty,&N=0\text{ and }d>P_0.
+\end{cases}
+\]
+
+For the canonical \(n=28\) witness:
+
+\[
+Q=2.
+\]
+
+For the discovered \(n=512\) representative:
+
+\[
+Q=2.
+\]
+
+This motivates the new axis but does not prove that \(2\) suffices universally.
+
+Every KEEP record must additionally expose:
+
+```text
+LATENT before access
+ACTIVE before access
+LATENT after A
+ACTIVE after A
+A activation capacity
+A actual activations
+LATENT before B
+ACTIVE before B
+B activation capacity
+B actual activations
+need
+paid
+liquidity slack = paid - need
+stock before discharge
+unused activation capacity
+```
+
+The experiment must distinguish:
+
+\[
+\boxed{\text{stock sufficiency}}
+\]
+
+from
+
+\[
+\boxed{\text{liquidity sufficiency}}.
+\]
+
+A large LATENT balance does not imply synchronous repayment.
+
+---
+
+# 10. Legal theorem domain
+
+The unrestricted-domain defect discovered in the old MST0-14 formulation must not be inherited.
+
+Define a single canonical legality predicate:
+
+\[
+LegalPairInstance(T_0,H,n).
+\]
+
+Its exact implementation must match the inherited Pair-Access universe.
+
+The expected domain is:
+
+```text
+T0 is a valid BST;
+keys(T0) are exactly the canonical n-key universe {1,...,n};
+every history mode is KEEP or DELETE;
+every accessed key x satisfies 1 <= x <= n;
+therefore every access key occurs in T0;
+A and B begin equal to T0;
+execution follows the exact inherited KEEP/DELETE semantics.
+```
+
+If the imported parent contract gives a different exact universe representation, Phase 01 must freeze the semantically equivalent source-derived predicate before any theorem is stated.
+
+The domain may not be strengthened merely to remove a counterexample.
+
+All universal theorem statements use this legality predicate explicitly.
+
+---
+
+# 11. Known counterexamples are development data
+
+The following are permanently contaminated development/regression evidence:
+
+```text
+the malformed n=0 domain witness;
+the canonical legal n=28 repayment witness;
+the n=64 representative;
+the n=512 discoverer;
+all histories examined during J/J0/J-burst discovery;
+all residual-growth values already observed;
+all counterexample-minimization outputs from the parent decision experiment.
+```
+
+They are used aggressively during development.
+
+They are never called fresh holdout evidence.
+
+The canonical legal witness receives a permanent regression identifier:
+
+```text
+LIQ-REG-001
+n=28
+H=[D27,D28,K28,K27]
+```
+
+The observed scaled family becomes:
+
+```text
+LIQ-REG-FAM-001
+D(n-1), D(n), K(n), K(n-1)
+```
+
+with every tested \(n\) preserved.
+
+Its closed-form behavior remains `CONJECTURED_FAMILY` until mathematically proved.
+
+---
+
+# 12. Surgical non-change contract
+
+The following objects are frozen unchanged from the exact parent except for interface wrapping required by \(\rho\):
+
+| Object | v0.4 action |
+|---|---|
+| ordinary bottom-up Splay | unchanged |
+| depth+1 cost | unchanged |
+| KEEP / DELETE pair dynamics | unchanged |
+| reference snapshot | unchanged |
+| L6 translation definitions | imported and reverified |
+| T7 injection | unchanged |
+| T6 discharge | unchanged |
+| `required_C` | unchanged |
+| ledger support | unchanged |
+| provenance alphabet | unchanged |
+| energy \(E=\#L+\#A\) | unchanged for Branch A |
+| credit unit mass | unchanged |
+| candidate freeze semantics | unchanged |
+| one exact residual kills candidate | unchanged |
+| fresh-bank one-unlock rule | unchanged |
+| human review lifecycle | strengthened, never weakened |
+| Dynamic-Optimality bridge standard | unchanged |
+
+The primary semantic change is:
+
+```text
+T5:
+one activation per eligible event
+
+becomes
+
+T5_rho:
+bounded repeated inherited activation per eligible event
+```
+
+Everything downstream must declare whether it is invariant under this substitution.
+
+---
+
+# 13. Theorem transport classes
+
+No parent theorem status automatically transfers.
+
+Parent proofs may be reused as proof objects or proof skeletons only through an explicit transport record.
+
+Every obligation is classified into one of four classes.
+
+## CLASS A — semantic identity
+
+Statement and proof are independent of T5 bandwidth.
+
+Expected examples:
+
+```text
+MST0-01 parent transport
+MST0-02 Splay refinement
+MST0-03 L6 translation
+MST0-04 reference snapshot
+MST0-05 heavy-path statement
+MST0-06 pairing statement
+MST0-07 bend statement
+MST0-16 structural partition
+```
+
+A hash-bound transport proof may discharge these without redoing the original scientific search.
+
+Human review status is not copied merely because the number is the same; the transport record establishes that the new theorem statement is definitionally or propositionally identical.
+
+## CLASS B — unchanged conclusion, new operator in dependencies
+
+The theorem likely remains true but T5 changed.
+
+Expected examples:
+
+```text
+universal locality where only T7 causes creation;
+boundary/source laws;
+determinism;
+preservation;
+bounded DELETE energy injection.
+```
+
+These must be reproved or transported through a formal T5-rho lemma.
+
+## CLASS C — statement generalized by rho
+
+Examples:
+
+```text
+constant independence;
+activation boundedness;
+repayment;
+integrability.
+```
+
+These receive new theorem bytes.
+
+## CLASS D — downstream rebound
+
+Examples:
+
+```text
+Pair Access;
+telescope;
+approximate monotonicity;
+Dynamic Optimality bridge.
+```
+
+They cannot be consumed until the new candidate-specific upstream theorems are REVIEWED.
+
+---
+
+# 14. New activation obligations
+
+Add the following liquidity-specific formal obligations.
+
+```text
+LIQ0-01 LEGACY_EMBEDDING
+LIQ0-02 EVENT_MULTIPLICITY
+LIQ0-03 ACTIVATION_DETERMINISM
+LIQ0-04 ACTIVATION_BOUNDEDNESS
+LIQ0-05 ACTIVATION_ENERGY_CONSERVATION
+LIQ0-06 ACTIVATION_SUPPORT_PRESERVATION
+LIQ0-07 ACTIVATION_NO_RESURRECTION
+LIQ0-08 ACTIVATION_TARGET_BLINDNESS
+LIQ0-09 STOCK_LIQUIDITY_ACCOUNTING
+LIQ0-10 RHO_CONSTANT_INDEPENDENCE
+```
+
+Key target identities include:
+
+If \(q\) LATENT credits exist and cap \(b=\rho(ev)\),
+
+\[
+\#ACTIVE'
+=
+\#ACTIVE+\min(q,b)
+\]
+
+when the inherited active predicate fires.
+
+\[
+\#LATENT'
+=
+\#LATENT-\min(q,b).
+\]
+
+Therefore:
+
+\[
+\boxed{
+E(L')=E(L).
+}
+\]
+
+No activation theorem is allowed to hide creation of new mass.
+
+---
+
+# 15. Candidate search space
+
+The inherited predicate menu remains available exactly as preregistered in the parent grammar.
+
+At minimum this includes the parent predicates that were actually synthesized, including `P_all`, `P_keep`, and inherited case-restricted predicates.
+
+No predicate may be invented after fresh reveal.
+
+The initial candidate grid is:
+
+\[
+P\in P_{\rm inherited},
+\]
+
+\[
+k\in\{0,1,2,3,4,5,6\},
+\]
+
+\[
+C\in
+\{2,3,4,6,8,12,16,24,32,64\},
+\]
+
+\[
+\rho\in
+\{
+\rho_{\rm flat,r},
+\rho_{\rm rot,r}
+:
+1\le r\le6
+\}.
+\]
+
+The presence of \(C>2\) does not mean \(C=2\) was abandoned.
+
+The constant ladder is preregistered before synthesis.
+
+Smaller \(C\) is stronger.
+
+Any finite constant can still be mathematically relevant to Dynamic Optimality, subject to bridge compatibility.
+
+---
+
+# 16. Search objective
+
+Candidate ordering is lexicographic and frozen before synthesis.
+
+Recommended order:
+
+```text
+1. exact semantic legality;
+2. exact flow/energy conservation;
+3. zero residual on mandatory known regression corpus;
+4. zero residual on development corpus;
+5. zero residual on internal validation;
+6. smaller C;
+7. structurally simpler rho family;
+8. smaller rho_base;
+9. smaller k;
+10. simpler predicate;
+11. fewer rule templates / smaller support complexity.
+```
+
+No statistical score can outrank one exact failure.
+
+A candidate with one legal `paid < need` witness is dead at that constant.
+
+---
+
+# 17. Activation-family scientific comparison
+
+The experiment must explicitly compare:
+
+```text
+FLAT(1)        historical control
+FLAT(2)
+PRIMITIVE_ROTATION(1)
+higher preregistered flat/rotation profiles if required
+```
+
+The scientific question is not merely whether more activation fixes the witness.
+
+It is whether the surviving architecture supports a clean arbitrary-\(n\) theorem.
+
+In particular the experiment must determine whether:
+
+\[
+\rho_{\rm rot,1}
+\]
+
+has a structural advantage because total activation capacity along a trace scales with primitive rotation count:
+
+\[
+\sum_{ev}\mu(ev).
+\]
+
+A more complex profile does not outrank a simpler one merely because it survives finite data.
+
+---
+
+# 18. New fresh holdout
+
+The old H3T bank has already influenced the research program.
+
+It is historical evidence only.
+
+Generate a new bank:
+
+```text
+H4L
+= Liquidity Transfer Holdout
+```
+
+before target-guided v0.4 synthesis.
+
+Recommended sizes:
+
+```text
+18
+26
+34
+46
+58
+74
+98
+```
+
+with:
+
+```text
+10,000 episodes per size
+70,000 total
+```
+
+The generator is frozen and committed before synthesis.
+
+Recommended structural strata:
+
+```text
+RANDOM_LEGAL
+DELETE_BURST_THEN_KEEP
+DOUBLE_DELETE_DOUBLE_KEEP
+ALTERNATING_KEEP_DELETE
+REPEATED_KEEP_DRAIN
+SPINE_VS_BALANCED
+OPPOSITE_SPINE
+DOUBLE_ROTATION_ENRICHED
+TERMINAL_ZIG_ENRICHED
+NESTED_INTERVAL
+MIRROR_PAIRED
+MOTIF_BLIND_RANDOM_WALK
+```
+
+Strata may use tree structure and history syntax.
+
+They may not query:
+
+```text
+candidate residual
+active pool
+latent pool
+rho
+k
+C
+solver state
+whether a generated history kills a candidate
+```
+
+when generating or selecting hidden episodes.
+
+The bank is quarantined.
+
+Candidate-set freeze precedes reveal.
+
+Only one reveal is permitted.
+
+---
+
+# 19. Historical-vs-fresh labeling
+
+All evidence must carry one of:
+
+```text
+INHERITED_HISTORICAL
+KNOWN_COUNTEREXAMPLE
+DEVELOPMENT
+INTERNAL_VALIDATION
+CONTAMINATED_CANARY
+FRESH_H4L
+CLEANROOM_POST_FREEZE
+LARGE_N_POST_FREEZE
+FORMAL_PROOF
+```
+
+No old H3T record receives `FRESH_H4L`.
+
+No known \(D,D,K,K\) witness receives a fresh label.
+
+---
+
+# 20. Development stress corpus
+
+The known failure mechanism becomes a permanent adversarial family.
+
+The development battery must contain:
+
+```text
+D,D,K,K
+longer DELETE bursts before KEEP
+KEEP-drain followed by second KEEP
+nearby-key variants
+boundary-key variants
+mirror variants
+spine / opposite-spine variants
+nested interval variants
+repeated same-key DELETE
+repeated adjacent-key DELETE
+high-depth B / low-depth A final KEEP
+high-LATENT / low-ACTIVE prefixes
+```
+
+The nine inherited adversarial search modes remain mandatory:
+
+```text
+uniform legal histories
+structured generators
+hill climbing
+simulated annealing
+genetic search
+rotation-neighborhood search
+cycle splicing
+motif inflation
+counterexample generalization
+```
+
+Heuristics propose.
+
+The exact evaluator disposes.
+
+---
+
+# 21. Independent implementations
+
+At least three execution routes are required for theorem-facing counterexamples or promoted candidates:
+
+```text
+primary repo evaluator;
+independent differently structured evaluator;
+formal Lean semantics / kernel reduction where feasible.
+```
+
+The independent evaluator may not import the primary activation implementation.
+
+For T5-rho it must independently implement:
+
+```text
+predicate check
+event multiplicity
+capacity calculation
+first-LATENT activation ordering
+ledger update
+discharge
+```
+
+Agreement on finite data is evidence, never universal proof.
+
+---
+
+# 22. Formal proof standard
+
+For every universal theorem consumed downstream, use three layers.
+
+## Layer A — human-readable mathematics
+
+Case-complete mathematical proof.
+
+No finite enumeration as a premise.
+
+No corpus-dependent maximum.
+
+No hidden \(n\)-dependent constant.
+
+## Layer B — Lean/kernel theorem
+
+Exact theorem against frozen definitions.
+
+No:
+
+```text
+sorry
+admit
+axiom introduced solely to discharge the theorem
+opaque external oracle without checked certificate
+```
+
+## Layer C — hostile refutation attack
+
+Independent attempt to produce an exact negation witness.
+
+Theorem lifecycle:
+
+```text
+UNPROVED
+→ PROVED
+→ REVIEWED
+```
+
+`PROVED` requires completed Layers A and B.
+
+`REVIEWED` additionally requires human ACCEPT on the exact theorem/proof hashes.
+
+Layer C survival supports confidence but is not itself proof.
+
+An exact Layer C witness immediately blocks the theorem and starts refutation handling.
+
+---
+
+# 23. Repaired synchronous repayment theorem
+
+The new repayment theorem must use the legal domain.
+
+For frozen candidate \(\mathcal C\):
+
+\[
+\boxed{
+\forall T_0,H,n,
+\quad
+LegalPairInstance(T_0,H,n)
+\Rightarrow
+execSuffices_{\mathcal C}(\varnothing,T_0,T_0,H,n)
+=
+true.
+}
+\]
+
+The mechanism lemma remains:
+
+\[
+paid=\min(activePool,required_C(y,a)).
+\]
+
+Thus the substantive theorem is equivalent to proving sufficient ACTIVE liquidity at every legal KEEP.
+
+No proof may substitute:
+
+\[
+LATENT+ACTIVE\ge need
+\]
+
+for the required statement:
+
+\[
+\boxed{
+ACTIVE_{\rm pre-discharge}\ge need.
+}
+\]
+
+This distinction is the core reason v0.4 exists.
+
+---
+
+# 24. Mandatory stock/liquidity decomposition
+
+Every proposed proof of MST0-14 must explicitly separate two questions.
+
+## Stock
+
+Was sufficient reserve ever created?
+
+Potential expressions may involve:
+
+\[
+L+P.
+\]
+
+## Liquidity
+
+Was enough of that reserve ACTIVE by the exact repayment deadline?
+
+The actual success condition is:
+
+\[
+P_{\rm pre-discharge}\ge required_C(y,a).
+\]
+
+A proof is incomplete if it bounds only total reserve.
+
+A proof is also incomplete if it assumes every LATENT credit can be instantaneously spent.
+
+---
+
+# 25. Bounded DELETE injection under rho
+
+The experiment must test and prove the expectation that faster activation does not worsen total unsigned energy.
+
+Because:
+
+\[
+LATENT\to ACTIVE
+\]
+
+preserves
+
+\[
+E=\#LATENT+\#ACTIVE,
+\]
+
+the expected generalized injection theorem remains of the form:
+
+\[
+E(E_2)
+\le
+E(E_0)+k\cdot a
+\]
+
+or the exact transported parent statement.
+
+However this is not inherited automatically.
+
+The new theorem must prove that repeated T5 activation cannot create energy.
+
+If the statement fails under the exact generalized semantics, preserve the witness.
+
+---
+
+# 26. Preservation under repeated activation
+
+MST0-11 is reopened.
+
+The generalized proof must establish, case-completely:
+
+```text
+flow conservation;
+determinism;
+ownership;
+support preservation;
+provenance preservation;
+orientation preservation;
+non-resurrection of SPENT;
+no future lookup;
+bounded outputs;
+mode/predicate correctness;
+rho boundedness;
+no activation-created energy.
+```
+
+The preferred proof strategy is induction on \(\rho(ev)\) using the inherited one-step T5 preservation theorem.
+
+---
+
+# 27. Constant independence
+
+The old constant theorem becomes a liquidity-aware theorem.
+
+For promoted candidate constants:
+
+\[
+C,\ k,\ \rho
+\]
+
+must be fixed before arbitrary inputs.
+
+They may not depend on:
+
+```text
+n
+history length
+tree shape
+tree identity
+access key
+holdout
+candidate residual
+solver path
+counterexample family
+future execution
+```
+
+For a structural profile such as primitive-rotation weighting, the **profile definition** is constant while its per-event value depends only on the local event class.
+
+This is permitted because:
+
+\[
+\mu(ev)\in\{1,2\}
+\]
+
+is a fixed local structural map.
+
+---
+
+# 28. Integrability
+
+MST0-15 remains a separate theorem.
+
+Repayment success does not imply integrability.
+
+The experiment must verify, under the actual new activation semantics, all required properties such as:
+
+```text
+SPENT monotonicity;
+flip legality;
+no double spend;
+splitting invariance;
+pool conservation;
+partition consistency;
+whole-history vs split-history agreement;
+controlled endpoint energy.
+```
+
+If activation bandwidth introduces a new integrability obstruction, do not silently expand the grammar.
+
+Preserve the exact witness and apply the architecture-successor rule in §43.
+
+---
+
+# 29. Pair Access and telescope
+
+Only after the required upstream theorems are REVIEWED may the experiment prove a universal Pair-Access inequality.
+
+Target form:
+
+\[
+\operatorname{Splay}(Y,T)
++
+E_m-E_0
+\le
+C\operatorname{Splay}(X,T)
++
+A(n).
+\]
+
+Preferred:
+
+\[
+A(n)=0.
+\]
+
+A nonzero additive term is permitted only if mathematically proved and explicitly audited for bridge compatibility.
+
+No finite holdout result may substitute for this theorem.
+
+---
+
+# 30. Dynamic Optimality continuation rule
+
+This experiment does **not** stop merely because MST0-14 is proved.
+
+If repayment closes, execution continues directly:
+
+```text
+MST0-14 repayment
+→ MST0-15 integrability
+→ MST0-17 Pair Access
+→ MST0-18 telescope / approximate monotonicity
+→ MST0-19 exact Levy–Tarjan bridge
+→ Dynamic Optimality
+```
+
+A successful MST-LIQ experiment is authorized to terminate at:
+
+```text
+DYNAMIC_OPTIMALITY_PROVED
+```
+
+without requiring a new Dynamic-Optimality experiment to rediscover the same proof.
+
+The existing Dynamic decision program may later import the sealed result as an independent audit/reconciliation layer.
+
+---
+
+# 31. Branch B
+
+The inherited signed/multiscale Branch B remains preregistered exactly as permitted by the parent architecture.
+
+It is not activated merely because `MSTC-0002` failed.
+
+This experiment first tests whether the missing liquidity axis repairs Branch A.
+
+Branch B activates only under its inherited exact-failure conditions.
+
+If activated, \(\rho\) remains a frozen candidate field and signed lower-bound obligations remain mandatory.
+
+---
+
+# 32. Work packages
+
+The experiment uses seven WPs, preserving the parent organizational philosophy.
+
+## WP-0 — Foundation freeze and dual-parent pin
+
+Pin:
+
+```text
+MST-v0.3 architecture parent;
+MSTC-0002 exact record;
+v0.3 FINAL_RESULT;
+candidate-set commitment;
+Path.md;
+WorkPlan.md;
+implementation spec;
+exact obstruction-parent commit;
+canonical counterexample;
+independent replay artifact;
+all normative hashes.
+```
+
+Freeze:
+
+```text
+new implementation spec;
+rho grammar;
+rho search range;
+H4L generator;
+solver versions;
+theorem mapping;
+threat matrix;
+stop matrix;
+claims policy.
+```
+
+Gate:
+
+```text
+FOUNDATION_FROZEN
+```
+
+No synthesis before this gate.
+
+## WP-1 — Trusted-core transport and legacy embedding
+
+Reverify:
+
+```text
+Splay;
+Pair Access;
+rotation traces;
+reference snapshot;
+T7;
+T6;
+old T5;
+MSTC-0002 legacy replay;
+n=28 counterexample;
+independent agreement.
+```
+
+Prove `LIQ0-01`.
+
+Gate:
+
+```text
+LEGACY_SEMANTICS_CERTIFIED
+```
+
+## WP-2 — Activation semantics and upstream theorem transport
+
+Implement:
+
+```text
+mu(ev);
+rho families;
+T5_rho;
+activation diagnostics;
+new candidate schema.
+```
+
+Prove/review:
+
+```text
+LIQ0-02..10;
+affected determinism/preservation transport;
+bounded activation;
+energy conservation.
+```
+
+Gate:
+
+```text
+LIQUIDITY_AXIS_FROZEN
+```
+
+## WP-3 — Fresh-bank commitment and grammar lock
+
+Generate and quarantine H4L.
+
+Freeze target-blind generator.
+
+Freeze exact candidate search grammar.
+
+No candidate residual may have been evaluated against H4L.
+
+Gate:
+
+```text
+H4L_BANK_COMMITTED
+TRANSFER_GRAMMAR_FROZEN
+```
+
+## WP-4 — Candidate synthesis and adversarial development
+
+Search:
+
+\[
+(P,k,C,\rho).
+\]
+
+Mandatory first regression:
+
+```text
+LIQ-REG-001
+```
+
+Then inherited development, new liquidity stress, internal validation, all nine adversarial engines, cross-size and cross-C checks.
+
+Preserve every failure.
+
+Promote at most three candidates in frozen complexity order.
+
+Gate:
+
+```text
+LIQUIDITY_CALCULUS_SURVIVES_DEV
+```
+
+or exact rejection.
+
+## WP-5 — Candidate freeze, H4L reveal, clean-room, large-n
+
+Freeze ≤3 candidates.
+
+Hash candidate set.
+
+Reveal H4L once.
+
+Run full exact evaluation.
+
+Independent replay every claimed violation.
+
+Then:
+
+```text
+clean-room implementation;
+large-n targeted attack;
+known-family inflation;
+mirrors;
+nested bursts;
+mutation tests.
+```
+
+Ceiling:
+
+```text
+LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+```
+
+This is not a theorem.
+
+## WP-6 — Universal theorem war and continuation to Dynamic Optimality
+
+At most one primary candidate at a time.
+
+Prove or refute:
+
+```text
+universal locality;
+preservation;
+bounded injection;
+constant independence;
+synchronous repayment;
+integrability;
+Pair Access;
+telescope;
+bridge.
+```
+
+Continue until:
+
+```text
+DYNAMIC_OPTIMALITY_PROVED
+```
+
+or an exact obstruction / resource-limit terminal state.
+
+---
+
+# 33. Normative phase map
+
+```text
+PHASE 00  parent pins + normative freeze
+PHASE 01  trusted Splay/Pair-Access reproduction
+PHASE 02  legacy MSTC-0002 embedding
+PHASE 03  primitive-rotation multiplicity
+PHASE 04  known liquidity-obstruction certification
+PHASE 05  rho operator implementation
+PHASE 06  activation preservation/energy proof
+PHASE 07  H4L generation + quarantine
+PHASE 08  rho grammar / candidate-space freeze
+PHASE 09  development masks + internal validation freeze
+PHASE 10  Branch-A liquidity synthesis
+PHASE 11  Branch-B conditional synthesis
+PHASE 12  counterexample minimization/generalization
+PHASE 13  adversarial development stress
+PHASE 14  candidate-set freeze
+PHASE 15  fresh H4L reveal
+PHASE 16  clean-room + large-n attack
+PHASE 17  arbitrary-n transfer theorems including MST0-14/15
+PHASE 18  Pair Access / telescope / bridge
+PHASE 19  seal / export / release
+```
+
+---
+
+# 34. Candidate promotion criteria
+
+A candidate cannot enter WP-5 unless:
+
+```text
+arbitrary-n semantics are total;
+rho is from the frozen family;
+rho is n-independent;
+legacy mechanics remain unchanged;
+known n=28 witness is repaired;
+all mandatory development residuals are zero;
+internal validation is zero-residual;
+energy conservation holds;
+activation boundedness holds;
+no target leakage exists;
+candidate has a plausible universal proof outline;
+all mutation controls pass.
+```
+
+Solver feasibility alone is insufficient.
+
+---
+
+# 35. Candidate freeze
+
+Each promoted candidate file records:
+
+```text
+calculus_id
+parent ID
+branch
+P
+k
+C
+rho_family
+rho_base
+rho profile table
+rho profile SHA
+T7 SHA
+T5_rho SHA
+T6 SHA
+energy definition
+support definition
+snapshot convention
+mapping version
+ontology version
+initialization
+proof-outline SHA
+eligibility verdict
+```
+
+Any post-freeze change mints a new candidate ID and cannot reuse the H4L fresh label.
+
+---
+
+# 36. Large-n attack
+
+Mandatory sizes should extend substantially beyond the old campaign.
+
+At minimum:
+
+```text
+16
+24
+28
+32
+48
+64
+96
+128
+192
+256
+384
+512
+768
+1024
+2048
+```
+
+plus resource-permitting larger tests.
+
+Known `D,D,K,K` constructions receive special symbolic/generalization treatment.
+
+The campaign must report:
+
+```text
+minimum liquidity slack;
+minimum stock slack;
+maximum Q;
+maximum actual activation demand;
+maximum unused LATENT at a failure;
+maximum rho required by finite diagnostics;
+first exact residual;
+largest exact residual;
+```
+
+These are finite diagnostics only.
+
+---
+
+# 37. Counterexample handling
+
+For any exact candidate failure:
+
+1. independent replay;
+2. legality check;
+3. delta minimization;
+4. canonical ordering;
+5. exact tree and ledger snapshots;
+6. candidate hash;
+7. theorem-negation binding;
+8. Lean witness if feasible;
+9. family generalization attempt;
+10. append-only preservation.
+
+No counterexample may be deleted because a later candidate survives.
+
+---
+
+# 38. Mutation controls
+
+Mandatory activation-specific mutants include:
+
+```text
+double-step capacity changed 2→1;
+ZIG capacity changed;
+rho depends on n;
+rho depends on need;
+rho depends on future key;
+rho depends on residual;
+activation creates a new credit;
+activation changes support;
+activation changes provenance;
+SPENT→ACTIVE resurrection;
+last-LATENT instead of first-LATENT selection;
+B-only hidden activation;
+unbounded activation;
+T7 coefficient altered accidentally;
+T6 allowed to spend LATENT;
+legacy FLAT(1) no longer matches old T5.
+```
+
+Every relevant suite must kill its assigned mutants.
+
+---
+
+# 39. New threats
+
+At minimum freeze controls for:
+
+```text
+LIQ-T01 post-hoc rho=2 fitting;
+LIQ-T02 hidden n-dependent bandwidth;
+LIQ-T03 event multiplicity encoded incorrectly;
+LIQ-T04 double-step treated as one primitive rotation;
+LIQ-T05 activation accidentally creates energy;
+LIQ-T06 LATENT spent directly;
+LIQ-T07 known counterexample mislabeled fresh;
+LIQ-T08 old H3T mislabeled fresh;
+LIQ-T09 candidate-dependent H4L generation;
+LIQ-T10 activation family mutated after H4L reveal;
+LIQ-T11 old MSTC-0002 identity rewritten;
+LIQ-T12 old theorem review silently transferred;
+LIQ-T13 stock sufficiency substituted for liquidity;
+LIQ-T14 finite Q maximum used as proof;
+LIQ-T15 larger rho treated as automatically monotone without proof;
+LIQ-T16 primitive-weighted rule privileged without comparison;
+LIQ-T17 rho allowed to inspect repayment demand;
+LIQ-T18 new axis smuggles unrelated rule changes;
+LIQ-T19 MST0-14 success silently implies MST0-15;
+LIQ-T20 transfer-route failure mislabeled DOC failure.
+```
+
+---
+
+# 40. New stop conditions
+
+In addition to inherited applicable stops:
+
+```text
+LIQ-STOP-01 architecture parent not exact
+LIQ-STOP-02 obstruction parent not exact
+LIQ-STOP-03 canonical legal counterexample fails reproduction
+LIQ-STOP-04 independent replay disagreement
+LIQ-STOP-05 FLAT(1) fails legacy embedding
+LIQ-STOP-06 T7 semantics changed
+LIQ-STOP-07 T6 semantics changed
+LIQ-STOP-08 energy definition changed without versioning
+LIQ-STOP-09 rho grammar changed after foundation freeze
+LIQ-STOP-10 rho depends on forbidden information
+LIQ-STOP-11 primitive multiplicity theorem false but consumed
+LIQ-STOP-12 H4L read before candidate freeze
+LIQ-STOP-13 H4L second unlock
+LIQ-STOP-14 H4L regenerated after reveal
+LIQ-STOP-15 candidate mutated under same ID
+LIQ-STOP-16 finite survival upgraded to theorem
+LIQ-STOP-17 repayment proof uses stock instead of active liquidity
+LIQ-STOP-18 theorem omits a Splay/activation case
+LIQ-STOP-19 later missing axis added in-place
+LIQ-STOP-20 resource exhaustion interpreted as impossibility
+```
+
+---
+
+# 41. Theorem ladder
+
+The liquidity-aware candidate advances only in order.
+
+```text
+MSTL-GATE-0   definitions total
+MSTL-GATE-1   legacy embedding proved
+MSTL-GATE-2   rotation / multiplicity theorem
+MSTL-GATE-3   activation determinism + preservation
+MSTL-GATE-4   activation energy conservation
+MSTL-GATE-5   bounded injection development
+MSTL-GATE-6   synchronous repayment development
+MSTL-GATE-7   cycle / block consistency
+MSTL-GATE-8   internal validation
+MSTL-GATE-9   candidate set frozen
+MSTL-GATE-10  fresh H4L
+MSTL-GATE-11  clean-room agreement
+MSTL-GATE-12  large-n falsification survived
+MSTL-GATE-13  arbitrary-n locality/preservation
+MSTL-GATE-14  arbitrary-n DELETE injection
+MSTL-GATE-15  arbitrary-n synchronous KEEP repayment
+MSTL-GATE-16  global integrability
+MSTL-GATE-17  universal Pair Access
+MSTL-GATE-18  telescope / approximate monotonicity
+MSTL-GATE-19  exact Dynamic-Optimality bridge
+```
+
+First exact failure freezes that candidate at the relevant gate.
+
+A second already-frozen candidate may then be attempted in predetermined complexity order.
+
+No candidate may be repaired after failure under the same ID.
+
+---
+
+# 42. Required MST0 mapping
+
+The final `theorem_gate_matrix.yaml` must explicitly bind the parent numbering to liquidity-aware obligations.
+
+At minimum:
+
+```text
+MST0-08U → transport/reprove universal locality
+MST0-09  → transport/reprove boundary/source law
+MST0-10  → generalized determinism
+MST0-11  → generalized preservation under T5_rho
+MST0-13  → generalized bounded DELETE injection
+MST0-14  → legal-domain liquidity-aware KEEP repayment
+MST0-15  → liquidity-aware integrability
+MST0-16  → structural partition transport
+MST0-17  → Pair-Access composition rebound
+MST0-18  → telescope rebound
+MST0-19  → bridge rebound
+MST0-22  → C/k/rho constant independence
+MST0-23  → finite-evidence guard
+MST0-24  → branch-scope guard
+MST0-25  → H4L holdout-scope theorem
+MST0-26  → literature/source scope
+```
+
+Internally, changed theorem bytes should use a liquidity-versioned identity such as:
+
+```text
+MSTL-11
+MSTL-13
+MSTL-14
+MSTL-15
+MSTL-17
+...
+```
+
+while the mapping file records which original DAG node each discharges.
+
+This prevents semantic identity confusion while preserving the established proof architecture.
+
+---
+
+# 43. Architecture-successor rule
+
+This experiment is allowed to continue through every downstream theorem.
+
+If it succeeds, do not fork merely because a new theorem stage was reached.
+
+However, if an exact later obstruction shows that the frozen architecture lacks another genuine degree of freedom not expressible within:
+
+\[
+(P,k,C,\rho),
+\]
+
+then:
+
+```text
+1. preserve the exact failed candidate;
+2. preserve the exact theorem witness;
+3. diagnose the missing resource;
+4. seal this experiment honestly;
+5. clone the full MST architecture into a successor version;
+6. add only the newly justified axis;
+7. rerun affected discovery/validation/proof stages.
+```
+
+No later axis is added silently to v0.4.
+
+This creates an auditable architecture chain:
+
+\[
+\mathcal M_0
+\subset
+\mathcal M_1
+\subset
+\mathcal M_2
+\subset\cdots
+\]
+
+where every new degree of freedom exists because a previous architecture has an exact certified obstruction.
+
+---
+
+# 44. Interaction with the main Dynamic Optimality decision experiment
+
+The existing Dynamic decision experiment may remain paused while MST-LIQ executes.
+
+It is not rewritten.
+
+Its historical candidate epoch remains:
+
+```text
+MSTC-0002
+C=2
+k=6
+rho=FLAT(1)
+MST0-14 legal repayment: counterexample found
+```
+
+If MST-LIQ later produces a reviewed theorem/candidate package, emit:
+
+```text
+MST_LIQ_EXPORT.json
+```
+
+containing:
+
+```text
+experiment seal
+candidate ID/hash
+P
+k
+C
+rho
+all semantic hashes
+parent pins
+counterexample ledger
+Layer-A proof hashes
+Lean theorem hashes
+kernel build record
+human review records
+theorem statuses
+Pair-Access statement if proved
+bridge statement if proved
+terminal claim
+```
+
+The main Dynamic experiment may import that packet as a new candidate epoch.
+
+It does not need to rerun the entire MST architecture merely to establish provenance.
+
+If MST-LIQ itself reaches `DYNAMIC_OPTIMALITY_PROVED`, the main decision experiment becomes optional as an independent audit/reconciliation layer rather than a necessary rediscovery stage.
+
+---
+
+# 45. Formal file layout
+
+Recommended additions relative to the cloned parent:
+
+```text
+prereg/
+  liquidity_axis.yaml
+  liquidity_search_space.yaml
+  h4l_holdout.yaml
+  theorem_transport_matrix.yaml
+
+python/liquidity/
+  multiplicity.py
+  activation.py
+  profiles.py
+  diagnostics.py
+  legacy_embedding.py
+
+python/holdout/
+  h4l_generate.py
+  h4l_verify.py
+  h4l_evaluate.py
+
+python/adversary/
+  liquidity_burst.py
+  drain_refill.py
+  ddkk_family.py
+
+lean/Liquidity/
+  Definitions.lean
+  Multiplicity.lean
+  Activation.lean
+  LegacyEmbedding.lean
+  Preservation.lean
+  Injection.lean
+  Repayment.lean
+  Integrability.lean
+
+lean/PairAccess/
+  Composition.lean
+  Telescope.lean
+
+lean/Bridge/
+  DynamicOptimality.lean
+
+math/proofs/
+  LIQ0-*.md
+  MSTL-*.md
+
+math/reviews/
+  LIQ0-*.review.json
+  MSTL-*.review.json
+
+artifacts/v04/
+  parent_import/
+  obstruction_import/
+  liquidity/
+  development/
+  validation/
+  holdouts/
+  candidates/
+  counterexamples/
+  cleanroom/
+  large_n/
+  proofs/
+  audits/
+  seal/
+```
+
+---
+
+# 46. Logging
+
+Every run record includes:
+
+```text
+experiment ID
+phase
+WP
+UTC
+commit
+architecture-parent commit
+obstruction-parent commit
+spec SHA
+prereg SHA
+rho-grammar SHA
+candidate ID
+P
+k
+C
+rho family
+rho base
+rho profile SHA
+firewall states
+command
+input hashes
+output hashes
+stdout hash
+stderr hash
+wall time
+peak memory
+exit code
+scientific status
+```
+
+Logs are append-only.
+
+---
+
+# 47. Reproducibility
+
+Final reproduction must start from a clean checkout and verify:
+
+```text
+both parent chains;
+all hashes;
+known counterexample;
+legacy embedding;
+rho semantics;
+H4L commitment/reveal state;
+candidate IDs;
+fresh-evaluation outputs;
+clean-room outputs;
+Lean builds;
+proof hashes;
+review hashes;
+logical-stream hashes;
+manifest;
+terminal result.
+```
+
+No generated scientific artifact may be required from an untracked local file.
+
+---
+
+# 48. Allowed claim levels
+
+## `LIQUIDITY_AXIS_FORMALIZED`
+
+Allowed:
+
+> A bounded target-blind activation-bandwidth axis has been defined and shown to embed the old calculus exactly.
+
+No repayment claim.
+
+## `LIQUIDITY_CALCULUS_SURVIVES_DEV`
+
+Allowed:
+
+> At least one frozen-grammar liquidity-aware calculus has zero exact development/internal-validation residuals.
+
+No fresh or universal claim.
+
+## `LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS`
+
+Allowed:
+
+> A frozen candidate survived development, fresh H4L, clean-room, and stated adversarial finite tests.
+
+Forbidden:
+
+> The candidate works for all \(n\).
+
+## `BOUNDED_DELETE_INJECTION_PROVED`
+
+Allowed only after universal proof and review.
+
+## `SYNCHRONOUS_KEEP_TRANSFER_PROVED`
+
+Allowed only after legal-domain arbitrary-\(n\) repayment proof and review.
+
+This means:
+
+\[
+paid=need
+\]
+
+for every legal KEEP under the frozen candidate.
+
+It does not imply integrability.
+
+## `GLOBAL_INTEGRABILITY_PROVED`
+
+Allowed only after MST0-15 equivalent closes.
+
+## `UNIVERSAL_PAIR_ACCESS_LEMMA_PROVED`
+
+Allowed only after composition.
+
+## `APPROXIMATE_MONOTONICITY_PROVED`
+
+Allowed only after the exact telescope/convention theorem.
+
+## `DYNAMIC_OPTIMALITY_PROVED`
+
+Allowed only after exact audited bridge closure.
+
+---
+
+# 49. Honest negative outcomes
+
+Permitted terminal outcomes include:
+
+```text
+LEGACY_EMBEDDING_FAIL
+LIQUIDITY_AXIS_REPRESENTATION_INCONCLUSIVE
+LIQUIDITY_CALCULUS_REJECTED
+SYNCHRONOUS_REPAYMENT_REFUTED
+GLOBAL_INTEGRABILITY_REFUTED
+PAIR_ACCESS_ROUTE_REFUTED_NO_DOC_NEGATIVE
+BRIDGE_BLOCKED_NO_CLAIM
+RESOURCE_LIMIT_NO_CLAIM
+```
+
+Failure of this architecture does not imply Dynamic Optimality is false.
+
+A negative Dynamic-Optimality claim still requires an actual legal real-Splay family satisfying the independent negative theorem standard.
+
+---
+
+# 50. Success criteria
+
+The experiment answers at least the following:
+
+```text
+S1  Does FLAT(1) reproduce the old calculus exactly?
+S2  Is the canonical n=28 failure exactly reproduced?
+S3  Is primitive multiplicity modeled correctly?
+S4  Does activation preserve energy universally?
+S5  Does rho=FLAT(2) repair the known family?
+S6  Does rho=PRIMITIVE_ROTATION(1) repair it?
+S7  Which rho family survives unrelated development?
+S8  Does higher liquidity permit smaller k?
+S9  Can C=2 survive?
+S10 If not, what smallest preregistered C survives?
+S11 Does a frozen candidate survive fresh H4L?
+S12 Does it survive clean-room and large-n attack?
+S13 Can bounded DELETE injection be proved under rho?
+S14 Can synchronous KEEP repayment be proved universally?
+S15 Can integrability then be proved?
+S16 Does universal Pair Access follow?
+S17 Does the telescope produce approximate monotonicity?
+S18 Does the exact bridge prove Dynamic Optimality?
+S19 If a later theorem fails, what exact missing resource is exposed?
+S20 Is another architecture axis scientifically justified?
+```
+
+---
+
+# 51. Final statement of intent
+
+`SPLAY-AM-MST-LIQ-v0.4` is not an attempt to rescue a favored candidate by increasing a constant after seeing a failure.
+
+The old candidate is preserved as false for synchronous repayment.
+
+The new experiment responds to a qualitatively different obstruction:
+
+\[
+\boxed{
+\text{reserve quantity and reserve liquidity are separate resources.}
+}
+\]
+
+The original architecture parameterized the first through \(k\) but effectively fixed the second at one activation per compressed event.
+
+The discovered legal counterexample demonstrates that substantial LATENT reserve may coexist with an underfunded repayment deadline.
+
+Therefore activation bandwidth is promoted to an explicit, bounded, local, target-blind architectural axis:
+
+\[
+\boxed{
+(P,k,C)
+\longrightarrow
+(P,k,C,\rho).
+}
+\]
+
+The most structurally motivated new rule is not “activate two because the counterexample needs two,” but:
+
+\[
+\boxed{
+\text{activation proportional to primitive rotations represented by the Splay event.}
+}
+\]
+
+This rule is tested against flat bandwidth rather than assumed.
+
+T7 remains the wealth-creation mechanism.
+
+T5-rho becomes the liquidity mechanism.
+
+T6 remains the spending mechanism.
+
+The core question is now:
+
+> **Can a local multiscale conservation law simultaneously create enough reserve, expose that reserve at sufficient bounded rate, and repay every synchronous KEEP in time?**
+
+If yes, the experiment must continue through integrability, Pair Access, telescoping, and the exact Dynamic-Optimality bridge.
+
+If no, the exact obstruction is preserved and used — only if structurally justified — to define the next architecture generation.
+
+No failure is erased.
+
+No finite survival is called a theorem.
+
+No new axis is smuggled into a frozen experiment.
+
+No candidate is repaired under the same identity.
+
+The experiment either finds a liquidity-aware transfer architecture that survives proof, or it records precisely why this additional degree of freedom is still insufficient.
+
+**End of normative implementation specification.**

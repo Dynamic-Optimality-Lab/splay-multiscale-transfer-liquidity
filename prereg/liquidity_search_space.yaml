@@ -1,0 +1,17 @@
+experiment: SPLAY-AM-MST-LIQ-v0.4
+status: PRE_FREEZE_PROPOSAL
+spec_ref: "#15/#16"
+predicates: inherited_parent_menu_including_P_all_P_keep_case_restricted
+k: [0, 1, 2, 3, 4, 5, 6]
+C: [2, 3, 4, 6, 8, 12, 16, 24, 32, 64]
+rho_profiles: [FLAT-1, FLAT-2, FLAT-3, FLAT-4, FLAT-5, FLAT-6,
+  ROT-1, ROT-2, ROT-3, ROT-4, ROT-5, ROT-6]
+lexicographic_objective: [exact_semantic_legality, exact_flow_energy_conservation,
+  zero_residual_LIQ-REG-001, zero_residual_development, zero_residual_internal_validation,
+  smaller_C, simpler_rho_family, smaller_rho_base, smaller_k, simpler_predicate,
+  fewer_templates_smaller_support]
+kill_rule: one_legal_paid_lt_need_kills_candidate_at_that_C
+promotion_cap: 3
+comparison: [FLAT-1_control, FLAT-2, PRIMITIVE_ROTATION-1, higher_preregistered_if_required]
+solver_versions: TO_BE_FROZEN_IN_WP0_EXECUTION
+frozen_note: No predicate invented after fresh reveal; rule change mints new ID.
