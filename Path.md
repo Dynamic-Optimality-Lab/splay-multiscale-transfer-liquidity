@@ -25,7 +25,9 @@
 - Second omission audit (independent method — direct regex over spec bytes, different code path from generator): LIQ0 distinct=10 (01–10) vs inventory 10; MSTL-GATE distinct=20 (0–19) vs inventory 20; LIQ-T distinct=20 vs 20; LIQ-STOP distinct=20 vs 20; PHASE distinct=20 (00–19) vs 20; S-criteria distinct=20 (S1–S20) vs 20; spec sections 0–51 (52) vs 52; H4L sizes 7×10k=70k confirmed. MST0 regex finds 23 distinct IDs spec-wide (includes §13 transport-example mentions of MST0-01…07); the normative binding list is §42's explicit 16, all 16 inventoried + 12 TRANSPORT bindings + 4 class records. No unmapped/multiply-owned items; delta zero. Verdict: omission audit CLEAN.
 
 ## P-003 — Planning commit/push
-- Commit SHA: (to be filled). Push result: (to be filled). Remote HEAD: (to be filled).
+- Commit SHA: `a18fe213f431c7b8e31978cb24582b346e1e88d0` (`MST-LIQ-v0.4 planning seal: WorkPlan 7 WPs + 463-item inventory + coverage PASS + prereg proposals + Path ledger`, 14 files).
+- Push result: FAILED/NOT-APPLICABLE — no remote configured in this working copy (`git remote -v` empty; `git push` has no destination). Recorded truthfully per Rule K; WP is locally sealed, NOT remotely sealed.
+- Remote HEAD: UNVERIFIED (no remote). Required follow-up: attach `Dynamic-Optimality-Lab/splay-multiscale-transfer-liquidity` as remote, push, verify HEAD, append P-004 with SHA + push + HEAD evidence.
 
 ## WP-0 ledger (PHASE 00) — PLACEHOLDER, NOT STARTED
 Prescription / entry gate / files / code / commands / results / proofs / status / deviations / bugs / anti-overfitting / gate outputs / coverage audit / SHA / push / remote-head / verdict: all PENDING.
