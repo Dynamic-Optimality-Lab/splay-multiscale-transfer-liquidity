@@ -67,3 +67,10 @@ PENDING. Entry requires promoted set.
 
 ## WP-6 ledger (PHASEs 17â€“19) â€” PLACEHOLDER, NOT STARTED
 PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + bridge audited.
+
+## R-004 — WP-0 push + HEAD verification
+- Commit: 553aecb980fa34093dde79e3db43df737a70cf5b (v0.4.1 WP-0 FOUNDATION_FROZEN).
+- Push: cc7527f..553aecb master -> master (origin).
+- HEAD: ls-remote 553aecb == local 553aecb — agree.
+- Tree: clean (verified next).
+
