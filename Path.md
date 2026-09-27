@@ -130,4 +130,6 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - Final verdict: WP-2 = COMPLETE (LIQUIDITY_AXIS_FROZEN).
 
 ## R-008 - WP-2 push + HEAD verification
-- Commit: WP-2 work 89f463f. Push + HEAD: (next commands).
+- Commits: 89f463f (WP-2 work) + ledger/record commit.
+- Push: e0b9284..02a67fd master -> master (origin).
+- HEAD: ls-remote 02a67fd == local 02a67fd - agree. Tree clean.
