@@ -1,19 +1,63 @@
-experiment: SPLAY-AM-MST-LIQ-v0.4
-bank: H4L_Liquidity_Transfer_Holdout
-status: PRE_FREEZE_PROPOSAL
-sizes: [18, 26, 34, 46, 58, 74, 98]
-episodes_per_size: 10000
+version: v0.4.1
+bank: H4L
+sizes:
+- 18
+- 26
+- 34
+- 46
+- 58
+- 74
+- 98
+per_size: 10000
 total: 70000
-strata: [RANDOM_LEGAL, DELETE_BURST_THEN_KEEP, DOUBLE_DELETE_DOUBLE_KEEP,
-  ALTERNATING_KEEP_DELETE, REPEATED_KEEP_DRAIN, SPINE_VS_BALANCED,
-  OPPOSITE_SPINE, DOUBLE_ROTATION_ENRICHED, TERMINAL_ZIG_ENRICHED,
-  NESTED_INTERVAL, MIRROR_PAIRED, MOTIF_BLIND_RANDOM_WALK]
-generator_blindness: [candidate_residual, active_pool, latent_pool, rho, k, C,
-  solver_state, kills_candidate]
-lifecycle: GENERATOR_FROZEN_then_BANK_COMMITTED_then_QUARANTINED_then_REVEALED_ONCE
-rules: [freeze_before_synthesis, candidate_freeze_before_reveal, one_reveal_only,
-  no_regeneration_after_reveal, no_second_unlock, post_freeze_change_new_ID]
-historical: [H3T_historical_only, LIQ-REG-001_contaminated, LIQ-REG-FAM-001_contaminated]
-labels: [INHERITED_HISTORICAL, KNOWN_COUNTEREXAMPLE, DEVELOPMENT,
-  INTERNAL_VALIDATION, CONTAMINATED_CANARY, FRESH_H4L, CLEANROOM_POST_FREEZE,
-  LARGE_N_POST_FREEZE, FORMAL_PROOF]
+strata:
+- RANDOM_LEGAL
+- DELETE_BURST_THEN_KEEP
+- DOUBLE_DELETE_DOUBLE_KEEP
+- ALTERNATING_KEEP_DELETE
+- REPEATED_KEEP_DRAIN
+- SPINE_VS_BALANCED
+- OPPOSITE_SPINE
+- DOUBLE_ROTATION_ENRICHED
+- TERMINAL_ZIG_ENRICHED
+- NESTED_INTERVAL
+- MIRROR_PAIRED
+- MOTIF_BLIND_RANDOM_WALK
+quota: 833 each + deterministic remainder schedule (strata order above) for 10000/size
+history_length_law: uniform {2..8} steps, seeded
+tree_shape_law: uniform random BST over keys present + balanced/spine mixture per
+  stratum
+rng: SHA-256 counter DRBG (fully specified in consolidated spec)
+seed: 256-bit operator secret; NEVER committed pre-reveal
+dedup: reject-resample on canonical episode hash
+legality: weaker-domain filter (keys subset [n], keys in [n])
+serialization: canonical JSON, sorted keys
+ordering: sorted episode IDs
+shards: .json.zst deterministic, per-shard SHA
+commitment: sha256(seed || bank_bytes) + metadata (sizes/quotas/code hashes) public
+  pre-reveal
+secrecy: seed+bank outside public/discovery repo until reveal; no git/LFS/encrypted-in-repo
+  fakery; else H4L BLOCKED
+firewall:
+- EMPTY
+- GENERATOR_FROZEN
+- BANK_GENERATED_SECRET
+- COMMITMENT_PUBLISHED
+- CANDIDATE_SET_FROZEN
+- REVEALED_ONCE
+- CONSUMED
+unlock_max: 1
+legacy:
+  H1: HISTORICAL_UNUSED EMPTY
+  H2R: HISTORICAL_UNUSED COMMITTED/0
+  H3T: HISTORICAL UNLOCKED_ONCE
+  n8: CONTAMINATED_CANARY
+ood:
+  generator: long-range random-walk histories + spine-heavy trees
+  seed_stream: disjoint
+  sizes:
+  - 24
+  - 48
+  - 96
+  - 192
+  label: OOD (not fresh-holdout)

@@ -1,0 +1,14 @@
+version: v0.4.1
+closed: true
+predicates:
+- id: P_all
+  definition: fires on every eligible event (KEEP and DELETE, all classes)
+  hash: TO_BE_COMPUTED_AT_WP0_FROM_FROZEN_BYTES
+- id: P_keep
+  definition: fires on KEEP events only (all classes)
+  hash: TO_BE_COMPUTED_AT_WP0_FROM_FROZEN_BYTES
+case_restricted_schema:
+  form: allowlist over normalized event classes {ZIG,LL,RR,LR,RL} x modes {KEEP,DELETE}
+  enumeration: canonical powerset order, frozen at WP-0
+  hash: TO_BE_COMPUTED_AT_WP0
+note: No post-freeze predicates; new predicate = successor experiment

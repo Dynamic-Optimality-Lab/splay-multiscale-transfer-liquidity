@@ -1,23 +1,31 @@
-experiment: SPLAY-AM-MST-LIQ-v0.4
-status: PRE_FREEZE_PROPOSAL
-spec_sha256: 0E2C166E1B721DFC8A7E5327ED33AF29A1B4AC539CB71849F3C7231B32A8055B
-mu:
-  ROOT_or_no_rotation: 0
-  terminal_ZIG: 1
-  LL_RR_LR_RL: 2
-families:
-  - FLAT
-  - PRIMITIVE_ROTATION
-rho_base: [1, 2, 3, 4, 5, 6]
-profiles:
-  flat_r: "rho_flat,r(ev) = r for every eligible non-ROOT StepEv"
-  rot_r: "rho_rot,r(ev) = r * mu(ev)"
-operator: "T5_rho(L,m,ev) = T5_1^{rho(ev)}(L,m), bounded iteration of inherited T5"
-legacy_embedding: "rho_flat,1 reproduces inherited T5 exactly (LIQ0-01 gate)"
-forbidden_dependencies: [n, tree_identity, state_id, cycle_id, history_index,
-  future_key, candidate_residual, bellman_value, holdout_membership,
-  support_id, required_amount, would_otherwise_fail]
-selection_order: first-eligible_ledger-order
-partial_activation: activate_all_available_create_nothing
-energy: "E = #LATENT + #ACTIVE conserved (Branch A unsigned)"
-frozen_note: WP-0 execution seals this file into prereg/freeze_manifest.sha256; post-freeze change = LIQ-STOP-09 terminal.
+version: v0.4.1
+mathematical_class:
+  form: (rho_ZIG, rho_DOUBLE)
+  range:
+  - 0
+  - 8
+  symmetric_double: true
+  root_noevent: 0
+  normalization: ZIG-L/R -> ZIG class; orientation retained in trace
+subfamilies:
+  FLAT(r): (r,r)
+  ROT(r): (r,2r)
+discovery_ladder:
+- FLAT-1..6
+- ROT-1..6
+ladder_extension_rule: r=7+ via versioned ladder extension, never a new axis
+operator: T5_{P,rho}(L,m,ev) = iterate T5_{P,1} rho(ev) times; eligibleLatentCount
+  gating
+forbidden_dependencies:
+- n
+- tree_identity
+- state_id
+- cycle_id
+- history_index
+- future_key
+- candidate_residual
+- bellman_value
+- holdout_membership
+- support_id
+- required_amount
+- would_otherwise_fail

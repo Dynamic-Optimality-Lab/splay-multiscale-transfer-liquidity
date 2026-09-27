@@ -1,0 +1,62 @@
+{
+  "title": "proof_status",
+  "type": "object",
+  "required": [
+    "theorem",
+    "truth",
+    "prove_track",
+    "refute_track",
+    "theorem_hash",
+    "proof_hash",
+    "review_hash"
+  ],
+  "properties": {
+    "theorem": {
+      "type": "string"
+    },
+    "truth": {
+      "enum": [
+        "UNPROVED",
+        "PROVED_PENDING_REVIEW",
+        "REVIEWED",
+        "REFUTED",
+        "BLOCKED",
+        "NOT_REACHED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "prove_track": {
+      "enum": [
+        "UNPROVED",
+        "PROVE_RUNNING",
+        "PROVED_PENDING_REVIEW",
+        "REVIEWED"
+      ]
+    },
+    "refute_track": {
+      "enum": [
+        "NO_WITNESS",
+        "WITNESS_FOUND",
+        "MATHEMATICAL_COUNTEREXAMPLE_CONFIRMED",
+        "FORMAL_REFUTATION_PENDING",
+        "HUMAN_VALIDATION_PENDING",
+        "REFUTED"
+      ]
+    },
+    "theorem_hash": {
+      "type": "string"
+    },
+    "proof_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

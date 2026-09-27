@@ -1,0 +1,28 @@
+{
+  "title": "review",
+  "type": "object",
+  "required": [
+    "theorem",
+    "theorem_hash",
+    "verdict"
+  ],
+  "properties": {
+    "theorem": {
+      "type": "string"
+    },
+    "theorem_hash": {
+      "type": "string"
+    },
+    "verdict": {
+      "enum": [
+        "ACCEPT",
+        "REJECT",
+        "BLOCKED"
+      ]
+    },
+    "note": {
+      "type": "string",
+      "description": "REJECT means package rejected, never theorem negated"
+    }
+  }
+}

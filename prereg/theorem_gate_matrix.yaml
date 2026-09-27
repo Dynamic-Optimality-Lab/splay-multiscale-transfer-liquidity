@@ -1,0 +1,125 @@
+version: v0.4.1
+canonical: true
+PA_prerequisites:
+- MSTL-08U
+- MSTL-09
+- MSTL-11
+- MSTL-13
+- MSTL-14
+- MSTL-15
+- MSTL-22
+- LIQ0-01
+- LIQ0-02
+- LIQ0-04
+- LIQ0-05
+- LIQ0-06
+- LIQ0-09
+- LIQ0-10
+additive_target: A(n)=0 only (nonzero BLOCKED)
+nodes:
+  MST0-01:
+    disposition: IDENTICAL_TRANSPORT
+    owner: WP-1/WP-2
+    id: MST0-01
+  MST0-02:
+    disposition: IDENTICAL_TRANSPORT
+    owner: WP-1/WP-2
+    id: MST0-02
+  MST0-03:
+    disposition: IDENTICAL_TRANSPORT
+    owner: WP-1/WP-2
+    id: MST0-03
+  MST0-04:
+    disposition: IDENTICAL_TRANSPORT
+    owner: WP-1/WP-2
+    id: MST0-04
+  MST0-05:
+    disposition: IDENTICAL_TRANSPORT
+    owner: WP-1/WP-2
+    id: MST0-05
+  MST0-06:
+    disposition: IDENTICAL_TRANSPORT
+    owner: WP-1/WP-2
+    id: MST0-06
+  MST0-07:
+    disposition: IDENTICAL_TRANSPORT
+    owner: WP-1/WP-2
+    id: MST0-07
+  MST0-16:
+    disposition: IDENTICAL_TRANSPORT
+    owner: WP-1/WP-2
+    id: MST0-16
+  MST0-08U:
+    disposition: REPROVE_UNDER_RHO
+    owner: WP-6
+    id: MSTL-08U
+  MST0-09:
+    disposition: REPROVE_UNDER_RHO
+    owner: WP-6
+    id: MSTL-09
+  MST0-10:
+    disposition: REPROVE_UNDER_RHO
+    owner: WP-6
+    id: MSTL-10
+  MST0-11:
+    disposition: REPROVE_UNDER_RHO
+    owner: WP-6
+    id: MSTL-11
+  MST0-13:
+    disposition: REPROVE_UNDER_RHO
+    owner: WP-6
+    id: MSTL-13
+  MST0-12:
+    disposition: GENERALIZED_NEW_BYTES
+    owner: WP-6
+    id: MSTL-12
+  MST0-14:
+    disposition: GENERALIZED_NEW_BYTES
+    owner: WP-6
+    id: MSTL-14
+  MST0-15:
+    disposition: GENERALIZED_NEW_BYTES
+    owner: WP-6
+    id: MSTL-15
+  MST0-22:
+    disposition: GENERALIZED_NEW_BYTES
+    owner: WP-6
+    id: MSTL-22
+  MST0-17:
+    disposition: DOWNSTREAM_REBOUND
+    owner: WP-6
+    id: MSTL-17
+  MST0-18:
+    disposition: DOWNSTREAM_REBOUND
+    owner: WP-6
+    id: MSTL-18
+  MST0-19:
+    disposition: DOWNSTREAM_REBOUND+BLOCKED_BY_SOURCE
+    owner: WP-6
+    id: MSTL-19
+  MST0-23:
+    disposition: CONDITIONAL
+    owner: WP-4/WP-5/WP-6
+    id: MSTL-23
+  MST0-24:
+    disposition: CONDITIONAL
+    owner: WP-4/WP-5/WP-6
+    id: MSTL-24
+  MST0-25:
+    disposition: CONDITIONAL
+    owner: WP-4/WP-5/WP-6
+    id: MSTL-25
+  MST0-26:
+    disposition: CONDITIONAL
+    owner: WP-4/WP-5/WP-6
+    id: MSTL-26
+  MST0-20:
+    disposition: NOT_APPLICABLE
+    owner: none
+    id: MST0-20
+    reason: DOC-disproof outside MST-LIQ (CC-066)
+  MST0-21:
+    disposition: NOT_APPLICABLE
+    owner: none
+    id: MST0-21
+    reason: DOC-disproof outside MST-LIQ (CC-066)
