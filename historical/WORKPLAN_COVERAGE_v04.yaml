@@ -1,0 +1,8606 @@
+meta:
+  experiment: SPLAY-AM-MST-LIQ-v0.4
+  spec_sha256: 0E2C166E1B721DFC8A7E5327ED33AF29A1B4AC539CB71849F3C7231B32A8055B
+  arch_parent_nav: 895889169772087e391e84c33228648c84684e1e
+  obstruction_parent_latest: 19ef254dfc48c7b909c646f959e2d7364865b777
+  v03_spec_sha256: 462676E186C6282F493D13C13A4A7A63179943CFC7E9AB10ABFBE0019BD1E12F
+  decide_spec_sha256: 30ACC6F96ABC35A9A4FC91AD159560888E54180F55BE21F947B59DFF8B62B5F9
+  normative_items: 463
+  work_packages:
+  - WP-0
+  - WP-1
+  - WP-2
+  - WP-3
+  - WP-4
+  - WP-5
+  - WP-6
+mappings:
+- id: SPEC-SEC-00
+  wp: WP-0
+  spec_phase: null
+  files: &id001
+  - IMPLEMENTATION_SPEC_SPLAY-AM-MST-LIQ-v0.4.txt
+  - planning/NORMATIVE_INVENTORY.yaml
+  - planning/WORKPLAN_COVERAGE.yaml
+  - scripts/check_workplan_coverage.py
+  - prereg/liquidity_axis.yaml
+  - prereg/liquidity_search_space.yaml
+  - prereg/h4l_holdout.yaml
+  - prereg/theorem_transport_matrix.yaml
+  - artifacts/v04/parent_import/
+  - artifacts/v04/obstruction_import/
+  - artifacts/v04/logs/
+  proof_files: []
+  tests: &id002
+  - TEST-SCHEMA-VALID
+  - TEST-HASH-VERIFY
+  - TEST-COVERAGE
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SPEC-SEC-00 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-01
+  wp: WP-1
+  spec_phase: null
+  files: &id003
+  - python/independent/splay.py
+  - python/independent/pair.py
+  - artifacts/v04/parent_import/
+  - artifacts/v04/obstruction_import/
+  - math/proofs/LIQ0-01-legacy-embedding.md
+  - tests/test_legacy_embedding.py
+  proof_files: []
+  tests: &id004
+  - TEST-LEGACY-REPLAY
+  - TEST-N28-REGRESSION
+  - TEST-INDEPENDENT-REPLAY
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - SPEC-SEC-01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-02
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SPEC-SEC-02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-03
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - SPEC-SEC-03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-04
+  wp: WP-2
+  spec_phase: null
+  files: &id005
+  - python/liquidity/multiplicity.py
+  - python/liquidity/activation.py
+  - python/liquidity/profiles.py
+  - python/liquidity/diagnostics.py
+  - python/liquidity/legacy_embedding.py
+  - lean/Liquidity/
+  - math/proofs/LIQ0-*.md
+  - tests/test_activation.py
+  proof_files: []
+  tests: &id006
+  - TEST-MULTIPLICITY
+  - TEST-ACTIVATION-BOUND
+  - TEST-ENERGY-CONS
+  - TEST-PRESERVATION
+  - TEST-DETERMINISM
+  - TEST-TARGET-BLINDNESS
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SPEC-SEC-04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-05
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SPEC-SEC-05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-06
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SPEC-SEC-06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-07
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - SPEC-SEC-07 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-08
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SPEC-SEC-08 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-09
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SPEC-SEC-09 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-10
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - SPEC-SEC-10 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-11
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - SPEC-SEC-11 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-12
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - SPEC-SEC-12 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-13
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SPEC-SEC-13 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-14
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SPEC-SEC-14 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-15
+  wp: WP-3
+  spec_phase: null
+  files: &id009
+  - python/holdout/h4l_generate.py
+  - python/holdout/h4l_verify.py
+  - prereg/h4l_holdout.yaml
+  - prereg/liquidity_search_space.yaml
+  - artifacts/v04/holdouts/
+  - tests/test_holdout_firewall.py
+  proof_files: []
+  tests: &id010
+  - TEST-FIREWALL
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - SPEC-SEC-15 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-16
+  wp: WP-4
+  spec_phase: null
+  files: &id007
+  - python/adversary/liquidity_burst.py
+  - python/adversary/drain_refill.py
+  - python/adversary/ddkk_family.py
+  - artifacts/v04/development/
+  - artifacts/v04/validation/
+  - artifacts/v04/counterexamples/
+  - tests/test_synthesis.py
+  proof_files: []
+  tests: &id008
+  - TEST-DEV-BATTERY
+  - TEST-ADV-UNIFORM
+  - TEST-ADV-STRUCTURED
+  - TEST-ADV-HILLCLIMB
+  - TEST-ADV-ANNEAL
+  - TEST-ADV-GENETIC
+  - TEST-ADV-ROTNEIGH
+  - TEST-ADV-SPLICE
+  - TEST-ADV-MOTIF
+  - TEST-ADV-GENERALIZE
+  - TEST-INTERNAL-VALID
+  - TEST-FAMILY-DDKK
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - SPEC-SEC-16 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-17
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - SPEC-SEC-17 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-18
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - SPEC-SEC-18 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-19
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - SPEC-SEC-19 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-20
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - SPEC-SEC-20 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-21
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - SPEC-SEC-21 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-22
+  wp: WP-6
+  spec_phase: null
+  files: &id011
+  - lean/Liquidity/
+  - lean/PairAccess/
+  - lean/Bridge/
+  - math/proofs/MSTL-*.md
+  - math/reviews/
+  - artifacts/v04/proofs/
+  - artifacts/v04/seal/
+  - artifacts/v04/audits/
+  - MST_LIQ_EXPORT.json
+  proof_files: []
+  tests: &id012
+  - TEST-LIFECYCLE
+  - TEST-REPRO-FRESHCHECKOUT
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-22 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-23
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-23 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-24
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-24 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-25
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SPEC-SEC-25 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-26
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SPEC-SEC-26 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-27
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-27 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-28
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-28 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-29
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-29 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-30
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-30 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-31
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-31 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-32
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SPEC-SEC-32 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-33
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SPEC-SEC-33 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-34
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - SPEC-SEC-34 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-35
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - SPEC-SEC-35 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-36
+  wp: WP-5
+  spec_phase: null
+  files: &id013
+  - artifacts/v04/candidates/
+  - artifacts/v04/holdouts/
+  - artifacts/v04/cleanroom/
+  - artifacts/v04/large_n/
+  - python/independent/
+  - tests/test_fresh_h4l.py
+  proof_files: []
+  tests: &id014
+  - TEST-H4L-FRESH
+  - TEST-CLEANROOM
+  - TEST-LARGEN
+  - TEST-MUTATION
+  - TEST-INDEPENDENT-REPLAY
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - SPEC-SEC-36 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-37
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - SPEC-SEC-37 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-38
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - SPEC-SEC-38 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-39
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SPEC-SEC-39 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-40
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SPEC-SEC-40 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-41
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-41 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-42
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-42 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-43
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-43 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-44
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-44 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-45
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SPEC-SEC-45 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-46
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SPEC-SEC-46 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-47
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SPEC-SEC-47 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-48
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-48 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-49
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-49 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-50
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-50 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SPEC-SEC-51
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SPEC-SEC-51 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-00
+  wp: WP-0
+  spec_phase: PHASE-00
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PHASE-00 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-01
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - PHASE-01 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-02
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - PHASE-02 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-03
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - PHASE-03 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-04
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - PHASE-04 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-05
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - PHASE-05 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-06
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - PHASE-06 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-07
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - PHASE-07 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-08
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - PHASE-08 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-09
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - PHASE-09 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-10
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - PHASE-10 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-11
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - PHASE-11 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-12
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - PHASE-12 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-13
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - PHASE-13 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-14
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - PHASE-14 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-15
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - PHASE-15 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-16
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - PHASE-16 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-17
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - PHASE-17 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-18
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - PHASE-18 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PHASE-19
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - PHASE-19 disposition record
+  failure: BLOCKED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ0-01
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - LIQ0-01 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: LIQ0-02
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ0-02 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: LIQ0-03
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ0-03 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: PROVED
+  changed: null
+- id: LIQ0-04
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ0-04 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: PROVED
+  changed: null
+- id: LIQ0-05
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ0-05 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: PROVED
+  changed: null
+- id: LIQ0-06
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ0-06 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: PROVED
+  changed: null
+- id: LIQ0-07
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ0-07 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: PROVED
+  changed: null
+- id: LIQ0-08
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ0-08 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: PROVED
+  changed: null
+- id: LIQ0-09
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ0-09 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: PROVED
+  changed: null
+- id: LIQ0-10
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ0-10 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: PROVED
+  changed: null
+- id: MST0-08U
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MST0-08U disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-09
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - MST0-09 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-10
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - MST0-10 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-11
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - MST0-11 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-13
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MST0-13 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-14
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MST0-14 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-15
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MST0-15 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-16
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - MST0-16 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-17
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MST0-17 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-18
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MST0-18 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-19
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MST0-19 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-22
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MST0-22 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-23
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - MST0-23 disposition record
+  failure: BLOCKED
+  first_consumer: WP-5
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-24
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - MST0-24 disposition record
+  failure: BLOCKED
+  first_consumer: WP-5
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-25
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MST0-25 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MST0-26
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files:
+  - math/proofs/
+  - math/reviews/
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MST0-26 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: REVIEWED
+  changed: null
+- id: MSTL-GATE-0
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: MSTL-GATE-0
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - MSTL-GATE-0 disposition record
+  failure: BLOCKED
+  first_consumer: WP-1
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-1
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: MSTL-GATE-1
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - MSTL-GATE-1 disposition record
+  failure: BLOCKED
+  first_consumer: WP-1
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-2
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: MSTL-GATE-2
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - MSTL-GATE-2 disposition record
+  failure: BLOCKED
+  first_consumer: WP-1
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-3
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: MSTL-GATE-3
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - MSTL-GATE-3 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-4
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: MSTL-GATE-4
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - MSTL-GATE-4 disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-5
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: MSTL-GATE-5
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - MSTL-GATE-5 disposition record
+  failure: BLOCKED
+  first_consumer: WP-4
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-6
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: MSTL-GATE-6
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - MSTL-GATE-6 disposition record
+  failure: BLOCKED
+  first_consumer: WP-4
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-7
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: MSTL-GATE-7
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - MSTL-GATE-7 disposition record
+  failure: BLOCKED
+  first_consumer: WP-4
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-8
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: MSTL-GATE-8
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - MSTL-GATE-8 disposition record
+  failure: BLOCKED
+  first_consumer: WP-4
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-9
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: MSTL-GATE-9
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MSTL-GATE-9 disposition record
+  failure: BLOCKED
+  first_consumer: WP-5
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-10
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: MSTL-GATE-10
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MSTL-GATE-10 disposition record
+  failure: BLOCKED
+  first_consumer: WP-5
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-11
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: MSTL-GATE-11
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MSTL-GATE-11 disposition record
+  failure: BLOCKED
+  first_consumer: WP-5
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-12
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: MSTL-GATE-12
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MSTL-GATE-12 disposition record
+  failure: BLOCKED
+  first_consumer: WP-5
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-13
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: MSTL-GATE-13
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MSTL-GATE-13 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-14
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: MSTL-GATE-14
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MSTL-GATE-14 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-15
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: MSTL-GATE-15
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MSTL-GATE-15 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-16
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: MSTL-GATE-16
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MSTL-GATE-16 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-17
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: MSTL-GATE-17
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MSTL-GATE-17 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-18
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: MSTL-GATE-18
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MSTL-GATE-18 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MSTL-GATE-19
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: MSTL-GATE-19
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - MSTL-GATE-19 disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: GATE-FOUNDATION_FROZEN
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - GATE-FOUNDATION_FROZEN disposition record
+  failure: BLOCKED
+  first_consumer: WP-0
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: GATE-LEGACY_SEMANTICS_CERTIFIED
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - GATE-LEGACY_SEMANTICS_CERTIFIED disposition record
+  failure: BLOCKED
+  first_consumer: WP-1
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: GATE-LIQUIDITY_AXIS_FROZEN
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - GATE-LIQUIDITY_AXIS_FROZEN disposition record
+  failure: BLOCKED
+  first_consumer: WP-2
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: GATE-H4L_BANK_COMMITTED
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - GATE-H4L_BANK_COMMITTED disposition record
+  failure: BLOCKED
+  first_consumer: WP-3
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: GATE-TRANSFER_GRAMMAR_FROZEN
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-TRANSFER_GRAMMAR_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - GATE-TRANSFER_GRAMMAR_FROZEN disposition record
+  failure: BLOCKED
+  first_consumer: WP-3
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: GATE-DYNAMIC_OPTIMALITY_PROVED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - GATE-DYNAMIC_OPTIMALITY_PROVED disposition record
+  failure: BLOCKED
+  first_consumer: WP-6
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIFE-UNPROVED-TO-PROVED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIFE-UNPROVED-TO-PROVED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIFE-PROVED-TO-REVIEWED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIFE-PROVED-TO-REVIEWED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIFE-LAYER-C-ATTACK
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIFE-LAYER-C-ATTACK disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIFE-NO-CONSUME-BEFORE-STATUS
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIFE-NO-CONSUME-BEFORE-STATUS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T01
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - LIQ-T01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls:
+  - CTRL-LIQ-T01-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T02
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T02-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T03
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T03-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T04
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T04-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T05
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T05-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T06
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T06-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T07
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - LIQ-T07 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls:
+  - CTRL-LIQ-T07-A
+  - CTRL-LIQ-T07-B
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T08
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - LIQ-T08 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls:
+  - CTRL-LIQ-T08-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T09
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - LIQ-T09 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls:
+  - CTRL-LIQ-T09-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T10
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - LIQ-T10 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls:
+  - CTRL-LIQ-T10-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T11
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - LIQ-T11 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls:
+  - CTRL-LIQ-T11-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T12
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIQ-T12 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls:
+  - CTRL-LIQ-T12-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T13
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T13 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T13-A
+  - CTRL-LIQ-T13-B
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T14
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T14 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T14-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T15
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T15 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T15-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T16
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - LIQ-T16 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls:
+  - CTRL-LIQ-T16-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T17
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T17 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T17-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T18
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-T18 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - CTRL-LIQ-T18-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T19
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIQ-T19 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls:
+  - CTRL-LIQ-T19-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-T20
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIQ-T20 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls:
+  - CTRL-LIQ-T20-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-01
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LIQ-STOP-01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls:
+  - HDL-LIQ-STOP-01-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-02
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LIQ-STOP-02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls:
+  - HDL-LIQ-STOP-02-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-03
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - LIQ-STOP-03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls:
+  - HDL-LIQ-STOP-03-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-04
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - LIQ-STOP-04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls:
+  - HDL-LIQ-STOP-04-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-05
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - LIQ-STOP-05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls:
+  - HDL-LIQ-STOP-05-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-06
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - LIQ-STOP-06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls:
+  - HDL-LIQ-STOP-06-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-07
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - LIQ-STOP-07 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls:
+  - HDL-LIQ-STOP-07-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-08
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - LIQ-STOP-08 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls:
+  - HDL-LIQ-STOP-08-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-09
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-STOP-09 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - HDL-LIQ-STOP-09-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-10
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-STOP-10 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - HDL-LIQ-STOP-10-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-11
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - LIQ-STOP-11 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls:
+  - HDL-LIQ-STOP-11-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-12
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - LIQ-STOP-12 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls:
+  - HDL-LIQ-STOP-12-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-13
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - LIQ-STOP-13 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls:
+  - HDL-LIQ-STOP-13-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-14
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - LIQ-STOP-14 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls:
+  - HDL-LIQ-STOP-14-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-15
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - LIQ-STOP-15 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls:
+  - HDL-LIQ-STOP-15-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-16
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIQ-STOP-16 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls:
+  - HDL-LIQ-STOP-16-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-17
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIQ-STOP-17 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls:
+  - HDL-LIQ-STOP-17-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-18
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIQ-STOP-18 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls:
+  - HDL-LIQ-STOP-18-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-19
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIQ-STOP-19 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls:
+  - HDL-LIQ-STOP-19-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: LIQ-STOP-20
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - LIQ-STOP-20 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls:
+  - HDL-LIQ-STOP-20-A
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-LEGACY-REPLAY
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - TEST-LEGACY-REPLAY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-N28-REGRESSION
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - TEST-N28-REGRESSION disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-FAMILY-DDKK
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-FAMILY-DDKK disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-MULTIPLICITY
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - TEST-MULTIPLICITY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ACTIVATION-BOUND
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - TEST-ACTIVATION-BOUND disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ENERGY-CONS
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - TEST-ENERGY-CONS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-PRESERVATION
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - TEST-PRESERVATION disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-DETERMINISM
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - TEST-DETERMINISM disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-TARGET-BLINDNESS
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - TEST-TARGET-BLINDNESS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-DEV-BATTERY
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-DEV-BATTERY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ADV-UNIFORM
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-ADV-UNIFORM disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ADV-STRUCTURED
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-ADV-STRUCTURED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ADV-HILLCLIMB
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-ADV-HILLCLIMB disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ADV-ANNEAL
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-ADV-ANNEAL disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ADV-GENETIC
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-ADV-GENETIC disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ADV-ROTNEIGH
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-ADV-ROTNEIGH disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ADV-SPLICE
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-ADV-SPLICE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ADV-MOTIF
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-ADV-MOTIF disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-ADV-GENERALIZE
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-ADV-GENERALIZE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-INTERNAL-VALID
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TEST-INTERNAL-VALID disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-H4L-FRESH
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - TEST-H4L-FRESH disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-CLEANROOM
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - TEST-CLEANROOM disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-LARGEN
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - TEST-LARGEN disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-MUTATION
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - TEST-MUTATION disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-INDEPENDENT-REPLAY
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - TEST-INDEPENDENT-REPLAY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-SCHEMA-VALID
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - TEST-SCHEMA-VALID disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-HASH-VERIFY
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - TEST-HASH-VERIFY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-FIREWALL
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - TEST-FIREWALL disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-LIFECYCLE
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TEST-LIFECYCLE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-COVERAGE
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - TEST-COVERAGE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TEST-REPRO-FRESHCHECKOUT
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TEST-REPRO-FRESHCHECKOUT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: INV-ENERGY-CONS
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - INV-ENERGY-CONS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: INV-SUPPORT-PRES
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - INV-SUPPORT-PRES disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: INV-PROV-PRES
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - INV-PROV-PRES disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: INV-NO-RESURRECT
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - INV-NO-RESURRECT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: INV-DETERMINISM
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - INV-DETERMINISM disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: INV-TARGET-BLIND
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - INV-TARGET-BLIND disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: INV-STOCK-LIQ-SEPARATION
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - INV-STOCK-LIQ-SEPARATION disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: INV-LEGACY-EMBED
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - INV-LEGACY-EMBED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: HOLD-H4L-GENERATOR-FROZEN
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - HOLD-H4L-GENERATOR-FROZEN disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: 1
+  required_status: null
+  changed: null
+- id: HOLD-H4L-BANK-COMMITTED
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - HOLD-H4L-BANK-COMMITTED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: 2
+  required_status: null
+  changed: null
+- id: HOLD-CANDIDATE-SET-FROZEN
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - HOLD-CANDIDATE-SET-FROZEN disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: 3
+  required_status: null
+  changed: null
+- id: HOLD-H4L-REVEAL-ONCE
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - HOLD-H4L-REVEAL-ONCE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: 4
+  required_status: null
+  changed: null
+- id: HOLD-H4L-CONSUMED
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - HOLD-H4L-CONSUMED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: 5
+  required_status: null
+  changed: null
+- id: HOLD-H3T-HISTORICAL
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - HOLD-H3T-HISTORICAL disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: 0
+  required_status: null
+  changed: null
+- id: HOLD-LIQREG-CONTAMINATED
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - HOLD-LIQREG-CONTAMINATED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: 0
+  required_status: null
+  changed: null
+- id: FRESH-RULE-01
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - FRESH-RULE-01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: FRESH-RULE-02
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - FRESH-RULE-02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: FRESH-RULE-03
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - FRESH-RULE-03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: FRESH-RULE-04
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - FRESH-RULE-04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: FRESH-RULE-05
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - FRESH-RULE-05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: FRESH-RULE-06
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - FRESH-RULE-06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: FRESH-RULE-07
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - FRESH-RULE-07 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: FRESH-RULE-08
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - FRESH-RULE-08 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-calculus_id
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-calculus_id disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-parent_calculus_family
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-parent_calculus_family disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-branch
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-branch disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-predicate_P
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-predicate_P disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-injection_bound_k
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-injection_bound_k disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-competitive_constant_C
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-competitive_constant_C disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-activation_family
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-activation_family disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-activation_base_r
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-activation_base_r disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-activation_profile_hash
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-activation_profile_hash disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-credit_types
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-credit_types disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-support_semantics
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-support_semantics disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-scale_semantics
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-scale_semantics disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-provenance_semantics
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-provenance_semantics disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-T7_definition_hash
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-T7_definition_hash disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-T5_rho_definition_hash
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-T5_rho_definition_hash disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-T6_definition_hash
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-T6_definition_hash disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-energy_definition
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-energy_definition disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-initialization
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-initialization disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-snapshot_convention
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-snapshot_convention disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-mapping_version
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-mapping_version disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-ontology_version
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-ontology_version disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-rho_profile_table
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-rho_profile_table disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-proof_outline_SHA
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-proof_outline_SHA disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CANDFIELD-eligibility_verdict
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - CANDFIELD-eligibility_verdict disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUTR-NEWID-RHO
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUTR-NEWID-RHO disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUTR-NEWID-T5ORDER
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUTR-NEWID-T5ORDER disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUTR-NO-REPAIR-SAME-ID
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUTR-NO-REPAIR-SAME-ID disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUTR-POST-HOLDOUT
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUTR-POST-HOLDOUT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUTR-SURGICAL-ONLY
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - MUTR-SURGICAL-ONLY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUTR-FREEZE-RECORD
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUTR-FREEZE-RECORD disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-LIQUIDITY_AXIS_FORMALIZED
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - CLAIM-LIQUIDITY_AXIS_FORMALIZED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-LIQUIDITY_AXIS_FORMALIZED-POLICY
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - CLAIM-LIQUIDITY_AXIS_FORMALIZED-POLICY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CLAIM-LIQUIDITY_CALCULUS_SURVIVES_DEV disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-LIQUIDITY_CALCULUS_SURVIVES_DEV-POLICY
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CLAIM-LIQUIDITY_CALCULUS_SURVIVES_DEV-POLICY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - CLAIM-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS-POLICY
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - CLAIM-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS-POLICY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-BOUNDED_DELETE_INJECTION_PROVED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-BOUNDED_DELETE_INJECTION_PROVED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-BOUNDED_DELETE_INJECTION_PROVED-POLICY
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-BOUNDED_DELETE_INJECTION_PROVED-POLICY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-SYNCHRONOUS_KEEP_TRANSFER_PROVED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-SYNCHRONOUS_KEEP_TRANSFER_PROVED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-SYNCHRONOUS_KEEP_TRANSFER_PROVED-POLICY
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-SYNCHRONOUS_KEEP_TRANSFER_PROVED-POLICY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-GLOBAL_INTEGRABILITY_PROVED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-GLOBAL_INTEGRABILITY_PROVED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-GLOBAL_INTEGRABILITY_PROVED-POLICY
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-GLOBAL_INTEGRABILITY_PROVED-POLICY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-UNIVERSAL_PAIR_ACCESS_LEMMA_PROVED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-UNIVERSAL_PAIR_ACCESS_LEMMA_PROVED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-UNIVERSAL_PAIR_ACCESS_LEMMA_PROVED-POLICY
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-UNIVERSAL_PAIR_ACCESS_LEMMA_PROVED-POLICY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-APPROXIMATE_MONOTONICITY_PROVED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-APPROXIMATE_MONOTONICITY_PROVED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-APPROXIMATE_MONOTONICITY_PROVED-POLICY
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-APPROXIMATE_MONOTONICITY_PROVED-POLICY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-DYNAMIC_OPTIMALITY_PROVED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-DYNAMIC_OPTIMALITY_PROVED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CLAIM-DYNAMIC_OPTIMALITY_PROVED-POLICY
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - CLAIM-DYNAMIC_OPTIMALITY_PROVED-POLICY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-PREREG
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - ART-PREREG disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-PY-LIQUIDITY
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - ART-PY-LIQUIDITY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-PY-HOLDOUT
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - ART-PY-HOLDOUT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-PY-ADVERSARY
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - ART-PY-ADVERSARY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-PY-INDEPENDENT
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - ART-PY-INDEPENDENT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-LEAN-LIQ
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - ART-LEAN-LIQ disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-LEAN-PA
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - ART-LEAN-PA disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-LEAN-BRIDGE
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - ART-LEAN-BRIDGE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-MATH-PROOFS
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - ART-MATH-PROOFS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-MATH-REVIEWS
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - ART-MATH-REVIEWS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-V04-PARENT
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - ART-V04-PARENT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-V04-OBSTRUCTION
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - ART-V04-OBSTRUCTION disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-V04-HOLDOUTS
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - ART-V04-HOLDOUTS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-V04-CANDIDATES
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - ART-V04-CANDIDATES disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-V04-COUNTEREX
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - ART-V04-COUNTEREX disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-V04-CLEANROOM
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - ART-V04-CLEANROOM disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-V04-PROOFS
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - ART-V04-PROOFS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-V04-SEAL
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - ART-V04-SEAL disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: ART-EXPORT
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - ART-EXPORT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SCHEMA-CANDIDATE
+  wp: WP-3
+  spec_phase: null
+  files: *id009
+  proof_files: []
+  tests: *id010
+  gate: GATE-H4L_BANK_COMMITTED
+  inputs:
+  - exit gate of predecessor of WP-3
+  outputs:
+  - SCHEMA-CANDIDATE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-3
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SCHEMA-KEEP-RECORD
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SCHEMA-KEEP-RECORD disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SCHEMA-COUNTEREXAMPLE
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - SCHEMA-COUNTEREXAMPLE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SCHEMA-REVIEW
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SCHEMA-REVIEW disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SCHEMA-RUNLOG
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - SCHEMA-RUNLOG disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SCHEMA-EXPORT
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SCHEMA-EXPORT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-experiment_id
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-experiment_id disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-phase
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-phase disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-wp
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-wp disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-utc
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-utc disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-commit
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-commit disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-arch_parent_commit
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-arch_parent_commit disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-obstruction_parent_commit
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-obstruction_parent_commit disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-spec_sha
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-spec_sha disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-prereg_sha
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-prereg_sha disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-rho_grammar_sha
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-rho_grammar_sha disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-candidate_id
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-candidate_id disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-P
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-P disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-k
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-k disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-C
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-C disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-rho_family
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-rho_family disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-rho_base
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-rho_base disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-rho_profile_sha
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-rho_profile_sha disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-firewall_states
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-firewall_states disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-command
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-command disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-input_hashes
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-input_hashes disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-output_hashes
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-output_hashes disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-stdout_hash
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-stdout_hash disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-stderr_hash
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-stderr_hash disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-wall_time
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-wall_time disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-peak_memory
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-peak_memory disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-exit_code
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-exit_code disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-scientific_status
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-scientific_status disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: LOG-gate_output
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - LOG-gate_output disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-01
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - REPRO-01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-02
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-03
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-04
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-05
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-06
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-07
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-07 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-08
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-08 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-09
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-09 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-10
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-10 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-11
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-11 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-12
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-12 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: REPRO-13
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - REPRO-13 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-01
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-02
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-03
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-04
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-05
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-06
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-07
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-07 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-08
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-08 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-09
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-09 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-10
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-10 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-11
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-11 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-12
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-12 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-13
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-13 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-14
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-14 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-15
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-15 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: MUT-16
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - MUT-16 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-01
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-02
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-03
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-04
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-05
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-06
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-07
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-07 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-08
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-08 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-09
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-09 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: CEX-10
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - CEX-10 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-ARCH-COMMIT
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-ARCH-COMMIT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-MSTC0002-RECORD
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-MSTC0002-RECORD disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-V03-FINAL-RESULT
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-V03-FINAL-RESULT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-V03-CANDIDATE-COMMIT
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-V03-CANDIDATE-COMMIT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-V03-PATH
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-V03-PATH disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-V03-WORKPLAN
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-V03-WORKPLAN disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-V03-IMPLSPEC
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-V03-IMPLSPEC disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-V03-LEDGER
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-V03-LEDGER disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-V03-THEOREM-STATUS
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-V03-THEOREM-STATUS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-OBSTRUCTION-COMMIT
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-OBSTRUCTION-COMMIT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-N28-WITNESS
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-N28-WITNESS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-INDEPENDENT-REPLAY
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-INDEPENDENT-REPLAY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: PIMP-NORMATIVE-HASHES
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - PIMP-NORMATIVE-HASHES disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-CLASS-A
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-CLASS-A disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-CLASS-B
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-CLASS-B disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-CLASS-C
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-CLASS-C disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-CLASS-D
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-CLASS-D disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-08U
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-08U disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-09
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-09 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-10
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-10 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-11
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-11 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-13
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-13 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-14
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-14 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-15
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-15 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-16
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-16 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-17
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-17 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-18
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-18 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-19
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-19 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TRANSPORT-MST0-22
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TRANSPORT-MST0-22 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S01
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - S01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S02
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - S02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S03
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - S03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S04
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - S04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S05
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - S05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S06
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - S06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S07
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - S07 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S08
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - S08 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S09
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - S09 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S10
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - S10 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S11
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - S11 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S12
+  wp: WP-5
+  spec_phase: null
+  files: *id013
+  proof_files: []
+  tests: *id014
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS
+  inputs:
+  - exit gate of predecessor of WP-5
+  outputs:
+  - S12 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-5
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S13
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - S13 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S14
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - S14 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S15
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - S15 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S16
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - S16 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S17
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - S17 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S18
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - S18 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S19
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - S19 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: S20
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - S20 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TERM-LEGACY_EMBEDDING_FAIL
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - TERM-LEGACY_EMBEDDING_FAIL disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TERM-AXIS_REPRESENTATION_INCONCLUSIVE
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - TERM-AXIS_REPRESENTATION_INCONCLUSIVE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TERM-LIQUIDITY_CALCULUS_REJECTED
+  wp: WP-4
+  spec_phase: null
+  files: *id007
+  proof_files: []
+  tests: *id008
+  gate: GATE-LIQUIDITY_CALCULUS_SURVIVES_DEV
+  inputs:
+  - exit gate of predecessor of WP-4
+  outputs:
+  - TERM-LIQUIDITY_CALCULUS_REJECTED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-4
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TERM-SYNCHRONOUS_REPAYMENT_REFUTED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TERM-SYNCHRONOUS_REPAYMENT_REFUTED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TERM-GLOBAL_INTEGRABILITY_REFUTED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TERM-GLOBAL_INTEGRABILITY_REFUTED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TERM-PAIR_ACCESS_ROUTE_REFUTED_NO_DOC_NEGATIVE
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TERM-PAIR_ACCESS_ROUTE_REFUTED_NO_DOC_NEGATIVE disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TERM-BRIDGE_BLOCKED_NO_CLAIM
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TERM-BRIDGE_BLOCKED_NO_CLAIM disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TERM-RESOURCE_LIMIT_NO_CLAIM
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TERM-RESOURCE_LIMIT_NO_CLAIM disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: TERM-DYNAMIC_OPTIMALITY_PROVED
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - TERM-DYNAMIC_OPTIMALITY_PROVED disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SUCC-01
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SUCC-01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SUCC-02
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SUCC-02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SUCC-03
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SUCC-03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SUCC-04
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SUCC-04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SUCC-05
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SUCC-05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SUCC-06
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SUCC-06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SUCC-07
+  wp: WP-6
+  spec_phase: null
+  files: *id011
+  proof_files: []
+  tests: *id012
+  gate: GATE-DYNAMIC_OPTIMALITY_PROVED
+  inputs:
+  - exit gate of predecessor of WP-6
+  outputs:
+  - SUCC-07 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-6
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: HYG-01
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - HYG-01 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: HYG-02
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - HYG-02 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: HYG-03
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - HYG-03 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: HYG-04
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - HYG-04 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: HYG-05
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - HYG-05 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: HYG-06
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - HYG-06 disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: COMMIT-VERIFY
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - COMMIT-VERIFY disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: COMMIT-PATH
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - COMMIT-PATH disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: COMMIT-AUDIT
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - COMMIT-AUDIT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: COMMIT-COMMIT
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - COMMIT-COMMIT disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: COMMIT-PUSH
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - COMMIT-PUSH disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: COMMIT-REMOTE-HEAD
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - COMMIT-REMOTE-HEAD disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: COMMIT-SHA-LOG
+  wp: WP-0
+  spec_phase: null
+  files: *id001
+  proof_files: []
+  tests: *id002
+  gate: GATE-FOUNDATION_FROZEN
+  inputs:
+  - parent pins
+  - spec SHA
+  outputs:
+  - COMMIT-SHA-LOG disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-0
+  controls: []
+  order_index: null
+  required_status: null
+  changed: null
+- id: SURG-CHANGED-AXIS
+  wp: WP-2
+  spec_phase: null
+  files: *id005
+  proof_files: []
+  tests: *id006
+  gate: GATE-LIQUIDITY_AXIS_FROZEN
+  inputs:
+  - exit gate of predecessor of WP-2
+  outputs:
+  - SURG-CHANGED-AXIS disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-2
+  controls: []
+  order_index: null
+  required_status: null
+  changed: true
+- id: SURG-EMBED-OLD
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - SURG-EMBED-OLD disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-splay
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-splay disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-depth+1-cost
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-depth+1-cost disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-keep-delete-dynamics
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-keep-delete-dynamics disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-reference-snapshot
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-reference-snapshot disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-L6-translation
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-L6-translation disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-T7-injection
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-T7-injection disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-T6-discharge
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-T6-discharge disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-required_C
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-required_C disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-ledger-support
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-ledger-support disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-provenance-alphabet
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-provenance-alphabet disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-energy-E
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-energy-E disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-credit-mass
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-credit-mass disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-candidate-freeze
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-candidate-freeze disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-one-residual-kills
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-one-residual-kills disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-fresh-bank-one-unlock
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-fresh-bank-one-unlock disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-human-review-lifecycle
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-human-review-lifecycle disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-bridge-standard
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-bridge-standard disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-pair-access-semantics
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-pair-access-semantics disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false
+- id: FROZEN-unsigned-E-formula
+  wp: WP-1
+  spec_phase: null
+  files: *id003
+  proof_files: []
+  tests: *id004
+  gate: GATE-LEGACY_SEMANTICS_CERTIFIED
+  inputs:
+  - exit gate of predecessor of WP-1
+  outputs:
+  - FROZEN-unsigned-E-formula disposition record
+  failure: NOT_REACHED
+  first_consumer: null
+  producer_wp: WP-1
+  controls: []
+  order_index: null
+  required_status: null
+  changed: false

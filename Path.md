@@ -1,58 +1,40 @@
-# Path.md — SPLAY-AM-MST-LIQ-v0.4 live execution ledger
+# Path.md — SPLAY-AM-MST-LIQ-v0.4.1 live execution ledger
 
-**Experiment:** `SPLAY-AM-MST-LIQ-v0.4` | **Spec SHA:** `0E2C166E…055B` | **Status:** `PLANNING_SEALED_SCIENCE_NOT_AUTHORIZED_UNTIL_WP0_GATE`
-**Rule:** contemporaneous append-only entries; superseded entries preserved + marked; each WP ends with `FOLLOWS WorkPlan.md` / `DEVIATION — VERSIONED AND JUSTIFIED` / `NONCOMPLIANT — BLOCKED`. A gate without a Path entry is not closed.
+**Experiment:** `SPLAY-AM-MST-LIQ-v0.4` + `v0.4.1` closure | **Operative spec:** `IMPLEMENTATION_SPEC_SPLAY-AM-MST-LIQ-v0.4.1.md` | **Status:** `CONTRACT_CLOSED__WORKPLAN_COMPILED__SCIENCE_NOT_AUTHORIZED_UNTIL_WP0_GATE`
+**Rule (normative, spec §11):** append-only, contemporaneous WP/gate updates; failed/superseded history preserved and marked; each WP ends `FOLLOWS WorkPlan.md` / `DEVIATION — VERSIONED AND JUSTIFIED` / `NONCOMPLIANT — BLOCKED`. A gate without entry is not closed. Superseded v0.4 planning preserved in `historical/` + git history.
 
-## P-001 — Planning seal (WorkPlan + inventory + coverage + prereg proposals)
-- WorkPlan prescription: compile normative spec into auditable 7-WP program with machine coverage.
-- Entry-gate status: N/A (planning turn; `FOUNDATION_FROZEN` not claimed).
-- Implementation inventory: `WorkPlan.md` (7 WPs A–K); `planning/NORMATIVE_INVENTORY.yaml` (463 items); `planning/WORKPLAN_COVERAGE.yaml` (463 mappings); `scripts/build_planning_inventory.py`; `scripts/check_workplan_coverage.py`; `prereg/{liquidity_axis,liquidity_search_space,h4l_holdout,theorem_transport_matrix}.yaml`; `planning/SOURCE_INVENTORY.md`; `IMPLEMENTATION_SPEC_SPLAY-AM-MST-LIQ-v0.4.txt` + 2 parent references.
-- Files created/changed: see inventory above (planning namespace only; no scientific implementation, no H4L bytes, no theorem proofs).
-- Algorithms/code: deterministic generator (ranges/loops, no hand counts) + 20-invariant checker.
-- Commands executed: `build_planning_inventory.py` → `inventory_items=463`; `check_workplan_coverage.py` → (record result below in P-002).
-- Benchmark/test results: none (no science executed).
-- Proof artifacts / theorem status: unchanged (all UNPROVED at planning).
-- Deviations/bugs/repairs: none (second grep audit is a WP-0 execution step).
-- Anti-overfitting evidence: N/A (no data touched; H4L EMPTY).
-- Gate outputs: planning coverage result in P-002.
-- Coverage audit: 463/463 mapped (checker).
-- Commit SHA / push / remote-head: recorded in P-003.
-- Verdict: `FOLLOWS WorkPlan.md` (planning phase).
+## R-001 — Contract-closure campaign (CC-001..CC-066)
+- Scope: hostile repair of the normative spec itself (not science, not WorkPlan patching).
+- Sources inspected: LIQ-v0.4 bytes (SHA `0E2C16…055B`); old WorkPlan/Path drafts; arch `IMPLEMENTATION_SPEC_v0.3` + live WorkPlan + ledger + theorem status (9/5/3/3/6) + `transfer_grammar_v0.3.yaml` (no predicate menu — verified) + `event_ontology_v0.3.yaml` (single-ZIG classes) + prereg blob SHAs; obstruction WorkPlan/Path + `mstc0002.py` (blob `2bbecbc`: T7→T5 A-side, T5 B-side, discharge-after-B, DELETE A-only) + `splay.py` (blob `b8f3542`: absent-key empty trace + defined cost) + lean-toolchain (`v4.21.0`) + bridge record (L3 present/L2 absent); live commit APIs (arch nav/closure/seal, obstruction evidence HEAD).
+- Conflicts found: exact-[n] vs subset domain; universal-legality sentence vs total algebra; present-key multiplicity vs empty traces; predicate-free T5; uncomposed replay; total-vs-eligible counts; open P_inherited; grammar/scope ambiguity; underparameterized rho; ladder-vs-axis; prose-only theorems; 16/26 mapping; missing MSTL-09; implicit PA conjunction; ambiguous provenance; Branch-B trigger/lateness/signed gaps; recommended H4L params; public-repo quarantine; missing automaton; WP-0/WP-3 freeze split; top-3 overclaim; missing refutation lifecycle; 3-routes contradiction; + 38 majors/hardening (see ledger).
+- Repairs: 66 CLOSED via amendment + consolidated spec + 27 theorem files + 26-node gate matrix + provenance/control/tree matrices + prereg (predicate/axis/space/H4L/env/threat/stop/parent-contract/bridge) + 7 schemas + lifecycle/ledger/review/export contracts + true-commitment firewall + matched baseline + OOD + clean-tree/superset-logging/artifact/seal/conditional-repro/bootstrap/governance/successor-embedding rules.
+- Failed attempts: closure checker caught 3 self-defects mid-campaign (over-broad status regex ×2 fixed by scoping to status fields; env data shape fixed by splitting value/source); 7/16 mutants initially survived → checker hardened with exact-set assertions → 16/16 killed. Preserved here as history.
+- Results: `CONTRACT_CLOSURE_PASS` (66/66, 0 errors); `MUTATION_RESULT = ALL_16_KILLED`; second pass CLOSED with 0 unmapped.
+- Commits: repair series (1/5) `6aa63ed`, (2/5) `4f82a55`, (3/5) scripts commit; planning regen + seal follow.
+- Verdict: `FOLLOWS` the closure task order (spec → planning → science).
 
-## P-002 — Planning coverage audit (Rule 13)
-- Checker output 2026-09-27:
-- `NORMATIVE_ITEMS_TOTAL = 463 / MAPPED_ITEMS_TOTAL = 463 / UNMAPPED = 0 / UNKNOWN_MAPPINGS = 0 / PHASE_OWNERSHIP_ERRORS = 0 / THEOREM_OWNERSHIP_ERRORS = 0 / GATE_ERRORS = 0 / THREAT_CONTROL_ERRORS = 0 / STOP_CONTROL_ERRORS = 0 / FIRST_CONSUMER_ERRORS = 0 / HOLDOUT_ORDER_ERRORS = 0 / CLAIM_POLICY_ERRORS = 0 / RESULT = WORKPLAN_COVERAGE_PASS`
-- Second omission audit (independent method — direct regex over spec bytes, different code path from generator): LIQ0 distinct=10 (01–10) vs inventory 10; MSTL-GATE distinct=20 (0–19) vs inventory 20; LIQ-T distinct=20 vs 20; LIQ-STOP distinct=20 vs 20; PHASE distinct=20 (00–19) vs 20; S-criteria distinct=20 (S1–S20) vs 20; spec sections 0–51 (52) vs 52; H4L sizes 7×10k=70k confirmed. MST0 regex finds 23 distinct IDs spec-wide (includes §13 transport-example mentions of MST0-01…07); the normative binding list is §42's explicit 16, all 16 inventoried + 12 TRANSPORT bindings + 4 class records. No unmapped/multiply-owned items; delta zero. Verdict: omission audit CLEAN.
-
-## P-003 — Planning commit/push
-- Commit SHA: `a18fe213f431c7b8e31978cb24582b346e1e88d0` (`MST-LIQ-v0.4 planning seal: WorkPlan 7 WPs + 463-item inventory + coverage PASS + prereg proposals + Path ledger`, 14 files).
-- Push result: FAILED/NOT-APPLICABLE — no remote configured in this working copy (`git remote -v` empty; `git push` has no destination). Recorded truthfully per Rule K; WP is locally sealed, NOT remotely sealed.
-- Remote HEAD: UNVERIFIED (no remote). Required follow-up: attach `Dynamic-Optimality-Lab/splay-multiscale-transfer-liquidity` as remote, push, verify HEAD, append P-004 with SHA + push + HEAD evidence (done in P-004 below).
-
-## P-004 — Remote attach + push + HEAD verification (Rule K closeout)
-- Remote added: `origin -> https://github.com/Dynamic-Optimality-Lab/splay-multiscale-transfer-liquidity.git` (repo confirmed to exist via `gh repo view`; auth `InfernusReal`, protocol https).
-- Push: `git push -u origin master` → `* [new branch] master -> master`, upstream tracking set. No errors besides the PowerShell stderr-forwarding wrapper.
-- Remote HEAD verification (independent, two methods): `git ls-remote origin master` = `d0f17e18d505dc3d0e7b6d4f5792af30e6ceb0ce`; GitHub API `commits/master` sha identical; local `git log -1` identical. All three agree.
-- Supersedes: P-003 push status `FAILED/NOT-APPLICABLE` is now superseded by this entry (preserved as history, non-operative for push status). Planning SHAs `a18fe21` (seal) + `d0f17e1` (P-003 record) both on remote.
-- Verdict: `FOLLOWS WorkPlan.md` (Rule K: VERIFY → Path → AUDIT → COMMIT → PUSH → VERIFY REMOTE HEAD).
+## R-002 — Planning regeneration (Rule 40)
+- Old v0.4 WorkPlan/Path/inventory/coverage marked superseded (`historical/` + git); regenerated from closed bytes: inventory 457 items, coverage 457 mappings, new 7-WP WorkPlan above, this ledger.
+- Checker: `WORKPLAN_COVERAGE_PASS` — NORMATIVE 457 / MAPPED 457 / UNMAPPED 0 / UNKNOWN 0 / PHASE 0 / THEOREM 0 / GATE 0 / THREAT 0 / STOP 0 / FIRST-CONSUMER 0 / HOLDOUT 0 / CLAIM 0.
+- Verdict: `FOLLOWS WorkPlan.md` (v0.4.1 planning phase).
 
 ## WP-0 ledger (PHASE 00) — PLACEHOLDER, NOT STARTED
-Prescription / entry gate / files / code / commands / results / proofs / status / deviations / bugs / anti-overfitting / gate outputs / coverage audit / SHA / push / remote-head / verdict: all PENDING.
+Prescription/entry/files/code/results/proofs/status/deviations/bugs/anti-overfitting/gates/coverage/SHA/push/remote/verdict: PENDING. Entry requires closure PASS (satisfied); execution not started.
 
 ## WP-1 ledger (PHASEs 01–04) — PLACEHOLDER, NOT STARTED
-As above: PENDING. Entry requires `FOUNDATION_FROZEN`.
+PENDING. Entry requires FOUNDATION_FROZEN.
 
 ## WP-2 ledger (PHASEs 05–06) — PLACEHOLDER, NOT STARTED
-PENDING. Entry requires `LEGACY_SEMANTICS_CERTIFIED` + LIQ0-01 REVIEWED.
+PENDING. Entry requires LEGACY_SEMANTICS_CERTIFIED + LIQ0-01 REVIEWED.
 
 ## WP-3 ledger (PHASEs 07–08) — PLACEHOLDER, NOT STARTED
-PENDING. Entry requires `LIQUIDITY_AXIS_FROZEN`. H4L firewall: EMPTY.
+PENDING. Entry requires LIQUIDITY_AXIS_FROZEN. H4L firewall: EMPTY (no secret generated).
 
 ## WP-4 ledger (PHASEs 09–13) — PLACEHOLDER, NOT STARTED
-PENDING. Entry requires `TRANSFER_GRAMMAR_FROZEN` + `H4L_BANK_COMMITTED`.
+PENDING. Entry requires TRANSFER_GRAMMAR_FROZEN + COMMITMENT_PUBLISHED.
 
 ## WP-5 ledger (PHASEs 14–16) — PLACEHOLDER, NOT STARTED
-PENDING. Entry requires `LIQUIDITY_CALCULUS_SURVIVES_DEV`.
+PENDING. Entry requires promoted set.
 
 ## WP-6 ledger (PHASEs 17–19) — PLACEHOLDER, NOT STARTED
-PENDING. Entry requires `LIQUIDITY_CALCULUS_SURVIVES_FINITE_TESTS`. Terminal `DYNAMIC_OPTIMALITY_PROVED` only iff full REVIEWED chain + audited bridge.
+PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + bridge audited.
