@@ -178,3 +178,56 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
   16/16); `h4l-val|` typo fixed; `.gitignore` secret quarantine added.
 - Next (authorized order): commit B1 (repairs, pre-generation) → push → fresh seal
   with fresh seed → verify → full HOLD → new human ACCEPT request. WP-4 not entered.
+
+## R-012 — WP-3 R2 seal (fresh bank identity H4L-R2; acceptance pending)
+
+- Repair commit B1: `456a712` (pushed `9dde18c..456a712`, ls-remote == local, tree
+  clean at seal start). Generator R2 committed BEFORE generation: PASS.
+- R2 seal via `python scripts/run_phase03.py` exit 0 on the committed tree:
+  STEP 94 entry PASS (freeze PASS, firewall EMPTY); STEP 95 pre-seal 18 passed +
+  3 post-seal skips; STEP 96 EMPTY→GENERATOR_FROZEN; STEP 97 one-shot seal with a
+  FRESH 256-bit seed in a FRESH secret directory (R1 seed/dir retired untouched);
+  70,000 episodes sorted by episode ID; STEP 98 independent recompute OK
+  (70000 episodes, order+IDs+shards+logical OK — this streaming audit enforces the
+  2..8 history law and canonical order over every episode without exposing any
+  secret content); STEP 99 post-seal HOLD 21/21.
+- R2 identity: generator sha256
+  `60cc25fcda6fb35850ca216bba6737653d56889da8cb288fed967b0d29ce68b6`;
+  commitment `bfcc24ab070a88c63f54c084bae7de357d2f059c9b79775274b4ca6141b1643d`
+  (`bank_id` H4L-R2, `supersedes` R1 `4b33e033…`; `generator_sha256` bound).
+- Public review artifacts (repo, untracked until closeout):
+  `artifacts/v04/holdouts/h4l_commitment.json`,
+  `artifacts/v04/holdouts/firewall_state.json`
+  (state COMMITMENT_PUBLISHED, unlocks 0). Seed/bank absent from repo (HOLD-08 PASS).
+- Mutants killed: modulo-bias randbelow, len-9/16 histories, fixed-length-ignoring-L
+  (forced-L 84 combos), mirror doubling, unsorted IDs, corrupted ID, wrong logical
+  order, quota violation, read-before-freeze, double-reveal/second-unlock, regen,
+  seed-in-repo, evaluation-stub call.
+- Regression: ACT-01..14 + LEG-01..10 = 24/24 green (`pytest
+  tests/test_activation.py tests/test_legacy_embedding.py -q`).
+- H4L evaluations = 0 (stub refuses; HOLD-14). H4L reveals = 0 (unlocks 0; HOLD-05/06).
+  R1 attempt preserved in R-010 + `rejected_R1/` + `planning/WP3_RECOVERY_R2.md`.
+- Status: awaiting new genuine human REQ-008 ACCEPT on the R2 hashes. WP-4 not entered.
+
+## R-013 — WP-3 R2 post-generation evidence publication (provenance closeout; no ACCEPT claimed)
+
+- R2 generator commit = `456a712b57e006313e82c17e3ac2dc32cc77f0ac` (pushed pre-generation).
+- Generator sha256 = `60cc25fcda6fb35850ca216bba6737653d56889da8cb288fed967b0d29ce68b6`.
+- bank_id = H4L-R2. Commitment =
+  `bfcc24ab070a88c63f54c084bae7de357d2f059c9b79775274b4ca6141b1643d`.
+- R1 (`f5dd09ec…` / `4b33e033…`) superseded, REJECTED, and preserved in R-010 +
+  `artifacts/v04/holdouts/rejected_R1/` (verified unchanged) + retired secret dir.
+- 70,000 episodes (7 sizes × 10k, sorted by episode ID) in operator-secret storage only.
+- Reverification (no regeneration, no secret-content inspection):
+  `h4l_verify` independent recompute PASS (70000, order+IDs+shards+logical OK);
+  HOLD extended suite 21/21 PASS, zero skips; ACT+LEG regression 24/24 PASS;
+  repo secret scan PASS (HOLD-08); firewall = COMMITMENT_PUBLISHED; unlocks = 0;
+  evaluations = 0 (HOLD-14); reveals = 0 (HOLD-05/06).
+- Public evidence published (no seed/bank/instance/outcome bytes):
+  `artifacts/v04/holdouts/h4l_commitment.json`,
+  `artifacts/v04/holdouts/firewall_state.json`, WP-3 runlog
+  `artifacts/v04/logs/run_wp3_*.json` (STEP 101, clean_tree=true), this record.
+- Commands: `python scripts/run_phase03.py` exit 0; verifier + HOLD + ACT/LEG reruns
+  above, all exit 0. Exact command lines preserved in this entry and the runlog.
+- REQ-008 = HUMAN_REVIEW_PENDING (genuine verdict solicited separately, never fabricated).
+- WP-3 = INCOMPLETE_PENDING_REQ-008. WP-4 not entered.
