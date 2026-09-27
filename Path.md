@@ -107,3 +107,10 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - Rebound: proof_hash 82e993fd, package_hash 56c630b5, corpus_sha added in LIQ0-01.review.json; proof_status.json proof_hash updated. Verdict ACCEPT + REVIEWED preserved (metadata rebind only, not a new review). Line 67 old hash preserved as history.
 - Sanity: stale-grep clean in math/planning; LEG 10/10 passed.
 - Label: WP-1 METADATA_CLOSURE_PASS.
+
+## R-007 - WP-1 execution-governance repair
+- Portable Lean: hardcoded Temp path removed; resolve via LEAN_EXE-or-PATH + version pin from ./lean-toolchain (4.21.0); mismatch/absence exits 2. This-machine runs pass LEAN_EXE in environment (not repo bytes).
+- Exit gate scripts/check_wp1_exit_gate.py (STEP 34): review exists + ACCEPT + theorem/proof/package/corpus hashes match bytes + proof_status REVIEWED + hash consistency; tamper probe FAILs closed, restore PASSes.
+- Run logging: real WP-1 record artifacts/v04/logs/run_wp1_2026-09-27T181233.2671070000.json (wp=WP-1, phase=PHASE-01-04, clean_tree=true, env 7d564c28, exit 0, 0 missing fields); old WP-0/PHASE-00 record preserved as history.
+- Reruns: LEG 10/10, Lean exit 0, gate PASS, mutants 4/4 killed.
+- Label: WP-1 EXECUTION_GOVERNANCE_PASS.
