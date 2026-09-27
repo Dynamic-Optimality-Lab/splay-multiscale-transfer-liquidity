@@ -1,0 +1,211 @@
+v04_spec_sha256: 0E2C166E1B721DFC8A7E5327ED33AF29A1B4AC539CB71849F3C7231B32A8055B
+actual_semantic_changes:
+- CC-004
+- CC-007
+- CC-012
+- CC-023
+- CC-026
+- CC-039
+- CC-043
+changes:
+- cc: CC-001
+  class: contract completion
+  change: Multi-identity parent contract replaces single-SHA pin language
+- cc: CC-002
+  class: contract completion
+  change: Obstruction evidence vs lifecycle seal split; 'sealed' wording narrowed
+- cc: CC-003
+  class: contract completion
+  change: Dual-parent precedence matrix added
+- cc: CC-004
+  class: source-derived correction
+  change: Legal domain weakened to keys(T0) subset [n], absent keys legal (CHANGED
+    theorem domain vs v0.4 text)
+- cc: CC-005
+  class: clarification
+  change: Class-A/Class-B theorem scoping replaces universal legality sentence
+- cc: CC-006
+  class: contract completion
+  change: Absent-access semantics + split multiplicity theorem added
+- cc: CC-007
+  class: source-derived correction
+  change: 'T5 binds predicate P: T5_{P,1}/T5_{P,rho} (CHANGED operator signature)'
+- cc: CC-008
+  class: contract completion
+  change: Verbatim A/B replay equations frozen
+- cc: CC-009
+  class: clarification
+  change: eligibleLatentCount replaces total q in activation formulas
+- cc: CC-010
+  class: contract completion
+  change: Closed predicate family replaces P_inherited phrase
+- cc: CC-011
+  class: contract completion
+  change: Search scope fixed to (P,k,C,rho); template-count objectives removed
+- cc: CC-012
+  class: actual semantic change
+  change: Rho class widened to (rho_ZIG,rho_DOUBLE) in 0..8; v0.4 12 profiles embed
+- cc: CC-013
+  class: clarification
+  change: Discovery ladder vs admissible class separated; r=7 is ladder extension
+- cc: CC-014
+  class: contract completion
+  change: 27 exact theorem statement files replace prose targets
+- cc: CC-015
+  class: contract completion
+  change: Full 26-node gate matrix replaces 16-entry minimum
+- cc: CC-016
+  class: contract completion
+  change: MSTL-09 explicit endgame ownership + PA conjunction
+- cc: CC-017
+  class: contract completion
+  change: PA prerequisite conjunction frozen
+- cc: CC-018
+  class: contract completion
+  change: Theorem provenance import rule (identical-bytes-or-new-bytes)
+- cc: CC-019
+  class: contract completion
+  change: Branch-B trigger made operational (dev/fresh rejection)
+- cc: CC-020
+  class: firewall hardening
+  change: Dormant Branch-B pre-reveal freeze; late synthesis forbidden
+- cc: CC-021
+  class: contract completion
+  change: Signed T5_rho accounting + MSTL-12 defined
+- cc: CC-022
+  class: contract completion
+  change: H4L generation parameters made exact (quotas/laws/RNG/seed/dedup/hashes)
+- cc: CC-023
+  class: firewall hardening
+  change: True commitment secrecy replaces public-repo quarantine (CHANGED storage
+    rule)
+- cc: CC-024
+  class: firewall hardening
+  change: 7-state H4L automaton with readers/writers/unlock count
+- cc: CC-025
+  class: clarification
+  change: WP-0 contract vs WP-3 implementation freeze ownership split
+- cc: CC-026
+  class: contract completion
+  change: 'Promotion semantics: evaluate-all-or-domination; PROMOTED_CANDIDATE_SET_REJECTED
+    terminal (CHANGED claim strength)'
+- cc: CC-027
+  class: lifecycle hardening
+  change: Dual prove/refute lifecycle with 13 states; REJECT!=REFUTED
+- cc: CC-028
+  class: clarification
+  change: 2-mandatory + formal-where-applicable route rule
+- cc: CC-029
+  class: contract completion
+  change: Internal validation spec frozen
+- cc: CC-030
+  class: reproducibility hardening
+  change: Adversarial budgets frozen per engine
+- cc: CC-031
+  class: firewall hardening
+  change: Clean-room contract+bytes frozen pre-reveal
+- cc: CC-032
+  class: contract completion
+  change: 210+ parent controls dispositioned item-by-item
+- cc: CC-033
+  class: contract completion
+  change: MSTL as overlay; inherited gates discharged-by-transport
+- cc: CC-034
+  class: contract completion
+  change: H1/H2R/n8/H3T LIQ dispositions with unlock counts
+- cc: CC-035
+  class: contract completion
+  change: OOD benchmark layer separated from fresh H4L
+- cc: CC-036
+  class: contract completion
+  change: Matched FLAT(1) baseline + attribution labels
+- cc: CC-037
+  class: contract completion
+  change: 29-field candidate identity replaces 'at least' list
+- cc: CC-038
+  class: clarification
+  change: rule_family_id vs calculus_id split
+- cc: CC-039
+  class: contract completion
+  change: A(n)=0 only live target; nonzero BLOCKED (CHANGED permission)
+- cc: CC-040
+  class: contract completion
+  change: Bridge source pin-or-BLOCKED rule
+- cc: CC-041
+  class: reproducibility hardening
+  change: Environment lock (Python 3.13.7, Lean v4.21.0, solvers, RNG, zstd)
+- cc: CC-042
+  class: reproducibility hardening
+  change: Parent exactness/determinism policy restored verbatim
+- cc: CC-043
+  class: reproducibility hardening
+  change: '33-field logging superset (CHANGED field list: additions only)'
+- cc: CC-044
+  class: reproducibility hardening
+  change: Clean-tree rule for authoritative runs
+- cc: CC-045
+  class: reproducibility hardening
+  change: Deterministic large-artifact policy
+- cc: CC-046
+  class: reproducibility hardening
+  change: Exact seal mechanics
+- cc: CC-047
+  class: contract completion
+  change: Phase-conditional reproduction matrix
+- cc: CC-048
+  class: contract completion
+  change: Clone/bootstrap transaction + tree disposition
+- cc: CC-049
+  class: contract completion
+  change: WorkPlan/Path governance made normative
+- cc: CC-050
+  class: lifecycle hardening
+  change: Canonical status ledger + review schema mandated
+- cc: CC-051
+  class: clarification
+  change: theorem_gate_matrix.yaml canonical; transport name superseded
+- cc: CC-052
+  class: reproducibility hardening
+  change: Export schema + verifier mandated
+- cc: CC-053
+  class: contract completion
+  change: Successor backward-embedding theorem required
+- cc: CC-054
+  class: clarification
+  change: Clone-latest rule for successors
+- cc: CC-055
+  class: clarification
+  change: Profile-specific vs axis-wide failure separation
+- cc: CC-056
+  class: clarification
+  change: ZIG normalization map frozen
+- cc: CC-057
+  class: clarification
+  change: rho totalized at ROOT/no-event (=0)
+- cc: CC-058
+  class: clarification
+  change: '''Satisfies immutable regression'' wording'
+- cc: CC-059
+  class: contract completion
+  change: Three minimization certificate levels
+- cc: CC-060
+  class: clarification
+  change: S5/S6 restricted to tested members
+- cc: CC-061
+  class: clarification
+  change: S10 restricted to tested ladder rung
+- cc: CC-062
+  class: clarification
+  change: S19 permits no-justified-resource answer
+- cc: CC-063
+  class: clarification
+  change: Next-candidate-until-exhausted ordering
+- cc: CC-064
+  class: reproducibility hardening
+  change: Resource-limit record fields + budgets
+- cc: CC-065
+  class: lifecycle hardening
+  change: REJECT/BLOCKED verdicts + byte-change invalidation
+- cc: CC-066
+  class: contract completion
+  change: DOC-disproof placed outside MST-LIQ

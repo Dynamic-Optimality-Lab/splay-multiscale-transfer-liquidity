@@ -1,0 +1,117 @@
+version: v0.4.1
+arch_commits:
+  navigation: 895889169772087e391e84c33228648c84684e1e
+  closure: 9859e654b76ba92c1d0e0809f62a7ffe1cac3b98
+  seal: 3062c0180157399cc0e877c0d238edc7f3aff7c0
+obstruction_evidence_commit: 19ef254dfc48c7b909c646f959e2d7364865b777
+obstruction_lifecycle_seal: OPEN
+objects:
+- object: splay_semantics
+  definition_source: arch
+  statement_source: arch
+  proof_source: arch(reviewed MST0-02*)
+  review_source: arch
+  evidence_source: arch
+  precedence_rule: ARCH wins; later proofs must match bytes
+- object: pair_access_semantics
+  definition_source: arch
+  statement_source: arch
+  proof_source: arch
+  review_source: arch
+  evidence_source: arch
+  precedence_rule: ARCH wins (KEEP/DELETE/cost); Dynamic evidence read-only
+- object: legal_domain
+  definition_source: obstruction(weaker, source-derived)
+  statement_source: v041
+  proof_source: v041
+  review_source: v041
+  evidence_source: v041
+  precedence_rule: OBSTRUCTION source wins over v0.4 text (CC-004); equality only
+    as labeled subdomain
+- object: stepev_representation
+  definition_source: 'obstruction(splay.py: (case,lo,hi); single ZIG)'
+  statement_source: arch
+  proof_source: arch
+  review_source: arch
+  evidence_source: arch
+  precedence_rule: OBSTRUCTION executable wins for trace bytes; arch ontology for
+    record fields; normalization map v0.4.1
+- object: T7
+  definition_source: arch
+  statement_source: arch
+  proof_source: arch
+  review_source: arch
+  evidence_source: arch
+  precedence_rule: ARCH wins unchanged
+- object: T5
+  definition_source: arch+obstruction(mstc0002.py)
+  statement_source: v041(T5_{P,rho})
+  proof_source: v041
+  review_source: v041
+  evidence_source: v041
+  precedence_rule: v0.4.1 generalization; legacy embedding proves old instance preserved
+- object: T6
+  definition_source: arch+obstruction(discharge fold)
+  statement_source: arch
+  proof_source: arch
+  review_source: arch
+  evidence_source: arch
+  precedence_rule: ARCH wins unchanged
+- object: energy
+  definition_source: arch(E=#L+#A)+parent signed route
+  statement_source: v041(unsigned+signed/MSTL-12)
+  proof_source: v041
+  review_source: v041
+  evidence_source: v041
+  precedence_rule: Unsigned ARCH wins for Branch A; signed defined new with lower-bound
+    obligation
+- object: support
+  definition_source: arch(ontology allowed/forbidden)
+  statement_source: arch
+  proof_source: arch
+  review_source: arch
+  evidence_source: arch
+  precedence_rule: ARCH wins
+- object: provenance
+  definition_source: arch(alphabet)
+  statement_source: arch
+  proof_source: arch
+  review_source: arch
+  evidence_source: arch
+  precedence_rule: ARCH wins
+- object: candidate_identity
+  definition_source: v041(29 fields)
+  statement_source: v041
+  proof_source: v041
+  review_source: v041
+  evidence_source: v041
+  precedence_rule: v0.4.1 supersedes v0.4 'at least' list
+- object: theorem_bytes
+  definition_source: per-node rule below
+  statement_source: per-node
+  proof_source: per-node
+  review_source: per-node
+  evidence_source: per-node
+  precedence_rule: 'Identical bytes: transport w/ invariance lemma; else new MSTL
+    bytes; ACCEPT valid only for reviewed bytes'
+- object: theorem_status
+  definition_source: none(auto)
+  statement_source: v041 ledger
+  proof_source: human per v041
+  review_source: v041 ledger
+  evidence_source: v041
+  precedence_rule: No status copied; all start UNPROVED in LIQ ledger
+- object: holdout_state
+  definition_source: arch(H1/H2R/n8/H3T counts)
+  statement_source: v041(H4L new)
+  proof_source: v041
+  review_source: v041
+  evidence_source: v041
+  precedence_rule: Legacy counts preserved verbatim; H4L new under commitment protocol
+- object: bridge_sources
+  definition_source: 'obstruction(bridge_sources/: L3 present, L2 absent)'
+  statement_source: v041 manifest
+  proof_source: n/a(BLOCKED)
+  review_source: n/a
+  evidence_source: obstruction
+  precedence_rule: OBSTRUCTION source record wins; L2-absent => MSTL-19 BLOCKED_BY_SOURCE

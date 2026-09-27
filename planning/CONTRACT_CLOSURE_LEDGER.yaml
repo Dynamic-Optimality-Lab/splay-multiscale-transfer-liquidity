@@ -1,0 +1,1486 @@
+experiment: SPLAY-AM-MST-LIQ-v0.4.1
+v04_spec_sha256: 0E2C166E1B721DFC8A7E5327ED33AF29A1B4AC539CB71849F3C7231B32A8055B
+counts:
+  BLOCKER: 28
+  MAJOR: 26
+  HARDENING: 12
+  TOTAL: 66
+findings:
+- id: CC-001
+  severity: BLOCKER
+  original_finding: 'Architecture-parent identity not closed: nav vs closure vs seal
+    commit ambiguous'
+  affected_spec_sections:
+  - PHASE00
+  source_evidence: 'GitHub API: HEAD=895889169772087e391e84c33228648c84684e1e, closure
+    msg names 9859e65, evidence head 3062c01; spec navigation HEAD==remote HEAD verified'
+  root_cause: One SHA cannot serve navigation, closure and seal roles
+  normative_repair: 'Multi-identity parent contract: architecture_navigation_commit,
+    architecture_closure_commit, architecture_seal_commit + per-artifact content SHAs
+    (FINAL_RESULT/manifest/archive/WorkPlan/Path/ledger/theorem-status/candidate-set/spec);
+    WP-0 re-verifies content SHAs against pinned commits'
+  new_or_modified_artifacts:
+  - prereg/parent_contract.yaml
+  - IMPLEMENTATION_SPEC_...v0.4.1.md#parent-contract
+  semantic_change: contract completion (no scientific change)
+  backward_compatibility_effect: v0.4 pins single SHA; v0.4.1 names roles, old SHA
+    retained as navigation
+  tests_or_checker_rules:
+  - PARENT_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-0
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-001
+- id: CC-002
+  severity: BLOCKER
+  original_finding: Obstruction parent lacks lifecycle refutation closure (Lean witness
+    + G5 pending)
+  affected_spec_sections:
+  - PHASE00
+  source_evidence: DECIDE HEAD 19ef254 msg certifies n28 witness + triple replay;
+    Path records formal witness + G5 validation pending
+  root_cause: Spec wording demands sealed/refutation-closure commit that does not
+    exist
+  normative_repair: 'Split fields: obstruction_evidence_commit + mathematical_status=CONFIRMED
+    + formal_certificate_status=PENDING + human_validation_status=PENDING + lifecycle_seal=OPEN;
+    forbid calling it sealed; REFUTED lifecycle only after formal+human close'
+  new_or_modified_artifacts:
+  - prereg/parent_contract.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: Narrows v0.4 wording; witness bytes unchanged
+  tests_or_checker_rules:
+  - PARENT_IDENTITY_ERRORS
+  - LIFECYCLE_ERRORS
+  downstream_consumers:
+  - WP-0
+  - WP-1
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-002
+- id: CC-003
+  severity: BLOCKER
+  original_finding: No dual-parent precedence rule; arch sealed nodes unproved while
+    Dynamic later REVIEWED 08U/09/11/13/22
+  affected_spec_sections:
+  - PHASE00
+  - transport
+  source_evidence: Arch THEOREM_STATUS 9/5/3/3/6 vs DECIDE later REVIEWED set (Path
+    R1-030 ACCEPT x5)
+  root_cause: Two parents, no per-object winner
+  normative_repair: 'PARENT_PROVENANCE_MATRIX per object (definition/statement/proof/review/evidence
+    source + rule): architecture owns definitions; later parent supplies proof/refutation
+    evidence only under identical bytes + transport theorem, else new MSTL bytes'
+  new_or_modified_artifacts:
+  - planning/PARENT_PROVENANCE_MATRIX.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: v0.4 silent-copy risk removed; no status values altered
+  tests_or_checker_rules:
+  - PARENT_PRECEDENCE_ERRORS
+  downstream_consumers:
+  - WP-0
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-003
+- id: CC-004
+  severity: BLOCKER
+  original_finding: 'Legal domain conflicts: v0.4 expects keys(T0)==[n]; obstruction
+    legal_domain uses keys(T0) subset [n], absent access keys allowed'
+  affected_spec_sections:
+  - '#10'
+  source_evidence: 'Obstruction inherited/splay.py: descend->None for absent keys;
+    audit states subset law; v0.4 #10 expects equality+presence'
+  root_cause: Convenience equality contradicts source-derived weaker domain
+  normative_repair: 'Adopt source-derived weaker domain: keys(T0) subset [n], valid
+    BST, modes KEEP/DELETE, access keys in [n] (presence NOT required), A/B start
+    equal T0, exact replay semantics; equality only as explicitly labeled proof-restricted
+    subdomain (new ID, never silent)'
+  new_or_modified_artifacts:
+  - IMPLEMENTATION_SPEC_...v0.4.1.md#legal-domain
+  - prereg predicate/legal hashes
+  semantic_change: source-derived correction (theorem domain widens vs v0.4 text)
+  backward_compatibility_effect: v0.4-era proofs under equality must be re-scoped,
+    not auto-transported
+  tests_or_checker_rules:
+  - LEGAL_DOMAIN_ERRORS
+  downstream_consumers:
+  - WP-1
+  - WP-2
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-004
+- id: CC-005
+  severity: BLOCKER
+  original_finding: '''All universal theorems use LegalPairInstance'' over-scopes:
+    ledger algebra (discharge, preservation, SPENT monotonicity, MST0-15 parts) should
+    stay total'
+  affected_spec_sections:
+  - '#15'
+  - '#22'
+  source_evidence: 'Obstruction audit preserved MST0-15 as total; v0.4 #15 sentence
+    universal'
+  root_cause: One guard applied to unrelated algebra
+  normative_repair: 'Two theorem classes: A tree/history theorems require LegalPairInstance;
+    B pure ledger algebra total over arbitrary ledgers/needs, MUST NOT add tree-legality
+    hypotheses'
+  new_or_modified_artifacts:
+  - math/theorems/*.md (per-theorem Domain:)
+  - theorem_gate_matrix.yaml
+  semantic_change: clarification
+  backward_compatibility_effect: None adverse; class-B statements keep full strength
+  tests_or_checker_rules:
+  - LEGAL_DOMAIN_ERRORS
+  - THEOREM_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-2
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-005
+- id: CC-006
+  severity: BLOCKER
+  original_finding: 'Weaker domain vs multiplicity theorem: present-key statement
+    incompatible with absent-key legal traces (nonzero depth+1 cost, empty rotation
+    trace)'
+  affected_spec_sections:
+  - '#8'
+  source_evidence: 'Obstruction splay.py: splay_cost defined for absent keys; splay_trace
+    returns (t,[]) — verified bytes above'
+  root_cause: Present-key identity applied to empty traces
+  normative_repair: 'Split theorem: present-key accesses sum mu(ev)=depth; absent-key
+    accesses: trace empty, tree unchanged, cost=depth_to_leaf+1, zero activation opportunities;
+    freeze both statements + absent-access replay semantics (no T7/T5, no discharge
+    change)'
+  new_or_modified_artifacts:
+  - math/theorems/LIQ0-02.md
+  - spec#absent-access-semantics
+  semantic_change: contract completion
+  backward_compatibility_effect: v0.4 LIQ0-02 statement superseded by two precise
+    statements
+  tests_or_checker_rules:
+  - LEGAL_DOMAIN_ERRORS
+  - RHO_AXIS_ERRORS
+  downstream_consumers:
+  - WP-2
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-006
+- id: CC-007
+  severity: BLOCKER
+  original_finding: 'T5_1(L,m) undefined for candidate family: activation depends
+    on frozen predicate P (P_all vs P_keep vs case-restricted)'
+  affected_spec_sections:
+  - '#4'
+  source_evidence: Obstruction mstc0002.py t5activate(engine,mode) with p_all(mode);
+    parent grammar T5 condition 'declared_B_access_path_condition'
+  root_cause: Predicate-free operator cannot serve a predicate-indexed family
+  normative_repair: 'Define T5_{P,1}(L,m,ev): P bound per predicate definition (mode
+    + normalized event class only); P_all fires always, P_keep fires on KEEP, case-restricted
+    per allowlist; T5_{P,rho} bounded iteration of that exact primitive'
+  new_or_modified_artifacts:
+  - spec#T5-def
+  - prereg/predicate_family_v0.4.1.yaml
+  semantic_change: source-derived correction
+  backward_compatibility_effect: Old FLAT(1)/P_all behavior provably unchanged (LIQ0-01)
+  tests_or_checker_rules:
+  - T5_SEMANTIC_ERRORS
+  downstream_consumers:
+  - WP-1
+  - WP-2
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-007
+- id: CC-008
+  severity: BLOCKER
+  original_finding: 'T5_rho never inserted into A/B replay: ordering T7->T5rho / T5rho
+    / discharge-after-B-trace not frozen'
+  affected_spec_sections:
+  - '#4'
+  source_evidence: Obstruction mstc0002.py replay_step=t5activate(t7inject(...)) A-side;
+    replay_access_B per-ev t5activate then discharge after full B trace; DELETE A-only
+  root_cause: Defined operator, undefined composition
+  normative_repair: 'Freeze verbatim replay equations: A-side per StepEv T7->T5_{P,rho};
+    B-side per StepEv T5_{P,rho} (predicate-evaluated); KEEP discharge unchanged T6
+    after complete B trace; DELETE no B replay/discharge; ordering hash-bound in candidate
+    identity'
+  new_or_modified_artifacts:
+  - spec#replay-equations
+  - candidate identity fields
+  semantic_change: contract completion
+  backward_compatibility_effect: Matches inherited execution at FLAT(1) by construction
+  tests_or_checker_rules:
+  - REPLAY_ORDER_ERRORS
+  downstream_consumers:
+  - WP-1
+  - WP-2
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-008
+- id: CC-009
+  severity: BLOCKER
+  original_finding: 'Activation-count identity uses total LATENT q, but #4 says eligible
+    LATENT'
+  affected_spec_sections:
+  - '#4'
+  - '#14'
+  source_evidence: mstc0002 activate_first scans ledger order for first LATENT; support/predicate
+    may restrict eligibility
+  root_cause: Total vs eligible conflation
+  normative_repair: Formulas use eligibleLatentCount(L,P,m,ev); define eligibility
+    (LATENT + support-allowed + predicate-fires + ledger-order position); ACTIVE'=ACTIVE+min(q_elig,b),
+    LATENT'=LATENT-min(q_elig,b)
+  new_or_modified_artifacts:
+  - spec#eligibility
+  - math/theorems/LIQ0-*.md
+  semantic_change: clarification
+  backward_compatibility_effect: At P_all/all-eligible reduces to v0.4 formula
+  tests_or_checker_rules:
+  - T5_SEMANTIC_ERRORS
+  downstream_consumers:
+  - WP-2
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-009
+- id: CC-010
+  severity: BLOCKER
+  original_finding: 'P_inherited not closed: parent grammar defines T5 constraints,
+    not a predicate menu'
+  affected_spec_sections:
+  - '#15'
+  source_evidence: 'Fetched transfer_grammar_v0.3.yaml: no predicate enumeration (verified)'
+  root_cause: Symbolic phrase where a finite set is required
+  normative_repair: prereg/predicate_family_v0.4.1.yaml enumerates P_all, P_keep (exact
+    mode tables) + case-restricted schema (normalized event-class allowlist) with
+    canonical enumeration frozen at WP-0; no post-freeze predicates
+  new_or_modified_artifacts:
+  - prereg/predicate_family_v0.4.1.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: Supersets v0.4 'at minimum' list with exact bytes
+  tests_or_checker_rules:
+  - PREDICATE_GRAMMAR_ERRORS
+  downstream_consumers:
+  - WP-3
+  - WP-4
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-010
+- id: CC-011
+  severity: BLOCKER
+  original_finding: Unclear whether full T1-T10 grammar reruns or only (P,k,C,rho)
+    varies; objective mentions rule-template counts
+  affected_spec_sections:
+  - '#15'
+  - '#16'
+  source_evidence: Parent grammar has T1-T10 + supports/scales + signed branch; v0.4
+    grid varies 4 vars but objective counts templates
+  root_cause: Two experiments described at once
+  normative_repair: 'Choose (B): non-liquidity mechanics held fixed at inherited Branch-A
+    architecture; synthesis searches only enumerated (P,k,C,rho); drop rule-template/support-complexity
+    objective terms; keep predicate-simplicity + profile-simplicity ordering'
+  new_or_modified_artifacts:
+  - spec#search-space
+  - prereg/liquidity_search_space.yaml
+  semantic_change: contract completion (narrows v0.4 scope)
+  backward_compatibility_effect: Full-grammar search explicitly out of scope (successor
+    material)
+  tests_or_checker_rules:
+  - PREDICATE_GRAMMAR_ERRORS
+  downstream_consumers:
+  - WP-4
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-011
+- id: CC-012
+  severity: BLOCKER
+  original_finding: 'Rho axis underparameterized: only (r,r),(r,2r); (1,3) is same
+    axis but inexpressible'
+  affected_spec_sections:
+  - '#5'
+  source_evidence: Axis claim is event-class bandwidth; v0.4 allows 2 rays only
+  root_cause: Axis confused with subfamilies
+  normative_repair: Mathematical class rho=(rho_ZIG,rho_DOUBLE), each in 0..8, symmetric
+    across LL/RR/LR/RL; FLAT(r)=(r,r), ROT(r)=(r,2r) named subfamilies; ROOT/no-event
+    rho=0
+  new_or_modified_artifacts:
+  - prereg/liquidity_axis.yaml
+  semantic_change: actual semantic change (class widens; v0.4 profiles embed exactly)
+  backward_compatibility_effect: v0.4 12 profiles embed 1-1; old results comparable
+  tests_or_checker_rules:
+  - RHO_AXIS_ERRORS
+  downstream_consumers:
+  - WP-2
+  - WP-4
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-012
+- id: CC-013
+  severity: BLOCKER
+  original_finding: 'r<=6 vs successor rule: needing r=7 is not a new axis but #5
+    demands successor for larger families'
+  affected_spec_sections:
+  - '#5'
+  - '#43'
+  source_evidence: 'v0.4 #5 vs #43 text (both cited in finding)'
+  root_cause: Ladder confused with axis
+  normative_repair: 'Separate discovery ladder (frozen 12: FLAT/ROT r=1..6) from admissible
+    class (0..8^2); r=7 uses versioned ladder extension; successor only for new degrees
+    of freedom/dependencies outside rho-profile semantics'
+  new_or_modified_artifacts:
+  - prereg/liquidity_axis.yaml#ladder
+  semantic_change: clarification
+  backward_compatibility_effect: Strictly more permissive than v0.4 text; frozen ladder
+    unchanged
+  tests_or_checker_rules:
+  - RHO_AXIS_ERRORS
+  downstream_consumers:
+  - WP-4
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-013
+- id: CC-014
+  severity: BLOCKER
+  original_finding: 'Theorem targets lack exact bytes: LIQ0 names, MSTL-15 ''such
+    as'', PA target form, telescope/bridge prose'
+  affected_spec_sections:
+  - '#14'
+  - '#28'
+  - '#29'
+  source_evidence: v0.4 text (finding cites sections)
+  root_cause: Names where quantifiers/domains/negations are required
+  normative_repair: Exact versioned statement files math/theorems/{LIQ0-01..10,MSTL-08U,09,10,11,12,13,14,15,16,17,18,19,22,23,24,25,26}.md
+    with quantifiers/domain/constants/assumptions/conclusion/candidate-dependence/negation/first-consumer
+    before synthesis
+  new_or_modified_artifacts:
+  - math/theorems/*.md (27 files)
+  semantic_change: contract completion
+  backward_compatibility_effect: Supersede prose-only targets
+  tests_or_checker_rules:
+  - THEOREM_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-2
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-014
+- id: CC-015
+  severity: BLOCKER
+  original_finding: '26-node ledger not fully mapped: #42 maps 16, missing MST0-01..07,12,20,21'
+  affected_spec_sections:
+  - '#42'
+  source_evidence: Arch THEOREM_STATUS has 26 rows; v0.4 maps 16
+  root_cause: '''At minimum'' left as the whole contract'
+  normative_repair: 'theorem_gate_matrix.yaml dispositions all 26: IDENTICAL_TRANSPORT
+    / REPROVE_UNDER_RHO / GENERALIZED_NEW_BYTES / DOWNSTREAM_REBOUND / CONDITIONAL
+    / NOT_APPLICABLE + justification; MSTL-12 added (signed bound); MST0-20/21 OUT_OF_SCOPE
+    (DOC-disproof outside LIQ, CC-066)'
+  new_or_modified_artifacts:
+  - prereg/theorem_gate_matrix.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: 16 mapped entries preserved, 10 added
+  tests_or_checker_rules:
+  - THEOREM_MAPPING_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-015
+- id: CC-016
+  severity: BLOCKER
+  original_finding: MST0-09 mapped but missing from ladder/war (MSTL-GATE-13 mentions
+    locality/preservation only); Dynamic gate needs 08U/09/11/13/14/15/22
+  affected_spec_sections:
+  - '#41'
+  source_evidence: 'DECIDE gate text in finding; v0.4 #41 war list'
+  root_cause: Mapped obligation with no owner in the endgame
+  normative_repair: MSTL-09 explicit identity/status/owner (WP-2 dev, WP-6 proof)
+    + present in PA prerequisite conjunction + gate MSTL-GATE-13 checks 08U/09/11/13
+  new_or_modified_artifacts:
+  - prereg/theorem_gate_matrix.yaml
+  - math/theorems/MSTL-09.md
+  semantic_change: contract completion
+  backward_compatibility_effect: Adds missing endgame check
+  tests_or_checker_rules:
+  - THEOREM_MAPPING_ERRORS
+  - FIRST_CONSUMER_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-016
+- id: CC-017
+  severity: BLOCKER
+  original_finding: '''After required upstream REVIEWED'' not enumerated for Pair
+    Access'
+  affected_spec_sections:
+  - '#29'
+  source_evidence: 'v0.4 #29 prose'
+  root_cause: Conjunction left implicit
+  normative_repair: 'Freeze PA prerequisites: MSTL-08U/09/11/13/14/15/22 REVIEWED
+    + LIQ0-01/02/04/05/06/09/10 at required statuses; machine-checked before MSTL-17
+    PROVE track'
+  new_or_modified_artifacts:
+  - spec#PA-prerequisites
+  semantic_change: contract completion
+  backward_compatibility_effect: Strictly explicit version of v0.4 intent
+  tests_or_checker_rules:
+  - FIRST_CONSUMER_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-017
+- id: CC-018
+  severity: BLOCKER
+  original_finding: 'Theorem provenance ambiguous: MST0-08U/09/11/13/22 more mature
+    in Dynamic than arch; ''parent proof'' undefined'
+  affected_spec_sections:
+  - '#13'
+  source_evidence: DECIDE ACCEPT x5 vs arch statuses
+  root_cause: Two proof sources, no import rule
+  normative_repair: 'Provenance matrix rule: transport later proof only under byte-identical
+    statements + rho-invariance transport theorem; else reprove or mint new MSTL bytes;
+    inherited ACCEPT valid only for exact reviewed bytes'
+  new_or_modified_artifacts:
+  - planning/PARENT_PROVENANCE_MATRIX.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: No statuses copied
+  tests_or_checker_rules:
+  - PARENT_PRECEDENCE_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-018
+- id: CC-019
+  severity: BLOCKER
+  original_finding: Branch-B activation condition not operational (dev vs fresh vs
+    theorem failure?)
+  affected_spec_sections:
+  - '#31'
+  source_evidence: 'v0.4 #31 prose'
+  root_cause: Exact-failure undefined
+  normative_repair: Branch B activates iff Branch-A PROMOTED set rejected at development
+    (no eligible survivor) OR fresh (PROMOTED_CANDIDATE_SET_REJECTED); late theorem
+    failure does NOT open new synthesis (CC-020)
+  new_or_modified_artifacts:
+  - spec#branch-B-activation
+  semantic_change: contract completion
+  backward_compatibility_effect: Narrows v0.4 trigger prose
+  tests_or_checker_rules:
+  - BRANCH_B_ERRORS
+  downstream_consumers:
+  - WP-4
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-019
+- id: CC-020
+  severity: BLOCKER
+  original_finding: Late Branch-A theorem failure makes Branch B post-holdout adaptation
+    (PHASE11 passed, H4L revealed)
+  affected_spec_sections:
+  - '#31'
+  - '#18'
+  source_evidence: v0.4 phase/reveal ordering
+  root_cause: Freshness architecture violated by late synthesis
+  normative_repair: All usable Branch-B identities/grammar frozen dormant pre-reveal;
+    post-reveal only already-frozen Branch-B set may run on H4L; otherwise successor
+    + new bank
+  new_or_modified_artifacts:
+  - spec#branch-B-freeze
+  - prereg predicate/grammar
+  semantic_change: firewall hardening
+  backward_compatibility_effect: Forbids v0.4-permitted late adaptation
+  tests_or_checker_rules:
+  - BRANCH_B_ERRORS
+  - HOLDOUT_FIREWALL_ERRORS
+  downstream_consumers:
+  - WP-3
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-020
+- id: CC-021
+  severity: BLOCKER
+  original_finding: Signed Branch-B rho semantics unbound (unsigned LATENT/ACTIVE/SPENT
+    vs signed masses)
+  affected_spec_sections:
+  - '#31'
+  source_evidence: Parent grammar T9 + lower-bound route; v0.4 'obligations remain
+    mandatory' only
+  root_cause: Available branch with undefined accounting
+  normative_repair: 'Define signed T5_{P,rho}: activation preserves sign-mass, energy
+    E_signed=sum(m) with proved lower bound MSTL-12; candidate identity binds signed
+    energy/lower-bound definition; unsigned theorems do not transfer silently'
+  new_or_modified_artifacts:
+  - spec#signed-semantics
+  - math/theorems/MSTL-12.md
+  semantic_change: contract completion
+  backward_compatibility_effect: Branch B closed only when these bytes exist
+  tests_or_checker_rules:
+  - BRANCH_B_ERRORS
+  downstream_consumers:
+  - WP-2
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-021
+- id: CC-022
+  severity: BLOCKER
+  original_finding: H4L generator underspecified ('Recommended' sizes/strata; missing
+    quotas/laws/RNG/seeds/dedup/serialization/hashes)
+  affected_spec_sections:
+  - '#18'
+  source_evidence: 'v0.4 #18 ''Recommended'' wording'
+  root_cause: '''Recommended'' cannot produce reproducible fresh bank'
+  normative_repair: 'Freeze exact: sizes [18,26,34,46,58,74,98] x10k=70k; per-stratum
+    quotas (equal split 833 or 834 with deterministic remainder schedule); history-length
+    law; tree-shape law; SHA-256 counter DRBG; secret seed protocol; dedup-reject-resample;
+    weaker-domain legality filter; canonical JSON serialization; sorted order; .json.zst
+    shards; per-shard + logical-stream SHA; commitment construction'
+  new_or_modified_artifacts:
+  - prereg/h4l_holdout.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: Recommendations promoted to normative values
+  tests_or_checker_rules:
+  - HOLDOUT_FIREWALL_ERRORS
+  downstream_consumers:
+  - WP-3
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-022
+- id: CC-023
+  severity: BLOCKER
+  original_finding: 'Public Git is not quarantine: committed bytes/seeds readable
+    by discovery'
+  affected_spec_sections:
+  - '#18'
+  source_evidence: Repo is public GitHub (verified)
+  root_cause: Storage confused with secrecy
+  normative_repair: 'True commitment: pre-reveal public = commitment hash + non-sensitive
+    metadata ONLY; seed + bank bytes held outside public/discovery repo (operator-held
+    secret); reveal publishes + verifies; no .gitignore/LFS/encrypted-in-repo fakery;
+    without inaccessible storage H4L BLOCKED'
+  new_or_modified_artifacts:
+  - spec#H4L-secrecy
+  - prereg/h4l_holdout.yaml
+  semantic_change: firewall hardening (forbids v0.4 plan of committing bank bytes)
+  backward_compatibility_effect: Supersedes old WorkPlan quarantine-by-commit
+  tests_or_checker_rules:
+  - HOLDOUT_FIREWALL_ERRORS
+  downstream_consumers:
+  - WP-3
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-023
+- id: CC-024
+  severity: BLOCKER
+  original_finding: No exact H4L firewall state machine (states/transitions/readers/unlock
+    count)
+  affected_spec_sections:
+  - '#18'
+  source_evidence: v0.4 quarantine prose
+  root_cause: Prose where an automaton is required
+  normative_repair: States EMPTY->GENERATOR_FROZEN->BANK_GENERATED_SECRET->COMMITMENT_PUBLISHED->CANDIDATE_SET_FROZEN->REVEALED_ONCE->CONSUMED;
+    legal readers/writers per state; unlock count immutable <=1; violations fail closed
+    with STOP IDs
+  new_or_modified_artifacts:
+  - spec#H4L-firewall
+  - firewall.py contract
+  semantic_change: firewall hardening
+  backward_compatibility_effect: Compatible with v0.4 intent, exact
+  tests_or_checker_rules:
+  - HOLDOUT_FIREWALL_ERRORS
+  downstream_consumers:
+  - WP-3
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-024
+- id: CC-025
+  severity: BLOCKER
+  original_finding: WP-0 vs WP-3 disagree on H4L generator freeze ownership
+  affected_spec_sections:
+  - '#32'
+  source_evidence: Old WorkPlan WP-0 vs WP-3 text
+  root_cause: Two owners for one freeze
+  normative_repair: WP-0 freezes GENERATOR CONTRACT (normative semantics); WP-3 implements
+    code, certifies hash-equivalent/compliant implementation, then generates; no normative
+    semantics invented in WP-3
+  new_or_modified_artifacts:
+  - spec#freeze-ownership
+  semantic_change: clarification
+  backward_compatibility_effect: Resolves plan contradiction
+  tests_or_checker_rules:
+  - HOLDOUT_FIREWALL_ERRORS
+  downstream_consumers:
+  - WP-0
+  - WP-3
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-025
+- id: CC-026
+  severity: BLOCKER
+  original_finding: Top-3 promotion makes LIQUIDITY_CALCULUS_REJECTED too strong (refutes
+    3, not grammar)
+  affected_spec_sections:
+  - '#32'
+  - '#49'
+  source_evidence: v0.4 cap <=3 + terminal wording
+  root_cause: Claim exceeds elimination
+  normative_repair: Evaluate every eligible survivor; <=3 cap allowed only with domination/equivalence
+    proof; otherwise terminal PROMOTED_CANDIDATE_SET_REJECTED; LIQUIDITY_CALCULUS_REJECTED
+    only after full declared space eliminated; 'second candidate' generalized to next-in-order-until-exhausted
+  new_or_modified_artifacts:
+  - spec#promotion
+  - terminals
+  semantic_change: contract completion (weakens claim to match evidence)
+  backward_compatibility_effect: Honest renaming; old label retained only for full
+    elimination
+  tests_or_checker_rules:
+  - CANDIDATE_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-4
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-026
+- id: CC-027
+  severity: BLOCKER
+  original_finding: 'Refutation lifecycle missing: only UNPROVED->PROVED->REVIEWED
+    yet terminals include REFUTED'
+  affected_spec_sections:
+  - '#22'
+  - '#49'
+  source_evidence: 'v0.4 #22 + #49 text'
+  root_cause: Terminal states unreachable by defined transitions
+  normative_repair: Dual prove/refute lifecycle states (UNPROVED/PROVE_RUNNING/PROVED_PENDING_REVIEW/REVIEWED/NO_WITNESS/WITNESS_FOUND/MATHEMATICAL_COUNTEREXAMPLE_CONFIRMED/FORMAL_REFUTATION_PENDING/HUMAN_VALIDATION_PENDING/REFUTED/BLOCKED/NOT_REACHED/NOT_APPLICABLE);
+    REJECT!=REFUTED; REFUTED needs exact negation witness + candidate hash + 3-route
+    replay (primary/independent/formal-or-MATH_CONFIRMED) + human validation
+  new_or_modified_artifacts:
+  - spec#lifecycle
+  - schemas/theorem_status.schema.json
+  semantic_change: lifecycle hardening
+  backward_compatibility_effect: Adds paths; existing path preserved
+  tests_or_checker_rules:
+  - LIFECYCLE_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-027
+- id: CC-028
+  severity: BLOCKER
+  original_finding: '''Three execution routes'' vs ''Lean where feasible'' contradictory'
+  affected_spec_sections:
+  - '#21'
+  source_evidence: 'v0.4 #21 text'
+  root_cause: Optional third route breaks 'at least three'
+  normative_repair: Two routes mandatory (primary + independently structured); formal
+    Lean mandatory where technically applicable, else MATHEMATICAL_COUNTEREXAMPLE_CONFIRMED
+    preserved without promotion to REFUTED; applicability decided per-theorem pre-attack
+    with recorded reason
+  new_or_modified_artifacts:
+  - spec#execution-routes
+  semantic_change: clarification
+  backward_compatibility_effect: Resolves contradiction without weakening evidence
+    bar
+  tests_or_checker_rules:
+  - LIFECYCLE_ERRORS
+  downstream_consumers:
+  - WP-5
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-028
+- id: CC-029
+  severity: MAJOR
+  original_finding: Internal-validation contract unspecified (sizes/generators/masks/seeds/disjointness)
+  affected_spec_sections:
+  - '#16'
+  - MSTL-GATE-8
+  source_evidence: v0.4 objective/promotion/ladder mention validation without parameters
+  root_cause: Load-bearing split without a contract
+  normative_repair: 'Freeze validation spec: generators (seeded structural, disjoint
+    seed stream from dev), sizes [7,8,10,12,16], histories/law, 5k episodes, masks
+    (states/cycles/histories disjoint from dev by ID sets), candidate-contact policy
+    (frozen candidates only, no synthesis feedback)'
+  new_or_modified_artifacts:
+  - prereg/liquidity_search_space.yaml#validation
+  semantic_change: contract completion
+  backward_compatibility_effect: New exact split; dev corpora unchanged
+  tests_or_checker_rules:
+  - HOLDOUT_FIREWALL_ERRORS
+  downstream_consumers:
+  - WP-4
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-029
+- id: CC-030
+  severity: MAJOR
+  original_finding: Adversarial campaigns lack frozen budgets (iters/seeds/objectives/shards/caps/reduction)
+  affected_spec_sections:
+  - '#20'
+  source_evidence: v0.4 names 9 engines only
+  root_cause: Survival depends on effort
+  normative_repair: 'Freeze per-engine: deterministic seeds, evaluation budgets (e.g.,
+    hillclimb 20k steps x5 restarts; anneal/genetic equivalents tabled), size ranges,
+    objective=residual-hunt, shard counts, wall/mem caps, sorted reduction + tie-break,
+    resource-limit record fields; survival reproducible'
+  new_or_modified_artifacts:
+  - prereg/liquidity_search_space.yaml#adversarial
+  semantic_change: reproducibility hardening
+  backward_compatibility_effect: Effort becomes part of contract
+  tests_or_checker_rules:
+  - ARTIFACT_POLICY_ERRORS
+  downstream_consumers:
+  - WP-4
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-030
+- id: CC-031
+  severity: MAJOR
+  original_finding: Clean-room verifier not frozen before reveal; post-failure authorship
+    weakens independence
+  affected_spec_sections:
+  - '#21'
+  source_evidence: 'v0.4 #21 requires routes, no freeze timing'
+  root_cause: Independence without a boundary
+  normative_repair: 'Freeze before reveal: clean-room semantic spec + forbidden imports
+    + authoring boundary + I/O schema + independence requirements; implementation
+    bytes hash-frozen pre-reveal; post-reveal changes only via preregistered replay
+    interface, mechanically audited'
+  new_or_modified_artifacts:
+  - spec#cleanroom
+  - artifacts/v04/cleanroom/contract hash
+  semantic_change: firewall hardening
+  backward_compatibility_effect: Strengthens v0.4 independence claim
+  tests_or_checker_rules:
+  - HOLDOUT_FIREWALL_ERRORS
+  downstream_consumers:
+  - WP-3
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-031
+- id: CC-032
+  severity: MAJOR
+  original_finding: Parent T01-T90/STOP-01-50/INV-001-070/tests never dispositioned
+    ('inherited applicable' vague)
+  affected_spec_sections:
+  - '#40'
+  source_evidence: Arch prereg matrices exist (threat/stop blob SHAs recorded); v0.4
+    says 'in addition to inherited applicable stops'
+  root_cause: Vague inheritance of 210+ controls
+  normative_repair: PARENT_CONTROL_DISPOSITION.yaml enumerates every parent T/STOP/INV/named-test
+    with INHERITED_UNCHANGED / INHERITED_MODIFIED / SUPERSEDED / NOT_APPLICABLE +
+    reason + replacement
+  new_or_modified_artifacts:
+  - planning/PARENT_CONTROL_DISPOSITION.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: No control silently dropped or kept
+  tests_or_checker_rules:
+  - PARENT_CONTROL_DISPOSITION_ERRORS
+  downstream_consumers:
+  - WP-0
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-032
+- id: CC-033
+  severity: MAJOR
+  original_finding: New ladder drops parent gates (L6 translation, rotation refinement,
+    heavy/pairing/bend, lower-bound, holdout-scope)
+  affected_spec_sections:
+  - '#41'
+  source_evidence: Arch theorem_gate_matrix.yaml (blob cdac6c...) vs v0.4 MSTL ladder
+  root_cause: Overlay mistaken for replacement
+  normative_repair: 'MSTL is overlay: every inherited gate either discharged-by-transport
+    (recorded) or explicitly re-owned; gate matrix lists inherited gate + disposition'
+  new_or_modified_artifacts:
+  - prereg/theorem_gate_matrix.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: Parent gates preserved
+  tests_or_checker_rules:
+  - THEOREM_MAPPING_ERRORS
+  downstream_consumers:
+  - WP-1
+  - WP-2
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-033
+- id: CC-034
+  severity: MAJOR
+  original_finding: H1/H2R/n8 lack LIQ disposition (only H3T declared historical)
+  affected_spec_sections:
+  - '#19'
+  source_evidence: 'Arch parent_contract: H1 EMPTY, H2R BANK_COMMITTED/0, n8 PARTIALLY_REVEALED_CANARY_CONTAMINATED;
+    v0.4 silent'
+  root_cause: Live firewall states unowned
+  normative_repair: 'Declare in LIQ: H1 HISTORICAL_UNUSED (EMPTY preserved), H2R HISTORICAL_UNUSED
+    (COMMITTED/0 preserved, never unlocked here), n8 CONTAMINATED_CANARY (never fresh/validation),
+    H3T HISTORICAL (UNLOCKED_ONCE preserved)'
+  new_or_modified_artifacts:
+  - prereg/h4l_holdout.yaml#legacy-banks
+  semantic_change: contract completion
+  backward_compatibility_effect: Unlock counts preserved
+  tests_or_checker_rules:
+  - HOLDOUT_FIREWALL_ERRORS
+  - PARENT_CONTROL_DISPOSITION_ERRORS
+  downstream_consumers:
+  - WP-0
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-034
+- id: CC-035
+  severity: MAJOR
+  original_finding: H4L fresh but not distribution-disjoint (strata overlap dev motifs);
+    'entirely different' claim at risk
+  affected_spec_sections:
+  - '#18'
+  source_evidence: 'v0.4 strata include bursts/spines/nested shared with #20 dev battery'
+  root_cause: Fresh-unseen confused with OOD
+  normative_repair: 'Separate categories: development / internal validation / fresh
+    H4L / OOD benchmark / clean-room / large-n / formal; freeze OOD family (different
+    generator: long-range random-walk histories + adversarial spine-heavy trees, disjoint
+    seed stream, sizes [24,48,96,192]) evaluated post-freeze, labeled OOD not fresh-holdout'
+  new_or_modified_artifacts:
+  - prereg/h4l_holdout.yaml#ood
+  semantic_change: contract completion
+  backward_compatibility_effect: Adds category; H4L claims unchanged
+  tests_or_checker_rules:
+  - HOLDOUT_FIREWALL_ERRORS
+  downstream_consumers:
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-035
+- id: CC-036
+  severity: MAJOR
+  original_finding: 'Attribution confounded: (P,k,C,rho) vary together; FLAT(1)/larger-C
+    survivor would not prove liquidity'
+  affected_spec_sections:
+  - '#17'
+  source_evidence: v0.4 comparison lists profiles but no matched baseline rule
+  root_cause: Multi-parameter survivor, single-axis claim
+  normative_repair: Matched rho=FLAT(1) baseline search over same P/k/C space + pipeline
+    + corpora; labels RHO_REQUIRED / RHO_NOT_REQUIRED / C_ONLY_REPAIR / K_OR_P_REPAIR
+    / MIXED_AXIS_REPAIR / NO_SURVIVOR; liquidity confirmed only under RHO_REQUIRED
+  new_or_modified_artifacts:
+  - spec#attribution
+  - WP-4 ranking schema
+  semantic_change: contract completion
+  backward_compatibility_effect: Forbids v0.4-permitted overclaim
+  tests_or_checker_rules:
+  - CANDIDATE_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-4
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-036
+- id: CC-037
+  severity: MAJOR
+  original_finding: Candidate identity 'at least' list incomplete (predicate/legal/mu/replay/required_C/discharge/executor
+    hashes missing)
+  affected_spec_sections:
+  - '#6'
+  source_evidence: 'v0.4 #6 ''at least'' wording'
+  root_cause: Open identity under a closed-ID regime
+  normative_repair: 'Identity hash-binds: calculus_id, rule_family_id, parent family,
+    branch, predicate def/hash, k, C, rho profile def/hash, event-normalization/mu
+    hash, legal-domain hash, credit types, support, scale, provenance, T7, T5_rho,
+    T6, selection order, A/B replay order, discharge order, required_C hash, energy/lower-bound
+    def, init, snapshot convention, executor semantics hash, mapping/ontology versions'
+  new_or_modified_artifacts:
+  - schemas/candidate.schema.json
+  semantic_change: contract completion
+  backward_compatibility_effect: Superset of v0.4 list
+  tests_or_checker_rules:
+  - CANDIDATE_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-3
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-037
+- id: CC-038
+  severity: MAJOR
+  original_finding: 'Cross-C testing vs calculus-ID rule: C in identity but ''same
+    rule at larger C'' invites in-place mutation'
+  affected_spec_sections:
+  - '#15'
+  - '#35'
+  source_evidence: v0.4 ladder text
+  root_cause: Family vs instance conflation
+  normative_repair: rule_family_id + calculus_id=f(rule_family_id,C); changing C mints
+    new ID; ladder runs are distinct frozen instances, never mutations
+  new_or_modified_artifacts:
+  - schemas/candidate.schema.json#family
+  semantic_change: clarification
+  backward_compatibility_effect: Makes v0.4 ladder practice ID-safe
+  tests_or_checker_rules:
+  - CANDIDATE_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-4
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-038
+- id: CC-039
+  severity: MAJOR
+  original_finding: A(n) open-ended escape hatch (nonzero permitted if later bridge-compatible)
+  affected_spec_sections:
+  - '#29'
+  source_evidence: 'v0.4 #29 prefers 0, permits nonzero'
+  root_cause: Post-hoc additive repair
+  normative_repair: Only live target A(n)=0; nonzero class BLOCKED until bridge-derived
+    admissible class frozen from pinned sources; failed A=0 proof must not invent
+    additive terms
+  new_or_modified_artifacts:
+  - spec#additive-term
+  - math/theorems/MSTL-18.md
+  semantic_change: contract completion (closes escape)
+  backward_compatibility_effect: Narrows v0.4 permission
+  tests_or_checker_rules:
+  - THEOREM_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-039
+- id: CC-040
+  severity: MAJOR
+  original_finding: Bridge/literature bytes unpinned; DECIDE records MST0-19 blocked
+    on sources, yet LIQ allows DO_PROVED
+  affected_spec_sections:
+  - '#30'
+  source_evidence: 'DECIDE bridge_sources: L3 PDF frozen, L2 absent -> MST0-19 BLOCKED
+    (verified via Path/bridge record)'
+  root_cause: Reachable terminal without reachable premises
+  normative_repair: WP-0 pins Levy-Tarjan source/version/bytes/hash/statement/direction/conventions/assumptions/mapping/checklist/manifest;
+    if unavailable MSTL-19=BLOCKED_BY_SOURCE and DO unreachable; no folklore bridges
+  new_or_modified_artifacts:
+  - prereg/bridge_manifest.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: DO gated on bytes, not prose
+  tests_or_checker_rules:
+  - BRIDGE_SOURCE_ERRORS
+  downstream_consumers:
+  - WP-0
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-040
+- id: CC-041
+  severity: MAJOR
+  original_finding: Environment/toolchain not frozen (Lean/lake/manifest/Python/solvers/threads/RNG/compression)
+  affected_spec_sections:
+  - '#47'
+  source_evidence: 'v0.4 #47 verifies builds without freezing them; DECIDE lean-toolchain
+    leanprover/lean4:v4.21.0'
+  root_cause: Reproducibility without a locked platform
+  normative_repair: 'prereg/environment_lock.yaml: Python 3.13.7 + dep hashes at WP-0,
+    Lean v4.21.0 + lake config/manifest (source: obstruction parent toolchain), solver
+    builds/versions, single-thread-deterministic policy, SHA-256-DRBG RNG, zstd deterministic
+    params, env vars; runs record env-lock hash'
+  new_or_modified_artifacts:
+  - prereg/environment_lock.yaml
+  semantic_change: reproducibility hardening
+  backward_compatibility_effect: New normative lock
+  tests_or_checker_rules:
+  - ENVIRONMENT_LOCK_ERRORS
+  downstream_consumers:
+  - WP-0
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-041
+- id: CC-042
+  severity: MAJOR
+  original_finding: Exact-arithmetic/determinism policy weaker than parent (float
+    signs, sorted reductions)
+  affected_spec_sections:
+  - '#47'
+  source_evidence: 'Arch baseline: exact integers/Fraction, deterministic sorted iteration;
+    v0.4 states exactness locally'
+  root_cause: Regression by omission
+  normative_repair: 'Inherit explicitly: no float-determined residual signs; exact
+    integer/rational theorem decisions; deterministic sorted reductions; canonical
+    tie-break/sharding; logical-stream hashes; exact cert replay; heuristics propose,
+    evaluators dispose; resource exhaustion never impossibility'
+  new_or_modified_artifacts:
+  - spec#exactness
+  semantic_change: reproducibility hardening
+  backward_compatibility_effect: Restores parent guarantee
+  tests_or_checker_rules:
+  - ARTIFACT_POLICY_ERRORS
+  downstream_consumers:
+  - WP-0
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-042
+- id: CC-043
+  severity: MAJOR
+  original_finding: 'Logging regresses: branch/ancestors/literature/gate-matrix/runtime
+    hashes missing vs parent'
+  affected_spec_sections:
+  - '#46'
+  source_evidence: Parent §27 24-field+ record vs v0.4 shorter list (finding comparison)
+  root_cause: Successor drops provenance
+  normative_repair: Logging = parent superset + rho/dual-parent fields (33 fields
+    incl. branch, clean-tree state, source-tree manifest, arch/obstruction/ancestor
+    IDs, spec+amendment+prereg+gate-matrix+literature+env SHAs, candidate/family IDs,
+    P/k/C/rho+profile+legal-domain SHAs, firewall, command/IO/std hashes, wall/peak/exit/status)
+  new_or_modified_artifacts:
+  - schemas/runlog.schema.json
+  semantic_change: reproducibility hardening
+  backward_compatibility_effect: Superset; old consumers unaffected
+  tests_or_checker_rules:
+  - LOGGING_REGRESSIONS
+  downstream_consumers:
+  - WP-0
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-043
+- id: CC-044
+  severity: MAJOR
+  original_finding: Dirty-tree runs unverifiable (commit hash != executed bytes; generator-before-commit
+    risk)
+  affected_spec_sections:
+  - '#46'
+  source_evidence: Prior seal pain cited in finding
+  root_cause: Hash without hygiene
+  normative_repair: Authoritative runs require committed producer code + git status
+    --porcelain empty; else full content manifest + diagnostic-only status (no theorem/fresh
+    claims); generator committed before H4L generation
+  new_or_modified_artifacts:
+  - spec#clean-tree
+  semantic_change: reproducibility hardening
+  backward_compatibility_effect: New gate on old practice
+  tests_or_checker_rules:
+  - DIRTY_RUN_POLICY_ERRORS
+  downstream_consumers:
+  - WP-0
+  - WP-3
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-044
+- id: CC-045
+  severity: MAJOR
+  original_finding: Large-artifact rules missing (H4L/large-n huge; logical hashes
+    only at final repro)
+  affected_spec_sections:
+  - '#45'
+  - '#47'
+  source_evidence: 'Parent required .json.zst + shard manifests + logical-stream hashes;
+    v0.4 silent until #47'
+  root_cause: Unstorable/unverifiable banks
+  normative_repair: .json.zst deterministic params, shard naming/order, per-shard
+    SHA, manifest, logical-stream SHA, canonical serialization; no uncontrolled raw
+    artifacts
+  new_or_modified_artifacts:
+  - spec#artifacts
+  semantic_change: reproducibility hardening
+  backward_compatibility_effect: Restores parent policy
+  tests_or_checker_rules:
+  - ARTIFACT_POLICY_ERRORS
+  downstream_consumers:
+  - WP-3
+  - WP-5
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-045
+- id: CC-046
+  severity: MAJOR
+  original_finding: Final-seal mechanics underdefined (scope/order/self-ref/archive/manifest/rebuild/stale/failed-artifacts)
+  affected_spec_sections:
+  - '#19'
+  source_evidence: 'Parent seal pain cited; v0.4 #19 prose only'
+  root_cause: Unsealable seal
+  normative_repair: 'Exact: manifest scope+exclusions+ordering, seal ordering, no-self-hash
+    policy, deterministic archive name+construction+SHA, FINAL_RESULT generation from
+    artifacts, rebuild-identical check, stale detection, failed-artifact preservation,
+    clean-checkout repro'
+  new_or_modified_artifacts:
+  - spec#seal
+  semantic_change: reproducibility hardening
+  backward_compatibility_effect: New exact mechanics
+  tests_or_checker_rules:
+  - SEAL_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-046
+- id: CC-047
+  severity: MAJOR
+  original_finding: Reproduction impossible for early terminals (unconditional H4L/proof/Lean
+    checklist)
+  affected_spec_sections:
+  - '#47'
+  source_evidence: 'v0.4 #47 unconditional list'
+  root_cause: Checklist demands nonexistent artifacts
+  normative_repair: 'Reached-phase matrix: each terminal verifies existing artifacts
+    + explicit NOT_REACHED/NOT_APPLICABLE for later ones + absence of illegal downstream
+    artifacts'
+  new_or_modified_artifacts:
+  - spec#reproduction-matrix
+  semantic_change: contract completion
+  backward_compatibility_effect: Conditional version of v0.4 list
+  tests_or_checker_rules:
+  - SEAL_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-047
+- id: CC-048
+  severity: MAJOR
+  original_finding: No normative clone/bootstrap transaction ('additions relative
+    to cloned parent')
+  affected_spec_sections:
+  - '#45'
+  source_evidence: 'v0.4 #45 one-liner'
+  root_cause: New-results namespace unenforced
+  normative_repair: 'Bootstrap: import exact pinned parent tree; preserve history
+    as v0.3/history; byte-equality manifest; classify every file IMPORTED_UNCHANGED
+    / SURGICALLY_MODIFIED / SUPERSEDED_BY_VERSIONED_FILE / EXPLICITLY_NOT_IMPORTED_WITH_REASON;
+    new results only under v0.4.1 namespaces; PARENT_TREE_DISPOSITION.yaml, unclassified=closure
+    failure'
+  new_or_modified_artifacts:
+  - planning/PARENT_TREE_DISPOSITION.yaml
+  semantic_change: contract completion
+  backward_compatibility_effect: New gate
+  tests_or_checker_rules:
+  - ARTIFACT_POLICY_ERRORS
+  downstream_consumers:
+  - WP-0
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-048
+- id: CC-049
+  severity: MAJOR
+  original_finding: WorkPlan/Path governance not normative (required only by external
+    prompt)
+  affected_spec_sections:
+  - '#32'
+  source_evidence: v0.4 pins parent plans but mandates no live ledger for LIQ
+  root_cause: Governance by prompt, not contract
+  normative_repair: v0.4.1 mandates WorkPlan.md (compilation of closed spec) + Path.md
+    (append-only live ledger, contemporaneous WP/gate updates, failed history preserved)
+  new_or_modified_artifacts:
+  - spec#governance
+  semantic_change: contract completion
+  backward_compatibility_effect: Prompts prompt-rule into spec
+  tests_or_checker_rules:
+  - THEOREM_MAPPING_ERRORS
+  downstream_consumers:
+  - WP-0
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-049
+- id: CC-050
+  severity: MAJOR
+  original_finding: No canonical status ledger/review schema (lifecycle prose only;
+    no REJECT/BLOCKED/hash-invalidation)
+  affected_spec_sections:
+  - '#22'
+  source_evidence: 'v0.4 #22 prose'
+  root_cause: Statuses without a ledger
+  normative_repair: Mandate math/proof_status.json + schemas (states/tracks/transitions/review
+    binding/hashes/invalidation/BLOCKED/NOT_REACHED); changed bytes invalidate review
+  new_or_modified_artifacts:
+  - schemas/theorem_status.schema.json
+  - schemas/review.schema.json
+  semantic_change: lifecycle hardening
+  backward_compatibility_effect: New normative ledger
+  tests_or_checker_rules:
+  - LIFECYCLE_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-050
+- id: CC-051
+  severity: MAJOR
+  original_finding: 'transport vs gate matrix filename inconsistent (layout vs #42)'
+  affected_spec_sections:
+  - '#42'
+  - '#45'
+  source_evidence: v0.4 names theorem_transport_matrix.yaml (#45) vs theorem_gate_matrix.yaml
+    (#42)
+  root_cause: Two names, one role
+  normative_repair: Canonical prereg/theorem_gate_matrix.yaml for gates; theorem_transport_matrix.yaml
+    SUPERSEDED (kept only as historical pointer); provenance matrix keeps transport
+    rationale per object
+  new_or_modified_artifacts:
+  - prereg/theorem_gate_matrix.yaml
+  semantic_change: clarification
+  backward_compatibility_effect: One name survives
+  tests_or_checker_rules:
+  - THEOREM_MAPPING_ERRORS
+  downstream_consumers:
+  - WP-0
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-051
+- id: CC-052
+  severity: MAJOR
+  original_finding: MST_LIQ_EXPORT.json without schema/verifier (main experiment would
+    trust without rerun)
+  affected_spec_sections:
+  - '#44'
+  source_evidence: 'v0.4 #44 field list, no schema'
+  root_cause: Trust without verification
+  normative_repair: schemas/mst_liq_export.schema.json + import verifier binding version/seal/candidate
+    history/IDs/semantic+legal+parent hashes/DAG/status/proof/Lean/review/bridge/counterexample/fresh-bank/claim
+  new_or_modified_artifacts:
+  - schemas/mst_liq_export.schema.json
+  semantic_change: reproducibility hardening
+  backward_compatibility_effect: New gate
+  tests_or_checker_rules:
+  - SEAL_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-052
+- id: CC-053
+  severity: MAJOR
+  original_finding: Successors not required to prove backward embedding (M-chain drawn,
+    never required)
+  affected_spec_sections:
+  - '#43'
+  source_evidence: 'v0.4 #43 7 steps lack embedding theorem'
+  root_cause: Chain by naming
+  normative_repair: Every successor must prove legacy embedding (prior architecture
+    recovered at old parameters) + retain axes + add one justified axis + preserve
+    failures/witnesses
+  new_or_modified_artifacts:
+  - spec#successor
+  semantic_change: contract completion
+  backward_compatibility_effect: 'Strengthens #43'
+  tests_or_checker_rules:
+  - SUCCESSOR_EMBEDDING_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-053
+- id: CC-054
+  severity: MAJOR
+  original_finding: '''Clone full MST architecture'' ambiguous recursively (could
+    clone v0.3, losing rho)'
+  affected_spec_sections:
+  - '#43'
+  source_evidence: 'v0.4 #43 wording'
+  root_cause: Successor could drop axes
+  normative_repair: Clone latest sealed architecture retaining accepted axes unless
+    explicitly justified otherwise
+  new_or_modified_artifacts:
+  - spec#successor
+  semantic_change: clarification
+  backward_compatibility_effect: 'Disambiguates #43'
+  tests_or_checker_rules:
+  - SUCCESSOR_EMBEDDING_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-054
+- id: CC-055
+  severity: HARDENING
+  original_finding: LIQ0-02 failure handling bundles whole axis (ROT death should
+    not kill FLAT)
+  affected_spec_sections:
+  - '#8'
+  source_evidence: Old WP-2 bundled LIQ0-02..10 into one gate
+  root_cause: Profile-specific vs axis-wide conflation
+  normative_repair: 'Separate gates: ROT-ineligible on LIQ0-02 falsity; FLAT continues
+    on own obligations; axis dies only on axis-wide obligation failure'
+  new_or_modified_artifacts:
+  - spec#profile-gates
+  - math/theorems/LIQ0-02.md
+  semantic_change: clarification
+  backward_compatibility_effect: Narrows failure blast radius
+  tests_or_checker_rules:
+  - RHO_AXIS_ERRORS
+  downstream_consumers:
+  - WP-2
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-055
+- id: CC-056
+  severity: HARDENING
+  original_finding: 'Event naming: ZIG-left/ZIG-right vs single ZIG normalization
+    unmapped'
+  affected_spec_sections:
+  - '#3'
+  - '#5'
+  source_evidence: 'v0.4 #3 lists ZIG-left/right, #5 uses ZIG'
+  root_cause: Trace-identity bug surface
+  normative_repair: 'Freeze normalization: trace preserves oriented ZIG-L/R; mu maps
+    both to class ZIG (rho_ZIG); orientation retained in ledger/support records'
+  new_or_modified_artifacts:
+  - spec#event-normalization
+  semantic_change: clarification
+  backward_compatibility_effect: No behavior change
+  tests_or_checker_rules:
+  - RHO_AXIS_ERRORS
+  downstream_consumers:
+  - WP-1
+  - WP-2
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-056
+- id: CC-057
+  severity: HARDENING
+  original_finding: FLAT undefined on ROOT/no-event (ROT has mu(ROOT)=0; FLAT only
+    for eligible non-ROOT)
+  affected_spec_sections:
+  - '#5'
+  source_evidence: 'v0.4 #5.1 wording'
+  root_cause: Partial function in total position
+  normative_repair: 'rho_flat(ROOT)=0, rho(any,ROOT)=0, no-event calls T5 zero times;
+    or prove callers exclude ROOT (choose former: total function)'
+  new_or_modified_artifacts:
+  - prereg/liquidity_axis.yaml
+  semantic_change: clarification
+  backward_compatibility_effect: Totalizes definition
+  tests_or_checker_rules:
+  - RHO_AXIS_ERRORS
+  downstream_consumers:
+  - WP-2
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-057
+- id: CC-058
+  severity: HARDENING
+  original_finding: '''Known n=28 witness is repaired'' invites witness-mutation reading'
+  affected_spec_sections:
+  - '#34'
+  source_evidence: 'v0.4 #34 wording'
+  root_cause: Dangerous verb
+  normative_repair: Replace with 'candidate evaluates execSuffices=true on immutable
+    LIQ-REG-001 (hash-bound, never modified)'
+  new_or_modified_artifacts:
+  - spec#promotion-wording
+  semantic_change: clarification
+  backward_compatibility_effect: Wording fix with teeth
+  tests_or_checker_rules:
+  - CANDIDATE_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-4
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-058
+- id: CC-059
+  severity: HARDENING
+  original_finding: '''Delta minimization'' undefined (global vs local minimality)'
+  affected_spec_sections:
+  - '#37'
+  source_evidence: 'v0.4 #37 list'
+  root_cause: Stronger minimality than certified
+  normative_repair: 'Certificate levels: operation-deletion minimal / parameter-family
+    minimal / exhaustive-global minimal; prohibit stronger wording than certificate
+    supports'
+  new_or_modified_artifacts:
+  - spec#minimization
+  semantic_change: contract completion
+  backward_compatibility_effect: New exact levels
+  tests_or_checker_rules:
+  - LIFECYCLE_ERRORS
+  downstream_consumers:
+  - WP-4
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-059
+- id: CC-060
+  severity: HARDENING
+  original_finding: S5/S6 'repair known family' overclaims conjectured DDKK closed
+    form
+  affected_spec_sections:
+  - '#50'
+  source_evidence: 'v0.4 #50 S5/S6 + #11 CONJECTURED_FAMILY'
+  root_cause: Tested-members vs proved-family
+  normative_repair: Read as frozen tested members unless symbolic family theorem closes
+    (new MSTL-FAM theorem with proof)
+  new_or_modified_artifacts:
+  - spec#success-wording
+  semantic_change: clarification
+  backward_compatibility_effect: Restricts S5/S6 to evidence
+  tests_or_checker_rules:
+  - THEOREM_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-4
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-060
+- id: CC-061
+  severity: HARDENING
+  original_finding: S10 'smallest preregistered C survives' reads as global minimality
+    proof
+  affected_spec_sections:
+  - '#50'
+  source_evidence: 'v0.4 #50 S10'
+  root_cause: Ladder rung vs global minimum
+  normative_repair: Read as 'smallest tested preregistered C ladder rung with survivor';
+    no global-minimality claim
+  new_or_modified_artifacts:
+  - spec#success-wording
+  semantic_change: clarification
+  backward_compatibility_effect: Restricts S10
+  tests_or_checker_rules:
+  - THEOREM_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-061
+- id: CC-062
+  severity: HARDENING
+  original_finding: S19 demands 'exact missing resource', forcing stories for bare
+    obstructions
+  affected_spec_sections:
+  - '#50'
+  source_evidence: 'v0.4 #50 S19'
+  root_cause: Mandatory insight
+  normative_repair: Permit 'no justified missing resource identified' as honest S19
+    answer with preserved obstruction
+  new_or_modified_artifacts:
+  - spec#success-wording
+  semantic_change: clarification
+  backward_compatibility_effect: Adds honest outcome
+  tests_or_checker_rules:
+  - SUCCESSOR_EMBEDDING_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-062
+- id: CC-063
+  severity: HARDENING
+  original_finding: '''Second already-frozen candidate'' should generalize to set
+    exhaustion'
+  affected_spec_sections:
+  - '#41'
+  source_evidence: 'v0.4 #41 wording'
+  root_cause: Two-candidate assumption vs cap 3
+  normative_repair: Attempt next frozen candidate in predetermined order until set
+    exhausted
+  new_or_modified_artifacts:
+  - spec#candidate-order
+  semantic_change: clarification
+  backward_compatibility_effect: Generalizes to cap
+  tests_or_checker_rules:
+  - CANDIDATE_IDENTITY_ERRORS
+  downstream_consumers:
+  - WP-5
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-063
+- id: CC-064
+  severity: HARDENING
+  original_finding: Resource-limit behavior underspecified (no record fields/budgets)
+  affected_spec_sections:
+  - '#49'
+  source_evidence: Parent had 11-field record; v0.4 label only
+  root_cause: No-claim without provenance
+  normative_repair: Exact resource-limit record (attempted/unattempted work, budgets,
+    deterministic policy) required for RESOURCE_LIMIT_NO_CLAIM (and PROMOTED-set variant)
+  new_or_modified_artifacts:
+  - spec#resource-record
+  semantic_change: reproducibility hardening
+  backward_compatibility_effect: Restores parent practice
+  tests_or_checker_rules:
+  - SEAL_ERRORS
+  downstream_consumers:
+  - WP-4
+  - WP-5
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-064
+- id: CC-065
+  severity: HARDENING
+  original_finding: Review REJECT/BLOCKED behavior missing (ACCEPT defined only);
+    rejection must not equal refutation; byte-change invalidation
+  affected_spec_sections:
+  - '#22'
+  source_evidence: 'v0.4 #22 ACCEPT-only'
+  root_cause: Verdict gap
+  normative_repair: REJECT=proof package rejected (truth stays UNPROVED, re-review
+    lawful); BLOCKED=truth BLOCKED until clearer; any theorem/proof byte change invalidates
+    prior review binding (hash mismatch fails closed)
+  new_or_modified_artifacts:
+  - schemas/review.schema.json
+  semantic_change: lifecycle hardening
+  backward_compatibility_effect: Fills verdict gap
+  tests_or_checker_rules:
+  - LIFECYCLE_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-065
+- id: CC-066
+  severity: HARDENING
+  original_finding: Negative DOC route referenced ('independent negative theorem standard')
+    but unbound
+  affected_spec_sections:
+  - '#49'
+  source_evidence: 'v0.4 #49 phrase'
+  root_cause: Standard by allusion
+  normative_repair: DOC-disproof explicitly OUTSIDE MST-LIQ; transfer-route failure
+    never a DOC claim; terminology import from parent NEG contract by reference only
+    (no evidentiary reuse); MST0-20/21 OUT_OF_SCOPE with reason
+  new_or_modified_artifacts:
+  - prereg/theorem_gate_matrix.yaml#MST0-20/21
+  semantic_change: contract completion (scopes experiment)
+  backward_compatibility_effect: Removes implied capability
+  tests_or_checker_rules:
+  - BRIDGE_SOURCE_ERRORS
+  downstream_consumers:
+  - WP-6
+  status: CLOSED
+  closure_evidence: v0.4.1 bytes + check_contract_closure.py rule for CC-066

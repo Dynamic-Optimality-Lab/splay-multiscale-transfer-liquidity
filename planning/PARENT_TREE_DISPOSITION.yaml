@@ -1,0 +1,159 @@
+version: v0.4.1
+arch_commits:
+  navigation: 895889169772087e391e84c33228648c84684e1e
+  closure: 9859e654b76ba92c1d0e0809f62a7ffe1cac3b98
+  seal: 3062c0180157399cc0e877c0d238edc7f3aff7c0
+obstruction_evidence_commit: 19ef254dfc48c7b909c646f959e2d7364865b777
+rule: WP-0 extends to full file-level manifest with same schema; unclassified file
+  = closure failure
+entries:
+- path: arch:IMPLEMENTATION_SPEC_v0.3.md
+  class: IMPORTED_UNCHANGED
+  reason: read-only evidence
+- path: arch:WorkPlan.md
+  class: IMPORTED_UNCHANGED
+  reason: read-only evidence
+- path: arch:Path.md
+  class: IMPORTED_UNCHANGED
+  reason: read-only evidence
+- path: arch:README.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:CHANGELOG.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:CITATIONS.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:TRANSFER_CALCULUS_LEDGER.md
+  class: IMPORTED_UNCHANGED
+  reason: read-only evidence
+- path: arch:THEOREM_STATUS_REPORT.md
+  class: IMPORTED_UNCHANGED
+  reason: read-only evidence
+- path: arch:KEEP_CYCLE_ATLAS.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:L6_PAIR_ACCESS_TRANSLATION_REPORT.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:MULTISCALE_TRANSFER_REPORT.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:REPRODUCIBILITY.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:AI_USE.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:LICENSE
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:pyproject.toml
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:requirements-lock.txt
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed as LIQ evidence; full-tree manifest at WP-0 extends this table
+- path: arch:SPLAY_AM_MST_IMPLEMENTATION_SPEC_v0.3.1_PIN.md
+  class: IMPORTED_UNCHANGED
+  reason: read-only evidence
+- path: arch:artifacts/v03/
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: directory; WP-0 full manifest classifies every file
+- path: arch:external/
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: directory; WP-0 full manifest classifies every file
+- path: arch:math/
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: directory; WP-0 full manifest classifies every file
+- path: arch:parent/
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: directory; WP-0 full manifest classifies every file
+- path: arch:prereg/
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: directory; WP-0 full manifest classifies every file
+- path: arch:python/
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: directory; WP-0 full manifest classifies every file
+- path: arch:schemas/
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: directory; WP-0 full manifest classifies every file
+- path: arch:scripts/
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: directory; WP-0 full manifest classifies every file
+- path: arch:tests/
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: directory; WP-0 full manifest classifies every file
+- path: obstruction:IMPLEMENTATION_SPEC_v0.4.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:WorkPlan.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:Path.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:README.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:CHANGELOG.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:CITATIONS.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:AI_USE.md
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:LICENSE
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:pyproject.toml
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:requirements-lock.txt
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:lean-toolchain
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:lakefile.lean
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:lake-manifest.json
+  class: EXPLICITLY_NOT_IMPORTED_WITH_REASON
+  reason: not needed; WP-0 extends
+- path: obstruction:SPLAY_AM_DECIDE_IMPLEMENTATION_SPEC_v0.4.1_AMENDMENT.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:SPLAY_AM_DECIDE_IMPLEMENTATION_SPEC_v0.4.2_AMENDMENT.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:SPLAY_AM_DECIDE_IMPLEMENTATION_SPEC_v0.4.3_AMENDMENT.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:SPLAY_AM_DECIDE_IMPLEMENTATION_SPEC_v0.4.4_AMENDMENT.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:SPLAY_AM_DECIDE_IMPLEMENTATION_SPEC_v0.4.5_AMENDMENT.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:SPLAY_AM_DECIDE_IMPLEMENTATION_SPEC_v0.4.6_AMENDMENT.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:SPLAY_AM_DECIDE_IMPLEMENTATION_SPEC_v0.4.7_AMENDMENT.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:SPLAY_AM_DECIDE_IMPLEMENTATION_SPEC_v0.4.8_AMENDMENT.md
+  class: IMPORTED_UNCHANGED
+  reason: evidence/spec reference
+- path: obstruction:python/inherited/mstc0002.py
+  class: IMPORTED_UNCHANGED
+  reason: exact MSTC-0002 executable semantics (blob 2bbecbc)
+- path: obstruction:python/inherited/splay.py
+  class: IMPORTED_UNCHANGED
+  reason: exact Splay/StepEv semantics incl. absent-key empty trace (blob b8f3542)
+- path: obstruction:bridge_sources/
+  class: IMPORTED_UNCHANGED
+  reason: L3 present / L2 absent record vindicates MSTL-19 BLOCKED_BY_SOURCE
