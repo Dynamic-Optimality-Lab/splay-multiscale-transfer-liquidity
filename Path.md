@@ -101,3 +101,9 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - Push: 6e74cae..57e480d master -> master (origin).
 - HEAD: ls-remote 57e480d == local 57e480d - agree.
 - Tree: clean (pycache removed + gitignored).
+
+## R-006 - WP-1 metadata closure (surgical, semantics unchanged)
+- Fixed: PACKAGE 40,372->40,152; proof 25k-episode->40,152-episode differential corpus; PACKAGE corpus sha aada201c->56d24267df90d2a4f23b83ae374a5d27bf4f15d0a60650075b830d1f4ca22c0b (authoritative corpus_report.json 40152/0).
+- Rebound: proof_hash 82e993fd, package_hash 56c630b5, corpus_sha added in LIQ0-01.review.json; proof_status.json proof_hash updated. Verdict ACCEPT + REVIEWED preserved (metadata rebind only, not a new review). Line 67 old hash preserved as history.
+- Sanity: stale-grep clean in math/planning; LEG 10/10 passed.
+- Label: WP-1 METADATA_CLOSURE_PASS.
