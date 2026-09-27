@@ -95,3 +95,9 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - HEAD: ls-remote 553aecb == local 553aecb — agree.
 - Tree: clean (verified next).
 
+
+## R-005 - WP-1 push + HEAD verification
+- Commit: 57e480dbedea60914a185fb899a7156ab83baa5e (WP-1 LEGACY_SEMANTICS_CERTIFIED).
+- Push: 6e74cae..57e480d master -> master (origin).
+- HEAD: ls-remote 57e480d == local 57e480d - agree.
+- Tree: clean (pycache removed + gitignored).
