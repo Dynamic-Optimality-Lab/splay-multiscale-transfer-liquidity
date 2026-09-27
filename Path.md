@@ -231,3 +231,22 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
   above, all exit 0. Exact command lines preserved in this entry and the runlog.
 - REQ-008 = HUMAN_REVIEW_PENDING (genuine verdict solicited separately, never fabricated).
 - WP-3 = INCOMPLETE_PENDING_REQ-008. WP-4 not entered.
+
+## R-014 — WP-3 CLOSEOUT: genuine human ACCEPT on R2 → WP-3 COMPLETE
+
+- Human REQ-008 verdict received (genuine, solicited after the R2 repair report):
+  **ACCEPT** on generator `60cc25fc…0d29ce68b6` + commitment `bfcc24ab…41b1643d`,
+  recorded in `artifacts/v04/holdouts/h4l_acceptance.review.json` (binds R2 only;
+  R1 REJECT stands).
+- Exit-criteria reconstruction (re-read from WorkPlan WP-3 + spec §§4,7,8 + WP3 contract):
+  H4L_COMMITMENT_PUBLISHED — commitment file published + committed (B2) ✓;
+  TRANSFER_GRAMMAR_FROZEN — predicate family (16 hashed), (P,k,C,rho) scope,
+  validation/adversarial/OOD tables, clean-room contract, dormant Branch-B all frozen
+  + committed ✓; zero H4L evaluations (HOLD-14, stub refuses) ✓; zero reveals
+  (unlocks 0) ✓; firewall COMMITMENT_PUBLISHED ✓; generator committed before
+  generation (456a712 pre-seal) ✓; independent verify PASS ✓; HOLD 21/21 ✓;
+  mutants killed ✓; ACT+LEG 24/24 ✓; runlog STEP 101 clean_tree=true committed ✓;
+  R1 preserved as rejected history ✓.
+- No synthesis, no WP-4 entry, no repayment/PA/DO claim. MSTL nodes remain UNPROVED.
+- Final verdict: WP-3 = COMPLETE
+  (H4L_COMMITMENT_PUBLISHED + TRANSFER_GRAMMAR_FROZEN, zero evaluations).
