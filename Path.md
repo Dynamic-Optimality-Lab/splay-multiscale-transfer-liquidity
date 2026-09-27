@@ -27,7 +27,14 @@
 ## P-003 — Planning commit/push
 - Commit SHA: `a18fe213f431c7b8e31978cb24582b346e1e88d0` (`MST-LIQ-v0.4 planning seal: WorkPlan 7 WPs + 463-item inventory + coverage PASS + prereg proposals + Path ledger`, 14 files).
 - Push result: FAILED/NOT-APPLICABLE — no remote configured in this working copy (`git remote -v` empty; `git push` has no destination). Recorded truthfully per Rule K; WP is locally sealed, NOT remotely sealed.
-- Remote HEAD: UNVERIFIED (no remote). Required follow-up: attach `Dynamic-Optimality-Lab/splay-multiscale-transfer-liquidity` as remote, push, verify HEAD, append P-004 with SHA + push + HEAD evidence.
+- Remote HEAD: UNVERIFIED (no remote). Required follow-up: attach `Dynamic-Optimality-Lab/splay-multiscale-transfer-liquidity` as remote, push, verify HEAD, append P-004 with SHA + push + HEAD evidence (done in P-004 below).
+
+## P-004 — Remote attach + push + HEAD verification (Rule K closeout)
+- Remote added: `origin -> https://github.com/Dynamic-Optimality-Lab/splay-multiscale-transfer-liquidity.git` (repo confirmed to exist via `gh repo view`; auth `InfernusReal`, protocol https).
+- Push: `git push -u origin master` → `* [new branch] master -> master`, upstream tracking set. No errors besides the PowerShell stderr-forwarding wrapper.
+- Remote HEAD verification (independent, two methods): `git ls-remote origin master` = `d0f17e18d505dc3d0e7b6d4f5792af30e6ceb0ce`; GitHub API `commits/master` sha identical; local `git log -1` identical. All three agree.
+- Supersedes: P-003 push status `FAILED/NOT-APPLICABLE` is now superseded by this entry (preserved as history, non-operative for push status). Planning SHAs `a18fe21` (seal) + `d0f17e1` (P-003 record) both on remote.
+- Verdict: `FOLLOWS WorkPlan.md` (Rule K: VERIFY → Path → AUDIT → COMMIT → PUSH → VERIFY REMOTE HEAD).
 
 ## WP-0 ledger (PHASE 00) — PLACEHOLDER, NOT STARTED
 Prescription / entry gate / files / code / commands / results / proofs / status / deviations / bugs / anti-overfitting / gate outputs / coverage audit / SHA / push / remote-head / verdict: all PENDING.
