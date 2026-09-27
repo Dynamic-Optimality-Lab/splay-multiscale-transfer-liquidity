@@ -1,14 +1,54 @@
-version: v0.4.1
+version: v0.4.1-frozen-WP-3
 closed: true
 predicates:
 - id: P_all
-  definition: fires on every eligible event (KEEP and DELETE, all classes)
-  hash: TO_BE_COMPUTED_AT_WP0_FROM_FROZEN_BYTES
+  definition: fires on every eligible event (KEEP and DELETE, all classes) [canonical
+    alias of P_both_all]
+  hash: a9bb6d428339239e274fc3e525e550dbe0f786f14637b603b841aef2956a790d
+- id: P_both_doubles
+  definition: fires iff mode in ['KEEP', 'DELETE'] and class in ['LL', 'RR', 'LR',
+    'RL']
+  hash: 0b4d55a49c29abbd0ee8e193c6b3063a2d8ab256d990b3c87036b2a3897e52ab
+- id: P_both_zig
+  definition: fires iff mode in ['KEEP', 'DELETE'] and class in ['ZIG']
+  hash: b352ef4f2ab26f7b50711485793b524be1ef233396e39290e2db970ccfe65c32
+- id: P_both_zigzag
+  definition: fires iff mode in ['KEEP', 'DELETE'] and class in ['LR', 'RL']
+  hash: 92b10a643e4bb75d1459b203dae87d0a0f7bccdfd81339b1e58985e00e80dfec
+- id: P_both_zigzig
+  definition: fires iff mode in ['KEEP', 'DELETE'] and class in ['LL', 'RR']
+  hash: f5c92bf3cfe834de4e9baaf6f7509119aa678e75d26ac643893d71597a052390
+- id: P_delete_all
+  definition: fires iff mode in ['DELETE'] and class in ['ZIG', 'LL', 'RR', 'LR',
+    'RL']
+  hash: c761882f04b9aa49068da6862d5771761bb428d8007b3d2d8b5a21ada1007fdf
+- id: P_delete_doubles
+  definition: fires iff mode in ['DELETE'] and class in ['LL', 'RR', 'LR', 'RL']
+  hash: 4b007df03d786a9c63033c7614dbd5a04142470e75f543a192d7b12b5c303edd
+- id: P_delete_zig
+  definition: fires iff mode in ['DELETE'] and class in ['ZIG']
+  hash: 544365a183119ecd96f180c489799ef51e7222a00a80c1ac47c493fd37a27934
+- id: P_delete_zigzag
+  definition: fires iff mode in ['DELETE'] and class in ['LR', 'RL']
+  hash: 49d106aa31e4c1abe86d9f1cdf39ecb4fe21fb5391294878e90094ca1a489c71
+- id: P_delete_zigzig
+  definition: fires iff mode in ['DELETE'] and class in ['LL', 'RR']
+  hash: f0c3989d662daa85c674950bec97beb79fd5088493b122c5c8bb6cf6aa833e3c
 - id: P_keep
   definition: fires on KEEP events only (all classes)
-  hash: TO_BE_COMPUTED_AT_WP0_FROM_FROZEN_BYTES
-case_restricted_schema:
-  form: allowlist over normalized event classes {ZIG,LL,RR,LR,RL} x modes {KEEP,DELETE}
-  enumeration: canonical powerset order, frozen at WP-0
-  hash: TO_BE_COMPUTED_AT_WP0
-note: No post-freeze predicates; new predicate = successor experiment
+  hash: e64ece05976a311a326d79c0ea4c62d5b0094c06a2143f95feab85205b9b01a8
+- id: P_keep_all
+  definition: fires iff mode in ['KEEP'] and class in ['ZIG', 'LL', 'RR', 'LR', 'RL']
+  hash: 56c966c26cdf9d9bee98b563129d37e45c2221d078399f92a24f1f3f2c91470f
+- id: P_keep_doubles
+  definition: fires iff mode in ['KEEP'] and class in ['LL', 'RR', 'LR', 'RL']
+  hash: 8f0a0b5bf6a40dbcfa8ace068ffe087fde686442e444f6cee200a43cb1c42f0a
+- id: P_keep_zig
+  definition: fires iff mode in ['KEEP'] and class in ['ZIG']
+  hash: b93112a758b9932e6ea7a843aafcde4fc31b059ed410c7b51e23a3c12925a417
+- id: P_keep_zigzag
+  definition: fires iff mode in ['KEEP'] and class in ['LR', 'RL']
+  hash: 1cbefe491dd17c61ed4b762860e9d7868ecebed36a3dea7fc0d478cb3cc22222
+- id: P_keep_zigzig
+  definition: fires iff mode in ['KEEP'] and class in ['LL', 'RR']
+  hash: a8d3b0528722de6072fc9ce52b0b668937ae466cb5923e3203eadfffc7e94662

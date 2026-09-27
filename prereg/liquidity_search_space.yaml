@@ -50,19 +50,48 @@ validation:
   - 10
   - 12
   - 16
-  episodes: 5000
-  masks: ID-disjoint from dev
+  per_size: 1000
+  total: 5000
+  masks: ID-disjoint from dev (recorded at WP-4)
   contact: frozen candidates only
 adversarial:
   engines:
-  - uniform
-  - structured
-  - hillclimb
-  - anneal
-  - genetic
-  - rotneigh
-  - splice
-  - motif
-  - generalize
-  budgets: per-engine table frozen at WP-0 execution (seeds/iters/restarts/shards/caps/reduction)
-  objective: residual-hunt
+    uniform:
+      draws: 50000
+      seed: 101
+    structured:
+      families: 12
+      sizes:
+      - 8
+      - 16
+      - 32
+      - 64
+      seed: 102
+    hillclimb:
+      steps: 20000
+      restarts: 5
+      seed: 103
+    anneal:
+      steps: 20000
+      restarts: 5
+      seed: 104
+    genetic:
+      pop: 100
+      gens: 200
+      restarts: 3
+      seed: 105
+    rotneigh:
+      neighborhoods: 10000
+      seed: 106
+    splice:
+      splices: 5000
+      seed: 107
+    motif:
+      scales: 4
+      seed: 108
+    generalize:
+      per_witness: 8
+      seed: 109
+  wall_cap_s: 7200
+  mem_cap_gb: 4
+  reduction: sorted canonical, tie-break smallest (n,H) lexicographic
