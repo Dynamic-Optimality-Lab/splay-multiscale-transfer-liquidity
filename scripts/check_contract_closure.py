@@ -45,6 +45,7 @@ def main():
     axis = load("prereg/liquidity_axis.yaml")
     check("RHO_AXIS", axis["mathematical_class"]["form"] == "(rho_ZIG, rho_DOUBLE)"
           and axis["mathematical_class"]["root_noevent"] == 0
+          and axis["mathematical_class"]["range"] == [0, 12]
           and axis["discovery_ladder"] == ["FLAT-1..6", "ROT-1..6"]
           and set(axis.get("forbidden_dependencies", [])) == {"n", "tree_identity", "state_id", "cycle_id", "history_index", "future_key", "candidate_residual", "bellman_value", "holdout_membership", "support_id", "required_amount", "would_otherwise_fail"}, "rho class + ladder + exact forbidden set")
     thdir = ROOT / "math" / "theorems"

@@ -124,3 +124,31 @@ def run(T0, H, n):
                          "S0": S0pre})
             A = A2
     return recs, (st, A, B, sA, sB)
+
+
+def rho_cap(pair, ev):
+    """WP-2 STEP 52: independent capacity from LOCAL CLASS ONLY. pair=(z, d); ROOT->0."""
+    cls = ev[0] if isinstance(ev, tuple) else ev.get("case", "ROOT")
+    if cls in ("ROOT", "NONE", "NO-EVENT"):
+        return 0
+    if cls in ("ZIG", "ZIG-L", "ZIG-R"):
+        return pair[0]
+    if cls in ("LL", "RR", "LR", "RL"):
+        return pair[1]
+    raise ValueError("unknown event class: %r" % (cls,))
+
+
+def activate_bounded(st, cap, mode, ev):
+    """WP-2 STEP 53: bounded first-eligible activation (tuple style, no liquidity imports)."""
+    led, cur = st
+    for _ in range(cap):
+        nxt = activate((led, cur), mode, ev)
+        if nxt[0] == led:
+            break
+        led, cur = nxt
+    return (led, cur)
+
+
+def energy_of(ledger):
+    lat, act = pools(ledger)
+    return lat + act
