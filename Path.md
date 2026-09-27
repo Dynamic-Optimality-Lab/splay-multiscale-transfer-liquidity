@@ -114,3 +114,20 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - Run logging: real WP-1 record artifacts/v04/logs/run_wp1_2026-09-27T181233.2671070000.json (wp=WP-1, phase=PHASE-01-04, clean_tree=true, env 7d564c28, exit 0, 0 missing fields); old WP-0/PHASE-00 record preserved as history.
 - Reruns: LEG 10/10, Lean exit 0, gate PASS, mutants 4/4 killed.
 - Label: WP-1 EXECUTION_GOVERNANCE_PASS.
+
+## WP-2 ledger (PHASEs 05-06) - EXECUTION RECORD
+- Previous: WP-1 VERIFIED_COMPLETE (run_phase01 green + gate PASS, artifacts match).
+- Entry: LEGACY_SEMANTICS_CERTIFIED + LIQ0-01 REVIEWED + freeze verifies + H4L EMPTY. PASS.
+- Created: python/liquidity/{multiplicity,activation,profiles,diagnostics}.py; independent rho ext (rho_cap/activate_bounded/energy_of); lean/Liquidity/{Activation,Multiplicity,Preservation}.lean (all lean 4.21.0 exit 0, no sorry); math/proofs/LIQ0-02..10.md + MSTL-{10,11,13}-dev + MSTL-12-setup; math/reviews 9 PACKAGES + 9 review.json (genuine 9x ACCEPT); tests/test_activation.py (ACT-01..14); scripts/run_phase02.py + test_wp2_mutants.py + emit_wp2_runlog.py + gen_liq0_packages.py; planning/WP2_CONTRACT.md; WP-2 runlog record.
+- Modified: math/proof_status.json (LIQ0-02..10 to REVIEWED); prereg/liquidity_axis.yaml (range 0..8->0..12: ROT(5/6) exceeded box; spec/checker/RMAX updated, closure re-PASS, freeze manifest rebuilt); IMPLEMENTATION_SPEC 33-field note already 35 (WP-0).
+- Tests: ACT 14/14. Benchmarks: differential rho 3600 cases 0 mismatch; multiplicity corpus; Q REG-001=2/n512=2; H4L EMPTY; ACT-14 no-regression (n28 exact, LIQ0-01 REVIEWED).
+- Stress/negative: empty ledger, ROOT zero-cap, 200-credit ROT(6), unknown predicate/mode raises, missing PACKAGE fails, corrupted witness detected. Mutants 16/16 KILLED (M02 needed ZIG ev; M03-06 forbidden-key evs; M10 needed SPENT books + ROT(4); template NameError + dispatch bugs fixed).
+- Anti-overfitting: no synthesis; REG labeled; leakage AST audit; OOD untouched.
+- Gates: LIQUIDITY_AXIS_FROZEN (9 PROVED + energy/support/preservation REVIEWED; 9x genuine ACCEPT).
+- Statuses: LIQ0-02..10 PROVED_PENDING_REVIEW to REVIEWED (hashes bound); rest unchanged.
+- Log inventory: multiplicity 40/41/42; profiles 43/44/45; activation 46/47/48/49; diagnostics 50/51; run_phase02 66/67/68/69/70; mutants STEP 60; emit STEP 71.
+- Exit matrix: all PASS. Compliance: gaps_found=12 (RMAX box, AST builtins, count threshold, probe template/dispatch/ev-gaps, tautology Lean lemma, setActive energy flaw, structure-eta, ih-rewrite); gaps_repaired=12; remaining_compliance_gaps=0.
+- Final verdict: WP-2 = COMPLETE (LIQUIDITY_AXIS_FROZEN).
+
+## R-008 - WP-2 push + HEAD verification
+- Commit: WP-2 work 89f463f. Push + HEAD: (next commands).
