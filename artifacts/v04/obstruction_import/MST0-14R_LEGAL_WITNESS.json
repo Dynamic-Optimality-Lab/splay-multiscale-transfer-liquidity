@@ -1,0 +1,269 @@
+{
+  "also_refutes": "MST0-14R (repaired successor; LegalPairInstance=true throughout)",
+  "frozen_dependency_hashes": {
+    "lean/Frozen/MSTC0002Defs.lean": "c621bac14543ab375b8ae1129386bc8e28c20e2c88f47afd0a097e8389722f34",
+    "lean/Frozen/SplayDefs.lean": "f88e9c9dc16704e6a22de17a58a1e417bc2fdf3255ff4111ac6b132e5142174c",
+    "lean/Frozen/Statements.lean": "46e110ca16fe48b43fd9f796aaad6499aa462514068357fa668d8b4cff1cced0",
+    "math/theorem_MST14R_legal_repayment.md": "d1d424ee2b56c2555f5e95d64472e9e6c810f0d02540158906847ae1d5af90d5",
+    "math/theorem_MST14_keep_repayment.md": "64e89270d0b833f6e4ab1fdc16ce0590345e4890d7cf644d2f3e995575b8c1fa",
+    "prereg/theorem_battlefield.yaml": "cd6fe5f1be84b1ec9191d8959ed112ab4286ae8a8abb04654a7037bc5f6baa1b",
+    "python/audit/legal_domain.py": "5cb34787fb4b23f8b40f7e4d122c56b2edce8160f95b57aff1b75a0cb187aab3",
+    "python/inherited/mstc0002.py": "2f35c2ffe2f14075aa9ed5df7a201c094532225f3d864d48702c872f03698cb6",
+    "python/inherited/pair_access.py": "e80d0c4ab2edc1626df7f7d294456bb03be587562739141d84b89b48f1c84592",
+    "python/inherited/splay.py": "deeda850ca159ef5345f6df71ba86b07d432b8c2848070bc7417d32683a9b8c1"
+  },
+  "g5_ledger": {
+    "canonical_minimization": "SATISFIED (history + family scale)",
+    "canonical_representation": "SATISFIED (greedy-minimal history + family-minimal n=28)",
+    "dependency_hash_validation": "SATISFIED (10 files bound above)",
+    "exact_witness_satisfying_frozen_negation": "SATISFIED (old MST0-14 second disjunct; legal instance a fortiori)",
+    "exact_witness_satisfying_repaired_negation": "SATISFIED (LegalPairInstance=true, paid=10<11=need)",
+    "formal_or_exact_certificate": "PENDING_TOOLCHAIN (Lean witness staged in lean/Proofs/LegalDomain.lean; no toolchain here)",
+    "human_refutation_validation": "PENDING-HUMAN (no verdict inferred or generated)",
+    "independent_replay_check_AGREE": "SATISFIED (3 paths agree)",
+    "lifecycle_legality": "NO_TRANSITION_TAKEN (both ledgers stay UNPROVED; mathematical refutation recorded, lifecycle REFUTED not claimed)",
+    "schema_validation": "SATISFIED (repayment_witness.schema.json)"
+  },
+  "independent_checker_result": "AGREE",
+  "independent_replay_record": "artifacts/v04/counterexamples/MST0-14R/INDEPENDENT_REPLAY.json",
+  "lifecycle_refuted": false,
+  "mathematical_counterexample_confirmed": true,
+  "node": "MST0-14",
+  "record_kind": "LEGAL_WITNESS (legal paired instance falsifying both the old literal sufficiency and the repaired MST0-14R sufficiency; NOT a DOC disproof)",
+  "replay_certificate": {
+    "checker_id": "triple-path: exec_suffices-API + manual-step-trace + self-contained-reimplementation(scripts/independent_replay_ce.py, 8488-instance agreement)",
+    "replay_input_hash": "14e0b565a53fd3c994ab9f2d8d241cf11e698a523769e184582f37eec9997825",
+    "result": "REPRODUCED"
+  },
+  "schema_version": "1.0",
+  "scientific_interpretation": "Intended synchronous KEEP repayment is FALSE: drain-then-diverge (KEEP(n) drains pool to 2; KEEP(n-1) needs ~n/2 with pool ~n/4). Residual grows linearly (~-n/4). MSTC-0002 cannot serve as a universal Pair-Access repayment mechanism at C=2/k=6. Positive route obstructed; Phase-6 lifting candidacy seeded (closed-form family enclosed).",
+  "witness_payload": {
+    "H": [
+      [
+        "DELETE",
+        27
+      ],
+      [
+        "DELETE",
+        28
+      ],
+      [
+        "KEEP",
+        28
+      ],
+      [
+        "KEEP",
+        27
+      ]
+    ],
+    "T0_keys": "1..28",
+    "T0_shape": "vine-right-28",
+    "T0_valid": true,
+    "closed_form_family": "vine-right-n, H=[DEL(n-1),DEL(n),KEEP(n),KEEP(n-1)], n>=28",
+    "discoverer": {
+      "H": [
+        [
+          "DELETE",
+          384
+        ],
+        [
+          "DELETE",
+          512
+        ],
+        [
+          "KEEP",
+          512
+        ],
+        [
+          "KEEP",
+          385
+        ]
+      ],
+      "margin": -52,
+      "n": 512
+    },
+    "failing_keep": {
+      "L0": 56,
+      "P0": 2,
+      "a": 2,
+      "actB_k": 7,
+      "dA": 1,
+      "dB": 14,
+      "margin": -1,
+      "need": 11,
+      "paid": 10,
+      "rA": 1,
+      "rB": 7,
+      "x": 27,
+      "y": 15
+    },
+    "first_fail": 3,
+    "legal_violations": [],
+    "minimality": {
+      "family_checked_n_1_to_27_all_satisfy": true,
+      "family_n_minimal": 28,
+      "greedy_drop_all_satisfy": true
+    },
+    "n": 28,
+    "residual_growth": [
+      {
+        "a": 2,
+        "margin": -1,
+        "n": 28,
+        "need": 11,
+        "paid": 10,
+        "y": 15
+      },
+      {
+        "a": 2,
+        "margin": -2,
+        "n": 32,
+        "need": 13,
+        "paid": 11,
+        "y": 17
+      },
+      {
+        "a": 2,
+        "margin": -6,
+        "n": 48,
+        "need": 21,
+        "paid": 15,
+        "y": 25
+      },
+      {
+        "a": 2,
+        "margin": -10,
+        "n": 64,
+        "need": 29,
+        "paid": 19,
+        "y": 33
+      },
+      {
+        "a": 2,
+        "margin": -18,
+        "n": 96,
+        "need": 45,
+        "paid": 27,
+        "y": 49
+      },
+      {
+        "a": 2,
+        "margin": -26,
+        "n": 128,
+        "need": 61,
+        "paid": 35,
+        "y": 65
+      },
+      {
+        "a": 2,
+        "margin": -58,
+        "n": 256,
+        "need": 125,
+        "paid": 67,
+        "y": 129
+      },
+      {
+        "a": 2,
+        "margin": -122,
+        "n": 512,
+        "need": 253,
+        "paid": 131,
+        "y": 257
+      }
+    ],
+    "steps": [
+      {
+        "L0": 0,
+        "L1": 65,
+        "P0": 0,
+        "P1": 13,
+        "S0": 0,
+        "a": 27,
+        "actB_k": 0,
+        "dA": 26,
+        "dB": null,
+        "idx": 0,
+        "margin": null,
+        "mode": "DELETE",
+        "need": 0,
+        "paid": 0,
+        "rA": 13,
+        "rB": 0,
+        "sA": 27,
+        "sB": 0,
+        "x": 27,
+        "y": 0
+      },
+      {
+        "L0": 65,
+        "L1": 70,
+        "P0": 13,
+        "P1": 14,
+        "S0": 0,
+        "a": 2,
+        "actB_k": 0,
+        "dA": 1,
+        "dB": null,
+        "idx": 1,
+        "margin": null,
+        "mode": "DELETE",
+        "need": 0,
+        "paid": 0,
+        "rA": 1,
+        "rB": 0,
+        "sA": 29,
+        "sB": 0,
+        "x": 28,
+        "y": 0
+      },
+      {
+        "L0": 70,
+        "L1": 70,
+        "L2": 56,
+        "P0": 14,
+        "P1": 14,
+        "P2": 2,
+        "S0": 0,
+        "a": 1,
+        "actB_k": 14,
+        "dA": 0,
+        "dB": 27,
+        "idx": 2,
+        "margin": 2,
+        "mode": "KEEP",
+        "need": 26,
+        "paid": 26,
+        "rA": 0,
+        "rB": 14,
+        "sA": 30,
+        "sB": 28,
+        "x": 28,
+        "y": 28
+      },
+      {
+        "L0": 56,
+        "L1": 61,
+        "L2": 54,
+        "P0": 2,
+        "P1": 3,
+        "P2": 0,
+        "S0": 26,
+        "a": 2,
+        "actB_k": 7,
+        "dA": 1,
+        "dB": 14,
+        "idx": 3,
+        "margin": -1,
+        "mode": "KEEP",
+        "need": 11,
+        "paid": 10,
+        "rA": 1,
+        "rB": 7,
+        "sA": 32,
+        "sB": 43,
+        "x": 27,
+        "y": 15
+      }
+    ]
+  }
+}

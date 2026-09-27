@@ -50,8 +50,29 @@
 - Commit/push: (next entry R-004).
 - Final verdict: WP-0 = COMPLETE (FOUNDATION_FROZEN).
 
-## WP-1 ledger (PHASEs 01–04) — PLACEHOLDER, NOT STARTED
-PENDING. Entry requires FOUNDATION_FROZEN.
+## WP-1 ledger (PHASEs 01-04) - EXECUTION RECORD
+- Phase/scope: WP-1 trusted core (WorkPlan.md v0.4.1 WP-1; contract planning/WP1_CONTRACT.md).
+- Previous-phase verification: WP-0 VERIFIED_COMPLETE (fresh rerun 2026-09-27: run_phase00 green + closure PASS; Path WP-0 entry accurate; code/artifacts match).
+- Entry gate: FOUNDATION_FROZEN (COMPLETE) + freeze manifest verifies + proof_status shape 27xUNPROVED at start. Result: PASS.
+- Normative sources: spec sections 2,3,5; math/theorems LIQ0-01/LIQ0-02/MSTL-16; sealed bundle MST0-14R_LEGAL_WITNESS.json (T0=vine-right-28, steps table, 8-row residual table; dep hashes match parent_contract) + INDEPENDENT_REPLAY.json.
+- Files created: python/liquidity/legacy_embedding.py (pointer engine + clone_tree + balanced + domain/mode guards); python/independent/splay.py + pair.py + ledger.py (tuple engine, AST-verified share-nothing); math/proofs/LIQ0-01.md + MSTL-16-preamble.md; lean/Liquidity/LegacyEmbedding.lean (lean 4.21.0 exit 0, no sorry); math/reviews/LIQ0-01.PACKAGE.md + LIQ0-01.review.json (genuine human ACCEPT 2026-09-27); artifacts/v04/obstruction_import (witness, replay, n28_replay.json REPRODUCED_EXACT); artifacts/v04/parent_import/replay/corpus_report.json (40152 episodes, 0 mismatches); tests/test_legacy_embedding.py (LEG-01..10); scripts/run_phase01.py + test_wp1_mutants.py + split_independent.py; planning/WP1_CONTRACT.md; runlog record for phase01 run.
+- Files modified: math/proof_status.json (LIQ0-01 to REVIEWED with hashes; 26 stay UNPROVED).
+- Code/algorithms: iterative pointer-splay + recursive tuple-splay; oriented ZIG events normalized to ZIG class; T5 first-eligible single activation; replay equations (A-side T7 then T5 per StepEv, B-side T5 per StepEv, T6 after full B trace, DELETE A-only); absent-key empty-trace branch; margin = P2+paid-need (sealed formula) + liq_slack; S0 pre-access; domain [n] + mode fail-closed guards.
+- Tests: LEG-01..10 - 10 passed. Benchmarks: 40,152-episode differential (vines, mirrors, sparse, DDKK, incl. event traces) 0 mismatches; n28 72/72 fields exact; margin family 11/11 exact (8 file rows + 3 spec rows).
+- Stress/negative: n=1, empty H, sparse/absent keys, out-of-range and bad-mode raises, malformed witness detected, missing PACKAGE fails. Engine mutants M-WP1-01..04 ALL KILLED (M-02 kill required adding event traces to the IV tuple - gap found and repaired).
+- Anti-overfitting: REG family labeled KNOWN/CONTAMINATED; H4L still EMPTY; finite evidence labeled support-only in package.
+- Threats/stops/invariants: T03/T04/T11/T12 exercised; STOP-05 armed (no divergence seen); INV-EMBED checked.
+- Gates: LEGACY_SEMANTICS_CERTIFIED (replays agree + n28 exact + LIQ0-01 REVIEWED).
+- Statuses: LIQ0-01 UNPROVED to PROVED_PENDING_REVIEW to REVIEWED (hashes bound); all others unchanged.
+- Hashes: thm 64d5ef83, proof af34f42e, lean 020ae608, package c7fd93c7; corpus aada201c; vendored witness 4b235b65 / b0238eb9.
+- Commands/exit codes: run_phase01 exit 0 (pre- and post-review); pytest 10 passed; lean exit 0; mutants 4/4 killed.
+- Failures/repairs: A/B aliasing fixed by clone_tree; sealed-schema alignment (margin/S0/L1-P1/L2-P2/rB/dA-dB, 4 iterations); LEG-06 needed left-vines (vine_left added both engines); mutant-probe path-order bug; M-WP1-02 survival led to traces in IV tuple; one-off patch helper removed after use.
+- Deviations: none. External blockers: none (human review obtained genuinely, not fabricated).
+- Log inventory: run_phase01.py STEP 30/31/32 + RUN/DONE emitter; legacy_embedding STEP 10/11/12/13/14/15/15a/21/23/25; splay.py 16a/17/24/26; ledger.py 16c/18/19/20; pair.py 16b; test_wp1_mutants.py STEP 33; split_independent.py retained as split provenance.
+- Exit matrix: all WP-1 exit conditions PASS.
+- Compliance: 20+ REQs + 10 tests + 11-observable IV tuple exact; gaps_found=8; gaps_repaired=8; remaining_compliance_gaps=0.
+- Commit/push: (R-005 below).
+- Final verdict: WP-1 = COMPLETE (LEGACY_SEMANTICS_CERTIFIED).
 
 ## WP-2 ledger (PHASEs 05–06) — PLACEHOLDER, NOT STARTED
 PENDING. Entry requires LEGACY_SEMANTICS_CERTIFIED + LIQ0-01 REVIEWED.
@@ -68,9 +89,9 @@ PENDING. Entry requires promoted set.
 ## WP-6 ledger (PHASEs 17–19) — PLACEHOLDER, NOT STARTED
 PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + bridge audited.
 
-## R-004 � WP-0 push + HEAD verification
+## R-004 — WP-0 push + HEAD verification
 - Commit: 553aecb980fa34093dde79e3db43df737a70cf5b (v0.4.1 WP-0 FOUNDATION_FROZEN).
 - Push: cc7527f..553aecb master -> master (origin).
-- HEAD: ls-remote 553aecb == local 553aecb � agree.
+- HEAD: ls-remote 553aecb == local 553aecb — agree.
 - Tree: clean (verified next).
 
