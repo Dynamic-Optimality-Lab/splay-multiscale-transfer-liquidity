@@ -2,7 +2,12 @@
 
 Contract: prereg/h4l_holdout.yaml. Blindness: inputs are (seed, size, stratum,
 counter) ONLY. No candidate/pool/rho/solver/kill information exists in this module.
-RNG: SHA-256 counter DRBG, domain-separated per stream. All draws via mod (deterministic).
+RNG: SHA-256 counter DRBG, domain-separated per stream.
+
+WP-3 REPAIR STEP R2-01: randbelow is exact-uniform via deterministic rejection
+sampling (no modulo bias). WP-3 REPAIR STEP R2-02: every stratum returns exactly
+the once-sampled L in 2..8, motif preserved. Episode ID = sha256(canonical
+content JSON); shards serialize episodes sorted by ID (see seal_h4l.py).
 """
 from __future__ import annotations
 import hashlib
@@ -38,7 +43,9 @@ SHAPE_MIX = {
 
 
 class DRBG:
-    """WP-3 STEP 82: SHA-256 counter DRBG. randbelow via mod (deterministic, documented)."""
+    """WP-3 STEP 82 + WP-3 REPAIR STEP R2-01: SHA-256 counter DRBG with
+    exact-uniform rejection sampling. Deterministic: block counter advances on
+    every draw attempt, so identical (seed, stream) replays identically."""
 
     def __init__(self, seed: bytes, stream: bytes):
         self.seed = seed
@@ -50,10 +57,13 @@ class DRBG:
         return hashlib.sha256(self.seed + b"|" + self.stream + b"|" + self.ctr.to_bytes(8, "big")).digest()
 
     def randbelow(self, n: int) -> int:
-        # WP-3 STEP 82: deterministic mod draw (bias documented as immaterial; determinism is the contract).
+        # WP-3 REPAIR STEP R2-01: reject blocks >= bound so v % n is exactly uniform.
         assert n > 0
-        raw = self._block()
-        return int.from_bytes(raw, "big") % n
+        bound = (1 << 256) - ((1 << 256) % n)
+        while True:
+            v = int.from_bytes(self._block(), "big")
+            if v < bound:
+                return v % n
 
     def choice(self, seq):
         return seq[self.randbelow(len(seq))]
@@ -114,29 +124,44 @@ def _depths(t, d=0, out=None):
     return out
 
 
-def gen_history(stratum: str, n: int, T0, rng: DRBG):
-    """WP-3 STEP 84: per-stratum history templates (tree/history syntax only)."""
-    L = rng.randint(HIST_MIN, HIST_MAX)
+def gen_history(stratum: str, n: int, T0, rng: DRBG, L: int | None = None):
+    """WP-3 STEP 84 + WP-3 REPAIR STEP R2-02: per-stratum history templates.
+
+    L is sampled exactly once from exact-uniform {2..8} when not forced; every
+    branch returns exactly L entries while preserving its stratum motif.
+    """
+    if L is None:
+        L = rng.randint(HIST_MIN, HIST_MAX)
+    assert HIST_MIN <= L <= HIST_MAX, L
     K = lambda: rng.randint(1, n)
     if stratum == "RANDOM_LEGAL":
         return [[rng.choice(["KEEP", "DELETE"]), K()] for _ in range(L)]
     if stratum == "DELETE_BURST_THEN_KEEP":
-        d = rng.randint(2, 5)
-        return [["DELETE", K()] for _ in range(d)] + [["KEEP", K()] for _ in range(max(1, L - d))]
+        # WP-3 REPAIR STEP R2-02: burst d in 1..L-1, then keeps; total exactly L.
+        d = 1 + rng.randbelow(L - 1)
+        return [["DELETE", K()] for _ in range(d)] + [["KEEP", K()] for _ in range(L - d)]
     if stratum == "DOUBLE_DELETE_DOUBLE_KEEP":
+        # WP-3 REPAIR STEP R2-02: 4-core opens, periodic extension, truncated to L.
         a = rng.randint(1, n - 1)
-        return [["DELETE", a], ["DELETE", a + 1], ["KEEP", a + 1], ["KEEP", a]]
+        core = [["DELETE", a], ["DELETE", a + 1], ["KEEP", a + 1], ["KEEP", a]]
+        ext = [["KEEP", a + 1], ["KEEP", a], ["DELETE", a + 1], ["DELETE", a]]
+        return (core + ext * ((L // 4) + 1))[:L]
     if stratum == "ALTERNATING_KEEP_DELETE":
-        return [[["KEEP", "DELETE"][i % 2], K()] for i in range(max(4, L))]
+        # WP-3 REPAIR STEP R2-02: direct alternation of exactly L.
+        return [[["KEEP", "DELETE"][i % 2], K()] for i in range(L)]
     if stratum == "REPEATED_KEEP_DRAIN":
+        # WP-3 REPAIR STEP R2-02: L-1 repeats on x, then drain to y.
         x = K()
         y = min(n, x + 1)
-        return [["KEEP", x]] * rng.randint(3, 5) + [["KEEP", y]]
-    if stratum in ("SPINE_VS_BALANCED", "OPPOSITE_SPINE", "MIRROR_PAIRED"):
-        H = [[rng.choice(["KEEP", "DELETE"]), K()] for _ in range(L)]
-        if stratum == "MIRROR_PAIRED":
-            H = [[m, n + 1 - x] for m, x in H] + [[m, x] for m, x in H]
-        return H
+        return [["KEEP", x]] * (L - 1) + [["KEEP", y]]
+    if stratum in ("SPINE_VS_BALANCED", "OPPOSITE_SPINE"):
+        return [[rng.choice(["KEEP", "DELETE"]), K()] for _ in range(L)]
+    if stratum == "MIRROR_PAIRED":
+        # WP-3 REPAIR STEP R2-02: mirrored halves around an optional center; total L.
+        j = L // 2
+        A = [[rng.choice(["KEEP", "DELETE"]), K()] for _ in range(j)]
+        mid = [[rng.choice(["KEEP", "DELETE"]), K()]] if L % 2 else []
+        return [[m, n + 1 - x] for m, x in A] + mid + [[m, x] for m, x in A]
     if stratum in ("DOUBLE_ROTATION_ENRICHED", "TERMINAL_ZIG_ENRICHED"):
         depths = _depths(T0)
         deep = [k for k, d in depths.items() if d >= 3] or list(range(1, n + 1))
@@ -144,9 +169,18 @@ def gen_history(stratum: str, n: int, T0, rng: DRBG):
         pool = deep if stratum == "DOUBLE_ROTATION_ENRICHED" else odd
         return [[rng.choice(["KEEP", "DELETE"]), rng.choice(pool)] for _ in range(L)]
     if stratum == "NESTED_INTERVAL":
+        # WP-3 REPAIR STEP R2-02: expanding nested offsets around c, exactly L.
         c = rng.randint(3, n - 2)
-        seq = [c, c - 1, c + 1, c - 2, c + 2][:L]
-        return [["KEEP" if i % 2 == 0 else "DELETE", x] for i, x in enumerate(seq)]
+        offs = [0]
+        dd = 1
+        while len(offs) < L:
+            offs += [-dd, dd]
+            dd += 1
+        H = []
+        for i, o in enumerate(offs[:L]):
+            x = min(n, max(1, c + o))
+            H.append([["KEEP", "DELETE"][i % 2], x])
+        return H
     if stratum == "MOTIF_BLIND_RANDOM_WALK":
         x = K()
         H = []
@@ -158,7 +192,9 @@ def gen_history(stratum: str, n: int, T0, rng: DRBG):
 
 
 def episode_hash(ep: dict) -> str:
-    return hashlib.sha256(json.dumps(ep, sort_keys=True).encode()).hexdigest()
+    """Episode ID: sha256 over canonical content JSON (excludes the stored id field)."""
+    content = {k: v for k, v in ep.items() if k != "hash"}
+    return hashlib.sha256(json.dumps(content, sort_keys=True).encode()).hexdigest()
 
 
 def generate_bank(seed: bytes, sizes=SIZES, quotas=None):

@@ -102,13 +102,56 @@ def test_hold_02_implementation_certified_tiny_bank():
         walk(ep["T0"])
         assert sorted(keys) == list(range(1, 8)) and all(1 <= x <= 7 for _, x in ep["H"])
         assert all(m in ("KEEP", "DELETE") for m, _ in ep["H"])
-        assert 2 <= len(ep["H"]) <= 16
+        assert 2 <= len(ep["H"]) <= 8  # WP-3 REPAIR R2: frozen 2..8 (was 2..16)
         assert ep["hash"] not in seen
         seen.add(ep["hash"])
     # WP-3 STEP 94 mutant M-HOLD-e: quota violation changes totals (schedule is load-bearing).
     bad = {s: 1 for s in G.STRATA}
     b3 = G.generate_bank(seed, sizes=[7], quotas=bad)
     assert len(b3[7]) != G.PER_SIZE  # a violated schedule cannot impersonate the bank
+
+
+# WP-3 REPAIR STEP R2-05: forced-L law — every stratum x every L in 2..8 yields len==L.
+def test_hold_02b_forced_length_all_strata():
+    print("[WP-3][R2-05] Forced-L 12 strata x L=2..8 (84 combinations)")
+    rng0 = G.DRBG(b"wp3-r2-02b-tree-seed", b"t0")
+    T0 = G.build_tree("balanced", 18, rng0)
+    for s in G.STRATA:
+        for L in range(2, 9):
+            rng = G.DRBG(b"wp3-r2-02b-seed", ("%s|%d" % (s, L)).encode())
+            H = G.gen_history(s, 18, T0, rng, L=L)
+            assert len(H) == L, (s, L, len(H))
+            assert all(m in ("KEEP", "DELETE") and 1 <= x <= 18 for m, x in H), (s, L)
+    # WP-3 REPAIR R2 mutant M-HOLD-f1: unforced sampling also obeys 2..8 always.
+    rng = G.DRBG(b"wp3-r2-02b-unforced", b"u")
+    for s in G.STRATA:
+        for _ in range(20):
+            assert 2 <= len(G.gen_history(s, 18, T0, rng)) <= 8, s
+
+
+# WP-3 REPAIR STEP R2-05: exact-uniform RNG — determinism + modulo-bias mutant kill.
+def test_hold_02c_rng_exact_uniform():
+    print("[WP-3][R2-05] RNG determinism + rejection-sampling (modulo mutant killed)")
+    a = G.DRBG(b"wp3-r2-02c-seed", b"stream")
+    b = G.DRBG(b"wp3-r2-02c-seed", b"stream")
+    seq_a = [a.randbelow(7) for _ in range(50)] + [a.randint(2, 8) for _ in range(50)]
+    seq_b = [b.randbelow(7) for _ in range(50)] + [b.randint(2, 8) for _ in range(50)]
+    assert seq_a == seq_b
+    assert all(0 <= v < 7 for v in seq_a[:50]) and all(2 <= v <= 8 for v in seq_a[50:])
+    # WP-3 REPAIR R2 mutant M-HOLD-m: canned blocks kill the old modulo implementation.
+    # n=3: 2^256 % 3 == 1 so bound = 2^256-1; block 2^256-1 must be REJECTED.
+    class Canned(G.DRBG):
+        def __init__(self):
+            super().__init__(b"x", b"y")
+            self.blocks = [b"\xff" * 32, b"\x05" + b"\x00" * 31]
+
+        def _block(self):
+            self.ctr += 1
+            return self.blocks.pop(0)
+
+    c = Canned()
+    got = c.randbelow(3)
+    assert got == 2 and c.ctr == 2  # old modulo code returns 0 with ctr==1: killed
 
 
 # WP-3 HOLD-03 (post-seal): real bank in secret storage; repo holds zero bank bytes/seeds.
@@ -135,6 +178,93 @@ def test_hold_04_commitment_verifies():
     assert V.verify(secret_dir(), COM_P) is True
 
 
+# WP-3 REPAIR STEP R2-05: mini-bank verifier probes (isolated tmp banks, never H4L).
+def _mk_ep(n, stratum, H, shape="balanced"):
+    T0 = G._balanced(list(range(1, n + 1)))
+    ep = {"size": n, "stratum": stratum, "shape": shape, "T0": T0, "H": H}
+    ep["hash"] = G.episode_hash(ep)
+    return ep
+
+
+def _mini_setup(tmp_path, episodes, logical_ids=None, name="mini_n7.json.zst"):
+    import zstandard
+    sec = tmp_path / "sec"
+    (sec / "bank").mkdir(parents=True)
+    seed = b"mini-probe-seed-" + b"0" * 16
+    assert len(seed) == 32
+    (sec / "seed.bin").write_bytes(seed)
+    lines = [json.dumps(ep, sort_keys=True) for ep in episodes]
+    blob = zstandard.ZstdCompressor(level=3).compress(("\n".join(lines)).encode())
+    (sec / "bank" / name).write_bytes(blob)
+    order = logical_ids if logical_ids is not None else [ep["hash"] for ep in episodes]
+    lh = hashlib.sha256()
+    for i in order:
+        lh.update(i.encode())
+    man = {"shards": [{"name": name, "sha256": hashlib.sha256(blob).hexdigest(),
+                       "bytes": len(blob), "episodes": len(lines), "zstd_level": 3}],
+           "logical_stream_sha256": lh.hexdigest(), "generator": "probe"}
+    (sec / "manifest.json").write_text(json.dumps(man, sort_keys=True), encoding="utf-8")
+    quotas = {}
+    for ep in episodes:
+        quotas["%d|%s" % (ep["size"], ep["stratum"])] = quotas.get("%d|%s" % (ep["size"], ep["stratum"]), 0) + 1
+    com = {"bank": "PROBE", "commitment": "", "total": len(episodes), "sizes": [7],
+           "per_size": len(episodes), "quotas": quotas,
+           "shards": [{"name": name, "sha256": hashlib.sha256(blob).hexdigest()}],
+           "logical_stream_sha256": lh.hexdigest(), "generator_sha256": "probe",
+           "strata": ["RANDOM_LEGAL"], "seed_status": "probe"}
+    h = hashlib.sha256()
+    h.update(seed)
+    h.update(blob)
+    com["commitment"] = h.hexdigest()
+    com_p = tmp_path / "com.json"
+    com_p.write_text(json.dumps(com, sort_keys=True), encoding="utf-8")
+    return sec, com_p
+
+
+def _good_ep():
+    return _mk_ep(7, "RANDOM_LEGAL", [["KEEP", 3], ["DELETE", 5], ["KEEP", 1]])
+
+
+def test_hold_04b_verifier_positive_control(tmp_path):
+    print("[WP-3][R2-05] Verifier positive control (sorted, intact mini-bank)")
+    from holdout import h4l_verify as V
+    eps = sorted([_good_ep(), _mk_ep(7, "RANDOM_LEGAL", [["DELETE", 2]] * 5)], key=lambda e: e["hash"])
+    sec, com_p = _mini_setup(tmp_path, eps)
+    assert V.verify(sec, com_p) is True
+
+
+def test_hold_04c_verifier_kills_len9(tmp_path):
+    print("[WP-3][R2-05] Verifier kills length-9 history (frozen 2..8)")
+    from holdout import h4l_verify as V
+    bad = _mk_ep(7, "RANDOM_LEGAL", [["KEEP", 1]] * 9)
+    sec, com_p = _mini_setup(tmp_path, [bad])
+    assert V.verify(sec, com_p) is False
+
+
+def test_hold_04d_verifier_kills_unsorted(tmp_path):
+    print("[WP-3][R2-05] Verifier kills unsorted episode IDs")
+    from holdout import h4l_verify as V
+    eps = sorted([_good_ep(), _mk_ep(7, "RANDOM_LEGAL", [["DELETE", 2]] * 5)], key=lambda e: e["hash"])
+    sec, com_p = _mini_setup(tmp_path, list(reversed(eps)))
+    assert V.verify(sec, com_p) is False
+
+
+def test_hold_04e_verifier_kills_corrupt_id(tmp_path):
+    print("[WP-3][R2-05] Verifier kills corrupted episode ID/hash")
+    from holdout import h4l_verify as V
+    ep = _good_ep()
+    ep["hash"] = ("0" if ep["hash"][0] != "0" else "1") + ep["hash"][1:]
+    sec, com_p = _mini_setup(tmp_path, [ep])
+    assert V.verify(sec, com_p) is False
+
+
+def test_hold_04f_verifier_kills_wrong_logical_order(tmp_path):
+    print("[WP-3][R2-05] Verifier kills wrong logical-stream ordering")
+    from holdout import h4l_verify as V
+    eps = sorted([_good_ep(), _mk_ep(7, "RANDOM_LEGAL", [["DELETE", 2]] * 5)], key=lambda e: e["hash"])
+    sec, com_p = _mini_setup(tmp_path, eps,
+                             logical_ids=[e["hash"] for e in reversed(eps)])
+    assert V.verify(sec, com_p) is False
 # WP-3 HOLD-05: pre-reveal bank read via firewall fails closed.
 def test_hold_05_prereveal_read_refused():
     print("[WP-3][HOLD-05] Pre-reveal bank read must fail closed")

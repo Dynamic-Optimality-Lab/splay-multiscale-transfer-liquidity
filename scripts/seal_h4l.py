@@ -1,8 +1,11 @@
-"""WP-3 STEP 93: one-shot H4L generation -> secret storage -> public commitment.
+"""WP-3 STEP 93 + WP-3 REPAIR STEP R2-03: one-shot H4L generation -> secret storage.
 
 Reads secret seed from $H4L_SECRET/seed.bin (creates it with os.urandom once if absent).
 Writes bank shards + manifest to secret dir ONLY. Writes public commitment +
 firewall transitions to the repo. Single-shot: refuses if commitment exists.
+
+R2: episodes serialized SORTED BY EPISODE ID (canonical order); logical-stream hash
+covers the canonical ordered stream; commitment carries bank_id H4L-R2 + supersedes.
 """
 from __future__ import annotations
 import hashlib
@@ -16,6 +19,9 @@ sys.path.insert(0, str(ROOT / "python"))
 from holdout import h4l_generate as G
 from holdout import firewall as FW
 import zstandard
+
+BANK_ID = "H4L-R2"
+SUPERSEDES_R1 = "4b33e033b9f8f23f9eb97e88080d49048d17cca797d2be56f4d896474620811b"
 
 
 def main() -> int:
@@ -42,8 +48,13 @@ def main() -> int:
     logical = hashlib.sha256()
     quotas = {}
     for n in G.SIZES:
+        # WP-3 REPAIR STEP R2-03: canonical order = sorted episode IDs; logical
+        # stream covers exactly this ordered stream.
+        ordered = sorted(bank[n], key=lambda e: e["hash"])
+        assert [e["hash"] for e in ordered] == sorted(e["hash"] for e in ordered)
+        assert len({e["hash"] for e in ordered}) == len(ordered)
         lines = []
-        for ep in bank[n]:
+        for ep in ordered:
             line = json.dumps(ep, sort_keys=True)
             lines.append(line)
             logical.update(ep["hash"].encode())
@@ -54,21 +65,23 @@ def main() -> int:
         (secret / "bank" / name).write_bytes(blob)
         shards.append({"name": name, "sha256": hashlib.sha256(blob).hexdigest(), "bytes": len(blob),
                        "episodes": len(lines), "zstd_level": 3})
-        print("[WP-3][STEP 93] shard %s: %d episodes, %d bytes" % (name, len(lines), len(blob)))
+        print("[WP-3][REPAIR STEP R2-03] shard %s: %d episodes sorted by ID, %d bytes"
+              % (name, len(lines), len(blob)))
     man = {"shards": sorted(shards, key=lambda s: s["name"]), "logical_stream_sha256": logical.hexdigest(),
-           "generator": hashlib.sha256((ROOT / "python" / "holdout" / "h4l_generate.py").read_bytes()).hexdigest()}
+            "generator": hashlib.sha256((ROOT / "python" / "holdout" / "h4l_generate.py").read_bytes()).hexdigest()}
     (secret / "manifest.json").write_text(json.dumps(man, indent=2, sort_keys=True), encoding="utf-8")
     h = hashlib.sha256()
     h.update(seed)
     for sh in sorted(shards, key=lambda s: s["name"]):
         h.update((secret / "bank" / sh["name"]).read_bytes())
     total = sum(s["episodes"] for s in shards)
-    com = {"bank": "H4L", "commitment": h.hexdigest(), "total": total,
-           "sizes": G.SIZES, "per_size": G.PER_SIZE, "quotas": quotas,
-           "shards": [{"name": s["name"], "sha256": s["sha256"]} for s in shards],
-           "logical_stream_sha256": man["logical_stream_sha256"],
-           "generator_sha256": man["generator"],
-           "strata": G.STRATA, "seed_status": "OPERATOR_SECRET (never in repo)"}
+    com = {"bank": "H4L", "bank_id": BANK_ID, "supersedes": SUPERSEDES_R1,
+           "commitment": h.hexdigest(), "total": total,
+            "sizes": G.SIZES, "per_size": G.PER_SIZE, "quotas": quotas,
+            "shards": [{"name": s["name"], "sha256": s["sha256"]} for s in shards],
+            "logical_stream_sha256": man["logical_stream_sha256"],
+            "generator_sha256": man["generator"],
+            "strata": G.STRATA, "seed_status": "OPERATOR_SECRET (never in repo)"}
     (ROOT / "artifacts" / "v04" / "holdouts").mkdir(parents=True, exist_ok=True)
     com_p.write_text(json.dumps(com, indent=2, sort_keys=True), encoding="utf-8")
     FW.transition("BANK_GENERATED_SECRET", "70k episodes to secret storage")

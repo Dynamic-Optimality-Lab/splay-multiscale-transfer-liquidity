@@ -138,3 +138,43 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - WorkPlan WP-2 Scope corrected 0..8 -> 0..12 (matches operative spec section 3 + prereg/liquidity_axis.yaml range [0, 12]).
 - R-008 recorded HEAD 02a67fd because 3668db2 was the commit carrying R-008 itself; superseded here.
 - Repair commit 5992c7f pushed 3668db2..5992c7f; ls-remote == local == 5992c7f. Remote/local HEAD now 5992c7f.
+
+## R-010 — WP-3 R1 seal + genuine human REJECT (preserved history, not a completion)
+
+- R1 implementation commit: `9dde18c` (pushed `3340c38..9dde18c`, ls-remote == local).
+- R1 seal executed once via `python scripts/run_phase03.py` exit 0: firewall
+  EMPTY→GENERATOR_FROZEN→BANK_GENERATED_SECRET→COMMITMENT_PUBLISHED; 70,000 episodes
+  (7×10k) to operator-secret storage only; HOLD-01..14 = 14/14; independent
+  recompute OK.
+- R1 identity: generator sha256
+  `f5dd09ec3cb381e68e8c92c928e5a53a7f4092534e6d267dd93b4a4f3e81afd6`;
+  commitment `4b33e033b9f8f23f9eb97e88080d49048d17cca797d2be56f4d896474620811b`.
+- Human REQ-008 review solicited genuinely (never fabricated). Verdict: **REJECT**.
+- Root defects (implementation, not contract): D-R1-01 modulo-biased `randbelow`;
+  D-R1-02 six strata ignoring sampled L; D-R1-03 unsorted shard serialization +
+  unsorted logical stream; D-R1-04 verifier accepting 2..16 without ID/order checks;
+  D-R1-05 HOLD suite accepting lengths through 16 without forced-L coverage.
+- R1 artifacts archived unchanged:
+  `artifacts/v04/holdouts/rejected_R1/h4l_commitment_R1_REJECTED.json`,
+  `artifacts/v04/holdouts/rejected_R1/firewall_state_R1_REJECTED.json`;
+  R1 secret bytes retired to `Temp/opencode/h4l-secret-R1-rejected` (never reused,
+  never revealed, never evaluated). Zero H4L evaluations and zero reveals throughout.
+- Verdict: R1 = REJECTED. No completion was ever claimed for WP-3.
+
+## R-011 — WP-3 R2 repair (pre-generation; bank R1 never regenerated)
+
+- Recovery authorized by `planning/WP3_RECOVERY_R2.md` (new bank identity H4L-R2,
+  canonical paths rebound after R1 archival — a new lifecycle, not a backwards reset).
+- Repairs: R-R2-01 rejection-sampled exact-uniform `randbelow`; R-R2-02 exact-L in
+  all 12 strata (motifs preserved); R-R2-03 sorted episode IDs + canonical logical
+  stream + `bank_id`/`supersedes`; R-R2-04 verifier 2..8 + ID recompute + order +
+  shard + logical + quota checks (also fixed a real tuple-vs-string quota-key bug the
+  new check exposed); R-R2-05 HOLD suite (forced-L 12x7, RNG/modulo kill, 5 mini-bank
+  verifier probes incl. positive control).
+- Pre-seal battery: `python -m pytest tests/test_holdout_firewall.py -q -rs` →
+  18 passed, 3 skipped (post-seal-only: HOLD-03/04/07); full ACT+LEG regression rerun
+  at closeout.
+- Freeze manifest rebuilt and PASS; predicate hashes re-verified (sha256(definition),
+  16/16); `h4l-val|` typo fixed; `.gitignore` secret quarantine added.
+- Next (authorized order): commit B1 (repairs, pre-generation) → push → fresh seal
+  with fresh seed → verify → full HOLD → new human ACCEPT request. WP-4 not entered.
