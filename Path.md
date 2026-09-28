@@ -844,3 +844,16 @@ A2. Pair-Access mapping formalized (occurrence mask, NOT value-set;
    rotations preserve keysets, keys(A_i)=keys(B_i)=K, every x_i present —
    `tests/test_present_domain.py` 3/3 green).
 A3. COMMIT 1 (audit only) pushed before any WorkPlan/theorem mutation.
+
+## WP-6 Present-Domain Route — Amendment + MSTL-14P Seeding
+
+B1. WorkPlan present-route amendment committed (16-point successor law above:
+   history preserved, new IDs, frozen order/bytes, no H6, review external,
+   MSTL-19 unchanged).
+B2. New theorems: math/theorems/MSTL-{14P,15P,17P,18P}.md (PresentLegal-
+   PairInstance domain; chain 14P->15P->17P->18P->19; consumers REVIEWED-gated).
+B3. proof_status.json: +4 rows (UNPROVED/NO_WITNESS/UNPROVED); broad MSTL-14
+   row byte-identical (WITNESS_FOUND/UNPROVED).
+B4. DAG: artifacts/v04/wp6_present/present_route_DAG.json (broad feeders
+   08U/09/11/13/22 kept; 19 unchanged bridge node).
+B5. COMMIT 2 (rules+IDs, pre-outcome) pushed before present theorem search.
