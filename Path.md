@@ -525,3 +525,16 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - H5: NOT created/consumed here. Survivors (63) require FRESH_H5_REQUIRED_
   BEFORE_WP6, to be designed/frozen coherently with any main WP-5X survivors.
 - Commits/pushes (this branch only): see R-K6C2 entries below.
+
+## R-K6C2-01 — Specialized slice push + HEAD verification (this branch only)
+
+- Commits: `57be4ba` (runner + tests) + `c1d5e33` (K0-K6 gate artifacts:
+  population, kills/live K1/K2/K4/K5, agreement K3, survivors, phase diagram) +
+  `25c704c` (resumable checkpoints + this ledger section).
+- Push: `e6bd737..25c704c` wp5x-k6c2-specialized -> origin (never master,
+  never --force, branch guard asserted before every stage/commit/push).
+- HEAD: ls-remote `25c704c3ae7e107196544f9764ea08135cc20841` == local
+  `25c704c3ae7e107196544f9764ea08135cc20841` — agree.
+- Tree: `git status --porcelain` empty.
+- Verdict: `FOLLOWS` the specialized procedure (K6C2_SPECIALIZED_SET_SURVIVES_
+  KNOWN_FINITE_GATES, finite only, FRESH_H5_REQUIRED_BEFORE_WP6).
