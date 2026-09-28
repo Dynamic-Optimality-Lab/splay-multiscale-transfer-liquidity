@@ -65,8 +65,9 @@ def verify(secret_dir: Path, commitment_path: Path) -> bool:
     print("[WP-3][STEP 90] Verifying H4L bank against commitment")
     try:
         return _verify(secret_dir, commitment_path)
-    except (ValueError, KeyError, AssertionError) as e:
-        print("[WP-3][REPAIR STEP R2-04] VERIFY FAIL: %s" % e)
+    except Exception as e:  # WP-5 REPAIR: any verification error (incl. corrupt
+        print("[WP-3][REPAIR STEP R2-04] VERIFY FAIL: %s: %s"  # compression) fails closed.
+              % (type(e).__name__, e))
         return False
 
 
