@@ -857,3 +857,7 @@ B3. proof_status.json: +4 rows (UNPROVED/NO_WITNESS/UNPROVED); broad MSTL-14
 B4. DAG: artifacts/v04/wp6_present/present_route_DAG.json (broad feeders
    08U/09/11/13/22 kept; 19 unchanged bridge node).
 B5. COMMIT 2 (rules+IDs, pre-outcome) pushed before present theorem search.
+B6. COMMIT 3 (entry/binding): candidate #1 `P_all|6|2|FLAT(2)` identity
+   `0909c74a…` bound in `artifacts/v04/wp6_present/0909c74a/activation.json`
+   (frozen order, pre-outcome; refuted-broad status explicitly noted, not
+   erased).
