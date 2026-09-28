@@ -619,3 +619,68 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
   lookbehind-matched); h5_08 made phase-aware (log-order assertion post-seal).
 - Commits/pushes (this branch only): `18d5952` freeze, `2ef7539` commitment,
   `c56da8d` reveal + overlap audit, plus H5 evaluation/seal commits below.
+
+## WP-6 ledger (PHASEs 17-19) — ENTRY BLOCKED, PHASE NOT BEGUN (N=6 binding)
+
+- Phase binding resolved once at start: N=6 => CURRENT_PHASE=WP-6,
+  PREVIOUS_PHASE=WP-5. All WP-6 references below mean exactly WP-6.
+- Previous-phase revalidation (fresh, current tree, `scripts/revalidate_wp5.py`
+  exit 0): 10/10 checks PASS — H4L-R2 commitment bound, firewall REVEALED_ONCE/1,
+  fresh 3x70k exhausted clean, agreement record present, large-n 360 clean x3,
+  OOD kills all 3 (1 each), PROMOTED_SET_REJECTED terminal frozen, MSTL-22/25
+  UNPROVED, HEAD clean-room blob == v2 freeze. Verdict: WP-5 =
+  VERIFIED_COMPLETE **with the rejection terminal** (complete-as-rejected, not
+  complete-as-surviving). Path WP-5 entries verified accurate against bytes.
+- WP-6 contract compiled BEFORE implementation: `planning/WP6_CONTRACT.md`
+  (WP-6-REQ-001..061, immutable; entry/scope/files/semantics/verification/
+  tests/statuses/exit). No WP-6 implementation existed before it.
+- WP-6 entry-gate audit (`scripts/check_wp6_entry_gate.py`, exit 1, artifact
+  `artifacts/v04/wp6_entry_gate.json`): E1 SURVIVES_FINITE_TESTS FAIL (OOD
+  survivors 0/3); E2 primary candidate FAIL (none); E3 PA conjunction FAIL (0/7
+  MSTL nodes REVIEWED, all UNPROVED/NO_WITNESS); E4 bridge ceiling FAIL (L2
+  ABSENT_PAYWALLED => MSTL-19 BLOCKED_BY_SOURCE => DYNAMIC_OPTIMALITY_PROVED
+  unreachable per spec #9); E5 anti-substitution PASS (K6/H5 63-survivor finite
+  sets recorded and explicitly refused as REQ-001 substitutes — finite survival
+  is never a theorem premise). Verdict: WP-6 ENTRY GATE = FAIL.
+- Consequence (WorkPlan #3/#19): WP-6 does not begin. No Lean proofs, no review
+  packages, no bridge audit, no export/seal attempted — attempting them without
+  entry would itself violate the contract, and human ACCEPT/REJECT/BLOCKED
+  verdicts plus the L2 source are external blockers that cannot be fabricated
+  or worked around. Recorded terminal for this phase: **WP-6 = BLOCKED_ON_ENTRY**
+  (blockers: E1 WP-5 rejection stands; E3 zero MSTL proofs reviewed; E4 L2
+  paywalled; E5 substitution forbidden). This is not a no-claim terminal from
+  the #12 set — no WP-6 terminal was reached because WP-6 never started.
+- Red team (false-closure probes, all REJECTED): forged-REVIEWED proof_status
+  still fails (0 MSTL review files exist; REQ-041 requires genuine ACCEPT on
+  exact bytes); H5/K6 finite-set substitution refused (status strings textually
+  distinct from SURVIVES_FINITE_TESTS); OOD rejection undeniable (3/3 kills in
+  frozen bytes). Missing-artifact inputs fail closed (FileNotFoundError, exit
+  nonzero, never false PASS).
+- Regression reruns: FRSH 13/14 (FRSH-02 fails only on win32 CRLF working-tree
+  bytes; HEAD blob == v2 freeze verified); HOLD 17/21 — HOLD-03/08 fail on the
+  lawfully revealed bank (pre-reveal invariant superseded by WP-5 reveal),
+  HOLD-05/14 fail pinning pre-reveal firewall state (superseded by lawful
+  REVEALED_ONCE). All four classes are stale-test-vs-lawful-state, documented
+  previously, not WP-5 defects; WP-5 artifacts bytes-unchanged.
+- Failures/repairs during this audit: one malformed PowerShell-quoted inline
+  probe (syntax error, no side effects; rerun with clean quoting) — preserved
+  here, no repair needed beyond the rerun.
+- Files created: `planning/WP6_CONTRACT.md`, `scripts/revalidate_wp5.py`,
+  `scripts/check_wp6_entry_gate.py`, `artifacts/v04/wp6_entry_gate.json`.
+- Files modified: none (no WP-6 implementation; Path.md append-only below).
+- Statuses changed: none (all MSTL remain UNPROVED/NO_WITNESS; no review
+  solicited, none fabricated).
+- Log inventory (final line numbers, committed bytes): revalidate_wp5.py
+  RV-01 comment 20/log 21, RV-00 27/28, RV-02 35/36, RV-03 47/48, RV-04 57/58,
+  RV-05 log 64; check_wp6_entry_gate.py EG-01 17/18, EG-00 23/24, EG-02 36/37,
+  EG-03 43/44, EG-04 log 53.
+- Exit matrix: WP-6-REQ-001 FAIL (entry) => remaining REQs NOT_APPLICABLE (phase
+  not begun; obligations preserved for any future lawful attempt, not waived).
+- Compliance audit (WorkPlan WP-6 vs repo vs Path vs tests): contract compiled
+  pre-implementation PASS; entry evaluated mechanically PASS (as FAIL verdict);
+  no implementation claimed PASS; no placeholders introduced PASS; statuses
+  untouched PASS; Path claims evidence-backed PASS. gaps_found=0 (blocking
+  conditions are external/structural, not repairable gaps); gaps_repaired=0;
+  remaining_compliance_gaps=0.
+- Final verdict: **WP-6 = BLOCKED_ON_ENTRY** (previous phase verified,
+  entry gate failed lawfully, nothing implemented, nothing claimed).
