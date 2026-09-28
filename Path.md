@@ -684,3 +684,52 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
   remaining_compliance_gaps=0.
 - Final verdict: **WP-6 = BLOCKED_ON_ENTRY** (previous phase verified,
   entry gate failed lawfully, nothing implemented, nothing claimed).
+
+## WP-6 H5-Successor Route — WorkPlan Amendment + Universal War
+
+A. Start SHA / branch: `1f43527046f1e7eb432f36ceb9a315b956e8a26a` on
+   `wp5x-k6c2-specialized` (local == remote, tree clean at session start).
+B. Old gate blocked because: E1 SURVIVES_FINITE_TESTS false (WP-5 OOD killed
+   the original 3/3), E2 no primary candidate, E3 zero REVIEWED MSTL nodes, E4
+   L2 paywalled — under a WorkPlan that recognized only the original route.
+C. Old gate was CORRECT under the old WorkPlan; it is preserved untouched
+   (`scripts/check_wp6_entry_gate.py`, `artifacts/v04/wp6_entry_gate.json`
+   verdict FAIL, original PROMOTED_SET_REJECTED record intact).
+D. WorkPlan.md mutation: WP-6 section now carries (i) SPECIALIZED_H5_WP6_ENTRY
+   (branch/H5-terminal/entry-status/count/hash, H5-count/hash, clean-room zero,
+   K6-H5 bind, identities unchanged, lifecycle sealed, no post-H5 mutation)
+   with the explicit successor-transition sentence ("independent legal
+   predecessor", not substitution); (ii) review/L2 phase placement (zero
+   REVIEWED expected at start, never entry-blocking; L2 gates only MSTL-19);
+   (iii) 63-candidate lifecycle (frozen serialized order, per-artifact identity
+   binding, one-at-a-time, refutation retires without mutation, first full-route
+   closure stops search, resource-limit stays unresolved, no new values/axes);
+   (iv) specialized terminals (WP6_H5_ENTRY_PASS … ALL_63_…); (v)
+   candidate-bound artifact namespaces; (vi) A+B+C certificate law with
+   PROVED_PENDING_HUMAN_REVIEW and no fake review.
+E. Entry predicate: SPECIALIZED_H5_WP6_ENTRY as in (D).
+F. WorkPlan hash before `796de224595fc3332193e5fb16b9ae0ca922e88581aa0455f373ed47b9d2b005`
+   / after `e889e60c244263d9b8f059f398038880aa174a1ef3e649e2dcf97891a5d8df99`
+   (single WP-6 section replacement; WP-5 and Appendix untouched).
+G. Regenerated WP6 contract hash
+   `fdeb4b03f2998c3f9a3dc89f76d624e66b6c933f014f22428727d6828025102f`
+   (`planning/WP6_CONTRACT.md`: prior BLOCKED_ON_ENTRY revision superseded by
+   amendment, history preserved in git).
+H. 63 count/hash: verified identical across wp6_entry_set / h5_survivors /
+   specialized_survivors (hash
+   `9dcdea2b7926cf94765e1fd818a73f0459c72404b4f4bf5c36b3ec65a27e5748`,
+   order byte-identical).
+I. Canonical order source: `artifacts/v04/wp5x_k6c2/h5/wp6_entry_set.json`
+   serialized array (no reranking; #1 `P_all|6|2|FLAT(2)` identity
+   `0909c74accb193302d1a9213601567bebcba414de679e362b10ad3007b4fb7fd`
+   asserted from bytes before activation).
+J. Specialized entry checker result: `scripts/check_wp6_h5_entry_gate.py` ->
+   `artifacts/v04/wp6_h5_entry_gate.json` = WP6_H5_ENTRY_PASS (15/15 conjuncts
+   incl. commitment recompute from public reveal + old-gate preservation).
+K. Mutants/tests: `tests/test_wp6_h5_entry.py` 22/22 PASS (wrong branch/count/
+   hash/identity add/remove/reorder/terminal/agreement/bind/seal/mutation/forge/
+   rejection-preservation/routing-review/L2/finite-theorem/master/force/old-
+   checker/fake-review). Repair: checker hardened mid-course to recompute the
+   H5 commitment itself (mutant w6e_21 caught state-only trust).
+L-Z. (Appended as theorem work proceeds; see candidate activation records
+   below. Rule COMMIT A pushed before any theorem outcome was inspected.)

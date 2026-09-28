@@ -1,6 +1,14 @@
-# WP-6 CONTRACT (compiled before implementation; immutable for WP-6)
+# WP-6 CONTRACT (H5-successor revision; supersedes the BLOCKED_ON_ENTRY version)
 
-Binding: CURRENT_PHASE=WP-6, PREVIOUS_PHASE=WP-5.
+Supersession: the prior revision (compiled under the old entry routing, verdict
+WP-6 = BLOCKED_ON_ENTRY, commit 1f43527) is preserved in git history and
+Path.md and remains the correct record of that gate. This revision is recompiled
+from the AMENDED WorkPlan.md H5-successor law and does not erase the old
+reasoning. Original WP-5 PROMOTED_SET_REJECTED remains historical truth.
+
+Binding: CURRENT_PHASE=WP-6, PREVIOUS_PHASE=WP-5 (revalidated COMPLETE with the
+rejection terminal) + specialized H5 successor route (K6 63 -> fresh H5 63/63 ->
+WP6_ENTRY_SET_FROZEN, hash 9dcdea2b7926cf94765e1fd818a73f0459c72404b4f4bf5c36b3ec65a27e5748).
 Authority: WorkPlan.md WP-6 + v0.4.1 spec #5 (theorems), #6 (lifecycle+review),
 #9 (bridge pin-or-blocked), #10 (seal/conditional repro/export), #11
 (governance/export/successor), #12 (gates/terminals) + prereg/
@@ -10,13 +18,30 @@ Mode: contract compiled 2026-09-28 on branch wp5x-k6c2-specialized BEFORE any
 WP-6 implementation (contract lock: implementation must satisfy the contract,
 never the reverse).
 
-## Entry predicate
-- WP-6-REQ-001: previous-phase (WP-5) independently revalidated VERIFIED_COMPLETE
-  with SURVIVES_FINITE_TESTS holding (a non-empty finite-surviving set).
-- WP-6-REQ-002: one primary candidate at a time, in canonical order.
-- WP-6-REQ-003: PA conjunction machine-checked BEFORE any MSTL-17 PROVE step
-  (prerequisites: MSTL-08U/09/11/13/14/15/22 REVIEWED + LIQ0-01/02/04/05/06/09/10
-  at required statuses, per spec #5 and theorem_gate_matrix.yaml).
+## Entry predicate (amended WorkPlan law)
+- WP-6-REQ-001: SPECIALIZED_H5_WP6_ENTRY (branch == wp5x-k6c2-specialized AND
+  H5 terminal == H5_K6C2_SET_SURVIVES_FRESH_HOLDOUT AND wp6_entry_set.status ==
+  WP6_ENTRY_SET_FROZEN AND count == 63 AND survivor-set hash ==
+  9dcdea2b7926cf94765e1fd818a73f0459c72404b4f4bf5c36b3ec65a27e5748 AND H5
+  count/hash agree AND clean-room zero mismatches AND K6/H5 identities bind
+  exactly AND identity hashes unchanged AND H5 lifecycle sealed AND no post-H5
+  mutation). Verified by scripts/check_wp6_h5_entry_gate.py ->
+  artifacts/v04/wp6_h5_entry_gate.json (WP6_H5_ENTRY_PASS). The old
+  SURVIVES_FINITE_TESTS-only gate (scripts/check_wp6_entry_gate.py) is
+  preserved as historical evidence, not the controlling gate on this branch.
+- WP-6-REQ-002: one candidate at a time in the EXACT serialized order of
+  artifacts/v04/wp5x_k6c2/h5/wp6_entry_set.json (candidate #1
+  P_all|6|2|FLAT(2), identity
+  0909c74accb193302d1a9213601567bebcba414de679e362b10ad3007b4fb7fd);
+  every candidate artifact carries key/P/k/C/rho/identity/entry-set/source
+  hashes; exact refutation retires (preserved/minimized/replayed/hashed, never
+  mutated) and advances; first lawful full-route closure stops the search;
+  resource-limit leaves a candidate unresolved, never dead; no
+  mutation/synthesis/search/new values/dynamic-P/new axis.
+- WP-6-REQ-003 (revised placement): PA conjunction machine-checked BEFORE any
+  MSTL-17 PROVE step (not an entry requirement); zero REVIEWED MSTL nodes at
+  start is EXPECTED; L2 gates ONLY MSTL-19/bridge audit (missing L2 never
+  blocks MSTL-08U/09/11/12/13/14/15/17/18).
 
 ## Scope (arbitrary-n war to bridge or honest terminal; PHASEs 17-19)
 - WP-6-REQ-010: arbitrary-n case-complete proofs over
@@ -70,11 +95,11 @@ never the reverse).
 
 ## Statuses/exit
 - WP-6-REQ-050: exactly one terminal: DYNAMIC_OPTIMALITY_PROVED (iff full PA
-  chain REVIEWED + bridge audited) else an honest terminal from
-  {PROMOTED_CANDIDATE_SET_REJECTED, SYNCHRONOUS_REPAYMENT_REFUTED,
-  GLOBAL_INTEGRABILITY_REFUTED, PAIR_ACCESS_ROUTE_REFUTED_NO_DOC_NEGATIVE,
-  BRIDGE_BLOCKED_NO_CLAIM, RESOURCE_LIMIT_NO_CLAIM, LEGACY_EMBEDDING_FAIL,
-  AXIS_INCONCLUSIVE} (spec #12 set).
+  chain REVIEWED + bridge audited) else an honest terminal from the amended
+  WorkPlan set: WP6_H5_ENTRY_PASS, CANDIDATE_REFUTED_AT_<NODE>,
+  CANDIDATE_UNRESOLVED_RESOURCE_LIMIT, PROVED_PENDING_HUMAN_REVIEW,
+  AWAITING_HUMAN_REVIEW, BRIDGE_BLOCKED_BY_SOURCE, ALL_63_CANDIDATES_REFUTED,
+  ALL_63_CANDIDATES_UNRESOLVED_OR_REFUTED, or the spec #12 refuted/no-claim set.
 - WP-6-REQ-051: obstructions preserved (L2-absent record kept); successor
   embedding only if its 5 conditions hold.
 
