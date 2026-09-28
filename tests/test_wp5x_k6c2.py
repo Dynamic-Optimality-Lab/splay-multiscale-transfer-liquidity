@@ -206,14 +206,16 @@ def test_k6c2_16_no_dynamic_p():
 
 
 def test_k6c2_17_no_universality_claim():
+    import re
     surv = _load(X / "specialized_survivors.json")
     assert surv["label"] == "FINITE evidence only; FRESH_H5_REQUIRED_BEFORE_WP6"
     assert surv["status"] in ("K6C2_SPECIALIZED_SET_SURVIVES_KNOWN_FINITE_GATES",
                               "K6C2_SPECIALIZED_SET_REJECTED")
     for p in X.rglob("*.json"):
         txt = p.read_text(encoding="utf-8")
-        for forbidden in ("UNIVERSAL", "PROVED", "THEOREM-VALID", "QED"):
+        for forbidden in ("UNIVERSAL", "THEOREM-VALID", "QED"):
             assert forbidden not in txt, "universality claim forbidden: %s in %s" % (forbidden, p)
+        assert not re.search(r"(?<!UN)PROVED", txt), "universality claim forbidden: PROVED in %s" % p
 
 
 def test_k6c2_18_p_all_flat2_survives():

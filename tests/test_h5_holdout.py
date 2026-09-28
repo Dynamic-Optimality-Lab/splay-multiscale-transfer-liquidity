@@ -157,14 +157,20 @@ def test_h5_07_firewall_lifecycle_and_single_unlock():
 
 
 def test_h5_08_no_h5_bytes_before_freeze():
-    # Before generation: no commitment, no reveal, no secret reads possible.
-    assert not (ART / "h5" / "h5_commitment.json").exists() or True
-    from holdout import h5_firewall as FW
+    # Pre-generation: no commitment, firewall at EMPTY/GENERATOR_FROZEN.
+    # Post-generation: firewall log must show GENERATOR_FROZEN first (i.e. the
+    # pushed freeze preceded all bank bytes) and unlocks <= 1.
     import sys
     sys.path.insert(0, str(ROOT / "python"))
+    from holdout import h5_firewall as FW
     st = FW.read_state()
-    assert st["state"] in ("EMPTY", "GENERATOR_FROZEN")
-    assert st["unlocks"] == 0
+    if not (ART / "h5" / "h5_commitment.json").exists():
+        assert st["state"] in ("EMPTY", "GENERATOR_FROZEN")
+        assert st["unlocks"] == 0
+        return
+    order = [e["to"] for e in st["log"]]
+    assert order[0] == "GENERATOR_FROZEN", "bank bytes predate generator freeze"
+    assert st["unlocks"] <= 1
 
 
 def test_h5_09_k6_binding_constants():

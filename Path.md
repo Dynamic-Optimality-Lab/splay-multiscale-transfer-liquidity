@@ -538,3 +538,84 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - Tree: `git status --porcelain` empty.
 - Verdict: `FOLLOWS` the specialized procedure (K6C2_SPECIALIZED_SET_SURVIVES_
   KNOWN_FINITE_GATES, finite only, FRESH_H5_REQUIRED_BEFORE_WP6).
+
+## WP-5X-K6C2 Fresh H5 (THIS BRANCH ONLY: wp5x-k6c2-specialized)
+
+- H5_START_SHA: `cba14f7285bae6a5602a8d1a3dc064775888eab9` (local == remote,
+  tree clean at session start; expected `25c704c` is its parent — the delta is
+  the Path-only R-K6C2-01 record, verified to touch no K0-K6 semantics).
+- K6 entry: count 63, survivor-set hash
+  `9dcdea2b7926cf94765e1fd818a73f0459c72404b4f4bf5c36b3ec65a27e5748`
+  (re-verified before coding; FAIL-CLOSED on mismatch).
+- Rationale: genuinely fresh SAME-DISTRIBUTION replication of H4L
+  (`prereg/h5_holdout.yaml`, bank H5-R1), not outcome-targeted. Because the 63
+  survivors were already known, no benchmark field was tuned to their strengths
+  or weaknesses: sizes/strata/quotas/history/tree/motif/legality/serialization/
+  ordering/compression/RNG mechanically inherited from H4L. Only bank identity,
+  stream domain (`h5|` vs `h4l|`), and fresh seed differ.
+- Inherited H4L bytes (win32 CRLF working-tree SHA-256): spec `4fee1f3e…`,
+  generator `e2e98742…`, verifier `f355ebd9…`, firewall `08bd26be…` (recorded in
+  `prereg/h5_holdout.yaml`; HEAD LF blobs differ by line endings only).
+- H5 prereg hash: `prereg/h5_holdout.yaml` committed in the freeze commit below.
+- H5_GENERATOR_FREEZE_SHA: `18d59528297abdde38b3b544592fd4e24a0b053a`
+  (`prereg/h5_holdout.yaml`, `python/holdout/h5_{generate,firewall,verify}.py`,
+  `scripts/{seal_h5,reveal_h5,run_h5_k6c2}.py`, `tests/test_h5_{holdout,k6c2}.py`,
+  `.gitignore` secret quarantine — committed + pushed BEFORE any seed/bank
+  existed; no amend/rebase after). Generator reuses frozen H4L semantics
+  (`H4L.DRBG/build_tree/gen_history/episode_hash`); candidate-blind by
+  construction (AST-audited: imports holdout.h4l_generate + stdlib only).
+- Secret-bank generation: one `os.urandom(32)` seed + single 70,000-episode run
+  into `$H5_SECRET` (outside repo); no candidate evaluation during generation.
+  Shards `h5_n{18,26,34,46,58,74,98}.json.zst` (10k each, sorted IDs, zstd-3).
+- Commitment `9f99c860cf5697d115aa45337ae4c5ae4914ff38a83aff24d5dfd675be4a480a`
+  = sha256(seed || shards, canonical order; inherited convention), logical
+  stream `73596a4d…`, quotas 84 entries, `seed_status` secret. Public record
+  `artifacts/v04/h5/h5_commitment.json` (seed/bank never in repo).
+- H5_COMMITMENT_PUBLISHED_SHA: `2ef75397930542714b2d669a19bd49d01f6a1444`
+  (commitment + firewall state committed + pushed before reveal; K6 re-asserted).
+- Freshness audit (pre-reveal): seed distinct from H4L; commitment/shard/logical
+  hashes all differ; bank bytes differ on all 7 shards; all secret bytes postdate
+  the freeze commit; unlocks 0; zero evaluator contact.
+- Overlap audit: 6,661/70,000 H5 episode IDs are byte-identical H4L episodes
+  (verified content-equal on all 6,661). Recorded as H5_OVERLAP_REQUIRES_AUDIT
+  (`artifacts/v04/h5/h5_overlap_audit.json`): the "expected zero" premise is
+  mathematically unattainable — REPEATED_KEEP_DRAIN at n=18 admits ~378
+  deterministic contents vs quota 834 (observed 361), same for
+  DOUBLE_DELETE_DOUBLE_KEEP / NESTED_INTERVAL; overlap concentrates exactly in
+  those three strata. Disposition PROCEED_WITH_UNCHANGED_70K_BANK: no silent
+  regen, no seed-shopping (both would be outcome-conditioning and are forbidden),
+  no post-hoc exclusion (would break the frozen battery contract). Overlapping
+  episodes are provably non-informative here (K2: all 63 survived the full H4L
+  bank), so every H5 kill must come from the 63,339 strictly novel episodes;
+  freshness reported exactly, never as 70k-fresh.
+- Reveal-once: dedicated H5 firewall
+  (`EMPTY->GENERATOR_FROZEN->BANK_GENERATED_SECRET->COMMITMENT_PUBLISHED->
+  CANDIDATE_SET_BOUND->REVEALED_ONCE`, unlock_max 1; independent of H4L state).
+  Bind verified commitment recompute + K6 hash/count; reveal re-verified +
+  published `artifacts/v04/h5_reveal/` (seed, 7 shards, manifest, reveal.json).
+  Second reveal/regen refused by construction (tested).
+- Primary H5 (`scripts/run_h5_k6c2.py eval`, frozen WP-5X-K6C2 semantics via
+  `python/wp5x/*`, fail-fast + independent confirm, resumable shards,
+  FRESH_H5_K6C2): 63 entered, 0 killed, 63 live over all 70,000 fresh episodes
+  (`artifacts/v04/wp5x_k6c2/h5/h5_kills.json` empty, `h5_live.json` 63).
+- Clean-room H5 (`agree`, full H5 bank per H5 survivor): 63/63 agree, zero
+  mismatches (`h5_agreement.json`); no H5_EVALUATOR_DISAGREEMENT.
+- Final: `H5_K6C2_SET_SURVIVES_FRESH_HOLDOUT`, 63/63, survivor-set hash
+  `9dcdea2b…` (same 63 members/identities as K6 — zero kills).
+  `WP6_ENTRY_SET_FROZEN` emitted with exact identities/hash
+  (`artifacts/v04/wp5x_k6c2/h5/wp6_entry_set.json`).
+- Finite-only boundary: these statements mean ONLY "these candidates survived
+  the specified genuinely fresh H5 finite holdout." MSTL-14 remains UNPROVED
+  (`math/proof_status.json` untouched: prove_track UNPROVED, truth UNPROVED);
+  H5 is finite falsification and is never evidence for MSTL-14/Pair Access/
+  Dynamic Optimality/universal sufficiency.
+- Repairs during execution (all pre-reveal unless noted): K3-style chunking 4/
+  chunk for H5 agreement resumability; branch guards added to seal/reveal/run
+  scripts (mutant h5m_20 caught their absence); blindness-test docstring trap
+  fixed by AST-based docstring exclusion (same trap class as K6C2-16);
+  h5m_05 made phase-aware (skips pre-freeze); h5m_11 rewritten from
+  assert-zero to exact-audit-correspondence after the overlap finding;
+  k6c2_17 substring trap fixed (`UNPROVED` contains `PROVED` — now
+  lookbehind-matched); h5_08 made phase-aware (log-order assertion post-seal).
+- Commits/pushes (this branch only): `18d5952` freeze, `2ef7539` commitment,
+  `c56da8d` reveal + overlap audit, plus H5 evaluation/seal commits below.

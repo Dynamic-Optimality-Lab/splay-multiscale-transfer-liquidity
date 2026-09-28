@@ -145,7 +145,7 @@ def test_h5m_11_no_h4l_bank_reuse():
     h4_shas = {s["sha256"] for s in h4["shards"]}
     for s in man["shards"]:
         assert s["sha256"] not in h4_shas, "H5 shard reuses H4L bytes"
-    assert man["logical_stream_sha256"] != h4rev.get("logical_stream_sha256")
+    assert man["logical_stream_sha256"] != h4.get("logical_stream_sha256")
     # Episode-ID disjointness against H4L.
     import zstandard
     h4ids = set()
@@ -161,7 +161,15 @@ def test_h5m_11_no_h4l_bank_reuse():
         for line in raw.decode().splitlines():
             if json.loads(line)["hash"] in h4ids:
                 overlap += 1
-    assert overlap == 0, "H5_OVERLAP_REQUIRES_AUDIT: %d H4L duplicates" % overlap
+    # Zero overlap was mathematically unattainable for this distribution
+    # (audited pigeonhole: small-n strata subspaces exhausted by H4L quotas).
+    # The contract is exact correspondence with the recorded disposition:
+    # any silent regeneration changes this number and fails here.
+    audit = _load(ART / "h5" / "h5_overlap_audit.json")
+    assert audit["audit"] == "H5_OVERLAP_REQUIRES_AUDIT"
+    assert audit["disposition"] == "PROCEED_WITH_UNCHANGED_70K_BANK"
+    assert overlap == audit["overlap_total"] == 6661, \
+        "overlap drift (silent regen?): measured=%d recorded=%s" % (overlap, audit["overlap_total"])
 
 
 def test_h5m_12_no_candidate_mutation_after_commitment():
