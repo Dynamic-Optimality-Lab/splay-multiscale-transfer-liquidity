@@ -61,19 +61,47 @@ def _sites(lo, hi, x, n):
 
 
 def _to_tuple(t):
-    # WP-4 STEP 115: nested-list T0 -> independent tuple tree (no shared bytes).
+    # WP-4 STEP 115 (+ WP-5 iterative robustness): nested-list T0 -> independent
+    # tuple tree, post-order explicit stack (no shared bytes, no recursion limit).
     from .splay import node, LEAF
     if t is None:
         return LEAF
-    return node(t[0], _to_tuple(t[1]), _to_tuple(t[2]))
+    out = {}
+    stack = [(t, False)]
+    while stack:
+        src, done = stack.pop()
+        if src is None:
+            continue
+        if done:
+            l = out[id(src[1])] if src[1] is not None else LEAF
+            r = out[id(src[2])] if src[2] is not None else LEAF
+            out[id(src)] = node(src[0], l, r)
+        else:
+            stack.append((src, True))
+            stack.append((src[1], False))
+            stack.append((src[2], False))
+    return out[id(t)]
 
 
 def _clone(t):
+    # WP-5 robustness: iterative deep copy of tuple trees.
     from .splay import node, LEAF
     if t[0] == "leaf":
         return LEAF
-    _, k, l, r = t
-    return node(k, _clone(l), _clone(r))
+    out = {}
+    stack = [(t, False)]
+    while stack:
+        src, done = stack.pop()
+        if src[0] == "leaf":
+            out[id(src)] = LEAF
+            continue
+        if done:
+            out[id(src)] = node(src[1], out[id(src[2])], out[id(src[3])])
+        else:
+            stack.append((src, True))
+            stack.append((src[2], False))
+            stack.append((src[3], False))
+    return out[id(t)]
 
 
 def replay(n, T0, H, pred: str, k: int, C: int, rho) -> dict:

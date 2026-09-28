@@ -1,0 +1,21 @@
+{
+  "current": "v2",
+  "versions": [
+    {
+      "imports": [
+        "__future__"
+      ],
+      "note": "pre-reveal freeze; superseded post-reveal only for large-n recursion robustness (no semantic change)",
+      "sha256": "4c2dee791c163a3bf7340e4e2ac31d618ec3527e9819962f9e48090278eb8485",
+      "v": "v1"
+    },
+    {
+      "imports": [
+        "__future__"
+      ],
+      "reason": "iterative tree conversion/legality (RecursionError at n>=1024); aliasing fix already in v1 line",
+      "sha256": "f2ee1916eae7cb1d971d6683eea989143f42ba79252b74a0e26c7b0812d7c861",
+      "v": "v2"
+    }
+  ]
+}

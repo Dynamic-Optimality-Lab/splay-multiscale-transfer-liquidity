@@ -7,17 +7,31 @@ from __future__ import annotations
 
 
 def keys_of(t) -> list:
-    if t is None:
-        return []
-    k, l, r = t
-    return keys_of(l) + [k] + keys_of(r)
+    # WP-5 robustness: iterative traversal (recursion depth unsafe at large n).
+    out, stack = [], [t]
+    while stack:
+        cur = stack.pop()
+        if cur is None:
+            continue
+        out.append(cur[0])
+        stack.append(cur[1])
+        stack.append(cur[2])
+    return out
 
 
 def valid_bst(t, lo=0, hi=10 ** 9) -> bool:
-    if t is None:
-        return True
-    k, l, r = t
-    return lo < k < hi and valid_bst(l, lo, k) and valid_bst(r, k, hi)
+    # WP-5 robustness: iterative bounds check (recursion depth unsafe at large n).
+    stack = [(t, lo, hi)]
+    while stack:
+        cur, lo, hi = stack.pop()
+        if cur is None:
+            continue
+        k, l, r = cur
+        if not (lo < k < hi):
+            return False
+        stack.append((l, lo, k))
+        stack.append((r, k, hi))
+    return True
 
 
 def check(n: int, T0, H) -> None:

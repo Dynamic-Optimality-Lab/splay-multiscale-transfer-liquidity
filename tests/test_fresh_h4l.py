@@ -48,14 +48,17 @@ def test_frsh_01_set_freeze():
     assert tos.index("CANDIDATE_SET_FROZEN") > tos.index("COMMITMENT_PUBLISHED")
 
 
-# WP-5 FRSH-02: clean-room implementation frozen pre-reveal (committed + stdlib-only).
+# WP-5 FRSH-02: clean-room implementation freeze record (versioned; history kept).
 def test_frsh_02_cleanroom_frozen():
     print("[WP-5][FRSH-02] Clean-room freeze record")
     if not (ART / "cleanroom" / "impl_freeze.json").exists():
         pytest.skip("pre-freeze: implementation not frozen")
     rec = json.loads((ART / "cleanroom" / "impl_freeze.json").read_text(encoding="utf-8"))
     ev_p = ROOT / "python" / "cleanroom" / "evaluator.py"
-    assert rec["sha256"] == hashlib.sha256(ev_p.read_bytes()).hexdigest()
+    cur = hashlib.sha256(ev_p.read_bytes()).hexdigest()
+    versions = rec.get("versions", [{"v": "v1", "sha256": rec.get("sha256")}])
+    assert len(versions) >= 1  # v1 preserved: post-freeze edits version, never erase
+    assert [v for v in versions if v["v"] == rec.get("current", "v1")][0]["sha256"] == cur
     tree = ast.parse(ev_p.read_text(encoding="utf-8"))
     mods = set()
     for node in ast.walk(tree):

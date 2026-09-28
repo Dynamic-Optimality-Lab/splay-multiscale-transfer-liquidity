@@ -56,25 +56,45 @@ def _node(k, l=None, r=None, p=None):
 
 
 def _from_nested(t):
+    # WP-5 STEP 133: iterative conversion (recursion depth unsafe at large n).
     if t is None:
         return None
-    nd = _node(t[0], _from_nested(t[1]), _from_nested(t[2]))
-    if nd["l"] is not None:
-        nd["l"]["p"] = nd
-    if nd["r"] is not None:
-        nd["r"]["p"] = nd
-    return nd
+    root = _node(t[0])
+    stack = [(t, root)]
+    while stack:
+        src, dst = stack.pop()
+        if src[1] is not None:
+            nd = _node(src[1][0])
+            nd["p"] = dst
+            dst["l"] = nd
+            stack.append((src[1], nd))
+        if src[2] is not None:
+            nd = _node(src[2][0])
+            nd["p"] = dst
+            dst["r"] = nd
+            stack.append((src[2], nd))
+    return root
 
 
 def _clone(t):
+    # WP-5 STEP 133: iterative deep copy (A/B must not alias).
     if t is None:
         return None
-    nd = _node(t["k"], _clone(t["l"]), _clone(t["r"]))
-    if nd["l"] is not None:
-        nd["l"]["p"] = nd
-    if nd["r"] is not None:
-        nd["r"]["p"] = nd
-    return nd
+    root = _node(t["k"])
+    stack = [(t, root)]
+    while stack:
+        src, dst = stack.pop()
+        if src["l"] is not None:
+            nd = _node(src["l"]["k"])
+            nd["p"] = dst
+            dst["l"] = nd
+            stack.append((src["l"], nd))
+        if src["r"] is not None:
+            nd = _node(src["r"]["k"])
+            nd["p"] = dst
+            dst["r"] = nd
+            stack.append((src["r"], nd))
+    return root
 
 
 def _rot_right(p):
@@ -170,16 +190,16 @@ def _sites(lo, hi, x, n):
 
 
 def _check(n, T0, H) -> None:
-    # WP-5 STEP 133: weaker-domain legality (keys(T0) subset [n], keys in [n]).
-    def keys(t):
-        return [] if t is None else keys(t[1]) + [t[0]] + keys(t[2])
-
-    def bst(t, lo=0, hi=10 ** 9):
-        return True if t is None else (
-            lo < t[0] < hi and bst(t[1], lo, t[0]) and bst(t[2], t[0], hi))
-
-    if not bst(T0) or any(not (1 <= k <= n) for k in keys(T0)):
-        raise ValueError("illegal T0")
+    # WP-5 STEP 133: weaker-domain legality, iterative (large-n safe).
+    stack = [(T0, 0, 10 ** 9)]
+    while stack:
+        t, lo, hi = stack.pop()
+        if t is None:
+            continue
+        if not (lo < t[0] < hi) or not (1 <= t[0] <= n):
+            raise ValueError("illegal T0")
+        stack.append((t[1], lo, t[0]))
+        stack.append((t[2], t[0], hi))
     for m, x in H:
         if m not in ("KEEP", "DELETE") or not (1 <= x <= n):
             raise ValueError("illegal access %r" % ((m, x),))

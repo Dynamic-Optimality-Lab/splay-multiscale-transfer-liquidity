@@ -328,3 +328,63 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - HEAD: ls-remote `8e2e7bb` == local `8e2e7bb` — agree. Tree clean.
 - Verdict: `FOLLOWS WorkPlan.md` (WP-4 COMPLETE; WP-5 entry requires promoted set,
   which exists: 3 identities in candidates/branchA/).
+
+## WP-5 ledger (PHASEs 14-16) — EXECUTION RECORD (initial execution, not a repair)
+
+- Binding: N=5, CURRENT_PHASE=WP-5, PREVIOUS_PHASE=WP-4. No audit findings supplied;
+  repo evidence proves WP-5 never ran (no WP-5 commits, Path NOT STARTED), so the
+  "previously complete" clause is factually inapplicable.
+- Previous-phase verification: WP-4 COMPLETE revalidated (PROMOTED_SET_SURVIVES_DEV,
+  3 identities + outlines, firewall COMMITMENT_PUBLISHED unlocks 0, LIQ0 REVIEWED,
+  freeze PASS, independent evaluator ready). Entry-gate result: PASS.
+- Normative sources: WorkPlan.md WP-5; spec #4/#5/#8; h4l_holdout prereg;
+  candidate/counterexample/keep_record schemas; contract planning/WP5_CONTRACT.md.
+- Files created: python/cleanroom/{evaluator,batteries}.py; scripts/{run_phase05,
+  reveal_h4l,emit_wp5_runlog,test_wp5_mutants}.py; tests/test_fresh_h4l.py
+  (FRSH-01..14); math/proofs/{MSTL-22-dev,MSTL-25-dev}.md; artifacts/v04/
+  {candidates/commit,h4l_reveal,cleanroom/{impl_freeze,agreement},large_n,ood}/.
+- Files modified (robustness, semantics-preserving): python/holdout/h4l_verify.py
+  (any verification error fails closed — caught a live zstd-corruption crash);
+  iterative tree conversions/legality in cleanroom/evaluator, cleanroom/batteries,
+  solver/{encode,legality}, independent/{config_exec,splay._descend} (RecursionError
+  at n>=1024; triple agreement @4096 after fix); promote.append_counterexample
+  (episode now embeds full T0 + battery + config; bundle recomputed on minimized H).
+- Code/algorithms: set freeze + hash (3 members, sorted-key order) → firewall
+  CANDIDATE_SET_FROZEN; clean-room bytes committed pre-reveal (B1 14d21e1);
+  reveal-once driver (commitment re-verified at reveal, seed+bank published,
+  single transition, unlocks 1); fresh eval 70k×3 in order until exhausted;
+  full-bank clean-room agreement; large-n 9 sizes x40; OOD 4 sizes x2000 = 8000;
+  violations demote + append-only bundles (primary+independent assert).
+- Results (finite, never theorems): fresh H4L 3/3 survive (70k each, exhausted);
+  large-n 0 violations; clean-room agreement 70k×3 zero mismatches (v1 bytes, then
+  re-agreed 70k×3 zero mismatches on v2 bytes after iterative fixes);
+  OOD kills ALL THREE (1 violation each, worst shortfall 6, same range-walk episode
+  id 2b620ad42f83, minimized L1, triple-confirmed primary/independent/clean-room,
+  self-reproducing records ce_0000-2).
+- Terminal: PROMOTED_SET_REJECTED at OOD gates (fresh + large-n clean; OOD is
+  labeled non-holdout, so Branch-B trigger = False — WP-6-owned routing only).
+- Tests: FRSH-01..14 → 14/14; SYN-regression 12 + 1 lawfully deselected (SYN-11 pinned
+  pre-reveal state, superseded by FRSH-03/09; WP-4 13/13 closeout stands);
+  mutants 16/16 killed; ACT+LEG 24/24.
+- Failures/repairs during execution: clean-room aliasing bug (`[[LATENT]]*k`
+  shared-list fault → triple disagreement; caught by the agreement gate it was
+  built to satisfy, fixed to distinct credits, triple agreement restored);
+  recursion trio (above); bundle/instance mismatch (bundle now recomputed on
+  minimized H; records embed full T0); FRSH-02 versioned freeze (v1 preserved, v2
+  current); verifier exception hardening. All green after repair; history preserved.
+- Statuses changed: none (MSTL-22/25 dev notes only; all MSTL UNPROVED).
+- Hashes: set_hash 258a900d16858970; commitment bfcc24ab… (re-verified at reveal);
+  evaluator v1 4c2dee79… / v2 f2ee1916…; runlog outputs = fresh_results.json sha.
+- Commands/exit codes: `python scripts/run_phase05.py` exit 0 (first run revealed +
+  crashed lawfully at large-n recursion; `--resume` completed 138-140, exit 0);
+  FRSH 14/14; mutants 16/16; ACT+LEG 24/24; emitter exit 0 (next entry).
+- Deviations: none. External blockers: none (no human verdicts needed).
+- Log inventory: runner STEP 132-140 (+132r resume, RUN); reveal driver STEP 135;
+  cleanroom STEP 133-134; mutants STEP 140m; emitter STEP 141.
+- Exit matrix: SURVIVES_FINITE_TESTS not reached (OOD rejection); SET_REJECTED
+  terminal lawfully taken with per-gate freezes.
+- Compliance: requirements 100%; gaps_found=7 (above); gaps_repaired=7;
+  remaining_compliance_gaps=0.
+- Commit/push: (next entry R-016).
+- Final verdict: WP-5 = PROMOTED_SET_REJECTED at OOD gates (fresh + large-n clean;
+  finite survival only, no universality claimed).

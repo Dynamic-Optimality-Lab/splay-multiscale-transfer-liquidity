@@ -83,24 +83,39 @@ def _rtree(n, rng):
 
 
 def _check(n, T0, H) -> None:
-    def keys(t):
-        return [] if t is None else keys(t[1]) + [t[0]] + keys(t[2])
-
-    def bst(t, lo=0, hi=10 ** 9):
-        return True if t is None else (
-            lo < t[0] < hi and bst(t[1], lo, t[0]) and bst(t[2], t[0], hi))
-
-    if not bst(T0) or any(not (1 <= k <= n) for k in keys(T0)):
-        raise ValueError("illegal T0")
+    # WP-5 STEP 134: iterative legality (recursion depth unsafe at large n).
+    stack = [(T0, 0, 10 ** 9)]
+    while stack:
+        t, lo, hi = stack.pop()
+        if t is None:
+            continue
+        if not (lo < t[0] < hi) or not (1 <= t[0] <= n):
+            raise ValueError("illegal T0")
+        stack.append((t[1], lo, t[0]))
+        stack.append((t[2], t[0], hi))
     for m, x in H:
         if m not in ("KEEP", "DELETE") or not (1 <= x <= n):
             raise ValueError("illegal access")
 
 
 def _eid(n, T0, H) -> str:
+    # WP-5 STEP 134: iterative canonical hash (json.dumps recurses on deep vines).
     import json
-    return hashlib.sha256(json.dumps({"n": n, "T0": T0, "H": H},
-                                     sort_keys=True).encode()).hexdigest()
+    h = hashlib.sha256()
+    h.update(json.dumps({"n": n, "H": H}, sort_keys=True).encode())
+    stack = [(T0, False)]
+    while stack:
+        t, done = stack.pop()
+        if done:
+            h.update(b"]")
+        elif t is None:
+            h.update(b".")
+        else:
+            h.update(("[%d" % t[0]).encode())
+            stack.append((None, True))
+            stack.append((t[2], False))
+            stack.append((t[1], False))
+    return h.hexdigest()
 
 
 def _mk(n, T0, H, battery, motif):

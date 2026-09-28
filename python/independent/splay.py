@@ -67,14 +67,20 @@ def cost(t, x):
 
 
 def _descend(t, x, frames):
-    if t[0] == "leaf":
-        return None
-    _, k, l, r = t
-    if x == k:
-        return (t, frames)
-    if x < k:
-        return _descend(l, x, frames + [("L", k, r)])
-    return _descend(r, x, frames + [("R", k, l)])
+    # WP-5 robustness: iterative descent (recursion depth unsafe at large n).
+    cur, fr = t, list(frames)
+    while True:
+        if cur[0] == "leaf":
+            return None
+        _, k, l, r = cur
+        if x == k:
+            return (cur, fr)
+        if x < k:
+            fr.append(("L", k, r))
+            cur = l
+        else:
+            fr.append(("R", k, l))
+            cur = r
 
 
 def _plug(frames, t):

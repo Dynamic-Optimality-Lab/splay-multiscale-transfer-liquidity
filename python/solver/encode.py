@@ -35,14 +35,24 @@ def _sites_nonempty(lo: int, hi: int, x: int, n: int) -> bool:
 
 
 def _to_pointer(t):
+    # WP-5 robustness: iterative conversion (recursion depth unsafe at large n).
     if t is None:
         return None
-    nd = PE.mknode(t[0], _to_pointer(t[1]), _to_pointer(t[2]))
-    if nd["l"] is not None:
-        nd["l"]["p"] = nd
-    if nd["r"] is not None:
-        nd["r"]["p"] = nd
-    return nd
+    root = PE.mknode(t[0])
+    stack = [(t, root)]
+    while stack:
+        src, dst = stack.pop()
+        if src[1] is not None:
+            nd = PE.mknode(src[1][0])
+            nd["p"] = dst
+            dst["l"] = nd
+            stack.append((src[1], nd))
+        if src[2] is not None:
+            nd = PE.mknode(src[2][0])
+            nd["p"] = dst
+            dst["r"] = nd
+            stack.append((src[2], nd))
+    return root
 
 
 def precompute(n: int, T0, H):

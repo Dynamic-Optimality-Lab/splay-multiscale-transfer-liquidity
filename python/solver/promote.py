@@ -96,14 +96,20 @@ def _ce_path(outdir: Path) -> Path:
 
 def append_counterexample(outdir: Path, theorem_hash: str, calculus_id: str,
                           ep: dict, primary: dict, independent: dict,
-                          level: str, certificate: str) -> Path:
-    """WP-4 STEP 117: append-only counterexample (never overwrites)."""
+                          level: str, certificate: str, config: dict | None = None) -> Path:
+    """WP-5 STEP 117: append-only counterexample (never overwrites).
+
+    The episode embeds the FULL reproducible instance (n, T0, H, id, battery);
+    config carries (predicate, k, C, rho). WP-6 must reproduce from these bytes.
+    """
     rec = {"theorem": "MSTL-14", "theorem_hash": theorem_hash,
            "calculus_id": calculus_id, "legality": "LegalPairInstance checked",
            "primary_replay": primary, "independent_replay": independent,
            "formal_witness_or_exemption": "EXEMPT_WP4_DEV (development witness only)",
            "minimization_level": level, "minimization_certificate": certificate,
-           "episode": {"n": ep["n"], "H": ep["H"], "id": ep.get("id")}}
+           "episode": {"n": ep["n"], "T0": ep.get("T0"), "H": ep["H"],
+                       "id": ep.get("id"), "battery": ep.get("battery")},
+           "config": config or {}}
     p = _ce_path(outdir)
     assert not p.exists()
     p.write_text(json.dumps(rec, indent=2, sort_keys=True), encoding="utf-8")
