@@ -320,3 +320,11 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
   gaps_repaired=9; remaining_compliance_gaps=0.
 - Commit/push: (next entry R-015).
 - Final verdict: WP-4 = COMPLETE (PROMOTED_SET_SURVIVES_DEV).
+
+## R-015 — WP-4 push + HEAD verification
+
+- Commit: `069bc59` (WP-4 work: 50 files) + `8e2e7bb` (runlog record).
+- Push: `207979a..8e2e7bb` master -> master (origin).
+- HEAD: ls-remote `8e2e7bb` == local `8e2e7bb` — agree. Tree clean.
+- Verdict: `FOLLOWS WorkPlan.md` (WP-4 COMPLETE; WP-5 entry requires promoted set,
+  which exists: 3 identities in candidates/branchA/).
