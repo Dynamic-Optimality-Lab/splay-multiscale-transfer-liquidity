@@ -8,14 +8,20 @@
   "post_KEEP_absent_bound": "FALSE as stated (counterex need=2 post-KEEP t=24 verified both methods); earlier 99k-probe zero was a sparse-T0 sampling artifact of small trees",
   "verdict": "ATTACKED-NOT-REFUTED"
  },
+ "result_ANTICORRELATION": {
+  "data": "ACTIVE_pre<10 => max need 3 (3070 obs); <100 => max 6 (8686 obs). Needs are small exactly when pools are drained; flush pools coincide with big needs. Tight-flow mechanism, unexplained structurally."
+ },
  "result_CASE_A_CLOSED": {
   "case": "L0 >= 2*e_B (LATENT covers B-phase bandwidth)",
   "proof": "B-phase mobilization M_B = min(L0,2*e_B) = 2*e_B exactly (greedy per-event, no B-injection). ACTIVE_pre = A0+M_B >= 2*e_B >= y-1 (each B-event covers <=2 rotations: e_B >= (y-1)/2). need <= y-2*a <= y-2 (a>=1). y-1 > y-2 >= need. Closed for all y (y=1 trivial need=0). Uses only frozen semantics + rotation/event counting; no history assumption."
  },
+ "result_IPL": {
+  "data": "splay raises raw IPL 31% of splays (worst +122/16676). Raw-IPL potentials hopeless; recorded as evidence not speculation."
+ },
  "result_L1_SPLIT": {
-  "L1_PROVEN": "sum(need)<=R^B_total [need<=y-1 per KEEP, present+absent arithmetic]",
-  "L2_OPEN": "R^B_total<=6*S_A [pure splay combinatorics; max observed 0-trivial/nontrivial -0.5; 24k direct hillclimb best -114; ce_0000 consistent (-187)]",
-  "status": "lemma = L1+L2; L1 closed, L2 open"
+  "L1_PROVEN": "sum(need)<=R^B_total [need<=y-1 per KEEP: max(y-2a,0)<=y-1 since a>=1; present+absent arithmetic]",
+  "L2_STATUS": "OPEN but strongly supported: max R^B-6S_A is 0-trivial/nontrivial<0 over 4000 hostile + 24k direct hillclimb (best -114); ce_0000 consistent (-187). Pure splay combinatorics (no pools/C/k).",
+  "form": "lemma = L1+L2"
  },
  "result_REDUCTION_PROVED": {
   "case": "L0 < 2*e_B (LATENT drains in B-phase)",
