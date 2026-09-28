@@ -733,3 +733,17 @@ K. Mutants/tests: `tests/test_wp6_h5_entry.py` 22/22 PASS (wrong branch/count/
    H5 commitment itself (mutant w6e_21 caught state-only trust).
 L-Z. (Appended as theorem work proceeds; see candidate activation records
    below. Rule COMMIT A pushed before any theorem outcome was inspected.)
+
+M. COMMIT A: `bdb71f1` (WorkPlan.md amendment + `check_wp6_h5_entry_gate.py` +
+   regenerated `planning/WP6_CONTRACT.md` + `tests/test_wp6_h5_entry.py` 22/22 +
+   this ledger section), pushed `1f43527..bdb71f1` to origin/wp5x-k6c2-
+   specialized, local == remote, tree clean. No theorem outcome inspected
+   before this push (gate artifact existed but no PROVE/REFUTE work done).
+N. COMMIT B (entry PASS + binding): `artifacts/v04/wp6_h5_entry_gate.json`
+   verdict WP6_H5_ENTRY_PASS (15/15 conjuncts). Activated candidate #1 from
+   frozen order: key `P_all|6|2|FLAT(2)`, P=P_all, k=6, C=2, rho=FLAT(2)=(2,2),
+   identity `0909c74accb193302d1a9213601567bebcba414de679e362b10ad3007b4fb7fd`
+   (matches expected; K0-bound, unmutated), WP-4 label RHO_REQUIRED rank
+   [0,0,False,2,0,2,6,10,'P_all'], entry-set hash `9dcdea2b…`, K0 population
+   hash `88a1cdac…`. Namespace: `artifacts/v04/wp6/0909c74a/` (+ proofs/
+   formal subdirs per WorkPlan).
