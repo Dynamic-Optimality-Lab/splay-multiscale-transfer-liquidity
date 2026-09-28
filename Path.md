@@ -250,3 +250,73 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - No synthesis, no WP-4 entry, no repayment/PA/DO claim. MSTL nodes remain UNPROVED.
 - Final verdict: WP-3 = COMPLETE
   (H4L_COMMITMENT_PUBLISHED + TRANSFER_GRAMMAR_FROZEN, zero evaluations).
+
+## WP-4 ledger (PHASEs 09-13) — EXECUTION RECORD (initial execution, not a repair)
+
+- Binding: N=4, CURRENT_PHASE=WP-4, PREVIOUS_PHASE=WP-3. No audit findings supplied
+  (empty BEGIN/END block); repo evidence proves WP-4 never ran before (no WP-4 commits,
+  Path NOT STARTED) so the "previously complete" clause is factually inapplicable.
+- Previous-phase verification: WP-3 COMPLETE revalidated (commitment published, zero
+  evaluations, genuine ACCEPT; firewall COMMITMENT_PUBLISHED unlocks 0; LIQ0 REVIEWED;
+  freeze PASS). Entry-gate result: PASS. Solver stdlib-only (no external binaries).
+- Normative sources: WorkPlan.md WP-4; spec #4/#12; search_space/predicate/holdout
+  prereg; candidate/counterexample/keep_record schemas; contract planning/WP4_CONTRACT.md.
+- Files created: python/solver/{predicates,legality,encode,battery,search,promote}.py;
+  python/adversary/engines.py (9 engines); python/independent/config_exec.py
+  (share-nothing replay); tests/test_synthesis.py (SYN-00..12, 13 tests);
+  scripts/{run_phase04,emit_wp4_runlog,test_wp4_mutants}.py; math/proofs/{MSTL-14-dev,
+  MSTL-23-guard, MSTL-24-guard}.md + MSTL-13-dev.md WP-4 addendum (WP-2 lemma preserved).
+- Files modified: none frozen (predicate prereg, axis, schemas, proof_status untouched).
+- Code/algorithms: splay precompute once/episode (frozen pointer engine) + exact
+  integer-pool ledger (T7 +k/sites-nonempty, T5 min(eligible,cap) closed-gated, T6
+  min(ACTIVE,need), need=max(y-C*a,0)); staged funnel (13,440 grid screen w/ early
+  death, REG-001 first; dev-full on survivors+baselines; 16 shards + sorted reduce);
+  matched FLAT(1) baselines (grid points, same pipeline); labels via decision tree;
+  cap-3 promotion only with domination certificate; validation 5000 (frozen only);
+  9 adversarial engines (propose, exact evaluator disposes); violations demote +
+  append-only counterexamples (L0/L1) with independent-replay agreement assert.
+- Schemas: candidate 30-field note (prose "29" vs schema 30 — schema governs, recorded
+  in contract + promote.py); counterexample required-set conformance tested.
+- Tests: SYN-00..12 → 13/13. Benchmarks: screen 125 eps (6147 survive), dev-full 725
+  eps (6099 survive; labels RHO_REQUIRED 2199 / RHO_NOT_REQUIRED 3900), validation
+  5000 x3 promoted (0 violations), adversarial 9 engines x3 (uniform 50k, structured
+  12k, hillclimb 20k x5, anneal 20k x5, genetic 100x200x3, rotneigh 10k, splice 5k,
+  motif 4x1000, generalize 8/witness) 0 violations, 0 counterexamples appended
+  (lawful: nothing to append; store machinery proven by SYN-08 + M-WP4-07).
+- Promoted (PROMOTED_SET_SURVIVES_DEV): P_keep_doubles|3|2|FLAT(2),
+  P_keep|3|2|FLAT(2), P_keep_all|3|2|FLAT(2) — all RHO_REQUIRED at minimal C=2,
+  calculus LIQ_BRANCH_A_001@C2, identities + outlines frozen in candidates/branchA/.
+- Stress/negative: 8/8 WP-4 mutants killed (need+1, paid+1, late-violation skip,
+  baseline mismatch, REG bypass, flipped label, ce overwrite, partial reduce);
+  false-closure probe (12-passed suite) rejected by exact-13 gate; illegal
+  episodes/modes/keys/trees rejected (SYN-02); malformed commitments N/A (untouched).
+- Anti-overfitting: H4L/OOD/clean-room never contacted (AST audits SYN-10);
+  dev contaminated-labeled; validation ID-disjoint (registries recorded);
+  firewall intact; finite survival never called proof (outlines say so).
+- Threats/stops/invariants: T10/T11 controls (quarantine + funnel determinism);
+  STOP-14 untouched (no regen); resource caps checked per shard/engine (no cap hit).
+- Gates: PROMOTED_SET_SURVIVES_DEV (3 + outlines + identities). No universality,
+  no C-minimality, no ID mutation, no post-freeze predicates claimed.
+- Statuses changed: none (MSTL-13/14/23/24 dev/guard notes only; all UNPROVED).
+- Hashes: ranking/artifacts committed; runlog outputs = ranking.json sha.
+- Commands/exit codes: `python scripts/run_phase04.py` exit 0;
+  `python -m pytest tests/test_synthesis.py -q` 13 passed exit 0;
+  `python scripts/test_wp4_mutants.py` 8/8 exit 0;
+  `python -m pytest tests/test_activation.py tests/test_legacy_embedding.py -q`
+  24 passed exit 0; `python scripts/emit_wp4_runlog.py` exit 0 (next entry).
+- Failures/repairs during execution: 4 self-defects found and repaired before closeout
+  (dev/val ID collision → resample exclusion; SYN-06 fixture C mismatch; SYN-10 prose
+  tokens → code-token audit; schema 29-vs-30 → schema governs; branchA dir collision
+  → per-config subdirs; MSTL-13-dev overwrite → restored + addendum; 2 weak mutants
+  redesigned live). All green after repair; history preserved here.
+- Deviations: none from contract. External blockers: none (no human review needed;
+  no theorem verdicts solicited).
+- Log inventory: solver STEP 110-117 (predicates/legality/encode/battery/engines/
+  config_exec/search/promote module headers + prints); runner STEP 120-130 + RUN;
+  mutants STEP 124m; emitter STEP 131.
+- Exit matrix: all WP-4 exit conditions PASS (promotion path; rejection paths
+  implemented but not taken).
+- Compliance: requirements 100%; gaps_found=9 (8 above + branchA collision);
+  gaps_repaired=9; remaining_compliance_gaps=0.
+- Commit/push: (next entry R-015).
+- Final verdict: WP-4 = COMPLETE (PROMOTED_SET_SURVIVES_DEV).
