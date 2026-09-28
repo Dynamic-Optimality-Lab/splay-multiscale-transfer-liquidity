@@ -1,1 +1,35 @@
-{"candidate":"P_all|6|2|FLAT(2)","claim":"ACTIVE_pre_discharge >= max(y-2a,0) at every legal reachable KEEP (C=2 instance of MSTL-14)","framework":"Exact integer-pool ledger (solver/encode.py semantics): T7 +6 LATENT per sited A-event; T5 mobilizes min(LATENT,2) per firing event (P_all fires everywhere; B-phase has no injection); T6 pays min(ACTIVE,need). Conservation: ACTIVE+LATENT pre-discharge = 6*S_A - paid_so_far, S_A = sited A-events through current access.","result_CASE_A_CLOSED":{"case":"L0 >= 2*e_B (LATENT covers B-phase bandwidth)","proof":"B-phase mobilization M_B = min(L0,2*e_B) = 2*e_B exactly (greedy per-event, no B-injection). ACTIVE_pre = A0+M_B >= 2*e_B >= y-1 (each B-event covers <=2 rotations: e_B >= (y-1)/2). need <= y-2*a <= y-2 (a>=1). y-1 > y-2 >= need. Closed for all y (y=1 trivial need=0). Uses only frozen semantics + rotation/event counting; no history assumption."},"result_REDUCTION_PROVED":{"case":"L0 < 2*e_B (LATENT drains in B-phase)","proof":"M_B = L0 exactly, so ACTIVE_pre = A0+L0 = 6*S_A - paid_so_far by conservation (IH: paid=need at all prior KEEPs). ACTIVE_pre >= need_j iff 6*S_A(j) >= sum_{i<=j} need_i. The full node therefore reduces exactly to the cumulative lemma below."},"status":"PROVE_OPEN","unclosed_crux":{"lemma":"CUMULATIVE_NEEDvsINJECTION: 6*S_A(j) >= sum_{i<=j} need_i for every legal history","why_hard":"Per-access fails in A/B-divergence (B-deep/A-shallow: need~n with ~0 current A-events); closure needs cross-access amortization (positioning A-shallow costs prior A-rotations that fund 6S_A) i.e. a splay rotation-accounting potential coupling sum(a) to sum(y). Per-access bound 6*E_A - sum(need) >= sum(3a-y-3) goes negative exactly in the divergence case; the missing piece is the access-lemma potential, which is open work, not a session-time computation.","not_claimed":"No PROVED status; node stays UNPROVED. Finite survival (K2/H5/REFUTE) was not used as a premise anywhere above."}}
+{
+ "candidate": "P_all|6|2|FLAT(2)",
+ "claim": "ACTIVE_pre_discharge >= max(y-2a,0) at every legal reachable KEEP (C=2 instance of MSTL-14)",
+ "framework": "Exact integer-pool ledger (solver/encode.py semantics): T7 +6 LATENT per sited A-event; T5 mobilizes min(LATENT,2) per firing event (P_all fires everywhere; B-phase has no injection); T6 pays min(ACTIVE,need). Conservation: ACTIVE+LATENT pre-discharge = 6*S_A - paid_so_far, S_A = sited A-events through current access.",
+ "result_ABSENT_CORNER": {
+  "absent_attacks": "5993 sparse + 4000 drain-absent + 12000 fitness-hillclimb (best fitness exactly 0, boundary touched never crossed)",
+  "kills": 0,
+  "post_KEEP_absent_bound": "FALSE as stated (counterex need=2 post-KEEP t=24 verified both methods); earlier 99k-probe zero was a sparse-T0 sampling artifact of small trees",
+  "verdict": "ATTACKED-NOT-REFUTED"
+ },
+ "result_CASE_A_CLOSED": {
+  "case": "L0 >= 2*e_B (LATENT covers B-phase bandwidth)",
+  "proof": "B-phase mobilization M_B = min(L0,2*e_B) = 2*e_B exactly (greedy per-event, no B-injection). ACTIVE_pre = A0+M_B >= 2*e_B >= y-1 (each B-event covers <=2 rotations: e_B >= (y-1)/2). need <= y-2*a <= y-2 (a>=1). y-1 > y-2 >= need. Closed for all y (y=1 trivial need=0). Uses only frozen semantics + rotation/event counting; no history assumption."
+ },
+ "result_L1_SPLIT": {
+  "L1_PROVEN": "sum(need)<=R^B_total [need<=y-1 per KEEP, present+absent arithmetic]",
+  "L2_OPEN": "R^B_total<=6*S_A [pure splay combinatorics; max observed 0-trivial/nontrivial -0.5; 24k direct hillclimb best -114; ce_0000 consistent (-187)]",
+  "status": "lemma = L1+L2; L1 closed, L2 open"
+ },
+ "result_REDUCTION_PROVED": {
+  "case": "L0 < 2*e_B (LATENT drains in B-phase)",
+  "proof": "M_B = L0 exactly, so ACTIVE_pre = A0+L0 = 6*S_A - paid_so_far by conservation (IH: paid=need at all prior KEEPs). ACTIVE_pre >= need_j iff 6*S_A(j) >= sum_{i<=j} need_i. The full node therefore reduces exactly to the cumulative lemma below."
+ },
+ "result_TSTAR_RESTART": {
+  "argument": "t* = last event with LATENT<2 (post-move). Post-t* every event mobilizes exactly 2 (P_all cap 2, lat>=2). ACTIVE_pre(j) = ACTIVE(t*+)+M-SPENT >= 0+2E(t*,j]-sum(needs) by IH. Need 2E>=sum(needs) over suffix; via sum(need)<=R^B<=2E_B this reduces to 2E_A+(2E_B-R^B)>=ABSENT_Y.",
+  "gap": "ABSENT_Y (absent search depths, event-free) has no event-count funding; needs ACTIVE(t*+) pools. k enters through t* location: k=6 thick pools (inject 6 vs drain 2/event) make t* early/absent (long suffix, 2E huge); k=3 thin pools make t* late (short suffix, may not cover) - consistent with ce_0000 k=3 death. Remaining: suffix bound.",
+  "status": "CLOSEST APPROACH - gap isolated, k-entry point identified"
+ },
+ "status": "PROVE_OPEN",
+ "unclosed_crux": {
+  "lemma": "CUMULATIVE_NEEDvsINJECTION: 6*S_A(j) >= sum_{i<=j} need_i for every legal history",
+  "not_claimed": "No PROVED status; node stays UNPROVED. Finite survival (K2/H5/REFUTE) was not used as a premise anywhere above.",
+  "why_hard": "Per-access fails in A/B-divergence (B-deep/A-shallow: need~n with ~0 current A-events); closure needs cross-access amortization (positioning A-shallow costs prior A-rotations that fund 6S_A) i.e. a splay rotation-accounting potential coupling sum(a) to sum(y). Per-access bound 6*E_A - sum(need) >= sum(3a-y-3) goes negative exactly in the divergence case; the missing piece is the access-lemma potential, which is open work, not a session-time computation."
+ }
+}

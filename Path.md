@@ -756,6 +756,33 @@ S-T. Statuses unchanged (all MSTL UNPROVED/NO_WITNESS; no review solicited or
    fabricated); L2 boundary untouched (MSTL-19 not reached).
 U. COMMIT C: activation + DAG + refute harness/results + PROVE notes + this
    ledger (pushed post-outcome as theorem-work records, not rules).
+V. MSTL-14 war continuation (this session, candidate still ACTIVE, node still
+   UNPROVED): (i) canonical cumulative lemma frozen with full quantifiers
+   (`cumulative_lemma.json`); (ii) direct cumulative refuter
+   (`wp6_cumrefute.py`): exhaustive n=2,3,4 + 4k structured + 1500-step R-hill-
+   climb = 152,775 tested, best R exactly 0, 0 lemma kills (after repairing my
+   own S_A undercount bug that briefly faked 6,424 kills — DELETE injections
+   must be counted; stale witness deleted, harness now clears stale outputs);
+   (iii) zero-margin instrumentation (208 tight states; sited==Aev at all of
+   them; need==y-2a exactly); (iv) R^B<=6*S_A auxiliary: holds everywhere
+   tested (24k direct hill-climb best -114; ce_0000 consistent at -187; what
+   ce_0000 kills is only R^B<=3*S_A) — viable but unproven route to split the
+   lemma as L1(sum<=R^B, PROVEN) + L2(R^B<=6S_A, OPEN); (v) k=3-tightness exact:
+   n192 k=3 deficit +2 = shortfall (coefficient 6 = k, load-bearing); (vi)
+   S_A=E_A proved (U=0: 87,699/87,699 events + code proof); (vii) tenure lemmas
+   proved (root-dislodging computational + A-root-tenure B-constancy +
+   tenure=x-DELETEs-only); (viii) absent corner: 5,993 sparse + 4,000 drain-
+   absent + 12,000 fitness-hill-climb (best exactly 0), 0 kills — but the
+   post-KEEP absent-bound conjecture is FALSE (counterex need=2, both methods
+   agree; earlier 99k zero was small-tree sampling artifact); (ix) potential
+   screens all killed (linear grid best excess 246; max-variants excess<=10
+   but others-rise; sums dead by Theta(n) rotation swings; splay raises raw
+   IPL 31% of probings); (x) closest approach: t*-restart argument closes
+   everything except the suffix bound 2E>=sum(need), with k entering exactly
+   through t* location (thick vs thin pools) — consistent with k=3 death;
+   (xi) route kill list frozen (`route_kills.json`, ~20 routes with causes).
+   No status changed (all MSTL UNPROVED/NO_WITNESS; no review solicited or
+   fabricated). No candidate transition (#1 ACTIVE).
 
 M. COMMIT A: `bdb71f1` (WorkPlan.md amendment + `check_wp6_h5_entry_gate.py` +
    regenerated `planning/WP6_CONTRACT.md` + `tests/test_wp6_h5_entry.py` 22/22 +
