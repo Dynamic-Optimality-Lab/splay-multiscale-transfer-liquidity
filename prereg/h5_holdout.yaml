@@ -1,0 +1,72 @@
+version: v0.4.1
+bank: H5
+bank_id: H5-R1
+design: Fresh post-selection same-distribution replication of H4L. Distributional
+  fields mechanically inherited; no K0-K6 outcome used to tune generation.
+inherits:
+  spec: prereg/h4l_holdout.yaml
+  spec_sha256: 4fee1f3e15eaa74088b2cf985087e4e6c944bb845737413be4c953a95f2db94b
+  generator: python/holdout/h4l_generate.py
+  generator_sha256: e2e98742d9f65cc225a7c840a2187bcba6c604e09239193998f27fec2226c43b
+  verifier: python/holdout/h4l_verify.py
+  verifier_sha256: f355ebd9af1ee1de8db6ce9c1d2326b2e9ca8c6ef4260f711c974464c877ca94
+  firewall: python/holdout/firewall.py
+  firewall_sha256: 08bd26be38f8c9f468e9fb4c4d6b58bf975c561c743f05c77a07f8544fa6d06a
+  # NOTE: hashes above are win32 CRLF working-tree bytes (git status clean;
+  # HEAD LF blobs differ by line endings only). Semantics inherited, not bytes.
+sizes:
+- 18
+- 26
+- 34
+- 46
+- 58
+- 74
+- 98
+per_size: 10000
+total: 70000
+strata:
+- RANDOM_LEGAL
+- DELETE_BURST_THEN_KEEP
+- DOUBLE_DELETE_DOUBLE_KEEP
+- ALTERNATING_KEEP_DELETE
+- REPEATED_KEEP_DRAIN
+- SPINE_VS_BALANCED
+- OPPOSITE_SPINE
+- DOUBLE_ROTATION_ENRICHED
+- TERMINAL_ZIG_ENRICHED
+- NESTED_INTERVAL
+- MIRROR_PAIRED
+- MOTIF_BLIND_RANDOM_WALK
+quota: 833 each + deterministic remainder schedule (strata order above) for 10000/size
+history_length_law: uniform {2..8} steps, seeded
+tree_shape_law: uniform random BST over keys present + balanced/spine mixture per
+  stratum
+rng: SHA-256 counter DRBG (fully specified in consolidated spec)
+domain_separation: stream prefix 'h5|' (H4L uses 'h4l|'); identical DRBG construction
+seed: 256-bit operator secret (os.urandom, exactly once); NEVER committed pre-reveal
+dedup: reject-resample on canonical episode hash
+legality: weaker-domain filter (keys subset [n], keys in [n])
+serialization: canonical JSON, sorted keys
+ordering: sorted episode IDs
+shards: h5_n{size}.json.zst deterministic zstd level 3, per-shard SHA
+commitment: sha256(seed || bank_bytes in canonical shard order) + metadata
+  (sizes/quotas/code hashes) public pre-reveal; bank_id H5-R1
+secrecy: seed+bank outside public/discovery repo until reveal, under $H5_SECRET;
+  no git/LFS/encrypted-in-repo fakery; else H5 BLOCKED
+firewall:
+- EMPTY
+- GENERATOR_FROZEN
+- BANK_GENERATED_SECRET
+- COMMITMENT_PUBLISHED
+- CANDIDATE_SET_BOUND
+- REVEALED_ONCE
+- CONSUMED
+unlock_max: 1
+candidate_binding:
+  set: frozen K6 survivors of WP-5X-K6C2
+  count: 63
+  survivor_set_hash: 9dcdea2b7926cf94765e1fd818a73f0459c72404b4f4bf5c36b3ec65a27e5748
+blindness: generator MUST NOT read specialized_survivors.json, phase_diagram.json,
+  candidate identities, candidate results, ranks, failure bundles, or MSTL results
+status_note: H5 is finite falsification only; may never be treated as evidence
+  proving MSTL-14 or any universal theorem. MSTL-14 remains UNPROVED.
