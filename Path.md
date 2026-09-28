@@ -388,3 +388,11 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - Commit/push: (next entry R-016).
 - Final verdict: WP-5 = PROMOTED_SET_REJECTED at OOD gates (fresh + large-n clean;
   finite survival only, no universality claimed).
+
+## R-016 — WP-5 push + HEAD verification
+
+- Commits: `87c8544` (WP-5 work incl. published reveal) + `101cd11` (runlog record).
+- Push: `14d21e1..101cd11` master -> master (origin).
+- HEAD: ls-remote `101cd11` == local `101cd11` — agree. Tree clean.
+- Verdict: `FOLLOWS WorkPlan.md` (WP-5 terminal reached lawfully; firewall
+  REVEALED_ONCE unlocks 1; WP-6 proceeds on the rejection/Branch-B routing only).
