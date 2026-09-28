@@ -823,3 +823,24 @@ N. COMMIT B (entry PASS + binding): `artifacts/v04/wp6_h5_entry_gate.json`
    [0,0,False,2,0,2,6,10,'P_all'], entry-set hash `9dcdea2b…`, K0 population
    hash `88a1cdac…`. Namespace: `artifacts/v04/wp6/0909c74a/` (+ proofs/
    formal subdirs per WorkPlan).
+
+## WP-6 Present-Domain Route — Source Audit (new session, branch unchanged)
+
+A0. Start HEAD `0a02f6f` (== remote, clean); broad MSTL-14 WITNESS_FOUND +
+   ALL_63_CANDIDATES_REFUTED preserved untouched (verified at session start).
+A1. Source audit (Phase I, 20 questions): L3 arXiv:1907.06310v3 exact bytes
+   (732837 B, sha256 f7aa7901…, matches repo SHA256SUMS) establishes:
+   instance = (X, T containing requested keys); search requires xi in Ti-1;
+   digraph arcs only for x in T; subsequence = occurrence time-subset (dup
+   safe); same T for X/Y; fixed key set through rotations; DO iff AM
+   (Thms 3.2/3.5); insert/delete only as separate mutating request types;
+   PA DELETE = occurrence deletion (never node removal); NO source condition
+   reintroduces absent searches. L2 paywalled (not inspected byte-wise; L3
+   supersedes framework), L1 paywalled (L3 cites ST85 explicitly).
+   Verdict: PRESENT_DOMAIN_BRIDGE_PASS, scoped as domain audit only —
+   MSTL-19 stays BLOCKED_BY_SOURCE.
+A2. Pair-Access mapping formalized (occurrence mask, NOT value-set;
+   A_i=Splay(X[1..i]), B_i=Splay(retained Y-prefix); FIXED_KEY closure proved:
+   rotations preserve keysets, keys(A_i)=keys(B_i)=K, every x_i present —
+   `tests/test_present_domain.py` 3/3 green).
+A3. COMMIT 1 (audit only) pushed before any WorkPlan/theorem mutation.
