@@ -733,6 +733,29 @@ K. Mutants/tests: `tests/test_wp6_h5_entry.py` 22/22 PASS (wrong branch/count/
    H5 commitment itself (mutant w6e_21 caught state-only trust).
 L-Z. (Appended as theorem work proceeds; see candidate activation records
    below. Rule COMMIT A pushed before any theorem outcome was inspected.)
+O. Candidate #1 theorem work (MSTL-14, `P_all|6|2|FLAT(2)`/0909c74a):
+   namespace `artifacts/v04/wp6/0909c74a/` (`activation.json`, `DAG.json`
+   reconstructed from theorem files + gate matrix + dev notes: chain
+   13/14->15->17->18->19, entry node MSTL-14 with MSTL-13 as sibling).
+P. REFUTE track (`scripts/wp6_mstl14_refute.py`, exact frozen calculus, primary
+   + independent confirm, greedy minimization): 8,096 episodes over 9 families
+   (sanity REG-001/n192 survived; vine drain-diverge; long range-walks L<=64;
+   DELETE bursts; nested/alternating; discharge chains; REG/n192 mutations;
+   400-step negation hill-climb best margin 0; 6,000 randomized A/B-divergence;
+   2,000 extreme-length L<=256) => 0 kills => ATTACKED-NOT-REFUTED
+   (`refute/refute_summary.json`; explicitly not a proof).
+Q. PROVE track (`MSTL-14_PROVE_notes.json`): conservation framework exact;
+   CASE A (LATENT covers B-bandwidth) CLOSED from frozen semantics + event
+   counting; Case B reduced exactly to cumulative lemma 6*S_A >= sum(need);
+   crux isolated (cross-access splay rotation-accounting potential for A/B
+   divergence) and OPEN — node stays UNPROVED, no status touched, finite
+   evidence used as premise nowhere.
+R. No counterexamples; no candidate transition (#1 ACTIVE, not refuted, not
+   resource-limit-unresolved — PROVE open, REFUTE attacked).
+S-T. Statuses unchanged (all MSTL UNPROVED/NO_WITNESS; no review solicited or
+   fabricated); L2 boundary untouched (MSTL-19 not reached).
+U. COMMIT C: activation + DAG + refute harness/results + PROVE notes + this
+   ledger (pushed post-outcome as theorem-work records, not rules).
 
 M. COMMIT A: `bdb71f1` (WorkPlan.md amendment + `check_wp6_h5_entry_gate.py` +
    regenerated `planning/WP6_CONTRACT.md` + `tests/test_wp6_h5_entry.py` 22/22 +
