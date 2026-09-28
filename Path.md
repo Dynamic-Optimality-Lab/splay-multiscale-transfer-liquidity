@@ -396,3 +396,132 @@ PENDING. Entry requires SURVIVES_FINITE_TESTS. DO only iff chain REVIEWED + brid
 - HEAD: ls-remote `101cd11` == local `101cd11` — agree. Tree clean.
 - Verdict: `FOLLOWS WorkPlan.md` (WP-5 terminal reached lawfully; firewall
   REVEALED_ONCE unlocks 1; WP-6 proceeds on the rejection/Branch-B routing only).
+
+## WP-5X-K6C2 Specialized Slice (THIS BRANCH ONLY: wp5x-k6c2-specialized)
+
+- Reason: force the entire known WP-5X finite pipeline onto the fixed-resource
+  slice k=6,C=2 while letting EVERY frozen WP-4-eligible static (P,rho) config in
+  that slice compete (no cap, no top-3, no simplicity pruning, no dynamic P, no
+  parameter mutation). Motivation: the pre-liquidity k=6,C=2 wealth point survived
+  a large finite bank; the n=192 OOD autopsy of the promoted k=3,C=2,FLAT(2) trio
+  (WEALTH/DEMAND exhaustion at LATENT-empty deadline; P_all and rho 2->3 did not
+  repair; k 3->6 and C 2->3 did) suggests testing whether k=6,C=2 + existing
+  liquidity axis naturally re-emerges as a robust finite region.
+- Branch: `wp5x-k6c2-specialized` (work ONLY here; master untouched, no merges).
+- SPECIALIZED_START_SHA: `e6bd737e4150fc32ac134e043304b85b4dfa6e15`
+  (HEAD == origin/wp5x-k6c2-specialized, status --porcelain empty at start).
+- Contract reconstruction: repository bytes authoritative. WP-4 eligible set =
+  ranking.json entries with rank[0]==0 AND screen_results.json survived (6099,
+  promoted/dominated fields never used as filters). Search grid 16P x 7k x 10C x
+  12rho (FLAT(1..6)=(r,r), ROT(1..6)=(r,2r), RMAX 12). Batteries verified from
+  bytes: H4L reveal 7x10k=70,000; large-n 9x40=360; OOD 4x2000=8,000.
+  Counterexamples: ce_0000/0001/0002 share one n192 OOD episode
+  (2b620ad42f83..., n=192, T0=vine-right-192, H=[DELETE129,KEEP134,KEEP130,
+  KEEP129]) + constructed REG-001 (n=28 vine, H=[DEL27,DEL28,KEEP28,KEEP27]).
+  Clean-room evaluator + contract frozen pre-reveal (impl_freeze v1/v2).
+  proof_status.json: MSTL-13 UNPROVED/NO_WITNESS (author arbitrary-n DELETE-
+  injection claim preserved as claim only; R<=a, T7<=k per A-rotation, T5
+  conserves E, T6 no-discharge-on-DELETE => E_after-E_before<=k*cost_A — NOT
+  upgraded, WP-6 owns closure). LIQ0-01..10 REVIEWED.
+- K0 population freeze (`scripts/run_wp5x_k6c2.py k0`, reuses
+  python/wp5x/population.py semantics): exact k==6,C==2 subset of the 6099
+  eligible = 64 configs (5 P x 11 rho minus P_delete_all FLAT(2)/FLAT(3)? No:
+  actual 64 = P_all/P_both_doubles/P_keep_all/P_keep_doubles/P_keep x 11 rho
+  (FLAT2-6+ROT1-6) + P_delete_all x 9 rho (FLAT3-6+ROT2-6); all RHO_REQUIRED).
+  Artifacts: artifacts/v04/wp5x_k6c2/k0_population.json (population_hash
+  88a1cdacb151f0211451bacc58b6aa2e8a7aa9f4e28f0d1ff48dc08ec5cbf604) +
+  k0_identities.jsonl (30-field identities, schema-checked). Source bindings:
+  ranking.json beb2380a..., screen_results.json 1856ee26...,
+  promotion.json 879ca35e..., predicate_family 2ab81289...,
+  main x0_population 092969c9.... Code hashes (win32 CRLF working-tree bytes,
+  self-consistent mid-run guard): encode 3770624f..., cleanroom 1fd283b4...,
+  independent 0875707e..., predicates 917ab91b.... Assertions (k==6, C==2,
+  pre-existing, WP-4 eligible, exact-subset equality) all PASS; any failure
+  STOPs fail-closed.
+- Runner: `scripts/run_wp5x_k6c2.py` (k0..k6) imports frozen
+  python/wp5x/{population,factored,stages,worker,gates} + solver/cleanroom/
+  independent bytes; no semantic duplication. Writes ONLY to
+  artifacts/v04/wp5x_k6c2/ (main wp5x/ read-only history). Branch guard asserts
+  wp5x-k6c2-specialized before every stage; pushes ONLY origin
+  wp5x-k6c2-specialized, never master, never --force.
+- K1 known regression (`k1`): episodes = n192 witness + REG-001 + remaining
+  distinct preserved ce episodes (dedup; order n192, REG-001, rest). Result:
+  killed 1/64 (P_delete_all|6|2|FLAT(3) on n192 id 2b620ad42f83..., need 30 paid
+  10 shortfall 20, keeps [122/122, 60/60, 30/10], pool lat_post 228 act_post 0
+  spent 192); live 63/64. First-kill certificates with n/T0/H/mode/Aev/Bev/
+  sites/a/y/need/paid/margin/pools/attribution in kills_k1.json.
+- K2 revealed H4L replay (`k2`, workers=4, resumable per-shard checkpoints,
+  label REVEALED_H4L_K6C2_REPLAY, never fresh): 7 shards x 10k = 70,000
+  episodes x 63 candidates, factored equivalence + independent confirm.
+  Result: killed 0; live 63/63. (First attempt hit the 120s tool timeout on the
+  last shard; resumed via checkpoints to completion — no semantic change.)
+- K3 clean-room agreement (`k3`): every K2 survivor x full 70k revealed bank,
+  per-KEEP (need,paid) primary-vs-cleanroom exact agreement. Result: 63/63
+  agree, zero mismatches (agreement_k3.json; 16 chunks x 4, workers=8).
+  No EVALUATOR_DISAGREEMENT. Repair during execution: chunk 8->4 for
+  resumability under tool timeouts (no semantic change).
+- K4 large-n (`k4`, exact unchanged battery, verified 360): killed 0; live 63/63.
+- K5 OOD (`k5`, exact unchanged battery, verified 8000, includes n192 killer id
+  byte-identical in stream): killed 0; live 63/63. Sharded (2x32) + checkpoints.
+- K6 freeze (`k6`): specialized_survivors.json status
+  K6C2_SPECIALIZED_SET_SURVIVES_KNOWN_FINITE_GATES, count 63,
+  survivor_set_hash 9dcdea2b7926cf94765e1fd818a73f0459c72404b4f4bf5c36b3ec65a27e5748,
+  label "FINITE evidence only; FRESH_H5_REQUIRED_BEFORE_WP6". phase_diagram.json
+  rows per P x rho (K1/K2/K3/K4/K5/K6, first-kill gate/episode).
+- Phase diagram (finite only): 64 existed; 64 entered K1; 63 survived K1; 63
+  survived H4L; clean-room agreed completely (63/63, 0 mismatches); 63 survived
+  large-n; 63 survived OOD. Surviving P: all 6 families (P_all 11, P_both_doubles
+  11, P_keep_all 11, P_keep_doubles 11, P_keep 11, P_delete_all 8). Surviving
+  rho: FLAT(2) 5, FLAT(3) 5, FLAT(4..6) 6 each, ROT(1) 5, ROT(2..6) 6 each.
+  FLAT rungs: FLAT(1) absent from eligible (all 16 P x FLAT(1) x k6c2 died at
+  screen n_evaluated=1 = REG-001-first); every eligible FLAT(2..6) rung survives
+  except FLAT(3) loses only P_delete_all. ROT rungs: all eligible ROT rungs
+  survive (35/35 incl. ROT(1) 5/5). FLAT(1) reproduces the expected liquidity
+  failure (verified live: P_all|6|2|FLAT(1) on REG-001 => violations=1, last
+  KEEP need 11 paid 10 margin -1). FLAT(2) survives (all 5 eligible FLAT(2)
+  configs incl. P_all). P_all represented 11/11. P_all|6|2|FLAT(2): WP-4 rank
+  [0,0,False,2,0,2,6,10,P_all]/RHO_REQUIRED; K1 LIVE (survives n192: need
+  30 paid 30 margin 164), K2 LIVE, K3 agree, K4 LIVE, K5 LIVE => K6 SURVIVOR
+  (finite). No apparent finite rho threshold within the eligible slice (all
+  eligible rungs >= FLAT(2)/ROT(1) survive at ~100% except one P_delete_all
+  death). P materially affects survival only via the single P_delete_all death
+  (DELETE-gated predicate cannot mobilize on KEEP demand). Multiple semantically
+  distinct families alive (KEEP-gated, BOTH-gated, DELETE-gated remnants).
+  k=6,C=2 naturally re-emerges as a robust finite region on known gates.
+- Autopsies (diagnostic only, no resurrection): (i) sole K1 death
+  P_delete_all|6|2|FLAT(3) on n192 => MIXED (savers LIQUIDITY rho->(6,12) and
+  PREDICATE P->P_all; DEMAND C->3 does NOT repair; STOCK N/A at k=6; LATENT
+  post 228 plentiful, ACTIVE exhausted) => LIQUIDITY/THROUGHPUT +
+  PREDICATE/ELIGIBILITY, not wealth exhaustion. (ii) FLAT(1) REG-001 deaths =>
+  LIQUIDITY/THROUGHPUT (rho 1->2 repairs at same k,C,P). (iii) k=3 trio n192
+  deaths vs k=6 survival on the identical episode => the k 3->6 escalation
+  repairs (WEALTH/STOCK axis confirmed finite-relevant), consistent with the
+  historical autopsy; C 2->3 also repairs per history (not re-tested here).
+- Historical verification: (A) pre-liquidity ~70k survival claim is context;
+  current evidence is the 70k REVEALED replay (63/64 live) — labeled revealed,
+  not fresh. (B) MST0-13/MSTL-13 DELETE-injection proof remains UNPROVED
+  (no upgrade). (C) P_all|6|2|FLAT(1) REG-001 failure REPRODUCED (see above).
+  (D) WP-4 dev-clean for P_all k6c2 FLAT(2..6)+ROT neighbors VERIFIED (all 11 in
+  ranking, RHO_REQUIRED). (E) n192 OOD k=3 trio autopsy consistent (k 3->6
+  repairs, verified on the identical episode id).
+- Tests: tests/test_wp5x_k6c2.py (19 tests K6C2-01..19: branch, count/hash,
+  k/C admission, exact-subset/no-rank-filter, not-promoted-only, no-cap,
+  ID/label/rank preservation, predicate/rho frozen, REG-001 semantic guard,
+  H4L revealed+unmutated+not-fresh, K1 coverage, K3 full agreement, battery
+  sizes, namespace isolation, no-dynamic-P machinery, no-universality, P_all
+  FLAT(2) survival, gate monotonicity) — 19/19 PASS. Regression note (lawful,
+  pre-existing, not caused here): SYN-11 pins pre-reveal firewall
+  (COMMITMENT_PUBLISHED/unlocks 0) but tree is post-WP-5 REVEALED_ONCE/unlocks 1
+  (superseded by FRSH-03/09 per WP-5 ledger); FRSH-02 byte-hash mismatch is a
+  win32 CRLF checkout artifact (HEAD LF blob f2ee1916... == v2 freeze; working
+  bytes CRLF 1fd283b4...; git status clean) — semantics unaffected (K3
+  agreement is runtime need/paid comparison, 63/63 zero mismatches).
+  Repair during execution: K6C2-16 test initially matched the word "dynamic" in
+  its own prohibition comment — narrowed to machinery identifiers
+  (dynamic_*/dynamicP/adaptive_elig/policy_control).
+- Theorem boundaries: finite survival only. Permitted: "Candidate X survived all
+  specified known finite gates." MSTL-13 UNPROVED. No claim of Dynamic
+  Optimality / Pair Access / MSTL-14 / universal k=6/C=2/rho=2/P_all sufficiency.
+- H5: NOT created/consumed here. Survivors (63) require FRESH_H5_REQUIRED_
+  BEFORE_WP6, to be designed/frozen coherently with any main WP-5X survivors.
+- Commits/pushes (this branch only): see R-K6C2 entries below.
