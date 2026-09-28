@@ -752,6 +752,32 @@ Q. PROVE track (`MSTL-14_PROVE_notes.json`): conservation framework exact;
    evidence used as premise nowhere.
 R. No counterexamples; no candidate transition (#1 ACTIVE, not refuted, not
    resource-limit-unresolved — PROVE open, REFUTE attacked).
+S. MSTL-14 REFUTATION (exact legal witness, candidate #1 then cascade):
+   post-drain absent battery refutes MSTL-14 as stated. Witness #1: n=64,
+   sparse 28-key T0, base [DELETE30,KEEP50,DELETE50,DELETE11] + 11x absent
+   KEEP z=10 (need=1 each, trees/pools frozen across battery); first kill at
+   overall access 14 (keep #11): need=1, paid=0, margin=-1, act_pre_B=0,
+   B_events=0; witness hash
+   `24975de3a80eb0c16ffabcd038faf5294e54f6bde7edfb013355fceed7384689`;
+   primary == independent == clean-room (triple agreement). Mechanism: absent
+   KEEPs demand T6 payment (spec: "repayment quantities use computed (a,y)
+   normally") while contributing zero T7/T5 (empty trace) — a long enough
+   need>=1 absent battery drains ANY finite ACTIVE pool, so MSTL-14 as stated
+   (full legal domain incl. absent) is false for every static candidate, not a
+   k=6/C=2/P_all weakness. Cascade (`scripts/wp6_absent_cascade.py`, frozen
+   order, same config-independent base/battery, per-candidate minimized L*,
+   triple-confirmed each): 63/63 REFUTED (L* 1..25; P_keep_doubles L*=1,
+   P_all FLAT(6)/ROT(6) L*=25 — pool-size-ordered, as drainage mechanics
+   predicts). Terminal: ALL_63_CANDIDATES_REFUTED
+   (`artifacts/v04/wp6/absent_refutation/cascade_summary.json` + 63
+   `death_%02d.json` certificates). No candidate mutated; no synthesis; no
+   parameter search. proof_status.json: MSTL-14 refute_track NO_WITNESS ->
+   WITNESS_FOUND (surgical 1-line diff; truth stays UNPROVED — REFUTED
+   requires genuine human validation, solicited herewith, never fabricated).
+   Downstream MSTL-15/17/18/19 unreachable on this route (prerequisite failed);
+   present-only MSTL-14 proof attempt (t*-restart, Case A closed) stands as
+   partial mathematics for a present-key-restricted subdomain (new theorem ID
+   required by spec if ever pursued — never silent).
 S-T. Statuses unchanged (all MSTL UNPROVED/NO_WITNESS; no review solicited or
    fabricated); L2 boundary untouched (MSTL-19 not reached).
 U. COMMIT C: activation + DAG + refute harness/results + PROVE notes + this
