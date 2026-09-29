@@ -899,7 +899,17 @@ C6. TEST MAINTENANCE (no science change): `test_w6e_18` asserted broad
    (truth/prove_track UNPROVED + refute_track WITNESS_FOUND). Suites now:
    present_domain 3/3, present_mechanics 3/3, wp6_h5_entry 20/20, h5_holdout
    9/9, wp5x_k6c2 19/19 (56/56); FRSH 13/14 with the known pre-existing
-   CRLF artifact only.   `tstar_conditional.md` (t*-restart conditional theorem with explicit open
+   CRLF artifact only.
+C7. MSTL-14P WAR (this session): cumulative stock attacked as pure splay
+   coupling (D<=6*S_A, S_A=E_A); R pinned at exactly 0 over ~200k hostile +
+   exhaustive n<=4 + hill-climbs (best trivial-only); k=3-tightness exact
+   (+2=shortfall); coefficient verdict: 6=k creation, 2=rho cap, 2=splay
+   binary — three provably distinct sources, 6=2x3 KILLED (live n28 demo:
+   rho1 paid=10 KILLED vs rho2 paid=11 SURVIVES, same 7 B-events); eligible
+   service still open (raw D2 proved, support/provenance not). Artifacts:
+   `MSTL14P_PROVE_notes.json`, `coefficient_sources.json`. No status change
+   (MSTL-14P UNPROVED/NO_WITNESS); no candidate transition (#1 ACTIVE on
+   present route).   `tstar_conditional.md` (t*-restart conditional theorem with explicit open
    gap: t*-inside-B-phase under thin pools; k-entry via t* location) and
    `lean/WP6/MSTL14PArith.lean` (arithmetic backbone: need bound, 1-2
    event counting, greedy cap-2 exactness, service composition — direct
