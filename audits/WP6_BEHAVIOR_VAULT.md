@@ -99,8 +99,9 @@ shortness + entry-freshness next.
   recent-pusher freshness bound (young-transient-exposure bound = THE open gap).
 - H2 ROOT-HUB: deep-splay A-rotated tops and B-triple tops meet at root-region keys;
   explains C27 hub-density + bev33-type explosions; sparse (1–2 × 1–2 per pair).
-- H3 SWEEP-REFRESH DUALITY: drain length (e_B) ↔ sweep length (refreshment chance);
-  long-sterile-run constructibility is the adversarial unknown (surgical AS-01 queued).
+- H3 SWEEP-REFRESH DUALITY (WEAKENED C29-2): long sterile runs exist (max 62) and
+  are survivable; sterile length is NOT the gate. Drain length ↔ sweep length
+  still structures the drain, but refreshment is not the sole rescue.
 - H4 DISPLACE-MONO (rigorous): A-depth(x) non-decreasing between x-accesses → B-heavy
   x had a recent x-access → K holds recent deposits (loads: open - transient leak).
 - H5 LAZY-OLDEST: oldest-first + rare-eligibility → dormant sources stay fresh until
@@ -112,15 +113,43 @@ Young/fresh-source transient-exposure bound: sources entering at load 0/1 can be
 picked by unrelated B-events (E3-transient) before the B-event that needs them.
 No universal bound proved; 0 saturated-entries / 44,000+ observed. Options: (i) W-window
 formalization (non-x matches are ancestor-sweep, O(1) stays — SV data: max 10);
-(ii) surgical sterile-run adversarial (AS-01: M1-guided deepen + sterilize + E1-thin);
-(iii) small-n exhaustive Stage-B (EX-00: n≤4–5, bounded length, all histories);
+(ii) ENTRY-FRESH theorem attempt; (iii) scattering lemma (load-3 convergence);
 (iv) five-channel case split with per-channel freshness lemmas.
+(DONE C29: AS-01 surgical 12k best=2 maxster=62; EX-00 2.28M exhaustive max≤1.)
 
-## Queued next (exact designs)
+## C29 — exhaustive small-n + surgical sterile-run (this continuation)
 
-- AS-01: M1-guided mutations (deepen-x-in-B-only, sterilize-x-ancestors, sustain
-  B-heavy-x, suppress hub-hit), objective max minload, kill ≥3.
-- EX-00: exhaustive all-H (bounded L) × representative T0 for n=3,4,5, minload max.
+### C29-1 EX-00 small-n exhaustive Stage-B [FINITE_EVIDENCE]
+Script `scripts/wp6_exhaustive.py` → `exhaustive.json`. ALL BST shapes × ALL
+histories (bounded L), every H present-legal: n=3 L=7 (5 trees × 279936 =
+1,399,680 hist): max minload 0, ZERO minload-2, 0 starvation, 0 MSTL kills.
+n=4 L=5 (14 × 32768 = 458,752): max 1, zero minload-2. n=5 L=4 (42 × 10000 =
+420,000): max 1, zero minload-2. Total 2,278,432 exhaustive histories.
+Implication: minload-2 is scale-emergent (needs depth + large frozen N); small
+cases trivially safe (E1-CAP + tiny depths + total overlap). No small
+counterexample exists. Next: AS-01.
+
+### C29-2 AS-01 surgical sterile-run falsifier [FINITE_EVIDENCE]
+Script `scripts/wp6_surgstage.py` → `surgstage.json`. M1-guided ops (DEEPEN x in
+B-only via trial splays, STERILIZE x-ancestors by overlap minimization, STRIKE x,
+SETUP x, GENERIC), victim = max (B-depth − A-depth) key, 12,000 evals n∈{64,128}:
+best minload 2, ZERO starvation. Diagnostics: max sterile-run (consecutive
+B-events with no fresh-0 entry) = 62 — long sterile runs EXIST and are survivable
+(fresh-1 entries + core capacity carry them); sterile length is NOT the gate.
+Cumulative anti-starvation: 38,080 targeted + 2,278,432 exhaustive.
+Implication: H3 sweep-refresh as "the" gate weakened; geometry-targeted attack
+fails like generic. Next: ENTRY-FRESH/W-WINDOW or obstruction packet.
+
+### C29-3 load-3 absorption note [FINITE_EVIDENCE]
+M2-witness history full replay (B=144): exactly ONE minload-2 event (bev88)
+minting exactly ONE load-3 source, absorbed with no further elevation.
+minload-2 events are isolated; load-3s are absorbed singletons. Starvation would
+need |N| converged load-3s (never observed). Reframes Stage B as "load-3
+absorption", but convergence-impossibility still unproved (scattering lemma open).
+
+## Queued next (exact designs, AS-01/EX-00 now DONE — see C29)
+
 - ENTRY-FRESH formalization: entry-load ≤2 theorem attempt or entry@3 hunt at scale.
 - W-WINDOW lemma: transient stays bounded by ancestor-sweep geometry.
+- Scattering lemma: load-3 singletons cannot converge a whole N (formalize?).
 - Lean: E1-CAP + DISPLACE-MONO arithmetization (after author chain closes).

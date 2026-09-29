@@ -39,12 +39,18 @@
   "freshness/genesis exactness (fresh=>0 work 0-viol; A==B=>same splay e_A==e_B 0-viol; stale ratio 0.60)",
   "SOLE SURVIVOR: global-count prefix-induction on E_B<=3*S_A (empirical slack 0.33, reason unknown, possibly emergent/unreducible)"
  ],
+ "alive_exhaustive_2026-09-30": [
+  "Small-n EXHAUSTIVE Stage-B (exhaustive.json): all BST shapes x all histories present-legal: n=3 L7 1,399,680 hist max minload 0; n=4 L5 458,752 max 1; n=5 L4 420,000 max 1; total 2,278,432 with ZERO minload-2, 0 starvation, 0 MSTL kills; minload-2 is scale-emergent"
+ ],
  "alive_firstcross_2026-09-29": [
   "last-safe split 61/39: interval-sufficient (pay>=q inside (u,t*], local-closed, provable-looking) vs tenure-frozen (D predates u=tx, needs pooled outside-S_A med 23); worst q/pay 64 on tenure-empty; interval-len med 2 (u recent/tenure)",
   "FC-FIRST = slack-suffices (excess/slack<=0.33 measured) with slack reason = THE unknown (pump-backing sharing + tenure-funding pool); N-FIRST general open on same wall"
  ],
  "alive_firstdiv_2026-09-29": [
   "genesis first-divergence 1:1 self-funding PROVED (mod banked U=0/tenure/determinism): arrival-DELETE + tenure-no-ops + cash replays same T0-splay (e_B=e_0 exact), funded 3x, need covered (AR-14/15/16, kernel PENDING); per-key first-cashes partition disjointly; subsequent (reshaped/pumped) divergence OPEN (pool-diluted-marginal, sharing)"
+ ],
+ "alive_load3absorb_2026-09-30": [
+  "Load-3 absorption (M2-witness replay B=144): exactly ONE minload-2 event (bev88) minting exactly ONE load-3 source, absorbed with no further elevation; minload-2 isolated; starvation needs |N| converged load-3s (never observed; scattering lemma open)"
  ],
  "alive_loaddiv_2026-09-29": [
   "TRICHOTOMY paper lemma banked (B-StepEv => E1|E2|E4 sited-nonempty or vacuous genesis-root; from U=0+M1+freeze+dislodge+genesis, GC-independent)",
@@ -82,6 +88,9 @@
  "alive_sterile_2026-09-29": [
   "CASE R residual mode (pumped B-deep/A-shallow surviving bystanders, single-positive, cash->residual->cash O(n)-chains at ~1.33x pump-backing; no adjacent cashes on tight paths (reset sterilizes the cashed key, others persist))",
   "finite-mode recurrence queued (residual-mode ranks; pumped-count grows via re-pumps so count itself not well-founded; compensated setup/cash cycles net<=0 over 1660 measured cycles)"
+ ],
+ "alive_surgstage_2026-09-30": [
+  "Surgical sterile-run falsifier (surgstage.json): M1-guided deepen/sterilize/strike on max-(B-A)-depth victim, 12,000 evals n=64/128: best minload 2, 0 starvation; max sterile-run (no fresh-0 entry) 62 and survivable; sterile length NOT the gate; cumulative 38,080 targeted + 2.28M exhaustive"
  ],
  "alive_tiers_2026-09-29": [
   "TOP-TIER sketch (B-depth<=4 => e_B<=2 by zig-limit Z in {0,1}: e_B=(d+Z)/2; setup-1-DELETE (e_A>=1, U=0 sited) gives 3 slots covering e_B<=2 with margin 1; H=4 max tier fundable by single setup); top-B measured 94.5% E1-covered",

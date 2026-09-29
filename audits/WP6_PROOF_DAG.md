@@ -29,9 +29,12 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
 │   │       OPEN GAP: W-window formalization; entry-freshness theorem
 │   └── E4-setup channel — tenure-bounded; adjacent DELETE→KEEP pristine
 │
-│  [EV] 26,080 targeted evals (BR+MW+AS) never breach minload 2
+│  [EV] 38,080 targeted evals (BR+MW+AS+AS01) never breach minload 2
+│  [EV] 2,278,432 exhaustive small-n (n=3,4,5): max minload ≤1, zero minload-2
 │  [EV] M2-witness: frozen-core + transient-pair drain → refreshment-rescue
 │  [EV] saviors always entered@0; entry@3 = 0/44,000+
+│  [EV] load-3s are absorbed singletons (M2 hist: 1 minload-2 → 1 load-3, absorbed)
+│  [EV] sterile runs to 62 survivable (sterile length NOT the gate; H3 weakened)
 │
       │  (IF Stage B proved, with banked D2-sum N≤2X)
       ▼
@@ -53,8 +56,8 @@ rank/Bellman@scale · SOD-single · raw-dist · quotient-masses/per-run · TSRC 
 corridor-greedy · perceptron · rank-proxy · E3-laminar · E1+E4-only · matroid-free
 greedy · per-key-GC [DEAD C28-4] · stronger-minload≤1 [DEAD C28-3, M2 witness].
 
-Queued: AS-01 surgical sterile-run falsifier · EX-00 small-n exhaustive Stage-B ·
-ENTRY-FRESH formalization · W-WINDOW lemma · Lean E1-CAP/DISPLACE-MONO (post-close).
+Queued: ENTRY-FRESH formalization · W-WINDOW lemma · scattering lemma
+(load-3 convergence) · Lean E1-CAP/DISPLACE-MONO (post-close).
 ```
 
 Stage B is the immediate bottleneck. No downstream work until proved/refuted.
