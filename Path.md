@@ -1173,3 +1173,12 @@ acc-0, rover 9-17 funneling); load-0 depletes 2->0 then oldest absorbs with
 channels). 1->2 needs oldest-abundant saturation (O(n) slots vs O(n)
 overflow, balanced ~2x measured). Scripts: `wp6_minload_anatomy.py`.
 Artifact: `minload_anat.json`.
+C27. E3 ORDERED-FAMILY (MSTL-14P stays UNPROVED/NO_WITNESS).
+E3 neighborhoods are NOT nested/laminar (incomp 930/1703 = 55%; equal 593;
+sub+super only 10% over 351 B-splays) — no ordered-chain triple->ancestor
+mapping; saviors spread across oldest E3, not path-ordered. But E3 EXPANDS
+net +0.6 members per B-StepEv (new 2.63, lost 2.01): triple-motion toward
+hub-dense root triples exposes fresh overlap, so later B-events have MORE
+ancestors. REFRESH candidate = triple-motion expansion; needs
+growth>=consumption universally (unproved). Scripts: `wp6_e3order.py`.
+Artifact: `e3order.json`.
