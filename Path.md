@@ -1057,3 +1057,14 @@ witness. Scripts: `wp6_bellman.py`, `wp6_rankmine.py`, `wp6_rankscale.py`,
 `wp6_ranktight.py`, `wp6_cycles.py`, `wp6_horizon.py`, `wp6_corpse.py`.
 Queued: structural maxAcc-drop (coupled-alignment + pumped-residual);
 MAP report filed separately.
+C16. STERILIZATION VERDICT — CASE R (MSTL-14P stays UNPROVED/NO_WITNESS).
+Strong sterilization (A1) is FALSE at scale: 90/150 post-cash states admit
+positive single rewards, worst +22 (t11: cash x100 eA2/eB50, residual key96
+eA1/eB25 — pumped B-deep/A-shallow bystander surviving with chainable
+single-positive). n<=6 V=0 was single-divergence artifact. Residual mode =
+pumped bystanders (cash sterilizes the cashed key only; others persist);
+chains cash->residual->cash with no adjacency on tight paths; pumped-count
+itself grows via re-pumps (not well-founded — compensated setup/cash cycles
+net<=0 over 1660 measured cycles instead). Script: `wp6_sterile.py`.
+Queued: finite-mode recurrence on residual modes; setup-cost mountain law;
+N-AUG/N-FIRST; Lean-kernel (no toolchain).
