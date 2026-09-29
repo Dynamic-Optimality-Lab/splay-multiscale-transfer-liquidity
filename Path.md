@@ -995,4 +995,19 @@ stock_composition conditional; kernel PENDING). Scripts: `wp6_involve.py`,
 `wp6_prefix_eb.py`, `wp6_slack.py`, `wp6_doubles.py`, `wp6_resetdepth.py`,
 `wp6_purepump.py`, `wp6_pairing.py`, `wp6_need_eb.py`, `wp6_funding.py`,
 `wp6_dissect.py`, `wp6_freshness.py`, `wp6_ratio_hunt.py`,
-`wp6_psi_anatomy.py`, `wp6_eventflow{,_cut}.py`, `wp6_coverage.py`.
+   `wp6_psi_anatomy.py`, `wp6_eventflow{,_cut}.py`, `wp6_coverage.py`.
+C12. TRACE-REWRITE CORRIDOR LANE (MSTL-14P stays UNPROVED/NO_WITNESS).
+Raw rotation-distance normalization DEAD (LAW-A holds gap 0 via triangle;
+LAW-K FALSE +3: dist 5->5 flat while e_B=3/e_A=0; dist-drop median -2 vs
+excess O(n); telescope holds only on small trees). Reason: splay preserves
+rest-arrangement via M1-rigidity, so shape-distance is splay-invariant-ish
+and orthogonal to depth-work E_B; word/shape normalizations are the wrong
+category (depth-work needs depth-tracking, which hits L1/swings/counts).
+Extended flow E1+E2+E3+E4+E7 saturates 120/120 + 486/486 BUT ablation shows
+E3 alone closes (E1+E3 80/0 at dens 8.5; E2 +7/E4 +9/E7 +2 marginal), and by
+min-cut flow==counts: diagnostic only (hub-abundance + deep-overcover
+tiers), not proof. Top/bottom split restates (tops 1:1-free via E1, bottoms
+share via pumps). Matching closed generally (fanout leaves unavoidable
+residual under any eligibility). Scripts: `wp6_distnorm.py`,
+`wp6_eventflow2.py`, `wp6_eventflow_abl.py`. Queued: N-AUG exchange with
+trace-justified new edges, N-FIRST first-violation normal form.
