@@ -24,7 +24,10 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   loads form via re-entry climbs 0→1→2→3 across ≥3 pick-episodes + dormancy;
   drains synchronize N's; dilution (e_A fresh + W-refresh) races drain;
   blockers ejected, never converge (38k + 30k + 2.28M + 121kENTRY evals)
-      │  (STILL OPEN: synchronized-ladder-completion impossibility; dilution race)
+[ BANKED C33 ] SYNCHRONY (spread ≤1 at 100% drains; ≤1 at 97% all) · DILUTION
+  (fresh0 med6 vs eB med2; deficit only 7.5%) · negative margins (~1%) NEVER
+  convert (40 worst-seeds + rescue-suppression, 8k evals, best 2, margin −31)
+      │  (STILL OPEN: spread-3 conjunction; dilution-race formal; scattering)
       ▼
 [ OPEN ] STAGE B — min load_before ≤ 2, cap-3 chronological least-loaded
 │

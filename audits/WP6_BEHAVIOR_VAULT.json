@@ -287,6 +287,38 @@
    "superseded": false,
    "theorem": "Stage B (mechanism)",
    "witness": "aev40 episode chain bev4/45/75/106/118+"
+  },
+  {
+   "artifact": "scripts/wp6_margin.py -> artifacts/v04/wp6_present/0909c74a/margin.json",
+   "date": "2026-09-30",
+   "id": "C33-1-MG00",
+   "implication": "Race formulation exact; spread-3 dormancy+return+ladder candidate sub-lemma (0/19982).",
+   "next": "NM-00",
+   "order": 19,
+   "reason": "Map distance to starvation: safety margin, synchrony spread, dilution race, near-miss seeds.",
+   "result": "B=19982: margin min-54 p1-11 med49; spread<=1 at 97% all, 100% drains (192); fresh0 med6 vs eB med2, fresh0<eB 7.5%; 15 near-misses.",
+   "script": "scripts/wp6_margin.py",
+   "statement": "Margin/synchrony/dilution probe.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "Stage B (race)",
+   "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_nearmiss.py -> artifacts/v04/wp6_present/0909c74a/nearmiss.json",
+   "date": "2026-09-30",
+   "id": "C33-2-NM00",
+   "implication": "Perfect-placement conjunction dynamically forbidden (frozen+long contradiction); cumulative 46k+ targeted unbreached.",
+   "next": "Spread-3 / dilution formalization",
+   "order": 20,
+   "reason": "Feed negative-margin seeds to falsifier with rescue-suppressing mutations.",
+   "result": "40 seeds (worst -48) + pool, 8000 evals: best minload 2, best margin -31, 0 starvation.",
+   "script": "scripts/wp6_nearmiss.py",
+   "statement": "Negative margins do not convert to starvation.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "Stage B",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

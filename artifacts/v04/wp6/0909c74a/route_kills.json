@@ -72,6 +72,12 @@
  "alive_m2witness_2026-09-30": [
   "Stronger minload<=1 REFUTED by exact legal witness (m2witness.json, reverify 2): n=128 acc5 KEEP-36 bev88 minload-before=2; B-heavy e_B=13 e_A=2; frozen core N=9 (E1{96,97}+E2{81}+E4{117}+E3{7,57,93}) + rotating transient pair; drain U18->9; bev89 E3 expansion rescues; mechanism frozen-drain-then-refresh"
  ],
+ "alive_margin_2026-09-30": [
+  "Margin probe (margin.json, B=19982): safety margin min-54 p1-11 med49; SYNCHRONY: spread<=1 at 97% all events and 100% of drains (192; never 2+ at drains) - whole-N water level; DILUTION: per-access fresh0 med6 vs eB med2, deficit only 7.5%; negative optimistic margins (~1%) are rescued by waste/churn; 15 near-misses banked as seeds."
+ ],
+ "alive_nearmiss_2026-09-30": [
+  "Near-miss feeder (nearmiss.json): 40 negative-margin seeds (worst -48) + pool, freeze-N mutations, 8000 evals: best minload 2, best margin -31, ZERO starvation/conversion. Frozen+long contradiction (frozen needs sterile sweep; long sweep refreshes; sterile-62 still carried by fresh-1+core). Perfect-placement dynamically forbidden."
+ ],
  "alive_rankcycle_2026-09-29": [
   "maxAcc/hazKeys/maxHaz/divKeys NEVER rise on tight positives n5 (1306) n6 (13304, exact V): rank candidate (lexicographic) valid small-n",
   "Bellman V==V_1 (1.000) h*<=1 diagonals-0 common-root-V0 n4/5/6 exact; h* 2-5 + VeqV1 .999-1.0 at n16/32/64 (capped); maxV tiny (2,2,3; 10/22/32)",

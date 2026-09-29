@@ -191,11 +191,36 @@ young-transient-exposure unproved, load-3 scattering unproved. No counting
 argument attempted (GC-reduction avoided).
 
 ## Queued next
-- Ladder-synchrony quantification (do drains synchronize whole N's? load-spread).
-- Deposit-dilution race test (e_A fresh vs e_B drain per x-access).
-- Scattering lemma attempts (load-3 convergence impossibility).
-- ML-W-BLOCKS tightening (per-key occupancy contiguity audit).
-- Lean: scaffold + E1-CAP arithmetization (after author chain closes).
+- Spread-3 dormancy+return+ladder conjunction (candidate sub-lemma; 0/19982).
+- Deposit-dilution race formalization (fresh0 vs e_B per access).
+- Scattering lemma attempts.
+- ML-W-BLOCKS tightening.
+- Lean: scaffold arithmetization (after author chain closes).
+
+## C33 — margin probe + near-miss feeder (this continuation)
+
+### C33-1 MG-00 safety margin: synchrony + dilution + negative margins [FINITE_EVIDENCE]
+`scripts/wp6_margin.py` → `margin.json` (300 hist, B=19,982): margin min −54,
+p1 −11, med 49. Spread: ALL events {0:944, 1:18445, 2:593} (≤1 at 97%);
+AT DRAINS (min≥1, n=192): {0:97, 1:95} — spread NEVER exceeds 1 at drains.
+DRAINS ARE SYNCHRONOUS (whole-N water level, range ≤1). Dilution: per-access
+fresh0 med 6 vs e_B med 2; fresh0<e_B only 7.5% (dilution usually covers demand
+numerically at access start). Negative optimistic margins (~1% of events) are
+arithmetically starvable moments that did NOT starve (waste/churn rescued).
+15 near-misses (margin≤2) recorded as falsifier seeds.
+Implication: race formulation exact (uniform level vs rescue); spread-3 needs
+dormancy+return+ladder conjunction (0/19982) — candidate sub-lemma. Next: NM-00.
+
+### C33-2 NM-00 near-miss feeder: negative margins do NOT convert [FINITE_EVIDENCE]
+`scripts/wp6_nearmiss.py` → `nearmiss.json`: 40 negative-margin seeds (worst −48)
++ generic pool, freeze-N-biased mutations, 8000 evals maximizing minload (tie-break
+min margin): best minload 2, best margin −31, ZERO starvation. Even from
+arithmetically-starvable states with rescue-suppressing mutations, waste/churn/
+dilution always intervene (picks scatter onto exited-W, refreshment arrives, N
+churns in fresh members). Frozen+long contradiction: frozen-N needs sterile sweep;
+long sweep hits hubs (refreshment); sterile-long (maxster 62) still gets fresh-1
++ core carry. The perfect-placement conjunction is dynamically forbidden.
+Cumulative: 46k+ targeted, 2.28M exhaustive, 121k-entry census, 30k entry-hunt.
 
 ## C32 — ENTRY@3 found + ladder-episode theory (this continuation)
 
