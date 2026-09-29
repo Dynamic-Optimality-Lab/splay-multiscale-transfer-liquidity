@@ -57,6 +57,11 @@
   "CASE R residual mode (pumped B-deep/A-shallow surviving bystanders, single-positive, cash->residual->cash O(n)-chains at ~1.33x pump-backing; no adjacent cashes on tight paths (reset sterilizes the cashed key, others persist))",
   "finite-mode recurrence queued (residual-mode ranks; pumped-count grows via re-pumps so count itself not well-founded; compensated setup/cash cycles net<=0 over 1660 measured cycles)"
  ],
+ "alive_tiers_2026-09-29": [
+  "TOP-TIER sketch (B-depth<=4 => e_B<=2 by zig-limit Z in {0,1}: e_B=(d+Z)/2; setup-1-DELETE (e_A>=1, U=0 sited) gives 3 slots covering e_B<=2 with margin 1; H=4 max tier fundable by single setup); top-B measured 94.5% E1-covered",
+  "DEEP-TIER (depth>4) OPEN (pump-ancestry shared fanout; same wall)",
+  "two-tier load-diversity: hub/top fresh-ish + pump-backed deep (distinct events); top closed, deep measured (pump-touched 521/1623, rest via setup/overlap/genesis)"
+ ],
  "alive_tokens_2026-09-29": [
   "genealogy: E3-ancestry per B is 1..89 (med 11, NEVER empty: hubs+pumps cover); abundant not O(1)-bounded",
   "least-loaded deterministic online rule: maxload 2/3, 0 starved over 2331 B-events (beats recency concentration)",
@@ -137,6 +142,9 @@
  ],
  "killed_routes_17_loaddiv_2026-09-29": [
   "greedy-optimality without matroid (E2/E3 pump/overlap sharing breaks laminar/partition structure; E1+E4-only fails 38 histories, so nonlaminar part is essential yet unformalizable by matroid theory)"
+ ],
+ "killed_routes_18_tiers_2026-09-29": [
+  "deep-tier pump-ancestry as proof vehicle (shared fanout O(n); same duality as flow epochs)"
  ],
  "killed_routes_2": [
   "rotation-correspondence R^B<=3R^A (no such splay theorem; subsequence costs incomparable)",

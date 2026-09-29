@@ -1157,3 +1157,11 @@ everywhere measured. Least-loaded + trichotomy would give online integral
 claim, plus greedy-optimality without matroid: E2/E3 sharing breaks
 laminar structure while E1+E4-only fails 38 histories). Scripts:
 `wp6_minload.py`. Artifact: `minload.json`.
+C25. TWO-TIER DIVERSITY (MSTL-14P stays UNPROVED/NO_WITNESS).
+Top-B (depth<=4, 200 events) is 94.5% E1-covered (same-access self-funds);
+deep-B (1623) needs pump/setup/overlap ancestry (pump-touched 521).
+Top-tier sketch: depth<=H gives e_B<=(d+Z)/2<=1+H/2 (Z in {0,1} zig-limit);
+H=4 max tier fundable by single setup-DELETE (3 slots vs e_B<=2, margin 1;
+U=0 sited). Deep-tier OPEN (shared pump fanout, same duality). Load
+diversity = hub/top fresh-ish + pump-backed deep (distinct backing events).
+Scripts: `wp6_tiers.py`. Artifact: `tiers.json`.
