@@ -909,7 +909,18 @@ C7. MSTL-14P WAR (this session): cumulative stock attacked as pure splay
    service still open (raw D2 proved, support/provenance not). Artifacts:
    `MSTL14P_PROVE_notes.json`, `coefficient_sources.json`. No status change
    (MSTL-14P UNPROVED/NO_WITNESS); no candidate transition (#1 ACTIVE on
-   present route).   `tstar_conditional.md` (t*-restart conditional theorem with explicit open
+   present route).
+C8. TENURE-NEED THEOREM PROVED (`lemma_tenure_need.json`): a=1 KEEPs (the
+   only accesses with zero own A-events) have fully characterized demand —
+   0 if tenure started with KEEP, else frozen max(D-1,0) with zero marginal
+   S_A cost in-tenure (tenure = x-DELETEs only, B frozen). a>=2 KEEPs fund
+   >=6 own injection each. Irreducibility assessment: every split (Case A/B,
+   t* trichotomy, tenure/a-value, present/absent, L1/L2) bottoms out at
+   "global pools must cover local net demand" = the cumulative lemma
+   itself; it is irreducible by local/global-counting/potential/charging
+   means tried (~30 routes). Remaining route classes: L2 pure-splay
+   prepayment coupling, machine-synthesized nonlinear potentials,
+   abstract interpretation (multi-session scale).   `tstar_conditional.md` (t*-restart conditional theorem with explicit open
    gap: t*-inside-B-phase under thin pools; k-entry via t* location) and
    `lean/WP6/MSTL14PArith.lean` (arithmetic backbone: need bound, 1-2
    event counting, greedy cap-2 exactness, service composition — direct
