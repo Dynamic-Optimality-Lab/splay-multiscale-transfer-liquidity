@@ -1089,3 +1089,12 @@ to appearances, unfunded by proof. Beam D8 n64/128 held (best 0, 12 trials,
 ~150k successors, memo V1). Scripts: `wp6_beamhunt.py` (patched per spec:
 dedup+prescore+PRE60+memo), `wp6_zeroanat.py`. Queued: N-FIRST formal proof;
 N-AUG residual modes; Lean-kernel.
+C19. BORDERLINE VERDICT (MSTL-14P stays UNPROVED/NO_WITNESS).
+259 cashes: borderline-symdiff common (126 margin-0+push) but crossing rare
+(1/126: t105 cash x52, bystander y48 dB47 odd, post +1). Parity theory dead
+(balanced 62/62, crosser odd). Explanation: transient once-per-key windows
+(pure-pumped ratios grow through 3:1 exactly once per key; push must land in
+that window — 0.8% hit rate). Zig/double class: push margin-cost O(1)/StepEv
+bounded. Leak O(0.5)/cash absorbed by slack 5-50x. N-FIRST proceeds WITH
+borderline allowance (margin-absorption + coupled-3x + transient rarity).
+Script: `wp6_borderline.py`. Queued: N-FIRST formal proof; N-AUG; Lean.
