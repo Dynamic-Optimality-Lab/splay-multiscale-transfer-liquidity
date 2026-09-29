@@ -1025,3 +1025,19 @@ J3-cap 0.62 (D2-cap 0.75 x EB O(n)-cash 0.83 via balanced-build dilution).
 Scripts: `wp6_sod3.py`, `wp6_sod_hill.py`, `wp6_sod_tail.py`. Queued:
 formalize tail-mass cancellation (M1-Lipschitz + cost-convergence) as the
 batch proof; N-AUG/N-FIRST remain open.
+C14. TSRC/HAZARD/SCALING LANE (MSTL-14P stays UNPROVED/NO_WITNESS).
+SEC0 verified: batch E_B<=A_K+3*A_D is FALSE (+1 exact witness
+EB55/AK51/AD1/uns0 on n16 one-DELETE history; damage==G_DEL semantics
+confirmed, tuple-splay==legacy 0/500); earlier G_DEL hunt missed
+one-DELETE shapes; E_B-link alive (0.35). TSRC raw-Delta DEAD on reachable
+pairs at n4-7 (GAP +5/+11/+15/+18 growing; lambda infeasible at every n:
+A-blind B-moves lengthen min-repair-paths). Vector alpha/beta LP infeasible
+n5/6/7. Full pair-Phi bounds-blocked (teleport/Farkas, no replayable
+witness); pure differences feasible (=counts restated). Hazard H laws hold
+EXACTLY n<=7 (LAW-D/LAW-K worst 0) but die at scale (+1/+4/+5/+21 at
+n16/32/64/128 via multi-divergence bystander push-up; small-n was
+single-divergence artifact). Positive: n<=7 orbit-BF VERIFIES E_B<=3*S_A
+exhaustively (all starts, full orbits); E_B/S_A scale-invariant ~1.0-1.7 at
+n8..512 (adversary gains nothing with n; ~2x margin every scale). Scripts:
+`wp6_gdel_one.py`, `wp6_splaymetric{,2}.py`, `wp6_pairlp{,2}.py`,
+`wp6_orbitbf.py`, `wp6_scaling.py`, `wp6_hazard{,_scale}.py`.

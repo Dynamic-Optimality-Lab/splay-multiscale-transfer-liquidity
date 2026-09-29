@@ -1,0 +1,78 @@
+{
+ "4": {
+  "eq": 102,
+  "ex": {
+   "A": "(1, None, (2, None, (3, None, (4, None, None))))",
+   "B": "(4, (3, (2, (1, None, None), None), None), None)",
+   "dBA": 2,
+   "dBA2": 3,
+   "eA": 0,
+   "eB": 2,
+   "x": 1
+  },
+  "lambda": [
+   "1",
+   "-1"
+  ],
+  "pairs": 196,
+  "states": 14,
+  "worst": 5
+ },
+ "5": {
+  "eq": 906,
+  "ex": {
+   "A": "(1, None, (2, None, (5, (3, None, (4, None, None)), None)))",
+   "B": "(5, (4, (3, (2, (1, None, None), None), None), None), None)",
+   "dBA": 3,
+   "dBA2": 6,
+   "eA": 0,
+   "eB": 2,
+   "x": 1
+  },
+  "lambda": [
+   "1",
+   "0"
+  ],
+  "pairs": 1764,
+  "states": 42,
+  "worst": 11
+ },
+ "6": {
+  "eq": 9202,
+  "ex": {
+   "A": "(1, None, (2, None, (5, (3, None, (4, None, None)), (6, None, None))))",
+   "B": "(6, (5, (4, (3, (2, (1, None, None), None), None), None), None), None)",
+   "dBA": 3,
+   "dBA2": 7,
+   "eA": 0,
+   "eB": 3,
+   "x": 1
+  },
+  "lambda": [
+   "1",
+   "-1"
+  ],
+  "pairs": 17424,
+  "states": 132,
+  "worst": 15
+ },
+ "7": {
+  "eq": 103943,
+  "ex": {
+   "A": "(1, None, (2, None, (7, (3, None, (4, None, (5, None, (6, None, None)))), None)))",
+   "B": "(7, (6, (5, (4, (3, (2, (1, None, None), None), None), None), None), None), None)",
+   "dBA": 6,
+   "dBA2": 11,
+   "eA": 0,
+   "eB": 3,
+   "x": 1
+  },
+  "lambda": [
+   "1",
+   "0"
+  ],
+  "pairs": 184041,
+  "states": 429,
+  "worst": 18
+ }
+}
