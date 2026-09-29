@@ -1,4 +1,7 @@
 {
+ "alive_advstage_2026-09-30": [
+  "Stage-B direct falsifier 20,000 evals (M2-seeded + generic + repeat-key, advstage.json): best minload 2, 0 starvation; cumulative 26,080 targeted evals (BR+MW+AS) never exceed 2; minload-3 needs two consecutive full-drain rounds without fresh injection (never observed)"
+ ],
  "alive_anatomy_2026-09-29": [
   "new-hazard ZERO universal (12/12 cashes create no newly-dangerous bystander: balanced O(depth)-margin absorbs O(1)-pushes; coupled same-access drift-help-3x dominates push-1x so pumps net-REDUCE hazard)",
   "slack>>q universal at first cash (5-50x); rigid off-paths persist frozen; A-drift destroys (dest 0-32); appearance/causal split (fanout duplicates observations O(n), causal backing stays exclusive O(1): DELETE-positioning + cash-reset key-specific)",
@@ -21,6 +24,9 @@
  "alive_corridor_2026-09-29": [
   "bounded-horizon V_3=V_4=0 exhaustive (98k depth<=3 paths x3 starts + 2x1M depth-4 vine paths, n=16, best cumulative 0): setup-then-cash within 4 steps always nets <=0; serializes fanout (extraction needs setup first, setup costs first)",
   "residual-chain law queued (cash<=setup-mountain path-locally; O(n) appearances serialize to setup-funded cashes)"
+ ],
+ "alive_e1cap_2026-09-30": [
+  "E1-CAPACITY LEMMA PROVED author-level (e1cap_lemma.md): e_B<=3e_A => minload<=2, e_B<=2e_A => minload<=1 via E1 pigeonhole; closes all non-B-heavy accesses with zero geometry; verified 5554/5554 + 5893/5893 0-viol (loadstruct.json); GC-independent; Lean-pending"
  ],
  "alive_e3order_2026-09-29": [
   "E3 triple-motion refresh: net +0.6 E3-members per B-StepEv (new 2.63, lost 2.01 over 351 splays); neighborhoods EXPAND toward hub-dense root triples as splay advances, so later B-events have more ancestors not fewer",
@@ -45,6 +51,12 @@
   "min-load <= 1 universally measured (0/2010 minload-2 baseline + adversarial best 1/860 evals): starvation (>=3) is TWO levels away everywhere; load-diversity holds with margin",
   "least-loaded + trichotomy = online integral 3-capacity allocation IF load-diversity proved (blocked: needs counts=claim + greedy-optimality without matroid)"
  ],
+ "alive_loadstruct_2026-09-30": [
+  "Load-structure (loadstruct.json, B=7075): per-key coupling REFUTED (worst dem/3sup 2.03 x=103; K-core alone cannot cover); tie-break ablation oldest 2/1/0 newest 3/1/0 random 3/2/0 (no starvation any tie-break); entries max load 2 (~0.6%), never 3 (0/34000)"
+ ],
+ "alive_m2witness_2026-09-30": [
+  "Stronger minload<=1 REFUTED by exact legal witness (m2witness.json, reverify 2): n=128 acc5 KEEP-36 bev88 minload-before=2; B-heavy e_B=13 e_A=2; frozen core N=9 (E1{96,97}+E2{81}+E4{117}+E3{7,57,93}) + rotating transient pair; drain U18->9; bev89 E3 expansion rescues; mechanism frozen-drain-then-refresh"
+ ],
  "alive_rankcycle_2026-09-29": [
   "maxAcc/hazKeys/maxHaz/divKeys NEVER rise on tight positives n5 (1306) n6 (13304, exact V): rank candidate (lexicographic) valid small-n",
   "Bellman V==V_1 (1.000) h*<=1 diagonals-0 common-root-V0 n4/5/6 exact; h* 2-5 + VeqV1 .999-1.0 at n16/32/64 (capped); maxV tiny (2,2,3; 10/22/32)",
@@ -55,6 +67,12 @@
  "alive_refresh_2026-09-29": [
   "REFRESH = B-heavy same-access E1-cap overflow (e_B>3*e_A) -> older abundant ancestry (E2 pump-backed-distinct + E3 overlap incl oldest-genesis acc-0 + E4 setup); specimens: 72 minload-1/3852 B, saviors E3-oldest acc-0, rover 9-17 funneling, l0 depletion 2->0 then oldest-absorbs",
   "minload<=1 with oldest-abundant absorption (33x local overcover); 1->2 needs oldest-abundant saturation (O(n) slots vs O(n) overflow demand, balanced 2x margin measured)"
+ ],
+ "alive_saturation_2026-09-30": [
+  "Saturation frame (saturation.json, MA corpus B=3852): 0/100 histories with minload>=2; entry loads 8494/6162/142/0 (never saturated); t=5 acc6 conveyor dissected (hub-hit explosion, collapse, 2-in/2-out, fresh-0 rescue)"
+ ],
+ "alive_savior_2026-09-30": [
+  "Savior anatomy (savior.json, B=9869, 104 minload-1): W65/K25/E2-11/E1-3; ALL saviors entered at load 0; entry@3 = 0; savior age med6 max27; W-windows n=46829 med1 p90-2 max10; five-channel case-split shape (E1/E2-pusher/K-deposit/W-injection/E4-setup)"
  ],
  "alive_sod_2026-09-29": [
   "batch G_DEL<=0 (400 histories; J_DEL best 1.5/3, 2x margin): E_B<=A_K+3*A_D (stronger than E_B-link) HOLDS; cross-deletion cancellation real",
