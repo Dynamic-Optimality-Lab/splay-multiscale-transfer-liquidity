@@ -29,6 +29,11 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   convert (40 worst-seeds + rescue-suppression, 8k evals, best 2, margin −31)
       │  (STILL OPEN: spread-3 conjunction; dilution-race formal; scattering)
       ▼
+[ BANKED C34 ] DILUTION-ZERO (e_B≤f ⟹ minload 0; 9252/0) · K-RATCHET
+  (old-K monotone; fill-order descriptive; fluid-closure≡GC DISCARDED) ·
+  K-0 absence characterizes B-heavy elevation (med 3 vs 0)
+      │  (STILL OPEN: K-0 necessity exact split; spread-3; W-tightening; scattering)
+      ▼
 [ OPEN ] STAGE B — min load_before ≤ 2, cap-3 chronological least-loaded
 │
 │  Five-channel split (SV-00 weights: W62% / K24% / E2 / E1 / E4):
@@ -44,7 +49,7 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
 │  [EV] 38,080 targeted evals (BR+MW+AS+AS01) never breach minload 2
 │  [EV] 2,278,432 exhaustive small-n (n=3,4,5): max minload ≤1, zero minload-2
 │  [EV] M2-witness: frozen-core + transient-pair drain → refreshment-rescue
-│  [EV] saviors always entered@0; entry@3 = 0/44,000+
+│  [EV] saviors always entered@0; ENTRY@3 exists (C32 witness) but never converges
 │  [EV] load-3s are absorbed singletons (M2 hist: 1 minload-2 → 1 load-3, absorbed)
 │  [EV] sterile runs to 62 survivable (sterile length NOT the gate; H3 weakened)
 │
@@ -68,8 +73,8 @@ rank/Bellman@scale · SOD-single · raw-dist · quotient-masses/per-run · TSRC 
 corridor-greedy · perceptron · rank-proxy · E3-laminar · E1+E4-only · matroid-free
 greedy · per-key-GC [DEAD C28-4] · stronger-minload≤1 [DEAD C28-3, M2 witness].
 
-Queued: ENTRY-FRESH formalization · W-WINDOW lemma · scattering lemma
-(load-3 convergence) · Lean E1-CAP/DISPLACE-MONO (post-close).
+Queued: K-0 necessity exact split · spread-3 conjunction · W-WINDOW tightening ·
+scattering lemma (load-3 convergence) · Lean scaffold (post-close).
 ```
 
 Stage B is the immediate bottleneck. No downstream work until proved/refuted.

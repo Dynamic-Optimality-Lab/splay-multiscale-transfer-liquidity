@@ -109,7 +109,33 @@ Proof: fresh loads ≤ in-access picks only (E1: E2/E4-earlier + E3-same-access;
 E4-pristine: run-interior x-only + creation-at-s). Pigeonhole over 3f slots.
 E1-CAP is the case-(a) instance; kept as separate artifact for history.
 
-## What the scaffold closes / leaves open
+## ML-DILUTION-ZERO (deep-safe zone, minload exactly 0)
+
+Statement: demanding KEEP with e_B ≤ f, f = structural fixed-fresh slots
+(|E1| case (a); pristine-|E4| case (b)), has minload 0 at every B-event.
+Proof: fixed-fresh members (E1: fixed set, fresh-0, loads only in-access;
+pristine-E4: fixed set, loads exactly 0 at start, only in-access after) cannot
+exit; in-access picks before the last B-event ≤ e_B − 1 < e_B ≤ f = their count,
+so one remains at 0. It lies in N (fixed ⊆ N).
+Check: 9252/9252 B-events, 0 violations (`dilution.json`). Strengthens E1-CAP in
+the deep-safe zone (exact 0, not just ≤1). Dependencies: ML-E1-ENTRY,
+ML-FRESH-CHANNEL, E1/E4 fixity within access.
+
+## ML-K-RATCHET (old-K monotone + per-round dilution + fill order)
+
+Statement: (i) old-K-member loads are monotone non-decreasing across x-accesses
+(picks only add; K-membership persistent per ML-K-PERSIST; new deposits are fresh
+ids at 0). (ii) Within an access, least-loaded fills by level, oldest-first
+within a level (hence spread ≤ 1 surfaces; C33 synchrony).
+Status: (i) PROVED_AUTHOR (immediate from banked structure). (ii) Descriptive
+(water-filling view). WARNING: water-filling taken as closure ≡ GC-counting
+(total picks vs capacity) — explicitly DISCARDED as a proof path per the
+no-GC-reduction rule; kept only as qualitative description of synchrony/ladder/
+dilution. The race inequality (picks vs dilution) is empirical (C33 margins),
+not universal.
+Empirical (B-heavy, `dilution.json`): K-0 median 3 (stayed minload-0, n=177) vs 0
+(elevated, n=25) — K-0 absence characterizes elevation (round-2+ gate); E2-0/W0
+medians 0/0 (thin at access start; W arrives mid-splay).
 
 Closes: E1-zone (with E1-CAP/FRESH-CAP), K persistence, setup freshness
 (conditional + run-pristine), riser geometry, W block structure, causality

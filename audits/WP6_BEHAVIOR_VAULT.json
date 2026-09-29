@@ -319,6 +319,38 @@
    "superseded": false,
    "theorem": "Stage B",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_dilution.py -> artifacts/v04/wp6_present/0909c74a/dilution.json",
+   "date": "2026-09-30",
+   "id": "C34-1-DL00",
+   "implication": "K-0 absence characterizes B-heavy elevation (round-2+ gate); E2/W thin at start.",
+   "next": "Scaffold",
+   "order": 21,
+   "reason": "Dilution probe: DILUTION-ZERO verify + K-0 cover census at B-heavy.",
+   "result": "B=16335: DILUTION-ZERO 9252/9252 0-viol; heavy 202 (ml0 177 / ml1+ 25); K0 med 3 vs 0; E20/W0 meds 0/0.",
+   "script": "scripts/wp6_dilution.py",
+   "statement": "Dilution census: deep-safe zone holds; K-0 is the B-heavy diluter.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "Stage B (dilution)",
+   "witness": null
+  },
+  {
+   "artifact": "artifacts/v04/wp6_present/0909c74a/stageb_scaffold.md (appended)",
+   "date": "2026-09-30",
+   "id": "C34-2-RATCHET",
+   "implication": "Counting/fluid paths exhausted (all = L0/GC); remaining hope purely geometric.",
+   "next": "K-0 necessity; spread-3; W-tightening",
+   "order": 22,
+   "reason": "Bank DILUTION-ZERO proof + K-RATCHET (monotone old-K + fill order) with GC-disclaimer.",
+   "result": "ML-DILUTION-ZERO + ML-K-RATCHET(i) PROVED_AUTHOR; water-filling-as-closure explicitly discarded (GC-equivalent).",
+   "script": null,
+   "statement": "DILUTION-ZERO + K-RATCHET banked; fluid closure forbidden.",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "Stage B (zones)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

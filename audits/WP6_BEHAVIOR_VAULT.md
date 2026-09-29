@@ -190,12 +190,8 @@ Remaining gap (exact): B-heavy all-3 convergence — entry-load ≤2 unproved,
 young-transient-exposure unproved, load-3 scattering unproved. No counting
 argument attempted (GC-reduction avoided).
 
-## Queued next
-- Spread-3 dormancy+return+ladder conjunction (candidate sub-lemma; 0/19982).
-- Deposit-dilution race formalization (fresh0 vs e_B per access).
-- Scattering lemma attempts.
-- ML-W-BLOCKS tightening.
-- Lean: scaffold arithmetization (after author chain closes).
+## Queued next (SUPERSEDED ordering note: C31–C33 below are reverse-positioned by
+edit order — follow entry IDs/dates, not file positions; live queue at file end)
 
 ## C33 — margin probe + near-miss feeder (this continuation)
 
@@ -282,3 +278,24 @@ Derived (not fitted) from banked laws; appended to `stageb_scaffold.md`:
 Dependencies (all banked): Pair Access DELETE-skips-B, B-freeze T3,
 root-dislodge, U=0, setup rule, ML-E1-ENTRY, ML-ADJ-E4. GC-independent.
 Remaining: B-heavy overflow (e_B>3f) onto old (K/E2/W) — unchanged open gap.
+
+## Queued next (LIVE)
+- K-0 necessity direction (B-heavy elevation ⟹ K-0=0: verify exact 25/25 split).
+- Spread-3 dormancy+return+ladder conjunction (0/19982).
+- ML-W-BLOCKS tightening (per-key occupancy contiguity audit).
+- Lean: scaffold arithmetization (after author chain closes).
+
+## C34 — dilution-zero + K-ratchet (this continuation)
+
+### C34-1 DL-00 dilution probe [FINITE_EVIDENCE + 1 PROOF]
+`scripts/wp6_dilution.py` → `dilution.json` (250 hist, B=16,335):
+DILUTION-ZERO 9252/9252 0-viol (e_B ≤ f_struct ⟹ minload 0 throughout).
+B-heavy (n=202): ml0=177 vs ml1+=25; K-0 med 3 vs 0 — K-0 absence characterizes
+elevation (round-2+ gate); E2-0/W0 meds 0/0 (thin at start; W arrives mid-splay).
+### C34-2 ML-DILUTION-ZERO + ML-K-RATCHET banked [PROVED_AUTHOR + WARNING]
+Scaffold (`stageb_scaffold.md`): DILUTION-ZERO proof (fixed-fresh no-exit +
+pigeonhole; strengthens E1-CAP deep zone); K-RATCHET (i) old-K monotone across
+x-accesses PROVED, (ii) fill-order descriptive. WARNING banked: water-filling as
+closure ≡ GC ≡ forbidden endpoint (discard); race inequality stays empirical.
+Counting/fluid paths to all-3 exhausted without exception (all reduce to L0/GC);
+remaining hope is purely geometric (episodes/returns/blocks).
