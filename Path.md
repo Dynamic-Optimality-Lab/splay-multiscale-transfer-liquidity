@@ -1121,3 +1121,14 @@ intervals (fanout), so scoping doesn't dodge it. FC-FIRST = slack-suffices
 (excess/slack<=0.33) with slack reason unknown (pump-sharing +
 tenure-pool). No circularity introduced (IH strictly earlier only); the
 missing piece is structural, not logical. Script: `wp6_lastsafe.py`.
+C22. X-RETURN FALSIFIER (MSTL-14P stays UNPROVED/NO_WITNESS).
+Universal R_block<=0 is FALSE (+16: t232 x30 block[6,7] via OTHERS-tenure
+cargo — KEEP-38 B-47/A-4 pumped-diverged +18 inside x30-excursion).
+Conditional form (R_block<=-R(tau)) is algebraic tautology R(t*)<=0;
+interval version unprovable (wrong base) and tenure-refuted (own theorem).
+N-FIRST closed both ways (local:false by tenure-need; global:tautology).
+Witness anatomy: +16 absorbed 13x by deep slack -214 (DELETE-heavy vine
+past + pumped B-deep cash); positive excursions occur only with deep
+slack — deep-slack (vine-DELETEs) + pumped-cash is the universal argmax
+pattern. Script: `wp6_xreturn.py`. Queued: residual Q-transition;
+compensated chain law.
