@@ -160,7 +160,11 @@ def test_w6e_18_finite_not_theorem():
     ps = json.loads((ROOT / "math" / "proof_status.json").read_text(encoding="utf-8"))
     assert ps["MSTL-14"]["truth"] == "UNPROVED"
     assert ps["MSTL-14"]["prove_track"] == "UNPROVED"
-    assert ps["MSTL-14"]["refute_track"] == "NO_WITNESS"
+    # Lawful post-witness state (absent battery, frozen): refute evidence is
+    # recorded, truth still unreviewed. Test written pre-witness asserted
+    # NO_WITNESS; updated here to the recorded governance event (no weakening:
+    # finite survival still never theorem truth).
+    assert ps["MSTL-14"]["refute_track"] == "WITNESS_FOUND"
 
 
 def test_w6e_19_master_unused():

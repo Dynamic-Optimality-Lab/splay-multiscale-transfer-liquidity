@@ -893,7 +893,13 @@ C4. LOCAL LEMMAS D1/D2 PROVED (mechanics + property tests
    2*e_B >= need (raw FLAT(2) bandwidth; eligible bandwidth still open —
    support/provenance is the remaining service gap).
 C5. PRIOR-SESSION LEFTOVERS BANKED (verified this session, not authored here):
-   `tstar_conditional.md` (t*-restart conditional theorem with explicit open
+C6. TEST MAINTENANCE (no science change): `test_w6e_18` asserted broad
+   MSTL-14 refute_track==NO_WITNESS, stale since the lawful WITNESS_FOUND
+   recording; updated to assert the recorded state
+   (truth/prove_track UNPROVED + refute_track WITNESS_FOUND). Suites now:
+   present_domain 3/3, present_mechanics 3/3, wp6_h5_entry 20/20, h5_holdout
+   9/9, wp5x_k6c2 19/19 (56/56); FRSH 13/14 with the known pre-existing
+   CRLF artifact only.   `tstar_conditional.md` (t*-restart conditional theorem with explicit open
    gap: t*-inside-B-phase under thin pools; k-entry via t* location) and
    `lean/WP6/MSTL14PArith.lean` (arithmetic backbone: need bound, 1-2
    event counting, greedy cap-2 exactness, service composition — direct
