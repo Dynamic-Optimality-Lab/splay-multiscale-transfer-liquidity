@@ -1041,3 +1041,19 @@ exhaustively (all starts, full orbits); E_B/S_A scale-invariant ~1.0-1.7 at
 n8..512 (adversary gains nothing with n; ~2x margin every scale). Scripts:
 `wp6_gdel_one.py`, `wp6_splaymetric{,2}.py`, `wp6_pairlp{,2}.py`,
 `wp6_orbitbf.py`, `wp6_scaling.py`, `wp6_hazard{,_scale}.py`.
+C15. RANK/CYCLE/BELLMAN VAULT TURN (MSTL-14P stays UNPROVED/NO_WITNESS).
+Exact Bellman n4/5/6: V==V_1 (1.000), h*<=1, diagonals 0, common-root V=0,
+maxV 2/2/3, stable round 1; top tight specimens + best tight paths banked.
+Rank mining: maxAcc/hazKeys/maxHaz/divKeys NEVER rise on tight positives
+(n5:1306, n6:13304, exact V) — lexicographic rank candidate valid small-n;
+maxBdepth can rise (+2). Scale proxy inconclusive (proxy!=steps;
+V_1-tight positives 0 found: greedy max-immediate dominates, true-V-tight
+is rare 0.1% multi-step). Horizon h* 2-5 + VeqV1 .999-1.0 at n16/32/64
+(capped orbits). TSRC-corpse Q9: V 3->0 exact with Delta 6->11
+anti-correlated (transformation-hardness != extractable-danger; immediate
+reward only, no deferral). Pair-state cycles benign (1296 cycles, 0
+positive, worst exactly 0): recirculation never profitable, no periodic
+witness. Scripts: `wp6_bellman.py`, `wp6_rankmine.py`, `wp6_rankscale.py`,
+`wp6_ranktight.py`, `wp6_cycles.py`, `wp6_horizon.py`, `wp6_corpse.py`.
+Queued: structural maxAcc-drop (coupled-alignment + pumped-residual);
+MAP report filed separately.
