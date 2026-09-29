@@ -69,10 +69,52 @@ S-key, gaps split. Check: 5562 member-splays, max 3 blocks, max run 3, 0 over.
 Status: author-proof-sketch + strong finite check (occupancy contiguity per key
 is sketched, not fully audited — flagged for tightening).
 
+## ML-RUN-STRUCTURE (≤1 demanding KEEP per x-run)
+
+Statement: in any maximal run of consecutive x-accesses, at most one KEEP has
+e_B > 0 (the first KEEP of the run). DELETEs never have B-events.
+Proof: B moves only at KEEPs (B-freeze, banked T3). After the run's first x-KEEP,
+x is B-root. Run-interior DELETEs skip B. Later x-KEEPs splay x at B-root =
+no-op (root-dislodge), e_B = 0. DELETE accesses emit no B-StepEvs by Pair Access
+definition (DELETE: (A,B) -> (S_x A, B), y = 0).
+Dependencies: Pair Access defs, B-freeze, root-dislodge. (No corpus needed.)
+
+## ML-FRESH-CHANNEL (every demand has fresh supply)
+
+Statement: every demanding KEEP (e_B > 0) has E1 ≥ 1 sited-fresh, OR (E1 = ∅
+AND E4 = pristine accA[s] with e_A(s) ≥ 1, s = run-start DELETE, loads exactly 0
+at t's start).
+Proof: demanding ⟹ access is KEEP. A-root is always the last-accessed key.
+Case (a) H[t-1].x ≠ x: x is A-nonroot ⟹ A-splay nontrivial ⟹ e_A ≥ 1, all sited
+(U=0) ⟹ E1 ≥ 1 fresh-0 at start (ML-E1-ENTRY).
+Case (b) H[t-1].x = x: x is A-root ⟹ E1 = ∅. Demanding ⟹ t-1 is DELETE (a
+KEEP→KEEP repeat leaves x B-root = B-no-op, e_B = 0). So t continues a DELETE-run;
+let s be the run's first x-access. If s is KEEP then s = t (t first KEEP),
+contradicting H[t-1] = x — hence s is DELETE with H[s-1] ≠ x, x nonroot ⟹
+setup[x] = s, e_A(s) ≥ 1. Interior DELETEs see x at root (no setup change); no
+interior KEEPs precede t. Hence E4(t) = accA[s], ≥ 1 sited. Loads: members created
+at s; zero B-events between s and t (interior DELETEs emit none; t first KEEP);
+run-interior all-x (no other-key transient picks) ⟹ loads exactly 0 at t's start.
+Corner: run from access 0 with x = T0-root gives setup-absent + E1 = ∅, but then
+B never moved x (B-root throughout) ⟹ e_B = 0, no demand. Complementarity: E4 = ∅
+with demand forces setup[x] = idx (self) ⟹ x nonroot-before ⟹ E1 ≠ ∅.
+Dependencies: Pair Access, B-freeze, root-dislodge, U=0, setup rule, ML-E1-ENTRY,
+ML-ADJ-E4 (generalized by the run argument above), ML-RUN-STRUCTURE.
+
+## FRESH-CAP (subsumes E1-CAP)
+
+Statement: demanding KEEP with e_B ≤ 3f, f = fresh slots (|E1| in case (a),
+|E4|-pristine in case (b)), satisfies minload ≤ 2; e_B ≤ 2f gives ≤ 1.
+Proof: fresh loads ≤ in-access picks only (E1: E2/E4-earlier + E3-same-access;
+E4-pristine: run-interior x-only + creation-at-s). Pigeonhole over 3f slots.
+E1-CAP is the case-(a) instance; kept as separate artifact for history.
+
 ## What the scaffold closes / leaves open
 
-Closes: E1-zone (with E1-CAP), K persistence, setup freshness (conditional),
-riser geometry, W block structure, causality (E4 snapshot fix).
+Closes: E1-zone (with E1-CAP/FRESH-CAP), K persistence, setup freshness
+(conditional + run-pristine), riser geometry, W block structure, causality
+(E4 snapshot fix), demand/supply pairing (RUN + FRESH-CHANNEL: B-heavy overflow
+is the ONLY remainder).
 Leaves open (exact): B-heavy all-3 convergence — entry-load ≤ 2 unproved
 (0 sat-entries / 44,000+), young-transient-exposure unproved, load-3 scattering
 unproved. No counting argument attempted (GC-reduction forbidden and avoided).

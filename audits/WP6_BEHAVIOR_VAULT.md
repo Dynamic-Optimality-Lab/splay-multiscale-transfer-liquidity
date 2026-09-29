@@ -195,3 +195,38 @@ argument attempted (GC-reduction avoided).
 - ENTRY-FRESH theorem attempt (entry-load ≤ 2) or entry@3 hunt at 100k+ scale.
 - ML-W-BLOCKS tightening (per-key occupancy contiguity audit).
 - Lean: scaffold + E1-CAP arithmetization (after author chain closes).
+
+## C31 — blocker census + run-structure + fresh-channel (this continuation)
+
+### C31-1 BL-00 blocker probe [FINITE_EVIDENCE]
+`scripts/wp6_blocker.py` → `blocker.json` (400 hist, B=25,981): max entry-load
+2 (entries 54213@0 / 66630@1 / 863@2 — entry@3 ZERO/121k); singletons 16, ALL
+load 0; max blockers-per-N = 0 (NO load-3 anywhere in this corpus; M2's singleton
+blocker remains the only one ever seen); minload-2 events 0 (rate 0.00000).
+Singleton anatomy (5 recorded): ALL acc=0/bev=0/age-0/E1 — history-start boundary
+(first B-event, single genesis A-StepEv), NOT a mechanism. Mid-history singletons
+essentially never occur (would need first-x-access + depth-1 + parent-never-
+accessed + no-pumps + sterile sweep).
+Implication: blockers need the rare frozen-drain to be minted; minted blockers
+are ejected (conveyor) and never re-enter@3; convergence pressure ~nil. But
+ENTRY-FRESH (≤2) still unproved as universal; singleton-freshness is boundary,
+not mechanism. Next: run-structure (C31-2).
+
+### C31-2 ML-RUN-STRUCTURE + ML-FRESH-CHANNEL [PROVED_AUTHOR]
+Derived (not fitted) from banked laws; appended to `stageb_scaffold.md`:
+- RUN: at most ONE KEEP per x-run has e_B>0 (the first). Proof: B moves only at
+  KEEPs (B-freeze T3); after first x-KEEP x is B-root; run-interior DELETEs skip
+  B; later x-KEEPs are B-no-ops (splay-at-root). DELETEs never demand.
+- FRESH-CHANNEL: every demanding KEEP (e_B>0) has E1≥1 sited-fresh OR
+  (E1=∅ AND E4 = pristine accA[s], e_A(s)≥1, s = run-start DELETE).
+  Proof: demanding ⟹ KEEP. H[t-1]≠x ⟹ x A-nonroot ⟹ e_A≥1 sited (U=0).
+  H[t-1]=x + demanding ⟹ t-1 is DELETE (KEEP→KEEP repeat is B-no-op) ⟹ DELETE-run
+  ⟹ run-start s had x nonroot ⟹ setup[x]=s, e_A(s)≥1; interior all-x (no transient
+  picks) + no interior KEEPs before t (first) + DELETEs emit no B-events ⟹ E4
+  loads exactly 0 at t. E1/E4 COMPLEMENTARITY (E1=∅ ⟹ E4-pristine-nonempty;
+  E4=∅+demand ⟹ setup==idx ⟹ E1≠∅; genesis corner demands nothing).
+- FRESH-CAP (subsumes E1-CAP): demanding KEEP with e_B ≤ 3f (f = fresh slots)
+  ⟹ minload ≤ 2 (pigeonhole; fresh loads ≤ in-access picks only).
+Dependencies (all banked): Pair Access DELETE-skips-B, B-freeze T3,
+root-dislodge, U=0, setup rule, ML-E1-ENTRY, ML-ADJ-E4. GC-independent.
+Remaining: B-heavy overflow (e_B>3f) onto old (K/E2/W) — unchanged open gap.

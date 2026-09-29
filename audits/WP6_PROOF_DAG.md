@@ -17,7 +17,10 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
 └────────────────────────────────────────────────────────────┘
 [ BANKED C30-4 ] scaffold: ML-E1-ENTRY · ML-K-PERSIST · ML-ADJ-E4 ·
   ML-DISPLACE-STEP · ML-RISE-WITNESS · ML-W-BLOCKS(sketch+check) · causal E4 fix
-      │  (B-heavy all-3 convergence STILL OPEN: entry≤2 / exposure / scattering)
+[ BANKED C31-2 ] RUN (≤1 demanding KEEP/x-run) · FRESH-CHANNEL (E1≠∅ or
+  E4-pristine for every demand) · FRESH-CAP (subsumes E1-CAP) · entry@3 zero/121k ·
+  singletons boundary-fresh · blockers zero-in-corpus (M2 singleton only one ever)
+      │  (B-heavy overflow e_B>3f onto old STILL OPEN: entry≤2 / exposure / scattering)
       ▼
 [ OPEN ] STAGE B — min load_before ≤ 2, cap-3 chronological least-loaded
 │

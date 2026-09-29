@@ -223,6 +223,38 @@
    "superseded": false,
    "theorem": "Stage B (scaffold)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_blocker.py -> artifacts/v04/wp6_present/0909c74a/blocker.json",
+   "date": "2026-09-30",
+   "id": "C31-1-BL00",
+   "implication": "Blockers need rare frozen-drain; minted singletons ejected, never re-enter@3; convergence pressure nil. ENTRY-FRESH still unproved universal.",
+   "next": "Run-structure",
+   "order": 15,
+   "reason": "Blocker probe: entry@3 hunt, singleton census, blockers-per-N, singleton anatomy.",
+   "result": "B=25981: max entry 2 (54213@0/66630@1/863@2); singletons 16 ALL load 0 (all acc-0/bev-0/E1 boundary); max blockers-per-N 0; minload-2 rate 0.",
+   "script": "scripts/wp6_blocker.py",
+   "statement": "Entry@3 zero/121k; singletons boundary-fresh; zero blockers in corpus.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "Stage B (blockers)",
+   "witness": null
+  },
+  {
+   "artifact": "artifacts/v04/wp6_present/0909c74a/stageb_scaffold.md (appended)",
+   "date": "2026-09-30",
+   "id": "C31-2-RUNFRESH",
+   "implication": "B-heavy overflow (e_B>3f) onto old is the ONLY remainder; E1-empty terror dead; E1-CAP subsumed by FRESH-CAP.",
+   "next": "B-heavy overflow bound",
+   "order": 16,
+   "reason": "Derived run-structure + fresh-channel from banked laws (demand/supply pairing).",
+   "result": "ML-RUN-STRUCTURE + ML-FRESH-CHANNEL + FRESH-CAP PROVED_AUTHOR, GC-independent. E1/E4 complementarity; genesis corner demands nothing.",
+   "script": null,
+   "statement": "RUN + FRESH-CHANNEL + FRESH-CAP proved (demand always has fresh supply).",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "Stage B (zones)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
