@@ -963,6 +963,36 @@ C10. QUOTIENT WAR (stages 1-8 executed; MSTL-14P stays UNPROVED/NO_WITNESS,
    kernel check PENDING (no Lean toolchain in this env; release download
    timed out); header states this explicitly, nothing cited as Layer B.
    Route ledger: `killed_routes_3_quotient_war_2026-09-29` + alive-open-2
-   (M3-creation micro-lemma / raw stock / B-source). Scripts:
+   (M3-creation micro-lemma / raw stock / B-source).    Scripts:
    `wp6_mass_screen.py`, `wp6_mass_capped.py`, `wp6_mass_capped_size.py`,
    `wp6_discharge.py`, `wp6_run_attack.py`, `wp6_stock_sweep.py`.
+C11. VAULT DESCENT + EVENT-FLOW LANE (MSTL-14P stays UNPROVED/NO_WITNESS).
+Per-key involvement FALSE (gap 48: riding builds B-depth w/o A-contact);
+subtree-token presence FALSE (gap 60: spend/frozen mismatch); zig/doubles
+split FALSE (1.22); cash/setup pairing FALSE (+13, noncash excess 709 >>
+cash 286); D<=E_B FALSE (1.94); R<=1.5*Q reset-depth link FALSE (1.58 on
+n128-L19 R218/Q138: budget 2x too tight; all-doubles makes E_B/S_A==R/Q).
+M1 PROVED (ancestor-only pushes, rigid riders, depth-sum conserved per
+rotation); #cash<=S_A via setup injection; KEEP-only => E_B=E_A exactly.
+E_B<=3*S_A ALIVE prefix-closed (best 1.57/3 over ~15k histories + 8k
+gap-hunt + 9.3k ratio-hunt + ce_0000 -92); stock best 0.47, 0 kills.
+Ratio-hunt J1=1.57/J2=1.58/J3=0.47 (J2 kills R-link, J3 holds stock).
+Event-flow E1+E2+E4 capacity-3: full 86/120, prefix 371/486; min-cut
+0-gap + 210-saturated => eligibility CORRECT, capacity SHORT (fanout):
+duality-blocked (tighten=>gap, loosen=>share); epochs/laminar dead
+(700x local shortfall vs 1.57x global: funding irreducibly global).
+Scalar Psi dead via REVELATION (1243-gap: A-shallowing exposes
+pre-existing B-depth). Push-backing impossible (sharing O(n) or
+cap/free-depth dilemma). Coverage Vm+F>=Vp prefix-closed (min 0.00,
+excess/C<=0.36); funding 20x aggregate (anti 5x + DELETEs 15x; 7:1
+count); dissection vine-cash replay 1:1 steps funded 3x
+(eA=0/eB=64/slack=192 = historical setup-DELETE capacity); freshness
+exact (fresh=>0 work, A==B=>same splay, 0 viol; stale ratio 0.60).
+SOLE SURVIVOR: global-count prefix-induction on E_B<=3*S_A (slack 0.33,
+reason unknown). Lean AR-10..AR-13 (steps/depth + genesis-zero +
+stock_composition conditional; kernel PENDING). Scripts: `wp6_involve.py`,
+`wp6_subtree.py`, `wp6_rotbudget.py`, `wp6_eb_hillclimb{,2}.py`,
+`wp6_prefix_eb.py`, `wp6_slack.py`, `wp6_doubles.py`, `wp6_resetdepth.py`,
+`wp6_purepump.py`, `wp6_pairing.py`, `wp6_need_eb.py`, `wp6_funding.py`,
+`wp6_dissect.py`, `wp6_freshness.py`, `wp6_ratio_hunt.py`,
+`wp6_psi_anatomy.py`, `wp6_eventflow{,_cut}.py`, `wp6_coverage.py`.

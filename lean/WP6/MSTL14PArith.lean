@@ -117,3 +117,27 @@ def poolAux : Nat → List Nat → List Nat → Nat
 theorem pool_step (p i d : Nat) (h : d ≤ i + p) :
     (if d ≤ i + p then i + p - d else 0) = i + p - d := by
   rw [if_pos h]
+
+-- WP-6 STEPS IV/ST/RB/HC (vault descent): step-depth relations + stock
+-- composition. Pure Nat (no splay model): per splay, with D doubles + Z zigs
+-- (Z in {0,1}), events e = D + Z and depth d = 2*D + Z. STATUS: same as
+-- AR-06..AR-09 (added 2026-09-29, kernel check PENDING, omega-only style).
+
+-- WP-6 STEP AR-10: B-steps bounded by B-depth (e = D+Z <= 2*D+Z = d).
+theorem steps_le_depth (D Z : Nat) : D + Z ≤ 2 * D + Z := by
+  omega
+
+-- WP-6 STEP AR-11: A-depth bounded by twice A-steps (d = 2*D+Z <= 2*(D+Z)).
+theorem depth_le_two_steps (D Z : Nat) : 2 * D + Z ≤ 2 * (D + Z) := by
+  omega
+
+-- WP-6 STEP AR-12: genesis need is zero (A0 = B0 so d_A = d_B = d).
+theorem genesis_need_zero (d : Nat) : d - 2 * d - 1 = 0 := by
+  omega
+
+-- WP-6 STEP AR-13: STOCK COMPOSITION (conditional vault door).
+-- N = total need, X = total B-StepEvs: D2-sum gives N <= 2*X (proved in
+-- Layer A prose + code); E_B-link gives X <= 3*S_A (OPEN). Together: stock.
+theorem stock_composition (N X SA : Nat) (hD2 : N ≤ 2 * X) (hEB : X ≤ 3 * SA) :
+    N ≤ 6 * SA := by
+  omega
