@@ -52,6 +52,12 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   GC-ASSAULT 15k clean (gap never >0; cumulative raw-GC 41k+ clean)
       │  (STILL OPEN: GC-STATIC theorem; credits; MSTL-14P composition)
       ▼
+[ BANKED C41 ] NEAR-MISS (slack-2 singleton degenerate; large-tight max Q=3;
+  diversity law) · 8I/8J/8K (residual shape; |Q_L|≥3|U_L|+1; reverse induction
+  ⇒ single lemma: old-new sufficiency) · AUGMENT (optimal E3-only 107/112;
+  repair len-3 to spare A5; spare-circularity flagged) · E2-hole bounded
+      │  (THE one wall, Q-localized: old-new sufficiency at B-heavy Q-blocks)
+      ▼
 [ BANKED C40 ] 8H FRESH-BOUND (non-heavy Q never violates; violators need B-heavy
   overflow) · CREDITS resolved outcome-B (no freestanding theorems; downstream
   consumes counts+LIQ0; obligations = GC-STATIC content) · CONDITIONAL CHAIN

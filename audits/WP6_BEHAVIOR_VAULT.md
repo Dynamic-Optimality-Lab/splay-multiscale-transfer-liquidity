@@ -462,4 +462,43 @@ mechanism, killer-seeded): 20,000 evals, shortfall 0 throughout, no GC kill;
 best (min) slack = 2 (tight sets exist, none deficient). Cumulative offline:
 26k+ evals + killer/M2/ENTRY@3, zero shortfall.
 OPEN (exact): GC-STATIC (old-abundance structural theorem); one-access Hall;
-E2-hole conjunction; min-cut+E3 anatomy; credit re-derivation; MSTL-14P comp.
+E2-hole conjunction (BOUNDED C41: repeat-cycles anchor supply; residual =
+sterile-thin-heavy conjunction); min-cut+E3 anatomy; credit re-derivation;
+MSTL-14P comp.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (the one wall; reverse-induction needs
+  old-new sufficiency at B-heavy Q-blocks).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C41 — GC-STATIC assault: near-miss persistence + residual/induction frame + augmenting anatomy (this continuation)
+
+### C41-1 TQ-00 + LT-00 near-miss persistence [FINITE_EVIDENCE + METHOD FIX]
+`scripts/wp6_tightest.py` → `tightest.json` (12k evals, incremental persist):
+best slack 2 is a DEGENERATE singleton (minimized lenH=1: single KEEP-126,
+1v1 E1+E3) — smallness, not pressure. `scripts/wp6_largetight.py` →
+`largetight.json` (12k, Q-growth): best Q=3 slack 6; NO large tight set —
+B-events constantly expose new sources (DIVERSITY: every 10 B-events touch
+≥6 distinct sources). Near-miss lesson: min-slack alone misleads; large-tight
+is the violator shape, and it never forms.
+### C41-2 8I/8J/8K: residual theorem + extreme-access + induction frame [PROVED_AUTHOR]
+`hall_lemmas.md`: 8I Q-specific fresh/overflow (naive e_B−3f corrected to
+|Q_j|−3|F_j∩N|); 8J |Q_L| ≥ 3|U_L|+1 with U_L ⊇ E1(L) (repeat-L = demand-
+without-supply habitat; violator latest access B-heavy or repeat); 8K reverse
+induction (strong induction on |Q|; step needs ONLY old-new sufficiency at
+B-heavy Q-blocks; slack-transfer unified, non-circular, non-GC-equivalent).
+Single missing lemma isolated: old-new sufficiency (≡ old-abundance §10).
+### C41-3 AP-00 C37 augmenting anatomy [MECHANISM]
+`scripts/wp6_augment.py` → `augment.json`: greedy starves bev110 (N all-3);
+optimal 112/112 with E3-only 107/112 (E1-alone 0!). Repair path
+B110→A96→B63→A5 (length 3): optimal puts bev110 on 96, evicts a greedy unit to
+A5 (greedy-spare load 2, dormant-neglected). Resource: E3-dense connectivity +
+scattered spare capacity. Circularity flagged: spare-existence ≡ GC-flavored
+(augmenting route = §8K in disguise; banked as mechanism, not proof).
+### C41-4 E2-hole bound + diversity law [REFINED]
+`hall_lemmas.md` 8G: supply-free pushing needs repeat-cycles that always anchor
+supply at run-start (E1 fresh / pristine-E4 for victim's KEEP); residual hole =
+E2-misses-DELETE-half + hub-luck + sterile + thin + heavy conjunction.
+Diversity law (finite): tight sets stay tiny (min-slack singleton; large-tight
+max Q=3) — union growth outpaces demand concentration everywhere tested.

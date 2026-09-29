@@ -61,7 +61,7 @@ with sterile-thin old (e_B > 3e_A and E2/E4/K/W thin). Same wall as global
 (old-abundance); fractal at access scale. Finite: 26k+ offline evals (which
 subsume one-access violations as shortfalls) clean. Unproved.
 
-## 8G. E2-HOLE via DELETE-then-KEEP pushers (§11E multiplicity)
+## 8G. E2-HOLE via DELETE-then-KEEP pushers (§11E multiplicity, BOUNDED C41)
 
 B-pushes need nontrivial B-splays, but e_A = 0 pushing accesses exist:
 DELETE-z(nonroot) → KEEP-z gives e_A = 0 with a real (stale-deep) B-splash
@@ -72,7 +72,14 @@ e_A = 0 chains cannot push (repeats are B-no-ops/skips), so every push chain
 contains real splays — but E2 attribution still leaks the DELETE half.
 Consequence: E2-thinness with B-deep x is structurally possible (triple-
 exception conjunction with sterile-E3 + thin-K/E4 + B-heavy); 26k offline
-evals show it never saturates to a cut. Open (same wall).
+evals show it never saturates to a cut. C41 BOUND: supply-free pushing needs
+repeat-cycles (A-root + stale-B-deep), but every repeat-cycle anchors supply at
+its run-start (first x-access splays if nonroot → E1 fresh; run-start DELETE
+gives pristine-E4 for the victim's own later KEEP via FRESH-CHANNEL case (b)).
+Pure e_A = 0 push chains cannot close (repeats without stale-B are B-no-ops;
+stale-B repeats need a run-start that supplied). Residual hole: E2 misses the
+DELETE half (pump-KEEPs only) + E3-hub-luck + sterile + thin-K/E4 + B-heavy
+conjunction. Open (same wall, narrowed to the conjunction).
 
 ## 8H. HALL-FRESH-BOUND + NONHEAVY-Q (fresh-disjointness)
 
@@ -94,6 +101,49 @@ U=0. GC-independent. (Sums noted for Lean: finset formalization skipped,
 author-only.)
 Consequence: violators REQUIRE B-heavy accesses (consistent with E1-CAP);
 falsifier guidance (B-heavy concentration) + proof halving (non-heavy done).
+
+## 8I. RESIDUAL-SUFFICIENCY SHAPE (Q-specific fresh/overflow)
+
+For Hall subset Q, per access j with Q_j ≠ ∅: F_j = fresh of j (E1(j), or
+pristine-E4(j) in DELETE-runs), f_j^Q = |F_j ∩ N(Q)| (Q-specific fresh capacity),
+q_j(Q) = |Q_j| − 3|F_j ∩ N(Q)| (Q-specific residual; naive e_B−3f is WRONG when
+Q selects some B-events — use |Q_j|). Residual theorem shape: with disjoint
+fresh (8H argument) Delta(Q) ≤ Σ_j q_j(Q), and only B-heavy-Q blocks
+(q_j > 0) can contribute positively. Non-heavy-Q-block additions are safe
+individually; danger = Σ over heavy blocks exceeding shared-old absorption.
+This is algebra (8H + per-access split); the old-abundance content is entirely
+in bounding shared-old from below (open §10).
+
+## 8J. EXTREME-ACCESS NECESSITY (|Q_L| ≥ 3|U_L|+1)
+
+Let L = latest access in Q (any Q, then specialized to minimal violator):
+Q_<L (strictly earlier accesses), Q_L ≠ ∅, U_L = N(Q_L) \ N(Q_<L|) (genuinely
+new identities at L). Then |N(Q)| = |N(Q_<L|)| + |U_L| (disjoint by def).
+For MINIMAL deficient Q: Delta(Q_<L|) ≤ 0 (strict subset), Delta(Q) = 1, so
+1 = Delta(Q_<L|) + |Q_L| − 3|U_L| ≤ |Q_L| − 3|U_L|, i.e. |Q_L| ≥ 3|U_L| + 1.
+U_L characterization: new identities at L = aev with ai = L in N(Q_L)
+(E2/E4/K/W members all have ai < L — old ids; E3-same-access non-E1 impossible
+since E1 = all sited accA[idx]). Hence U_L ⊇ E1(L) (complete edges; E1(L) ∩
+N(Q_<L|) = ∅ since ai = L > earlier idx), with equality iff no old-id
+first-overlaps at L (W-returns, E2-window shifts, intervening-access young
+sources). So |U_L| ≥ e_A(L); violator with E1(L) ≠ ∅ has |Q_L| ≥ 3e_A(L)+1
+(Q-heavy AND whole-B-heavy: |Q_L| ≤ e_B(L) forces e_B(L) > 3e_A(L)); with
+E1(L) = ∅ (repeat-L) only Q_L ≠ ∅ is forced (demand-without-supply habitat).
+(Rigorous; pure algebra + causal edge defs + E1-completeness.)
+
+## 8K. REVERSE-INDUCTION FRAME (GC-STATIC ⇒ single geometric lemma)
+
+Strong induction on |Q|: for arbitrary Q with latest access L,
+|Q| = |Q_<L|| + |Q_L||, |N(Q)| = |N(Q_<L|)| + |U_L||; IH gives
+|Q_<L|| ≤ 3|N(Q_<L|)| (strictly smaller); suffices |Q_L| ≤ 3|U_L|.
+Since |U_L| ≥ e_A(L), non-heavy Q_L (|Q_L| ≤ 3e_A) closes free (8H again);
+B-heavy Q_L needs old-new entries (W-first-overlaps, E2-window, intervening
+young) covering overflow/3. The induction is clean (no circularity: IH is
+strictly-smaller-Hall, the step is access-local geometry). THE single missing
+lemma: old-new sufficiency at B-heavy Q-blocks (≡ old-abundance §10).
+Slack-transfer (§9) is this induction in cumulative form (sigma_new = sigma_old
++ 3·new − |R|; IH supplies sigma_old ≥ 0 — NOT circular, NOT GC-equivalent;
+the dangerous step is exactly the lemma above).
 
 ## Finite status (C38 + C40-8H)
 
