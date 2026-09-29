@@ -1,8 +1,12 @@
 # Stage-B Scaffold — rigorous micro-lemmas (author-level PROVED)
 
 Status: PROVED_AUTHOR (each: proof + finite check, 0 violations). GC-independent.
-Lean-pending as a block. Date: 2026-09-30 (C30). Verifiers: `wp6_microverify.py`
-(`microverify.json`), `wp6_stepprobe.py` (`stepprobe.json`).
+Arithmetic core PROVED_KERNEL (C36): AR-01..AR-16 (`lean/WP6/MSTL14PArith.lean`,
+direct `lean` exit 0, no sorry/admit/axioms; AR-08 repaired — omega treats
+Nat.min opaquely, lattice proof) + AR-17/18/19 FRESH-CAP/DILUTION-ZERO
+(`lean/WP6/StageBArith.lean`, exit 0). Splay-model formalization (trichotomy,
+K-persist, riser geometry) still Lean-pending (needs splay model beyond
+arith-only files).
 
 ## ML-E1-ENTRY (E1 members enter at load 0)
 
@@ -66,8 +70,24 @@ Statement: per (B-splay, W-member), E3 matches arrive in ≤ 3 blocks
 Argument: B-triples sweep rootward monotonically within a splay; each non-x key
 of S persists in triples over a contiguous ancestor-occupancy block; blocks per
 S-key, gaps split. Check: 5562 member-splays, max 3 blocks, max run 3, 0 over.
-Status: author-proof-sketch + strong finite check (occupancy contiguity per key
-is sketched, not fully audited — flagged for tightening).
+UPGRADED by ML-W-OCC/ML-W-STEPS below (≤3 TOTAL steps, singleton occupancy).
+
+## ML-W-OCC (per-key singleton occupancy) + ML-W-STEPS
+
+Statement: within one B-splay, each non-x key occurs in AT MOST ONE B-triple
+(singleton occupancy, a fortiori contiguous). Hence each W-member (rotated S,
+|S| ≤ 3, x ∉ S) matches at most 3 B-events TOTAL per splay (≤ 3 picks absorbable
+per transient per splay).
+Proof: p/g are always current path nodes above x; x rises strictly (1 zig / 2
+doubles) every StepEv and never descends; once x reaches/passes z's level, z
+descends below x into x's riding subtree and is never an ancestor (hence never
+p/g, never in a later triple) again. The involvement step is unique: x enters
+z's zone {L+1, L+2} (L = z's then-depth) exactly once by monotone rise; after
+that step z rides below. (Zig final-step case identical.)
+Check: 2516 splays, 12,875 key-occupancies, 0 gaps, max run 1 (`occupancy.json`).
+Consequence: transient absorption ≤ 3 picks/splay/member (margin-arithmetic
+input; NOT a load bound — loads still need entry/return analysis).
+Dependencies: bottom-up splay mechanics (node always key; verified 2870/2870).
 
 ## ML-RUN-STRUCTURE (≤1 demanding KEEP per x-run)
 

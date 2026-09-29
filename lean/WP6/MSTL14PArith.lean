@@ -80,10 +80,9 @@ theorem service_bound (y a eB : Nat) (ha : 1 ≤ a) (hev : y - 1 ≤ 2 * eB) :
 -- key up <= 2 levels (dA drops <= 2, dB fixed): its div rises <= 4.
 -- Measured worst +4 over 5274 A-StepEvs (1252 hits at +4): the bound is
 -- tight at the node level. Bystander/push-down accounting is Layer A prose.
--- STATUS (2026-09-29 session): added without kernel check (no Lean toolchain
--- in this environment; release download timed out). Proofs are omega-only in
--- the style of AR-01..AR-05 above; MUST be kernel-checked (lean 4.21.0
--- exit 0, no sorry) before citing as Layer B. Until then: SKELETON.
+-- STATUS (2026-09-30 session, C36): kernel-CHECKED via direct `lean` exit 0
+-- (lean 4.21.0; AR-08 repaired: omega treats Nat.min opaquely, lattice proof).
+-- No sorry/admit/axioms. Bystander/push-down accounting is Layer A prose.
 
 -- WP-6 STEP AR-06: per-A-StepEv node divergence rise (accessed key).
 theorem div_rise_A (dA dA' dB : Nat) (hdrop : dA ≤ dA' + 2) :
@@ -98,9 +97,12 @@ theorem div_rise_B (dA dB dB' : Nat) (hpush : dB' ≤ dB + 1) :
 
 -- WP-6 STEP AR-08: per-record capped-mass gain (cap C, e.g. C = 2).
 -- The 3-record composition (Lemma A) is Layer A; this is the record slice.
+-- REPAIRED 2026-09-30 (C36): omega treats Nat.min opaquely; direct lattice proof.
 theorem capped_gain (div div' C : Nat) :
     Nat.min div' C ≤ Nat.min div C + C := by
-  omega
+  have h1 : Nat.min div' C ≤ C := Nat.min_le_right _ _
+  have h2 : C ≤ Nat.min div C + C := Nat.le_add_left _ _
+  exact Nat.le_trans h1 h2
 
 -- WP-6 STEP AR-09: global greedy discharge pool (forward accumulator).
 -- poolAux p is ds threads the running pool; a step with demand d <= i + p
@@ -120,8 +122,8 @@ theorem pool_step (p i d : Nat) (h : d ≤ i + p) :
 
 -- WP-6 STEPS IV/ST/RB/HC (vault descent): step-depth relations + stock
 -- composition. Pure Nat (no splay model): per splay, with D doubles + Z zigs
--- (Z in {0,1}), events e = D + Z and depth d = 2*D + Z. STATUS: same as
--- AR-06..AR-09 (added 2026-09-29, kernel check PENDING, omega-only style).
+-- (Z in {0,1}), events e = D + Z and depth d = 2*D + Z. STATUS (C36):
+-- kernel-checked exit 0 (same run as AR-06..09 fix).
 
 -- WP-6 STEP AR-10: B-steps bounded by B-depth (e = D+Z <= 2*D+Z = d).
 theorem steps_le_depth (D Z : Nat) : D + Z ≤ 2 * D + Z := by
@@ -147,7 +149,7 @@ theorem stock_composition (N X SA : Nat) (hD2 : N ≤ 2 * X) (hEB : X ≤ 3 * SA
 -- (e_0 StepEvs, d = T0-depth, d/2 <= e_0 <= d); x-tenure DELETEs are no-ops
 -- (B frozen at T0); cash-x replays the SAME T0-splay in B (e_B = e_0 by
 -- determinism). Funding 3*e_0 >= e_0; need d-1 covered by 6*e_0.
--- STATUS: arithmetic here kernel-pending (omega-only style); same-splay
+-- STATUS (C36): arithmetic here kernel-CHECKED exit 0; same-splay
 -- determinism (e_B = e_0) is a Layer-A code fact (exec engine determinism),
 -- subsequent (non-first, reshaped) divergence NOT covered (pool/marginal).
 -- WP-6 STEP AR-14: first-divergence need covered (d-1 <= 6*e_0 from d<=2*e_0).

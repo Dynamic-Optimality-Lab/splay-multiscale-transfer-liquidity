@@ -367,6 +367,22 @@
    "superseded": false,
    "theorem": "Stage B (buffers)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/MSTL14PArith.lean (AR-08 repaired) + lean/WP6/StageBArith.lean (new)",
+   "date": "2026-09-30",
+   "id": "C36-1-KERNEL",
+   "implication": "Full arithmetic backbone kernel-proved; splay-model formalization remains the Lean frontier.",
+   "next": "Splay-model Lean",
+   "order": 24,
+   "reason": "Toolchain found (elan lean 4.21.0); check pending skeletons; add fresh-channel trio.",
+   "result": "AR-08 omega-fail on Nat.min repaired (lattice proof); MSTL14PArith exit 0 (AR-01..16); StageBArith exit 0 (AR-17..19 freshcap_two/one, dilution_zero). No sorry/admit/axioms.",
+   "script": null,
+   "statement": "AR-01..19 PROVED_KERNEL (direct lean exit 0).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "Arithmetic backbone",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

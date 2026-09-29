@@ -36,6 +36,10 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   E1-0 present+eaten 25/25; case-b immune 5/5; elevation = drain > buffers)
       │  (STILL OPEN: K-0 necessity exact split; spread-3; W-tightening; scattering)
       ▼
+[ BANKED C36 ] KERNEL: AR-01..19 exit 0 (AR-08 repaired; AR-17/18/19 trio new;
+  no sorry) · splay-model formalization still pending
+      │  (STILL OPEN: Stage B proper; splay-model Lean; spread-3; scattering)
+      ▼
 [ OPEN ] STAGE B — min load_before ≤ 2, cap-3 chronological least-loaded
 │
 │  Five-channel split (SV-00 weights: W62% / K24% / E2 / E1 / E4):

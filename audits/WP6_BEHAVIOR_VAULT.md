@@ -190,8 +190,9 @@ Remaining gap (exact): B-heavy all-3 convergence — entry-load ≤2 unproved,
 young-transient-exposure unproved, load-3 scattering unproved. No counting
 argument attempted (GC-reduction avoided).
 
-## Queued next (SUPERSEDED ordering note: C31–C33 below are reverse-positioned by
-edit order — follow entry IDs/dates, not file positions; live queue at file end)
+## Queued next (SUPERSEDED ordering note: C31–C35 below are positionally scrambled
+by sequential edit order — follow entry IDs/dates, not file positions; the live
+queue is maintained at the current file end)
 
 ## C33 — margin probe + near-miss feeder (this continuation)
 
@@ -280,9 +281,10 @@ root-dislodge, U=0, setup rule, ML-E1-ENTRY, ML-ADJ-E4. GC-independent.
 Remaining: B-heavy overflow (e_B>3f) onto old (K/E2/W) — unchanged open gap.
 
 ## Queued next (LIVE)
+- K-0 necessity direction (B-heavy elevation ⟹ K-0=0: verify exact 25/25 split).
 - Spread-3 dormancy+return+ladder conjunction (0/19982).
-- ML-W-BLOCKS tightening (per-key occupancy contiguity audit).
-- Lean: scaffold arithmetization (after author chain closes).
+- Splay-model Lean (trichotomy/K-persist/risers; needs splay model file).
+- Lean: remaining scaffold arithmetization as needed.
 
 ## C35 — K-0 necessity split: gate → buffer (this continuation)
 
@@ -314,3 +316,27 @@ x-accesses PROVED, (ii) fill-order descriptive. WARNING banked: water-filling as
 closure ≡ GC ≡ forbidden endpoint (discard); race inequality stays empirical.
 Counting/fluid paths to all-3 exhausted without exception (all reduce to L0/GC);
 remaining hope is purely geometric (episodes/returns/blocks).
+
+## Queued next (LIVE)
+- Splay-model Lean (trichotomy/K-persist/risers; needs splay model file).
+- Spread-3 dormancy+return+ladder conjunction (0/19982).
+- Deposit-dilution race: K-0 necessity exact split follow-up (done C35: buffer law).
+
+## C36 — kernel upgrade: AR-01..19 exit 0 (this continuation)
+
+### C36-1 toolchain found + AR-08 repaired [PROVED_KERNEL]
+`lean.exe` v4.21.0 present via elan (prior "no toolchain" stale).
+`lean/WP6/MSTL14PArith.lean` FAILED at AR-08 `capped_gain` (omega treats
+`Nat.min` opaquely — uninterpreted atom, unprovable). Repaired with lattice
+proof (`min_le_right` + `le_add_left` transitivity; two elaboration iterations
+needed:elsion order + left-vs-right). Full file re-checked: EXIT 0.
+STATUS comments in-file updated (were "kernel check PENDING").
+### C36-2 StageBArith.lean: AR-17/18/19 trio [PROVED_KERNEL]
+New `lean/WP6/StageBArith.lean`: freshcap_two/one + dilution_zero (exact Nat
+pigeonholes behind FRESH-CAP/DILUTION-ZERO; f≥1 from FRESH-CHANNEL; used≤eB−1
+Layer-A). Direct `lean` EXIT 0, no sorry/admit/axioms.
+UPGRADE: AR-01..05 (confirmed) + AR-06..16 (skeleton→kernel) + AR-17..19 (new)
+= full arithmetic backbone AR-01..19 PROVED_KERNEL. Scaffold status updated.
+Still Lean-pending: splay-model formalization (trichotomy, K-persist, risers)
++ pool-close composition (AR-09 pool_step checked; close-iff-prefix is Layer-A
+prose + OPEN B-source — correctly open).
