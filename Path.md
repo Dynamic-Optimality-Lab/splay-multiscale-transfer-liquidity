@@ -888,7 +888,16 @@ C3. FULL REWIRED BATTERY (`wp6_present_refute.py` PR-01/02/03R/04/05):
    0 kills => ATTACKED-NOT-REFUTED (present-only). Absent accesses rejected
    by construction (check_present).
 C4. LOCAL LEMMAS D1/D2 PROVED (mechanics + property tests
-   `tests/test_present_mechanics.py` 3/3): D1 need>0 ⟹ Bev nonempty
-   (Aev=Bev=0 ⟹ need=0 for present); D2 ceil((y-1)/2) ≤ e_B ≤ y-1 hence
-   2*e_B ≥ need (raw FLAT(2) bandwidth; eligible bandwidth still open —
+   `tests/test_present_mechanics.py` 3/3): D1 need>0 ==> Bev nonempty
+   (Aev=Bev=0 ==> need=0 for present); D2 ceil((y-1)/2) <= e_B <= y-1 hence
+   2*e_B >= need (raw FLAT(2) bandwidth; eligible bandwidth still open —
    support/provenance is the remaining service gap).
+C5. PRIOR-SESSION LEFTOVERS BANKED (verified this session, not authored here):
+   `tstar_conditional.md` (t*-restart conditional theorem with explicit open
+   gap: t*-inside-B-phase under thin pools; k-entry via t* location) and
+   `lean/WP6/MSTL14PArith.lean` (arithmetic backbone: need bound, 1-2
+   event counting, greedy cap-2 exactness, service composition — direct
+   `lean` LASTEXITCODE=0, zero output, no sorry/admit/axiom). `.lake/`
+   residue from a failed `lake build` removed (frozen WP-0 lakefile is
+   incompatible with installed Lake 5 — pre-existing; direct-`lean` remains
+   the repo precedent per WP-1/WP-2 entries).
