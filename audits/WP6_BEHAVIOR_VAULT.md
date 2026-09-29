@@ -371,3 +371,42 @@ UPGRADE: AR-01..05 (confirmed) + AR-06..16 (skeleton→kernel) + AR-17..19 (new)
 Still Lean-pending: splay-model formalization (trichotomy, K-persist, risers)
 + pool-close composition (AR-09 pool_step checked; close-iff-prefix is Layer-A
 prose + OPEN B-source — correctly open).
+
+## Queued next (LIVE)
+- Min-cut anatomy WITH E3 (proof-relevant cut object for GC-STATIC attempt).
+- Offline-matchability assault at scale (Hall hunt 30k+).
+- GC-direct prefix-gap assault.
+- N-FIRST/N-AUG-credit re-derivation via offline; MSTL-14P composition.
+
+## C38 — Hall program: generic lemmas + PEEL verdicts + 20k hunt (this continuation)
+
+### C38-1 status hygiene §25 [AUDIT]
+65-key ledger verified: Stage-B-online REFUTED (killed_stageb), least-loaded
+realization REFUTED (same), offline GC-STATIC OPEN (alive_offline), raw GC OPEN
+(no witness). Four strengthening-kills consolidated to explicit ledger key this
+round: spread≤2 REFUTED (spread 3, SC log), blocker-count≤1/2 REFUTED (9–10, SC
+log), ENTRY≤2 REFUTED (entry@3, entryhunt.json), permanent ejection REFUTED
+(aev40 re-entered@3).
+### C38-2 hallcore tool + killer/M2/ENTRY@3 runs [FINITE_EVIDENCE]
+`scripts/wp6_hallcore.py` → `hallcore.json` (maxflow + verified min-cut +
+tight sets + CAP3-PEEL + 4-core anatomy + latest-access boundary): killer
+112/112 saturate, PEEL EMPTIES (tightest acc8: Q=7 N=18 slack 47); ENTRY@3
+140/140 saturate, PEEL EMPTIES (tightest acc10: Q=2 N=14 slack 40); M2 144/144
+saturate BUT PEEL STALLS at 42-residual, mindeg EXACTLY 4, Delta −183, connected,
+acc span 2–37. CAP3-PEEL-as-universal REFUTED (stalls without Hall failure);
+GC-STATIC unaffected (banked distinction).
+### C38-3 generic minimal-Hall lemmas + Lean cores [PROVED_AUTHOR + KERNEL]
+`hall_lemmas.md`: 8A MINIMAL-DEFICIT-ONE, 8B DEG≥4 (Q'=∅ boundary closed),
+8C CONNECTED-CORE (all vertices edged via N-def + trichotomy-nonemptiness),
+8E LATEST-ACCESS (E1(L)-only-same-access; violator |Q_L|≥4 or repeat-L),
+8F ONE-ACCESS-HALL (open, same wall fractal), 8G E2-HOLE (DELETE→KEEP pushers
+leak E2 attribution; triple-exception conjunction; open).
+Lean `StageBArith.lean`: AR-20 deficit-one forcing + AR-21 peel-step identity
+exit 0 (AR-21 needed no-truncation hypothesis 3n≤q — genuine edge, honest fix).
+### C38-4 HH-00 20k Hall hunt [FINITE_EVIDENCE]
+`scripts/wp6_hallhunt.py` → `hallhunt.json` (geographic-walk bias per C37
+mechanism, killer-seeded): 20,000 evals, shortfall 0 throughout, no GC kill;
+best (min) slack = 2 (tight sets exist, none deficient). Cumulative offline:
+26k+ evals + killer/M2/ENTRY@3, zero shortfall.
+OPEN (exact): GC-STATIC (old-abundance structural theorem); one-access Hall;
+E2-hole conjunction; min-cut+E3 anatomy; credit re-derivation; MSTL-14P comp.

@@ -41,6 +41,13 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
 [ REFUTED C37 ] STAGE B online (chronological least-loaded starves: starve_min.json
   n=128 acc8 KEEP-19 eA1 eB7, N=5 all-3; fresh-key-drain mechanism; E1-CAP intact
   (B-heavy open zone)) — the ONLINE path is dead; nothing downstream of it survives
+[ BANKED C38 ] GENERIC-HALL (8A deficit-one / 8B deg≥4 / 8C connected / 8E latest-
+  access / AR-20+AR-21 kernel) · PEEL verdicts (killer+ENTRY@3 empty; M2 4-core
+  stall ⟹ CAP3-PEEL-as-universal REFUTED, flow intact) · 20k Hall hunt clean
+  (shortfall 0; best slack 2) · hygiene §25 exact
+      │  (STILL OPEN: GC-STATIC old-abundance theorem; one-access Hall; E2-hole;
+      │   min-cut+E3; credits; MSTL-14P composition)
+      ▼
 [ CONJECTURE C37 ] GC-STATIC: offline cap-3 causal assignment always saturates
   (killer shortfall 0/112; 6k adversarial shortfall 0, GC-gap 0) [FINITE_EVIDENCE]
       │  (IF GC-STATIC proved → GC counting → ledger chain WITHOUT online Stage B;

@@ -23,3 +23,19 @@ theorem freshcap_one (f eB used : Nat) (hF : 1 ≤ f) (h : used ≤ eB - 1)
 theorem dilution_zero (f eB used : Nat) (hF : 1 ≤ f) (h : used ≤ eB - 1)
     (hB : eB ≤ f) : used < f := by
   omega
+
+-- WP-6 STEPS C38 (Hall program): arithmetic cores of the generic minimal-Hall
+-- lemmas (hall_lemmas.md). Q-sizes only; set reasoning is Layer-A prose.
+
+-- WP-6 STEP AR-20: MINIMAL-DEFICIT-ONE forcing (8A).
+-- Non-deficiency of every one-point deletion + deficiency forces equality.
+theorem deficit_one (q nqp nq : Nat) (h1 : q - 1 ≤ 3 * nqp)
+    (h2 : nqp ≤ nq) (h3 : 3 * nq + 1 ≤ q) : q = 3 * nq + 1 := by
+  omega
+
+-- WP-6 STEP AR-21: peel-step identity (8B).
+-- Removing the neighborhood R of one source: deficit shifts by exactly 3-r.
+-- Requires 3*n <= q (no Nat-truncation; in 8B use, deficiency gives it).
+theorem peel_step (q n : Nat) (h : 1 ≤ n) (h2 : 3 * n ≤ q) :
+    q - 3 * (n - 1) = q - 3 * n + 3 := by
+  omega
