@@ -1068,3 +1068,11 @@ itself grows via re-pumps (not well-founded — compensated setup/cash cycles
 net<=0 over 1660 measured cycles instead). Script: `wp6_sterile.py`.
 Queued: finite-mode recurrence on residual modes; setup-cost mountain law;
 N-AUG/N-FIRST; Lean-kernel (no toolchain).
+C17. RESIDUAL CASH-CHAIN CORRIDOR (MSTL-14P stays UNPROVED/NO_WITNESS).
+Greedy cumulative-max stalls at diagonal (all rewards <=0; positives need
+setup lookahead). Bounded-horizon exhaustive: V_3=V_4=0 (98k depth<=3 paths
+x3 T0 + 2x1M depth-4 vine paths, n=16, best cumulative exactly 0) —
+setup-then-cash within 4 steps always nets <=0; serialization: O(n) fanout
+appearances extract only via setup-first sequences that pay first.
+Scripts: `wp6_cashchain.py`, `wp6_badhorizon.py`. Queued: beam-D5 n64/128;
+depth-5/6 exhaustive small-n; compensated residual-chain law.

@@ -139,5 +139,12 @@
    "CASE R residual mode (pumped B-deep/A-shallow surviving bystanders, single-positive, cash->residual->cash O(n)-chains at ~1.33x pump-backing; no adjacent cashes on tight paths (reset sterilizes the cashed key, others persist))",
    "finite-mode recurrence queued (residual-mode ranks; pumped-count grows via re-pumps so count itself not well-founded; compensated setup/cash cycles net<=0 over 1660 measured cycles)"
   ],
+  "killed_routes_11_corridor_2026-09-29": [
+   "greedy cumulative-max from diagonal (stalls immediately: all diagonal rewards <=0, positives need setup lookahead; chains=0)"
+  ],
+  "alive_corridor_2026-09-29": [
+   "bounded-horizon V_3=V_4=0 exhaustive (98k depth<=3 paths x3 starts + 2x1M depth-4 vine paths, n=16, best cumulative 0): setup-then-cash within 4 steps always nets <=0; serializes fanout (extraction needs setup first, setup costs first)",
+   "residual-chain law queued (cash<=setup-mountain path-locally; O(n) appearances serialize to setup-funded cashes)"
+  ],
   "title": "CUMULATIVE-LEMMA ROUTE KILL LIST (exact dispositions)"
 }
