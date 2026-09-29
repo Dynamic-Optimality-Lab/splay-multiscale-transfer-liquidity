@@ -861,3 +861,34 @@ B6. COMMIT 3 (entry/binding): candidate #1 `P_all|6|2|FLAT(2)` identity
    `0909c74a…` bound in `artifacts/v04/wp6_present/0909c74a/activation.json`
    (frozen order, pre-outcome; refuted-broad status explicitly noted, not
    erased).
+C1. PR-03 REPAIR (defective periodic stage replaced, intent preserved):
+   defects confirmed — quadratic full-prefix replay per repetition (plus
+   double replay inside ledger_state), unsatisfiable recurrence key
+   (act IN key, `act < stored` impossible), pass-only drift body, pre[-1]
+   access-record used as geometry (contains no tree state). Repair:
+   `scripts/wp6_periodic.py` maintains exact live (A,B,lat,act) incrementally
+   mirroring encode.py bodies; cross-check gate 200/200 exact vs frozen
+   executors (records/keeps/violations/final pools); canonical recurrence
+   state = (nested(A), nested(B), lat, act) — SPENT/injected/cursor are
+   write-only diagnostics, pools fungible (no per-credit identity), so this
+   tuple is sufficient; drift = same geometry + component-wise ≤ + strictly
+   worse (dominance preserved forward by monotone mobilization/payment);
+   exploitation == continuation to kill/stall/cap; per-candidate + per-25
+   instrumentation. Old PR-03 block superseded in git history, never executed
+   post-repair; `wp6_present_refute.py` delegates PR-03R to the module.
+C2. PR-03R RESULTS: exact bounded-word search (all shapes n=2,3,4 × words
+   len≤3 = 9,634 combos) 0 kills; full stream 300 candidates × ≤1500 reps
+   (~24s total; 217 CAP / 83 STALLED / 0 KILL / 0 drifts — geometry essentially
+   never repeats); deep stream 120 candidates × ≤15000 reps (|H|≤60005,
+   n≤512, ~354s) 0 kills. Finding: periodic words drift through fresh
+   geometries rather than cycling; no present-key periodic drain exists in
+   this budget.
+C3. FULL REWIRED BATTERY (`wp6_present_refute.py` PR-01/02/03R/04/05):
+   tested=152,777 episode-evaluations + 300-stream + 9,634 exact words,
+   0 kills => ATTACKED-NOT-REFUTED (present-only). Absent accesses rejected
+   by construction (check_present).
+C4. LOCAL LEMMAS D1/D2 PROVED (mechanics + property tests
+   `tests/test_present_mechanics.py` 3/3): D1 need>0 ⟹ Bev nonempty
+   (Aev=Bev=0 ⟹ need=0 for present); D2 ceil((y-1)/2) ≤ e_B ≤ y-1 hence
+   2*e_B ≥ need (raw FLAT(2) bandwidth; eligible bandwidth still open —
+   support/provenance is the remaining service gap).
