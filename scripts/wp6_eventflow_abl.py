@@ -30,6 +30,7 @@ def build_tagged(n, T0, H):
     A, B = to_ptr(T0), to_ptr(T0)
     Aevs, Bevs, accA = [], [], {}
     setup, pump_push, Arot = {}, {}, {}
+    setups = []  # per-access snapshot AFTER that access (causal E4: no future leak)
     for idx, acc in enumerate(pre):
         mode, xx = acc["mode"], acc["x"]
         rb = root_key(A)
@@ -43,6 +44,7 @@ def build_tagged(n, T0, H):
         accA[idx] = ids
         if nrb:
             setup[xx] = idx
+        setups.append(dict(setup))
         if mode == "KEEP":
             B, pushes = splay_B_push(B, xx)
             s = set()
@@ -62,7 +64,8 @@ def build_tagged(n, T0, H):
     for (idx, tri) in Bevs:
         xx = pre[idx]["x"]
         e1 = set(a for a in accA[idx] if Aevs[a][1])
-        e4 = set(a for a in accA[setup[xx]] if (xx in setup and setup[xx] != idx) and Aevs[a][1])
+        _setup_at = setups[idx]  # causal snapshot: last root-arrival known at idx
+        e4 = set(a for a in accA[_setup_at[xx]] if (xx in _setup_at and _setup_at[xx] != idx) and Aevs[a][1])
         e2 = set()
         for u in range(prevkeep[idx] + 1, idx):
             if pre[u]["mode"] == "KEEP" and xx in pump_push.get(u, set()):

@@ -147,9 +147,51 @@ minload-2 events are isolated; load-3s are absorbed singletons. Starvation would
 need |N| converged load-3s (never observed). Reframes Stage B as "load-3
 absorption", but convergence-impossibility still unproved (scattering lemma open).
 
-## Queued next (exact designs, AS-01/EX-00 now DONE — see C29)
+## C30 — E4 causality fix + scaffold micro-lemmas (this continuation)
 
-- ENTRY-FRESH formalization: entry-load ≤2 theorem attempt or entry@3 hunt at scale.
-- W-WINDOW lemma: transient stays bounded by ancestor-sweep geometry.
-- Scattering lemma: load-3 singletons cannot converge a whole N (formalize?).
-- Lean: E1-CAP + DISPLACE-MONO arithmetization (after author chain closes).
+### C30-1 E4-FUTURE-LEAK found and fixed [BUG + FIX, banked]
+Autopsy of 11 phantom E1@1 entries (MV-00) exposed: `build_flow`, `build2`,
+`build_tagged` all used FINAL `setup` dict for per-Bev E4 (future root-arrivals
+eligible for past B-events; loads assigned before source creation). Example:
+t=5 acc11 E4 = {60,61} with ai=14. Fix: per-access `setups[idx]` snapshot
+(causal E4) in all three builders; verified 0 future-leak edges. All consumers
+(LL/ML/MW/LS/SV/ST/AS/MV/EX/tiers/cut/flow) inherit fix.
+Implication: sealed C23–C27 E4-inclusive numbers were optimistic (extra members
+lower minload). REFIX battery (below) shows impact marginal (E4 thin/empty in
+practice) — all C28–C29 conclusions STAND. Sealed artifacts preserved untouched
+(documented as pre-fix); corrected numbers in `refix.json`.
+
+### C30-2 RF-00 refix battery [FINITE_EVIDENCE]
+`scripts/wp6_refix.py` → `refix.json` (fixed builders, new artifact only):
+LL 2331/2/0 IDENTICAL; MA 0/100 same; M2 best=2 (at shifted 88→86), maxload 3,
+starve 0 — witness survives; E1-zone 5554+5893 0-viol identical + E1@>0 entries
+now 0 (phantoms gone); SAV W68/E2-12/K27/E1-3 ≈ same, entry3=0; exhaustive n=3,4
+fixed max 0,1 identical; fixed hillclimb 1500 best=1, 0 starvation.
+Implication: causality fix changes almost nothing quantitatively; evidence base
+is now causally sound.
+
+### C30-3 displace autopsy: raw mono FALSE, per-StepEv form TRUE [REFINED]
+Raw "other keys never decrease" FALSE (24–31% bystander rises): splaying w
+hoists w's descendant subtrees through series of descendant-position steps
+(example: splay 3 lifts key 4 from 12→7). Per-StepEv riser-containment TRUE:
+2870 steps, node always x, triple always ∋ x, 0 riser violations (SP-00;
+first run's 1322 viols were a stale-root measurement artifact, fixed).
+Consequence: H4 weakened (hoists shallow without x-access); hoisted keys create
+NO own-key triples (only node-x does) — K-deposits remain the sole per-key
+fodder (ML-K-PERSIST), freshness at-creation only.
+
+### C30-4 scaffold banked: 6 micro-lemmas PROVED_AUTHOR [PROVED_AUTHOR]
+`stageb_scaffold.md`: ML-E1-ENTRY (5046/0), ML-K-PERSIST (15316/0), ML-ADJ-E4
+(65/0, conditional), ML-DISPLACE-STEP (2870/0), ML-RISE-WITNESS (2870/2870),
+ML-W-BLOCKS (5562 member-splays ≤3 blocks, maxrun 3; proof-sketch + strong
+check — occupancy contiguity flagged for tightening). All GC-independent,
+Lean-pending as a block.
+Remaining gap (exact): B-heavy all-3 convergence — entry-load ≤2 unproved,
+young-transient-exposure unproved, load-3 scattering unproved. No counting
+argument attempted (GC-reduction avoided).
+
+## Queued next
+- Scattering lemma attempts (load-3 convergence impossibility).
+- ENTRY-FRESH theorem attempt (entry-load ≤ 2) or entry@3 hunt at 100k+ scale.
+- ML-W-BLOCKS tightening (per-key occupancy contiguity audit).
+- Lean: scaffold + E1-CAP arithmetization (after author chain closes).

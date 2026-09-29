@@ -15,7 +15,9 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
 │   e_B≤3e_A → minload≤2 · e_B≤2e_A → minload≤1 (pigeonhole)  │
 │   CLOSES all non-B-heavy accesses. GC-independent.         │
 └────────────────────────────────────────────────────────────┘
-      │  (only B-heavy e_B>3e_A remains)
+[ BANKED C30-4 ] scaffold: ML-E1-ENTRY · ML-K-PERSIST · ML-ADJ-E4 ·
+  ML-DISPLACE-STEP · ML-RISE-WITNESS · ML-W-BLOCKS(sketch+check) · causal E4 fix
+      │  (B-heavy all-3 convergence STILL OPEN: entry≤2 / exposure / scattering)
       ▼
 [ OPEN ] STAGE B — min load_before ≤ 2, cap-3 chronological least-loaded
 │

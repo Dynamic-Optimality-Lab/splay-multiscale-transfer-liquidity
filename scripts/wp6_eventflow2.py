@@ -30,6 +30,7 @@ def build2(n, T0, H):
     Bevs = []  # (acc_idx, triple frozenset)
     accA = {}
     setup = {}
+    setups = []  # per-access snapshot AFTER that access (causal E4: no future leak)
     pump_push = {}
     for idx, acc in enumerate(pre):
         mode, xx = acc["mode"], acc["x"]
@@ -43,6 +44,7 @@ def build2(n, T0, H):
         accA[idx] = ids
         if nrb:
             setup[xx] = idx
+        setups.append(dict(setup))
         if mode == "KEEP":
             B, pushes = splay_B_push(B, xx)
             # triples per B-StepEv: pushed(p/g) + node(xx for all? node is xx
@@ -71,8 +73,9 @@ def build2(n, T0, H):
     for j, (idx, tri) in enumerate(Bevs):
         xx = pre[idx]["x"]
         e = set(accA[idx])  # E1
-        if xx in setup and setup[xx] != idx:  # E4
-            e |= set(accA[setup[xx]])
+        _setup_at = setups[idx]  # causal snapshot (no future leak)
+        if xx in _setup_at and _setup_at[xx] != idx:  # E4
+            e |= set(accA[_setup_at[xx]])
         # direct pumps E2
         direct = set()
         for u in range(prevkeep[idx] + 1, idx):

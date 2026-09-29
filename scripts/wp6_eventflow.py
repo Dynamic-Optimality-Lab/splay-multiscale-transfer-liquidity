@@ -192,6 +192,7 @@ def build_flow(n, T0, H, upto=None):
     accB = {}  # acc_idx -> [bev ids]
     pump_push = {}  # acc_idx(KEEP) -> {pushed key: True} (union over its B-Steps)
     setup = {}  # key -> acc_idx of last root-arrival (non-root-before)
+    setups = []  # per-access snapshot AFTER that access (causal E4: no future leak)
     lastkeep = {}  # key -> acc_idx of last KEEP
     for idx, acc in enumerate(pre):
         mode, xx = acc["mode"], acc["x"]
@@ -205,6 +206,7 @@ def build_flow(n, T0, H, upto=None):
         accA[idx] = ids
         if nonroot_before:
             setup[xx] = idx
+        setups.append(dict(setup))
         if mode == "KEEP":
             B, pushes = splay_B_push(B, xx)
             s = set()
@@ -227,8 +229,9 @@ def build_flow(n, T0, H, upto=None):
     for bi, (idx,) in enumerate(Bevs):
         xx = pre[idx]["x"]
         elig = set(accA[idx])  # E1 same-access
-        if xx in setup and setup[xx] != idx:
-            elig |= set(accA[setup[xx]])  # E4 (strictly-past setup)
+        _setup_at = setups[idx]  # causal snapshot (no future leak)
+        if xx in _setup_at and _setup_at[xx] != idx:
+            elig |= set(accA[_setup_at[xx]])  # E4 (strictly-past setup)
         # E2: pumps after z's previous KEEP (exclusive) strictly before idx
         prevk = prevkeep[idx]
         for u in range(prevk + 1, idx):
