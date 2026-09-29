@@ -392,6 +392,40 @@ walks + long histories + killer-seeded): 15,000 evals, best prefix gap
 GA-15k) gap never >0. GC holds everywhere tested; still OPEN (unproved).
 
 ## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (the one wall).
+- ML-W-BLOCKS tightening; spread-3 dormancy proof (auxiliary).
+- Splay-model Lean core (auxiliary; does not block author chain).
+
+## C40 — 8H fresh-bound + credits resolution + conditional chain (this continuation)
+
+### C40-1 8H HALL-FRESH-BOUND + NONHEAVY-Q [PROVED_AUTHOR]
+`hall_lemmas.md`: Delta(Q) ≤ Σ_{B-heavy Q-accesses} (e_B−3f) via pairwise-
+disjoint fresh sets (E1 fresh ids; pristine-E4 distinct setups across runs;
+mixed E1/E4 double-duty with both demanding IMPOSSIBLE by setup-update + RUN
+contradiction — genesis corner demands nothing). Hence non-heavy Q never
+violates. Halves Hall (non-heavy done); B-heavy overflow + shared-old remains.
+### C40-2 N-FIRST/N-AUG outcome B both [RESOLVED]
+`audits/WP6_CREDITS_RESOLVE.md`: no freestanding theorems exist (grep-verified);
+downstream consumes prefix counts + LIQ0 only (§14 audit: no persistent matching
+needed; MSTL-14P.md + LIQ0 + D2/D6 verified, no N-FIRST edge). Obligations mapped:
+first-cash + subsequent funding = GC-STATIC vertices; N-AUG content (genuine ids,
+cap 3, dormancy≠clone, re-entry≠new-cap, sharing=edges, past-only) = flow-
+construction properties (true by construction). Old formulations stay REFUTED;
+labels SUPERSEDED_BY_GC_STATIC (conditional; corollaries automatic with GC).
+Residuals/borderline/tenure-cargo are states-not-demand (E2/E3 edges represent).
+### C40-3 conditional composition map [CONDITIONAL PROOF]
+`audits/WP6_CONDITIONAL_CHAIN.md`: GC-STATIC (OPEN premise, the only one) →
+C1 accounting-validity (conditional author proof: matching→counts, U=0, DELETE
+inclusion, no double-count, prefix conventions) → C2 GC → C3 D6 (D2 + AR-13
+kernel + §21 audit vs banked defs/code lines) → C4 service → MSTL-14P (§22
+ten-point audit vs legacy_embedding.py:164-246 + LIQ0 banked units) → C5
+downstream preserved (§23: 14P OPEN needs C4; 15P/17P/18P/19 untouched).
+Support-collapse mapping: no such repo object (grep-verified); LIQ0-06 +
+cumulative reduction used instead (terminology mapping, not gap).
+Kernel reverified exit 0 (AR-01..21); StageBArith arithmetic-only (§24.2
+observed: refuted online Stage B not represented as proved).
+
+## Queued next (LIVE)
 - Min-cut anatomy WITH E3 (proof-relevant cut object for GC-STATIC attempt).
 - Offline-matchability assault at scale (Hall hunt 30k+).
 - GC-direct prefix-gap assault.

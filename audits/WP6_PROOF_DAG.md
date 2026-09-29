@@ -52,6 +52,13 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   GC-ASSAULT 15k clean (gap never >0; cumulative raw-GC 41k+ clean)
       │  (STILL OPEN: GC-STATIC theorem; credits; MSTL-14P composition)
       ▼
+[ BANKED C40 ] 8H FRESH-BOUND (non-heavy Q never violates; violators need B-heavy
+  overflow) · CREDITS resolved outcome-B (no freestanding theorems; downstream
+  consumes counts+LIQ0; obligations = GC-STATIC content) · CONDITIONAL CHAIN
+  (C0 GC-STATIC open premise → C1 accounting → C2 GC → C3 D6 → C4 service →
+  MSTL-14P; audits vs code; support-collapse mapped)
+      │  (THE one wall: GC-STATIC old-abundance theorem)
+      ▼
 [ CONJECTURE C37 ] GC-STATIC: offline cap-3 causal assignment always saturates
   (killer shortfall 0/112; 6k adversarial shortfall 0, GC-gap 0) [FINITE_EVIDENCE]
       │  (IF GC-STATIC proved → GC counting → ledger chain WITHOUT online Stage B;

@@ -74,7 +74,28 @@ Consequence: E2-thinness with B-deep x is structurally possible (triple-
 exception conjunction with sterile-E3 + thin-K/E4 + B-heavy); 26k offline
 evals show it never saturates to a cut. Open (same wall).
 
-## Finite status (C38)
+## 8H. HALL-FRESH-BOUND + NONHEAVY-Q (fresh-disjointness)
+
+Statement: for any B-set Q, Delta(Q) ≤ Σ over Q's B-heavy accesses of
+(e_B(j) − 3f_j), where f_j = fresh slots (|E1(j)| case (a); pristine-|E4(j)|
+case (b)). In particular a Q with NO B-heavy access never violates
+(Delta(Q) ≤ 0) — non-heavy Hall zone law.
+Proof: each demanding access j contributes pairwise-disjoint fresh F_j
+(E1(j): fresh ids per access; pristine-E4(j): distinct setup accesses across runs
+— RUN-STRUCTURE gives ≤1 demanding KEEP per run; mixed E1/E4 double-duty with
+BOTH demanding is impossible: E4(j2)=E1(u) forces u = setup[x]-at-j2 with u
+demanding, hence u, j2 same-key consecutive demanding accesses with no setup
+update between, forcing one x-run with two demanding KEEPs — RUN contradiction;
+genesis-T0-root corner demands nothing). Each F_j ⊆ N(Q). So |N(Q)| ≥ Σ f_j and
+Delta(Q) = |Q| − 3|N(Q)| ≤ Σ_j (|Q_j| − 3f_j) ≤ Σ_{heavy} (e_B(j) − 3f_j)
+(non-heavy terms ≤ 0 since |Q_j| ≤ e_B(j) ≤ 3f_j... precisely |Q_j|−3f_j ≤ 0).
+Dependencies: FRESH-CHANNEL, RUN-STRUCTURE, E1-completeness, E4-eligibility,
+U=0. GC-independent. (Sums noted for Lean: finset formalization skipped,
+author-only.)
+Consequence: violators REQUIRE B-heavy accesses (consistent with E1-CAP);
+falsifier guidance (B-heavy concentration) + proof halving (non-heavy done).
+
+## Finite status (C38 + C40-8H)
 
 M2 history yields a stalled PEEL 4-core (R=42, N=75, mindeg EXACTLY 4,
 Delta=−183, connected, acc span 2–37) with max-flow STILL saturating:
