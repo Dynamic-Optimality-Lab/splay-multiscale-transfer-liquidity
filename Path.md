@@ -1132,3 +1132,16 @@ past + pumped B-deep cash); positive excursions occur only with deep
 slack — deep-slack (vine-DELETEs) + pumped-cash is the universal argmax
 pattern. Script: `wp6_xreturn.py`. Queued: residual Q-transition;
 compensated chain law.
+C23. CAUSAL-CREDIT TOKENS (MSTL-14P stays UNPROVED/NO_WITNESS).
+Genealogy: E3-ancestry per B-StepEv is 1..89 (med 11, NEVER empty —
+hubs+pumps cover all triples); abundant, not O(1)-bounded. Least-loaded
+deterministic online allocation: maxload 2/3, 0 starved over 2331 B-events
+(spreads past popular-A concentration that killed recency). Forced
+singletons 6/6009 (0.1%), max shared load 1 — overdraw corner empirically
+empty. Killed as locations: per-key (riding), B-depth (closed), recency
+(popular overdraw), intervals (contain/overlap/super sharing-or-choice),
+edges/levels/paths (popular-root), scalar Psi (revelation). TRICHOTOMY
+sketch queued as paper lemma (B-StepEv => E1|E4 nonempty or vacuous
+genesis-root; needs U=0 + full formalization). Flow/min-cut equivalence
+still bars matching-as-proof; tokens remain diagnostic+rule-mining.
+Scripts: `wp6_causalcredit.py`, `wp6_leastload.py`, `wp6_singleton.py`.
