@@ -1145,3 +1145,15 @@ sketch queued as paper lemma (B-StepEv => E1|E4 nonempty or vacuous
 genesis-root; needs U=0 + full formalization). Flow/min-cut equivalence
 still bars matching-as-proof; tokens remain diagnostic+rule-mining.
 Scripts: `wp6_causalcredit.py`, `wp6_leastload.py`, `wp6_singleton.py`.
+C24. TRICHOTOMY + LOAD-DIVERSITY (MSTL-14P stays UNPROVED/NO_WITNESS).
+Trichotomy paper lemma banked (`trichotomy.json`): every genuine B-StepEv
+has sited E1 (same-access, A-non-root) or E2 (past pump) or E4 (setup
+arrival) ancestry, else vacuous genesis-root (B-depth 0, no demand) — from
+U=0+M1+freeze+dislodge+genesis, GC-independent, Lean pending (needs splay
+model). Min-load <= 1 universally: 0/2010 minload-2 baseline + adversarial
+best 1 over 860 evals (kill>=3 untouched) — starvation is TWO levels away
+everywhere measured. Least-loaded + trichotomy would give online integral
+3-capacity allocation, but load-diversity proof is blocked (needs counts =
+claim, plus greedy-optimality without matroid: E2/E3 sharing breaks
+laminar structure while E1+E4-only fails 38 histories). Scripts:
+`wp6_minload.py`. Artifact: `minload.json`.
