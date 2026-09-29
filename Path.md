@@ -928,3 +928,12 @@ C8. TENURE-NEED THEOREM PROVED (`lemma_tenure_need.json`): a=1 KEEPs (the
    residue from a failed `lake build` removed (frozen WP-0 lakefile is
    incompatible with installed Lake 5 — pre-existing; direct-`lean` remains
    the repo precedent per WP-1/WP-2 entries).
+C9. RUN-NEED LOCALIZATION PROVED (`lemma_run_localization.json` + hostile
+   audit 2000 histories): maximal same-key runs partition history; S_A occurs
+   ONLY at run starts (first access splays; rest are root no-ops); positive
+   needs occur ONLY at first-KEEPs (after first KEEP x is at both roots, so
+   later same-key KEEPs have a=y=1, need=0 — 0 violations among 1292 positive
+   first-KEEPs); every non-initial run funds >=1 sited event (+6 S_A);
+   tenure == run (identical boundaries). Funding still global (run-local
+   divergence B-deep/A-shallow at run start needs pre-run L2 coupling);
+   recorded as the sharpest structural frame, not as closure.
