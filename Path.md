@@ -1097,4 +1097,16 @@ C19. BORDERLINE VERDICT (MSTL-14P stays UNPROVED/NO_WITNESS).
 that window — 0.8% hit rate). Zig/double class: push margin-cost O(1)/StepEv
 bounded. Leak O(0.5)/cash absorbed by slack 5-50x. N-FIRST proceeds WITH
 borderline allowance (margin-absorption + coupled-3x + transient rarity).
-Script: `wp6_borderline.py`. Queued: N-FIRST formal proof; N-AUG; Lean.
+Script: `wp6_borderline.py`. Queued: N-FIRST formal proof;
+N-AUG; Lean.
+C20. FIRST-DIVERGENCE 1:1 (MSTL-14P stays UNPROVED/NO_WITNESS).
+Genesis first-divergence tenure PROVED self-funding (mod banked
+U=0/tenure/determinism): arrival-DELETE splays x in T0 (e_0 steps),
+tenure no-ops freeze B at T0, cash replays SAME T0-splay (e_B=e_0 exact
+by determinism), funded 3x (AR-15), need d-1 covered (AR-14), strict-D2
+(AR-16, kernel PENDING all three). Per-key first-cashes partition
+disjointly (distinct arrival accesses). Subsequent (reshaped/pumped)
+divergence OPEN: pool-diluted-marginal (95:2 adversarial, 20x aggregate
+oversupply, unattributed) with sharing/fanout barriers. N-FIRST holds for
+first-divergence; general case needs subsequent-case (= E_B-link itself).
+Artifact: `first_divergence.json`.

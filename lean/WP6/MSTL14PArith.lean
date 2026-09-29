@@ -141,3 +141,24 @@ theorem genesis_need_zero (d : Nat) : d - 2 * d - 1 = 0 := by
 theorem stock_composition (N X SA : Nat) (hD2 : N ≤ 2 * X) (hEB : X ≤ 3 * SA) :
     N ≤ 6 * SA := by
   omega
+
+-- WP-6 STEPS N-FIRST (C20): genesis first-divergence arithmetic.
+-- First divergence on key x from A=B=T0: arrival DELETE-x splays x in T0
+-- (e_0 StepEvs, d = T0-depth, d/2 <= e_0 <= d); x-tenure DELETEs are no-ops
+-- (B frozen at T0); cash-x replays the SAME T0-splay in B (e_B = e_0 by
+-- determinism). Funding 3*e_0 >= e_0; need d-1 covered by 6*e_0.
+-- STATUS: arithmetic here kernel-pending (omega-only style); same-splay
+-- determinism (e_B = e_0) is a Layer-A code fact (exec engine determinism),
+-- subsequent (non-first, reshaped) divergence NOT covered (pool/marginal).
+-- WP-6 STEP AR-14: first-divergence need covered (d-1 <= 6*e_0 from d<=2*e_0).
+theorem first_div_need (d e0 : Nat) (h : d ≤ 2 * e0) : d - 1 ≤ 6 * e0 := by
+  omega
+
+-- WP-6 STEP AR-15: same-shape replay funded 3x (e_B = e_A => e_B <= 3*e_A).
+theorem same_shape_funded (e : Nat) : e ≤ 3 * e := by
+  omega
+
+-- WP-6 STEP AR-16: strict D2 (need <= 2*e_B - 1 from d_B <= 2*e_B).
+theorem strict_D2 (dB dA eB : Nat) (h : dB ≤ 2 * eB) :
+    dB - 2 * dA - 1 ≤ 2 * eB - 1 := by
+  omega
