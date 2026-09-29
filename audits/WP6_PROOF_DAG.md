@@ -20,7 +20,11 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
 [ BANKED C31-2 ] RUN (≤1 demanding KEEP/x-run) · FRESH-CHANNEL (E1≠∅ or
   E4-pristine for every demand) · FRESH-CAP (subsumes E1-CAP) · entry@3 zero/121k ·
   singletons boundary-fresh · blockers zero-in-corpus (M2 singleton only one ever)
-      │  (B-heavy overflow e_B>3f onto old STILL OPEN: entry≤2 / exposure / scattering)
+[ BANKED C32 ] ENTRY@3 witness (ENTRY-FRESH-universal DEAD) · LADDER theory:
+  loads form via re-entry climbs 0→1→2→3 across ≥3 pick-episodes + dormancy;
+  drains synchronize N's; dilution (e_A fresh + W-refresh) races drain;
+  blockers ejected, never converge (38k + 30k + 2.28M + 121kENTRY evals)
+      │  (STILL OPEN: synchronized-ladder-completion impossibility; dilution race)
       ▼
 [ OPEN ] STAGE B — min load_before ≤ 2, cap-3 chronological least-loaded
 │

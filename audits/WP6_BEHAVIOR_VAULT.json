@@ -255,6 +255,38 @@
    "superseded": false,
    "theorem": "Stage B (zones)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_entryhunt.py -> artifacts/v04/wp6_present/0909c74a/entryhunt.json",
+   "date": "2026-09-30",
+   "id": "C32-1-EH00",
+   "implication": "ENTRY-FRESH-as-universal dead; Stage B holds (needs convergence, unseen in 30k). M2 load-3 + transient@2 re-entries consistent.",
+   "next": "Ladder autopsy",
+   "order": 17,
+   "reason": "Direct adversarial target: maximize entry-load (re-entry engineering).",
+   "result": "30,000 evals: ENTRY@3 at it=43 (bev118, aev40). 0 starvation.",
+   "script": "scripts/wp6_entryhunt.py",
+   "statement": "ENTRY@3 exists (witness banked).",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "ENTRY-FRESH",
+   "witness": "entryhunt.json witness n=128 bev118 aev40 ENTER@3"
+  },
+  {
+   "artifact": "vault C32-2 analysis (entryhunt.json witness trace)",
+   "date": "2026-09-30",
+   "id": "C32-2-LADDER",
+   "implication": "Starvation = synchronized ladder completion before rescue; never observed. Next: synchrony quantification + dilution race.",
+   "next": "Synchrony/dilution",
+   "order": 18,
+   "reason": "Autopsy the entry@3 witness biography (exact ladder mechanism).",
+   "result": "aev40: ENTER@0(bev4,unpicked)->PICK45(0->1)->ENTER@1+PICK75(1->2)->ENTER@2+PICK106(2->3)->ENTER@3s dead weight. Ladder = re-entry climbs across >=3 pick-episodes + dormancy; synchrony + dilution race + ejection mapped.",
+   "script": null,
+   "statement": "Ladder-episode load-formation mechanism mapped completely.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "Stage B (mechanism)",
+   "witness": "aev40 episode chain bev4/45/75/106/118+"
   }
  ],
  "head": "6f89b8b",

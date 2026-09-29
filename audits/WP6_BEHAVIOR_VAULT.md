@@ -191,10 +191,37 @@ young-transient-exposure unproved, load-3 scattering unproved. No counting
 argument attempted (GC-reduction avoided).
 
 ## Queued next
+- Ladder-synchrony quantification (do drains synchronize whole N's? load-spread).
+- Deposit-dilution race test (e_A fresh vs e_B drain per x-access).
 - Scattering lemma attempts (load-3 convergence impossibility).
-- ENTRY-FRESH theorem attempt (entry-load ≤ 2) or entry@3 hunt at 100k+ scale.
 - ML-W-BLOCKS tightening (per-key occupancy contiguity audit).
 - Lean: scaffold + E1-CAP arithmetization (after author chain closes).
+
+## C32 — ENTRY@3 found + ladder-episode theory (this continuation)
+
+### C32-1 EH-00 entry@3 hunt: ENTRY-FRESH-as-universal DEAD [WITNESS + AUTOPSY]
+`scripts/wp6_entryhunt.py` → `entryhunt.json` (30,000 evals, re-entry bias):
+ENTRY@3 at it=43 (B-event 118, aev 40). No starvation in 30k (Stage B holds;
+entry@3 needs convergence, not yet seen). M2 side-check: load-3 (aev7, minted
+bev86) + transient re-entries@2 in-drain (pairs cycling 1→2, the conveyor).
+### C32-2 ladder autopsy: the complete load-formation mechanism [MECHANISM]
+aev40 biography (genesis ai=0, E3-only, 12 eligibility events): bev4 ENTER@0
+(unpicked) → dormant → bev45 (acc2) ENTER@0 PICKED (0→1) → dormant 46–74 →
+bev75 (acc3) ENTER@1 PICKED (1→2) → dormant 76–105 → bev106 (acc12) ENTER@2
+PICKED (2→3) → bev118/121/129/133/136/138 ENTER@3 as dead weight (never picked;
+others ≤2 serve). LADDER: re-entries climb 0→1→2→3 across ≥3 pick-episodes
+separated by dormancy; completed ladders persist as blockers; blockers are
+ejected by triple-motion (conveyor) and absorbed.
+Synchrony: drains elevate whole N's together (M2 bev80–88 all→2); dilution:
+each x-access deposits e_A fresh-0 (race: e_B drain vs e_A + W-refresh supply).
+Starvation ⟺ |N|-fold synchronized ladder completion before rescue (e_B bound
++ refreshment + access-end). Never observed (38k targeted + 30k entry + 2.28M
+exhaustive + 121k-entry census).
+Same-key-return note: aev40's episodes are CROSS-SPLAY (acc 2,3,12,15,17,18,21,
+22,23) — compatible with ML-W-BLOCKS ≤3/splay (MV 829 = within-splay multi-key
+blocks). Cross-splay return is the ladder vehicle.
+Remaining (exact): synchronized-ladder-completion impossibility (scattering);
+deposit-dilution race formalization. No counting attempted (GC-reduction avoided).
 
 ## C31 — blocker census + run-structure + fresh-channel (this continuation)
 
