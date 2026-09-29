@@ -1011,3 +1011,17 @@ share via pumps). Matching closed generally (fanout leaves unavoidable
 residual under any eligibility). Scripts: `wp6_distnorm.py`,
 `wp6_eventflow2.py`, `wp6_eventflow_abl.py`. Queued: N-AUG exchange with
 trace-justified new edges, N-FIRST first-violation normal form.
+C13. SINGLE-OMISSION DAMAGE LANE (MSTL-14P stays UNPROVED/NO_WITNESS).
+SOD-3 FALSE (damage +9, c*=12 on d=1 n16-shuffled alternating suffix;
+285/400 pairs never resynchronize so damage grows linearly in |W|;
+per-deletion telescope step +11 vs budget +2). BUT batch G_DEL<=0 HOLDS
+(400 histories, J_DEL best 1.5/3): E_B<=A_K+3*A_D (stronger than E_B-link)
+via cross-deletion cancellation. Mechanism = tail-mass: median fut/d 0.33,
+tail-d-fraction 0.83%, bad tail is shallow-leverage (d=1-5, fut 3-12);
+typical removals SAVE (cost-convergence: splay balances both executions'
+accessed keys shallow) while rare hub-pivotal omissions cost (M1-locality:
+access affects O(depth), rest rigid). Also strict-D2 (need<=2*e_B-1) and
+J3-cap 0.62 (D2-cap 0.75 x EB O(n)-cash 0.83 via balanced-build dilution).
+Scripts: `wp6_sod3.py`, `wp6_sod_hill.py`, `wp6_sod_tail.py`. Queued:
+formalize tail-mass cancellation (M1-Lipschitz + cost-convergence) as the
+batch proof; N-AUG/N-FIRST remain open.

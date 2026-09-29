@@ -100,5 +100,14 @@
    "global telescope E_B-3SA+N<=0 held on 200 small-tree histories (weak adversary; needs large-n test, BFS-capped at n~10)",
    "augmenting-path exchange (N-AUG) + first-violation normal form (N-FIRST) still untried"
   ],
+  "killed_routes_7_sod_2026-09-29": [
+   "SOD-3 single-omission (FALSE: damage +9, c*=12 on d=1 (n16/x2/L24/fut12); 285/400 never resync (persistent O(1)/access diff); c* unbounded linear in |W|)",
+   "per-deletion telescope step (needs <=2d_i; SOD-argmax gives +11 vs +2: single steps exceed, batch survives via cancellation)"
+  ],
+  "alive_sod_2026-09-29": [
+   "batch G_DEL<=0 (400 histories; J_DEL best 1.5/3, 2x margin): E_B<=A_K+3*A_D (stronger than E_B-link) HOLDS; cross-deletion cancellation real",
+   "tail-mass mechanism (median fut/d 0.33; tail-d-frac 0.83%; bad tail = shallow-leverage d=1-5; typical removals SAVE via cost-convergence, M1-locality)",
+   "strict-D2 (need<=2*e_B-1) + J3-cap 0.62 (D2-cap 0.75 ANDed with EB O(n)-cash 0.83); O(n)-cash scenario holds via balanced-build dilution"
+  ],
  "title": "CUMULATIVE-LEMMA ROUTE KILL LIST (exact dispositions)"
 }
