@@ -373,6 +373,25 @@ Still Lean-pending: splay-model formalization (trichotomy, K-persist, risers)
 prose + OPEN B-source — correctly open).
 
 ## Queued next (LIVE)
+- N-FIRST/N-AUG-credit re-derivation via offline; MSTL-14P composition.
+- Splay-model Lean core.
+- Spread-3 conjunction (dormancy proof).
+
+## C39 — min-cut+E3 anatomy + GC-direct assault (this continuation)
+
+### C39-1 MC-00 min-cut anatomy [FINITE_EVIDENCE]
+`scripts/wp6_mincut.py` → `mincut.json` (150 hist, B=10,088): E1+E2+E4-only
+fails 44/150 (29%); E3 SAVES all 44 (E3 necessary for offline saturation).
+Optimal-flow load hist: 0:10580 / 1:940 / 2:425 / 3:2766 (packs to cap; most
+mass at 0). Cross-access shared-N med 18 max 117 (§12 glue burden large —
+per-access decomposition would triple-count massively).
+### C39-2 GA-00 GC-direct assault [FINITE_EVIDENCE]
+`scripts/wp6_gcattack.py` → `gcattack.json` (B-heavy sustain + concentrated
+walks + long histories + killer-seeded): 15,000 evals, best prefix gap
+(E_B−3S_A) = 0, ZERO GC kills. Cumulative raw-GC: 41k+ evals (OF-6k + HH-20k +
+GA-15k) gap never >0. GC holds everywhere tested; still OPEN (unproved).
+
+## Queued next (LIVE)
 - Min-cut anatomy WITH E3 (proof-relevant cut object for GC-STATIC attempt).
 - Offline-matchability assault at scale (Hall hunt 30k+).
 - GC-direct prefix-gap assault.

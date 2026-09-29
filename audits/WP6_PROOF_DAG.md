@@ -48,6 +48,10 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
       │  (STILL OPEN: GC-STATIC old-abundance theorem; one-access Hall; E2-hole;
       │   min-cut+E3; credits; MSTL-14P composition)
       ▼
+[ BANKED C39 ] MINCUT (E3-necessary 44/44 saves; optimal packs to cap; glue med18) ·
+  GC-ASSAULT 15k clean (gap never >0; cumulative raw-GC 41k+ clean)
+      │  (STILL OPEN: GC-STATIC theorem; credits; MSTL-14P composition)
+      ▼
 [ CONJECTURE C37 ] GC-STATIC: offline cap-3 causal assignment always saturates
   (killer shortfall 0/112; 6k adversarial shortfall 0, GC-gap 0) [FINITE_EVIDENCE]
       │  (IF GC-STATIC proved → GC counting → ledger chain WITHOUT online Stage B;

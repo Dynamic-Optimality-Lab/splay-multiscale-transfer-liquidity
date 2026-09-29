@@ -492,6 +492,38 @@
    "superseded": false,
    "theorem": "GC-STATIC",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_mincut.py -> artifacts/v04/wp6_present/0909c74a/mincut.json",
+   "date": "2026-09-30",
+   "id": "C39-1-MINCUT",
+   "implication": "E3 load-bearing for matching; optimal packs to cap; glue burden large (no naive per-access sum).",
+   "next": "GA-00",
+   "order": 32,
+   "reason": "Proof-relevant cut object: breakdown, saturated census, E3-necessity, cross-access overlap.",
+   "result": "B=10088: E124-fail 44/150, E3-saves 44/44; loads 0:10580/1:940/2:425/3:2766; shared-N med18 max117.",
+   "script": "scripts/wp6_mincut.py",
+   "statement": "Min-cut anatomy WITH E3.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (cuts)",
+   "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_gcattack.py -> artifacts/v04/wp6_present/0909c74a/gcattack.json",
+   "date": "2026-09-30",
+   "id": "C39-2-GCATTACK",
+   "implication": "GC holds everywhere tested (41k+ cumulative); still OPEN.",
+   "next": "Credits/composition",
+   "order": 33,
+   "reason": "GC-direct B2 kill hunt (prefix-gap objective, walk-bias, killer-seeded).",
+   "result": "15,000 evals best gap 0, zero kills.",
+   "script": "scripts/wp6_gcattack.py",
+   "statement": "GC-direct assault clean.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "Raw GC",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
