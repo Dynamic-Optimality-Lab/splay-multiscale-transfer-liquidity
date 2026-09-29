@@ -1165,3 +1165,11 @@ H=4 max tier fundable by single setup-DELETE (3 slots vs e_B<=2, margin 1;
 U=0 sited). Deep-tier OPEN (shared pump fanout, same duality). Load
 diversity = hub/top fresh-ish + pump-backed deep (distinct backing events).
 Scripts: `wp6_tiers.py`. Artifact: `tiers.json`.
+C26. REFRESH ANATOMY (MSTL-14P stays UNPROVED/NO_WITNESS).
+72 minload-1/3852 B-events dissected: B-heavy accesses saturate same-access
+E1 (e_B>3*e_A overflow) then take OLDEST-abundant E3 saviors (genesis-DELETE
+acc-0, rover 9-17 funneling); load-0 depletes 2->0 then oldest absorbs with
+33x local overcover. REFRESH = overflow-to-older-abundant (E2/E3/E4 three
+channels). 1->2 needs oldest-abundant saturation (O(n) slots vs O(n)
+overflow, balanced ~2x measured). Scripts: `wp6_minload_anatomy.py`.
+Artifact: `minload_anat.json`.
