@@ -937,3 +937,32 @@ C9. RUN-NEED LOCALIZATION PROVED (`lemma_run_localization.json` + hostile
    tenure == run (identical boundaries). Funding still global (run-local
    divergence B-deep/A-shallow at run start needs pre-run L2 coupling);
    recorded as the sharpest structural frame, not as closure.
+C10. QUOTIENT WAR (stages 1-8 executed; MSTL-14P stays UNPROVED/NO_WITNESS,
+   no candidate transition). Run compression verified on 500 hostile
+   histories (S_A only at run starts; needs only at first-KEEPs;
+   `scripts/wp6_quotient.py`, `quotient/quotient_lifecycle.json`:
+   births=4960 changes=8090 deaths=1621, defect count 0..31). Defect records
+   change O(1) per StepEv (Lemma A worst 2/3) but VALUES jump O(n): all
+   pure-state masses killed - M1/M2/M5 creation 57/68/60, B-inc 57/24/60,
+   KEEP gap 57/29/62; M3 max-div creation HOLDS (+4<=6, tight: 1252/5274
+   StepEv hits at +4) but B-conservation FAILS (+2 push-down leak) and
+   KEEP-consume FAILS (gap 23, bystander-max); size-capped CAP=2 creation
+   HOLDS (4<=6) but B-leak +4 / KEEP gap 30; depth-capped creation FAILS
+   (20>6, whole-subtree depth shifts). Impossibility-triangle recorded
+   (`mass_autopsy.json`): stable (max) vs accounting (sum) vs localized
+   (at-x) are pairwise incompatible for pure state functions. Per-run
+   6-budget is FALSE (58:1 arbitrage, DELETE-started 15:1;
+   `run_arbitrage.json`): funding MUST cross run boundaries. Greedy global
+   6-per-A-event discharge: 0 shortfall over 600 hostile histories, global
+   need/income 0.039 (`discharge_greedy.json`) - plausibility evidence, not
+   proof. Raw stock adversarial sweep: 1000 histories (freeze-then-cash,
+   shuffled-insertion BSTs, big hostile), 0 kills, worst gap -23, worst
+   ratio 0.28 (`stock_sweep.json`). Composition reduces to ONE open lemma:
+   B-source (B-created divergence prepaid by global pool). Lean AR-06..AR-09
+   added (div_rise_A/B, capped_gain, poolAux+pool_step) as SKELETON -
+   kernel check PENDING (no Lean toolchain in this env; release download
+   timed out); header states this explicitly, nothing cited as Layer B.
+   Route ledger: `killed_routes_3_quotient_war_2026-09-29` + alive-open-2
+   (M3-creation micro-lemma / raw stock / B-source). Scripts:
+   `wp6_mass_screen.py`, `wp6_mass_capped.py`, `wp6_mass_capped_size.py`,
+   `wp6_discharge.py`, `wp6_run_attack.py`, `wp6_stock_sweep.py`.

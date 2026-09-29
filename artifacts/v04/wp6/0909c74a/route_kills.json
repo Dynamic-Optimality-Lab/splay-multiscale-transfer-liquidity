@@ -39,7 +39,20 @@
   "subsequence-vs-full rotation theorems (no such splay result; trees diverge)",
   "k-monotonicity coupling (right direction ACTIVE6>=ACTIVE3 pointwise, insufficient for sufficiency)"
  ],
- "suggested_next": [
+  "killed_routes_3_quotient_war_2026-09-29": [
+   "pure-state masses M1/M2/M5 (A-create 57/68/60, B-inc 57/24/60, KEEP gap 57/29/62: value-jump swings)",
+   "M3 max-div mass (creation HOLDS +4<=6 over 5274 StepEvs; B-conservation FAILS +2 push-down leak; KEEP-consume FAILS gap 23 bystander-max)",
+   "size-capped mass CAP=2 (creation HOLDS 4<=6; B-leak +4; KEEP gap 30)",
+   "depth-capped mass CAP=2 (creation FAILS 20>6: whole-subtree depth shifts; B-leak +11; KEEP gap 36)",
+   "per-run 6-budget need<=6*run_A (FALSE 58:1, DELETE-started 15:1; funding must cross run boundaries)",
+   "pure-state mass impossible-triangle (stable/max vs accounting/sum vs localized/at-x pairwise incompatible; see mass_autopsy.json)"
+  ],
+  "alive_but_open_2_quotient_war_2026-09-29": [
+   "M3-creation micro-lemma (per-A-StepEv max-div rise <=4; tight, 1252 hits; needs rotation case analysis; Lean AR-06 skeleton, kernel PENDING)",
+   "raw stock sum(need)<=6*S_A (1000 adversarial histories + 152777 prior: 0 kills; greedy discharge 0 shortfall, 25x slack; plausible but UNPROVED)",
+   "B-source lemma (THE open core: B-created divergence prepaid by global pool; all composition reduces to this)"
+  ],
+  "suggested_next": [
   "suffix-bound attack with tenure/bystander structure",
   "machine-synthesized potentials (LP/perceptron over exact-difference features) + independent local-proof attempt",
   "Lean formalization of CLOSED units (Case A arithmetic, reduction, U=0, tenure, L1) to bank partial credit and pressure-test foundations"

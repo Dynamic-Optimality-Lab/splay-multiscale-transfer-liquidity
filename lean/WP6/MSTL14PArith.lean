@@ -74,3 +74,46 @@ theorem mob_exact : ∀ (lat nEv : Nat), mob lat nEv = Nat.min lat (2 * nEv) := 
 theorem service_bound (y a eB : Nat) (ha : 1 ≤ a) (hev : y - 1 ≤ 2 * eB) :
     (y - 2 * a) ≤ 2 * eB := by
   omega
+
+-- WP-6 STEPS S3/S7 (quotient war): single-node divergence micro-bounds.
+-- div v := dB v - 2 * dA v (Nat truncated). An A-StepEv moves the accessed
+-- key up <= 2 levels (dA drops <= 2, dB fixed): its div rises <= 4.
+-- Measured worst +4 over 5274 A-StepEvs (1252 hits at +4): the bound is
+-- tight at the node level. Bystander/push-down accounting is Layer A prose.
+-- STATUS (2026-09-29 session): added without kernel check (no Lean toolchain
+-- in this environment; release download timed out). Proofs are omega-only in
+-- the style of AR-01..AR-05 above; MUST be kernel-checked (lean 4.21.0
+-- exit 0, no sorry) before citing as Layer B. Until then: SKELETON.
+
+-- WP-6 STEP AR-06: per-A-StepEv node divergence rise (accessed key).
+theorem div_rise_A (dA dA' dB : Nat) (hdrop : dA ≤ dA' + 2) :
+    dB - 2 * dA' ≤ (dB - 2 * dA) + 4 := by
+  omega
+
+-- WP-6 STEP AR-07: per-B-StepEv node divergence rise (pushed-down key).
+-- One StepEv pushes a bystander down <= 1 level (dB rises <= 1, dA fixed).
+theorem div_rise_B (dA dB dB' : Nat) (hpush : dB' ≤ dB + 1) :
+    dB' - 2 * dA ≤ (dB - 2 * dA) + 1 := by
+  omega
+
+-- WP-6 STEP AR-08: per-record capped-mass gain (cap C, e.g. C = 2).
+-- The 3-record composition (Lemma A) is Layer A; this is the record slice.
+theorem capped_gain (div div' C : Nat) :
+    Nat.min div' C ≤ Nat.min div C + C := by
+  omega
+
+-- WP-6 STEP AR-09: global greedy discharge pool (forward accumulator).
+-- poolAux p is ds threads the running pool; a step with demand d <= i + p
+-- leaves exactly i + p - d (no shortfall). Prefix-coverage composition
+-- (pool closes iff every prefix earned >= spent) is Layer A prose + the
+-- OPEN B-source lemma, NOT proved here.
+def poolAux : Nat → List Nat → List Nat → Nat
+  | p, [], _ => p
+  | p, _, [] => p
+  | p, i :: ir, d :: dr =>
+    poolAux (if d ≤ i + p then i + p - d else 0) ir dr
+
+-- WP-6 STEP AR-09b: single covered step leaves income + pool - demand.
+theorem pool_step (p i d : Nat) (h : d ≤ i + p) :
+    (if d ≤ i + p then i + p - d else 0) = i + p - d := by
+  rw [if_pos h]
