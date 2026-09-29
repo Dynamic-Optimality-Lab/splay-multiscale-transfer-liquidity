@@ -1110,3 +1110,14 @@ divergence OPEN: pool-diluted-marginal (95:2 adversarial, 20x aggregate
 oversupply, unattributed) with sharing/fanout barriers. N-FIRST holds for
 first-divergence; general case needs subsequent-case (= E_B-link itself).
 Artifact: `first_divergence.json`.
+C21. FIRST-CROSSING SURGERY (MSTL-14P stays UNPROVED/NO_WITNESS).
+Q: does proving GC need GC? No — minimal-prefix IH (proper prefixes only)
+is strictly weaker; circularity was in GLOBAL slack, not induction.
+Last-safe cut (224 cashes): 61% interval-sufficient (pay>=q inside (u,t*],
+local-closed) vs 39% tenure-frozen (interval-empty pay=0, D predates u=tx,
+needs pooled outside-S_A med 23) = banked tenure-need L2-open. Worst q/pay
+64 on tenure-empty. Interval-len med 2 (u recent). Sharing persists WITHIN
+intervals (fanout), so scoping doesn't dodge it. FC-FIRST = slack-suffices
+(excess/slack<=0.33) with slack reason unknown (pump-sharing +
+tenure-pool). No circularity introduced (IH strictly earlier only); the
+missing piece is structural, not logical. Script: `wp6_lastsafe.py`.
