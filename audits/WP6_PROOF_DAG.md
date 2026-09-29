@@ -37,10 +37,16 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
       │  (STILL OPEN: K-0 necessity exact split; spread-3; W-tightening; scattering)
       ▼
 [ BANKED C36 ] KERNEL: AR-01..19 exit 0 (AR-08 repaired; AR-17/18/19 trio new;
-  no sorry) · splay-model formalization still pending
-      │  (STILL OPEN: Stage B proper; splay-model Lean; spread-3; scattering)
+  no sorry) · splay-model formalization still pending · scaffold/zones/blocks intact
+[ REFUTED C37 ] STAGE B online (chronological least-loaded starves: starve_min.json
+  n=128 acc8 KEEP-19 eA1 eB7, N=5 all-3; fresh-key-drain mechanism; E1-CAP intact
+  (B-heavy open zone)) — the ONLINE path is dead; nothing downstream of it survives
+[ CONJECTURE C37 ] GC-STATIC: offline cap-3 causal assignment always saturates
+  (killer shortfall 0/112; 6k adversarial shortfall 0, GC-gap 0) [FINITE_EVIDENCE]
+      │  (IF GC-STATIC proved → GC counting → ledger chain WITHOUT online Stage B;
+      │   online-vs-offline audit point flagged; N-FIRST/N-AUG-credit need re-derivation)
       ▼
-[ OPEN ] STAGE B — min load_before ≤ 2, cap-3 chronological least-loaded
+[ OPEN ] GC — E_B(t) ≤ 3·S_A(t) every present prefix (sole survivor; NO witness either way)
 │
 │  Five-channel split (SV-00 weights: W62% / K24% / E2 / E1 / E4):
 │   ├── E1-overflow channel — E1 saturates in B-heavy; overflow q=e_B−3e_A to old

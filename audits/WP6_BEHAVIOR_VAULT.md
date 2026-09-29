@@ -190,9 +190,9 @@ Remaining gap (exact): B-heavy all-3 convergence — entry-load ≤2 unproved,
 young-transient-exposure unproved, load-3 scattering unproved. No counting
 argument attempted (GC-reduction avoided).
 
-## Queued next (SUPERSEDED ordering note: C31–C35 below are positionally scrambled
-by sequential edit order — follow entry IDs/dates, not file positions; the live
-queue is maintained at the current file end)
+## Queued next (SUPERSEDED ordering note: C31–C37 below are positionally scrambled
+by sequential edit order — follow entry IDs/dates, not file positions; live
+queues: the STALE-marked one is dead; the LIVE queue sits just before C37)
 
 ## C33 — margin probe + near-miss feeder (this continuation)
 
@@ -280,11 +280,7 @@ Dependencies (all banked): Pair Access DELETE-skips-B, B-freeze T3,
 root-dislodge, U=0, setup rule, ML-E1-ENTRY, ML-ADJ-E4. GC-independent.
 Remaining: B-heavy overflow (e_B>3f) onto old (K/E2/W) — unchanged open gap.
 
-## Queued next (LIVE)
-- K-0 necessity direction (B-heavy elevation ⟹ K-0=0: verify exact 25/25 split).
-- Spread-3 dormancy+return+ladder conjunction (0/19982).
-- Splay-model Lean (trichotomy/K-persist/risers; needs splay model file).
-- Lean: remaining scaffold arithmetization as needed.
+## Queued next (STALE — superseded; live queue at file end before C37)
 
 ## C35 — K-0 necessity split: gate → buffer (this continuation)
 
@@ -318,9 +314,44 @@ Counting/fluid paths to all-3 exhausted without exception (all reduce to L0/GC);
 remaining hope is purely geometric (episodes/returns/blocks).
 
 ## Queued next (LIVE)
-- Splay-model Lean (trichotomy/K-persist/risers; needs splay model file).
-- Spread-3 dormancy+return+ladder conjunction (0/19982).
-- Deposit-dilution race: K-0 necessity exact split follow-up (done C35: buffer law).
+- Offline-matchability assault at scale (Hall hunt 30k+; kill GC-STATIC or not).
+- GC-direct prefix-gap assault (kill GC or not).
+- Min-cut anatomy WITH E3 (proof-relevant cut object for GC-STATIC attempt).
+- N-FIRST/N-AUG-credit re-derivation via offline assignment.
+- MSTL-14P composition (D2+GC stock, k=6, rho, collapse, conservation, service).
+
+## C37 — STAGE B REFUTED + offline fallback alive (this continuation)
+
+### C37-1 SC-00: spread3 + 2-blockers + STARVATION [KILL WITNESSES]
+`scripts/wp6_spread.py` (25k budget): SPREAD3 at it=1063, 2-BLOCKERS at it=1576
+(witnesses LOST — early return before persist; method lesson: persist
+incrementally; subsumed by kill below), blockers 9→10, then STARVATION it=18913
+(`starve.json`, H len 46, n=128 implied). First minload-3 ever: online greedy
+starves. No banked lemma contradicted (all kills in open zones — verified C37-2).
+### C37-2 MZ-00: minimized kill + anatomy + mechanism [WITNESS BANKED]
+`scripts/wp6_starvemin.py` → `starve_min.json`: 46→9 accesses, B=112, best
+minload 3, first starve bev110 (acc8 KEEP-19, e_A=1, e_B=7): N=5 ALL at load 3
+(E1{98 age0} + E2{96 age3} + K{8 age8} + W{52,56 age8}; E4 empty).
+E1-CAP/FRESH-CAP/DILUTION-ZERO consistent (e_B=7 > 3·1: B-heavy open zone).
+MECHANISM (fresh-key drain): minimized H walks FRESH keys (10→12→18→19) through
+shared triple geometry with setup chain (1,20,12,10); each access demands
+overflow from the SAME old pool (genesis acc0 A-StepEvs 8,52,56 + acc5 pump 96)
+while deposits go to unrevisited keys (miskeyed supply); E1-98 sprints 0→3
+in-access (3 of 7 picks); synchronized convergence at bev110. Scattering broken
+by geographic concentration (shared zone revisited via fresh keys).
+### C37-3 OF-00: offline survives killer + 6k adversarial [FALLBACK ALIVE]
+`scripts/wp6_offline.py` → `offline.json`: killer Hmin offline max-flow
+shortfall 0/112 (online myopia ≠ structural deficit — same demand placeable
+offline). 6000 adversarial: worst shortfall 0, worst GC-gap 0 (no Hall violator,
+no GC kill). GC-STATIC conjecture (offline cap-3 causal assignment always
+saturates) has first finite evidence. LEDGER PATH: past-only offline assignment
+suffices for accounting (existence, not online construction); online-vs-offline
+audit point flagged for author-proof (no future info in edge direction; full-
+history accounting is standard amortized practice — to be audited, not assumed).
+IMPLICATION: Stage B REFUTED (terminal-B for the online theorem); GC and MSTL-14P
+NOT refuted (zero witnesses); MSTL-14P chain must rebuild via offline (queued
+above). All scaffold/zone/geometry lemmas UNAFFECTED (nonemptiness, zones,
+fresh channels, blocks, kernel AR-01..19 — none relied on minload≤2).
 
 ## C36 — kernel upgrade: AR-01..19 exit 0 (this continuation)
 
