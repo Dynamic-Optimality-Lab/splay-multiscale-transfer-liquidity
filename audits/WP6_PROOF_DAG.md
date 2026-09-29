@@ -32,6 +32,8 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
 [ BANKED C34 ] DILUTION-ZERO (e_B≤f ⟹ minload 0; 9252/0) · K-RATCHET
   (old-K monotone; fill-order descriptive; fluid-closure≡GC DISCARDED) ·
   K-0 absence characterizes B-heavy elevation (med 3 vs 0)
+[C35] K-0 = BUFFER not gate (elevated K0==0 21/25; safe K0==0 59/177;
+  E1-0 present+eaten 25/25; case-b immune 5/5; elevation = drain > buffers)
       │  (STILL OPEN: K-0 necessity exact split; spread-3; W-tightening; scattering)
       ▼
 [ OPEN ] STAGE B — min load_before ≤ 2, cap-3 chronological least-loaded

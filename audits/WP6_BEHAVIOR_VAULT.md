@@ -280,10 +280,25 @@ root-dislodge, U=0, setup rule, ML-E1-ENTRY, ML-ADJ-E4. GC-independent.
 Remaining: B-heavy overflow (e_B>3f) onto old (K/E2/W) — unchanged open gap.
 
 ## Queued next (LIVE)
-- K-0 necessity direction (B-heavy elevation ⟹ K-0=0: verify exact 25/25 split).
 - Spread-3 dormancy+return+ladder conjunction (0/19982).
 - ML-W-BLOCKS tightening (per-key occupancy contiguity audit).
 - Lean: scaffold arithmetization (after author chain closes).
+
+## C35 — K-0 necessity split: gate → buffer (this continuation)
+
+### C35-1 K0-00 exact split [FINITE_EVIDENCE]
+`scripts/wp6_k0split.py` → `k0split.json` (DL corpus, 202 B-heavy accesses):
+elevated K0==0: 21/25 (NOT universal — 4 elevated with K0 = 1,1,1,6).
+Safe K0==0: 59/177 (sufficiency fails: no-buffer but short/absorbed drains).
+Elevated E10==0: 0/25 (E1-0 ALWAYS present, eaten as buffer); W0==0: 22/25;
+E40==0: 25/25. All 25 elevated are case-a; case-b heavy 5/5 safe (incl. e_B=32
+with f=2 — E4-pristine + old-zeros carry 26 overflow picks at 0).
+eB med 12 (elevated) vs 8 (safe); elevated K0≥1 cases all thin-fresh (f=1–2).
+REFINEMENT: K-0 is an absorption BUFFER (|K-0| picks), not a gate. Elevation
+signature: case-a + thin fresh (f=1–2) + long drain (e_B 8+) + pre-elevated old
+(K-0=0 in 84%) + W0=0 (88%). Elevation ⟺ drain-picks > buffers (margin view,
+C33). No new proof (buffer arithmetic = margin arithmetic); K-0 necessity as
+universal REFUTED (21/25).
 
 ## C34 — dilution-zero + K-ratchet (this continuation)
 
