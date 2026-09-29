@@ -1076,3 +1076,16 @@ setup-then-cash within 4 steps always nets <=0; serialization: O(n) fanout
 appearances extract only via setup-first sequences that pay first.
 Scripts: `wp6_cashchain.py`, `wp6_badhorizon.py`. Queued: beam-D5 n64/128;
 depth-5/6 exhaustive small-n; compensated residual-chain law.
+C18. ZERO-PATH ANATOMY (MSTL-14P stays UNPROVED/NO_WITNESS).
+First-cash universals over 12 hostile cashes: new-hazard ZERO (no cash
+creates a newly-dangerous bystander — balanced O(depth)-margins absorb
+O(1)-pushes; same-access coupled drift-help-3x dominates push-1x so pumps
+net-REDUCE bystander hazard); slack>>q (5-50x); rigid off-paths persist
+frozen; A-drift destroys hazard (dest 0-32). Appearance/causal split:
+fanout duplicates observations O(n) while causal backing stays exclusive
+O(1) (DELETE-positioning + cash-reset key-specific). N-FIRST now concrete:
+exclusive-create + exclusive-destroy + net-reducing-pumps; sharing confined
+to appearances, unfunded by proof. Beam D8 n64/128 held (best 0, 12 trials,
+~150k successors, memo V1). Scripts: `wp6_beamhunt.py` (patched per spec:
+dedup+prescore+PRE60+memo), `wp6_zeroanat.py`. Queued: N-FIRST formal proof;
+N-AUG residual modes; Lean-kernel.

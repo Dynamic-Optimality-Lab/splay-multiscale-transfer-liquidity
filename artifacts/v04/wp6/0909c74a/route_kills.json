@@ -146,5 +146,13 @@
    "bounded-horizon V_3=V_4=0 exhaustive (98k depth<=3 paths x3 starts + 2x1M depth-4 vine paths, n=16, best cumulative 0): setup-then-cash within 4 steps always nets <=0; serializes fanout (extraction needs setup first, setup costs first)",
    "residual-chain law queued (cash<=setup-mountain path-locally; O(n) appearances serialize to setup-funded cashes)"
   ],
+  "killed_routes_12_anatomy_2026-09-29": [
+   "greedy cumulative-max as falsifier (stalls at diagonal: all first-move rewards <=0 structurally, positives need depth>=2 lookahead)"
+  ],
+  "alive_anatomy_2026-09-29": [
+   "new-hazard ZERO universal (12/12 cashes create no newly-dangerous bystander: balanced O(depth)-margin absorbs O(1)-pushes; coupled same-access drift-help-3x dominates push-1x so pumps net-REDUCE hazard)",
+   "slack>>q universal at first cash (5-50x); rigid off-paths persist frozen; A-drift destroys (dest 0-32); appearance/causal split (fanout duplicates observations O(n), causal backing stays exclusive O(1): DELETE-positioning + cash-reset key-specific)",
+   "N-FIRST shape now concrete: exclusive-create + exclusive-destroy + net-reducing-pumps (coupled-drift-3x); sharing confined to appearances"
+  ],
   "title": "CUMULATIVE-LEMMA ROUTE KILL LIST (exact dispositions)"
 }
