@@ -1340,6 +1340,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (Layer B)",
    "witness": null
+  },
+  {
+   "artifact": "exact exhaustive n=7 L4 (38416) + n=8 L3/L4 (4096+65536) + n=9 L3 (5832), vine-left, inline",
+   "date": "2026-09-30",
+   "id": "C69-EXACT-789",
+   "implication": "Small-n exact frontier n=5 -> n=9 (partial); violator absent at small n (truth signal, not proof).",
+   "next": "n=9 L4 (105k); Lean splay-model; 8Z interval-cover counting; drift bound",
+   "order": 85,
+   "reason": "Extend exact exhaustive frontier beyond n=6 for kill-or-clean verdict.",
+   "result": "n=7 L4 38k + n=8 L3/L4 69.6k + n=9 L3 5.8k: ALL CLEAN, zero shortfall/gap.",
+   "script": "inline-exhaustive",
+   "statement": "No Hall violator at n<=9 short histories (exact).",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (kill)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
