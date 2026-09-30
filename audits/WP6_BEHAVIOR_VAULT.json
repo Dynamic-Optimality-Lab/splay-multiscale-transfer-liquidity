@@ -1356,6 +1356,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (kill)",
    "witness": null
+  },
+  {
+   "artifact": "exact exhaustive n=9 L4 (104976) + n=10 L3 (8000), vine-left, inline",
+   "date": "2026-09-30",
+   "id": "C70-EXACT-910",
+   "implication": "Exact frontier n=10; cumulative exact ~2.53M + targeted ~200k, zero kill (truth signal).",
+   "next": "n=10 L4 chunked (160k); Lean splay-model; 8Z counting; drift bound",
+   "order": 86,
+   "reason": "Extend exact frontier for kill-or-clean verdict.",
+   "result": "n=9 L4 105k + n=10 L3 8k: ALL CLEAN.",
+   "script": "inline-exhaustive",
+   "statement": "No Hall violator at n<=10 short histories (exact).",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (kill)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
