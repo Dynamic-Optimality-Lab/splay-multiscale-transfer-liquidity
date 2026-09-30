@@ -301,3 +301,42 @@ alternate with supplying accesses (zone-overlap for x still required and open;
 sterile-rebuild sustain needs fresh-far keys (finite pool) else repeats stall
 or near keys overlap-save). Code: splay_A/splay_B_push zig/double branches;
 root_key before/after.
+
+## 8S. SITED-ALWAYS (UNIVERSAL, code-proved) [PROVED_AUTHOR C58]
+
+Statement: every A-StepEv (hence every Aev counted in S_A) is sited.
+Proof: `splay_trace` emits ZIG with `(lo,hi)=(min(node,p),max(node,p))` and
+doubles with `(min,max)` of `(node,p,g)` (`python/liquidity/legacy_embedding.py`
+lines 121–140) — node≠p distinct keys, so `lo<hi` always. `_sites`
+(lines 156–161) and `encode._sites_nonempty` return nonempty given `lo<hi`:
+`i=lo ∈ [lo,hi)` satisfies `1≤lo` (min key), `lo<nkeys` (`lo<hi≤nkeys`),
+`lo+1≤hi` (distinct integers). Failure needs `lo==hi` (single point = no
+rotation = not a StepEv). Finite face: 3871/3871 sited (`imprint.json`) — was
+theorem all along. Consequence: S_A = #A-StepEvs exactly; no filtering;
+T7 banking per StepEv unconditional.
+
+## 8T. FIRST-ACCESS NON-HEAVY (UNIVERSAL one-liner) [PROVED_AUTHOR C58]
+
+Statement: the first access of any history is never B-heavy.
+Proof: pre-states `A=B=T0`; same key, same tree ⟹ same splay cost and trace
+length: `e_A=e_B` (0 if trivial/no-op with zero demand, else `e_B=e_A≤3e_A`).
+Heavy needs divergence (DELETE-decoupling), which needs past accesses that bank
+sited supply (8S) with zero B-demand. So heaviness is always bought with prior
+pure supply — decoupling-budget face (cycle-closure queued).
+
+## 8U. K-UNIVERSAL: past-x-Aevs anchor all future x-bursts [PROVED_AUTHOR C58]
+
+Statement: fix key x and KEEP access J on x. Every sited Aev of every past
+x-access is K-adjacent (hence E3-adjacent) to every B-event of J.
+Proof: (i) `splay_A` rotated sets are `{node,p[,g]}` with `node=x` fixed
+(`scripts/wp6_eventflow.py` lines 111–145, never reassigned) — so `x ∈ S(a)`
+for ALL Aevs of x-accesses. (ii) All are sited (8S). (iii) ML-K-PERSIST
+(`scripts/wp6_microverify.py` MV-02: 15316 checks, viol 0): sited past-x-access
+A-StepEv with rotated∋x is in E3 of later x-KEEP B-events. K-def adds only
+`ai<acc` (past ✓). Hence `K_x(J) ⊇ {all past x-access Aevs}`, count
+`Σ e_A` over past x-accesses, cap-3 each, plus E1 (same-access) + E4-pristine
+(setup; FRESH-CHANNEL-b) + E2/W/E7. Finite face: 75 trivial bursts all with
+E4 + K≥2 + E3-union med 17 (`imprint.json`); K2A one-access Δ≤−2 universal-side
+pressure. Residual (NOT closed): cap-exhaustion (few imprints ×3 vs big e_B —
+transients cover finitely, chase 95%) + cross-x contention on multi-key triples
++ E3-variation formalization. Wall purified to anchored-supply contention.
