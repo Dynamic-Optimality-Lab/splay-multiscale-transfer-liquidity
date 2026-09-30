@@ -466,11 +466,7 @@ E2-hole conjunction (BOUNDED C41: repeat-cycles anchor supply; residual =
 sterile-thin-heavy conjunction); min-cut+E3 anatomy; credit re-derivation;
 MSTL-14P comp.
 
-## Queued next (LIVE)
-- GC-STATIC old-abundance theorem (the one wall; reverse-induction needs
-  old-new sufficiency at B-heavy Q-blocks).
-- Splay-model Lean core (auxiliary).
-- Spread-3 dormancy proof (auxiliary).
+## Queued next (STALE — superseded by C42 queue at file end)
 
 ## C41 — GC-STATIC assault: near-miss persistence + residual/induction frame + augmenting anatomy (this continuation)
 
@@ -502,3 +498,28 @@ supply at run-start (E1 fresh / pristine-E4 for victim's KEEP); residual hole =
 E2-misses-DELETE-half + hub-luck + sterile + thin + heavy conjunction.
 Diversity law (finite): tight sets stay tiny (min-slack singleton; large-tight
 max Q=3) — union growth outpaces demand concentration everywhere tested.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; induction leverage dead).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C42 — UL-sufficiency fails; induction circular; zone+short hunts clean (this continuation)
+
+### C42-1 UL-00 old-new sufficiency probe [FINITE_EVIDENCE]
+`scripts/wp6_ulsuff.py` → `ulsuff.json` (250 hist, B=15,620, 187 B-heavy
+blocks): U_L-sufficiency (|U_L| ≥ |Q_L|/3) FAILS (margin min −6.00, p5 −1.33;
+12 violations, e.g. Q=13 with U_L=1). U_L class split: old:E3 2174, E1 386
+(W-first-overlaps dominate new supply). Strong-step dead empirically.
+### C42-2 carry autopsy: 8K-sufficiency CIRCULAR [BANKED HONESTLY]
+`hall_lemmas.md` 8L: carry (d_L ≤ sigma_{prev}) ⟺ Hall(Q itself) biconditional
+— assuming carry proves the goal. 8K induction DEAD as proof strategy (§25-trap
+caught live). STANDS: 8J-necessary, sigma-identity (algebra), UL-measurements.
+Carry-holds-on-full-histories (187/187) = shortfall-0 restated (adds nothing).
+### C42-3 ZH-00 zone hunt + short-concentrated hunt [FINITE_EVIDENCE]
+`scripts/wp6_zonehunt.py` → `zonehunt.json`: 15k sustained shared-zone walks
+(40–70 accesses, zone-confined): shortfall 0, best slack 5 (acc3 slice — long
+walks self-supply via per-access E1). Inline short hunt (L 5–12, zone-confined):
+8k evals, 0 kills. Pool-exhaustion via sustained walks does not occur (hub-E1
+supply holds it). Cumulative offline: 26k + 15k + 8k + 2.28M exhaustive +
+killer/M2/ENTRY@3, zero shortfall.

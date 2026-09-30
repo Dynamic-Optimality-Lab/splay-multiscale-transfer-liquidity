@@ -52,6 +52,11 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   GC-ASSAULT 15k clean (gap never >0; cumulative raw-GC 41k+ clean)
       │  (STILL OPEN: GC-STATIC theorem; credits; MSTL-14P composition)
       ▼
+[ BANKED C42 ] UL-sufficiency FAILS (margin −6; strong step dead) · 8K-sufficiency
+  CIRCULAR (carry ⟺ Hall(Q); §25-trap caught live; 8J-necessary stands) ·
+  zone 15k + short 8k hunts clean (pool-exhaustion absent; hub-E1 holds)
+      │  (THE bare wall: old-abundance with no induction leverage)
+      ▼
 [ BANKED C41 ] NEAR-MISS (slack-2 singleton degenerate; large-tight max Q=3;
   diversity law) · 8I/8J/8K (residual shape; |Q_L|≥3|U_L|+1; reverse induction
   ⇒ single lemma: old-new sufficiency) · AUGMENT (optimal E3-only 107/112;

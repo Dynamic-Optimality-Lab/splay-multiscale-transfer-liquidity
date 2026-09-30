@@ -145,6 +145,23 @@ Slack-transfer (§9) is this induction in cumulative form (sigma_new = sigma_old
 + 3·new − |R|; IH supplies sigma_old ≥ 0 — NOT circular, NOT GC-equivalent;
 the dangerous step is exactly the lemma above).
 
+## 8L. INDUCTION-WITH-CARRY AUTOPSY: SUFFICIENCY CIRCULAR (C42)
+
+Carry version (d_L ≤ sigma_{prev}, i.e. |Q_L| ≤ 3|U_L| + sigma_{prev}):
+d_L ≤ sigma_{prev} ⟺ |Q_L| − 3|U_L| ≤ 3|N(Q_<L|)| − |Q_<L|| ⟺
+|Q_L| + |Q_<L|| ≤ 3(|U_L| + |N(Q_<L|)|) ⟺ |Q| ≤ 3|N(Q)| = HALL(Q ITSELF).
+So carry-sufficiency for Q is BICONDITIONAL with Hall(Q) — assuming carry to
+prove Hall(Q) assumes the goal. 8K-sufficiency (strong form without carry, and
+carry form alike) is CIRCULAR as a proof strategy: DEAD (banked honestly; this
+is the §25-audit trap "inequality equivalent to Hall itself", caught live).
+What STANDS: 8J-necessary (violator constraints, no circularity — minimality
+applies to strict subsets legitimately); sigma-transfer IDENTITY (pure algebra);
+UL-measurements (margin<0 exists: strong step dead empirically too).
+Carry-measurement (d_L ≤ sigma_{prev} on full histories, 187/187 holds) =
+shortfall-0 restated (biconditional above) — consistent, adds nothing.
+The induction frame contributes NO leverage; the wall is bare: old-abundance
+must come from elsewhere (or a violator exists).
+
 ## Finite status (C38 + C40-8H)
 
 M2 history yields a stalled PEEL 4-core (R=42, N=75, mindeg EXACTLY 4,
