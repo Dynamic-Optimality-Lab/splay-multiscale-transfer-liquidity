@@ -656,3 +656,15 @@ scripts/wp6_surgical2.py -> surgical2.json (victim T0-depth<=6 (E1 1-3 naturally
 scripts/wp6_delheavy.py -> delheavy.json (80-90 percent DELETEs (trees decoupled: A advances alone, B frozen stale), rare shared-zone KEEP pushers/strikes): 15k evals, shortfall 0, best slack 2 (cut singleton). Autopsy: decoupled regime is SAFE BY SUPPLY (each DELETE banks deep A-supply with zero B-demand; E_B tiny vs 3*S_A huge). Sterile-prone in theory, supply-rich in fact. (Artifact hygiene: script wrote evals only on improvement; final count 15000 restored programmatically + final-write added to DH/LT scripts; same fix applied to largetight.json 12000.)
 ### C49-2 BN-00 big-n assault [FINITE_EVIDENCE]
 scripts/wp6_bign.py -> bign.json (n=256/512 vines + balanced, walks + shallow strikes + B-heavy bias): 5.5k evals (B to 611 events), zero shortfall, zero GC-gap. E2 scales with pushes at scale (supply tracks demand); no new scale regime breaks. Cumulative offline now 60k+ targeted + 2.28M exhaustive + killer/M2/ENTRY@3, zero shortfall, zero GC-gap.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; pushing is 95 percent impure).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C50 - chase-pusher conjunction dynamics (this continuation)
+
+### C50-1 CH-00 chase falsifier [FINITE_EVIDENCE]
+scripts/wp6_chase.py -> chase.json (victim T0-shallow, first-x discipline; greedy sustain of push+avoid+sterile+hole conjunction; breakdown by leg): pushes sustain to maxpush 22 then stall at B-bottom (nothing below to push with); tags over all picks: displace+overlap+nonhole 1352, overlap+nonhole 932, pure (0,0,0) 115, others 20. Pushing is 95 percent impure (supply-creating); pure pushes exist singly (5 percent) but NEVER sustain (0 pure-sustain histories). Strikes after sustained pushes saturate (supply arrived via impurity). Bugs fixed en route: positioner B-replay missing; hole-pusher skip (trivial-A is the hole!); pushes-var collision; far-below splashes LIFT x (pushers must be nearby-below: splash-30 3->2 vs splash-123 3->4).
+### C50-2 displacement-supply in numbers [FINITE_EVIDENCE]
+Pushing B-deep while holding A-shallow+sterile fails because pushes inherently touch (displace in A and/or overlap triples) 95 percent of the time; the 5 percent pure pushes are single-shot dead ends (next step stalls or goes impure). E2-hole pushers (trivial-A + real-B-splash) exist but cannot chain (single-shot + rebuild-supply). Consistent with SG/SG2 fizzles, AS-01 maxster, 8P coupling.

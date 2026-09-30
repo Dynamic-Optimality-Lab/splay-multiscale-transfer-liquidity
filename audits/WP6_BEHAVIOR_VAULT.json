@@ -940,6 +940,22 @@
    "superseded": false,
    "theorem": "GC-STATIC",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_chase.py -> artifacts/v04/wp6_present/0909c74a/chase.json",
+   "date": "2026-09-30",
+   "id": "C50-1-CHASE",
+   "implication": "Pushing inherently touches (supply) 95 percent; pure pushes single-shot dead ends; strikes saturate via impurity supply.",
+   "next": "Old-abundance theorem",
+   "order": 58,
+   "reason": "Chase-pusher conjunction-sustain falsifier with breakdown legs.",
+   "result": "maxpush 22 then B-bottom stall; tags (1,1,1)1352/(0,1,1)932/pure115; 0 pure-sustain; strikes clean.",
+   "script": "scripts/wp6_chase.py",
+   "statement": "Chase dynamics mapped.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (push)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
