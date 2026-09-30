@@ -585,3 +585,25 @@ E7 (+2); hub (counts-nil); pushes (zone-mismatch); runs (miskeyed); induction
 (circular); fluid (forbidden); augmenting (circular); DAG/aggregate (dead);
 fourth-use (mapped); deficit (restatement). NO avenue untried: new idea or
 violator required.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C46 — K-vs-W necessity + fourth final numbers (this continuation)
+
+### C46-1 mincut E3K split: K saves half, W necessary [FINITE_EVIDENCE]
+`scripts/wp6_mincut.py` (E3K filter: E3 members whose rotated contains splay
+key) → `mincut.json` extended (same 150 histories, deterministic rerun):
+E124-fail 44/150; E3-saves 44/44; K-saves 22, K-fail 22. K-persistent alone
+covers HALF the E3-dependent cases; genuine W-transients NECESSARY in 15%
+(22/150). W not redundant; K does not subsume W. Optimal loads unchanged
+(0:10580/1:940/2:425/3:2766); glue med 18 max 117 unchanged.
+### C46-2 fourth rerun final (incidence-split + rephole) [FINITE_EVIDENCE]
+`scripts/wp6_fourth.py` + `fourth.json` (committed this round; reruns were
+reported textually in C44): K-inc vs W-inc incidence-exact split (K-inc:
+S∋x + ai≤acc + sited, complete/access; W-inc: S∌x + E3-tagged, ≤3/splay OCC);
+W-inc≥4 ⟹ multi-episode 7943/7943, companions 7943/7943; repeat-hole 0
+(W-inc≥4 + all-later-repeat + nocomp: none); E2/K-episode companions 12021/0.
+E1/E2/K/E4-complete exempt (single-access concentration needs no episodes).

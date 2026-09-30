@@ -780,6 +780,38 @@
    "superseded": false,
    "theorem": "Hall program status",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_mincut.py (E3K) -> artifacts/v04/wp6_present/0909c74a/mincut.json (extended rerun)",
+   "date": "2026-09-30",
+   "id": "C46-1-KVSW",
+   "implication": "W-transients load-bearing (not redundant); K insufficient alone.",
+   "next": "Fourth finals",
+   "order": 50,
+   "reason": "K-vs-W necessity split inside E3-dependent histories.",
+   "result": "E124-fail 44/150; E3-saves 44; K-saves 22, K-fail 22 (W necessary 15%).",
+   "script": "scripts/wp6_mincut.py",
+   "statement": "K saves half; W necessary.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "E3 structure",
+   "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_fourth.py + artifacts/v04/wp6_present/0909c74a/fourth.json (committed)",
+   "date": "2026-09-30",
+   "id": "C46-2-FOURTHFINAL",
+   "implication": "Incidence-exact fourth census committed; repeat-hole empty; E2/K companions universal.",
+   "next": "Old-abundance theorem",
+   "order": 51,
+   "reason": "Commit incidence-split rerun numbers (reported C44, uncommitted until now).",
+   "result": "winc4 7943/7943 multi+companioned; rephole 0; e2k 12021/0; K/E2/E4-complete exempt.",
+   "script": "scripts/wp6_fourth.py",
+   "statement": "Fourth finals banked.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "Fourth-use",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

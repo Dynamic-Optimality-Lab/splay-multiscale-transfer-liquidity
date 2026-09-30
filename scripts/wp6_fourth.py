@@ -142,6 +142,10 @@ def main() -> int:
     winc4 = 0
     winc4_multi = 0
     winc4_nocomp = 0
+    rephole = 0
+    rephole_ex = []
+    e2k_multi = 0
+    e2k_nocomp = 0
     holes = []
     holes_e3 = []
     ndeg4 = 0
@@ -211,6 +215,22 @@ def main() -> int:
                         if len(holes_e3) < 14:
                             holes_e3.append({"t": t, "Qkind": ("full" if len(Q) == nb else "acc"),
                                              "rec": rc, "H": H, "n": n, "kind": "winc4-nocomp"})
+                # REPEAT-HOLE: W-inc>=4, multi-episode, ALL later episodes at
+                # repeat-accesses (same key as previous access => E1 empty).
+                first_acc = min(rc["episodes"]) if rc["episodes"] else None
+                later_eps = [a for a in rc["episodes"] if first_acc is not None and a > first_acc]
+                if rc["winc"] >= 4 and len(rc["episodes"]) > 1 and later_eps:
+                    allrep = all(a > 0 and H[a][1] == H[a - 1][1] for a in later_eps)
+                    if allrep and not rc["companion"]:
+                        rephole += 1
+                        if len(rephole_ex) < 8:
+                            rephole_ex.append({"t": t, "rec": rc, "H": H, "n": n})
+                # E2/K-EPISODE-TAX: K-incidence>0 (or E2-class) + multi-access
+                # episodes -> companion?
+                if rc["kinc"] > 0 and len(rc["episodes"]) > 1:
+                    e2k_multi += 1
+                    if not rc["companion"]:
+                        e2k_nocomp += 1
                 if not rc["companion"] and len(holes) < 10:
                     holes.append({"t": t, "Qkind": ("full" if len(Q) == nb else "acc"),
                                   "rec": rc, "H": H, "n": n, "kind": "nocomp"})
@@ -218,12 +238,15 @@ def main() -> int:
     step("FT-02", "ascent-tot=%s pureW multi=%d single=%d e3only4: multi=%d nocomp=%d winc4=%d multi=%d nocomp=%d" % (
         dict(asctot), pureW_multi, pureW_single, e3only4_multi, e3only4_nocomp,
         winc4, winc4_multi, winc4_nocomp))
+    step("FT-03", "repeat-hole=%d e2k-episode: multi=%d nocomp=%d" % (rephole, e2k_multi, e2k_nocomp))
     (ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / "fourth.json").write_text(
         json.dumps({"Q": nQ, "deg4": ndeg4, "ascent_fail": dict(ascfail),
                     "ascent_tot": dict(asctot), "pureW_multi": pureW_multi,
                     "pureW_single": pureW_single, "e3only4_multi": e3only4_multi,
                     "e3only4_nocomp": e3only4_nocomp, "winc4": winc4,
                     "winc4_multi": winc4_multi, "winc4_nocomp": winc4_nocomp,
+                    "rephole": rephole, "rephole_ex": rephole_ex,
+                    "e2k_multi": e2k_multi, "e2k_nocomp": e2k_nocomp,
                     "holes": (holes_e3 + holes)[:14]},
                    indent=1, sort_keys=True, default=str), encoding="utf-8")
     return 0

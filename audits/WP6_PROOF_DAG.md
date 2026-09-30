@@ -52,6 +52,10 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   GC-ASSAULT 15k clean (gap never >0; cumulative raw-GC 41k+ clean)
       │  (STILL OPEN: GC-STATIC theorem; credits; MSTL-14P composition)
       ▼
+[ BANKED C46 ] K-vs-W (K saves 22/44; W necessary 15%) · fourth finals committed
+  (winc≥4⇒multi 7943/7943 companioned; rephole 0; e2k 12021/0)
+      │  (wall unchanged: old-abundance)
+      ▼
 [ BANKED C45 ] POOL-DEFICIT (full-B ≤ −6 universal over 12k; per-Q form =
   one-access-Hall+ open; deficit>0 ≠ kill) · 8O BOUND (Delta ≤ deficit) ·
   SUPPLY-EXHAUSTION (15 avenues mapped: done/dead/bounded/open-wall)

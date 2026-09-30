@@ -65,8 +65,10 @@ def gen(t, tag):
     return n, T0, H
 
 
-def flow_assign(Aevs, Bevs, elig, use):
-    """Max flow restricted to edge-classes `use`; returns (flow, nb, loads, reach)."""
+def flow_assign(Aevs, Bevs, elig, use, Arot=None, pre2=None):
+    """Max flow restricted to edge-classes `use`; returns (flow, nb, loads, reach).
+    Special key 'E3K': E3 members whose rotated set contains the splayed key
+    (K-persistent, no transient W). Needs Arot/pre2."""
     na, nb = len(Aevs), len(Bevs)
     if nb == 0:
         return 0, 0, {}, None
@@ -81,7 +83,11 @@ def flow_assign(Aevs, Bevs, elig, use):
     for j, e in enumerate(elig):
         es = set()
         for k in use:
-            es |= e[k]
+            if k == "E3K":
+                xx = pre2[Bevs[j][0]]["x"] if pre2 is not None else None
+                es |= set(i for i in e["E3"] if xx is not None and xx in (Arot.get(i, ()) if Arot else ()))
+            else:
+                es |= e[k]
         for i in es:
             if Aevs[i][1]:
                 D.add(1 + i, 1 + na + j, 1)
@@ -107,6 +113,9 @@ def main() -> int:
     tight_over = []
     e3_saves = 0
     nE124tested = 0
+    # K-vs-W necessity split: E124+K (K = past-x-access overlap, no transient W)
+    k_saves = 0
+    k_fail = 0
     for t in range(150):
         tag = b"mc" if t % 2 == 0 else b"mc2"
         n, T0, H = gen(t, tag)
@@ -119,6 +128,18 @@ def main() -> int:
         Aevs, Bevs, elig = g["Aevs"], g["Bevs"], g["elig"]
         pre2 = g["pre"]
         nB += len(Bevs)
+        # Arot rebuild for E3K filter
+        from wp6_eventflow import to_ptr, splay_A, splay_B_push
+        _A, _B = to_ptr(T0), to_ptr(T0)
+        Arot = {}
+        _aid = 0
+        for _idx, _acc in enumerate(pre2):
+            _A, _invs = splay_A(_A, _acc["x"])
+            for (_S, _sited) in zip(_invs, _acc["sites"]):
+                Arot[_aid] = frozenset(_S)
+                _aid += 1
+            if _acc["mode"] == "KEEP":
+                _B, _ = splay_B_push(_B, _acc["x"])
         # E3-necessity ablation
         f124, nb, _, _ = flow_assign(Aevs, Bevs, elig, CFGS["E124"])
         nE124tested += 1
@@ -127,6 +148,12 @@ def main() -> int:
             f1234, _, _, _ = flow_assign(Aevs, Bevs, elig, CFGS["E1234"])
             if f1234 >= nb:
                 e3_saves += 1
+            fk, _, _, _ = flow_assign(Aevs, Bevs, elig, {"E1", "E2", "E4", "E3K"},
+                                      Arot, pre2)
+            if fk >= nb:
+                k_saves += 1
+            else:
+                k_fail += 1
         # full: assignment loads + cut
         f, nb, loads, lv = flow_assign(Aevs, Bevs, elig, CFGS["ALL"])
         if f < nb:
@@ -154,7 +181,8 @@ def main() -> int:
             ov = len(accN[a] & accN[b])
             if ov:
                 tight_over.append(ov)
-    step("MC-01", "B=%d E124-fail=%d/%d E3-saves=%d" % (nB, cfg_fail["E124"], nE124tested, e3_saves))
+    step("MC-01", "B=%d E124-fail=%d/%d E3-saves=%d K-saves=%d K-fail=%d" % (
+        nB, cfg_fail["E124"], nE124tested, e3_saves, k_saves, k_fail))
     step("MC-02", "optimal-load hist=%s sat3=%d" % (dict(load_hist), sat3))
     import statistics
     step("MC-03", "cross-access shared-N: n=%d med=%s max=%s" % (
@@ -162,7 +190,8 @@ def main() -> int:
         max(tight_over) if tight_over else None))
     (ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / "mincut.json").write_text(
         json.dumps({"B": nB, "E124_fail": cfg_fail["E124"], "E124_n": nE124tested,
-                    "E3_saves": e3_saves, "load_hist": dict(load_hist), "sat3": sat3,
+                    "E3_saves": e3_saves, "K_saves": k_saves, "K_fail": k_fail,
+                    "load_hist": dict(load_hist), "sat3": sat3,
                     "overlap_n": len(tight_over),
                     "overlap_med": (sorted(tight_over)[len(tight_over) // 2] if tight_over else None),
                     "overlap_max": (max(tight_over) if tight_over else None)},
