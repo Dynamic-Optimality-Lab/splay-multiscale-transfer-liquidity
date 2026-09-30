@@ -209,12 +209,22 @@ Evidence: surgical first-x-strike (wp6_surgical.py, 8k evals, first-x + zone
 avoidance + repeat-pushers): shortfall 0 throughout, best slack 34 (LOOSE) —
 the construction fizzles because B-heavy requires asymmetric displacement
 (A-shallow + B-deep), and displacing x TOUCHES x (hoist-rotations carry x in
-triples → E3-fodder; pushes come with pumpers → E2 unless repeat-holed), while
+triples → E3-fodder; pushes come with pumpers → E2 unless repeat-holed!) while
 undisplaced x isn't B-heavy (E1 covers: e_A ≈ e_B at T0-depths).
 Why repeats don't save the conjunction: repeat-pushers are single-shot
 (B-root after splash); rebuilding needs displacing accesses (which supply);
 run-starts anchor supply (C41 bound). Residual hole (all three at once) open.
 Surgical fizzle is FINITE_EVIDENCE for coupling, not a theorem.
+
+SG2 sharpening (C48): T0-shallow-x (depth<=6, E1 1-3 naturally thin) + pushes +
+avoidance + repeats + sterile, 10k evals (wp6_surgical2.py → surgical2.json):
+shortfall 0, best slack 27. Strike-shape diagnostic: e_B>=8 NEVER occurs at
+strikes (300 histories) — pushing B-deep while holding A-shallow+sterile fails;
+pushers' B-paths through x force A-contact (shapes correlate via synced roots)
+or miss x in B (no push). Push/avoidance incompatibility is the forcing behind
+the fizzle (finite face). E2-alone arithmetic (push-supply ≈ demand order)
+suggests E2 nearly covers first-x-access demand; root-pusher fraction bounded
+by single-shot+rebuild (C43); residual = sterile-rebuild sustain (open).
 
 ## 8L. INDUCTION-WITH-CARRY AUTOPSY: SUFFICIENCY CIRCULAR (C42)
 

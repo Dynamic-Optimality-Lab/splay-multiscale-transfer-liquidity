@@ -632,3 +632,15 @@ repeat-pushers, first-x discipline preserved by mutations): 8k evals, shortfall
 asymmetric displacement (supply-touching) while undisplaced x isn't heavy
 (E1 covers at T0-depths). Autopsy → 8P displacement-supply coupling (refined
 conjunction: avoidance + repeat-holes + sterile, all three; open).
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; push/avoidance incompatible (finite)).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C48 - surgical v2 + push/avoidance incompatibility (this continuation)
+
+### C48-1 SG2-00 T0-shallow first-x strike [FINITE_EVIDENCE]
+scripts/wp6_surgical2.py -> surgical2.json (victim T0-depth<=6 (E1 1-3 naturally thin), first-x discipline, repeat-pushers, avoidance, sterile bias): 10k evals, shortfall 0, best slack 27. Sharper than SG-00 yet fizzles identically.
+### C48-2 strike-shape diagnostic: pushing/avoidance incompatible [FINITE_EVIDENCE]
+300 surgical-style histories: e_A<=2 at strikes (64, shallow ok) but e_B>=8 NEVER (0) - B-deepening fails under avoidance+shallowness. Pushers B-paths through x force A-contact (synced roots correlate shapes) or miss x in B (no push). E2-alone arithmetic suggests E2 nearly covers first-x demand; root-pusher fraction bounded single-shot+rebuild. Residual = sterile-rebuild sustain (open). hall_lemmas.md 8P sharpened.

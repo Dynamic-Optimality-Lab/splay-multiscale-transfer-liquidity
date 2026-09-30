@@ -876,6 +876,38 @@
    "superseded": false,
    "theorem": "GC-STATIC (strike)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_surgical2.py -> artifacts/v04/wp6_present/0909c74a/surgical2.json",
+   "date": "2026-09-30",
+   "id": "C48-1-SURG2",
+   "implication": "Sharper strike fizzles identically; avoidance+repeat+sterile conjunction unrealizable in practice.",
+   "next": "Push-incompatibility",
+   "order": 54,
+   "reason": "T0-shallow (E1-thin) first-x strike with repeat-pushers + avoidance + sterile bias.",
+   "result": "10k evals shortfall 0, best slack 27.",
+   "script": "scripts/wp6_surgical2.py",
+   "statement": "SG2 surgical fizzle.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (strike)",
+   "witness": null
+  },
+  {
+   "artifact": "strike-shape diagnostic (300 histories) + hall_lemmas.md 8P sharpening",
+   "date": "2026-09-30",
+   "id": "C48-2-PUSHINCOMPAT",
+   "implication": "Pushing B-deep while holding A-shallow+sterile fails; E2 nearly covers first-x demand; residual sterile-rebuild sustain open.",
+   "next": "Old-abundance theorem",
+   "order": 55,
+   "reason": "Why strikes fizzle: e_B>=8 never occurs under avoidance (push/avoidance incompatible).",
+   "result": "e_A<=2 in 64 strikes, e_B>=8 in 0; pushers force A-contact or miss.",
+   "script": null,
+   "statement": "Push/avoidance incompatibility (finite).",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (shape)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
