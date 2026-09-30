@@ -62,6 +62,9 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
 [ BANKED C56 ] WALLMAX (10k maximized pressure<=2/history slack>=32, 0 kill) / MINIMAL-COUNTEREXAMPLE proof (8A/8B/8C/8E/8H/8I/8J banked -> HOLE-1 old-abundance FIRST hole; HOLE-2 one-access/overlap; HOLE-3 repeat-hole/E2-K-tax; conditional QED)
       |  (wall: old-abundance, exactly HOLE-1)
       v
+[ BANKED C57 ] KILLSHOT trilogy (KS 12k slack2 / K2 12k oneAcc-2 zone-8 stuck / K3 exact n=6 22.6k + random-T0 9k, all clean; ~140k+2.28M+22.6k zero kill) / IMPRINT (final-sited 3871/3871=1.0; 75 trivial bursts E4 75/75 K>=2 union~17 worstD-8; sited-always Lean sketch; residual = cap-exhaustion + E3-variation)
+      |  (wall: old-abundance, exactly HOLE-1)
+      v
 [ BANKED C54 ] FULL-SPLIT sustain 28 (breaks via zone-boundary bleed) but never converts (fresh+dilution absorb); eval-write hygiene fixed
       |  (wall: old-abundance)
       v
