@@ -668,3 +668,13 @@ scripts/wp6_bign.py -> bign.json (n=256/512 vines + balanced, walks + shallow st
 scripts/wp6_chase.py -> chase.json (victim T0-shallow, first-x discipline; greedy sustain of push+avoid+sterile+hole conjunction; breakdown by leg): pushes sustain to maxpush 22 then stall at B-bottom (nothing below to push with); tags over all picks: displace+overlap+nonhole 1352, overlap+nonhole 932, pure (0,0,0) 115, others 20. Pushing is 95 percent impure (supply-creating); pure pushes exist singly (5 percent) but NEVER sustain (0 pure-sustain histories). Strikes after sustained pushes saturate (supply arrived via impurity). Bugs fixed en route: positioner B-replay missing; hole-pusher skip (trivial-A is the hole!); pushes-var collision; far-below splashes LIFT x (pushers must be nearby-below: splash-30 3->2 vs splash-123 3->4).
 ### C50-2 displacement-supply in numbers [FINITE_EVIDENCE]
 Pushing B-deep while holding A-shallow+sterile fails because pushes inherently touch (displace in A and/or overlap triples) 95 percent of the time; the 5 percent pure pushes are single-shot dead ends (next step stalls or goes impure). E2-hole pushers (trivial-A + real-B-splash) exist but cannot chain (single-shot + rebuild-supply). Consistent with SG/SG2 fizzles, AS-01 maxster, 8P coupling.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C51 - E2-solo coverage ladder (this continuation)
+
+### C51-1 mincut E12/E12K ablation [FINITE_EVIDENCE]
+scripts/wp6_mincut.py extended (E12 = E1+E2 only; E12K = +K-persistent) rerun same 150 histories (deterministic): E12-fail 44/150 (SAME 44 as E124: E4 saves ZERO marginal over E1+E2 here); E12K-fail 22/150 (K saves the same 22 E4 could not). Necessity ladder: E12 covers 106; +E4 covers +0; +K covers +22; +W covers +22 (150 total saturate). Honest caveat: case-b (E1-empty DELETE-runs, E4-pristine domain) is rare in corpus (random-walk repeats ~1/33), so E4-redundancy is marginal-contribution evidence, NOT necessity refutation - E4-pristine stands by ML-ADJ-E4/FRESH-CAP proof. E2-alone arithmetic (push-supply order covers demand order; root-fraction bounded single-shot+rebuild) consistent: E2 carries the bulk (106/150 alone with E1).

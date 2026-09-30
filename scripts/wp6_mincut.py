@@ -116,6 +116,9 @@ def main() -> int:
     # K-vs-W necessity split: E124+K (K = past-x-access overlap, no transient W)
     k_saves = 0
     k_fail = 0
+    # E2-solo coverage: E12 (E1+E2, no E4/K/W) and E12K (+K) saturation rates
+    e12_fail = 0
+    e12k_fail = 0
     for t in range(150):
         tag = b"mc" if t % 2 == 0 else b"mc2"
         n, T0, H = gen(t, tag)
@@ -154,6 +157,14 @@ def main() -> int:
                 k_saves += 1
             else:
                 k_fail += 1
+            # E2-solo: E1+E2 only, then +K (no E4/W/E7)
+            f12, _, _, _ = flow_assign(Aevs, Bevs, elig, {"E1", "E2"})
+            if f12 < nb:
+                e12_fail += 1
+            f12k, _, _, _ = flow_assign(Aevs, Bevs, elig, {"E1", "E2", "E3K"},
+                                        Arot, pre2)
+            if f12k < nb:
+                e12k_fail += 1
         # full: assignment loads + cut
         f, nb, loads, lv = flow_assign(Aevs, Bevs, elig, CFGS["ALL"])
         if f < nb:
@@ -181,8 +192,8 @@ def main() -> int:
             ov = len(accN[a] & accN[b])
             if ov:
                 tight_over.append(ov)
-    step("MC-01", "B=%d E124-fail=%d/%d E3-saves=%d K-saves=%d K-fail=%d" % (
-        nB, cfg_fail["E124"], nE124tested, e3_saves, k_saves, k_fail))
+    step("MC-01", "B=%d E124-fail=%d/%d E3-saves=%d K-saves=%d K-fail=%d E12-fail=%d E12K-fail=%d" % (
+        nB, cfg_fail["E124"], nE124tested, e3_saves, k_saves, k_fail, e12_fail, e12k_fail))
     step("MC-02", "optimal-load hist=%s sat3=%d" % (dict(load_hist), sat3))
     import statistics
     step("MC-03", "cross-access shared-N: n=%d med=%s max=%s" % (
@@ -191,6 +202,7 @@ def main() -> int:
     (ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / "mincut.json").write_text(
         json.dumps({"B": nB, "E124_fail": cfg_fail["E124"], "E124_n": nE124tested,
                     "E3_saves": e3_saves, "K_saves": k_saves, "K_fail": k_fail,
+                    "E12_fail": e12_fail, "E12K_fail": e12k_fail,
                     "load_hist": dict(load_hist), "sat3": sat3,
                     "overlap_n": len(tight_over),
                     "overlap_med": (sorted(tight_over)[len(tight_over) // 2] if tight_over else None),

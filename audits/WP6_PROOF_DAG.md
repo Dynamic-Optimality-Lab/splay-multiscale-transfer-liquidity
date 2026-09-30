@@ -56,6 +56,9 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   (winc≥4⇒multi 7943/7943 companioned; rephole 0; e2k 12021/0)
       │  (wall unchanged: old-abundance)
       ▼
+[ BANKED C51 ] E2-LADDER (E12 106/150; +E4 +0 marginal here (case-b rare); +K +22; +W +22; E2 carries bulk) [FINITE]
+      |  (wall: old-abundance)
+      v
 [ BANKED C50 ] CHASE (maxpush 22 then B-bottom stall; pushes 95 percent impure (supply); pure 115 singly, 0 sustain; far-below lifts (nearby-below pushes)) / strikes saturate via impurity
       |  (wall: old-abundance; pushing touches)
       v

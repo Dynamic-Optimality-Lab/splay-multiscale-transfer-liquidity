@@ -956,6 +956,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (push)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_mincut.py (E12/E12K) -> artifacts/v04/wp6_present/0909c74a/mincut.json (rerun)",
+   "date": "2026-09-30",
+   "id": "C51-1-E2LADDER",
+   "implication": "E2 carries bulk with E1; K and W each cover half remainder; E4 marginal here (case-b rare) but proved role stands.",
+   "next": "Old-abundance theorem",
+   "order": 61,
+   "reason": "E2-solo coverage ladder: how much does E1+E2 (+K) saturate without E4/W?",
+   "result": "E12-fail 44/150 (=E124: E4 saves 0 marginal); E12K-fail 22/150 (K saves 22); W saves final 22.",
+   "script": "scripts/wp6_mincut.py",
+   "statement": "E2-solo ladder measured.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "E2 coverage",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
