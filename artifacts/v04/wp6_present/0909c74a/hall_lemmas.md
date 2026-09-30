@@ -172,21 +172,49 @@ pressures (sharing multiplicity ∞) — no finite C (banked honestly).
 Net: fourth-use yields W-conditional-tax + E1-exemption + DAG/aggregate corpses;
 GC-STATIC NOT closed (needs the wall: old-abundance for B-heavy Q-blocks).
 
-## 8M. ML-HUB (top-triple universal overlap; connectivity only) (C43)
+## 8M. ML-HUB REFUTED + NARROW SYNC-HUB (C46 autopsy of C43 claim)
 
+ML-HUB-as-universal (top-triple universal root-overlap) is REFUTED.
+Exact witness (C37 killer, n=128 left-vine): acc8-KEEP-19 top B-triple
+[18,19,123] vs past A-last-triples acc0 [1,128], acc1 [1,20], acc2 [12,20],
+acc3 [1,10,12], acc5 [10,12]: FIVE of six disjoint (only acc6 [12,18,20]
+meets at 18). Root MIGRATES every access (rotations involving root descend
+it; mid-splay transient roots differ per step); there is NO universal hub key.
+The C43 "root" argument conflated pre-splay root (stable label) with triple
+membership (mid-splay configurations). Consequence: hub-supply is not
+universal; top-sterile is possible; the wall stands longer (consistent with
+zone-theory/C37-drain).
+NARROW SYNC-HUB (surviving, proved): x-top-B-triple ∋ B-root-before (w) by
+top-pivot mechanics (final zig/double involves root) and w-access A-triples ∋
+w (node always w); hence E3(x-top, sited-accA[w]) ∋ w ≠ ∅ — PROVIDED w-access
+is nontrivial-A (e_A(w) ≥ 1; else accA[w] empty). Killer consistent: w=18 via
+trivial acc7 (repeat, e_A=0) → hub EMPTY; aev97 connects via pushed-18 (zone,
+not hub). So tops get hub-neighbors iff B-root-before's own access was
+nontrivial (else zone-only). Narrow, honest, no counts content.
+
+[C43 ORIGINAL 8M BODY — SUPERSEDED C46, preserved for audit:]
 Statement: the LAST B-StepEv of every nontrivial B-splay is E3-adjacent to the
 LAST A-StepEv of every nontrivial past A-splay (all contain root).
-Proof: bottom-up splays end in a root-zig (path length ≥ 1 ⟹ final pivot is
-root); pushed set ∋ root; triple = pushed ∪ {key} ∋ root on both sides;
-sited (U=0); causal (past ai). Code: splay_B_push zig appends {p=root};
-splay_A invs contain node/p/g; builders' triple/P|{x} construction exact
-(B-node always key, verified node_not_x=0).
-Content: CONNECTIVITY (alternating-path/PEEL relevance: hub spokes exist).
-Explicitly NOT counts (hub supply = 3 slots per past access = the model
-itself; hub-bank vs deep-KEEP demand has no universal sign — deep KEEPs
-outrun it; all-deep-Q avoids hub entirely). First-top-injection (+3·#past-lasts
-slack) is real but offsettable by elsewhere-deficit. No violator-contradiction
-extracted (deep-KEEP + all-deep-Q remain consistent shapes; 46k+ hunts clean).
+[Status of the above two lines: REFUTED by killer witness (5/6 past lasts miss
+acc8-top; transient roots). The error: "root" conflated pre-splay label with
+mid-splay configurations; root migrates every access. Original C43 proof text
+resides in git history (commit a5bc427); not reproduced here since false.]
+
+## 8P. DISPLACEMENT-SUPPLY COUPLING + SURGICAL FIZZLE (C46)
+
+Claim (refined conjunction, open): supply-free B-heavy needs ALL of
+avoidance (x untouched in A: no x-triples created) + repeat-pushers (e_A=0
+B-splashes: E2-hole) + sterile zone (no E3-overlap of pusher paths).
+Evidence: surgical first-x-strike (wp6_surgical.py, 8k evals, first-x + zone
+avoidance + repeat-pushers): shortfall 0 throughout, best slack 34 (LOOSE) —
+the construction fizzles because B-heavy requires asymmetric displacement
+(A-shallow + B-deep), and displacing x TOUCHES x (hoist-rotations carry x in
+triples → E3-fodder; pushes come with pumpers → E2 unless repeat-holed), while
+undisplaced x isn't B-heavy (E1 covers: e_A ≈ e_B at T0-depths).
+Why repeats don't save the conjunction: repeat-pushers are single-shot
+(B-root after splash); rebuilding needs displacing accesses (which supply);
+run-starts anchor supply (C41 bound). Residual hole (all three at once) open.
+Surgical fizzle is FINITE_EVIDENCE for coupling, not a theorem.
 
 ## 8L. INDUCTION-WITH-CARRY AUTOPSY: SUFFICIENCY CIRCULAR (C42)
 

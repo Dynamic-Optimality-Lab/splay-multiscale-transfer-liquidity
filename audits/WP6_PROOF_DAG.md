@@ -56,6 +56,12 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   (winc≥4⇒multi 7943/7943 companioned; rephole 0; e2k 12021/0)
       │  (wall unchanged: old-abundance)
       ▼
+[ BANKED C47 ] ML-HUB REFUTED (5/6 past lasts miss killer top; roots migrate; narrow
+  sync-hub survives iff w-access nontrivial) · SURGICAL FIZZLE (first-x 8k clean,
+  best slack 34) · 8P displacement-supply coupling (B-heavy needs touching
+  displacement; refined avoidance+holes+sterile conjunction open)
+      │  (wall: old-abundance; hub dead)
+      ▼
 [ BANKED C45 ] POOL-DEFICIT (full-B ≤ −6 universal over 12k; per-Q form =
   one-access-Hall+ open; deficit>0 ≠ kill) · 8O BOUND (Delta ≤ deficit) ·
   SUPPLY-EXHAUSTION (15 avenues mapped: done/dead/bounded/open-wall)

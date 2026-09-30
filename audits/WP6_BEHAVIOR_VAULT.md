@@ -607,3 +607,28 @@ S∋x + ai≤acc + sited, complete/access; W-inc: S∌x + E3-tagged, ≤3/splay 
 W-inc≥4 ⟹ multi-episode 7943/7943, companions 7943/7943; repeat-hole 0
 (W-inc≥4 + all-later-repeat + nocomp: none); E2/K-episode companions 12021/0.
 E1/E2/K/E4-complete exempt (single-access concentration needs no episodes).
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; hub dead, displacement-coupling open).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C47 - ML-HUB refuted + surgical fizzle + displacement coupling (this continuation)
+
+### C46-1 ML-HUB autopsy: REFUTED with exact witness [REFUTED]
+C37 killer acc8-top B-triple [18,19,123] vs past A-last-triples acc0 [1,128],
+acc1 [1,20], acc2 [12,20], acc3 [1,10,12], acc5 [10,12]: FIVE of six disjoint
+(only acc6 [12,18,20] meets at 18). Root MIGRATES every access (rotations
+involving root descend it; mid-splay transient roots differ per step) — no
+universal hub key exists. C43 "root" conflated pre-splay label with triple
+membership. Narrow SYNC-HUB survives (x-top ∋ B-root-before + w-access triples
+∋ w ⟹ overlap {w}; needs w-access nontrivial-A; killer w=18 via trivial acc7
+→ hub EMPTY, consistent). aev97 connects via pushed-18 (zone, not hub).
+Sites all True (U=0 intact — no kill there).
+### C46-2 SG-00 surgical first-x-strike: FIZZLE [FINITE_EVIDENCE]
+`scripts/wp6_surgical.py` → `surgical.json` (first-x + zone-avoidance +
+repeat-pushers, first-x discipline preserved by mutations): 8k evals, shortfall
+0 throughout, best slack 34 (LOOSE). Strikes stay safe because B-heavy needs
+asymmetric displacement (supply-touching) while undisplaced x isn't heavy
+(E1 covers at T0-depths). Autopsy → 8P displacement-supply coupling (refined
+conjunction: avoidance + repeat-holes + sterile, all three; open).
