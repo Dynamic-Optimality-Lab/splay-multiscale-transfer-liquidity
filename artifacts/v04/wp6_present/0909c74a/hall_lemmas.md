@@ -145,6 +145,22 @@ Slack-transfer (§9) is this induction in cumulative form (sigma_new = sigma_old
 + 3·new − |R|; IH supplies sigma_old ≥ 0 — NOT circular, NOT GC-equivalent;
 the dangerous step is exactly the lemma above).
 
+## 8M. ML-HUB (top-triple universal overlap; connectivity only) (C43)
+
+Statement: the LAST B-StepEv of every nontrivial B-splay is E3-adjacent to the
+LAST A-StepEv of every nontrivial past A-splay (all contain root).
+Proof: bottom-up splays end in a root-zig (path length ≥ 1 ⟹ final pivot is
+root); pushed set ∋ root; triple = pushed ∪ {key} ∋ root on both sides;
+sited (U=0); causal (past ai). Code: splay_B_push zig appends {p=root};
+splay_A invs contain node/p/g; builders' triple/P|{x} construction exact
+(B-node always key, verified node_not_x=0).
+Content: CONNECTIVITY (alternating-path/PEEL relevance: hub spokes exist).
+Explicitly NOT counts (hub supply = 3 slots per past access = the model
+itself; hub-bank vs deep-KEEP demand has no universal sign — deep KEEPs
+outrun it; all-deep-Q avoids hub entirely). First-top-injection (+3·#past-lasts
+slack) is real but offsettable by elsewhere-deficit. No violator-contradiction
+extracted (deep-KEEP + all-deep-Q remain consistent shapes; 46k+ hunts clean).
+
 ## 8L. INDUCTION-WITH-CARRY AUTOPSY: SUFFICIENCY CIRCULAR (C42)
 
 Carry version (d_L ≤ sigma_{prev}, i.e. |Q_L| ≤ 3|U_L| + sigma_{prev}):

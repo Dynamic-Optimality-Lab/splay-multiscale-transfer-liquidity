@@ -523,3 +523,24 @@ walks self-supply via per-access E1). Inline short hunt (L 5–12, zone-confined
 8k evals, 0 kills. Pool-exhaustion via sustained walks does not occur (hub-E1
 supply holds it). Cumulative offline: 26k + 15k + 8k + 2.28M exhaustive +
 killer/M2/ENTRY@3, zero shortfall.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; hub gives connectivity not counts).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C43 — ML-HUB + short-hunt + carry-ordering fix (this continuation)
+
+### C43-1 8M ML-HUB (connectivity only) [PROVED_AUTHOR]
+`hall_lemmas.md`: last B-StepEv of every nontrivial B-splay E3-adjacent to last
+A-StepEv of every nontrivial past A-splay (root-zig both sides; code-pinned
+push/inv construction; node-always-key verified). Hub-bank-vs-deep-KEEP has no
+universal sign (deep KEEPs outrun 3/access; all-deep-Q avoids hub) — NO counts
+content (hub = the model itself); first-top-injection real but offsettable. No
+violator-contradiction (deep-KEEP + all-deep-Q consistent; hunts clean).
+### C43-2 short-concentrated hunt [FINITE_EVIDENCE]
+Inline (L 5–12, zone-confined, from zone machinery): 8k evals, 0 kills.
+Cumulative offline now 26k + 15k + 8k + 2.28M + killer/M2/ENTRY@3.
+### C43-3 carry-ordering + file hygiene [MAINTENANCE]
+8M/8L header repairs in `hall_lemmas.md` (edit-orphan fixes, content intact);
+vault ordering notes current (follow IDs/dates).

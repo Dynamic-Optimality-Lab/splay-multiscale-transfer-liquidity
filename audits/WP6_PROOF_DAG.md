@@ -52,6 +52,10 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   GC-ASSAULT 15k clean (gap never >0; cumulative raw-GC 41k+ clean)
       │  (STILL OPEN: GC-STATIC theorem; credits; MSTL-14P composition)
       ▼
+[ BANKED C43 ] ML-HUB (top-triple universal root-overlap; connectivity only, no
+  counts) · short-concentrated 8k clean · carry-ordering/file hygiene
+      │  (THE bare wall, unchanged: old-abundance with no leverage)
+      ▼
 [ BANKED C42 ] UL-sufficiency FAILS (margin −6; strong step dead) · 8K-sufficiency
   CIRCULAR (carry ⟺ Hall(Q); §25-trap caught live; 8J-necessary stands) ·
   zone 15k + short 8k hunts clean (pool-exhaustion absent; hub-E1 holds)
