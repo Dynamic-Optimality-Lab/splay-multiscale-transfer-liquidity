@@ -183,6 +183,10 @@ def main() -> int:
         if it % 3000 == 0:
             step("LT-02", "it=%d evals=%d best=%s" % (it, evals, best))
     step("LT-03", "evals=%d best=%s" % (evals, best))
+    import json as _jj
+    _prev = _jj.loads(TP.read_text(encoding="utf-8")) if TP.exists() else {}
+    _prev["evals"] = evals
+    TP.write_text(_jj.dumps(_prev, indent=1, sort_keys=True, default=str), encoding="utf-8")
     return 0
 
 

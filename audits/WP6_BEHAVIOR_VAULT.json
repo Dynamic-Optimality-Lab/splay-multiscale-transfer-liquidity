@@ -908,6 +908,38 @@
    "superseded": false,
    "theorem": "GC-STATIC (shape)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_delheavy.py -> artifacts/v04/wp6_present/0909c74a/delheavy.json",
+   "date": "2026-09-30",
+   "id": "C49-1-DELHEAVY",
+   "implication": "Decoupled regime safe by supply (not by overlap); artifact eval-count hygiene fixed.",
+   "next": "Big-n",
+   "order": 56,
+   "reason": "DELETE-heavy (80-90 percent) decoupled-regime falsifier: sterile-prone in theory.",
+   "result": "15k evals shortfall 0, best slack 2 (singleton); each DELETE banks supply with no demand.",
+   "script": "scripts/wp6_delheavy.py",
+   "statement": "DELETE-heavy clean.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC",
+   "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_bign.py -> artifacts/v04/wp6_present/0909c74a/bign.json",
+   "date": "2026-09-30",
+   "id": "C49-2-BIGN",
+   "implication": "No new scale regime breaks; E2 tracks pushes at scale.",
+   "next": "Old-abundance theorem",
+   "order": 57,
+   "reason": "Big-n assault (256/512, previously uncovered): deeper pushes, more sterile room.",
+   "result": "5.5k evals (B to 611), zero shortfall, zero GC-gap.",
+   "script": "scripts/wp6_bign.py",
+   "statement": "Big-n clean.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

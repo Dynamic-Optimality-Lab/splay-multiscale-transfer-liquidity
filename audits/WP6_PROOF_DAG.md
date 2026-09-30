@@ -56,6 +56,9 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   (winc≥4⇒multi 7943/7943 companioned; rephole 0; e2k 12021/0)
       │  (wall unchanged: old-abundance)
       ▼
+[ BANKED C49 ] DELETE-HEAVY clean (15k, supply-rich regime safe) / BIG-N clean (5.5k, B to 611, E2 tracks pushes) / artifact eval-count hygiene fixed
+      |  (cumulative offline 60k+ targeted + 2.28M exhaustive, zero shortfall/gap)
+      v
 [ BANKED C48 ] SG2 FIZZLE (T0-shallow first-x 10k clean, slack 27) / PUSH-INCOMPAT (e_B>=8 never under avoidance; E2 nearly covers; sterile-rebuild open) / 8P sharpened
       |  (wall: old-abundance; conjunction narrowed to sterile-rebuild sustain)
       v

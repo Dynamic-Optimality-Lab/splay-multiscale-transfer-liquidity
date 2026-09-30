@@ -644,3 +644,15 @@ conjunction: avoidance + repeat-holes + sterile, all three; open).
 scripts/wp6_surgical2.py -> surgical2.json (victim T0-depth<=6 (E1 1-3 naturally thin), first-x discipline, repeat-pushers, avoidance, sterile bias): 10k evals, shortfall 0, best slack 27. Sharper than SG-00 yet fizzles identically.
 ### C48-2 strike-shape diagnostic: pushing/avoidance incompatible [FINITE_EVIDENCE]
 300 surgical-style histories: e_A<=2 at strikes (64, shallow ok) but e_B>=8 NEVER (0) - B-deepening fails under avoidance+shallowness. Pushers B-paths through x force A-contact (synced roots correlate shapes) or miss x in B (no push). E2-alone arithmetic suggests E2 nearly covers first-x demand; root-pusher fraction bounded single-shot+rebuild. Residual = sterile-rebuild sustain (open). hall_lemmas.md 8P sharpened.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; decoupled regime also safe by supply).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C49 - DELETE-heavy decoupled regime + big-n assault (this continuation)
+
+### C49-1 DH-00 DELETE-heavy falsifier [FINITE_EVIDENCE]
+scripts/wp6_delheavy.py -> delheavy.json (80-90 percent DELETEs (trees decoupled: A advances alone, B frozen stale), rare shared-zone KEEP pushers/strikes): 15k evals, shortfall 0, best slack 2 (cut singleton). Autopsy: decoupled regime is SAFE BY SUPPLY (each DELETE banks deep A-supply with zero B-demand; E_B tiny vs 3*S_A huge). Sterile-prone in theory, supply-rich in fact. (Artifact hygiene: script wrote evals only on improvement; final count 15000 restored programmatically + final-write added to DH/LT scripts; same fix applied to largetight.json 12000.)
+### C49-2 BN-00 big-n assault [FINITE_EVIDENCE]
+scripts/wp6_bign.py -> bign.json (n=256/512 vines + balanced, walks + shallow strikes + B-heavy bias): 5.5k evals (B to 611 events), zero shortfall, zero GC-gap. E2 scales with pushes at scale (supply tracks demand); no new scale regime breaks. Cumulative offline now 60k+ targeted + 2.28M exhaustive + killer/M2/ENTRY@3, zero shortfall, zero GC-gap.
