@@ -56,6 +56,9 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   (winc≥4⇒multi 7943/7943 companioned; rephole 0; e2k 12021/0)
       │  (wall unchanged: old-abundance)
       ▼
+[ BANKED C54 ] FULL-SPLIT sustain 28 (breaks via zone-boundary bleed) but never converts (fresh+dilution absorb); eval-write hygiene fixed
+      |  (wall: old-abundance)
+      v
 [ BANKED C53 ] 8R PINNING-IMPOSSIBLE (root always rotated; 2661/2661) - supply-free pushes single-shot, rebuilds supply (overlap open)
       |  (wall: old-abundance)
       v

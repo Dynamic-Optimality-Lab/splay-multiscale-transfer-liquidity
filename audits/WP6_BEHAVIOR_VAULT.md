@@ -698,3 +698,13 @@ hall_lemmas.md 8Q: smaller-Hall + mindeg(N(Q))<=3 implies Hall(Q) (strong-induct
 
 ### C53-1 root-motion census + 8R lemma [PROVED_AUTHOR]
 Every nontrivial splay moves its pre-splay root (final StepEv pivots old root down; verified 2661/2661 across 120 histories). Hence A-root-pinning breaks on every nontrivial access (repeats/no-ops only refuge); supply-free pushes are single-shot per state with rebuilds supplying (zone-overlap for x open; sterile-rebuilds need fresh-far keys (finite pool) else stall-or-save). hall_lemmas.md 8R banked. Wall unchanged (overlap question survives pinning analysis).
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C54 - full-split sustain falsifier (this continuation)
+
+### C54-1 FS-00 zone-disjointness sustain [FINITE_EVIDENCE]
+scripts/wp6_fullsplit.py -> fullsplit.json (demand-zone vs supply-zone A-rotated disjointness, first-x + B-heavy strikes): 12k evals, shortfall 0, best sustain 28 consecutive disjoint accesses (breaks via zone-boundary bleed, e.g. overlap keys [80,81] at zone edge). Slack stays 44-53 throughout (fresh E1s + dilution carry even fully sterile stretches). Sterility sustains (transient W/E2/K/E4 all avoidable together for dozens of accesses) but never converts (fresh channels + dilution absorb). (Artifact hygiene: evals corrected 9097->12000 post-run (improvement-only writes); final-write added.)

@@ -63,6 +63,9 @@
  "alive_c53_2026-09-30": [
   "C53 PINNING-IMPOSSIBILITY (8R, hall_lemmas.md PROVED_AUTHOR): every nontrivial splay moves its pre-splay root (final StepEv pivots old root down; verified 2661/2661 over 120 histories) so A-root-pinning breaks on every nontrivial access (repeats/no-ops only refuge); supply-free pushes single-shot per state with rebuilds supplying (zone-overlap for x open); sterile-rebuilds need fresh-far keys (finite pool) else stall-or-save. Wall unchanged (overlap question survives)."
  ],
+ "alive_c54_2026-09-30": [
+  "C54 FULL-SPLIT SUSTAIN: fullsplit.json (demand-zone vs supply-zone A-rotated disjointness + B-heavy strikes + first-x discipline): 12k evals shortfall 0; best sustain 28 consecutive disjoint accesses (breaks via zone-boundary bleed, e.g. keys [80,81] at zone edge); slack 44-53 throughout (fresh E1s + dilution carry even fully sterile stretches). Sterility sustains transiently, never converts. Artifact hygiene: evals corrected 9097->12000 post-run (improvement-only writes); final-write added to FS script (same fix as DH/LT)."
+ ],
  "alive_condchain_2026-09-30": [
   "Conditional composition (WP6_CONDITIONAL_CHAIN.md): single open premise GC-STATIC; C1 accounting-validity conditional author proof; C3 D6 semantic audit; C4 ten-point service audit vs legacy_embedding.py:164-246 + LIQ0 banked units; support-collapse mapped (no such repo object; LIQ0-06 + cumulative reduction used); kernel AR-01..21 reverified; downstream preserved per \u00a723."
  ],
