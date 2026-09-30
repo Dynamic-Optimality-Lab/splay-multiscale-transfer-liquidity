@@ -415,6 +415,21 @@ Contention (`reuse.json`, 150 hist): max-reuse 6..137, over-subscribed 6909/8599
 Cover at E1-empty bursts (35): K 10.9 + W 6.1 + E2 4.1 + E4 1.5 + E7 1.5 avg.
 Status: SKETCH with def-pointers; residuals = silent-ride conjunction (finite:
 never) + contention assignment (finite: always saturates).
+
+## 8Z. SHAPE-DICHOTOMY: deep-self-covering vs shallow-fresh-covered (SKETCH, C65)
+
+Steering verdict (`steer.json` vine 40 seeds: maxsplit 115, burst Δ −188..−716,
+N ≈ 3.5–4× e_B, kills 0; `steer3.json` bal/rbst 60 seeds: splits −8..+12,
+e_B ≤ 12, kills 0): the two dangers are mutually exclusive by tree geometry.
+Vine case: chains are key-intervals of length ~e_B spanning half the key-space;
+any activity imprints its path-interval across them (the ±2-avoidance was useless
+— chain length 60 vs exclusion 5); cover scales with demand (N ≈ 4·e_B measured)
+because demand-size ≈ chain-length ≈ hit-surface. Balanced case: chains O(log n),
+depth/split bounded (steering caps at 12 even adversarial), fresh/E1 covers small
+demand. Formal shape: vine-chain = interval (interval-covering/pigeonhole over
+imprint-intervals); balanced-chain = narrow (demand small). Missing: interval-cover
+counting (union of t path-intervals vs chain-interval in [1..n]) + balanced drift
+bound (rides cancel). On close with 8V/8W/8Y: proportional-variation PROVED.
 Anchored-insufficiency (measured): maxflow on ANCHORED edges only (E1+E4+K, no
 E2/W/E7) fails 19/140 histories (13.6%), worst shortfall 49 of 76 demand — transients
 are LOAD-BEARING, not bonus. Anchored-only cycle-closure DEAD (banked honestly).
