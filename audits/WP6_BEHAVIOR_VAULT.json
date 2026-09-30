@@ -1020,6 +1020,38 @@
    "superseded": false,
    "theorem": "GC-STATIC",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_rundrain.py -> artifacts/v04/wp6_present/0909c74a/rundrain.json",
+   "date": "2026-09-30",
+   "id": "C55-1-RUNDRAIN",
+   "implication": "Single-access extremes survive via shared-old; cumulative drains never exhaust buffers.",
+   "next": "Waste mechanism",
+   "order": 65,
+   "reason": "Per-run net-drain probe + sustain hunt (zero-growth B-heavy runs).",
+   "result": "6678 runs, 21 heavy-drain, worst net -29 (dem32/new1 yet saturates); sustain 8k best cumdrain -24, 0 shortfall.",
+   "script": "scripts/wp6_rundrain.py",
+   "statement": "Run-drain sustain clean.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (runs)",
+   "witness": null
+  },
+  {
+   "artifact": "artifacts/v04/wp6_present/0909c74a/waste.json",
+   "date": "2026-09-30",
+   "id": "C55-2-WASTE",
+   "implication": "Explains online drain-stall/NM-nonconversion/M2-C37; supports offline-fallback separation; NOT Hall-applicable (offline static).",
+   "next": "Old-abundance theorem",
+   "order": 66,
+   "reason": "Transient-diversion: picks-on-exited fraction at elevation events.",
+   "result": "76 events: waste 44.9 percent (transients absorb picks then exit, protecting core minload).",
+   "script": null,
+   "statement": "Transient-diversion waste mechanism (online-only).",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "Online dynamics",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

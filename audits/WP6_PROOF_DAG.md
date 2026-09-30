@@ -56,6 +56,9 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   (winc≥4⇒multi 7943/7943 companioned; rephole 0; e2k 12021/0)
       │  (wall unchanged: old-abundance)
       ▼
+[ BANKED C55 ] RUN-DRAIN (worst net -29 yet saturates via shared-old; sustain best -24, 0 shortfall) / WASTE 44.9 percent (transient-diversion protects core minload; online-only, not Hall-applicable)
+      |  (wall: old-abundance)
+      v
 [ BANKED C54 ] FULL-SPLIT sustain 28 (breaks via zone-boundary bleed) but never converts (fresh+dilution absorb); eval-write hygiene fixed
       |  (wall: old-abundance)
       v

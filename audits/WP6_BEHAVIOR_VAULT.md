@@ -708,3 +708,15 @@ Every nontrivial splay moves its pre-splay root (final StepEv pivots old root do
 
 ### C54-1 FS-00 zone-disjointness sustain [FINITE_EVIDENCE]
 scripts/wp6_fullsplit.py -> fullsplit.json (demand-zone vs supply-zone A-rotated disjointness, first-x + B-heavy strikes): 12k evals, shortfall 0, best sustain 28 consecutive disjoint accesses (breaks via zone-boundary bleed, e.g. overlap keys [80,81] at zone edge). Slack stays 44-53 throughout (fresh E1s + dilution carry even fully sterile stretches). Sterility sustains (transient W/E2/K/E4 all avoidable together for dozens of accesses) but never converts (fresh channels + dilution absorb). (Artifact hygiene: evals corrected 9097->12000 post-run (improvement-only writes); final-write added.)
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C55 - run-drain sustain + transient-diversion waste (this continuation)
+
+### C55-1 RD-00 per-run net-drain [FINITE_EVIDENCE]
+scripts/wp6_rundrain.py -> rundrain.json (250 hist, 6678 runs): 21 B-heavy-drain runs, worst single-run net -29 (t=182 acc2 x=124: dem=32, new=1 - 32 B-events on old-shared + 1 new, yet saturates offline via shared pool). Sustain hunt (run-repeat bias, 8k evals): best cumulative drain -24, zero shortfall. Single-access extremes survive via shared-old (not fresh); cumulative drains never exhaust buffers.
+### C55-2 transient-diversion waste 44.9 percent [MECHANISM, online-only]
+waste.json (MA corpus, 76 elevation events): 44.9 percent of in-access picks land on sources that have EXITED by elevation time. Transients absorb picks then leave with them, starving the core of saturating picks (protects current minload). Explains M2/C37/NM patterns (drains stall; negative margins do not convert). Correlative blocker risk (exited-loaded may re-enter@3: aev40 pattern) but blockers rare+absorbed, so protection dominates. SCOPE: online-dynamics only (least-loaded picks/minload); offline Hall has no loads/picks/waste (static graph) - does NOT advance GC-STATIC directly; supports offline-fallback framing (C37) by separating the two processes.
