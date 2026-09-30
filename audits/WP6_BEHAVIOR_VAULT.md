@@ -688,3 +688,13 @@ scripts/wp6_mincut.py extended (E12 = E1+E2 only; E12K = +K-persistent) rerun sa
 
 ### C52-1 8Q lemma [PROVED_AUTHOR conditional]
 hall_lemmas.md 8Q: smaller-Hall + mindeg(N(Q))<=3 implies Hall(Q) (strong-induction step: remove min-degree neighborhood R, |R|>=1 so strictly smaller; Delta(Q)<=d-3<=0). Honest status: conditional on smaller-Hall (which is the open global); NOT unconditional and NOT a close. Violator-zone corollary: Hall reduces to mindeg>=4 zone (= violator zone; 8B consistent). Mindeg-4-removal bonus: minimal violator with min-degree exactly 4 has every such removal tight (Delta=0, no orphans) else smaller violator contradicts minimality - consistent, not contradictory. Degree-ladder (1-source and 2-source removals) stops exactly at 8B (deg>=4); no leverage beyond.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C53 - pinning-impossibility 8R (this continuation)
+
+### C53-1 root-motion census + 8R lemma [PROVED_AUTHOR]
+Every nontrivial splay moves its pre-splay root (final StepEv pivots old root down; verified 2661/2661 across 120 histories). Hence A-root-pinning breaks on every nontrivial access (repeats/no-ops only refuge); supply-free pushes are single-shot per state with rebuilds supplying (zone-overlap for x open; sterile-rebuilds need fresh-far keys (finite pool) else stall-or-save). hall_lemmas.md 8R banked. Wall unchanged (overlap question survives pinning analysis).

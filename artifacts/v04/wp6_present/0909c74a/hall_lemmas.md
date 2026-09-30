@@ -285,3 +285,19 @@ M2 history yields a stalled PEEL 4-core (R=42, N=75, mindeg EXACTLY 4,
 Delta=−183, connected, acc span 2–37) with max-flow STILL saturating:
 CAP3-PEEL-as-universal REFUTED, GC-STATIC unaffected (recorded distinction).
 Killer + ENTRY@3 histories PEEL-empty fully. No Delta>0 anywhere yet.
+
+## 8R. PINNING-IMPOSSIBILITY + SUPPLY-FREE-PUSH COROLLARY (C53)
+
+Lemma (rigorous): every nontrivial splay (A or B, >=1 StepEv) moves its
+pre-splay root (final StepEv pivots old root down: zig sends p to child;
+double sends g to grandchild). Hence A-root-pinning across a nontrivial
+access is impossible; pinning survives only trivial accesses (repeats/no-ops).
+Check: 2661/2661 nontrivial splays move old root (120 histories, present).
+Corollary: supply-free pushes (e_A=0 + real B-splash = DELETE-then-KEEP
+repeats with stale-deep-B) are single-shot per state (splash roots in B);
+rebuilding (A-root + B-deep-stale) needs unpinning/redeepening accesses which
+are nontrivial (create E1 supply) or no-ops (stall). So supply-free pushes
+alternate with supplying accesses (zone-overlap for x still required and open;
+sterile-rebuild sustain needs fresh-far keys (finite pool) else repeats stall
+or near keys overlap-save). Code: splay_A/splay_B_push zig/double branches;
+root_key before/after.
