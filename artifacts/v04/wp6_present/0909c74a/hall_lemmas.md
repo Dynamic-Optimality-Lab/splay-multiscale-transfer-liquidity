@@ -438,6 +438,16 @@ Wall final form: universal anchored base (8S/8T/8U) + load-bearing transient var
 brings new-old — emptiness hunt queued; fullsplit-bleed + pressure-17 are the finite
 faces on both sides).
 
+## 8AA. ROOT-ANCHOR + FRESH-FULL REFINEMENT (finite-strong, C66)
+
+Census (`anchor.json`, 464 bursts e_B≥4 + 60-history split-verify): bursts with ZERO
+past-final-triple hits are (i) acc=0 first-access (vacuous — no past; N=E1-full by
+8T same-shape) or (ii) post-first with N=E1 exactly (fully fresh-covered non-heavy;
+5 cases, all n=16, e_B 4–8, N=e_B). No post-first burst with old-dependence lacks
+root-hits in corpus. Refined dichotomy: (fresh-full ⟹ safe by 8H counting) or
+(old-dependent ⟹ root/variation hits observed). Heavy-postfirst root-hit
+measurement queued (varhole new≥4 is the heavy-side face). Status: FINITE_STRONG.
+
 ## 8X. VARIATION-EMPTINESS (finite-strong; universal candidate) (C61)
 
 Measures (`varhole.json` + inline pinned census): 4107 accesses / 159 heavy /

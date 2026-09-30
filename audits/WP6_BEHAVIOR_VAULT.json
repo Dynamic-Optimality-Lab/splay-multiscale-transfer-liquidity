@@ -1292,6 +1292,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_anchor.py -> artifacts/v04/wp6_present/0909c74a/anchor.json + hall_lemmas.md 8AA",
+   "date": "2026-09-30",
+   "id": "C66-ANCHOR",
+   "implication": "Zero-root-hit bursts are exactly acc0/fresh-full (safe by 8T/8H); old-dependent bursts always hit; heavy-side queued.",
+   "next": "Heavy-postfirst root-hit measurement; Lean 8S/8U/8W; contention bound",
+   "order": 82,
+   "reason": "Root-anchor coverage census (past final-triple hits per burst).",
+   "result": "464 bursts: zeros are acc0 (vacuous) or N=E1 fresh-full (5, non-heavy); 0 kills.",
+   "script": "scripts/wp6_anchor.py",
+   "statement": "Old-dependent bursts always carry root-anchor hits.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
