@@ -364,11 +364,30 @@ finite backbone; NOT proved.
 ## 8W. BYSTANDER-YIELD BOUND + ANCHORED-INSUFFICIENCY (C60)
 
 Yield (finite, 50k+ bystander events, `yield.json`): per KEEP, bystander depth-gain
-distribution {+1: 37597, +2: 13083}, NEVER ≥+3, max +2. Universal candidate: one splay
-access deepens any bystander by ≤2 (rotation mechanics: per-StepEv bystander shift ≤1
-with telescoping along the path; proof pending). Gives pusher-counting teeth: burst
-depth d needs ≥d/2 prior KEEP accesses, each banking ≥1 sited Aev (8S) — count-side
-amortization (GC-direction; assignment still needs hits).
+distribution {+1: 37597, +2: 13083}, NEVER ≥+3, max +2. Gives pusher-counting teeth:
+burst depth d needs ≥d/2 prior KEEP accesses, each banking ≥1 sited Aev (8S).
+
+## 8W.2 YIELD-BOUND ROTATION TABLE (SKETCH, Lean-ready) (C62)
+
+Per-StepEv bystander shifts from `_rot_right/_rot_left` (`legacy_embedding.py`
+lines 77–99): single rotation (edge p−x): x −1, p +1, p-outer-subtree +1,
+inner-b +0, rest 0. Splay StepEvs: ZIG: p +1 only (ancestors incl. G unchanged).
+ZIGZIG (LL/RR, two rotations): node −2, p 0, g 0, triple-parent G +2 (+G-outer),
+rest rigid-0. ZIGZAG (LR/RL): node −2, p 0, g +1, G +0. Per-StepEv bystander max:
++2 (zigzig/zagzag triple-parent-outer only), else ≤+1. De-pathing lemma (mechanics):
+every push puts the bystander train OFF the z-path (zig: p becomes sibling-side;
+zigzig: G lands sibling-side of z; zigzag: g sibling-side) — pushed trains never
+rejoin (rotations only shorten the path; side-subtrees stay side). Rides after
+de-pathing: rigid with train root (−1 per higher StepEv as path compresses; +1
+only if train root is outer child of a final ZIG at root). Net per access ≤ +2
+provided final-ride-up (+1) is incompatible with a prior +2-push on the same train
+(open sub-case: +2 needs deep zigzig-G-outer placement; final-zig-ride-up needs
+train-root-as-root-outer — positional incompatibility conjectured, 50k events
+supporting, NOT proved). Loose end: two +1-pushes on one train (needs re-pathing —
+barred by de-pathing) ; +1-push then +1-ride-up (net +2 ✓ allowed, observed).
+Status: SKETCH with exact code pointers + finite backbone (max +2/50k); residual =
+final-ride-up incompatibility (one positional lemma). On close: 8V(a) PROVED and
+burst-depth-d ⟹ ≥d/2 banker-accesses universally (count-side).
 Anchored-insufficiency (measured): maxflow on ANCHORED edges only (E1+E4+K, no
 E2/W/E7) fails 19/140 histories (13.6%), worst shortfall 49 of 76 demand — transients
 are LOAD-BEARING, not bonus. Anchored-only cycle-closure DEAD (banked honestly).
