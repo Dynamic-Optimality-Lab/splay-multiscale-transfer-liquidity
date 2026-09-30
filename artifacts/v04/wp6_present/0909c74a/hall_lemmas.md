@@ -393,6 +393,28 @@ per access UNIVERSALLY. Exact verification: ALL BST shapes n=4..7 × all keys
 consistent; 50k sampled large-n events agree. Status: PROVED_AUTHOR (rotation table
 + de-pathing + lift-accounting; Lean-pending). Consequence: 8V(a) PROVED — burst
 B-depth d ⟹ ≥d/2 prior KEEP accesses, each banking ≥1 sited Aev (8S).
+
+## 8Y. ATOM-CLOSURE: key-identity E3-backstop + ride-sterility (SKETCH, C64)
+
+Defs (`scripts/wp6_eventflow2.py` lines 79–107): E2 = pump-KEEPs u ∈ (prevkeep,idx)
+with xx ∈ pump_push(u) (windowed, E2-hole via DELETE-half unrecorded); E3 = sited
+past/same Aevs with ROTATED ∩ B-triple ≠ ∅ (ageless; B-triple = pushed ∪ {xx});
+E7 = pump-chain closure (depth-8); E4 = setup; E1 = same-access.
+Chain-identity (mechanical): past sited A-access on chain key z has rotated ∋ z
+(node-fixed, 8U(i)) and is sited (8S); burst triples tile the B-path; z E3-hits
+burst events with triple ∋ z — unavoidable key-identity hit. Every post-T0 pusher
+(chain ancestor by pushing mechanics) imprints its chain position; E2-hole's
+DELETE-half STILL E3-hits (E3 backstops E2). Diverger-hit: accesses that moved x
+hit the first burst triple (∋ xx always). Misses need ALL of: chain-fresh +
+neighbor-spill-absent + E1-empty + E4-empty + E2-miss + E7-miss + K-empty.
+Ride-sterility (deepest hole): G-outer trains deepen +2 SILENTLY (no triple ∋ x,
+unpushed ⟹ E2/E7 miss); full atom = ride-depth × A-shallow-without-DELETE-x ×
+region-fresh × trivial-setup. Never assembled (varhole 0/5405; triple 3k; K2A −2).
+Contention (`reuse.json`, 150 hist): max-reuse 6..137, over-subscribed 6909/8599
+(80%), EVERY history — trivial matching hopeless, maxflow routes via density.
+Cover at E1-empty bursts (35): K 10.9 + W 6.1 + E2 4.1 + E4 1.5 + E7 1.5 avg.
+Status: SKETCH with def-pointers; residuals = silent-ride conjunction (finite:
+never) + contention assignment (finite: always saturates).
 Anchored-insufficiency (measured): maxflow on ANCHORED edges only (E1+E4+K, no
 E2/W/E7) fails 19/140 histories (13.6%), worst shortfall 49 of 76 demand — transients
 are LOAD-BEARING, not bonus. Anchored-only cycle-closure DEAD (banked honestly).
