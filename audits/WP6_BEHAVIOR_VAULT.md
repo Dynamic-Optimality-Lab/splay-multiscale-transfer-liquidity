@@ -524,10 +524,7 @@ walks self-supply via per-access E1). Inline short hunt (L 5–12, zone-confined
 supply holds it). Cumulative offline: 26k + 15k + 8k + 2.28M exhaustive +
 killer/M2/ENTRY@3, zero shortfall.
 
-## Queued next (LIVE)
-- GC-STATIC old-abundance theorem (bare wall; hub gives connectivity not counts).
-- Splay-model Lean core (auxiliary).
-- Spread-3 dormancy proof (auxiliary).
+## Queued next (STALE — superseded; live queue at file end)
 
 ## C43 — ML-HUB + short-hunt + carry-ordering fix (this continuation)
 
@@ -545,10 +542,7 @@ Cumulative offline now 26k + 15k + 8k + 2.28M + killer/M2/ENTRY@3.
 8M/8L header repairs in `hall_lemmas.md` (edit-orphan fixes, content intact);
 vault ordering notes current (follow IDs/dates).
 
-## Queued next (LIVE)
-- GC-STATIC old-abundance theorem (bare wall; fourth-use program mapped+dead as closure).
-- Splay-model Lean core (auxiliary).
-- Spread-3 dormancy proof (auxiliary).
+## Queued next (STALE — superseded by C45 queue at file end)
 
 ## C44 — fourth-use assault: ascent falsified, episode-tax banked, DAG/aggregate dead (this continuation)
 
@@ -566,3 +560,28 @@ EMPTY finite; open universal). DAG (§27.10/13) DEAD: E1-complete + B-heavy give
 companionless deg≥4 maximals (structural, not rare). AGGREGATE DEAD: one later
 E1 companions unboundedly many earlier pressures (sharing ∞, no finite C).
 Net: W-conditional-tax + E1-exemption stand; closures dead; wall unchanged.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; supply avenues exhausted).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C45 — pool-deficit diagnostic + supply-avenue exhaustion (this continuation)
+
+### C45-1 PE-00 pool-deficit hunt [FINITE_EVIDENCE]
+`scripts/wp6_pool.py` → `pooldef.json` (overflow-biased holders, 12k evals):
+best deficit (overflow − 3·R_old) = −6 (never positive). Full-B deficit ≤ 0
+universally here — but full-B form is TOOTHLESS (R_old massive by construction).
+Sharp per-Q form = one-access-Hall+ (open, wall); single-access deficit =
+Delta exactly (so deficit-hunt there ≡ shortfall-hunt, 46k+ clean).
+Deficit>0 does NOT imply Hall kill (buffers dropped); violator ⟹ deficit>0
+(necessary only). Pressure map, not kill path.
+### C45-2 8O pool-deficit bound + exhaustion audit [PROVED_AUTHOR (bound)]
+`hall_lemmas.md` 8O: Delta(Q) ≤ overflow(D_Q) − 3·R_old(Q) =: deficit(Q)
+(fresh-partition + per-access split; demanding-only disjointness).
+Supply avenues with verdicts: fresh ✓ done; E1/E4-complete (no forcing);
+E2 (hole-y, bounded); K (ratchet/dilute); W (transient/sterile, OCC/STEPS);
+E7 (+2); hub (counts-nil); pushes (zone-mismatch); runs (miskeyed); induction
+(circular); fluid (forbidden); augmenting (circular); DAG/aggregate (dead);
+fourth-use (mapped); deficit (restatement). NO avenue untried: new idea or
+violator required.

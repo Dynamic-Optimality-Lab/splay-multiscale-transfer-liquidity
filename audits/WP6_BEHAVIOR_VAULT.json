@@ -748,6 +748,38 @@
    "superseded": false,
    "theorem": "Reuse-growth (partial)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_pool.py -> artifacts/v04/wp6_present/0909c74a/pooldef.json",
+   "date": "2026-09-30",
+   "id": "C45-1-POOLDEF",
+   "implication": "Full-B deficit toothless (union massive); per-Q form = one-access-Hall+ (open); deficit>0 not a kill (buffers).",
+   "next": "Supply audit",
+   "order": 48,
+   "reason": "Pool-deficit diagnostic (overflow vs 3x old-exclusive, overflow-biased holders).",
+   "result": "12k evals: best deficit -6 (never positive); single-access deficit = Delta exactly; deficit>0 does not imply Hall kill.",
+   "script": "scripts/wp6_pool.py",
+   "statement": "Pool-deficit pressure map.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (pressure)",
+   "witness": null
+  },
+  {
+   "artifact": "artifacts/v04/wp6_present/0909c74a/hall_lemmas.md (\u00a78O)",
+   "date": "2026-09-30",
+   "id": "C45-2-SUPPLYEXH",
+   "implication": "Nothing left untried in current arsenal; new idea or violator required.",
+   "next": "Old-abundance theorem",
+   "order": 49,
+   "reason": "Pool-deficit bound + supply-avenue exhaustion audit.",
+   "result": "8O bound PROVED_AUTHOR (Delta<=deficit); all 15 avenues mapped with verdicts (done/dead/bounded/open-wall).",
+   "script": null,
+   "statement": "8O + exhaustion audit.",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "Hall program status",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

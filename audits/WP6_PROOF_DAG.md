@@ -52,6 +52,11 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   GC-ASSAULT 15k clean (gap never >0; cumulative raw-GC 41k+ clean)
       │  (STILL OPEN: GC-STATIC theorem; credits; MSTL-14P composition)
       ▼
+[ BANKED C45 ] POOL-DEFICIT (full-B ≤ −6 universal over 12k; per-Q form =
+  one-access-Hall+ open; deficit>0 ≠ kill) · 8O BOUND (Delta ≤ deficit) ·
+  SUPPLY-EXHAUSTION (15 avenues mapped: done/dead/bounded/open-wall)
+      │  (wall: old-abundance; nothing untried in current arsenal)
+      ▼
 [ BANKED C44 ] ASCENT falsified+classified (E1-ties 2859 §21.A; E2/K/E4 exempt) ·
   8N EPISODE-TAX (K-inc vs W-inc≤3/splay OCC; W-inc≥4⇒multi 7943/7943;
   companions conditional; repeat-hole 0-finite) · DAG DEAD (E1-maximals) ·

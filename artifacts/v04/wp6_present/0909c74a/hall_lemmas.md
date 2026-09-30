@@ -205,6 +205,26 @@ shortfall-0 restated (biconditional above) — consistent, adds nothing.
 The induction frame contributes NO leverage; the wall is bare: old-abundance
 must come from elsewhere (or a violator exists).
 
+## 8O. POOL-DEFICIT BOUND + SUPPLY-AVENUE EXHAUSTION (C45)
+
+Bound (author): for any Q, with FRESH-UNION F = ⊔ demanding-access fresh sets
+(disjoint, 8H) and R_old = N(Q) \ F (old-exclusive): |N(Q)| = Σf + |R_old|
+exactly, so Delta(Q) = Σ_j(|Q_j| − 3f_j) − 3|R_old| ≤ overflow(D_Q) − 3|R_old|
+=: deficit(Q) (non-heavy terms ≤ 0 dropped). Hence deficit(Q) ≤ 0 ⟹ Hall(Q),
+but NOT conversely (buffers: deficit can exceed Delta; deficit>0 is pressure,
+not kill). Full-B form toothless (R_old massive → deficit ≤ −6 universally,
+12k evals (pooldef.json)). Sharp per-Q form = one-access-Hall+ (open, wall).
+Single-access-Q deficit = Delta exactly (no buffers dropped) ⟹ deficit-hunt
+there ≡ shortfall-hunt (46k+ clean).
+Supply avenues, all mapped with verdicts: fresh ✓ done (8H/non-heavy);
+E1/E4-complete (no forcing; §21.A); E2 (hole-y §8G, bounded C41); K
+(ratchet/dilute); W (transient/sterile, OCC/STEPS; hub-luck); E7 (+2);
+hub (counts-nil §8M); pushes (zone-mismatch); runs (miskeyed deposits);
+induction (circular §8L); fluid/counting (forbidden ≡GC); augmenting
+(circular §C41); DAG/aggregate (dead §8N); fourth-use (mapped §8N);
+deficit (restatement, this section). NO avenue untried; new idea or violator
+required — nothing left in the current arsenal closes it.
+
 ## Finite status (C38 + C40-8H)
 
 M2 history yields a stalled PEEL 4-core (R=42, N=75, mindeg EXACTLY 4,
