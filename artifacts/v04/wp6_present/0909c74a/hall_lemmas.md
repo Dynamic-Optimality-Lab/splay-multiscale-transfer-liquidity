@@ -445,8 +445,21 @@ past-final-triple hits are (i) acc=0 first-access (vacuous — no past; N=E1-ful
 8T same-shape) or (ii) post-first with N=E1 exactly (fully fresh-covered non-heavy;
 5 cases, all n=16, e_B 4–8, N=e_B). No post-first burst with old-dependence lacks
 root-hits in corpus. Refined dichotomy: (fresh-full ⟹ safe by 8H counting) or
-(old-dependent ⟹ root/variation hits observed). Heavy-postfirst root-hit
-measurement queued (varhole new≥4 is the heavy-side face). Status: FINITE_STRONG.
+(old-dependent ⟹ root/variation hits observed). Status: FINITE_STRONG.
+
+## 8AB. HEAVY ⟹ ROOT-HIT (joint 2×2, finite-universal) (C67)
+
+Joint census (345 bursts e_B≥4, 80 histories): (non-heavy,zero-hit) 43 /
+(non-heavy,hit) 252 / (heavy,hit) 50 / (heavy,zero-hit) 0. Zero-hit ⟺
+fresh-full-non-heavy (43 acc0-or-N=E1); heavy ⟹ past-final-triple hit ≥1 (50/50;
+varhole heavy-E1empty new≥4 consistent — stronger). With 8T (acc0 never heavy:
+trivial-root has no demand) the (heavy,zero-hit) cell is empty on both sides.
+Mechanical sketch: heavy ⟹ divergence (8T-contrapositive) ⟹ past final triples
+in root-area; burst chain crosses root-area (path ends at root; final B-triples
+root-area); old-root-pivot (8R: final StepEv pivots old root down — final triples
+contain pre-splay roots of both trees) forces overlap modulo root-migration
+(roots migrate per access — the residual). Candidate universal: every heavy burst
+carries ≥1 root-anchored new source + growing K (8U) + chain-hits ∝ length (8Z).
 
 ## 8X. VARIATION-EMPTINESS (finite-strong; universal candidate) (C61)
 

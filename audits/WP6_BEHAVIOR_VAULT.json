@@ -1308,6 +1308,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "joint heavy-roothit census (inline) + hall_lemmas.md 8AB",
+   "date": "2026-09-30",
+   "id": "C67-HEAVY-HIT",
+   "implication": "Heavy bursts provably carry root-anchored new supply (finite-universal); per-burst structure complete: fresh-full or anchored+root+chain-hits.",
+   "next": "Counting assembly (contention assignment bound); Lean 8S/8U/8W/8AB track",
+   "order": 83,
+   "reason": "Joint (heavy x zero-root-hit) 2x2 census over 345 bursts.",
+   "result": "(F,T)43 (F,F)252 (T,F)50 (T,T)0: heavy=>hit 50/50, zero=>fresh-full.",
+   "script": "scripts/wp6_anchor.py",
+   "statement": "Heavy bursts always hit past final-triples; zero-hit implies fresh-full safety.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
