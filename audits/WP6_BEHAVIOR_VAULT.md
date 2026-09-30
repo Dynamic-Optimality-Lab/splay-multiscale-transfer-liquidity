@@ -678,3 +678,13 @@ Pushing B-deep while holding A-shallow+sterile fails because pushes inherently t
 
 ### C51-1 mincut E12/E12K ablation [FINITE_EVIDENCE]
 scripts/wp6_mincut.py extended (E12 = E1+E2 only; E12K = +K-persistent) rerun same 150 histories (deterministic): E12-fail 44/150 (SAME 44 as E124: E4 saves ZERO marginal over E1+E2 here); E12K-fail 22/150 (K saves the same 22 E4 could not). Necessity ladder: E12 covers 106; +E4 covers +0; +K covers +22; +W covers +22 (150 total saturate). Honest caveat: case-b (E1-empty DELETE-runs, E4-pristine domain) is rare in corpus (random-walk repeats ~1/33), so E4-redundancy is marginal-contribution evidence, NOT necessity refutation - E4-pristine stands by ML-ADJ-E4/FRESH-CAP proof. E2-alone arithmetic (push-supply order covers demand order; root-fraction bounded single-shot+rebuild) consistent: E2 carries the bulk (106/150 alone with E1).
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; mindeg-zone reduced to violator-zone).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C52 - conditional mindeg-safety 8Q (this continuation)
+
+### C52-1 8Q lemma [PROVED_AUTHOR conditional]
+hall_lemmas.md 8Q: smaller-Hall + mindeg(N(Q))<=3 implies Hall(Q) (strong-induction step: remove min-degree neighborhood R, |R|>=1 so strictly smaller; Delta(Q)<=d-3<=0). Honest status: conditional on smaller-Hall (which is the open global); NOT unconditional and NOT a close. Violator-zone corollary: Hall reduces to mindeg>=4 zone (= violator zone; 8B consistent). Mindeg-4-removal bonus: minimal violator with min-degree exactly 4 has every such removal tight (Delta=0, no orphans) else smaller violator contradicts minimality - consistent, not contradictory. Degree-ladder (1-source and 2-source removals) stops exactly at 8B (deg>=4); no leverage beyond.

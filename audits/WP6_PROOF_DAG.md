@@ -56,6 +56,9 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   (winc≥4⇒multi 7943/7943 companioned; rephole 0; e2k 12021/0)
       │  (wall unchanged: old-abundance)
       ▼
+[ BANKED C52 ] 8Q CONDITIONAL (smaller-Hall + mindeg<=3 => Hall(Q); mindeg-4-removal tight; ladders stop at 8B) - violator zone isolated, not closed
+      |  (wall: old-abundance at mindeg>=4)
+      v
 [ BANKED C51 ] E2-LADDER (E12 106/150; +E4 +0 marginal here (case-b rare); +K +22; +W +22; E2 carries bulk) [FINITE]
       |  (wall: old-abundance)
       v

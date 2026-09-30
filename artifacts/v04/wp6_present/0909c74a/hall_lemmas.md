@@ -263,7 +263,23 @@ induction (circular §8L); fluid/counting (forbidden ≡GC); augmenting
 deficit (restatement, this section). NO avenue untried; new idea or violator
 required — nothing left in the current arsenal closes it.
 
-## Finite status (C38 + C40-8H)
+## 8Q. CONDITIONAL MINDEG-SAFETY + VIOLATOR-ZONE REDUCTION (C51)
+
+Lemma (conditional, rigorous): let Q with mindeg(N(Q)) = d ≤ 3. Suppose every
+strictly smaller B-set satisfies Hall. Then Q satisfies Hall (Delta ≤ 0).
+Proof: min-degree a* (d ≥ 1 since a* ∈ N(Q) has ≥1 neighbor); R = neighbors
+(|R| = d); Q' = Q\R strictly smaller so Delta(Q') ≤ 0 (hypothesis);
+N(Q') ⊆ N(Q)\{a*\} so |N(Q')| ≤ |N|−1; Delta(Q') ≥ |Q|−d−3(|N|−1) =
+Delta(Q)+3−d; hence Delta(Q) ≤ Delta(Q')−(3−d) ≤ −(3−d) = d−3 ≤ 0. ∎
+Status: PROVED_AUTHOR conditional on smaller-Hall (NOT unconditional — the
+hypothesis is exactly what's open globally; no circularity in the conditional
+form). Violator-zone corollary: Hall(Q) for mindeg(Q) ≥ 4 is the entire
+remainder (= violator zone; 8B consistent). Mindeg-4-removal constraint
+(bonus): minimal violator with min-degree exactly 4 has every such removal
+tight (Delta = 0 exactly, no orphans) — else a smaller violator contradicts
+minimality. Consistent, not contradictory (does not close).
+
+## Finite status (C38 + C40-8H, plus C51-8Q/C52 below)
 
 M2 history yields a stalled PEEL 4-core (R=42, N=75, mindeg EXACTLY 4,
 Delta=−183, connected, acc span 2–37) with max-flow STILL saturating:
