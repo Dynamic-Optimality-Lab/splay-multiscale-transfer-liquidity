@@ -379,15 +379,20 @@ every push puts the bystander train OFF the z-path (zig: p becomes sibling-side;
 zigzig: G lands sibling-side of z; zigzag: g sibling-side) — pushed trains never
 rejoin (rotations only shorten the path; side-subtrees stay side). Rides after
 de-pathing: rigid with train root (−1 per higher StepEv as path compresses; +1
-only if train root is outer child of a final ZIG at root). Net per access ≤ +2
-provided final-ride-up (+1) is incompatible with a prior +2-push on the same train
-(open sub-case: +2 needs deep zigzig-G-outer placement; final-zig-ride-up needs
-train-root-as-root-outer — positional incompatibility conjectured, 50k events
-supporting, NOT proved). Loose end: two +1-pushes on one train (needs re-pathing —
-barred by de-pathing) ; +1-push then +1-ride-up (net +2 ✓ allowed, observed).
-Status: SKETCH with exact code pointers + finite backbone (max +2/50k); residual =
-final-ride-up incompatibility (one positional lemma). On close: 8V(a) PROVED and
-burst-depth-d ⟹ ≥d/2 banker-accesses universally (count-side).
+only if train root is outer child of a final ZIG at root). Net per access ≤ +2 PROVED by lift-accounting (C63): ride-ups (+1 to an
+uninvolved outer child) happen ONLY at root-changing FINAL StepEvs (non-final steps
+keep the root: outsiders rigid-0; only zigzig moves a non-triple outsider, +2 to
+triple-parent-outer). A +2-push leaves its train at depth ≥2 (node depth d≥3 for
+zigzig; train lands d−1≥2). Final-zig ride-up hits ONLY the root's outer child
+(depth 1). Reaching it needs ≥1 lift (−1 per subsequent StepEv as the path
+compresses; rigid-0 zigzig-chains don't lift but then position never reached —
+ride-up misses). So net = +2 −L +1 with L≥1 forced, i.e. ≤+2; +1-push cases give
+≤1+1=2 similarly; re-pushes barred by de-pathing. Hence every bystander gains ≤+2
+per access UNIVERSALLY. Exact verification: ALL BST shapes n=4..7 × all keys
+(8304 gain events: +1: 6658, +2: 1646, never +3); two-splay max net +4 = +2/access
+consistent; 50k sampled large-n events agree. Status: PROVED_AUTHOR (rotation table
++ de-pathing + lift-accounting; Lean-pending). Consequence: 8V(a) PROVED — burst
+B-depth d ⟹ ≥d/2 prior KEEP accesses, each banking ≥1 sited Aev (8S).
 Anchored-insufficiency (measured): maxflow on ANCHORED edges only (E1+E4+K, no
 E2/W/E7) fails 19/140 histories (13.6%), worst shortfall 49 of 76 demand — transients
 are LOAD-BEARING, not bonus. Anchored-only cycle-closure DEAD (banked honestly).
