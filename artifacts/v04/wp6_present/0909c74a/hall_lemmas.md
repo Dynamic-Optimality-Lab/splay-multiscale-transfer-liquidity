@@ -376,3 +376,15 @@ Wall final form: universal anchored base (8S/8T/8U) + load-bearing transient var
 (E3-union first-overlaps); missing universal = variation (every E1-empty heavy access
 brings new-old — emptiness hunt queued; fullsplit-bleed + pressure-17 are the finite
 faces on both sides).
+
+## 8X. VARIATION-EMPTINESS (finite-strong; universal candidate) (C61)
+
+Measures (`varhole.json` + inline pinned census): 4107 accesses / 159 heavy /
+4 heavy+E1empty → ATOMS (heavy + E1empty + new-old 0) = 0; newdist {4:2, 8:1, 9:1}
+(new-old NEVER <4 when E1-empty+heavy). Victim-pinned micro-cycles (1298 accesses):
+heavy = 0 outright (setup-DEPTH self-funds: E4-pristine with deep setup covers;
+shallow-setup needs A-far pushers = triple conjunction). Shape-aware triple assembler
+(`triple.json`: B-near/A-far + DELETE-then-KEEP E2-hole + root-burst, 120 shaped seeds
++ hillclimb, 3k evals): NO KILL. Candidate universal: heavy + E1empty ⟹ new-old ≥ 1
+(observed ≥4); with proportional form (overflow/3 ≤ new) it closes 8K-step; unproved.
+Resonance noted: new ≥ 4 matches 8B mindeg ≥ 4 (both sides of violator demand 4+).

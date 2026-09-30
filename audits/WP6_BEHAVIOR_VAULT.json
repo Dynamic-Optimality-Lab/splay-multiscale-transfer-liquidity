@@ -1212,6 +1212,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_varhole.py -> artifacts/v04/wp6_present/0909c74a/varhole.json; scripts/wp6_triple.py -> artifacts/v04/wp6_present/0909c74a/triple.json",
+   "date": "2026-09-30",
+   "id": "C61-VARHOLE",
+   "implication": "Variation-emptiness holds finitely-strong (atoms 0, new>=4); triple conjunction never assembles to kill; wall = proportional-variation + contention.",
+   "next": "Lean 8S/8U + yield mechanics proof; proportional-variation attempt",
+   "order": 77,
+   "reason": "TRUE-hole atom hunt (heavy+E1empty+new0) + shape-aware triple assembler.",
+   "result": "4107acc/159heavy/4e1empty ATOMS 0 new {4,4,8,9}; pinned 1298acc heavy 0; triple 3k NO KILL.",
+   "script": "scripts/wp6_varhole.py",
+   "statement": "E1-empty heavy always brings new-old >=4; triple conjunction never kills.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
