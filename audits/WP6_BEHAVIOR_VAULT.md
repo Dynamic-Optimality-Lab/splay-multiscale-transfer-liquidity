@@ -544,3 +544,25 @@ Cumulative offline now 26k + 15k + 8k + 2.28M + killer/M2/ENTRY@3.
 ### C43-3 carry-ordering + file hygiene [MAINTENANCE]
 8M/8L header repairs in `hall_lemmas.md` (edit-orphan fixes, content intact);
 vault ordering notes current (follow IDs/dates).
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; fourth-use program mapped+dead as closure).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C44 — fourth-use assault: ascent falsified, episode-tax banked, DAG/aggregate dead (this continuation)
+
+### C44-1 FT-00 fourth-use ascent test [REFUTED + CLASSIFIED]
+`scripts/wp6_fourth.py` → `fourth.json` (200 hist, 3045 Qs full-B + access
+slices, 31,331 deg≥4 sources): FOURTH-USE ASCENT FALSE — fails E1|E3 2859
+(same-access E1 ties), E2 769 (complete concentration), E3 93, rest scattered.
+Pure-W corrected (S-disjoint + W-inc>0; earlier flag polluted by E2-complete).
+§27.8 classification done: E1/E2/K/E4-complete exempt (§21.A fresh machinery).
+### C44-2 8N episode-tax [PROVED (W-conditional) + DAG/AGGREGATE DEAD]
+`hall_lemmas.md` 8N: K-inc (S∋x: complete/access) vs W-inc (S∌x + E3-tagged:
+≤3/splay by OCCUPANCY — rigorous) vs complete-class others. W-inc≥4 ⟹ ≥2 splays
+FORCED, verified 7943/7943 multi-episode; companions 7943/7943 (repeat-hole
+EMPTY finite; open universal). DAG (§27.10/13) DEAD: E1-complete + B-heavy give
+companionless deg≥4 maximals (structural, not rare). AGGREGATE DEAD: one later
+E1 companions unboundedly many earlier pressures (sharing ∞, no finite C).
+Net: W-conditional-tax + E1-exemption stand; closures dead; wall unchanged.

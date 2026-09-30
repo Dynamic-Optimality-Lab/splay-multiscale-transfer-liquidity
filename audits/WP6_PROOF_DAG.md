@@ -52,6 +52,12 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
   GC-ASSAULT 15k clean (gap never >0; cumulative raw-GC 41k+ clean)
       │  (STILL OPEN: GC-STATIC theorem; credits; MSTL-14P composition)
       ▼
+[ BANKED C44 ] ASCENT falsified+classified (E1-ties 2859 §21.A; E2/K/E4 exempt) ·
+  8N EPISODE-TAX (K-inc vs W-inc≤3/splay OCC; W-inc≥4⇒multi 7943/7943;
+  companions conditional; repeat-hole 0-finite) · DAG DEAD (E1-maximals) ·
+  AGGREGATE DEAD (sharing ∞)
+      │  (wall unchanged: old-abundance; fourth-use mapped, not closing)
+      ▼
 [ BANKED C43 ] ML-HUB (top-triple universal root-overlap; connectivity only, no
   counts) · short-concentrated 8k clean · carry-ordering/file hygiene
       │  (THE bare wall, unchanged: old-abundance with no leverage)

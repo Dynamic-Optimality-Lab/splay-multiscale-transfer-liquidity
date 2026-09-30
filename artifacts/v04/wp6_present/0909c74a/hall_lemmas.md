@@ -145,6 +145,33 @@ Slack-transfer (§9) is this induction in cumulative form (sigma_new = sigma_old
 + 3·new − |R|; IH supplies sigma_old ≥ 0 — NOT circular, NOT GC-equivalent;
 the dangerous step is exactly the lemma above).
 
+## 8N. EPISODE-TAX + FOURTH-USE VERDICTS (C44 reuse-growth assault)
+
+Definitions (§27.5-6 telemetry): first_Q(a) = earliest B-index in Q adjacent;
+bk(a) kth chronological Q-neighbor; incidence split per (a,b): K-inc
+(x_b ∈ S(a), ai ≤ acc(b), sited: complete per access) vs W-inc (x_b ∉ S(a),
+E3-tagged: ≤3 per splay by OCCUPANCY — each z ∈ S in ≤1 triple, |S| ≤ 3);
+others = E1/E2/E4/E7-nonE3 complete-class incidences. Degree ≠ load (§27.20
+observed throughout: adjacency is signal, assignment separate).
+
+VERDICTS (fourth.json rerun: 3045 Qs, 31,331 deg≥4):
+(a) FOURTH-USE ASCENT (universal) FALSE: E1|E3 fail 2859 (same-access E1 ties),
+E2 769 (complete concentration), E3 93, others scattered. E1-last-access-B-heavy
+gives companionless deg≥4 maximals universally → DAG (§27.10/13) DEAD as closure
+(not weakened: structurally impossible via E1-complete + B-heavy).
+(b) W-INCIDENCE FORCING (rigorous): W-inc ≥ 4 ⟹ ≥2 splays (STEPS ≤3/splay),
+verified 7943/7943 multi-episode, 0 single. Companions (later-nonrepeat-episode
+E1s or dormant-returners): 7943/7943 have them (nocomp 0) — repeat-hole EMPTY
+in finite corpus (histories continue; violator-Q-relative version open).
+(c) E1/E2/K/E4-complete: EXEMPT (single-access concentration needs no episodes;
+fresh machinery covers first-3 loads; §21.A confirmed).
+(d) AGGREGATE (F ≤ C·G) DEAD: one later E1 companions unboundedly many earlier
+pressures (sharing multiplicity ∞) — no finite C (banked honestly).
+(e) Repeat-hole (W-inc≥4, all-later-episodes-repeats, E4-early, no-returners):
+0 instances (finite); open as universal (needs repeat-episode W-ladder proof).
+Net: fourth-use yields W-conditional-tax + E1-exemption + DAG/aggregate corpses;
+GC-STATIC NOT closed (needs the wall: old-abundance for B-heavy Q-blocks).
+
 ## 8M. ML-HUB (top-triple universal overlap; connectivity only) (C43)
 
 Statement: the LAST B-StepEv of every nontrivial B-splay is E3-adjacent to the
