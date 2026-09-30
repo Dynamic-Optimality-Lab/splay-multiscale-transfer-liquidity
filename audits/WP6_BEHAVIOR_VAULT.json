@@ -1196,6 +1196,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_yield.py -> artifacts/v04/wp6_present/0909c74a/yield.json",
+   "date": "2026-09-30",
+   "id": "C60-YIELD",
+   "implication": "Anchored-only closure DEAD (transients load-bearing 13.6%); wall = transient variation with anchored universal base; next: E1-empty+new-old-0 emptiness hunt.",
+   "next": "Variation-emptiness hunt + Lean 8S/8U + pusher-yield proof",
+   "order": 76,
+   "reason": "Bystander yield bound 8V(a) + anchored-only assignment 8V(b) contention test.",
+   "result": "yield max +2 (1:37597, 2:13083, never >=3); anchored-only fails 19/140 worst 49/76.",
+   "script": "scripts/wp6_yield.py",
+   "statement": "Yield bounded +2; transients load-bearing; anchored base universal but insufficient alone.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

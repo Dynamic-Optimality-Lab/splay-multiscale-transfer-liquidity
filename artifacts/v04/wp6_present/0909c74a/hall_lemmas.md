@@ -360,3 +360,19 @@ keys (never-A-touched — covered by E1 same-shape only at history start; later
 need variation). With (a)+(b)+(c), first-x-burst atom closes; induction over
 bursts via 8U (K grows ~3/cycle) + 8K frame closes the rest. Status: SKETCH with
 finite backbone; NOT proved.
+
+## 8W. BYSTANDER-YIELD BOUND + ANCHORED-INSUFFICIENCY (C60)
+
+Yield (finite, 50k+ bystander events, `yield.json`): per KEEP, bystander depth-gain
+distribution {+1: 37597, +2: 13083}, NEVER ≥+3, max +2. Universal candidate: one splay
+access deepens any bystander by ≤2 (rotation mechanics: per-StepEv bystander shift ≤1
+with telescoping along the path; proof pending). Gives pusher-counting teeth: burst
+depth d needs ≥d/2 prior KEEP accesses, each banking ≥1 sited Aev (8S) — count-side
+amortization (GC-direction; assignment still needs hits).
+Anchored-insufficiency (measured): maxflow on ANCHORED edges only (E1+E4+K, no
+E2/W/E7) fails 19/140 histories (13.6%), worst shortfall 49 of 76 demand — transients
+are LOAD-BEARING, not bonus. Anchored-only cycle-closure DEAD (banked honestly).
+Wall final form: universal anchored base (8S/8T/8U) + load-bearing transient variation
+(E3-union first-overlaps); missing universal = variation (every E1-empty heavy access
+brings new-old — emptiness hunt queued; fullsplit-bleed + pressure-17 are the finite
+faces on both sides).
