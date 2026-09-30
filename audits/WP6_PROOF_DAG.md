@@ -59,6 +59,9 @@ Legend: [BANKED] proved author-level (Lean-pending noted) · [OPEN] live target 
 [ BANKED C55 ] RUN-DRAIN (worst net -29 yet saturates via shared-old; sustain best -24, 0 shortfall) / WASTE 44.9 percent (transient-diversion protects core minload; online-only, not Hall-applicable)
       |  (wall: old-abundance)
       v
+[ BANKED C56 ] WALLMAX (10k maximized pressure<=2/history slack>=32, 0 kill) / MINIMAL-COUNTEREXAMPLE proof (8A/8B/8C/8E/8H/8I/8J banked -> HOLE-1 old-abundance FIRST hole; HOLE-2 one-access/overlap; HOLE-3 repeat-hole/E2-K-tax; conditional QED)
+      |  (wall: old-abundance, exactly HOLE-1)
+      v
 [ BANKED C54 ] FULL-SPLIT sustain 28 (breaks via zone-boundary bleed) but never converts (fresh+dilution absorb); eval-write hygiene fixed
       |  (wall: old-abundance)
       v

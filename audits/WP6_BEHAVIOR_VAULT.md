@@ -720,3 +720,15 @@ scripts/wp6_fullsplit.py -> fullsplit.json (demand-zone vs supply-zone A-rotated
 scripts/wp6_rundrain.py -> rundrain.json (250 hist, 6678 runs): 21 B-heavy-drain runs, worst single-run net -29 (t=182 acc2 x=124: dem=32, new=1 - 32 B-events on old-shared + 1 new, yet saturates offline via shared pool). Sustain hunt (run-repeat bias, 8k evals): best cumulative drain -24, zero shortfall. Single-access extremes survive via shared-old (not fresh); cumulative drains never exhaust buffers.
 ### C55-2 transient-diversion waste 44.9 percent [MECHANISM, online-only]
 waste.json (MA corpus, 76 elevation events): 44.9 percent of in-access picks land on sources that have EXITED by elevation time. Transients absorb picks then leave with them, starving the core of saturating picks (protects current minload). Explains M2/C37/NM patterns (drains stall; negative margins do not convert). Correlative blocker risk (exited-loaded may re-enter@3: aev40 pattern) but blockers rare+absorbed, so protection dominates. SCOPE: online-dynamics only (least-loaded picks/minload); offline Hall has no loads/picks/waste (static graph) - does NOT advance GC-STATIC directly; supports offline-fallback framing (C37) by separating the two processes.
+
+## Queued next (LIVE)
+- GC-STATIC old-abundance theorem (bare wall; wallmax caps pressure at 2).
+- Splay-model Lean core (auxiliary).
+- Spread-3 dormancy proof (auxiliary).
+
+## C56 - wall-pressure maximizer + minimal-counterexample proof (this continuation)
+
+### C56-1 WM-00 wall-pressure maximizer [FINITE_EVIDENCE]
+scripts/wp6_wallmax.py -> wallmax.json (first-x + nearby-below pure pushers + run-repeat drain + far-key avoidance, hillclimb on shortfall/gap/pressure/eB-f-ratio): 10k evals, zero shortfall, zero GC-gap, bestpress 2 per history (seeds best 1 ratio 9.67; it90 ratio 34 slack 20; it583 press 2), final bestpress 2 bestratio 12.0 bestslack 32 (acc14 Q1 N11). Even MAXIMIZED, pressure stays <=2 isolated and slack >=32. Wall-pressure cannot be sustained/elevated by any generator in the arsenal. Finite face of sustained-sterile-B-heavy impossibility + single-pressure absorption.
+### C56-2 whole minimal-counterexample proof with holes [CONDITIONAL PROOF]
+audits/WP6_MINIMAL_COUNTEREXAMPLE.md: Steps 1-6 banked (8A deficit-one / 8B mindeg>=4 / 8C connected / 8E+8J latest-access |Q_L|>=3|U_L|+1 / 8H+8I non-heavy done / 8K frame with 8L circularity noted) -> HOLE-1 old-abundance at B-heavy Q-blocks (|Q_L|<=3|U_L| via old-new) is FIRST load-bearing hole; assuming HOLE-1 contradiction immediate. HOLE-1 assault (1a sustained-sterile / 1b single-pressure / 1c repeat-hole / 1d E2-hole+K-thin+sterile-E3 / 1e sterile-rebuild): all finite-safe, none proved (wallmax + pressure + chase + SG2 + fullsplit + rundrain + fourth + 8R). Resume: HOLE-2 one-access-Hall 8F + overlap (8R residual) OPEN; HOLE-3 repeat-hole universal + E2/K-tax universals OPEN. End: conditional GC-STATIC -> GC -> D6 -> MSTL-14P; unconditional OPEN/NO_WITNESS (70k+ targeted + 2.28M exhaustive clean).

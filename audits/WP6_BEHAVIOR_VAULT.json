@@ -1068,6 +1068,38 @@
    "superseded": false,
    "theorem": "GC-STATIC (pressure)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_wallmax.py -> artifacts/v04/wp6_present/0909c74a/wallmax.json",
+   "date": "2026-09-30",
+   "id": "C56-1-WALLMAX",
+   "implication": "Wall-pressure cannot be sustained/elevated even maximized; sustained sterile B-heavy impossible (finite).",
+   "next": "Old-abundance theorem",
+   "order": 68,
+   "reason": "Direct optimizer on wall-pressure (first-x + pure pushers + run-repeat + avoidance).",
+   "result": "10k evals, zero shortfall/gap, bestpress 2/history, bestratio 12.0, bestslack 32.",
+   "script": "scripts/wp6_wallmax.py",
+   "statement": "Maximized wall-pressure stays <=2 isolated with slack >=32.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (pressure)",
+   "witness": null
+  },
+  {
+   "artifact": "audits/WP6_MINIMAL_COUNTEREXAMPLE.md",
+   "date": "2026-09-30",
+   "id": "C56-2-MINCE",
+   "implication": "GC-STATIC reduces to exactly HOLE-1 old-abundance (HOLE-2 one-access/overlap + HOLE-3 repeat-hole/E2-K-tax); conditional chain closed.",
+   "next": "Prove HOLE-1 or find violator",
+   "order": 69,
+   "reason": "Whole minimal-counterexample proof Q-to-contradiction with holes marked + hole assault loop.",
+   "result": "Steps 1-6 banked; HOLE-1/2/3 OPEN; conditional QED banked; unconditional OPEN/NO_WITNESS.",
+   "script": "scripts/wp6_wallmax.py",
+   "statement": "Minimal violator must satisfy 8A/8B/8C/8E/8H/8I/8J; only HOLE-1 blocks contradiction.",
+   "status": "CONDITIONAL",
+   "superseded": false,
+   "theorem": "GC-STATIC",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
