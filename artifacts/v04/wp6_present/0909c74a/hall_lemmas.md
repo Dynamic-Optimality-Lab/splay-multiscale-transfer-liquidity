@@ -340,3 +340,23 @@ E4 + K≥2 + E3-union med 17 (`imprint.json`); K2A one-access Δ≤−2 universa
 pressure. Residual (NOT closed): cap-exhaustion (few imprints ×3 vs big e_B —
 transients cover finitely, chase 95%) + cross-x contention on multi-key triples
 + E3-variation formalization. Wall purified to anchored-supply contention.
+
+## 8V. PUSHER-COUNTING SKETCH (atom closure direction) [SKETCH C59]
+
+Claim-shape: B-depth d of x at burst needs ~d/2 KEEP pushers post-T0 (each
+re-deepens x by ≤2 levels; T0-depth is free but then A=B same-shape so
+E1 covers: e_A=e_B). Each pusher access on z banks e_A(z) sited Aevs (8S) ALL
+with triple ∋ z (`splay_A` node-fixed, cf. 8U(i)); if z lies on burst B-chain,
+ALL of them E3-hit burst B-events with triple ∋ z (E3 = rotated∩triple,
+`wp6_e3order.py`). So pushers imprint their own chain positions: ~d/2 pushers
+× e_A(z) Aevs × cap-3 vs burst demand d-ish + pushers' own demand (covered by
+their own E1 first). Cycler finite face (`cycler.json`, 10k): worst anchored-local
+margin −9 (dem 12, new 1) yet global shortfall 0 — transients/imprints cover
+exactly the anchored gap. Missing for theorem: (a) per-pusher depth-yield bound
+(≤2 levels — splay bystander mechanics); (b) contention bound (pusher supply
+shared with pusher demand + cross-x multi-key triples — maxflow assignment,
+counts insufficient since online greedy REFUTED starve_min); (c) T0-chain-fresh
+keys (never-A-touched — covered by E1 same-shape only at history start; later
+need variation). With (a)+(b)+(c), first-x-burst atom closes; induction over
+bursts via 8U (K grows ~3/cycle) + 8K frame closes the rest. Status: SKETCH with
+finite backbone; NOT proved.
