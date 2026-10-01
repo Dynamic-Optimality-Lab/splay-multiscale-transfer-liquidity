@@ -1548,6 +1548,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (kill)",
    "witness": null
+  },
+  {
+   "artifact": "exact exhaustive n=21 L3 (74088) + n=21 L4 (3111696, 24 chunks), vine-left, inline",
+   "date": "2026-09-30",
+   "id": "C82-EXACT-21L4",
+   "implication": "Exact L4 frontier at n=21; cumulative exact ~17M + targeted ~200k, zero kill.",
+   "next": "n=22 L4 chunked; Lean splay-model; 8Z counting; drift bound",
+   "order": 98,
+   "reason": "Complete exact L4 frontier at n=21 for kill-or-clean verdict.",
+   "result": "n=21 L3 74k + n=21 L4 3.11M: ALL CLEAN.",
+   "script": "inline-exhaustive",
+   "statement": "No Hall violator at n=21, L<=4 (exact, all histories).",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (kill)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
