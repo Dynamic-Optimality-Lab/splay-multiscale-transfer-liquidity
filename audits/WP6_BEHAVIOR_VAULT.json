@@ -1660,6 +1660,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (kill)",
    "witness": null
+  },
+  {
+   "artifact": "exact L5 axis: n=6 L5 (248832) + n=7 L5 (537824, 3 chunks) + n=8 L5 (1048576, 5 chunks) + n=9 L5 (1889568, 9 chunks); n=28 L3 (175616) clean; n=28 L4 ABANDONED at chunk4/44 per stop condition (223k chunks time out), vine-left, inline",
+   "date": "2026-09-30",
+   "id": "C89-EXACT-L5",
+   "implication": "L5 depth axis (sustain phenomena) clean to n=9; n-scaling L4 STOPS at n=27 per chunk-timeout trigger; n=28 L4 partial (4/44) not ledgered complete.",
+   "next": "n=10 L5 chunked; Lean splay-model; 8Z counting; drift bound",
+   "order": 105,
+   "reason": "Depth-axis falsification (long-run sustain) + n=28 stop-condition enforcement.",
+   "result": "L5 n=6..9 (3.72M): ALL CLEAN; n=28 L3 clean; n=28 L4 halted per stop rule.",
+   "script": "inline-exhaustive",
+   "statement": "No Hall violator at L5 n<=9; L4 n-scaling halted at n=28 by resource trigger.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (kill)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
