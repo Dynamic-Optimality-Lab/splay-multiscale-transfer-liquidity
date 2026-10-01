@@ -1676,6 +1676,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (kill)",
    "witness": null
+  },
+  {
+   "artifact": "exact L5: n=10 L5 (3200000, 16 chunks), vine-left, inline",
+   "date": "2026-09-30",
+   "id": "C90-EXACT-10L5",
+   "implication": "L5 frontier at n=10; cumulative exact ~60M + targeted ~200k, zero kill.",
+   "next": "n=11 L5 chunked; Lean splay-model; 8Z counting; drift bound",
+   "order": 106,
+   "reason": "Depth-axis L5 falsification at n=10.",
+   "result": "n=10 L5 3.2M: ALL CLEAN.",
+   "script": "inline-exhaustive",
+   "statement": "No Hall violator at n=10, L<=5 (exact, all histories).",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (kill)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
