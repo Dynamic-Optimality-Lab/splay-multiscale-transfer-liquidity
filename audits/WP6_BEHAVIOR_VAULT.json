@@ -1708,6 +1708,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (kill)",
    "witness": null
+  },
+  {
+   "artifact": "exact L5: n=12 L5 (7962624, 36 chunks; chunks 9-10 redone with gap check after typo), vine-left, inline",
+   "date": "2026-09-30",
+   "id": "C92-EXACT-12L5",
+   "implication": "L5 frontier at n=12; cumulative exact ~83M + targeted ~200k, zero kill.",
+   "next": "n=13 L5 chunked; Lean splay-model; 8Z counting; drift bound",
+   "order": 108,
+   "reason": "Depth-axis L5 falsification at n=12.",
+   "result": "n=12 L5 7.96M: ALL CLEAN (shortfall+gap both checked).",
+   "script": "inline-exhaustive",
+   "statement": "No Hall violator at n=12, L<=5 (exact, all histories).",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (kill)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
