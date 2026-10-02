@@ -831,3 +831,6 @@ hall_lemmas.md 8AC-WOLD (all W-edges strictly backward: same-access E3 subset E1
 
 ### C150-1 RECUR recent-pool recurrence law [FINITE-STRONG]
 scripts/wp6_recur.py -> recur.json (59k triple-keys): recurrence 81.9pct, recency med 1 / p90 16 / max 86; burst coverage med 1.0, zeros all J=0; heavy min J>0 = 0.005 (eB=67 fresh, E1-trivial 67x67). hall_lemmas.md 8AC-REC: supply side fully mapped; composition is the remainder. Zero kills.
+
+### C151-1 LEANFIN finite-set toolkit [PROVED_KERNEL]
+lean/WP6/GCStaticFin.lean (exit 0, no warnings, 19 defs+theorems): dedup + mem/nodup/size; rawNb/neighbors + mem; degree/mindeg + mindeg_le_mem; erase_mem (local); sdiff + mem/nodup/length; subset_length (+aux) + length_strict. Core lacks Finset/erase/nodup API; all built locally. Battles: false mem_erase (erase removes first only!); match-vs-if equations (cases-on-Bool); simp over-normalization; Nat-succ friction avoided via explicit lists. Next C152: assembly.

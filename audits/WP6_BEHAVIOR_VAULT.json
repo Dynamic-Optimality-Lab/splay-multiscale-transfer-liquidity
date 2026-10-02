@@ -2676,6 +2676,21 @@
    "witness": null,
    "script": "scripts/wp6_recur.py",
    "statement": "Recent-pool recurrence 82pct/med-1 + fresh fallback."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticFin.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C151-LEANFIN",
+   "implication": "Finite-set toolkit kernel-closed; Hall assembly (8AC-ZONE conditional) can now be stated and proved in kernel. Next C152: zone_implies_hall induction.",
+   "next": "C152 zone assembly induction in kernel",
+   "order": 169,
+   "reason": "Finite-set toolkit for Mathlib-free Hall assembly (user direction: Mathlib assembly).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticFin.lean",
+   "statement": "Dedup/neighbors/degrees/sdiff/subset-cardinality toolkit."
   }
  ],
  "head": "6f89b8b",
