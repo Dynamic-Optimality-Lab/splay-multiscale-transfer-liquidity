@@ -2314,6 +2314,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (meta)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/GCStaticPos.lean (kernel exit 0, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C128-LEANPOS",
+   "implication": "Off-path displacement pinned at zero in kernel; on-path rows (8W) + off-path zeros (C128) = full per-StepEv displacement table. Next C129: splay-loop descent (splayed key path compression) toward co-location dynamics.",
+   "next": "C129 splay-loop descent + co-location interface (on-path key motion from loop model)",
+   "order": 146,
+   "reason": "Positional evolution: underL/underR operators + sibling/root/absent rigidity (user direction: Lean positional model).",
+   "result": "rigid_R_underL/rigid_L_underR/rigid_root_underL/rigid_root_underR/rigid_absent_underL/rigid_absent_underR proved, exit 0. Any op strictly inside one subtree preserves all depths in the sibling subtree + root + absence. Migration can only move keys via on-path rotations (8AC-MW mechanism kernel-pinned). Zero kills.",
+   "script": "lean/WP6/GCStaticPos.lean",
+   "statement": "Migration locality: sibling-subtree rigidity in kernel.",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

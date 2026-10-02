@@ -763,3 +763,6 @@ scripts/wp6_holedemand.py -> holedemand.json (80 hists walks+pushers): claim(i)=
 
 ### C127-1 LEANHALL Lean matching cores + positional edge interface [PROVED_KERNEL]
 lean/WP6/GCStaticHall.lean (exit 0, no sorry/admit/axioms): mindeg_safe + mindeg_three (8Q-core counting), zone_step (8AC-ZONE + IH assembly), zone_target (violator-zone equation), TEdge interface (siteAcc/bevAcc/chan) + arrowOk hypothesis pin + pristine_of_arrow/e1_arrow/old_arrow/arrow_cases (8AC-TO/PRISTINE Layer-B pin; Layer A = build_tagged bounds C125). Mode-A assembly counting kernel-closed; multi-session position evolution queued (C128: key-depth dynamics from SplayRotate rows).
+
+### C128-1 LEANPOS migration locality / sibling rigidity [PROVED_KERNEL]
+lean/WP6/GCStaticPos.lean (exit 0, no sorry/admit/axioms): underL/underR operators (op strictly inside one child) + rigid_R_underL/rigid_L_underR (sibling depths bit-identical) + rigid_root_underL/underR (root stays 0) + rigid_absent_underL/underR (absence preserved). Any off-path key has displacement exactly 0; on-path shifts are the 8W rows. Full per-StepEv displacement table pinned: migration moves keys only via on-path rotations (8AC-MW kernel pin). Next: splay-loop descent + co-location interface (C129).
