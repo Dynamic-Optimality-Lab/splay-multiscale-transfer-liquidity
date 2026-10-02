@@ -837,3 +837,6 @@ lean/WP6/GCStaticFin.lean (exit 0, no warnings, 19 defs+theorems): dedup + mem/n
 
 ### C152-1 LEANASM zone-implies-Hall assembly [PROVED_KERNEL]
 lean/WP6/GCStaticFin.lean + zone_implies_hall (exit 0, no warnings): bound induction; empty case via eligibility-free vacuity; mindeg<=3 via 8Q-removal (length_strict + subset counting + C127 arithmetic inline); mindeg>=4 via zone hypothesis directly. Eligibility subsumed (zone entails it). GC-STATIC is exactly 8AC-ZONE in kernel. Battles: pipe-projection ascription; rw auto-close limits; subst direction; induction generalization via explicit forall. Next: zone itself.
+
+### C153-1 ZONE2 violator-zone floor -8 across families [FINITE_EVIDENCE]
+scripts/wp6_zone2.py -> zone2.json (400 evals walks n<=512 + pushers; claim pools top-20 + access slices + mincut sets): 262 mindeg>=4 candidates, best Delta EXACTLY -8 (Q4 N4 mindeg4, same signature as K2B vine-only). Floor robust; concentrated zone cores do not assemble (consistent pack3 confinement-infeasibility). Zero kills.
