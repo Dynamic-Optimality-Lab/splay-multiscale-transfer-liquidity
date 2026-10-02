@@ -810,3 +810,6 @@ scripts/wp6_codist.py -> codist.json (300 evals, 42k placements): W |loader_x - 
 
 ### C143-1 STUCKSIB stuck-cohort lemma + totality tally [PROVED_AUTHOR]
 hall_lemmas.md 8AC-STUCK-SIB: stuck + nonempty E1 => 3|E1| sibling-loads (greedy-maximality per-tier + E1 same-access scoping + 8AC-TO no-forward-edges); E1-empty => pure backward-spill exhaustion. Finite faces: 76/76 REV + t75 (E1=1 sib + K sib + adjacent past). Repair always W/K-augmentable (len 5). T-first-FWD totality: 940/940 zero-stuck, zero kills (TB+WC+C125+CD). Exchange localizes to cohorts.
+
+### C144-1 LEANMATCH greedy maximality in kernel [PROVED_KERNEL]
+lean/WP6/GCStaticMatch.lean (exit 0, no warnings, 16 defs+theorems): cap-3 greedy with threaded loads; update lemmas; placeIn bound/outcome/some/preserve/mono; runGreedy; greedy_maximal (cap + future-empty + unplaced-implies-full, 3-part induction). Kernel core of 8AC-STUCK-SIB (E1-sibling specialization stays Layer A). Battles: Nat-succ equation friction (induction-tactic form only); subst direction (subst var); underscore arity discipline; rw auto-close limits; motive generalization for inductions. Next: Berge improvement + assembly.
