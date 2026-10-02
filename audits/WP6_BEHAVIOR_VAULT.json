@@ -2378,6 +2378,22 @@
    "script": "lean/WP6/GCStaticValid.lean",
    "statement": "BST validity frame + rotations preserve validity in kernel.",
    "result": "8 theorems exit 0: allLT_mem/allGT_mem (bound routing), allLT_mono/allGT_mono (tightening), mem_search_L/R (descent correctness), valid_rotR/valid_rotL (validity preservation). Battles: explicit nesting for obtain/refine (no auto-flatten), deep projections (.2.2.2), simp-at-hyp closes False goals. Zero kills."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticDeliver.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C132-LEANDELIVER",
+   "implication": "Skeleton certified: no keys lost (C130) + accessed member at root (C132) on valid trees. Remaining: simulation relation with the pointer engine (mechanical correspondence), then positional density above it.",
+   "next": "Simulation relation STree-vs-pointer-engine + triple-emission correspondence (Layer A link)",
+   "order": 150,
+   "reason": "Conditional root delivery via functional induction (user direction: Lean positional model).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticDeliver.lean",
+   "statement": "Valid+member => splayed key at root, in kernel.",
+   "result": "deliver + rootKey_some + 6 valid-decomp + restated frame, exit 0. 10-case functional induction: vacuous off-route cases by bounds, doubles via search-routing + rootKey inversion + fixup discharge. Battles: Nat/STree binder slips, missing y args, explicit-motive refine. Zero kills."
   }
  ],
  "head": "6f89b8b",

@@ -775,3 +775,6 @@ lean/WP6/GCStaticLoop.lean (exit 0, no warnings, 12 theorems): faithful recursiv
 
 ### C131-1 LEANVALID BST validity + rotation preservation [PROVED_KERNEL]
 lean/WP6/GCStaticValid.lean (exit 0, no warnings, 8 theorems): allLT/allGT/valid predicates; allLT_mem/allGT_mem + monos; mem_search_L/R (splay descent correct on valid trees); valid_rotR/valid_rotL (single rotations preserve BST validity: the invariant behind every StepEv). Battles: explicit association nesting in obtain/refine; deep .2.2.2 projections. Next C132: conditional root delivery.
+
+### C132-1 LEANDELIVER conditional root delivery [PROVED_KERNEL]
+lean/WP6/GCStaticDeliver.lean (exit 0, no warnings): deliver (valid t + mem t x => rootKey (splay x t) = some x) via 10-case splay.induct; rootKey_some inversion; 6 valid-decomp helpers; restated frame (mem/bounds/search/splay). Doubles route via search correctness into IH, invert delivered key, discharge fixup; off-route vacuous by bounds. Skeleton now certified end-to-end at model level. Next: pointer-engine simulation relation.
