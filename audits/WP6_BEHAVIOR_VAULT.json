@@ -1852,6 +1852,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_greedyadv.py -> artifacts/v04/wp6_present/0909c74a/greedyadv.json",
+   "date": "2026-09-30",
+   "id": "C101-GREEDYADV",
+   "implication": "T-before-K rule stands on kill-witnesses + 300 adversarial (303/303); exchange tier-ledger remains the formal gap.",
+   "next": "Transient-density joint census (overflow vs channel split) for sharp 8AC-D; Lean track",
+   "order": 117,
+   "reason": "Validate 8AC-greedy rule against adversarial corpus incl. banked killers.",
+   "result": "303 tested (starve/M2/entry3 + 300 adv): 0 gaps, 0 Hall kills.",
+   "script": "scripts/wp6_greedyadv.py",
+   "statement": "Greedy rule saturates adversarial corpus wherever maxflow does.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
