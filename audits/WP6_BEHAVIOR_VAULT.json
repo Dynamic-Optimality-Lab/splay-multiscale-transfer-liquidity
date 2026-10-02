@@ -1820,6 +1820,38 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_greedyhunt.py -> artifacts/v04/wp6_present/0909c74a/greedyhunt.json",
+   "date": "2026-09-30",
+   "id": "C99-GREEDYHUNT",
+   "implication": "No history defeats all FWD perms (bestmin 0/8000); T-before-K rule stands; exchange argument is the proof vehicle.",
+   "next": "8AC-X tier-ledger + termination counting; Lean track",
+   "order": 115,
+   "reason": "Kill-or-crown the 8AC-greedy rule (min over 24 FWD perms hillclimb).",
+   "result": "8k evals: bestmin 0 always (some FWD perm saturates); NO RULEKILL, NO Hall kill.",
+   "script": "scripts/wp6_greedyhunt.py",
+   "statement": "Greedy rule unfalsified; contention needs true matching only if rule dies.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
+  },
+  {
+   "artifact": "artifacts/v04/wp6_present/0909c74a/hall_lemmas.md 8AC-X",
+   "date": "2026-09-30",
+   "id": "C100-EXCHANGE-SKETCH",
+   "implication": "First well-founded regress + causal fresh-freedom for FWD-greedy sufficiency; tier-ledger + final count open.",
+   "next": "Tier-ledger accounting; K-nested consumption counting; Lean splay-model",
+   "order": 116,
+   "reason": "Exchange/charging skeleton: causality + lexicographic regress + disjoint fresh.",
+   "result": "KEY1-3 + grounding identified; residual = tier-ledger + termination count.",
+   "script": "prose-proof",
+   "statement": "FWD-greedy non-sticking reduces to tier-ledger counting (open).",
+   "status": "SKETCH",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

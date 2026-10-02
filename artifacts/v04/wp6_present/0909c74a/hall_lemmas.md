@@ -505,18 +505,46 @@ owner-first (E1 used same-access before later theft as old); transients shared
 middle. Symmetric hoarding explains failures (K-early starves late-K-only;
 REV lets late events steal early-E1 as old). Exchange-reduction sketch: E1
 (disjoint, 8H) + K (nested per x, 8U) assigned structurally exact; T-residual
-(overflows only) by density (8Z/8AB) — residual Hall = variation (hole, smaller:
+(overflows only) by density (8Z/8AB) ï¿½ residual Hall = variation (hole, smaller:
 only post-E1K overflow needs transient cover). Status: FINITE_STRONG (29x0/501)
 + reduction sketch; NOT closed (T-residual variation = same wall, narrowed).
+
+## 8AC-X. EXCHANGE/CHARGING SKELETON FOR FWD+T-FIRST GREEDY (C100)
+
+Suppose FWD|E1,E4,T,K-least-loaded sticks at B-event j (all N(j) full from
+earlier-or-equal placements). KEY 1 (causality): E1(j) (ai=J) is invisible to all
+strictly-earlier accesses (need ai <= acc < J); its load comes ONLY from same-block
+earlier-j' events. So either E1(j) = EMPTY (repeat/trivial burst) or the block is
+locally heavy (same-block saturation, >= 3|E1(j)| same-block users); either way j
+sits in a heavy-ish block with fresh locally exhausted, N(j)-rest = E4+K+T past.
+KEY 2 (lexicographic regress): W = earlier
+users filling N(j) has |W| >= 3|N(j)| (cap-3 counting, one unit per event). Each
+w in W with E1(w) nonempty preferred own fresh (tier 1) yet landed in N(j):
+hence E1(w) was FULL at w's turn, filled by strictly-earlier (acc,j') pairs
+(FWD order; later pairs unrunnable) â€” or E1(w) empty (repeat, grounded). KEY 3
+(disjoint fresh, 8H): non-repeat fillers contribute pairwise-disjoint E1-sets
+into N(Q') for Q' = W union {j}. Grounding: regress strictly decreases (acc,j)
+lexicographically (same-block: smaller j first), terminating at repeats
+(E1-empty, placed into K/T/E4-old) and first-users (E1 free by causality).
+COUNT (skeleton): with W_rep grounded repeats and W_fresh bringing disjoint
+|E1| >= 1 each, Delta(Q') <= 1 - 3|W_fresh| + [K/T-tier corrections] â€” the
+displayed bound needs the tier-interplay ledger (w may land in N(j) via T-tier
+with K(w) untouched; K(j)-full needs nested-consumption counting via 8U;
+E4-setup disjointness across runs). RESIDUAL (open): exact tier-ledger
+accounting + termination counting to force Delta(Q') >= 1 (deficiency) or
+restructure to a strictly-smaller deficient set, contradicting finiteness
+without assuming Hall. Status: SKETCH with well-founded regress + causal
+fresh-freedom identified; tier-ledger + final count open. If closed: FWD-greedy
+never sticks = GC-STATIC constructively (explicit rule), then GC/GC-chain.
 
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
 Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;
 udget.json 200 hist: reuse-budget over 0/200, worst SUMc/R = 0.038 (3.33/88)):
-capacity margin ~26x — shortage arguments are DEAD; the entire remainder is the
+capacity margin ~26x ï¿½ shortage arguments are DEAD; the entire remainder is the
 routing rule (explicit cap-3 assignment that never sticks). 8AC-greedy-sufficiency
 (FWD + T-before-K never sticks) is the sharp obligation: finite-strong (29 perfect
 combos/501 + t75-artifact), mechanism identified (K-last backstop, owner-first),
 universal proof open (online-chronological rule; starve_min warns online rules can
-fail — tiered rule unfalsified). Next: greedy-killer hunt (all-FWD-tiers fail +
+fail ï¿½ tiered rule unfalsified). Next: greedy-killer hunt (all-FWD-tiers fail +
 maxflow ok) to kill-or-crown the rule; exchange formalization; Lean track.
