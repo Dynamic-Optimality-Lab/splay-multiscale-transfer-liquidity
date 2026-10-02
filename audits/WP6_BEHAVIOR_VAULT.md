@@ -772,3 +772,6 @@ lean/WP6/GCStaticSplay.lean (exit 0, no warnings): zzR/zzL/zagLR/zagRL transform
 
 ### C130-1 LEANLOOP splay skeleton + key-membership preservation [PROVED_KERNEL]
 lean/WP6/GCStaticLoop.lean (exit 0, no warnings, 12 theorems): faithful recursive splay skeleton (zig + 4 doubles with conditional fixup, matches only on args); 6 transformer-mem + 4 fixup-mem (Or AC-normalization); splay_at_root (shape-split + root-test); mem_splay via splay.induct functional induction (10 cases, refine-with-explicit-motive). Battles won: splitter-friendly single-match definitions; cases-before-simp for split equations; by_cases+if_pos/if_neg for Bool ifs. Next C131: BST validity + conditional delivery.
+
+### C131-1 LEANVALID BST validity + rotation preservation [PROVED_KERNEL]
+lean/WP6/GCStaticValid.lean (exit 0, no warnings, 8 theorems): allLT/allGT/valid predicates; allLT_mem/allGT_mem + monos; mem_search_L/R (splay descent correct on valid trees); valid_rotR/valid_rotL (single rotations preserve BST validity: the invariant behind every StepEv). Battles: explicit association nesting in obtain/refine; deep .2.2.2 projections. Next C132: conditional root delivery.

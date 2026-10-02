@@ -2362,6 +2362,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (meta)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/GCStaticValid.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C131-LEANVALID",
+   "implication": "Validity frame kernel-closed; rotations certified validity-preserving (every StepEv maintains BST invariant). Next C132: conditional root delivery (valid+member => splayed key at root) via splay.induct + these premises.",
+   "next": "C132 conditional delivery: rootKey (splay x t) = some x from valid + mem",
+   "order": 149,
+   "reason": "BST validity + rotation preservation (user direction: Lean positional model).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticValid.lean",
+   "statement": "BST validity frame + rotations preserve validity in kernel.",
+   "result": "8 theorems exit 0: allLT_mem/allGT_mem (bound routing), allLT_mono/allGT_mono (tightening), mem_search_L/R (descent correctness), valid_rotR/valid_rotL (validity preservation). Battles: explicit nesting for obtain/refine (no auto-flatten), deep projections (.2.2.2), simp-at-hyp closes False goals. Zero kills."
   }
  ],
  "head": "6f89b8b",
