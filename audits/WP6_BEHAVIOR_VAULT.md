@@ -846,3 +846,6 @@ lean/WP6/GCStaticTGraph.lean (exit 0, no warnings, 22 items): FinList toolkit re
 
 ### C155-1 PREFIX prefix-Hall equivalence + censuses [PROVED_AUTHOR + FINITE]
 scripts/wp6_prefix.py -> prefix.json (300 evals): mincut tight sets downward-closed 0.06pct / exact-prefix 0 (prefix-shape REFUTED); prefix-slack min 0 / med 27 (binds, never negative). hall_lemmas.md 8AC-PREFIX: PREFIX-HALL <=> HALL proved (access induction with E1-pristine + residual counting => FWD totality => Hall); two-access warmup closed (margin 2); open universal prefix-slack >= 0 (tight) with concrete path. Zero kills.
+
+### C156-1 PUSHLEDGER cost links + coupling [FINITE + STRUCTURE]
+scripts/wp6_pushledger.py -> pushledger.json (150 hists): eB<=d+1 (0/5642), eA>=d/2 (0/5059), Phi_min +2 global; first-eq is idx-0-only (8T scope correction); global alternation-count REFUTED (2695 vs 1595). hall_lemmas.md 8AC-PUSH: tight-window coupling precisely stated (heavy bursts need buffer; buffer can be 0; finite never breaks); no telescoping shortcut. Zero kills.

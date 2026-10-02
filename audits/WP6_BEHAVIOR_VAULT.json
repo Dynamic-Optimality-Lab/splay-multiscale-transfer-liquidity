@@ -2751,6 +2751,21 @@
    "witness": null,
    "script": "scripts/wp6_prefix.py",
    "statement": "Prefix-Hall iff Hall; mincut-prefix dead; slack min 0."
+  },
+  {
+   "artifact": "scripts/wp6_pushledger.py -> pushledger.json + hall_lemmas.md 8AC-PUSH",
+   "date": "2026-10-02",
+   "id": "C156-PUSHLEDGER",
+   "implication": "Prefix-GC universal precisely reduced to tight-window coupling (decoupling-budget); no telescoping shortcut (size-dependent). Same hardness, splay-cost shape. Next: coupling, falsifiers, or pause.",
+   "next": "Tight-window coupling, novel falsifiers, or pause",
+   "order": 174,
+   "reason": "Push-accounting links for prefix-GC universal (user direction: prefix-GC universal).",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "scripts/wp6_pushledger.py",
+   "statement": "Cost links verified; coupling stated; alternation-count dead."
   }
  ],
  "head": "6f89b8b",

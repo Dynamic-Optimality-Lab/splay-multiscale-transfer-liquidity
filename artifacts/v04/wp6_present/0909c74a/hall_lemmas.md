@@ -924,3 +924,23 @@ link-consumption universals + decoupling-budget (heavy bursts prepaid by
 prior net supply, 8T-shape) + tight-prefix coupling (why tight buffers
 suffice afterwards). Same hardness as GC-STATIC (equivalent), new shape:
 cumulative splay-cost accounting instead of subset matching.
+
+## 8AC-PUSH. PUSH-ACCOUNTING LINKS + TIGHT-WINDOW COUPLING (C156)
+
+Finite links VERIFIED (pushledger.json, 150 histories): e_B <= B-depth + 1
+(0/5642 viol); e_A >= A-depth/2 (0/5059 viol); cumulative Phi = 3S_A - E_B
+min +2 (never negative). REFUTED/QUALIFIED: first-access equality is IDX-0
+ONLY (8T is the very first access; per-key first bursts diverge: 2610/3293
+mismatches — test-scope correction, 8T stands); naive global alternation
+(#supplyfree <= #supplying + 1) is FALSE (2695 vs 1595; 8R single-shot is
+per-state, not global count).
+TIGHT-WINDOW COUPLING (precise open obligation for prefix-GC): heavy bursts
+(e_B > 3e_A) need buffer Phi(t-1) >= overflow, but buffer can be 0 while
+overflow is large; finite says it never breaks (Phi_min +2), so tight
+windows must force subsequent-small (decoupling-budget, 8T-shape). Depth
+resets at every x-access (both trees root) localize the problem to windows,
+but window-net can be arbitrarily negative a priori. Same hardness as
+GC-STATIC (equivalent via 8AC-PREFIX); new shape (splay-cost dynamics).
+No global telescoping shortcut (rotation total-depth-delta depends on
+subtree sizes, unbounded). Status: LINKS PROVED-FINITE + COUPLING STATED;
+universal open.
