@@ -1884,6 +1884,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_pack.py -> artifacts/v04/wp6_present/0909c74a/pack.json",
+   "date": "2026-09-30",
+   "id": "C103-PACK",
+   "implication": "Root-overlap >=1 unavoidable (direct optimizer never breaks it); root-anchor promoted toward universal; proportional cover still open.",
+   "next": "Chain-hits proportionality (8Z counting); exchange tier-ledger; Lean",
+   "order": 119,
+   "reason": "Root-packing-miss + split kill assembler (novel objective).",
+   "result": "6k evals: overlap stuck >=1 from seed 0; best split 60 (eB 63); NO KILL.",
+   "script": "scripts/wp6_pack.py",
+   "statement": "Root-anchor hit unavoidable even adversarially; splits never convert.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
