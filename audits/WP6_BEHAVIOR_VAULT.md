@@ -799,3 +799,6 @@ lean/WP6/GCStaticEngine.lean (exit 0, no warnings): emitTrace (one interval per 
 
 ### C139-1 LEANLIFT loop-lifted agreement + fused event validity [PROVED_KERNEL]
 lean/WP6/GCStaticLift.lean (exit 0, no warnings): trace_length_eq (emission and step traces agree in length, uniform simp closers); event_ok (every emission on range-valid trees satisfies 1<=lo<hi<=n, keyrange threading + bounds + omega). Battles: rw arm-specificity; Or-depth by side; singleton simp. Next C140: supply lift application.
+
+### C140-1 SUPPLYTOTAL fused per-access supply total [PROVED_KERNEL]
+lean/WP6/GCStaticSupplyTotal.lean (exit 0, no warnings): sites_count floor + supplyTotal append + supply_total (10-case fused induct: IH supply cover + per-event floor via range/distinctness, omega assembles). Event count covered by counted supply per access in kernel. Lean positional track complete through supply; open wall stands.

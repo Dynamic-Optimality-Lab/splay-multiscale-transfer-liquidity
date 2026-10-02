@@ -2506,6 +2506,21 @@
    "script": "lean/WP6/GCStaticLift.lean",
    "statement": "Trace lengths agree; emissions meet supply hypothesis.",
    "result": "trace_length_eq (uniform full-simp closers) + event_ok fused triple (keyrange threading via Or-paths, distinctness via bounds, omega closes), exit 0. Battles: rw is arm-specific (use simp with cond hyps); Or-nesting depth by side (3 vs 4 levels); mem_singleton needs full simp. Zero kills."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticSupplyTotal.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C140-SUPPLYTOTAL",
+   "implication": "Per-access event-to-supply chain kernel-closed (events covered by counted sites). The Lean positional track now spans matching cores to supply totals; the remaining wall (violator-zone/matching universals) is open mathematics.",
+   "next": "Open wall: 8AC-ZONE or verified counterexample; Lean track pauses unless new universals emerge",
+   "order": 158,
+   "reason": "Supply lift application completing trace induction (user direction: trace induction).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticSupplyTotal.lean",
+   "statement": "Event count covered by counted supply per access."
   }
  ],
  "head": "6f89b8b",
