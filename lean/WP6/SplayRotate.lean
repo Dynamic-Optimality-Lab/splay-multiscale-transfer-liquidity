@@ -310,6 +310,24 @@ theorem zigzigRR_bound (x p g : Nat) (d c b a : STree) (y m : Nat)
 -- Splay-loop de-pathing/lift-accounting needs the loop model (SplayLoop.lean
 -- skeleton exists: classifier + fuel driver + trace bound).
 
+-- Splay progress, zig node-rise (C117): accessed key at depth 1 reaches root.
+-- Doubles (LL/RR node 2->0) and LR/RL (subtree framing) queued; simp-shape
+-- fragility documented in history (uniform simp normal forms vary with nesting
+-- depth; prefer explicit rw/if_pos/if_neg chains for new cases).
+theorem zigNodeR (xk pk : Nat) (ll lr r : STree)
+    (hlt : xk < pk) :
+    sdepth (.node pk (.node xk ll lr) r) xk = some 1 ∧
+    sdepth (rotR (.node pk (.node xk ll lr) r)) xk = some 0 := by
+  have hne : xk ≠ pk := by omega
+  have bpk : (xk == pk) = false := by simpa [beq_iff_eq] using hne
+  have bself : (xk == xk) = true := (beq_iff_eq).mpr rfl
+  have nlt : ¬ xk < xk := by omega
+  have er : rotR (.node pk (.node xk ll lr) r)
+      = .node xk ll (.node pk lr r) := rfl
+  simp only [sdepth, er, bpk, bself, hlt, nlt, Option.map_some,
+    Bool.false_eq_true, ↓reduceIte]
+  exact ⟨trivial, trivial⟩
+
 -- BST range validity + rotation preservation (C113): half-open key intervals,
 -- widening (range relaxation), rotR/rotL preserve validity. Grounds the
 -- ordering hypotheses used throughout (caller proves BST once; comparisons

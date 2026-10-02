@@ -2138,6 +2138,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (meta)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/SplayRotate.lean zigNodeR (kernel exit 0, clean)",
+   "date": "2026-09-30",
+   "id": "C117-LEAN-PROGRESS",
+   "implication": "Splay progress started (zig node 1->0); doubles/loop need subtree-framing + loop model (multi-session).",
+   "next": "Doubles node-rise via explicit rw/if_pos chains; loop model; exchange tier-ledger",
+   "order": 135,
+   "reason": "Splay progress: accessed key rises per StepEv (cost foundation).",
+   "result": "zigNodeR (depth 1->0), lean exit 0; LL/RR/LR/RL queued with method note.",
+   "script": "lean",
+   "statement": "Zig rotation brings the accessed key to the root.",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (Layer B)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
