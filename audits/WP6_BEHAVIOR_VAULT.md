@@ -760,3 +760,6 @@ Code audit of build_tagged: E1 same-access; E2/E4/E7/K older-or-same (index boun
 
 ### C126-1 HOLEDEMAND per-site future-claim census kills counting residual-sufficiency [PROVED_AUTHOR]
 scripts/wp6_holedemand.py -> holedemand.json (80 hists walks+pushers): claim(i)=future-bev eligibility via K/W/E2/E7/E4: 82.4pct sites claim>3 (17127/20793), med-claim med 15 / max 88, sitemax 406 (K-only 108). Demand exceeds cap almost everywhere, yet maxflow saturates always: ASSIGNMENT carries the theorem, counting cannot. 8AC-HD (hall_lemmas.md): HOLE-IND counting-form DEAD (consistent 8N(d)/8AC-D); residual-sufficiency needs matching/contention theory = 8AC-RM door #1, else verified counterexample (door #2). Zero kills.
+
+### C127-1 LEANHALL Lean matching cores + positional edge interface [PROVED_KERNEL]
+lean/WP6/GCStaticHall.lean (exit 0, no sorry/admit/axioms): mindeg_safe + mindeg_three (8Q-core counting), zone_step (8AC-ZONE + IH assembly), zone_target (violator-zone equation), TEdge interface (siteAcc/bevAcc/chan) + arrowOk hypothesis pin + pristine_of_arrow/e1_arrow/old_arrow/arrow_cases (8AC-TO/PRISTINE Layer-B pin; Layer A = build_tagged bounds C125). Mode-A assembly counting kernel-closed; multi-session position evolution queued (C128: key-depth dynamics from SplayRotate rows).
