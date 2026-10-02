@@ -743,3 +743,11 @@ scripts/wp6_imprint.py -> imprint.json (180 hist): final-A-StepEv sited 3871/387
 
 ### C56-2 whole minimal-counterexample proof with holes [CONDITIONAL PROOF]
 audits/WP6_MINIMAL_COUNTEREXAMPLE.md: Steps 1-6 banked (8A deficit-one / 8B mindeg>=4 / 8C connected / 8E+8J latest-access |Q_L|>=3|U_L|+1 / 8H+8I non-heavy done / 8K frame with 8L circularity noted) -> HOLE-1 old-abundance at B-heavy Q-blocks (|Q_L|<=3|U_L| via old-new) is FIRST load-bearing hole; assuming HOLE-1 contradiction immediate. HOLE-1 assault (1a sustained-sterile / 1b single-pressure / 1c repeat-hole / 1d E2-hole+K-thin+sterile-E3 / 1e sterile-rebuild): all finite-safe, none proved (wallmax + pressure + chase + SG2 + fullsplit + rundrain + fourth + 8R). Resume: HOLE-2 one-access-Hall 8F + overlap (8R residual) OPEN; HOLE-3 repeat-hole universal + E2/K-tax universals OPEN. End: conditional GC-STATIC -> GC -> D6 -> MSTL-14P; unconditional OPEN/NO_WITNESS (70k+ targeted + 2.28M exhaustive clean).
+
+## C123 - alternating-trap vacuity + greedy totality law (this continuation)
+
+### C123-1 TA typed alternating closures [REFUTED-BY-BERGE]
+scripts/wp6_trap.py -> trapanat.json (600 evals: biased pushers + gr1-style walks n<=512 L70; configs REV|E1E4KT, FWD|K-hoard, FWD|E1E4KT): 4 stuck (all FWD|E1E4KT n512 walks, reproduces greedyadv 6 percent rate), ALL 4 closures OPENED via augmenting paths, traps=0. Closed alternating traps are VACUOUS when maxflow saturates: Berge guarantees an augmenting path from any non-maximum matching, so the BFS closure from an unmatched bev always opens. The trap instrument cannot witness anything; sealed REFUTED. (Intermediate bug caught: BFS leaked onto unplotted a-nodes; restricted to plotted-only before banking.)
+
+### C123-2 TB greedy totality sweep [FINITE_EVIDENCE + LAW]
+totality.json (6 tier-orders x FWD/REV x 40 walks n<=512 L70): FWD rules 0-1 stuckbev/40evals (T-first-FWD 0/40 best; E1-first/K-first/E4-first 1/40); REV rules 6-100/40 (K-first-REV 74, T-first-REV 100). DIRECTION dominates tiers: chronological (FWD) greedy is near-total, anti-chronological fails. Zero Hall kills. Law: past-only competition + E1-freshness make FWD greedy the constructive-matching direction for 8AC; next is the FWD pressure law via W-charge-to-rotations (C124, grounded in banked ML/OCC lemmas).

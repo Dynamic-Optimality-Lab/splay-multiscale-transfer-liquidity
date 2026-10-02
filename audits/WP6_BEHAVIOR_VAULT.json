@@ -2234,6 +2234,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (meta)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_trap.py -> trapanat.json + totality.json",
+   "date": "2026-10-02",
+   "id": "C123-TRAP",
+   "implication": "Closed alternating traps cannot witness anything when maxflow saturates; FWD-time-ordered greedy is the constructive-matching direction (T-first-FWD 0/40); next: W-charge-to-rotations census for FWD pressure law (C124).",
+   "next": "C124 W-charge-to-rotations census (per-site W-load vs per-access rotation budget via OCC/ML lemmas)",
+   "order": 141,
+   "reason": "TA typed alternating closures from stuck greedy points; TB greedy totality sweep (6 tier-orders x FWD/REV x 40 walks n<=512 L70).",
+   "result": "TA: 600 evals, 4 stuck (all FWD|E1E4KT n512 walks), ALL closures opened via augmenting paths; closed-trap VACUOUS by Berge (non-maximum matching always augmentable). TB: FWD rules 0-1 stuckbev/40evals (T-first-FWD 0/40 best); REV rules 6-100/40 (direction dominates tiers); zero Hall kills (cumulative unchanged).",
+   "script": "scripts/wp6_trap.py",
+   "statement": "Alternating-trap vacuity (Berge) + FWD greedy near-totality law.",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
