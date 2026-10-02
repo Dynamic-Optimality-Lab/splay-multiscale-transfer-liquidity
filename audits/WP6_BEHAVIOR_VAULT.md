@@ -787,3 +787,6 @@ lean/WP6/GCStaticStep2.lean (exit 0, no warnings, 5 theorems): sim_LL/RR/LR/RL (
 
 ### C135-1 LEANTRACE skeleton trace theory [PROVED_KERNEL]
 lean/WP6/GCStaticTrace.lean (exit 0, no warnings, 3 theorems): steps emission (one SStep per level, bottom-up); steps_nil_root (root-hit silent, loop-exit agreement); splay_noop (empty trace iff skeleton idle, 4 shape combos); steps_length (trace fits tree size, 10-case steps.induct + omega). Battles: explicit with-binders; rw at h and goal; simp-at-hyp for emitting arms. Next: engine-side emission + loop-lifted agreement + Aev accounting.
+
+### C136-1 LEANSUPPLY event-supply accounting [PROVED_KERNEL]
+lean/WP6/GCStaticSupply.lean (exit 0, no warnings, 3 defs+2 theorems): sites_count (_sites model); sites_ge_one (valid interval banks >=1 site, witness lo); trace_supply (event-list total covers event count, induction). Quantitative 8S face in kernel. Battles: mem_range step form; decide direction; cases-substitution asymmetry. Next: engine event-list + loop-lifted agreement.

@@ -2442,6 +2442,22 @@
    "script": "lean/WP6/GCStaticTrace.lean",
    "statement": "Skeleton trace: root-silent, no-op agreement, size bound.",
    "result": "steps_nil_root + splay_noop (4-combo nested if-chains, simp-at-hyp contradictions) + steps_length via steps.induct (10 cases, omega with IHs), exit 0. Battles: explicit with-binders (no auto-names); rw at h and goal together; simp-at-hyp closes emitting arms; leaf 0-le-0 needs omega. Zero kills."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticSupply.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C136-LEANSUPPLY",
+   "implication": "Per-event supply floor + trace total kernel-closed (quantitative 8S). Remaining engine-side: event-list emission model + loop-lifted trace agreement tying engine iterations to these counts.",
+   "next": "Engine event-list model + loop-lifted agreement to supply counts",
+   "order": 154,
+   "reason": "Event-supply accounting for trace induction (user direction: trace induction).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticSupply.lean",
+   "statement": "Valid emission banks counted supply; traces cover events.",
+   "result": "sites_ge_one (witness lo via mem_range/mem_filter/decide_eq_true) + trace_supply (induction with All-hyp threading), exit 0. Battles: mem_range step-index form (witness 0); decide_eq_true direction; cases substitutes goal not hyps (rw at hfm); cons goal pre-substituted. Zero kills."
   }
  ],
  "head": "6f89b8b",
