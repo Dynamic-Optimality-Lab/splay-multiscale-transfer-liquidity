@@ -781,3 +781,6 @@ lean/WP6/GCStaticDeliver.lean (exit 0, no warnings): deliver (valid t + mem t x 
 
 ### C133-1 LEANSIM pointer-engine simulation at rotation level [PROVED_KERNEL]
 lean/WP6/GCStaticSim.lean (exit 0, no warnings, 15 theorems): PTree mirror of engine nodes; protR/protL line-by-line transliterations; toSTree projection; correspondence (engine step = model step); wf preservation; pointer-side bounds + pattern distinctness; emit/emit3 with lo<hi; sited chain; zig_sited/double_sited end-to-end (valid pattern + key range => emission carries sites, all StepEv shapes). Battles: True.intro for folded equalities; explicit middle nesting; simp-normalization over rfl. Next: loop-level simulation (event sequences).
+
+### C134-1 LEANSIM2 double-step simulation + branch agreement [PROVED_KERNEL]
+lean/WP6/GCStaticStep2.lean (exit 0, no warnings, 5 theorems): sim_LL/RR/LR/RL (engine rotation pairs = zzR/zzL/zagLR/zagRL under projection, full firing patterns); eclassify + classify_agree (engine link-geometry table = skeleton classifier). Battles: full-pattern statements (partials route to ZIG/identity by engine if-chain); child-subtree application with parent threading for zigzags. Every loop iteration now pinned. Next: full-trace induction over iterations.

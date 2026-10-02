@@ -2410,6 +2410,22 @@
    "script": "lean/WP6/GCStaticSim.lean",
    "statement": "Engine rotation = model rotation; valid emission carries sites.",
    "result": "15 theorems exit 0: reparent_toSTree, protR/L_toSTree (correspondence), reparent_wf, wf_protR/L (link preservation), pallLT/GT_root, pattern_ne_L/R (distinct keys), emit_lt/emit3_lt, sited_of_lt, zig_sited/double_sited (emission-to-supply). Battles: simp-only folds a=a to True; middle-nesting needs explicit brackets; iota-fragile rfl replaced by simp-normalization. Zero kills."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticStep2.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C134-LEANSIM2",
+   "implication": "Every engine loop iteration pinned to a skeleton step (singles C133, doubles here, branch selection here). Remaining: full-trace induction over loop iterations + triple-to-Aev accounting (sites to Aev supply).",
+   "next": "Full-trace induction: event-sequence correspondence over engine loop iterations",
+   "order": 152,
+   "reason": "Double-step simulation + branch classifier agreement (user direction: simulation relation).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticStep2.lean",
+   "statement": "Engine doubles = skeleton transformers; branch tables agree.",
+   "result": "sim_LL/RR/LR/RL composition correspondences + classify_agree, exit 0. Battles: partial patterns never enter double arms (full-pattern statements); zigzag first-steps apply to child subtrees with parent threading (some g); spurious-d fix. Zero kills."
   }
  ],
  "head": "6f89b8b",
