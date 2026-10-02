@@ -944,3 +944,19 @@ GC-STATIC (equivalent via 8AC-PREFIX); new shape (splay-cost dynamics).
 No global telescoping shortcut (rotation total-depth-delta depends on
 subtree sizes, unbounded). Status: LINKS PROVED-FINITE + COUPLING STATED;
 universal open.
+
+## 8AC-COUPLE. DECOUPLING-BUDGET SHAPE: OVERFLOW SCALES WITH BUFFER (C157)
+
+Measure (tightwin.json, 150 histories, 10,639 points, 2077 divergent
+accesses e_B > 3e_A): worst (overflow - buffer) = -6 (global margin 6:
+overflow never comes within 6 of buffer); low-buffer (Phi <= 20)
+overflow max 5 (n = 11) vs high-buffer max 125 (n = 2066). Overflow
+SCALES with available buffer: tight states diverge only mildly;
+large bursts occur only when affordable. Tight prefixes: rare (0.2
+percent), deep-synced trees (Amax/Bmax med ~60), low current demand
+(eB med 1), followed by bigger bursts (med 18) that stay covered
+(presumably self-covering via synced depth, cf. 8AC-PREFIX warmup).
+This is the decoupling-budget (8T-shape) made quantitative. Mechanism
+(WHY tight forces mild / affordable-only heaviness) remains open: needs
+push-banking vs splash-drain accounting with state-distinctness (8R) and
+freshness bounds. Status: FINITE-STRONG shape + open mechanism.

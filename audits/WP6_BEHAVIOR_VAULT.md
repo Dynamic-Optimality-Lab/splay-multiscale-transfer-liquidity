@@ -849,3 +849,6 @@ scripts/wp6_prefix.py -> prefix.json (300 evals): mincut tight sets downward-clo
 
 ### C156-1 PUSHLEDGER cost links + coupling [FINITE + STRUCTURE]
 scripts/wp6_pushledger.py -> pushledger.json (150 hists): eB<=d+1 (0/5642), eA>=d/2 (0/5059), Phi_min +2 global; first-eq is idx-0-only (8T scope correction); global alternation-count REFUTED (2695 vs 1595). hall_lemmas.md 8AC-PUSH: tight-window coupling precisely stated (heavy bursts need buffer; buffer can be 0; finite never breaks); no telescoping shortcut. Zero kills.
+
+### C157-1 COUPLE tight-window coupling shape [FINITE-STRONG]
+scripts/wp6_tightwin.py -> tightwin.json (150 hists, 10.6k points): overflow-buffer gap max -6 (global margin 6, 2077 divergent); low-buffer (<=20) overflow max 5 (n=11) vs high-buffer max 125 (n=2066): overflow SCALES with buffer. Tight prefixes rare (0.2pct), deep-synced (Amax/Bmax ~60), low-current-demand, followed by bigger bursts (med 18). hall_lemmas.md 8AC-COUPLE: decoupling-budget structured; mechanism (tight forces mild) open. Zero kills.
