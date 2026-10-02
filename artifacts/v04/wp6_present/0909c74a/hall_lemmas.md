@@ -632,6 +632,24 @@ bypass Hall here (all reduce to it or assume it — cf. 8L circularity,
 8AC-X tier-ledger, enclosure leaks). Status: META (proof by standard theory
 instantiation; finite faces: t75 stuck-augmentable + budget-26x + reuse).
 
+## 8AC-Z. VIOLATOR-ZONE LEMMA + INDUCTION ASSEMBLY (Mode-A, C118)
+
+Statement (8AC-ZONE, OPEN): every $B$-set $Q$ with $\min\deg(N(Q)) \ge 4$
+satisfies $\Delta(Q) \le 0$.
+Assembly (verified): strong induction on $|Q|$ (base $\Delta(\emptyset)=0$;
+IH = smaller-Hall). Case $\min\deg \le 3$: 8Q gives $\Delta(Q) \le 0$ (its
+smaller-Hall hypothesis matches IH; $Q'=Q\setminus R$ strictly smaller since
+$|R|=d\ge 1$; no orphans issue handled by $N(Q')\subseteq N(Q)\setminus\{a^*\}$).
+Case $\min\deg \ge 4$: 8AC-ZONE directly. Hence 8AC-ZONE $\Rightarrow$ GC-STATIC,
+with no circularity (8AC-ZONE never assumes smaller-Hall; it is standalone on
+the violator zone). Strictly smaller than GC-STATIC (mindeg$\le$3 zone closed
+by 8Q). Falsifiable with continuous objective: maximize $\Delta(Q)$ over
+$\min\deg\ge 4$ (K2B: max $-8$ at 12k vine-only); $\Delta\ge 1$ = Hall kill
+(global refutation path); $\Delta\ge -7$ = wall-thinning vs K2B (escalation).
+Note: deficient $Q$ (any) shrinks to minimal violator (8A/B: $\Delta=1$,
+$\min\deg\ge 4$), so 8AC-ZONE $\iff$ no violator $\iff$ GC-STATIC given 8Q+IH —
+the equivalence is honest, not a shortcut (the work is entirely inside 8AC-ZONE).
+
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
 Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;

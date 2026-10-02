@@ -2154,6 +2154,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (Layer B)",
    "witness": null
+  },
+  {
+   "artifact": "audits/WP6_COMPRESSION_DAG.md + hall_lemmas.md 8AC-Z + scripts/wp6_zoneclimb.py -> artifacts/v04/wp6_present/0909c74a/zoneclimb.json",
+   "date": "2026-09-30",
+   "id": "C118-COMPRESSION",
+   "implication": "Mode-A lemma (8Q+induction+8AC-ZONE=>GC-STATIC) recorded with verified assembly; violator zone robust at -8 (15k multi-shape).",
+   "next": "Transient-escape closure attack (first unsupported arrow); positional seal; migration leaf",
+   "order": 136,
+   "reason": "Phase 1 compression DAG + Mode-A 8AC-ZONE lemma + zone-Delta climb falsifier.",
+   "result": "15k evals: bestzone -8 (acc0 Q4N4, matches K2B); no thinning, NO KILL.",
+   "script": "scripts/wp6_zoneclimb.py",
+   "statement": "Compression DAG built; 8AC-ZONE falsifier confirms zone floor -8.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
