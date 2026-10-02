@@ -537,6 +537,22 @@ without assuming Hall. Status: SKETCH with well-founded regress + causal
 fresh-freedom identified; tier-ledger + final count open. If closed: FWD-greedy
 never sticks = GC-STATIC constructively (explicit rule), then GC/GC-chain.
 
+## 8AC-D. PER-BLOCK PROPORTIONALITY DEAD + DEGREE-1 ENVELOPE (C102)
+
+Density (`density.json`, 103 heavy blocks): solo-sufficiency E1 66 / K 61 /
+W 58 / E2 50 / E7 15 / E4 3 — NO single channel always covers o/3 (worst margins
+all negative); union N worst margin +5.67 (heavy blocks deeply safe globally).
+Per-block proportionality (o/3 <= new) REFUTED finitely (new < o/3 occurs;
+global saturates via old-reuse, budget margin 26x) — counting-form closures DEAD,
+honestly. B-degree census (120 hist): min-degree 1 (8 hist!), <4 in 69/120 —
+low-degree events are COMMON yet always served (greedy handles via T-diversity
+spreading of mates + K-only backstop). Degree-1 envelope: all-degree-1-same-N
+slices need |Q| <= 3 (one-access 8F universal, open); K2A-finite says mates always
+diversify (steer N ~= 4*e_B). Wall final-final form: ROUTING RULE ONLY
+(8AC-greedy-sufficiency: FWD+T-before-K never sticks; 0 gaps on 501+303+8000+
+adversarial incl. kill-witnesses) with exchange skeleton 8AC-X (tier-ledger +
+T-diversity enclosure-leak open).
+
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
 Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;
