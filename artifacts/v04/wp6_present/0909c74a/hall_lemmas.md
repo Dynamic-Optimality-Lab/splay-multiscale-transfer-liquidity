@@ -813,3 +813,34 @@ transients): cover is PORTFOLIO, no single channel dominant (consistent
 with 8AC-D union-only safety and residual/budget margins). Ride-sterility
 (G-outer bystander +2s without chain imprint) is the NORM. Consequence:
 no atom shortcut; burst cover = general contention = the wall itself.
+
+## 8AC-XC. COHORT-LOCALIZED EXCHANGE v2 (C148, SKETCH + FINITE FACES)
+
+Refines 8AC-X (C100) with the stuck-anatomy campaign (C141-C143, augment2):
+(1) PER-CHANNEL LOCALITY TABLE (finite-grounded): E1 same-access only
+(structural, 8AC-TO; loaders = siblings + future-grazers via THEIR backward
+channels; FWD sees siblings only); K nested per-x (8U) + same-x dominant
+(codist med 0; loaders sib + recent-past-x); T global (W med 23; loaders
+past-grazers + relational E2/E7 users); E4 rare key-identity. No single
+global argument; five channel-local ledgers.
+(2) PROCESSING-PRECEDENCE (definitional): stuck-loaders are always a subset
+of processed-before-me (loads come only from placed bevs). Past-vs-future
+labels are order-relative: REV-stuck sees siblings + time-future grazers
+(depth med 20, max 69); FWD-stuck sees siblings + time-past cohort (t75:
+depth 1). The regress (8AC-X KEY 2/3) terminates by lexicographic
+well-foundedness regardless of depth (already banked); depth data only
+calibrates it.
+(3) AU-LEN5 SINGLE-DISPLACEMENT LAW (finite-strong, 526/526 REV + t75):
+every stuck repair displaces EXACTLY ONE mate (length-5 uniform; no direct
+free edge (maximality), no double displacement needed). The obstruction at
+any stuck point is one displacement deep.
+(4) PRECISE HOLE (unchanged in kind, narrowed in shape): assuming FWD+T-first
+sticks at j, with E1 full-by-siblings (8AC-STUCK-SIB proved), K full by
+x-cohort, T full by past-grazers: the W-set (|W| >= 3|N(j)| counting) regress
+needs the TIER-LEDGER (which tier each w used + K-nesting consumption via 8U
++ E4-run-disjointness) to force a deficient subset or contradiction. The
+W-global residual (54 percent of placements) is the load-bearing remainder.
+(5) CONDITIONAL ASSEMBLY (pointer): tier-ledger closes => FWD never sticks
+=> GC-STATIC (constructive) => E_B <= 3 S_A => D <= 6 S_A => service =>
+MSTL-14P (conditional chain, WP6_CONDITIONAL_CHAIN.md). Status: SKETCH with
+all finite faces green; tier-ledger + W-residual open (the wall).

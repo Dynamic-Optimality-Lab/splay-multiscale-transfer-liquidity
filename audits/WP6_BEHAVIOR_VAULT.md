@@ -822,3 +822,6 @@ No new .lean (deliberate): flip load-validity in full generality needs list-coun
 
 ### C147-1 RIDES burst-relative silent-push census refutes 8V-strong [FINITE_EVIDENCE + REFUTATION]
 scripts/wp6_rides.py -> rides.json (535 heavy bursts eB>=8, full-history window, B-depth gains + E3-imprint check): 76.8pct of burst-built depth silent (1391/1787 push events silent; fully-silent bursts to eB=91/depth=181). 8V-strong (imprint-proportional cover) REFUTED; 8V-weak survives (pushers bank global-pool supply). K_x med-cover 1.51x but min 0.0: cover is PORTFOLIO (K + E1 + E4 + transients), no single channel dominant. Ride-sterility is the norm (G-outer bystander mechanics). 8V route over.
+
+### C148-1 COHORTX cohort-localized exchange v2 [SKETCH + FINITE]
+augment2.json futdepth (med 20/max 69 future-grazer depths; past-loaders 0 everywhere); AU-LEN5 single-displacement law 526/526; hall_lemmas.md 8AC-XC (per-channel locality table + processing-precedence + precise tier-ledger hole + conditional assembly). Exchange fully mapped; deficiency forcing remains the wall. Zero kills.

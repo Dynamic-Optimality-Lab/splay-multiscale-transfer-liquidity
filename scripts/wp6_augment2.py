@@ -130,26 +130,33 @@ def analyze(n, T0, H, tiers, rev):
     for b0 in short[:8]:
         ts = tiers_of(b0, G, Arot, acc_of)
         ledger = {}
+        futdepth = []
         for k, lst in ts.items():
             full = [i for i in lst if loads.get(i, 0) >= 3]
             past = 0
             sib = 0
+            fut = 0
             for i in full:
                 for j in invM.get(i, []):
                     if Bevs[j][0] == Bevs[b0][0]:
                         sib += 1
                     elif Bevs[j][0] < Bevs[b0][0]:
                         past += 1
-            ledger[k] = {"deg": len(lst), "full": len(full), "sib": sib, "past": past}
+                    else:
+                        fut += 1
+                        futdepth.append(Bevs[j][0] - Bevs[b0][0])
+            ledger[k] = {"deg": len(lst), "full": len(full), "sib": sib,
+                         "past": past, "fut": fut}
         ap = augment_path(G, Arot, acc_of, M, loads, b0)
-        out.append({"ledger": ledger, "aug": ap})
+        out.append({"ledger": ledger, "aug": ap, "futdepth": futdepth})
     return ("STUCK", out)
 
 
 def main() -> int:
     step("AU-00", "stuck anatomy + augmenting-path census")
     configs = [(["E1", "E4", "K", "T"], False), (["E1", "E4", "K", "T"], True),
-               (["K", "E1", "E4", "T"], False)]
+               (["K", "E1", "E4", "T"], False), (["K", "E1", "E4", "T"], True),
+               (["T", "E1", "E4", "K"], True)]
     nstuck = 0
     lens = []
     terms = Counter()
@@ -157,8 +164,10 @@ def main() -> int:
     led_full = Counter()
     led_past = Counter()
     led_sib = Counter()
+    led_fut = Counter()
     led_deg = Counter()
     bygroup = Counter()
+    futdepth_all = []
     kills = 0
     done = 0
     for s in range(120):
@@ -178,11 +187,14 @@ def main() -> int:
                     nstuck += 1
                     gk = "cfg%d/fam%d/rev%s" % (ci, fam, rev)
                     bygroup[gk] += 1
+                    for d in ev.get("futdepth", []):
+                        futdepth_all.append(d)
                     for k, ld in ev["ledger"].items():
                         led_deg[k] += ld["deg"]
                         led_full[k] += ld["full"]
                         led_past[k] += ld["past"]
                         led_sib[k] += ld["sib"]
+                        led_fut[k] += ld.get("fut", 0)
                     ap = ev["aug"]
                     if ap is None:
                         terms["NONE(open-fail)"] += 1
@@ -192,13 +204,20 @@ def main() -> int:
                         terms[t] += 1
                     chmix.update(ap["chan"])
     lens.sort()
+    futdepth_all.sort()
+    npd = len(futdepth_all)
     out = {"evals": done, "stuck": nstuck, "kills": kills, "bygroup": dict(bygroup),
+           "futdepth_n": npd,
+           "futdepth_med": (futdepth_all[npd // 2] if npd else None),
+           "futdepth_p90": (futdepth_all[int(npd * 0.9)] if npd else None),
+           "futdepth_max": (futdepth_all[-1] if npd else None),
            "aug_len_med": (lens[len(lens) // 2] if lens else None),
            "aug_len_max": (lens[-1] if lens else None),
            "aug_len_hist": {str(k): v for k, v in Counter(lens).most_common(12)},
            "aug_term": dict(terms), "aug_chan": dict(chmix),
            "led_deg": dict(led_deg), "led_full": dict(led_full),
-           "led_past": dict(led_past), "led_sib": dict(led_sib)}
+           "led_past": dict(led_past), "led_sib": dict(led_sib),
+           "led_fut": dict(led_fut)}
     (ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / "augment2.json").write_text(
         json.dumps(out, indent=1, sort_keys=True, default=str), encoding="utf-8")
     step("AU-01", json.dumps(out, sort_keys=True))
