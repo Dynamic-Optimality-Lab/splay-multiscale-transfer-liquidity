@@ -2426,6 +2426,22 @@
    "script": "lean/WP6/GCStaticStep2.lean",
    "statement": "Engine doubles = skeleton transformers; branch tables agree.",
    "result": "sim_LL/RR/LR/RL composition correspondences + classify_agree, exit 0. Battles: partial patterns never enter double arms (full-pattern statements); zigzag first-steps apply to child subtrees with parent threading (some g); spurious-d fix. Zero kills."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticTrace.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C135-LEANTRACE",
+   "implication": "Skeleton-side trace theory kernel-closed (idle agreement + size bound). Remaining engine-side: event-list emission model + per-iteration agreement lifted over the loop + triple-to-Aev accounting.",
+   "next": "Engine-side event emission + loop-lifted trace agreement + Aev accounting",
+   "order": 153,
+   "reason": "Trace induction, skeleton side (user direction: trace induction).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticTrace.lean",
+   "statement": "Skeleton trace: root-silent, no-op agreement, size bound.",
+   "result": "steps_nil_root + splay_noop (4-combo nested if-chains, simp-at-hyp contradictions) + steps_length via steps.induct (10 cases, omega with IHs), exit 0. Battles: explicit with-binders (no auto-names); rw at h and goal together; simp-at-hyp closes emitting arms; leaf 0-le-0 needs omega. Zero kills."
   }
  ],
  "head": "6f89b8b",

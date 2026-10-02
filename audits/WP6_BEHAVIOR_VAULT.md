@@ -784,3 +784,6 @@ lean/WP6/GCStaticSim.lean (exit 0, no warnings, 15 theorems): PTree mirror of en
 
 ### C134-1 LEANSIM2 double-step simulation + branch agreement [PROVED_KERNEL]
 lean/WP6/GCStaticStep2.lean (exit 0, no warnings, 5 theorems): sim_LL/RR/LR/RL (engine rotation pairs = zzR/zzL/zagLR/zagRL under projection, full firing patterns); eclassify + classify_agree (engine link-geometry table = skeleton classifier). Battles: full-pattern statements (partials route to ZIG/identity by engine if-chain); child-subtree application with parent threading for zigzags. Every loop iteration now pinned. Next: full-trace induction over iterations.
+
+### C135-1 LEANTRACE skeleton trace theory [PROVED_KERNEL]
+lean/WP6/GCStaticTrace.lean (exit 0, no warnings, 3 theorems): steps emission (one SStep per level, bottom-up); steps_nil_root (root-hit silent, loop-exit agreement); splay_noop (empty trace iff skeleton idle, 4 shape combos); steps_length (trace fits tree size, 10-case steps.induct + omega). Battles: explicit with-binders; rw at h and goal; simp-at-hyp for emitting arms. Next: engine-side emission + loop-lifted agreement + Aev accounting.
