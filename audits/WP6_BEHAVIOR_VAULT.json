@@ -2553,6 +2553,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (meta)",
    "witness": null
+  },
+  {
+   "artifact": "hall_lemmas.md 8AC-STUCK-SIB",
+   "date": "2026-10-02",
+   "id": "C143-STUCKSIB",
+   "implication": "Exchange argument localizes to cohorts (siblings + same/adjacent-x); global repair via W-augmentation. FWD T-first totality 940/940. Remaining: cohort-local matching theory or counterexample.",
+   "next": "Cohort-local matching theory, novel falsifiers, or pause",
+   "order": 161,
+   "reason": "Bank stuck-cohort lemma + FWD-totality tally (wall assault).",
+   "result": "8AC-STUCK-SIB PROVED_AUTHOR (greedy-maximality + E1 same-access scoping + no-forward-edges): stuck with nonempty E1 => 3|E1| sibling-loads. Finite faces 76/76 + t75. T-first-FWD 940/940 zero-stuck. Zero kills.",
+   "script": "prose-proof (finite faces augment2/codist/wcharge/totality)",
+   "statement": "Stuck implies E1-cohort saturation; T-first-FWD totality tally.",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

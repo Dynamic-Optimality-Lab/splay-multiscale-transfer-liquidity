@@ -760,3 +760,27 @@ space; t75 adjacency was small-n luck. Interval/counting localization
 is DEAD (consistent with 8N(d) sharing-infinity and 8Z long chains).
 E1 distance always 0 (structural same-access). Contention is key-global;
 only matching/contention theory (8AC-RM door 1) or counterexample (door 2).
+
+## 8AC-STUCK-SIB. STUCK IMPLIES E1-COHORT SATURATION (C143, PROVED_AUTHOR)
+
+Definitions: greedy places bev j iff some eligible plotted neighbor has free
+cap (maximal per-tier search); E1(j) = plotted accA[acc(j)] only (same-access,
+build_tagged causal scoping); cap 3 per source.
+Lemma: if E1(j) nonempty and greedy sticks at j, then every source of E1(j)
+is full, and all loads on E1(j) come from same-access siblings (no forward
+edges exist, 8AC-TO: past bevs cannot touch E1(j); future bevs have no edges
+into it either). Hence stuck(j) with E1(j) nonempty ⟹ 3|E1(j)| sibling-loads
+(same-access cohort saturation of the birthright pool, 8AC-PRISTINE inverted).
+E1(j) empty (repeat/trivial bursts) ⟹ stuck is pure backward-spill exhaustion.
+Finite faces: 76/76 REV-stuck E1-full-by-siblings (augment2.json: 982/982
+slots, 2808 sib-loads, 0 past); t75 (sole FWD-stuck): E1=1 full by siblings
+13,14,15 + K site12 by siblings 16,17,18 + shared site13 by x38 past cohort.
+Repair corollary (Berge, C123): every stuck matching is augmentable; measured
+repairs all length 5 via W/K (augment2.json 76/76 + t75).
+FWD-TOTALITY TALLY (T-first-FWD, chronological): TB 40 + WC 150+150 +
+C125 reruns 150+150 + CD 300 = 940 evals, ZERO stuck, zero kills.
+E1-first/K-first FWD near-total with rare stuck (all cohort-saturated +
+augmentable). Consequence for 8AC-X: the tier ledger at stuck points is
+ALWAYS cohort-saturation (siblings + same/adjacent-x past cohorts); exotic
+K-hoarding/T-theft by unrelated bevs never occurs finitely. The exchange
+argument localizes to cohorts; global repair flows through W-augmentation.
