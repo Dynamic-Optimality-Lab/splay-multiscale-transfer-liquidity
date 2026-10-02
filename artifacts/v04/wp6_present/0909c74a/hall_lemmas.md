@@ -472,3 +472,39 @@ shallow-setup needs A-far pushers = triple conjunction). Shape-aware triple asse
 + hillclimb, 3k evals): NO KILL. Candidate universal: heavy + E1empty ⟹ new-old ≥ 1
 (observed ≥4); with proportional form (overflow/3 ≤ new) it closes 8K-step; unproved.
 Resonance noted: new ≥ 4 matches 8B mindeg ≥ 4 (both sides of violator demand 4+).
+
+## 8AC. PER-BLOCK PROPORTIONAL COVER WITH REUSE BUDGET (OBLIGATION, C97)
+
+Statement (to prove): for every B-heavy access-block Q_j (overflow o_j =
+|Q_j| - 3f_j > 0, f_j fresh slots), with new_j = first-overlap sources at j
+(E1(J) union E4-setup-portion union first E2/W/E7-hits; pairwise DISJOINT across
+accesses since first-adjacency is once-ever) and old-stock R = N(Q)\F:
+  o_j <= 3*|new_j| + 3*c_j   with   SUM_j c_j <= |R_old-shared| (contention-bounded).
+Then 8I closes globally: Delta(Q) <= SUM o_j - 3|R| <= 3*SUM|new_j| + 3*SUM c_j
+- 3|R| <= 0 since UNION(new_j) conserved plus contention within cap (c_j exact
+reuse allocation from an explicit assignment). The assignment is the content:
+BLOCK-GREEDY (E1-fresh first (disjoint, exact); K-anchored second (nested per x
+by 8U: later bursts see supersets); transients E2/W/E7 by least-loaded top-up).
+Sufficiency test (greedy.json): chronological block-greedy vs maxflow-optimal
+over corpus. If greedy == maxflow everywhere finitely, the constructive path is
+open (formalize non-failure: fresh-exactness + K-nesting + transient density from
+8Z/8AB). If greedy fails where maxflow succeeds, contention needs true matching
+(theory beyond greedy; wall stands). Status: OBLIGATION + executable test.
+Chain on close: Hall(Q) all Q -> GC-STATIC -> E_B <= 3 S_A (GC counting) ->
+D <= 6 S_A (D2 banked) -> service generation -> MSTL-14P (conditional C0-C4).
+
+## 8AC-GREEDY. T-BEFORE-K SUFFICIENCY + EXCHANGE REDUCTION (finite-strong, C97)
+
+Measures (greedy.json 150 hist: FWD|E1E4KT 149/150 (one gap t75); greedy2.json
+501 hist x 72 combos: ALL 29 T-before-K combos (FWD+MINN) PERFECT (0 gaps each);
+ALL K-before-T combos gap; REV|E1E4KT gaps 30/worst-7). Gap t75 is pure order
+artifact (12 orders incl. all-REV and T-first-FWD saturate it). Rule: FWD or MINN
+event order with tiers T before K (E1/E4 first, K LAST): K preserved as backstop
+for K-only needy (late repeat bursts, E1/E4/T-empty, K-nonempty by 8U); fresh
+owner-first (E1 used same-access before later theft as old); transients shared
+middle. Symmetric hoarding explains failures (K-early starves late-K-only;
+REV lets late events steal early-E1 as old). Exchange-reduction sketch: E1
+(disjoint, 8H) + K (nested per x, 8U) assigned structurally exact; T-residual
+(overflows only) by density (8Z/8AB) � residual Hall = variation (hole, smaller:
+only post-E1K overflow needs transient cover). Status: FINITE_STRONG (29x0/501)
++ reduction sketch; NOT closed (T-residual variation = same wall, narrowed).

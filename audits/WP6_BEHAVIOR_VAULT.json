@@ -1788,6 +1788,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (kill)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_greedy.py -> artifacts/v04/wp6_present/0909c74a/greedy.json; scripts/wp6_greedy2.py -> artifacts/v04/wp6_present/0909c74a/greedy2.json + hall_lemmas.md 8AC/8AC-GREEDY",
+   "date": "2026-09-30",
+   "id": "C97-GREEDY",
+   "implication": "Constructive rule crowned (T-before-K FWD/MINN); proof reduces to T-residual variation (same wall, narrowed to post-E1K overflow).",
+   "next": "T-residual variation measurement; Lean 8S/8U/8W; exchange formalization",
+   "order": 113,
+   "reason": "8AC block-greedy sufficiency test (order x tier sweep at scale).",
+   "result": "29 T<K combos perfect 0/501; all K<T gap; t75 gap purely order-artifact.",
+   "script": "scripts/wp6_greedy2.py",
+   "statement": "Transient-first greedy saturates wherever maxflow does (501 hist); K-last backstop + owner-first mechanism.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
