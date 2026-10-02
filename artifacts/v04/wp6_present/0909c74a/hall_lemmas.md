@@ -987,3 +987,33 @@ prefix-GC universal splits into synced-trivial (overflow <= 1, needs
 buffer <= 1: micro-coupling open) + diverged-needs-buffer (unsynced,
 push-built: tier-ledger coupling open). Status: PROVED_AUTHOR modulo
 loop correspondence; finite face exact.
+
+## 8AC-AROOT. A-ROOT PERSISTENCE FORCES BANKED ROOTING + SHALLOW STALE (C160)
+
+Definitions: A-root-x (x at A-root); B-stale-depth (B-depth unchanged by
+A-only accesses); supply-free splash ((e_A,e_B) = (0,1), A-trivial + B
+single step); rooting event (access bringing x to A-root).
+Lemma A (eviction): a B-push on z != x with x at A-root is A-nontrivial
+(z not at root) hence moves A-root (delivery, C132 kernel given validity);
+so A-root persistence across consecutive accesses implies all intervening
+accesses are on x. Corollary: B-depth under persistence evolves only via
+x-accesses (x-KEEP splashes reset to root or no-op; x-DELETE preserves).
+Lemma B (stale bound): A-root + B-depth d>0 implies d is stale since the
+rooting event (no pushes without eviction), and the rooting event (unless
+T0/first-safe (8T idx-0)) is a DELETE-nontrivial banking e_A >= 1 (+3 Phi).
+Lemma C ((0,1)-closure, conditional): an A-trivial splash (e_A = 0) with
+synced B-depth <= 2 takes exactly one StepEv (single zig/double finishes
+depth <= 2: delivery 2->0/1->0, C129 kernel) so e_B = 1, overflow exactly 1;
+prior rooting banked >= 3 (Lemma B) with trivial no-op intervening
+(DELETE: e_A = e_B = 0; KEEP: B-trivial else it would have splashed and
+lifted earlier), so with strong prefix induction (Phi >= 0 before) the
+buffer is >= 3 > 1 and Phi stays >= 2 after. Hence (0,1)-splashes preserve
+prefix-GC. Dependencies for full kernel: loop-to-traceLen StepEv
+correspondence (simulation queue: e_B counts engine iterations, delivery
+lemmas count skeleton steps) + single-finish-shallow + e(d) = ceil(d/2)
+exactness (for the A-nontrivial-synced half: overflow <= -1, strictly
+helping). Finite face: 674/674 synced-divergent are (0,1); A-nontrivial
+synced never diverges (needs the exactness links above).
+Status: PROVED_AUTHOR modulo listed loop-correspondence links (all with
+concrete Lean targets); the diverged (unsynced) branch remains open
+(tier-ledger coupling).

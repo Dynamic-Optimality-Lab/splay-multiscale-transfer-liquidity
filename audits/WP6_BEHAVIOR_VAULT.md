@@ -858,3 +858,6 @@ scripts/wp6_phidrain.py -> phidrain.json (150 hillclimbs L<=80 with A-root targe
 
 ### C159-1 SYNCED synced-divergence exact characterization [PROVED_AUTHOR + FINITE-EXACT]
 tightwin sync fields: 674/674 synced-divergent accesses are exactly (eA,eB)=(0,1); zero synced with overflow>=2. hall_lemmas.md 8AC-SYNCED: proof via exact StepEv counting e(d)=ceil(d/2) (loop structure, Layer A cited; loop correspondence queued): synced-divergent forces m=0 (dA=0) hence (0,1); synced with dA>=1 never diverges. Decomposition: synced-trivial (<=1) + diverged-buffer (open). Zero kills.
+
+### C160-1 AROOT A-root persistence + (0,1)-closure [PROVED_AUTHOR conditional]
+hall_lemmas.md 8AC-AROOT: eviction (B-pushes move A-root, delivery kernel) => persistence means all-x-accesses; B-depth nonincreasing under persistence; stale depth needs banked rooting-DELETE (+3) or T0/first-safe; (0,1)-splash drains exactly 1 from buffer >= 3 (strong prefix IH) => Phi preserved (>= 2). Needs loop-StepEv correspondence + single-finish-shallow + ceil-exactness (concrete Lean queue). A-nontrivial-synced helps (<= -1, same links). Diverged branch open. Zero kills.
