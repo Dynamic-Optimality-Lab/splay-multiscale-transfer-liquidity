@@ -748,3 +748,15 @@ HOLE-IND in counting form is DEAD (consistent with 8N(d) sharing-infinity and
 8AC-D proportionality-dead). Residual-sufficiency survives only as matching/
 contention theory (positional density, multi-session) = 8AC-RM door #1; else a
 verified counterexample (door #2). No other doors remain.
+
+## 8AC-IL. INTERVAL-LOCALIZED HALL DEAD AT SCALE (C142, FINITE_REFUTATION)
+
+Candidate: contention localizes to key neighborhoods (t75 loaders: x39
+siblings + x38 adjacent cohort), so Hall closes per key-interval with
+bounded overlap. Finite verdict: loader key-distance |loader_x -
+site_acc_x| at scale (n<=512, 42k placements): W med 23 / p90 129 / max
+493; K med 0 / p90 23 / max 297 (codist.json). W grazes the whole key
+space; t75 adjacency was small-n luck. Interval/counting localization
+is DEAD (consistent with 8N(d) sharing-infinity and 8Z long chains).
+E1 distance always 0 (structural same-access). Contention is key-global;
+only matching/contention theory (8AC-RM door 1) or counterexample (door 2).

@@ -2521,6 +2521,38 @@
    "witness": null,
    "script": "lean/WP6/GCStaticSupplyTotal.lean",
    "statement": "Event count covered by counted supply per access."
+  },
+  {
+   "artifact": "scripts/wp6_augment2.py -> augment2.json",
+   "date": "2026-10-02",
+   "id": "C141-AUGMENT",
+   "implication": "Tier-ledger at stuck points is cohort-saturation (never exotic theft); repair is global W-augmentation. Next: 8AC-STUCK-SIB lemma + cohort-locality scale test (C142).",
+   "next": "C142 loader key-distance census at scale",
+   "order": 159,
+   "reason": "Stuck-event anatomy + augmenting-path census for 8AC-X tier-ledger (wall assault).",
+   "result": "76 stuck (all REV|E1E4KT walks): 100pct sibling-saturated E1-only (E1 982/982 full, 2808 sib-loads, 0 past; E4/K/T deg ~0); augmenting paths ALL len 5, terminal W 100pct. t75 dissected (sole FWD-stuck): E1=1+K=2+T=1 (REFUTES E1-only universal); loaders = x39 siblings + x38 adjacent cohort; aug len 5 via W/K. FWD configs 0/480 stuck (totality now ~1100 evals). Zero kills.",
+   "script": "scripts/wp6_augment2.py",
+   "statement": "Stuck anatomy: sibling-saturated E1 + length-5 W-repair; t75 cohort dissection.",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_codist.py -> codist.json + hall_lemmas.md 8AC-IL-dead",
+   "date": "2026-10-02",
+   "id": "C142-CODIST",
+   "implication": "Contention is key-global; interval/counting localization dead (consistent 8N(d), 8Z chains). Remaining doors per 8AC-RM unchanged: matching theory or counterexample.",
+   "next": "Lean multi-session density, novel falsifiers, or pause",
+   "order": 160,
+   "reason": "Loader key-distance census at scale (t75 locality: small-n luck or law?).",
+   "result": "W distance med 23/p90 129/max 493 (n<=512); K med 0/p90 23/max 297; E1 always 0 (structural same-access). t75 adjacency was small-n luck. 8AC-IL (interval-localized Hall) REFUTED finitely. stuck=0/300 (T-first-FWD). Zero kills.",
+   "script": "scripts/wp6_codist.py",
+   "statement": "W key-distance unbounded at scale; interval route dead.",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

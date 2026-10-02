@@ -802,3 +802,8 @@ lean/WP6/GCStaticLift.lean (exit 0, no warnings): trace_length_eq (emission and 
 
 ### C140-1 SUPPLYTOTAL fused per-access supply total [PROVED_KERNEL]
 lean/WP6/GCStaticSupplyTotal.lean (exit 0, no warnings): sites_count floor + supplyTotal append + supply_total (10-case fused induct: IH supply cover + per-event floor via range/distinctness, omega assembles). Event count covered by counted supply per access in kernel. Lean positional track complete through supply; open wall stands.
+
+### C141-1 AUGMENT stuck anatomy + t75 dissection [FINITE_EVIDENCE + REFUTATION]
+scripts/wp6_augment2.py -> augment2.json (720 evals walks+pushers x 3 configs): 76 stuck ALL REV|E1E4KT-walks, ALL sibling-saturated E1-only (E1 982/982 full, sib-loads 2808, past 0); augmenting paths ALL length 5 terminal W (chan E1/E3E1/W). FWD configs 0/480 (totality ~1100 evals cumulative). t75 (sole FWD-stuck, gr1 n64): bev19 acc3 x39, E1=1+K=2+T=1 (REFUTES stuck=>E1-only); loaders x39 siblings (E1+K site12) + x38 adjacent past cohort (site13); aug len5 via W/K. Tier-ledger: cohort-saturation only, never exotic theft; repair global. Next: scale test of cohort-locality (C142).
+### C142-1 CODIST loader key-distance kills interval-locality [FINITE_EVIDENCE + REFUTATION]
+scripts/wp6_codist.py -> codist.json (300 evals, 42k placements): W |loader_x - site_acc_x| med 23 / p90 129 / max 493; K med 0 / p90 23 / max 297; E1 always 0 (structural). t75 adjacency = small-n luck. 8AC-IL (interval-localized Hall counting) REFUTED finitely; contention key-global (consistent 8N(d) sharing-infinity, 8Z long chains). hall_lemmas.md: 8AC-IL dead. Wall stands on 8AC-RM doors only.
