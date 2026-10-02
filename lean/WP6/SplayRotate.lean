@@ -275,10 +275,31 @@ theorem rotL_bound (xk pk : Nat) (l lr rr : STree) (y m : Nat)
 -- Splay-StepEv bounds (C109): one StepEv is one zig (single rotation, +1) or
 -- one double (two rotations, +2 by composing uniform bounds; second rotation
 -- falls back to identity on shape mismatch, which can only help).
--- Splay-StepEv composition note: one StepEv is one zig (single rotation: uniform
--- bound applies directly with the StepEv's BST-shape hypothesis) or one double
--- (two rotations: compose uniform bounds through the intermediate existential
--- depth; second rotation pattern hypotheses discharged from BST facts at the
--- call site). The four doubles (LL/RR/LR/RL) are routine compositions of
--- rotR_bound/rotL_bound, queued as such; loop-level de-pathing/lift-accounting
--- needs the splay-loop model (path descent + fuel), also queued.
+-- Splay-StepEv doubles LL/RR (C111): two rotations compose through the
+-- intermediate existential depth (definitional unfolding links the middle
+-- state). LR/RL act on a proper subtree first (need subtree framing:
+-- region-split on y in psub/r/={g}), queued with that note. Loop-level
+-- de-pathing/lift-accounting needs the splay-loop model, also queued.
+theorem zigzigLL_bound (x p g : Nat) (a b c d : STree) (y m : Nat)
+    (h1lt : x < p) (h2lt : p < g)
+    (h : sdepth (.node g (.node p (.node x a b) c) d) y = some m) :
+    ∃ m', sdepth (rotR (rotR (.node g (.node p (.node x a b) c) d))) y = some m'
+      ∧ m' ≤ m + 2 := by
+  obtain ⟨m1, hh1, hb1⟩ := rotR_bound p g (.node x a b) c d y m h2lt h
+  have hh1' : sdepth (.node p (.node x a b) (.node g c d)) y = some m1 := hh1
+  obtain ⟨m2, hh2, hb2⟩ := rotR_bound x p a b (.node g c d) y m1 h1lt hh1'
+  have hfin : sdepth (rotR (rotR (.node g (.node p (.node x a b) c) d))) y
+      = some m2 := hh2
+  exact ⟨m2, hfin, by omega⟩
+
+theorem zigzigRR_bound (x p g : Nat) (d c b a : STree) (y m : Nat)
+    (h1lt : g < p) (h2lt : p < x)
+    (h : sdepth (.node g d (.node p c (.node x b a))) y = some m) :
+    ∃ m', sdepth (rotL (rotL (.node g d (.node p c (.node x b a))))) y = some m'
+      ∧ m' ≤ m + 2 := by
+  obtain ⟨m1, hh1, hb1⟩ := rotL_bound p g d c (.node x b a) y m h1lt h
+  have hh1' : sdepth (.node p (.node g d c) (.node x b a)) y = some m1 := hh1
+  obtain ⟨m2, hh2, hb2⟩ := rotL_bound x p (.node g d c) b a y m1 h2lt hh1'
+  have hfin : sdepth (rotL (rotL (.node g d (.node p c (.node x b a))))) y
+      = some m2 := hh2
+  exact ⟨m2, hfin, by omega⟩

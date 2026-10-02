@@ -2044,6 +2044,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (Layer B)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/SplayRotate.lean zigzigLL/RR_bound (kernel exit 0, clean)",
+   "date": "2026-09-30",
+   "id": "C111-LEAN-DOUBLE",
+   "implication": "Per-StepEv +2 bound kernel-grounded for LL/RR (zigzig); LR/RL need subtree framing; loop next.",
+   "next": "LR/RL doubles (subtree framing); splay-loop de-pathing/lift; exchange tier-ledger",
+   "order": 129,
+   "reason": "Compose uniform rotation bounds into double-rotation StepEv bounds.",
+   "result": "zigzigLL_bound + zigzigRR_bound (m+2), lean exit 0, no sorry, no warnings.",
+   "script": "lean",
+   "statement": "LL/RR splay doubles deepen any present key by <= +2.",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (Layer B)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
