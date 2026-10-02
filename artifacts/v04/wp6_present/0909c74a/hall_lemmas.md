@@ -393,6 +393,10 @@ per access UNIVERSALLY. Exact verification: ALL BST shapes n=4..7 × all keys
 consistent; 50k sampled large-n events agree. Status: PROVED_AUTHOR (rotation table
 + de-pathing + lift-accounting; Lean-pending). Consequence: 8V(a) PROVED — burst
 B-depth d ⟹ ≥d/2 prior KEEP accesses, each banking ≥1 sited Aev (8S).
+Update C107: per-StepEv single-rotation rows PROVED_KERNEL
+(`lean/WP6/SplayRotate.lean`, exit 0, no sorry: STree+sdepth+rotR/rotL,
+sdepth_self + 10 region rows (up/down/ride/middle/outer, both sides));
+de-pathing + lift-accounting + splay-loop still need the loop model.
 
 ## 8Y. ATOM-CLOSURE: key-identity E3-backstop + ride-sterility (SKETCH, C64)
 

@@ -1980,6 +1980,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/SplayRotate.lean (kernel exit 0, no sorry) + hall_lemmas.md 8W note",
+   "date": "2026-09-30",
+   "id": "C107-LEAN-ROTATE",
+   "implication": "8W per-StepEv rows kernel-grounded; loop model (de-pathing/lift-accounting) still open.",
+   "next": "Splay-loop model (zig/zigzig/zigzag cases over STree) for 8W full; exchange tier-ledger",
+   "order": 125,
+   "reason": "Kernel-prove 8W single-rotation depth table (functional BST skeleton).",
+   "result": "STree+sdepth+rotR/rotL, sdepth_self + 10 region rows, lean exit 0 clean.",
+   "script": "lean",
+   "statement": "Single-rotation depth shifts (up/down/ride/middle/outer) are kernel theorems.",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (Layer B)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
