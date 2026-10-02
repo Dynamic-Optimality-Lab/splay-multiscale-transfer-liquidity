@@ -2330,6 +2330,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (meta)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/GCStaticSplay.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C129-LEANSPLAY",
+   "implication": "Per-StepEv motion fully kernel-pinned (off-path 0 via C128, on-path delivery + side-break here). Next C130: fuel-bounded loop (termination measure + root delivery) toward the simulation relation with the pointer engine.",
+   "next": "C130 fuel-bounded splay loop over STree: termination + accessed-key-to-root",
+   "order": 147,
+   "reason": "On-path motion: double-step delivery + root side preservation/break dynamics (user direction: Lean positional model).",
+   "result": "zzR/zzL/zagLR/zagRL delivery (2->0) + sideL/sideR preservation under underL/underR (4) + rotR/rotL keep/break (4) proved, exit 0 clean. Co-location breaks exactly for keys between old and new root; all else preserved. Zero kills.",
+   "script": "lean/WP6/GCStaticSplay.lean",
+   "statement": "Double-step delivery + co-location side dynamics in kernel.",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

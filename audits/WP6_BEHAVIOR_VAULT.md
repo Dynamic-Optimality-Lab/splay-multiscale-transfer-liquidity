@@ -766,3 +766,6 @@ lean/WP6/GCStaticHall.lean (exit 0, no sorry/admit/axioms): mindeg_safe + mindeg
 
 ### C128-1 LEANPOS migration locality / sibling rigidity [PROVED_KERNEL]
 lean/WP6/GCStaticPos.lean (exit 0, no sorry/admit/axioms): underL/underR operators (op strictly inside one child) + rigid_R_underL/rigid_L_underR (sibling depths bit-identical) + rigid_root_underL/underR (root stays 0) + rigid_absent_underL/underR (absence preserved). Any off-path key has displacement exactly 0; on-path shifts are the 8W rows. Full per-StepEv displacement table pinned: migration moves keys only via on-path rotations (8AC-MW kernel pin). Next: splay-loop descent + co-location interface (C129).
+
+### C129-1 LEANSPLAY double-step delivery + side dynamics [PROVED_KERNEL]
+lean/WP6/GCStaticSplay.lean (exit 0, no warnings): zzR/zzL/zagLR/zagRL transformers + delivery (accessed key 2->0 each); goesL/goesR sides + preservation under underL/underR (4 thms: root key fixed => sides fixed); rotR/rotL keep/break (4 thms: below-new-root stays, between-old-and-new-root switches side). Co-location dynamics kernel-pinned: breaks exactly between old/new root, preserved everywhere else. Next C130: fuel-bounded loop + root delivery.
