@@ -834,3 +834,6 @@ scripts/wp6_recur.py -> recur.json (59k triple-keys): recurrence 81.9pct, recenc
 
 ### C151-1 LEANFIN finite-set toolkit [PROVED_KERNEL]
 lean/WP6/GCStaticFin.lean (exit 0, no warnings, 19 defs+theorems): dedup + mem/nodup/size; rawNb/neighbors + mem; degree/mindeg + mindeg_le_mem; erase_mem (local); sdiff + mem/nodup/length; subset_length (+aux) + length_strict. Core lacks Finset/erase/nodup API; all built locally. Battles: false mem_erase (erase removes first only!); match-vs-if equations (cases-on-Bool); simp over-normalization; Nat-succ friction avoided via explicit lists. Next C152: assembly.
+
+### C152-1 LEANASM zone-implies-Hall assembly [PROVED_KERNEL]
+lean/WP6/GCStaticFin.lean + zone_implies_hall (exit 0, no warnings): bound induction; empty兵荒马乱; mindeg<=3 via 8Q-removal (length_strict + subset counting + C127 arithmetic inline); mindeg>=4 via zone hypothesis directly. Eligibility subsumed (zone entails it). GC-STATIC is exactly 8AC-ZONE in kernel. Battles: pipe-projection ascription; rw auto-close limits; subst direction; induction generalization via explicit forall. Next: zone itself.

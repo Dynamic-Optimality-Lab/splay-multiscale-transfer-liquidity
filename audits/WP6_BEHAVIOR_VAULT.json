@@ -2691,6 +2691,21 @@
    "witness": null,
    "script": "lean/WP6/GCStaticFin.lean",
    "statement": "Dedup/neighbors/degrees/sdiff/subset-cardinality toolkit."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticFin.lean (+zone_implies_hall, kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C152-LEANASM",
+   "implication": "Mode-A assembly closed in kernel conditional on 8AC-ZONE: mindeg<=3 by 8Q-removal, mindeg>=4 by zone. GC-STATIC is now exactly 8AC-ZONE in kernel. Remaining: zone itself (open mathematics).",
+   "next": "8AC-ZONE itself (open math), falsifiers, or pause",
+   "order": 170,
+   "reason": "Zone assembly induction completing Mathlib-free Hall (user direction: Mathlib assembly).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticFin.lean",
+   "statement": "Zone implies Hall (Mode-A assembly in kernel)."
   }
  ],
  "head": "6f89b8b",

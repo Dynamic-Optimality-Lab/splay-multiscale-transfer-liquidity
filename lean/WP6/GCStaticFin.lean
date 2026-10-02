@@ -216,3 +216,88 @@ theorem length_strict (l₁ l₂ : List Nat) (a : Nat)
     omega
   omega
 
+-- MODE-A ASSEMBLY (C118 in kernel): 8AC-ZONE implies Hall, by induction on
+-- a size bound. Mindeg ≤ 3 case closes by 8Q-removal (C51/8Q + C127
+-- arithmetic, inlined via omega); mindeg ≥ 4 case is the zone hypothesis.
+-- No eligibility premise needed: zone-as-universal already entails it
+-- (an ineligible singleton would refute zone), so the implication is sound
+-- as stated. This is the conditional core: GC-STATIC ⟸ 8AC-ZONE.
+theorem zone_implies_hall (adj : Nat → List Nat)
+    (zone : ∀ Q : List Nat, Q.Nodup →
+      (∀ a ∈ neighbors adj Q, 4 ≤ degree adj Q a) →
+      Q.length ≤ 3 * (neighbors adj Q).length)
+    (n : Nat) : ∀ Q : List Nat, Q.Nodup → Q.length ≤ n →
+      Q.length ≤ 3 * (neighbors adj Q).length := by
+  induction n with
+  | zero =>
+    intro Q _hnd hle
+    cases Q with
+    | nil =>
+      have hN : neighbors adj [] = [] := rfl
+      rw [hN]
+      simp only [List.length]
+      omega
+    | cons b bs =>
+      simp only [List.length] at hle
+      omega
+  | succ n ih =>
+    intro Q hnd hle
+    by_cases hex : ∃ a, a ∈ neighbors adj Q ∧ degree adj Q a ≤ 3
+    · obtain ⟨a₀, hmem₀, hdeg₀⟩ := hex
+      have hRmem : ∀ x ∈ Q.filter (fun b => decide (a₀ ∈ adj b)), x ∈ Q :=
+        fun x hx => (List.mem_filter.mp hx).1
+      obtain ⟨r₀, hr₀Q, hr₀adj⟩ :=
+        (mem_neighbors adj Q a₀).mp hmem₀
+      have hr₀R : r₀ ∈ Q.filter (fun b => decide (a₀ ∈ adj b)) :=
+        List.mem_filter.mpr ⟨hr₀Q, decide_eq_true hr₀adj⟩
+      have hle' : (sdiff Q (Q.filter (fun b => decide (a₀ ∈ adj b)))).length ≤ n := by
+        have hlt := length_strict (sdiff Q (Q.filter (fun b => decide (a₀ ∈ adj b)))) Q r₀
+          (fun x hx => (mem_sdiff Q _ x).mp hx |>.1) hr₀Q
+          (by intro hc
+              obtain ⟨_, hnr⟩ := (mem_sdiff Q _ r₀).mp hc
+              exact hnr hr₀R)
+          (sdiff_nodup Q _ hnd)
+        omega
+      have hIH := ih (sdiff Q (Q.filter (fun b => decide (a₀ ∈ adj b))))
+        (sdiff_nodup Q _ hnd) hle'
+      have hNsub : ∀ x ∈ neighbors adj
+          (sdiff Q (Q.filter (fun b => decide (a₀ ∈ adj b)))), x ∈ neighbors adj Q := by
+        intro x hx
+        obtain ⟨b, hbm, hbx⟩ := (mem_neighbors adj _ x).mp hx
+        have hbQ : b ∈ Q := (mem_sdiff Q _ b).mp hbm |>.1
+        exact (mem_neighbors adj Q x).mpr ⟨b, hbQ, hbx⟩
+      have hNmem : a₀ ∈ neighbors adj Q := hmem₀
+      have hNnot : a₀ ∉ neighbors adj
+          (sdiff Q (Q.filter (fun b => decide (a₀ ∈ adj b)))) := by
+        intro hc
+        obtain ⟨b, hbm, hbx⟩ := (mem_neighbors adj _ a₀).mp hc
+        obtain ⟨hbQ, hbnR⟩ := (mem_sdiff Q _ b).mp hbm
+        have hbR : b ∈ Q.filter (fun b => decide (a₀ ∈ adj b)) :=
+          List.mem_filter.mpr ⟨hbQ, decide_eq_true hbx⟩
+        exact absurd hbR hbnR
+      have hN := length_strict (neighbors adj
+        (sdiff Q (Q.filter (fun b => decide (a₀ ∈ adj b))))) (neighbors adj Q) a₀
+        hNsub hNmem hNnot (nodup_dedup _)
+      have hq : Q.length ≤
+          (sdiff Q (Q.filter (fun b => decide (a₀ ∈ adj b)))).length +
+          (Q.filter (fun b => decide (a₀ ∈ adj b))).length := by
+        have hsub : ∀ x ∈ Q,
+            x ∈ sdiff Q (Q.filter (fun b => decide (a₀ ∈ adj b))) ++
+              Q.filter (fun b => decide (a₀ ∈ adj b)) := by
+          intro x hx
+          simp only [List.mem_append]
+          by_cases h : x ∈ Q.filter (fun b => decide (a₀ ∈ adj b))
+          · exact Or.inr h
+          · exact Or.inl ((mem_sdiff Q _ x).mpr ⟨hx, h⟩)
+        have hle1 := subset_length Q _ hnd hsub
+        rw [List.length_append] at hle1
+        exact hle1
+      have hd : (Q.filter (fun b => decide (a₀ ∈ adj b))).length ≤ 3 := hdeg₀
+      omega
+    · have hzone : ∀ a ∈ neighbors adj Q, 4 ≤ degree adj Q a := by
+        intro a ha
+        by_cases hle : degree adj Q a ≤ 3
+        · exact absurd ⟨a, ha, hle⟩ hex
+        · omega
+      exact zone Q hnd hzone
+
