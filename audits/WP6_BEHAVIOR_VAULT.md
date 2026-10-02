@@ -816,3 +816,6 @@ lean/WP6/GCStaticMatch.lean (exit 0, no warnings, 16 defs+theorems): cap-3 greed
 
 ### C145-1 LEANFLIP path-flip set improvement [PROVED_KERNEL]
 lean/WP6/GCStaticCount.lean (exit 0, no warnings): mupd/pathflip + flip_offpath/flip_set + flip_improve (distinct-bev path flip matches head + preserves all matched). Counting deferred as unnecessary (pointwise+Nodup suffice); cap-side stays with C144 loads + 8AC-BERGE meta. Battles: simp over-normalizes negations (controlled simp only); pair-destruction before equations; subst direction (subst var); generalizing M for IHs.
+
+### C146-1 LEANBOUNDARY Lean track pauses at clean kernel boundary [META]
+No new .lean (deliberate): flip load-validity in full generality needs list-count API absent from core (count_eq_one_of_mem/pos_iff_mem missing; count_append exists) for a consumer (Hall assembly) blocked on finite-set cardinality either way. Kernel matching pair (C144 maximality + C145 improvement) + full positional model through supply (C127-C140) stand as the complete core-Lean contribution. Assembly (maximal+unaugmentable => violator-or-saturated) and zone/matching universals need Mathlib-scale theory or open mathematics. A near-trivial single-upd-cap draft was written and REMOVED rather than banked (anti-triviality). Lean track pauses; GC-STATIC remains OPEN/NO_WITNESS.

@@ -2599,6 +2599,21 @@
    "witness": null,
    "script": "lean/WP6/GCStaticCount.lean",
    "statement": "Path flip strictly enlarges matched set."
+  },
+  {
+   "artifact": "audits/WP6_BEHAVIOR_VAULT.md + hall_lemmas.md LEAN-BOUNDARY (no new .lean)",
+   "date": "2026-10-02",
+   "id": "C146-LEANBOUND",
+   "implication": "Lean track pauses at a clean kernel boundary (matching pair + full positional model through supply). Remaining GC-STATIC work is open mathematics (zone/matching universals) or Mathlib-scale cardinality, not more core-Lean formalization.",
+   "next": "Open mathematics (8AC-ZONE/matching universals), novel falsifiers, or pause",
+   "order": 164,
+   "reason": "Lean density boundary analysis (user direction: Lean density).",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "analysis-only",
+   "statement": "Lean boundary: kernel pair complete; assembly needs Mathlib cardinality."
   }
  ],
  "head": "6f89b8b",

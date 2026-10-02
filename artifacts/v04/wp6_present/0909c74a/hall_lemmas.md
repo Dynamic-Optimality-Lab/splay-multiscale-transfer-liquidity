@@ -784,3 +784,18 @@ augmentable). Consequence for 8AC-X: the tier ledger at stuck points is
 ALWAYS cohort-saturation (siblings + same/adjacent-x past cohorts); exotic
 K-hoarding/T-theft by unrelated bevs never occurs finitely. The exchange
 argument localizes to cohorts; global repair flows through W-augmentation.
+
+## LEAN-BOUNDARY. KERNEL PAIR COMPLETE; ASSEMBLY NEEDS CARDINALITY (C146, META)
+
+Kernel-closed in core Lean (no sorry/axioms, all exit 0): matching cores
+(8Q/zone-step, GCStaticHall), migration locality (GCStaticPos), side dynamics
+(GCStaticSplay), splay skeleton + key safety + delivery (GCStaticLoop,
+GCStaticValid, GCStaticDeliver), engine simulation rotations/doubles/branch
+(GCStaticSim, GCStaticStep2), traces + supply (GCStaticTrace, GCStaticSupply,
+GCStaticLift, GCStaticSupplyTotal), greedy maximality (GCStaticMatch),
+path-flip improvement (GCStaticCount). NOT closed (needs Mathlib finite-set
+cardinality or open mathematics): augmenting-path EXISTENCE for non-maximum
+matchings, flip load bookkeeping in full generality, Hall assembly
+(maximal + unaugmentable => violator-or-saturated), 8AC-ZONE itself. The
+wall stands exactly on 8AC-RM doors; formalization has done all it can in
+core Lean.
