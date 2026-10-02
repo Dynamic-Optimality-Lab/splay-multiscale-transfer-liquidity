@@ -813,3 +813,6 @@ hall_lemmas.md 8AC-STUCK-SIB: stuck + nonempty E1 => 3|E1| sibling-loads (greedy
 
 ### C144-1 LEANMATCH greedy maximality in kernel [PROVED_KERNEL]
 lean/WP6/GCStaticMatch.lean (exit 0, no warnings, 16 defs+theorems): cap-3 greedy with threaded loads; update lemmas; placeIn bound/outcome/some/preserve/mono; runGreedy; greedy_maximal (cap + future-empty + unplaced-implies-full, 3-part induction). Kernel core of 8AC-STUCK-SIB (E1-sibling specialization stays Layer A). Battles: Nat-succ equation friction (induction-tactic form only); subst direction (subst var); underscore arity discipline; rw auto-close limits; motive generalization for inductions. Next: Berge improvement + assembly.
+
+### C145-1 LEANFLIP path-flip set improvement [PROVED_KERNEL]
+lean/WP6/GCStaticCount.lean (exit 0, no warnings): mupd/pathflip + flip_offpath/flip_set + flip_improve (distinct-bev path flip matches head + preserves all matched). Counting deferred as unnecessary (pointwise+Nodup suffice); cap-side stays with C144 loads + 8AC-BERGE meta. Battles: simp over-normalizes negations (controlled simp only); pair-destruction before equations; subst direction (subst var); generalizing M for IHs.

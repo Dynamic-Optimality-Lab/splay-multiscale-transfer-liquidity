@@ -2584,6 +2584,21 @@
    "witness": null,
    "script": "lean/WP6/GCStaticMatch.lean",
    "statement": "Greedy maximality: unplaced implies all-neighbors-full."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticCount.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C145-LEANFLIP",
+   "implication": "Kernel matching pair complete (maximality C144 + improvement C145): stuck-augmentable matchings are strictly improvable; non-improvable stuck points witness violators (8AC-BERGE instantiated). Next: cap-side flip validity + Hall assembly.",
+   "next": "Cap-side flip validity (load adjustment) + Hall assembly toward GC-STATIC",
+   "order": 163,
+   "reason": "Berge flip improvement for Lean density (user direction: Lean density).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticCount.lean",
+   "statement": "Path flip strictly enlarges matched set."
   }
  ],
  "head": "6f89b8b",
