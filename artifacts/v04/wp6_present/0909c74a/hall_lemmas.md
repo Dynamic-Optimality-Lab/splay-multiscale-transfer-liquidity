@@ -650,6 +650,19 @@ Note: deficient $Q$ (any) shrinks to minimal violator (8A/B: $\Delta=1$,
 $\min\deg\ge 4$), so 8AC-ZONE $\iff$ no violator $\iff$ GC-STATIC given 8Q+IH —
 the equivalence is honest, not a shortcut (the work is entirely inside 8AC-ZONE).
 
+## 8AC-FF. FIRST-FAILURE-FRESH-SUFFIX (C121; campaign §5)
+
+Full proof: `audits/WP6_8AC_PROOF.md` §C121. Statement: under ¬8AC
+(matching-form), chronologically-first unsaturable B-event b* at access L with
+f = |E1(L)|, r = earlier same-access B-events, satisfies r >= 3f. Hence Case A
+(f > 0): r >= 3, L B-heavy (e_B >= 3f+1); Case B (f = 0): vacuous, descent
+required. Proof: E1(L) adjacent only to L-Bevs (per-Bev access scoping +
+causality ai<=acc); prefix matching loads E1(L) by <= r; r < 3f leaves free
+E1 cap, extending the matching through b* contradicts first-failure.
+Dependencies: E1 construction/completeness (abl 64-66), cap 3 iff sited,
+B-demand 1, 8S, chronological order, first-failure well-ordering.
+Status: PROVED_AUTHOR. Lean: ffs_free, eb_suffix (kernel).
+
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
 Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;

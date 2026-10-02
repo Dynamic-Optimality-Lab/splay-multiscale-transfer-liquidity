@@ -2202,6 +2202,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (kill)",
    "witness": null
+  },
+  {
+   "artifact": "audits/WP6_8AC_PROOF.md C121 + hall_lemmas.md 8AC-FF + lean ffs_free/eb_suffix + WP6_COMPRESSION_DAG.md update",
+   "date": "2026-09-30",
+   "id": "C121-FFFS",
+   "implication": "First-failure dichotomy banked (Case A B-heavy suffix / Case B repeat descent queued); transient-escape closure is now the sole front.",
+   "next": "Repeat-case backward descent (Case B rank + creator/rebuilder); typed trap",
+   "order": 139,
+   "reason": "Campaign Phase 1-2: first-failure fresh-suffix proof (Mode B opening).",
+   "result": "r>=3f proved (E1-exclusivity + free-cap extension); Case A B-heavy corollary; Case B queued. Lean exit 0.",
+   "script": "prose-proof+lean",
+   "statement": "First unsaturable B-event lies at B-position >=3f in its access.",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "8AC (step C121)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

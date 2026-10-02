@@ -15,6 +15,9 @@ Update by editing statuses only; do not expand into prose.
        8I residual Delta <= sum q_j forces a positive q_j block)
   =>[CONDITIONAL] fresh analysis at L (8E: E1(L) complete to Q_L; E1<>empty =>
        |Q_L|>=4; E1-empty => repeat-habitat demand-without-supply)
+  =>[PROVED_AUTHOR C121] first-failure fresh-suffix (8AC-FF): first unsaturable
+       b* at L with r >= 3f (E1(L) exclusive to L-Bevs; free-cap extension);
+       Case A (f>0): r>=3, L B-heavy; Case B (f=0): repeat descent required
   =>[CONDITIONAL] anchored present (8U: past-x-Aevs K-anchor; FRESH-CHANNEL:
        every demand has E1<>empty or E4-pristine setup (banked C31))
   =>[FIRST UNSUPPORTED] transient/old escape closure: anchored + E2/W/E7/E4

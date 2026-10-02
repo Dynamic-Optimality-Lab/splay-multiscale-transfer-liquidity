@@ -48,6 +48,17 @@ theorem heavy_cover (o k t : Nat) (h : o ≤ 3 * (1 + k) + t) :
     o ≤ 3 + 3 * k + t := by
   omega
 
+-- C121 (8AC-FF) arithmetics: free E1 slots force first-failure position.
+-- f fresh sources (cap 3), r earlier same-access events: r+1 <= 3f leaves a
+-- free slot (r < 3f); contrapositive: stuck open => r >= 3f. Suffix B-heavy:
+-- e_B >= r+1 >= 3f+1 (strictly B-heavy when f > 0).
+theorem ffs_free (f r : Nat) (h : r + 1 ≤ 3 * f) : r < 3 * f := by
+  omega
+
+theorem eb_suffix (f r eB : Nat) (h1 : 3 * f ≤ r) (h2 : r + 1 ≤ eB) :
+    3 * f + 1 ≤ eB ∧ 3 * f < eB := by
+  omega
+
 -- 8S end-to-end (C109): splay StepEv triples (two-key zig / three-key double,
 -- distinct keys by rotation mechanics: node ≠ parent/grandparent) have lo < hi,
 -- hence sites exist by sited_always. Triple modeled as key-list with pairwise
