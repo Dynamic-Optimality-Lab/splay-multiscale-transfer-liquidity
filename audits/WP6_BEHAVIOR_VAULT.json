@@ -2186,6 +2186,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (meta)",
    "witness": null
+  },
+  {
+   "artifact": "exact all-T0-shapes: n=4 (14 shapes) + n=5 (42) L<=4 + n=6 (132) L<=4 + n=7 (429) L<=3, inline",
+   "date": "2026-09-30",
+   "id": "C120-EXACT-SHAPES",
+   "implication": "T0-shape axis closed at small n (vine-only bias removed exactly); violator hides in no small shape.",
+   "next": "Lean positional loop model; exchange tier-ledger; temporal matching theory",
+   "order": 138,
+   "reason": "All-BST-shape exhaustive (the one falsification axis never covered exactly).",
+   "result": "n4 65k + n5 467k + n6 2.99M + n7 1.27M: ALL CLEAN (~4.8M).",
+   "script": "inline-exhaustive",
+   "statement": "No Hall violator in any T0 shape at n<=7 (exact).",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (kill)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
