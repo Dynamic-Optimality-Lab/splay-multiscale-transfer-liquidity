@@ -736,3 +736,15 @@ siblings_t <= 3|sites_t|; overflow spills backward). Claim: older sites always h
 positional density (multi-session theory). FWD greedy totality (340/340 T-first-FWD incl. C123 TB + C124/C125)
 is its finite face. This replaces all forward-escape framings (C121-C124): the past is the reservoir, E1 is
 the birthright, residual-sufficiency is the single remaining obligation (same wall, correct orientation).
+
+## 8AC-HD. HOLEDEMAND: COUNTING RESIDUAL-SUFFICIENCY DEAD (C126, PROVED_AUTHOR)
+
+Measure (holedemand.json, 80 hists walks+pushers): per sited site i, claim(i) =
+#future bevs eligible via K/W/E2/E7/E4: 82.4% sites claim>3 (17127/20793),
+median-claim med 15 / max 88, sitemax 406 (K-claims 108). Future demand exceeds
+cap-3 almost everywhere, yet maxflow saturates in all 80 (and ~200M cumulative):
+the assignment (matching), not per-site counting, carries GC-STATIC. Hence
+HOLE-IND in counting form is DEAD (consistent with 8N(d) sharing-infinity and
+8AC-D proportionality-dead). Residual-sufficiency survives only as matching/
+contention theory (positional density, multi-session) = 8AC-RM door #1; else a
+verified counterexample (door #2). No other doors remain.
