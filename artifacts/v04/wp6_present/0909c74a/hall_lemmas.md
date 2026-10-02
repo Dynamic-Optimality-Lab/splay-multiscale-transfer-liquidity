@@ -553,6 +553,19 @@ diversify (steer N ~= 4*e_B). Wall final-final form: ROUTING RULE ONLY
 adversarial incl. kill-witnesses) with exchange skeleton 8AC-X (tier-ledger +
 T-diversity enclosure-leak open).
 
+## 8AC-H. CHAIN-HITS PROPORTIONALITY (C104: (i) PROVED, (ii) open)
+
+Census (1070 bursts, 88 big e_B>=10): imprint-hits/e_B min 1.00 med 1.56;
+hits/chainlen min 0.48 med 0.78; worst big (chain60, eB30, hits30).
+(i) PROVED_AUTHOR: chain length L >= e_B (each StepEv climbs <= 2 levels, so
+e_B >= d/2 with d+1 = L; hence L >= e_B). Per-burst demand e_B <= 3H needs only
+H/e_B >= 1/3 (cap-3 over hitting Aevs, each hitting >= 1 burst event).
+(ii) OPEN: hit-rate H >= L/3 (chain-fresh exists finitely (min-hit 0.000):
+fresh chains occur, always non-heavy so far (E1 covers via shared rides);
+universal hit-rate false without the heavy/fresh dichotomy). Composition with
+E1/K/E4/E2/E7 = full N = one-access 8F (same wall). So 8AC-H sharpens but does
+not reduce: the atom stays 8F-vs-sharing (routing).
+
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
 Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;

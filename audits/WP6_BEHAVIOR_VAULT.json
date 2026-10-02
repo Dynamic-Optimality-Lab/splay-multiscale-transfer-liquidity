@@ -1900,6 +1900,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "chain-hits census (inline) + hall_lemmas.md 8AC-H",
+   "date": "2026-09-30",
+   "id": "C104-CHAINHITS",
+   "implication": "Climb bound L>=e_B universal (i); hit-rate open (ii); atom stays 8F-vs-sharing routing.",
+   "next": "Hit-rate density lemma (path-crossing); exchange tier-ledger; Lean",
+   "order": 120,
+   "reason": "Chain-hits proportionality census for 8AC-H (hits vs e_B vs chainlen).",
+   "result": "1070 bursts: H/eB min 1.00 med 1.56; H/L min 0.48; L>=e_B proved.",
+   "script": "inline-census",
+   "statement": "Chain-hits cover e_B 3x over finitely; climb bound universal.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
