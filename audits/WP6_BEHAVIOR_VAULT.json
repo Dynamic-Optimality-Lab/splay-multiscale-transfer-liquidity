@@ -1804,6 +1804,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_residual.py -> artifacts/v04/wp6_present/0909c74a/residual.json; scripts/wp6_budget.py -> artifacts/v04/wp6_present/0909c74a/budget.json + hall_lemmas.md 8AC-R",
+   "date": "2026-09-30",
+   "id": "C98-RESIDUAL-BUDGET",
+   "implication": "Capacity never binds (26x margin); wall = routing rule only (8AC-greedy-sufficiency).",
+   "next": "Greedy-killer hunt (all-FWD-tiers fail + maxflow ok); exchange formalization; Lean",
+   "order": 114,
+   "reason": "Post-E1K residual size + per-block reuse-budget census.",
+   "result": "E1K saturates 82%; reuse over-budget 0/200 worst 0.038.",
+   "script": "scripts/wp6_residual.py",
+   "statement": "Counting closes with 26x margin; only explicit routing rule missing.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

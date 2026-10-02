@@ -508,3 +508,15 @@ REV lets late events steal early-E1 as old). Exchange-reduction sketch: E1
 (overflows only) by density (8Z/8AB) — residual Hall = variation (hole, smaller:
 only post-E1K overflow needs transient cover). Status: FINITE_STRONG (29x0/501)
 + reduction sketch; NOT closed (T-residual variation = same wall, narrowed).
+
+## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
+
+Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;
+udget.json 200 hist: reuse-budget over 0/200, worst SUMc/R = 0.038 (3.33/88)):
+capacity margin ~26x — shortage arguments are DEAD; the entire remainder is the
+routing rule (explicit cap-3 assignment that never sticks). 8AC-greedy-sufficiency
+(FWD + T-before-K never sticks) is the sharp obligation: finite-strong (29 perfect
+combos/501 + t75-artifact), mechanism identified (K-last backstop, owner-first),
+universal proof open (online-chronological rule; starve_min warns online rules can
+fail — tiered rule unfalsified). Next: greedy-killer hunt (all-FWD-tiers fail +
+maxflow ok) to kill-or-crown the rule; exchange formalization; Lean track.
