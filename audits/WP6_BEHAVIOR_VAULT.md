@@ -769,3 +769,6 @@ lean/WP6/GCStaticPos.lean (exit 0, no sorry/admit/axioms): underL/underR operato
 
 ### C129-1 LEANSPLAY double-step delivery + side dynamics [PROVED_KERNEL]
 lean/WP6/GCStaticSplay.lean (exit 0, no warnings): zzR/zzL/zagLR/zagRL transformers + delivery (accessed key 2->0 each); goesL/goesR sides + preservation under underL/underR (4 thms: root key fixed => sides fixed); rotR/rotL keep/break (4 thms: below-new-root stays, between-old-and-new-root switches side). Co-location dynamics kernel-pinned: breaks exactly between old/new root, preserved everywhere else. Next C130: fuel-bounded loop + root delivery.
+
+### C130-1 LEANLOOP splay skeleton + key-membership preservation [PROVED_KERNEL]
+lean/WP6/GCStaticLoop.lean (exit 0, no warnings, 12 theorems): faithful recursive splay skeleton (zig + 4 doubles with conditional fixup, matches only on args); 6 transformer-mem + 4 fixup-mem (Or AC-normalization); splay_at_root (shape-split + root-test); mem_splay via splay.induct functional induction (10 cases, refine-with-explicit-motive). Battles won: splitter-friendly single-match definitions; cases-before-simp for split equations; by_cases+if_pos/if_neg for Bool ifs. Next C131: BST validity + conditional delivery.

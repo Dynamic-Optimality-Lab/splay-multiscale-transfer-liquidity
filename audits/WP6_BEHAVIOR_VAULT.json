@@ -2346,6 +2346,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (meta)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/GCStaticLoop.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C130-LEANLOOP",
+   "implication": "Key safety of the full splay skeleton kernel-closed (no key created/destroyed by any StepEv). Next C131: BST validity predicate + conditional root delivery + simulation relation with pointer engine.",
+   "next": "C131 BST validity + conditional delivery (splayed key reaches root on valid trees)",
+   "order": 148,
+   "reason": "Structural splay skeleton + key-membership preservation (user direction: Lean positional model).",
+   "result": "12 theorems exit 0: 6 transformer-mem (rotR/rotL/zzR/zzL/zagLR/zagRL), 4 fixup-mem (fixLL/fixLR/fixRR/fixRL), splay_at_root, mem_splay via splay.induct functional induction (10 cases). Key battles: equation splitter needs concrete shapes (cases before simp), Bool-if idiom (by_cases+if_pos/if_neg), refine-with-motive beats induction-with for explicit eliminators. Zero kills.",
+   "script": "lean/WP6/GCStaticLoop.lean",
+   "statement": "Splay skeleton preserves key membership in kernel.",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
