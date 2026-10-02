@@ -2490,6 +2490,22 @@
    "script": "lean/WP6/GCStaticEngine.lean",
    "statement": "Emitted intervals proper; trace fits size.",
    "result": "emitTrace_valid (10-case induct: vacuous miss arms, zig via identity+separation, doubles via IH + parent separation) + emitTrace_length (10-case induct + omega), exit 0. Battles: List.mem_singleton is not simp-only (use simp at hyp); beq arg order; ne_of_lt/gt absent (omega pattern); cases substitutes goal not hyps; bullet indent sensitivity; leaf needs def-unfold before simp-at. Zero kills."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticLift.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C139-LEANLIFT",
+   "implication": "Engine/skeleton traces agree in length; every emission on range-valid trees meets the supply hypothesis. Remaining: supply lift application (event counts to Aev totals per access) then the open wall (zone/matching universals).",
+   "next": "C140 supply lift: per-access Aev totals from event counts",
+   "order": 157,
+   "reason": "Loop-lifted agreement + fused event validity (user direction: trace induction).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticLift.lean",
+   "statement": "Trace lengths agree; emissions meet supply hypothesis.",
+   "result": "trace_length_eq (uniform full-simp closers) + event_ok fused triple (keyrange threading via Or-paths, distinctness via bounds, omega closes), exit 0. Battles: rw is arm-specific (use simp with cond hyps); Or-nesting depth by side (3 vs 4 levels); mem_singleton needs full simp. Zero kills."
   }
  ],
  "head": "6f89b8b",

@@ -796,3 +796,6 @@ lean/WP6/GCStaticNav.lean (exit 0, no warnings): getPath + direction lemmas; rew
 
 ### C138-1 LEANEMIT engine-side emission validity + length [PROVED_KERNEL]
 lean/WP6/GCStaticEngine.lean (exit 0, no warnings): emitTrace (one interval per level, zig pairs + double triples); emitTrace_valid (every interval proper on valid trees, 10-case induct); emitTrace_length (trace fits size). Battles: simp-at-hyp idiom; beq order; omega for disequalities; substitution asymmetry; indent sensitivity. Next: loop-lifted agreement + supply lift.
+
+### C139-1 LEANLIFT loop-lifted agreement + fused event validity [PROVED_KERNEL]
+lean/WP6/GCStaticLift.lean (exit 0, no warnings): trace_length_eq (emission and step traces agree in length, uniform simp closers); event_ok (every emission on range-valid trees satisfies 1<=lo<hi<=n, keyrange threading + bounds + omega). Battles: rw arm-specificity; Or-depth by side; singleton simp. Next C140: supply lift application.
