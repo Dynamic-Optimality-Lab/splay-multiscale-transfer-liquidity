@@ -1772,6 +1772,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (kill)",
    "witness": null
+  },
+  {
+   "artifact": "exact L5 PARTIAL: n=16 L5 chunks 1-72/150 (16106112 histories), vine-left, inline -- STOPPED per Decision A, NOT claimed complete",
+   "date": "2026-09-30",
+   "id": "C96-EXACT-16L5-PARTIAL",
+   "implication": "Finite campaign CLOSED (Decision A). All broader n/L sweeps halted. Total exact ~164M + targeted ~200k, zero kill. Pivot to arbitrary-n proof (8AC).",
+   "next": "8AC per-block proportional cover + block-greedy sufficiency test; Lean splay-model",
+   "order": 112,
+   "reason": "Decision A: stop finite search at next safe chunk boundary; record partial honestly with tail-coverage fix (explicitly NOT exact-complete).",
+   "result": "n=16 L5 chunks 1-72/150 (16.1M): ALL CLEAN. No further sweeps launched.",
+   "script": "inline-exhaustive",
+   "statement": "Finite falsification burden met; n=16 L5 partial, never universality.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (kill)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
