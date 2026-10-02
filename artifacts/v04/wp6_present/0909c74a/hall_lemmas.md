@@ -874,3 +874,19 @@ The W-residual is now precisely chain-key recurrence (multi-session
 positional density), connectable to Lean co-location dynamics (C128/C129
 side-break = co-location change) + migration (8R/8M). Status: PROVED_AUTHOR
 (chain definitions); recurrence bound open (the wall, narrowed).
+
+## 8AC-REC. RECENT-POOL RECURRENCE LAW + FRESH FALLBACK (C150, FINITE-STRONG)
+
+Measure (recur.json, 120 histories, 59k triple-keys): 81.9 percent of
+B-triple keys previously imprinted (sited A-rotated); recency med 1 (!!),
+p90 16, max 86 — imprints live in the recent pool (C106 recent-co-location
+quantified). Burst triple-coverage med 1.0; all zero-coverage cases are J=0
+(first access, vacuous). Heavy-burst min over J>0: 0.005 (eB=67, s=1 J=20:
+fresh chain) — universality FALSE, but that burst is E1-trivial (67 bevs,
+67 fresh E1 sites, K/T ~0): recurrence gaps coincide with E1 abundance
+(portfolio balance; silent-push debt repaid by burst E1).
+Sketch status: recurrence (recent-pool, 82 percent/med-1) + fresh/anchored
+fallback (E1/K) + relational (E2/E7) + setup (E4) = full supply-side map;
+each channel characterized (locality, arrow, mechanism). Composition
+(counting with reuse across channels) remains the wall (8AC-RM door 1).
+No new idea for the count here; the supply side is closed.

@@ -828,3 +828,6 @@ augment2.json futdepth (med 20/max 69 future-grazer depths; past-loaders 0 every
 
 ### C149-1 WCHAIN W time-arrow + chain mediation [PROVED_AUTHOR]
 hall_lemmas.md 8AC-WOLD (all W-edges strictly backward: same-access E3 subset E1) + 8AC-WWIT (non-xx chain-key witness per W-edge). Explains codist K-vs-W split + C124 arrow structurally. Finite faces: t75 site-13 K-touch {38,39}; live W-edges with far witnesses (379 via 31). W-residual = chain-key recurrence. Zero kills.
+
+### C150-1 RECUR recent-pool recurrence law [FINITE-STRONG]
+scripts/wp6_recur.py -> recur.json (59k triple-keys): recurrence 81.9pct, recency med 1 / p90 16 / max 86; burst coverage med 1.0, zeros all J=0; heavy min J>0 = 0.005 (eB=67 fresh, E1-trivial 67x67). hall_lemmas.md 8AC-REC: supply side fully mapped; composition is the remainder. Zero kills.
