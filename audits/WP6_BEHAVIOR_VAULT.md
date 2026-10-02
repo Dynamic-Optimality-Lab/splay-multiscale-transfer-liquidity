@@ -778,3 +778,6 @@ lean/WP6/GCStaticValid.lean (exit 0, no warnings, 8 theorems): allLT/allGT/valid
 
 ### C132-1 LEANDELIVER conditional root delivery [PROVED_KERNEL]
 lean/WP6/GCStaticDeliver.lean (exit 0, no warnings): deliver (valid t + mem t x => rootKey (splay x t) = some x) via 10-case splay.induct; rootKey_some inversion; 6 valid-decomp helpers; restated frame (mem/bounds/search/splay). Doubles route via search correctness into IH, invert delivered key, discharge fixup; off-route vacuous by bounds. Skeleton now certified end-to-end at model level. Next: pointer-engine simulation relation.
+
+### C133-1 LEANSIM pointer-engine simulation at rotation level [PROVED_KERNEL]
+lean/WP6/GCStaticSim.lean (exit 0, no warnings, 15 theorems): PTree mirror of engine nodes; protR/protL line-by-line transliterations; toSTree projection; correspondence (engine step = model step); wf preservation; pointer-side bounds + pattern distinctness; emit/emit3 with lo<hi; sited chain; zig_sited/double_sited end-to-end (valid pattern + key range => emission carries sites, all StepEv shapes). Battles: True.intro for folded equalities; explicit middle nesting; simp-normalization over rfl. Next: loop-level simulation (event sequences).

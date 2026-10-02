@@ -2394,6 +2394,22 @@
    "script": "lean/WP6/GCStaticDeliver.lean",
    "statement": "Valid+member => splayed key at root, in kernel.",
    "result": "deliver + rootKey_some + 6 valid-decomp + restated frame, exit 0. 10-case functional induction: vacuous off-route cases by bounds, doubles via search-routing + rootKey inversion + fixup discharge. Battles: Nat/STree binder slips, missing y args, explicit-motive refine. Zero kills."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticSim.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C133-LEANSIM",
+   "implication": "Rotation-level engine=model correspondence kernel-closed; emission-to-supply chain closed for all StepEv shapes (given key range). Next: loop-level simulation (splay_trace sequence vs splay skeleton) + triple-to-Aev accounting.",
+   "next": "Loop-level simulation: splay_trace event sequence vs splay skeleton steps",
+   "order": 151,
+   "reason": "Pointer-engine simulation at rotation level (user direction: simulation relation).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticSim.lean",
+   "statement": "Engine rotation = model rotation; valid emission carries sites.",
+   "result": "15 theorems exit 0: reparent_toSTree, protR/L_toSTree (correspondence), reparent_wf, wf_protR/L (link preservation), pallLT/GT_root, pattern_ne_L/R (distinct keys), emit_lt/emit3_lt, sited_of_lt, zig_sited/double_sited (emission-to-supply). Battles: simp-only folds a=a to True; middle-nesting needs explicit brackets; iota-fragile rfl replaced by simp-normalization. Zero kills."
   }
  ],
  "head": "6f89b8b",
