@@ -303,3 +303,9 @@ theorem zigzigRR_bound (x p g : Nat) (d c b a : STree) (y m : Nat)
   have hfin : sdepth (rotL (rotL (.node g d (.node p c (.node x b a))))) y
       = some m2 := hh2
   exact ⟨m2, hfin, by omega⟩
+
+-- Queued (C112b): zigzag LR/RL doubles (subtree framing: invert via
+-- rw [sdepth_node]-style one-level unfolding + by_cases on Prop conditions;
+-- simp-normalization proved shape-unstable across nesting depths).
+-- Splay-loop de-pathing/lift-accounting needs the loop model (SplayLoop.lean
+-- skeleton exists: classifier + fuel driver + trace bound).

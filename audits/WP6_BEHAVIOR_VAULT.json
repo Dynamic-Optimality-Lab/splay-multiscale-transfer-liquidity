@@ -2060,6 +2060,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (Layer B)",
    "witness": null
+  },
+  {
+   "artifact": "8S Layer-A correspondence audit (code-reading, no new files)",
+   "date": "2026-09-30",
+   "id": "C112-8S-AUDIT",
+   "implication": "8S triple-emission link verified exact at code lines (audited, not formal sim); formal sim relation queued with loop model.",
+   "next": "Splay-loop model + simulation relation (formal); exchange tier-ledger",
+   "order": 130,
+   "reason": "Close 8S documentation loop: verify lo/hi/sites correspondence by reading.",
+   "result": "legacy_embedding splay_trace 107-143 (lo=min/hi=max confirmed) + _sites 156-161 + encode._sites_nonempty 29-35 (i=lo witness confirmed).",
+   "script": "code-audit",
+   "statement": "Triple-emission correspondence audited exact at cited lines.",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (Layer A link)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
