@@ -825,3 +825,6 @@ scripts/wp6_rides.py -> rides.json (535 heavy bursts eB>=8, full-history window,
 
 ### C148-1 COHORTX cohort-localized exchange v2 [SKETCH + FINITE]
 augment2.json futdepth (med 20/max 69 future-grazer depths; past-loaders 0 everywhere); AU-LEN5 single-displacement law 526/526; hall_lemmas.md 8AC-XC (per-channel locality table + processing-precedence + precise tier-ledger hole + conditional assembly). Exchange fully mapped; deficiency forcing remains the wall. Zero kills.
+
+### C149-1 WCHAIN W time-arrow + chain mediation [PROVED_AUTHOR]
+hall_lemmas.md 8AC-WOLD (all W-edges strictly backward: same-access E3 subset E1) + 8AC-WWIT (non-xx chain-key witness per W-edge). Explains codist K-vs-W split + C124 arrow structurally. Finite faces: t75 site-13 K-touch {38,39}; live W-edges with far witnesses (379 via 31). W-residual = chain-key recurrence. Zero kills.

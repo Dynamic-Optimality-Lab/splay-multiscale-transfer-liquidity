@@ -844,3 +844,33 @@ W-global residual (54 percent of placements) is the load-bearing remainder.
 => GC-STATIC (constructive) => E_B <= 3 S_A => D <= 6 S_A => service =>
 MSTL-14P (conditional chain, WP6_CONDITIONAL_CHAIN.md). Status: SKETCH with
 all finite faces green; tier-ledger + W-residual open (the wall).
+
+## 8AC-WOLD. EVERY W-EDGE POINTS STRICTLY BACKWARD (C149, PROVED_AUTHOR)
+
+Statement: every W-edge (bev j at acc, site i) satisfies acc_of(i) < acc.
+Proof: W = E3 minus K minus E1set (chan_of tiers). E3 requires ai <= acc
+(build_tagged E3: ai <= idx explicit). Same-access E3 (ai = acc) is sited
+accA[acc] hence in E1set (E1 = accA[acc]-sited, build_tagged), so excluded
+from W. Hence ai < acc for all W. Dependencies: build_tagged E1/E3
+construction + accA scoping (code-cited, Layer A). Finite face: 51,292/51,292
+placements loader-newer-or-same with W 100 percent loader-newer (wcharge
+trel); strengthens C124/C125 arrow for W from finite law to theorem.
+
+## 8AC-WWIT. W IS CHAIN-MEDIATED GRAZING (C149, PROVED_AUTHOR)
+
+Statement: every W-edge (bev-x j, site i) has a witness w != xx with
+w in Arot(i) intersect triple(j) (a non-xx chain key mediates).
+Proof: by 8AC-WOLD, ai < acc. K-def is (xx in Arot(i) and acc_of(i) < acc);
+W excludes K, so with older established, xx not in Arot(i). E3-def gives
+nonempty Arot(i) intersect triple(j); any member w differs from xx.
+Hence the witness. Pure logic + defs, no splay content.
+Consequences: (i) explains codist split (C142): K loader-distance med 0
+(xx-anchored, fixed key) vs W med 23/max 493 (chain keys migrate globally);
+(ii) W-neighbors of x-bursts = sites imprinted with x's CHAIN keys
+(positional!); (iii) t75 site-13 anatomy: K via path-touch (Arot[13] =
+{38,39} ∋ xx=39, acc 2 < 3) — 8U across adjacent keys live; (iv) live
+W-edges verified with far witnesses (bev xx379 via witness 31).
+The W-residual is now precisely chain-key recurrence (multi-session
+positional density), connectable to Lean co-location dynamics (C128/C129
+side-break = co-location change) + migration (8R/8M). Status: PROVED_AUTHOR
+(chain definitions); recurrence bound open (the wall, narrowed).
