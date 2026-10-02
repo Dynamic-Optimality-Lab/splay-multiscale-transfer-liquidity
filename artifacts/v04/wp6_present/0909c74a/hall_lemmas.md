@@ -700,7 +700,8 @@ verified counterexample. All other doors are proved shut or proved harder.
 
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
-Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;
+Measures (
+esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;
 udget.json 200 hist: reuse-budget over 0/200, worst SUMc/R = 0.038 (3.33/88)):
 capacity margin ~26x � shortage arguments are DEAD; the entire remainder is the
 routing rule (explicit cap-3 assignment that never sticks). 8AC-greedy-sufficiency
@@ -709,3 +710,29 @@ combos/501 + t75-artifact), mechanism identified (K-last backstop, owner-first),
 universal proof open (online-chronological rule; starve_min warns online rules can
 fail � tiered rule unfalsified). Next: greedy-killer hunt (all-FWD-tiers fail +
 maxflow ok) to kill-or-crown the rule; exchange formalization; Lean track.
+
+## 8AC-TO. ELIGIBILITY TIME-ARROW: NO EDGE POINTS FORWARD IN TIME (C125, PROVED_AUTHOR-by-construction)
+
+build_tagged (scripts/wp6_eventflow_abl.py): every channel draws sites only from accesses <= bev acc:
+E1 = accA[idx] (same); E4 = accA[setup[xx]] with setup[xx]<=idx, !=idx (older); E2: u in (prevkeep,idx) (older);
+E7: v<u<=idx (older); E3: ai<=idx explicit. Forward edges (site-acc > bev-acc) DO NOT EXIST structurally.
+Finite confirmation: 51,292 greedy placements across walk+pusher families, 100 percent loader-newer-or-same,
+zero forward uses (wcharge.json trel + wcharge_pusher.json trel). CORRECTION to C124 banked text: the arrow is
+BACKWARD-grazing (bevs use older-or-same sites), NOT forward-escape; quartile gradient re-read: early bevs meet
+few older sites (own-E1 40pct), late bevs graze the deep past (W 73pct on older sites).
+
+## 8AC-PRISTINE. OWN-E1 PRISTINE AT BIRTH (C125, PROVED_AUTHOR-by-construction)
+
+Corollary of 8AC-TO: at access t, sites_t have ZERO load from past bevs (past bevs cannot touch future sites:
+edges do not exist). Own-E1 pool opens each access with full 3|sites_t| slots; only siblings compete for it.
+Siblings-overflow spills to backward channels (E2/E4/K/W/E7 into older sites with residual capacity).
+
+## 8AC-IND. FWD INDUCTION FRAME: PRISTINE-E1 + RESIDUAL-SUFFICIENCY (C125, SKETCH with one HOLE)
+
+Induction over accesses t=0..L-1. At step t: siblings place E1-first into pristine 3|sites_t| (fits iff
+siblings_t <= 3|sites_t|; overflow spills backward). Claim: older sites always hold enough residual for spill
++ their own future demand is already... HOLE-IND (residual-sufficiency universal): needs per-site demand bound
+(total future W/K claims on site i <= 3 - E1-load_i) from rotation-occupancy budgets (ML OCC lemmas) or
+positional density (multi-session theory). FWD greedy totality (340/340 T-first-FWD incl. C123 TB + C124/C125)
+is its finite face. This replaces all forward-escape framings (C121-C124): the past is the reservoir, E1 is
+the birthright, residual-sufficiency is the single remaining obligation (same wall, correct orientation).

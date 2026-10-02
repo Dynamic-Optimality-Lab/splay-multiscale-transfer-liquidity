@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from wp6_hallcore import build_graph, maxflow_cap3
 from wp6_tightest import vine
 from wp6_eventflow import to_ptr, splay_A, splay_B_push
-from wp6_trap import greedy_M, gen_walk, chan_of
+from wp6_trap import greedy_M, gen_walk, gen_seed, chan_of
 
 
 def step(sid, msg):
@@ -55,6 +55,7 @@ def analyze(n, T0, H, tiers=("T", "E1", "E4", "K")):
     chanmix = Counter()
     quartmix = defaultdict(Counter)
     wrel = Counter()
+    trel = defaultdict(Counter)
     siteload_W = Counter()   # aid -> W placements
     siteload_all = Counter()
     loader_acc = {}
@@ -79,12 +80,13 @@ def analyze(n, T0, H, tiers=("T", "E1", "E4", "K")):
                 lab = ("W" if "W" in ch else ("E2" if "E2" in ch else "E7"))
                 break
         chanmix[lab] += 1
+        trel[lab]["older" if aj < ai else ("same" if aj == ai else "newer")] += 1
         q = min(3, (4 * aj) // max(1, len(pre2)))
         quartmix[q][lab] += 1
         siteload_all[i] += 1
         if "W" in ch:
             siteload_W[i] += 1
-            wrel["past" if aj < ai else ("same" if aj == ai else "future")] += 1
+            wrel["older" if aj < ai else ("same" if aj == ai else "newer")] += 1
     # per-access headroom
     sites_of = defaultdict(list)
     for aid2, t in acc_of.items():
@@ -107,6 +109,7 @@ def analyze(n, T0, H, tiers=("T", "E1", "E4", "K")):
         if h < 0:
             neg += 1
     return {"stuck": len(short), "chanmix": dict(chanmix), "wrel": dict(wrel),
+            "trel": {k: dict(v) for k, v in trel.items()},
             "quartmix": {k: dict(v) for k, v in quartmix.items()},
             "sitemaxW": max(siteload_W.values()) if siteload_W else 0,
             "sitemaxall": max(siteload_all.values()) if siteload_all else 0,
@@ -115,11 +118,14 @@ def analyze(n, T0, H, tiers=("T", "E1", "E4", "K")):
 
 
 def main() -> int:
-    step("WC-00", "W-charge census: FWD|T,E1,E4,K on walks n<=512 L70")
+    import sys as _s
+    fam = _s.argv[1] if len(_s.argv) > 1 else "walk"
+    step("WC-00", "W-charge census: FWD|T,E1,E4,K family=%s" % fam)
     N = 150
     agg_chan = Counter()
     agg_wrel = Counter()
     agg_quart = defaultdict(Counter)
+    agg_trel = defaultdict(Counter)
     sitemaxW = 0
     sitemaxall = 0
     head_mins = []
@@ -128,7 +134,7 @@ def main() -> int:
     kills = 0
     done = 0
     for s in range(N):
-        n, T0, H = gen_walk(5000 + s)
+        n, T0, H = gen_walk(5000 + s) if fam == "walk" else gen_seed(5000 + s, b"wp")
         v = analyze(n, T0, H)
         if v is None:
             continue
@@ -142,6 +148,8 @@ def main() -> int:
         agg_wrel.update(v["wrel"])
         for q, c in v["quartmix"].items():
             agg_quart[q].update(c)
+        for lab, c in v["trel"].items():
+            agg_trel[lab].update(c)
         sitemaxW = max(sitemaxW, v["sitemaxW"])
         sitemaxall = max(sitemaxall, v["sitemaxall"])
         head_mins.append(v["head_min"])
@@ -153,11 +161,13 @@ def main() -> int:
     out = {"evals": done, "stuck": stuck, "kills": kills,
            "chanmix": dict(agg_chan), "wrel": dict(agg_wrel),
            "quartmix": {k: dict(v) for k, v in agg_quart.items()},
+           "trel": {k: dict(v) for k, v in agg_trel.items()},
            "sitemaxW": sitemaxW, "sitemaxall": sitemaxall,
            "head_min": min(hm) if hm else None,
            "head_med": (sorted(hm)[len(hm) // 2] if hm else None),
            "head_neg_accesses": head_negs}
-    (ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / "wcharge.json").write_text(
+    (ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / (
+        "wcharge.json" if fam == "walk" else ("wcharge_%s.json" % fam))).write_text(
         json.dumps(out, indent=1, sort_keys=True, default=str), encoding="utf-8")
     step("WC-01", json.dumps(out, sort_keys=True))
     return 0
