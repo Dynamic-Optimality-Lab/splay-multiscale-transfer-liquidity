@@ -960,3 +960,30 @@ This is the decoupling-budget (8T-shape) made quantitative. Mechanism
 (WHY tight forces mild / affordable-only heaviness) remains open: needs
 push-banking vs splash-drain accounting with state-distinctness (8R) and
 freshness bounds. Status: FINITE-STRONG shape + open mechanism.
+
+## 8AC-SYNCED. SYNCED DIVERGENCE IS EXACTLY THE A-TRIVIAL ZIG (C159,
+PROVED MODULO LOOP-STEP CORRESPONDENCE; FINITE-CONFIRMED 674/674)
+
+Statement: per-key synced access (|d^A - d^B| <= 2) with overflow >= 1
+(e_B > 3e_A) satisfies (e_A, e_B) = (0, 1) exactly (A-trivial single
+zig/double). In particular synced overflow <= 1 always, and synced with
+d^A >= 1 is never divergent (overflow <= 0).
+Finite face: 674/674 synced-divergent accesses are exactly (e_A, e_B) =
+(0, 1) (synpairs); zero synced accesses with overflow >= 2.
+Proof (exact StepEv counting): standard splay loop (engine splay_trace
+lines 115-140: doubles while path length >= 2, zig iff length 1) gives
+e(d) = ceil(d/2) StepEvs for depth-d paths (each StepEv consumes 1 (zig)
+or 2 (double) links, telescoping; at most one zig since zig finishes).
+Hence e_B = ceil(d^B/2), e_A = ceil(d^A/2). With m = ceil(d^A/2):
+overflow = e_B - 3e_A <= ceil((d^A+2)/2) - 3m = (m+1) - 3m = 1 - 2m.
+If m >= 1 (d^A >= 1): overflow <= -1 < 0, non-divergent. If m = 0
+(d^A = 0, A-trivial): overflow = e_B <= ceil(2/2) = 1 (synced gives
+d^B <= 2), with = 1 iff e_B = 1 (B-nontrivial single step) and = 0 iff
+B-trivial. So divergent-synced forces (0,1) exactly. Dependencies: loop
+structure (engine lines cited, Layer A) + SplayLoop classifier/fuel
+(C110) + C129 delivery rows (consumption facts); loop-to-traceLen
+correspondence queued in simulation. Consequence (decomposition): the
+prefix-GC universal splits into synced-trivial (overflow <= 1, needs
+buffer <= 1: micro-coupling open) + diverged-needs-buffer (unsynced,
+push-built: tier-ledger coupling open). Status: PROVED_AUTHOR modulo
+loop correspondence; finite face exact.

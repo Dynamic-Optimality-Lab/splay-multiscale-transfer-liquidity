@@ -2796,6 +2796,21 @@
    "witness": null,
    "script": "scripts/wp6_phidrain.py",
    "statement": "Phi-drain fails (minPhi 0); cumulative counting robust."
+  },
+  {
+   "artifact": "scripts/wp6_tightwin.py (sync fields) -> tightwin.json + hall_lemmas.md 8AC-SYNCED",
+   "date": "2026-10-02",
+   "id": "C159-SYNCED",
+   "implication": "Synced bursts overdraw by exactly 1 (A-trivial zig) or not at all; unsynced carry all large overflow (buffer-coupled, open). Prefix-GC splits into synced-trivial + diverged-buffer. Next: micro-coupling (buffer-1), falsifiers, or pause.",
+   "next": "Micro-coupling, novel falsifiers, or pause",
+   "order": 177,
+   "reason": "Mechanism theory: synced-divergence characterization (user direction: mechanism theory).",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "scripts/wp6_tightwin.py",
+   "statement": "Synced-divergent iff (eA,eB)=(0,1); 674/674 confirmed."
   }
  ],
  "head": "6f89b8b",

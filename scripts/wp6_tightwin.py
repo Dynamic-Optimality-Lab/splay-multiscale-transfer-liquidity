@@ -44,6 +44,8 @@ def run_hist(n, T0, H):
     for idx, acc in enumerate(pre):
         da = depths_of(A)
         db = depths_of(B)
+        kda = da.get(acc["x"])
+        kdb = db.get(acc["x"])
         A, invs = splay_A(A, acc["x"])
         eA = len(invs)
         if acc["mode"] == "KEEP":
@@ -53,7 +55,8 @@ def run_hist(n, T0, H):
             eB = 0
         rows.append({"eA": eA, "eB": eB,
                      "Amax": max(da.values()) if da else 0,
-                     "Bmax": max(db.values()) if db else 0})
+                     "Bmax": max(db.values()) if db else 0,
+                     "kda": kda, "kdb": kdb})
     return rows
 
 
@@ -68,9 +71,11 @@ def analyze(n, T0, H):
         phi = 3 * SA - EB
         nxt = [rows[j]["eB"] for j in range(t + 1, min(L, t + 6))]
         div = (r["eB"] / max(1, 3 * r["eA"])) if r["eB"] > 0 else 0.0
+        sync = (abs(r["kda"] - r["kdb"]) if r["kda"] is not None and r["kdb"] is not None
+                else None)
         out.append({"phi": phi, "Amax": r["Amax"], "Bmax": r["Bmax"],
                     "eBnext": (max(nxt) if nxt else 0), "eB": r["eB"],
-                    "div": div, "eA": r["eA"]})
+                    "div": div, "eA": r["eA"], "sync": sync})
     return out
 
 
@@ -115,7 +120,7 @@ def main() -> int:
         done += 1
         for r in analyze(n, T0, H):
             pts.append((r["phi"], r["eBnext"], r["Amax"], r["Bmax"], r["eB"],
-                        r["div"], r["eA"]))
+                        r["div"], r["eA"], r["sync"]))
         if s % 30 == 29:
             step("TW-P", "s=%d" % s)
     # bucket by phi: tight (<=10), mid, loose; max next-burst + depths
@@ -133,6 +138,9 @@ def main() -> int:
     worstfit = None
     ov_lo = []
     ov_hi = []
+    ov_syn = []
+    ov_uns = []
+    synpairs = {}
     for p in pts:
         if p[5] > 1.0:
             ov = p[4] - 3 * p[6]
@@ -141,8 +149,24 @@ def main() -> int:
             if worstfit is None or gap > worstfit:
                 worstfit = gap
             (ov_lo if pb <= 20 else ov_hi).append(ov)
+            if len(p) > 7 and p[7] is not None:
+                (ov_syn if p[7] <= 2 else ov_uns).append(ov)
     ov_lo.sort()
     ov_hi.sort()
+    mild_syn = 0
+    mild_uns = 0
+    mild_syn_maxov = None
+    for p in pts:
+        if len(p) > 7 and p[7] is not None and p[4] - 3 * p[6] > 0:
+            ov = p[4] - 3 * p[6]
+            if p[7] <= 2:
+                mild_syn += 1
+                k = (p[6], p[4])
+                synpairs[k] = synpairs.get(k, 0) + 1
+                if mild_syn_maxov is None or ov > mild_syn_maxov:
+                    mild_syn_maxov = ov
+            else:
+                mild_uns += 1
     def summ(v):
         v = sorted(v)
         return {"n": len(v), "med": (v[len(v) // 2] if v else None),
@@ -159,7 +183,14 @@ def main() -> int:
            "ov_lo_max": (ov_lo[-1] if ov_lo else None),
            "ov_lo_n": len(ov_lo),
            "ov_hi_max": (ov_hi[-1] if ov_hi else None),
-           "ov_hi_n": len(ov_hi)}
+           "ov_hi_n": len(ov_hi),
+           "ov_syn_max": (max(ov_syn) if ov_syn else None),
+           "ov_syn_n": len(ov_syn),
+           "ov_uns_max": (max(ov_uns) if ov_uns else None),
+           "ov_uns_n": len(ov_uns),
+           "mild_syn_n": mild_syn, "mild_uns_n": mild_uns,
+           "mild_syn_maxov": mild_syn_maxov,
+           "synpairs": {str(k): v for k, v in sorted(synpairs.items())}}
     (ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / "tightwin.json").write_text(
         json.dumps(out, indent=1, sort_keys=True, default=str), encoding="utf-8")
     step("TW-01", json.dumps(out, sort_keys=True))

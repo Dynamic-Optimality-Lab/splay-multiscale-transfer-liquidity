@@ -855,3 +855,6 @@ scripts/wp6_tightwin.py -> tightwin.json (150 hists, 10.6k points): overflow-buf
 
 ### C158-1 PHIDRAIN cumulative-Phi drain fails [FINITE-STRONG]
 scripts/wp6_phidrain.py -> phidrain.json (150 hillclimbs L<=80 with A-root targeting for guaranteed supply-free splashes + repeat-pushers + migration): minPhi NEVER below 0 (best 0 = initial; no negative). Direct refutation of prefix-GC fails; cumulative counting robust even adversarially. Zero kills (no hallkill; phikill untriggered).
+
+### C159-1 SYNCED synced-divergence exact characterization [PROVED_AUTHOR + FINITE-EXACT]
+tightwin sync fields: 674/674 synced-divergent accesses are exactly (eA,eB)=(0,1); zero synced with overflow>=2. hall_lemmas.md 8AC-SYNCED: proof via exact StepEv counting e(d)=ceil(d/2) (loop structure, Layer A cited; loop correspondence queued): synced-divergent forces m=0 (dA=0) hence (0,1); synced with dA>=1 never diverges. Decomposition: synced-trivial (<=1) + diverged-buffer (open). Zero kills.
