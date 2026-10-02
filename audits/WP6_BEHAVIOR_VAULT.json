@@ -2736,6 +2736,21 @@
    "witness": null,
    "script": "lean/WP6/GCStaticTGraph.lean",
    "statement": "TGraph latest-block decomposition + 8J in kernel."
+  },
+  {
+   "artifact": "scripts/wp6_prefix.py -> prefix.json + hall_lemmas.md 8AC-PREFIX",
+   "date": "2026-10-02",
+   "id": "C155-PREFIX",
+   "implication": "Hall reduces to L prefix counts with constructive FWD matching (implies greedy-totality as corollary). Remaining universal (prefix-slack >= 0, tight margin 0) same hardness, new shape (cumulative splay-cost accounting). Next: prefix-GC universal, falsifiers, or pause.",
+   "next": "Prefix-GC universal, novel falsifiers, or pause",
+   "order": 173,
+   "reason": "Prefix route: mincut shape + slack census + equivalence (user direction: old-abundance assault).",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "scripts/wp6_prefix.py",
+   "statement": "Prefix-Hall iff Hall; mincut-prefix dead; slack min 0."
   }
  ],
  "head": "6f89b8b",

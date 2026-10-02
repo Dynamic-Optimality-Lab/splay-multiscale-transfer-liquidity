@@ -843,3 +843,6 @@ scripts/wp6_zone2.py -> zone2.json (400 evals walks n<=512 + pushers; claim pool
 
 ### C154-1 LEANTGRAPH time-indexed matching core [PROVED_KERNEL]
 lean/WP6/GCStaticTGraph.lean (exit 0, no warnings, 22 items): FinList toolkit restated + QL/QQ/UL defs + partition counting + Nunion + Nsplit + E1L_sub_UL (E1 inside new sources via arrow+latest) + eightJ arithmetic. 8J necessity kernel-closed; HOLE shape exact. Battles: match-vs-if equations; simp over-normalization; dup consolidation; pipe ascription. Next: old-abundance itself.
+
+### C155-1 PREFIX prefix-Hall equivalence + censuses [PROVED_AUTHOR + FINITE]
+scripts/wp6_prefix.py -> prefix.json (300 evals): mincut tight sets downward-closed 0.06pct / exact-prefix 0 (prefix-shape REFUTED); prefix-slack min 0 / med 27 (binds, never negative). hall_lemmas.md 8AC-PREFIX: PREFIX-HALL <=> HALL proved (access induction with E1-pristine + residual counting => FWD totality => Hall); two-access warmup closed (margin 2); open universal prefix-slack >= 0 (tight) with concrete path. Zero kills.

@@ -890,3 +890,37 @@ fallback (E1/K) + relational (E2/E7) + setup (E4) = full supply-side map;
 each channel characterized (locality, arrow, mechanism). Composition
 (counting with reuse across channels) remains the wall (8AC-RM door 1).
 No new idea for the count here; the supply side is closed.
+
+## 8AC-PREFIX. PREFIX-HALL EQUIVALENCE + ACCESS INDUCTION (C155, PROVED_AUTHOR + OPEN UNIVERSAL)
+
+Definitions: prefix sets P_t = {bevs acc <= t}, prefix sites S_t (sited,
+plotted <= t). PREFIX-HALL: |P_t| <= 3|S_t| for all t (L inequalities).
+Finite faces: implied by all clean runs (prefixes are subsets); prefix-slack
+min 0 (!) / med 27 (prefix.json, 300 evals: binds but never negative);
+mincut-prefix structure REFUTED (tight sets downward-closed 0.06 percent,
+exact-prefix 0 percent: mincuts are scattered slices, not prefixes).
+Theorem (proved): PREFIX-HALL <=> HALL. (=>) is trivial (subsets). (<=):
+access induction constructing FWD-greedy saturation: assume bevs < t
+saturated (matching M); at t, own-E1 pristine (8AC-TO/PRISTINE: zero
+past-load, structural) with 3|sites_t| slots absorbs siblings up to cap;
+overflow spills to older sites with M-residual R = 3|older| - M-load-older
+>= 3|older| - |past| (each past bev loads once total); R >= overflow_t
+<=> 3(|older|+|sites_t|) >= |past| + |sib_t| <=> 3|S_t| >= |P_t| =
+PREFIX-HALL(t). So prefix counts imply FWD totality (constructive
+assignment!) hence Hall (saturating matching => all-Q Hall by cap
+pigeonhole). Thus L prefix counts replace 2^|B| subsets (and imply the
+8AC-RM overkill route as a corollary).
+Two-access warmup (closed, margin 2): t=0: e_B = e_A (8T same-shape) so
+Phi = 2e_A(0) >= 0; t=1 burst depth d: pushers >= d/2 (8W, +2/access max)
+banking >= d/2 sited Aevs (8S) + e_A(1) >= 1 (nontrivial; trivial-A gives
+e_B = 0 too) + e_B(1) <= d (each StepEv consumes >= 1 path link):
+Phi(1) = 2e_A(0) + 3e_A(1) - e_B(1) >= d + 3 - d = 2 >= 0.
+Dependencies: 8T/8S/8W/8AC-H(i)/8AC-TO/8AC-PRISTINE (banked) + link-consumption
+(C129 delivery rows are the per-StepEv consumption facts; loop-to-traceLen
+correspondence queued in simulation).
+OPEN UNIVERSAL (tight, margin 0): prefix-slack >= 0 for all t (cumulative
+E_B <= 3 S_A over prefixes). Finite-strong (min exactly 0). Needs:
+link-consumption universals + decoupling-budget (heavy bursts prepaid by
+prior net supply, 8T-shape) + tight-prefix coupling (why tight buffers
+suffice afterwards). Same hardness as GC-STATIC (equivalent), new shape:
+cumulative splay-cost accounting instead of subset matching.
