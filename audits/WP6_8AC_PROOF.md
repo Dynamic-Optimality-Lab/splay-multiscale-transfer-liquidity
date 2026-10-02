@@ -52,3 +52,78 @@ Dichotomy banked: first failure is either post-fresh-suffix (Case A: e_A(L)>0,
 b* at B-position >= 3f within access L, L B-heavy) or repeat/no-fresh (Case B:
 e_A(L)=0, E1 empty; descent required (§6 campaign: repeat-case backward
 descent via 8R/tenure/rebuild machinery)).
+
+## C122-DESCENT. REPEAT-CASE BACKWARD DESCENT [PROVED_AUTHOR]
+(Campaign §6 item. ID note: campaign §7+ numbers shift by one hereafter
+(C121-FFFS occupies C121); typed trap = C123-TRAP, immune-descent = C124-IMM,
+W-cycle = C125, NO-FREE-W-LOOP = C126+.)
+
+Setup: Case-B first failure — access L on key x with e_A(L) = 0 (A-trivial:
+x A-rooted before L (present domain: e_A = 0 iff x at root, since absent keys
+are illegal and splay_trace emits [] exactly for absent/root (legacy_embedding
+107-143))), b* a B-event at L, e_B(L) > 0 (demanding: B-events exist iff B-trace
+nonempty iff x NOT B-rooted (same mechanics)), prefix-minus-b* saturable.
+So x is A-rooted yet B-deep (stale) at L — the pressure shape.
+
+Claim: there is a finite strictly-decreasing chain of access indices
+L = t_0 > t_1 > ... > t_k (rank = access index, well-founded on Nat) where each
+step names its causal creator/rebuilder and created channel, terminating in
+either (a) a nontrivial-A access (CASE-A-like origin banking E1/K-imprints),
+or (b) a thin origin (T0-root-x never touched, trivial setup, or silent-ride
+rebuilding with no banked imprint). Each origin's supply content is specified;
+thin origins hand EXACTLY the 8Y-conjunction remainder to variation analysis
+(no supply claim made there).
+
+Proof by backward construction (each step proved from banked laws):
+D1. L is not history-first: first access has A=B=T0, so x A-rooted ⟹ x B-rooted
+  ⟹ B-trivial (e_B = 0), contradicting demanding. Hence past accesses exist. [8T]
+D2. Some DELETE occurred before L: if all past accesses were KEEPs, A and B
+  (both from T0) evolved identically (KEEP splays same key in both trees),
+  so x A-rooted ⟺ x B-rooted, contradicting B-deep. Hence ≥1 past DELETE.
+  (DELETE moves A only (Pair Access def); KEEP moves both; B-freeze T3.)
+D3. E1-empty + demanding ⟹ H[L-1] = x: otherwise H[L-1] ≠ x ⟹ x A-nonroot
+  before L (only the accessed key roots... precisely: non-access leaves the
+  previous A-state; x A-rooted now with H[L-1]≠x means x was ALREADY rooted
+  and untouched — consistent so far, but FRESH-CHANNEL case (a) gives E1≠∅
+  whenever H[t-1]≠x with x nonroot; the E1-empty case forces the complementary
+  branch) — apply FRESH-CHANNEL (banked C31-2) directly: demanding + E1-empty
+  ⟹ H[L-1] = x AND L-1 is DELETE (KEEP→KEEP repeat is B-no-op, contradicting
+  demanding) AND run-start s (first consecutive-x access ≤ L-1) satisfies
+  setup[x] = s with E4-pristine accA[s] (causal snapshot setups[·], abl 67-68).
+  Provided s itself was nontrivial-A (e_A(s) ≥ 1, i.e., x nonroot before s);
+  if s was trivial (x already rooted), setup[x] was NOT updated at s (nrb false,
+  abl 45-46) and E4(s) is empty — descent continues past s (see D5).
+D4. B-deep-x at L with A-rooted-x ⟹ B was deepened while A stayed rooted:
+  B moves only at KEEPs (B-freeze); any KEEP z≠x unroots A-x unless z was
+  A-rooted (then A-trivial no-op). Hence B-deepening KEEPs were either (i) x
+  -involving (imprint ∋ x-path keys: K/E3-visible (8U mechanics; E2-visible iff
+  pumped (pump_push ∋ x))), or (ii) A-trivial pushers (z A-rooted, B-splashing:
+  e_A = 0, bank nothing; 8R: single-shot per state, splash roots B-pusher), or
+  (iii) silent rides (G-outer trains, +2, off-chain roots; 8W). Cases (i)-(ii)
+  bank imprints or alternate with supplying accesses (8R corollary); case (iii)
+  banks train/block/path-root imprints on-chain (motion involves ancestor roots
+  which lie on x's chain at motion time) but they migrate (positional decay →
+  variation analysis, NOT claimed here).
+D5. Rank and termination: each step moves to a strictly earlier access (setup s
+  < L (causal snapshot: setups are past-only); pusher/ride/train accesses < L
+  (past motion); previous root-arrival < current). Rank = current access index,
+  strictly decreasing naturals ⇒ terminates in ≤ L steps. Endpoints: (a) a
+  nontrivial-A access (banks E1 sited (8S) + K-imprints (8U) + possibly E2/E7:
+  CASE-A-like supplied origin —exact supply content: e_A ≥ 1 sited fresh,
+  K ⊇ its x-imprints if x-access else path-imprints hitting per E3); or (b) a
+  thin origin: T0 (x = T0-root region never touched — then B-deep impossible by
+  8T-adjacent unless silent rides, which need trains (their roots imprinted at
+  motion (positional!))) / trivial setup (E4 empty; continue past it per D3) /
+  silent-ride-only rebuilding (no imprints; W/transient-only cover).
+Residual (OPEN, handed to HOLE-1/variation, not closed here): supply sufficiency
+at thin origins (cap-exhaustion: E4+K thin or empty; E2-hole via DELETE-halves
+(8G+C41 bounded: repeat-cycles anchor at run-starts); sterile W (zone/thin);
+unchained E7) and contention at supplied origins (caps + cross-x sharing =
+routing wall). What C122-DESCENT achieves (Mode A/B): Case B is converted from
+"repeat magic" into enumerated origin types (supplied vs thin) with exact
+per-origin supply content; the remaining universal is NARROWER than HOLE-1
+(thin-origin heavy bursts + supplied-origin contention, not all heavy blocks).
+No finite evidence used; no Hall premise; no carry; arbitrary n; present domain
+only; real builder graph (abl + hallcore citations); cap arithmetic exact.
+Status: PROVED_AUTHOR (structural descent + classification; supply sufficiency
+at thin origins explicitly OPEN).

@@ -663,6 +663,41 @@ Dependencies: E1 construction/completeness (abl 64-66), cap 3 iff sited,
 B-demand 1, 8S, chronological order, first-failure well-ordering.
 Status: PROVED_AUTHOR. Lean: ffs_free, eb_suffix (kernel).
 
+## 8AC-RM. ROUTE EQUIVALENCE MAP (C122; decision instrument, PROVED_AUTHOR)
+
+For each candidate route R to GC-STATIC, exact logical relation (proved here or
+banked; finite witnesses cited, never used as proof):
+1. 8AC-ZONE (mindeg>=4 zone Hall) <=> GC-STATIC (given 8Q + strong induction).
+   =>: C118 assembly (8Q closes mindeg<=3 by IH; zone closes rest; no circularity
+   (zone standalone)). <=: violator shrinks to minimal (8A/B: Delta=1, mindeg>=4),
+   which lies in the zone. EQUIVALENT (same hardness; zone is the honest target).
+2. Greedy-universal (FWD+T<K never sticks) => GC-STATIC (constructive: exhibit
+   the greedy assignment). CONVERSE FALSE: t75 (greedy shortfall 1, maxflow 0).
+   So greedy-rule is STRICTLY STRONGER (overkill): do NOT pursue it as the route
+   (harder than needed); pursue Hall-direct. Finite-strong stays valid evidence.
+3. Per-block proportionality (o/3 <= new) REFUTED as universal (density.json:
+   new < o/3 occurs; global saved by reuse). Dead as theorem; finite face kept.
+4. Carry-sufficiency <=> Hall(Q) (8L, banked dead): assuming carry assumes goal.
+5. Fluid/counting-only = GC-counting, insufficient for Hall (assignment missing).
+6. Augmenting-repair circular (C41): repair needs spare that needs Hall.
+7. CAP3-PEEL-as-universal REFUTED (M2: 4-core Delta=-183 saturates; peel stalls
+   but maxflow succeeds). Peel-emptiness sufficient, not necessary.
+8. DAG/aggregate closures DEAD (8N: E1-maximals kill DAG; sharing-infinity kills
+   aggregate). Fourth-use mapped not closing. Hub-universal REFUTED (8M: 5/6
+   past-lasts miss killer top). Deficit-form RESTATEMENT (8O: Delta <= deficit;
+   deficit>0 is pressure, not kill). X-RETURN-universal, sterilization-strong,
+   E1+E4-only, per-key-GC/flow: all DEAD (DAG banked).
+9. One-access Hall (8F) does NOT imply global Hall (cross-access sharing/
+   contention uncaptured). Necessary fragment only (K2A finite: Delta<=-2).
+10. Anchored-only (E1+E4+K) INSUFFICIENT (yield.json: fails 19/140, worst 49/76;
+    transients load-bearing 13.6%). E1+K-alone INSUFFICIENT (residual 18%, C98).
+11. Online-chronological rules (Stage B family, incl. least-loaded): REFUTED as
+    universals (starve_min); chronological FWD-greedy unrefuted finitely but
+    covered by (2) (overkill direction only).
+Conclusion: the ONLY non-dead, non-overkill, non-circular route is Hall-direct
+via matching/contention theory with positional density (multi-session), or a
+verified counterexample. All other doors are proved shut or proved harder.
+
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
 Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;

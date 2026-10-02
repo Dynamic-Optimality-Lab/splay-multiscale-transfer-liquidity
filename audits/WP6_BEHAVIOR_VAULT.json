@@ -2218,6 +2218,22 @@
    "superseded": false,
    "theorem": "8AC (step C121)",
    "witness": null
+  },
+  {
+   "artifact": "hall_lemmas.md 8AC-RM",
+   "date": "2026-09-30",
+   "id": "C122-ROUTEMAP",
+   "implication": "Only Hall-direct via matching/contention theory (multi-session) or verified counterexample remain; all other doors shut or overkill.",
+   "next": "Positional loop model + matching theory (multi-session); novel falsifiers only",
+   "order": 140,
+   "reason": "Route equivalence map: which candidate routes imply/are-implied-by/refuted-for GC-STATIC.",
+   "result": "11 routes classified (equivalent/overkill/dead/insufficient); greedy-universal strictly stronger (t75); zone equivalent.",
+   "script": "prose-proof",
+   "statement": "Hall-direct matching theory is the unique non-dead non-overkill route.",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
