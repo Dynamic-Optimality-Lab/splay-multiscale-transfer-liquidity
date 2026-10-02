@@ -2106,6 +2106,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (Layer B)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_greedyscale.py -> artifacts/v04/wp6_present/0909c74a/greedyscale.json",
+   "date": "2026-09-30",
+   "id": "C115-GREEDYSCALE",
+   "implication": "Greedy rule holds at scale/fresh shapes/long histories; finite-strongest; universal (exchange) still open.",
+   "next": "Exchange tier-ledger formalization; Lean loop model; temporal matching theory",
+   "order": 133,
+   "reason": "Validate 8AC-greedy rule outside vine/short-history domain.",
+   "result": "150 tested (vine/bal/rbst, n to 512, L to 70): 0 gaps, 0 Hall kills.",
+   "script": "scripts/wp6_greedyscale.py",
+   "statement": "Greedy rule saturates at scale wherever maxflow does.",
+   "status": "FINITE_EVIDENCE",
+   "superseded": false,
+   "theorem": "GC-STATIC (HOLE-1)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
