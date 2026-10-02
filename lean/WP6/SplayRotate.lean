@@ -135,3 +135,139 @@ theorem rotL_l (xk pk : Nat) (l lr rr : STree) (y d : Nat)
   have h2 : y ≠ xk := by omega
   have hltx : y < xk := by omega
   simp [sdepth, rotL, beq_iff_eq, h1, h2, hltx, hlt3, hlt, h] <;> omega
+
+-- Uniform +1 bound, right rotation: comparisons + presence suffice, no BST hyp
+-- (search path is comparison-determined; presence gives local depth).
+theorem rotR_bound (xk pk : Nat) (ll lr r : STree) (y m : Nat)
+    (hlt : xk < pk) (h : sdepth (.node pk (.node xk ll lr) r) y = some m) :
+    ∃ m', sdepth (rotR (.node pk (.node xk ll lr) r)) y = some m' ∧ m' ≤ m + 1 := by
+  cases Decidable.em (y = pk) with
+  | inl heq =>
+    rw [heq] at h ⊢
+    obtain ⟨hb, ha⟩ := rotR_down xk pk ll lr r hlt
+    have hm : 0 = m := Option.some_inj.mp (hb ▸ h)
+    exact ⟨1, ha, by omega⟩
+  | inr hne =>
+    cases Decidable.em (y = xk) with
+    | inl heq2 =>
+      rw [heq2] at h ⊢
+      have hne_p : xk ≠ pk := by omega
+      obtain ⟨hb, ha⟩ := rotR_up xk pk ll lr r hne_p hlt
+      have hm : 1 = m := Option.some_inj.mp (hb ▸ h)
+      exact ⟨0, ha, by omega⟩
+    | inr hne2 =>
+      cases Decidable.em (y < pk) with
+      | inr hnp =>
+        have hgt : pk < y := by omega
+        have h1 : y ≠ pk := by omega
+        have h2 : y ≠ xk := by omega
+        have hn2 : ¬ y < xk := by omega
+        have bpk : (y == pk) = false := by simpa [beq_iff_eq] using h1
+        have bxk : (y == xk) = false := by simpa [beq_iff_eq] using h2
+        simp only [sdepth, bpk, bxk, hnp, hn2, ↓reduceIte] at h
+        cases hh : sdepth r y with
+        | none => simp_all
+        | some d =>
+          rw [hh] at h
+          simp only [Option.map_some] at h
+          have e : d + 1 = m := Option.some_inj.mp h
+          obtain ⟨hb, ha⟩ := rotR_r xk pk ll lr r y d hgt hlt hh
+          exact ⟨2 + d, ha, by omega⟩
+      | inl hlt2 =>
+        cases Decidable.em (y < xk) with
+        | inl hyx =>
+          have h1 : y ≠ pk := by omega
+          have hp1 : y < pk := by omega
+          have bpk : (y == pk) = false := by simpa [beq_iff_eq] using h1
+          have bxk : (y == xk) = false := by simpa [beq_iff_eq] using hne2
+          simp only [sdepth, bpk, bxk, hp1, hyx, ↓reduceIte] at h
+          cases hh : sdepth ll y with
+          | none => simp_all
+          | some d =>
+            rw [hh] at h
+            simp only [Option.map_some] at h
+            have e : d + 1 + 1 = m := Option.some_inj.mp h
+            obtain ⟨hb, ha⟩ := rotR_ll xk pk ll lr r y d hyx hlt hh
+            exact ⟨1 + d, ha, by omega⟩
+        | inr hnx =>
+          have hgt : xk < y := by omega
+          have h1 : y ≠ pk := by omega
+          have bpk : (y == pk) = false := by simpa [beq_iff_eq] using h1
+          have bxk : (y == xk) = false := by simpa [beq_iff_eq] using hne2
+          simp only [sdepth, bpk, bxk, hnx, hlt2, ↓reduceIte] at h
+          cases hh : sdepth lr y with
+          | none => simp_all
+          | some d =>
+            rw [hh] at h
+            simp only [Option.map_some] at h
+            have e : d + 1 + 1 = m := Option.some_inj.mp h
+            obtain ⟨hb, ha⟩ := rotR_lr xk pk ll lr r y d hgt hlt2 hh
+            exact ⟨2 + d, ha, by omega⟩
+
+-- Uniform +1 bound, left rotation (mirror).
+theorem rotL_bound (xk pk : Nat) (l lr rr : STree) (y m : Nat)
+    (hlt : pk < xk) (h : sdepth (.node pk l (.node xk lr rr)) y = some m) :
+    ∃ m', sdepth (rotL (.node pk l (.node xk lr rr))) y = some m' ∧ m' ≤ m + 1 := by
+  cases Decidable.em (y = pk) with
+  | inl heq =>
+    rw [heq] at h ⊢
+    obtain ⟨hb, ha⟩ := rotL_down xk pk l lr rr hlt
+    have hm : 0 = m := Option.some_inj.mp (hb ▸ h)
+    exact ⟨1, ha, by omega⟩
+  | inr hne =>
+    cases Decidable.em (y = xk) with
+    | inl heq2 =>
+      rw [heq2] at h ⊢
+      have hne_p : xk ≠ pk := by omega
+      obtain ⟨hb, ha⟩ := rotL_up xk pk l lr rr hne_p hlt
+      have hm : 1 = m := Option.some_inj.mp (hb ▸ h)
+      exact ⟨0, ha, by omega⟩
+    | inr hne2 =>
+      cases Decidable.em (y < pk) with
+      | inl hlt3 =>
+        have h1 : y ≠ pk := by omega
+        have h2 : y ≠ xk := by omega
+        have hltx : y < xk := by omega
+        have bpk : (y == pk) = false := by simpa [beq_iff_eq] using h1
+        have bxk : (y == xk) = false := by simpa [beq_iff_eq] using h2
+        simp only [sdepth, bpk, bxk, hltx, hlt3, ↓reduceIte] at h
+        cases hh : sdepth l y with
+        | none => simp_all
+        | some d =>
+          rw [hh] at h
+          simp only [Option.map_some] at h
+          have e : d + 1 = m := Option.some_inj.mp h
+          obtain ⟨hb, ha⟩ := rotL_l xk pk l lr rr y d hlt3 hlt hh
+          exact ⟨2 + d, ha, by omega⟩
+      | inr hnp =>
+        cases Decidable.em (y < xk) with
+        | inl hgt =>
+          have h1 : y ≠ pk := by omega
+          have hlt2 : pk < y := by omega
+          have bpk : (y == pk) = false := by simpa [beq_iff_eq] using h1
+          have bxk : (y == xk) = false := by simpa [beq_iff_eq] using hne2
+          simp only [sdepth, bpk, bxk, hnp, hgt, ↓reduceIte] at h
+          cases hh : sdepth lr y with
+          | none => simp_all
+          | some d =>
+            rw [hh] at h
+            simp only [Option.map_some] at h
+            have e : d + 1 + 1 = m := Option.some_inj.mp h
+            obtain ⟨hb, ha⟩ := rotL_rl xk pk l lr rr y d hlt2 hgt hh
+            exact ⟨2 + d, ha, by omega⟩
+        | inr hnx =>
+          have hgt2 : xk < y := by omega
+          have h1 : y ≠ pk := by omega
+          have h2 : y ≠ xk := by omega
+          have hn2 : ¬ y < xk := by omega
+          have bpk : (y == pk) = false := by simpa [beq_iff_eq] using h1
+          have bxk : (y == xk) = false := by simpa [beq_iff_eq] using h2
+          simp only [sdepth, bpk, bxk, hn2, hnp, ↓reduceIte] at h
+          cases hh : sdepth rr y with
+          | none => simp_all
+          | some d =>
+            rw [hh] at h
+            simp only [Option.map_some] at h
+            have e : d + 1 + 1 = m := Option.some_inj.mp h
+            obtain ⟨hb, ha⟩ := rotL_rr xk pk l lr rr y d hgt2 hlt hh
+            exact ⟨1 + d, ha, by omega⟩

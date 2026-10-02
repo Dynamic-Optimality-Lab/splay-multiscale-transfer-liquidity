@@ -1996,6 +1996,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (Layer B)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/SplayRotate.lean rotR_bound/rotL_bound (kernel exit 0, no sorry)",
+   "date": "2026-09-30",
+   "id": "C108-LEAN-UNIFORM",
+   "implication": "Uniform +1/rotation kernel-grounded (zig<=+1, zigzig<=+2 by composition); loop model (de-pathing/lift) still open.",
+   "next": "Splay-loop model (zig/zigzig cases + de-pathing/lift-accounting); exchange tier-ledger",
+   "order": 126,
+   "reason": "Uniform per-rotation depth bound from region rows (comparisons + presence, no BST hyp).",
+   "result": "rotR_bound + rotL_bound + 11 prior: 13 theorems, lean exit 0 clean.",
+   "script": "lean",
+   "statement": "Any single rotation changes any present key depth by <= +1.",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (Layer B)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
