@@ -2122,6 +2122,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (HOLE-1)",
    "witness": null
+  },
+  {
+   "artifact": "artifacts/v04/wp6_present/0909c74a/hall_lemmas.md 8AC-BERGE",
+   "date": "2026-09-30",
+   "id": "C116-BERGE",
+   "implication": "Elementary search honestly closed (all routes reduce to Hall or assume it); remaining doors: Lean positional model or verified counterexample.",
+   "next": "Lean positional splay-model (multi-session); novel falsifiers only",
+   "order": 134,
+   "reason": "Berge meta-lemma: greedy-stuck implies augmenting-path or violator (bounds elementary arguments).",
+   "result": "No counting/greedy/peel/induction bypass possible; 8AC-greedy stays finite-strong only.",
+   "script": "prose-proof",
+   "statement": "Greedy-stuck implies augmentable or Hall-violated; maxflow-ok implies greedy-ok-or-augmentable.",
+   "status": "META",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

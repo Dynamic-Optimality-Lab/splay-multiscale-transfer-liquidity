@@ -612,6 +612,26 @@ co-location dynamics) — beyond current arsenal (needs Lean positional splay
 model + online-matching-with-structure theory). Status: WALL CRISPLY STATED;
 finite-strong everything; universal open.
 
+## 8AC-BERGE. NO-ELEMENTARY-BYPASS META-LEMMA (C116)
+
+Theorem-shape (Berge, standard matching theory applied to our cap-3 setting):
+FWD-greedy processes chronologically, placing whenever ANY neighbor has free
+cap (maximal partial matching). If it sticks at j, either an augmenting path
+exists from j (resolvable — t75-style: other orders/augmentation fix it) or NO
+augmenting path exists, in which case the matching is maximum (Berge) and
+maxflow equally fails (same cardinality) — i.e., a Hall violator exists.
+Contrapositive: maxflow-ok implies greedy either saturates or sticks
+augmentably. Consequences: (1) pure-greedy-sufficiency can never be proved
+without density/matching universals (any sticking point is either fixable or
+witnesses a violator — the argument cannot bootstrap past maxflow); (2) the
+8AC-greedy rule stays FINITE_STRONG (0 failures, 13k+) but not promoted;
+(3) remaining doors are exactly: Lean positional model (multi-session) for
+density universals, or a verified counterexample. This lemma HONESTLY closes
+the elementary-proof search: no counting/greedy/peel/induction argument can
+bypass Hall here (all reduce to it or assume it — cf. 8L circularity,
+8AC-X tier-ledger, enclosure leaks). Status: META (proof by standard theory
+instantiation; finite faces: t75 stuck-augmentable + budget-26x + reuse).
+
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
 Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;
