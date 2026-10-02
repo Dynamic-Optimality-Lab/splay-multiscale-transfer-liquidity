@@ -271,3 +271,14 @@ theorem rotL_bound (xk pk : Nat) (l lr rr : STree) (y m : Nat)
             have e : d + 1 + 1 = m := Option.some_inj.mp h
             obtain ⟨hb, ha⟩ := rotL_rr xk pk l lr rr y d hgt2 hlt hh
             exact ⟨1 + d, ha, by omega⟩
+
+-- Splay-StepEv bounds (C109): one StepEv is one zig (single rotation, +1) or
+-- one double (two rotations, +2 by composing uniform bounds; second rotation
+-- falls back to identity on shape mismatch, which can only help).
+-- Splay-StepEv composition note: one StepEv is one zig (single rotation: uniform
+-- bound applies directly with the StepEv's BST-shape hypothesis) or one double
+-- (two rotations: compose uniform bounds through the intermediate existential
+-- depth; second rotation pattern hypotheses discharged from BST facts at the
+-- call site). The four doubles (LL/RR/LR/RL) are routine compositions of
+-- rotR_bound/rotL_bound, queued as such; loop-level de-pathing/lift-accounting
+-- needs the splay-loop model (path descent + fuel), also queued.

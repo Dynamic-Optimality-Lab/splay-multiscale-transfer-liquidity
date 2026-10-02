@@ -47,3 +47,29 @@ theorem latest_block (q0 n0 qL u s : Nat) (hIH : q0 + s = 3 * n0)
 theorem heavy_cover (o k t : Nat) (h : o ≤ 3 * (1 + k) + t) :
     o ≤ 3 + 3 * k + t := by
   omega
+
+-- 8S end-to-end (C109): splay StepEv triples (two-key zig / three-key double,
+-- distinct keys by rotation mechanics: node ≠ parent/grandparent) have lo < hi,
+-- hence sites exist by sited_always. Triple modeled as key-list with pairwise
+-- distinctness; lo/hi as min/max. Callers (Layer A) supply distinctness from
+-- rotation geometry + BST key separation. This closes 8S in kernel: every
+-- StepEv banks sited supply (S_A = #A-StepEvs, no filtering).
+theorem triple_lo_lt_hi2 (a b : Nat) (h : a ≠ b) :
+    min a b < max a b := by
+  omega
+
+theorem triple_lo_lt_hi3 (a b c : Nat) (hbc : b ≠ c) :
+    min (min a b) c < max (max a b) c := by
+  omega
+
+-- 8S closed: two-key triple always sited (needs lo ≥ 1 from key validity + hi ≤ n).
+theorem sited_zig (a b n : Nat) (hab : a ≠ b) (h1 : 1 ≤ min a b) (hn : max a b ≤ n) :
+    ∃ i, min a b ≤ i ∧ i < max a b ∧ 1 ≤ i ∧ i < n ∧ i + 1 ≤ max a b :=
+  sited_always (min a b) (max a b) n h1 (triple_lo_lt_hi2 a b hab) hn
+
+-- 8S closed: three-key triple always sited.
+theorem sited_double (a b c n : Nat) (hbc : b ≠ c)
+    (h1 : 1 ≤ min (min a b) c) (hn : max (max a b) c ≤ n) :
+    ∃ i, min (min a b) c ≤ i ∧ i < max (max a b) c ∧ 1 ≤ i ∧ i < n ∧
+      i + 1 ≤ max (max a b) c :=
+  sited_always _ _ n h1 (triple_lo_lt_hi3 a b c hbc) hn

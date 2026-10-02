@@ -314,6 +314,10 @@ lines 121–140) — node≠p distinct keys, so `lo<hi` always. `_sites`
 rotation = not a StepEv). Finite face: 3871/3871 sited (`imprint.json`) — was
 theorem all along. Consequence: S_A = #A-StepEvs exactly; no filtering;
 T7 banking per StepEv unconditional.
+Update C109: closed end-to-end in kernel (`lean/WP6/GCStaticArith.lean`:
+`sited_zig`/`sited_double`, exit 0; triple needs only ONE disequality (b≠c),
+stronger than geometric distinctness). Status now PROVED_KERNEL modulo
+Layer-A triple-emission correspondence (code-cited above).
 
 ## 8T. FIRST-ACCESS NON-HEAVY (UNIVERSAL one-liner) [PROVED_AUTHOR C58]
 
