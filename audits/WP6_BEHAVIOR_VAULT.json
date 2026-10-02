@@ -2076,6 +2076,21 @@
    "superseded": false,
    "theorem": "GC-STATIC (Layer A link)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/SplayRotate.lean bstR/bstR_widen/rotR_bst/rotL_bst (kernel exit 0, clean)",
+   "date": "2026-09-30",
+   "id": "C113-LEAN-BST",
+   "implication": "BST range validity + rotation preservation kernel-grounded; grounds ordering hypotheses; search-correctness queued.",
+   "next": "Search-correctness (comparisons locate keys); splay-loop descent; exchange tier-ledger",
+   "order": 131,
+   "reason": "BST validity model + preservation under rotations (grounds comparison hyps).",
+   "result": "bstR + widen + rotR_bst + rotL_bst, lean exit 0, no sorry, no warnings.",
+   "statement": "Rotations preserve BST range validity.",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (Layer B)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",

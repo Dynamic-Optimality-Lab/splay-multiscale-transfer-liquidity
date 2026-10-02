@@ -309,3 +309,47 @@ theorem zigzigRR_bound (x p g : Nat) (d c b a : STree) (y m : Nat)
 -- simp-normalization proved shape-unstable across nesting depths).
 -- Splay-loop de-pathing/lift-accounting needs the loop model (SplayLoop.lean
 -- skeleton exists: classifier + fuel driver + trace bound).
+
+-- BST range validity + rotation preservation (C113): half-open key intervals,
+-- widening (range relaxation), rotR/rotL preserve validity. Grounds the
+-- ordering hypotheses used throughout (caller proves BST once; comparisons
+-- then locate keys soundly).
+def bstR : STree → Nat → Nat → Prop
+  | .leaf, _, _ => True
+  | .node k l r, lo, hi => lo ≤ k ∧ k < hi ∧ bstR l lo k ∧ bstR r k hi
+
+theorem bstR_widen (t : STree) (lo hi lo' hi' : Nat)
+    (hlo : lo' ≤ lo) (hhi : hi ≤ hi') (h : bstR t lo hi) : bstR t lo' hi' := by
+  induction t generalizing lo hi lo' hi' with
+  | leaf => simp [bstR]
+  | node k l r ihl ihr =>
+    simp only [bstR] at h ⊢
+    obtain ⟨h1, h2, h3, h4⟩ := h
+    exact ⟨by omega, by omega, ihl _ _ _ _ hlo (by omega) h3,
+      ihr _ _ _ _ (by omega) hhi h4⟩
+
+theorem rotR_bst (xk pk : Nat) (ll lr r : STree) (lo hi : Nat)
+    (hlt : xk < pk)
+    (h : bstR (.node pk (.node xk ll lr) r) lo hi) :
+    bstR (rotR (.node pk (.node xk ll lr) r)) lo hi := by
+  simp only [bstR] at h
+  obtain ⟨h1, h2, h3, h4⟩ := h
+  obtain ⟨h5, h6, h7, h8⟩ := h3
+  have e : rotR (.node pk (.node xk ll lr) r)
+      = .node xk ll (.node pk lr r) := rfl
+  rw [e]
+  simp only [bstR]
+  exact ⟨h5, by omega, h7, ⟨by omega, h2, h8, h4⟩⟩
+
+theorem rotL_bst (xk pk : Nat) (l lr rr : STree) (lo hi : Nat)
+    (hlt : pk < xk)
+    (h : bstR (.node pk l (.node xk lr rr)) lo hi) :
+    bstR (rotL (.node pk l (.node xk lr rr))) lo hi := by
+  simp only [bstR] at h
+  obtain ⟨h1, h2, h3, h4⟩ := h
+  obtain ⟨h5, h6, h7, h8⟩ := h4
+  have e : rotL (.node pk l (.node xk lr rr))
+      = .node xk (.node pk l lr) rr := rfl
+  rw [e]
+  simp only [bstR]
+  exact ⟨by omega, by omega, ⟨h1, hlt, h3, h7⟩, h8⟩
