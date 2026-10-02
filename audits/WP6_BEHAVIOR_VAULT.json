@@ -2250,6 +2250,22 @@
    "superseded": false,
    "theorem": "GC-STATIC (meta)",
    "witness": null
+  },
+  {
+   "artifact": "scripts/wp6_wcharge.py -> wcharge.json",
+   "date": "2026-10-02",
+   "id": "C124-WCHARGE",
+   "implication": "Forward-escape + last-stand is the 8AC induction shape (8AC-IND): early bevs E1, late bevs W-forward; K relegated to pusher-family mechanism; next C125: pusher-family quartile + 8AC-IND sketch.",
+   "next": "C125 pusher-family quartile gradient + 8AC-IND induction sketch file",
+   "order": 142,
+   "reason": "W-charge census for FWD pressure law: per-site W-load, W time-arrow, per-access headroom, placement mix by time-quartile (FWD|T,E1,E4,K, 150 walks n<=512 L70).",
+   "result": "stuck=0/150. W=54% of placements, E1=22%, E2=14%, E7=9%, K=0.1% (56/47k). ALL W strictly past-loader->future-site (25819/25819). Quartile E1: 40/3.5/0.8/0.2 pct; W: 40/67/72/73 pct (monotone handoff). sitemaxW=sitemaxall=3. headroom formula REFUTED (med-3 min-109 yet total) - bevs escape forward, need no own-E1. Zero kills.",
+   "script": "scripts/wp6_wcharge.py",
+   "statement": "W time-arrow law + E1-to-W quartile handoff (forward-escape mechanism).",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
