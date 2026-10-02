@@ -790,3 +790,6 @@ lean/WP6/GCStaticTrace.lean (exit 0, no warnings, 3 theorems): steps emission (o
 
 ### C136-1 LEANSUPPLY event-supply accounting [PROVED_KERNEL]
 lean/WP6/GCStaticSupply.lean (exit 0, no warnings, 3 defs+2 theorems): sites_count (_sites model); sites_ge_one (valid interval banks >=1 site, witness lo); trace_supply (event-list total covers event count, induction). Quantitative 8S face in kernel. Battles: mem_range step form; decide direction; cases-substitution asymmetry. Next: engine event-list + loop-lifted agreement.
+
+### C137-1 LEANNAV navigation + position-correct rewriting [PROVED_KERNEL]
+lean/WP6/GCStaticNav.lean (exit 0, no warnings): getPath + direction lemmas; rewriteAtAux (rotation par always the true enclosing key); rewrite_toSTree (rewriting projects to STree plugging); wf_rewrite (links preserved); pall monos/reparent; pvalid_protR/L (pointer rotations preserve BST validity). Battles: match-arm arity; def ordering; pvalid_reparent; generalizing arg order. Next C138: fuel engine loop + emission + bounds.
