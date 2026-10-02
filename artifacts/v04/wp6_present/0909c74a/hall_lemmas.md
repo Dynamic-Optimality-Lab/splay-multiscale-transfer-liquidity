@@ -566,6 +566,27 @@ universal hit-rate false without the heavy/fresh dichotomy). Composition with
 E1/K/E4/E2/E7 = full N = one-access 8F (same wall). So 8AC-H sharpens but does
 not reduce: the atom stays 8F-vs-sharing (routing).
 
+## 8AC-MW. MOVER-VISIBILITY + RELATIONSHIP-IMMUNITY; W SOLE-POSITIONAL (C105)
+
+Mover-visibility (mechanical): non-silent depth-movers imprint on-chain — path
+movers (involved: rotated ∋ path keys incl. block-roots/train-roots on-chain),
+pump movers (pump_push ∋ xx gives E2; rotated ∋ pusher gives E3-backstop).
+Silent = G-outer rides only (+2, 8W; train-root off-chain). Channel immunity
+audit (migration-adversary `mig.json`: co-location driven to 0.0078 with split
+53 (e_B 59), 5k evals, NO KILL): E1 (same-access, current) + E4 (setup adoption,
+key-identity) + K (8U, xx-in-S key-identity) + E2 (pump-window relationship) +
+E7 (pump-chain relationship) are MIGRATION-IMMUNE (historical/key-identity, no
+position); ONLY W (rotated-cap-triple, current positions) is migration-sensitive.
+Hence migration kills W alone, while E2/E7/K/E1 carry (measured: coloc 0.8% yet
+saturate). 8W-ride-debt counting: ride-depth <= 2 rides, each ride banks >= 1
+sited Aev (nontrivial motion): ride-debt <= (2/3) banked slots globally (counts
+close; assignment needs on-chain (8Z: chain-crossing carries (steer N ~= 4 e_B;
+pack3 deep-confinement infeasible: paths cross recent-region))).
+Wall final form: migration-proof historical backbone (E1/E4/K/E2/E7) + positional
+W-variation (8Z shape-dichotomy) + routing rule (8AC-G). Missing universals:
+W-density proportional (8Z counting) + drift bound (balanced) + exchange
+tier-ledger. Status: MECHANISM-MAPPED (finite: mig/pack/steer/varhole).
+
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
 Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;
