@@ -2474,6 +2474,22 @@
    "script": "lean/WP6/GCStaticNav.lean",
    "statement": "Paths, threaded rewriting, pointer validity preservation.",
    "result": "getPath + root/left/right lemmas; rewriteAtAux with auto-par; rewrite_toSTree (plug correspondence); wf_rewrite (link preservation); pall monos + reparent lemmas; pvalid_protR/L (validity preservation), exit 0. Battles: 3-pattern match arms (drop phantom patterns); forward references (order defs before use); pvalid_reparent for stuck bounds; ih arg order (up first). Zero kills."
+  },
+  {
+   "artifact": "lean/WP6/GCStaticEngine.lean (kernel exit 0, no warnings, no sorry/admit/axioms)",
+   "date": "2026-10-02",
+   "id": "C138-LEANEMIT",
+   "implication": "Engine-side emission validity + length kernel-closed. Remaining: loop-lifted agreement (engine iterations to skeleton steps over full traces) + supply lift tying event counts to Aev totals.",
+   "next": "Loop-lifted agreement: engine trace = skeleton steps; supply lift to Aev totals",
+   "order": 156,
+   "reason": "Engine-side emission trace for trace induction (user direction: trace induction).",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "lean/WP6/GCStaticEngine.lean",
+   "statement": "Emitted intervals proper; trace fits size.",
+   "result": "emitTrace_valid (10-case induct: vacuous miss arms, zig via identity+separation, doubles via IH + parent separation) + emitTrace_length (10-case induct + omega), exit 0. Battles: List.mem_singleton is not simp-only (use simp at hyp); beq arg order; ne_of_lt/gt absent (omega pattern); cases substitutes goal not hyps; bullet indent sensitivity; leaf needs def-unfold before simp-at. Zero kills."
   }
  ],
  "head": "6f89b8b",

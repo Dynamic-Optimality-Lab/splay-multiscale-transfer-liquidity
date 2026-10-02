@@ -793,3 +793,6 @@ lean/WP6/GCStaticSupply.lean (exit 0, no warnings, 3 defs+2 theorems): sites_cou
 
 ### C137-1 LEANNAV navigation + position-correct rewriting [PROVED_KERNEL]
 lean/WP6/GCStaticNav.lean (exit 0, no warnings): getPath + direction lemmas; rewriteAtAux (rotation par always the true enclosing key); rewrite_toSTree (rewriting projects to STree plugging); wf_rewrite (links preserved); pall monos/reparent; pvalid_protR/L (pointer rotations preserve BST validity). Battles: match-arm arity; def ordering; pvalid_reparent; generalizing arg order. Next C138: fuel engine loop + emission + bounds.
+
+### C138-1 LEANEMIT engine-side emission validity + length [PROVED_KERNEL]
+lean/WP6/GCStaticEngine.lean (exit 0, no warnings): emitTrace (one interval per level, zig pairs + double triples); emitTrace_valid (every interval proper on valid trees, 10-case induct); emitTrace_length (trace fits size). Battles: simp-at-hyp idiom; beq order; omega for disequalities; substitution asymmetry; indent sensitivity. Next: loop-lifted agreement + supply lift.
