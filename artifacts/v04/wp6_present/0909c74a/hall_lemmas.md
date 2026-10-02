@@ -799,3 +799,17 @@ matchings, flip load bookkeeping in full generality, Hall assembly
 (maximal + unaugmentable => violator-or-saturated), 8AC-ZONE itself. The
 wall stands exactly on 8AC-RM doors; formalization has done all it can in
 core Lean.
+
+## 8V-VERDICT. PUSHER-COUNTING ATOM: STRONG FORM DEAD, WEAK SURVIVES (C147)
+
+Measure (rides.json, 535 heavy bursts, full-history window): 76.8 percent
+of burst-built B-depth comes from SILENT pushes (no E3-imprint from the
+pushing access to the burst); fully-silent bursts to eB=91. 8V-strong
+(imprint-proportional burst cover) is REFUTED as the primary mechanism
+(imprints cover ~23 percent). 8V-weak survives: pushers bank sited Aevs
+(8S) into the global pool (K-persistence 8U, E2, W), routed elsewhere.
+K_x med-cover 1.51x demand but min 0.0 (first/fresh bursts need E1/E4/
+transients): cover is PORTFOLIO, no single channel dominant (consistent
+with 8AC-D union-only safety and residual/budget margins). Ride-sterility
+(G-outer bystander +2s without chain imprint) is the NORM. Consequence:
+no atom shortcut; burst cover = general contention = the wall itself.
