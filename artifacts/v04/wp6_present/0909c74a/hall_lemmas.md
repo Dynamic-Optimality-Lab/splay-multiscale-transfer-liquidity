@@ -587,6 +587,23 @@ W-variation (8Z shape-dichotomy) + routing rule (8AC-G). Missing universals:
 W-density proportional (8Z counting) + drift bound (balanced) + exchange
 tier-ledger. Status: MECHANISM-MAPPED (finite: mig/pack/steer/varhole).
 
+## 8AC-MG. MIGRATION-POSITIONAL-MATCHING WALL SYNTHESIS (C106)
+
+Four independent reductions converge here: (1) chain-identity backstop needs
+CURRENT co-location (imprint-key positioned on burst chain at burst time);
+(2) keys are static, positions migrate via rotations (8R); (3) E3/W hits need
+key-identity co-location, while E1/E4/K/E2/E7 are relationship/key-identity
+(migration-immune, 8AC-MW); (4) universal density false in principle
+(adversarial packing conceivable) yet never assembled (pack/pack3/mig/triple/
+steer/varhole all clean-or-infeasible). Finite-strong: recent-co-location
+suffices always (roots migrate among recent pool (same-H recency shared by
+both trees)); greedy rule migration-proof (greedymig 5k: ruledead 0; combined
+rule record 0 failures on crowned order over 501+303+8000+5000). What universal
+would need: positional tracking (temporal bipartite matching: supply/demand
+co-location dynamics) — beyond current arsenal (needs Lean positional splay
+model + online-matching-with-structure theory). Status: WALL CRISPLY STATED;
+finite-strong everything; universal open.
+
 ## 8AC-R. COUNTING MARGIN 26x: WALL IS ROUTING ONLY (C98)
 
 Measures (esidual.json 200 hist: E1K-alone saturates 164 (82%), tail resid 1..60;
