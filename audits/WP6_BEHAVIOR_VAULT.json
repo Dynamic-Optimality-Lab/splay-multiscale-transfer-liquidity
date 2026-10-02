@@ -2781,6 +2781,21 @@
    "witness": null,
    "script": "scripts/wp6_tightwin.py",
    "statement": "Overflow scales with buffer (margin 6); tight prefixes rare/deep-synced."
+  },
+  {
+   "artifact": "scripts/wp6_phidrain.py -> phidrain.json",
+   "date": "2026-10-02",
+   "id": "C158-PHIDRAIN",
+   "implication": "Cumulative counting robust under adversarial drain (minPhi 0 over 150 A-root-targeted hillclimbs). Prefix-GC stands finitely; universal still needs tight-window mechanism. Next: mechanism, falsifiers, or pause.",
+   "next": "Coupling mechanism, novel falsifiers, or pause",
+   "order": 176,
+   "reason": "Direct Phi-drain falsification of prefix-GC (user direction: coupling assault).",
+   "status": "PROVED_AUTHOR",
+   "superseded": false,
+   "theorem": "GC-STATIC (meta)",
+   "witness": null,
+   "script": "scripts/wp6_phidrain.py",
+   "statement": "Phi-drain fails (minPhi 0); cumulative counting robust."
   }
  ],
  "head": "6f89b8b",

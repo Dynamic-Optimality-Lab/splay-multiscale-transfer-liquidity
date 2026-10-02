@@ -852,3 +852,6 @@ scripts/wp6_pushledger.py -> pushledger.json (150 hists): eB<=d+1 (0/5642), eA>=
 
 ### C157-1 COUPLE tight-window coupling shape [FINITE-STRONG]
 scripts/wp6_tightwin.py -> tightwin.json (150 hists, 10.6k points): overflow-buffer gap max -6 (global margin 6, 2077 divergent); low-buffer (<=20) overflow max 5 (n=11) vs high-buffer max 125 (n=2066): overflow SCALES with buffer. Tight prefixes rare (0.2pct), deep-synced (Amax/Bmax ~60), low-current-demand, followed by bigger bursts (med 18). hall_lemmas.md 8AC-COUPLE: decoupling-budget structured; mechanism (tight forces mild) open. Zero kills.
+
+### C158-1 PHIDRAIN cumulative-Phi drain fails [FINITE-STRONG]
+scripts/wp6_phidrain.py -> phidrain.json (150 hillclimbs L<=80 with A-root targeting for guaranteed supply-free splashes + repeat-pushers + migration): minPhi NEVER below 0 (best 0 = initial; no negative). Direct refutation of prefix-GC fails; cumulative counting robust even adversarially. Zero kills (no hallkill; phikill untriggered).
