@@ -341,6 +341,63 @@ theorem rotR_bst (xk pk : Nat) (ll lr r : STree) (lo hi : Nat)
   simp only [bstR]
   exact ⟨h5, by omega, h7, ⟨by omega, h2, h8, h4⟩⟩
 
+-- Key membership + search correctness (C114): BST range soundness (present
+-- keys lie in range) and findability (search finds present keys). Grounds
+-- "comparisons locate keys" for the loop model (region membership from
+-- comparisons + presence, no separate hypotheses needed at call sites).
+def smem : STree → Nat → Prop
+  | .leaf, _ => False
+  | .node k l r, x => x = k ∨ smem l x ∨ smem r x
+
+theorem bstR_mem_range (t : STree) (lo hi x : Nat)
+    (h : bstR t lo hi) (hm : smem t x) : lo ≤ x ∧ x < hi := by
+  induction t generalizing lo hi with
+  | leaf => simp [smem] at hm
+  | node k l r ihl ihr =>
+    simp only [bstR] at h
+    obtain ⟨h1, h2, h3, h4⟩ := h
+    simp only [smem] at hm
+    cases hm with
+    | inl heq =>
+      subst heq
+      exact ⟨h1, h2⟩
+    | inr hr =>
+      cases hr with
+      | inl hml =>
+        obtain ⟨a, b⟩ := ihl _ _ h3 hml
+        exact ⟨by omega, by omega⟩
+      | inr hmr =>
+        obtain ⟨a, b⟩ := ihr _ _ h4 hmr
+        exact ⟨by omega, by omega⟩
+
+theorem bstR_find (t : STree) (lo hi x : Nat)
+    (h : bstR t lo hi) (hm : smem t x) : ∃ d, sdepth t x = some d := by
+  induction t generalizing lo hi with
+  | leaf => simp [smem] at hm
+  | node k l r ihl ihr =>
+    simp only [bstR] at h
+    obtain ⟨h1, h2, h3, h4⟩ := h
+    simp only [smem] at hm
+    cases Decidable.em (x = k) with
+    | inl heq =>
+      rw [heq]
+      exact ⟨0, sdepth_self k l r⟩
+    | inr hne =>
+      have b1 : (x == k) = false := by simpa [beq_iff_eq] using hne
+      cases hm with
+      | inl heq => exact absurd heq hne
+      | inr hr =>
+        cases hr with
+        | inl hml =>
+          have hlt : x < k := (bstR_mem_range _ _ _ _ h3 hml).2
+          obtain ⟨d, hd⟩ := ihl _ _ h3 hml
+          exact ⟨d + 1, by simp [sdepth, b1, hlt, hd, Option.map_some]⟩
+        | inr hmr =>
+          obtain ⟨a, _⟩ := bstR_mem_range _ _ _ _ h4 hmr
+          have hnlt : ¬ x < k := by omega
+          obtain ⟨d, hd⟩ := ihr _ _ h4 hmr
+          exact ⟨d + 1, by simp [sdepth, b1, hnlt, hd, Option.map_some]⟩
+
 theorem rotL_bst (xk pk : Nat) (l lr rr : STree) (lo hi : Nat)
     (hlt : pk < xk)
     (h : bstR (.node pk l (.node xk lr rr)) lo hi) :

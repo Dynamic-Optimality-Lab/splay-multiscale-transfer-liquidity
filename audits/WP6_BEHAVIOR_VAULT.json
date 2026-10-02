@@ -2091,6 +2091,21 @@
    "superseded": false,
    "theorem": "GC-STATIC (Layer B)",
    "witness": null
+  },
+  {
+   "artifact": "lean/WP6/SplayRotate.lean smem/bstR_mem_range/bstR_find (kernel exit 0, clean)",
+   "date": "2026-09-30",
+   "id": "C114-LEAN-SEARCH",
+   "implication": "Comparisons locate keys soundly (range + findability); region hyps derivable at call sites; loop model next.",
+   "next": "Splay-loop descent with BST threading; exchange tier-ledger",
+   "order": 132,
+   "reason": "Search-correctness: BST range soundness + findability by induction.",
+   "result": "smem + mem_range + find, lean exit 0, no sorry, no warnings.",
+   "statement": "Present keys lie in range and are found by BST search.",
+   "status": "PROVED_KERNEL",
+   "superseded": false,
+   "theorem": "GC-STATIC (Layer B)",
+   "witness": null
   }
  ],
  "head": "6f89b8b",
