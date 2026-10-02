@@ -840,3 +840,6 @@ lean/WP6/GCStaticFin.lean + zone_implies_hall (exit 0, no warnings): bound induc
 
 ### C153-1 ZONE2 violator-zone floor -8 across families [FINITE_EVIDENCE]
 scripts/wp6_zone2.py -> zone2.json (400 evals walks n<=512 + pushers; claim pools top-20 + access slices + mincut sets): 262 mindeg>=4 candidates, best Delta EXACTLY -8 (Q4 N4 mindeg4, same signature as K2B vine-only). Floor robust; concentrated zone cores do not assemble (consistent pack3 confinement-infeasibility). Zero kills.
+
+### C154-1 LEANTGRAPH time-indexed matching core [PROVED_KERNEL]
+lean/WP6/GCStaticTGraph.lean (exit 0, no warnings, 22 items): FinList toolkit restated + QL/QQ/UL defs + partition counting + Nunion + Nsplit + E1L_sub_UL (E1 inside new sources via arrow+latest) + eightJ arithmetic. 8J necessity kernel-closed; HOLE shape exact. Battles: match-vs-if equations; simp over-normalization; dup consolidation; pipe ascription. Next: old-abundance itself.
