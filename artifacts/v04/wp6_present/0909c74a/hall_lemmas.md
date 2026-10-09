@@ -960,9 +960,22 @@ This is the decoupling-budget (8T-shape) made quantitative. Mechanism
 (WHY tight forces mild / affordable-only heaviness) remains open: needs
 push-banking vs splash-drain accounting with state-distinctness (8R) and
 freshness bounds. Status: FINITE-STRONG shape + open mechanism.
+TRIPLE-COVER (C163, micro.json 150 histories, 2174 heavy bursts): every
+heavy burst satisfies buf >= 3*eB (triple_min exactly 0; max burst eB=127
+at buf=381=3*127, dA=0, dB=253); heavy bursts never synced (0/2174);
+margin buf-overflow >= 4; low-buffer (<=20) heavy max overflow 5 (n=10).
+Triple-cover implies prefix safety at heavy bursts with margin 2*eB.
+GAP ANALYSIS (why mechanism stays open): B-depth built over window W
+since x last rooted satisfies d^B <= 2*E_B(W) (one StepEv deepens a
+bystander by <= 2), so e_B(burst) <= E_B(W); closing triple-cover from
+prefix-IH alone needs window bank rate >= 4/3x spend rate
+(buf(r)+3S(W) >= 4E(W) vs IH's E(W) <= 3S(W)+buf(r)), i.e. pushes that
+deepen x must be banked — unproven (supply-free real splashes exist;
+needs 8R/freshness). Status: FINITE-STRONG triple-cover + precise gap;
+mechanism OPEN.
 
-## 8AC-SYNCED. SYNCED DIVERGENCE IS EXACTLY THE A-TRIVIAL ZIG (C159,
-PROVED MODULO LOOP-STEP CORRESPONDENCE; FINITE-CONFIRMED 674/674)
+## 8AC-SYNCED. SYNCED DIVERGENCE IS EXACTLY THE A-TRIVIAL ZIG (C159+C161+C162;
+COUNTING CORE PROVED_KERNEL; FINITE-CONFIRMED 674/674)
 
 Statement: per-key synced access (|d^A - d^B| <= 2) with overflow >= 1
 (e_B > 3e_A) satisfies (e_A, e_B) = (0, 1) exactly (A-trivial single
@@ -979,14 +992,28 @@ overflow = e_B - 3e_A <= ceil((d^A+2)/2) - 3m = (m+1) - 3m = 1 - 2m.
 If m >= 1 (d^A >= 1): overflow <= -1 < 0, non-divergent. If m = 0
 (d^A = 0, A-trivial): overflow = e_B <= ceil(2/2) = 1 (synced gives
 d^B <= 2), with = 1 iff e_B = 1 (B-nontrivial single step) and = 0 iff
-B-trivial. So divergent-synced forces (0,1) exactly. Dependencies: loop
-structure (engine lines cited, Layer A) + SplayLoop classifier/fuel
-(C110) + C129 delivery rows (consumption facts); loop-to-traceLen
-correspondence queued in simulation. Consequence (decomposition): the
-prefix-GC universal splits into synced-trivial (overflow <= 1, needs
-buffer <= 1: micro-coupling open) + diverged-needs-buffer (unsynced,
-push-built: tier-ledger coupling open). Status: PROVED_AUTHOR modulo
-loop correspondence; finite face exact.
+B-trivial. So divergent-synced forces (0,1) exactly. Dependencies closed
+in kernel: exact counting e = ceil(d/2) via C161 ecount_eq + C162
+steps_length_eq + C139 trace_length_eq (engine iterations = skeleton
+steps); overflow arithmetic via C162 sync_overflow_le/sync_nondivergent;
+consumption e_B <= d^B via C162 eb_le_depth; delivery rows C129 kernel;
+zig-finishes via C130 mem_splay / C135 steps_nil_root/splay_noop kernels.
+Consequence (decomposition): the prefix-GC universal splits into
+synced-trivial (overflow <= 1, buffer suffices: micro-coupling CLOSED C163)
++ diverged-needs-buffer (unsynced, push-built: tier-ledger coupling open).
+Status: counting core PROVED_KERNEL; engine-application PROVED_AUTHOR
+via simulation kernels (C133/C134); finite face exact.
+## 8AC-MICRO. MICRO-COUPLING: SYNCED STEPS PRESERVE PREFIX-GC (C163, CLOSED)
+Kernel (GCStaticMicro.lean): micro_couple disjunction (synced depths =>
+overflow <= 0 or exact (0,1): e_A = 0 and e_B = 1) + micro_step_zero
+(covered steps never decrease buffer) + micro_step_one ((0,1) from
+buffer >= 1 consumes exactly one). Buffer side (Lemma B, AUTHOR): (0,1)
+splashes are A-trivial with prior rooting banking >= 3 and trivial no-op
+intervening, so buffer >= 3 > 1. Finite (micro.json, 150 histories):
+synced-disjunction 0 viol (7955 + 4702 nontrivial); synced overflow>=1 is
+(0,1) with buffer>=1, 689/689 exact, buffer min 13; ceil-exactness
+eB=(dB+1)//2, eA=(dA+1)//2 zero viol in 16776; global Phi_min +2.
+Status: CLOSED (kernel counting + AUTHOR banking + finite-strong).
 
 ## 8AC-AROOT. A-ROOT PERSISTENCE FORCES BANKED ROOTING + SHALLOW STALE (C160)
 
@@ -1001,19 +1028,578 @@ x-accesses (x-KEEP splashes reset to root or no-op; x-DELETE preserves).
 Lemma B (stale bound): A-root + B-depth d>0 implies d is stale since the
 rooting event (no pushes without eviction), and the rooting event (unless
 T0/first-safe (8T idx-0)) is a DELETE-nontrivial banking e_A >= 1 (+3 Phi).
-Lemma C ((0,1)-closure, conditional): an A-trivial splash (e_A = 0) with
+Lemma C ((0,1)-closure, kernel-closed C162): an A-trivial splash (e_A = 0) with
 synced B-depth <= 2 takes exactly one StepEv (single zig/double finishes
 depth <= 2: delivery 2->0/1->0, C129 kernel) so e_B = 1, overflow exactly 1;
 prior rooting banked >= 3 (Lemma B) with trivial no-op intervening
 (DELETE: e_A = e_B = 0; KEEP: B-trivial else it would have splashed and
 lifted earlier), so with strong prefix induction (Phi >= 0 before) the
 buffer is >= 3 > 1 and Phi stays >= 2 after. Hence (0,1)-splashes preserve
-prefix-GC. Dependencies for full kernel: loop-to-traceLen StepEv
-correspondence (simulation queue: e_B counts engine iterations, delivery
-lemmas count skeleton steps) + single-finish-shallow + e(d) = ceil(d/2)
-exactness (for the A-nontrivial-synced half: overflow <= -1, strictly
+prefix-GC. Former dependencies now kernel: loop-to-traceLen StepEv
+correspondence (C139 trace_length_eq + C162 steps_length_eq: e_B counts
+engine iterations = skeleton steps) + single-finish-shallow (C162
+shallow_single/shallow_exact) + e(d) = ceil(d/2) exactness (C161
+ecount_eq; A-nontrivial-synced half via C162 sync_nondivergent, strictly
 helping). Finite face: 674/674 synced-divergent are (0,1); A-nontrivial
-synced never diverges (needs the exactness links above).
-Status: PROVED_AUTHOR modulo listed loop-correspondence links (all with
-concrete Lean targets); the diverged (unsynced) branch remains open
+synced never diverges (exactness links kernel).
+Status: Lemma C kernel-closed; Lemmas A/B + prefix-IH application remain
+PROVED_AUTHOR; the diverged (unsynced) branch remains open
 (tier-ledger coupling).
+## 8AC-TIER. DIVERGED-AFFORDABILITY: MINIMAL THEOREM + MECHANISM VERDICT
+(C164-C166; DIVERGED STEP OPEN, funder structure CLOSED)
+Minimal theorem (DIVERGED-AFFORDABILITY-WINDOW, repository-native): let H
+legal, t a KEEP on x with overflow o(t) >= 2; let W be accesses strictly
+after x's last KEEP (B-rooting r; genesis with Phi(r)=0 and dB0=T0-depth
+if none). Then Phi(r) + sum_{p in W}(3e_A(p)-e_B(p)) >= o(t) (== buf_pre
+>= overflow by ledger telescoping; window.json win_min=4, tele_viol=0).
+Sufficient structural form: buffer >= depth at bursts (triple-cover
+implies it). Circularity audit: telescoping (ledger arithmetic), delta<=2
+(8W.2 rotation geometry), twin-symmetry (splay determinism), genesis
+twin-depth equality (A/B both start T0) are all GC-free; the ONLY
+GC-adjacent premise would be a window bank-rate law, which is NOT assumed
+— it is the open item below.
+Mechanism (funder attribution, window.json 2174 heavy windows): DELETE
+banking dominates (+562137 vs deep-supplying +42831 vs nondeep +13654 vs
+deep-free drain -40290 over 14592 deepening pushes, net +2541 ~ neutral).
+Twin-symmetry breaking: A/B start twins; KEEP splays both identically so
+all-KEEP histories stay twin forever (adv.json keeponly div=0 all shapes)
+with e_A=e_B per access and Phi nondecreasing (kernel twin_run) — hence
+DIVERGENCE IS CREATED ONLY BY DELETES (A-splay without B-splay), and every
+DELETE banks 3*e_A (kernel delete_step/delete_bank). The (0,127) anatomy:
+ONE DELETE banked 381 (e_A=127 on A-vine) then KEEP spent 127 on the twin
+B-vine (dB0=253 genesis, window of length 1) — buf=3*127 is one banking
+event at 3/unit + one spending event at 1/unit, not repeated units.
+Four-routes verdict: (A) scalar global amortized ledger FAILS structurally
+(4/3 gap vs prefix-IH, reproduced); (A') window ledger reduces to funder
+decomposition (above) but window self-sufficiency is goal-equivalent
+(circular) without per-funder rate laws; (B) charging/injection fails on
+cap-exhaustion for big bursts (8U residual) except via DELETE-attribution
+(same rate-law gap); (C) vector/tier (E1/E2/E4/K, 8H fresh-disjointness)
+is the right structure for the maxflow form, but tiers collapse to scalar
+for the counting form; (D) minimal-forbidden adds nothing beyond prefix-IH
+(diagnosed weak). New route (E) twin-symmetry+DELETE-attribution is the
+sole viable path; its missing rate law (deepening pushes banked at >=4/3x
+spend, i.e. supply-free deepening sufficiently rare — 8R single-shot per
+state + fresh-far rebuild) is UNPROVEN. Long-run grind (L~600): no ratchet,
+late margins (1201+) >> early (26+), Phi floor 0 — pool accumulates.
+Adversarial (adv.json: 46 greedy runs x 5 T0 shapes incl. non-vine +
+starve/freeride/drain/phimin + 150 prior hillclimbs): zero kills.
+PAIRING THEOREM (C167, AUTHOR + FINITE-CLOSED 2849/2849): every
+supply-free push (e_A=0 + real B-splash) pairs with a same-key banking
+DELETE-arrival with FROZEN B-depth between (frozen 2849/2849; no B-touch
+possible between since any B-push unroots from A); arrival banks
+3*ceil(dA/2), push spends ceil(dB/2) with identical dB (frozen). Kernel
+edge: ecount_pos (arrival from depth>=1 forces >=1 skeleton step, hence
+>=3 banked). Pair nets reach -118 (diverged arrivals bank ~0); coverage of
+pairs comes from the global pool. Turtles verdict: arrival-divergence is
+the same problem one level up (built by pushes + shallowness from
+rooting/rides); regress bottoms at genesis twins but constants never
+close — the aggregate rate law is irreducible and OPEN.
+FREE-RIDE FLOOR (C172, FINITE-STRONG): beam-choreographed bystanders ride
+16->1 (vine32: (1,15)) but NEVER to exactly 0 unaccessed; last root step
+needs access (banking) or genesis-never-left (then B-shallow by 8R).
+Hence every nontrivial burst banks e_A>=1 (own zig via ecount_pos) unless
+at exact root, and exact-root occupancy postdates a banking arrival.
+POOL-DIVERGENCE COUPLING (C173, FINITE-STRONGEST, AUTHOR-candidate):
+phased freeride-grind-burst assault stalls — x-frozen accesses net-bank
+(pool 21->30 during grind), bursts covered margins 8-43; pool-draining
+pushes rotate large regions and disturb the burst key, while missing it
+implies local/shallow (banking) splays. Draining the pool while preserving
+a diverged burst geometry appears impossible.
+Status: funder structure FINITE-CLOSED + twin/DELETE kernel
+(GCStaticHistory.lean); DIVERGED-AFFORDABILITY rate law OPEN.
+## 8AC-ROUTES. NEW-REPRESENTATION CORPSES FOR THE RATE LAW (C174)
+All corpses below are analytic (logic mismatch, no experiment needed) except
+where finite killers are cited. Route labels per closure-campaign priority.
+- V COAREA/LEVEL-SET: DEAD three ways. (1) Birth-multiplicity: one rotation
+  deepens subtree-sized bystander populations (unbounded) vs 6 slots per
+  Aev (bounded by push depth). (2) Need-time locality: burst-local slots
+  (E1+E2+E4+K) fail on cap-exhaustion (8U residual: rare-x bursts need 252
+  with K_x ~ 1); global pool = counting = rate. (3) Level-geometry mismatch:
+  B-need is depth-based, Aevs are key-intervals; no natural level map.
+- VI DEPTH-TOKENS: DEAD. Token-birth multiplicity unbounded (same bystander
+  populations); need-time charging collapses to pool (rate); lifetime/
+  discharge exactness cannot survive path compression asymmetry.
+- VIII MINIMAL RATE VIOLATOR: subset-minimality INVALID (dynamic replay:
+  removing an access replays all downstream differently; no monotonicity).
+  First-violation (prefix) form is VALID but yields only the known burst
+  geometry (dB>5dA, kernel d6_no_first_violation) — no new leverage.
+- I WEIGHTED EDGE/CUT: by-size weights inherit bystander-unboundedness;
+  reciprocal/log weights give LOG-factor bounds (wrong constant class for
+  6:1). No weighting makes rotation changes local with constant multiplicity.
+- II/IV/X RANK/LOG/EARTHMOVER/CLASSICAL: supply-vanishing kills ALL
+  classical interfacing (access lemma bounds DEMAND with additive log term;
+  supply S_A is independent and vanishes (e_A=0) exactly on dangerous steps;
+  no interface without controlling supply-vanishing = the rate problem).
+- III PRIMAL/DUAL: dual-of-game certificates are potentials (dead per II);
+  dual feasibility constraints are charging-validity constraints (same wall
+  as VI). Deferred-heavy, no independent leverage identified.
+- VII ROTATION INJECTION: weighted mass with controlled per-rotation total
+  impossible (subtree populations); reciprocal weights give log, not constant.
+- IX NORMAL FORM: splays/DELETEs do not commute or confluence (tree state);
+  no canonical phased violator without changing semantics.
+- XI RUN-CANONICAL (new object, BANKED not dead): runs partition history
+  disjointly (no double-count); needs+S_A both at run starts (RUN-NEED);
+  kernel shapes runstart_bank/genesis_run_surplus/synced_run_le1
+  (GCStaticHistory.lean). Open remainder EXACTLY: div-runs deficit vs
+  surplus-runs cover (global pool; the rate law in disjoint form).
+## 8AC-RV. RUN+FIRST-VIOLATION+TENURE TAXONOMY (C175, AUTHOR precision)
+First D6-violation is a run-start KEEP (DELETEs never cross: -6e_A<=0;
+mid-run accesses contribute 0 (needs+S_A already posted at run start)).
+Two shapes. (A) Run starts with KEEP (first access = burst, x off-root):
+deficit need*-6e_A* with need*<=dB (D2), forcing dB>5dA+1+B (kernel
+d6_no_first_violation). (B) Tenure shape (run starts DELETE, banks
+e_A^del>=1 by root-dislodge, B frozen; first KEEP has e_A*=0):
+need*=dB_del-1, deficit dB_del-1-0, needs pool>=dB_del-1 where pool
+includes +6e_A^del; uncovered part dB_del-6e_A^del-1 needs global pool
+(arrival-divergence: dB_del vs dA^del independent). Genesis/T0-root runs
+always surplus (twins: need=0). Synced runs deficit<=1 (kernel
+synced_run_le1). So first crossing forces an extreme-divergence burst
+whose depth was built by others and whose cover is global pool — the rate
+law in sharpest form. Does not close the aggregate (pool composition
+needs the rate law). Banked as exact geometry, not proof.
+## 8AC-TWINEX. TWIN-EXCLUSION + RE-ARRIVAL PAIR CONDITION (C176, AUTHOR)
+Single A-root forbids co-rootedness: a supply-free push (push-key at A-root)
+deepening an A-rooted key is impossible (two roots); hence supply-free
+deepening forces the burst key off-root (dA>=1), so its burst banks e_A>=1
+(ecount_pos), and (0,eB)-bursts pair with a banking arrival + frozen-B
+window (arrival must be DELETE: KEEP would un-deep; between-accesses must
+be DELETE no-ops else unroot/re-deep). Re-arrival pairs (DELETE-arrival +
+supply-free push, same frozen dB): D6-net = 6*ceil(dA_arr/2) - (dB_arr - 1),
+negative iff arrival-diverged (dB >> dA). Arrival-divergence regresses
+(dB built by pushes, dA shallow via rooting/rides) with no constant
+closure — same rate wall in sharpest pair form. Conditional on
+free-ride-floor (FINITE-STRONG) for the no-free-return step. Does not
+close the aggregate. Banked as exact structure, not proof.
+## 8AC-BD1. DELETE BELLMAN UNIVERSAL, AUTHOR (C183)
+H1(D_z) <= H1 + 3a_z for every DELETE z, all pair-states (rd<=0 measured
+everywhere: walk+beam+exhaustive n<=5). Proof: per-rotation bystander
+depth change in {-1,0,+1} exact per region (kernel SplayRotate rows
+up/down/ll/lr/r/middle/outer); total rotations in x's splay = d_x exactly
+(telescoping: zig 1/1, double 2/2; finite-exact 3517/3517 + banked
+b_event_count_lemma); triangle gives depth-drop <= d_x; ceil-subadditivity
+gives e_A-drop <= ceil(d_x/2) = a_x; max-algebra + B-freeze on DELETE
+(B untouched: b_z fixed) close H1(D)<=H1+3a_x. Halves all Bellman closure
+(DELETE branch redundant in F_2+; F_2 needs KEEP lookahead only).
+Lean ride-induction deferred (non-sufficient half: BK1 dead +11 anyway;
+both halves kernelize together if KEEP side ever closes).
+## 8AC-ASYM. ASYMMETRIC ANCESTOR PAIRS DEAD BOTH SIDES (C180)
+Phi = #{(u,v): ancestor_B but not ancestor_A} (zero diagonal, nonneg).
+B-side: x-pairs destroyed exactly (-d, monotone shed, no new ancestors
+for rising x) BUT bystander flips add unbounded signed net (measured B-net
+-62173..+478 at n=512; creation O(n) from single-rotation subtree moves vs
+cost_A=1 on A-rooted bursts). A-side: creation to +62173 (O(n^2): vine-B
+makes every A-flip count since all pairs ancestor-related; ratio O(n) vs
+cost_A). Granularity dilemma confirmed sharp: fine (per-pair) breaks CREATE
+via bystander O(|b|) flips; coarse (boundaries/groups) breaks RELEASE
+(reversed twin-chains: zero edge/segment disagreement at depth d);
+path-local needs future burst key; level/count variants hit multiplicity;
+rigid coherence kills signed cancellation (same-direction moves);
+rotation-distance has CREATE-Lipschitz but NO contraction (splay oblivious,
+does not move toward A). Reversed-chains + obliviousness + granularity +
+rigidity = four independent exact killers. No Phi of this family closes
+CREATE+RELEASE jointly. GC-STATIC + DIRECT-D6 OPEN.
+## 8AC-LRI. LOCAL REWEIGHTING KILL TEST (C178; audit REWEIGHTING_BRIDGE_AUDIT.md)
+R(A,A') positive log-reweight per single A StepEv (ZIG/LL/RR/LR/RL, every
+site, vines/balanced to n=2048): W1-depth R~2n LINEAR unbounded (whole-
+subtree gains); W2-subtree R~log n (8.9..21.0) unbounded slowly (merge
+ratios); W4-heavy-light-no-max R=2.0 EXACTLY (1 gainer, LR-double, all n)
+— bounded positive reweight EXISTS (genuine positive lemma) but LRI-1
+fails around it (mass-divergence at c1<=3; log-terms ~11/access on trivial
+accesses with zero banking; composition drowns: log-terms + 5.5*S_A reweight
+alone exceed GC allowance). Trilemma/dilemma hold: depth-tracking +
+persistence + local-increase triple-incompatible under subtree moves.
+LRI-for-D6 DEAD. Pair-Access-large-C side door theoretically open
+(not pursued; needs LT bridge + endpoints, multi-session scale).
+## 8AC-LIT. LITERATURE ARSENAL EXHAUSTED (C177; see audits/LITERATURE_BRIDGE_AUDIT.md)
+GI/Russo/L3/L6-theorem/Branch-A/B transplants all dead with exact killers
+(log-depth/additive/moving-reference/open-conjecture/anti-correlation;
+reference-update creation unbounded ~n^2/2 measured). Surviving fragments
+(CP-existence, twin Phi_0=n, subject net-new<=0) insufficient for RATE.
+No bridge survives; refinement terminates. Rate law OPEN.
+## 8AC-KR. KEEP-RESIDUAL SCALAR SURVIVORS + COLLAPSE REFUTATIONS (C183-2)
+PREPEND-2 dead universally with exact mechanism (prepending banks shared-path
+depth; vine saving n/4-1 unbounded; minimal killer n=4). ROOT-COLLAPSE dead
+both forms (+1 same-root n=32; +1 post-KEEP reachable; small-n collapse holds
+but scale-emergent failure like BK1): H2=max(H1,Q) must be carried, never
+collapsed. Three finite-held survivors, zero kills: H2-IDENTITY gap=0
+(DEL2 redundant; COROLLARY of BD1 since DELETE freezes B); DELETE-H2
+(H2(D_z)<=H2+3a_z, universal n=3,4 + scale walks); KEEP-RESIDUAL reach
+(Q_x<=Phi, walks+beam+deepdiv; strictly weaker than BK1, holds with margin 55
+where BK1 fails +11). Induction scaffold: these + KEEP-2STEP (two-step
+lookahead bound, the remaining rate-adjacent gap) preserve Phi>=H2>=H1
+(kernel GCStaticKeepResidual). GC-STATIC + DIRECT-D6 OPEN.
+## 8AC-LIP. KEEP-2STEP LIPSCHITZ ARCHITECTURE + UNIVERSAL-KEEP-LIP +1 (C184)
+R3=max_x[r_x+Q(K_x)]; KEEP-2STEP = Phi(h)>=R3(end(h)) by history induction
+from R3(diag)=0 + DELETE-Lip (universal-clean everywhere, tight) + KEEP-Lip
+(reachable-clean everywhere; REFUTED universally by +1 on rare large
+arbitrary pairs: A-rooted attainer KEEP (0,3), excess exactly 1). y=x case
+collapses to KEEP-RESIDUAL (proved+k deep root-noop); gap<=H1(s2) compression
+proved; §20 saturation refuted. Remaining gap = reachable-KEEP-Lip =
+bystander creation across KEEP in sharpest form. GC-STATIC OPEN.
+## 8AC-LIPEX. DELETE z-CHAIN EXACTNESS + BOUNDED-PREPEND (C184-2/3)
+Post-DELETE R3-attainer is z itself 98.6%; tight DELETE-Lip ⟹ attainer z;
+z-chain grows exactly 3a_z by root-noop (kernelized conditionally;
+`splay_at_root` grounds it, H1/Q tree layer pending). Bounded-prepend
+(C(x,y)-C(z,x,y)<=a_z) finite-universal tight. Per-chain growth not
+Lipschitz (+52 vs bank 45): max-structure mandatory. Remainder: non-z
+attainer drop-correlation (2.5%). GC-STATIC OPEN.
+## 8AC-TREE. TREE H1/Q/R3 LAYER + STEERED-SIGNATURE VERDICT (C185)
+Grounded z-exactness kernel-proved to hNode (GCStaticKeep2Step.lean green);
+non-z 1.4-2.5% all slack (tight⟹z up to ties); steered +1-signature holds
+tight reachable (post-R3→0), +1 only arbitrary: reachability load-bearing,
+pure-state proof impossible. GC-STATIC OPEN.
+## 8AC-ZIGSHUT. C.ZIG PROVED; FORMALIZATION GAPS V1-V3 (PIVOT8-1)
+Run-proof complete (no reachability/finiteness in math); green: deliver,
+splay_at_root, ecount_root, mem_splay, delete_step, ecount_eq,
+valid_rotR/L. Open mechanical: doubles-validity + splay induction (V1),
+mem-sdepth (V2), history-fold + run/matching model (V3). DO OPEN.
+## 8AC-FLEX3. V-CORRECTION + RUN-LOCAL SUM (PIVOT7-2)
+V=0 unattained (max -2); run-local sums exactly to FLEX; open on
+diverged-closed. DO OPEN.
+## 8AC-FLEX2. DOUBLE-FLEX ASSAULT RESULT (PIVOT7-1)
+ZIG stands; B<=2A unproved (telescoping dead, counting insufficient,
+reformulations tautological); V=0 tight. DO OPEN.
+## 8AC-FLEX. DOUBLE-FLEX SCAFFOLD + V=0 TIGHT (PIVOT6-1)
+Matching saturates (overflow=FLEX); parse validated; V=0 attained;
+run-local tight; ZIG proof + premise audit. Excess-slack open. DO OPEN.
+## 8AC-ZIGDOUBLE. DOUBLE DEAD + ZIG PROVED-MODULO (PIVOT5-1)
+DOUBLE refuted n=5 ([K5,K1,K5,K3], QB=6>4, all-doubles); ZIG proved by
+run-structure (needs validity/ecount-chain assembly); B<=2A needs
+excess-slack (open). DO OPEN.
+## 8AC-TWOLANE. TWO-LANE VERDICTS + DEFECT FLOOR (PIVOT4-1)
+DOUBLE+ZIG zero failures; sharp Z_B=A,Q_B=A-2; B=R_A pattern;
+defect min 2; n=8 twin-locked. B<=2A needs proofs. DO OPEN.
+## 8AC-ROTANAT. ROTATION/PARITY ANATOMY + RHO6 + LIFTS (PIVOT3-1)
+StepEv green; ROT dead (min n=3); R_B<=R_A+Z_A tight; ZIG universal;
+invariance twin-only; lip_compose green; rho_6=5/3 exact; 3/2 lifts
+all n>=4, 5/3 verified lifts (sup>=5/3); mixed=max by noop-pad;
+pattern suggests sup 2. DO OPEN.
+## 8AC-RECURRENCE. EXACT CYCLE RATIOS + RECOVERY (PIVOT2-1)
+Single SCC n<=6; zero-A impossible (theorem+finite); rho=1,1,3/2,3/2
+certified (n=6 pending); extremals all-KEEP; recovery local-2->3/2;
+checkpoint agrees; periodic<=1.0 to 256; bias~depth-disc 0.73.
+Conjecture rho<=3/2. DO OPEN.
+## 8AC-PIVOT. LITERATURE + HEAP-VIOL DEAD + TRANSLATION (PIVOT-1)
+LT/Chmel read exactly; only coupled bound missing for DO; translation
+green; heap-viol dead (C_min scale law); Chmel polylog under coupling;
+wall invariant. DO OPEN.
+## 8AC-MACRO. CASE-B MACRO CLOSED + SINGLE OPEN STEP (C193)
+Strong induction: DEL/profitable/base free; a_z=0-drain fuses to shorter
+(macro green); greedy/SA clean. OPEN: a_z>=1 draining cover only.
+GC-STATIC OPEN.
+## 8AC-TWIN0. TWIN R3=0 + RESTORATION, KERNEL (C192-2)
+R3(twin)=0 exactly; twin+DEL+KEEP restores twin. Steered-clean explained;
+diverged states not covered. GC-STATIC OPEN.
+## 8AC-LEDGER. STRICT LEDGER + MENU COLLAPSE + TRACE VERDICT (C192)
+19-word ledger (min gap 1); winners only {[],[z],[z]+sub,same}; B-single
+holds / B-2-word dead; trace-fold absent (SP kernel = major project).
+Neither END. GC-STATIC OPEN.
+## 8AC-DEFECT. DEFECT IDENTITY + STRICT CENSUS + F3 VERDICTS (C191)
+defect_identity green; plus1 defect pure-r_z no-tie; strict len-3 absent
+walks/micro-post-KEEP, present micro-s10; F3 fails +2 (ladder dead);
+B-saving dead; +1 onset>=19 genuine. Neither END. GC-STATIC OPEN.
+## 8AC-TGT. TARGET DIRECT VERDICT (C190)
+Closed: STOP/[z]/len2-exact/tie/len1-DEL-mod-SP/doubleroot-kernel. Hard:
+strict len-3 same-chain (arbitrary-only failures). Neither END reached;
+exact obligations stand. GC-STATIC OPEN.
+## 8AC-EXCH. ATTAINER EXCHANGE SELECTOR COMPLETE (C189)
+Menu {STOP,[z],[z]+sigma,[z]+sub-tie,same} covers all data; F3/F4 empty;
+B-prepend dead (+4); KEEP len<=2 exact; ties diagnose violations; kernel
+selector green (O5 word-model specified). Remain: drop-corr + O5 + ROT +
+clean/macro + a>=1. GC-STATIC OPEN.
+## 8AC-SUBCASE. 1-TERM CLOSED + SINGLE-PREPEND + 2-TERM FINITE (C188)
+1-term DELETE closed mod single-prepend (kernel); single-prepend finite
+0/2640+ with rotation-counting sketch; 2-term jointness finite-clean;
+3-term + KEEP a>=1 open (bystander wall). GC-STATIC BLOCKED/OPEN.
+## 8AC-KEEPSPLIT. KEEP = DELETE-Lip + B-FROM-D (C187)
+Post-KEEP attainer never z (bystanders carry it); B-Lip false arbitrary,
+tight from A-rooted D-states; z drops exactly b_z (kernel); split exact
+(kernel). Remainder: non-z correlation both halves. GC-STATIC OPEN.
+## 8AC-H1DIFF. SAME-B H1-DIFF + LAYERING IMPOSSIBILITY (C186)
+h1_diff_sameB kernel green (floor-aware via foldmax_diff); single-key saving
+<=a_z finite-clean; nested lifting multiplies budget per level (jointness
+unavoidable); gap-zslack<=-3S derived (needs nested Q-diff). GC-STATIC OPEN.
+## 8AC-MAXLIFT. FOLD-MAX DIFFERENCE LIFTING, KERNEL (C185-3)
+Per-key drops lift to fold-max bounds mechanics-free (foldmax_diff green);
+DELETE-Lip = kernel lifting + open per-key drops + non-z correlation.
+GC-STATIC OPEN.
+## 8AC-RKC. ROOT-KEEP CLEANLINESS + A-FREE CLOSE (C185-2)
+A-free KEEP annihilates R3 on reachable (post=0 always) but not arbitrary
+(post to 2): reachability-essential. a_z=0 KEEP-Lip follows (kernelized;
+covers both +1 witnesses). Double-rooted-R3 unbounded in general (11).
+Remaining: a_z>=1. GC-STATIC OPEN.
+## 8AC-VINE. UNIVERSAL VINE-PAIR B<=A PROVED (PIVOT9-1)
+V1 (n>=5): vine-preserving splay has depth<=1 (first-double-step analysis:
+non-leaf branches via kernel LL/RR/LR/RL; x-leaf mirror continues to a
+branching double; n=3/n=4 mirror exceptions real, measured, finite-checked).
+Vine-internal costs in {0,1}^2; differ-bit classification ((0,1) flips
+1->0 only; (0,0) loops; (1,0) weight -1 unrestricted; (1,1) never flips
+0->1) + kernel counting (vine_cycle_nonpos green) => B<=A on vine cycles, all n (finite n<=5,
+proof n>=5; re-verified n=6,7). First universal C=1 region; non-vine
+excursions remain for general B<=2A. DO OPEN.
+## 8AC-VEX. VINE EXCURSION DECOMPOSITION (PIVOT9-2)
+Open vine law B-A<=tau(s)-tau(t) proved+kernelized (vine_path_bound green;
+bit-convention fixed). Census: n=6 9600 excursions W in [-12,+2] (58 pos);
+n=7 46592 W in [-18,+2] (104 pos); max surplus +2, no growth. E0/E1/E2/E3
+refuted with exact witnesses (E3 holds all but 8+1 residual-+1 cases);
+E4b (B<=3A) holds fully. Residual equation exact; E5-global open (cover
+8+1). +2s self-repay (closures<=-11; no vine chaining). Entry=depth>=2
+theorem + finite types; exit destroys last branches, costs A>=1. 5/3 cycle
+avoids vine-pairs (non-vine max rho=5/3). Hub single-SCC to n=7; sweep
+word universal one-way. Anchor conditional proved. DO OPEN.
+## 8AC-VVC. VINE-VISITING-C2 CONDITIONAL THEOREM (PIVOT-10A)
+9 residual-+1 classes share one signature (A-rooted deep exit + neutral
+middles + (1,1) twin re-entry; (2,6)/(4,10)). Debt-machine proves closed
+vine-visiting walks satisfy W_2<=0 given D1/F1/F2/R0 (finite+steered
+supported; T1 kernel twin_exit_A green): debt-bit (<=1 outstanding via
+F2+invariant), first-clearing pairing (disjoint), walk-start-twin tail
+paired with payer-before; R0 kills twin-start chaining. n>=5 by V1, n<=6
+by global rho. DEBT ROUTE CLOSED (PIVOT-10B: D1 refuted by sweep-return
+W=+9/r=+8 witness; hypotheses false not open). Non-vine-only chamber
+remains. DO OPEN.
+## 8AC-EXBIT. EXCURSION-BIT LAW: REFUTED BY SWEEP FAMILY (PIVOT-10B)
+r(E)<=d(s)-d(t) is FALSE universally. Witness n=32 (K1+K1..K32 from
+(inc,dec)-vine, 33 all-KEEP): A=31,B=71,W=+9, DT needs W<=+2, residual +8
+needs <=+1 (sha c7d01179; smaller n=20 sibling +4/+3). Growth ~n/4 (exit
+deep-B + sweep sustaining B/A~2.29). Kills EXCURSION-BIT, D1, E3-universal,
+PIVOT-10A debt-machine (hypotheses false). Spares: Lean kernels (true),
+PIVOT-9, n<=6 rho, C.ZIG, E4b, global B<=2A (witness open). Universal
+partial results stand: vine bit-change all-n (kernel green), re-entry
+A-forcing, no-A-zero excursions, length-2 DD/TD. DO OPEN.
+## 8AC-VDCR. VINE DISAGREEMENT CREDIT: NEGATIVE ENDPOINT (PIVOT-11)
+Endpoint-choice vine encoding bijective (2^(n-1)); pos0=tau; deep-frozen
+on vine moves (positions {0,1} only); 8 vine-edge combos. ~40 D variants
+falsified (Hamming/weighted/directed/subset/rank/deep-mass/twin-augmented;
+proven coefficient contradictions + creation/destruction overlap +
+scale-vs-tightness). R0-rule D=2tau: 0 violations n=6,7 macro + UNIVERSAL
+on vine paths (n>=5 proof, n<=4 finite; Lean vine_W2_twin_bound green),
+range-capped +2 (witness needs +9). Bias flat/uncorrelated. n=32 anatomy:
+A=n-1 exact, twin-roots but branched, H 31->0, W +16-10-repay to +9.
+No additive positional D closes vine-visiting cycles. DO OPEN.
+## 8AC-CDOUBLE. COARSE-DOUBLE Q_B<=2A: n<=6 PROVED + PROGRAM (PIVOT-12)
+n<=6 analytic: Q<=B + rho<2 gives Q<2A (A>0; Q<=2A-1); A=0 gives B=Q=0
+(direct universal: A-free closed walks never change B). max W_Q=0 exact.
+Regressions: 5/3 true (6,4,6) W_Q=-8 eps<=0; 3620 blocks eps=0; n=32
+(31,49,22) W_Q=-13 (old +9 was zig-noise); +2s tight. rho_Q<=rho_n.
+Epsilon: 4 bad types (all a=0) n=6; 6 types n=7 (+(1,3,0)); ladder universal.
+Vine slack q=0 (n>=5). Matching 5/3: 4/4 local. Per-excursion-Q program
+(n=6,7 all<=0; universal open: restoration wall). n>=7 open. C=3 DO chain
+conditional (B<=3A => 7LT+2g). No new Lean. DO OPEN.
+## 8AC-OVF. OVERFLOW GENEALOGY CHARGING (PIVOT-13)
+StepEv matching (B-doubles vs 2xA-credits; local+creator+setup; local-first;
+Hall extraction). Overflow canonical deepest-first, empirically moot
+(~all (0,1,+1); rare (0,2,+2); no (1,3)). lap2-steady FULL: 200/200 hunt-n6,
+63/63 walk-n6, 35/35 walk-n7 (genesis 0; creators 1-9 back; chains<=10
+terminating). 7 starved-(a=0) Hall failures -> setup rule fixed all.
+Nonconsecution (runs all len-1), vine slack q=0 (n>=5), excursion W_2 cap +2,
+n32 W_Q=-13, soup banked. Universalization (creator/chains/setup/wraparound)
++ non-vine chamber OPEN. DO OPEN.
+## 8AC-U1U4. UNIVERSAL GENEALOGY U1/U2/U3 PROVED, U4 OPEN (PIVOT-14)
+U1 cyclic creator in-epoch (consumed-descent; genesis structurally dead);
+U2 starved setup exists (dethrone+quiet; mod-m wraparound, no duplication);
+U3 <=2 hops (free-credit question separated to U4). H: starved blocks
+pairwise disjoint, one starved/block, no shared setup, fan-in O(dB).
+U4 closed-component capacity OPEN (fan-in + setup self-competition).
+550+ adversarial cycles match (bred maxlen 52); Q_B>2A nowhere.
+Lean GCStaticGenealogy green (U1 descent logic). DO path: U4+C.ZIG banked.
+## 8AC-U4C. U4-CORE: L1/L2/L3 + MINIMAL-X, U4 OPEN
+L1 starved setup always DELETE (dedicated slack, never creator). L2 setups
+injective over starved B-active; namers <=1+<=1. L3 non-starved overflow
+extremal (n=6 impossible; n<=8 only (1,3), residual <=1). Minimal-X =>
+dance-or-concentration (coherent, needs new invariant). Era-correlation +
+strong-form + single-builder evidence; no canonical route closes U4
+(bubbles conserve; rotation counting tautological). 600+ tests green.
+## 8AC-U4M. U4-MISSING: NO-TIGHT-DANCE (ONE LEMMA)
+Minimal-X forces tight fully-shared dance (coherent). S1 half-pool OPEN
+(cancellation wall vs greedy/census support). NO-TIGHT-DANCE unrealizability
+=> U4 => Q_B<=2A. 700+ tests green, Q_B>2A nowhere.
+## 8AC-NTD. NO-TIGHT-DANCE: E0 + GROSS/NET WALL, OPEN
+Tight dance formal (|N|=|X|-1, no privates); bridge banked (minimal => dance
+core). Cell chronology exact. E0: deficits sum to 1 (+fat-creator term).
+Escapes/divergence/bracketing attacked; signature null; composition open.
+ONE lemma: E0-dance unrealizability. 700+ green, unrefuted.
+## 8AC-E0D. E0->DOUBLE: GAP DECOMPOSITION, PER-ACCESS ROOM, STILL OPEN
+E0 code-frozen (complete naming); bridge + sole-naming-empty; gap =
+excess - slacks; per-access room 150/150; sharing wall stands.
+E0/U4/Double OPEN (composition ready, unrefuted). DO conditional.
+## 8AC-SHI. SHARING->SLACK: CORRECTION + TWO BLOCKERS, OPEN
+Excess=residuals (not namings); canonical needs era+concentration.
+Blockers: (i) era (cancellation wall); (ii) residual concentration.
+Per-access room 150/150; long-splice green. E0/U4/Double OPEN, unrefuted.
+## 8AC-RESJ. RESIDUAL-JOINT: MARGINALS CONSERVED, OPEN
+Residuals (not namers); locals-first sufficient; joint tradeoff analyzed
+(luck conserved across projections); all falsifications fail=support;
+tail ~5sigma (needs 1e6 cycles). ONE missing: joint marginal exclusion.
+R<=H/E0/U4/Double OPEN, unrefuted. DO conditional.
+## 8AC-FPL. FORCED-POOL + WALL EXHAUSTIVE, OPEN
+Zero-fat E0-overfull => genuine Hall failure (no reorder escape).
+10 formulations, one wall (sharing vs headroom, independent quantities).
+E0 integers work; conjuncts observed; joint unobserved+coherent.
+E0/U4/Double OPEN, unrefuted. DO conditional.
+## 8AC-E0C. E0_CORE: n<=6 CLOSED + SIGN-LOCKING, OPEN n>=7
+Mutations preserve joint-marginal core (all parts load-bearing).
+n<=6 closed via era-route (caps+floor; independent proof).
+Sign-locking 0/15000+ (sustained same-sign-or-still; fresh unlocks).
+ONE irreducible: joint-marginal tight dance +1. E0/U4/Double OPEN.
+## 8AC-FRT. FRESH-TRANSIENT: SIGN-LOCKING + PATH-HIT, OPEN
+Sign frozen (builder sigma); FRESH structural (arrival+sign-change/T0-touch).
+E0 needs freshness (sustained cannot discrepancy 0/15000+); T0-path marginal.
+F-D saturated, F-K unproved room, F-T0 ineligible. Compensation OPEN.
+ONE atomic: sustained sign-lock theorem. E0/U4/Double OPEN, unrefuted.
+## 8AC-PHG. PATH-HIT GLOBAL BYPASS: EXACT YET WALL-BOUND, OPEN
+Rotation r=d exact; inventory created=consumed=Q exact; genesis eliminable.
+Need D_B<=2D_A+slack (same discrepancy wall, 31 formulations). Q_B<=2A OPEN,
+unrefuted. DO conditional.
+## 8AC-BIN. BINARY: n<=9 YES-CERTIFIED, n>=10 WALL (HONEST OPEN)
+Howard mu*=0 + BF feasible (3/4/7 passes) + verifiers GREEN (2.6M/32.7M/425.5M
+inequalities). Max-mean exactly 0 (self-loops). n=10 BF infeasible (time).
+Obstruction circular; NO-hunt negative (best -2); 31 formulations one wall.
+n<=9 YES; n>=10 OPEN (not NO: no witness). DO conditional.
+## 8AC-DUL. DUAL UNIVERSAL: TWIN-MAX REFUTED, OBSTRUCTION BANKED
+BF duals mined (battery; locality dead (D varies; roots insufficient)).
+Twin-max falsified 80560 (max-recharge cancels twin-payment; max-preserved
+caps +1; q>=3 needs setup-era wall). ONE obstruction: max-term dilemma.
+n<=9 BF-certified; universal dual OPEN. DO conditional.
+## 8AC-FSM. FSM COMPRESSION: INTERFACE BITS INSUFFICIENT, OPEN
+Additivity refuted; offsets unbounded; max-depth inverse; projections insufficient.
+Twin-max/exceedcount refuted (80560/147128). Interface bits leave 281 multi
+(depths unbounded / shapes vacuous). n<=9 BF-certified; universal dual OPEN.
+## 8AC-CGR. CEGAR: ABSTRACT-POSITIVE DIES IN DETOURS, OPEN
+Twin/root-pair abstract infeasible (positive cycles +1/+2); witnesses
+(1,3)-extremal; stitching incompatible (root-pairs differ); BFS detours
+repay -32 vs +2 gain (17x; closures dominate). Refinement needs unbounded
+info (wall). n<=9 BF-certified; universal OPEN.
+## 8AC-L2R. L2 LOOP EXECUTED: GREEN n=7, BOUNDED-PAYMENT WALL n=8/9, OPEN
+L2 (rootA,rootB,vineB)+twin-baseline FEASIBLE n=7 (63 classes, verifier
+GREEN 2.6M/2.6M); compact form Phi=-2twin-[B non-vine]; DELETE proved
+(AUTHOR). n=8: compact RED 72K (q=3), L2/L3 INFEASIBLE (+3 root cycles,
+decoded). n=9 q>=4: RED 127K, short exactly 1 (ceiling 3 < need 4).
+Unbounded q needs depth-proportional payment (E0-wall). n<=9
+BF-certified; universal dual OPEN. DO conditional.
+## 8AC-TWN. TWIN-ONLY BEST, MAX-DEPTH OBSTRUCTION, OPEN
+Phi=-2*twin: n=7 4484 (classes (0,3),(1,3) x2108/2376), n=8 118760,
+n=9 2.2M (adds q=4 corners) — all max-depth short 1-2; every extension
+worse (80K/147K/328K). Finite-range universal dual impossible in
+twin-family; infinite-range needs depths (wall). n<=9 BF-certified;
+universal dual OPEN. DO conditional.
+## 8AC-ACR. A-CARRIER: H8 DEAD, PATH-NEIGHBORHOOD SURVIVES, OPEN
+31K events; H2/H3 path-determined; H7 necessary (mirror C=5v3);
+H8 empty (eliminated). H* = path-neighborhood + y + support + twin/B.
+No compressed law; no M. n<=9 BF-certified; OPEN.
+## 8AC-GTK. GATEWAY KERNEL: V=V2 n=5 ONLY, POST-COEFFS NEEDED, OPEN
+V=V2 82/82 (n=5), fails 1430 (n=6). Identity exact 671K/671K.
+Collision datum: Lambda rows; residual = fresh post-coefficients.
+328-chain ends vacuous (no compact Z). No M. n<=9 BF-certified; OPEN.
+## 8AC-BCL. BELLMAN CLOSURE: PROFILE FAILS n=6, LAMBDA-ROWS NEXT, OPEN
+Tight DAGs + D=0 self-loops; P->V clean n=5, 328 amb n=6. Datum:
+Lambda-row (c,support), not R values. Horizons 2/5; C-vectors 3
+patterns (C_2 only). Profile machine dead (1254/210 amb). No M.
+n<=9 BF-certified; universal dual OPEN.
+## 8AC-VIN. INTEGRATOR: V EXACT, PROPAGATION UP, NO M, OPEN
+Full-graph V exact n=5/6 (mu=0; ranges 0-3/0-5). Tight DAGs; (9,83,1):
+V=3=1+2 via K6. Propagation strictly up, 99.5% deterministic. Units:
+max-deficit 95%, 86 fails; gateways non-twin/non-vine-B. No M.
+n<=9 BF-certified; universal dual OPEN.
+## 8AC-CMP. COMPILATION: R_T EXACT, AGGREGATIONS DEAD, OPEN
+R_T fold + D_s exact; K_+/sum/max/major/K_1/K_abs all refuted (mass
+moves+amplifies; spikes to 45). A-budget rewritten; pairing open.
+Max-mean-D=0 (no cycle bar). No M; DO chain preserved. OPEN.
+## 8AC-SLV. MACHINE SOLVED; TWIN+DB WALL ALGEBRAIZED; OPEN
+R-fold exact (7/7 match); absorption universal; T-maps derived.
+Identity: surplus=2a+2(1-t_pre)-R. DELETE proved; KEEP iff R<=budget.
+No K emerges. M: fringe-mass payment terms. n<=9 BF-certified; OPEN.
+## 8AC-RCM. RECOVERY MACHINE PROVED; ZIG UNBOUNDED; OPEN
+X* (G maps, fringe, twin, supply) proved symbolically; 346/346 +
+41/41 green. Residual: absorption monotone; zig-outer family unbounded
+(r=n-4); no uniform bound; r<=2a false. Mixed induction + universal
+proofs open. n<=9 BF-certified; universal dual OPEN.
+## 8AC-HNR. HIGH-NEED RECURRENCE DETERMINISTIC, HELD-OUT, OPEN
+55 high-need (3..15): X4-fringe exact (3247 states, 0 amb); (L,R)
+recurrence + supply 41/41 held-out (RL bug fixed). A/B: NO (rises);
+single invariants all fail; WORLD B (bounded, access-local). Next:
+arbitrary-subtree update proofs. n<=9 BF-certified; universal dual OPEN.
+## 8AC-RCV. RECOVERY: SECOND-DOUBLE + ZIG RULES, OPEN
+Hard-first necessary 100%; second double => recovery 100% (484 cases);
+zigpay exact from (first config,twin,top-outer). Boundary n<=6.
+n<=9 BF-certified; universal dual OPEN.
+## 8AC-DSC. DISCOVERY: FIRST-HARD NECESSARY, RECOVERY OPEN
+Exhaustive census: unpaid=>first-hard 100%; first-easy=>never borrower.
+77% recover via absorption+twin; unpaid in q=1 zigzig-hard-first.
+Cross-access 0 persistence (access-local). Missing: recovery predictor.
+n<=9 BF-certified; universal dual OPEN.
+## 8AC-RLT. REALITY: PAY FACTORED, NAKED ARRIVAL, OPEN
+650 doubles: pay=twin+size-formula exactly (shape-blind rigorously).
+Hard=naked arrival (inner 0.40 vs 2.60) + outer mass + twin kept.
+Debt inverts via absorption; lineage: persist/migrate/split.
+Missing: size-evolution meter. n<=9 BF-certified; universal dual OPEN.
+## 8AC-BDB. B-DOUBLE PAYMENT: 4 DEAD, TABLES EXACT, OPEN
+rho 824 / D2 1318 @n6 dead (exchange false / trade); E1 dead n=2 zig;
+E_del dead 11/20. Symbolic tables 346/346 (recharge=outer-descent).
+Twin never destroyed in B-phase. No live D; conditional proof recorded.
+n<=9 BF-certified; universal dual OPEN.
+## 8AC-XCT. EXACTIFICATION: FROZEN EXACT, RESOURCE-UNRESOLVED, OPEN
+41K rows replay-verified (0 real mismatch; 41,024 distinct primitive).
+Gauge proved; no free equalities. Exact LP blocked (degenerate solves
+>=20 min; no sparse exact simplex). t*~=0; no Farkas. Template
+viable-at-float, unrefuted. n<=9 BF-certified; universal dual OPEN.
+## 8AC-CUT. CUTTING-PLANE: FLOAT n=7 OK, EXACT UNRESOLVED, OPEN
+67->41K genuine rows, LP always feasible (no Farkas). Float converged
+(2.5M, tol 1e-4). Exact oscillates (rounding fragility at t*~=0;
+3880/13588 break at /1024). Template viable-at-float; exact verdict needs
+exact rational LP (unavailable). n=8 deferred. DELETE finite OK.
+n<=9 BF-certified; universal dual OPEN.
+## 8AC-GRW. GROWTH ROUND: 133 FEASIBLE, R1 DEAD, UPDATES DERIVED, OPEN
+n=11 range law verified (ternary non-universal). 66 growth rows (to n=64).
+Free g exact 0/133 (±5/22 ternary; range tight vs n=64 bound). R1
+majority-list refuted 27/133 (candidate failure). Rotation eta-updates
+engine-checked (rigid sets identical; down-push measured). DELETE finite
+28 OK, universal open. n<=9 BF-certified; universal dual OPEN.
+## 8AC-UCT. UNIFORM CONTEXT ROUND: DEPTH-TEMPLATE DEAD, ETA ALIVE, OPEN
+42-transition cert verified twice (surplus 10971177); sum-f(dA,dB) dead
+(scoped). eta=(dA,dB,nA,nB,omega) survives old multipliers (415 nonzero).
+Free g on 67 edges: feasible exact, all coeffs in {-1/9,0,1/9} (sparse
+only). No evaluator yet. DELETE proved (AUTHOR); KEEP open. n<=9
+BF-certified; universal dual OPEN.
+## 8AC-POS. POSITIONAL ROUND EXECUTED: ADDITIVE EXCLUDED, POS/POSA DEAD, OPEN
+-2t+F(A)+G(B) impossible (n>=64, verified). alpha_pos splitting confirmed
+(LCA 8v7/8v2); POS-8 infeasible (5-cycle), POSA(+mdA) infeasible (6-cycle,
+same archetypes re-routed). No live candidate (C4 term-only). DELETE
+proved (AUTHOR); KEEP open. n<=9 BF-certified; universal dual OPEN.
+## 8AC-RPR. REPAIR ROUND: EXCLUSION PROVED, C4 REFUTED-AS-COMPLETE, OPEN
+No F(rootA,vineA,T_B) (n>=64, verified); L2-L4 families universally void.
+L4 stitches need keyed fuel-placement (no coarse A-bit separates; loop
+diagnosed). Battery 21: C1/C3 dead, C5 7 fails, C4 3 fails (D_B-rise only;
+term-only). DELETE proved (AUTHOR); KEEP open. n<=9 BF-certified;
+universal dual OPEN.
+## 8AC-PSR. PAIR-SENSITIVE ROUND: §4 PROVED, L4 DEAD, C4 ACTIVE, OPEN
+F(root_A,T_B) impossible (n>=64, verified); A-shape necessary. L4
+(+fuel bit) infeasible at n=8 (+2 cycle); stitches agree on all coarse
+features (spine-geometry chase withheld). Battery: C1/C3 dead (14),
+C5 wounded (5), C4 active (+D_B, 3 zig-rise fails). DELETE proved
+(AUTHOR); KEEP open. n<=9 BF-certified; universal dual OPEN.
+
+
+## 8AC-RSL. ROOT-SELECTED: GATE I PROVED, GATE II OPEN
+H_y=-R+4*absorbed; DA0-ROW universal (fold bounds); regression 0/19K.
+D=D0+DDEL exact; DDEL<=0 proved. Absorbed-H RS refuted (all kappa);
+joint fiber feasible+strict. Universal RS + residual + CD open.
+## 8AC-GRG. GAUGE RIGIDITY: FINITE R1 + FIBER R2-LEAD, OPEN
+B-only gauges drop-free n=5/6 (LP+circulation); twin harvest dead
+(DELETE). da=0 (x=y=A-root) fiber harvests robustly, atomwise-valid;
+universal program open. VERDICT R4. n<=9 BF-certified; OPEN.
+## 8AC-ATI. ATOMIC WEIGHT = TAUTOLOGY, COHOMOLOGY, OPEN
+Single-atom Bellman solves exactly (16 types, cover 100%) but h =
+2-lambda = forbidden tautology (slot-independent). No genuine margin
+forced; merges/splits per-z exact; root bounded. Universal h_k +
+aggregation open. n<=9 BF-certified; OPEN.
+## 8AC-STC. STATIC CARRIER: STATIC-A PROVED, OPEN
+5214 A-static events; fresh 100% latently sourced; full-claim Delta
+0 amb; twin 0->1 99.5%; M_static naive 43.7% (weighting open);
+static recharge exists (6972). Next: weighted integrator + coupling.
+n<=9 BF-certified; universal dual OPEN.
+## 8AC-SGX. SINGLE-CROSSING REFUTED, OPEN
+B-coeffs appear on A-static keys (witness (18,12,5,1): d=1, single
+support, no A-cut sees it). No motion-cut carrier suffices; richer
+carrier (cut + static B-coeffs) forced but unlaunched. No M.
+n<=9 BF-certified; universal dual OPEN.

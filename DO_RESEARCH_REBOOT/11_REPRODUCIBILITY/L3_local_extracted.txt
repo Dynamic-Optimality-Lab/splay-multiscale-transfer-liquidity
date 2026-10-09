@@ -1,0 +1,1472 @@
+--- PDF PAGE 1 ---
+A Foundation for Proving Splay is Dynamically Optimal ∗
+Caleb C. Levy † Robert E. Tarjan ‡
+Abstract
+Consider the task of performing a sequence of searches in a binary search tree. After each
+search, we allow an algorithm to arbitrarily restructure the tree. The cost of executing the task is
+the sum of the time spent searching and the time spent optimizing the searches with restructuring
+operations. Sleator and Tarjan introduced this notion in 1985, along with an algorithm and a
+conjecture. The algorithm, Splay, is an elegant procedure for performing adjustments that move
+searched items to the top of the tree. The conjecture, called dynamic optimality, is that the cost
+of splaying is always within a constant factor of the optimal algorithm for performing searches.
+We lay a foundation for proving the dynamic optimality conjecture. Central to our method
+is approximate monotonicity. Approximately monotone algorithms are those whose cost does
+not increase by more than a ﬁxed multiple after removing searches from the sequence. As we
+shall see, Splay is dynamically optimal if and only if it is approximately monotone. This result
+extends to a weaker form of approximate monotonicity as well as insertion, deletion, and related
+algorithms. We prove that a lower bound on optimal execution cost is approximately monotone
+and outline how to adapt this proof from the lower bound to Splay, and how to overcome the
+remaining barriers to establishing dynamic optimality.
+1 Context
+The binary search tree is the canonical pointer-based data structure for maintaining a sorted
+collection in fast memory. Its most attractive feature is that the number of comparisons required to
+verify the presence of an item is logarithmic in the size of the tree, provided that the tree is properly
+arranged. Without exercising care when adding elements, however, a binary search tree can easily
+become unbalanced, making search cost proportional to the size of the tree in the worst case. Thus
+binary search trees require some form of maintenance and restructuring for good performance.
+Adel’son-Vel’skii and Landis gave the ﬁrst method that guarantees eﬃcient searches in the
+presence of updates [1]. They supplement nodes with bits that provide rough information about
+how balanced each node’s subtrees are. After an insertion or deletion, a restructuring procedure
+restores invariants on the balance bits. These invariants ensure that all paths in the tree have
+length at most logarithmic in the tree’s size. There are many variations of this idea. Perhaps
+most famous is the red-black tree due to its requiring fewer restructuring operations and a catchy
+name [32]. Restructuring schemes based on balance bits remain an active topic of research [33].
+Many more schemes now exist. Randomized search trees, such as treaps [60], zip trees [66] and
+others [52] trade worst-case performance guarantees for good expected behavior in order to gain
+simpler rebalancing procedures and fewer pointer changes. Scapegoat trees [4, 28] defer restructuring
+∗This paper is an adaptation of the ﬁrst author’s Ph.D. thesis [45]. We presented an earlier version at SODA [46].
+†Sunshine; caleb.levy@gmail.com.
+‡Department of Computer Science, Princeton University; Intertrust Technologies; ret@cs.princeton.edu.
+1
+arXiv:1907.06310v3  [cs.DS]  9 May 2022
+
+--- PDF PAGE 2 ---
+operations until they can be executed in bulk. B-trees [5] and their derivatives [20], close relatives of
+binary search trees that use system memory characteristics to determine node arity, are ubiquitous
+in database applications. There are numerous related data structures. For the most part, they are
+well-understood. However, there is a class of binary search tree algorithm whose behavior remains
+one of the great open questions in theoretical computer science.
+While the above-mentioned data structures guarantee logarithmic search time, they usually
+cannot perform much better than this. Real-world access patterns often have some latent structure.
+For example records may be arranged in partially sorted sub-blocks, and databases often receive
+frequent requests for a small number of high-traﬃc elements. In such situations it can be possible
+to do better than logarithmic time per access by adjusting the tree after searches, instead of solely
+after adding or removing elements. This leads to colloquially named “self-adjusting” binary search
+tree algorithms. Allen and Munro were the ﬁrst to examine such algorithms in depth [3]. They
+developed a simple procedure with good expected behavior in many cases. By far the most famous
+self-adjusting binary search tree algorithm is Sleator and Tarjan’s improvement to this procedure,
+called Splay [61], which has many compelling properties and applications. For our purposes, Sleator
+and Tarjan’s most important contribution to this topic is not what they proved, but instead what
+they left unresolved. The dynamic optimality conjecture asserts that Splay is essentially the ideal
+algorithm for every possible access pattern. This problem’s intrigue arises from several sources.
+Dynamic optimality would imply we can use Splay as a stand-in for many more-specialized data
+structures. Splay simultaneously acts as a balanced search tree and as a spatial and a temporal
+cache. It also shares properties with entropy-minimizing static trees [61] and data structures for
+disjoint set union [50]. Dynamically optimal algorithms can emulate multi-ﬁnger binary search
+trees [12] and doubly-ended queues [65].
+Advances in our understanding of binary search trees percolate into other areas. Splay and
+related self-adjusting data structures inspired the creation of pairing heaps [26], smooth heaps [43]
+and slim heaps [35]. Splay’s properties ﬁnd utility in encoding schemes [40], routing problems [59]
+and optimizing for concurrent non-uniform access [2], and the conjecture has analogues for B-trees [9,
+24], search-tree-on-tree data structures [7, 8] and external memory settings [6].
+Furthermore, the conjecture has become a nexus for the development of new strategies for
+analyzing data structures. Splay was intimately involved in the adaptation of potential functions
+from physics to computer science [64]. Concepts common in the analysis of forbidden substructures
+are frequently applied to Splay and related self-adjusting algorithms, with examples including
+Davenport-Schinzel sequences [55], forbidden submatrices [54] and pattern-avoiding permutations [13,
+30]. Techniques from computational geometry are now common in this area of research [22, 39].
+Finally, the conjecture has a distinct intellectual allure. At ﬁrst blush, its claim seems too good
+to be true, which makes the idea of proving it all the more attractive. Its statement is elegant and
+deceptively simple, yet anyone who has attempted to tackle the problem can attest to its subtlety
+and utter deﬁance of standard mathematical approaches. Solutions frequently seem tantalizingly
+close while remaining just out of reach.
+This investigation adopts a somewhat diﬀerent tone from its companions. It can often be easier
+to induct on stronger hypotheses because they provide more exploitable structure. Accordingly, we
+have no qualms about presuming that Splay is dynamically optimal and allowing this to guide our
+intuition. Our objective is to determine how we can prove the conjecture, not if. Section 2 deﬁnes
+our execution model and summarizes related work. Section 3 shows that Splay is dynamically
+optimal if and only if it is approximately monotone. Section 4 formalizes optimality with additive
+overhead and demonstrates that if Splay is optimal then it has no such overhead. Section 5 extends
+both Splay and our execution model to incorporate mutation operations and establishes that if
+Splay is optimal without these operations then it is optimal when they are permitted. Section 6
+2
+
+--- PDF PAGE 3 ---
+generalizes our results to similar algorithms. Section 7 establishes that a non-trivial lower bound
+on optimal execution cost is approximately monotone. Section 8 outlines a speculative proof that
+Splay is approximately monotone. The appendices formalize relevant folklore.
+2 Preliminaries
+A binary tree T comprises a ﬁnite set of nodes, with one node designated to be the root. All nodes
+have a left and a right child pointer, each leading to a diﬀerent node. Either or both children may
+be missing; a missing child is denoted by null. Every node in T , save for the root, has a single
+parent node of which it is a child. (The root has no parent.) Each pairing of a node with its parent
+is an edge in T . The size of T is the number of nodes it contains, and is denoted |T|. There is a
+unique path from root(T ) to every other node x in T , called the access path for x in T . If x is on
+the access path for y then x is an ancestor of y, and y is a descendant of x. If these two nodes
+are distinct then x is a strict ancestor of y and y is a strict descendant of x. (Every node is an
+ancestor and a descendant of itself.) The subgraph comprising all descendants of x is called the
+subtree rooted at x. Nodes thus have left and right subtrees rooted respectively at their left and
+right children. (Subtrees are empty for null children.) The depth ofx, denoted dT (x), is the length,
+in nodes, of its access path. A rooted hull in T is a connected subgraph of T that includes the root.
+A rooted hull is itself a binary tree.
+In a binary search tree, every node has a unique key, and the tree satisﬁes the symmetric order
+condition: every node’s key is greater than those in its left subtree and smaller than those in its right
+subtree. The binary search tree derives its name from how its structure enables ﬁnding keys. To
+ﬁnd a requested key, initialize the current node to be the root. While the current node is not null
+and does not contain the requested key, replace the current node by its left or right child depending
+on whether requested key is smaller or larger than the key in the current node, respectively. The
+search returns the last current node, which contains the requested key if said key is in the tree and
+otherwise null. The left spine of T is the access path to the smallest key in T , and the right spine
+of T is the access path to the largest key in T . (The spines of the empty tree are empty.) The left
+and right spines consist entirely of left and right pointers, respectively. A tree is ﬂat if every node
+is on the left or right spine. To keep our presentation simple, we assume that a key and the node
+containing it can be used interchangeably in binary comparisons.
+We denote by |X| the length of a ﬁnite sequence X. The symbol “ ⊕” denotes sequence
+concatenation. (We sometimes write X1⊕···⊕ Xm as ⨁m
+i=1Xi.) The postorder of the empty tree
+is the empty sequence, and the postorder of binary search tree T whose root r has left and right
+subtreesL andR is postorder(L)⊕ postorder(R)⊕ (r). The index of a given key in T is the number
+of keys in T that are less than or equal to the given key. The function mapping each key in T to
+its index is the index map for T , and the inverse of this function is the reverse index. The index
+map of a ﬁnite totally ordered set is deﬁned analogously. Two binary search trees are isomorphic if
+relabelling the keys in each tree to their respective indices produces trees with the same postorder.
+To perform a transformation on tree T , ﬁrst select an arbitrary rooted hull Q in T . Then
+reshape Q into any other binary search tree Q′ containing the same set of keys. We refer to Q′ as a
+transition tree. To complete the operation, form the after-tree T′ by substituting Q′ for Q in T ,
+re-attaching the subtrees of Q to Q′ in the manner uniquely prescribed by the symmetric order.
+An instance of a binary search tree optimization problem comprises a sequence X = (x1,...,x m)
+of requested keys and an initial tree T containing these keys. An execution E for this instance
+comprises a sequence of rooted hulls Q1,...,Q m, a sequence of transition trees Q′
+1,...,Q ′
+m, and a
+sequence of after-trees T1,...,T m. For 1≤i≤m, Qi is a rooted hull in Ti−1, Q′
+i is a binary search
+3
+
+--- PDF PAGE 4 ---
+T0
+Q1’Q2’
+T1
+Q3’
+Q1
+T2 T3316245
+132645
+126345
+126
+345
+131263 26X= (1, 2, 6)
+Q2 Q3
+Figure 1: Example of an execution for a binary search tree instance. The total cost is eight.
+tree with the same keys as Qi such that xi = root(Q′
+i), and Ti results from substituting Q′
+i forQi in
+Ti−1, where T0 =T . (We refer to Tm as the execution’s ﬁnal tree.) The cost of E is ∑m
+i=1|Q′
+i|. At
+least one execution for X starting from T has minimum, or optimum cost, and we denote this cost
+by OPT(X,T ). Figure 1 shows an instance and a corresponding execution.
+An execution’s rooted hull and after-tree for a given request are uniquely determined by the
+previous after-tree and the request’s transition tree. Thus we shall occasionally denote an execution
+by its sequence of transition trees. Deﬁning the cost of an execution as the sum of the transition
+tree sizes captures the notion of paying for restructuring: fewer operations are required to substitute
+a smaller tree. Each rooted hull contains the access path, which accounts for the cost of searching.
+We describe instances that include insertions and deletions in Section 5.
+Unless otherwise implied, we may assume without loss of generality that every node in the initial
+tree T has a descendant in T whose key is requested in X [15, Theorem 43], in which case every key
+inT appears in at least one transition tree and OPT(X,T )≥|T|. Similarly, OPT(X,T )≥|X| since
+every execution produces at least one transition tree per request. Furthermore, since an optimal
+algorithm can reshape the entire initial tree on the ﬁrst request, OPT(X,T )≤ OPT(X,T′) +|T| for
+any pair of valid binary search trees T andT′ for request sequence X with the same keys. Therefore,
+it makes little diﬀerence to optimal executions whether the initial tree is left speciﬁed or unspeciﬁed,
+and many authors do not distinguish between OPT(X,T ) and OPTmin(X) = minT for X OPT(X,T ).
+However, the initial tree can, potentially, have a signiﬁcant impact on algorithmic behavior. Thus,
+we require instances to specify an initial tree. We discuss this further in Section 4.
+A binary search tree algorithmA maps each instance to an execution of the instance. We denote
+the cost of this execution by costA(X,T ). We sayA is dynamically optimal if there is some constant
+c≥ 1 so that costA(X,T )≤c OPT(X,T ) for all request sequences X and all corresponding initial
+trees T . (Other terms include “constant-competitive” and “instance optimal.”)
+A rotation at left child x with parenty inT replaces the subtree rooted at y with the tree whose
+root x has right child y such that the right subtree of x before the rotation becomes the left subtree
+of y afterward and the left subtree of x and right subtree of y are unchanged. Figure 2 depicts this
+process. We can also identify this rotation with the edge connecting x toy inT . Rotation at a right
+child is symmetric, and rotation at the root is undeﬁned. Rotation preserves symmetric order while
+changing up to three child pointers in the tree. Sleator and Tarjan originally measured execution
+cost by counting rotations. (See Appendix A.)
+A splay operation begins with a binary search for a key in the tree. Let x be the node returned
+4
+
+--- PDF PAGE 5 ---
+yx xyABC ABC
+rotation at x
+rotation at y
+Figure 2: Rotation at node x with parent y, and reversing the eﬀect by rotating at y. Triangles
+denote subtrees.
+by this search. If x is not null then the algorithm repeatedly applies a splay step until x becomes
+the root. A splay step has one of three forms. If the parent of x is the root then rotate at x.
+(This case is always terminal.) Otherwise, if x is a left child and its parent is a right child, or
+vice-versa, rotate at x twice. Otherwise, rotate at the parent of x, and then rotate at x. Sleator and
+Tarjan assigned the respective names zig, zig-zag and zig-zig to these three cases [61]. The series of
+splay steps that bring x to the root are collectively called splaying at x, or simply splaying x. If
+X = (x1,...,x m) is a sequence of requested keys in T then the cost of splaying X starting from T
+is ∑m
+i=1dTi−1(xi), where T0 =T and Ti is the result of splaying xi in Ti−1 for 1≤i≤m. We will
+primarily be dealing with the Splay algorithm, so cost(X,T ), without subscript, will always refer to
+the cost of splaying the keys of X starting from T .
+While an individual splay path can involve every node in the tree, the mean cost of a splay
+operation, averaged over suﬃciently many requests, is logarithmic in the tree’s size [61, Theorem 1].
+This performance is similar to that of balanced binary search trees. What makes Splay remarkable
+is that it also takes advantage of latent structure in the request sequence. The amortized cost per
+splay operation is logarithmic in the number of unique keys requested since the previous request for
+the splayed key [61, Theorem 4]. Thus, Splay exploits temporal locality in the access pattern. Splay
+simultaneously exploits spatial locality. The amortized cost of a splay operation is logarithmic in
+the diﬀerence between successively requested keys’ indices in the starting tree [18, 19]. The dynamic
+optimality conjecture states that Splay is dynamically optimal.
+Splay has many generalizations. Subramanian deﬁned a class of algorithms that reshape a tree
+in small steps. A set of rules, called a “template,” determines which step to take based on the
+arrangement of nodes in the immediate vicinity of the currently selected node. Diﬀerent templates
+give rise to diﬀerent algorithms, and a number of these algorithms have many of the same properties
+as Splay [62]. Georgakopoulos and McClurkin [29] and later Chalermsook et al. [14] proved further
+results about related algorithms. Section 6 examines a generalization of template algorithms.
+Besides Splay, the main candidate algorithm for optimality is colloquially known as Greedy.
+Lucas and Munro independently conjectured a version of the algorithm that arranges keys on the
+access path according to their soonest future access times is dynamically optimal [49, 53]. Demaine et
+al. subsequently developed a representation of binary search tree executions as cartesian coordinate
+point-sets [22]. They showed that in this geometric representation, Greedy executes a new request
+by uniting its execution of the previous requests with the minimum set of points needed to make
+the new execution satisfy some required properties. Subsequently, many of the interesting behaviors
+that ﬁrst drew attention to Splay have been proved for Greedy, including exploitation of temporal
+locality [25, 31] and spatial locality [39], as well as some additional properties [13, 30].
+Two other algorithms serve primarily demonstrative purposes. “Tango” trees require cost
+proportional to at most lg lg|T| times the optimum cost in order to execute an instance [23], and
+5
+
+--- PDF PAGE 6 ---
+Iacono describes a multiplicative weights update method that is optimal so long as a certain class of
+binary search tree algorithm contains an optimal member [37]. Both are diﬃcult to implement.
+Wilber derived two lower bounds on the cost of executions for a given instance [67]. One of
+his lower bounds counts the number of occurrences of certain structural patterns in the request
+sequence with respect to a given reference tree. We examine Wilber’s other lower bound, which we
+call the crossing bound, in Section 7. A third lower bound, called the “independent rectangle bound,”
+is deﬁned geometrically [22]. Research into the relationships among these bounds is ongoing [10, 44].
+Currently, there is no sub-exponential time algorithm that is known to compute the cost of an
+optimum binary search tree execution for an instance to within a constant factor. Circumstantial
+evidence indicates that exact computation of optimal execution cost may be intractable, since
+a slight generalization of the problem, in which instances comprise requests for batches of keys,
+is NP-Complete [22]. The theoretical and practical diﬃculties we encountered when trying to
+reason about optimal binary search tree executions ultimately led us to the present approach, which
+consciously avoids directly comparing algorithms with optimal behavior.
+3 Approximate Monotonicity
+How can we prove that Splay is dynamically optimal without knowing what optimum executions
+“look like?” We approach this question by combining two concepts. The ﬁrst starts with a simple
+observation: in many situations, one intuitively expects that removing requests from an instance
+should decrease the cost for the algorithm to execute it. This may not always be the case, but it
+is a reasonable idea to explore. The second idea is to force an algorithm to simulate executions
+by feeding it appropriately constructed instances. An algorithm A is approximately monotone if
+there is some constant b≥ 1 so that costA(Y,T )≤ b costA(X,T ) for every request sequence X,
+subsequence Y , and initial tree T . A simulation embeddingS forA is a map from executions to
+request sequences for which there exists c≥ 1 such that costA(S(E),T ) is at most c times the cost
+of E and X is a subsequence ofS(E) for all instances (X,T ) and corresponding executions E. If
+such a map exists then A is coercible.
+We add a few clarifying comments on terminology. A subsequence need not be contiguous.
+For example, (1, 3, 6) is a subsequence of (1 , 2, 3, 5, 6). Also, every sequence is a subsequence of
+itself. A real-valued set function F is monotone if F (A)≤ F (B) for all A⊆ B. Approximate
+monotonicity relaxes this requirement. (The functions we deal with are sequence-valued, but the
+concept is identical.) Our SODA paper referred to approximate monotonicity as the “subsequence
+property” [46]. In this work, we only build simulation embeddings for binary search tree algorithms.
+However, the concept itself seems more general and likely has other applications.
+Theorem 3.1. Optimal algorithms are monotone.
+Proof. LetX be a sequence of m requests with starting tree T , let E = (Q′
+1,...,Q ′
+m) be an optimal
+execution of this instance with after-trees T1,...,T m, and form subsequence Y from X by choosing
+a subset A of{1,...,m } and keeping the requests in X at times in A. The requests at times
+{1,...,m }\ A can be partitioned into contiguous blocks of integers. (For example, if m = 11 and
+A ={3, 7, 9} then the removed time blocks are {1, 2},{4, 5, 6},{8} and{10, 11}.) Let α be the
+index map for A. Deﬁne the transition tree sequence F = (P′
+1,...,P ′
+|Y|) as follows. For i∈A, if i is
+one greater than the maximal element in a removed time block then set P′
+α(i) to be the rooted hull
+in Ti comprising the union keys in Q′
+i with the keys in the transition trees of E for the requests in
+said block, and otherwise set P′
+α(i) =Q′
+i. The transition tree sequence F is a valid execution for Y
+6
+
+--- PDF PAGE 7 ---
+starting from T , and ∑
+i∈A|P′
+α(i)|≤ ∑
+1≤i≤m|Q′
+i|. Since E is an optimal execution for X starting
+from T , we conclude OPT(Y,T )≤ OPT(X,T ).
+Theorem 3.2. A coercible algorithm is dynamically optimal if and only if it is approximately
+monotone.
+Proof. A simulation embedding can be used to simulate an optimal execution of a given instance
+just as well as any other execution. The cost for the algorithm to execute the simulation is no more
+than a ﬁxed multiple of the optimal cost for that instance. The simulation of this optimal execution
+contains the original request sequence as a subsequence. If the algorithm is also approximately
+monotone, then the cost of executing the original instance will not exceed a ﬁxed multiple of the
+simulation’s cost and hence of the optimal cost. In the other direction, if A is dynamically optimal
+then there exists some constant c for which costA(Y,T )≤ c OPT(Y,T )≤ c OPT(X,T ) for all
+instances (X,T ) and subsequences Y of X, where the last inequality follows from Theorem 3.1.
+Approximate monotonicity is useful even if an algorithm is not dynamically optimal. For n> 0,
+deﬁne the subsequence overhead f(n) and optimal overhead h(n) ofA to be the respective suprema
+of costA(Y,T )/ costA(X,T ) and costA(X,T )/ OPT(X,T ) taken over all instances ( X,T ) and all
+subsequences Y of X for which|T| =n.
+Theorem 3.3. For all n> 0, a coercible algorithm’s subsequence overhead and optimal overhead
+are within a constant factor independent of n.
+Proof. By Theorem 3.1, costA(X,T )≥ OPT(X,T )≥ OPT(Y,T ) for every instance ( X,T ) and
+subsequence Y of X, meaning costA(Y,T )/ costA(X,T )≤ costA(Y,T )/ OPT(Y,T )≤h(|T|). If A
+is coercible then there exists a simulation embedding S and constant c such that OPT(X,T )≥
+costA(S(E),T )/c for every optimal executionE of request sequenceX with starting treeT . Therefore
+costA(X,T )/ OPT(X,T )≤c costA(X,T )/ costA(S(E),T )≤cf(|T|). Since these inequalities hold
+for all instances with an initial tree of sizen, they hold true for the supremum. Thus 1≤h(n)/f(n)≤
+c for all n.
+To build simulation embeddings, we employ an algorithm for transforming a binary search tree
+T into another binary search tree T′ with the same keys through the application of at most 4 |T|
+restricted rotations, which must occur at children or grandchildren of the root. Begin by repeatedly
+rotating at the root’s left child until all nodes in the left subtree of the root are on the left spine.
+Then, repeat the following until the root’s left and right subtrees are respectively left and right
+spines: repeatedly rotate at the left child of the root’s right child so long as said left child is not
+null, and then rotate at the root’s right child. Once the tree is ﬂat, continually rotate at either the
+left or the right child of the root until the tree is the same as that resultant from applying the above
+ﬂattening procedure to T′. Finally, apply the reverse ﬂattening procedure to recover T′. Cleary
+and Taback ﬁrst derived this algorithm using group theory [17]. Our description is based on Lucas’
+presentation [48].
+Theorem 3.4. For every pair of binary search trees T and T′ of size at least four with the same
+keys, there exists a request sequence such that Splay’s execution of the requests starting from T has
+cost linear in|T| and has ﬁnal tree T′.
+Proof. Letu1,...,u k be the sequence of keys at which Lucas’ restricted rotation algorithm performs
+rotations in order to transform T into T′. Let T0 = T and for 1 ≤ i≤ k let qi be the tree of
+lexicographically smallest postorder among four-node rooted hulls in Ti−1 that contain ui. (Using
+minimal postorder is just a convention.) Form q′
+i by rotating at ui in qi and form Ti by substituting
+7
+
+--- PDF PAGE 8 ---
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+41
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+1
+2
+3
+4
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        
+       
+       
+IV
+V
+VI
+VIIVIII
+IX
+X
+XI
+XII
+XIII
+XIV I
+II
+III
+Figure 3: Splay at starred nodes to convert one tree into the next.
+q′
+i for qi in Ti−1. Form the key sequence Ui by relabeling the keys in Figure 3 via the reverse index
+for qi and recording the sequence of keys in marked nodes on the path from qi to q′
+i, excluding the
+key marked in q′
+i. Splaying Ui starting from qi results in ﬁnal tree q′
+i. The structure of the subtrees
+hanging from the path do not aﬀect the transition tree of a splay operation. Thus, using splay
+operations to induce a restricted rotation in a four-node rooted hull in a larger tree T also performs
+the restricted rotation inT , and the request sequence V =U1⊕···⊕ Uk induces Splay to successively
+enact the restricted rotations that transform T intoT′. Each of these rotations corresponds to at
+most thirteen requests in V . Every access path in Splay’s execution of V starting from T has length
+at most four. Since k< 4|T|, the total cost of this execution is at most 208 |T|.
+Theorem 3.5. Splay is dynamically optimal if and only if it is approximately monotone.
+Proof. We prove Splay is coercible. Let E be an execution for X = (x1,...,x m) starting from T
+comprising rooted hulls Q1,...,Q m, transition trees Q′
+1,...,Q ′
+m, and after-trees T1,...,T m. For
+initial trees of size three or less set S(E) = X. Otherwise, let S(E) = V1⊕···⊕ Vm where, for
+1≤i≤m, Vi is the request sequence constructed in Theorem 3.4 for inducing Splay to transform
+Qi intoQ′
+i. (If Qi =Q′
+i then Vi is the singleton request sequence whose sole term is xi.) Splaying
+Vi starting from Ti−1 induces a substitution of Q′
+i for Qi in Ti−1 to form Ti, where T0 = T . A
+splay operation always places the requested key as the root of the after-tree. Since xi is the root
+of Q′
+i it must be the last key in Vi. Therefore, X is a subsequence of S(E), and by Theorem 3.4
+cost(S(E),T )≤ 208(|Q′
+1| +··· +|Q′
+m|). Hence, S is a simulation embedding for Splay and Splay is
+coercible. Apply Theorem 3.2.
+8
+
+--- PDF PAGE 9 ---
+Splay is only approximately monotone. Let T be a left spine with integer keys 1 to 2 k− 1 for
+k > 3, let Y = ⨁k−1
+i=0 (2i) be the geometric sequence ascending in powers of two, let Y′ be the
+reversal of Y and let X =Y′⊕Y . Splaying the ﬁrst half of X eﬃciently brings the requested keys
+close to the root and ensures cost(X,T ) = 2k + 4k− 5. Meanwhile, splaying each request in Y only
+halves the depth of the next requested key, so cost(Y,T ) = 2k+1− 3. Hence the limit of Splay’s
+subsequence overhead, as tree size increases, is at least two.
+Our simulation embedding is designed for minimalism. A more careful analysis can reduce the
+constant factor. Two prior works construct simulation embeddings for binary search tree algorithms.
+Harmon builds a simulation embedding for the geometric version of Greedy [34, Chapter 2.3.4],
+while Russo’s simulation embedding for Splay uses rotation-based executions and potential-based
+analysis [58]. Neither work treats simulation embeddings as mathematical objects in their own right.
+Subsequent to the publication of our SODA paper [46], Chalermsook and Jiamjitrak constructed
+simulation embeddings for a class of template-like algorithms using potential-based methods [16].
+Reddmann examines several algorithms’ competitive overheads numerically [56].
+4 Startup Overhead
+In principle, an algorithm may need to execute many requests in order to bring a poorly structured
+initial tree into a good state before it can behave optimally. Formally, an algorithm A is eventually
+optimal if there exists a positive constant b and startup overhead g mapping starting trees to integers
+such that costA(X,T )≤b OPT(X,T ) +g(T ) for all request sequences X and corresponding initial
+trees T . Similarly, if costA(Y,T )≤b costA(X,T ) +g(T ) for all instances (X,T ) and subsequences
+Y of X thenA is eventually monotone . (Eventual optimality implies eventual monotonicity.)
+Some works do not distinguish between eventual and dynamic optimality, but Sleator and Tarjan
+were more optimistic. They made no allowance for startup overhead in their original statement of
+the dynamic optimality conjecture [61]. As we shall show, their optimism was well-placed: if Splay is
+eventually optimal then it is dynamically optimal. Our proof bounds startup overhead by averaging
+execution cost over many repetitions of a request sequence. A repeaterF for algorithmA is a
+mapping from integer-instance pairs to request sequences for which there exists positive constants a
+and c such that k costA(X,T )≤a costA(F(k,X,T ),T ) and OPT(F(k,X,T ),T )≤ck OPT(X,T )
+for all k> 0, request sequences X, and starting trees T . If a repeater exists, then A is repeatable.
+Theorem 4.1. Eventually optimal repeatable binary search tree algorithms are dynamically optimal.
+Proof. Repeatability and eventual optimality imply positive constants a, b and c and startup
+overheadg such that k costA(X,T )≤a costA(F(k,X,T ),T )≤ab OPT(F(k,X,T ),T ) +ag(T )≤
+(abc)k OPT(X,T ) + ag(T ) for all request sequences X, starting trees T and k > 0. Choose
+k≥g(T )/ OPT(X,T ) to absorb the overhead and obtain costA(X,T )≤a(bc + 1)OPT(X,T ).
+Theorem 4.2. Eventually monotone repeatable coercible algorithms are dynamically optimal.
+Proof. These properties imply there exists a simulation embedding S, constant b and startup
+overheadg for which costA(X,T )≤b costA(S(E),T ) +g(T )≤b OPT(X,T ) +g(T ) for all instances
+(X,T ) and corresponding optimal executions E. Apply Theorem 4.1.
+Theorem 4.3. If Splay is eventually monotone then it is dynamically optimal.
+Proof. We show Splay is repeatable. Let X be a request sequence with initial tree T . Let V
+be the ﬁnal tree in Splay’s execution of X starting from T , and deﬁne the extended sequence
+U =X⊕W , where W is the sequence described in Theorem 3.4 that induces Splay to transform
+9
+
+--- PDF PAGE 10 ---
+V intoT . (If |T|< 4 or V =T then W = ∅.) Denote by k∗U the sequence U repeated k times.
+Since U merely consists of requests appended to X, cost(X,T )≤ cost(U,T ). The ﬁnal tree in
+Splay’s execution of U starting from T is again T , so each repetition has identical after-trees, and
+cost(k∗U,T ) =k cost(U,T ). Thus, k cost(X,T )≤ cost(k∗U,T ).
+It remains to bound the optimal cost. If X⁄= ∅ let A = (T′)⊕B where T′ is the after-tree
+for the ﬁrst request in some optimal execution E for X starting from T and B is the sequence of
+transition trees in E for the remaining requests in X, otherwise let B = ∅. Similarly, if W⁄= ∅ let
+C = (V′)⊕D where V′ is the ﬁrst after-tree in Splay’s execution F for W starting from V and D
+is the sequence of transition trees in F for the remaining requests in W , otherwise let C = ∅. The
+sequence of transition treesG =A⊕C is an execution ofU starting fromT . The transition trees in A
+have total size at most|T|+OPT(X,T ), and by Theorem 3.4 the transition trees inC have total size
+at most 209|T|. Since we can absorb initial tree size into optimal cost, OPT(U,T )≤ 211 OPT(X,T ).
+Finally,k∗G is an execution for k∗U starting from T , meaning OPT(k∗U,T )≤ 211k OPT(X,T ),
+andF(k,X,T ) =k∗U is a repeater for Splay. Apply Theorems 4.2 and 3.5.
+Our SODA paper established the contrapositive of Theorem 4.3 by repeating hypothetical
+instances on which Splay is non-optimal in order to contradict any presumed nontrivial startup
+overhead [46]. Kurt Mehlhorn kindly supplied us with an outline of the above version of the proof
+after he reviewed our manuscript.
+5 Mutation
+Monotonicity has no clear analog for algorithms that can handle requests to add and remove keys from
+the tree. We work around this obstacle by representing these operations using executions of instances
+that lack such requests. A reductionR from algorithmA in execution modelM to algorithmA′
+in execution model M′ is a map from instances in M to instances in M′ for which there exists
+positive constants a and c such that costA(I)≤a costA′(R(I)) and OPTM′(R(I))≤c OPTM(I)
+for allI∈M . If such a reduction exists we say A reduces toA′.
+Theorem 5.1. IfA reduces toA′ andA′ is dynamically optimal then A is dynamically optimal.
+Proof. The reduction to an optimal algorithm A′ implies the existence of constants a, b and c such
+that costA(I)≤a costA′(R(I))≤ab OPTM′(R(I))≤abc OPTM(I) for allI∈M .
+Our reduction employs the following terminology. To augment a binary search tree T with a new
+keyk, ﬁrst do a search for k in T . When the search reaches a missing node, replace this node with
+a new node containing the key k. Augmenting an empty tree makes k the root key. (This process is
+sometimes called “leaf insertion.”) The successor of k in T is the smallest key in T that is greater
+than k. If no such key is present the successor is null. The predecessor is deﬁned symmetrically.
+The predecessor and successor are the neighbors of k in T , and the neighborhood of k is the set
+comprising k and those of its neighbors that are not missing. If k has no children then its removal
+from T is the rooted hull comprising every key in T except for k, unless k is the root, in which case
+its removal forms the empty tree.
+A mutating instance comprises a request sequence χ = ((r1,x 1),..., (rm,xm)) and an initial tree
+T where each requested operation ri∈{ search, insert, delete}. An execution E of this instance
+comprises a sequence of rooted hulls Q1,...,Q m, transition trees Q′
+1,...,Q ′
+m, after-trees T1,...,T m
+and T0 =T . If ri = search then xi must be in Ti−1 and Qi, Q′
+i and Ti obey the same restrictions
+as instances without mutation. For 1 ≤i≤m, if ri = insert then xi must not be in Ti−1 and Qi,
+Q′
+i and Ti fulﬁll a request to search for xi in the augmentation of Ti−1 with xi. If ri = delete then
+10
+
+--- PDF PAGE 11 ---
+xi must be in Ti−1, Qi contains the neighborhood of xi in Ti−1, Q′
+i contains the neighbors of xi in
+Ti−1 as a rooted hull of its left spine so long as at least one neighbor is not missing, and Ti results
+from substituting Q′
+i for Qi in Ti−1 and then removing xi. The cost of E is ∑m
+i=1|Q′
+i|. We denote
+by OPTmut(χ,T ) the minimum cost among executions for χ starting from T .
+Requiring that executions incorporate both of a deleted key’s neighbors, when they are present,
+is essential to our analysis. We are unable to determine if algorithms that are dynamically optimal
+among executions in our model of deletion remain so after removing this requirement. Having stated
+this caveat, our nonstandard version of deletion does not change any known upper bound on the
+optimum cost of executing a mutating instance, that we are aware of, by more than a constant
+factor. We believe our model is suﬃciently realistic to proceed without further concern.
+Our extension of Splay inserts by augmenting T with x followed by splaying x and deletes x
+from T by successively splaying the keys in the neighborhood of x in T in increasing order, rotating
+at the predecessor of x if it is present, and then removing x. Splay’s transition tree for the deletion
+is the rooted hull comprising the union of keys on the access paths of these operations in the tree
+immediately prior to the removal of x.
+Theorem 5.2. If Splay is eventually monotone for instances without mutation then it is dynamically
+optimal for instances with mutation.
+Proof. We reduce Splay with mutation to Splay without mutation. Let χ = ((r1,x 1),..., (rm,xm))
+and T be the request sequence and starting tree of a mutating instance. Construct a new instance
+without mutation, as follows. Let K0 be the set of keys in T and form S0 by relabelling the keys in
+T to their respective indices. All nodes in S0 are unmarked. (A node’s marking status merely aids
+in our construction and has no eﬀect on algorithmic behavior.) For 1 ≤i≤m, let ui be the key
+whose index among the set of keys held by unmarked nodes in Si−1 is the same as the index of the
+predecessor of xi in Ki−1 if a predecessor is present, otherwise set ui =−∞. Deﬁne wi analogously
+for the successor of xi if a successor is present, otherwise set wi =∞.
+If ri = search then let zi be the key whose index among those held by unmarked nodes in Vi−1
+is the same as the index of xi in Ki−1, let Si =Si−1 and set Yi = (zi) and Ki =Ki−1.
+If ri = insert then do the following. If Si−1 has marked nodes with keys strictly between ui
+and wi in symmetric order then set zi to the most recently marked among them and form Si by
+unmarking zi in Si−1. Otherwise, form Si by augmenting Si−1 with a new unmarked node whose
+keyzi is as follows. If neither ui nor wi are ﬁnite then zi = 0; if only ui is ﬁnite then zi =ui− 1; if
+only wi is ﬁnite then zi =wi + 1; otherwise, zi is the midpoint between ui and wi on the real line.
+Set Yi = (zi) and Ki ={xi}∪ Ki−1.
+If ri = delete then deﬁne zi as in the case for search. If at least one of ui and wi is non-ﬁnite
+then form Si by marking zi in Si−1. If neither ui nor wi is ﬁnite set Yi = (zi); if only ui is ﬁnite
+set Yi = (ui,zi,ui); otherwise, if only wi is ﬁnite set Yi = (zi,wi). When both ui and wi are ﬁnite,
+proceed as follows. Deﬁne vi to be the key in the most recently marked among the marked nodes of
+Si−1 with keys strictly between zi and wi if such a node is present, otherwise vi is the midpoint
+between zi and wi on the real line. If vi∈Si−1 then Si is as in the case when at least one of ui
+and wi is ﬁnite, otherwise form Si by augmenting Si−1 with an unmarked node holding key vi and
+successively marking vi and then zi. Set Yi = (ui,zi,wi,vi,wi,ui,wi). Splaying the ﬁrst ﬁve of these
+requests ensures the keys{ui,zi,vi,wi} comprise a rooted hull of the left spine, and splaying the
+ﬁnal two requests induces successive rotations at zi and ui. Finally, set Ki =Ki−1\{xi}.
+DeﬁneR(χ,T ) = (Y1⊕···⊕ Ym,Sm). Figure 4 depicts an example of this process. Let P′
+1,...,P ′
+m
+andL1,...,L m be the transition trees and after-trees in Splay’s execution of χ starting from T . Set
+B0 =Sm and for 1≤i≤m let Ai be the union of keys in the transition trees of Splay’s execution
+of Yi starting from from Bi−1 and let Bi be the ﬁnal tree of this execution. If Si has unmarked
+11
+
+--- PDF PAGE 12 ---
+123123 123S0 S1 S2
+2.52.5
+Figure 4: After-trees in the construction of R(χ,T ) where χ = ((delete, 12), (insert, 15)) and
+postorder(T ) = (2, 16, 12). The request sequence for the reduced instance is (1 , 2, 3, 5/2, 3, 1, 3, 2).
+nodes then their keys comprise a rooted hull in Bi which is isomorphic to Li, and P′
+i is isomorphic
+to a subgraph of the rooted hull in Bi comprising the keys in Ai. Thus, cost(X,S )≤ costR(χ,S ).
+It remains to bound the cost of an optimal execution for the new instance. Let Q1,...,Q m be
+the rooted hulls and Q′
+1,...,Q ′
+m be the transition trees for an optimal execution of χ starting from
+T , and let G0 =Sm. For 1 ≤ i≤ m, if ri⁄= delete or∞∈{− ui,wi} then let Ci be the rooted
+hull of Gi−1 that is isomorphic to Qi and let C′
+i be the transition tree with the same keys as Ci
+that is isomorphic to Q′
+i. If ri = delete and∞ /∈{−ui,wi} then form Ci and C′
+i by respectively
+augmenting said isomorphic rooted hull and corresponding transition tree with vi. The ﬁrst in the
+transition tree sequence D′
+i for the requests in Yi is the tree that results from splaying the ﬁrst
+requested key of Yi in C′
+i. The remaining transition trees in D′
+i are the transition trees of Splay’s
+execution of the remaining requests in Yi starting from the ﬁrst tree in D′
+i. Finally, let Gi be the
+ﬁnal after-tree in the execution of Yi starting from Gi−1 whose transition trees are D′
+i. The ﬁrst
+tree in D′
+i has size at most |Q′
+i| + 1, and Yi has at most six remaining requests, each served by a
+transition tree from D′
+i with size at most four, meaning ∑
+H∈D′
+i
+|H|≤ 26|Q′
+i|. The transition tree
+sequence ⨁m
+i=1D′
+i executesR(χ,T ). Thus, OPTR(χ,T )≤ 26 OPTmut(χ,T ), andR is a reduction.
+Apply Theorems 5.1 and 4.3.
+Theorem 5.2 has an interesting consequence. A deque instance is an initial tree together with a
+request sequence entirely comprising push, pop, inject and eject operations which respectively
+correspond to inserting a new maximum, deleting the maximum, inserting a new minimum and
+deleting the minimum. A binary search tree algorithm A supports deque operations if there is
+some c> 0 so that costA(D,T )≤c(|D| +|T|) for all deque instances (D,T ). The deque conjecture
+states that Splay supports deque operations. Tarjan proved that Splay supports a limited subset of
+deque operations [65]. Sundar placed an inverse-Ackermann upper bound on the cost of performing
+general deque operations [63]. Pettie later tightened this bound [55]. Similar bounds are known for
+Greedy [11]. We add a new result:
+Theorem 5.3. If Splay is eventually monotone without mutation then it supports deque operations.
+Proof. Let D = (r1,...,r m) and T be the request sequence and initial tree for a deque instance,
+and assume without loss of generality that the starting tree’s keys are integers. We construct
+after-trees T1,...,T m for an execution of this instance, as follows. If ri∈{ inject, eject} then the
+root of Ti is its minimum, assuming Ti⁄= ∅. Otherwise, if ri∈{ push, pop} then the root of Ti is its
+maximum, and if ri = pop and minTi⁄= maxTi then the root’s left child is the minimum key in
+the tree. The remaining keys Ki in Ti are in a subtree at the appropriate location in symmetric
+order with the following structure. The root vi of Ki is the largest key less than or equal to the
+median key in Ki, assuming Ki⁄= ∅. The left and right subtrees of vi are respectively right and
+left spines comprising the keys in Ki\{vi} that are less than and greater than vi. The initial
+transition tree of this execution has at most |T| + 1 nodes and the remainder of the execution can
+12
+
+--- PDF PAGE 13 ---
+be realized using transition trees each of size at most eight. Thus, OPTmut(D,T )≤ 8(|D| +|T|).
+Apply Theorem 5.2.
+There are other ways to implement insertion and deletion. Sleator and Tarjan analyze an
+extension of Splay which supports mutation operations by using splits and joins [61]. Tarjan
+implements push and inject by inserting at the top of the tree [65]. Zip trees insert and delete
+keys starting from the middle of the tree and rearrange descendants to restore the binary search tree
+invariants [66]. Common implementations of deletion in computers replace the deleted node with
+the node holding the predecessor or successor of the removed key, a technique originally devised
+by Hibbard [36]. Our version of deletion originates from Cole’s analysis of the “dynamic ﬁnger”
+theorem [18]. Its main advantage is enabling our proof of Theorem 5.2. We leave as open problems
+determining whether Tarjan’s implementation of deque operations or algorithms that use Hibbard’s
+variant of deletion are reducible to algorithms in our model of mutation.
+6 Natural Algorithms
+Our results readily generalize. We say an algorithm is natural if the rooted hulls of its executions
+are always the access paths for the requested keys and the transition trees for isomorphic rooted
+hulls are isomorphic. Splay is a natural algorithm. We incorporate mutation in the same way as for
+Splay. A natural algorithm inserts by searching in the augmented tree and deletes by successively
+searching in increasing order for all in the neighborhood of the deleted key, then rotating at the
+predecessor if present, followed by removing the key. To construct the transition digraphGn(A) for
+natural algorithmA, assign a vertex to every binary search tree with keys {1,...,n }, and for every
+T∈G n(A) and x∈T add an arc from T to the result of executing a search for x in T withA.
+Theorem 6.1. A natural algorithm whose transition digraph is strongly connected for binary search
+trees of some size at least three is dynamically optimal for instances with mutation if and only if it
+is eventually monotone for instances without mutation.
+Proof. LetA be a natural algorithm and let N be the smallest integer greater than two for which
+GN(A) is strongly connected. Choose a map P from each pair q,q′∈G N(A) to some request
+sequence whose execution byA starting from q has a sequence of after-trees which, when preﬁxed
+by q, comprises a directed path of minimal length connecting q to q′ inGN(A). Let T′ be the
+after-tree of transforming T with rooted hull Q and transition tree Q′. If Q = Q′ or|T| < N
+then deﬁne CT (Q,Q′) = root(Q′). Otherwise, choose rooted hulls q1,...,q k and transition trees
+q′
+1,...,q ′
+k for enacting restricted rotations in an identical manner to Theorem 3.4, except that each
+transition tree has size N, rather than size four, and set CT (Q,Q′) = ⨁k
+i=1P (qi,q′
+i). The output
+of P contains at most one request per vertex in GN(A). There are (2 N)!/(N!(N + 1)!) binary
+trees with keys{1,...,N } [57]. (This is the Catalan number for N.) Each access path contains at
+most every node in the tree. Thus, the cost for A to execute CT (Q,Q′) starting from T is at most
+4(2N)!/((N + 1)!(N− 1)!)|Q′|, which is linear in the transition tree’s size. This execution’s ﬁnal
+tree is T′ whenever|T|≥ N.
+The map S(E) = ⨁m
+i=1CT (Qi,Q′
+i), where Q1,...,Q m and Q′
+1,...,Q ′
+m are the rooted hulls
+and transition trees of some execution E for X starting from T , is a simulation embedding for A.
+Similarly,F(k,X,T ) =k∗ (X⊕CT (T,V )), where V is the ﬁnal tree in the execution of X starting
+from T byA, is a repeater for A. Thus, by Theorem 4.2, if A is eventually monotone then it is
+dynamically optimal for instances without mutation. To reduce how A executes mutation requests
+to its behavior when executing non-mutating instances, modify how the reduction in Theorem 5.2
+13
+
+--- PDF PAGE 14 ---
+handles requests to delete keys with both predecessors and successors. Instead of requesting a single
+auxiliary key, as in the case for Splay, add requests for N− 3 auxiliary keys, augmenting the initial
+tree with unmarked nodes as necessary. Then, replace the requests that induce Splay to perform
+the relevant rotations along the left spine with the output of P . Necessity of eventual monotonicity
+follows from Theorem 3.1.
+A strongly connected transition digraph is not necessary for a natural algorithm to be coercible.
+An example of this is a variant of Splay that carries out restructuring operations in tandem with the
+binary search for the requested key, eliminating the need for parent pointers, call stacks or threaded
+nodes [61]. A top-down-splay operation for x in T begins by initializing a pointer l to a childless
+node whose key is −∞, a pointer r to a childless node with key ∞, and a pointer t to the root of T .
+It uses left and right linking steps. Linking left replaces the left subtree of r with t, redirects r to
+point to the target of t, and redirects t to point to its target’s left child. Linking right is symmetric.
+The operation repeats the following process until t =x. Suppose without loss of generality that x is
+in the subtree rooted at the left child y of t. (The other case is symmetric.) If y =x then execute a
+right link. (This case is terminal.) Otherwise, if x<y then rotate at y, redirect t to point to y, and
+execute a right linking operation. Otherwise, execute a right link followed by a left link operation.
+Once t =x, the operation completes by replacing the right subtree of l with the left subtree of t
+followed by replacing the left subtree of t with the right subtree of −∞, and doing symmetrically
+with r, the left subtree of ∞ and the right subtree of t. M¨ akinen compares Splay to its top-down
+variant in detail [51].
+Theorem 6.2. Top-Down Splay’s transition digraph is not strongly connected for binary search
+trees of any size greater than two.
+Proof. Let S be a binary search tree of size at least three whose root a = minS has right child
+z = maxS, let Q be the left subtree of z in S and let T = top-down-splay(T,x ) for some x∈Q.
+We show no request sequence induces Top-Down Splay to restore T to S. Suppose, for the sake
+of contradiction, that such a sequence exists. Because root(S) =a, the last key requested in any
+such sequence must be a. Since top-down-splay(T,a )⁄= S, there must be at least one preceding
+request for a diﬀerent key. Let y⁄=a be penultimate key in this sequence and let R be after-tree
+corresponding to this request, so that root( R) =y. We demonstrate top-down-splay(R,a )⁄=S.
+Suppose ﬁrst that y∈Q. Because a<y <z , the left and right subtrees of y in R respectively
+contain a and z. Thus, z is not on the access path for a in R. Because y is the largest key on
+the access path to a in R and Top-Down Splay is a natural algorithm, the access path to y in
+top-down-splay(R,a ) is a right spine rooted at a, and y is an ancestor of z in this after-tree. This is
+incompatible with z being the right child a, as is the case in S. Thus, y =z. Since a is the smallest
+key, it is on the left spine. Direct computation shows top-down-splay(R,a )⁄=S when a has depth
+three or four, and a simple induction establishes the same for a left spine of any greater length.
+Hence, there is no path from T to S in Top-Down Splay’s transition digraph, and this transition
+digraph is not strongly connected.
+Theorem 6.3. If Top-Down Splay is approximately monotone then it is dynamically optimal.
+Proof. Let T be a nonempty binary search tree, let a = minT , let z = maxT , and let b be the
+successor of a in T if the successor is present, otherwise b =a. Deﬁne the map H that transforms
+any binary search tree S with the same keys as T in the following way. Form U by replacing the left
+subtree of the parent of a inS with the right subtree of a inS if the parent is present, otherwise set
+U =S. Form V from U by doing similar with b, and form W from V by replacing the right subtree
+14
+
+--- PDF PAGE 15 ---
+zbaxvuwy
+Figure 5: Schematic of the top portion of some ˆTi. To induce a rotation at u, perform top-down
+splays at (a,u,a,z ). To induce a rotation at v, top-down splay the sequence (v,a,z ). To induce a
+rotation at w, top-down splay at (a,w,a,z ). To induce a rotation at y, top-down splay at (y,a,z ).
+of the parent of z with the left subtree of z in V , otherwise W =V . The tree H(S) is the binary
+search tree whose left spine comprises {a,b,z} such that W is the right subtree of b in H(S).
+Let E be an execution for X = (x1,...,x m) starting from T with rooted hulls Q1,...,Q m,
+transition trees Q′
+1,...,Q ′
+m and after-trees T1,...,T m and let T0 = T . Let A = (z,b,a,z ), let
+ˆT−1 be the ﬁnal tree in Top-Down Splay’s execution of let A starting from ˆT−1, let Q0 = ˆT−1, let
+Q′
+0 =T , let T0 =T and let x0 =z. For 0≤i≤m let ˆTi =H(Ti), let ˆQi and ˆQ′
+i respectively be
+the smallest rooted hulls in ˆTi−1 and ˆTi containing the keys in Qi∪{a}, and let Yi be the sequence
+of keys determined by the restricted rotation algorithm for transforming the right subtree of b in
+ˆQi into its right subtree in ˆQ′
+i. Form Zi by replacing each key in Yi with the corresponding keys
+determined by Figure 5, and then appending the requests ( xi,a,z ). Top-Down Splay’s execution of
+A has cost proportional to at most |T|, which can be absorbed into the cost of E. The sequence Zi
+induces Top-Down Splay to transform ˆQi into ˆQ′
+i. Since| ˆQ′
+i|≤| Q′
+i| + 3, the transformation’s cost is
+proportional to|Q′
+i|. Thus, the map S(E) =A⊕ ⨁m
+i=0Zi is a simulation embedding for Top-Down
+Splay. Apply Theorem 3.2.
+While the rooted hulls of Greedy’s executions are access paths, its transition trees are determined
+by which keys are in surrounding requests, meaning Greedy is not a natural algorithm. Lucas
+conjectured that restricting executions’ rooted hulls to the access path does not increase optimal
+cost by more than a ﬁxed multiple [49]. This conjecture remains open. Kozma catalogues related
+open questions about the relative power of classes of binary search tree algorithms subject to various
+restrictions [42]. Splay is in the most restrictive of these classes, meaning dynamic optimality would
+imply they are all equivalent up to constant factors.
+7 Crossing Cost
+Binary search trees facilitate eﬃcient search by arranging keys into many short access paths
+comprising children of alternating direction, and an algorithm’s eﬃciency depends critically on how
+it utilizes these arrangements. Consider the subtree P of a binary search tree T comprising the
+access path for a node x in T . The crossing nodes for x in T comprise x, the root of T , and the
+nodes in P that are either left children with a right child on P or right children with a left child
+on P . We refer to the number of crossing nodes for x as its crossing depth in T , denoted 𝓁T (x).
+The bookkeeping nodes are the non-crossing nodes on P . The crossing cost of execution E with
+after-trees T1,...,T m for X = (x1,...,x m) starting from T is ∑m
+i=1𝓁Ti−1(xi) where T0 =T , and
+the execution’s bookkeeping cost is ∑m
+i=1(dTi−1(xi)−𝓁Ti−1(xi)).
+15
+
+--- PDF PAGE 16 ---
+To perform a move-to-root operation, repeatedly rotate at the requested key until it becomes
+the root. The Move-to-Root algorithm enacts this process at each request. The crossing bound
+for X starting from T , denoted Λ(X,T ), is the crossing cost of Move-to-Root’s execution for this
+instance. The crossing bound is essentially equivalent to Wilber’s second lower bound on optimal
+execution cost [67]. Thus, the crossing bound never exceeds a ﬁxed multiple of optimal execution
+cost. (See Appendix B.) We shall prove that the crossing bound is approximately monotone. Our
+techniques preview those required to show the same for Splay. We begin with three properties of
+Move-to-Root. The ﬁrst describes the structure of its transition trees.
+Theorem 7.1. Executing move-to-root(T,x ) transforms the access path to x in T into a tree whose
+rootx has left and right subtrees that are respectively right and left spines.
+Proof. By induction on the number of rotations involved in the operation. If the requested key lies
+at the root then the statement is trivial. Now suppose that the statement is true for nodes of depth
+k, let dT (x) =k + 1 andz = root(T ), and assume without loss of generality that T solely comprises
+keys on the access path for x in T and that x<z . (The other case is symmetric.) The ﬁrst k− 1 of
+thek successive rotations at x performed while executing move-to-root(T,x ) replace the left subtree
+Q of z in T with Q′ = move-to-root(Q,x ). By the inductive hypothesis, the left and right subtrees
+of x in Q′ comprise inward facing spines of the keys in T\{x,z} that are respectively less than
+and greater than x. The left subtree of x remains unchanged after the ﬁnal rotation, while the
+right subtree of x immediately before the ﬁnal rotation becomes the left subtree of z immediately
+afterward, and the right subtree of x after the ﬁnal rotation is a left spine of keys greater than x.
+Thus, the hypothesis holds for nodes at depth k + 1.
+The second property demonstrates Move-to-Root’s executions reﬂect temporal patterns in the
+request sequence. A binary tree is max-heap ordered if each node is assigned a priority from a
+totally ordered set and every non-root node’s priority is at most that of its parent’s. The standard
+priorities for a request sequence X = (x1,...,x m) starting from T are the mappings p0,p 1,...,p m
+from keys to priorities such that, for y∈T , p0(y) =τ(y)−|T|− 1 where τ(y) is the time at which
+y is requested in postorder(T ), and pi(y) =pi−1(y) if y⁄=xi and pi(xi) =i for 1≤i≤m.
+Theorem 7.2. Move-to-Root’s after-trees are max-heap ordered by the instance’s standard priorities.
+Proof. The initial tree is max-heap ordered with respect to the initial priorities: the root of the
+initial tree has highest priority, and the same holds recursively for its subtrees. We can see as follows
+that Move-to-Root restores the max-heap order invariant after each-request. Resetting the priority
+of the node holding requested key x introduces a single heap order violation at the edge between x
+and its parent, if the parent is present. After each rotation at x that does not result in x becoming
+the root, only a single edge in the tree violates the heap order, and that edge is always the one
+betweenx and its parent. When x becomes the root, it has the largest priority, and no other edges
+violate the heap order.
+The third property characterizes how Move-to-Root arranges keys in its after-trees. The left
+and right window boundaries u and v for a given key y determined by a request sequence X are
+respectively the largest key less than or equal to y and the smallest key greater than or equal to y
+in X⊕ (−∞,∞). The window subtree J for y determined by an execution of X starting from T
+with ﬁnal tree R is as follows. If neither u nor v are ﬁnite then J =T ; if u =v then J = ∅; if only
+u is ﬁnite, or if both u and v are ﬁnite and the ﬁnal request for u precedes the ﬁnal request for v in
+X, then J is the right subtree of u in R; otherwise, J is the left subtree of v in R.
+16
+
+--- PDF PAGE 17 ---
+Theorem 7.3. The window subtree for y determined by Move-to-Root’s execution of X starting
+fromT comprises the keys in T strictly between the window boundaries for y determined by X.
+Proof. By induction on the number of requests. The initial tree and ﬁnal tree are identical for
+executions of the empty sequence, so the statement is true when there are no requests. Now suppose
+the statement is true for sequences of up to |W| requests and that X =W⊕ (z) for some z∈T ,
+and assume without loss of generality that y /∈W . Let u and v be the window boundaries for y
+determined by W , let I be the set of keys in T that are larger than u and smaller than v, let R be
+the ﬁnal tree in Move-to-Root’s execution of W starting from T , and let J be the window subtree
+for y determined by this execution. Deﬁne u′, v′, I′, R′ and J′ analogously for X.
+Consider ﬁrst when z /∈I so that I′ =I and there are no rotations at any key in J while moving
+z to the root, and assume without loss of generality that J is the right subtree of u in R. (The case
+when J is the left subtree of v is symmetric.) By the inductive hypothesis, I is the set of keys in J.
+If z⁄=u then the right subtree of u in R′ is the same as in R since there are no rotations at u while
+movingz to the root of R, and J′ is the right subtree of u in R′ since v is either inﬁnite or more
+recently requested in X than u. If z =u and v is inﬁnite then every key greater than u is in its
+right subtree in R and u is on the right spine of R, meaning the right subtree of u in R′ is the same
+as in R andJ′ is again the right subtree of u inR′. If z =u andv is ﬁnite then J′ is the left subtree
+of v in R′ and v is an ancestor and the successor of u in R, meaning the left subtree of v in R′ is J
+since Move-to-Root is a natural algorithm. In all cases J′ =J and the hypothesis holds for X.
+Consider now when z∈ I. If z = y then J′ = I′ = ∅ by construction. Otherwise, assume
+without loss of generality that z <y so that u′ =z. (The case when v′ =z is symmetric.) Form ˆR
+by substituting move-to-root(J,u′) for J in R and let ˆJ be the right subtree of u′ in ˆR. Since I′
+and ˆJ have the same keys and R′ = move-to-root( ˆR,u′), we may apply analysis of when z /∈I.
+Our proof of approximate monotonicity examines how individual request removals aﬀect the
+crossing bound. In particular, removing the ﬁrst request in a sequence subtracts the ﬁrst key’s
+crossing depth from the crossing cost of Move-to-Root’s execution of the remaining requests. The
+remaining requests are now executed starting from the original tree, rather than the tree resulting
+from moving the ﬁrst requested key to the root. As the remainder of the altered execution proceeds,
+its after-trees become progressively similar to those of Move-to-Root’s execution of the original
+request sequence. The key to our argument is bounding the cost incurred by this restoration process.
+Theorem 7.4. Λ(X,T )− Λ(X, move-to-root(T,y ))≤ 4𝓁T (y).
+Proof. LetR′ andS′ be the ﬁnal trees in Move-to-Root’s executions of X starting respectively from
+T and move-to-root(T,y ), letJ′ andK′ be the window subtrees fory determined by these executions,
+and set k′ to be the crossing depth of y in J′ if J′ is nonempty and zero otherwise. We show by
+induction on the number of requests that Λ( X,T )− Λ(X, move-to-root(T,y ))≤ 4(𝓁T (y)−k′). The
+statement is true by construction for the empty sequence, so consider when X =Y⊕ (z) for some
+z∈ T . Deﬁne R, S, J, K and k analogously for Y , let I be the set of keys in T contained in
+the symmetric order interval strictly between the window boundaries for y determined by Y , and
+suppose Λ(Y,T )− Λ(Y, move-to-root(T,y ))≤ 4(𝓁T (y)−k).
+Since Λ(X,T )− Λ(X, move-to-root(T,y )) = Λ(Y,T )− Λ(Y, move-to-root(T,y )) +𝓁R(z)−𝓁S(z)
+it suﬃces to show that 𝓁R(z)−𝓁S(z)≤ 4(k−k′). Thus, we need to characterize the structure of
+the ﬁnal trees. The tree move-to-root(T,y ) is max-heap ordered with respect to a priority function
+that is identical to the standard priority function for starting tree T except at y, whose priority in
+move-to-root(T,y ) we set by convention to zero. By Theorem 7.2, the after-trees of Move-to-Root’s
+executions of X starting from T and move-to-root(T,y ) are max-heap ordered by priority functions
+17
+
+--- PDF PAGE 18 ---
+deﬁned recursively in the standard way starting respectively from the priority functions for T and
+move-to-root(T,y ). Requests subsequent to y have the same after-trees in both executions, so we
+may assume without loss of generality that y /∈Y and k> 0.
+By Theorem 7.3, when Y ⁄= ∅ the keys in T\I comprise a rooted hull in R and S. (If Y = ∅
+then T\I is empty.) These keys have the same priorities in both R and S, meaning the two rooted
+hulls are identical. The window subtree J has the same keys as K, none of which are requested in
+Y , meaning these keys have their initial priorities in R and S. The only key with diﬀering priority
+in J and K is y, which has maximal priority among keys in K. Therefore, K = move-to-root(J,y ).
+If z /∈ I then k′ = k and 𝓁R(z) = 𝓁S(z), so we may assume z∈ I without loss of generality.
+If J = R set J + = J, otherwise set J + to be the subgraph in R comprising the union of keys
+in J with the window boundary for y determined by Y of which the root of J is a child in R.
+Deﬁne K+ analogously for K in S. The access path to root(J +) in R is identical to the access
+path for root(K+) in S whenever Y is nonempty, and the access paths to this key in R and S
+are identical. Thus, 𝓁R(root(J +)) = 𝓁S(root(K+)) while 𝓁R(z) = 𝓁R(root(J +)) +𝓁J +(z)− 2 and
+𝓁S(z) =𝓁S(root(K+)) +𝓁K+(z)− 2, meaning 𝓁R(z)−𝓁S(z) =𝓁J +(z)−𝓁K+(z).
+Let P be the be the smallest rooted hull in J containing the neighborhood of z in J. Since
+Move-to-Root is a natural algorithm, the subtrees hanging from P are unaﬀected by executing
+move-to-root(J,y ), and so these subtrees are identically arranged in K. Therefore, we may assume
+with no loss of generality that either z∈P or that the parent of z inR is deﬁned and lies in P\{y}.
+Let w1,...,w k−1 be the ﬁrst k− 1 crossing nodes for y in J in increasing order of depth and let
+w0 =y. Since J =K andR =S ify is the root of J, we may may assume without loss of generality
+that y has a parent in J. Thus, let wk be the child of y in the same direction as y with respect to
+its parent in J and let wk+1 be the child of y in the opposite direction. Deﬁne j =𝓁J(wc) where c
+is the largest integer for which wc is an ancestor of z in J if z⁄=y and otherwise c = 0. Let D be
+the indicator for Y ⁄= ∅, let A be the indicator for z /∈P , let B be the indicator for z⁄=wc, let G
+be the indicator for 𝓁J(y)<𝓁 J +(y) and let F be the indicator for 𝓁K(z)<𝓁 K+(z). (An indicator’s
+value is one when its condition is true and zero otherwise.) By Theorem 7.1 and case analysis,
+𝓁J +(z) =j +
+
+
+
+G c = 0
+H c = 1
+B(1 +A) +G otherwise
+and 𝓁K+(z) =
+
+
+
+1 +D c = 0
+2 +F +B(1 +A) 1 ≤c≤ 2
+3 +F +A otherwise,
+where H =A(1−B)(1 +D(1−G)) +B(1 +A +G) + (1−A)(1−B)D. (See Figure 6.)
+Note that ifc = 1 thenF =G, and ifc = 2 thenF =D(1−G), and ifG = 1 orF = 1 thenD = 1.
+Combining these facts with some case analysis reveals that if 1 ≤j≤ 2 then 𝓁J +(z)−𝓁K+(z) = 0,
+and otherwise𝓁J +(z)−𝓁K+(z)≤j. If c = 0 thenk′ = 0 andj =k. Otherwise, we apply Theorem 7.1
+to deduce the structure of the access path P′ for y in J′. If c = 1 then P′ is a subgraph of P and
+k′≤k. If z is in the subtree rooted at wk then P′ is a right spine ending at y and if z is in the
+subtree rooted at wk+1 then P′ is a left spine ending at y. Therefore when z is a strict descendant
+ofy, if k = 2 and c = 3 then k′ = 1 since wk+1 and the parent of y inP are on the same side of y in
+symmetric order, and otherwise k′≤ 2 and j≤k + 1. Otherwise, 2≤c≤k− 1, in which case if
+z∈P then set q to be the child of z child in P and otherwise set q to be the parent of z in P . Let
+U be a right spine comprising the strict ancestors of q in P that are less than y and let V be a left
+spine of the strict ancestors of q in P that are greater than y, and let M be the path from q to y in
+P . If z <y then P′ results from attaching M as the left subtree of the node with smallest key in V ,
+and if z >y then y then P′ results from attaching M as the right subtree of the node with largest
+key in U. Thus, k′≤k−j + 2. In all cases, 𝓁J +(z)−𝓁K+(z) is at most 4(k−k′).
+18
+
+--- PDF PAGE 19 ---
+yw1 w2w3 w4
+y
+J w1 w2
+w3 w4
+K
+Figure 6: Schematic of the window subtrees J andK. If z is a horizontally striped node then A = 1.
+If z is a vertically striped node then B = 1, and if z is a cross-hatched node then AB = 1.
+Theorem 7.5. The crossing bound is approximately monotone.
+Proof. Let T1,...,T m be the after-trees of Move-to-Root’s execution of X = (x1,...,x m) starting
+from T , and let m≥ e1 > e2 >··· > ep ≥ 1 be a sequence of request times. Set X0 = X
+and for 1 ≤ i≤ p form Xi by removing request ei from Xi−1. We induct on p to show that
+Λ(Xp,T )≤ Λ(X,T ) + 3∑p
+i=1𝓁Tei−1(xei) where T0 =T , which suﬃces to establish that the crossing
+bound has subsequence overhead at most four. The statement is trivial when p = 0. Now suppose
+Λ(Xp−1,T )≤ Λ(X,T ) + 3∑p−1
+i=1 𝓁Tei−1(xei). Let y =xep and let W and Z respectively be the ﬁrst
+ep− 1 and ﬁnal m−ep− (p− 1) requests in Xp−1, so that Xp−1 =W⊕ (y)⊕Z and Xp =W⊕Z.
+Let S =Tep−1, so that Λ(Xp−1,T ) = Λ(W,T ) + Λ((y)⊕Z,S ) and Λ(Xp,T ) = Λ(W,T ) + Λ(Z,S ).
+Note that Λ(( y)⊕Z,S ) = 𝓁S(y) + Λ(Z, move-to-root(S,y )). Thus, Λ( Xp,T )− Λ(Xp−1,T ) =
+Λ(Z,S )− Λ(Z, move-to-root(S,y ))−𝓁S(y), which by Theorem 7.4 is at most 3 𝓁S(y). Therefore,
+Λ(Xp,T )≤ Λ(Xp−1,T ) + 3𝓁Tep−1(xep), and the hypothesis holds for p request removals.
+Our presentation of the crossing bound is based on Iacono’s work [37, 38]. Move-to-Root,
+introduced by Allen and Munro [3], is the earliest example of a self-adjusting binary search tree
+algorithm. The crossing bound is not strictly monotone. For example, Λ( Y,T )> Λ(X,T ) when
+X = (4, 5, 3), Y = (5, 3) and postorder(T ) = (3, 2, 5, 6, 4, 7, 1). We had not realized this when
+writing our SODA paper, whose treatment of the crossing bound contains several mistakes [46].
+8 The Way Forward
+Our numerical experiments indicate that Splay’s cost never exceeds four times the sum of an
+instance’s crossing bound and initial tree size, which would imply dynamic optimality. Moreover,
+the crossing costs of Splay and Move-to-Root are so tightly coupled that the diﬀerence between
+them may well be at most linear in initial tree size. Additionally, the keys in the crossing nodes of
+these algorithms’ executions are quite similar, albeit sometimes oﬀset from each other in symmetric
+order by a small amount. We have tried to prove these statements, to no avail. We believe our
+failures are not incidental, and that there are structural obstacles in the way of establishing dynamic
+optimality in this manner. The diﬃculty arises from temporal spread. Typically, about half of
+19
+
+--- PDF PAGE 20 ---
+the keys in Move-to-Root’s crossing nodes for a given request appear on the access path for the
+corresponding request in Splay’s execution. A smaller fraction of these keys appear on the splay
+path for the next request, and the remaining keys are scattered across subsequent splay paths. The
+precise extent of this spreading is varied and depends on the particular request sequence.
+Lucas remarked that optimal cost does not seem amenable to inductive analysis [49]. The
+observed temporal mixing is a manifestation of this problem, since it means that showing Splay’s
+cost obeys the crossing bound requires accounting for many of its preceding transition trees at each
+request. Fortunately, dynamic optimality’s equivalence to approximate monotonicity provides a
+means of shattering this barrier. Our conviction is:
+Conjecture 8.1. Splay’s crossing cost is approximately monotone.
+Our proof of the crossing bound’s monotonicity is a natural starting point for tackling Con-
+jecture 8.1. However, it requires a crucial modiﬁcation. Our analysis of Move-to-Root establishes
+a worst-case bound on how its crossing cost increases after removing a request. By contrast, the
+increase in Splay’s crossing cost is not bound by any ﬁxed multiple of the removed key’s crossing
+depth. For example, if T results from splaying the largest key in a right spine comprising the
+integers{1,..., 2n}, Y = (2, 4,..., 2n− 2) and X = (1)⊕Y , then the crossing costs of Splay’s
+executions of X and Y when starting from T are respectively 3n− 4 and 5n− 5. Consequently, we
+must examine how request removals aﬀect Splay’s crossing cost in aggregate, which is equivalent to
+reversing the order in which the proof of Theorem 7.5 inducts on request removals. This style of
+induction entails comparing executions of a request sequence starting from progressively divergent
+trees. The increased complexity of the required new approach is another manifestation of the
+barriers to standard inductive analysis of optimal algorithms. The advantage of attacking this
+manifestation of the problem is that Theorem 7.5 assures its achievability.
+Adapting such a proof from Move-to-Root to Splay will almost certainly require a potential
+function in order to smooth out the eﬀects of occasional requests whose removal produces a high
+increase in Splay’s crossing cost. Potential functions are tools for analyzing algorithms that have
+individual operations with high cost, but for which the cost per operation, amortized over all
+operations in a sequence, is low [64]. Each possible conﬁguration of the data structure (e.g. the tree)
+is assigned a numerical value, called its potential. The cost of an operation is redeﬁned to depend
+on both the original cost (e.g. the length of the Splay path), and on how the potential changes due
+to the operation’s eﬀect on the data structure. If carefully constructed, the sum of the redeﬁned
+costs over a sequence of operations will be an upper bound on the sum of the actual costs, yet no
+individual operation’s redeﬁned cost will ever be very large. We need a potential that captures how
+Splay’s executions diverge from Move-to-Root’s.
+Move-to-Root is a both progenitor and a sub-step of splaying. Move-to-Root splits the access
+path into a pair of spines. One can view Splay as comprising two phases: the ﬁrst executes
+move-to-root, the second performs extra rotations, corresponding to the zig-zigs. (See Figure 7.)
+The extra rotations ensure that a splay operation decreases the depth of every node by about half
+of the number of its ancestors that were on the access path for the requested key [62].
+Theorem 8.2 ([14, Proposition 17]) . Executing splay(T,x ) is equivalent to starting from the tree
+move-to-root(T,x ) and rotating at every key held by a child y on the access path for x in T whose
+parent in T is on the same side of x in symmetric order for which dT (x)−dT (y) is odd.
+Proof. By induction on the number of splay steps involved. The theorem is trivially satisﬁed when
+splaying at the root. Now suppose the statement is true for splay operations comprising k− 1
+splay steps and let x be a node in T whose splaying involves k steps. Let Q be the subtree rooted
+20
+
+--- PDF PAGE 21 ---
+10
+54321
+678 9
+x
+10 9432
+15678
+x
+168710342
+9
+5
+x
+Figure 7: The transformation from the left to the middle illustrates Move-to-Root. The transforma-
+tion from the left to the right illustrates Splay. (Illustration from [14].)
+at the ancestor of x in T whose depth is dT (x)− 2(k− 1). Since the ﬁrst k− 1 splay steps each
+decrease the depth of x by two, splay(T,x ) = splay(S,x ) where S = splay(Q,x ). Denote by splay′
+the procedure described in the theorem. Let z = root(S), let y be the left child of z inS and assume
+without loss of generality that x < z. (The other case is symmetric.) If x = y then splay′(S,x )
+only enacts a single rotation at x, which is equivalent to the zig enacted by splay. If x>y then y
+and z are on opposite sides of x in symmetric order and splay′(S,x ) rotates twice at x, making it
+identical to the zig-zag step performed by splay. Finally, if x<y then splay′(S,x ) rotates twice at
+x and then once at y, which is equivalent the rotation at y followed byx in the zig-zig performed
+by splay. In all three cases, splay′(S,x ) = splay(S,x ). Form S′ by replacing Q with splay′(Q,x )
+in T . The edges rotated by splay′ subsequent to the move-to-root operation are disjoint, and
+dS′(x)−dS′(w) and dT (x)−dT (w) have the same parity for every ancestor w of x in S′. Therefore,
+splay′(T,x ) = splay′(S′,x ). By the inductive hypothesis S′ =S, thus splay′(T,x ) = splay(T,x ).
+Each zig-zig can create a violation of the max-heap ordering with respect to the standard
+priorities of an instance. As the executions of both Splay and Move-to-Root proceed, these zig-zigs
+will sometimes create further heap order violations. At other times, splay steps will remove some of
+the heap order violations. The correct potential for analyzing Splay’s crossing cost should in some
+way bound the rate at which splay operations generate heap order violations with respect to the
+standard priorities. We speculate on two possible forms. The ﬁrst simply counts the number of edges
+in the tree being splayed that violate the heap-order condition with respect to most recent access
+time. This potential may be too “coarse,” in that it fails to capture heap order violations between
+nodes not immediately connected by an edge. If so, the likely way to address this shortcoming is
+weighting each node by some function of the diﬀerence between its crossing depth in the splayed tree
+and in the max-heap order maintained by Move-to-Root. While honing the details of the potential’s
+construction falls outside this work’s scope, we can infer something important up front.
+A potential function’s design is closely tied to the extent to which its value can increase or
+decrease. By Theorem 4.3, if Splay is dynamically optimal then its startup overhead is no more
+than linear in initial tree size. Hence, any potential for proving Conjecture 8.1 should also have
+maximum value at most linear in the size of the starting tree. This considerably narrows the design
+space that we might otherwise need to explore.
+To prove optimality we must also address Splay’s bookkeeping cost. Here again, we can glean
+insight from Splay’s progenitor. Move-to-Root is not dynamically optimal. For example, if T is a
+left spine with keys {1,...,n }, X = (n,n− 1,..., 2, 1, 2,...,n − 1,n ) and Y = (1, 2,...,n ) then
+21
+
+--- PDF PAGE 22 ---
+the cost of executing Move-to-Root on the subsequence Y is proportional to n times the cost of
+its execution on the super-sequence X. Because its crossing cost lower bounds a ﬁxed multiple
+of optimal cost, Move-to-Root’s non-optimality arises from its bookkeeping cost. Splay tweaks
+Move-to-Root by breaking apart bookkeeping edges via zig-zig steps. Thus, Splay seems to be
+precisely the modiﬁcation needed to make Move-to-Root optimal. We believe:
+Conjecture 8.3. Splay’s bookkeeping cost is at most a ﬁxed multiple of the sum of its crossing cost
+and initial tree size.
+Heuristically, splaying in a tree whose access paths comprise mostly bookkeeping nodes increases
+the average crossing depth of nodes in the tree, and the opposite phenomenon occurs in trees with
+many nodes of high crossing depth. Precisely tracking this exchange as Splay’s execution progresses
+quickly becomes unmanageable, indicating the need for an additional potential function that acts as
+a proxy for the number of bookkeeping nodes in the tree being splayed. It seems likely that a tree
+entirely comprising a spine should maximize this potential, and that a perfectly balanced binary
+search tree should minimize it. Conjectures 8.1 and 8.3 together imply dynamic optimality.
+A Rotational Execution
+Sleator and Tarjan [61], in their formulation of the dynamic optimality conjecture, use a rotation-
+based deﬁnition of a binary search tree execution. Given an initial tree and a request sequence, a
+rotational execution fulﬁlls one request at a time, by performing a binary search for the requested
+key in the current tree, at a cost equal to the number of nodes on the access path. In addition, the
+execution can include any number of rotations before each request, at a cost of one per rotation.
+Formally, a rotational execution R of X = (x1,...,x m) starting from T comprises a sequence of
+trees T0,T 1,...,T r and search times 0 ≤ τ1≤···≤ τm = r where T0 = T and Tt results from
+rotating at some key in Tt−1 for 1≤t≤r. The cost to execute R is r + ∑m
+i=1dTτi(xi). We denote
+the cost of an optimal rotational execution for this instance by OPTrot(X,T ). We shall prove that
+any transition tree execution can be simulated by a rotational execution of at most twice the cost,
+and vice-versa. Thus the two cost models are the same to within a factor of two.
+Theorem A.1. 1/2≤ OPT(X,T )/ OPTrot(X,T )≤ 2.
+Proof. First we observe that any transition tree execution can be simulated by a rotational execution
+at a cost of a factor of at most two. A k-node binary search tree with k keys can be transformed
+into any other binary search tree of the same set of keys by doing at most 2 k− 2 rotations [21,
+Theorem 2.1]. Hence each successive after-tree in the transition tree model can be produced from
+the previous one by doing at most 2 k− 2 rotations, where k is the number of nodes in the rooted
+hull (and in the corresponding transition tree). Searching for the desired key after doing these
+rotations costs one. Hence if a transition tree execution fulﬁlls a request with a transition tree of
+size k, then a rotational executional execution can fulﬁll this request with cost at most 2 k− 1< 2k.
+Simulating a rotational execution by a transition tree execution is more complicated, because
+the former allows rotations to be done anywhere in the tree, not just in a rooted hull. The ﬁrst step
+toward handling this is to view edges as retaining their identity throughout a rotational execution.
+Consider a rotation of a left child x whose parent is y; let u,v, and w be the left child of x, the right
+child of x, and the right child of y, respectively. Let e, a and b be the edges connecting x, v and y
+with their parents, respectively. (If v = null then a = null and if y is the root then b = null.)
+Rotation at e swaps the ends of e and converts it from a left edge to a right edge, converts a from a
+right edge to a left edge and changes its top end from x to y, and changes the bottom end of b to x.
+22
+
+--- PDF PAGE 23 ---
+(Rotation at e does not change null edges.) The rotation aﬀects no other edges, and it preserves
+the set of keys in the subtree rooted at any node other than x and y, and in particular those rooted
+at u, v, and w. Right rotations behave symmetrically.
+The second step is to modify the rotational execution so that whenever a key is searched for it
+is at the root of the tree. Before a search occurs, we ﬁrst rotate on each edge of the access path,
+bottom-up, which moves the key to be searched for to the root; then we perform the search; then
+we do the inverse rotations in the opposite order, restoring the original access path. Fulﬁlling the
+request in this way costs 2k− 1 if the original access path has k nodes. Thus we increase the overall
+cost by at most a factor of two.
+Finally, assume that a rotational execution moves each requested key to the root before searching
+for it. We simulate this rotational execution with a transition tree execution while at the same
+time postponing some rotations. Proceeding in the same order as keys are requested, we modify
+the subsequence of rotations before the ﬁrst search, and each subsequence of rotations between
+successive searches, as follows. Let S be such a subsequence, let T be the tree in which these
+rotations begin, and let U be the subgraph of T comprising the edges in S. We partition S into
+pair of subsequences A and B. The subsequence A comprises rotations in S at edges in the same
+connected component of U as the root of T . (If no such rotations are present then A is empty.)
+The subsequence B is the complementary subsequence to A in S. We replace S with A⊕B unless
+S is the subsequence of rotations for the ﬁnal request, in which case we replace S with A and drop
+the remaining rotations. Then, we move the search time for the request to occur immediately after
+the ﬁnal rotation in A.
+If A is nonempty then its edges comprise a rooted hull in T , and the rotations in A transform
+this rooted hull into a tree on the same set of keys whose root contains the requested key. The
+transformed tree is the transition tree corresponding to the request in the transition tree execution.
+(If A is empty then the transition tree comprises solely the root of T .) If the rooted hull (and
+the transition tree) contain k nodes, the number of rotations is at least k− 1, making the cost of
+these rotations plus the cost of the search at least k in the rotational execution. The size of the
+corresponding transition tree is k. We conclude that it is possible to simulate a rotational execution
+whose searches occur at the root with a transition tree execution of the same cost, and at most
+twice the cost for a general rotational execution. Creating simulations for optimal executions of
+each type establishes the result.
+Wilber was the ﬁrst to restrict rotational executions to search only at the root [67]. The
+procedure for partitioning rotations is implicit in Lucas’ work [49]. Our description is based on
+Koumoutsos’ remarks [41]. Harmon was the ﬁrst to describe binary search tree executions using
+transition trees [34].
+B Wilber’s Lower Bound
+We show that the crossing bound is at most a ﬁxed multiple of optimum transition tree execution
+cost. Our proof proceeds in two main steps. First, we express a scoring procedure deﬁned by Wilber
+in terms of the crossing bound. Then we use Wilber’s proof that this procedure lower bounds
+optimum rotational cost as a black box in our analysis to obtain the desired result. (Wilber’s proof
+is quite intricate, and we do not attempt to summarize it.) Unlike the crossing bound, Wilber’s
+scoring procedure depends only on the request sequence. Accounting for initial trees requires care.
+Formally, Wilber’s bound for request sequence X = (x1,...,x m), denoted Λ 2(X), is m +∑m
+i=1κ(X,i ), where the score κ(X,i ) for each request 1 ≤i≤m is as follows. If i = 1 then the
+score is zero. Otherwise, let c1 = i− 1 and let w1 = xi−1. If w1 < xi set v0 =∞, otherwise set
+23
+
+--- PDF PAGE 24 ---
+v0 =−∞. Initialize l = 1 and repeat the following process for as long as wl⁄=xi and there are keys
+requested prior to time cl lying between xi (inclusive) and vl−1 (exclusive) in symmetric order. Set
+cl+1 to the latest request time preceding cl for a key lying between xi (inclusive) andvl−1 (exclusive)
+in symmetric order. Set wl+1 to the key requested at cl+1. Set vl to the key closest in symmetric
+order to xi (exclusive) on the same side of xi in symmetric order as wl that is requested after cl+1
+and no later than cl. Finally, increment l by one. The score is one less than the terminal value of
+l. We respectively refer to w1,...,w l and v0,...,v l−1 as the crossing keys and inside keys for the
+request. Wilber’s bound is nearly the same as the crossing bound for X starting from the default
+tree BST(X) comprising the keys in X min-heap ordered by their ﬁrst request times.
+Theorem B.1. Λ2(X) = Λ(X, BST(X))−| BST(X)| + 1 whenever X⁄= ∅.
+Proof. By induction on the number and crossing depths of requests. Since the ﬁrst request’s score
+is zero, Wilber’s bound is one for the singleton request sequence. Meanwhile, the ﬁrst requested key
+lies at the root of the default tree for the request sequence and the root has crossing depth one.
+Thus, the formula holds for sequences containing a single request. Now suppose the theorem is true
+for all request sequences of length up to m− 1, let Y be a nonempty sequence of m− 1 requests, let
+X =Y⊕ (x), let T be the ﬁnal after-tree in Move-to-Root’s execution of Y starting from BST(X),
+and set δ to be one if x /∈Y and zero otherwise. We show that the ﬁrst 𝓁T (x)−δ crossing nodes for
+x inT , ordered increasing by depth, contain the crossing keys for request m, and that the respective
+parents of these nodes contain the inside keys for the request. (If the zeroth inside key is ∞ we
+treat T as the left subtree of this key, and otherwise as the right subtree of −∞.)
+The last key requested in Y is the ﬁrst crossing key for request m in X. Meanwhile, by
+Theorem 7.2, the keys in Y comprise a rooted hull in T max-heap ordered by their last request
+times in Y . In particular, the root of T , which is the ﬁrst crossing node for x in T , contains the
+ﬁrst crossing key. Now suppose that the ﬁrst i crossing nodes for x in T contain the ﬁrst i crossing
+keys for request m in X for some 1≤i<𝓁 T (x), and that the parents of these nodes contain the
+ﬁrst i inside keys. Let w and w′ respectively be the deepest among the ﬁrst i and i + 1 crossing
+nodes for x in T , let v and v′ be the respective parents of these nodes, and assume without loss of
+generality that x<w . (The other case is symmetric.)
+First consider when w′∈Y . Since w′ is a descendant of w in T , the former’s ﬁnal request time
+inY precedes the latter’s. Because w′ is in the right subtree of v and either w′ =x orw′ containsx
+in its right subtree, w′ is greater than v and at most x. Every key in this interval is a descendant of
+w′, making w′ the last among them requested in Y . Applying the inductive hypothesis that w and
+v respectively contain crossing key i and inside key i− 1 for request m in X establishes that w′
+contains crossing key i + 1. Since v′ is both the parent of w′ and the deepest node on the left spine
+of the subtree of T rooted at w which contains x in its left subtree, it has the smallest key greater
+than x whose ﬁnal request comes after the last request for w′ and no later than the last request for
+w in Y . Thus, v′ is inside key i for request m in X. Furthermore, if i + 1 =𝓁T (x) then w′ =x and
+there are no further crossing keys for request m in X.
+Otherwise, if w′ /∈Y thenw′ =x,i =𝓁T (x)− 1, and the subtree rooted at x inT contains every
+key that is greater than v and at most x. Since Move-to-Root is a natural algorithm and x has no
+children in BST(X), the absense of x in Y ensures that x has no children in T , making x the only
+key in this interval. Thus, there are only 𝓁T (x)− 1 crossing keys for request m in X when δ = 1.
+By the inductive hypothesis on request sequences of length m− 1, Λ2(Y ) = Λ(Y, BST(Y ))−
+| BST(Y )| + 1, and by the above arguments κ(X,m ) = 𝓁T (x)− 1−δ. Since Λ 2(X) = Λ 2(Y ) +
+κ(X,m ) + 1 and Λ(X, BST(X))−| BST(X)| = Λ(Y, BST(Y ))−| BST(Y )| +𝓁T (x)−δ, the formula
+holds for request sequences of length m.
+24
+
+--- PDF PAGE 25 ---
+Theorem B.2. Λ(X,T )≤ 44 OPT(X,T ).
+Proof. Let P = postorder(T ) and T′ = BST(P⊕X) and note that T′ = BST(P ) since P contains
+every key in T . Let A and B respectively be optimal executions for P and P⊕X starting from
+T , let U be the sequence comprising the ﬁrst |T|− 1 transition trees of A, let V be the sequence
+comprising the ﬁnal |X| transition trees in B, and let T′′ be the after-tree for request |T| in B.
+The transition tree sequence U⊕ (T′′)⊕V is an execution for P⊕X starting from T with cost
+at most OPT(P,T ) +|T| + OPT(X,T′′). By [47, Theorem 4], cost(P,T′)≤ 7|T|. Splay’s cost and
+initial tree size respectively upper bound and lower bound optimum cost, meaning OPT(P,T )≤
+OPT(P,T′) +|T| ≤8|T| and OPT(X,T′′)≤ OPT(X,T ) +|T|. Combining these inequalities
+establishes OPT(P⊕X,T )≤ OPT(X,T ) + 10|T|≤ 11 OPT(X,T ). By Theorem 7.2, T is the ﬁnal
+tree in Move-to-Root’s execution of P starting from T′. Hence, Λ(P⊕X,T′) = Λ(P,T′) + Λ(X,T ).
+By Theorem B.1, Λ 2(P⊕X) = Λ(P⊕X,T′)−|T′| + 1 and Λ2(P ) = Λ(P,T′)−|T′| + 1. Therefore,
+Λ(X,T ) = Λ(P⊕X,T′)− Λ(P,T′) = Λ2(P⊕X)− Λ2(P )≤ Λ2(P⊕X). Finally, by [67, Theorem 7]
+and Theorem A.1, Λ 2(P⊕X)≤ 2 OPTrot(P⊕X,T )≤ 4 OPT(P⊕X,T )≤ 44 OPT(X,T ).
+Acknowledgments
+We thank Lu´ ıs Russo for suggesting improvements to Figure 3, Kurt Mehlhorn for simplifying our
+proof of Theorem 4.3, Amit Halevi for comments that clariﬁed the presentation of our execution
+model, and Siddhartha Sen and Bernard Chazelle for editorial feedback. The high-level presentation
+of Sections 3 and 4 beneﬁted from informal discussions with Daniel Cooney. We are indebted to
+John Iacono for his guidance in understanding the equivalence between Wilber’s bound and Move-to-
+Root’s crossing nodes, along with corroborating our empirical comparisons between the behaviors of
+Splay and Wilber’s bound. Finally, we found David Galles’ “Data Structure Visualizations” website
+instrumental for prototyping our proofs [27]. Research at Princeton University partially supported
+by an innovation research grant from Princeton and a gift from Microsoft.
+References
+[1] Georgy Adel’son-Vel’skii and Evgenii Landis. “An algorithm for the organization of infor-
+mation”. Trans. by F. M. Goodspeed. In: Soviet Mathematics Doklady 3 (1962), pp. 1259–
+1263.
+[2] Yehuda Afek, Haim Kaplan, Boris Korenfeld, Adam Morrison, and Robert Tarjan. “The CB
+tree: a practical concurrent self-adjusting search tree”. In: Distributed Computing 27.6 (2014),
+pp. 393–417. doi: 10.1007/s00446-014-0229-0.
+[3] Brian Allen and Ian Munro. “Self-organizing binary search trees”. In: Journal of the ACM
+25.4 (1978), pp. 526–535. doi: 10.1145/322092.322094.
+[4] Arne Andersson. “General balanced trees”. In: Journal of Algorithms 30.1 (1999), pp. 1–18.
+doi: 10.1006/jagm.1998.0967.
+[5] Rudolf Bayer and Edward McCreight. “Organization and maintenance of large ordered indexes”.
+In: Acta Informatica 1.3 (1972), pp. 173–189. doi: 10.1007/bf00288683.
+[6] Michael Bender, Mart´ ın Farach-Colton, and William Kuszmaul. “What does dynamic optimal-
+ity mean in external memory?” In: Innovations in Theoretical Computer Science . Dagstuhl,
+Germany: Schloss Dagstuhl, 2022, pp. 1–23. doi: 10.4230/LIPICS.ITCS.2022.18.
+25
+
+--- PDF PAGE 26 ---
+[7] Benjamin Berendsohn and L´ aszl´ o Kozma. “Splay trees on trees”. In:Symposium on Discrete
+Algorithms. Alexandria, Virginia, USA: Society for Industrial and Applied Mathematics, 2022,
+pp. 1875–1900. doi: 10.1137/1.9781611977073.75.
+[8] Prosenjit Bose, Jean Cardinal, John Iacono, Grigorios Koumoutsos, and Stefan Langerman.
+“Competitive online search trees on trees”. In: Symposium on Discrete Algorithms . Salt Lake
+City, Utah, USA: Society for Industrial and Applied Mathematics, 2020, pp. 1878–1891. doi:
+10.1137/1.9781611975994.115.
+[9] Prosenjit Bose, Karim Dou¨ ıeb, and Stefan Langerman. “Dynamic optimality for skip lists and
+B-trees”. In: Symposium on Discrete Algorithms . San Francisco, California, USA: Society for
+Industrial and Applied Mathematics, 2008, pp. 1106–1114.
+[10] Parinya Chalermsook, Julia Chuzhoy, and Thatchaphol Saranurak. “Pinning down the strong
+Wilber 1 bound for binary search trees”. In:Approximation, Randomization, and Combinatorial
+Optimization. Algorithms and Techniques . Dagstuhl, Germany: Schloss Dagstuhl, 2020, pp. 1–
+21. doi: 10.4230/LIPICS.APPROX/RANDOM.2020.33.
+[11] Parinya Chalermsook, Mayank Goswami, L´ aszl´ o Kozma, Kurt Mehlhorn, and Thatchaphol
+Saranurak. “Greedy is an almost optimal deque”. In: Workshop on Algorithms and Data
+Structures. Victoria, British Columbia, Canada: Springer, 2015, pp. 152–165. doi: 10.1007/
+978-3-319-21840-3_13 .
+[12] Parinya Chalermsook, Mayank Goswami, L´ aszl´ o Kozma, Kurt Mehlhorn, and Thatchaphol
+Saranurak. “Multi-ﬁnger binary search trees”. In: International Symposium on Algorithms and
+Computation. Dagstuhl, Germany: Schloss Dagstuhl, 2018, pp. 1–26. doi: 10.4230/LIPICS.
+ISAAC.2018.55.
+[13] Parinya Chalermsook, Mayank Goswami, L´ aszl´ o Kozma, Kurt Mehlhorn, and Thatchaphol
+Saranurak. “Pattern-avoiding access in binary search trees”. In: Foundations of Computer
+Science. Los Alamitos, California, USA: IEEE, 2015, pp. 410–423. doi: 10.1109/focs.2015.
+32.
+[14] Parinya Chalermsook, Mayank Goswami, L´ aszl´ o Kozma, Kurt Mehlhorn, and Thatchaphol
+Saranurak. “Self-adjusting binary search trees: what makes them tick?” In: European Sympo-
+sium on Algorithms . Patras, Greece: Springer, 2015, pp. 300–312. doi: 10.1007/978-3-662-
+48350-3_26.
+[15] Parinya Chalermsook, Mayank Goswami, L´ aszl´ o Kozma, Kurt Mehlhorn, and Thatchaphol
+Saranurak. The landscape of bounds for binary search trees . 2016. arXiv: 1603.04892 [cs.DS].
+[16] Parinya Chalermsook and Wanchote Jiamjitrak. “New binary search tree bounds via geometric
+inversions”. In: European Symposium on Algorithms. Dagstuhl, Germany: Schloss Dagstuhl,
+2020, pp. 1–16. doi: 10.4230/LIPIcs.ESA.2020.28.
+[17] Sean Cleary. “Restricted rotation distance between binary trees”. In: Information Processing
+Letters 84.6 (2002), pp. 333–338. doi: 10.1016/s0020-0190(02)00315-0.
+[18] Richard Cole. “On the dynamic ﬁnger conjecture for splay trees. Part II: the proof”. In: SIAM
+Journal on Computing 30.1 (2000), pp. 44–85. doi: 10.1137/s009753979732699x.
+[19] Richard Cole, Bud Mishra, Jeanette Schmidt, and Alan Siegel. “On the dynamic ﬁnger
+conjecture for splay trees. Part I: splay sorting logn-block sequences”. In: SIAM Journal on
+Computing 30.1 (2000), pp. 1–43. doi: 10.1137/s0097539797326988.
+[20] Douglas Comer. “The ubiquitous B-tree”. In: ACM Computing Surveys 11.2 (1979), pp. 121–
+137. doi: 10.1145/356770.356776.
+26
+
+--- PDF PAGE 27 ---
+[21] Karel Culik and Derick Wood. “A note on some tree similarity measures”. In: Information
+Processing Letters 15.1 (1982), pp. 39–42. doi: 10.1016/0020-0190(82)90083-7.
+[22] Erik Demaine, Dion Harmon, John Iacono, Daniel Kane, and Mihai Pˆ atra¸ scu. “The geometry of
+binary search trees”. In:Symposium on Discrete Algorithms. New York, New York, USA: Society
+for Industrial and Applied Mathematics, 2009, pp. 496–505. doi: 10.1137/1.9781611973068.
+55.
+[23] Erik Demaine, Dion Harmon, John Iacono, and Mihai Pˇ atra¸ scu. “Dynamic optimality—almost”.
+In: SIAM Journal on Computing 37.1 (2007), pp. 240–251. doi: 10.1137/s0097539705447347.
+[24] Erik Demaine, John Iacono, Grigorios Koumoutsos, and Stefan Langerman. “Belga B-trees”. In:
+Theory of Computing Systems 65.3 (2020), pp. 541–558. doi: 10.1007/s00224-020-09991-8.
+[25] Kyle Fox. “Upper bounds for maximally greedy binary search trees”. In: Workshop on
+Algorithms and Data Structures . New York, New York, USA: Springer, 2011, pp. 411–422.
+doi: 10.1007/978-3-642-22300-6_35 .
+[26] Michael Fredman, Robert Sedgewick, Daniel Sleator, and Robert Tarjan. “The pairing heap:
+a new form of self-adjusting heap”. In: Algorithmica 1.1-4 (1986), pp. 111–129. doi: 10.1007/
+bf01840439.
+[27] David Galles. Splay Tree. 2021. url: https://www.cs.usfca.edu/~galles/visualization/
+SplayTree.html.
+[28] Igal Galperin and Ronald Rivest. “Scapegoat trees”. In: Symposium on Discrete Algorithms .
+Austin, Texas, USA: Society for Industrial and Applied Mathematics, 1993, pp. 165–174.
+[29] George Georgakopoulos and David McClurkin. “Generalized template splay: a basic theory and
+calculus”. In: The Computer Journal 47.1 (2004), pp. 10–19. doi: 10.1093/comjnl/47.1.10.
+[30] Navin Goyal and Manoj Gupta. “Better analysis of binary search tree on decomposable
+sequences”. In: Theoretical Computer Science 776 (2019), pp. 19–42. doi: 10.1016/j.tcs.
+2018.12.021.
+[31] Navin Goyal and Manoj Gupta. On dynamic optimality for binary search trees . 2011. arXiv:
+1102.4523 [cs.DS].
+[32] Leo Guibas and Robert Sedgewick. “A dichromatic framework for balanced trees”. In: Foun-
+dations of Computer Science . Ann Arbor, Michigan, USA: IEEE, 1978, pp. 8–21. doi: 10.
+1109/sfcs.1978.3.
+[33] Bernhard Haeupler, Siddhartha Sen, and Robert E. Tarjan. “Rank-balanced trees”. In: ACM
+Transactions on Algorithms 11.4 (2015), pp. 1–26. doi: 10.1145/2689412.
+[34] Dion Harmon. “New bounds on optimal binary search trees”. PhD thesis. Massachusetts
+Institute of Technology, 2006.
+[35] Maria Hartmann, L´ aszl´ o Kozma, Corwin Sinnamon, and Robert Tarjan. “Analysis of smooth
+heaps and slim heaps”. In: International Colloquium on Automata, Languages and Program-
+ming. Dagstuhl, Germany: Schloss Dagstuhl, 2021, pp. 1–20. doi: 10.4230/LIPICS.ICALP.
+2021.79.
+[36] Thomas Hibbard. “Some combinatorial properties of certain trees with applications to searching
+and sorting”. In: Journal of the ACM 9.1 (1962), pp. 13–28. doi: 10.1145/321105.321108.
+[37] John Iacono. “In pursuit of the dynamic optimality conjecture”. In: Space-Eﬃcient Data
+Structures, Streams, and Algorithms . Berlin: Springer, 2013, pp. 236–250. doi: 10.1007/978-
+3-642-40273-9_16.
+27
+
+--- PDF PAGE 28 ---
+[38] John Iacono. “Key-independent optimality”. In: Algorithmica 42.1 (2005), pp. 3–10. doi:
+10.1007/s00453-004-1136-8.
+[39] John Iacono and Stefan Langerman. “Weighted dynamic ﬁnger in binary search trees”. In:
+Symposium on Discrete Algorithms . Arlington, Virginia, USA: Society for Industrial and
+Applied Mathematics, 2016, pp. 672–691. doi: 10.1137/1.9781611974331.ch49.
+[40] Douglas Jones. “Application of splay trees to data compression”. In: Communications of the
+ACM 31.8 (1988), pp. 996–1007. doi: 10.1145/63030.63036.
+[41] Grigorios Koumoutsos. “Online algorithms with advice for the binary search tree problem”.
+MA thesis. LIAFA, 2013.
+[42] L´ aszl´ o Kozma. “Binary search trees, rectangles and patterns”. PhD thesis. Saarland University,
+2016. doi: 10.22028/D291-26671.
+[43] L´ aszl´ o Kozma and Thatchaphol Saranurak. “Smooth heaps and a dual view of self-adjusting
+data structures”. In: SIAM Journal on Computing 49.5 (2020), pp. 45–93. doi: 10.1137/
+18m1195188.
+[44] Victor Lecomte and Omri Weinstein. “Settling the relationship between Wilber’s bounds for
+dynamic optimality”. In: European Symposium on Algorithms. Dagstuhl, Germany: Schloss
+Dagstuhl, 2020, pp. 1–21. doi: 10.4230/LIPICS.ESA.2020.68.
+[45] Caleb Levy. “New paths from splay to dynamic optimality”. PhD thesis. Princeton University,
+2019.
+[46] Caleb Levy and Robert Tarjan. “A new path from splay to dynamic optimality”. In:Symposium
+on Discrete Algorithms . San Diego, California, USA: Society for Industrial and Applied
+Mathematics, 2019, pp. 1311–1330. doi: 10.1137/1.9781611975482.80.
+[47] Caleb Levy and Robert Tarjan. “Splaying preorders and postorders”. In: Workshop on
+Algorithms and Data Structures . Edmonton, Alberta, Canada: Springer, 2019, pp. 510–522.
+doi: 10.1007/978-3-030-24766-9_37 .
+[48] Joan Lucas. “A direct algorithm for restricted rotation distance”. In: Information Processing
+Letters 90.3 (2004), pp. 129–134. doi: 10.1016/j.ipl.2004.02.001.
+[49] Joan Lucas. Canonical forms for competitive binary search tree algorithms . Tech. rep. Rutgers
+University, 1988.
+[50] Joan Lucas. “Postorder disjoint set union is linear”. In: SIAM Journal on Computing 19.5
+(1990), pp. 868–882. doi: 10.1137/0219060.
+[51] Erkki M¨ akinen. “On top-down splaying”. In:BIT 27.3 (1987), pp. 330–339. doi: 10.1007/
+bf01933728.
+[52] Conrado Mart´ ınez and Salvador Roura. “Randomized binary search trees”. In:Journal of the
+ACM 45.2 (1998), pp. 288–323. doi: 10.1145/274787.274812.
+[53] Ian Munro. “On the competitiveness of linear search”. In: European Symposium on Algorithms.
+Saarbr¨ ucken, Germany: Springer, 2000, pp. 338–345.doi: 10.1007/3-540-45253-2_31.
+[54] Seth Pettie. “Applications of forbidden 0-1 matrices to search tree and path compression-based
+data structures”. In: Symposium on Discrete Algorithms . Austin, Texas, USA: Society for
+Industrial and Applied Mathematics, 2010, pp. 1457–1467. doi: 10.1137/1.9781611973075.
+118.
+28
+
+--- PDF PAGE 29 ---
+[55] Seth Pettie. “Splay trees, Davenport-Schinzel sequences, and the deque conjecture”. In:
+Symposium on Discrete Algorithms . San Francisco, California, USA: Society for Industrial
+and Applied Mathematics, 2008, pp. 1115–1124.
+[56] Hauke Reddmann. “On the geometric equivalent of instance optimal binary search tree
+algorithms”. MA thesis. Universit¨ at Hamburg, 2021.
+[57] Doron Rotem. “On a correspondence between binary trees and a certain type of permutation”.
+In: Information Processing Letters 4.3 (1975), pp. 58–61. doi: 10.1016/0020-0190(75)90002-
+2.
+[58] Lu´ ıs Russo. “A study on splay trees”. In:Theoretical Computer Science 776 (2019), pp. 1–18.
+doi: 10.1016/j.tcs.2018.12.020.
+[59] Stefan Schmid, Chen Avin, Christian Scheideler, Michael Borokhovich, Bernhard Haeupler, and
+Zvi Lotker. “SplayNet: towards locally self-adjusting networks”. In: IEEE/ACM Transactions
+on Networking 24.3 (2016), pp. 1421–1433. doi: 10.1109/tnet.2015.2410313.
+[60] Raimund Seidel and Cecilia Aragon. “Randomized search trees”. In: Algorithmica 16.4-5
+(1996), pp. 464–497. doi: 10.1007/bf01940876.
+[61] Daniel Sleator and Robert Tarjan. “Self-adjusting binary search trees”. In: Journal of the
+ACM 32.3 (1985), pp. 652–686. doi: 10.1145/3828.3835.
+[62] Ashok Subramanian. “An explanation of splaying”. In: Journal of Algorithms 20.3 (1996),
+pp. 512–525. doi: 10.1006/jagm.1996.0025.
+[63] Rajamani Sundar. “On the deque conjecture for the splay algorithm”. In: Combinatorica 12.1
+(1992), pp. 95–124. doi: 10.1007/bf01191208.
+[64] Robert Tarjan. “Amortized computational complexity”. In: SIAM Journal on Algebraic
+Discrete Methods 6.2 (1985), pp. 306–318. doi: 10.1137/0606031.
+[65] Robert Tarjan. “Sequential access in splay trees takes linear time”. In: Combinatorica 5.4
+(1985), pp. 367–378. doi: 10.1007/bf02579253.
+[66] Robert Tarjan, Caleb Levy, and Stephen Timmel. “Zip trees”. In: ACM Transactions on
+Algorithms 17.4 (2021), pp. 1–12. doi: 10.1145/3476830.
+[67] Robert Wilber. “Lower bounds for accessing binary search trees with rotations”. In: SIAM
+Journal on Computing 18.1 (1989), pp. 56–67. doi: 10.1137/0218004.
+29

@@ -1,0 +1,39 @@
+{
+ "invalid_lift": "[0,None,[-1,None,T]] violates BST (right-subtree key -1 < root 0)",
+ "tainted_scripts": [
+  "wp6_lift2.py:mode_oldcore",
+  "wp6_shiftmap.py",
+  "wp6_shiftgate.py(forms/dtqgate)",
+  "wp6_shiftgate2.py",
+  "wp6_dbar.py",
+  "wp6_pairsign.py",
+  "wp6_lift2 refined probe"
+ ],
+ "tainted_artifacts": [
+  "j4_oldcore.json",
+  "j4_shiftmap.json",
+  "j4_dbarcorpus.json",
+  "j4_countlaw.json",
+  "j4_shiftforms*.json",
+  "j4_dtqgate.json",
+  "j4_pairsign.json",
+  "j4_crem.json"
+ ],
+ "void_results": [
+  "oldcore 20-class counts",
+  "shiftmap details",
+  "dbar support numbers",
+  "shift-form ranges/DTQ gate (26L)",
+  "pair/crem sups",
+  "countlaw +2-NONE (must reverify)"
+ ],
+ "standing": [
+  "left-prepend table (valid keys)",
+  "LR-prepend probe (valid keys)",
+  "twin K2/K3 multiset validations (valid lifts)",
+  "class_table Pad_L/R (valid)",
+  "all Ext/Pad/context probes (valid)",
+  "old-F table LL/RR/LR (valid lifts)",
+  "ug/ugar/rednorm LP systems (no lifts involved)"
+ ]
+}

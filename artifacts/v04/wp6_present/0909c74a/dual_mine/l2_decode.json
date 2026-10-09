@@ -1,0 +1,184 @@
+{
+ "n": 7,
+ "nS": 429,
+ "edges": [
+  {
+   "abstract": "((1, 1), (7, 7))",
+   "maxw": 1,
+   "ia": 28,
+   "ib": 0,
+   "x": 7,
+   "mode": "K",
+   "dA": 2,
+   "a": 1,
+   "dB": 6,
+   "q": 3,
+   "w": 1,
+   "pre_roots": [
+    1,
+    1
+   ],
+   "pre_vine": [
+    true,
+    true
+   ],
+   "pre_maxdepth": [
+    6,
+    6
+   ],
+   "ta": 339,
+   "tb": 345,
+   "post_roots": [
+    7,
+    7
+   ],
+   "post_vine": [
+    false,
+    false
+   ],
+   "post_maxdepth": [
+    5,
+    4
+   ],
+   "twin_pre": 1,
+   "twin_post": 1,
+   "c_adj": 1
+  },
+  {
+   "abstract": "((7, 7), (1, 1))",
+   "maxw": 1,
+   "ia": 297,
+   "ib": 428,
+   "x": 1,
+   "mode": "K",
+   "dA": 1,
+   "a": 1,
+   "dB": 6,
+   "q": 3,
+   "w": 1,
+   "pre_roots": [
+    7,
+    7
+   ],
+   "pre_vine": [
+    true,
+    true
+   ],
+   "pre_maxdepth": [
+    6,
+    6
+   ],
+   "ta": 90,
+   "tb": 83,
+   "post_roots": [
+    1,
+    1
+   ],
+   "post_vine": [
+    true,
+    false
+   ],
+   "post_maxdepth": [
+    6,
+    4
+   ],
+   "twin_pre": 1,
+   "twin_post": 1,
+   "c_adj": 1
+  }
+ ],
+ "stitch": {
+  "e1end": [
+   339,
+   345
+  ],
+  "e2start": [
+   297,
+   428
+  ],
+  "e2end": [
+   90,
+   83
+  ],
+  "e1start": [
+   28,
+   0
+  ],
+  "stitch1_ok": false,
+  "stitch2_ok": false,
+  "feat_e1end": {
+   "ia": 339,
+   "ib": 345,
+   "roots": [
+    7,
+    7
+   ],
+   "vineA": false,
+   "vineB": false,
+   "maxdepth": [
+    5,
+    4
+   ],
+   "twin": 1
+  },
+  "feat_e2start": {
+   "ia": 297,
+   "ib": 428,
+   "roots": [
+    7,
+    7
+   ],
+   "vineA": true,
+   "vineB": true,
+   "maxdepth": [
+    6,
+    6
+   ],
+   "twin": 1
+  },
+  "feat_e2end": {
+   "ia": 90,
+   "ib": 83,
+   "roots": [
+    1,
+    1
+   ],
+   "vineA": true,
+   "vineB": false,
+   "maxdepth": [
+    6,
+    4
+   ],
+   "twin": 1
+  },
+  "feat_e1start": {
+   "ia": 28,
+   "ib": 0,
+   "roots": [
+    1,
+    1
+   ],
+   "vineA": true,
+   "vineB": true,
+   "maxdepth": [
+    6,
+    6
+   ],
+   "twin": 1
+  },
+  "distinguish_e1end_vs_e2start": [
+   "vineB",
+   "vineA",
+   "maxdepth",
+   "ia",
+   "ib"
+  ],
+  "distinguish_e2end_vs_e1start": [
+   "vineB",
+   "maxdepth",
+   "ia",
+   "ib"
+  ],
+  "recommended_alpha": "(rootA,rootB,isVineB)"
+ }
+}

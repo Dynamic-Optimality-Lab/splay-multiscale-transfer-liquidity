@@ -1,0 +1,32 @@
+[CYCLE CY-00] build n=4
+[CYCLE CY-01] shapes=14 pairnodes=196
+[CYCLE CY-02] reachable-size min/med/max=196/196/196
+[CYCLE CY-03] SCCs=1 recurrent=1
+[CYCLE CY-04] top recurrent SCC sizes=[196]
+[CYCLE CY-05] T0s with zeroA-posB cycle: 0/14
+[CYCLE CY-00] build n=5
+[CYCLE CY-01] shapes=42 pairnodes=1764
+[CYCLE CY-02] reachable-size min/med/max=1764/1764/1764
+[CYCLE CY-03] SCCs=1 recurrent=1
+[CYCLE CY-04] top recurrent SCC sizes=[1764]
+[CYCLE CY-05] T0s with zeroA-posB cycle: 0/42
+[CYCLE CY-00] build n=6
+[CYCLE CY-01] shapes=132 pairnodes=17424
+[CYCLE CY-02] reachable-size min/med/max=17424/17424/17424
+[CYCLE CY-03] SCCs=1 recurrent=1
+[CYCLE CY-04] top recurrent SCC sizes=[17424]
+[CYCLE CY-05] T0s with zeroA-posB cycle: 0/132
+[PERIOD PH-00] periodic hunt
+[PERIOD PH-01] n=16 done best=1.0
+[PERIOD PH-01] n=32 done best=1.0
+[PERIOD PH-01] n=64 done best=1.0
+[PERIOD PH-01] n=128 done best=1.0
+[PERIOD PH-01] n=256 done best=1.0
+[PERIOD PH-02] ratio=1.0000 n=16 start=bal pat=sweep W=[('KEEP', 1), ('KEEP', 2)] cyc={'cycle': True, 'A': 2, 'B': 2, 'tail': 4}
+[PERIOD PH-02] ratio=1.0000 n=16 start=div pat=sweep W=[('KEEP', 1), ('KEEP', 2)] cyc={'cycle': True, 'A': 2, 'B': 2, 'tail': 4}
+[PERIOD PH-02] ratio=1.0000 n=16 start=bal pat=sweep W=[('KEEP', 1), ('KEEP', 2), ('KEEP', 3), ('KEEP', 4), ('KEEP', 5), ('KEEP', 6), ('KEEP', 7), ('KEEP', 8)] cyc={'cycle': True, 'A': 14, 'B': 14, 'tail': 16}
+[PERIOD PH-02] ratio=1.0000 n=16 start=div pat=sweep W=[('KEEP', 1), ('KEEP', 2), ('KEEP', 3), ('KEEP', 4), ('KEEP', 5), ('KEEP', 6), ('KEEP', 7), ('KEEP', 8)] cyc={'cycle': True, 'A': 14, 'B': 14, 'tail': 16}
+[PERIOD PH-02] ratio=0.5714 n=16 start=vine pat=kkd W=[('KEEP', 2), ('KEEP', 14), ('DELETE', 10), ('KEEP', 16), ('KEEP', 14), ('DELETE', 6)] cyc={'cycle': True, 'A': 14, 'B': 8, 'tail': 21}
+[PERIOD PH-02] ratio=0.5714 n=16 start=bal pat=kkd W=[('KEEP', 2), ('KEEP', 14), ('DELETE', 10), ('KEEP', 16), ('KEEP', 14), ('DELETE', 6)] cyc={'cycle': True, 'A': 14, 'B': 8, 'tail': 24}
+[PERIOD PH-02] ratio=0.5714 n=16 start=div pat=kkd W=[('KEEP', 2), ('KEEP', 14), ('DELETE', 10), ('KEEP', 16), ('KEEP', 14), ('DELETE', 6)] cyc={'cycle': True, 'A': 14, 'B': 8, 'tail': 18}
+[PERIOD PH-02] ratio=0.3478 n=16 start=vine pat=alt W=[('KEEP', 8), ('DELETE', 16), ('KEEP', 7), ('DELETE', 11), ('KEEP', 8), ('DELETE', 9), ('KEEP', 2), ('DELETE', 16), ('KEEP', 15), ('DELETE', 6), ('KEEP', 5), ('DELETE', 16)] cyc={'cycle': True, 'A': 23, 'B': 8, 'tail': 52}

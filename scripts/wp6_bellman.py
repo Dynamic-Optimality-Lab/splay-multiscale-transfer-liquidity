@@ -1,186 +1,261 @@
-"""WP-6 STEP BL-00: exact Bellman hazard oracle (pair-state control system).
+"""WP-6 BELLMAN (v2 fast): all-key H1 barrier + BD1/BK1 falsifier (C181).
 
-States (A,B) reachable from diagonals via KEEP/DELETE (present keys).
-Rewards: KEEP(x): e_B-3*e_A; DELETE(x): -3*e_A. STOP allowed (V>=0).
-V_{h+1}(s) = max(0, max_a r+V_h(s')); V = sup_h (value iteration, exact int,
-two-pass h*). Outputs: V/V_h, h* (bounded/growing), optimal policies,
-tight complete paths (replayable), TSRC-corpse DFS continuations,
-common-root decomposition tests, V==V1 fraction (1-step sufficiency).
-n=4,5,6. No diagonal pinning (least nonnegative V).
+Same mathematics as v1, but H1 via exact depth formulas instead of
+replayed splays per key:
+  H1(A,B) = max_x max(ceil(dB/2) - 3*ceil(dA/2), 0)   [present keys]
+justified by micro F-check (ceil-exactness 0 violations / 16776) and
+re-validated here by spot-checks (formula-H1 vs replay-H1 must agree
+exactly; mismatches recorded, abort on any).
+Post-states D_x/K_x still replayed exactly (one splay each); H1 on those
+states via formula. Per (state,key): O(n) instead of O(n^3).
+Residuals (positive = BARRIER FAILURE):
+  residual_DELETE(x) = H1(D_x) - H1 - 3*a_x
+  residual_KEEP(x)   = b_x + H1(K_x) - H1 - 3*a_x
+  with a_x = ceil(dA/2), b_x = ceil(dB/2) (present).
+Modes: walk (history corpora, all keys) + beam-max-residual (pair-states)
++ exhaustive small-n (all BST pairs). Tracks min(Phi-H1).
+Artifact: bellman/h1_attack.json. Sealed files untouched.
 """
 from __future__ import annotations
 import sys
-from collections import deque
+import json
+import copy
 from pathlib import Path
+from collections import Counter
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "python"))
 sys.path.insert(0, str(ROOT / "scripts"))
-from wp6_splaymetric import shapes, splay_cost_events
+from wp6_pushledger import gen
+from wp6_eventflow import to_ptr, splay_A, splay_B_push
+from wp6_adv import vine, balanced, depths_of
+from solver import encode as E
 
 
-def step(sid: str, msg: str) -> None:
-    print("[WP-6][STEP %s] %s" % (sid, msg), flush=True)
+def step(sid, msg):
+    line = "[WP-6][BELLMAN %s] %s" % (sid, msg)
+    print(line, flush=True)
+    try:
+        bd = ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / "bellman"
+        bd.mkdir(parents=True, exist_ok=True)
+        with open(bd / "progress.log", "a", encoding="utf-8") as f:
+            f.write(line + "\n")
+    except Exception:
+        pass
 
 
-def build_graph(n, keys=None):
-    S = shapes(n)
-    nxt, cst = {}, {}
-    for t in S:
-        for x in range(1, n + 1):
-            t2, c = splay_cost_events(t, x)
-            nxt[(t, x)] = t2
-            cst[(t, x)] = c
-    seen = set()
-    dq = deque()
-    for t0 in S:
-        seen.add((t0, t0))
-        dq.append((t0, t0))
-    trans = {}
-    while dq:
-        A, B = dq.popleft()
-        lst = []
-        for x in range(1, n + 1):
-            A2 = nxt[(A, x)]
-            eA = cst[(A, x)]
-            s = (A2, B)
-            if s not in seen:
-                seen.add(s)
-                dq.append(s)
-            lst.append(("D", x, eA, 0, -3 * eA, s))
-            B2 = nxt[(B, x)]
-            eB = cst[(B, x)]
-            s = (A2, B2)
-            if s not in seen:
-                seen.add(s)
-                dq.append(s)
-            lst.append(("K", x, eA, eB, eB - 3 * eA, s))
-        trans[(A, B)] = lst
-    return list(seen), trans
+def H1f(dA, dB, keys):
+    best = 0
+    arg = None
+    for x in keys:
+        da = dA.get(x)
+        db = dB.get(x)
+        if da is None or db is None:
+            continue
+        v = (db + 1) // 2 - 3 * ((da + 1) // 2)
+        if v > best:
+            best = v
+            arg = x
+    return best, arg
 
 
-def bellman(nodes, trans, hmax=600):
-    V = {v: 0 for v in nodes}
-    snaps = []
-    stable = None
-    for h in range(hmax):
-        changed = False
-        Vn = {}
-        for v in nodes:
-            best = 0
-            for (_, _, _, _, r, s) in trans[v]:
-                q = r + V[s]
-                if q > best:
-                    best = q
-            Vn[v] = best
-            if best != V[v]:
-                changed = True
-        V = Vn
-        snaps.append(dict(V) if h < 40 else None)
-        if not changed:
-            stable = h
+def H1replay(A, B, keys):
+    best = 0
+    for x in keys:
+        A2 = copy.deepcopy(A)
+        A2, invs = splay_A(A2, x)
+        B2 = copy.deepcopy(B)
+        B2, pushes = splay_B_push(B2, x)
+        v = len(pushes) - 3 * len(invs)
+        if v > best:
+            best = v
+    return best
+
+
+def residuals(A, B, keys, spot=None):
+    dA = depths_of(A)
+    dB = depths_of(B)
+    h, _ = H1f(dA, dB, keys)
+    if spot is not None and spot[0] % spot[1] == 0:
+        hr = H1replay(A, B, keys)
+        if hr != h:
+            return {"mismatch": (hr, h)}
+    out = {"H1": h, "rd_max": None, "rk_max": None, "rd_arg": None,
+           "rk_arg": None, "rk_info": None}
+    for x in keys:
+        da = dA.get(x, 0)
+        db = dB.get(x, 0)
+        a = (da + 1) // 2
+        b = (db + 1) // 2
+        A2 = copy.deepcopy(A)
+        A2, _ = splay_A(A2, x)
+        hd, _ = H1f(depths_of(A2), dB, keys)
+        rd = hd - h - 3 * a
+        if out["rd_max"] is None or rd > out["rd_max"]:
+            out["rd_max"] = rd
+            out["rd_arg"] = x
+        B2 = copy.deepcopy(B)
+        B2, _ = splay_B_push(B2, x)
+        hk, _ = H1f(depths_of(A2), depths_of(B2), keys)
+        rk = b + hk - h - 3 * a
+        if out["rk_max"] is None or rk > out["rk_max"]:
+            out["rk_max"] = rk
+            out["rk_arg"] = x
+            out["rk_info"] = {"a": a, "b": b, "h": h, "hk": hk,
+                              "da": da, "db": db}
+    return out
+
+
+def walk_histories(nH=60):
+    agg = Counter()
+    agg["rd_max"] = None
+    agg["rk_max"] = None
+    agg["min_phih1"] = None
+    agg["mismatch"] = 0
+    for s in range(nH):
+        n, T0, H = gen(s, b"bl")
+        if n > 64:
+            continue
+        try:
+            pre = E.precompute(n, T0, H)
+            bad = E.exec_counts(pre, "P_all", 6, 2, (2, 2))["violations"]
+        except Exception:
+            continue
+        if bad:
+            continue
+        A, B = to_ptr(T0), to_ptr(T0)
+        keys = sorted(depths_of(A).keys())
+        SA = EB = 0
+        for i, acc in enumerate(pre):
+            x, mode = acc["x"], acc["mode"]
+            r = residuals(A, B, keys, spot=(i, 25))
+            if "mismatch" in r:
+                agg["mismatch"] += 1
+                step("BL-MM", "H1 formula mismatch %s" % (r["mismatch"],))
+                return agg
+            if agg["rd_max"] is None or r["rd_max"] > agg["rd_max"]:
+                agg["rd_max"] = r["rd_max"]
+                agg["rd_wit"] = {"s": s, "x": r["rd_arg"]}
+            if agg["rk_max"] is None or r["rk_max"] > agg["rk_max"]:
+                agg["rk_max"] = r["rk_max"]
+                agg["rk_wit"] = {"s": s, "x": r["rk_arg"],
+                                 "info": r["rk_info"]}
+            phi = 3 * SA - EB
+            mh = phi - r["H1"]
+            if agg["min_phih1"] is None or mh < agg["min_phih1"]:
+                agg["min_phih1"] = mh
+            A, invs = splay_A(A, x)
+            eA = len(invs)
+            eB = 0
+            if mode == "KEEP":
+                B, pushes = splay_B_push(B, x)
+                eB = len(pushes)
+            SA += eA
+            EB += eB if mode == "KEEP" else 0
+        if s % 10 == 9:
+            step("BL-W", "s=%d rd=%s rk=%s mh=%s mm=%s" % (
+                s, agg["rd_max"], agg["rk_max"], agg["min_phih1"],
+                agg["mismatch"]))
+    return agg
+
+
+def beam_max(T0, L, W):
+    A0, B0 = to_ptr(T0), to_ptr(T0)
+    keys = sorted(depths_of(A0).keys())
+    beam = [(0, A0, B0, [])]
+    best = {"v": None, "H": None, "which": None}
+    for _ in range(L):
+        cands = []
+        for _, A, B, H in beam:
+            dA = depths_of(A)
+            dB = depths_of(B)
+            h, _ = H1f(dA, dB, keys)
+            for x in keys:
+                da = dA.get(x, 0)
+                a = (da + 1) // 2
+                A2 = copy.deepcopy(A)
+                A2, _ = splay_A(A2, x)
+                hd, _ = H1f(depths_of(A2), dB, keys)
+                cands.append((hd - h - 3 * a, A2, copy.deepcopy(B),
+                              H + [["DELETE", x]], "rd"))
+                B2 = copy.deepcopy(B)
+                B2, _ = splay_B_push(B2, x)
+                db = dB.get(x, 0)
+                b = (db + 1) // 2
+                hk, _ = H1f(depths_of(A2), depths_of(B2), keys)
+                cands.append((b + hk - h - 3 * a, A2, B2,
+                              H + [["KEEP", x]], "rk"))
+        if not cands:
             break
-    # h*: first h with V_h == V_final (replay using snaps for h<40 else rerun)
-    hstar = {}
-    if stable is not None and stable < 40:
-        for v in nodes:
-            for h in range(stable + 1):
-                if snaps[h][v] == V[v]:
-                    hstar[v] = h
-                    break
-    return V, hstar, stable
+        cands.sort(key=lambda c: c[0], reverse=True)
+        beam = [(c[0], c[1], c[2], c[3]) for c in cands[:W]]
+        for v, A, B, H in beam:
+            if best["v"] is None or v > best["v"]:
+                h, _ = H1f(depths_of(A), depths_of(B), keys)
+                best = {"v": v, "H": list(H), "H1": h}
+                if v is not None and v > 0:
+                    # which mode was it? recover from last op
+                    best["which"] = H[-1][0].lower() if H else None
+                    return best, True
+    return best, False
+
+
+def exhaustive(n):
+    def shapes(ks):
+        if not ks:
+            return [None]
+        out = []
+        for i, k in enumerate(ks):
+            for l in shapes(ks[:i]):
+                for r in shapes(ks[i + 1:]):
+                    out.append([k, l, r])
+        return out
+
+    best = {"rd": None, "rk": None}
+    keys = list(range(1, n + 1))
+    for A0 in shapes(keys):
+        for B0 in shapes(keys):
+            A, B = to_ptr(A0), to_ptr(B0)
+            r = residuals(A, B, keys)
+            if "mismatch" in r:
+                best["mismatch"] = True
+                return best
+            if best["rd"] is None or r["rd_max"] > best["rd"]:
+                best["rd"] = r["rd_max"]
+                best["rd_wit"] = {"A": A0, "B": B0, "x": r["rd_arg"]}
+            if best["rk"] is None or r["rk_max"] > best["rk"]:
+                best["rk"] = r["rk_max"]
+                best["rk_wit"] = {"A": A0, "B": B0, "x": r["rk_arg"],
+                                  "info": r["rk_info"]}
+    return best
 
 
 def main() -> int:
-    # WP-6 STEP BL-00.
-    step("BL-00", "Exact Bellman hazard oracle")
-    import json
-    import statistics as _st
+    step("BL-00", "H1 barrier + BD1/BK1 falsification (fast v2)")
     out = {}
-    Vcache = {}
-    for n in (4, 5, 6):
-        nodes, trans = build_graph(n)
-        step("BL-n%d" % n, "pairs=%d" % len(nodes))
-        V, hstar, stab = bellman(nodes, trans)
-        Vcache[n] = (nodes, trans, V)
-        mx = max(V.values())
-        dg = [v for v in nodes if v[0] == v[1]]
-        mxd = max(V[v] for v in dg)
-        hs = list(hstar.values()) if hstar else []
-        # V==V1 fraction (1-step sufficiency)
-        nV1 = 0
-        for v in nodes:
-            b1 = 0
-            for (_, _, _, _, r, s) in trans[v]:
-                if r > b1:
-                    b1 = r
-            if V[v] == b1:
-                nV1 += 1
-        out[str(n)] = {
-            "pairs": len(nodes), "stable_round": stab, "maxV": mx,
-            "maxV_diag": mxd, "npos": sum(1 for v in V.values() if v > 0),
-            "hstar_max": max(hs) if hs else None,
-            "hstar_med": _st.median(hs) if hs else None,
-            "VeqV1_frac": nV1 / len(nodes),
-        }
-        step("BL-n%d" % n, "stable=%s maxV=%d maxVdiag=%d npos=%d h*max=%s h*med=%s VeqV1=%.3f" %
-             (stab, mx, mxd, out[str(n)]["npos"], out[str(n)]["hstar_max"],
-              out[str(n)]["hstar_med"], out[str(n)]["VeqV1_frac"]))
-        # top-V specimens + tight actions
-        top = sorted(nodes, key=lambda v: -V[v])[:6]
-        spec = []
-        for v in top:
-            acts = []
-            for (m, x, eA, eB, r, s) in trans[v]:
-                if r + V[s] == V[v] and V[v] > 0:
-                    acts.append([m, x, eA, eB, r, V[s]])
-            spec.append({"V": V[v], "A": str(v[0]), "B": str(v[1]), "tight": acts[:4]})
-        out[str(n)]["top"] = spec
-        # best tight path from diagonals
-        best_path = None
-        for d in dg:
-            if V[d] <= 0:
-                continue
-            path, cur, cum, seen = [], d, 0, set()
-            while cur not in seen and len(path) < 60:
-                seen.add(cur)
-                na = None
-                for (m, x, eA, eB, r, s) in trans[cur]:
-                    if r + V[s] == V[cur] and V[cur] > 0:
-                        na = (m, x, eA, eB, r, s)
-                        break
-                if na is None:
-                    break
-                m, x, eA, eB, r, s = na
-                cum += r
-                path.append([m, x, eA, eB, cum])
-                cur = s
-            if best_path is None or cum > best_path[0]:
-                best_path = (cum, str(d), path)
-        out[str(n)]["best_tight_path"] = best_path
-    # common-root decomposition test (n=6 V; subtree restriction by key
-    # interval is NOT splay-clean (keys interleave by shape), so record
-    # common-root vs disagree-root V distribution instead of recurrences.
-    nodes6, trans6, V6 = Vcache[6]
-    tested = 0
-    for (A, B) in nodes6:
-        if A[0] != B[0]:
-            continue
-        if tested >= 400:
-            break
-        tested += 1
-    # common-root V stats
-    crV = [V6[v] for v in nodes6 if v[0][0] == v[1][0]]
-    drV = [V6[v] for v in nodes6 if v[0][0] != v[1][0]]
-    out["common_root"] = {"n": len(crV), "max": max(crV) if crV else 0,
-                          "mean": sum(crV) / max(1, len(crV)),
-                          "dis_max": max(drV) if drV else 0,
-                          "dis_mean": sum(drV) / max(1, len(drV))}
-    step("BL-CR", "common-root Vmax=%d mean=%.2f; disagree Vmax=%d mean=%.2f" %
-         (out["common_root"]["max"], out["common_root"]["mean"],
-          out["common_root"]["dis_max"], out["common_root"]["dis_mean"]))
-    (ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / "bellman.json").write_text(
-        json.dumps(out, indent=1, sort_keys=True, default=str), encoding="utf-8")
+    w = walk_histories(60)
+    out["walk"] = dict(w)
+    step("BL-01", "walk: %s" % json.dumps(dict(w), sort_keys=True,
+                                          default=str))
+    for nm, T0, L, W in (("vine32", vine(32), 30, 24),
+                         ("bal32", balanced(list(range(1, 33))), 30, 24),
+                         ("vine64", vine(64), 20, 16)):
+        b, kill = beam_max(T0, L, W)
+        out["beam_%s" % nm] = {"v": b["v"], "H1": b.get("H1"),
+                               "which": b.get("which"), "kill": kill}
+        step("BL-02", "beam %s: v=%s which=%s kill=%s" % (
+            nm, b["v"], b.get("which"), kill))
+    for n in (3, 4, 5):
+        e = exhaustive(n)
+        out["exhaustive_n%d" % n] = e
+        step("BL-03", "exhaustive n=%d rd=%s rk=%s" % (n, e.get("rd"),
+                                                       e.get("rk")))
+    bd = ROOT / "artifacts" / "v04" / "wp6_present" / "0909c74a" / "bellman"
+    bd.mkdir(parents=True, exist_ok=True)
+    (bd / "h1_attack.json").write_text(
+        json.dumps(out, indent=1, sort_keys=True, default=str),
+        encoding="utf-8")
+    step("BL-04", "done")
     return 0
 
 

@@ -1,0 +1,2241 @@
+# CODEX MASTER DIRECTIVE
+# DYNAMIC OPTIMALITY RESEARCH REBOOT
+## Full Repository Reconstruction → Original Proof Pipeline → Proof-Gated Autonomous Research
+
+---
+
+# 0. YOUR MISSION
+
+You are Codex, acting as the lead mathematical researcher, proof engineer, and research-program architect for a project attempting to prove the Sleator–Tarjan Dynamic Optimality Conjecture for splay trees.
+
+You have access to the complete existing research repository.
+
+The repository contains a substantial history of attempts, source code, mathematical formulations, computational certificates, counterexamples, finite experiments, partially proved lemmas, and abandoned approaches.
+
+**Your task is to reconstruct the research project from its actual evidence, set up an end-to-end proof pipeline from the original Dynamic Optimality target, and establish an operational system for pursuing that pipeline under strict mathematical and research-efficiency rules.**
+
+You must:
+
+1. Reconstruct the repository's mathematical definitions and current research state.
+2. Recover the original proposed proof pipeline from Dynamic Optimality backward to its first load-bearing lemmas.
+3. Determine which results are genuinely proved and which remain experimental, conditional, or open.
+4. Preserve important previous work while eliminating obsolete or refuted assumptions from the active proof plan.
+5. Build an independently understandable, source-backed research workspace.
+6. Design the ENTIRE proof pipeline, including dependencies, stage-completion criteria and proof-verification requirements.
+7. Establish mandatory per-pivot rules preventing the creation of auxiliary problems as hard as the original problem.
+8. Identify the nearest genuinely tractable theorem that could advance the proof.
+9. Prepare a self-contained, executable next Codex research prompt only if it passes every research rule.
+10. If a suitable small theorem is available, attempt to prove it. Otherwise, give an exact strategic verdict rather than invent another research layer.
+
+You may invest substantial effort in reading, reasoning, reconstructing, formalizing and verifying.
+
+However:
+
+**DO NOT fabricate proof progress. DO NOT treat finite computation as a universal mathematical theorem. DO NOT hide open problems inside new definitions.**
+
+Our objective is an actual Dynamic Optimality proof, not an ever-expanding research bureaucracy.
+
+---
+
+# 1. ABSOLUTE FILESYSTEM PERMISSION BOUNDARY
+
+This instruction overrides any ordinary temptation to repair, reorganize or modify the existing project.
+
+## 1.1 Create exactly one dedicated root-level folder
+
+Create:
+
+```text
+DO_RESEARCH_REBOOT/
+```
+
+at the root of the existing repository.
+
+This is your **only writable workspace**.
+
+You MAY read files anywhere in the repository.
+
+You MAY inspect existing git history, branches, source code, notebooks, artifacts, experiments, tests, mathematical reports and prior research.
+
+But:
+
+\[
+\boxed{
+\textbf{ALL FILE CREATION AND MODIFICATION MUST REMAIN INSIDE }
+\texttt{DO\_RESEARCH\_REBOOT/}.
+}
+\]
+
+Do not create another root-level research folder.
+
+If this folder already exists, preserve its existing contents and add new versioned files without destructive overwrites.
+
+## 1.2 The existing codebase is read-only
+
+You must NOT:
+
+- edit existing source files;
+- edit existing tests;
+- modify existing research reports;
+- modify project configuration;
+- modify dependency files;
+- alter git hooks;
+- update `.gitignore`;
+- commit anything;
+- change branches;
+- reset or clean the working tree;
+- stash anything;
+- delete existing artifacts;
+- overwrite previous research.
+
+This prohibition applies even if you discover a bug.
+
+**If you find a bug, document the bug and a proposed patch INSIDE your dedicated folder.**
+
+Do not apply it to the source file.
+
+## 1.3 Prevent indirect writes
+
+Execution tools can create files unintentionally.
+
+Avoid or redirect:
+
+- `__pycache__`;
+- `.pytest_cache`;
+- test output;
+- generated binaries;
+- compiler intermediates;
+- logs;
+- coverage files;
+- temporary scripts;
+- notebook checkpoints;
+- package caches;
+- dependency-installation artifacts.
+
+All such outputs must remain inside:
+
+```text
+DO_RESEARCH_REBOOT/
+```
+
+Use appropriate environment variables and cache settings.
+
+Do not run source tools that write outside the permitted folder unless you can redirect every output.
+
+Do not install or upgrade dependencies into the repository or external environments as part of this task.
+
+Read-only source execution is permitted when its side effects are controlled.
+
+## 1.4 Audit filesystem safety
+
+At the beginning, record:
+
+- current branch;
+- HEAD;
+- dirty status;
+- existing modified/untracked files.
+
+At the end, confirm that no file outside the permitted root folder was created, edited or deleted by your work.
+
+Pre-existing dirty changes must remain untouched.
+
+If safe execution is impossible, use static inspection instead.
+
+**Filesystem safety is a hard requirement, not a preference.**
+
+---
+
+# 2. THE ORIGINAL TARGET: DYNAMIC OPTIMALITY
+
+The overall research target is the Sleator–Tarjan Dynamic Optimality Conjecture.
+
+Informally, we seek to show that a splay tree serves any access sequence at total cost within a universal constant factor of the optimal binary search tree execution model, subject to the exact conventions and allowable initial-tree terms.
+
+You must recover the source's precise formulation.
+
+In particular, verify:
+
+- the BST execution model;
+- search/access costs;
+- allowed restructuring operations;
+- rotations and pointer movements;
+- initial tree conditions;
+- whether additive terms are permitted;
+- whether the comparison is online-versus-offline;
+- the exact meaning of Dynamic Optimality used in the repository.
+
+Do not silently substitute a familiar but different model of the conjecture.
+
+---
+
+# 3. THE ORIGINAL PROPOSED PROOF PIPELINE
+
+The previous research program developed the following candidate implication chain.
+
+This is the original pipeline you must reconstruct, audit and preserve as the starting research architecture.
+
+It is **NOT** a declaration that its intermediate implications have all been universally proved.
+
+## 3.1 Main chain
+
+```text
+PAIR ACCESS
+    |
+    v
+COARSE-DOUBLE
+    |
+    v
+Q_B <= 2A
+    |
+    +--------------------------+
+    |                          |
+    |                        C.ZIG
+    |                          |
+    |                          v
+    |                        Z_B <= A
+    |                          |
+    +-------------+------------+
+                  |
+                  v
+          B = Q_B + Z_B
+                  |
+                  v
+              B <= 3A
+                  |
+                  v
+               PIVOT-2
+                  |
+                  v
+        E_B <= 3 S_A + g(T_0)
+                  |
+                  v
+     LT(Y) <= 7 LT(X) + 2g(T_0)
+                  |
+                  v
+        LEVY-TARJAN REDUCTION
+                  |
+                  v
+         DYNAMIC OPTIMALITY
+```
+
+The constants and labels above are inherited from the prior project.
+
+Verify every statement and implication against the codebase and mathematical documents.
+
+Do not invent missing proofs, hypotheses or definitions.
+
+## 3.2 Exact symbolic target chain
+
+The proposed coarse bound is:
+
+\[
+\boxed{Q_B\le 2A.}
+\]
+
+The proposed zig contribution bound is:
+
+\[
+\boxed{Z_B\le A.}
+\]
+
+Their combination is:
+
+\[
+\boxed{
+B=Q_B+Z_B\le3A.
+}
+\]
+
+The PIVOT-2 stage is intended to produce:
+
+\[
+\boxed{
+E_B\le3S_A+g(T_0).
+}
+\]
+
+A later cost comparison targets:
+
+\[
+\boxed{
+LT(Y)\le7LT(X)+2g(T_0).
+}
+\]
+
+The final intended step uses the appropriate Lévy–Tarjan reduction to Dynamic Optimality.
+
+You must identify exactly what A, B, Q_B, Z_B, E_B, S_A, X, Y, LT and g(T_0) mean.
+
+Do not infer their definitions from notation alone.
+
+For each implication, reconstruct the exact quantifiers, constants, assumptions, and prior results needed.
+
+---
+
+# 4. THE CURRENT LOCAL BOTTLENECK
+
+The previous research program concentrated on the proof of:
+
+\[
+\boxed{Q_B\le2A.}
+\]
+
+Its local proof architecture involves J4 row potentials, ROW-DIAMETER and J-SELF.
+
+A simplified dependency chain is:
+
+```text
+ARBITRARY-DEPTH SAME-CHILD
+              |
+              v
+REMAINING BOUNDARY/BASE CASES
+              |
+              v
+SAME-CHILD ROW CONTROL
+              |
+              v
+CROSS-CHILD + ROOT-VS-CHILD
+              |
+              v
+UNIVERSAL ROW-DIAMETER
+              |
+              +----------+
+              |          |
+              |        J-SELF
+              |          |
+              +-----+----+
+                    |
+                    v
+                Q_B <= 2A
+```
+
+Some older reports mention "14 boundaries".
+
+**That count is not independently source-verified.**
+
+Do not promote it into an established theorem.
+
+Reconstruct the real boundary cases from source.
+
+---
+
+# 5. KEY ROW-POTENTIAL DEFINITIONS
+
+The earlier project recovered the following J4 observable.
+
+For a valid BST:
+
+\[
+B=[p,T,S],
+\]
+
+and a node y:
+
+\[
+\boxed{
+H_y(B)
+=
+-R_{\rm static}(B,y)
++
+4(n_B-\operatorname{subsize}_B(y))
++
+J_y(B;J).
+}
+\]
+
+Here:
+
+- \(R_{\rm static}\) is the source-defined static row statistic;
+- \(J_y\) is the linear J4 row charge;
+- the coefficient \(\kappa=4\) was recovered from source;
+- \(J\) is a globally shared potential assignment.
+
+For distinct same-child nodes:
+
+\[
+u,v\in T,
+\]
+
+the target width is:
+
+\[
+\boxed{
+|H_u(B)-H_v(B)|\le2.
+}
+\]
+
+Define:
+
+\[
+D_J(B;u,v)=H_u(B)-H_v(B).
+\]
+
+Then:
+
+\[
+\boxed{
+\begin{aligned}
+D_J(B;u,v)
+={}&R_{\rm static}(B,v)
+-R_{\rm static}(B,u)\\
+&+4\left(
+\operatorname{subsize}_B(v)
+-\operatorname{subsize}_B(u)
+\right)\\
+&+J_u(B;J)-J_v(B;J).
+\end{aligned}
+}
+\]
+
+**The explicit \(4n_B\) term cancels exactly.**
+
+This is important because previous research incorrectly treated the growth of individual H-values as evidence that ROW differences must grow.
+
+Reverify the definitions in source.
+
+Do not treat implementation defaults such as:
+
+```python
+J.get(key, 0.0)
+```
+
+as mathematical constraints forcing unseen J coordinates to zero.
+
+---
+
+# 6. EXISTING J4 STRUCTURE TO RECONSTRUCT
+
+The prior project contains a reduced-potential formulation involving:
+
+\[
+\boxed{
+\mathrm{UG}+\rho=c.
+}
+\]
+
+It also uses:
+
+\[
+\boxed{
+\bar j=j-\lambda,
+}
+\]
+
+and depth-dependent terms such as:
+
+\[
+\boxed{
+K_d=dN_d.
+}
+\]
+
+A row formulation was expressed as:
+
+\[
+H_y(B)
+=
+4G_y(B)
++
+\sum_{z\in C_y(B)}
+\bar j(\tau_{yz})
++
+K_{d_B(y)}.
+\]
+
+The banked UG sibling equation is:
+
+\[
+\boxed{
+\bar j(F_k,2,q-k,k+1)
+=
+\bar j(F_k,1,q-k,k+1).
+}
+\]
+
+**Do not assume this equality is universally applicable at every index or offset without checking its exact source scope.**
+
+Earlier reports suggested that finite banked constraints involving certain UG twins were present only through small relative offsets.
+
+A missing finite row is neither a proof nor a refutation of an all-depth symbolic UG identity.
+
+Your reconstruction must separate those cases precisely.
+
+---
+
+# 7. THE OLD LIFT2 BOTTLENECK
+
+A large part of the previous research investigated SAME-CHILD using Lift2.
+
+The context defect was:
+
+\[
+\Gamma_{\rm ctx}(T,S;u,v)
+=
+[P_u(B)-P_v(B)]
+-
+[P_u(T)-P_v(T)].
+\]
+
+The reduced Lift2 increment was:
+
+\[
+\boxed{
+\bar D_{L2}(k)
+=
+\Gamma(k)-\Gamma(k-2).
+}
+\]
+
+It was decomposed schematically as:
+
+\[
+\boxed{
+\bar D_{L2}
+=
+\bar C_{LR}
++
+\bar C_F
++
+\bar C_{\rm sib/new}
++
+\Delta B_K.
+}
+\]
+
+Accumulation gives:
+
+\[
+\Gamma(k)
+=
+\Gamma(k_0)
++
+\sum_r\bar D_{L2}(k_0+2r).
+\]
+
+The key mathematical lesson:
+
+**A telescoping representation does NOT establish bounded ROW width unless its accumulated correction or endpoint contribution is actually bounded.**
+
+Similarly, per-step control does not automatically control the accumulated quantity.
+
+The previous program repeatedly created auxiliary state representations without proving the required endpoint inequality.
+
+Do not repeat this pattern.
+
+---
+
+# 8. SUMMARY OF PREVIOUS RESEARCH — 26F THROUGH 26W
+
+This summary is provided so you can locate and reconstruct the relevant evidence.
+
+Treat it as a navigation aid, not as a substitute for independent source verification.
+
+## 26F–26H: early candidate eliminations
+
+- Finite L/R classes were identified.
+- A joint LRF candidate was refuted by an exact finite Farkas certificate.
+- An independent sign shortcut involving the L/R contribution was refuted.
+- The surviving target required control of the full accumulated correction.
+
+## 26I–26N: transport and descriptor expansion
+
+- A naive finite count graph failed under Lift2 because absolute depth, relative depth and indices shift.
+- Lift2 transport required pattern-aware changes.
+- The older F-index could matter.
+- Certain F ambiguities canceled in tested full observables.
+- Deeper expansion introduced additional transport forms.
+
+These findings exposed the insufficiency of purely shallow, finite-state assumptions.
+
+## 26O–26R: exact finite linear algebra
+
+A representative finite coefficient matrix had:
+
+\[
+C_0\in\mathbb Z^{970\times79},
+\]
+
+with exact:
+
+\[
+\operatorname{rank}(C_0)=48,
+\]
+
+and nullity:
+
+\[
+31.
+\]
+
+A 48-row summary matrix \(S_0\) represented the same finite kernel.
+
+This was an exact corpus-relative result.
+
+It did NOT establish an all-depth recurrence or a finite-dimensional universal theorem.
+
+## 26S–26W: independent finite-depth regeneration
+
+The subsequent finite stages produced raw rank values:
+
+\[
+\boxed{
+48\to44\to55\to47.
+}
+\]
+
+The exact quotient-visible leak sequence was:
+
+\[
+\boxed{
+4\to5\to15.
+}
+\]
+
+These observations refuted several specific proposed stabilization and "+1 repair" explanations within the tested systems.
+
+They do NOT prove that every possible symbolic finite-dimensional representation is impossible.
+
+## Essential rank-nullity correction
+
+Previous agent reports confused source kernels with target image deficits.
+
+Correct values:
+
+\[
+T_{01}^+:\mathbb Q^{52}\to\mathbb Q^{44},
+\qquad \operatorname{rank}=33.
+\]
+
+Thus:
+
+- source kernel dimension = 19;
+- target codimension = 11.
+
+\[
+T_{12}^+:\mathbb Q^{49}\to\mathbb Q^{55},
+\qquad \operatorname{rank}=44.
+\]
+
+Thus:
+
+- source kernel dimension = 5;
+- target codimension = 11.
+
+\[
+T_{23}^+:\mathbb Q^{70}\to\mathbb Q^{47},
+\qquad \operatorname{rank}=38.
+\]
+
+Thus:
+
+- source kernel dimension = 32;
+- target codimension = 9.
+
+Record this correction permanently.
+
+Never confuse:
+
+\[
+\dim\ker T
+\]
+
+with:
+
+\[
+\dim(\operatorname{coker}T).
+\]
+
+---
+
+# 9. SUMMARY OF 26X THROUGH 26AA
+
+## 26X
+
+Recovered the exact SAME-CHILD width:
+
+\[
+\boxed{W_{\rm req}=2.}
+\]
+
+Confirmed that globally compatible J-values, arbitrary-depth transport and endpoint control remained open.
+
+A universal global potential was not constructed.
+
+## 26Y
+
+Derived an exact Twin2 sibling-vine finite-difference identity.
+
+For:
+
+\[
+B_m=\operatorname{Twin2}(1,m),
+\]
+
+with fixed same-child pair:
+
+\[
+\boxed{
+D_J(m+1)-D_J(m)
+=
+-1+x_m-y_{m+1}.
+}
+\]
+
+Where:
+
+\[
+x_m=J(F_1,2,m,2),
+\]
+
+\[
+y_{m+1}=J(F_0,1,m+1,1).
+\]
+
+This was a meaningful structural identity.
+
+It did NOT prove the global ROW bound.
+
+## 26Z
+
+Explored exact-neutrality:
+
+\[
+\boxed{x_m-y_{m+1}=1.}
+\]
+
+This would make:
+
+\[
+D_J(m)=D_J(0).
+\]
+
+But one globally admissible J satisfying all mandatory constraints was not constructed.
+
+Several restricted numerical templates appeared incompatible.
+
+No general impossibility theorem was proved.
+
+## 26AA
+
+Discovered that the full coupled system contains more than two F-ladder atoms.
+
+In tested instances, new coordinates included advancing:
+
+- F indices;
+- NONE/K depth families;
+- R-\(\lambda\) families;
+- root tokens.
+
+A proposed translation-invariant bulk formulation failed on tested row structures.
+
+No global feasible potential was obtained.
+
+## 26AB — ORIGINAL VERSION
+
+The initial planned 26AB sought bounded all-horizon feasibility and compactness.
+
+It was recognized as potentially another restatement of the original global existence problem.
+
+Its methodological approach was superseded by a direct ROW insertion attack.
+
+Do not mistake the original planned compactness approach for a completed proof.
+
+---
+
+# 10. THE MOST RECENT SUBSTANTIVE RESULT: 26AB SIBLING INSERTION
+
+The later PIVOT-26AB report addressed arbitrary sibling-leaf insertion.
+
+Let:
+
+\[
+B=[p,T,S],
+\]
+
+with:
+
+\[
+u,v\in T.
+\]
+
+Keep T, u and v fixed.
+
+Insert one valid BST leaf into S:
+
+\[
+B'=[p,T,S'].
+\]
+
+The report claims the source-derived identity:
+
+\[
+\boxed{
+D_J(B';u,v)-D_J(B;u,v)
+=
+(f^v-f^u)+J[a_e]-J[b_e].
+}
+\]
+
+The new F-atoms were described as:
+
+\[
+\boxed{
+(F_{d-1},\lambda,h-d,d),
+}
+\]
+
+with fold-label and depth parameters determined by the row node and inserted sibling leaf.
+
+The report also found:
+
+- T-subtree-size differences remain unchanged;
+- the static contribution is independent of sibling insertion position;
+- old J-key sets remain unchanged in the tested geometry;
+- new F-atom occurrences control the insertion defect;
+- leaf deletion can reconstruct arbitrary sibling BSTs;
+- empty sibling S is source-valid.
+
+However, certain old-key occurrence counts changed in deeper tested cases.
+
+Therefore, audit the complete coefficient changes carefully.
+
+**Do not assume that frozen key sets imply frozen coefficients.**
+
+The original 26AB report gave:
+
+```text
+UNIVERSAL INSERTION REDUCTION PROVED;
+CLOSURE OPEN
+```
+
+Treat that as a claim to verify, not permission to assert full ROW-width preservation.
+
+No globally admissible J was constructed.
+
+No arbitrary-T base inequality was established.
+
+The universal SAME-CHILD theorem remained open.
+
+---
+
+# 11. LATEST PROPOSED 26AC: EXISTING UG AND DEEP-SIBLING PRUNING
+
+The most recent proposed research direction sought to exploit already-existing UG equations rather than impose a new potential subclass.
+
+For same-depth nodes:
+
+\[
+d_B(u)=d_B(v)=d,
+\]
+
+the reported F-atoms for an inserted sibling node at depth h become:
+
+\[
+a_e=(F_{d-1},\lambda_u,h-d,d),
+\]
+
+\[
+b_e=(F_{d-1},\lambda_v,h-d,d).
+\]
+
+If:
+
+\[
+\lambda_u=f^u,
+\qquad
+\lambda_v=f^v,
+\]
+
+and all source signs are correct, then:
+
+\[
+\boxed{
+D_J(B')-D_J(B)
+=
+\bar j(a_e)-\bar j(b_e).
+}
+\]
+
+An applicable UG equality might therefore force:
+
+\[
+\boxed{
+D_J(B')=D_J(B).
+}
+\]
+
+The proposed candidate theorem was:
+
+> For a nonempty source-valid class of same-depth SAME-CHILD pairs, every sufficiently deep sibling insertion is invisible to the ROW difference under existing mandatory UG identities.
+
+If true, deep sibling nodes could be pruned while preserving the ROW difference.
+
+The resulting theorem could eliminate an infinite subset of SAME-CHILD cases without introducing a new J-existence problem.
+
+**THIS HAS NOT BEEN PROVED IN THE INFORMATION PROVIDED.**
+
+There are three mandatory source checks:
+
+1. Does UG really equate the relevant reduced charges for arbitrary nonnegative relative offset?
+2. Are there actual same-depth SAME-CHILD pairs with the required fold labels?
+3. Does the general insertion law have any omitted coefficient or old-key contribution?
+
+These checks are a possible first research gate, not an established theorem.
+
+Do not assume the next pivot must be 26AC.
+
+After repository reconstruction, compare this candidate against other possible smaller theorems.
+
+---
+
+# 12. THE MOST IMPORTANT NEW RESEARCH POLICY
+
+The user identified the central strategic mistake of the previous project:
+
+> We keep creating a new problem to solve the main problem, but the new problem is essentially as hard as the original one.
+
+**THIS IS NOW A PERMANENT GOVERNING RULE FOR THE ENTIRE RESEARCH PIPELINE.**
+
+Not merely for SAME-CHILD.
+
+Not merely for J4.
+
+Not merely for the next pivot.
+
+It applies from the first proof obligation all the way to Dynamic Optimality.
+
+---
+
+# 13. THE FOUR MANDATORY RULES FOR EVERY PIVOT
+
+Every proposed pivot must pass ALL FOUR.
+
+## RULE 1 — STRICTLY SMALLER THAN THE CURRENT OBSTRUCTION
+
+The new task must be mathematically narrower than the existing open theorem.
+
+It must genuinely reduce at least one of:
+
+- quantified domain;
+- independent structural cases;
+- required variables;
+- required compatibility conditions;
+- unresolved proof mechanisms;
+- original theorem dependencies.
+
+It must NOT merely re-express the same universal existence problem.
+
+Examples of unacceptable substitutions:
+
+```text
+Prove global J exists
+    ↓
+Prove all finite J systems feasible
+    ↓
+Prove a compactness premise
+```
+
+unless the new premise has an independent constructive proof mechanism that is clearly easier.
+
+Similarly:
+
+```text
+Prove ROW width
+    ↓
+Prove a new infinite family of equivalent
+scalar inequalities
+```
+
+does not automatically count as progress.
+
+**A change of representation is not a reduction in difficulty.**
+
+Every new prompt must explain precisely why its mathematical target is smaller.
+
+## RULE 2 — EXPLAIN WHY IT SHOULD BE SOLVABLE NOW
+
+Before authorizing the task, identify a concrete proof mechanism.
+
+Acceptable examples:
+
+- direct algebraic cancellation;
+- pre-existing theorem applied in a previously unrecognized way;
+- finite structural classification proved complete;
+- leaf-deletion induction with a fully determined step;
+- explicit construction;
+- exact dual certificate for a specified finite contradiction;
+- symmetry eliminating an independent case;
+- source-derived monotonicity;
+- bounded combinatorial recurrence with a proved invariant.
+
+Unacceptable justifications:
+
+- "seems promising";
+- "the LPs suggest";
+- "maybe a recurrence exists";
+- "compactness should help";
+- "we can define a stronger invariant";
+- "the next level may stabilize".
+
+A proposed theorem must be accompanied by a **specific proof sketch** that could realistically be completed or decisively falsified.
+
+## RULE 3 — ONE-PROMPT COMPLETION SCOPE
+
+The work must fit within one focused Codex research session.
+
+It should have:
+
+- an explicit theorem statement;
+- an exact starting identity;
+- a bounded source-audit task;
+- one principal proof technique;
+- an objective completion condition;
+- an exact failure condition.
+
+Avoid tasks requiring:
+
+- construction of a completely unknown global potential;
+- proof of arbitrary finite-horizon feasibility with no induction mechanism;
+- simultaneous closure of several major unresolved theorems;
+- invention of multiple new representation families;
+- indefinite experimental searches.
+
+If a task necessarily requires several unproved auxiliary theorems, it FAILS this rule.
+
+An unsolved conjecture cannot be guaranteed to be true or provable in one session.
+
+Therefore interpret this rule correctly:
+
+**Only commission problems whose proof or decisive refutation has a concrete, credible, bounded one-session attack.**
+
+Do not claim certainty of success.
+
+## RULE 4 — ACTUAL UPWARD PROOF PROGRESS
+
+If proved, the new theorem must delete a previously open proof obligation from the ORIGINAL pipeline.
+
+For example:
+
+- proving a previously unhandled infinite class is automatically covered;
+- eliminating arbitrary sibling depth for a genuine nonempty class;
+- proving one of the exact inequalities needed for ROW-DIAMETER;
+- discharging a source-valid case of J-SELF;
+- proving Coarse-Double;
+- completing a necessary implication in PIVOT-2;
+- proving the final reduction under its actual model assumptions.
+
+These are real advancements.
+
+The following do NOT count by themselves:
+
+- another coefficient decomposition;
+- another quotient rank;
+- another feasibility reformulation;
+- another conditional lemma requiring an equally difficult global witness;
+- another finite LP fit;
+- another theorem whose conclusion is equivalent to the original target;
+- an identity that merely introduces new unproved hypotheses.
+
+**A conditional theorem counts as genuine upward progress only if its premises are already established or independently mandatory and its conclusion removes actual cases without adding a comparably difficult new obligation.**
+
+If the result depends on a new unproved existential claim of comparable difficulty, it does not pass.
+
+---
+
+# 14. HARD PRE-PIVOT APPROVAL GATE
+
+Before writing or executing ANY research prompt, create a structured approval record.
+
+It must include:
+
+```text
+PIVOT ID:
+CURRENT ORIGINAL PROOF NODE:
+EXACT THEOREM TO PROVE:
+
+RULE 1 — WHY STRICTLY SMALLER:
+RULE 2 — CONCRETE PROOF MECHANISM:
+RULE 3 — WHY ONE SESSION IS PLAUSIBLE:
+RULE 4 — EXACT ORIGINAL OBLIGATION DELETED:
+
+PREVIOUSLY PROVED PREMISES:
+NEW HYPOTHESES INTRODUCED:
+SOURCE LOCATIONS:
+PROOF PLAN:
+NONVACUITY WITNESS:
+EXPECTED OUTPUT:
+EXACT COUNTEREXAMPLE / FAILURE STANDARD:
+
+APPROVAL:
+PASS / REJECT
+```
+
+A pivot must pass all four rules.
+
+**If even one fails: REJECT IT.**
+
+Do not soften FAIL into "mostly compliant".
+
+Do not generate the rejected prompt and attempt it anyway.
+
+Do not redefine "progress" after the result comes back.
+
+The advancement standard must be fixed BEFORE the experiment.
+
+---
+
+# 15. PIVOT SIZE AND DEPENDENCY CONTROL
+
+Every authorized research prompt gets at most:
+
+- one principal new theorem;
+- one principal proof mechanism;
+- one source-verification phase;
+- one completed proof or exact obstruction phase;
+- one direct connection to the original proof graph.
+
+Small supporting lemmas that are elementary parts of the same proof are allowed.
+
+But if the proposed proof requires a second independent open theorem, stop and reconsider the task.
+
+Do not create:
+
+```text
+NEW LEMMA A
+    ↓
+NEW LEMMA B
+    ↓
+NEW LEMMA C
+    ↓
+ORIGINAL LEMMA
+```
+
+unless A, B and C are already proved or routine enough to close as part of the same bounded argument.
+
+No research-stage inflation.
+
+---
+
+# 16. WHAT COUNTS AS AN EXACT RESULT
+
+Use the following statuses.
+
+## PROVED — UNIVERSAL
+
+A complete mathematical proof covers the full claimed quantified domain.
+
+The proof relies only on established premises.
+
+Finite checking may support it but is not its basis.
+
+## PROVED — RESTRICTED DOMAIN
+
+A complete proof covers a precisely stated strict subclass.
+
+Report whether it eliminates an actual open original case.
+
+## FINITE-EXACT
+
+An exact rational or integer computation establishes a result for a completely specified finite corpus.
+
+No universal extrapolation is allowed.
+
+## REFUTED — EXACT
+
+A valid source-grounded counterexample or symbolic contradiction refutes the stated proposition.
+
+For finite linear feasibility, an exact rational Farkas certificate is acceptable.
+
+## CONDITIONAL
+
+A correct implication has been proved, but an essential premise remains open.
+
+Do not count it as discharging the original proof obligation unless the premise is independently established.
+
+## OPEN
+
+No complete proof or refutation.
+
+## NUMERICAL
+
+A floating-point result without exact certification.
+
+Do not present numerical infeasibility as a theorem.
+
+---
+
+# 17. ABSOLUTE PROHIBITION ON HIDDEN EXISTENCE PROBLEMS
+
+Every proof proposal must undergo an existence-burden audit.
+
+Ask:
+
+1. Does the new theorem require constructing a global object?
+2. Was construction of that object already the main unresolved problem?
+3. Do the new conditions make the object harder to construct?
+4. Is the claimed simplification merely a change of notation?
+5. Could the new theorem be just as hard as the previous theorem?
+
+If yes, reject it unless there is a concrete, independently provable construction mechanism.
+
+Examples of warning phrases:
+
+```text
+Find one globally compatible J...
+Prove feasibility for every horizon...
+Show some bounded invariant exists...
+Construct the needed recurrence...
+Choose coefficients satisfying all rows...
+Prove the endpoint remains bounded...
+```
+
+These phrases are not automatically forbidden.
+
+But they MUST trigger an analysis of whether the entire original difficulty has simply been moved into the new existence statement.
+
+---
+
+# 18. RESEARCH PIPELINE RECONSTRUCTION
+
+Your first major operational task is to rebuild the actual theorem graph.
+
+For every node in the original pipeline, document:
+
+```text
+THEOREM ID:
+NAME:
+EXACT STATEMENT:
+QUANTIFIERS:
+CONSTANTS:
+DEFINITIONS:
+PREREQUISITES:
+KNOWN PROOFS:
+KNOWN FINITE EVIDENCE:
+KNOWN COUNTEREXAMPLES:
+UNVERIFIED ASSUMPTIONS:
+CURRENT STATUS:
+SOURCE LOCATIONS:
+HOW IT ADVANCES DO:
+```
+
+The graph must distinguish:
+
+- original main theorem;
+- reductions;
+- local lemmas;
+- computational surrogates;
+- optional chosen subclasses;
+- experimental assertions.
+
+A theorem with an unproved prerequisite is NOT completed.
+
+---
+
+# 19. RECONSTRUCT THE REPOSITORY FROM EVIDENCE
+
+Do not assume the project summary in this prompt is fully accurate.
+
+Use it as an index.
+
+Inspect:
+
+1. repository README and project documentation;
+2. the mathematical notes describing the original reduction;
+3. source implementations of costs and potentials;
+4. proof scripts;
+5. tests;
+6. exact certificates;
+7. finite corpus generators;
+8. prior pivot reports;
+9. research artifacts;
+10. relevant git history, read-only.
+
+Identify the latest valid source of every mathematical claim.
+
+Record actual paths and, where possible, line references.
+
+Create an evidence ledger separating:
+
+```text
+SOURCE DEFINITION
+SYMBOLIC PROOF
+FORMAL CERTIFICATE
+FINITE-EXACT COMPUTATION
+NUMERICAL EXPERIMENT
+REPORT-ONLY ASSERTION
+UNVERIFIED CLAIM
+```
+
+If two sources conflict, record the conflict.
+
+Do not silently choose whichever version supports the desired theorem.
+
+---
+
+# 20. RESEARCH WORKSPACE STRUCTURE
+
+Create the following organization inside the single writable root folder:
+
+```text
+DO_RESEARCH_REBOOT/
+│
+├── README.md
+├── START_HERE.md
+├── CURRENT_STATE.md
+├── ORIGINAL_PIPELINE.md
+├── THEOREM_DEPENDENCIES.md
+├── CLAIM_LEDGER.md
+├── EVIDENCE_INDEX.md
+├── RECONSTRUCTION_REPORT.md
+├── RESEARCH_RULES.md
+├── PIVOT_APPROVAL_GATE.md
+├── STRATEGY_REVIEW.md
+├── NEXT_ACTION.md
+├── WORKLOG.md
+│
+├── 00_REPOSITORY_AUDIT/
+│   ├── repository_map.md
+│   ├── source_locations.md
+│   ├── implementation_semantics.md
+│   └── inconsistencies.md
+│
+├── 01_MAIN_PIPELINE/
+│   ├── stage_00_dynamic_optimality.md
+│   ├── stage_01_levy_tarjan.md
+│   ├── stage_02_lt_bound.md
+│   ├── stage_03_pivot2.md
+│   ├── stage_04_coarse_double.md
+│   ├── stage_05_czig.md
+│   ├── stage_06_row_diameter.md
+│   ├── stage_07_j_self.md
+│   └── stage_08_same_child.md
+│
+├── 02_PROVED/
+│
+├── 03_OPEN/
+│
+├── 04_REFUTED/
+│
+├── 05_FINITE_EXACT/
+│
+├── 06_CERTIFICATES/
+│
+├── 07_STRATEGIES/
+│
+├── 08_PIVOTS/
+│   ├── APPROVED/
+│   ├── REJECTED/
+│   └── COMPLETED/
+│
+├── 09_PROMPT_TEMPLATES/
+│
+├── 10_EXPERIMENTS/
+│
+├── 11_REPRODUCIBILITY/
+│
+└── 12_FINAL_PROOF/
+```
+
+You may refine subfolder organization INSIDE this workspace.
+
+Do not create anything outside it.
+
+Do not populate folders with invented results.
+
+Every completed theorem must have its own source-backed proof document.
+
+---
+
+# 21. REQUIREMENTS FOR THE CORE DOCUMENTS
+
+## START_HERE.md
+
+Someone unfamiliar with the previous 26 pivots must be able to read this file and understand:
+
+- the goal;
+- the original proof chain;
+- what is proved;
+- what remains open;
+- the closest outstanding proof milestone;
+- the strict research rules;
+- where to find the relevant source evidence.
+
+This document must be accurate without requiring the original conversation.
+
+## CURRENT_STATE.md
+
+Include:
+
+- branch and HEAD;
+- dirty working-tree warning;
+- exact current theorem status;
+- latest universal results;
+- latest finite results;
+- unresolved contradictions;
+- abandoned approaches;
+- current strategic recommendation.
+
+No exaggerated progress.
+
+## ORIGINAL_PIPELINE.md
+
+Document the full proof chain and every link's status.
+
+Show the top-level theorem and its actual prerequisites.
+
+## THEOREM_DEPENDENCIES.md
+
+Represent the graph of mathematical implications.
+
+Mark whether each edge is:
+
+```text
+PROVED
+CONDITIONAL
+OPEN
+UNVERIFIED
+REFUTED
+```
+
+Do not hide missing edges.
+
+## CLAIM_LEDGER.md
+
+Maintain one row per significant claim.
+
+Include:
+
+```text
+ID
+CLAIM
+SCOPE
+STATUS
+EVIDENCE
+DEPENDENCIES
+LAST VERIFIED
+```
+
+## EVIDENCE_INDEX.md
+
+Link each report or computational result to actual repository files and relevant exact certificates.
+
+## RESEARCH_RULES.md
+
+State the four mandatory rules and the status standards.
+
+This document governs ALL future pivots.
+
+## STRATEGY_REVIEW.md
+
+Explain what has and has not worked.
+
+Explicitly assess whether the J4 potential architecture remains promising.
+
+## NEXT_ACTION.md
+
+Give exactly one approved next theorem, if any.
+
+Do not provide a broad menu disguised as a decision.
+
+If no proposed theorem passes all four rules, record that no research pivot is approved.
+
+---
+
+# 22. COMPLETE STAGE-BY-STAGE PIPELINE PLAN
+
+Build the entire route to Dynamic Optimality.
+
+But separate the permanent proof roadmap from immediately executable research prompts.
+
+For every major stage, provide:
+
+1. theorem statement;
+2. source location;
+3. dependencies;
+4. exact success criterion;
+5. proof-validation standard;
+6. plausible direct proof mechanisms;
+7. possible obstructions;
+8. whether upstream work is required before this stage can be attempted.
+
+Cover at least:
+
+### Stage A — The original Dynamic Optimality model
+
+Recover and precisely state the target theorem.
+
+### Stage B — Lévy–Tarjan reduction
+
+Verify the required comparison theorem and hypotheses.
+
+### Stage C — Final LT comparison
+
+Recover the intended inequality:
+
+\[
+LT(Y)\le7LT(X)+2g(T_0).
+\]
+
+### Stage D — PIVOT-2
+
+Recover the pivot argument and exact premises.
+
+### Stage E — Pair Access and cost decomposition
+
+Recover A, B, Q_B, Z_B, E_B and S_A.
+
+### Stage F — C.ZIG
+
+Recover and assess:
+
+\[
+Z_B\le A.
+\]
+
+### Stage G — Coarse-Double
+
+Recover and assess:
+
+\[
+Q_B\le2A.
+\]
+
+### Stage H — ROW-DIAMETER and J-SELF
+
+Recover the full required global row inequalities.
+
+### Stage I — SAME-CHILD
+
+Recover arbitrary-depth same-child width control.
+
+### Stage J — Remaining cross-child/root cases
+
+Recover exact case coverage.
+
+The stage names need not match this ordering if the repository proves a more precise dependency structure.
+
+The repository takes precedence.
+
+---
+
+# 23. DO NOT LOCK THE PROJECT INTO J4 WITHOUT JUSTIFICATION
+
+We are trying to prove Dynamic Optimality, not defend a particular proof architecture.
+
+The existing J4 approach has produced useful identities but has not closed its global potential-existence obligation.
+
+You must conduct a strategic comparison between:
+
+### Route A — Continue J4
+
+Use exact current source-derived identities and already mandatory constraints.
+
+Prioritize direct cancellations that remove actual ROW cases.
+
+### Route B — Repair or replace the potential
+
+Only if a precise defect has been proved and an alternative has a concrete proof mechanism.
+
+Do not invent a more complicated potential without an independently compelling simplification.
+
+### Route C — Find a direct route to Coarse-Double
+
+Investigate whether:
+
+\[
+Q_B\le2A
+\]
+
+can be approached without proving the current full J4 ROW theorem.
+
+Any alternative must preserve the original model and constants or state a rigorously sufficient replacement.
+
+### Route D — Seek a different implication chain
+
+If the local ROW program is structurally blocked, consider another legitimate route from Pair Access or the existing reductions toward Dynamic Optimality.
+
+Do not assume the first research architecture must be optimal.
+
+**You are allowed to reject J4 as a strategy.**
+
+But such a decision must be supported by exact evidence or a clear cost-benefit comparison, not frustration alone.
+
+---
+
+# 24. NO SPECULATIVE ALTERNATIVE PIPELINES
+
+Do not create ten new routes with no concrete theorem.
+
+For any proposed alternative, require:
+
+- an exact statement linked to the original target;
+- a source-consistent mathematical model;
+- one plausible first theorem;
+- a concrete proof technique;
+- a clear advantage over the incumbent bottleneck;
+- a one-session GO/NO-GO task.
+
+If the advantage cannot be demonstrated, the alternative is only a research idea, not an approved pivot.
+
+---
+
+# 25. PER-PIVOT PROMPT TEMPLATE
+
+Every authorized future Codex prompt must use this structure.
+
+```text
+PIVOT ID:
+TITLE:
+
+ORIGINAL PIPELINE NODE:
+
+EXACT THEOREM:
+[Full quantifiers and constants.]
+
+WHY THIS IS STRICTLY SMALLER:
+[Identify the removed difficulty.]
+
+WHY ONE-SESSION COMPLETION IS PLAUSIBLE:
+[Named proof mechanism, existing identity,
+and finite structural work required.]
+
+PREVIOUSLY PROVED PREMISES:
+[With source references.]
+
+UNVERIFIED FACTS TO CHECK FIRST:
+[Hard GO/NO-GO gate.]
+
+SOURCE FILES:
+[Read-only source paths.]
+
+MATHEMATICAL ATTACK:
+[Explicit derivation.]
+
+NONVACUITY:
+[One real family or consequence.]
+
+SUCCESS CONDITION:
+[Exact theorem and original obligation deleted.]
+
+FAILURE CONDITION:
+[Exact counterexample or obstruction.]
+
+PROOF VALIDATION:
+[What is needed to claim PROVED.]
+
+FILESYSTEM RULE:
+[All writes only inside DO_RESEARCH_REBOOT/.]
+
+STOP RULE:
+[No auxiliary replacement problem.]
+
+REQUIRED ARTIFACTS:
+[Proof/certificate/report paths inside workspace.]
+```
+
+Do not issue a prompt without a completed four-rule approval record.
+
+The next prompt must be understandable to a fresh Codex agent that knows nothing about the original conversation.
+
+---
+
+# 26. AUTONOMOUS RESEARCH EXECUTION RULE
+
+Once reconstruction is complete:
+
+1. Identify the nearest original proof obstruction.
+2. List possible immediate proof attacks.
+3. Reject candidates that fail any of the four rules.
+4. Rank eligible candidates by direct proof impact and likelihood of a completed argument.
+5. Select ONE.
+6. Write the complete standalone prompt.
+7. If feasible within the current session, execute the selected task.
+8. Verify the mathematical output.
+9. Update the proof graph and claim ledger.
+10. Reassess whether another pivot is genuinely justified.
+
+You MAY carry out multiple successive pivots during the available session, but only when each pivot independently passes the approval gate.
+
+**Do not automatically continue after an OPEN result.**
+
+If an attempt produces no genuine theorem or exact obstruction, reconsider the strategy before authorizing another prompt.
+
+If repeated attempts merely rephrase the same obstacle, stop that line of research.
+
+---
+
+# 27. HARD NO-TREADMILL RULE
+
+The following pattern is prohibited:
+
+```text
+Problem A is hard.
+Invent auxiliary B.
+B is hard.
+Invent auxiliary C.
+C is hard.
+Invent auxiliary D.
+...
+```
+
+Instead:
+
+```text
+Problem A
+   |
+   v
+Find genuinely smaller theorem L.
+   |
+   v
+Prove L completely.
+   |
+   v
+Remove a verified obligation from A.
+```
+
+If L is not provable and no exact obstruction can be found with the proposed mechanism, do not automatically invent M.
+
+Document what failed.
+
+Return to the original proof graph.
+
+Ask whether a different proof technique or architecture is justified.
+
+**Two consecutive non-advancing pivots using essentially the same mechanism trigger a mandatory strategy review.**
+
+Do not allow repeated wording changes to bypass this rule.
+
+---
+
+# 28. MATHEMATICAL VERIFICATION POLICY
+
+Before marking any claim PROVED:
+
+- reconstruct exact definitions;
+- check all quantifiers;
+- verify the boundary cases;
+- verify symmetry claims;
+- check all sign conventions;
+- check coefficient multiplicities;
+- check global variable sharing;
+- verify that assumptions are not the conclusion;
+- verify that no mandatory case is excluded;
+- ensure each invoked lemma is established.
+
+For finite certificates:
+
+- use exact arithmetic;
+- retain complete source row provenance;
+- verify dimensions;
+- verify all multipliers and signs;
+- verify exact zero residuals;
+- report the finite corpus precisely.
+
+For counterexamples:
+
+- show the exact valid input;
+- show the violated statement;
+- prove the input belongs to the intended domain;
+- show whether the counterexample applies universally or only to a chosen subclass.
+
+No numerical extrapolation.
+
+No hidden circularity.
+
+No vacuous theorem counted as progress.
+
+---
+
+# 29. REPRODUCIBILITY
+
+For every computational artifact:
+
+- place the script inside the writable workspace;
+- record which source files were read;
+- record relevant source revision/hash;
+- record commands;
+- record inputs;
+- record exact outputs;
+- record what mathematical claim is supported;
+- distinguish verification from discovery.
+
+Do not modify the existing computational infrastructure merely to make reproduction easier.
+
+If its execution would write outside the permitted folder, reproduce the necessary calculation safely inside the workspace or document that it was not rerun.
+
+---
+
+# 30. PROOF-ADVANCEMENT METRIC
+
+Every completed pivot receives a short advancement report.
+
+```text
+BEFORE:
+[Exact original open obligation.]
+
+RESULT:
+[Exact proved theorem or obstruction.]
+
+AFTER:
+[Which original obligations remain.]
+
+DELETED OBLIGATIONS:
+[List only genuinely removed obligations.]
+
+NEW ASSUMPTIONS:
+[List all.]
+
+NET PROOF ADVANCEMENT:
+YES / NO
+
+JUSTIFICATION:
+[Why this is real progress.]
+```
+
+A theorem that is merely conditional on a new equally difficult hypothesis gets:
+
+```text
+NET PROOF ADVANCEMENT: NO
+```
+
+A finite exact counterexample to a specific proposed route may receive:
+
+```text
+STRATEGIC ELIMINATION: YES
+NET ORIGINAL THEOREM ADVANCEMENT: NO
+```
+
+These are different achievements.
+
+Keep them separate.
+
+---
+
+# 31. RECONSTRUCTION PRIORITIES
+
+Do not spend unlimited effort reading every old experimental log in chronological order.
+
+Prioritize:
+
+1. Exact original theorem statement.
+2. Main proof dependency graph.
+3. Current necessary inequalities.
+4. Source-backed universal identities.
+5. Exact refutations of candidate proof mechanisms.
+6. Current missing global obligations.
+7. The nearest concrete theorem with a plausible short proof.
+
+Use older finite experiments when they materially affect one of those questions.
+
+Do not rebuild every finite matrix unless necessary to verify a load-bearing claim.
+
+The project should benefit from the previous work without becoming trapped in reproducing it indefinitely.
+
+---
+
+# 32. INITIAL CANDIDATE: UG DEEP-SIBLING PRUNING
+
+The latest proposed candidate is:
+
+\[
+\boxed{
+\text{UG-ENFORCED DEEP-SIBLING PRUNING}.
+}
+\]
+
+It attempts to prove that sufficiently deep sibling insertions are invisible to ROW differences for a nonempty class of equal-depth SAME-CHILD pairs.
+
+Its potential mechanism is:
+
+\[
+D_J(B')-D_J(B)
+=
+\bar j(a_e)-\bar j(b_e),
+\]
+
+and existing UG may equate those charges.
+
+This candidate appears promising because:
+
+- it uses an existing prerequisite rather than a new J potential;
+- the proof mechanism is a short algebraic cancellation;
+- repeated leaf deletion could remove infinitely many sibling cases;
+- the task can be restricted to source verification plus induction.
+
+However, it has unverified prerequisites.
+
+Before approving, answer exactly:
+
+1. Does the source's UG equation apply for all required relative offsets?
+2. Are the same-depth fold-label conditions realized by actual source-valid pairs?
+3. Does the complete insertion defect really reduce to the proposed two reduced charges?
+4. Does the mirror case hold?
+5. Does successful pruning eliminate cases not already covered by a proved theorem?
+
+If all answers are supported, it may pass the four-rule gate.
+
+If any answer fails, reject it and document the obstruction.
+
+Do not repair it by inventing a new global compatibility system.
+
+**You are explicitly permitted to choose a different first pivot if the actual repository evidence supports a better candidate.**
+
+---
+
+# 33. REPORTING FORMAT FOR RESEARCH PIVOTS
+
+Use clear, compact reports rather than enormous A–Z inventories unless the task requires them.
+
+Every completed pivot report must answer:
+
+### 1. What was the original open theorem?
+
+### 2. What smaller theorem was attempted?
+
+### 3. Why was completion plausible?
+
+### 4. What exact proof or counterexample was obtained?
+
+### 5. Which prior proof obligations disappeared?
+
+### 6. Which assumptions remain open?
+
+### 7. Is another pivot justified?
+
+### 8. What did you learn about the overall strategy?
+
+Do not let reporting requirements consume more effort than the mathematical task.
+
+---
+
+# 34. THE FINAL PROOF STANDARD
+
+If the project eventually obtains a proof of Dynamic Optimality, it must be possible to assemble one logically complete theorem document covering:
+
+1. Exact computation model.
+2. Full access-sequence quantification.
+3. Initial-tree dependence.
+4. Every original reduction.
+5. Every local inequality.
+6. Universal constants.
+7. All boundary cases.
+8. All potential-existence claims, if used.
+9. Correct composition of cost inequalities.
+10. No unstated external assumptions.
+
+Every theorem in the final proof must link to its own verified proof.
+
+The final document may not claim Dynamic Optimality until the full chain has been discharged.
+
+---
+
+# 35. DELIVERABLES FOR THIS MASTER DIRECTIVE
+
+By the end of this setup and reconstruction task, create the following inside:
+
+```text
+DO_RESEARCH_REBOOT/
+```
+
+## Mandatory
+
+**1. START_HERE.md**
+
+An independently readable overview of the entire project.
+
+**2. RECONSTRUCTION_REPORT.md**
+
+What the actual codebase says, what was verified and what remains uncertain.
+
+**3. ORIGINAL_PIPELINE.md**
+
+The original Dynamic Optimality implication chain, with exact statements and statuses.
+
+**4. THEOREM_DEPENDENCIES.md**
+
+A dependency graph with proof-state labels.
+
+**5. CLAIM_LEDGER.md**
+
+The central source-backed claim register.
+
+**6. EVIDENCE_INDEX.md**
+
+References to proofs, code, computational certificates and reports.
+
+**7. CURRENT_STATE.md**
+
+The real current proof state, free from narrative overclaiming.
+
+**8. RESEARCH_RULES.md**
+
+All four user-mandated rules, exact status standards and the anti-treadmill policy.
+
+**9. PIVOT_APPROVAL_GATE.md**
+
+The mandatory authorization framework.
+
+**10. STRATEGY_REVIEW.md**
+
+Assessment of the J4 architecture and credible alternatives.
+
+**11. NEXT_ACTION.md**
+
+One approved next theorem, or a documented decision that no candidate currently passes all four rules.
+
+**12. An approved Codex prompt**
+
+If and only if the next theorem passes every rule, save its complete standalone prompt under:
+
+```text
+DO_RESEARCH_REBOOT/08_PIVOTS/APPROVED/
+```
+
+**13. Pipeline-stage reference documents**
+
+For every major step from Pair Access to Dynamic Optimality.
+
+**14. A reproducibility and safety audit**
+
+Document that no files outside the allowed folder were modified.
+
+## Optional
+
+If an approved short theorem can be proved during this run, place:
+
+- the proof;
+- its exact premises;
+- the source references;
+- any verification scripts;
+- the advancement report;
+
+inside the same workspace.
+
+Only then update the relevant pipeline nodes to PROVED.
+
+---
+
+# 36. WORK ORDER
+
+Execute in this order.
+
+### PHASE 1 — Safety and repository reconnaissance
+
+Verify git state and create the single allowed workspace.
+
+Read the repository structure.
+
+Find the actual mathematical source of truth.
+
+### PHASE 2 — Full proof reconstruction
+
+Reconstruct the original pipeline, every significant local theorem, the current frontier and key historical evidence.
+
+Resolve conflicting claims where the repository supports a resolution.
+
+### PHASE 3 — Research-state classification
+
+Mark results PROVED, FINITE-EXACT, REFUTED, CONDITIONAL, NUMERICAL or OPEN.
+
+Build the dependency graph.
+
+### PHASE 4 — Strategic audit
+
+Identify where the earlier program repeatedly substituted equally difficult problems.
+
+Evaluate whether J4 is still justified.
+
+### PHASE 5 — Entire pipeline setup
+
+Create stage documents, proof criteria, prompt rules, artifact structure and approval gates.
+
+### PHASE 6 — First strictly approved pivot
+
+Find the nearest original obstruction with a plausible one-session proof mechanism.
+
+Perform the four-rule review.
+
+Reject noncompliant candidates.
+
+### PHASE 7 — Optional actual proof
+
+If one approved theorem is ready and the necessary sources are available, attempt it.
+
+Produce a completed universal proof or exact obstruction if possible.
+
+Do not misrepresent an incomplete attempt.
+
+### PHASE 8 — Handoff
+
+Update the workspace so that another fresh Codex session can resume immediately with no knowledge of the current conversation.
+
+---
+
+# 37. AUTONOMY AND STOP CONDITIONS
+
+You are authorized to:
+
+- inspect the entire repository;
+- analyze mathematical definitions;
+- compare proof architectures;
+- run read-only and safely isolated checks;
+- create documentation and research artifacts inside the permitted folder;
+- prepare and execute approved research prompts.
+
+You are NOT authorized to:
+
+- modify the main codebase;
+- commit or change git state;
+- invent mathematical success;
+- promote an experimental pattern to a universal theorem;
+- create an indefinite chain of speculative pivots.
+
+Stop advancing a research route when:
+
+1. its necessary mechanism is refuted;
+2. its next task fails one of the four rules;
+3. progress requires a comparably hard new existence theorem;
+4. two consecutive pivots on the same mechanism fail to eliminate an obligation;
+5. continuing would produce additional auxiliary infrastructure rather than proof.
+
+A strategic stop is better than an endless false-progress loop.
+
+---
+
+# 38. FINAL RESPONSE YOU MUST GIVE ME
+
+After creating the research workspace, report:
+
+## 1. Repository verification
+
+Branch, HEAD, dirty status and safety confirmation.
+
+## 2. Original Dynamic Optimality pipeline
+
+Show the recovered full proof chain.
+
+## 3. Actual proof status
+
+What is genuinely proved versus still open.
+
+## 4. Historical research retained
+
+Which 26F–26AB findings materially constrain future work.
+
+## 5. Main current obstruction
+
+State the nearest load-bearing unresolved theorem.
+
+## 6. Strategic recommendation
+
+Continue J4, modify it, or investigate an alternative, with evidence.
+
+## 7. Four-rule audit
+
+State how your research system enforces every rule.
+
+## 8. First approved next theorem
+
+Only if it passes the full gate.
+
+## 9. Files created
+
+List the main files under:
+
+```text
+DO_RESEARCH_REBOOT/
+```
+
+## 10. What actually advanced during this run
+
+Do not count workspace creation as mathematical theorem progress.
+
+If no theorem was proved, say so plainly.
+
+---
+
+# FINAL MANDATE
+
+We are trying to prove Dynamic Optimality.
+
+We are NOT trying to construct the world's largest chain of equivalent auxiliary problems.
+
+Every research pivot must satisfy:
+
+\[
+\boxed{
+\textbf{STRICTLY SMALLER}
+}
+\]
+
+\[
+\boxed{
+\textbf{CONCRETE REASON IT IS SOLVABLE}
+}
+\]
+
+\[
+\boxed{
+\textbf{PLAUSIBLE ONE-PROMPT COMPLETION}
+}
+\]
+
+\[
+\boxed{
+\textbf{REAL UPWARD PROOF ADVANCEMENT}
+}
+\]
+
+If a proposed pivot fails even one:
+
+\[
+\boxed{\textbf{DO NOT EXECUTE IT}.}
+\]
+
+The ideal research progression is:
+
+\[
+\boxed{
+\text{ONE SMALL OPEN OBLIGATION}
+\longrightarrow
+\text{ONE COMPLETE PROOF}
+\longrightarrow
+\text{ONE ORIGINAL OBSTACLE REMOVED}.
+}
+\]
+
+The original proof pipeline must remain visible at all times:
+
+\[
+\boxed{
+\begin{gathered}
+\text{Pair Access}\\
+\Downarrow\\
+Q_B\le2A,\quad Z_B\le A\\
+\Downarrow\\
+B\le3A\\
+\Downarrow\\
+\text{PIVOT-2}\\
+\Downarrow\\
+E_B\le3S_A+g(T_0)\\
+\Downarrow\\
+LT(Y)\le7LT(X)+2g(T_0)\\
+\Downarrow\\
+\text{Lévy--Tarjan reduction}\\
+\Downarrow\\
+\textbf{DYNAMIC OPTIMALITY}.
+\end{gathered}
+}
+\]
+
+Recover it.
+
+Audit it.
+
+Build a research system that protects it from unnecessary auxiliary complexity.
+
+Find the first theorem we can genuinely close.
+
+**And keep every file you create or modify inside `DO_RESEARCH_REBOOT/`.**
+
+**BEGIN.**

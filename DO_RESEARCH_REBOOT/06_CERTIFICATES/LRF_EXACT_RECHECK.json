@@ -1,0 +1,243 @@
+{
+  "matrix_shape": [
+    26823,
+    163
+  ],
+  "inequality_rows": [
+    {
+      "index": 801,
+      "multiplier": "3/34",
+      "source_meta": [
+        "SELF",
+        "5",
+        "32",
+        "2",
+        "-20.0",
+        "17.0",
+        "-3"
+      ],
+      "reduced_rhs": -19
+    },
+    {
+      "index": 16735,
+      "multiplier": "3/34",
+      "source_meta": [
+        "SELF",
+        "7",
+        "223",
+        "7",
+        "-10.0",
+        "14.0",
+        "4"
+      ],
+      "reduced_rhs": -16
+    },
+    {
+      "index": 565,
+      "multiplier": "1/17",
+      "source_meta": [
+        "DIAM",
+        "5",
+        "22",
+        "3",
+        "4",
+        "14.0",
+        "1"
+      ],
+      "reduced_rhs": 16
+    },
+    {
+      "index": 16631,
+      "multiplier": "1/17",
+      "source_meta": [
+        "SELF",
+        "7",
+        "221",
+        "1",
+        "-10.0",
+        "14.0",
+        "4"
+      ],
+      "reduced_rhs": -16
+    },
+    {
+      "index": 20500,
+      "multiplier": "1/17",
+      "source_meta": [
+        "DIAM",
+        "7",
+        "299",
+        "7",
+        "5",
+        "22.0",
+        "1"
+      ],
+      "reduced_rhs": 16
+    },
+    {
+      "index": 15572,
+      "multiplier": "1/17",
+      "source_meta": [
+        "DIAM",
+        "7",
+        "199",
+        "3",
+        "1",
+        "15.0",
+        "1"
+      ],
+      "reduced_rhs": 24
+    },
+    {
+      "index": 5911,
+      "multiplier": "1/17",
+      "source_meta": [
+        "DIAM",
+        "7",
+        "2",
+        "1",
+        "6",
+        "22.0",
+        "1"
+      ],
+      "reduced_rhs": 16
+    },
+    {
+      "index": 21434,
+      "multiplier": "1/17",
+      "source_meta": [
+        "SELF",
+        "7",
+        "319",
+        "2",
+        "-24.0",
+        "23.0",
+        "-1"
+      ],
+      "reduced_rhs": -25
+    },
+    {
+      "index": 3774,
+      "multiplier": "1/17",
+      "source_meta": [
+        "DIAM",
+        "6",
+        "75",
+        "4",
+        "5",
+        "17.0",
+        "1"
+      ],
+      "reduced_rhs": 20
+    },
+    {
+      "index": 13059,
+      "multiplier": "1/34",
+      "source_meta": [
+        "SELF",
+        "7",
+        "148",
+        "6",
+        "-16.0",
+        "15.0",
+        "-1"
+      ],
+      "reduced_rhs": -17
+    },
+    {
+      "index": 412,
+      "multiplier": "1/34",
+      "source_meta": [
+        "DIAM",
+        "5",
+        "16",
+        "2",
+        "5",
+        "12.0",
+        "1"
+      ],
+      "reduced_rhs": 16
+    },
+    {
+      "index": 1025,
+      "multiplier": "1/34",
+      "source_meta": [
+        "SELF",
+        "5",
+        "41",
+        "1",
+        "-18.0",
+        "16.0",
+        "-2"
+      ],
+      "reduced_rhs": -18
+    },
+    {
+      "index": 11297,
+      "multiplier": "1/34",
+      "source_meta": [
+        "DIAM",
+        "7",
+        "112",
+        "1",
+        "2",
+        "23.0",
+        "1"
+      ],
+      "reduced_rhs": 24
+    },
+    {
+      "index": 25886,
+      "multiplier": "1/34",
+      "source_meta": [
+        "DIAM",
+        "7",
+        "409",
+        "7",
+        "1",
+        "22.0",
+        "1"
+      ],
+      "reduced_rhs": 24
+    },
+    {
+      "index": 16685,
+      "multiplier": "1/34",
+      "source_meta": [
+        "SELF",
+        "7",
+        "222",
+        "6",
+        "-12.0",
+        "15.0",
+        "3"
+      ],
+      "reduced_rhs": -17
+    }
+  ],
+  "equality_rows": [
+    {
+      "index": 5,
+      "multiplier": "1/17",
+      "minus_key": "('t', (('R',), -1, 1, 2))",
+      "plus_key": "('t', (('R',), -3, 1, 4))"
+    },
+    {
+      "index": 6,
+      "multiplier": "2/17",
+      "minus_key": "('t', (('L',), -1, 1, 2))",
+      "plus_key": "('t', (('L',), -2, 1, 4))"
+    },
+    {
+      "index": 7,
+      "multiplier": "1/17",
+      "minus_key": "('t', (('R',), -2, 1, 2))",
+      "plus_key": "('t', (('R',), -4, 1, 4))"
+    }
+  ],
+  "zero_residual": true,
+  "positive_rhs": "9/34",
+  "nonzero_residuals": [],
+  "scope": "saved reduced SH567 matrix + listed LRF homogeneous equalities",
+  "source_row_provenance": "original J4 generator shape order and SELF/DIAM row index; reduced rows/rhs read from pinned matrix"
+}

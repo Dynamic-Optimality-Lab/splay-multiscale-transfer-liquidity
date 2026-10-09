@@ -1,0 +1,2669 @@
+{
+  "json_metadata": {
+    "j4_ambsens.json": {
+      "sha256": "95b59a9110581160749af9e7d7f7b58b79484cfbf46a1073f600096ce7ea3585",
+      "summary": {
+        "hits": 8,
+        "tot": 122,
+        "verdict": "LOAD-BEARING-CHECK-NEEDED"
+      }
+    },
+    "j4_ambsens2.json": {
+      "sha256": "e7efab11fda8d8818e90a22e470c4c8b21745d4b14e9a49042cc635a833cdb9c",
+      "summary": {
+        "deepF_terms": 0,
+        "f5_vars": []
+      }
+    },
+    "j4_beta.json": {
+      "sha256": "acf7261ef9249313ff6333ed4fcd85f8c7b4572caf2b8cab58c0986b7f5598fe",
+      "summary": {
+        "combos": [],
+        "dim": 36
+      }
+    },
+    "j4_betaexact.json": {
+      "sha256": "e272282e4f80ddb6e78f162ecd0b8a87b85e01ebd368a528b8a08508146b85b0",
+      "summary": {
+        "dim": 48
+      }
+    },
+    "j4_betarref.json": {
+      "sha256": "849ae3a228a9936877027b3959007d6d0934701510319e0f03ca118525b45605",
+      "summary": {
+        "pivots": 48
+      }
+    },
+    "j4_cocycle_probe.json": {
+      "sha256": "6279c22449701740bb80e3a6ec98f4a4438fa655c6fbcf0567f3b6b6868c1ed3",
+      "summary": {
+        "farkas_value": 0.5641025641025634
+      }
+    },
+    "j4_context.json": {
+      "sha256": "5542e546fef3819dffda91e548743b4a28ee5862e9e048e9efa4132db4a60351",
+      "summary": {
+        "embedding": {
+          "tot": 1368,
+          "bad_path": 0,
+          "bad_G": 0
+        },
+        "shape_inv": {
+          "tot": 300,
+          "inv": 300,
+          "witness": null
+        },
+        "sib_slots": {
+          "('F',)": [
+            "('F', 0)",
+            "('F', 1)",
+            "('F', 2)"
+          ]
+        },
+        "h0_gamma": {
+          "pairs": 1616,
+          "maxabs": 6.0,
+          "worst": [
+            -6.0,
+            4,
+            2,
+            "L",
+            1,
+            4
+          ]
+        }
+      }
+    },
+    "j4_context2.json": {
+      "sha256": "18cb0daa0ba974bf333ec94aecdfebe89a9440680bcd049859427a2169c424f9",
+      "summary": {
+        "sib_uniform": {
+          "uni": 600,
+          "tot": 600
+        },
+        "oldtrans_match": {
+          "match": 312,
+          "tot": 540
+        }
+      }
+    },
+    "j4_context3.json": {
+      "sha256": "bf040dcef0877ed8d00b3f12c4ac5b725c35beeaadaa53808df915790446c774",
+      "summary": {
+        "sib_jmatch": {
+          "match": 600,
+          "tot": 600
+        },
+        "r_slopes": {
+          "(0, 0)": {
+            "n": 8,
+            "uniq": [
+              1
+            ]
+          },
+          "(0, 1)": {
+            "n": 10,
+            "uniq": [
+              1
+            ]
+          },
+          "(0, None)": {
+            "n": 17,
+            "uniq": [
+              1
+            ]
+          },
+          "(1, 0)": {
+            "n": 12,
+            "uniq": [
+              2
+            ]
+          },
+          "(1, 1)": {
+            "n": 16,
+            "uniq": [
+              1
+            ]
+          }
+        }
+      }
+    },
+    "j4_countlaw.json": {
+      "sha256": "45366fc4a3ebe0ee6fcbbcf12bb7fff0d45adf9a7bb2878e793d298462e49b1f",
+      "summary": {
+        "dn": {
+          "2": 75
+        },
+        "deltas": [
+          [
+            [
+              0,
+              2,
+              0,
+              0
+            ],
+            75
+          ]
+        ]
+      }
+    },
+    "j4_countlaw_v2.json": {
+      "sha256": "95de224c37c14cfdaa97bcd0b3cccedd8d888a8eda326319a496c4f1578a41a7",
+      "summary": {
+        "rows": 200,
+        "deltas": [
+          [
+            [
+              0,
+              2,
+              0,
+              0
+            ],
+            200
+          ]
+        ]
+      }
+    },
+    "j4_crem.json": {
+      "sha256": "e2cdfb40aa909f102fe2befa70767b3dc228ce63f6860f97f14777cb27e317e9",
+      "summary": {
+        "npos": 27,
+        "ntot": 34,
+        "worst": [
+          10.499999999999996,
+          2,
+          0,
+          1,
+          2,
+          7
+        ]
+      }
+    },
+    "j4_deepdtq.json": {
+      "sha256": "495ca0c944f62c72db0d1d8a62b89312bc72f35d9bb976780b48aa1703c639d4",
+      "summary": {
+        "dtq_status": 0,
+        "dtq_margin": -0.0
+      }
+    },
+    "j4_dtqaug.json": {
+      "sha256": "e6ab0bb2ba215f1c59f1213b80a4edd1647f6638b3cc562082e92f513305bc4e",
+      "summary": {
+        "neqs": 2,
+        "status": 0,
+        "margin": -0.0
+      }
+    },
+    "j4_dtqgate.json": {
+      "sha256": "a63bbd2854b6387c4465f74612a945dd897de4f256950f8c601d19d024721466",
+      "summary": {
+        "ranges": [
+          {
+            "meta": [
+              [
+                2,
+                0,
+                1,
+                2
+              ]
+            ],
+            "min": -25.66666666666667,
+            "max": 22.00000000000002
+          },
+          {
+            "meta": [
+              [
+                2,
+                0,
+                1,
+                2
+              ]
+            ],
+            "min": -22.0,
+            "max": 25.666666666666682
+          }
+        ],
+        "dtq_status": 0,
+        "dtq_margin": -0.0
+      }
+    },
+    "j4_dtqgate_v2.json": {
+      "sha256": "b16efeebc47f7acdc88eb9f7bdaba7a0da7cd68439aa4a0b7a335234f5463aea",
+      "summary": {
+        "ranges": [
+          {
+            "meta": [
+              [
+                2,
+                0,
+                10,
+                20
+              ]
+            ],
+            "min": -17.499999999999993,
+            "max": 21.500000000000004
+          },
+          {
+            "meta": [
+              [
+                2,
+                0,
+                10,
+                20
+              ]
+            ],
+            "min": -21.5,
+            "max": 17.499999999999986
+          }
+        ],
+        "dtq_status": 0,
+        "dtq_margin": -0.0
+      }
+    },
+    "j4_dualdecode.json": {
+      "sha256": "d9414d29aeb407c1e092d230f1d0dc9f044f389d574693ce19389c7006238881",
+      "summary": {
+        "rhs_sum": 1.0,
+        "net": {
+          "('t', (('F', 3), 2, -3, 4))": 1.0,
+          "('t', (('F', 3), 1, -3, 4))": -1.0
+        }
+      }
+    },
+    "j4_firewall.json": {
+      "sha256": "0d5161fdaf0ea30664e2207d729a164b56b08741b67a953e26197bf6b10db3bf",
+      "summary": {
+        "F_j0": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "none_depths": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    "j4_fqcomm.json": {
+      "sha256": "f16e3434b75513e9a3f734cbb6960a1b60610be1de7cc6686bfa989bbe2e0716",
+      "summary": {
+        "same": 0,
+        "tot": 266,
+        "s0diff": [
+          [
+            2.0,
+            7
+          ],
+          [
+            4.0,
+            30
+          ],
+          [
+            6.0,
+            73
+          ],
+          [
+            8.0,
+            78
+          ],
+          [
+            10.0,
+            44
+          ],
+          [
+            12.0,
+            20
+          ],
+          [
+            14.0,
+            14
+          ]
+        ]
+      }
+    },
+    "j4_fqwidth.json": {
+      "sha256": "17bc94f1f6028f0b406f4f7057056a7aa2b02f1ef3a6e606a765f4a1028a2bdc",
+      "summary": {
+        "pres": 378,
+        "tot": 404
+      }
+    },
+    "j4_fqxi.json": {
+      "sha256": "5b7adde6b32962c937aa329daba535f831fc0086bd23e53b87afcd1285e02000",
+      "summary": {
+        "neg": 0,
+        "tot": 1002,
+        "worst": null,
+        "trans_neg": 283,
+        "trans_tot": 1002
+      }
+    },
+    "j4_frontier.json": {
+      "sha256": "be162be729095964bfaff93a1c8924187f39336a257b69af2f50a0481174d0df",
+      "summary": {}
+    },
+    "j4_gapcompat.json": {
+      "sha256": "0dd99cca84cad378611a39ad9e3b833bc5c32ecfd9db7987039367a0b5d86487",
+      "summary": {
+        "status": 0,
+        "minslack": -2.1316282072803006e-14,
+        "maxeqviol": 0.0,
+        "gap_vals": {
+          "(1, -1, 2)": [
+            3.0,
+            4.0
+          ],
+          "(1, 0, 2)": [
+            2.333333333333336,
+            3.333333333333336
+          ],
+          "(1, 1, 2)": [
+            1.3333333333333308,
+            2.333333333333331
+          ],
+          "(1, 2, 2)": [
+            0.666666666666667,
+            1.666666666666667
+          ],
+          "(3, -3, 4)": [
+            3.2222222222222214,
+            4.222222222222221
+          ],
+          "(3, -2, 4)": [
+            2.4855967078189245,
+            3.4855967078189245
+          ]
+        },
+        "l1_status": 0,
+        "l1": 290.1333333333333,
+        "verdict": "UNIT-GAP-COMPATIBLE"
+      }
+    },
+    "j4_gapdomain.json": {
+      "sha256": "b7ce67de2e3b36ce3d394f5a8c6a51214a0079f5931c934e15c92cf59faffd15",
+      "summary": {
+        "delta_ok": 1170,
+        "delta_tot": 1170,
+        "K2_lam": [
+          2
+        ],
+        "K3_lam": [
+          1
+        ],
+        "n1": 14,
+        "n2": 6,
+        "overlap": [
+          [
+            1,
+            -1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            3,
+            -3,
+            4
+          ],
+          [
+            3,
+            -2,
+            4
+          ]
+        ],
+        "only2": []
+      }
+    },
+    "j4_gapdual.json": {
+      "sha256": "5178aee7e429dd0eea641f546b92eb768bcb395a7d967ef4510f2732a643a99f",
+      "summary": {
+        "obj": 2.0,
+        "support": [
+          [
+            0.5,
+            [
+              "DIAM",
+              "6",
+              "53",
+              "2",
+              "4",
+              "13.0",
+              "1"
+            ],
+            13.0
+          ],
+          [
+            0.25,
+            [
+              "SELF",
+              "6",
+              "44",
+              "5",
+              "-14.0",
+              "12.0",
+              "-2"
+            ],
+            -14.0
+          ],
+          [
+            0.25,
+            [
+              "SELF",
+              "6",
+              "87",
+              "2",
+              "-14.0",
+              "12.0",
+              "-2"
+            ],
+            -14.0
+          ],
+          [
+            0.25,
+            [
+              "SELF",
+              "7",
+              "204",
+              "2",
+              "-18.0",
+              "18.0",
+              "0"
+            ],
+            -18.0
+          ],
+          [
+            0.25,
+            [
+              "SELF",
+              "7",
+              "209",
+              "3",
+              "-18.0",
+              "18.0",
+              "0"
+            ],
+            -18.0
+          ],
+          [
+            0.25,
+            [
+              "DIAM",
+              "7",
+              "212",
+              "4",
+              "6",
+              "15.0",
+              "1"
+            ],
+            15.0
+          ],
+          [
+            0.25,
+            [
+              "DIAM",
+              "7",
+              "224",
+              "4",
+              "2",
+              "15.0",
+              "1"
+            ],
+            15.0
+          ]
+        ]
+      }
+    },
+    "j4_gapdual_fix.json": {
+      "sha256": "91ca2d3ea9ccbaebb625c1acefac821fd6101c24bb9090ed1585dccd3fd30405",
+      "summary": {
+        "obj": 1.0,
+        "support": [
+          [
+            1.0,
+            [
+              "SELF",
+              "7",
+              "42",
+              "7",
+              "-22.0",
+              "22.0",
+              "0"
+            ],
+            -22.0
+          ],
+          [
+            1.0,
+            [
+              "SELF",
+              "7",
+              "109",
+              "6",
+              "-24.0",
+              "23.0",
+              "-1"
+            ],
+            -24.0
+          ],
+          [
+            1.0,
+            [
+              "SELF",
+              "7",
+              "137",
+              "7",
+              "-20.0",
+              "21.0",
+              "1"
+            ],
+            -20.0
+          ],
+          [
+            1.0,
+            [
+              "DIAM",
+              "7",
+              "260",
+              "6",
+              "5",
+              "23.0",
+              "1"
+            ],
+            23.0
+          ],
+          [
+            1.0,
+            [
+              "DIAM",
+              "7",
+              "386",
+              "7",
+              "1",
+              "22.0",
+              "1"
+            ],
+            22.0
+          ],
+          [
+            1.0,
+            [
+              "DIAM",
+              "7",
+              "408",
+              "7",
+              "1",
+              "22.0",
+              "1"
+            ],
+            22.0
+          ]
+        ]
+      }
+    },
+    "j4_h0slope.json": {
+      "sha256": "b08a4c4b6a25cc36c4304db28a7a5036c7c6e07c453850afce7e46e7b8bab3d6",
+      "summary": {
+        "identity": {
+          "ok": 202,
+          "tot": 202,
+          "bad": []
+        }
+      }
+    },
+    "j4_iface.json": {
+      "sha256": "f82c2302ad9ee0f7436c849edfc5102fa8bbe3fcbeadd04fb1d50a047f12d69f",
+      "summary": {
+        "ntouched": 79
+      }
+    },
+    "j4_ifacerank.json": {
+      "sha256": "44fd12e5b5dab13205b2f433ebffd0fc04bf41cdb355675fa1987cd71ed585bc",
+      "summary": {
+        "shape": [
+          970,
+          79
+        ],
+        "rank": 48
+      }
+    },
+    "j4_jshape.json": {
+      "sha256": "ec9ddac23c9db779487611bf420a11f5cfeba7e6664b41b61d23c9902e753b77",
+      "summary": {
+        "shape_spread": {
+          "vary": 19,
+          "tot": 38,
+          "worst": [
+            1.0,
+            2,
+            3,
+            1
+          ]
+        },
+        "c_mass": {
+          "vary": 0,
+          "tot": 75
+        }
+      }
+    },
+    "j4_jslope.json": {
+      "sha256": "b28073a1e97687fdcfaac8bc30eb7f9b1b2b26e83dfd586cbe7be463ddecddb1",
+      "summary": {
+        "siblam_nonuni": 0,
+        "cj_slope_n": {
+          "K3": 58,
+          "K2": 17
+        },
+        "width_viol": {
+          "viol": 0,
+          "tot": 202,
+          "worst": null
+        }
+      }
+    },
+    "j4_levelranks.json": {
+      "sha256": "fb4a4e8ab110354915ab16146f5c1dbb71d035051c81bb1b9eb346161e5e2cef",
+      "summary": {
+        "0": {
+          "rank": 31,
+          "V": 36,
+          "E": 250
+        },
+        "1": {
+          "rank": 53,
+          "V": 75,
+          "E": 550
+        },
+        "2": {
+          "rank": 69,
+          "V": 120,
+          "E": 970
+        }
+      }
+    },
+    "j4_levels.json": {
+      "sha256": "e116ee0ad353a55a00f3dd11b6a48da22376f560b1709c2c022b0650d2c0738e",
+      "summary": {}
+    },
+    "j4_levels2.json": {
+      "sha256": "a19bd2fea524cb03cb8a921bd24185fd7ba0d66b39750583ed17dbffe2bd9c70",
+      "summary": {
+        "levels": [
+          15,
+          15,
+          15
+        ]
+      }
+    },
+    "j4_lift2ray.json": {
+      "sha256": "9f6b9e7055fc0da6bcbb725fd4da8d387e64129b839d9df7d7e22c4e03219f63",
+      "summary": {
+        "K2": [
+          {
+            "k": 1,
+            "n": 4,
+            "dy": 2,
+            "c": 1,
+            "ftop": 2
+          },
+          {
+            "k": 3,
+            "n": 6,
+            "dy": 4,
+            "c": 0,
+            "ftop": 2
+          },
+          {
+            "k": 5,
+            "n": 8,
+            "dy": 6,
+            "c": -3,
+            "ftop": 2
+          },
+          {
+            "k": 7,
+            "n": 10,
+            "dy": 8,
+            "c": -8,
+            "ftop": 2
+          }
+        ],
+        "K3": [
+          {
+            "k": 1,
+            "n": 4,
+            "dy": 2,
+            "c": 0,
+            "ftop": 1
+          },
+          {
+            "k": 3,
+            "n": 6,
+            "dy": 4,
+            "c": -1,
+            "ftop": 1
+          },
+          {
+            "k": 5,
+            "n": 8,
+            "dy": 6,
+            "c": -4,
+            "ftop": 1
+          },
+          {
+            "k": 7,
+            "n": 10,
+            "dy": 8,
+            "c": -9,
+            "ftop": 1
+          }
+        ]
+      }
+    },
+    "j4_lrffarkas.json": {
+      "sha256": "ec7a668c07ad0e7f7ca9bd0a1fb148b606d2623bcc0972d8916054b1ac24eb1e",
+      "summary": {
+        "value": 0.2647058823529409,
+        "eqw": [
+          [
+            5,
+            0.058823529411764705
+          ],
+          [
+            6,
+            0.1176470588235294
+          ],
+          [
+            7,
+            0.05882352941176469
+          ]
+        ]
+      }
+    },
+    "j4_lrfgate.json": {
+      "sha256": "b3148ecbe61e249efa80abbd256bae1a1a98cdd439d94eaf34a2fd3093123dd7",
+      "summary": {
+        "classes": 20,
+        "usable": 20,
+        "independent": 11,
+        "status": 0,
+        "margin": -0.3461538461538462,
+        "minslack": -0.34615384615386446,
+        "verdict": "LRF_obs-COMPATIBLE"
+      }
+    },
+    "j4_nxexpand.json": {
+      "sha256": "0432c3d7f24fa52c8b5f0c6ad2c5e7598b9f4e23ed7990a2f1227e89526f3da3",
+      "summary": {
+        "E1": 27793,
+        "V2": 228,
+        "newrows": 970,
+        "status": 0,
+        "margin": -0.40000000000000013
+      }
+    },
+    "j4_oldcore.json": {
+      "sha256": "dcce33ca0789debe2906636a5be6d9789040c2b22ca79f352ffeeec558ed96af",
+      "summary": {
+        "(0, 0)": {
+          "n": 18,
+          "distinct_patterns": 11
+        },
+        "(0, 1)": {
+          "n": 18,
+          "distinct_patterns": 11
+        },
+        "(1, 0)": {
+          "n": 31,
+          "distinct_patterns": 25
+        },
+        "(1, 1)": {
+          "n": 31,
+          "distinct_patterns": 25
+        }
+      }
+    },
+    "j4_oldFfinal.json": {
+      "sha256": "5e017d237ce2cd8906fa05a14448d82397f1ec12377d7cef0a2170721a58ec4d",
+      "summary": {
+        "keys": 432,
+        "transitions": 4176,
+        "ambiguous": 2
+      }
+    },
+    "j4_oldftable.json": {
+      "sha256": "cb74dc0a7703087198fc5ea7a4c00d2455a3ffc7ad1b6a7ec503a3dfbffbe8dd",
+      "summary": {
+        "classes": 195,
+        "ambiguous": 32,
+        "ntr": 6036
+      }
+    },
+    "j4_padding.json": {
+      "sha256": "b17c19aad668be0d3637e541ed795f0fce477c8c6d0b0f36e95d7e58d221982a",
+      "summary": {
+        "n5_L": {
+          "checked": 840,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              92
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              36
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              8
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              42
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              56
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              56
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              40
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              16
+            ]
+          ]
+        },
+        "n5_R": {
+          "checked": 840,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              92
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              36
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              8
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              42
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              56
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              56
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              40
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              16
+            ]
+          ]
+        },
+        "n5_LL": {
+          "checked": 840,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              92
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              36
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              8
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              42
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              56
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              56
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              40
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              16
+            ]
+          ]
+        },
+        "n5_RR": {
+          "checked": 840,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              92
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              36
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              8
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              42
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              98
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              112
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              96
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              56
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -6
+              ],
+              16
+            ]
+          ]
+        },
+        "n5_LR": {
+          "checked": 840,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              92
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              36
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              8
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              42
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              98
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              112
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              96
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              56
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -6
+              ],
+              16
+            ]
+          ]
+        },
+        "n6_L": {
+          "checked": 3960,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              464
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              224
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              80
+            ],
+            [
+              [
+                3,
+                3
+              ],
+              16
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              132
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              180
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              192
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              160
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              96
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -6
+              ],
+              32
+            ]
+          ]
+        },
+        "n6_R": {
+          "checked": 3960,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              464
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              224
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              80
+            ],
+            [
+              [
+                3,
+                3
+              ],
+              16
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              132
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              180
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              192
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              160
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              96
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -6
+              ],
+              32
+            ]
+          ]
+        },
+        "n6_LL": {
+          "checked": 3960,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              464
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              224
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              80
+            ],
+            [
+              [
+                3,
+                3
+              ],
+              16
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              132
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              180
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              192
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              160
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              96
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -6
+              ],
+              32
+            ]
+          ]
+        },
+        "n6_RR": {
+          "checked": 3960,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              464
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              224
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              80
+            ],
+            [
+              [
+                3,
+                3
+              ],
+              16
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              132
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              312
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              372
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              352
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              256
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -6
+              ],
+              128
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -7
+              ],
+              32
+            ]
+          ]
+        },
+        "n6_LR": {
+          "checked": 3960,
+          "slot_changes_nonF": [],
+          "fshift": [
+            [
+              [
+                0,
+                0
+              ],
+              464
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              224
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              80
+            ],
+            [
+              [
+                3,
+                3
+              ],
+              16
+            ]
+          ],
+          "new_atoms": [
+            [
+              [
+                "('NONE',)",
+                0,
+                -1
+              ],
+              132
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -2
+              ],
+              312
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -3
+              ],
+              372
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -4
+              ],
+              352
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -5
+              ],
+              256
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -6
+              ],
+              128
+            ],
+            [
+              [
+                "('NONE',)",
+                0,
+                -7
+              ],
+              32
+            ]
+          ]
+        }
+      }
+    },
+    "j4_pairsign.json": {
+      "sha256": "afa380b10e42c448a5a7d390b77db5f410fd944755c50d22f872d3fd6a2c0fdf",
+      "summary": {
+        "npos": 36,
+        "ntot": 36,
+        "worst": [
+          7.000000000000001,
+          3,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "j4_prepend_law.json": {
+      "sha256": "349702b445b93298e6b9670c130d37857b732be81e3888f17224e3210010eeca",
+      "summary": {
+        "uniform_n5_L": {
+          "classes": 38,
+          "uniform": 35,
+          "nonuniform": [
+            [
+              [
+                1,
+                1,
+                "F",
+                1
+              ],
+              {
+                "-1": 3,
+                "0": 32
+              }
+            ],
+            [
+              [
+                1,
+                0,
+                "F",
+                1
+              ],
+              {
+                "-1": 34,
+                "0": 1
+              }
+            ],
+            [
+              [
+                1,
+                0,
+                "F",
+                0
+              ],
+              {
+                "-1": 1,
+                "0": 2
+              }
+            ]
+          ]
+        },
+        "uniform_n5_R": {
+          "classes": 38,
+          "uniform": 35,
+          "nonuniform": [
+            [
+              [
+                1,
+                1,
+                "F",
+                1
+              ],
+              {
+                "-1": 34,
+                "0": 1
+              }
+            ],
+            [
+              [
+                1,
+                1,
+                "F",
+                0
+              ],
+              {
+                "0": 2,
+                "-1": 1
+              }
+            ],
+            [
+              [
+                1,
+                0,
+                "F",
+                1
+              ],
+              {
+                "0": 32,
+                "-1": 3
+              }
+            ]
+          ]
+        },
+        "uniform_n6_L": {
+          "classes": 50,
+          "uniform": 41
+        },
+        "uniform_n6_R": {
+          "classes": 50,
+          "uniform": 41
+        },
+        "compose_LL_n5": {
+          "tot": 210,
+          "bad": 0
+        },
+        "compose_LL_n6": {
+          "tot": 792,
+          "bad": 0
+        },
+        "none_fullmatrix": {
+          "holds": true,
+          "ncols": 21,
+          "nfam": 6
+        },
+        "s0_odd": 0
+      }
+    },
+    "j4_quarantine.json": {
+      "sha256": "bd693ce5edb84af4b4e76c2c85fcce9529a9c585a999ace8e5cc7023410d3157",
+      "summary": {
+        "invalid_lift": "[0,None,[-1,None,T]] violates BST (right-subtree key -1 < root 0)",
+        "tainted_scripts": [
+          "wp6_lift2.py:mode_oldcore",
+          "wp6_shiftmap.py",
+          "wp6_shiftgate.py(forms/dtqgate)",
+          "wp6_shiftgate2.py",
+          "wp6_dbar.py",
+          "wp6_pairsign.py",
+          "wp6_lift2 refined probe"
+        ],
+        "void_results": [
+          "oldcore 20-class counts",
+          "shiftmap details",
+          "dbar support numbers",
+          "shift-form ranges/DTQ gate (26L)",
+          "pair/crem sups",
+          "countlaw +2-NONE (must reverify)"
+        ],
+        "standing": [
+          "left-prepend table (valid keys)",
+          "LR-prepend probe (valid keys)",
+          "twin K2/K3 multiset validations (valid lifts)",
+          "class_table Pad_L/R (valid)",
+          "all Ext/Pad/context probes (valid)",
+          "old-F table LL/RR/LR (valid lifts)",
+          "ug/ugar/rednorm LP systems (no lifts involved)"
+        ]
+      }
+    },
+    "j4_rednorm.json": {
+      "sha256": "9346dfece1b0a5ccffb5052cbd8fb8753b1c23b25e980d62f5e3d5d4f7d9b0b8",
+      "summary": {
+        "E": 26823,
+        "V": 163,
+        "rank": 162,
+        "nullity": 1,
+        "status": 0,
+        "margin": -0.0
+      }
+    },
+    "j4_rifoldF.json": {
+      "sha256": "11a91693054ac38bf186b471fb8bb2d7fa1a463e01378cb0f34a940540748941",
+      "summary": {
+        "2": [
+          [
+            -2.000000000000001,
+            -0.0
+          ],
+          [
+            -1.5000000000000036,
+            -0.16666666666666785
+          ],
+          [
+            -1.3333333333333286,
+            -0.6666666666666679
+          ],
+          [
+            -0.9999999999999929,
+            -0.6666666666666625
+          ]
+        ],
+        "3": [
+          [
+            -1.3333333333333308,
+            -0.666666666666667
+          ]
+        ]
+      }
+    },
+    "j4_riwidth.json": {
+      "sha256": "4d70bca76a9df20331363a667ecacf81bd3edeb4ffbb79363e6ee4cdee29b93d",
+      "summary": {
+        "pres": 390,
+        "tot": 404
+      }
+    },
+    "j4_rnidentity.json": {
+      "sha256": "1da1eb7fc4a45a6d4344cdafe112a42369d046a54d5a957603168c6ef767ccdd",
+      "summary": {
+        "tot": 986,
+        "bad": 0
+      }
+    },
+    "j4_sh567_exact_kernel.json": {
+      "sha256": "e75a0fbacafdebc644399b10f1c5d59b9afc3b33ee90bbba8f1eda45a605a762",
+      "summary": {
+        "E": 26823,
+        "V": 194,
+        "mod_ranks": {
+          "1000000007": 177,
+          "1000000009": 177,
+          "998244353": 177
+        },
+        "float_rank": 177,
+        "float_tol": 1.4134888517631807e-09
+      }
+    },
+    "j4_sh567_null_lift.json": {
+      "sha256": "c46432780ac299eb0af6e72e90df536cc6200dad540e043cb7ec82987991fa1d",
+      "summary": {
+        "F": 17
+      }
+    },
+    "j4_sh567_qq_kernel.json": {
+      "sha256": "efe2d6365db83f2730d1f321b9bcc2ee0d699dd50ea01e94fff1135d42db3a16",
+      "summary": {
+        "dim": 17
+      }
+    },
+    "j4_sh567_vmap.json": {
+      "sha256": "2b5a1f0d8721b7fa96177ae40a86b2149992049c11f470af0de89066f82587d5",
+      "summary": {
+        "vmap": {
+          "('r', 0)": 0,
+          "('t', (('NONE',), 0, -1, 1))": 1,
+          "('t', (('L',), 0, 1, 0))": 2,
+          "('t', (('R',), -1, 1, 1))": 3,
+          "('t', (('R',), 0, 1, 0))": 4,
+          "('t', (('R',), -1, 2, 1))": 5,
+          "('t', (('R',), 0, 2, 0))": 6,
+          "('t', (('R',), -1, 3, 1))": 7,
+          "('t', (('R',), 0, 3, 0))": 8,
+          "('t', (('NONE',), 0, -2, 2))": 9,
+          "('t', (('L',), 0, 2, 0))": 10,
+          "('t', (('NONE',), 0, -1, 2))": 11,
+          "('t', (('R',), -2, 1, 2))": 12,
+          "('t', (('R',), -2, 2, 2))": 13,
+          "('r', 1)": 14,
+          "('t', (('NONE',), 0, -3, 3))": 15,
+          "('t', (('NONE',), 0, -2, 3))": 16,
+          "('t', (('L',), 0, 3, 0))": 17,
+          "('t', (('NONE',), 0, -1, 3))": 18,
+          "('t', (('R',), -3, 1, 3))": 19,
+          "('t', (('NONE',), 0, -4, 4))": 20,
+          "('t', (('NONE',), 0, -3, 4))": 21,
+          "('t', (('NONE',), 0, -2, 4))": 22,
+          "('t', (('NONE',), 0, -1, 4))": 23,
+          "('t', (('R',), 0, 4, 0))": 24,
+          "('r', -2)": 25,
+          "('t', (('L',), -1, 1, 3))": 26,
+          "('t', (('F', 0), -1, 0, 3))": 27,
+          "('r', -1)": 28,
+          "('t', (('L',), -1, 1, 2))": 29,
+          "('t', (('F', 0), 1, 0, 3))": 30,
+          "('t', (('L',), 0, 4, 0))": 31,
+          "('t', (('R',), -2, 1, 3))": 32,
+          "('t', (('L',), -1, 2, 2))": 33,
+          "('t', (('F', 0), 0, 0, 2))": 34,
+          "('t', (('F', 0), 0, 1, 2))": 35,
+          "('t', (('L',), 0, 1, 1))": 36,
+          "('t', (('F', 0), 1, 0, 2))": 37,
+          "('t', (('F', 1), 2, -1, 3))": 38,
+          "('t', (('F', 1), 1, -1, 3))": 39,
+          "('t', (('R',), -1, 1, 2))": 40,
+          "('t', (('F', 1), 0, -1, 3))": 41,
+          "('t', (('L',), 0, 2, 1))": 42,
+          "('t', (('F', 0), 1, 1, 2))": 43,
+          "('t', (('R',), -1, 2, 2))": 44,
+          "('t', (('L',), 0, 3, 1))": 45,
+          "('t', (('F', 0), 0, 0, 3))": 46,
+          "('t', (('L',), -2, 1, 3))": 47,
+          "('t', (('F', 0), 1, 0, 1))": 48,
+          "('t', (('F', 0), 1, 1, 1))": 49,
+          "('t', (('F', 0), 1, 2, 1))": 50,
+          "('t', (('F', 1), 2, -1, 2))": 51,
+          "('t', (('F', 2), 1, -2, 3))": 52,
+          "('t', (('F', 1), 1, -1, 2))": 53,
+          "('t', (('R',), 0, 1, 1))": 54,
+          "('t', (('F', 1), 1, 0, 2))": 55,
+          "('t', (('F', 1), 2, 0, 2))": 56,
+          "('t', (('L',), -1, 1, 1))": 57,
+          "('t', (('R',), 0, 2, 1))": 58,
+          "('t', (('L',), -1, 2, 1))": 59,
+          "('t', (('L',), -2, 1, 2))": 60,
+          "('t', (('R',), 0, 3, 1))": 61,
+          "('t', (('R',), -1, 1, 3))": 62,
+          "('t', (('L',), -1, 3, 1))": 63,
+          "('t', (('L',), -2, 2, 2))": 64,
+          "('t', (('L',), -3, 1, 3))": 65,
+          "('t', (('R',), -1, 4, 1))": 66,
+          "('t', (('R',), -2, 3, 2))": 67,
+          "('t', (('R',), -3, 2, 3))": 68,
+          "('t', (('R',), -4, 1, 4))": 69,
+          "('t', (('NONE',), 0, -5, 5))": 70,
+          "('t', (('NONE',), 0, -4, 5))": 71,
+          "('t', (('NONE',), 0, -3, 5))": 72,
+          "('t', (('NONE',), 0, -2, 5))": 73,
+          "('t', (('NONE',), 0, -1, 5))": 74,
+          "('t', (('R',), 0, 5, 0))": 75,
+          "('r', -3)": 76,
+          "('t', (('L',), -2, 1, 4))": 77,
+          "('t', (('F', 0), -2, 0, 4))": 78,
+          "('t', (('F', 0), 0, 0, 4))": 79,
+          "('t', (('R',), -3, 1, 4))": 80,
+          "('t', (('L',), -1, 2, 3))": 81,
+          "('r', -4)": 82,
+          "('t', (('F', 0), -1, 1, 3))": 83,
+          "('t', (('F', 1), 1, -1, 4))": 84,
+          "('t', (('F', 1), 0, -1, 4))": 85,
+          "('t', (('F', 1), -1, -1, 4))": 86,
+          "('t', (('F', 0), 1, 1, 3))": 87,
+          "('t', (('L',), 0, 5, 0))": 88,
+          "('t', (('R',), -2, 2, 3))": 89,
+          "('t', (('L',), -1, 3, 2))": 90,
+          "('t', (('F', 0), -1, 0, 4))": 91,
+          "('t', (('L',), -3, 1, 4))": 92,
+          "('t', (('F', 0), 0, 2, 2))": 93,
+          "('t', (('F', 2), 1, -2, 4))": 94,
+          "('t', (('F', 1), 0, 0, 3))": 95,
+          "('t', (('F', 1), 2, 0, 3))": 96,
+          "('t', (('F', 1), 1, 0, 3))": 97,
+          "('t', (('F', 2), 0, -2, 4))": 98,
+          "('t', (('F', 0), 1, 2, 2))": 99,
+          "('t', (('R',), -1, 3, 2))": 100,
+          "('t', (('L',), 0, 4, 1))": 101,
+          "('t', (('R',), -2, 1, 4))": 102,
+          "('t', (('F', 0), 0, 1, 3))": 103,
+          "('r', -5)": 104,
+          "('t', (('L',), -2, 2, 3))": 105,
+          "('t', (('F', 0), 1, 3, 1))": 106,
+          "('t', (('F', 3), 2, -3, 4))": 107,
+          "('t', (('F', 3), 1, -3, 4))": 108,
+          "('t', (('F', 1), 1, 1, 2))": 109,
+          "('t', (('F', 2), 1, -1, 3))": 110,
+          "('t', (('F', 1), 2, 1, 2))": 111,
+          "('t', (('R',), 0, 4, 1))": 112,
+          "('t', (('R',), -1, 2, 3))": 113,
+          "('t', (('L',), -1, 4, 1))": 114,
+          "('t', (('L',), -2, 3, 2))": 115,
+          "('t', (('L',), -3, 2, 3))": 116,
+          "('t', (('L',), -4, 1, 4))": 117,
+          "('t', (('R',), -1, 5, 1))": 118,
+          "('t', (('R',), -2, 4, 2))": 119,
+          "('t', (('R',), -3, 3, 3))": 120,
+          "('t', (('R',), -4, 2, 4))": 121,
+          "('t', (('R',), -5, 1, 5))": 122,
+          "('t', (('NONE',), 0, -6, 6))": 123,
+          "('t', (('NONE',), 0, -5, 6))": 124,
+          "('t', (('NONE',), 0, -4, 6))": 125,
+          "('t', (('NONE',), 0, -3, 6))": 126,
+          "('t', (('NONE',), 0, -2, 6))": 127,
+          "('t', (('NONE',), 0, -1, 6))": 128,
+          "('t', (('R',), 0, 6, 0))": 129,
+          "('r', -6)": 130,
+          "('t', (('L',), -2, 1, 5))": 131,
+          "('t', (('F', 0), -3, 0, 5))": 132,
+          "('t', (('F', 0), 0, 0, 5))": 133,
+          "('t', (('R',), -4, 1, 5))": 134,
+          "('t', (('L',), -2, 2, 4))": 135,
+          "('r', -7)": 136,
+          "('t', (('F', 0), -2, 1, 4))": 137,
+          "('t', (('F', 1), 1, -1, 5))": 138,
+          "('t', (('F', 1), 0, -1, 5))": 139,
+          "('t', (('F', 1), -2, -1, 5))": 140,
+          "('t', (('F', 0), 0, 1, 4))": 141,
+          "('t', (('F', 1), -1, -1, 5))": 142,
+          "('t', (('R',), -3, 2, 4))": 143,
+          "('t', (('L',), -1, 3, 3))": 144,
+          "('t', (('F', 0), -2, 0, 5))": 145,
+          "('t', (('F', 0), -1, 0, 5))": 146,
+          "('t', (('L',), -3, 1, 5))": 147,
+          "('t', (('F', 0), -1, 2, 3))": 148,
+          "('t', (('F', 2), 1, -2, 5))": 149,
+          "('t', (('F', 1), -1, 0, 4))": 150,
+          "('t', (('F', 1), 1, 0, 4))": 151,
+          "('t', (('F', 1), 0, 0, 4))": 152,
+          "('t', (('F', 2), -1, -2, 5))": 153,
+          "('t', (('F', 0), 1, 2, 3))": 154,
+          "('t', (('L',), 0, 6, 0))": 155,
+          "('t', (('R',), -2, 3, 3))": 156,
+          "('t', (('L',), -1, 4, 2))": 157,
+          "('t', (('R',), -3, 1, 5))": 158,
+          "('t', (('F', 0), -1, 1, 4))": 159,
+          "('r', -8)": 160,
+          "('t', (('L',), -3, 2, 4))": 161,
+          "('t', (('F', 0), 0, 3, 2))": 162,
+          "('t', (('F', 3), 2, -3, 5))": 163,
+          "('t', (('F', 3), 1, -3, 5))": 164,
+          "('t', (('F', 1), 0, 1, 3))": 165,
+          "('t', (('F', 2), 1, -1, 4))": 166,
+          "('t', (('F', 1), 1, 1, 3))": 167,
+          "('t', (('F', 2), 0, -1, 4))": 168,
+          "('t', (('F', 1), 2, 1, 3))": 169,
+          "('t', (('F', 3), 0, -3, 5))": 170,
+          "('t', (('F', 0), 1, 3, 2))": 171,
+          "('t', (('R',), -1, 4, 2))": 172,
+          "('t', (('L',), 0, 5, 1))": 173,
+          "('t', (('R',), -2, 2, 4))": 174,
+          "('t', (('F', 0), 0, 2, 3))": 175,
+          "('t', (('F', 2), 0, -2, 5))": 176,
+          "('t', (('L',), -2, 3, 3))": 177,
+          "('t', (('L',), -4, 1, 5))": 178,
+          "('t', (('F', 0), 1, 4, 1))": 179,
+          "('t', (('F', 4), 1, -4, 5))": 180,
+          "('t', (('F', 1), 1, 2, 2))": 181,
+          "('t', (('F', 3), 2, -2, 4))": 182,
+          "('t', (('F', 3), 1, -2, 4))": 183,
+          "('t', (('F', 1), 2, 2, 2))": 184,
+          "('t', (('F', 2), 1, 0, 3))": 185,
+          "('t', (('R',), 0, 5, 1))": 186,
+          "('t', (('R',), -1, 3, 3))": 187,
+          "('t', (('R',), -2, 1, 5))": 188,
+          "('t', (('L',), -1, 5, 1))": 189,
+          "('t', (('L',), -2, 4, 2))": 190,
+          "('t', (('L',), -3, 3, 3))": 191,
+          "('t', (('L',), -4, 2, 4))": 192,
+          "('t', (('L',), -5, 1, 5))": 193
+        },
+        "E": 26823,
+        "V": 194
+      }
+    },
+    "j4_shiftforms.json": {
+      "sha256": "5f5db823572cdb25d6eab2fd637ff32e8b8d541be33d1e7936aa041197a2e09f",
+      "summary": {
+        "raw": 2,
+        "canonical": 2
+      }
+    },
+    "j4_shiftmap.json": {
+      "sha256": "59465977d62fa26e13df91908ac6cb08bd7da76d8b0b2c388bdf9137d20b6a7c",
+      "summary": {
+        "(0, 0, 0, 'L', -2)": [
+          [
+            "L",
+            -1,
+            0
+          ]
+        ],
+        "(0, 0, 0, 'R', -1)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ],
+        "(0, 0, 1, 'L', -1)": [
+          [
+            "L",
+            -1,
+            0
+          ]
+        ],
+        "(0, 0, 1, 'R', -1)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ],
+        "(0, 1, 0, 'L', -1)": [
+          [
+            "L",
+            -1,
+            0
+          ]
+        ],
+        "(0, 1, 0, 'R', -1)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ],
+        "(0, 1, 1, 'L', -1)": [
+          [
+            "L",
+            -1,
+            0
+          ]
+        ],
+        "(0, 1, 1, 'R', -2)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ],
+        "(1, 0, 0, 'L', -2)": [
+          [
+            "L",
+            0,
+            0
+          ]
+        ],
+        "(1, 0, 0, 'L', -3)": [
+          [
+            "L",
+            0,
+            0
+          ]
+        ],
+        "(1, 0, 0, 'R', -1)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ],
+        "(1, 0, 1, 'L', -2)": [
+          [
+            "L",
+            0,
+            0
+          ]
+        ],
+        "(1, 0, 1, 'R', -1)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ],
+        "(1, 0, 1, 'R', -2)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ],
+        "(1, 1, 0, 'L', -1)": [
+          [
+            "L",
+            -1,
+            0
+          ]
+        ],
+        "(1, 1, 0, 'L', -2)": [
+          [
+            "L",
+            -1,
+            0
+          ]
+        ],
+        "(1, 1, 0, 'R', -2)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ],
+        "(1, 1, 1, 'L', -1)": [
+          [
+            "L",
+            -1,
+            0
+          ]
+        ],
+        "(1, 1, 1, 'R', -2)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ],
+        "(1, 1, 1, 'R', -3)": [
+          [
+            "R",
+            -2,
+            0
+          ]
+        ]
+      }
+    },
+    "j4_shiftval.json": {
+      "sha256": "2a10135ecb718d9a1c3519e6a1f3721673d6b6006fab6de8abee4bf886476523",
+      "summary": {
+        "K2": {
+          "k1": {
+            "mapped": 0,
+            "actual": 6,
+            "only_map": 0,
+            "only_actual": 6
+          },
+          "k3": {
+            "mapped": 0,
+            "actual": 10,
+            "only_map": 0,
+            "only_actual": 10
+          }
+        },
+        "K3": {
+          "k1": {
+            "mapped": 0,
+            "actual": 6,
+            "only_map": 0,
+            "only_actual": 6
+          },
+          "k3": {
+            "mapped": 0,
+            "actual": 10,
+            "only_map": 0,
+            "only_actual": 10
+          }
+        }
+      }
+    },
+    "j4_shiftvalid.json": {
+      "sha256": "d1d83fd16716b5b596426bdf8f27f99698bc3c4a70bafaec4ddc315affd507b8",
+      "summary": {
+        "L/R-pattern-aware shift on TRUE lifts": {
+          "K2 k=1": "exact (2=2, 0 resid)",
+          "K2 k=3": "exact (6=6, 0 resid)",
+          "K3 k=1": "exact (2=2, 0 resid)",
+          "K3 k=3": "exact (6=6, 0 resid)"
+        },
+        "rule": "R always -2; L: even->-1, odd: sx_same_side->0 else -1 (mirror by prepend pattern); slot/delta preserved, d+2",
+        "open": "F-old lambda values (index preserved assumed, lambda unresolved)"
+      }
+    },
+    "j4_strat.json": {
+      "sha256": "ce1b5d420d9da2cf01c9c607fcdb993732e14a7cb2d7face45885de3a1a8353f",
+      "summary": {}
+    },
+    "j4_symdict.json": {
+      "sha256": "df186b84e9aeff0c45bea097670343e2bc1e7520052d4bf0fcd5092a510ab4b9",
+      "summary": {
+        "candidates": 14,
+        "errs": {
+          "sum-L0": 0.0,
+          "sum-L1": 0.467099,
+          "sum-L2": 0.612372,
+          "sum-L3": 0.603023,
+          "sum-L4": 0.5547,
+          "sum-L5": 0.0,
+          "sum-R0": 0.0,
+          "sum-R4": 0.392232,
+          "sum-R5": 0.0,
+          "Fsum0": 0.279145,
+          "Fsum1": 0.0,
+          "Fsum2": 0.0,
+          "Fsum3": 0.0,
+          "Fsum4": 0.0
+        }
+      }
+    },
+    "j4_symnull.json": {
+      "sha256": "bd357b00f859310ab871ba1f5098af00db3bdca26139b6682f4c1018c412f7a0",
+      "summary": {
+        "dim": 31
+      }
+    },
+    "j4_symrank.json": {
+      "sha256": "6cf48fd1165e93b5b87f8b4abaa76c8c3061b334e844f3ee4f395f20caf879c2",
+      "summary": {
+        "shape": [
+          970,
+          79
+        ],
+        "mod_ranks": {
+          "1000000007": 48,
+          "1000000009": 48,
+          "998244353": 48
+        },
+        "nullity": 31
+      }
+    },
+    "j4_tau.json": {
+      "sha256": "6cab22b42250009c1e1319124f8e07d4ea0b508b36040daa38506181cfff217e",
+      "summary": {
+        "note": "tau maps built inline"
+      }
+    },
+    "j4_trans.json": {
+      "sha256": "9aec47bfe5e6bf7de6c2630877c26cdaa029caa439a07ddf697b83f3433ce53e",
+      "summary": {
+        "note": "L/R need row-class provenance; twin maps in trans2"
+      }
+    },
+    "j4_transport.json": {
+      "sha256": "1ccb31147aa65fd953c5c020f8073822bef9484622586f85eb4a462376db2a9b",
+      "summary": {
+        "V": {
+          "K2": {
+            "('t', ('F', 1), 2, 0, 2)": 1
+          },
+          "K3": {
+            "('t', ('F', 1), 1, 0, 2)": 1
+          }
+        },
+        "H_K2": {
+          "('t', ('F', 1), 2, -1, 2)": -1,
+          "('t', ('NONE',), 0, -4, 4)": 1,
+          "('t', ('NONE',), 0, -3, 4)": 1,
+          "('t', ('NONE',), 0, -2, 4)": 1,
+          "('t', ('NONE',), 0, -1, 4)": 1,
+          "('r', 0)": 1,
+          "('t', ('F', 3), 2, -3, 4)": 1,
+          "('t', ('NONE',), 0, -2, 2)": -1,
+          "('t', ('NONE',), 0, -1, 2)": -1,
+          "('r', 1)": -1
+        },
+        "H_K3": {
+          "('r', -1)": 1,
+          "('t', ('NONE',), 0, -4, 4)": 1,
+          "('t', ('NONE',), 0, -3, 4)": 1,
+          "('t', ('NONE',), 0, -2, 4)": 1,
+          "('t', ('NONE',), 0, -1, 4)": 1,
+          "('r', 0)": -1,
+          "('t', ('F', 3), 1, -3, 4)": 1,
+          "('t', ('F', 1), 1, -1, 2)": -1,
+          "('t', ('NONE',), 0, -2, 2)": -1,
+          "('t', ('NONE',), 0, -1, 2)": -1
+        }
+      }
+    },
+    "j4_twins.json": {
+      "sha256": "08ffd82dfd9d8dcf55564e52a52b2457cb27522751497a0c24081659d793b4f3",
+      "summary": {
+        "even_probe": [
+          {
+            "k": 2,
+            "f": 1
+          },
+          {
+            "k": 4,
+            "f": 1
+          }
+        ]
+      }
+    },
+    "j4_twintrans.json": {
+      "sha256": "85e28f287bc61dcf73822ed639cdf0543fdbb5e0a8b7b60e948fd81aa5e6b3bd",
+      "summary": {
+        "L": {
+          "ok": 4,
+          "tot": 4
+        },
+        "R": {
+          "ok": 4,
+          "tot": 4
+        }
+      }
+    },
+    "j4_uarexpand.json": {
+      "sha256": "88d51639af1d63d67d60e84c9a5e944a8b106eb3ca85533839dcdba39ebc9ff9",
+      "summary": {
+        "E1": 27113,
+        "V2": 187,
+        "newrows": 290,
+        "status": 0,
+        "margin": -0.0,
+        "newviol": 0
+      }
+    },
+    "j4_uarwidth.json": {
+      "sha256": "d60dc0c276014b29bfed120f609037ef942ca43935bbf87f3f6a76ff9d8b1c21",
+      "summary": {
+        "pres": 390,
+        "tot": 404
+      }
+    },
+    "j4_ugar.json": {
+      "sha256": "c57d50617669c8b8e299ae24abcea54bde366401f36f7203d3a27681cd56eabd",
+      "summary": {
+        "E": 26823,
+        "V": 179,
+        "rank": 163,
+        "nullity": 16,
+        "status": 0,
+        "margin": -0.0
+      }
+    },
+    "j4_ugar_a.json": {
+      "sha256": "ddf1a61a34b49fa717a602b85ffce8943ca4ea83abfbfe331797ccf33a5b6a4f",
+      "summary": {
+        "a_min": 1.0,
+        "a_max": 1.0,
+        "a_nnz": 18842
+      }
+    },
+    "j4_ugexpand.json": {
+      "sha256": "42199fb45be8939fc592ba4fab627df1e7a69091e7109d6ee159df481097b4cc",
+      "summary": {
+        "E1": 27113,
+        "V2": 196,
+        "newrows": 290,
+        "status": 0,
+        "margin": -0.0,
+        "newviol": 0
+      }
+    },
+    "j4_ugimplications.json": {
+      "sha256": "9ad87eab29a0ae54bf6f16419051183ac4aaabdaa4c0cf4cd1054fc3aa5bb894",
+      "summary": {
+        "rho2nd_-2": [
+          -0.3333333333333348,
+          -1.3322676295501878e-15
+        ],
+        "rho2nd_-1": [
+          1.7763568394002505e-15,
+          -0.0
+        ],
+        "rho2nd_0": [
+          0.0,
+          0.999999999999998
+        ],
+        "f_d1_-1": [
+          -2.500000000000001,
+          0.4999999999999989
+        ],
+        "f_d1_0": [
+          -1.7500000000000004,
+          -0.25000000000000044
+        ],
+        "f_d1_1": [
+          -0.9999999999999996,
+          8.881784197001252e-16
+        ],
+        "N_1": [
+          null,
+          null
+        ],
+        "N_2": [
+          null,
+          null
+        ],
+        "N_3": [
+          null,
+          null
+        ],
+        "Nagg_1": [
+          -9.0,
+          9.999999999999988
+        ],
+        "Nagg_2": [
+          -7.499999999999998,
+          5.5000000000000036
+        ],
+        "Nagg_3": [
+          -6.5,
+          3.5
+        ],
+        "Nagg_4": [
+          -7.0,
+          1.1666666666666679
+        ],
+        "Nagg_5": [
+          -7.0,
+          1.0000000000000018
+        ]
+      }
+    },
+    "j4_ugonly.json": {
+      "sha256": "348de2c666642c13f5cd1e049a2cbdf4479e6ab78b28cbb28b032529b50cdb9a",
+      "summary": {
+        "E1": 27793,
+        "V2": 225,
+        "status": 0,
+        "margin": -0.0
+      }
+    },
+    "j4_ugreduced.json": {
+      "sha256": "4c8a22700185b025b242f9728fceff86b56d8d6625dfa862e7139c750cbefabd",
+      "summary": {
+        "E": 26823,
+        "V0": 194,
+        "Vred": 188,
+        "rank": 171,
+        "nullity": 17,
+        "status": 0,
+        "margin": -0.0
+      }
+    },
+    "j4_univ.json": {
+      "sha256": "8badf3e90f41c4534e5e4c65dabb4ae5723caed1230ef409c251287a609b1b4a",
+      "summary": {
+        "levels": [
+          35,
+          74,
+          119
+        ],
+        "ov01": 27,
+        "ov12": 60,
+        "new1": 47,
+        "new2": 59
+      }
+    },
+    "j4_xclean.json": {
+      "sha256": "392c55d11aec6e007ad5872220db1980e53cfcfabc7be6f69475eb4549ce0df3",
+      "summary": {
+        "E1": 27793,
+        "V2": 214,
+        "status": 0,
+        "margin": -0.0
+      }
+    },
+    "joint_texact7.json": {
+      "sha256": "7a28ecba638cea0f1057bda13899dd50f5dd0bb72fbda5fc5f8c33919c3ecad3",
+      "summary": {
+        "iters_done": 21,
+        "status": "PROGRESS"
+      }
+    }
+  },
+  "npz_metadata": {
+    "j4_levelblocks.npz": {
+      "sha256": "18ca20d6d6ebc945999ffc60a7f0cf1440eb0555892befec60621f328f2a44fc",
+      "arrays": {
+        "A0": {
+          "shape": [
+            250,
+            142
+          ],
+          "dtype": "float64"
+        },
+        "A1": {
+          "shape": [
+            550,
+            142
+          ],
+          "dtype": "float64"
+        },
+        "A2": {
+          "shape": [
+            970,
+            142
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    "j4_rednorm_mat.npz": {
+      "sha256": "6879b0e5c97b73b1b37e38e63107c64d27a66f3734ffa9f3b9b864817be298bf",
+      "arrays": {
+        "A": {
+          "shape": [
+            26823,
+            163
+          ],
+          "dtype": "float64"
+        },
+        "rhs": {
+          "shape": [
+            26823
+          ],
+          "dtype": "float64"
+        },
+        "keys": {
+          "shape": [
+            163
+          ],
+          "dtype": "<U28"
+        }
+      }
+    },
+    "j4_sh567_A.npz": {
+      "sha256": "4dcc155e1c13d0ebe39c6123c5a43f829a39645d73f403398560a66eefbeb0a8",
+      "arrays": {
+        "A": {
+          "shape": [
+            26823,
+            194
+          ],
+          "dtype": "int8"
+        },
+        "keys": {
+          "shape": [
+            194
+          ],
+          "dtype": "<U28"
+        }
+      }
+    }
+  },
+  "papers": [
+    {
+      "path": "v03\\history\\external\\papers\\L3_levy_tarjan_foundation_1907.06310.pdf",
+      "sha256": "f7aa79010984db5104c81846d7d0862bb4b83c1f13cbc84c922757e340c36f1c",
+      "pages": 29
+    }
+  ],
+  "LRF_certificate": {
+    "zero_residual": true,
+    "positive_rhs": "9/34",
+    "matrix_shape": [
+      26823,
+      163
+    ]
+  }
+}

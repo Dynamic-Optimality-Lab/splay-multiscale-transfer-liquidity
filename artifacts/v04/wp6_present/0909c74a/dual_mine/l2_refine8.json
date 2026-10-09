@@ -1,0 +1,59 @@
+{
+ "n": 8,
+ "nS": 1430,
+ "alpha": "(rootA,rootB,isVineB)",
+ "baseline": "Phi=-2*twin+P_alpha, P FREE",
+ "concrete_edges": 32718400,
+ "classes_present": 80,
+ "classes_max": 128,
+ "abstract_edges": 1264,
+ "result": {
+  "feasible": false,
+  "cycle": [
+   [
+    2,
+    2,
+    0
+   ],
+   [
+    7,
+    7,
+    0
+   ],
+   [
+    8,
+    8,
+    0
+   ]
+  ],
+  "witnesses": {
+   "((7, 7, 0), (2, 2, 0))": [
+    1,
+    [
+     869,
+     910,
+     2,
+     "K"
+    ]
+   ],
+   "((8, 8, 0), (7, 7, 0))": [
+    1,
+    [
+     1091,
+     1003,
+     7,
+     "K"
+    ]
+   ],
+   "((2, 2, 0), (8, 8, 0))": [
+    1,
+    [
+     457,
+     429,
+     8,
+     "K"
+    ]
+   ]
+  }
+ }
+}

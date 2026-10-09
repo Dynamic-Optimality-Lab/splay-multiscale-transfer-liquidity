@@ -1,0 +1,10 @@
+{
+ "L/R-pattern-aware shift on TRUE lifts": {
+  "K2 k=1": "exact (2=2, 0 resid)",
+  "K2 k=3": "exact (6=6, 0 resid)",
+  "K3 k=1": "exact (2=2, 0 resid)",
+  "K3 k=3": "exact (6=6, 0 resid)"
+ },
+ "rule": "R always -2; L: even->-1, odd: sx_same_side->0 else -1 (mirror by prepend pattern); slot/delta preserved, d+2",
+ "open": "F-old lambda values (index preserved assumed, lambda unresolved)"
+}

@@ -1,0 +1,20 @@
+# Permanent research rules
+
+Apply these rules to every pipeline stage, not just J4. A pivot is authorized only after all four pass in a written pre-execution record.
+
+1. **Strictly smaller.** Identify the exact reduction in quantified domain, structural cases, variables, compatibility burdens, mechanisms, or original dependencies. A representation change or all-horizon restatement of global existence is insufficient.
+2. **Concrete reason it is solvable now.** Give a specific starting identity and proof sketch: direct cancellation, an established theorem, a proved-complete finite classification, explicit construction, determined induction, exact specified dual certificate, symmetry, or a bounded recurrence with a proved invariant. Numerical plausibility is insufficient.
+3. **One-prompt scope.** One principal theorem, one principal mechanism, one bounded source audit, one completed proof or exact obstruction, and one direct graph connection. If a second independent open theorem is necessary, stop. No guarantee of truth or success is implied; a credible bounded proof/refutation attack is required.
+4. **Real upward advancement.** Fix before execution the exact original obligation that success deletes. A new equivalent existence premise, decomposition, quotient rank, finite fit, or conditional theorem with a comparably hard new witness does not count. Independently mandatory premises may support a real reduction; source-imposed extra constraints are not automatically mandatory.
+
+An existence-burden audit asks whether the new object is the old unsolved object, whether constraints make its construction harder, whether notation hides the difficulty, and whether an independent construction mechanism actually exists. Replacing “find global J” by “all finite systems feasible” or “compactness premise” fails without that mechanism.
+
+Statuses: PROVED—UNIVERSAL requires a complete proof on the whole stated domain with established premises. PROVED—RESTRICTED DOMAIN names the subclass and deleted original case. FINITE-EXACT requires integer/rational computation on a pinned finite corpus. REFUTED—EXACT requires a valid in-domain counterexample or exact dual contradiction. CONDITIONAL means an essential premise remains open. NUMERICAL means floating evidence without exact certification. OPEN means neither a complete proof nor exact refutation. SOURCE DEFINITION and report-only provenance are recorded separately. “Not reverified” is a verification attribute, not an upgrade in truth status.
+
+Before PROVED: check quantifiers, all boundary cases, both orientations, signs, repeated-coordinate multiplicity, global sharing, nonvacuity, dependencies and circularity. A telescoping formula needs an endpoint/accumulation bound; a finite certificate needs complete row provenance, dimensions, multipliers, signs and zero residuals. A finite tested counterexample only rejects its specified template.
+
+After each pivot record BEFORE/RESULT/AFTER, genuinely deleted obligations, new assumptions and NET PROOF ADVANCEMENT. Strategic elimination is distinct from advancement of the original theorem. Do not redefine success after seeing results. Workspace creation is not mathematical progress.
+
+Stop on refuted mechanism, failed gate, equally hard new existence burden, or lack of a credible small theorem. Two consecutive non-advancing pivots using essentially the same mechanism mandate strategy review; renamed targets cannot reset the count. Do not automatically proceed after OPEN. No auxiliary treadmill.
+
+All writes, logs, caches, scripts, proposed patches and artifacts stay in DO_RESEARCH_REBOOT/. Existing sources/tests/configuration/Git are read-only. No commits, branch changes, resets, clean/stash, dependency installations, or overwrites of old research. Existing reboot files must be preserved; future runs use versioned names. User authorization in the master directive governs approved in-scope execution; this mathematical approval gate does not require another user permission prompt.
