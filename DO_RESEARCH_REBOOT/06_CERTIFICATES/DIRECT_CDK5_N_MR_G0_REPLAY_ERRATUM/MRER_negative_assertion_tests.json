@@ -1,0 +1,42 @@
+{
+ "wrong_pair": {
+  "rejected": true,
+  "reason": "A differs at 13"
+ },
+ "false_B_only": {
+  "rejected": true,
+  "reason": "pair differs at 13 (B-only != pair)"
+ },
+ "repeat_state": {
+  "rejected": true,
+  "reason": "only 33 distinct"
+ },
+ "wrong_bridge_key": {
+  "rejected": true,
+  "reason": "bridges are [7,1]"
+ },
+ "missing_bridge": {
+  "rejected": true,
+  "reason": "two bridges"
+ },
+ "bridge_q3": {
+  "rejected": true,
+  "reason": "bridges q<=2"
+ },
+ "payer_H1": {
+  "rejected": true,
+  "reason": "payer H=2"
+ },
+ "reused_payer": {
+  "rejected": true,
+  "reason": "packets disjoint"
+ },
+ "overlap": {
+  "rejected": true,
+  "reason": "no overlap"
+ },
+ "sha_mismatch": {
+  "rejected": true,
+  "reason": "forbidden SHA rejected"
+ }
+}
