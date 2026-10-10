@@ -1,0 +1,13 @@
+A_start=(5(1.(4(2.(3..)).))(7(6..)(9(8..)(10..))))
+B_start=(1.(10(2.(3.(9(6(4.(5..))(8(7..).)).))).))
+A CLOSURE: PASS
+B CLOSURE: PASS
+CYCLE TABLE: 18/18
+A=34 Q=19 W=-49 (expect 34/19/-49)
+positive blocks=[1, 2] (expect [1, 2])
+packet deltas=[1, 1, -1, -3] (expect [1, 1, -1, -3])
+K5 genuine=True K9 genuine=True (expect True True)
+r-before-K7=1 (expect 1); B-root-before-K5=7 (expect 7)
+depth(1): after-K7=1 after-K5=1 after-K9=2 (expect 1 1 2)
+ENGINE COMPARISON: 27/27 (expect 27/27)
+certificate written

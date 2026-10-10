@@ -1,0 +1,20 @@
+PREFIX A-OK=True B-OK=True B-is-vine=False
+SWEEP A==vine: True B==vine: True (expect True True)
+A CLOSURE: PASS
+B CLOSURE: PASS
+CYCLE TABLE: 37/37
+A=70 Q=39 W=-101 (expect 70/39/-101)
+BLOCKS=37 (expect 37, no no-ops)
+positive idx=[0, 1, 2] (expect [0, 1, 2])
+packet deltas=[1, 1, 1, -2, -2] (expect [1, 1, 1, -2, -2])
+r=16 s=4 r!=s: True (expect 16 4 True)
+sinks: a_r=2 q_r=2 | a_s=2 q_s=2 (expect 2 2 2 2)
+A-depths: dA(r)=4 dA(s)=3 (expect 4 3; thresholds 3 3)
+a_r<p=True a_s<p=True (expect True True; AR-P8)
+essentiality: p+dr=1>0: True; p+ds=1>0: True; p+dr+ds=-1<=0: True
+noninterference r=16 not in keeps of blocks1,2: True
+depth(16): after-K11=2 after-K4=4 after-K7=4 (expect 2 4 4)
+depth(4): after-K7=2 after-K16=4 (expect 2 4; AR-L2)
+tail nonpositive=True
+ENGINE COMPARISON: 53/53 (expect 53/53)
+certificate written

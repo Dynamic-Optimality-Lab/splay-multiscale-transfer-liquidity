@@ -1,0 +1,28 @@
+{
+ "seeds": [
+  "26AQ",
+  "26AR"
+ ],
+ "head_len": 6,
+ "slots": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "max_insertions": 2,
+ "max_substitutions": 1,
+ "max_keys": 16,
+ "budget_cap": 40000,
+ "counts_per_seed": {
+  "substitutions": 90,
+  "insert1": 112,
+  "insert2": 7168,
+  "base": 1
+ },
+ "note": "insert2 slot pairs ordered i<=j; deterministic key order",
+ "total": 14742
+}

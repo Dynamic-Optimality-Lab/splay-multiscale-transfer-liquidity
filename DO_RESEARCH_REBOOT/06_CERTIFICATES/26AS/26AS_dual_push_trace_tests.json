@@ -1,0 +1,39 @@
+{
+ "TestB": {
+  "order": true,
+  "shallow": true,
+  "genuine": true,
+  "push": true,
+  "path": true,
+  "eligible": true,
+  "pushset": [
+   2,
+   5
+  ],
+  "pathkeys": [
+   5,
+   2,
+   4
+  ],
+  "dB": 2
+ },
+ "TestC": {
+  "y": 2,
+  "r": 1,
+  "s": 3,
+  "push": [
+   1
+  ],
+  "eligible": false
+ },
+ "push_eq_ancestors": {
+  "counterexamples": []
+ },
+ "TestD_parity": {
+  "bad": 0
+ },
+ "TestE_uniqueness": "capacity-1 double-spend rejected",
+ "alloc_fuzz": {
+  "bad": 0
+ }
+}

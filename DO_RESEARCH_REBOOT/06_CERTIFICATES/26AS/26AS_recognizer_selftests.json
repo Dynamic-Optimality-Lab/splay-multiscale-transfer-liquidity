@@ -1,0 +1,78 @@
+{
+ "T1_synth_AS": {
+  "accepted": true,
+  "pieces": [
+   {
+    "type": "AS-shared",
+    "run1": [
+     0
+    ],
+    "sepA": [
+     1
+    ],
+    "run2": [
+     2
+    ],
+    "sepB": [
+     3
+    ],
+    "W": 3,
+    "R": 4,
+    "S": 5,
+    "r": 9,
+    "s": 2,
+    "mr": 1,
+    "ms": 1,
+    "dr0": 2,
+    "ds0": 2,
+    "h": 1,
+    "g": 1,
+    "eps": 0,
+    "kap": 1,
+    "Ur": 2,
+    "Us": 3,
+    "Urs": 4,
+    "Tr": 1,
+    "Ts": 2,
+    "CR": 2,
+    "CS": 3,
+    "CW": 1,
+    "flow": {
+     "frR": 1,
+     "frW": 0,
+     "fsW": 0,
+     "fsS": 1
+    }
+   }
+  ],
+  "singles": [],
+  "cut": 0,
+  "m": 6
+ },
+ "T1_criticality": {
+  "cR": 0,
+  "cS": 1,
+  "kap": 1,
+  "separate_fail": false,
+  "coupled_ok": true,
+  "critical": false
+ },
+ "T2_no_dualpush": {
+  "accepted": false,
+  "m": 6
+ },
+ "T3_kappa0": {
+  "accepted": false,
+  "m": 6
+ },
+ "T4_R_threshold": {
+  "accepted": false,
+  "m": 6
+ },
+ "T5_rotation": true,
+ "T6_AP": true,
+ "T7_AQ": true,
+ "T8_AR": true,
+ "T9_overlap": "verifier-rejects",
+ "T10_allpos": "reject"
+}

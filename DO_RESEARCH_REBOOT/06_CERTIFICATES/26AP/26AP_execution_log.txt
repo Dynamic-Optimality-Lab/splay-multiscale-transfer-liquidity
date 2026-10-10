@@ -1,0 +1,19 @@
+A_start=(5(4(2(1..)(3..)).)(16(9(6.(8(7..).))(11(10..)(13(12..)(15(14..).)))).))
+B_is_vine=True
+PREFIX A-OK=True
+A CLOSURE: PASS
+B CLOSURE: PASS
+REPETITION CLOSURE: PASS
+CYCLE TABLE: 29/29
+A=46 Q=27 W=-65 (expect 46/27/-65)
+BLOCKS=27 (expect 27)
+positive block idx=[0, 1, 2] deltas=[1, 1, 1] (expect [0,1,2] all +1)
+run packet deltas=[1, 1, 1, -4] (expect [1,1,1,-4])
+K11 a=2 (expect 2; N6 unit-positive need not have a=1)
+former roots: K11->1 K9->11 K16->9 (expect 1 11 9)
+run genuine: [True, True, True] (expect all True)
+return K1: a=3 q=2 (expect 3 2)
+depth(1): after-K11=2 after-K9=2 after-K16=4 (expect 2 2 4)
+tail nonpositive=True
+ENGINE COMPARISON: 38/38 (expect 38/38)
+certificate written

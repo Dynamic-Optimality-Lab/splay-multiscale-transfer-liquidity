@@ -1,0 +1,97 @@
+{
+ "witness": {
+  "accepted": true,
+  "pieces": [
+   {
+    "type": "AQ-bridge",
+    "run1": [
+     0,
+     1
+    ],
+    "bridge": 2,
+    "run2": [
+     3
+    ],
+    "return": 4,
+    "r": 1,
+    "p1": 2,
+    "p2": 1,
+    "p": 3
+   }
+  ],
+  "singles": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27
+  ],
+  "cut": 0,
+  "m": 28
+ },
+ "ap_preservation": {
+  "accepted": true,
+  "pieces": [
+   {
+    "type": "AP-direct",
+    "run": [
+     0,
+     1,
+     2
+    ],
+    "return": 3,
+    "r": 1,
+    "p": 3
+   }
+  ],
+  "singles": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26
+  ],
+  "cut": 0,
+  "m": 27
+ },
+ "S1_direct_p1": "accept",
+ "S2_bridge_p1p2": "accept",
+ "S3_bridge_p2_reject": "reject",
+ "S4_all_positive": "reject"
+}
