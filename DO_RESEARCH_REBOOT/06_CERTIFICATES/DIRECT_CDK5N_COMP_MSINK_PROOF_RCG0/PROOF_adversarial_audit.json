@@ -1,0 +1,394 @@
+[
+ {
+  "id": 1,
+  "attack": "source-SHA",
+  "expected": "4/4 match",
+  "observed": "4/4",
+  "disposition": "PASS"
+ },
+ {
+  "id": 2,
+  "attack": "word-SHA",
+  "expected": "both match",
+  "observed": "[True, True]",
+  "disposition": "PASS"
+ },
+ {
+  "id": 3,
+  "attack": "initial-tree",
+  "expected": "banked T0",
+  "observed": "element-verified at entry",
+  "disposition": "PASS"
+ },
+ {
+  "id": 4,
+  "attack": "pre/post-depth",
+  "expected": "pointer==tuple per access",
+  "observed": "agree=True",
+  "disposition": "PASS"
+ },
+ {
+  "id": 5,
+  "attack": "DELETE-B-freeze",
+  "expected": "B serial unchanged on DELETE",
+  "observed": "True",
+  "disposition": "PASS"
+ },
+ {
+  "id": 6,
+  "attack": "root-only-closure",
+  "expected": "full serials",
+  "observed": "exact labeled equality checked",
+  "disposition": "PASS"
+ },
+ {
+  "id": 7,
+  "attack": "core-size",
+  "expected": "all nine",
+  "observed": "{9}",
+  "disposition": "PASS"
+ },
+ {
+  "id": 8,
+  "attack": "genuine-support",
+  "expected": "{1,3,5,7,9}",
+  "observed": "[1, 3, 5, 7, 9]",
+  "disposition": "PASS"
+ },
+ {
+  "id": 9,
+  "attack": "omitted-access",
+  "expected": "n=36 all replayed",
+  "observed": "True",
+  "disposition": "PASS"
+ },
+ {
+  "id": 10,
+  "attack": "duplicated-A-cost",
+  "expected": "sums exact",
+  "observed": "64/36/16",
+  "disposition": "PASS"
+ },
+ {
+  "id": 11,
+  "attack": "seam",
+  "expected": "cyclic identities",
+  "observed": "H/A,q/Q,c/Ck all exact",
+  "disposition": "PASS"
+ },
+ {
+  "id": 12,
+  "attack": "H>=c",
+  "expected": "all intervals",
+  "observed": "True",
+  "disposition": "PASS"
+ },
+ {
+  "id": 13,
+  "attack": "c=0/q=0",
+  "expected": "all c0 have q=0",
+  "observed": "True",
+  "disposition": "PASS"
+ },
+ {
+  "id": 14,
+  "attack": "q=4-case",
+  "expected": "joint handles full range",
+  "observed": "table verified L4",
+  "disposition": "PASS"
+ },
+ {
+  "id": 15,
+  "attack": "third-exception",
+  "expected": "E==[4,12]",
+  "observed": "[4, 12]",
+  "disposition": "PASS"
+ },
+ {
+  "id": 16,
+  "attack": "relay-maximality",
+  "expected": "maximal scans",
+  "observed": "t={4:0,12:2} maximal by stop-rule",
+  "disposition": "PASS"
+ },
+ {
+  "id": 17,
+  "attack": "first-H4-only",
+  "expected": "exists-rule, 1 sink",
+  "observed": "sinks=[0] enumerated",
+  "disposition": "PASS"
+ },
+ {
+  "id": 18,
+  "attack": "sink-H5",
+  "expected": "joint holds",
+  "observed": "1+1+1<=24",
+  "disposition": "PASS"
+ },
+ {
+  "id": 19,
+  "attack": "sink-overlap",
+  "expected": "p not in E",
+  "observed": "0 not in [4,12]",
+  "disposition": "PASS"
+ },
+ {
+  "id": 20,
+  "attack": "K-relaxed",
+  "expected": "strict dA>=3 enforced (iv8 dA=2 not-K)",
+  "observed": "dA=2",
+  "disposition": "PASS"
+ },
+ {
+  "id": 21,
+  "attack": "P-earlier-DELETE",
+  "expected": "prev-access rule (iv8 strict-P True)",
+  "observed": "verified",
+  "disposition": "PASS"
+ },
+ {
+  "id": 22,
+  "attack": "P-DELETE-cost",
+  "expected": "a>=1 both (D4 a=1)",
+  "observed": "verified",
+  "disposition": "PASS"
+ },
+ {
+  "id": 23,
+  "attack": "P-KEEP-cost",
+  "expected": "KEEP a>=1 (K3 a=1)",
+  "observed": "verified",
+  "disposition": "PASS"
+ },
+ {
+  "id": 24,
+  "attack": "sink-twice",
+  "expected": "disjoint partition",
+  "observed": "p excluded from loop",
+  "disposition": "PASS"
+ },
+ {
+  "id": 25,
+  "attack": "exceptions-twice",
+  "expected": "never recharged",
+  "observed": "partition",
+  "disposition": "PASS"
+ },
+ {
+  "id": 26,
+  "attack": "telescoping",
+  "expected": "4<=96",
+  "observed": "verified",
+  "disposition": "PASS"
+ },
+ {
+  "id": 27,
+  "attack": "circular-Q<=2A",
+  "expected": "no aggregate premise",
+  "observed": "L1-L7 audit",
+  "disposition": "PASS"
+ },
+ {
+  "id": 28,
+  "attack": "replay-as-proof",
+  "expected": "disclaimed",
+  "observed": "doc RCG0 L1-L7",
+  "disposition": "PASS"
+ },
+ {
+  "id": 29,
+  "attack": "sink-strict-K",
+  "expected": "dA=0 not-K; joint needs no K (erratum filed)",
+  "observed": "nonfatal",
+  "disposition": "PASS"
+ },
+ {
+  "id": 30,
+  "attack": "banked-NP",
+  "expected": "audited",
+  "observed": "RCG0 banked results",
+  "disposition": "PASS"
+ },
+ {
+  "id": 31,
+  "attack": "banked-S1",
+  "expected": "audited",
+  "observed": "RCG0 banked results",
+  "disposition": "PASS"
+ },
+ {
+  "id": 32,
+  "attack": "banked-S2",
+  "expected": "audited",
+  "observed": "RCG0 banked results",
+  "disposition": "PASS"
+ },
+ {
+  "id": 33,
+  "attack": "banked-VR",
+  "expected": "audited",
+  "observed": "RCG0 banked results",
+  "disposition": "PASS"
+ },
+ {
+  "id": 34,
+  "attack": "banked-MR",
+  "expected": "audited",
+  "observed": "RCG0 banked results",
+  "disposition": "PASS"
+ },
+ {
+  "id": 35,
+  "attack": "banked-AJ-AK-AL-AM-AN",
+  "expected": "audited",
+  "observed": "RCG0 banked results",
+  "disposition": "PASS"
+ },
+ {
+  "id": 36,
+  "attack": "banked-AO-AP-AQ-AR-AS",
+  "expected": "audited",
+  "observed": "RCG0 banked results",
+  "disposition": "PASS"
+ },
+ {
+  "id": 37,
+  "attack": "child-T0-restart",
+  "expected": "actual states only",
+  "observed": "lockstep+xcheck",
+  "disposition": "PASS"
+ },
+ {
+  "id": 38,
+  "attack": "child-support-core",
+  "expected": "recomputed per segment",
+  "observed": "recomputed",
+  "disposition": "PASS"
+ },
+ {
+  "id": 39,
+  "attack": "nested-rotation",
+  "expected": "children own rr loops",
+  "observed": "code+certs",
+  "disposition": "PASS"
+ },
+ {
+  "id": 40,
+  "attack": "nonflatten-missed",
+  "expected": "no flattening required",
+  "observed": "oracle 19/19",
+  "disposition": "PASS"
+ },
+ {
+  "id": 41,
+  "attack": "non-shorter-child",
+  "expected": "whole edges excluded",
+  "observed": "excluded",
+  "disposition": "PASS"
+ },
+ {
+  "id": 42,
+  "attack": "merged-starts",
+  "expected": "exact (start,canon) keys",
+  "observed": "exact",
+  "disposition": "PASS"
+ },
+ {
+  "id": 43,
+  "attack": "old-IN-novel",
+  "expected": "covered d<=1",
+  "observed": "covered d=1",
+  "disposition": "PASS"
+ },
+ {
+  "id": 44,
+  "attack": "CONCAT-novel",
+  "expected": "covered split17",
+  "observed": "covered",
+  "disposition": "PASS"
+ },
+ {
+  "id": 45,
+  "attack": "witness-substituted",
+  "expected": "frozen pair kept",
+  "observed": "SHAs gated",
+  "disposition": "PASS"
+ },
+ {
+  "id": 46,
+  "attack": "H-mutated",
+  "expected": "frozen text matched",
+  "observed": "31dc3058 provenance",
+  "disposition": "PASS"
+ },
+ {
+  "id": 47,
+  "attack": "erratum-modified",
+  "expected": "immutable files intact",
+  "observed": "git clean",
+  "disposition": "PASS"
+ },
+ {
+  "id": 48,
+  "attack": "verifier-patched",
+  "expected": "no silent patches (git diff clean)",
+  "observed": "clean",
+  "disposition": "PASS"
+ },
+ {
+  "id": 49,
+  "attack": "ledger-early",
+  "expected": "no promotion yet",
+  "observed": "clean",
+  "disposition": "PASS"
+ },
+ {
+  "id": 50,
+  "attack": "02PROVED-early",
+  "expected": "untouched",
+  "observed": "clean",
+  "disposition": "PASS"
+ },
+ {
+  "id": 51,
+  "attack": "universal-marked",
+  "expected": "remains OPEN",
+  "observed": "OPEN",
+  "disposition": "PASS"
+ },
+ {
+  "id": 52,
+  "attack": "K6-marked",
+  "expected": "remains OPEN",
+  "observed": "OPEN",
+  "disposition": "PASS"
+ },
+ {
+  "id": 53,
+  "attack": "DO-marked",
+  "expected": "remains OPEN",
+  "observed": "OPEN",
+  "disposition": "PASS"
+ },
+ {
+  "id": 54,
+  "attack": "unrelated-staged",
+  "expected": "scoped staging only",
+  "observed": "verified pre-commit",
+  "disposition": "PASS"
+ },
+ {
+  "id": 55,
+  "attack": "remote-divergence",
+  "expected": "fast-forward only",
+  "observed": "verified",
+  "disposition": "PASS"
+ },
+ {
+  "id": 56,
+  "attack": "partial-complete",
+  "expected": "complete certs; 0 budget hits",
+  "observed": "complete",
+  "disposition": "PASS"
+ }
+]
