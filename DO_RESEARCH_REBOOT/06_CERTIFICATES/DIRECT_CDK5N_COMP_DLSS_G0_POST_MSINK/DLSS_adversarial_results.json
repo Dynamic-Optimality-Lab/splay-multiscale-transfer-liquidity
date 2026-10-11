@@ -1,0 +1,350 @@
+[
+ {
+  "id": 1,
+  "attack": "MSINK-omitted",
+  "observed": "bank21 includes strict_msink_bank at every level",
+  "disposition": "PASS"
+ },
+ {
+  "id": 2,
+  "attack": "MSINK-root-only",
+  "observed": "MSINK tested per segment (basis fn), not just root",
+  "disposition": "PASS"
+ },
+ {
+  "id": 3,
+  "attack": "twenty-mech-reuse",
+  "observed": "full 20 re-implemented in basis (no stale Booleans)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 4,
+  "attack": "IN-as-MSINK",
+  "observed": "IN t=(2,2): MSINK False, DLSS True (distinct)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 5,
+  "attack": "MR-H6-weakened",
+  "observed": "strict prev-DELETE a>=1-both; OUT iv0 fails exactly",
+  "disposition": "PASS"
+ },
+ {
+  "id": 6,
+  "attack": "both-long-predicate",
+  "observed": "t>=2 both enforced; mixed rejected",
+  "disposition": "PASS"
+ },
+ {
+  "id": 7,
+  "attack": "relay-exactly-two",
+  "observed": "no ==2 restriction in code or docs",
+  "disposition": "PASS"
+ },
+ {
+  "id": 8,
+  "attack": "third-exception",
+  "observed": "E-complete; count==2 enforced",
+  "disposition": "PASS"
+ },
+ {
+  "id": 9,
+  "attack": "nonmaximal-relay",
+  "observed": "stop-at-first-failure maximal scans",
+  "disposition": "PASS"
+ },
+ {
+  "id": 10,
+  "attack": "H4-only-sink",
+  "observed": "joint per-sink exists-rule (IN sinks=[0], CTL=[8])",
+  "disposition": "PASS"
+ },
+ {
+  "id": 11,
+  "attack": "alt-sink-omitted",
+  "observed": "all H>=3 candidates enumerated per word",
+  "disposition": "PASS"
+ },
+ {
+  "id": 12,
+  "attack": "K-to-H",
+  "observed": "strict dA>=3 everywhere; 0 discrepancies",
+  "disposition": "PASS"
+ },
+ {
+  "id": 13,
+  "attack": "P-nonimmediate",
+  "observed": "prev-access gi-1 mod n; 0 discrepancies",
+  "disposition": "PASS"
+ },
+ {
+  "id": 14,
+  "attack": "P-DELETE-cost",
+  "observed": "a>=1 enforced both sides",
+  "disposition": "PASS"
+ },
+ {
+  "id": 15,
+  "attack": "nine-core-interp",
+  "observed": "marked-path-core definition verified (C3)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 16,
+  "attack": "ambient-nine-node",
+  "observed": "paths stay in core; size unrestricted (C3 proof)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 17,
+  "attack": "fixture-as-proof",
+  "observed": "L1-L7 universal; fixtures corroborate only",
+  "disposition": "PASS"
+ },
+ {
+  "id": 18,
+  "attack": "dB-bound-ambient",
+  "observed": "core-nine paths <=8 edges definitionally",
+  "disposition": "PASS"
+ },
+ {
+  "id": 19,
+  "attack": "pre-depth-error",
+  "observed": "pointer==tuple per access, all words",
+  "disposition": "PASS"
+ },
+ {
+  "id": 20,
+  "attack": "DELETE-modifies-B",
+  "observed": "B serial frozen on DELETE (attack-5 style check)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 21,
+  "attack": "root-only-closure",
+  "observed": "full labeled serials compared",
+  "disposition": "PASS"
+ },
+ {
+  "id": 22,
+  "attack": "primitivity-assumed",
+  "observed": "IN 33 distinct recomputed; OUT 33/34 recomputed",
+  "disposition": "PASS"
+ },
+ {
+  "id": 23,
+  "attack": "nested-ignored",
+  "observed": "children own rr loops (code + certs)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 24,
+  "attack": "child-T0-restart",
+  "observed": "replay_from actual states + lockstep",
+  "disposition": "PASS"
+ },
+ {
+  "id": 25,
+  "attack": "child-domain-inherited",
+  "observed": "support/core recomputed per segment",
+  "disposition": "PASS"
+ },
+ {
+  "id": 26,
+  "attack": "recognizer-incomplete",
+  "observed": "exact predicates; 0 INDETERMINATE",
+  "disposition": "PASS"
+ },
+ {
+  "id": 27,
+  "attack": "budget-as-negative",
+  "observed": "budgets separate; 0 hits everywhere",
+  "disposition": "PASS"
+ },
+ {
+  "id": 28,
+  "attack": "IN-substituted",
+  "observed": "frozen b8b02be7 gated by SHA",
+  "disposition": "PASS"
+ },
+ {
+  "id": 29,
+  "attack": "control-substituted",
+  "observed": "frozen 6b242e23 gated by SHA",
+  "disposition": "PASS"
+ },
+ {
+  "id": 30,
+  "attack": "seed-changed",
+  "observed": "4 frozen seeds, SHAs asserted in code",
+  "disposition": "PASS"
+ },
+ {
+  "id": 31,
+  "attack": "d0-skipped",
+  "observed": "all four classified before mutants (record)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 32,
+  "attack": "d0-OUT-skipped",
+  "observed": "no qualifying d0 OUT existed (2 members + 2 banked)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 33,
+  "attack": "d1-before-baseline",
+  "observed": "L1 ran after d0 audit (order logged)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 34,
+  "attack": "order-violated",
+  "observed": "distance/seed/parent/op/index/key enforced in code",
+  "disposition": "PASS"
+ },
+ {
+  "id": 35,
+  "attack": "SHA-only-dedup",
+  "observed": "canon content dedup; SHA reproducibility index",
+  "disposition": "PASS"
+ },
+ {
+  "id": 36,
+  "attack": "third-layer",
+  "observed": "d<=2 enforced; L2 never started (froze at L1)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 37,
+  "attack": "KEEP-mutation",
+  "observed": "DELETE-only ops (grammar audited)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 38,
+  "attack": "extra-seed",
+  "observed": "exactly 4 seeds",
+  "disposition": "PASS"
+ },
+ {
+  "id": 39,
+  "attack": "budget-silentincrease",
+  "observed": "60k/240k coded; tested 9 total",
+  "disposition": "PASS"
+ },
+ {
+  "id": 40,
+  "attack": "earlier-OUT-indet",
+  "observed": "no indeterminates (idx0-3 all decided)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 41,
+  "attack": "OUT-no-recursion",
+  "observed": "OUT recursive negative complete (primitive)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 42,
+  "attack": "OUT-banked",
+  "observed": "21/21 exact negatives on OUT",
+  "disposition": "PASS"
+ },
+ {
+  "id": 43,
+  "attack": "OUT-nonR5",
+  "observed": "5 keys + core9 verified on OUT",
+  "disposition": "PASS"
+ },
+ {
+  "id": 44,
+  "attack": "hypotheses-mutated",
+  "observed": "frozen H1-H6 byte-stable this run",
+  "disposition": "PASS"
+ },
+ {
+  "id": 45,
+  "attack": "second-mechanism",
+  "observed": "one shared-sink mechanism only",
+  "disposition": "PASS"
+ },
+ {
+  "id": 46,
+  "attack": "relay-independent-sub",
+  "observed": "C9 audit: relays classify only",
+  "disposition": "PASS"
+ },
+ {
+  "id": 47,
+  "attack": "global-hypothesis",
+  "observed": "no aggregate premise in H1-H5",
+  "disposition": "PASS"
+ },
+ {
+  "id": 48,
+  "attack": "q4H3-ignored",
+  "observed": "joint table includes tight 4<=4 case",
+  "disposition": "PASS"
+ },
+ {
+  "id": 49,
+  "attack": "reserve-double-spent",
+  "observed": "disjoint partition record",
+  "disposition": "PASS"
+ },
+ {
+  "id": 50,
+  "attack": "Q2A-arithmetic",
+  "observed": "OUT -74 (not -70) filed as erratum",
+  "disposition": "PASS"
+ },
+ {
+  "id": 51,
+  "attack": "census-as-complete",
+  "observed": "finite corpus only; no global claim",
+  "disposition": "PASS"
+ },
+ {
+  "id": 52,
+  "attack": "gate0-as-promotion",
+  "observed": "no promotion (Gate-0 only)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 53,
+  "attack": "02PROVED-modified",
+  "observed": "audit phase: untouched (promotion gated on verdict; re-verified pre-commit)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 54,
+  "attack": "ledger-promoted",
+  "observed": "audit phase: untouched (promotion gated on verdict; re-verified pre-commit)",
+  "disposition": "PASS"
+ },
+ {
+  "id": 55,
+  "attack": "universal-marked",
+  "observed": "remains OPEN",
+  "disposition": "PASS"
+ },
+ {
+  "id": 56,
+  "attack": "DO-marked",
+  "observed": "remains OPEN",
+  "disposition": "PASS"
+ },
+ {
+  "id": 57,
+  "attack": "unrelated-staged",
+  "observed": "scoped staging verified pre-commit",
+  "disposition": "PASS"
+ },
+ {
+  "id": 58,
+  "attack": "remote-divergence",
+  "observed": "fast-forward verified",
+  "disposition": "PASS"
+ }
+]

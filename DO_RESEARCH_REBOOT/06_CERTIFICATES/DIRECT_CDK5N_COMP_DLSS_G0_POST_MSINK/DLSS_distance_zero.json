@@ -1,0 +1,179 @@
+{
+ "IN": {
+  "sha": "b8b02be76c04033741d5f8534d286bbd14f571d3cd995961ac3d3cacb4bedab3",
+  "tot": {
+   "A": 55,
+   "Q": 36,
+   "Ck": 16,
+   "W": 4,
+   "n": 34
+  },
+  "gkeys": [
+   1,
+   3,
+   5,
+   7,
+   9
+  ],
+  "cores9": true,
+  "primitive": true,
+  "direct": [],
+  "strict": {
+   "member": true,
+   "E": [
+    4,
+    12
+   ],
+   "t": {
+    "4": 2,
+    "12": 2
+   },
+   "sinks": [
+    0
+   ],
+   "stage": "member"
+  },
+  "recursive": {
+   "covered": false,
+   "depth": null,
+   "ind": null,
+   "subs": 1
+  },
+  "role": "DLSS MEMBER \u2014 NOT OUT"
+ },
+ "CTL": {
+  "sha": "6b242e23dbcdd11f1bef4a7c9101a6a26b3df44f5bb4452c60b38cc30c7c76cc",
+  "tot": {
+   "A": 55,
+   "Q": 36,
+   "Ck": 16,
+   "W": 4,
+   "n": 34
+  },
+  "gkeys": [
+   1,
+   3,
+   5,
+   7,
+   9
+  ],
+  "cores9": true,
+  "primitive": true,
+  "direct": [],
+  "strict": {
+   "member": true,
+   "E": [
+    4,
+    12
+   ],
+   "t": {
+    "4": 2,
+    "12": 2
+   },
+   "sinks": [
+    8
+   ],
+   "stage": "member"
+  },
+  "recursive": {
+   "covered": false,
+   "depth": null,
+   "ind": null,
+   "subs": 1
+  },
+  "role": "DLSS MEMBER \u2014 NOT OUT"
+ },
+ "mr33": {
+  "sha": "f647667922643558a8f8eed34d58293fc7bda27d053fd56fec35354cdcb2521d",
+  "tot": {
+   "A": 55,
+   "Q": 36,
+   "Ck": 16,
+   "W": 4,
+   "n": 33
+  },
+  "gkeys": [
+   1,
+   3,
+   5,
+   7,
+   9
+  ],
+  "cores9": true,
+  "primitive": true,
+  "direct": [
+   "MR"
+  ],
+  "strict": {
+   "member": true,
+   "E": [
+    4,
+    12
+   ],
+   "t": {
+    "4": 2,
+    "12": 2
+   },
+   "sinks": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    11
+   ],
+   "stage": "member"
+  },
+  "recursive": {
+   "covered": true,
+   "depth": 0,
+   "ind": null,
+   "subs": 1
+  },
+  "role": "DLSS MEMBER \u2014 NOT OUT"
+ },
+ "concat35": {
+  "sha": "7b00897fab01764d14f0c98e6d07daf415839edff31b6f5e90eef93211418bfd",
+  "tot": {
+   "A": 64,
+   "Q": 36,
+   "Ck": 16,
+   "W": 4,
+   "n": 35
+  },
+  "gkeys": [
+   1,
+   3,
+   5,
+   7,
+   9
+  ],
+  "cores9": true,
+  "primitive": false,
+  "direct": [
+   "MSINK"
+  ],
+  "strict": {
+   "member": false,
+   "E": [
+    4,
+    12
+   ],
+   "t": {
+    "4": 0,
+    "12": 2
+   },
+   "sinks": [],
+   "stage": "relay-not-both-long-[0, 2]"
+  },
+  "recursive": {
+   "covered": true,
+   "depth": 0,
+   "ind": null,
+   "subs": 1
+  },
+  "role": "PREVIOUSLY BANKED \u2014 NOT OUT"
+ }
+}
