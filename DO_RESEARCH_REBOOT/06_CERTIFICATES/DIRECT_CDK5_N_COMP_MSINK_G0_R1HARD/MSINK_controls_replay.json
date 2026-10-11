@@ -1,0 +1,35 @@
+{
+ "S1": {
+  "A": 33,
+  "Q": 18,
+  "Ck": 8,
+  "closure": true,
+  "engines": true,
+  "cores9": true
+ },
+ "VR": {
+  "A": 31,
+  "Q": 18,
+  "Ck": 8,
+  "closure": true,
+  "engines": true,
+  "cores9": true
+ },
+ "CONCAT": {
+  "A": 64,
+  "Q": 36,
+  "Ck": 16,
+  "closure": true,
+  "engines": true,
+  "cores9": true
+ },
+ "additive_regression": {
+  "midpoint17_closed": true,
+  "final36_closed": true,
+  "segments": [
+   "S1-banked (33/18/8)",
+   "VR-banked (31/18/8)"
+  ],
+  "additive": "36<=2(64) via 18<=66 and 18<=62"
+ }
+}
