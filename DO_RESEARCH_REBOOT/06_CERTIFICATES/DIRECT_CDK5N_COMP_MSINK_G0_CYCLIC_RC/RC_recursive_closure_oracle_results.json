@@ -1,0 +1,120 @@
+{
+ "tests": [
+  {
+   "name": "direct-banked",
+   "pass": true,
+   "got": "(True, 0)",
+   "want": "(True, 0)"
+  },
+  {
+   "name": "zero-cost",
+   "pass": true,
+   "got": "(True, 0)",
+   "want": "(True, 0)"
+  },
+  {
+   "name": "anchored-2part",
+   "pass": true,
+   "got": "(True, 1)",
+   "want": "(True, 1)"
+  },
+  {
+   "name": "nonanchored-incomplete",
+   "pass": true,
+   "got": "(False, None)",
+   "want": "(False, None)"
+  },
+  {
+   "name": "nonanchored-2part",
+   "pass": true,
+   "got": "(True, 1)",
+   "want": "(True, 1)"
+  },
+  {
+   "name": "nonanchored-r",
+   "pass": true,
+   "got": "1",
+   "want": "1"
+  },
+  {
+   "name": "three-part-flat",
+   "pass": true,
+   "got": "(True, 1)",
+   "want": "(True, 1)"
+  },
+  {
+   "name": "simple-uncovered",
+   "pass": true,
+   "got": "(False, None)",
+   "want": "(False, None)"
+  },
+  {
+   "name": "false-closure",
+   "pass": true,
+   "got": "(False, None)",
+   "want": "(False, None)"
+  },
+  {
+   "name": "depth-two",
+   "pass": true,
+   "got": "(True, 2)",
+   "want": "(True, 2)"
+  },
+  {
+   "name": "depth-two-r0",
+   "pass": true,
+   "got": "0",
+   "want": "0"
+  },
+  {
+   "name": "mixed-depths",
+   "pass": true,
+   "got": "True",
+   "want": "True"
+  },
+  {
+   "name": "child-origin",
+   "pass": true,
+   "got": "(True, 1, 1)",
+   "want": "(True, 1, 1)"
+  },
+  {
+   "name": "nonflatten",
+   "pass": true,
+   "got": "True",
+   "want": "True"
+  },
+  {
+   "name": "string-start-mismatch",
+   "pass": true,
+   "got": "False",
+   "want": "False"
+  },
+  {
+   "name": "rotation-equivalence",
+   "pass": true,
+   "got": "(True, 2)",
+   "want": "(True, 2)"
+  },
+  {
+   "name": "bad-endpoint",
+   "pass": true,
+   "got": "True",
+   "want": "True"
+  },
+  {
+   "name": "incomplete-predicate",
+   "pass": true,
+   "got": "False",
+   "want": "False"
+  },
+  {
+   "name": "budget-analog",
+   "pass": true,
+   "got": "True",
+   "want": "True"
+  }
+ ],
+ "pass": true,
+ "count": 19
+}

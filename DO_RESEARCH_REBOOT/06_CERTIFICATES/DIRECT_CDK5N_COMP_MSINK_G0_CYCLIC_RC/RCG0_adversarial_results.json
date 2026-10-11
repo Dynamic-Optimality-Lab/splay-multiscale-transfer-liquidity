@@ -1,0 +1,352 @@
+[
+ {
+  "id": 1,
+  "attack": "old-IN-novel",
+  "expected": "IN covered r=1 S1(30/18)+VR(31/18)",
+  "observed": "covered",
+  "disposition": "PASS"
+ },
+ {
+  "id": 2,
+  "attack": "CONCAT-novel",
+  "expected": "covered split17",
+  "observed": "covered",
+  "disposition": "PASS"
+ },
+ {
+  "id": 3,
+  "attack": "direct-missed",
+  "expected": "NP/S1/S2/VR/MR depth0 exact",
+  "observed": "all depth0",
+  "disposition": "PASS"
+ },
+ {
+  "id": 4,
+  "attack": "nonanchored-missed",
+  "expected": "r!=0 decomps found",
+  "observed": "21 found",
+  "disposition": "PASS"
+ },
+ {
+  "id": 5,
+  "attack": "nested-missed",
+  "expected": "recursion+depth2 oracle",
+  "observed": "oracle 19/19",
+  "disposition": "PASS"
+ },
+ {
+  "id": 6,
+  "attack": "depth2-oracle",
+  "expected": "mandatory abstract depth-two",
+  "observed": "covered d2",
+  "disposition": "PASS"
+ },
+ {
+  "id": 7,
+  "attack": "child-seam",
+  "expected": "children own rotations",
+  "observed": "per-child rr loop",
+  "disposition": "PASS"
+ },
+ {
+  "id": 8,
+  "attack": "child-rotation",
+  "expected": "nested rotations allowed",
+  "observed": "allowed",
+  "disposition": "PASS"
+ },
+ {
+  "id": 9,
+  "attack": "child-T0-restart",
+  "expected": "replay_from actual states",
+  "observed": "lockstep+xcheck",
+  "disposition": "PASS"
+ },
+ {
+  "id": 10,
+  "attack": "unreachable-start",
+  "expected": "parent-trajectory reachability",
+  "observed": "proved",
+  "disposition": "PASS"
+ },
+ {
+  "id": 11,
+  "attack": "string-merged",
+  "expected": "memo (start,canon) keys",
+  "observed": "exact keys",
+  "disposition": "PASS"
+ },
+ {
+  "id": 12,
+  "attack": "full-length-child",
+  "expected": "whole edges excluded",
+  "observed": "excluded",
+  "disposition": "PASS"
+ },
+ {
+  "id": 13,
+  "attack": "infinite-recursion",
+  "expected": "strict length decrease",
+  "observed": "terminates",
+  "disposition": "PASS"
+ },
+ {
+  "id": 14,
+  "attack": "depth-cutoff",
+  "expected": "no cutoff; budgets INDETERMINATE",
+  "observed": "0 hits",
+  "disposition": "PASS"
+ },
+ {
+  "id": 15,
+  "attack": "cap-as-negative",
+  "expected": "caps separate from verdict",
+  "observed": "0 hits",
+  "disposition": "PASS"
+ },
+ {
+  "id": 16,
+  "attack": "incomplete-recognizer",
+  "expected": "all executed; 0 INDETERMINATE",
+  "observed": "0 indet",
+  "disposition": "PASS"
+ },
+ {
+  "id": 17,
+  "attack": "keep-support",
+  "expected": "per-segment recompute",
+  "observed": "recomputed",
+  "disposition": "PASS"
+ },
+ {
+  "id": 18,
+  "attack": "core-profile",
+  "expected": "per-state serial cores",
+  "observed": "recomputed",
+  "disposition": "PASS"
+ },
+ {
+  "id": 19,
+  "attack": "RT2-CDK4-CDK5L",
+  "expected": "predicates + positive paths",
+  "observed": "verified",
+  "disposition": "PASS"
+ },
+ {
+  "id": 20,
+  "attack": "rotated-membership",
+  "expected": "invariant battery + spots",
+  "observed": "identical",
+  "disposition": "PASS"
+ },
+ {
+  "id": 21,
+  "attack": "AS-push",
+  "expected": "lockstep+T1+parity",
+  "observed": "verified",
+  "disposition": "PASS"
+ },
+ {
+  "id": 22,
+  "attack": "root-closure",
+  "expected": "full serials",
+  "observed": "exact",
+  "disposition": "PASS"
+ },
+ {
+  "id": 23,
+  "attack": "boundary-index",
+  "expected": "mod-n + closure asserts",
+  "observed": "verified",
+  "disposition": "PASS"
+ },
+ {
+  "id": 24,
+  "attack": "access-accounting",
+  "expected": "additivity per cert",
+  "observed": "holds",
+  "disposition": "PASS"
+ },
+ {
+  "id": 25,
+  "attack": "restart-costs",
+  "expected": "lockstep+xcheck",
+  "observed": "True",
+  "disposition": "PASS"
+ },
+ {
+  "id": 26,
+  "attack": "A0-sound",
+  "expected": "lemma proved + Z-fail path",
+  "observed": "proved",
+  "disposition": "PASS"
+ },
+ {
+  "id": 27,
+  "attack": "zero-cost-false-pos",
+  "expected": "closed+A0+Q0+1key required",
+  "observed": "enforced",
+  "disposition": "PASS"
+ },
+ {
+  "id": 28,
+  "attack": "direct-domain",
+  "expected": "support/core/genuine enforced",
+  "observed": "enforced",
+  "disposition": "PASS"
+ },
+ {
+  "id": 29,
+  "attack": "broad-K",
+  "expected": "strict dA>=3; 0 discrepancies",
+  "observed": "0 disc",
+  "disposition": "PASS"
+ },
+ {
+  "id": 30,
+  "attack": "broad-P",
+  "expected": "strict prev-DELETE; 0 discrepancies",
+  "observed": "0 disc",
+  "disposition": "PASS"
+ },
+ {
+  "id": 31,
+  "attack": "nonimmediate-DELETE",
+  "expected": "gi-1 mod n indexing",
+  "observed": "exact",
+  "disposition": "PASS"
+ },
+ {
+  "id": 32,
+  "attack": "H4-only-sink",
+  "expected": "joint per-sink exists-rule",
+  "observed": "exists",
+  "disposition": "PASS"
+ },
+ {
+  "id": 33,
+  "attack": "first-sink-hides",
+  "expected": "all sinks enumerated",
+  "observed": "enumerated",
+  "disposition": "PASS"
+ },
+ {
+  "id": 34,
+  "attack": "third-exception",
+  "expected": "E-complete count==2",
+  "observed": "enforced",
+  "disposition": "PASS"
+ },
+ {
+  "id": 35,
+  "attack": "nonmaximal-relay",
+  "expected": "maximal scans",
+  "observed": "maximal",
+  "disposition": "PASS"
+ },
+ {
+  "id": 36,
+  "attack": "double-spend",
+  "expected": "disjoint partition record",
+  "observed": "disjoint",
+  "disposition": "PASS"
+ },
+ {
+  "id": 37,
+  "attack": "negative-omits",
+  "expected": "exhaustive DP + flags",
+  "observed": "exhaustive",
+  "disposition": "PASS"
+ },
+ {
+  "id": 38,
+  "attack": "positive-uncovered-leaf",
+  "expected": "every part certified",
+  "observed": "certified",
+  "disposition": "PASS"
+ },
+ {
+  "id": 39,
+  "attack": "flattened",
+  "expected": "own frames + bounds per part",
+  "observed": "kept",
+  "disposition": "PASS"
+ },
+ {
+  "id": 40,
+  "attack": "IN-substituted",
+  "expected": "assigned IN-new used; old-IN intact",
+  "observed": "no subst",
+  "disposition": "PASS"
+ },
+ {
+  "id": 41,
+  "attack": "candidate-substituted",
+  "expected": "no substitution",
+  "observed": "none",
+  "disposition": "PASS"
+ },
+ {
+  "id": 42,
+  "attack": "H-mutated",
+  "expected": "frozen text matched exactly",
+  "observed": "unchanged",
+  "disposition": "PASS"
+ },
+ {
+  "id": 43,
+  "attack": "erratum-overwritten",
+  "expected": "erratum files untouched",
+  "observed": "intact",
+  "disposition": "PASS"
+ },
+ {
+  "id": 44,
+  "attack": "R1-from-OUT",
+  "expected": "both witnesses in cert",
+  "observed": "both",
+  "disposition": "PASS"
+ },
+ {
+  "id": 45,
+  "attack": "R4-from-W",
+  "expected": "full exclusion (W noted only)",
+  "observed": "exclusion",
+  "disposition": "PASS"
+ },
+ {
+  "id": 46,
+  "attack": "replay-as-proof",
+  "expected": "disclaimed; L1-L7 separate",
+  "observed": "disclaimed",
+  "disposition": "PASS"
+ },
+ {
+  "id": 47,
+  "attack": "partial-PASS",
+  "expected": "complete certs; 0 budget hits",
+  "observed": "complete",
+  "disposition": "PASS"
+ },
+ {
+  "id": 48,
+  "attack": "02PROVED-modified",
+  "expected": "untouched",
+  "observed": "clean",
+  "disposition": "PASS"
+ },
+ {
+  "id": 49,
+  "attack": "ledger-promoted",
+  "expected": "untouched",
+  "observed": "clean",
+  "disposition": "PASS"
+ },
+ {
+  "id": 50,
+  "attack": "history-overwritten",
+  "expected": "no destructive ops",
+  "observed": "preserved",
+  "disposition": "PASS"
+ }
+]

@@ -1,0 +1,96 @@
+{
+ "old-IN": {
+  "covered": true,
+  "depth": 1,
+  "cert": {
+   "r": 1,
+   "cuts": [
+    0,
+    16,
+    34
+   ],
+   "bounds": [
+    [
+     1,
+     17
+    ],
+    [
+     17,
+     1
+    ]
+   ],
+   "depth": 1,
+   "kids": [
+    {
+     "covered": true,
+     "depth": 0,
+     "cert": {
+      "basis": "RotB",
+      "mechanisms": [
+       "S1"
+      ],
+      "A": 30,
+      "Q": 18
+     },
+     "n": 16,
+     "A": 30,
+     "Q": 18
+    },
+    {
+     "covered": true,
+     "depth": 0,
+     "cert": {
+      "basis": "RotB",
+      "mechanisms": [
+       "VR"
+      ],
+      "A": 31,
+      "Q": 18
+     },
+     "n": 18,
+     "A": 31,
+     "Q": 18
+    }
+   ]
+  }
+ },
+ "CONCAT": {
+  "covered": true,
+  "depth": 1
+ },
+ "NP": {
+  "covered": true,
+  "depth": 0,
+  "mech": [
+   "NP"
+  ]
+ },
+ "S1": {
+  "covered": true,
+  "depth": 0,
+  "mech": [
+   "S1"
+  ]
+ },
+ "S2": {
+  "covered": true,
+  "depth": 0,
+  "mech": [
+   "S2"
+  ]
+ },
+ "VR": {
+  "covered": true,
+  "depth": 0,
+  "mech": [
+   "VR"
+  ]
+ },
+ "MR": {
+  "covered": true,
+  "depth": 0,
+  "mech": [
+   "MR"
+  ]
+ }
+}
