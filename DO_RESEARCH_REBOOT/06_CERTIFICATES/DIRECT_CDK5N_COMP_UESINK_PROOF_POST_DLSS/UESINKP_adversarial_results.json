@@ -1,0 +1,562 @@
+[
+ {
+  "id": 1,
+  "attack": "entry-checkpoint-spoofed",
+  "observed": "HEAD==f902c36",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 2,
+  "attack": "malformed-checkpoint",
+  "observed": "format+ancestry verified at entry (doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 3,
+  "attack": "source-SHA",
+  "observed": "4/4 match",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 4,
+  "attack": "IN-SHA",
+  "observed": "exact",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 5,
+  "attack": "OUT-SHA",
+  "observed": "exact",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 6,
+  "attack": "T0-fixture",
+  "observed": "element-equal 9-node tree",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 7,
+  "attack": "access-order",
+  "observed": "D5,D4,D3,K3,K7,D5",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 8,
+  "attack": "pre-post-depth",
+  "observed": "agree+closed",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 9,
+  "attack": "DELETE-B-freeze",
+  "observed": "17/17 DELETEs freeze B",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 10,
+  "attack": "DELETE-removes-key",
+  "observed": "depths defined (keys present)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 11,
+  "attack": "absent-key",
+  "observed": "raised ReplayError",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 12,
+  "attack": "root-closure",
+  "observed": "full labeled serials",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 13,
+  "attack": "two-exceptions-as-one",
+  "observed": "E=[12] unique",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 14,
+  "attack": "zero-exceptions-as-one",
+  "observed": "count==1",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 15,
+  "attack": "hidden-E-slot",
+  "observed": "complete scan",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 16,
+  "attack": "nonmaximal-relay",
+  "observed": "t=2 maximal (next H=2)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 17,
+  "attack": "short-relay-accepted",
+  "observed": "t>=2 enforced in strict_uesink (relay-short stage)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 18,
+  "attack": "relay-exactly-two",
+  "observed": "no ==2 restriction in code or docs",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 19,
+  "attack": "H4-only-sink",
+  "observed": "exists-rule: all H>=3 tested, joint required (IN sinks=[0])",
+  "kind": "proof+exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 20,
+  "attack": "nonimmediate-DELETE",
+  "observed": "prev-access is DELETE",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 21,
+  "attack": "K-to-H",
+  "observed": "iv0 H=18 but strict-K False (dA=0)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 22,
+  "attack": "P-costs",
+  "observed": "D4 a>=1 + K3 a>=1",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 23,
+  "attack": "alt-sink-omitted",
+  "observed": "strict_uesink enumerates all p (IN: [0]; CTL: [8])",
+  "kind": "proof+exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 24,
+  "attack": "sink-overlap",
+  "observed": "p=0 not in E=[12]",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 25,
+  "attack": "nonpositive-mishandled",
+  "observed": "w<=0<=R throughout",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 26,
+  "attack": "q4-omitted",
+  "observed": "joint table incl tight 4<=4 (L-doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 27,
+  "attack": "ambient-nine-global",
+  "observed": "paths-in-core proof (no global assumption)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 28,
+  "attack": "H>=c-unproved",
+  "observed": "16/16 (A-root-change)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 29,
+  "attack": "sink-twice",
+  "observed": "p excluded from others (code+doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 30,
+  "attack": "exception-twice",
+  "observed": "partition disjoint (code+doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 31,
+  "attack": "Q<=2Ck-premise",
+  "observed": "H6 conclusion-only (frozen text)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 32,
+  "attack": "circular-Q<=2A",
+  "observed": "no aggregate premise (L-doc audit)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 33,
+  "attack": "relay-as-credit",
+  "observed": "L8 audit (bridges are singletons)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 34,
+  "attack": "fixture-as-proof",
+  "observed": "universal quantifiers; fixtures corroborate",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 35,
+  "attack": "MSINK-in-bank",
+  "observed": "strict_msink_bank exists-version in basis (160 census flags)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 36,
+  "attack": "DLSS-in-bank",
+  "observed": "strict_dlss_bank exists-version in basis (125 census flags)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 37,
+  "attack": "proved-theorem-missing",
+  "observed": "22 inventory reconciled (doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 38,
+  "attack": "rotation-missed",
+  "observed": "33+32 rotations all-negative",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 39,
+  "attack": "spot-invariance",
+  "observed": "cyclic constructions + 8-word spots",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 40,
+  "attack": "IN-statecount",
+  "observed": "33/33",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 41,
+  "attack": "OUT-statecount",
+  "observed": "32/32",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 42,
+  "attack": "nonprimitive-primitive",
+  "observed": "repeats==[] enumerated (not assumed)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 43,
+  "attack": "segment-missed",
+  "observed": "pair-equality classes complete by construction",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 44,
+  "attack": "nested-missed",
+  "observed": "children own rr loops (engine+oracle 19/19)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 45,
+  "attack": "T0-restart",
+  "observed": "replay_from actual states + xcheck True",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 46,
+  "attack": "support-inherited",
+  "observed": "per-segment recompute (code)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 47,
+  "attack": "starts-merged",
+  "observed": "exact (start,canon) memo keys (code)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 48,
+  "attack": "failed-predicate-False",
+  "observed": "exact predicates; None=>INDETERMINATE (fresh checker)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 49,
+  "attack": "budget-as-uncovered",
+  "observed": "budgets separate; 0 hits",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 50,
+  "attack": "boolean-negcert",
+  "observed": "full per-subproblem records (neg DAGs)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 51,
+  "attack": "UESINK-in-baseline",
+  "observed": "excluded from C22* (construction)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 52,
+  "attack": "oldIN-regress",
+  "observed": "DIRECT-MSINK depth-0 (rerun record)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 53,
+  "attack": "oracle-regress",
+  "observed": "19/19 rerun (record)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 54,
+  "attack": "IN-replaced",
+  "observed": "SHA-gated",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 55,
+  "attack": "OUT-replaced",
+  "observed": "SHA-gated",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 56,
+  "attack": "control-as-OUT",
+  "observed": "control DLSS-member (worksheet); OUT is idx8",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 57,
+  "attack": "earlier-skipped",
+  "observed": "idx0-7 decided (manifest+provenance)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 58,
+  "attack": "concurrent-concealed",
+  "observed": "single-seed L1 only (state dirs prove it)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 59,
+  "attack": "gate0-copied",
+  "observed": "fresh L-docs/replay/checker this run",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 60,
+  "attack": "history-altered",
+  "observed": "tracked clean:''",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 61,
+  "attack": "erratum-rewritten",
+  "observed": "append-only new files; originals byte-intact",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 62,
+  "attack": "02PROVED-early",
+  "observed": "no UESINK theorem yet:''",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 63,
+  "attack": "ledger-early",
+  "observed": "verified pre-commit (attack 60 scope)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 64,
+  "attack": "complement-PROVED",
+  "observed": "remains OPEN (verdict scope)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 65,
+  "attack": "K6-marked",
+  "observed": "remains OPEN",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 66,
+  "attack": "universal-marked",
+  "observed": "remains OPEN",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 67,
+  "attack": "DO-marked",
+  "observed": "remains OPEN (verdict scope)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 68,
+  "attack": "unrelated-staged",
+  "observed": "verified pre-commit",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 69,
+  "attack": "remote-divergence",
+  "observed": "local==remote HEAD",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 70,
+  "attack": "entry-HEAD-exact",
+  "observed": "HEAD==checkpoint",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 71,
+  "attack": "ancestry-exact",
+  "observed": "checkpoint ancestor of HEAD",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 72,
+  "attack": "MSINK-artifacts-intact",
+  "observed": "MSINK theorem logged",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 73,
+  "attack": "DLSS-artifacts-intact",
+  "observed": "DLSS theorem logged",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 74,
+  "attack": "staged-scope",
+  "observed": "dir contains only UESINKP_/usearch_ files",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 75,
+  "attack": "theorem-path",
+  "observed": "02_PROVED target filename fixed (promotion step)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 76,
+  "attack": "ledger-diff",
+  "observed": "no UESINK row yet",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 77,
+  "attack": "deps-diff",
+  "observed": "no UESINK addendum yet",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 78,
+  "attack": "historical-preservation",
+  "observed": "Gate-0 dirs byte-intact (git status clean for tracked)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 79,
+  "attack": "source-preservation",
+  "observed": "source SHAs verified (attacks 3,60 scope)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 80,
+  "attack": "commit-message",
+  "observed": "message fixed at commit step (promotion protocol)",
+  "kind": "proof",
+  "disposition": "PASS"
+ }
+]
