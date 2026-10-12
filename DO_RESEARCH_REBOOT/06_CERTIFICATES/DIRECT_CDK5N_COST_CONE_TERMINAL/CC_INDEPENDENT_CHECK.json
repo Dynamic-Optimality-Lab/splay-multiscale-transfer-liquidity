@@ -1,0 +1,35 @@
+{
+ "pass": true,
+ "checks": [
+  {
+   "check": "cert-stable",
+   "pass": true,
+   "observed": "iters=6"
+  },
+  {
+   "check": "phase-closed",
+   "pass": true,
+   "observed": "low BFS closed"
+  },
+  {
+   "check": "potential-size",
+   "pass": true,
+   "observed": "388433 entries"
+  },
+  {
+   "check": "low-edge-inequalities-sample",
+   "pass": true,
+   "observed": "1081/1081 sampled macro edges satisfy w>=Phi(dst)-Phi(src)"
+  },
+  {
+   "check": "highcost-max-constraints-sample",
+   "pass": true,
+   "observed": "673/673 sampled"
+  },
+  {
+   "check": "corpus-inequality",
+   "pass": true,
+   "observed": "SELR-OUT satisfies Q<=2A"
+  }
+ ]
+}

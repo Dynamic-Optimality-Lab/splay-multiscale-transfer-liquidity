@@ -1,0 +1,67 @@
+{
+ "pass": true,
+ "checks": [
+  {
+   "check": "A-SELR-OUT",
+   "pass": true,
+   "observed": [
+    30,
+    52,
+    36
+   ]
+  },
+  {
+   "check": "A-closed-core",
+   "pass": true,
+   "observed": "closure+core9"
+  },
+  {
+   "check": "B-E3",
+   "pass": true,
+   "observed": "A=53 Q=36"
+  },
+  {
+   "check": "B-zeroGamma-E3",
+   "pass": true,
+   "observed": "E3 a=1/q=3 present"
+  },
+  {
+   "check": "C-zeroA-migration",
+   "pass": true,
+   "observed": "A=50 Q=36, a=0/q=2@[16]"
+  },
+  {
+   "check": "D-vine-depths",
+   "pass": true,
+   "observed": [
+    8,
+    2,
+    4,
+    4,
+    4,
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "check": "E-rootswitch",
+   "pass": true,
+   "observed": [
+    2,
+    2,
+    3,
+    2,
+    2,
+    2,
+    3,
+    2
+   ]
+  },
+  {
+   "check": "F-projection-fails",
+   "pass": true,
+   "observed": "prune-then-splay != splay-then-prune"
+  }
+ ]
+}

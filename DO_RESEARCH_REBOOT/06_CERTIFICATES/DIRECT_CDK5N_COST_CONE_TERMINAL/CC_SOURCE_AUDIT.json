@@ -1,0 +1,45 @@
+{
+ "pass": true,
+ "checks": [
+  {
+   "check": "D-rotations-eq-depth",
+   "pass": true,
+   "observed": "15521/15521 splay(depth)==rotations, root-ok"
+  },
+  {
+   "check": "E-cost",
+   "pass": true,
+   "observed": "a=ceil(d/2) definitional"
+  },
+  {
+   "check": "A-absent-raises",
+   "pass": true,
+   "observed": "fail-closed"
+  },
+  {
+   "check": "B-DELETE-freeze",
+   "pass": true,
+   "observed": "B frozen across DELETEs"
+  },
+  {
+   "check": "C-pre-depth",
+   "pass": true,
+   "observed": "T0 d(5)=4 pre-access, a=2"
+  },
+  {
+   "check": "F-nongenuine-noop",
+   "pass": true,
+   "observed": "q=0/chg=False only at root"
+  },
+  {
+   "check": "engines-agree",
+   "pass": true,
+   "observed": "60/60 pointer/tuple agree (or joint raise)"
+  },
+  {
+   "check": "G-closure-full",
+   "pass": true,
+   "observed": "labeled equality"
+  }
+ ]
+}

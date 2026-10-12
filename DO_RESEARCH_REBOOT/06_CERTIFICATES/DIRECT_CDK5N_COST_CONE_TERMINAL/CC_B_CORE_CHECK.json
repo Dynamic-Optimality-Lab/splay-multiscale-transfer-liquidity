@@ -1,0 +1,25 @@
+{
+ "pass": true,
+ "checks": [
+  {
+   "check": "core-monotone",
+   "pass": true,
+   "observed": "2144/2144 B-steps monotone (incl DELETE-equal)"
+  },
+  {
+   "check": "core-constant-closed",
+   "pass": true,
+   "observed": "62/62 closed walks constant-9"
+  },
+  {
+   "check": "projection-commutes",
+   "pass": true,
+   "observed": "splay/projection commutation"
+  },
+  {
+   "check": "marked-depths-equal",
+   "pass": true,
+   "observed": "B vs projected depths"
+  }
+ ]
+}

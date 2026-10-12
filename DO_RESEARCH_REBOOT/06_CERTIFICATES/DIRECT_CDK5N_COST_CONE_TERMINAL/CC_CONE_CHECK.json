@@ -1,0 +1,25 @@
+{
+ "pass": true,
+ "checks": [
+  {
+   "check": "displacement-le1",
+   "pass": true,
+   "observed": "3456/3456 rotations displace <=1"
+  },
+  {
+   "check": "zero-op-identity",
+   "pass": true,
+   "observed": "625/625 root accesses identity"
+  },
+  {
+   "check": "nontrivial-le-H",
+   "pass": true,
+   "observed": "300 random intervals"
+  },
+  {
+   "check": "accessed-in-2H",
+   "pass": true,
+   "observed": "747/747 targets initially within 2H"
+  }
+ ]
+}
