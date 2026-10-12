@@ -1,0 +1,306 @@
+{
+ "rows": [
+  {
+   "name": "IN",
+   "n": 32,
+   "ind": [
+    false,
+    null,
+    false
+   ],
+   "rc": [
+    false,
+    null,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "OUT",
+   "n": 31,
+   "ind": [
+    false,
+    null,
+    false
+   ],
+   "rc": [
+    false,
+    null,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "CTL",
+   "n": 34,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "old-IN",
+   "n": 34,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "CONCAT",
+   "n": 35,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "NP",
+   "n": 17,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "S1",
+   "n": 17,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "S2",
+   "n": 18,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "VR",
+   "n": 18,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "MR",
+   "n": 33,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "sample-0",
+   "n": 36,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "sample-1",
+   "n": 36,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "sample-2",
+   "n": 36,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "sample-3",
+   "n": 36,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "sample-4",
+   "n": 36,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "sample-5",
+   "n": 34,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "sample-6",
+   "n": 34,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  },
+  {
+   "name": "sample-7",
+   "n": 34,
+   "ind": [
+    true,
+    0,
+    false
+   ],
+   "rc": [
+    true,
+    0,
+    false
+   ],
+   "agree": true,
+   "calls": 1
+  }
+ ],
+ "mismatch": [],
+ "agree": true,
+ "shared_primitives": [
+  "pointer+tuple lockstep replay",
+  "20 exact predicates + MSINK/DLSS/UESINK exists predicates",
+  "merged/per-leg block builders"
+ ],
+ "independent_parts": [
+  "memo tables",
+  "DP (exhaustive-paths vs Dijkstra)",
+  "canonical selection",
+  "certificate format",
+  "budget counters"
+ ]
+}
