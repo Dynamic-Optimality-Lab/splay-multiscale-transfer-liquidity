@@ -1,0 +1,268 @@
+[
+ {
+  "id": 1,
+  "attack": "KEEP-update",
+  "observed": "non-root KEEPs change A",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 2,
+  "attack": "DELETE-B-frozen",
+  "observed": "14/14 freeze B",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 3,
+  "attack": "StepEv-cost",
+  "observed": "ceil/floor all 30",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 4,
+  "attack": "absent-key",
+  "observed": "fail-closed (raised ReplayError)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 5,
+  "attack": "unreachable-state",
+  "observed": "fail-closed (raised ValueError)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 6,
+  "attack": "root-only-closure",
+  "observed": "full labeled serials",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 7,
+  "attack": "marked-core",
+  "observed": "31 boundaries core9",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 8,
+  "attack": "fringe-preserved",
+  "observed": "ambient nodes present, core=9 subset",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 9,
+  "attack": "L0-multi-nz",
+  "observed": "one nonzero each ([4, 12])",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 10,
+  "attack": "L0-nz-target",
+  "observed": "nonzero targets v",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 11,
+  "attack": "L0-depth12",
+  "observed": "depths 1-2",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 12,
+  "attack": "L0-wrong-target",
+  "observed": "nonzero-on-DELETE still targets v (4 corpus cases; proof handles)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 13,
+  "attack": "L0-Bfrozen",
+  "observed": "B frozen in intervals",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 14,
+  "attack": "L0-E3depth",
+  "observed": "6-7 verified (670 corpus intervals; tmp_L0full PASS)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 15,
+  "attack": "L0-E4depth",
+  "observed": "depth-8 clause vacuous on corpus (no E4 observed); retained universally",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 16,
+  "attack": "L0-gap",
+  "observed": ">=4 verified (670/670); proof arithmetic 6-2",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 17,
+  "attack": "disparity-is-credit",
+  "observed": "168 E3 with net drop<1: gap exists but unpaid",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 18,
+  "attack": "persistent-reuse",
+  "observed": "168 offsets show rises consuming elimination (tmp_rise max 3)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 19,
+  "attack": "missing-payment",
+  "observed": "C1 cost-link unproved (record, not assumed)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 20,
+  "attack": "duplicate-surplus",
+  "observed": "no charge map constructed; nothing double-spent (nothing spent)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 21,
+  "attack": "injection-assumed",
+  "observed": "no Psi assumed (\u00a77.3 honored; G6 N/A)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 22,
+  "attack": "circular-potential",
+  "observed": "Gamma telescoping FALSIFIED (206 corpus + 168 audit); not used",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 23,
+  "attack": "transition-omitted",
+  "observed": "ledger tracks per-access gaps; no repayment edges inferred",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 24,
+  "attack": "long-relay",
+  "observed": "relays classified; no universal relay payment claimed",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 25,
+  "attack": "E4-two-units",
+  "observed": "E4 needs 2 units; no E4 donor constructed (0 observed; open)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 26,
+  "attack": "fringe-invalidates",
+  "observed": "L0/G1-G3 ambient-free; G4+ open at every scope (no shortcut)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 27,
+  "attack": "irreversibility",
+  "observed": "no reversibility used (forward replay only)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 28,
+  "attack": "cyclic-boundary",
+  "observed": "seam handled (cyclic segi; wraparound verified in L0 scripts)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 29,
+  "attack": "restricted-substitute",
+  "observed": "no global theorem file",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 30,
+  "attack": "residual-empty",
+  "observed": "emptiness not claimed",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 31,
+  "attack": "nonprimitive-ignored",
+  "observed": "checker covers nonprimitive (CYCLIC/CONCAT/shift xval 6/6)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 32,
+  "attack": "unknown-as-negative",
+  "observed": "750 recomputed EXCLUDED (none silent)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 33,
+  "attack": "finite-as-universal",
+  "observed": "46008 holds \u2260 proof (reported as finite)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 34,
+  "attack": "length-inference",
+  "observed": "no length generalization (arbitrary lengths open)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 35,
+  "attack": "existence-burden",
+  "observed": "G14: no objects introduced (nothing unproved smuggled)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 36,
+  "attack": "R1T-as-R1",
+  "observed": "charter records R1-T replacing R1 for Stage 10",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 37,
+  "attack": "universal-CD",
+  "observed": "universal Coarse-Double not promoted",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 38,
+  "attack": "DO-promoted",
+  "observed": "DO remains OPEN (verdict scope)",
+  "kind": "proof",
+  "disposition": "PASS"
+ }
+]
