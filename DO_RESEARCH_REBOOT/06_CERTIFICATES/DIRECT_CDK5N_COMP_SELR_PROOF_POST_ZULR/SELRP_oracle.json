@@ -1,0 +1,141 @@
+{
+ "tests": [
+  {
+   "name": "direct-banked",
+   "pass": true,
+   "got": "True"
+  },
+  {
+   "name": "zero-cost-path",
+   "pass": true,
+   "got": "empty-base-uncovered-or-unknown"
+  },
+  {
+   "name": "zulr-covered",
+   "pass": true,
+   "got": "('COVERED', 0)"
+  },
+  {
+   "name": "nonclosed-segment",
+   "pass": true,
+   "got": "SOURCE-INVALID"
+  },
+  {
+   "name": "selr-in-uncovered",
+   "pass": true,
+   "got": "UNCOVERED"
+  },
+  {
+   "name": "rotation-fidelity",
+   "pass": true,
+   "got": "True"
+  },
+  {
+   "name": "out-uncovered",
+   "pass": true,
+   "got": "UNCOVERED"
+  },
+  {
+   "name": "out-direct-negative",
+   "pass": true,
+   "got": "True"
+  },
+  {
+   "name": "false-closure",
+   "pass": true,
+   "got": "ReplayError"
+  },
+  {
+   "name": "relay-maximal",
+   "pass": true,
+   "got": "0"
+  },
+  {
+   "name": "donor-boundary",
+   "pass": true,
+   "got": "w=1,R=2"
+  },
+  {
+   "name": "out-exception-pair",
+   "pass": true,
+   "got": "([4, 12], [0, 4, 12])"
+  },
+  {
+   "name": "memo-exactness",
+   "pass": true,
+   "got": "(1, 1)"
+  },
+  {
+   "name": "canon-roundtrip",
+   "pass": true,
+   "got": "True"
+  },
+  {
+   "name": "string-start-mismatch",
+   "pass": true,
+   "got": "UNCOVERED"
+  },
+  {
+   "name": "rotation-equivalence",
+   "pass": true,
+   "got": "31/31 close"
+  },
+  {
+   "name": "bad-endpoint",
+   "pass": true,
+   "got": "True"
+  },
+  {
+   "name": "incomplete-predicate",
+   "pass": true,
+   "got": "E-count-0"
+  },
+  {
+   "name": "budget-analog",
+   "pass": true,
+   "got": "cap"
+  },
+  {
+   "name": "rotated-base-loop-runs",
+   "pass": true,
+   "got": "31"
+  },
+  {
+   "name": "child-start-fidelity",
+   "pass": true,
+   "got": "30/30 T0-mismatches"
+  },
+  {
+   "name": "incomplete-recognizer",
+   "pass": true,
+   "got": "['ZULR:RuntimeError']"
+  },
+  {
+   "name": "recognizer-taint",
+   "pass": true,
+   "got": "INDETERMINATE"
+  },
+  {
+   "name": "primitive-completeness",
+   "pass": true,
+   "got": "primitive-no-proper-segments"
+  },
+  {
+   "name": "nonprimitive-positive",
+   "pass": true,
+   "got": "('COVERED', 1)"
+  },
+  {
+   "name": "invalid-start",
+   "pass": true,
+   "got": "INDETERMINATE"
+  },
+  {
+   "name": "empty-word",
+   "pass": true,
+   "got": "SOURCE-INVALID"
+  }
+ ],
+ "pass": true,
+ "count": 27
+}

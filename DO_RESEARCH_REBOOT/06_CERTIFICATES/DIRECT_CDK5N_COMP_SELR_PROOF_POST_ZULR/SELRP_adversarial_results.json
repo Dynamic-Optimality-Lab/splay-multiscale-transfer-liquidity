@@ -1,0 +1,632 @@
+[
+ {
+  "id": 1,
+  "attack": "entry-checkpoint",
+  "observed": "HEAD==3701f73",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 2,
+  "attack": "parent-ancestry",
+  "observed": "parent==ce009c8",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 3,
+  "attack": "source-SHA",
+  "observed": "4/4 match",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 4,
+  "attack": "theorem-SHA",
+  "observed": "Gate-0 bytes authoritative",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 5,
+  "attack": "IN-SHA",
+  "observed": "exact",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 6,
+  "attack": "OUT-SHA",
+  "observed": "exact",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 7,
+  "attack": "T0",
+  "observed": "element-equal 9-node tree",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 8,
+  "attack": "access-order",
+  "observed": "D5,D4,D3,K3,K7,D5",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 9,
+  "attack": "pre-post-depth",
+  "observed": "agree+closed",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 10,
+  "attack": "DELETE-B-freeze",
+  "observed": "15/15 freeze B",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 11,
+  "attack": "DELETE-present",
+  "observed": "depths defined (keys present)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 12,
+  "attack": "absent-key",
+  "observed": "fail-closed (raised ReplayError)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 13,
+  "attack": "root-closure",
+  "observed": "full labeled serials",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 14,
+  "attack": "A-cost",
+  "observed": "ceil(dA/2) all 31",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 15,
+  "attack": "B-cost",
+  "observed": "KEEP floor, DELETE 0",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 16,
+  "attack": "fewer-keys",
+  "observed": "exactly five genuine keys",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 17,
+  "attack": "more-keys",
+  "observed": "no sixth",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 18,
+  "attack": "nine-core",
+  "observed": "32 boundaries core9",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 19,
+  "attack": "ambient-vs-core",
+  "observed": "max dB<=8",
+  "kind": "hybrid",
+  "disposition": "PASS"
+ },
+ {
+  "id": 20,
+  "attack": "E0-as-1",
+  "observed": "E={4} not empty",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 21,
+  "attack": "E2-as-1",
+  "observed": "count==1 not 2",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 22,
+  "attack": "E-enumeration",
+  "observed": "two paths agree",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 23,
+  "attack": "relay-maximal",
+  "observed": "t=0 maximal (j=5 H=2 breaks)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 24,
+  "attack": "relay-two",
+  "observed": "t=0 not 2",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 25,
+  "attack": "exception-in-U",
+  "observed": "U={0,4}",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 26,
+  "attack": "donor-is-exception",
+  "observed": "p=0 distinct, unique",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 27,
+  "attack": "no-donor",
+  "observed": "e + exactly one donor",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 28,
+  "attack": "two-donors",
+  "observed": "not two",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 29,
+  "attack": "donor-q4",
+  "observed": "q_p=3 not 4",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 30,
+  "attack": "donor-H1",
+  "observed": "H=18>=2",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 31,
+  "attack": "donor-c0",
+  "observed": "c_p=1",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 32,
+  "attack": "K-proxy",
+  "observed": "H>=2 but strict-K False (dA=0)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 33,
+  "attack": "P-nonimmediate",
+  "observed": "strict-P always immediate-DELETE",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 34,
+  "attack": "P-samekey",
+  "observed": "j=8 y!=x a>=1 both",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 35,
+  "attack": "hypothesis-changed",
+  "observed": "H1-H6 + defs frozen",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 36,
+  "attack": "seam",
+  "observed": "53/36/16",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 37,
+  "attack": "omitted",
+  "observed": "31 exact cover",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 38,
+  "attack": "double-count",
+  "observed": "partition exact",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 39,
+  "attack": "H>=c",
+  "observed": "all intervals",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 40,
+  "attack": "c0-q",
+  "observed": "verified on IN",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 41,
+  "attack": "core-bound",
+  "observed": "max q=3",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 42,
+  "attack": "debt-gt2",
+  "observed": "max w=1",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 43,
+  "attack": "exception-debt",
+  "observed": "w_e=1",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 44,
+  "attack": "exception-reserve",
+  "observed": "R_e=0",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 45,
+  "attack": "donor-debt",
+  "observed": "w_p=1,R_p=34",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 46,
+  "attack": "q4H2-rejected",
+  "observed": "q=4,H=2 gives 3>2: H4 q=3 pin essential",
+  "kind": "hybrid",
+  "disposition": "PASS"
+ },
+ {
+  "id": 47,
+  "attack": "sharp-q3H2",
+  "observed": "H=2: w_e+w_p=R_p=2",
+  "kind": "hybrid",
+  "disposition": "PASS"
+ },
+ {
+  "id": 48,
+  "attack": "Hp18-universal",
+  "observed": "H=18 corroborates only; proof covers H>=2 (L-doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 49,
+  "attack": "donor-no-doublespend",
+  "observed": "pair from R_0; others own R",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 50,
+  "attack": "paired-unpaid",
+  "observed": "2<=34; rest w<=R",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 51,
+  "attack": "K-implication",
+  "observed": "K-flagged all H>=2",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 52,
+  "attack": "P-implication",
+  "observed": "P needs a>=1 both (attack 34 exec); converse not claimed",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 53,
+  "attack": "overlap-once",
+  "observed": "j=8 K+P, one R",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 54,
+  "attack": "telescoping",
+  "observed": "4<=74 -> 36<=106 (erratum A)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 55,
+  "attack": "Q-premise",
+  "observed": "H6 conclusion-only; no aggregate premise (L-doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 56,
+  "attack": "ZULR-omitted",
+  "observed": "strict_zulr_bank in proof basis; ZULR-IN flags ZULR (oracle)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 57,
+  "attack": "UESINK-omitted",
+  "observed": "strict_uesink_bank in basis (corpus 73 flags)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 58,
+  "attack": "DLSS-MSINK-omitted",
+  "observed": "both banks in basis (corpus 125/160 flags)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 59,
+  "attack": "other-domain-omitted",
+  "observed": "24 keys incl. ZULR, excl. SELR",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 60,
+  "attack": "rotations-omitted-base",
+  "observed": "loop ran all rotations",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 61,
+  "attack": "nonzero-rotation",
+  "observed": "0 vs 32 (loop discriminates)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 62,
+  "attack": "T0-start-error",
+  "observed": "30/30 T0-starts fail; true starts close",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 63,
+  "attack": "child-rotation",
+  "observed": "children own rotation loops (engine + xval rot queries)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 64,
+  "attack": "child-start",
+  "observed": "actual reachable starts (engine; concat/cyclic depth-1)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 65,
+  "attack": "primitive-roots-only",
+  "observed": "31/31 full labeled states (not roots)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 66,
+  "attack": "segment-missed",
+  "observed": "pair-equality classes complete by construction",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 67,
+  "attack": "partition-missed",
+  "observed": "DP+DFS all valid partitions (xval 15/15)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 68,
+  "attack": "memo-merge",
+  "observed": "exact (start,canon) keys (oracle memo test)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 69,
+  "attack": "incomplete-as-false",
+  "observed": "unknown recorded, not silent false",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 70,
+  "attack": "cap-as-uncovered",
+  "observed": "tainted root -> INDETERMINATE (not UNCOVERED)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 71,
+  "attack": "zero-cost-invalid",
+  "observed": "empty word not COVERED",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 72,
+  "attack": "matrix-falsified",
+  "observed": "22-check per-entry verifier PASS",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 73,
+  "attack": "negcert-falsified",
+  "observed": "flipped copy disagrees with fresh run",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 74,
+  "attack": "seed-omitted",
+  "observed": "7/7 SHA-verified",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 75,
+  "attack": "seed-order",
+  "observed": "frozen order",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 76,
+  "attack": "hash-identity",
+  "observed": "8/8 distinct by content",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 77,
+  "attack": "earlier-skipped",
+  "observed": "idx0-6 decided",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 78,
+  "attack": "earlier-INDET",
+  "observed": "0 indeterminates",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 79,
+  "attack": "wrong-index",
+  "observed": "rm18 reconstructs OUT",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 80,
+  "attack": "OUT-changed",
+  "observed": "SHA-pinned OUT; log ends at rm18 (no substitution)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 81,
+  "attack": "beyond-OUT",
+  "observed": "stopped at first OUT; no 9th candidate",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 82,
+  "attack": "grammar",
+  "observed": "rm/rep/ins only (search code; ordering fault recomputes prefix)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 83,
+  "attack": "OUT-replaced",
+  "observed": "frozen rm18",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 84,
+  "attack": "rerun-discovery",
+  "observed": "single streaming run; audit-only here (no search code present)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 85,
+  "attack": "theorem-modified",
+  "observed": "H1-H6 bytes frozen (attack 4/35 scope)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 86,
+  "attack": "early-promotion",
+  "observed": "no theorem file yet",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 87,
+  "attack": "ledger-early",
+  "observed": "no ledger row yet",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 88,
+  "attack": "certs-rewritten",
+  "observed": "protected paths clean:''",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 89,
+  "attack": "remote-divergence",
+  "observed": "local==remote HEAD",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 90,
+  "attack": "globals-OPEN",
+  "observed": "complement/K6/universal/DO remain OPEN (verdict scope)",
+  "kind": "proof",
+  "disposition": "PASS"
+ }
+]

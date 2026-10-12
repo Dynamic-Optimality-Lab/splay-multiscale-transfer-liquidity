@@ -1,0 +1,139 @@
+{
+ "pass": true,
+ "nchecks": 22,
+ "checks": [
+  {
+   "check": "frozen-theorem-SHA",
+   "pass": true,
+   "observed": "Gate-0 bytes authoritative"
+  },
+  {
+   "check": "IN-SHA",
+   "pass": true,
+   "observed": "exact"
+  },
+  {
+   "check": "OUT-SHA",
+   "pass": true,
+   "observed": "exact"
+  },
+  {
+   "check": "IN-accounting",
+   "pass": true,
+   "observed": "A=53,Q=36,Ck=16 -> 4<=74 -> 36<=106 (erratum A corrected)"
+  },
+  {
+   "check": "IN-rows-complete",
+   "pass": true,
+   "observed": "31 rows"
+  },
+  {
+   "check": "IN-summary-agree",
+   "pass": true,
+   "observed": "flags match entries"
+  },
+  {
+   "check": "IN-all-entries-verified",
+   "pass": true,
+   "observed": "744 cumulative"
+  },
+  {
+   "check": "OUT-rows-complete",
+   "pass": true,
+   "observed": "30 rows"
+  },
+  {
+   "check": "OUT-summary-agree",
+   "pass": true,
+   "observed": "flags match entries"
+  },
+  {
+   "check": "OUT-all-entries-verified",
+   "pass": true,
+   "observed": "1464 cumulative"
+  },
+  {
+   "check": "IN-totals",
+   "pass": true,
+   "observed": [
+    31,
+    53,
+    36,
+    16
+   ]
+  },
+  {
+   "check": "IN-primitivity",
+   "pass": true,
+   "observed": "31/31"
+  },
+  {
+   "check": "IN-member",
+   "pass": true,
+   "observed": [
+    4,
+    0,
+    [
+     0,
+     4
+    ]
+   ]
+  },
+  {
+   "check": "IN-recursive",
+   "pass": true,
+   "observed": "UNCOVERED"
+  },
+  {
+   "check": "IN-cert-agree",
+   "pass": true,
+   "observed": "cert matches fresh run"
+  },
+  {
+   "check": "OUT-totals",
+   "pass": true,
+   "observed": [
+    30,
+    52,
+    36,
+    16
+   ]
+  },
+  {
+   "check": "OUT-primitivity",
+   "pass": true,
+   "observed": "30/30"
+  },
+  {
+   "check": "OUT-nonmember",
+   "pass": true,
+   "observed": [
+    "E-count-2",
+    [
+     4,
+     12
+    ]
+   ]
+  },
+  {
+   "check": "OUT-recursive",
+   "pass": true,
+   "observed": "UNCOVERED"
+  },
+  {
+   "check": "OUT-cert-agree",
+   "pass": true,
+   "observed": "cert matches fresh run"
+  },
+  {
+   "check": "total-1464",
+   "pass": true,
+   "observed": 1464
+  },
+  {
+   "check": "no-unknown",
+   "pass": true,
+   "observed": "all prior pass"
+  }
+ ]
+}
