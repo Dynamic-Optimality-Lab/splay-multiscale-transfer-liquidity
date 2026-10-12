@@ -1,0 +1,101 @@
+{
+ "tests": [
+  {
+   "name": "direct-banked",
+   "pass": true,
+   "got": "['ZULR']"
+  },
+  {
+   "name": "zero-cost-path",
+   "pass": true,
+   "got": "Z-fail"
+  },
+  {
+   "name": "zulr-covered",
+   "pass": true,
+   "got": "(True, 0)"
+  },
+  {
+   "name": "nonclosed-segment",
+   "pass": true,
+   "got": "not-closed"
+  },
+  {
+   "name": "selr-in-uncovered",
+   "pass": true,
+   "got": "(False, None)"
+  },
+  {
+   "name": "rotation-fidelity",
+   "pass": true,
+   "got": "True"
+  },
+  {
+   "name": "out-uncovered",
+   "pass": true,
+   "got": "(False, None)"
+  },
+  {
+   "name": "out-direct-negative",
+   "pass": true,
+   "got": "True"
+  },
+  {
+   "name": "false-closure",
+   "pass": true,
+   "got": "ReplayError"
+  },
+  {
+   "name": "relay-maximal",
+   "pass": true,
+   "got": "0"
+  },
+  {
+   "name": "donor-boundary",
+   "pass": true,
+   "got": "w=1,R=2"
+  },
+  {
+   "name": "out-exception-pair",
+   "pass": true,
+   "got": "([4, 12], [0, 4, 12])"
+  },
+  {
+   "name": "memo-exactness",
+   "pass": true,
+   "got": "(1, 1)"
+  },
+  {
+   "name": "canon-roundtrip",
+   "pass": true,
+   "got": "True"
+  },
+  {
+   "name": "string-start-mismatch",
+   "pass": true,
+   "got": "False"
+  },
+  {
+   "name": "rotation-equivalence",
+   "pass": true,
+   "got": "31/31 close"
+  },
+  {
+   "name": "bad-endpoint",
+   "pass": true,
+   "got": "True"
+  },
+  {
+   "name": "incomplete-predicate",
+   "pass": true,
+   "got": "E-count-0"
+  },
+  {
+   "name": "budget-analog",
+   "pass": true,
+   "got": "cap"
+  }
+ ],
+ "pass": true,
+ "count": 19
+}

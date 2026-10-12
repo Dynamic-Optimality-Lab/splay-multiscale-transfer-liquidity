@@ -1,0 +1,632 @@
+[
+ {
+  "id": 1,
+  "attack": "entry-checkpoint",
+  "observed": "HEAD==ce009c8",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 2,
+  "attack": "parent-commit",
+  "observed": "parent==87f1c02",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 3,
+  "attack": "source-SHA",
+  "observed": "4/4 match",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 4,
+  "attack": "IN-SHA",
+  "observed": "exact",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 5,
+  "attack": "OUT-SHA",
+  "observed": "exact",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 6,
+  "attack": "frozen-theorem-SHA",
+  "observed": "pinned pre-search",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 7,
+  "attack": "T0-fixture",
+  "observed": "element-equal 9-node tree",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 8,
+  "attack": "access-order",
+  "observed": "D5,D4,D3,K3,K7,D5",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 9,
+  "attack": "pre-post-depth",
+  "observed": "agree+closed",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 10,
+  "attack": "DELETE-B-freeze",
+  "observed": "15/15 DELETEs freeze B",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 11,
+  "attack": "DELETE-removes-key",
+  "observed": "depths defined (keys present)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 12,
+  "attack": "absent-key",
+  "observed": "fail-closed (raised ReplayError)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 13,
+  "attack": "root-closure",
+  "observed": "full labeled serials",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 14,
+  "attack": "A-cost-convention",
+  "observed": "a==ceil(dA/2) all 31",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 15,
+  "attack": "B-cost-convention",
+  "observed": "KEEP floor, DELETE 0",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 16,
+  "attack": "fewer-keys",
+  "observed": "exactly five genuine keys",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 17,
+  "attack": "more-keys",
+  "observed": "no sixth genuine key",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 18,
+  "attack": "nine-core",
+  "observed": "32 boundaries all core9",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 19,
+  "attack": "ambient-vs-core",
+  "observed": "max dB<=8",
+  "kind": "hybrid",
+  "disposition": "PASS"
+ },
+ {
+  "id": 20,
+  "attack": "IN-E1",
+  "observed": "E={4} singleton",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 21,
+  "attack": "IN-E2",
+  "observed": "count==1",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 22,
+  "attack": "OUT-E-count",
+  "observed": "OUT E=[4,12] (H2 fails twice)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 23,
+  "attack": "q4H1-slots",
+  "observed": "no (4,1) slots (checked)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 24,
+  "attack": "IN-U",
+  "observed": "U={0,4}",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 25,
+  "attack": "IN-U-count",
+  "observed": "e + one donor",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 26,
+  "attack": "OUT-U",
+  "observed": "OUT U=[0,4,12]",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 27,
+  "attack": "donor-K-fails",
+  "observed": "p=0 not-K (dA=0)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 28,
+  "attack": "donor-P-fails",
+  "observed": "p=0 not-P (prev DELETE same key)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 29,
+  "attack": "strict-P-definition",
+  "observed": "j=8 immediate-DELETE y!=x a>=1 both",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 30,
+  "attack": "donor-H",
+  "observed": "H=18,q=3,c=1 (w=1,R=34)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 31,
+  "attack": "relay-maximal",
+  "observed": "t_e=0 (j=5 H=2 breaks run)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 32,
+  "attack": "H345-retained",
+  "observed": "H3/H4/H5 frozen text (SHA-gated attack 6)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 33,
+  "attack": "K-to-H-proxy",
+  "observed": "H=18 but strict-K False",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 34,
+  "attack": "H6-premise",
+  "observed": "H6 conclusion-only (frozen text)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 35,
+  "attack": "no-H2-witness-claim",
+  "observed": "no physical H=2 donor claimed (sharp audit doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 36,
+  "attack": "seam",
+  "observed": "53/36/16",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 37,
+  "attack": "omitted-access",
+  "observed": "31 legs exact cover",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 38,
+  "attack": "double-count",
+  "observed": "partition exact",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 39,
+  "attack": "H>=c",
+  "observed": "all intervals (A-root-change)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 40,
+  "attack": "c0-B-cost",
+  "observed": "verified on IN",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 41,
+  "attack": "core-bound",
+  "observed": "max q=3 (core paths)",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 42,
+  "attack": "sharp-arithmetic",
+  "observed": "H=2,q=3: w_e+w_p=R_p=2",
+  "kind": "hybrid",
+  "disposition": "PASS"
+ },
+ {
+  "id": 43,
+  "attack": "w-bound",
+  "observed": "max w=1",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 44,
+  "attack": "pair-payment",
+  "observed": "1+1=2<=34 from R_0",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 45,
+  "attack": "K-reversed",
+  "observed": "K-flagged all dA>=3",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 46,
+  "attack": "P-reversed",
+  "observed": "P needs a>=1 both (attack 29 exec); converse not claimed",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 47,
+  "attack": "nonpositive",
+  "observed": "w<=0<=R throughout",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 48,
+  "attack": "telescoping",
+  "observed": "4<=74",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 49,
+  "attack": "overlap-single-cover",
+  "observed": "j=8 K+P, one R covers once",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 50,
+  "attack": "fixture-corroboration",
+  "observed": "universal quantifiers; IN numbers corroborate only",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 51,
+  "attack": "E-necessity",
+  "observed": "H2 singleton load-bearing (L4: e untyped via H=1)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 52,
+  "attack": "no-sink",
+  "observed": "pair {e,p} uses own R_p; no transfer exists (L-doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 53,
+  "attack": "no-double-spend",
+  "observed": "pair + singletons disjoint (code partition + L-doc)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 54,
+  "attack": "relay-not-payment",
+  "observed": "H3 classifies only; relay w>0 still needs K/P (L9)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 55,
+  "attack": "q4-donor-rejected",
+  "observed": "q=4,H=2 gives 3>2: H4 q_p=3 pin load-bearing",
+  "kind": "hybrid",
+  "disposition": "PASS"
+ },
+ {
+  "id": 56,
+  "attack": "ZULR-in-baseline",
+  "observed": "strict_zulr_bank in basis; ZULR-IN flags ZULR (oracle)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 57,
+  "attack": "UESINK-present",
+  "observed": "strict_uesink_bank in basis (census flags)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 58,
+  "attack": "MSINK-DLSS-present",
+  "observed": "strict_msink/dlss_bank in basis (census flags)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 59,
+  "attack": "inventory-24",
+  "observed": "3+9+12=24, SELR excluded",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 60,
+  "attack": "ZULR-per-segment",
+  "observed": "ZULR tested per segment (bank fn takes legs+pairs)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 61,
+  "attack": "rot-IN-744",
+  "observed": "31 rotations all-negative",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 62,
+  "attack": "rot-OUT-720",
+  "observed": "30 rotations all-negative",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 63,
+  "attack": "T0-restart",
+  "observed": "replay_from actual starts (rotation scripts + oracle)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 64,
+  "attack": "IN-statecount",
+  "observed": "31/31",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 65,
+  "attack": "OUT-statecount",
+  "observed": "30/30",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 66,
+  "attack": "segment-missed",
+  "observed": "pair-equality classes complete by construction",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 67,
+  "attack": "nested-oracle",
+  "observed": "19/19 oracle incl. memo/rotation/budget cases",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 68,
+  "attack": "child-rotation",
+  "observed": "children own rr loops (engine)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 69,
+  "attack": "child-start",
+  "observed": "actual reachable starts (engine)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 70,
+  "attack": "support-inherited",
+  "observed": "per-segment recompute (engine)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 71,
+  "attack": "memo-merged",
+  "observed": "exact (start,canon) memo keys (engine+oracle)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 72,
+  "attack": "incomplete-as-False",
+  "observed": "None=>INDETERMINATE; 0 hits (search+corpus)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 73,
+  "attack": "SELR-not-self-banked",
+  "observed": "SELR excluded from C24* (construction+attack 59)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 74,
+  "attack": "seed-SHAs",
+  "observed": "7/7 SHA-verified",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 75,
+  "attack": "seeds-classified",
+  "observed": "IN + 6 banked, 0 OUT, 0 INDET",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 76,
+  "attack": "streaming-order",
+  "observed": "first-8 removals in order, stop at OUT",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 77,
+  "attack": "gen-vs-screen",
+  "observed": "8 registered, 8 screened, 0 pre-generated beyond OUT (log length)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 78,
+  "attack": "budget-guards",
+  "observed": "8<<60k/300k, caps coded, untriggered",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 79,
+  "attack": "OUT-index",
+  "observed": "rm18 reconstructs OUT canon+SHA",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 80,
+  "attack": "OUT-immutable",
+  "observed": "SHA-pinned OUT worksheet; no substitution (screen log)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 81,
+  "attack": "earlier-decided",
+  "observed": "idx0-6 all decided, none skipped",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 82,
+  "attack": "no-L2",
+  "observed": "stopped at d1; no L2 ran",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 83,
+  "attack": "no-resume",
+  "observed": "single streaming run; no resumed discovery (one log)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 84,
+  "attack": "one-mechanism",
+  "observed": "pair {e,p} only (L-doc + membership code)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 85,
+  "attack": "R3-freeze",
+  "observed": "theorem/IN/grammar/order/budget unchanged post-freeze",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 86,
+  "attack": "02PROVED-clean",
+  "observed": "no promotion files staged:''",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 87,
+  "attack": "ledger-deps-clean",
+  "observed": "verified pre-commit (attack 86 scope)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 88,
+  "attack": "remote-divergence",
+  "observed": "local==remote HEAD",
+  "kind": "exec",
+  "disposition": "PASS"
+ },
+ {
+  "id": 89,
+  "attack": "no-successor",
+  "observed": "no SELR-PROOF dir; Gate-0 only (scope check)",
+  "kind": "proof",
+  "disposition": "PASS"
+ },
+ {
+  "id": 90,
+  "attack": "globals-OPEN",
+  "observed": "complement/K6/universal/DO remain OPEN (verdict scope)",
+  "kind": "proof",
+  "disposition": "PASS"
+ }
+]
