@@ -1,0 +1,40 @@
+{
+ "pass": true,
+ "checks": [
+  {
+   "check": "stable",
+   "pass": true,
+   "observed": "iters=5"
+  },
+  {
+   "check": "closed",
+   "pass": true,
+   "observed": "no cap-hit"
+  },
+  {
+   "check": "sizes",
+   "pass": true,
+   "observed": "4287646"
+  },
+  {
+   "check": "universe-closed",
+   "pass": true,
+   "observed": "4862"
+  },
+  {
+   "check": "neg-count",
+   "pass": true,
+   "observed": "62228"
+  },
+  {
+   "check": "neg-exhaustive",
+   "pass": true,
+   "observed": "62228/62228 satisfy"
+  },
+  {
+   "check": "pos-sample",
+   "pass": true,
+   "observed": "12212/12212"
+  }
+ ]
+}
