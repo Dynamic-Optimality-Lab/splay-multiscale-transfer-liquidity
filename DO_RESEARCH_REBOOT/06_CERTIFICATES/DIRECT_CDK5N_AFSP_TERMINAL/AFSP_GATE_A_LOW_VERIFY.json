@@ -1,0 +1,35 @@
+{
+ "pass": true,
+ "checks": [
+  {
+   "check": "stable",
+   "pass": true,
+   "observed": "iters=5"
+  },
+  {
+   "check": "closed",
+   "pass": true,
+   "observed": "full closure, no cap-hit"
+  },
+  {
+   "check": "sizes",
+   "pass": true,
+   "observed": "4261567 states"
+  },
+  {
+   "check": " universe-closed",
+   "pass": true,
+   "observed": "4862 shapes"
+  },
+  {
+   "check": "index-range",
+   "pass": true,
+   "observed": "all indices in range"
+  },
+  {
+   "check": "low-inequalities",
+   "pass": true,
+   "observed": "9348/9348 (miss=0)"
+  }
+ ]
+}
