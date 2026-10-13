@@ -1,0 +1,15 @@
+# 11F-UNIFORM A-Z report
+- A entry: HEAD 4b1f102 == origin/coarse-double-branch; sources 4/4; Bank25@25.
+- B design: PHT_ROTATION_DESIGN.md (Gamma(sigma,xi), effective macro words, hole projection).
+- C smoke: PHT_ROTATION_CIRCUIT.py branches=1 ops=3 PASS (PHT_TRANSDUCER_SMOKE.json).
+- D census v1: PHT_shadowcensus.py -> 2416 boundaries, 51 distinct A-shadows.
+- E census v2: PHT_shadowcensus2.py -> 20k multimask sample, 11222 joint distinct; fringe 0.
+- F lift: 20/20 9-key closed words break in 12-key trees (0/20 survive).
+- G fringe search: 0/2000 random words close in 12-key trees.
+- H variety report: PHT_VARIETY_REPORT.md.
+- I verdict: OUTCOME E, PHT_UNIFORM_VERDICT.md (F01-F12, R1-T/R2/R3/R4).
+- J resources: ~0.3 CPU-h, <2 GiB, 0 new DAG nodes (probes only); caps unbreached.
+- K ledger/deps: untouched (02_PROVED, LEDGER, DEPENDENCIES unchanged).
+- L terminal: CDK5N-TERMINAL-A remains OPEN; no promotion; no successor.
+- M stop: commit this dir only, push, STOP.
+- N-Z: no novel theorems; no counterexamples; no witness changes; no source changes; no config changes; no force operations; no follow-ups opened.
