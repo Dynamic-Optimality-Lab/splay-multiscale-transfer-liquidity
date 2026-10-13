@@ -1,0 +1,6 @@
+# UFRL_INDEPENDENT_VERIFICATION.md
+
+Separation (per §20): replay (CRA engines) / extraction (UFRL_extract) / BST validity (balanced + surgical deletion) / macro execution (UFRL_multimask.emit_low) / shadow canonicalization (UFRL_extract.shadow) / B projection (core_of_mask) / product (multimask BFS) / potential discovery (vectorized BF) / verification (UFRL_verify: fully separate regeneration + O(1) index + one-pass group maxima, no shared traversal code with generator except engine primitives).
+Representative checks: retained keys exist (V_i ⊆ universe enforced); no duplication (set semantics + E∩G_i priority fill); rebuilt trees valid BSTs (balanced() construction; fuzz compares behaviors only); prefix exact (E1 copy); frontier emptiness preserved (S/witness rule; fuzz L6); hidden S in required frontier (E3 keep-in-place); saturated signatures agree (L7: min(|V_i|,266)=min(n_i,266) by construction); depths/costs/shadows/B-q agree (L1-L6,L8 fuzz: 2,485 cases); B depths/q/successor (30,773 cases).
+Graph certificate: 6,914 regenerated low edges + 650 high-cost max-constraints PASS (±O for smoke scripts; verifier numeric core -O-safe by construction — rerun pending only for full 1.3M scan, sampled checks rerun under -O: PASS).
+Prior verifier's 1,081+673 sampled checks: superseded by the above (not relied upon).

@@ -1,0 +1,5 @@
+# UFRL_B_CORE_COMPATIBILITY.md (§9) + UFRL_HIGH_COST_LIFT.md (Step 9) + UFRL_EDGEWISE_COMPOSITION.md (Step 10/§12)
+
+B-compat: representative B* on U* (same S, projected core shape, fringe blocks on retained gap keys). Marked B-depths preserved (all marked ancestors core ⇒ retained ⇒ identical chains); q preserved; projected successor preserved (splay path = marked S-path in both; fringe rigid). Verified 30,773 cases (random universes + 30,720 corpus states), 0 mismatch. No prune-then-splay commutation assumed (Control F honored: projected outcomes only).
+High-cost: H≥3 ⇒ ŵ=6−q ≤ 2H−q (verified 3,084/3,084); exact B successor + root + signature; compatible A' any; overapproximation declared (spurious cycles classifiable; none found).
+Edgewise composition: per-interval representatives with exact symbolic boundaries from true states (dst(src)==src(next) exactly — stronger than §12 minimum); private concretions may differ harmlessly. One-directional soundness (original→abstract only; abstract cycles need not lift — §15 applies).

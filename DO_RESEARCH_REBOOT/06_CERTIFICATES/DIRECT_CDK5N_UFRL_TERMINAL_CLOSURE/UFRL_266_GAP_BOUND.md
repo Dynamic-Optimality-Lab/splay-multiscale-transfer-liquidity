@@ -1,0 +1,5 @@
+# UFRL_PREFIX_AND_FRONTIER.md (Step 4) + UFRL_CRITICAL_SELECTION.md (Step 5) + UFRL_266_GAP_BOUND.md (Step 6)
+
+Prefix/frontier (E1-E2): depth-6 binary prefix K (|K|≤127); frontier F = nonempty subtrees below (≤128, valid intervals from retained prefix). Universal (any ambient BST). Code + fuzz-supported.
+Critical selection (E3-E5): S retained in place (9 keys); S-less nonempty frontier ⇒ min-key witness (deterministic); E=K∪S∪witnesses, |E|≤127+9+128=264; non-S ≤255. Per-gap V_i ⊇ E∩G_i with |V_i|=min(|G_i|,266): feasible as |E∩G_i|≤255≤266 in both cases (|G_i|≤266: take all; else: E∩G_i + lowest-key fill to 266).
+266-bound (E6-E8): |U*|=9+Σ|V_i|≤9+10·266=2669 (exact set arithmetic; V_i∩S=∅ by gap definition). T=266 and 2669 FROZEN (not increased). Reconstruction E7: prefix exact; per-hole balanced BST over hole-retained keys (S_h + witness + V_i∩hole); empty stays empty; attachments (depth≥7 roots) kept ⇒ rebuilt contents ≥ depth 7 (L5 soundness). Deterministic (sorted-median rule) ⇒ reproducible.

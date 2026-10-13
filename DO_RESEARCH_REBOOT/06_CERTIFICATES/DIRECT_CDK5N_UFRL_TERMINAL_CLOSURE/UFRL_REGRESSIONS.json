@@ -1,0 +1,41 @@
+{
+ "A-SELR-OUT": {
+  "n": 30,
+  "A": 52,
+  "Q": 36,
+  "closed": true
+ },
+ "B-zeroGamma": {
+  "n": 31,
+  "A": 53,
+  "Q": 36,
+  "closed": true
+ },
+ "C-zeroA": {
+  "n": 29,
+  "A": 50,
+  "Q": 36,
+  "closed": true
+ },
+ "D-vine-Q14": {
+  "ref": "COST-CONE CC_regress.py PASS (depths 8,2,4,4,4,2,2,2)"
+ },
+ "E-rootswitch-Q18": {
+  "ref": "COST-CONE CC_regress.py PASS (unique 9-key start 1/4862)"
+ },
+ "F-projection": {
+  "ref": "COST-CONE CC_regress.py PASS (prune/splay non-commute reproduced)"
+ },
+ "G-frontier-multiplicity": {
+  "fuzz": "52 cases, 0 mismatch (this campaign)"
+ },
+ "H-hidden-core": {
+  "fuzz": "comb + vine cases in UFRL_FUZZ/FUZZ_ADV, 0 mismatch"
+ },
+ "I-saturation": {
+  "fuzz": "gaps 264/265/266/267/600/2000 in UFRL_FUZZ_ADV, 0 mismatch"
+ },
+ "J-two-access-cone": {
+  "fuzz": "8 cross-type (LL/ZIG/LR/RL/RR) cases, 0 mismatch"
+ }
+}
