@@ -1,0 +1,13 @@
+{
+ "quantified_circuit_built": false,
+ "cap_nodes": 4000000,
+ "measured": {
+  "diagnostic_product_nodes": 3144,
+  "diagnostic_product_edges": 20043,
+  "port_guards_9key": 89,
+  "port_guards_fringe_total": 3001,
+  "fibers_7key": 215
+ },
+ "reference_9key_states": 4290000,
+ "verdict": "BLOCKED: fringe guard growth ~1/macro is unbounded; quantified-circuit compilation not built within frozen solver discipline; reference 9-key states alone exceed cap at 1 node/state"
+}

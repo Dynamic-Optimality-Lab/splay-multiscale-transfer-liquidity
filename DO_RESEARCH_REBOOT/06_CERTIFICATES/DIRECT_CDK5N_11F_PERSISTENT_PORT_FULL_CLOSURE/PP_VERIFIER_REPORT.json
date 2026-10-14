@@ -1,0 +1,73 @@
+{
+ "ok": true,
+ "checks": {
+  "src:scripts/wp6_eventflow.py": {
+   "pass": true,
+   "info": ""
+  },
+  "src:scripts/wp6_coarse_double.py": {
+   "pass": true,
+   "info": ""
+  },
+  "src:python/independent/splay.py": {
+   "pass": true,
+   "info": ""
+  },
+  "src:python/liquidity/legacy_embedding.py": {
+   "pass": true,
+   "info": ""
+  },
+  "json:PP_PORT_SMOKE.json": {
+   "pass": true,
+   "info": "{'trials': 4000, 'rotations': 8000, 'maxrot': 2}"
+  },
+  "json:PP_INVENTORY_TEST.json": {
+   "pass": true,
+   "info": "{'trials': 600, 'ok': 600, 'flow': 600}"
+  },
+  "json:PP_DST_SHARED_TEST.json": {
+   "pass": true,
+   "info": "{'trials': 800, 'carried': 800, 'fresh': 800}"
+  },
+  "json:PP_LOW_TEST.json": {
+   "pass": true,
+   "info": "{'total': 52920, 'agree': 52920, 'negative': 21168}"
+  },
+  "json:PP_HIGH_TEST.json": {
+   "pass": true,
+   "info": "{'transitions': 1500, 'fibers': 215, 'covered': 1302}"
+  },
+  "json:PP_PRODUCT_TEST.json": {
+   "pass": true,
+   "info": "{'nodes': 3144, 'edges': 20043, 'low': 20004}"
+  },
+  "json:PP_OPERATOR_TEST.json": {
+   "pass": true,
+   "info": "{'trials': 400, 'weights': 8, 'scope': '7-key diagnostic product'}"
+  },
+  "json:PP_GUARD_CENSUS.json": {
+   "pass": true,
+   "info": "{'closed_words': 150, 'macros': 1485, 'fringe_macros': 2928}"
+  },
+  "spot:commutation+inventory": {
+   "pass": true,
+   "info": "n=44"
+  },
+  "xcons:scope": {
+   "pass": true,
+   "info": "7-key diagnostic product"
+  },
+  "xcons:guards": {
+   "pass": true,
+   "info": "3001"
+  },
+  "xcons:low": {
+   "pass": true,
+   "info": "52920"
+  },
+  "xcons:high": {
+   "pass": true,
+   "info": "1302"
+  }
+ }
+}
