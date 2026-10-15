@@ -1,0 +1,73 @@
+{
+ "ok": true,
+ "checks": {
+  "V0-sources": {
+   "pass": true,
+   "info": "4/4"
+  },
+  "V1-semantics": {
+   "pass": true,
+   "info": "zero-cost root KEEP identity / DELETE(q=0) / genuine / nongenuine"
+  },
+  "V2-primcount": {
+   "pass": true,
+   "info": "200/200 prim==depth, total<=2H<=4"
+  },
+  "V3-labels-unique": {
+   "pass": true,
+   "info": "cut-labels s*2+b unique by position (no constraint needed)"
+  },
+  "V3-port-pins": {
+   "pass": true,
+   "info": "27 edges label-pinned"
+  },
+  "V4-inventory": {
+   "pass": true,
+   "info": "grounded=138 (conservation+S-cover per edge)"
+  },
+  "V5-saturation": {
+   "pass": true,
+   "info": "sig bounds in-circuit (<=266); E1-E8/L1-L8 imported; 30/30 spot (audit doc)"
+  },
+  "V6-masks": {
+   "pass": true,
+   "info": "SAT 126/126, transitions 126"
+  },
+  "V7-genuine": {
+   "pass": true,
+   "info": "5 negatives, replay re-verified"
+  },
+  "V8-low-spot": {
+   "pass": true,
+   "info": "12 fresh grounded"
+  },
+  "V9-unsat-spot": {
+   "pass": true,
+   "info": "UNSAT"
+  },
+  "V10-high": {
+   "pass": true,
+   "info": "grounded=63 fibers=63"
+  },
+  "V11-operators": {
+   "pass": true,
+   "info": "micro_unsat=20, binder ok"
+  },
+  "V12-solver": {
+   "pass": true,
+   "info": "witness reconstructs"
+  },
+  "V13-size": {
+   "pass": true,
+   "info": "product+operators=1345105 (cap 4M)"
+  },
+  "V14-simulation": {
+   "pass": true,
+   "info": "items mapped in PC_UNIVERSAL_SIMULATION.md; groups in builders; V8/V10 evidence"
+  },
+  "V15-repro": {
+   "pass": true,
+   "info": "python 3.13.7; reran build+verify; commands in PC_AZ_REPORT.md"
+  }
+ }
+}
