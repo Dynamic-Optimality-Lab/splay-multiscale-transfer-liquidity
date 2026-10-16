@@ -1,0 +1,149 @@
+{
+ "product_nodes": 1603069,
+ "handles": {
+  "low": {
+   "decls": 9544,
+   "int_bounds": 6748,
+   "exists": 0,
+   "forall": 0,
+   "qdepth": 0,
+   "dag_cone": 1384795,
+   "translate_s": 46.3,
+   "norm_binders": 0,
+   "norm_growth": 0,
+   "compile_cpu_s": 54.56,
+   "free": 9544,
+   "bound": 0
+  },
+  "high": {
+   "decls": 563,
+   "int_bounds": 544,
+   "exists": 0,
+   "forall": 0,
+   "qdepth": 0,
+   "dag_cone": 53187,
+   "translate_s": 1.64,
+   "norm_binders": 0,
+   "norm_growth": 0,
+   "compile_cpu_s": 1.84,
+   "free": 563,
+   "bound": 0
+  },
+  "Esm": {
+   "decls": 563,
+   "int_bounds": 544,
+   "exists": 1,
+   "forall": 0,
+   "qdepth": 1,
+   "dag_cone": 53188,
+   "translate_s": 1.56,
+   "norm_binders": 1,
+   "norm_growth": 0,
+   "compile_cpu_s": 2.08,
+   "free": 422,
+   "bound": 141
+  },
+  "Emt": {
+   "decls": 563,
+   "int_bounds": 544,
+   "exists": 1,
+   "forall": 0,
+   "qdepth": 1,
+   "dag_cone": 53188,
+   "translate_s": 1.57,
+   "norm_binders": 1,
+   "norm_growth": 0,
+   "compile_cpu_s": 2.33,
+   "free": 423,
+   "bound": 140
+  },
+  "Elow-1": {
+   "decls": 9544,
+   "int_bounds": 6748,
+   "exists": 0,
+   "forall": 0,
+   "qdepth": 0,
+   "dag_cone": 1384798,
+   "translate_s": 46.54,
+   "norm_binders": 0,
+   "norm_growth": 0,
+   "compile_cpu_s": 53.22,
+   "free": 9544,
+   "bound": 0
+  }
+ },
+ "sharing": {
+  "cone_nodes": 1384795,
+  "parent_links": 2814803,
+  "reuse_factor": 2.033
+ },
+ "grounded": [
+  [
+   "E3",
+   "SAT",
+   2.47
+  ],
+  [
+   "plain",
+   "SAT",
+   2.59
+  ],
+  [
+   "delkeep",
+   "SAT",
+   2.61
+  ]
+ ],
+ "incremental": {
+  "handles": 1,
+  "A": "SAT",
+  "B": "SAT",
+  "C": "UNSAT",
+  "D_session": "UNKNOWN",
+  "E_session": "UNSAT"
+ },
+ "quantifier_regressions": [
+  "Q1 neg-exists UNSAT",
+  "Q2 collision SAT z=0",
+  "Q3 shadowed SAT",
+  "Q4 exists-forall UNSAT",
+  "Q5 forall-exists SAT",
+  "Q6 MinPre1 exclusion UNSAT",
+  "Q6 control MinPre0 SAT",
+  "Q7 vacuous identity",
+  "Q8 alpha-equivalence"
+ ],
+ "arithmetic": [
+  "add-overflow-attempt UNSAT",
+  "signed LT -4<0 SAT",
+  "signed LE -3<=-4 UNSAT",
+  "sub 6-9==-3 SAT",
+  "exhaustive op agreement 150/150",
+  "const-false UNSAT",
+  "nonexistent-target (False root) UNSAT",
+  "canonical rename verdict-stable",
+  "double-bind capture SAT agrees",
+  "double-bind capture u=0 agrees",
+  "invalid B-core popcount rejected",
+  "valid B-core popcount SAT"
+ ],
+ "preview": {
+  "pins": 297,
+  "status": "UNKNOWN",
+  "reason": "canceled",
+  "cpu_s": 61.875
+ },
+ "resources": {
+  "build_cpu_s": 5.4,
+  "compile_cpu_s": 58.2,
+  "solve_cpu_s_total": 119.5,
+  "queries": 12,
+  "peak_ram_mb": 2434.0,
+  "caps": {
+   "cpu_h_step01": 4.0,
+   "mem_gib": 32,
+   "dag_nodes": 4000000
+  },
+  "dag_nodes_used": 1696136
+ }
+}

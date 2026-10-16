@@ -1,0 +1,110 @@
+{
+ "RES": {
+  "S2-S4": [
+   {
+    "name": "E3 grounded H/q/w",
+    "status": "PASS",
+    "detail": "ok H=1 q=3 w=-1"
+   },
+   {
+    "name": "E3 oracle witness",
+    "status": "PASS",
+    "detail": "True"
+   },
+   {
+    "name": "E3 interpreter agrees",
+    "status": "PASS",
+    "detail": "True"
+   },
+   {
+    "name": "E3 compiled SAT H/q exact",
+    "status": "PASS",
+    "detail": "SAT cpu=2.47 model={'H': 1, 'q': 3, 'w': -1}"
+   },
+   {
+    "name": "plain grounded H/q/w",
+    "status": "PASS",
+    "detail": "ok H=1 q=0 w=2"
+   },
+   {
+    "name": "plain oracle witness",
+    "status": "PASS",
+    "detail": "True"
+   },
+   {
+    "name": "plain interpreter agrees",
+    "status": "PASS",
+    "detail": "True"
+   },
+   {
+    "name": "plain compiled SAT H/q exact",
+    "status": "PASS",
+    "detail": "SAT cpu=2.59 model={'H': 1, 'q': 0, 'w': 2}"
+   },
+   {
+    "name": "delkeep grounded H/q/w",
+    "status": "PASS",
+    "detail": "ok H=2 q=0 w=4"
+   },
+   {
+    "name": "delkeep oracle witness",
+    "status": "PASS",
+    "detail": "True"
+   },
+   {
+    "name": "delkeep interpreter agrees",
+    "status": "PASS",
+    "detail": "True"
+   },
+   {
+    "name": "delkeep compiled SAT H/q exact",
+    "status": "PASS",
+    "detail": "SAT cpu=2.61 model={'H': 2, 'q': 0, 'w': 4}"
+   }
+  ],
+  "S5": [
+   {
+    "name": "contradictory pins UNSAT",
+    "status": "PASS",
+    "detail": "UNSAT"
+   },
+   {
+    "name": "out-of-domain UNSAT",
+    "status": "PASS",
+    "detail": "UNSAT"
+   },
+   {
+    "name": "flipped-H rejected",
+    "status": "PASS",
+    "detail": "UNSAT"
+   },
+   {
+    "name": "corrupt-target rejected",
+    "status": "PASS",
+    "detail": "('SLt_aI0', 'UNSAT')"
+   }
+  ],
+  "S6": [
+   {
+    "name": "one compile many queries independent",
+    "status": "PASS",
+    "detail": "A=SAT B=SAT C=UNSAT D=UNKNOWN E=UNSAT handles=1"
+   }
+  ],
+  "PREV": [
+   {
+    "name": "endpoint-only preview recorded",
+    "status": "PASS",
+    "detail": "{'pins': 297, 'status': 'UNKNOWN', 'reason': 'canceled', 'cpu_s': 61.875}"
+   }
+  ],
+  "S8": [
+   {
+    "name": "caps respected",
+    "status": "PASS",
+    "detail": "{'build_cpu_s': 5.4, 'compile_cpu_s': 58.2, 'solve_cpu_s_total': 119.5, 'queries': 12, 'peak_ram_mb': 2434.0, 'caps': {'cpu_h_step01': 4.0, 'mem_gib': 32, 'dag_nodes': 4000000}, 'dag_nodes_used': 1696136}"
+   }
+  ]
+ },
+ "FAIL": []
+}
