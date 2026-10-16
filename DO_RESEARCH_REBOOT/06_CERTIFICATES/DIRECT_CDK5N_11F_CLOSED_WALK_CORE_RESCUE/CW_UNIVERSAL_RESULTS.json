@@ -1,0 +1,181 @@
+{
+ "checks": [
+  {
+   "id": "CW01",
+   "gate": "A",
+   "claim": "domain closed=5003 bad empty",
+   "status": "PASS",
+   "detail": "5003"
+  },
+  {
+   "id": "CW02",
+   "gate": "B",
+   "claim": "G5 KeqG=164 KneG=0",
+   "status": "PASS",
+   "detail": "KeqG=164 KneG=0"
+  },
+  {
+   "id": "CW03",
+   "gate": "C",
+   "claim": "closed/admissible/keqg=200",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW04",
+   "gate": "C",
+   "claim": "cconst=200 samples=5",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW05",
+   "gate": "D",
+   "claim": "genuine-negative inventory=20",
+   "status": "PASS",
+   "detail": "n=20"
+  },
+  {
+   "id": "CW06",
+   "gate": "E",
+   "claim": "low walks=40 grounded=240",
+   "status": "PASS",
+   "detail": "skipped=319"
+  },
+  {
+   "id": "CW07",
+   "gate": "F",
+   "claim": "high grounded=319 fibers=5",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW08",
+   "gate": "F",
+   "claim": "high skipped=0",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW09",
+   "gate": "E",
+   "claim": "live E3 low grounding ok",
+   "status": "PASS",
+   "detail": "ok H=1 q=3 w=-1"
+  },
+  {
+   "id": "CW10",
+   "gate": "I",
+   "claim": "units binder/minpre/empty/negexists",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW11",
+   "gate": "I",
+   "claim": "micro agree=16",
+   "status": "PASS",
+   "detail": "16"
+  },
+  {
+   "id": "CW12",
+   "gate": "I",
+   "claim": "micro unsat=16 unknown=0",
+   "status": "PASS",
+   "detail": "unsat=16 unk=0"
+  },
+  {
+   "id": "CW13",
+   "gate": "H",
+   "claim": "3/3 cases grounded ok",
+   "status": "PASS",
+   "detail": "3"
+  },
+  {
+   "id": "CW14",
+   "gate": "H",
+   "claim": "3/3 synthesis UNKNOWN (wall)",
+   "status": "PASS",
+   "detail": "accepted remainder"
+  },
+  {
+   "id": "CW15",
+   "gate": "I",
+   "claim": "live neg-exists UNSAT",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW16",
+   "gate": "I",
+   "claim": "live pos-exists SAT",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW17",
+   "gate": "I",
+   "claim": "live binder shadow pair",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW18",
+   "gate": "I",
+   "claim": "live qf SAT/UNSAT",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW19",
+   "gate": "I",
+   "claim": "live pre-style SAT/UNSAT",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW20",
+   "gate": "I",
+   "claim": "cross-backend parity",
+   "status": "PASS",
+   "detail": "SAT/SAT"
+  },
+  {
+   "id": "CW21",
+   "gate": "G",
+   "claim": "live product 9 low edges + OOB false",
+   "status": "PASS",
+   "detail": "nodes=1603069"
+  },
+  {
+   "id": "CW22",
+   "gate": "G",
+   "claim": "live E_sm/E_mt quantified",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW23",
+   "gate": "I",
+   "claim": "live high src/dst quantified",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW24",
+   "gate": "I",
+   "claim": "live minpre not+exists struct",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "CW25",
+   "gate": "J",
+   "claim": "universal verdict: 24/24 PASS",
+   "status": "PASS",
+   "detail": "time=42.0s"
+  }
+ ],
+ "verdict": "PASS",
+ "time_s": 42.0
+}
