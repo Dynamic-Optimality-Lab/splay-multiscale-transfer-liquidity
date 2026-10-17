@@ -1,0 +1,41 @@
+{
+ "J4": {
+  "status": "SAT",
+  "q": 3,
+  "w": 3
+ },
+ "J5": {
+  "status": "SAT",
+  "reason": "tier2"
+ },
+ "J10": {
+  "empty_nesting": "UNSAT",
+  "minpre_procedure": {
+   "member": true,
+   "cert": "min-member",
+   "trace": [
+    [
+     "lower",
+     -4,
+     "UNSAT"
+    ],
+    [
+     "lower",
+     -3,
+     "UNSAT"
+    ],
+    [
+     "lower",
+     -2,
+     "UNSAT"
+    ],
+    [
+     "w",
+     -1,
+     "SAT"
+    ]
+   ]
+  },
+  "note": "nested symbolic MinPre decided via certified finite-weight procedure (equivalence proved in S03_MINPRE_CORRECTNESS_THEOREM.md)"
+ }
+}

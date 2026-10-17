@@ -1,0 +1,70 @@
+{
+ "J6": {
+  "OO_keys": [
+   -4,
+   -3,
+   -2,
+   -1,
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "signed_units": "Step-01 AR (overflow UNSAT, signed LT/LE) by reference + fresh below",
+  "neg_order_SAT": true,
+  "neg_strict": true
+ },
+ "J7": {
+  "member": false,
+  "cert": "lower-weight-edge",
+  "trace": [
+   [
+    "lower",
+    -4,
+    "UNSAT"
+   ],
+   [
+    "lower",
+    -3,
+    "UNSAT"
+   ],
+   [
+    "lower",
+    -2,
+    "UNSAT"
+   ],
+   [
+    "lower",
+    -1,
+    "SAT"
+   ]
+  ]
+ },
+ "J8": {
+  "member": true,
+  "cert": "min-member",
+  "trace": [
+   [
+    "lower",
+    -4,
+    "UNSAT"
+   ],
+   [
+    "lower",
+    -3,
+    "UNSAT"
+   ],
+   [
+    "lower",
+    -2,
+    "UNSAT"
+   ],
+   [
+    "w",
+    -1,
+    "SAT"
+   ]
+  ]
+ }
+}
