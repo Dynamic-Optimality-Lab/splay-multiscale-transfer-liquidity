@@ -1,0 +1,5900 @@
+[
+ {
+  "category": "E4",
+  "fixture_Hqw": [
+   1,
+   4,
+   -2
+  ],
+  "engine": "SAT",
+  "cpu_s": 5.4,
+  "word": [
+   [
+    "K",
+    100
+   ]
+  ],
+  "H": 1,
+  "q": 4,
+  "tried": 1,
+  "certificate": {
+   "A0": [
+    900,
+    [
+     400,
+     [
+      100,
+      null,
+      [
+       200,
+       null,
+       [
+        300,
+        null,
+        null
+       ]
+      ]
+     ],
+     [
+      600,
+      [
+       500,
+       null,
+       null
+      ],
+      [
+       700,
+       null,
+       [
+        800,
+        null,
+        null
+       ]
+      ]
+     ]
+    ],
+    null
+   ],
+   "B0": [
+    900,
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       [
+        500,
+        [
+         400,
+         [
+          300,
+          [
+           200,
+           [
+            100,
+            null,
+            null
+           ],
+           null
+          ],
+          null
+         ],
+         null
+        ],
+        null
+       ],
+       null
+      ],
+      null
+     ],
+     null
+    ],
+    null
+   ],
+   "universe": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "M": [
+    100,
+    300,
+    500,
+    700,
+    900
+   ],
+   "core": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "fringe": [],
+   "events": [
+    {
+     "mode": "K",
+     "key": 100
+    }
+   ],
+   "accessed_keys": [
+    100
+   ],
+   "modes": [
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      900,
+      400,
+      100
+     ],
+     "depth": 2
+    }
+   ],
+   "B_depths": [
+    8
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": [
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      900,
+      [
+       400,
+       [
+        100,
+        ".",
+        [
+         200,
+         ".",
+         [
+          300,
+          ".",
+          "."
+         ]
+        ]
+       ],
+       [
+        600,
+        [
+         500,
+         ".",
+         "."
+        ],
+        [
+         700,
+         ".",
+         [
+          800,
+          ".",
+          "."
+         ]
+        ]
+       ]
+      ],
+      "."
+     ],
+     [
+      900,
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         [
+          500,
+          [
+           400,
+           [
+            300,
+            [
+             200,
+             [
+              100,
+              ".",
+              "."
+             ],
+             "."
+            ],
+            "."
+           ],
+           "."
+          ],
+          "."
+         ],
+         "."
+        ],
+        "."
+       ],
+       "."
+      ],
+      "."
+     ]
+    ],
+    [
+     [
+      100,
+      ".",
+      [
+       400,
+       [
+        200,
+        ".",
+        [
+         300,
+         ".",
+         "."
+        ]
+       ],
+       [
+        900,
+        [
+         600,
+         [
+          500,
+          ".",
+          "."
+         ],
+         [
+          700,
+          ".",
+          [
+           800,
+           ".",
+           "."
+          ]
+         ]
+        ],
+        "."
+       ]
+      ]
+     ],
+     [
+      100,
+      ".",
+      [
+       800,
+       [
+        600,
+        [
+         400,
+         [
+          200,
+          ".",
+          [
+           300,
+           ".",
+           "."
+          ]
+         ],
+         [
+          500,
+          ".",
+          "."
+         ]
+        ],
+        [
+         700,
+         ".",
+         "."
+        ]
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 1,
+   "q": 4,
+   "w": -2,
+   "dest_trees": [
+    [
+     100,
+     ".",
+     [
+      400,
+      [
+       200,
+       ".",
+       [
+        300,
+        ".",
+        "."
+       ]
+      ],
+      [
+       900,
+       [
+        600,
+        [
+         500,
+         ".",
+         "."
+        ],
+        [
+         700,
+         ".",
+         [
+          800,
+          ".",
+          "."
+         ]
+        ]
+       ],
+       "."
+      ]
+     ]
+    ],
+    [
+     100,
+     ".",
+     [
+      800,
+      [
+       600,
+       [
+        400,
+        [
+         200,
+         ".",
+         [
+          300,
+          ".",
+          "."
+         ]
+        ],
+        [
+         500,
+         ".",
+         "."
+        ]
+       ],
+       [
+        700,
+        ".",
+        "."
+       ]
+      ],
+      [
+       900,
+       ".",
+       "."
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 341,
+    "SLt_b_bkl0": 2,
+    "SLt_b_brl0": 19,
+    "SLt_b_bkr0": 0,
+    "SLt_b_brr0": 7,
+    "SLt_b_bkl1": 2,
+    "SLt_b_brl1": 19,
+    "SLt_b_bkr1": 0,
+    "SLt_b_brr1": 2,
+    "SLt_b_bkl2": 2,
+    "SLt_b_brl2": 19,
+    "SLt_b_bkr2": 2,
+    "SLt_b_brr2": 19,
+    "SLt_b_bkl3": 0,
+    "SLt_b_brl3": 1,
+    "SLt_b_bkr3": 0,
+    "SLt_b_brr3": 4,
+    "SLt_b_bkl4": 2,
+    "SLt_b_brl4": 19,
+    "SLt_b_bkr4": 2,
+    "SLt_b_brr4": 19,
+    "SLt_b_bkl5": 0,
+    "SLt_b_brl5": 3,
+    "SLt_b_bkr5": 0,
+    "SLt_b_brr5": 6,
+    "SLt_b_bkl6": 2,
+    "SLt_b_brl6": 19,
+    "SLt_b_bkr6": 2,
+    "SLt_b_brr6": 19,
+    "SLt_b_bkl7": 0,
+    "SLt_b_brl7": 5,
+    "SLt_b_bkr7": 0,
+    "SLt_b_brr7": 8,
+    "SLt_b_bkl8": 2,
+    "SLt_b_brl8": 19,
+    "SLt_b_bkr8": 2,
+    "SLt_b_brr8": 19,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 0,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 18,
+    "SLt_b_blo1": 2,
+    "SLt_b_bhi1": 6,
+    "SLt_b_blo2": 4,
+    "SLt_b_bhi2": 6,
+    "SLt_b_blo3": 2,
+    "SLt_b_bhi3": 10,
+    "SLt_b_blo4": 8,
+    "SLt_b_bhi4": 10,
+    "SLt_b_blo5": 2,
+    "SLt_b_bhi5": 14,
+    "SLt_b_blo6": 12,
+    "SLt_b_bhi6": 14,
+    "SLt_b_blo7": 2,
+    "SLt_b_bhi7": 18,
+    "SLt_b_blo8": 16,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 0,
+    "SLt_ak1": 2,
+    "SLt_aS1": 0,
+    "SLt_aI1": 0,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 3,
+    "SLt_ak3": 2,
+    "SLt_aS3": 0,
+    "SLt_aI3": 0,
+    "SLt_ak4": 2,
+    "SLt_aS4": 0,
+    "SLt_aI4": 0,
+    "SLt_ak5": 0,
+    "SLt_aS5": 1,
+    "SLt_aI5": 1,
+    "SLt_ak6": 0,
+    "SLt_aS6": 1,
+    "SLt_aI6": 8,
+    "SLt_sg0": 0,
+    "SLt_sg1": 0,
+    "SLt_sg2": 0,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 0
+   }
+  }
+ },
+ {
+  "category": "negw",
+  "fixture_Hqw": [
+   1,
+   3,
+   -1
+  ],
+  "engine": "SAT",
+  "cpu_s": 5.2,
+  "word": [
+   [
+    "K",
+    300
+   ]
+  ],
+  "H": 1,
+  "q": 3,
+  "tried": 1,
+  "certificate": {
+   "A0": [
+    900,
+    [
+     400,
+     [
+      300,
+      [
+       100,
+       null,
+       [
+        200,
+        null,
+        null
+       ]
+      ],
+      null
+     ],
+     [
+      600,
+      [
+       500,
+       null,
+       null
+      ],
+      [
+       700,
+       null,
+       [
+        800,
+        null,
+        null
+       ]
+      ]
+     ]
+    ],
+    null
+   ],
+   "B0": [
+    900,
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       [
+        500,
+        [
+         400,
+         [
+          300,
+          [
+           200,
+           [
+            100,
+            null,
+            null
+           ],
+           null
+          ],
+          null
+         ],
+         null
+        ],
+        null
+       ],
+       null
+      ],
+      null
+     ],
+     null
+    ],
+    null
+   ],
+   "universe": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "M": [
+    100,
+    300,
+    500,
+    700,
+    900
+   ],
+   "core": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "fringe": [],
+   "events": [
+    {
+     "mode": "K",
+     "key": 300
+    }
+   ],
+   "accessed_keys": [
+    300
+   ],
+   "modes": [
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      900,
+      400,
+      300
+     ],
+     "depth": 2
+    }
+   ],
+   "B_depths": [
+    6
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": [
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      900,
+      [
+       400,
+       [
+        300,
+        [
+         100,
+         ".",
+         [
+          200,
+          ".",
+          "."
+         ]
+        ],
+        "."
+       ],
+       [
+        600,
+        [
+         500,
+         ".",
+         "."
+        ],
+        [
+         700,
+         ".",
+         [
+          800,
+          ".",
+          "."
+         ]
+        ]
+       ]
+      ],
+      "."
+     ],
+     [
+      900,
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         [
+          500,
+          [
+           400,
+           [
+            300,
+            [
+             200,
+             [
+              100,
+              ".",
+              "."
+             ],
+             "."
+            ],
+            "."
+           ],
+           "."
+          ],
+          "."
+         ],
+         "."
+        ],
+        "."
+       ],
+       "."
+      ],
+      "."
+     ]
+    ],
+    [
+     [
+      300,
+      [
+       100,
+       ".",
+       [
+        200,
+        ".",
+        "."
+       ]
+      ],
+      [
+       400,
+       ".",
+       [
+        900,
+        [
+         600,
+         [
+          500,
+          ".",
+          "."
+         ],
+         [
+          700,
+          ".",
+          [
+           800,
+           ".",
+           "."
+          ]
+         ]
+        ],
+        "."
+       ]
+      ]
+     ],
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       800,
+       [
+        600,
+        [
+         400,
+         ".",
+         [
+          500,
+          ".",
+          "."
+         ]
+        ],
+        [
+         700,
+         ".",
+         "."
+        ]
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 1,
+   "q": 3,
+   "w": -1,
+   "dest_trees": [
+    [
+     300,
+     [
+      100,
+      ".",
+      [
+       200,
+       ".",
+       "."
+      ]
+     ],
+     [
+      400,
+      ".",
+      [
+       900,
+       [
+        600,
+        [
+         500,
+         ".",
+         "."
+        ],
+        [
+         700,
+         ".",
+         [
+          800,
+          ".",
+          "."
+         ]
+        ]
+       ],
+       "."
+      ]
+     ]
+    ],
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      "."
+     ],
+     [
+      800,
+      [
+       600,
+       [
+        400,
+        ".",
+        [
+         500,
+         ".",
+         "."
+        ]
+       ],
+       [
+        700,
+        ".",
+        "."
+       ]
+      ],
+      [
+       900,
+       ".",
+       "."
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 341,
+    "SLt_b_bkl0": 2,
+    "SLt_b_brl0": 19,
+    "SLt_b_bkr0": 2,
+    "SLt_b_brr0": 19,
+    "SLt_b_bkl1": 0,
+    "SLt_b_brl1": 0,
+    "SLt_b_bkr1": 2,
+    "SLt_b_brr1": 19,
+    "SLt_b_bkl2": 0,
+    "SLt_b_brl2": 1,
+    "SLt_b_bkr2": 0,
+    "SLt_b_brr2": 7,
+    "SLt_b_bkl3": 2,
+    "SLt_b_brl3": 19,
+    "SLt_b_bkr3": 0,
+    "SLt_b_brr3": 4,
+    "SLt_b_bkl4": 2,
+    "SLt_b_brl4": 19,
+    "SLt_b_bkr4": 2,
+    "SLt_b_brr4": 19,
+    "SLt_b_bkl5": 0,
+    "SLt_b_brl5": 3,
+    "SLt_b_bkr5": 0,
+    "SLt_b_brr5": 6,
+    "SLt_b_bkl6": 2,
+    "SLt_b_brl6": 19,
+    "SLt_b_bkr6": 2,
+    "SLt_b_brr6": 19,
+    "SLt_b_bkl7": 0,
+    "SLt_b_brl7": 5,
+    "SLt_b_bkr7": 0,
+    "SLt_b_brr7": 8,
+    "SLt_b_bkl8": 2,
+    "SLt_b_brl8": 19,
+    "SLt_b_bkr8": 2,
+    "SLt_b_brr8": 19,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 2,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 2,
+    "SLt_b_blo1": 0,
+    "SLt_b_bhi1": 4,
+    "SLt_b_blo2": 0,
+    "SLt_b_bhi2": 18,
+    "SLt_b_blo3": 6,
+    "SLt_b_bhi3": 10,
+    "SLt_b_blo4": 8,
+    "SLt_b_bhi4": 10,
+    "SLt_b_blo5": 6,
+    "SLt_b_bhi5": 14,
+    "SLt_b_blo6": 12,
+    "SLt_b_bhi6": 14,
+    "SLt_b_blo7": 6,
+    "SLt_b_bhi7": 18,
+    "SLt_b_blo8": 16,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 2,
+    "SLt_ak1": 0,
+    "SLt_aS1": 1,
+    "SLt_aI1": 0,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 3,
+    "SLt_ak3": 2,
+    "SLt_aS3": 0,
+    "SLt_aI3": 0,
+    "SLt_ak4": 0,
+    "SLt_aS4": 1,
+    "SLt_aI4": 1,
+    "SLt_ak5": 2,
+    "SLt_aS5": 0,
+    "SLt_aI5": 0,
+    "SLt_ak6": 0,
+    "SLt_aS6": 1,
+    "SLt_aI6": 8,
+    "SLt_sg0": 0,
+    "SLt_sg1": 0,
+    "SLt_sg2": 0,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 0
+   }
+  }
+ },
+ {
+  "category": "zerocost",
+  "fixture_Hqw": [
+   1,
+   0,
+   2
+  ],
+  "engine": "SAT",
+  "cpu_s": 5.3,
+  "word": [
+   [
+    "K",
+    300
+   ]
+  ],
+  "H": 1,
+  "q": 0,
+  "tried": 1,
+  "certificate": {
+   "A0": [
+    500,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      400,
+      null,
+      null
+     ]
+    ],
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      900,
+      null,
+      null
+     ]
+    ]
+   ],
+   "B0": [
+    500,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      400,
+      null,
+      null
+     ]
+    ],
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      900,
+      null,
+      null
+     ]
+    ]
+   ],
+   "universe": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "M": [
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "core": [
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "fringe": [],
+   "events": [
+    {
+     "mode": "K",
+     "key": 300
+    }
+   ],
+   "accessed_keys": [
+    300
+   ],
+   "modes": [
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      500,
+      300
+     ],
+     "depth": 1
+    }
+   ],
+   "B_depths": [
+    1
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": [
+      500
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ],
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ],
+    [
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       500,
+       [
+        400,
+        ".",
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         [
+          600,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         900,
+         ".",
+         "."
+        ]
+       ]
+      ]
+     ],
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       500,
+       [
+        400,
+        ".",
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         [
+          600,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         900,
+         ".",
+         "."
+        ]
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 1,
+   "q": 0,
+   "w": 2,
+   "dest_trees": [
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      "."
+     ],
+     [
+      500,
+      [
+       400,
+       ".",
+       "."
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ],
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      "."
+     ],
+     [
+      500,
+      [
+       400,
+       ".",
+       "."
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 31,
+    "SLt_b_bkl0": 2,
+    "SLt_b_brl0": 19,
+    "SLt_b_bkr0": 2,
+    "SLt_b_brr0": 19,
+    "SLt_b_bkl1": 0,
+    "SLt_b_brl1": 0,
+    "SLt_b_bkr1": 2,
+    "SLt_b_brr1": 19,
+    "SLt_b_bkl2": 0,
+    "SLt_b_brl2": 1,
+    "SLt_b_bkr2": 0,
+    "SLt_b_brr2": 4,
+    "SLt_b_bkl3": 2,
+    "SLt_b_brl3": 19,
+    "SLt_b_bkr3": 2,
+    "SLt_b_brr3": 19,
+    "SLt_b_bkl4": 0,
+    "SLt_b_brl4": 3,
+    "SLt_b_bkr4": 0,
+    "SLt_b_brr4": 7,
+    "SLt_b_bkl5": 2,
+    "SLt_b_brl5": 19,
+    "SLt_b_bkr5": 2,
+    "SLt_b_brr5": 19,
+    "SLt_b_bkl6": 0,
+    "SLt_b_brl6": 5,
+    "SLt_b_bkr6": 2,
+    "SLt_b_brr6": 19,
+    "SLt_b_bkl7": 0,
+    "SLt_b_brl7": 6,
+    "SLt_b_bkr7": 0,
+    "SLt_b_brr7": 8,
+    "SLt_b_bkl8": 2,
+    "SLt_b_brl8": 19,
+    "SLt_b_bkr8": 2,
+    "SLt_b_brr8": 19,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 2,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 2,
+    "SLt_b_blo1": 0,
+    "SLt_b_bhi1": 4,
+    "SLt_b_blo2": 0,
+    "SLt_b_bhi2": 18,
+    "SLt_b_blo3": 6,
+    "SLt_b_bhi3": 8,
+    "SLt_b_blo4": 6,
+    "SLt_b_bhi4": 18,
+    "SLt_b_blo5": 10,
+    "SLt_b_bhi5": 12,
+    "SLt_b_blo6": 10,
+    "SLt_b_bhi6": 14,
+    "SLt_b_blo7": 10,
+    "SLt_b_bhi7": 18,
+    "SLt_b_blo8": 16,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 2,
+    "SLt_ak1": 0,
+    "SLt_aS1": 1,
+    "SLt_aI1": 1,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 4,
+    "SLt_ak3": 0,
+    "SLt_aS3": 1,
+    "SLt_aI3": 0,
+    "SLt_ak4": 2,
+    "SLt_aS4": 0,
+    "SLt_aI4": 0,
+    "SLt_ak5": 0,
+    "SLt_aS5": 1,
+    "SLt_aI5": 3,
+    "SLt_ak6": 0,
+    "SLt_aS6": 1,
+    "SLt_aI6": 7,
+    "SLt_sg0": 0,
+    "SLt_sg1": 0,
+    "SLt_sg2": 0,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 0
+   }
+  }
+ },
+ {
+  "category": "repeat",
+  "fixture_Hqw": [
+   1,
+   0,
+   2
+  ],
+  "engine": "SAT",
+  "cpu_s": 5.3,
+  "word": [
+   [
+    "K",
+    300
+   ]
+  ],
+  "H": 1,
+  "q": 0,
+  "tried": 1,
+  "certificate": {
+   "A0": [
+    500,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      400,
+      null,
+      null
+     ]
+    ],
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      900,
+      null,
+      null
+     ]
+    ]
+   ],
+   "B0": [
+    500,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      400,
+      null,
+      null
+     ]
+    ],
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      900,
+      null,
+      null
+     ]
+    ]
+   ],
+   "universe": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "M": [
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "core": [
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "fringe": [],
+   "events": [
+    {
+     "mode": "K",
+     "key": 300
+    }
+   ],
+   "accessed_keys": [
+    300
+   ],
+   "modes": [
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      500,
+      300
+     ],
+     "depth": 1
+    }
+   ],
+   "B_depths": [
+    1
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": [
+      500
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ],
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ],
+    [
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       500,
+       [
+        400,
+        ".",
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         [
+          600,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         900,
+         ".",
+         "."
+        ]
+       ]
+      ]
+     ],
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       500,
+       [
+        400,
+        ".",
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         [
+          600,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         900,
+         ".",
+         "."
+        ]
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 1,
+   "q": 0,
+   "w": 2,
+   "dest_trees": [
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      "."
+     ],
+     [
+      500,
+      [
+       400,
+       ".",
+       "."
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ],
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      "."
+     ],
+     [
+      500,
+      [
+       400,
+       ".",
+       "."
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 31,
+    "SLt_b_bkl0": 2,
+    "SLt_b_brl0": 19,
+    "SLt_b_bkr0": 2,
+    "SLt_b_brr0": 19,
+    "SLt_b_bkl1": 0,
+    "SLt_b_brl1": 0,
+    "SLt_b_bkr1": 2,
+    "SLt_b_brr1": 19,
+    "SLt_b_bkl2": 0,
+    "SLt_b_brl2": 1,
+    "SLt_b_bkr2": 0,
+    "SLt_b_brr2": 4,
+    "SLt_b_bkl3": 2,
+    "SLt_b_brl3": 19,
+    "SLt_b_bkr3": 2,
+    "SLt_b_brr3": 19,
+    "SLt_b_bkl4": 0,
+    "SLt_b_brl4": 3,
+    "SLt_b_bkr4": 0,
+    "SLt_b_brr4": 7,
+    "SLt_b_bkl5": 2,
+    "SLt_b_brl5": 19,
+    "SLt_b_bkr5": 2,
+    "SLt_b_brr5": 19,
+    "SLt_b_bkl6": 0,
+    "SLt_b_brl6": 5,
+    "SLt_b_bkr6": 2,
+    "SLt_b_brr6": 19,
+    "SLt_b_bkl7": 0,
+    "SLt_b_brl7": 6,
+    "SLt_b_bkr7": 0,
+    "SLt_b_brr7": 8,
+    "SLt_b_bkl8": 2,
+    "SLt_b_brl8": 19,
+    "SLt_b_bkr8": 2,
+    "SLt_b_brr8": 19,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 2,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 2,
+    "SLt_b_blo1": 0,
+    "SLt_b_bhi1": 4,
+    "SLt_b_blo2": 0,
+    "SLt_b_bhi2": 18,
+    "SLt_b_blo3": 6,
+    "SLt_b_bhi3": 8,
+    "SLt_b_blo4": 6,
+    "SLt_b_bhi4": 18,
+    "SLt_b_blo5": 10,
+    "SLt_b_bhi5": 12,
+    "SLt_b_blo6": 10,
+    "SLt_b_bhi6": 14,
+    "SLt_b_blo7": 10,
+    "SLt_b_bhi7": 18,
+    "SLt_b_blo8": 16,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 2,
+    "SLt_ak1": 0,
+    "SLt_aS1": 1,
+    "SLt_aI1": 1,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 4,
+    "SLt_ak3": 0,
+    "SLt_aS3": 1,
+    "SLt_aI3": 0,
+    "SLt_ak4": 2,
+    "SLt_aS4": 0,
+    "SLt_aI4": 0,
+    "SLt_ak5": 0,
+    "SLt_aS5": 1,
+    "SLt_aI5": 3,
+    "SLt_ak6": 0,
+    "SLt_aS6": 1,
+    "SLt_aI6": 7,
+    "SLt_sg0": 0,
+    "SLt_sg1": 0,
+    "SLt_sg2": 0,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 0
+   }
+  }
+ },
+ {
+  "category": "macro3",
+  "fixture_Hqw": [
+   2,
+   0,
+   4
+  ],
+  "engine": "SAT",
+  "cpu_s": 5.2,
+  "word": [
+   [
+    "D",
+    200
+   ],
+   [
+    "K",
+    300
+   ]
+  ],
+  "H": 2,
+  "q": 0,
+  "tried": 7,
+  "certificate": {
+   "A0": [
+    500,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      400,
+      null,
+      null
+     ]
+    ],
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      900,
+      null,
+      null
+     ]
+    ]
+   ],
+   "B0": [
+    500,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      400,
+      null,
+      null
+     ]
+    ],
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      900,
+      null,
+      null
+     ]
+    ]
+   ],
+   "universe": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "M": [
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "core": [
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "fringe": [],
+   "events": [
+    {
+     "mode": "D",
+     "key": 200
+    },
+    {
+     "mode": "K",
+     "key": 300
+    }
+   ],
+   "accessed_keys": [
+    200,
+    300
+   ],
+   "modes": [
+    "D",
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      500,
+      300,
+      200
+     ],
+     "depth": 2
+    },
+    {
+     "path": [
+      200,
+      300
+     ],
+     "depth": 1
+    }
+   ],
+   "B_depths": [
+    1
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": []
+    },
+    {
+     "event": 1,
+     "push": [
+      500
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ],
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ],
+    [
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      [
+       300,
+       ".",
+       [
+        500,
+        [
+         400,
+         ".",
+         "."
+        ],
+        [
+         800,
+         [
+          700,
+          [
+           600,
+           ".",
+           "."
+          ],
+          "."
+         ],
+         [
+          900,
+          ".",
+          "."
+         ]
+        ]
+       ]
+      ]
+     ],
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ],
+    [
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       500,
+       [
+        400,
+        ".",
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         [
+          600,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         900,
+         ".",
+         "."
+        ]
+       ]
+      ]
+     ],
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       500,
+       [
+        400,
+        ".",
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         [
+          600,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         900,
+         ".",
+         "."
+        ]
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 2,
+   "q": 0,
+   "w": 4,
+   "dest_trees": [
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      "."
+     ],
+     [
+      500,
+      [
+       400,
+       ".",
+       "."
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ],
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      "."
+     ],
+     [
+      500,
+      [
+       400,
+       ".",
+       "."
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 31,
+    "SLt_b_bkl0": 2,
+    "SLt_b_brl0": 19,
+    "SLt_b_bkr0": 2,
+    "SLt_b_brr0": 19,
+    "SLt_b_bkl1": 0,
+    "SLt_b_brl1": 0,
+    "SLt_b_bkr1": 2,
+    "SLt_b_brr1": 19,
+    "SLt_b_bkl2": 0,
+    "SLt_b_brl2": 1,
+    "SLt_b_bkr2": 0,
+    "SLt_b_brr2": 4,
+    "SLt_b_bkl3": 2,
+    "SLt_b_brl3": 19,
+    "SLt_b_bkr3": 2,
+    "SLt_b_brr3": 19,
+    "SLt_b_bkl4": 0,
+    "SLt_b_brl4": 3,
+    "SLt_b_bkr4": 0,
+    "SLt_b_brr4": 7,
+    "SLt_b_bkl5": 2,
+    "SLt_b_brl5": 19,
+    "SLt_b_bkr5": 2,
+    "SLt_b_brr5": 19,
+    "SLt_b_bkl6": 0,
+    "SLt_b_brl6": 5,
+    "SLt_b_bkr6": 2,
+    "SLt_b_brr6": 19,
+    "SLt_b_bkl7": 0,
+    "SLt_b_brl7": 6,
+    "SLt_b_bkr7": 0,
+    "SLt_b_brr7": 8,
+    "SLt_b_bkl8": 2,
+    "SLt_b_brl8": 19,
+    "SLt_b_bkr8": 2,
+    "SLt_b_brr8": 19,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 2,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 2,
+    "SLt_b_blo1": 0,
+    "SLt_b_bhi1": 4,
+    "SLt_b_blo2": 0,
+    "SLt_b_bhi2": 18,
+    "SLt_b_blo3": 6,
+    "SLt_b_bhi3": 8,
+    "SLt_b_blo4": 6,
+    "SLt_b_bhi4": 18,
+    "SLt_b_blo5": 10,
+    "SLt_b_bhi5": 12,
+    "SLt_b_blo6": 10,
+    "SLt_b_bhi6": 14,
+    "SLt_b_blo7": 10,
+    "SLt_b_bhi7": 18,
+    "SLt_b_blo8": 16,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 2,
+    "SLt_ak1": 0,
+    "SLt_aS1": 1,
+    "SLt_aI1": 1,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 4,
+    "SLt_ak3": 0,
+    "SLt_aS3": 1,
+    "SLt_aI3": 0,
+    "SLt_ak4": 2,
+    "SLt_aS4": 0,
+    "SLt_aI4": 0,
+    "SLt_ak5": 0,
+    "SLt_aS5": 1,
+    "SLt_aI5": 3,
+    "SLt_ak6": 0,
+    "SLt_aS6": 1,
+    "SLt_aI6": 7,
+    "SLt_sg0": 0,
+    "SLt_sg1": 0,
+    "SLt_sg2": 0,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 0
+   }
+  }
+ },
+ {
+  "category": "gap0",
+  "fixture_Hqw": [
+   1,
+   3,
+   -1
+  ],
+  "engine": "SAT",
+  "cpu_s": 5.3,
+  "word": [
+   [
+    "K",
+    300
+   ]
+  ],
+  "H": 1,
+  "q": 3,
+  "tried": 1,
+  "certificate": {
+   "A0": [
+    900,
+    [
+     300,
+     [
+      100,
+      [
+       10,
+       null,
+       [
+        11,
+        null,
+        [
+         12,
+         null,
+         null
+        ]
+       ]
+      ],
+      [
+       200,
+       null,
+       null
+      ]
+     ],
+     [
+      600,
+      [
+       400,
+       null,
+       [
+        500,
+        null,
+        null
+       ]
+      ],
+      [
+       700,
+       null,
+       [
+        800,
+        null,
+        null
+       ]
+      ]
+     ]
+    ],
+    null
+   ],
+   "B0": [
+    900,
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       [
+        500,
+        [
+         400,
+         [
+          300,
+          [
+           200,
+           [
+            100,
+            [
+             10,
+             null,
+             [
+              11,
+              null,
+              [
+               12,
+               null,
+               null
+              ]
+             ]
+            ],
+            null
+           ],
+           null
+          ],
+          null
+         ],
+         null
+        ],
+        null
+       ],
+       null
+      ],
+      null
+     ],
+     null
+    ],
+    null
+   ],
+   "universe": [
+    10,
+    11,
+    12,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "M": [
+    300,
+    600,
+    700,
+    800,
+    900
+   ],
+   "core": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "fringe": [
+    10,
+    11,
+    12
+   ],
+   "events": [
+    {
+     "mode": "K",
+     "key": 300
+    }
+   ],
+   "accessed_keys": [
+    300
+   ],
+   "modes": [
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      900,
+      300
+     ],
+     "depth": 1
+    }
+   ],
+   "B_depths": [
+    6
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": [
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      900,
+      [
+       300,
+       [
+        100,
+        [
+         10,
+         ".",
+         [
+          11,
+          ".",
+          [
+           12,
+           ".",
+           "."
+          ]
+         ]
+        ],
+        [
+         200,
+         ".",
+         "."
+        ]
+       ],
+       [
+        600,
+        [
+         400,
+         ".",
+         [
+          500,
+          ".",
+          "."
+         ]
+        ],
+        [
+         700,
+         ".",
+         [
+          800,
+          ".",
+          "."
+         ]
+        ]
+       ]
+      ],
+      "."
+     ],
+     [
+      900,
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         [
+          500,
+          [
+           400,
+           [
+            300,
+            [
+             200,
+             [
+              100,
+              [
+               10,
+               ".",
+               [
+                11,
+                ".",
+                [
+                 12,
+                 ".",
+                 "."
+                ]
+               ]
+              ],
+              "."
+             ],
+             "."
+            ],
+            "."
+           ],
+           "."
+          ],
+          "."
+         ],
+         "."
+        ],
+        "."
+       ],
+       "."
+      ],
+      "."
+     ]
+    ],
+    [
+     [
+      300,
+      [
+       100,
+       [
+        10,
+        ".",
+        [
+         11,
+         ".",
+         [
+          12,
+          ".",
+          "."
+         ]
+        ]
+       ],
+       [
+        200,
+        ".",
+        "."
+       ]
+      ],
+      [
+       900,
+       [
+        600,
+        [
+         400,
+         ".",
+         [
+          500,
+          ".",
+          "."
+         ]
+        ],
+        [
+         700,
+         ".",
+         [
+          800,
+          ".",
+          "."
+         ]
+        ]
+       ],
+       "."
+      ]
+     ],
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        [
+         10,
+         ".",
+         [
+          11,
+          ".",
+          [
+           12,
+           ".",
+           "."
+          ]
+         ]
+        ],
+        "."
+       ],
+       "."
+      ],
+      [
+       800,
+       [
+        600,
+        [
+         400,
+         ".",
+         [
+          500,
+          ".",
+          "."
+         ]
+        ],
+        [
+         700,
+         ".",
+         "."
+        ]
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 1,
+   "q": 3,
+   "w": -1,
+   "dest_trees": [
+    [
+     300,
+     [
+      100,
+      [
+       10,
+       ".",
+       [
+        11,
+        ".",
+        [
+         12,
+         ".",
+         "."
+        ]
+       ]
+      ],
+      [
+       200,
+       ".",
+       "."
+      ]
+     ],
+     [
+      900,
+      [
+       600,
+       [
+        400,
+        ".",
+        [
+         500,
+         ".",
+         "."
+        ]
+       ],
+       [
+        700,
+        ".",
+        [
+         800,
+         ".",
+         "."
+        ]
+       ]
+      ],
+      "."
+     ]
+    ],
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       [
+        10,
+        ".",
+        [
+         11,
+         ".",
+         [
+          12,
+          ".",
+          "."
+         ]
+        ]
+       ],
+       "."
+      ],
+      "."
+     ],
+     [
+      800,
+      [
+       600,
+       [
+        400,
+        ".",
+        [
+         500,
+         ".",
+         "."
+        ]
+       ],
+       [
+        700,
+        ".",
+        "."
+       ]
+      ],
+      [
+       900,
+       ".",
+       "."
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 484,
+    "SLt_b_bkl0": 0,
+    "SLt_b_brl0": 9,
+    "SLt_b_bkr0": 2,
+    "SLt_b_brr0": 19,
+    "SLt_b_bkl1": 0,
+    "SLt_b_brl1": 0,
+    "SLt_b_bkr1": 2,
+    "SLt_b_brr1": 19,
+    "SLt_b_bkl2": 0,
+    "SLt_b_brl2": 1,
+    "SLt_b_bkr2": 0,
+    "SLt_b_brr2": 7,
+    "SLt_b_bkl3": 2,
+    "SLt_b_brl3": 19,
+    "SLt_b_bkr3": 0,
+    "SLt_b_brr3": 4,
+    "SLt_b_bkl4": 2,
+    "SLt_b_brl4": 19,
+    "SLt_b_bkr4": 2,
+    "SLt_b_brr4": 19,
+    "SLt_b_bkl5": 0,
+    "SLt_b_brl5": 3,
+    "SLt_b_bkr5": 0,
+    "SLt_b_brr5": 6,
+    "SLt_b_bkl6": 2,
+    "SLt_b_brl6": 19,
+    "SLt_b_bkr6": 2,
+    "SLt_b_brr6": 19,
+    "SLt_b_bkl7": 0,
+    "SLt_b_brl7": 5,
+    "SLt_b_bkr7": 0,
+    "SLt_b_brr7": 8,
+    "SLt_b_bkl8": 2,
+    "SLt_b_brl8": 19,
+    "SLt_b_bkr8": 2,
+    "SLt_b_brr8": 19,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 2,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 2,
+    "SLt_b_blo1": 0,
+    "SLt_b_bhi1": 4,
+    "SLt_b_blo2": 0,
+    "SLt_b_bhi2": 18,
+    "SLt_b_blo3": 6,
+    "SLt_b_bhi3": 10,
+    "SLt_b_blo4": 8,
+    "SLt_b_bhi4": 10,
+    "SLt_b_blo5": 6,
+    "SLt_b_bhi5": 14,
+    "SLt_b_blo6": 12,
+    "SLt_b_bhi6": 14,
+    "SLt_b_blo7": 6,
+    "SLt_b_bhi7": 18,
+    "SLt_b_blo8": 16,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 2,
+    "SLt_ak1": 0,
+    "SLt_aS1": 1,
+    "SLt_aI1": 0,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 8,
+    "SLt_ak3": 0,
+    "SLt_aS3": 0,
+    "SLt_aI3": 0,
+    "SLt_ak4": 0,
+    "SLt_aS4": 1,
+    "SLt_aI4": 1,
+    "SLt_ak5": 0,
+    "SLt_aS5": 1,
+    "SLt_aI5": 5,
+    "SLt_ak6": 2,
+    "SLt_aS6": 0,
+    "SLt_aI6": 0,
+    "SLt_sg0": 3,
+    "SLt_sg1": 0,
+    "SLt_sg2": 0,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 0
+   }
+  }
+ },
+ {
+  "category": "multigap",
+  "fixture_Hqw": [
+   1,
+   3,
+   -1
+  ],
+  "engine": "SAT",
+  "cpu_s": 12.5,
+  "word": [
+   [
+    "K",
+    300
+   ]
+  ],
+  "H": 1,
+  "q": 3,
+  "tried": 6,
+  "certificate": {
+   "A0": [
+    900,
+    [
+     300,
+     [
+      210,
+      [
+       200,
+       [
+        100,
+        [
+         10,
+         null,
+         null
+        ],
+        null
+       ],
+       null
+      ],
+      [
+       212,
+       [
+        211,
+        null,
+        null
+       ],
+       null
+      ]
+     ],
+     [
+      600,
+      [
+       500,
+       [
+        400,
+        null,
+        null
+       ],
+       null
+      ],
+      [
+       800,
+       [
+        700,
+        null,
+        null
+       ],
+       null
+      ]
+     ]
+    ],
+    null
+   ],
+   "B0": [
+    900,
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       [
+        500,
+        [
+         400,
+         [
+          300,
+          [
+           200,
+           [
+            100,
+            [
+             10,
+             null,
+             null
+            ],
+            null
+           ],
+           [
+            212,
+            [
+             211,
+             [
+              210,
+              null,
+              null
+             ],
+             null
+            ],
+            null
+           ]
+          ],
+          null
+         ],
+         null
+        ],
+        null
+       ],
+       null
+      ],
+      null
+     ],
+     null
+    ],
+    null
+   ],
+   "universe": [
+    10,
+    100,
+    200,
+    210,
+    211,
+    212,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "M": [
+    300,
+    600,
+    700,
+    800,
+    900
+   ],
+   "core": [
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "fringe": [
+    10,
+    210,
+    211,
+    212
+   ],
+   "events": [
+    {
+     "mode": "K",
+     "key": 300
+    }
+   ],
+   "accessed_keys": [
+    300
+   ],
+   "modes": [
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      900,
+      300
+     ],
+     "depth": 1
+    }
+   ],
+   "B_depths": [
+    6
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": [
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      900,
+      [
+       300,
+       [
+        210,
+        [
+         200,
+         [
+          100,
+          [
+           10,
+           ".",
+           "."
+          ],
+          "."
+         ],
+         "."
+        ],
+        [
+         212,
+         [
+          211,
+          ".",
+          "."
+         ],
+         "."
+        ]
+       ],
+       [
+        600,
+        [
+         500,
+         [
+          400,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         800,
+         [
+          700,
+          ".",
+          "."
+         ],
+         "."
+        ]
+       ]
+      ],
+      "."
+     ],
+     [
+      900,
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         [
+          500,
+          [
+           400,
+           [
+            300,
+            [
+             200,
+             [
+              100,
+              [
+               10,
+               ".",
+               "."
+              ],
+              "."
+             ],
+             [
+              212,
+              [
+               211,
+               [
+                210,
+                ".",
+                "."
+               ],
+               "."
+              ],
+              "."
+             ]
+            ],
+            "."
+           ],
+           "."
+          ],
+          "."
+         ],
+         "."
+        ],
+        "."
+       ],
+       "."
+      ],
+      "."
+     ]
+    ],
+    [
+     [
+      300,
+      [
+       210,
+       [
+        200,
+        [
+         100,
+         [
+          10,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        "."
+       ],
+       [
+        212,
+        [
+         211,
+         ".",
+         "."
+        ],
+        "."
+       ]
+      ],
+      [
+       900,
+       [
+        600,
+        [
+         500,
+         [
+          400,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         800,
+         [
+          700,
+          ".",
+          "."
+         ],
+         "."
+        ]
+       ],
+       "."
+      ]
+     ],
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        [
+         10,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        212,
+        [
+         211,
+         [
+          210,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        600,
+        [
+         400,
+         ".",
+         [
+          500,
+          ".",
+          "."
+         ]
+        ],
+        [
+         700,
+         ".",
+         "."
+        ]
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 1,
+   "q": 3,
+   "w": -1,
+   "dest_trees": [
+    [
+     300,
+     [
+      210,
+      [
+       200,
+       [
+        100,
+        [
+         10,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       "."
+      ],
+      [
+       212,
+       [
+        211,
+        ".",
+        "."
+       ],
+       "."
+      ]
+     ],
+     [
+      900,
+      [
+       600,
+       [
+        500,
+        [
+         400,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         ".",
+         "."
+        ],
+        "."
+       ]
+      ],
+      "."
+     ]
+    ],
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       [
+        10,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       212,
+       [
+        211,
+        [
+         210,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       "."
+      ]
+     ],
+     [
+      800,
+      [
+       600,
+       [
+        400,
+        ".",
+        [
+         500,
+         ".",
+         "."
+        ]
+       ],
+       [
+        700,
+        ".",
+        "."
+       ]
+      ],
+      [
+       900,
+       ".",
+       "."
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 484,
+    "SLt_b_bkl0": 0,
+    "SLt_b_brl0": 9,
+    "SLt_b_bkr0": 2,
+    "SLt_b_brr0": 19,
+    "SLt_b_bkl1": 0,
+    "SLt_b_brl1": 0,
+    "SLt_b_bkr1": 0,
+    "SLt_b_brr1": 11,
+    "SLt_b_bkl2": 0,
+    "SLt_b_brl2": 1,
+    "SLt_b_bkr2": 0,
+    "SLt_b_brr2": 7,
+    "SLt_b_bkl3": 2,
+    "SLt_b_brl3": 19,
+    "SLt_b_bkr3": 0,
+    "SLt_b_brr3": 4,
+    "SLt_b_bkl4": 2,
+    "SLt_b_brl4": 19,
+    "SLt_b_bkr4": 2,
+    "SLt_b_brr4": 19,
+    "SLt_b_bkl5": 0,
+    "SLt_b_brl5": 3,
+    "SLt_b_bkr5": 0,
+    "SLt_b_brr5": 6,
+    "SLt_b_bkl6": 2,
+    "SLt_b_brl6": 19,
+    "SLt_b_bkr6": 2,
+    "SLt_b_brr6": 19,
+    "SLt_b_bkl7": 0,
+    "SLt_b_brl7": 5,
+    "SLt_b_bkr7": 0,
+    "SLt_b_brr7": 8,
+    "SLt_b_bkl8": 2,
+    "SLt_b_brl8": 19,
+    "SLt_b_bkr8": 2,
+    "SLt_b_brr8": 19,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 2,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 2,
+    "SLt_b_blo1": 0,
+    "SLt_b_bhi1": 4,
+    "SLt_b_blo2": 0,
+    "SLt_b_bhi2": 18,
+    "SLt_b_blo3": 6,
+    "SLt_b_bhi3": 10,
+    "SLt_b_blo4": 8,
+    "SLt_b_bhi4": 10,
+    "SLt_b_blo5": 6,
+    "SLt_b_bhi5": 14,
+    "SLt_b_blo6": 12,
+    "SLt_b_bhi6": 14,
+    "SLt_b_blo7": 6,
+    "SLt_b_bhi7": 18,
+    "SLt_b_blo8": 16,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 2,
+    "SLt_ak1": 0,
+    "SLt_aS1": 0,
+    "SLt_aI1": 0,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 8,
+    "SLt_ak3": 0,
+    "SLt_aS3": 1,
+    "SLt_aI3": 1,
+    "SLt_ak4": 0,
+    "SLt_aS4": 0,
+    "SLt_aI4": 0,
+    "SLt_ak5": 0,
+    "SLt_aS5": 1,
+    "SLt_aI5": 5,
+    "SLt_ak6": 2,
+    "SLt_aS6": 0,
+    "SLt_aI6": 0,
+    "SLt_sg0": 1,
+    "SLt_sg1": 0,
+    "SLt_sg2": 3,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 0
+   }
+  }
+ },
+ {
+  "category": "mask5",
+  "fixture_Hqw": [
+   1,
+   1,
+   1
+  ],
+  "engine": "SAT",
+  "cpu_s": 5.6,
+  "word": [
+   [
+    "K",
+    700
+   ]
+  ],
+  "H": 1,
+  "q": 1,
+  "tried": 1,
+  "certificate": {
+   "A0": [
+    500,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      400,
+      null,
+      null
+     ]
+    ],
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      900,
+      null,
+      null
+     ]
+    ]
+   ],
+   "B0": [
+    500,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      400,
+      null,
+      null
+     ]
+    ],
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      900,
+      null,
+      null
+     ]
+    ]
+   ],
+   "universe": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "M": [
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "core": [
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "fringe": [],
+   "events": [
+    {
+     "mode": "K",
+     "key": 700
+    }
+   ],
+   "accessed_keys": [
+    700
+   ],
+   "modes": [
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      500,
+      800,
+      700
+     ],
+     "depth": 2
+    }
+   ],
+   "B_depths": [
+    2
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": [
+      500,
+      800
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ],
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ],
+    [
+     [
+      700,
+      [
+       500,
+       [
+        300,
+        [
+         200,
+         [
+          100,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         400,
+         ".",
+         "."
+        ]
+       ],
+       [
+        600,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       ".",
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ],
+     [
+      700,
+      [
+       500,
+       [
+        300,
+        [
+         200,
+         [
+          100,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         400,
+         ".",
+         "."
+        ]
+       ],
+       [
+        600,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       ".",
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 1,
+   "q": 1,
+   "w": 1,
+   "dest_trees": [
+    [
+     700,
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       600,
+       ".",
+       "."
+      ]
+     ],
+     [
+      800,
+      ".",
+      [
+       900,
+       ".",
+       "."
+      ]
+     ]
+    ],
+    [
+     700,
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       600,
+       ".",
+       "."
+      ]
+     ],
+     [
+      800,
+      ".",
+      [
+       900,
+       ".",
+       "."
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 496,
+    "SLt_b_bkl0": 2,
+    "SLt_b_brl0": 19,
+    "SLt_b_bkr0": 2,
+    "SLt_b_brr0": 19,
+    "SLt_b_bkl1": 0,
+    "SLt_b_brl1": 0,
+    "SLt_b_bkr1": 2,
+    "SLt_b_brr1": 19,
+    "SLt_b_bkl2": 0,
+    "SLt_b_brl2": 1,
+    "SLt_b_bkr2": 0,
+    "SLt_b_brr2": 3,
+    "SLt_b_bkl3": 2,
+    "SLt_b_brl3": 19,
+    "SLt_b_bkr3": 2,
+    "SLt_b_brr3": 19,
+    "SLt_b_bkl4": 0,
+    "SLt_b_brl4": 2,
+    "SLt_b_bkr4": 0,
+    "SLt_b_brr4": 5,
+    "SLt_b_bkl5": 2,
+    "SLt_b_brl5": 19,
+    "SLt_b_bkr5": 2,
+    "SLt_b_brr5": 19,
+    "SLt_b_bkl6": 0,
+    "SLt_b_brl6": 4,
+    "SLt_b_bkr6": 0,
+    "SLt_b_brr6": 7,
+    "SLt_b_bkl7": 2,
+    "SLt_b_brl7": 19,
+    "SLt_b_bkr7": 0,
+    "SLt_b_brr7": 8,
+    "SLt_b_bkl8": 2,
+    "SLt_b_brl8": 19,
+    "SLt_b_bkr8": 2,
+    "SLt_b_brr8": 19,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 6,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 2,
+    "SLt_b_blo1": 0,
+    "SLt_b_bhi1": 4,
+    "SLt_b_blo2": 0,
+    "SLt_b_bhi2": 8,
+    "SLt_b_blo3": 6,
+    "SLt_b_bhi3": 8,
+    "SLt_b_blo4": 0,
+    "SLt_b_bhi4": 12,
+    "SLt_b_blo5": 10,
+    "SLt_b_bhi5": 12,
+    "SLt_b_blo6": 0,
+    "SLt_b_bhi6": 18,
+    "SLt_b_blo7": 14,
+    "SLt_b_bhi7": 18,
+    "SLt_b_blo8": 16,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 6,
+    "SLt_ak1": 0,
+    "SLt_aS1": 1,
+    "SLt_aI1": 4,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 7,
+    "SLt_ak3": 0,
+    "SLt_aS3": 1,
+    "SLt_aI3": 2,
+    "SLt_ak4": 0,
+    "SLt_aS4": 1,
+    "SLt_aI4": 5,
+    "SLt_ak5": 2,
+    "SLt_aS5": 0,
+    "SLt_aI5": 0,
+    "SLt_ak6": 0,
+    "SLt_aS6": 1,
+    "SLt_aI6": 8,
+    "SLt_sg0": 0,
+    "SLt_sg1": 0,
+    "SLt_sg2": 0,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 0
+   }
+  }
+ },
+ {
+  "category": "balB",
+  "fixture_Hqw": [
+   1,
+   1,
+   1
+  ],
+  "engine": "SAT",
+  "cpu_s": 5.5,
+  "word": [
+   [
+    "K",
+    300
+   ]
+  ],
+  "H": 1,
+  "q": 1,
+  "tried": 1,
+  "certificate": {
+   "A0": [
+    500,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      400,
+      null,
+      null
+     ]
+    ],
+    [
+     800,
+     [
+      700,
+      [
+       600,
+       null,
+       null
+      ],
+      null
+     ],
+     [
+      900,
+      null,
+      null
+     ]
+    ]
+   ],
+   "B0": [
+    500,
+    [
+     400,
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        null,
+        null
+       ],
+       null
+      ],
+      null
+     ],
+     null
+    ],
+    [
+     600,
+     null,
+     [
+      700,
+      null,
+      [
+       800,
+       null,
+       [
+        900,
+        null,
+        null
+       ]
+      ]
+     ]
+    ]
+   ],
+   "universe": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "M": [
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "core": [
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "fringe": [],
+   "events": [
+    {
+     "mode": "K",
+     "key": 300
+    }
+   ],
+   "accessed_keys": [
+    300
+   ],
+   "modes": [
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      500,
+      300
+     ],
+     "depth": 1
+    }
+   ],
+   "B_depths": [
+    2
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": [
+      400,
+      500
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      500,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        400,
+        ".",
+        "."
+       ]
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ],
+     [
+      500,
+      [
+       400,
+       [
+        300,
+        [
+         200,
+         [
+          100,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        "."
+       ],
+       "."
+      ],
+      [
+       600,
+       ".",
+       [
+        700,
+        ".",
+        [
+         800,
+         ".",
+         [
+          900,
+          ".",
+          "."
+         ]
+        ]
+       ]
+      ]
+     ]
+    ],
+    [
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       500,
+       [
+        400,
+        ".",
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         [
+          600,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         900,
+         ".",
+         "."
+        ]
+       ]
+      ]
+     ],
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       400,
+       ".",
+       [
+        500,
+        ".",
+        [
+         600,
+         ".",
+         [
+          700,
+          ".",
+          [
+           800,
+           ".",
+           [
+            900,
+            ".",
+            "."
+           ]
+          ]
+         ]
+        ]
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 1,
+   "q": 1,
+   "w": 1,
+   "dest_trees": [
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      "."
+     ],
+     [
+      500,
+      [
+       400,
+       ".",
+       "."
+      ],
+      [
+       800,
+       [
+        700,
+        [
+         600,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        900,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ],
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       ".",
+       "."
+      ],
+      "."
+     ],
+     [
+      400,
+      ".",
+      [
+       500,
+       ".",
+       [
+        600,
+        ".",
+        [
+         700,
+         ".",
+         [
+          800,
+          ".",
+          [
+           900,
+           ".",
+           "."
+          ]
+         ]
+        ]
+       ]
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 31,
+    "SLt_b_bkl0": 2,
+    "SLt_b_brl0": 19,
+    "SLt_b_bkr0": 2,
+    "SLt_b_brr0": 19,
+    "SLt_b_bkl1": 0,
+    "SLt_b_brl1": 0,
+    "SLt_b_bkr1": 2,
+    "SLt_b_brr1": 19,
+    "SLt_b_bkl2": 0,
+    "SLt_b_brl2": 1,
+    "SLt_b_bkr2": 0,
+    "SLt_b_brr2": 3,
+    "SLt_b_bkl3": 2,
+    "SLt_b_brl3": 19,
+    "SLt_b_bkr3": 0,
+    "SLt_b_brr3": 4,
+    "SLt_b_bkl4": 2,
+    "SLt_b_brl4": 19,
+    "SLt_b_bkr4": 0,
+    "SLt_b_brr4": 5,
+    "SLt_b_bkl5": 2,
+    "SLt_b_brl5": 19,
+    "SLt_b_bkr5": 0,
+    "SLt_b_brr5": 6,
+    "SLt_b_bkl6": 2,
+    "SLt_b_brl6": 19,
+    "SLt_b_bkr6": 0,
+    "SLt_b_brr6": 7,
+    "SLt_b_bkl7": 2,
+    "SLt_b_brl7": 19,
+    "SLt_b_bkr7": 0,
+    "SLt_b_brr7": 8,
+    "SLt_b_bkl8": 2,
+    "SLt_b_brl8": 19,
+    "SLt_b_bkr8": 2,
+    "SLt_b_brr8": 19,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 2,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 2,
+    "SLt_b_blo1": 0,
+    "SLt_b_bhi1": 4,
+    "SLt_b_blo2": 0,
+    "SLt_b_bhi2": 18,
+    "SLt_b_blo3": 6,
+    "SLt_b_bhi3": 18,
+    "SLt_b_blo4": 8,
+    "SLt_b_bhi4": 18,
+    "SLt_b_blo5": 10,
+    "SLt_b_bhi5": 18,
+    "SLt_b_blo6": 12,
+    "SLt_b_bhi6": 18,
+    "SLt_b_blo7": 14,
+    "SLt_b_bhi7": 18,
+    "SLt_b_blo8": 16,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 2,
+    "SLt_ak1": 0,
+    "SLt_aS1": 1,
+    "SLt_aI1": 1,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 4,
+    "SLt_ak3": 0,
+    "SLt_aS3": 1,
+    "SLt_aI3": 0,
+    "SLt_ak4": 2,
+    "SLt_aS4": 0,
+    "SLt_aI4": 0,
+    "SLt_ak5": 0,
+    "SLt_aS5": 1,
+    "SLt_aI5": 3,
+    "SLt_ak6": 0,
+    "SLt_aS6": 1,
+    "SLt_aI6": 7,
+    "SLt_sg0": 0,
+    "SLt_sg1": 0,
+    "SLt_sg2": 0,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 0
+   }
+  }
+ },
+ {
+  "category": "saturated",
+  "fixture_Hqw": [
+   1,
+   0,
+   2
+  ],
+  "engine": "SAT",
+  "cpu_s": 12.1,
+  "word": [
+   [
+    "K",
+    300
+   ]
+  ],
+  "H": 1,
+  "q": 0,
+  "tried": 6,
+  "certificate": {
+   "A0": [
+    900,
+    [
+     300,
+     [
+      210,
+      [
+       200,
+       [
+        100,
+        [
+         10,
+         null,
+         null
+        ],
+        null
+       ],
+       null
+      ],
+      [
+       212,
+       [
+        211,
+        null,
+        null
+       ],
+       null
+      ]
+     ],
+     [
+      600,
+      [
+       500,
+       [
+        400,
+        null,
+        null
+       ],
+       null
+      ],
+      [
+       800,
+       [
+        700,
+        null,
+        null
+       ],
+       null
+      ]
+     ]
+    ],
+    [
+     910,
+     null,
+     null
+    ]
+   ],
+   "B0": [
+    900,
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       [
+        10,
+        null,
+        null
+       ],
+       null
+      ],
+      [
+       212,
+       [
+        211,
+        [
+         210,
+         null,
+         null
+        ],
+        null
+       ],
+       null
+      ]
+     ],
+     [
+      600,
+      [
+       500,
+       [
+        400,
+        null,
+        null
+       ],
+       null
+      ],
+      [
+       800,
+       [
+        700,
+        null,
+        null
+       ],
+       null
+      ]
+     ]
+    ],
+    [
+     910,
+     null,
+     null
+    ]
+   ],
+   "universe": [
+    10,
+    100,
+    200,
+    210,
+    211,
+    212,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    910
+   ],
+   "M": [
+    300,
+    600,
+    700,
+    800,
+    900
+   ],
+   "core": [
+    300,
+    600,
+    700,
+    800,
+    900
+   ],
+   "fringe": [
+    10,
+    210,
+    211,
+    212,
+    910
+   ],
+   "events": [
+    {
+     "mode": "K",
+     "key": 300
+    }
+   ],
+   "accessed_keys": [
+    300
+   ],
+   "modes": [
+    "K"
+   ],
+   "A_path_depths": [
+    {
+     "path": [
+      900,
+      300
+     ],
+     "depth": 1
+    }
+   ],
+   "B_depths": [
+    1
+   ],
+   "rotation_trace": [
+    {
+     "event": 0,
+     "push": [
+      900
+     ]
+    }
+   ],
+   "intermediates": [
+    [
+     [
+      900,
+      [
+       300,
+       [
+        210,
+        [
+         200,
+         [
+          100,
+          [
+           10,
+           ".",
+           "."
+          ],
+          "."
+         ],
+         "."
+        ],
+        [
+         212,
+         [
+          211,
+          ".",
+          "."
+         ],
+         "."
+        ]
+       ],
+       [
+        600,
+        [
+         500,
+         [
+          400,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         800,
+         [
+          700,
+          ".",
+          "."
+         ],
+         "."
+        ]
+       ]
+      ],
+      [
+       910,
+       ".",
+       "."
+      ]
+     ],
+     [
+      900,
+      [
+       300,
+       [
+        200,
+        [
+         100,
+         [
+          10,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         212,
+         [
+          211,
+          [
+           210,
+           ".",
+           "."
+          ],
+          "."
+         ],
+         "."
+        ]
+       ],
+       [
+        600,
+        [
+         500,
+         [
+          400,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         800,
+         [
+          700,
+          ".",
+          "."
+         ],
+         "."
+        ]
+       ]
+      ],
+      [
+       910,
+       ".",
+       "."
+      ]
+     ]
+    ],
+    [
+     [
+      300,
+      [
+       210,
+       [
+        200,
+        [
+         100,
+         [
+          10,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        "."
+       ],
+       [
+        212,
+        [
+         211,
+         ".",
+         "."
+        ],
+        "."
+       ]
+      ],
+      [
+       900,
+       [
+        600,
+        [
+         500,
+         [
+          400,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         800,
+         [
+          700,
+          ".",
+          "."
+         ],
+         "."
+        ]
+       ],
+       [
+        910,
+        ".",
+        "."
+       ]
+      ]
+     ],
+     [
+      300,
+      [
+       200,
+       [
+        100,
+        [
+         10,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        212,
+        [
+         211,
+         [
+          210,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        "."
+       ]
+      ],
+      [
+       900,
+       [
+        600,
+        [
+         500,
+         [
+          400,
+          ".",
+          "."
+         ],
+         "."
+        ],
+        [
+         800,
+         [
+          700,
+          ".",
+          "."
+         ],
+         "."
+        ]
+       ],
+       [
+        910,
+        ".",
+        "."
+       ]
+      ]
+     ]
+    ]
+   ],
+   "H": 1,
+   "q": 0,
+   "w": 2,
+   "dest_trees": [
+    [
+     300,
+     [
+      210,
+      [
+       200,
+       [
+        100,
+        [
+         10,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       "."
+      ],
+      [
+       212,
+       [
+        211,
+        ".",
+        "."
+       ],
+       "."
+      ]
+     ],
+     [
+      900,
+      [
+       600,
+       [
+        500,
+        [
+         400,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         ".",
+         "."
+        ],
+        "."
+       ]
+      ],
+      [
+       910,
+       ".",
+       "."
+      ]
+     ]
+    ],
+    [
+     300,
+     [
+      200,
+      [
+       100,
+       [
+        10,
+        ".",
+        "."
+       ],
+       "."
+      ],
+      [
+       212,
+       [
+        211,
+        [
+         210,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       "."
+      ]
+     ],
+     [
+      900,
+      [
+       600,
+       [
+        500,
+        [
+         400,
+         ".",
+         "."
+        ],
+        "."
+       ],
+       [
+        800,
+        [
+         700,
+         ".",
+         "."
+        ],
+        "."
+       ]
+      ],
+      [
+       910,
+       ".",
+       "."
+      ]
+     ]
+    ]
+   ],
+   "dest_abstract": {
+    "SLt_mu": 484,
+    "SLt_b_bkl0": 0,
+    "SLt_b_brl0": 9,
+    "SLt_b_bkr0": 2,
+    "SLt_b_brr0": 19,
+    "SLt_b_bkl1": 0,
+    "SLt_b_brl1": 0,
+    "SLt_b_bkr1": 0,
+    "SLt_b_brr1": 11,
+    "SLt_b_bkl2": 0,
+    "SLt_b_brl2": 1,
+    "SLt_b_bkr2": 0,
+    "SLt_b_brr2": 8,
+    "SLt_b_bkl3": 2,
+    "SLt_b_brl3": 19,
+    "SLt_b_bkr3": 2,
+    "SLt_b_brr3": 19,
+    "SLt_b_bkl4": 0,
+    "SLt_b_brl4": 3,
+    "SLt_b_bkr4": 2,
+    "SLt_b_brr4": 19,
+    "SLt_b_bkl5": 0,
+    "SLt_b_brl5": 4,
+    "SLt_b_bkr5": 0,
+    "SLt_b_brr5": 7,
+    "SLt_b_bkl6": 2,
+    "SLt_b_brl6": 19,
+    "SLt_b_bkr6": 2,
+    "SLt_b_brr6": 19,
+    "SLt_b_bkl7": 0,
+    "SLt_b_brl7": 6,
+    "SLt_b_bkr7": 2,
+    "SLt_b_brr7": 19,
+    "SLt_b_bkl8": 0,
+    "SLt_b_brl8": 5,
+    "SLt_b_bkr8": 0,
+    "SLt_b_brr8": 18,
+    "SLt_b_bkl9": 2,
+    "SLt_b_bkr9": 2,
+    "SLt_b_brl9": 19,
+    "SLt_b_brr9": 19,
+    "SLt_b_bkl10": 2,
+    "SLt_b_bkr10": 2,
+    "SLt_b_brl10": 19,
+    "SLt_b_brr10": 19,
+    "SLt_b_bkl11": 2,
+    "SLt_b_bkr11": 2,
+    "SLt_b_brl11": 19,
+    "SLt_b_brr11": 19,
+    "SLt_b_bkl12": 2,
+    "SLt_b_bkr12": 2,
+    "SLt_b_brl12": 19,
+    "SLt_b_brr12": 19,
+    "SLt_b_bkl13": 2,
+    "SLt_b_bkr13": 2,
+    "SLt_b_brl13": 19,
+    "SLt_b_brr13": 19,
+    "SLt_b_bkl14": 2,
+    "SLt_b_bkr14": 2,
+    "SLt_b_brl14": 19,
+    "SLt_b_brr14": 19,
+    "SLt_b_bkl15": 2,
+    "SLt_b_bkr15": 2,
+    "SLt_b_brl15": 19,
+    "SLt_b_brr15": 19,
+    "SLt_b_bkl16": 2,
+    "SLt_b_bkr16": 2,
+    "SLt_b_brl16": 19,
+    "SLt_b_brr16": 19,
+    "SLt_b_bkl17": 2,
+    "SLt_b_bkr17": 2,
+    "SLt_b_brl17": 19,
+    "SLt_b_brr17": 19,
+    "SLt_b_bkl18": 2,
+    "SLt_b_bkr18": 2,
+    "SLt_b_brl18": 19,
+    "SLt_b_brr18": 19,
+    "SLt_b_broot": 2,
+    "SLt_b_blo0": 0,
+    "SLt_b_bhi0": 2,
+    "SLt_b_blo1": 0,
+    "SLt_b_bhi1": 4,
+    "SLt_b_blo2": 0,
+    "SLt_b_bhi2": 18,
+    "SLt_b_blo3": 6,
+    "SLt_b_bhi3": 8,
+    "SLt_b_blo4": 6,
+    "SLt_b_bhi4": 10,
+    "SLt_b_blo5": 6,
+    "SLt_b_bhi5": 16,
+    "SLt_b_blo6": 12,
+    "SLt_b_bhi6": 14,
+    "SLt_b_blo7": 12,
+    "SLt_b_bhi7": 16,
+    "SLt_b_blo8": 6,
+    "SLt_b_bhi8": 18,
+    "SLt_b_blo9": 0,
+    "SLt_b_bhi9": 0,
+    "SLt_b_blo10": 2,
+    "SLt_b_bhi10": 2,
+    "SLt_b_blo11": 4,
+    "SLt_b_bhi11": 4,
+    "SLt_b_blo12": 6,
+    "SLt_b_bhi12": 6,
+    "SLt_b_blo13": 8,
+    "SLt_b_bhi13": 8,
+    "SLt_b_blo14": 10,
+    "SLt_b_bhi14": 10,
+    "SLt_b_blo15": 12,
+    "SLt_b_bhi15": 12,
+    "SLt_b_blo16": 14,
+    "SLt_b_bhi16": 14,
+    "SLt_b_blo17": 16,
+    "SLt_b_bhi17": 16,
+    "SLt_b_blo18": 18,
+    "SLt_b_bhi18": 18,
+    "SLt_ak0": 0,
+    "SLt_aS0": 1,
+    "SLt_aI0": 2,
+    "SLt_ak1": 0,
+    "SLt_aS1": 0,
+    "SLt_aI1": 0,
+    "SLt_ak2": 0,
+    "SLt_aS2": 1,
+    "SLt_aI2": 8,
+    "SLt_ak3": 0,
+    "SLt_aS3": 1,
+    "SLt_aI3": 1,
+    "SLt_ak4": 0,
+    "SLt_aS4": 0,
+    "SLt_aI4": 0,
+    "SLt_ak5": 0,
+    "SLt_aS5": 1,
+    "SLt_aI5": 5,
+    "SLt_ak6": 0,
+    "SLt_aS6": 0,
+    "SLt_aI6": 0,
+    "SLt_sg0": 1,
+    "SLt_sg1": 0,
+    "SLt_sg2": 3,
+    "SLt_sg3": 0,
+    "SLt_sg4": 0,
+    "SLt_sg5": 0,
+    "SLt_sg6": 0,
+    "SLt_sg7": 0,
+    "SLt_sg8": 0,
+    "SLt_sg9": 1
+   }
+  }
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "name": "B1 hazard confirmed (old SAT vs oracle False)",
+  "status": "PASS",
+  "detail": "SAT vs ('b', False)"
+ },
+ {
+  "name": "B1 forall hazard confirmed (old UNSAT vs oracle True)",
+  "status": "PASS",
+  "detail": "UNSAT vs ('b', True)"
+ },
+ {
+  "name": "B1 exists-bounded UNSAT",
+  "status": "PASS",
+  "detail": "UNSAT"
+ },
+ {
+  "name": "B1 forall-bounded SAT",
+  "status": "PASS",
+  "detail": "SAT"
+ },
+ {
+  "name": "B1 nested forall-exists SAT",
+  "status": "PASS",
+  "detail": "SAT ('b', True)"
+ },
+ {
+  "name": "B1 nested exists-forall UNSAT",
+  "status": "PASS",
+  "detail": "UNSAT ('b', False)"
+ },
+ {
+  "name": "B1 patch Q1 still UNSAT",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "name": "B1 patch Q2 still SAT z=0",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "name": "B2 session-aware completion respects session",
+  "status": "PASS",
+  "detail": "SAT {'yy': 3}"
+ },
+ {
+  "name": "B2 session-session contradiction UNSAT",
+  "status": "PASS",
+  "detail": "session-contradiction"
+ },
+ {
+  "name": "B2 session-call contradiction UNSAT",
+  "status": "PASS",
+  "detail": "session-call-contradiction"
+ }
+]

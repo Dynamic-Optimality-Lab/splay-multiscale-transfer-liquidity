@@ -1,0 +1,27 @@
+[
+ {
+  "test": "N1 w=9 impossible",
+  "status": "UNSAT",
+  "reason": "no-b-words"
+ },
+ {
+  "test": "N2 marked-count!=5",
+  "status": "UNSAT",
+  "reason": "mu-mismatch"
+ },
+ {
+  "test": "N3 cyclic target",
+  "status": "UNSAT",
+  "reason": "b-decode: ('cyclic topology', 5)"
+ },
+ {
+  "test": "N4 sig-mismatch",
+  "status": "UNSAT",
+  "reason": "sig-mismatch"
+ },
+ {
+  "test": "N5 w=5 cost-impossible",
+  "status": "UNSAT",
+  "reason": "no-b-words"
+ }
+]

@@ -1,0 +1,55 @@
+{
+ "checks": [
+  {
+   "name": "artifacts present",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "name": "source hashes unchanged",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "name": "B1 repair holds (bounded exists UNSAT)",
+   "status": "PASS",
+   "detail": "UNSAT"
+  },
+  {
+   "name": "G2 fixture grounded (fresh)",
+   "status": "PASS",
+   "detail": "ok"
+  },
+  {
+   "name": "G2 re-synthesis SAT (fresh)",
+   "status": "PASS",
+   "detail": "SAT cpu=4.9"
+  },
+  {
+   "name": "all certificates replay 13/13",
+   "status": "PASS",
+   "detail": "13/13"
+  },
+  {
+   "name": "G1/G2/G3 SAT recorded",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "name": "negatives all UNSAT",
+   "status": "PASS",
+   "detail": "5"
+  },
+  {
+   "name": "high SAT recorded",
+   "status": "PASS",
+   "detail": "3"
+  },
+  {
+   "name": "caps respected",
+   "status": "PASS",
+   "detail": "{'caps': {'cpu_h': 4.0, 'dag_nodes': 4000000, 'queries': 1000000, 'ram_gib': 32}, 'cpu_h': 0.4, 'cpu_h_breakdown': {'a_prefix_engine_dev': 0.15, 'b_side_dev': 0.05, 'corpus_gen': 0.03, 'generalize_run': 0.05, 'safety_interface': 0.02, 'synthesis_run': 0.03, 'verification': 0.07}, 'dag_nodes': 1800000, 'queries': 312, 'ram_peak_gib': 2.5, 'reserve_h': 1.8, 'step': '02'}"
+  }
+ ],
+ "verdict": "PASS"
+}
