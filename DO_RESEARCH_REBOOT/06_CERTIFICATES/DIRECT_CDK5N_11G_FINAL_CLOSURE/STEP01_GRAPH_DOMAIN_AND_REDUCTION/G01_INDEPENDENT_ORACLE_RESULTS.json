@@ -1,0 +1,66 @@
+{
+ "K1 neg cycle detected": {
+  "status": "PASS",
+  "detail": "-3"
+ },
+ "K1 potential infeasible": {
+  "status": "PASS",
+  "detail": ""
+ },
+ "K2 zero-total not negative": {
+  "status": "PASS",
+  "detail": ""
+ },
+ "K2 potential certifies": {
+  "status": "PASS",
+  "detail": "{(0, 0): 0, (0, 1): -1}"
+ },
+ "K3 contraction preserves weight": {
+  "status": "PASS",
+  "detail": "{(0, 0, 2): [(0, 1)], (0, 0, 5): [(0, 1)]}"
+ },
+ "K4 mixed cycle detected": {
+  "status": "PASS",
+  "detail": "-1"
+ },
+ "K5 parallel weights kept": {
+  "status": "PASS",
+  "detail": ""
+ },
+ "K6 self-loop negative": {
+  "status": "PASS",
+  "detail": ""
+ },
+ "K7 mid-only cycle impossible": {
+  "status": "PASS",
+  "detail": "mid nodes exist but all cycles pass through O (sort check)"
+ },
+ "K7 check runs": {
+  "status": "PASS",
+  "detail": "False"
+ },
+ "K8 no exit => no contracted edge": {
+  "status": "PASS",
+  "detail": "[(0, 1, 5)]"
+ },
+ "K9 disconnected handled": {
+  "status": "PASS",
+  "detail": ""
+ },
+ "K9b acyclic potential exists+valid": {
+  "status": "PASS",
+  "detail": "{(0, 0): 0, (0, 1): 0, (0, 2): 0}"
+ },
+ "K10 duality exhaustive (2-node)": {
+  "status": "PASS",
+  "detail": "175 graphs"
+ },
+ "K11 zero cycle neutral": {
+  "status": "PASS",
+  "detail": ""
+ },
+ "K12 sector partition preserves cycles": {
+  "status": "PASS",
+  "detail": "full=False A=False B=False (zero-total cycles everywhere, no negative)"
+ }
+}
