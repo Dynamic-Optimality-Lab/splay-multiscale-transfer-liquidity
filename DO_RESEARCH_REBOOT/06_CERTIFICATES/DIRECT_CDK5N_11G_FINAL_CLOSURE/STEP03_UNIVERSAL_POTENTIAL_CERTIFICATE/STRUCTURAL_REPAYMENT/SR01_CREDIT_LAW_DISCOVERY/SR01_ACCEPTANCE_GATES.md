@@ -21,4 +21,4 @@
 | SR01-17 | SR-02/03/04 separated | PASS (handoff) |
 | SR01-18 | No universal claim | PASS |
 | SR01-19 | Review + cap | PASS (9/9; ~300s ≤ 360s) |
-| SR01-20 | Commit/push/HARD STOP | PENDING (this commit) |
+| SR01-20 | Commit/push/HARD STOP | PASS (91f9895 pushed; remote verified) |
