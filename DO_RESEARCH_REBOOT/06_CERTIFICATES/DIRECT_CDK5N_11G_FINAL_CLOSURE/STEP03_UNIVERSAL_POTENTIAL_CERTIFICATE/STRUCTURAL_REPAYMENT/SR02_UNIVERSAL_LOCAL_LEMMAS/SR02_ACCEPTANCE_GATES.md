@@ -23,4 +23,4 @@
 | SR02-25 | No hidden restriction | PASS |
 | SR02-26 | Independent verification | PASS (10/10) |
 | SR02-27 | Caps respected | PASS |
-| SR02-28 | Delivery + HARD STOP | PENDING (this commit) |
+| SR02-28 | Delivery + HARD STOP | PASS (ad3a982 pushed; remote verified) |
