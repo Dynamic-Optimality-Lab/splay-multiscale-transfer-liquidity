@@ -26,6 +26,6 @@
 | G03F-22 | No OPEN dependencies | FAIL (universal-Vw, credit lemmas, symbolic returns open) |
 | G03F-23 | Independent verification PASS | PASS (F01–F15 15/15) |
 | G03F-24 | Caps respected | PASS |
-| G03F-25 | Additive delivery PASS | PENDING (this commit) |
+| G03F-25 | Additive delivery PASS | PASS (15408ef pushed; remote verified) |
 
 STAGE 11G STEP 03 remains OPEN (G03F-21/22 FAIL honestly).
