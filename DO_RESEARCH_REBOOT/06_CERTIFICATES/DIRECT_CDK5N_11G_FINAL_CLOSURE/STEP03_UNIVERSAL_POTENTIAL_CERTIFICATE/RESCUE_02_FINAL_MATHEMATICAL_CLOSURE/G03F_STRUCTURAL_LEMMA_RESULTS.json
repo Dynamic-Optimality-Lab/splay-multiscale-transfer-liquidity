@@ -1,0 +1,23 @@
+{
+ "joint_constraints_hold": true,
+ "joint_violations": 0,
+ "guard_pure_vertex_function": true,
+ "guard_lines": [
+  "    return fe['b_depth_max'] >= 6"
+ ],
+ "clean_candidate_killers": [
+  [
+   2,
+   1
+  ],
+  [
+   1,
+   0
+  ]
+ ],
+ "theorem_deps": {
+  "guard": "vertex-only",
+  "telescoping": "joint LP by construction",
+  "universal": "OPEN (candidate refuted 12/40 grounded)"
+ }
+}
