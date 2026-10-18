@@ -1,0 +1,70 @@
+{
+ "n_endpoints": 80,
+ "features": {
+  "b_root": {
+   "none_count": 0
+  },
+  "b_depth_sum": {
+   "none_count": 0
+  },
+  "b_depth_max": {
+   "none_count": 0
+  },
+  "b_marked_depth_sum": {
+   "none_count": 0
+  },
+  "a_root_sidx": {
+   "none_count": 0
+  },
+  "a_nslots": {
+   "none_count": 0
+  },
+  "a_marked_count": {
+   "none_count": 0
+  },
+  "sig_sum": {
+   "none_count": 0
+  },
+  "sig_nonempty": {
+   "none_count": 0
+  },
+  "core_size": {
+   "none_count": 0
+  },
+  "mu_bits": {
+   "none_count": 0
+  },
+  "b_rank_sum": {
+   "none_count": 0
+  },
+  "b_rank_marked": {
+   "none_count": 0
+  },
+  "b_rank_root": {
+   "none_count": 0
+  },
+  "a_rank_sum": {
+   "none_count": 0
+  },
+  "a_rank_root": {
+   "none_count": 0
+  }
+ },
+ "core_size_dist": {
+  "9": 18,
+  "5": 15,
+  "7": 17,
+  "8": 17,
+  "6": 13
+ },
+ "totality": true,
+ "purity": {
+  "witness_refs": [
+   "# No witness variables, no new observables. All integer-valued (exact Int)."
+  ],
+  "reads_only_abstract_pins": true
+ },
+ "st_rank_scope": "b_rank_*/a_rank_* are pure total functions of the frozen 147-field abstract state (subtree sizes within the frozen window). They are NOT full-tree Sleator-Tarjan ranks; any ST-classic interpretation would be invalid. Validity as G_star vertex functions holds.",
+ "core_size_domain": "core_of_env = ancestor-closure of marked S-indices within B arrays; sizes below 9 are NORMAL (closure of 5 marked nodes), not extraction errors; dist={9: 18, 5: 15, 7: 17, 8: 17, 6: 13}",
+ "sentinel_handling": "kl/kr==2 treated as absent; refs==19 (NULLB) excluded; unreachable targets yield None (totality measured above)"
+}

@@ -1,0 +1,57 @@
+{
+ "results": {
+  "historical_keying": {
+   "graph": "historical-prefix-keying",
+   "n_vertices": 76,
+   "n_edges": 40,
+   "n_pos": 36,
+   "n_neg": 4,
+   "n_zero": 0,
+   "n_scc": 76,
+   "largest_scc": 1,
+   "neg_in_scc": 0,
+   "neg_cross_scc": 4,
+   "has_negative_cycle": false,
+   "cycle": []
+  },
+  "corrected": {
+   "graph": "corrected-namespace-free",
+   "n_vertices": 76,
+   "n_edges": 40,
+   "n_pos": 36,
+   "n_neg": 4,
+   "n_zero": 0,
+   "n_scc": 76,
+   "largest_scc": 1,
+   "neg_in_scc": 0,
+   "neg_cross_scc": 4,
+   "has_negative_cycle": false,
+   "cycle": []
+  },
+  "expanded": {
+   "graph": "expanded-full-state",
+   "n_vertices": 76,
+   "n_edges": 40,
+   "n_pos": 36,
+   "n_neg": 4,
+   "n_zero": 0,
+   "n_scc": 76,
+   "largest_scc": 1,
+   "neg_in_scc": 0,
+   "neg_cross_scc": 4,
+   "has_negative_cycle": false,
+   "cycle": []
+  },
+  "contracted_high": {
+   "graph": "contracted-high",
+   "status": "no concrete-endpoint contracted edges in full-state ledger; tier-2 SAT evidence referenced (G03_CONTRACTED_WITNESS_RESULTS.json); OBLIGATION retained"
+  }
+ },
+ "chaining": {
+  "n_src_vertices": 38,
+  "n_dst_vertices": 38,
+  "joined_vertices": 0,
+  "note": "joined>0 proves repaired canon enables endpoint chaining that prefix-keying forbids"
+ },
+ "historical_claim": "16 vertices / 9 edges (prefix-keyed; chaining impossible by construction)"
+}

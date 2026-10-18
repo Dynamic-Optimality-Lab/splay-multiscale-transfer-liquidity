@@ -1,0 +1,37 @@
+{
+ "fullstate_ledger": {
+  "m": 40,
+  "rank": 11,
+  "nullity": 4,
+  "constant_features": [
+   "sig_sum",
+   "sig_nonempty",
+   "b_rank_root"
+  ],
+  "rational_feasible": "sat",
+  "dual": null
+ },
+ "step03_seed_corpus": {
+  "m": 38,
+  "rank": 11,
+  "nullity": 4,
+  "constant_features": [
+   "sig_sum",
+   "sig_nonempty",
+   "b_rank_root"
+  ],
+  "rational_feasible": "sat",
+  "dual": null
+ },
+ "E3_classification": {
+  "family_contradiction": false,
+  "integer_only_infeasible": false,
+  "bounded_box_infeasible": "likely at small boxes (coeff trajectory 1s->924); exact min-box left open",
+  "generalization_failure": true,
+  "template_incompleteness": "supported: rank/depth features miss A-side credit (marked+2 @ w=0 killer); sig features constant-0 on samples",
+  "integer_feasible_unbounded": true,
+  "max_abs_coef_refit38": 924,
+  "rational_feasible_both_corpora": true
+ },
+ "E4_circulation_vs_cycle": "No feature circulation claimed as graph cycle: finite witnessed graph has zero closed walks (G03R_RETURN_PATH_RESULTS.json); dual analysis is in edge-inequality space only."
+}

@@ -1,0 +1,41 @@
+{
+ "guard": "b_depth_max>=6 (vertex function; G2 single-valued by case split on s)",
+ "partition_sizes": {
+  "(True, False)": 9,
+  "(False, False)": 18,
+  "(False, True)": 4,
+  "(True, True)": 7
+ },
+ "pieces": {
+  "(True, False)": {
+   "b_depth_max": 4,
+   "b_rank_marked": -2
+  },
+  "(False, False)": {},
+  "(False, True)": {},
+  "(True, True)": {}
+ },
+ "joint_single_valued": {
+  "0": {
+   "b_marked_depth_sum": 16,
+   "a_nslots": -20,
+   "a_marked_count": -8,
+   "core_size": 184,
+   "b_rank_sum": -60,
+   "b_rank_root": 232,
+   "a_rank_sum": -46,
+   "a_rank_root": 116
+  },
+  "1": {
+   "b_depth_sum": 5,
+   "b_depth_max": -1,
+   "b_marked_depth_sum": 91,
+   "a_root_sidx": -22,
+   "a_nslots": -1,
+   "a_marked_count": 27,
+   "b_rank_sum": 5,
+   "a_rank_sum": 5
+  }
+ },
+ "note": "piece (gs,gt) constrains edges crossing guard regions; JOINT fit gives the telescoping potential Phi(s)=theta[g(s)].f(s)"
+}
