@@ -25,4 +25,4 @@
 | C21 | Independent verification | PASS (10/10) |
 | C22 | Caps | HARD CAP PASS; substep overrun documented |
 | C23 | Universal status reported | REFUTED (candidate) / OPEN (graph) |
-| C24 | Delivery + HARD STOP | PENDING (this commit) |
+| C24 | Delivery + HARD STOP | PASS (b30fb4d pushed; remote verified) |
