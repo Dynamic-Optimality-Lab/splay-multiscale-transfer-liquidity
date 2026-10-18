@@ -22,6 +22,6 @@
 | R03-18 | Ledger reconciled | PASS (G03R_RESOURCE_LEDGER.json) |
 | R03-19 | Rules + freeze preserved | PASS (IV02, additive only) |
 | R03-20 | Independent verifier PASS | PASS (25/25) |
-| R03-21 | Additive commit + remote PASS | PENDING (this commit) |
+| R03-21 | Additive commit + remote PASS | PASS (8dbc922 pushed; remote verified) |
 
 Repair complete iff all PASS after push verification.
