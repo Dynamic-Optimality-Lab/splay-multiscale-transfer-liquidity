@@ -1,0 +1,30 @@
+{
+ "verdict": "UNKNOWN",
+ "reason": "timeout",
+ "cpu_s": 123.6,
+ "formula": "EXISTS QM*: E^OM_-3(s,m) [normalized scoped; q==9 forced by w=6-q]",
+ "z3_stats": {
+  "random seed": 17,
+  "conflicts": 17005,
+  "decisions": 75593,
+  "propagations": 23482127,
+  "binary propagations": 21781690,
+  "restarts": 107,
+  "added eqs": 26426444,
+  "mk clause": 113744,
+  "mk clause binary": 103802,
+  "del clause": 91011,
+  "minimized lits": 152764,
+  "num checks": 1,
+  "mk bool var": 297513,
+  "arith eq adapter": 111300,
+  "arith-lower": 3989802,
+  "arith-upper": 2489973,
+  "arith-fixed-eqs": 401236,
+  "arith-conflicts": 175,
+  "arith-bound-propagations-lp": 1807084,
+  "arith-diseq": 5278789
+ },
+ "n_root_cone": 53191,
+ "n_binders": 2
+}

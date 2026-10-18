@@ -1,0 +1,50 @@
+{
+ "verdict": "PASS",
+ "checks": [
+  {
+   "name": "artifacts present",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "name": "hashes unchanged",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "name": "w=-4 UNSAT certified",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "name": "w=-3 honestly UNKNOWN",
+   "status": "PASS",
+   "detail": "timeout"
+  },
+  {
+   "name": "k=2 mini re-run executes",
+   "status": "PASS",
+   "detail": "7 closed"
+  },
+  {
+   "name": "survivor replay sample 5/5",
+   "status": "PASS",
+   "detail": "5"
+  },
+  {
+   "name": "no terminal counterexample recorded",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "name": "no abstract negative recorded",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "name": "caps respected",
+   "status": "PASS",
+   "detail": "{'cpu_h': 0.9, 'cpu_h_breakdown': {'cycle_search': 0.25, 'docs_gates': 0.1, 'entry_audit': 0.05, 'om_matrix': 0.2, 'survivor_sweep': 0.15, 'verification': 0.05}, 'dag_nodes': 1700000, 'queries': 48, 'ram_peak_gib': 2.5, 'reserve_h': 1.8, 'step': '02'}"
+  }
+ ]
+}
