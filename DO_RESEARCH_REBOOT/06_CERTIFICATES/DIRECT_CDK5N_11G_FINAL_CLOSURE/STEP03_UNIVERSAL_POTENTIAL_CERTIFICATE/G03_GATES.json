@@ -1,0 +1,42 @@
+[
+ {
+  "gate": "G1 entry audit (HEAD/hashes/Z3/fixture)",
+  "verdict": "PASS",
+  "detail": "G03_ENTRY_AUDIT.json"
+ },
+ {
+  "gate": "G2 frozen-state feature library",
+  "verdict": "PASS",
+  "detail": "16 features incl. subtree ranks; verified on grounded envs"
+ },
+ {
+  "gate": "G3 grounded seed corpus (ssertify-ok)",
+  "verdict": "PASS",
+  "detail": "38 seeds + ~460 falsification edges"
+ },
+ {
+  "gate": "G4 CEGIS loop executed w/ targeted modes",
+  "verdict": "PASS",
+  "detail": "11 rounds + root/deep targeting; G03_CEGIS_TRACE.json"
+ },
+ {
+  "gate": "G5 candidate survives fresh falsification",
+  "verdict": "FAIL",
+  "detail": "best refit-38: 15/60 violations (25%); coefficients diverged to 100s"
+ },
+ {
+  "gate": "G6 universal per-weight Z3 UNSAT (low+contracted-high)",
+  "verdict": "FAIL",
+  "detail": "not attempted: no surviving candidate; stub G03_UNIVERSAL_VERIFY.py retained"
+ },
+ {
+  "gate": "G7 potential certificate artifact",
+  "verdict": "FAIL",
+  "detail": "no certified Phi"
+ },
+ {
+  "gate": "G8 NonNegCycles(G_star) certified",
+  "verdict": "FAIL",
+  "detail": "conjecture stands (no grounded negative cycle found) but unproven"
+ }
+]

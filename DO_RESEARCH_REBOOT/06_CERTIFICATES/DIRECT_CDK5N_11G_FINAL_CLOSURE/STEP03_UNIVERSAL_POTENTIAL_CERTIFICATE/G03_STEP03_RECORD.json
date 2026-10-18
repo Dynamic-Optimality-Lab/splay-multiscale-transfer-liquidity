@@ -1,0 +1,104 @@
+{
+ "goal": "Universal potential Phi with Phi(t)-Phi(s)<=w on every G_star edge (low+contracted-high), certifying NonNegCycles(G_star).",
+ "families_tested": [
+  {
+   "family": "affine-10base",
+   "result": "CEGIS rounds 1-3 (H<=2 mix40): violations 13,4,2; round-4 refit UNSAT at bounds 8,16,64 and unbounded on 29-seed set (recorded observation; seed set later superseded, not re-verifiable)",
+   "note": "unbounded-UNSAT observed once; current 38-seed set is base-affine SAT (unbounded) -> feasibility is data-dependent, generalization is the failure"
+  },
+  {
+   "family": "poly-degree2-66mono",
+   "result": "SAT only with 1e12-scale coefficients (pure memorization); rejected as non-viable, no falsification attempted"
+  },
+  {
+   "family": "rank-affine-15feat",
+   "result": "CEGIS rounds 6-11 + targeted modes; see rounds below; FINAL: refit-38 candidate scores 15 violations / 60 fresh mix edges (25%); family exhausted"
+  }
+ ],
+ "cegis_rounds": [
+  {
+   "round": "1-3",
+   "family": "affine-10base",
+   "falsify": "mix40 H<=2",
+   "viol": [
+    13,
+    4,
+    2
+   ]
+  },
+  {
+   "round": 4,
+   "family": "affine-10base",
+   "falsify": "refit-only",
+   "viol": "UNSAT-refit bounds 8/16/64/unbounded (29 seeds)"
+  },
+  {
+   "round": 6,
+   "family": "rank-affine",
+   "cand": "rank_sum-depth_max",
+   "falsify": "mix30 H-full shapes",
+   "viol": 0,
+   "stable": true
+  },
+  {
+   "round": "T-root50",
+   "family": "rank-affine",
+   "falsify": "root-targeted 50",
+   "viol": 1
+  },
+  {
+   "round": "T-deep50",
+   "family": "rank-affine",
+   "falsify": "deep-targeted 50",
+   "viol": 2
+  },
+  {
+   "round": 7,
+   "family": "rank-affine",
+   "cand": "rank_sum-depth_max+a_marked",
+   "falsify": "mix30",
+   "viol": 0,
+   "stable": true
+  },
+  {
+   "round": 8,
+   "family": "rank-affine",
+   "falsify": "mix30",
+   "viol": 1
+  },
+  {
+   "round": 9,
+   "family": "rank-affine",
+   "falsify": "root30",
+   "viol": 16
+  },
+  {
+   "round": 10,
+   "family": "rank-affine",
+   "falsify": "deep30",
+   "viol": 6
+  },
+  {
+   "round": 11,
+   "family": "rank-affine",
+   "falsify": "mix30",
+   "viol": 3
+  },
+  {
+   "round": "FINAL-EVAL",
+   "family": "rank-affine refit-38",
+   "falsify": "fresh mix60 (seed 700)",
+   "viol": 15,
+   "rate": 0.25
+  }
+ ],
+ "coefficient_trajectory": "clean (1s) -> bound-8 -> unbounded -> 1e12(poly) -> clean rank (rank_sum-depth_max) -> clean+marked -> explosive (100s-900s) -> collapse 15/60",
+ "killer_patterns": [
+  "w=1 edge with b_rank_sum +2 (splay increases rank-sum; any theta_rank>=1 charges +2>1)",
+  "w=0 edge with a_marked_count +2, b_rank_sum -1 (shadow marks appear; A-side credit missing)",
+  "root-targeted batch: 16/30 violations (systematic, not outliers)"
+ ],
+ "grounded_coverage": "approx 460 single-KEEP edges tested (mix/root/deep, chains/zigzags/random BSTs, H in 1..2 mostly; H=0 and H>=3 rare in sampling)",
+ "negative_cycles": "none found (depth-6 exhaustive from 26 starts; 80-walk sweep; cycle search on rank-candidate era) \u2014 conjecture stands, proof method failed",
+ "universal_z3": "NOT ATTEMPTED: no surviving candidate (every candidate falsified on grounded edges before universal stage); would-be queries preregistered in G03_UNIVERSAL_VERIFY.py stub"
+}

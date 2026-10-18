@@ -1,0 +1,27 @@
+{
+ "step": "11G STEP03 UNIVERSAL POTENTIAL CERTIFICATE",
+ "outcome": "INCOMPLETE \u2014 universal potential NOT found; additive feature families exhausted by CEGIS falsification",
+ "negative_results": [
+  "affine-10base: round-4 refit UNSAT (bounds 8/16/64/unbounded) on 29-seed H<=2 set [recorded observation]",
+  "poly-degree2: only 1e12-coefficient memorization fits; rejected",
+  "rank-affine-15feat: clean candidates (rank_sum-depth_max [+a_marked]) stable on mix but systematically falsified by targeted modes; refits diverge; final 15/60 fresh violations"
+ ],
+ "deliverables": [
+  "G03_ENTRY_AUDIT.json",
+  "G03_POTENTIAL_FEATURES.py (16 feats)",
+  "G03_CEGIS_SEEDS.json (38)",
+  "G03_CEGIS_TRACE.json",
+  "G03_FALSIFY_*.json",
+  "G03_STEP03_RECORD.json",
+  "G03_GATES.json",
+  "G03_CANDIDATE_POTENTIAL.json (last refit, UNCERTIFIED)",
+  "G03_GROUNDED_GRAPH_CHECK.py (9 edges, no grounded negative cycle)"
+ ],
+ "next_directions": [
+  "D1 piecewise/min-plus potential per (H-class x sector): case-split DAG, CEGIS per piece",
+  "D2 exact log-rank + maxdepth with vertex-cover style case analysis (ST85 access-lemma shape)",
+  "D3 direct combinatorial NonNegCycles argument from 11F ladder/climb structure (no potential)",
+  "D4 A-side credit feature for shadow-mark jumps (killer: marked+2 @ w=0); H=0/H>=3 targeted sampling (rare in current sampler)"
+ ],
+ "program_impact": "Stage 11G Step 03 open; 11F forward simulation (2A-Q_B per walk) unaffected; Bank-25 2A target still requires NonNegCycles(G_star) by another method"
+}
