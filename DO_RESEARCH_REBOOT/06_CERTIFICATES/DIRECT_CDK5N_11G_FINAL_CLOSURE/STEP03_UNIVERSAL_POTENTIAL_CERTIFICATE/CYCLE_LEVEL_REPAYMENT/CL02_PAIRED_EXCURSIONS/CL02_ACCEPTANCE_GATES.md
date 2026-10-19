@@ -11,4 +11,4 @@
 | L07 | No refutation hidden | PASS (none found) |
 | L08 | H2 honestly classified (evidence, not proof) | PASS |
 | L09 | Graph/rules untouched | PASS |
-| L10 | Delivery + HARD STOP | PENDING (this commit) |
+| L10 | Delivery + HARD STOP | PASS (b2526fb pushed; remote verified) |
