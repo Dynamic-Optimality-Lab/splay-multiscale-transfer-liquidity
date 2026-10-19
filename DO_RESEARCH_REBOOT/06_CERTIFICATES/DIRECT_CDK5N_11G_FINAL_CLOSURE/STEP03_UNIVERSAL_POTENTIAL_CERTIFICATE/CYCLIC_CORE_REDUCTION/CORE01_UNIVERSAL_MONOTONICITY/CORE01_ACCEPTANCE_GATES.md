@@ -30,5 +30,5 @@
 | CORE01-26 | No premature promotion | PASS |
 | CORE01-27 | Independent review | PASS (9/9, incl. self-caught vacuous-test fix) |
 | CORE01-28 | Stage 2 handoff | READY (not authorized) |
-| CORE01-29 | Additive commit + push | PENDING (this commit) |
-| CORE01-30 | Remote HEAD verified + HARD STOP | PENDING |
+| CORE01-29 | Additive commit + push | PASS (aac9561 pushed; remote verified) |
+| CORE01-30 | Remote HEAD verified + HARD STOP | PASS (verified; stopping) |
