@@ -25,4 +25,4 @@
 | CL01-21 | Statuses distinguished | PASS |
 | CL01-22 | Independent review | PASS (9/9) |
 | CL01-23 | No unauthorized expenditure | CL-01 CLEAN (arithmetic only); SR-02C overage documented, not repeated |
-| CL01-24 | Delivery + HARD STOP | PENDING (this commit) |
+| CL01-24 | Delivery + HARD STOP | PASS (a0ca3b4 pushed; remote verified) |
