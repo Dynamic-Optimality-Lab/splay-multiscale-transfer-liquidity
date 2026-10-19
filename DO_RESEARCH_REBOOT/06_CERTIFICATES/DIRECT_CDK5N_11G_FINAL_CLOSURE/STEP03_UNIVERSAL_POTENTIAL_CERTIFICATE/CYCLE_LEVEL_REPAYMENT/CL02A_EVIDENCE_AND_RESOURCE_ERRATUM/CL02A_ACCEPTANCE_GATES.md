@@ -25,4 +25,4 @@
 | A21 | H1/H2/H3 + theorem OPEN | PASS |
 | A22 | No new solver/replay/search | PASS (audit ran reads + arithmetic only) |
 | A23 | Independent audit completed | PASS (10/10) |
-| A24 | Delivery + HARD STOP | PENDING (this commit) |
+| A24 | Delivery + HARD STOP | PASS (f753306 pushed; remote verified) |
