@@ -29,6 +29,6 @@
 | B25 | Negative obligations classified | PASS (single-event covered; multi open) |
 | B26 | Independent review | PASS (8/8; incl. vacuous-prefix fix) |
 | B27 | No Stage 2/04 | PASS |
-| B28 | Additive commit + push | PENDING (this commit) |
+| B28 | Additive commit + push | PASS (7814f4b pushed; remote verified) |
 | B29 | BANK25 unchanged | PASS |
-| B30 | HARD STOP | PENDING |
+| B30 | HARD STOP | PASS (stopping here) |
