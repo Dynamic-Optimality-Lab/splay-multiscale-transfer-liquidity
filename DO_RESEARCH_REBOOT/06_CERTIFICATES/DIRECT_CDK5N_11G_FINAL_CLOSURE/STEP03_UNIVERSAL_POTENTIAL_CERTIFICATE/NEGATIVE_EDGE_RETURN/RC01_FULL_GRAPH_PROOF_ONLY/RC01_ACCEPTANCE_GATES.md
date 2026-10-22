@@ -32,7 +32,7 @@
 | R28 | Full nonnegativity proved/refuted/OPEN | OPEN (honest) |
 | R29 | Independent review | PASS (6/6) |
 | R30 | No Step 04 | PASS |
-| R31 | Delivery + push | PENDING (this commit) |
-| R32 | Remote verified | PENDING |
+| R31 | Delivery + push | PASS (a44a550 pushed; remote verified) |
+| R32 | Remote verified | PASS |
 | R33 | Bank25 unchanged | PASS |
-| R34 | HARD STOP | PENDING |
+| R34 | HARD STOP | PASS (stopping here) |
