@@ -1,4 +1,4 @@
-# CL-03EK Acceptance Gates (35/36 PASS; EK21 OPEN as required)
+# CL-03EK Acceptance Gates (diagnostic gates PASS; universal-sign gates honestly OPEN: EK15-EK21, EK23)
 
 Foundation: EK01 PASS (HEAD/hashes). EK02 PASS (no narrowing). EK03 PASS
 (reads + arithmetic only). EK04 PASS (full inventory retained). EK05 PASS
