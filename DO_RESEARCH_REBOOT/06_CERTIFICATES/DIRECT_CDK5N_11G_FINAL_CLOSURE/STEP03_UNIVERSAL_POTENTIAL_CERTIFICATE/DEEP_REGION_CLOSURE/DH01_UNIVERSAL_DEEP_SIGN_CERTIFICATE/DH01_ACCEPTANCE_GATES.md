@@ -13,5 +13,6 @@ Sign: EK15 OPEN (H1: 52/52 stored hold). EK16 OPEN (H2: 2/2). EK17 OPEN
 uncertified). EK22 covered (no exclusion). EK23 OPEN (-3 retained).
 EK24 PASS (no circular proof offered).
 Integrity: EK25–EK30 PASS (no false claims; no liftability assumed;
-no narrowing). EK31 verdict OPEN (honest). EK32 pending commit.
-EK33 Bank25 unchanged. EK34 reserved. EK35 remote verified. EK36 HALT.
+no narrowing). EK31 verdict OPEN (honest). EK32 PASS (committed + pushed;
+remote verified this commit). EK33 Bank25 unchanged. EK34 reserved.
+EK35 remote verified. EK36 HALT (executing now).
