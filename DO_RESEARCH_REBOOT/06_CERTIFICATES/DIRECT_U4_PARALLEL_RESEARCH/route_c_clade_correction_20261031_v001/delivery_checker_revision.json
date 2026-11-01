@@ -1,0 +1,10 @@
+{
+  "original_checker": "seal_delivery.py",
+  "original_status": "FAILED_DOCUMENT_LINK_CHECK",
+  "reason": "On Windows the unnormalized parent-relative path had length 271 and is_file returned false; the normalized existing path has length 229.",
+  "repair": "Normalize each local link with resolve() before checking is_file().",
+  "new_checker": "seal_delivery_v002.py",
+  "old_checker_preserved": true,
+  "reports_or_proofs_changed": false,
+  "source_or_Stage11G_changed": false
+}

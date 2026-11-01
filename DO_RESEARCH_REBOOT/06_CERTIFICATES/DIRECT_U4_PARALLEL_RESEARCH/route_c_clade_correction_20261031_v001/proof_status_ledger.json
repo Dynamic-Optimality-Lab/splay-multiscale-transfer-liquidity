@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-31",
+  "candidate": "R=F-G, F=n-|C(A) intersection C(B)|",
+  "claims": [
+    {
+      "claim": "Primitive rotation replaces exactly one subtree key set",
+      "status": "PROVED\u2014UNIVERSAL",
+      "proof": "CC01_SOURCE_ROTATION_IDENTITY.md"
+    },
+    {
+      "claim": "R has unbounded negative drift cancelling the old root-changing DELETE family",
+      "status": "PROVED\u2014UNIVERSAL",
+      "scope": "n>=3 and arbitrary middle M; Delta R=-7(n-3)/8",
+      "proof": "CC02_UNBOUNDED_CORRECTION_AND_PARTIAL_LAWS.md"
+    },
+    {
+      "claim": "Corrected Psi=F satisfies DELETE",
+      "status": "PROVED\u2014UNIVERSAL",
+      "scope": "finite same-key present-key BST source; Delta F<=d_A<=2a",
+      "proof": "CC02_UNBOUNDED_CORRECTION_AND_PARTIAL_LAWS.md"
+    },
+    {
+      "claim": "Root-conditioned B access loses at least one unit of F when nontrivial",
+      "status": "PROVED\u2014UNIVERSAL",
+      "scope": "d_B>0, root(A)=access key; not the full q bound",
+      "proof": "CC01_SOURCE_ROTATION_IDENTITY.md"
+    },
+    {
+      "claim": "Whole source inequality and closed-walk Coarse-Double on the stated subclass",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "scope": "every nontrivial KEEP has q<=1+(d_A mod 2); d_B=0 and all DELETE allowed; includes arbitrary-fringe d_A=1,q=2 helpers",
+      "proof": "CC02_UNBOUNDED_CORRECTION_AND_PARTIAL_LAWS.md"
+    },
+    {
+      "claim": "Corrected Psi=F satisfies full B repayment",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "opposite-vine source family at every n>=6; fixed n6 witness a=0,q=2,Delta F=-1",
+      "proof": "CC03_ALL_SIZE_REPAYMENT_OBSTRUCTION.md"
+    },
+    {
+      "claim": "Some size-dependent scalar c_n F satisfies both full laws",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "no real coefficient for any n>=6; two explicit necessary source tests",
+      "proof": "CC03_ALL_SIZE_REPAYMENT_OBSTRUCTION.md"
+    },
+    {
+      "claim": "Fixed controls, rational arithmetic, source events and closed replay",
+      "status": "FINITE-EXACT",
+      "scope": "9 controls at n6,7; 17 closed operations; 26 edges,75 primitive identities",
+      "proof": "independent_audit.json"
+    },
+    {
+      "claim": "Uniform complete A/B potential",
+      "status": "OPEN",
+      "scope": "no construction satisfying both full laws"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN",
+      "scope": "no universal proof or counterexample"
+    },
+    {
+      "claim": "Downstream Dynamic Optimality assembly",
+      "status": "CONDITIONAL",
+      "scope": "inherited obligations unchanged"
+    }
+  ],
+  "original_load_bearing_obligations_discharged": [],
+  "net_advancement_of_full_original_proof": 0,
+  "positive_partial_content": [
+    "explicit unbounded correction",
+    "universal DELETE bound",
+    "strict one-unit root-conditioned B drop",
+    "exact old-drift cancellation",
+    "specified restricted-domain whole-edge bound and arbitrary-fringe helper safety"
+  ],
+  "new_assumptions_for_original_theorem": [],
+  "candidate_and_scalar_family_refuted": true,
+  "strategy_record": "CC05_STRATEGY_AND_PROOF_STATUS.md",
+  "next_automatic_campaign": null,
+  "finite_fits": 0,
+  "new_pair_graphs": 0,
+  "Stage11G_writes_performed": false
+}

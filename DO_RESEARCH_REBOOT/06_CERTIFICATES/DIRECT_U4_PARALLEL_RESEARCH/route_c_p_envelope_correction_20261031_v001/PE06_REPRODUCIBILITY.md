@@ -1,0 +1,9 @@
+# Reproducing the explicit correction audit
+
+The [producer](audit_p_correction.py) reads the previous fixed connector, constructs four specified P graphs and their reflections, attaches hand-written matching/right-cover certificates, compares both immutable source engines and replays a closed word. It runs no matching solver, BFS, rotation graph, pair graph or potential fit. The exact envelope values are determined by the all-size extremal argument in PE02, not by enumerating auxiliary trees.
+
+The [independent verifier](independent_verify.py) imports neither producer nor tuple source. It reconstructs every interval and eligibility decision, checks every endpoint edge and the matching/cover equalities, verifies the one-rotation metric witness, recomputes correction arithmetic and the contradictory coefficient bounds from the stated analytic maxima, and replays every physical source step with the pointer engine. The global extrema over arbitrary auxiliary shapes are a written mathematical proof, not an exhaustive finite or formal-kernel check.
+
+Scripts use exclusive mode x for output and intentionally refuse to overwrite a completed run. To reproduce, copy the scripts and PE00 gate into a fresh sibling versioned directory under DIRECT_U4_PARALLEL_RESEARCH, preserving the repository-relative depth and the existing prior inputs. Run Python -X utf8 -B with the new audit_p_correction.py path, followed by the new independent_verify.py path. Preserve existing output directories. No dependency installation is required.
+
+For read-only delivery verification, recompute hashes in delivery_manifest.json and entry_source_pins.json, and compare the certificate hash with independent_audit.json. The manifest excludes itself. The final seal verifies the gate hash, original sources, Stage 11G inventory/bytes, tracked Git state, links and scope. No formal-kernel compilation or completed Universal Coarse-Double proof is claimed.

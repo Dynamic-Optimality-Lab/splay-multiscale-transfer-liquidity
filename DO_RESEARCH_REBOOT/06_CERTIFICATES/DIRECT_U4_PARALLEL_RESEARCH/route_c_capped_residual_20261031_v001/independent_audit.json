@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "residual_matching_graphs_verified": 39,
+  "matching_cover_equalities": 39,
+  "residual_edges_covered": 75,
+  "all_cap_values_recomputed": true,
+  "old_controls_and_known_starved_phase_pass": true,
+  "requested_old_starved_KEEP": {
+    "J_source": 4,
+    "J_destination": 2,
+    "a": 0,
+    "q": 2
+  },
+  "new_counterexample": {
+    "J_source": 3,
+    "J_destination": 2,
+    "a": 0,
+    "q": 2,
+    "z": 0,
+    "budget": -2
+  },
+  "monotone_aggregation_forced_bounds": {
+    "phi(4,2)_upper": 3,
+    "phi(4,1)_lower": 4,
+    "coordinate_order_verified": true,
+    "contradiction": "4<=phi(4,1)<=phi(4,2)<=3"
+  },
+  "monotone_scope": "coordinatewise nondecreasing phi_n(F,Ehat) with Ehat<=phi_n<=F; general proof in CR02",
+  "source_controls": 10,
+  "complete_source_edges_replayed": 23,
+  "all_oriented_events_agree": true,
+  "closed_word_accesses": 13,
+  "actual_diagonal_pair_closure": true,
+  "closed_totals": {
+    "A": 15,
+    "Q_B": 4,
+    "Z_B": 4
+  },
+  "finite_potential_fits": 0,
+  "new_pair_state_graphs": 0,
+  "CoarseDouble_refuted": false,
+  "certificate_sha256": "b343136ed2dd710ac809539735c9bacce08ff1dc7c20537b615fa044786c0d36"
+}

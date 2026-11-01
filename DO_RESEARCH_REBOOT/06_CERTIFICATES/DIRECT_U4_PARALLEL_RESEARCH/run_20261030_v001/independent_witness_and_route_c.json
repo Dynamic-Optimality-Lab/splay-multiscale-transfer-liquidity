@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "source_certificate_sha256": "14176f6937d5fb638e3801f3791053be6a419edd6f896d4f2881fed8ba0fee5b",
+  "source_replay_accesses": 15,
+  "Hall_subsets_exhausted": 64,
+  "maximum_Hall_deficiency": 1,
+  "matching_size_independent_exhaustive": 5,
+  "costs": {
+    "A": 11,
+    "Q_B": 6,
+    "Z_B": 4,
+    "Q_minus_2A": -16
+  },
+  "creator_identity_not_assumed": "all B mutation creators are KEEPs; every KEEP has zero A credit",
+  "original_neighborhood_preserved": true,
+  "B_only_potential_counterexample": [
+    {
+      "mode": "D",
+      "key": 3,
+      "dA": 2,
+      "dB": null,
+      "a": 1,
+      "q": 0,
+      "B_source": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B_destination": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ]
+    },
+    {
+      "mode": "K",
+      "key": 3,
+      "dA": 0,
+      "dB": 2,
+      "a": 0,
+      "q": 1,
+      "B_source": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B_destination": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ]
+    },
+    {
+      "mode": "D",
+      "key": 1,
+      "dA": 2,
+      "dB": null,
+      "a": 1,
+      "q": 0,
+      "B_source": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B_destination": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ]
+    },
+    {
+      "mode": "K",
+      "key": 1,
+      "dA": 0,
+      "dB": 2,
+      "a": 0,
+      "q": 1,
+      "B_source": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B_destination": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ]
+    }
+  ],
+  "bounded_range_necessary_condition": "For n-family K_n, Psi(source)-Psi(destination)>=floor((n-1)/2); hence no range bound independent of n covers all raw accesses.",
+  "does_not_refute_macro_potential": true,
+  "general_Route_C": "OPEN",
+  "new_universal_CD_proof": false
+}

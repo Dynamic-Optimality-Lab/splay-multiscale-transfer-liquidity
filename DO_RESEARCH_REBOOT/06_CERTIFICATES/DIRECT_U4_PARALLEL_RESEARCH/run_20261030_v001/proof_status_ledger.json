@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-30",
+  "timezone": "Asia/Karachi",
+  "head": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+  "relations": [
+    "U4-M => CD-U",
+    "U4-S <=> CD-U",
+    "CD-U does not imply original U4-M"
+  ],
+  "verdict": "EXACT COUNTEREXAMPLE FOUND",
+  "claims": [
+    {
+      "id": "U4-M",
+      "status": "REFUTED EXACT",
+      "domain": "All reachable exactly closed physical Pair Access walks",
+      "artifact": "u4_counterexample_certificate.json",
+      "verification": "One-period full graph, source matching and independent exhaustive check"
+    },
+    {
+      "id": "U4-S",
+      "status": "OPEN",
+      "domain": "All finite supports and lengths",
+      "artifact": "U4_04_HALL_AND_CREDIT_MODEL.md",
+      "verification": "Equivalent to CD-U; distinct from U4-M"
+    },
+    {
+      "id": "CD-U",
+      "status": "OPEN",
+      "domain": "All finite supports and lengths",
+      "artifact": "U4_12_FINAL_VERDICT_AND_NEXT_LEAF.md",
+      "verification": "Neither new witness violates Q<=2A"
+    },
+    {
+      "id": "HALL-MINIMAL",
+      "status": "PROVED UNIVERSAL",
+      "domain": "Any finite unit graph",
+      "artifact": "U4_04_HALL_AND_CREDIT_MODEL.md",
+      "verification": "Complete combinatorial proof; no access-level E0 inference"
+    },
+    {
+      "id": "E0-NECESSITY",
+      "status": "REFUTED EXACT",
+      "domain": "Claim every minimal original Hall deficiency requires nonstarved competitor",
+      "artifact": "u4_counterexample_certificate.json",
+      "verification": "Minimal triple, no nonstarved KEEP"
+    },
+    {
+      "id": "ALL-STARVED-FACTORIZATION",
+      "status": "PROVED RESTRICTED",
+      "domain": "Every source closed walk with all KEEP A costs zero",
+      "artifact": "U4_04_HALL_AND_CREDIT_MODEL.md",
+      "verification": "Exact union of disjoint setup complete bipartite components"
+    },
+    {
+      "id": "ALL-N-FAMILY",
+      "status": "REFUTED EXACT",
+      "domain": "Original U4-M for every total key count n>=7",
+      "artifact": "U4_10_FALSIFICATION_AND_COUNTEREXAMPLES.md",
+      "verification": "Structural construction plus126 finite controls"
+    },
+    {
+      "id": "W5-9-U4-M",
+      "status": "REFUTED EXACT",
+      "domain": "Five genuine KEEP keys, stable nine-core",
+      "artifact": "five_keep_nine_core_counterexample.json",
+      "verification": "32 physical transitions;18 demands, maximum matching16"
+    },
+    {
+      "id": "ROUTE-C-B-ONLY",
+      "status": "REFUTED EXACT",
+      "domain": "Direct per-access potential depending only on B",
+      "artifact": "independent_witness_and_route_c.json",
+      "verification": "Three-key B-projection cycle contradiction"
+    },
+    {
+      "id": "ROUTE-C-BOUNDED-RANGE",
+      "status": "REFUTED EXACT",
+      "domain": "Direct per-access potential with range bound independent of n",
+      "artifact": "U4_09_UNIFORM_POTENTIAL_ALTERNATIVE.md",
+      "verification": "Required distinguished drop floor((n-1)/2)"
+    },
+    {
+      "id": "ROUTE-C-GENERAL",
+      "status": "OPEN",
+      "domain": "Uniform all-size source-exact state potential or complete repayment",
+      "artifact": "U4_09_UNIFORM_POTENTIAL_ALTERNATIVE.md",
+      "verification": "No positive all-size candidate constructed"
+    },
+    {
+      "id": "CHR01",
+      "status": "PROVED RESTRICTED",
+      "domain": "Registered fixed-mask sigma0 chi8 fragment",
+      "artifact": "chr_independent_replay.log",
+      "verification": "Fresh complete255064-node2309760-edge independent regeneration"
+    },
+    {
+      "id": "FRC01",
+      "status": "PROVED RESTRICTED",
+      "domain": "All original symbolic chi8 H2 edges and stated H1 basin",
+      "artifact": "frc_independent_replay.json",
+      "verification": "Fresh row/typed/root audit; written source-lift proof separately reviewed"
+    },
+    {
+      "id": "M2-DSK01",
+      "status": "PROVED UNIVERSAL",
+      "domain": "Complete frozen high O/M subgraph, not whole G_AF",
+      "artifact": "m2_independent_replay.log",
+      "verification": "Paper proof reviewed;6300-row provenance audit, not fresh symbolic reductions"
+    },
+    {
+      "id": "M3-LATER",
+      "status": "REPORTED BUT NOT RERUN",
+      "domain": "Later fixed-signature restricted banks",
+      "artifact": "U4_07_CHR_FRC_POTENTIAL_AUDIT.md",
+      "verification": "Latest terminal report read: POP4_RISK03; RISK04 no terminal verdict at inspection"
+    },
+    {
+      "id": "11F",
+      "status": "PROVED RESTRICTED",
+      "domain": "Inherited W_5^9 weighted simulation",
+      "artifact": "U4_07_CHR_FRC_POTENTIAL_AUDIT.md",
+      "verification": "Interface/compiler audit; whole certification assembly not rerun"
+    },
+    {
+      "id": "M1-M3-STEP03",
+      "status": "OPEN",
+      "domain": "Original frozen full sign obligations excluding proved M2",
+      "artifact": "U4_07_CHR_FRC_POTENTIAL_AUDIT.md",
+      "verification": "No graph edits or promotions"
+    },
+    {
+      "id": "C.ZIG",
+      "status": "PROVED UNIVERSAL",
+      "domain": "Finite closed present-key Pair Access walks",
+      "artifact": "U4_11_PROOF_DEPENDENCY_DAG.md",
+      "verification": "Complete mathematical block proof; Lean assembly not claimed"
+    },
+    {
+      "id": "PIVOT2-COST-LT",
+      "status": "PROVED CONDITIONAL",
+      "domain": "Reachable cycle bound plus common initial-tree cost model",
+      "artifact": "U4_11_PROOF_DEPENDENCY_DAG.md",
+      "verification": "Cycle excision, factor7 translation, external4.3; upstream CD-U open"
+    },
+    {
+      "id": "DYNAMIC-OPTIMALITY",
+      "status": "OPEN",
+      "domain": "Uniform competitiveness against offline BST optimum",
+      "artifact": "U4_12_FINAL_VERDICT_AND_NEXT_LEAF.md",
+      "verification": "No full pipeline proof"
+    }
+  ],
+  "forbidden_promotions_observed": false,
+  "existing_research_modified": false
+}

@@ -1,0 +1,9 @@
+# Reproducing the joint root alignment audit
+
+The [producer](audit_joint_alignment.py) reads pinned RS, PE and BN certificates and reuses their exact local P matching/cover data. It evaluates the one frozen correction rule on seven source controls and their reflections, compares the immutable tuple and pointer source engines, and replays a nineteen-step closed word using the existing five-DELETE connector. No matching solver, BFS or enlarged state graph is constructed.
+
+The [independent verifier](independent_verify.py) imports neither producer nor tuple source nor a matching algorithm. It checks provenance of every inherited graph, reconstructs all subtree intervals, exact pairs, root exclusions and endpoint edges, checks matching/cover equalities, recomputes R_joint and H, and verifies all actual pointer-source events, costs and physical paired closure. The all-size interval calculation and correction-class implication are written in JA02; finite checks support rather than establish those quantifiers. No formal-kernel compilation is claimed.
+
+Scripts use exclusive mode x for outputs and intentionally refuse to overwrite a completed run. To reproduce, copy the scripts and JA00 into a fresh sibling versioned directory under DIRECT_U4_PARALLEL_RESEARCH, preserving relative depth and existing prior inputs. From the repository root run Python -X utf8 -B with the new audit_joint_alignment.py path, then the new independent_verify.py path. Preserve all existing runs; no installation is needed.
+
+For read-only delivery verification, recompute hashes in delivery_manifest.json and entry_source_pins.json and compare the certificate hash with independent_audit.json. The manifest excludes itself. final_integrity.json records gate/source preservation, Stage 11G inventory and bytes, tracked Git state, scope and local report links. No H labels are claimed on the other closed-replay states, and no full universal B theorem for H is claimed.

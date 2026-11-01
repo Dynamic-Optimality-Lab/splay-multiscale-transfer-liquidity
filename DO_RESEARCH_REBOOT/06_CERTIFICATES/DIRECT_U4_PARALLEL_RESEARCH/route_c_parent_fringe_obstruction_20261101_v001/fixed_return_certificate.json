@@ -1,0 +1,309 @@
+{
+  "status": "FIXED_RETURN_CLASS_PARTIAL_OR_ABSENT",
+  "date": "2026-11-01",
+  "gate_sha256": "03b67eea6b32f820d91a531f43b9313967fa5b93d899597f3b2a7ce98c4ad241",
+  "source_table_sha256": "2b5721768b2f88d66da6940de68406f8c534ae3482a3ec4c5781323dba406198",
+  "source_graph_sha256": "30d1d724817d3f2ecb5a687428793a62d0b275d0195932adc3ad4f322ff839f9",
+  "source_audit_sha256": "0a3073286bf1d3b1061d095bdd0a4aa3d46b96b3dd37645de23b0d4db545c826",
+  "component": 2,
+  "component_size": 18232,
+  "anchor": 4676,
+  "fixed_prefix": [
+    {
+      "source": 4676,
+      "key": 6,
+      "target": 7994,
+      "a": 1,
+      "q": 3,
+      "delta": 1
+    },
+    {
+      "source": 7994,
+      "key": 4,
+      "target": 2002,
+      "a": 1,
+      "q": 2,
+      "delta": 0
+    },
+    {
+      "source": 2002,
+      "key": 1,
+      "target": 4327,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    }
+  ],
+  "post_anchor_T": [
+    6,
+    [
+      2,
+      [
+        1,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        [
+          5,
+          [
+            4,
+            null,
+            null
+          ],
+          null
+        ]
+      ]
+    ],
+    [
+      7,
+      null,
+      [
+        8,
+        null,
+        [
+          9,
+          null,
+          [
+            10,
+            null,
+            [
+              11,
+              null,
+              [
+                12,
+                null,
+                [
+                  13,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ],
+  "profiles": {
+    "1": {
+      "source_depth": 2,
+      "access_depth": 4,
+      "operations": [
+        {
+          "case": "RL",
+          "site_depth": 2,
+          "grandparent": 3,
+          "parent": 5
+        },
+        {
+          "case": "LR",
+          "site_depth": 0,
+          "grandparent": 6,
+          "parent": 2
+        }
+      ],
+      "entry": 1,
+      "role": "other",
+      "parent_outer_fringe": true,
+      "old_mu": 2,
+      "new_mu": 0,
+      "outer_doubles": 0,
+      "matching_outer_doubles": 0,
+      "old_U": 4,
+      "PF_U": 2
+    },
+    "2": {
+      "source_depth": 1,
+      "access_depth": 4,
+      "operations": [
+        {
+          "case": "RL",
+          "site_depth": 2,
+          "grandparent": 3,
+          "parent": 5
+        },
+        {
+          "case": "LR",
+          "site_depth": 0,
+          "grandparent": 6,
+          "parent": 2
+        }
+      ],
+      "entry": 1,
+      "role": "parent",
+      "parent_outer_fringe": false,
+      "old_mu": 0,
+      "new_mu": 0,
+      "outer_doubles": 0,
+      "matching_outer_doubles": 0,
+      "old_U": 1,
+      "PF_U": 1
+    },
+    "3": {
+      "source_depth": 2,
+      "access_depth": 4,
+      "operations": [
+        {
+          "case": "RL",
+          "site_depth": 2,
+          "grandparent": 3,
+          "parent": 5
+        },
+        {
+          "case": "LR",
+          "site_depth": 0,
+          "grandparent": 6,
+          "parent": 2
+        }
+      ],
+      "entry": 0,
+      "role": "other",
+      "parent_outer_fringe": false,
+      "old_mu": 2,
+      "new_mu": 2,
+      "outer_doubles": 1,
+      "matching_outer_doubles": 0,
+      "old_U": 3,
+      "PF_U": 3
+    },
+    "4": {
+      "source_depth": 4,
+      "access_depth": 4,
+      "operations": [
+        {
+          "case": "RL",
+          "site_depth": 2,
+          "grandparent": 3,
+          "parent": 5
+        },
+        {
+          "case": "LR",
+          "site_depth": 0,
+          "grandparent": 6,
+          "parent": 2
+        }
+      ],
+      "entry": null,
+      "role": "accessed",
+      "parent_outer_fringe": false,
+      "old_mu": 0,
+      "new_mu": 0,
+      "outer_doubles": 0,
+      "matching_outer_doubles": 0,
+      "old_U": 0,
+      "PF_U": 0
+    },
+    "5": {
+      "source_depth": 3,
+      "access_depth": 4,
+      "operations": [
+        {
+          "case": "RL",
+          "site_depth": 2,
+          "grandparent": 3,
+          "parent": 5
+        },
+        {
+          "case": "LR",
+          "site_depth": 0,
+          "grandparent": 6,
+          "parent": 2
+        }
+      ],
+      "entry": 0,
+      "role": "parent",
+      "parent_outer_fringe": false,
+      "old_mu": 0,
+      "new_mu": 0,
+      "outer_doubles": 1,
+      "matching_outer_doubles": 0,
+      "old_U": 2,
+      "PF_U": 2
+    },
+    "6": {
+      "source_depth": 0,
+      "access_depth": 4,
+      "operations": [
+        {
+          "case": "RL",
+          "site_depth": 2,
+          "grandparent": 3,
+          "parent": 5
+        },
+        {
+          "case": "LR",
+          "site_depth": 0,
+          "grandparent": 6,
+          "parent": 2
+        }
+      ],
+      "entry": 1,
+      "role": "other",
+      "parent_outer_fringe": false,
+      "old_mu": 2,
+      "new_mu": 2,
+      "outer_doubles": 0,
+      "matching_outer_doubles": 0,
+      "old_U": 2,
+      "PF_U": 2
+    },
+    "7": {
+      "source_depth": 1,
+      "access_depth": 4,
+      "operations": [
+        {
+          "case": "RL",
+          "site_depth": 2,
+          "grandparent": 3,
+          "parent": 5
+        },
+        {
+          "case": "LR",
+          "site_depth": 0,
+          "grandparent": 6,
+          "parent": 2
+        }
+      ],
+      "entry": 1,
+      "role": "other",
+      "parent_outer_fringe": false,
+      "old_mu": 2,
+      "new_mu": 2,
+      "outer_doubles": 0,
+      "matching_outer_doubles": 0,
+      "old_U": 3,
+      "PF_U": 3
+    }
+  },
+  "first_intervention_key": 4,
+  "start_state": 4327,
+  "start_clock": 2,
+  "clock_saturation": 7,
+  "maximum_A_capacity": 6,
+  "node_encoding": "7*source_state+(k-1)",
+  "reachable_nodes": [
+    30290
+  ],
+  "predecessor_rows": [],
+  "reachable_nodes_count": 1,
+  "allowed_reachable_edges": 0,
+  "targets": {
+    "anchor_return": 32738,
+    "reset_return": 90439
+  },
+  "paths": {
+    "anchor_return": null,
+    "reset_return": null
+  },
+  "V_KEEP_word": null,
+  "Y_KEEP_word": null,
+  "new_active_core_sizes": 0,
+  "larger_finite_fits": 0,
+  "new_source_engine_calls": 0,
+  "matching_terminal_line": "FROZEN",
+  "universal_CD": "OPEN",
+  "automatic_successor_launched": false
+}

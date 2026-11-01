@@ -1,0 +1,4408 @@
+{
+  "examples": {
+    "three_block": {
+      "normal": {
+        "rows": [
+          {
+            "occurrence": 0,
+            "mode": "KEEP",
+            "key": 6,
+            "source_state": 4676,
+            "target_state": 7994,
+            "source_A": [
+              1,
+              null,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                [
+                  6,
+                  [
+                    4,
+                    null,
+                    [
+                      5,
+                      null,
+                      null
+                    ]
+                  ],
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "source_B": [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  [
+                    7,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        [
+                          6,
+                          null,
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_A": [
+              6,
+              [
+                3,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_B": [
+              6,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  3,
+                  null,
+                  [
+                    5,
+                    [
+                      4,
+                      null,
+                      null
+                    ],
+                    null
+                  ]
+                ]
+              ],
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "a": 1,
+            "q": 3,
+            "z": 0,
+            "d_A": 2,
+            "d_B": 6,
+            "A_events": [
+              [
+                "RR",
+                1,
+                6,
+                "-"
+              ]
+            ],
+            "B_events": [
+              [
+                "RR",
+                4,
+                6,
+                "-"
+              ],
+              [
+                "RL",
+                3,
+                7,
+                "-"
+              ],
+              [
+                "RR",
+                1,
+                6,
+                "-"
+              ]
+            ],
+            "A_mirror_events": [
+              [
+                "LL",
+                8,
+                13,
+                "-"
+              ]
+            ],
+            "B_mirror_events": [
+              [
+                "LL",
+                8,
+                10,
+                "-"
+              ],
+              [
+                "LR",
+                7,
+                11,
+                "-"
+              ],
+              [
+                "LL",
+                8,
+                13,
+                "-"
+              ]
+            ],
+            "delta": 1
+          },
+          {
+            "occurrence": 1,
+            "mode": "KEEP",
+            "key": 4,
+            "source_state": 7994,
+            "target_state": 2002,
+            "source_A": [
+              6,
+              [
+                3,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "source_B": [
+              6,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  3,
+                  null,
+                  [
+                    5,
+                    [
+                      4,
+                      null,
+                      null
+                    ],
+                    null
+                  ]
+                ]
+              ],
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_A": [
+              4,
+              [
+                3,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_B": [
+              4,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ],
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "a": 1,
+            "q": 2,
+            "z": 0,
+            "d_A": 2,
+            "d_B": 4,
+            "A_events": [
+              [
+                "LR",
+                3,
+                6,
+                "-"
+              ]
+            ],
+            "B_events": [
+              [
+                "RL",
+                3,
+                5,
+                "-"
+              ],
+              [
+                "LR",
+                2,
+                6,
+                "-"
+              ]
+            ],
+            "A_mirror_events": [
+              [
+                "RL",
+                8,
+                11,
+                "-"
+              ]
+            ],
+            "B_mirror_events": [
+              [
+                "LR",
+                9,
+                11,
+                "-"
+              ],
+              [
+                "RL",
+                8,
+                12,
+                "-"
+              ]
+            ],
+            "delta": 0
+          },
+          {
+            "occurrence": 2,
+            "mode": "KEEP",
+            "key": 1,
+            "source_state": 2002,
+            "target_state": 4327,
+            "source_A": [
+              4,
+              [
+                3,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "source_B": [
+              4,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ],
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_A": [
+              1,
+              null,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                [
+                  4,
+                  null,
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          [
+                            10,
+                            null,
+                            [
+                              11,
+                              null,
+                              [
+                                12,
+                                null,
+                                [
+                                  13,
+                                  null,
+                                  null
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_B": [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  4,
+                  [
+                    3,
+                    null,
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          [
+                            10,
+                            null,
+                            [
+                              11,
+                              null,
+                              [
+                                12,
+                                null,
+                                [
+                                  13,
+                                  null,
+                                  null
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "a": 1,
+            "q": 1,
+            "z": 0,
+            "d_A": 2,
+            "d_B": 2,
+            "A_events": [
+              [
+                "LL",
+                1,
+                4,
+                "-"
+              ]
+            ],
+            "B_events": [
+              [
+                "LL",
+                1,
+                4,
+                "-"
+              ]
+            ],
+            "A_mirror_events": [
+              [
+                "RR",
+                10,
+                13,
+                "-"
+              ]
+            ],
+            "B_mirror_events": [
+              [
+                "RR",
+                10,
+                13,
+                "-"
+              ]
+            ],
+            "delta": -1
+          }
+        ],
+        "FI": {
+          "protocol": "FI",
+          "accepted": false,
+          "final_debt": 1,
+          "steps": [
+            {
+              "occurrence": 0,
+              "key": 6,
+              "capacity": 2,
+              "own_q": 3,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 0,
+              "debt_before": 0,
+              "debt_after": 1,
+              "loans": []
+            },
+            {
+              "occurrence": 1,
+              "key": 4,
+              "capacity": 2,
+              "own_q": 2,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 0,
+              "debt_before": 1,
+              "debt_after": 1,
+              "loans": []
+            },
+            {
+              "occurrence": 2,
+              "key": 1,
+              "capacity": 2,
+              "own_q": 1,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 1,
+              "debt_before": 1,
+              "debt_after": 1,
+              "loans": []
+            }
+          ],
+          "assignments": [
+            {
+              "demand": [
+                0,
+                0,
+                0
+              ],
+              "unit": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "kind": "positive_own"
+            },
+            {
+              "demand": [
+                0,
+                0,
+                1
+              ],
+              "unit": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "kind": "positive_own"
+            },
+            {
+              "demand": [
+                0,
+                1,
+                0
+              ],
+              "unit": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                1,
+                1
+              ],
+              "unit": [
+                0,
+                1,
+                0,
+                1
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                2,
+                0
+              ],
+              "unit": [
+                0,
+                2,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            }
+          ],
+          "unpaid": [
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "source_delta_sum": 0,
+          "reserved_loss_sum": 1,
+          "startup_units_used": 0,
+          "reused_units": 0,
+          "scope": "directed complete-block open source span; no closed-walk classification"
+        },
+        "PF": {
+          "protocol": "PF",
+          "accepted": true,
+          "final_debt": 0,
+          "steps": [
+            {
+              "occurrence": 0,
+              "key": 6,
+              "capacity": 2,
+              "own_q": 3,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 0,
+              "debt_before": 0,
+              "debt_after": 1,
+              "loans": []
+            },
+            {
+              "occurrence": 1,
+              "key": 4,
+              "capacity": 2,
+              "own_q": 2,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 0,
+              "debt_before": 1,
+              "debt_after": 1,
+              "loans": []
+            },
+            {
+              "occurrence": 2,
+              "key": 1,
+              "capacity": 2,
+              "own_q": 1,
+              "reservation": 1,
+              "offer": 1,
+              "reserved_loss": 0,
+              "debt_before": 1,
+              "debt_after": 0,
+              "loans": [
+                {
+                  "demand": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "unit": [
+                    0,
+                    2,
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ],
+          "assignments": [
+            {
+              "demand": [
+                0,
+                0,
+                0
+              ],
+              "unit": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "kind": "positive_own"
+            },
+            {
+              "demand": [
+                0,
+                0,
+                1
+              ],
+              "unit": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "kind": "positive_own"
+            },
+            {
+              "demand": [
+                0,
+                1,
+                0
+              ],
+              "unit": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                1,
+                1
+              ],
+              "unit": [
+                0,
+                1,
+                0,
+                1
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                2,
+                0
+              ],
+              "unit": [
+                0,
+                2,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                0,
+                2
+              ],
+              "unit": [
+                0,
+                2,
+                0,
+                1
+              ],
+              "kind": "loan"
+            }
+          ],
+          "unpaid": [],
+          "source_delta_sum": 0,
+          "reserved_loss_sum": 0,
+          "startup_units_used": 0,
+          "reused_units": 0,
+          "scope": "directed complete-block open source span; no closed-walk classification"
+        }
+      },
+      "reflected_rows": [
+        {
+          "occurrence": 0,
+          "mode": "KEEP",
+          "key": 8,
+          "source_state": 4676,
+          "target_state": 7994,
+          "source_A": [
+            13,
+            [
+              11,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                [
+                  10,
+                  [
+                    9,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              [
+                12,
+                null,
+                null
+              ]
+            ],
+            null
+          ],
+          "source_B": [
+            13,
+            [
+              12,
+              [
+                11,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    10,
+                    [
+                      9,
+                      [
+                        8,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ]
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "destination_A": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              11,
+              [
+                10,
+                [
+                  9,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          "destination_B": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              12,
+              [
+                11,
+                [
+                  9,
+                  null,
+                  [
+                    10,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "a": 1,
+          "q": 3,
+          "z": 0,
+          "d_A": 2,
+          "d_B": 6,
+          "A_events": [
+            [
+              "LL",
+              8,
+              13,
+              "-"
+            ]
+          ],
+          "B_events": [
+            [
+              "LL",
+              8,
+              10,
+              "-"
+            ],
+            [
+              "LR",
+              7,
+              11,
+              "-"
+            ],
+            [
+              "LL",
+              8,
+              13,
+              "-"
+            ]
+          ],
+          "A_mirror_events": [
+            [
+              "LL",
+              8,
+              13,
+              "-"
+            ]
+          ],
+          "B_mirror_events": [
+            [
+              "LL",
+              8,
+              10,
+              "-"
+            ],
+            [
+              "LR",
+              7,
+              11,
+              "-"
+            ],
+            [
+              "LL",
+              8,
+              13,
+              "-"
+            ]
+          ],
+          "delta": 1
+        },
+        {
+          "occurrence": 1,
+          "mode": "KEEP",
+          "key": 10,
+          "source_state": 7994,
+          "target_state": 2002,
+          "source_A": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              11,
+              [
+                10,
+                [
+                  9,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          "source_B": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              12,
+              [
+                11,
+                [
+                  9,
+                  null,
+                  [
+                    10,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "destination_A": [
+            10,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              11,
+              null,
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          "destination_B": [
+            10,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              12,
+              [
+                11,
+                null,
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "a": 1,
+          "q": 2,
+          "z": 0,
+          "d_A": 2,
+          "d_B": 4,
+          "A_events": [
+            [
+              "RL",
+              8,
+              11,
+              "-"
+            ]
+          ],
+          "B_events": [
+            [
+              "LR",
+              9,
+              11,
+              "-"
+            ],
+            [
+              "RL",
+              8,
+              12,
+              "-"
+            ]
+          ],
+          "A_mirror_events": [
+            [
+              "RL",
+              8,
+              11,
+              "-"
+            ]
+          ],
+          "B_mirror_events": [
+            [
+              "LR",
+              9,
+              11,
+              "-"
+            ],
+            [
+              "RL",
+              8,
+              12,
+              "-"
+            ]
+          ],
+          "delta": 0
+        },
+        {
+          "occurrence": 2,
+          "mode": "KEEP",
+          "key": 13,
+          "source_state": 2002,
+          "target_state": 4327,
+          "source_A": [
+            10,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              11,
+              null,
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          "source_B": [
+            10,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              12,
+              [
+                11,
+                null,
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "destination_A": [
+            13,
+            [
+              11,
+              [
+                10,
+                [
+                  8,
+                  [
+                    7,
+                    [
+                      6,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            [
+                              2,
+                              [
+                                1,
+                                null,
+                                null
+                              ],
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                12,
+                null,
+                null
+              ]
+            ],
+            null
+          ],
+          "destination_B": [
+            13,
+            [
+              12,
+              [
+                10,
+                [
+                  8,
+                  [
+                    7,
+                    [
+                      6,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            [
+                              2,
+                              [
+                                1,
+                                null,
+                                null
+                              ],
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  11,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ],
+            null
+          ],
+          "a": 1,
+          "q": 1,
+          "z": 0,
+          "d_A": 2,
+          "d_B": 2,
+          "A_events": [
+            [
+              "RR",
+              10,
+              13,
+              "-"
+            ]
+          ],
+          "B_events": [
+            [
+              "RR",
+              10,
+              13,
+              "-"
+            ]
+          ],
+          "A_mirror_events": [
+            [
+              "RR",
+              10,
+              13,
+              "-"
+            ]
+          ],
+          "B_mirror_events": [
+            [
+              "RR",
+              10,
+              13,
+              "-"
+            ]
+          ],
+          "delta": -1
+        }
+      ]
+    },
+    "synchronizing_four_block": {
+      "normal": {
+        "rows": [
+          {
+            "occurrence": 0,
+            "mode": "KEEP",
+            "key": 6,
+            "source_state": 4676,
+            "target_state": 7994,
+            "source_A": [
+              1,
+              null,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                [
+                  6,
+                  [
+                    4,
+                    null,
+                    [
+                      5,
+                      null,
+                      null
+                    ]
+                  ],
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "source_B": [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  [
+                    7,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        [
+                          6,
+                          null,
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_A": [
+              6,
+              [
+                3,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_B": [
+              6,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  3,
+                  null,
+                  [
+                    5,
+                    [
+                      4,
+                      null,
+                      null
+                    ],
+                    null
+                  ]
+                ]
+              ],
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "a": 1,
+            "q": 3,
+            "z": 0,
+            "d_A": 2,
+            "d_B": 6,
+            "A_events": [
+              [
+                "RR",
+                1,
+                6,
+                "-"
+              ]
+            ],
+            "B_events": [
+              [
+                "RR",
+                4,
+                6,
+                "-"
+              ],
+              [
+                "RL",
+                3,
+                7,
+                "-"
+              ],
+              [
+                "RR",
+                1,
+                6,
+                "-"
+              ]
+            ],
+            "A_mirror_events": [
+              [
+                "LL",
+                8,
+                13,
+                "-"
+              ]
+            ],
+            "B_mirror_events": [
+              [
+                "LL",
+                8,
+                10,
+                "-"
+              ],
+              [
+                "LR",
+                7,
+                11,
+                "-"
+              ],
+              [
+                "LL",
+                8,
+                13,
+                "-"
+              ]
+            ],
+            "delta": 1
+          },
+          {
+            "occurrence": 1,
+            "mode": "KEEP",
+            "key": 4,
+            "source_state": 7994,
+            "target_state": 2002,
+            "source_A": [
+              6,
+              [
+                3,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "source_B": [
+              6,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  3,
+                  null,
+                  [
+                    5,
+                    [
+                      4,
+                      null,
+                      null
+                    ],
+                    null
+                  ]
+                ]
+              ],
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_A": [
+              4,
+              [
+                3,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_B": [
+              4,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ],
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "a": 1,
+            "q": 2,
+            "z": 0,
+            "d_A": 2,
+            "d_B": 4,
+            "A_events": [
+              [
+                "LR",
+                3,
+                6,
+                "-"
+              ]
+            ],
+            "B_events": [
+              [
+                "RL",
+                3,
+                5,
+                "-"
+              ],
+              [
+                "LR",
+                2,
+                6,
+                "-"
+              ]
+            ],
+            "A_mirror_events": [
+              [
+                "RL",
+                8,
+                11,
+                "-"
+              ]
+            ],
+            "B_mirror_events": [
+              [
+                "LR",
+                9,
+                11,
+                "-"
+              ],
+              [
+                "RL",
+                8,
+                12,
+                "-"
+              ]
+            ],
+            "delta": 0
+          },
+          {
+            "occurrence": 2,
+            "mode": "KEEP",
+            "key": 1,
+            "source_state": 2002,
+            "target_state": 4327,
+            "source_A": [
+              4,
+              [
+                3,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "source_B": [
+              4,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ],
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_A": [
+              1,
+              null,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                [
+                  4,
+                  null,
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          [
+                            10,
+                            null,
+                            [
+                              11,
+                              null,
+                              [
+                                12,
+                                null,
+                                [
+                                  13,
+                                  null,
+                                  null
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_B": [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  4,
+                  [
+                    3,
+                    null,
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          [
+                            10,
+                            null,
+                            [
+                              11,
+                              null,
+                              [
+                                12,
+                                null,
+                                [
+                                  13,
+                                  null,
+                                  null
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "a": 1,
+            "q": 1,
+            "z": 0,
+            "d_A": 2,
+            "d_B": 2,
+            "A_events": [
+              [
+                "LL",
+                1,
+                4,
+                "-"
+              ]
+            ],
+            "B_events": [
+              [
+                "LL",
+                1,
+                4,
+                "-"
+              ]
+            ],
+            "A_mirror_events": [
+              [
+                "RR",
+                10,
+                13,
+                "-"
+              ]
+            ],
+            "B_mirror_events": [
+              [
+                "RR",
+                10,
+                13,
+                "-"
+              ]
+            ],
+            "delta": -1
+          },
+          {
+            "occurrence": 3,
+            "mode": "KEEP",
+            "key": 3,
+            "source_state": 4327,
+            "target_state": 930,
+            "source_A": [
+              1,
+              null,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                [
+                  4,
+                  null,
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          [
+                            10,
+                            null,
+                            [
+                              11,
+                              null,
+                              [
+                                12,
+                                null,
+                                [
+                                  13,
+                                  null,
+                                  null
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "source_B": [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  4,
+                  [
+                    3,
+                    null,
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          [
+                            10,
+                            null,
+                            [
+                              11,
+                              null,
+                              [
+                                12,
+                                null,
+                                [
+                                  13,
+                                  null,
+                                  null
+                                ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_A": [
+              3,
+              [
+                1,
+                null,
+                [
+                  2,
+                  null,
+                  null
+                ]
+              ],
+              [
+                4,
+                null,
+                [
+                  6,
+                  [
+                    5,
+                    null,
+                    null
+                  ],
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "destination_B": [
+              3,
+              [
+                1,
+                null,
+                [
+                  2,
+                  null,
+                  null
+                ]
+              ],
+              [
+                4,
+                null,
+                [
+                  6,
+                  [
+                    5,
+                    null,
+                    null
+                  ],
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "a": 1,
+            "q": 1,
+            "z": 1,
+            "d_A": 1,
+            "d_B": 3,
+            "A_events": [
+              [
+                "ZIG",
+                1,
+                3,
+                "R"
+              ]
+            ],
+            "B_events": [
+              [
+                "RL",
+                2,
+                4,
+                "-"
+              ],
+              [
+                "ZIG",
+                1,
+                3,
+                "R"
+              ]
+            ],
+            "A_mirror_events": [
+              [
+                "ZIG",
+                11,
+                13,
+                "L"
+              ]
+            ],
+            "B_mirror_events": [
+              [
+                "LR",
+                10,
+                12,
+                "-"
+              ],
+              [
+                "ZIG",
+                11,
+                13,
+                "L"
+              ]
+            ],
+            "delta": -1
+          }
+        ],
+        "FI": {
+          "protocol": "FI",
+          "accepted": false,
+          "final_debt": 1,
+          "steps": [
+            {
+              "occurrence": 0,
+              "key": 6,
+              "capacity": 2,
+              "own_q": 3,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 0,
+              "debt_before": 0,
+              "debt_after": 1,
+              "loans": []
+            },
+            {
+              "occurrence": 1,
+              "key": 4,
+              "capacity": 2,
+              "own_q": 2,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 0,
+              "debt_before": 1,
+              "debt_after": 1,
+              "loans": []
+            },
+            {
+              "occurrence": 2,
+              "key": 1,
+              "capacity": 2,
+              "own_q": 1,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 1,
+              "debt_before": 1,
+              "debt_after": 1,
+              "loans": []
+            },
+            {
+              "occurrence": 3,
+              "key": 3,
+              "capacity": 2,
+              "own_q": 1,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 1,
+              "debt_before": 1,
+              "debt_after": 1,
+              "loans": []
+            }
+          ],
+          "assignments": [
+            {
+              "demand": [
+                0,
+                0,
+                0
+              ],
+              "unit": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "kind": "positive_own"
+            },
+            {
+              "demand": [
+                0,
+                0,
+                1
+              ],
+              "unit": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "kind": "positive_own"
+            },
+            {
+              "demand": [
+                0,
+                1,
+                0
+              ],
+              "unit": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                1,
+                1
+              ],
+              "unit": [
+                0,
+                1,
+                0,
+                1
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                2,
+                0
+              ],
+              "unit": [
+                0,
+                2,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                3,
+                0
+              ],
+              "unit": [
+                0,
+                3,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            }
+          ],
+          "unpaid": [
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "source_delta_sum": -1,
+          "reserved_loss_sum": 2,
+          "startup_units_used": 0,
+          "reused_units": 0,
+          "scope": "directed complete-block open source span; no closed-walk classification"
+        },
+        "PF": {
+          "protocol": "PF",
+          "accepted": true,
+          "final_debt": 0,
+          "steps": [
+            {
+              "occurrence": 0,
+              "key": 6,
+              "capacity": 2,
+              "own_q": 3,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 0,
+              "debt_before": 0,
+              "debt_after": 1,
+              "loans": []
+            },
+            {
+              "occurrence": 1,
+              "key": 4,
+              "capacity": 2,
+              "own_q": 2,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 0,
+              "debt_before": 1,
+              "debt_after": 1,
+              "loans": []
+            },
+            {
+              "occurrence": 2,
+              "key": 1,
+              "capacity": 2,
+              "own_q": 1,
+              "reservation": 1,
+              "offer": 1,
+              "reserved_loss": 0,
+              "debt_before": 1,
+              "debt_after": 0,
+              "loans": [
+                {
+                  "demand": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "unit": [
+                    0,
+                    2,
+                    0,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "occurrence": 3,
+              "key": 3,
+              "capacity": 2,
+              "own_q": 1,
+              "reservation": 2,
+              "offer": 0,
+              "reserved_loss": 1,
+              "debt_before": 0,
+              "debt_after": 0,
+              "loans": []
+            }
+          ],
+          "assignments": [
+            {
+              "demand": [
+                0,
+                0,
+                0
+              ],
+              "unit": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "kind": "positive_own"
+            },
+            {
+              "demand": [
+                0,
+                0,
+                1
+              ],
+              "unit": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "kind": "positive_own"
+            },
+            {
+              "demand": [
+                0,
+                1,
+                0
+              ],
+              "unit": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                1,
+                1
+              ],
+              "unit": [
+                0,
+                1,
+                0,
+                1
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                2,
+                0
+              ],
+              "unit": [
+                0,
+                2,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            },
+            {
+              "demand": [
+                0,
+                0,
+                2
+              ],
+              "unit": [
+                0,
+                2,
+                0,
+                1
+              ],
+              "kind": "loan"
+            },
+            {
+              "demand": [
+                0,
+                3,
+                0
+              ],
+              "unit": [
+                0,
+                3,
+                0,
+                0
+              ],
+              "kind": "payer_own"
+            }
+          ],
+          "unpaid": [],
+          "source_delta_sum": -1,
+          "reserved_loss_sum": 1,
+          "startup_units_used": 0,
+          "reused_units": 0,
+          "scope": "directed complete-block open source span; no closed-walk classification"
+        }
+      },
+      "reflected_rows": [
+        {
+          "occurrence": 0,
+          "mode": "KEEP",
+          "key": 8,
+          "source_state": 4676,
+          "target_state": 7994,
+          "source_A": [
+            13,
+            [
+              11,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                [
+                  10,
+                  [
+                    9,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              [
+                12,
+                null,
+                null
+              ]
+            ],
+            null
+          ],
+          "source_B": [
+            13,
+            [
+              12,
+              [
+                11,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    10,
+                    [
+                      9,
+                      [
+                        8,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ]
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "destination_A": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              11,
+              [
+                10,
+                [
+                  9,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          "destination_B": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              12,
+              [
+                11,
+                [
+                  9,
+                  null,
+                  [
+                    10,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "a": 1,
+          "q": 3,
+          "z": 0,
+          "d_A": 2,
+          "d_B": 6,
+          "A_events": [
+            [
+              "LL",
+              8,
+              13,
+              "-"
+            ]
+          ],
+          "B_events": [
+            [
+              "LL",
+              8,
+              10,
+              "-"
+            ],
+            [
+              "LR",
+              7,
+              11,
+              "-"
+            ],
+            [
+              "LL",
+              8,
+              13,
+              "-"
+            ]
+          ],
+          "A_mirror_events": [
+            [
+              "LL",
+              8,
+              13,
+              "-"
+            ]
+          ],
+          "B_mirror_events": [
+            [
+              "LL",
+              8,
+              10,
+              "-"
+            ],
+            [
+              "LR",
+              7,
+              11,
+              "-"
+            ],
+            [
+              "LL",
+              8,
+              13,
+              "-"
+            ]
+          ],
+          "delta": 1
+        },
+        {
+          "occurrence": 1,
+          "mode": "KEEP",
+          "key": 10,
+          "source_state": 7994,
+          "target_state": 2002,
+          "source_A": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              11,
+              [
+                10,
+                [
+                  9,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          "source_B": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              12,
+              [
+                11,
+                [
+                  9,
+                  null,
+                  [
+                    10,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "destination_A": [
+            10,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              11,
+              null,
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          "destination_B": [
+            10,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              12,
+              [
+                11,
+                null,
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "a": 1,
+          "q": 2,
+          "z": 0,
+          "d_A": 2,
+          "d_B": 4,
+          "A_events": [
+            [
+              "RL",
+              8,
+              11,
+              "-"
+            ]
+          ],
+          "B_events": [
+            [
+              "LR",
+              9,
+              11,
+              "-"
+            ],
+            [
+              "RL",
+              8,
+              12,
+              "-"
+            ]
+          ],
+          "A_mirror_events": [
+            [
+              "RL",
+              8,
+              11,
+              "-"
+            ]
+          ],
+          "B_mirror_events": [
+            [
+              "LR",
+              9,
+              11,
+              "-"
+            ],
+            [
+              "RL",
+              8,
+              12,
+              "-"
+            ]
+          ],
+          "delta": 0
+        },
+        {
+          "occurrence": 2,
+          "mode": "KEEP",
+          "key": 13,
+          "source_state": 2002,
+          "target_state": 4327,
+          "source_A": [
+            10,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              11,
+              null,
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          "source_B": [
+            10,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              12,
+              [
+                11,
+                null,
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "destination_A": [
+            13,
+            [
+              11,
+              [
+                10,
+                [
+                  8,
+                  [
+                    7,
+                    [
+                      6,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            [
+                              2,
+                              [
+                                1,
+                                null,
+                                null
+                              ],
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                12,
+                null,
+                null
+              ]
+            ],
+            null
+          ],
+          "destination_B": [
+            13,
+            [
+              12,
+              [
+                10,
+                [
+                  8,
+                  [
+                    7,
+                    [
+                      6,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            [
+                              2,
+                              [
+                                1,
+                                null,
+                                null
+                              ],
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  11,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ],
+            null
+          ],
+          "a": 1,
+          "q": 1,
+          "z": 0,
+          "d_A": 2,
+          "d_B": 2,
+          "A_events": [
+            [
+              "RR",
+              10,
+              13,
+              "-"
+            ]
+          ],
+          "B_events": [
+            [
+              "RR",
+              10,
+              13,
+              "-"
+            ]
+          ],
+          "A_mirror_events": [
+            [
+              "RR",
+              10,
+              13,
+              "-"
+            ]
+          ],
+          "B_mirror_events": [
+            [
+              "RR",
+              10,
+              13,
+              "-"
+            ]
+          ],
+          "delta": -1
+        },
+        {
+          "occurrence": 3,
+          "mode": "KEEP",
+          "key": 11,
+          "source_state": 4327,
+          "target_state": 930,
+          "source_A": [
+            13,
+            [
+              11,
+              [
+                10,
+                [
+                  8,
+                  [
+                    7,
+                    [
+                      6,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            [
+                              2,
+                              [
+                                1,
+                                null,
+                                null
+                              ],
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              [
+                12,
+                null,
+                null
+              ]
+            ],
+            null
+          ],
+          "source_B": [
+            13,
+            [
+              12,
+              [
+                10,
+                [
+                  8,
+                  [
+                    7,
+                    [
+                      6,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            [
+                              2,
+                              [
+                                1,
+                                null,
+                                null
+                              ],
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  11,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ],
+            null
+          ],
+          "destination_A": [
+            11,
+            [
+              10,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                [
+                  9,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          "destination_B": [
+            11,
+            [
+              10,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                [
+                  9,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          "a": 1,
+          "q": 1,
+          "z": 1,
+          "d_A": 1,
+          "d_B": 3,
+          "A_events": [
+            [
+              "ZIG",
+              11,
+              13,
+              "L"
+            ]
+          ],
+          "B_events": [
+            [
+              "LR",
+              10,
+              12,
+              "-"
+            ],
+            [
+              "ZIG",
+              11,
+              13,
+              "L"
+            ]
+          ],
+          "A_mirror_events": [
+            [
+              "ZIG",
+              11,
+              13,
+              "L"
+            ]
+          ],
+          "B_mirror_events": [
+            [
+              "LR",
+              10,
+              12,
+              "-"
+            ],
+            [
+              "ZIG",
+              11,
+              13,
+              "L"
+            ]
+          ],
+          "delta": -1
+        }
+      ]
+    }
+  },
+  "three_block_source_cost": {
+    "A": 3,
+    "Q_B": 6
+  },
+  "four_block_source_cost": {
+    "A": 4,
+    "Q_B": 7
+  },
+  "three_block_PF_accepted_FI_rejected": true,
+  "source_four_block_reserved_loss_certificate": {
+    "source_sum": -1,
+    "reserved_loss": 2,
+    "final_debt": 1
+  },
+  "closed_walk_counterexample_claimed": false,
+  "positive_Gamma_closed_walk_claimed": false,
+  "new_source_engine_calls": 0,
+  "larger_finite_fits": 0
+}

@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-31",
+  "candidate": "Ehat=(n-1)-c-mu: fix every exact common proper pair, then maximum residual endpoint matching",
+  "claims": [
+    {
+      "claim": "Ehat is explicit, finite and E<=Ehat<=F",
+      "status": "SOURCE DEFINITION",
+      "proof": "FX01_DEFINITION_AND_DELETE.md"
+    },
+    {
+      "claim": "Universal DELETE for Ehat",
+      "status": "PROVED\u2014UNIVERSAL",
+      "scope": "all finite same-key present-key BST source pairs; Delta Ehat<=d_A<=2a",
+      "proof": "FX01_DEFINITION_AND_DELETE.md"
+    },
+    {
+      "claim": "Full q on opposite vines",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "scope": "all sizes, both orientations; exact Delta=-(q+1) for n>=2; n=1 noop",
+      "proof": "FX02_OPPOSITE_VINE_PROOF.md"
+    },
+    {
+      "claim": "Established arbitrary-fringe whole-helper compensation",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "scope": "both RA02 branches, every same-key U,V,m>=0 and reflections; L Delta=0,R Delta in {-2,-1}",
+      "proof": "FX03_ARBITRARY_FRINGE_HELPER_PROOF.md"
+    },
+    {
+      "claim": "Closed-walk Coarse-Double on the union of the named source-edge classes",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "scope": "all DELETEs and the specified opposite-vine/helper KEEPs only; no assertion general walks have this restriction",
+      "proof": "FX05_UPDATED_STRATEGY_REVIEW.md"
+    },
+    {
+      "claim": "Full root-conditioned B repayment for Ehat",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "reachable n6 hook-vine KEEP1,a=0,q=2,Ehat=1->2",
+      "proof": "FX04_FULL_LAW_COUNTEREXAMPLE_AND_REPLAY.md"
+    },
+    {
+      "claim": "Ehat is a universal source potential",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "same legal whole KEEP counterexample"
+    },
+    {
+      "claim": "Residual maxima, symbolic core reductions and full source replay",
+      "status": "FINITE-EXACT",
+      "scope": "38 residual matching/cover certificates,12 symbolic reductions,16 actual core tables,22 source edges,14 closed operations",
+      "proof": "independent_audit.json"
+    },
+    {
+      "claim": "A complete uniform A/B potential exists with the required laws",
+      "status": "OPEN",
+      "scope": "Ehat does not solve the full original Step3 obligation"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN",
+      "scope": "no full proof or counterexample"
+    },
+    {
+      "claim": "Downstream Dynamic Optimality assembly",
+      "status": "CONDITIONAL",
+      "scope": "inherited load-bearing premises unchanged"
+    }
+  ],
+  "named_acceptance_obligations_achieved": [
+    "universal DELETE",
+    "all-size full-q opposite vines",
+    "both all-size arbitrary-fringe whole-helper families"
+  ],
+  "original_load_bearing_obligations_discharged": [],
+  "net_advancement_of_full_original_proof": 0,
+  "genuinely_covered_restricted_source_cases": "union of all DELETE edges, stated opposite-vine KEEPs and established helper families with reflections",
+  "new_assumptions_for_original_theorem": [],
+  "full_candidate_refuted": true,
+  "updated_mandatory_strategy_review": "FX05_UPDATED_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null,
+  "finite_potential_fits": 0,
+  "new_source_state_graphs": 0,
+  "Stage11G_writes_performed": false
+}

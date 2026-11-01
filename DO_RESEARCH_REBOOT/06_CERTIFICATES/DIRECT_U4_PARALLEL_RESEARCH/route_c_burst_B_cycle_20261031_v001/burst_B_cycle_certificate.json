@@ -1,0 +1,3719 @@
+{
+  "schema": "burst-restoration-source-cycle-v1",
+  "date": "2026-10-31",
+  "key_size": 13,
+  "word": [
+    13,
+    11,
+    9,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "initial_diagonal_B": [
+    1,
+    null,
+    [
+      2,
+      null,
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ],
+  "full_cycle_replay": [
+    {
+      "occurrence": 0,
+      "key": 13,
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        13,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              [
+                8,
+                [
+                  7,
+                  null,
+                  null
+                ],
+                [
+                  10,
+                  [
+                    9,
+                    null,
+                    null
+                  ],
+                  [
+                    12,
+                    [
+                      11,
+                      null,
+                      null
+                    ],
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "d_B": 12,
+      "q": 6,
+      "z": 0,
+      "B_events": [
+        [
+          "RR",
+          11,
+          13,
+          "-"
+        ],
+        [
+          "RR",
+          9,
+          13,
+          "-"
+        ],
+        [
+          "RR",
+          7,
+          13,
+          "-"
+        ],
+        [
+          "RR",
+          5,
+          13,
+          "-"
+        ],
+        [
+          "RR",
+          3,
+          13,
+          "-"
+        ],
+        [
+          "RR",
+          1,
+          13,
+          "-"
+        ]
+      ]
+    },
+    {
+      "occurrence": 1,
+      "key": 11,
+      "source_B": [
+        13,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              [
+                8,
+                [
+                  7,
+                  null,
+                  null
+                ],
+                [
+                  10,
+                  [
+                    9,
+                    null,
+                    null
+                  ],
+                  [
+                    12,
+                    [
+                      11,
+                      null,
+                      null
+                    ],
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "destination_B": [
+        11,
+        [
+          4,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              [
+                7,
+                null,
+                null
+              ]
+            ],
+            [
+              10,
+              [
+                9,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        [
+          13,
+          [
+            12,
+            null,
+            null
+          ],
+          null
+        ]
+      ],
+      "d_B": 7,
+      "q": 3,
+      "z": 1,
+      "B_events": [
+        [
+          "RL",
+          10,
+          12,
+          "-"
+        ],
+        [
+          "RR",
+          6,
+          11,
+          "-"
+        ],
+        [
+          "RR",
+          2,
+          11,
+          "-"
+        ],
+        [
+          "ZIG",
+          11,
+          13,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 2,
+      "key": 9,
+      "source_B": [
+        11,
+        [
+          4,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              [
+                7,
+                null,
+                null
+              ]
+            ],
+            [
+              10,
+              [
+                9,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        [
+          13,
+          [
+            12,
+            null,
+            null
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        9,
+        [
+          4,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              [
+                7,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        [
+          11,
+          [
+            10,
+            null,
+            null
+          ],
+          [
+            13,
+            [
+              12,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "d_B": 4,
+      "q": 2,
+      "z": 0,
+      "B_events": [
+        [
+          "RL",
+          8,
+          10,
+          "-"
+        ],
+        [
+          "LR",
+          4,
+          11,
+          "-"
+        ]
+      ]
+    },
+    {
+      "occurrence": 3,
+      "key": 1,
+      "source_B": [
+        9,
+        [
+          4,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              [
+                7,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        [
+          11,
+          [
+            10,
+            null,
+            null
+          ],
+          [
+            13,
+            [
+              12,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          9,
+          [
+            2,
+            null,
+            [
+              4,
+              [
+                3,
+                null,
+                null
+              ],
+              [
+                8,
+                [
+                  6,
+                  [
+                    5,
+                    null,
+                    null
+                  ],
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ]
+            ]
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "d_B": 3,
+      "q": 1,
+      "z": 1,
+      "B_events": [
+        [
+          "LL",
+          1,
+          4,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          9,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 4,
+      "key": 2,
+      "source_B": [
+        1,
+        null,
+        [
+          9,
+          [
+            2,
+            null,
+            [
+              4,
+              [
+                3,
+                null,
+                null
+              ],
+              [
+                8,
+                [
+                  6,
+                  [
+                    5,
+                    null,
+                    null
+                  ],
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ]
+            ]
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          9,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              8,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ]
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "d_B": 2,
+      "q": 1,
+      "z": 0,
+      "B_events": [
+        [
+          "RL",
+          1,
+          9,
+          "-"
+        ]
+      ]
+    },
+    {
+      "occurrence": 5,
+      "key": 3,
+      "source_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          9,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              8,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ]
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            9,
+            [
+              8,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ],
+            [
+              11,
+              [
+                10,
+                null,
+                null
+              ],
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 3,
+      "q": 1,
+      "z": 1,
+      "B_events": [
+        [
+          "LL",
+          3,
+          9,
+          "-"
+        ],
+        [
+          "ZIG",
+          2,
+          3,
+          "R"
+        ]
+      ]
+    },
+    {
+      "occurrence": 6,
+      "key": 4,
+      "source_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            9,
+            [
+              8,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ],
+            [
+              11,
+              [
+                10,
+                null,
+                null
+              ],
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          [
+            8,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              [
+                7,
+                null,
+                null
+              ]
+            ],
+            null
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          3,
+          4,
+          "R"
+        ]
+      ]
+    },
+    {
+      "occurrence": 7,
+      "key": 5,
+      "source_B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          [
+            8,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              [
+                7,
+                null,
+                null
+              ]
+            ],
+            null
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          [
+            6,
+            null,
+            [
+              8,
+              [
+                7,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "d_B": 4,
+      "q": 2,
+      "z": 0,
+      "B_events": [
+        [
+          "LL",
+          5,
+          8,
+          "-"
+        ],
+        [
+          "RL",
+          4,
+          9,
+          "-"
+        ]
+      ]
+    },
+    {
+      "occurrence": 8,
+      "key": 6,
+      "source_B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          [
+            6,
+            null,
+            [
+              8,
+              [
+                7,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          [
+            8,
+            [
+              7,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "d_B": 2,
+      "q": 1,
+      "z": 0,
+      "B_events": [
+        [
+          "RL",
+          5,
+          9,
+          "-"
+        ]
+      ]
+    },
+    {
+      "occurrence": 9,
+      "key": 7,
+      "source_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          [
+            8,
+            [
+              7,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        7,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          8,
+          null,
+          [
+            9,
+            null,
+            [
+              11,
+              [
+                10,
+                null,
+                null
+              ],
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 3,
+      "q": 1,
+      "z": 1,
+      "B_events": [
+        [
+          "LL",
+          7,
+          9,
+          "-"
+        ],
+        [
+          "ZIG",
+          6,
+          7,
+          "R"
+        ]
+      ]
+    },
+    {
+      "occurrence": 10,
+      "key": 8,
+      "source_B": [
+        7,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          8,
+          null,
+          [
+            9,
+            null,
+            [
+              11,
+              [
+                10,
+                null,
+                null
+              ],
+              [
+                13,
+                [
+                  12,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        8,
+        [
+          7,
+          [
+            6,
+            [
+              5,
+              [
+                4,
+                [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          null,
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          7,
+          8,
+          "R"
+        ]
+      ]
+    },
+    {
+      "occurrence": 11,
+      "key": 9,
+      "source_B": [
+        8,
+        [
+          7,
+          [
+            6,
+            [
+              5,
+              [
+                4,
+                [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          null,
+          [
+            11,
+            [
+              10,
+              null,
+              null
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        9,
+        [
+          8,
+          [
+            7,
+            [
+              6,
+              [
+                5,
+                [
+                  4,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          11,
+          [
+            10,
+            null,
+            null
+          ],
+          [
+            13,
+            [
+              12,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          8,
+          9,
+          "R"
+        ]
+      ]
+    },
+    {
+      "occurrence": 12,
+      "key": 10,
+      "source_B": [
+        9,
+        [
+          8,
+          [
+            7,
+            [
+              6,
+              [
+                5,
+                [
+                  4,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          11,
+          [
+            10,
+            null,
+            null
+          ],
+          [
+            13,
+            [
+              12,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        10,
+        [
+          9,
+          [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          11,
+          null,
+          [
+            13,
+            [
+              12,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "d_B": 2,
+      "q": 1,
+      "z": 0,
+      "B_events": [
+        [
+          "RL",
+          9,
+          11,
+          "-"
+        ]
+      ]
+    },
+    {
+      "occurrence": 13,
+      "key": 11,
+      "source_B": [
+        10,
+        [
+          9,
+          [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          11,
+          null,
+          [
+            13,
+            [
+              12,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        11,
+        [
+          10,
+          [
+            9,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          13,
+          [
+            12,
+            null,
+            null
+          ],
+          null
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          10,
+          11,
+          "R"
+        ]
+      ]
+    },
+    {
+      "occurrence": 14,
+      "key": 12,
+      "source_B": [
+        11,
+        [
+          10,
+          [
+            9,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          13,
+          [
+            12,
+            null,
+            null
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        12,
+        [
+          11,
+          [
+            10,
+            [
+              9,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          13,
+          null,
+          null
+        ]
+      ],
+      "d_B": 2,
+      "q": 1,
+      "z": 0,
+      "B_events": [
+        [
+          "RL",
+          11,
+          13,
+          "-"
+        ]
+      ]
+    },
+    {
+      "occurrence": 15,
+      "key": 11,
+      "source_B": [
+        12,
+        [
+          11,
+          [
+            10,
+            [
+              9,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          13,
+          null,
+          null
+        ]
+      ],
+      "destination_B": [
+        11,
+        [
+          10,
+          [
+            9,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          12,
+          null,
+          [
+            13,
+            null,
+            null
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          11,
+          12,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 16,
+      "key": 10,
+      "source_B": [
+        11,
+        [
+          10,
+          [
+            9,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          12,
+          null,
+          [
+            13,
+            null,
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        10,
+        [
+          9,
+          [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          11,
+          null,
+          [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          10,
+          11,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 17,
+      "key": 9,
+      "source_B": [
+        10,
+        [
+          9,
+          [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          11,
+          null,
+          [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        9,
+        [
+          8,
+          [
+            7,
+            [
+              6,
+              [
+                5,
+                [
+                  4,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          10,
+          null,
+          [
+            11,
+            null,
+            [
+              12,
+              null,
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          9,
+          10,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 18,
+      "key": 8,
+      "source_B": [
+        9,
+        [
+          8,
+          [
+            7,
+            [
+              6,
+              [
+                5,
+                [
+                  4,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          10,
+          null,
+          [
+            11,
+            null,
+            [
+              12,
+              null,
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        8,
+        [
+          7,
+          [
+            6,
+            [
+              5,
+              [
+                4,
+                [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          null,
+          [
+            10,
+            null,
+            [
+              11,
+              null,
+              [
+                12,
+                null,
+                [
+                  13,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          8,
+          9,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 19,
+      "key": 7,
+      "source_B": [
+        8,
+        [
+          7,
+          [
+            6,
+            [
+              5,
+              [
+                4,
+                [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          9,
+          null,
+          [
+            10,
+            null,
+            [
+              11,
+              null,
+              [
+                12,
+                null,
+                [
+                  13,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        7,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          8,
+          null,
+          [
+            9,
+            null,
+            [
+              10,
+              null,
+              [
+                11,
+                null,
+                [
+                  12,
+                  null,
+                  [
+                    13,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          7,
+          8,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 20,
+      "key": 6,
+      "source_B": [
+        7,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          8,
+          null,
+          [
+            9,
+            null,
+            [
+              10,
+              null,
+              [
+                11,
+                null,
+                [
+                  12,
+                  null,
+                  [
+                    13,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          7,
+          null,
+          [
+            8,
+            null,
+            [
+              9,
+              null,
+              [
+                10,
+                null,
+                [
+                  11,
+                  null,
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          6,
+          7,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 21,
+      "key": 5,
+      "source_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          7,
+          null,
+          [
+            8,
+            null,
+            [
+              9,
+              null,
+              [
+                10,
+                null,
+                [
+                  11,
+                  null,
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          [
+            7,
+            null,
+            [
+              8,
+              null,
+              [
+                9,
+                null,
+                [
+                  10,
+                  null,
+                  [
+                    11,
+                    null,
+                    [
+                      12,
+                      null,
+                      [
+                        13,
+                        null,
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          5,
+          6,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 22,
+      "key": 4,
+      "source_B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          [
+            7,
+            null,
+            [
+              8,
+              null,
+              [
+                9,
+                null,
+                [
+                  10,
+                  null,
+                  [
+                    11,
+                    null,
+                    [
+                      12,
+                      null,
+                      [
+                        13,
+                        null,
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            [
+              7,
+              null,
+              [
+                8,
+                null,
+                [
+                  9,
+                  null,
+                  [
+                    10,
+                    null,
+                    [
+                      11,
+                      null,
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          4,
+          5,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 23,
+      "key": 3,
+      "source_B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            [
+              7,
+              null,
+              [
+                8,
+                null,
+                [
+                  9,
+                  null,
+                  [
+                    10,
+                    null,
+                    [
+                      11,
+                      null,
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          3,
+          4,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 24,
+      "key": 2,
+      "source_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          2,
+          3,
+          "L"
+        ]
+      ]
+    },
+    {
+      "occurrence": 25,
+      "key": 1,
+      "source_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_B": 1,
+      "q": 0,
+      "z": 1,
+      "B_events": [
+        [
+          "ZIG",
+          1,
+          2,
+          "L"
+        ]
+      ]
+    }
+  ],
+  "increasing_scan_checkpoints": [
+    {
+      "occurrence": 3,
+      "key": 1,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 4,
+      "key": 2,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 5,
+      "key": 3,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 6,
+      "key": 4,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 7,
+      "key": 5,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 8,
+      "key": 6,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 9,
+      "key": 7,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 10,
+      "key": 8,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 11,
+      "key": 9,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 12,
+      "key": 10,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 13,
+      "key": 11,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": true
+    },
+    {
+      "occurrence": 14,
+      "key": 12,
+      "scanned_left_vine": true,
+      "unrequested_core_13_12_fringe_preserved": null
+    }
+  ],
+  "increasing_scan_terminal_B": [
+    12,
+    [
+      11,
+      [
+        10,
+        [
+          9,
+          [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      null
+    ],
+    [
+      13,
+      null,
+      null
+    ]
+  ],
+  "closed": true,
+  "simple": true,
+  "distinct_source_states": 26,
+  "reachability_prefix_length": 0,
+  "Q_B": 20,
+  "Z_B": 19,
+  "G_B": 5,
+  "J_B": 5,
+  "q_profile": [
+    6,
+    3,
+    2,
+    1,
+    1,
+    1,
+    0,
+    2,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "d_profile": [
+    12,
+    7,
+    4,
+    3,
+    2,
+    3,
+    1,
+    4,
+    2,
+    3,
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "z_profile": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "immediate_high_low_pairs": [],
+  "residual_singleton_cells": [
+    {
+      "occurrence": 0,
+      "q": 6,
+      "residual_upper_bound": 4
+    },
+    {
+      "occurrence": 1,
+      "q": 3,
+      "residual_upper_bound": 1
+    },
+    {
+      "occurrence": 2,
+      "q": 2,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 3,
+      "q": 1,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 4,
+      "q": 1,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 5,
+      "q": 1,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 6,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 7,
+      "q": 2,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 8,
+      "q": 1,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 9,
+      "q": 1,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 10,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 11,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 12,
+      "q": 1,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 13,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 14,
+      "q": 1,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 15,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 16,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 17,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 18,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 19,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 20,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 21,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 22,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 23,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 24,
+      "q": 0,
+      "residual_upper_bound": 0
+    },
+    {
+      "occurrence": 25,
+      "q": 0,
+      "residual_upper_bound": 0
+    }
+  ],
+  "protected_surplus_bursts": [
+    {
+      "occurrence": 0,
+      "key": 13,
+      "q": 6,
+      "raw_surplus": 4,
+      "previous_B_root": 1,
+      "previous_B_root_and_children": [
+        1,
+        2
+      ],
+      "successor_occurrence": 1,
+      "successor_key": 11,
+      "successor_q": 3,
+      "successor_returns_to_previous_B_root": false,
+      "successor_in_previous_root_collar": false,
+      "fresh_UD_own_work_ceiling": 3,
+      "guaranteed_spare_from_minimum_two_unit_pool": 0
+    },
+    {
+      "occurrence": 1,
+      "key": 11,
+      "q": 3,
+      "raw_surplus": 1,
+      "previous_B_root": 13,
+      "previous_B_root_and_children": [
+        13,
+        2
+      ],
+      "successor_occurrence": 2,
+      "successor_key": 9,
+      "successor_q": 2,
+      "successor_returns_to_previous_B_root": false,
+      "successor_in_previous_root_collar": false,
+      "fresh_UD_own_work_ceiling": 2,
+      "guaranteed_spare_from_minimum_two_unit_pool": 0
+    }
+  ],
+  "threshold": 5,
+  "planned_pure_reset_capacity": 4,
+  "outcome": "B_COMPONENT_AND_IMMEDIATE_HELPER_GATE_CERTIFIED",
+  "source_paths": [
+    "python/independent/splay.py",
+    "python/liquidity/legacy_embedding.py"
+  ],
+  "finite_fits": 0,
+  "size_sweeps": 0,
+  "adaptive_generator_changes": 0,
+  "A_resets_executed": 0,
+  "FI_UD_cut_trials": 0,
+  "actual_E_or_C_D_certified": false,
+  "delayed_UD_coverage": "OPEN",
+  "strict_FI_only_closed_walk_coverage": "NOT ESTABLISHED",
+  "universal_CD": "OPEN",
+  "matching_terminal_line": "FROZEN"
+}

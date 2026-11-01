@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-31",
+  "candidate": "J=max(Ehat,F-t_n)=F-min(mu,t_n), t_n=max(0,floor(n/2)-2)",
+  "claims": [
+    {
+      "claim": "J is explicit and Ehat<=J<=F",
+      "status": "SOURCE DEFINITION",
+      "proof": "CR01_EXPLICIT_CAP_AND_UNIFORM_LAWS.md"
+    },
+    {
+      "claim": "Universal DELETE for J",
+      "status": "PROVED\u2014UNIVERSAL",
+      "scope": "all finite same-key present-key source pairs; Delta J<=d_A<=2a",
+      "proof": "CR01_EXPLICIT_CAP_AND_UNIFORM_LAWS.md"
+    },
+    {
+      "claim": "Full opposite-vine q",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "scope": "all sizes and both orientations; exact -q for n>=4, boundaries separately paid",
+      "proof": "CR01_EXPLICIT_CAP_AND_UNIFORM_LAWS.md"
+    },
+    {
+      "claim": "Established arbitrary-fringe whole-helper compensation",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "scope": "both RA02 branches, arbitrary same-key U,V,m>=0 and reflections; Delta J<=0",
+      "proof": "CR01_EXPLICIT_CAP_AND_UNIFORM_LAWS.md"
+    },
+    {
+      "claim": "Requested old six-key starved KEEP is paid",
+      "status": "FINITE-EXACT",
+      "scope": "a=0,q=2,J=4->2; reflection follows by source/function invariance",
+      "proof": "independent_audit.json"
+    },
+    {
+      "claim": "Known starved phase of empty L helper is paid",
+      "status": "FINITE-EXACT",
+      "scope": "a=0,q=2,J=4->2; derived from inherited physical states",
+      "proof": "independent_audit.json"
+    },
+    {
+      "claim": "J is a universal full-repayment source potential",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "new reachable six-key padded KEEP: a=0,q=2,J=3->2",
+      "proof": "CR02_MONOTONE_AGGREGATION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "A monotone scalar aggregation between Ehat and F can supply universal B repayment",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "any coordinatewise nondecreasing phi_n(F,Ehat) with Ehat<=phi_n<=F; contradiction at n=6",
+      "proof": "CR02_MONOTONE_AGGREGATION_OBSTRUCTION.md"
+    },
+    {
+      "claim": "Capped values, residual maxima and full source replay",
+      "status": "FINITE-EXACT",
+      "scope": "39 residual graphs;10 controls;13-operation closed replay;23 whole source edges",
+      "proof": "independent_audit.json"
+    },
+    {
+      "claim": "Complete uniform source potential",
+      "status": "OPEN",
+      "scope": "this candidate and aggregation class do not resolve it"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN",
+      "scope": "no universal proof or counterexample"
+    },
+    {
+      "claim": "Downstream Dynamic Optimality assembly",
+      "status": "CONDITIONAL",
+      "scope": "inherited original premises unchanged"
+    }
+  ],
+  "four_named_requirements_achieved": [
+    "pay the known six-key starved KEEP",
+    "universal DELETE",
+    "all-size opposite-vine q",
+    "established arbitrary-fringe whole-helper compensation"
+  ],
+  "covered_restricted_source_cases": "union of named edge classes and reflections; closed walks in this union obey Coarse-Double by telescoping J",
+  "original_load_bearing_obligations_discharged": [],
+  "net_advancement_of_full_original_proof": 0,
+  "strategic_elimination": "all normalized monotone scalar aggregations of F and Ehat as universal potentials",
+  "new_assumptions_for_original_theorem": [],
+  "updated_strategy_review": "CR04_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null,
+  "finite_potential_fits": 0,
+  "new_pair_state_graphs": 0,
+  "Stage11G_writes_performed": false
+}

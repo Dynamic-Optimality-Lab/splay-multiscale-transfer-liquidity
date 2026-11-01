@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-31",
+  "principal_target": "Repair G through a root-pinned metric envelope or its size-dependent convex blend with U, satisfying both source laws",
+  "claims": [
+    {
+      "claim": "L is explicit and finite, and obeys the root-conditioned B-repayment inequality at every size",
+      "status": "PROVED\u2014UNIVERSAL",
+      "scope": "finite present-key ordered BSTs; root(A)=access key; r=1/8",
+      "proof": "AL01_ROOT_PINNED_B_LAW.md"
+    },
+    {
+      "claim": "L obeys DELETE",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "n6 exact source zig; analytic violations for every n>=7, arbitrary M",
+      "proof": "AL02_DELETE_BAND_OBSTRUCTION.md"
+    },
+    {
+      "claim": "Normalized root envelopes with nonnegative zero-self penalties obey DELETE",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "root max of G-C or root min of G+C; n>=7",
+      "proof": "AL02_DELETE_BAND_OBSTRUCTION.md"
+    },
+    {
+      "claim": "A size-dependent convex blend (1-theta_n)L+theta_n U obeys both laws",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "every n>=13, any theta_n in [0,1], independent of state",
+      "proof": "AL03_SIZE_DEPENDENT_BLEND_NO_GO.md"
+    },
+    {
+      "claim": "Six-key metric values, maxima and complete closed DELETE replay",
+      "status": "FINITE-EXACT",
+      "scope": "132 single trees, 660 directed primitive arcs, 2 metric rows, 396 candidate scores, 8 source operations",
+      "proof": "independent_audit.json"
+    },
+    {
+      "claim": "Six-key necessary blend interval is nonempty",
+      "status": "FINITE-EXACT",
+      "scope": "[5/13,3503/7168]; no sufficiency or coefficient-fit claim",
+      "proof": "AL04_EXACT_CONTROL_AND_REPLAY.md"
+    },
+    {
+      "claim": "Uniform A/B potential satisfying both laws",
+      "status": "OPEN",
+      "scope": "no successful candidate; state-dependent and unrelated constructions not excluded"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN",
+      "scope": "no proof and no counterexample produced"
+    },
+    {
+      "claim": "Downstream Dynamic Optimality assembly",
+      "status": "CONDITIONAL",
+      "scope": "inherited load-bearing obligations unchanged"
+    }
+  ],
+  "genuinely_deleted_original_obligations": [],
+  "net_original_proof_advancement": 0,
+  "strategic_elimination": "registered root-envelope/blend mechanism; distinct from positive CD advancement",
+  "new_assumptions_for_original_theorem": [],
+  "strategy_review_required": true,
+  "strategy_review_completed": "AL05_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null,
+  "larger_finite_fits": 0,
+  "new_pair_graphs": 0,
+  "Stage11G_modified": false
+}

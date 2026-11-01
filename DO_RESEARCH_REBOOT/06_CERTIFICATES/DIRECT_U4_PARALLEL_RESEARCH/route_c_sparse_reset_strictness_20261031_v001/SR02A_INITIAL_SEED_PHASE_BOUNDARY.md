@@ -1,0 +1,7 @@
+# The initial seed is a separate phase-boundary case
+
+SR02's phase argument applies directly to states produced by a mixed-word request: a KEEP state has equal roots at its unique skeleton key; the unique DELETE state has unequal roots. The post-setup INITIAL seed need not have those generated-phase labels, so it requires a separate nonreturn check before asserting that every closed subwalk is a rotation/power of the recurrent cycle.
+
+verify_seed_phase.py checks all 4,102 normal destinations in the already independently replayed source trajectories against the initial seed. None returns to it. The source/destination digests were each independently matched to raw pointer states in v002. Unequal digests imply unequal source trees: equal trees would have identical canonical serialization and digest, so this inequality direction needs no assumption that collisions are impossible. Reflection is injective and gives the same nonreturn result in the other orientation.
+
+After the first recurrent return all future states repeat the certified cycle. Its recorded states also differ from the initial seed. Thus there is no later seed return. Every other possible repeated transient state is generated at a well-defined phase, so identical phase/state forces the same future; it joins the already identified recurrence. This completes the initial-boundary qualification in SR02 without changing any generator or conducting another source search.

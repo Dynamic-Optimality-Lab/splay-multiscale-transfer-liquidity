@@ -1,0 +1,11 @@
+# Reproducing the source root completion audit
+
+The [producer](audit_root_completion.py) evaluates the fixed explicit formula, including the actual source trace of each potential-completion splay. It compares the immutable tuple and pointer engines for actual operations and completion evaluations. It reuses eight inherited six-key P duals and constructs four empty residual graphs for the seven-key analytic source and its reflection. No matching solver is needed.
+
+One n=7 single-tree BFS locates the fixed counterexample connector, with at most429 trees and no potential evaluations during search. It does not fit potential values, construct source-pair inequalities or enlarge a finite potential campaign. The all-odd-n counterfamily is already proved analytically in CP02. The closed replay evaluates the formula directly at every state and checks physical closure and telescoping.
+
+The [independent verifier](independent_verify.py) imports neither producer nor tuple source nor a matching algorithm. It regenerates all proper intervals, P graphs and dual equalities; executes all source and completion traces with the pointer engine; recomputes F, Q, Phi and R; checks the B identity and DELETE counteredge; and verifies shared states, costs and actual paired closure. It keeps actual DELETE q=0 separate from positive potential-completion counts. Analytic all-size proofs are written in CP01-CP02; no formal-kernel compilation is claimed.
+
+Scripts write exclusively with mode x and intentionally refuse to overwrite outputs. To reproduce, copy them and CP00 into a fresh sibling versioned directory under DIRECT_U4_PARALLEL_RESEARCH, preserving directory depth and prior inputs. From the repository root run Python -X utf8 -B with the new audit_root_completion.py path, followed by the new independent_verify.py path. Preserve all completed runs. No installation is needed.
+
+For read-only delivery verification, recompute hashes in delivery_manifest.json and entry_source_pins.json and compare the certificate hash with independent_audit.json. The manifest excludes itself. final_integrity.json records gate/source preservation, Stage 11G inventory/bytes, tracked Git state, scope and report links. The completed potential is globally explicit, but its universal DELETE bound is refuted; it is not a completed CD proof.

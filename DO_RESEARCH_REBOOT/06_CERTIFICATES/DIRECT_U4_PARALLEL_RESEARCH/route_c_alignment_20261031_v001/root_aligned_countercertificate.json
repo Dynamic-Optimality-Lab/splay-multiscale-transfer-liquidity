@@ -1,0 +1,1784 @@
+{
+  "status": "ROOT_PINNED_REPAIR_REFUTED",
+  "r": "1/8",
+  "n": 6,
+  "initial_source_A": [
+    1,
+    null,
+    [
+      6,
+      [
+        4,
+        [
+          3,
+          [
+            2,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          null
+        ]
+      ],
+      null
+    ]
+  ],
+  "initial_source_B": [
+    2,
+    [
+      1,
+      null,
+      null
+    ],
+    [
+      3,
+      null,
+      [
+        4,
+        null,
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ]
+    ]
+  ],
+  "values": {
+    "L_source": "197/128",
+    "L_after_DELETE": "533/128",
+    "L_after_KEEP": "2801/4096",
+    "U_source": "405/128",
+    "U_after_DELETE": "533/128",
+    "U_after_KEEP": "16625/4096"
+  },
+  "increments": {
+    "L_DELETE": "21/8",
+    "L_KEEP": "-3503/4096",
+    "U_DELETE": "1",
+    "U_KEEP": "3665/4096"
+  },
+  "delete_edge": {
+    "mode": "D",
+    "key": 6,
+    "source_A": [
+      1,
+      null,
+      [
+        6,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            null
+          ]
+        ],
+        null
+      ]
+    ],
+    "source_B": [
+      2,
+      [
+        1,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ]
+    ],
+    "destination_A": [
+      6,
+      [
+        1,
+        null,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            null
+          ]
+        ]
+      ],
+      null
+    ],
+    "destination_B": [
+      2,
+      [
+        1,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ]
+    ],
+    "dA": 1,
+    "dB": null,
+    "a": 1,
+    "q": 0,
+    "z": 0,
+    "events_A": [
+      [
+        "ZIG",
+        1,
+        6,
+        "R"
+      ]
+    ],
+    "events_B": []
+  },
+  "keep_edge": {
+    "mode": "K",
+    "key": 1,
+    "source_A": [
+      1,
+      null,
+      [
+        6,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            null
+          ]
+        ],
+        null
+      ]
+    ],
+    "source_B": [
+      2,
+      [
+        1,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ]
+    ],
+    "destination_A": [
+      1,
+      null,
+      [
+        6,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            null
+          ]
+        ],
+        null
+      ]
+    ],
+    "destination_B": [
+      1,
+      null,
+      [
+        2,
+        null,
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "dA": 0,
+    "dB": 1,
+    "a": 0,
+    "q": 0,
+    "z": 1,
+    "events_A": [],
+    "events_B": [
+      [
+        "ZIG",
+        1,
+        2,
+        "L"
+      ]
+    ]
+  },
+  "new_metric_row": {
+    "anchor_index": 98,
+    "distances": [
+      5,
+      4,
+      6,
+      4,
+      5,
+      5,
+      4,
+      6,
+      6,
+      4,
+      5,
+      4,
+      6,
+      5,
+      4,
+      3,
+      5,
+      3,
+      4,
+      4,
+      3,
+      3,
+      2,
+      5,
+      5,
+      4,
+      4,
+      3,
+      3,
+      4,
+      3,
+      5,
+      4,
+      2,
+      3,
+      2,
+      1,
+      4,
+      4,
+      3,
+      3,
+      2,
+      6,
+      5,
+      7,
+      5,
+      6,
+      6,
+      5,
+      7,
+      6,
+      4,
+      5,
+      4,
+      6,
+      5,
+      5,
+      4,
+      5,
+      3,
+      4,
+      6,
+      5,
+      6,
+      4,
+      5,
+      4,
+      3,
+      3,
+      2,
+      5,
+      4,
+      4,
+      3,
+      5,
+      4,
+      5,
+      5,
+      4,
+      4,
+      3,
+      6,
+      6,
+      5,
+      6,
+      4,
+      3,
+      5,
+      4,
+      5,
+      2,
+      3,
+      2,
+      4,
+      3,
+      1,
+      2,
+      1,
+      0,
+      3,
+      3,
+      2,
+      2,
+      1,
+      3,
+      4,
+      3,
+      5,
+      4,
+      2,
+      3,
+      3,
+      4,
+      2,
+      1,
+      3,
+      2,
+      3,
+      4,
+      4,
+      3,
+      3,
+      2,
+      5,
+      5,
+      4,
+      5,
+      3,
+      2,
+      4,
+      3,
+      4
+    ],
+    "parents": [
+      1,
+      15,
+      0,
+      17,
+      3,
+      6,
+      20,
+      23,
+      5,
+      28,
+      9,
+      30,
+      10,
+      11,
+      15,
+      22,
+      14,
+      33,
+      17,
+      20,
+      22,
+      22,
+      36,
+      25,
+      26,
+      27,
+      27,
+      41,
+      33,
+      28,
+      35,
+      29,
+      30,
+      36,
+      33,
+      36,
+      98,
+      39,
+      40,
+      41,
+      41,
+      36,
+      43,
+      1,
+      42,
+      3,
+      45,
+      48,
+      6,
+      7,
+      55,
+      104,
+      51,
+      106,
+      52,
+      53,
+      57,
+      15,
+      60,
+      109,
+      59,
+      62,
+      57,
+      65,
+      59,
+      64,
+      67,
+      69,
+      69,
+      114,
+      71,
+      67,
+      73,
+      69,
+      75,
+      73,
+      78,
+      79,
+      80,
+      80,
+      122,
+      76,
+      87,
+      88,
+      83,
+      86,
+      128,
+      85,
+      86,
+      88,
+      95,
+      90,
+      97,
+      91,
+      92,
+      98,
+      95,
+      98,
+      null,
+      101,
+      102,
+      103,
+      103,
+      98,
+      90,
+      104,
+      92,
+      105,
+      106,
+      95,
+      109,
+      109,
+      111,
+      114,
+      98,
+      113,
+      114,
+      116,
+      120,
+      121,
+      122,
+      122,
+      103,
+      118,
+      129,
+      130,
+      125,
+      128,
+      114,
+      127,
+      128,
+      130
+    ]
+  },
+  "all_exact_scaled_DELETE_scores": [
+    -130404,
+    -97629,
+    -163088,
+    -97517,
+    -130278,
+    -129760,
+    -96936,
+    -161968,
+    -161912,
+    -96173,
+    -128934,
+    -96096,
+    -161590,
+    -128815,
+    -92960,
+    -60136,
+    -125056,
+    -59240,
+    -91952,
+    -88256,
+    -55040,
+    -55040,
+    -21824,
+    -116656,
+    -116600,
+    -83328,
+    -82936,
+    -50112,
+    -49069,
+    -81830,
+    -48992,
+    -114486,
+    -81711,
+    -15720,
+    -48432,
+    -15160,
+    17664,
+    -80374,
+    -80367,
+    -47536,
+    -47487,
+    -14712,
+    -187168,
+    -154344,
+    -219264,
+    -153448,
+    -186160,
+    -182016,
+    -148800,
+    -210304,
+    -177088,
+    -109928,
+    -142640,
+    -109312,
+    -174512,
+    -141688,
+    -116992,
+    -83776,
+    -111616,
+    -43840,
+    -76160,
+    -153344,
+    -120128,
+    -147968,
+    -80192,
+    -112512,
+    -47040,
+    -10688,
+    -13824,
+    22528,
+    -82944,
+    -46592,
+    -46592,
+    -10240,
+    -79808,
+    -43456,
+    -44976,
+    -44920,
+    -11648,
+    -11256,
+    21568,
+    -80768,
+    -80320,
+    -43520,
+    -76736,
+    -7672,
+    25152,
+    -40832,
+    -7616,
+    -40440,
+    69715,
+    36954,
+    69792,
+    4298,
+    37073,
+    103064,
+    70352,
+    103624,
+    136448,
+    38410,
+    38417,
+    71248,
+    71297,
+    104072,
+    33944,
+    1232,
+    34560,
+    -30640,
+    2184,
+    71360,
+    39040,
+    38144,
+    5824,
+    75784,
+    108608,
+    42624,
+    75840,
+    43016,
+    12810,
+    12817,
+    45648,
+    45697,
+    78472,
+    -20336,
+    -20280,
+    12992,
+    -19832,
+    46145,
+    78920,
+    13328,
+    46152,
+    13377
+  ],
+  "metric_input": "prior explicit_potential_countercertificate.json",
+  "closed_DELETE_only_witness": {
+    "initial_A": [
+      2,
+      [
+        1,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ]
+    ],
+    "initial_B": [
+      2,
+      [
+        1,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ]
+    ],
+    "word": [
+      [
+        "D",
+        1
+      ],
+      [
+        "D",
+        4
+      ],
+      [
+        "D",
+        6
+      ],
+      [
+        "D",
+        1
+      ],
+      [
+        "D",
+        6
+      ],
+      [
+        "D",
+        5
+      ],
+      [
+        "D",
+        1
+      ],
+      [
+        "D",
+        2
+      ]
+    ],
+    "failed_edge_index": 4,
+    "full_replay": [
+      {
+        "mode": "D",
+        "key": 1,
+        "source_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  [
+                    6,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            2,
+            "L"
+          ]
+        ],
+        "events_B": []
+      },
+      {
+        "mode": "D",
+        "key": 4,
+        "source_A": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  [
+                    6,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          4,
+          [
+            1,
+            null,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "RR",
+            2,
+            4,
+            "-"
+          ],
+          [
+            "ZIG",
+            1,
+            4,
+            "R"
+          ]
+        ],
+        "events_B": []
+      },
+      {
+        "mode": "D",
+        "key": 6,
+        "source_A": [
+          4,
+          [
+            1,
+            null,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                1,
+                null,
+                [
+                  3,
+                  [
+                    2,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 2,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "RR",
+            4,
+            6,
+            "-"
+          ]
+        ],
+        "events_B": []
+      },
+      {
+        "mode": "D",
+        "key": 1,
+        "source_A": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                1,
+                null,
+                [
+                  3,
+                  [
+                    2,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          1,
+          null,
+          [
+            6,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                5,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "LL",
+            1,
+            5,
+            "-"
+          ],
+          [
+            "ZIG",
+            1,
+            6,
+            "L"
+          ]
+        ],
+        "events_B": []
+      },
+      {
+        "mode": "D",
+        "key": 6,
+        "source_A": [
+          1,
+          null,
+          [
+            6,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                5,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          6,
+          [
+            1,
+            null,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            6,
+            "R"
+          ]
+        ],
+        "events_B": []
+      },
+      {
+        "mode": "D",
+        "key": 5,
+        "source_A": [
+          6,
+          [
+            1,
+            null,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          5,
+          [
+            4,
+            [
+              1,
+              null,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "RR",
+            1,
+            5,
+            "-"
+          ],
+          [
+            "ZIG",
+            5,
+            6,
+            "L"
+          ]
+        ],
+        "events_B": []
+      },
+      {
+        "mode": "D",
+        "key": 1,
+        "source_A": [
+          5,
+          [
+            4,
+            [
+              1,
+              null,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 2,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "LL",
+            1,
+            5,
+            "-"
+          ]
+        ],
+        "events_B": []
+      },
+      {
+        "mode": "D",
+        "key": 2,
+        "source_A": [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "LL",
+            2,
+            4,
+            "-"
+          ],
+          [
+            "ZIG",
+            1,
+            2,
+            "R"
+          ]
+        ],
+        "events_B": []
+      }
+    ],
+    "paired_closure": true,
+    "A": 12,
+    "Q_B": 0
+  },
+  "n6_necessary_theta_interval": {
+    "lower_from_DELETE": "5/13",
+    "upper_from_KEEP": "3503/7168",
+    "nonempty": true,
+    "not_sufficient": true,
+    "coefficient_fitted": false
+  },
+  "analytic_all_size_claim": "root-pinned class fails DELETE for n>=7; convex blends fail both-law necessity for every n>=13",
+  "analytic_claim_proved_by": "AL02 and AL03 source inequalities; not extrapolated from this n6 interval",
+  "single_tree_states_reused": 132,
+  "directed_rotation_arcs_reused": 660,
+  "new_pair_graphs": 0,
+  "fitted_parameters": 0
+}

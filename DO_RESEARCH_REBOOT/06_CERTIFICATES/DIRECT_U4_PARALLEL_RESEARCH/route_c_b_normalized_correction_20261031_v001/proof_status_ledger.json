@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-31",
+  "results": [
+    {
+      "claim": "Explicit Phi=J-M(B), R=Phi-P with finite present-state maxima",
+      "status": "SOURCE DEFINITION",
+      "source": "BN01_EXPLICIT_CORRECTION_AND_REPAIRS.md"
+    },
+    {
+      "claim": "Universal DELETE bound for Phi",
+      "status": "PROVED\u2014UNIVERSAL",
+      "proof": "BN01_EXPLICIT_CORRECTION_AND_REPAIRS.md"
+    },
+    {
+      "claim": "Unbounded R and repairs of registered DELETE and zero-double B families",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "scope": "explicit family for all n>=4",
+      "proof": "BN01_EXPLICIT_CORRECTION_AND_REPAIRS.md"
+    },
+    {
+      "claim": "M(B)<=n-2 when both extreme keys are B leaves",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "proof": "BN02_STARVED_HELPER_AND_GAUGE_OBSTRUCTION.md"
+    },
+    {
+      "claim": "Full universal B repayment for Phi",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "BN02_STARVED_HELPER_AND_GAUGE_OBSTRUCTION.md",
+      "witness": {
+        "n": 6,
+        "a": 0,
+        "q": 2,
+        "z": 0,
+        "Phi_source": -1,
+        "Phi_destination_lower": -2,
+        "required_destination_upper": -3
+      }
+    },
+    {
+      "claim": "A scalar c_n in J-c_n M(B) satisfies both full bounds",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "BN02_STARVED_HELPER_AND_GAUGE_OBSTRUCTION.md",
+      "same_n6_necessary_bounds": {
+        "old_B_edge": "c6>=1",
+        "helper_B_edge": "c6<=0"
+      }
+    },
+    {
+      "claim": "Fourteen local P duals, six controls and twelve-step physical closure",
+      "status": "FINITE-EXACT",
+      "certificate": "b_normalization_certificate.json",
+      "audit": "independent_audit.json"
+    },
+    {
+      "claim": "A general unbounded correction to P satisfying both universal laws",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN"
+    }
+  ],
+  "before": "Scalar metric envelopes of P refuted; a general two-law correction open",
+  "result": "Explicit B-dependent correction with universal DELETE and old repairs; positive-q helper refutation",
+  "after": "Scalar M-normalization family excluded; generic Step 3 and CD open",
+  "original_load_bearing_obligations_discharged": [],
+  "new_assumptions_for_original_theorem": [],
+  "net_full_original_proof_advancement": 0,
+  "strategy_review": "BN04_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null
+}

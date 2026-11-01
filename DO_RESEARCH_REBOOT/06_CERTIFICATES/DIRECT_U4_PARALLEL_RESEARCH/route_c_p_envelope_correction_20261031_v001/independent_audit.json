@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "date": "2026-10-31",
+  "local_matching_cover_equalities": 8,
+  "residual_edges_covered": 22,
+  "local_P_values": [
+    1,
+    4,
+    1,
+    5,
+    1,
+    4,
+    1,
+    5
+  ],
+  "one_zig_distance_witness_verified": true,
+  "correction_source_DELETE_destination_KEEP_destination": [
+    2,
+    0,
+    3
+  ],
+  "corrected_DELETE_control": {
+    "a": 1,
+    "J_source": 3,
+    "J_destination": 4,
+    "budget": 2
+  },
+  "corrected_B_counterexample": {
+    "a": 0,
+    "q": 0,
+    "z": 1,
+    "J_source": 3,
+    "J_destination": 4,
+    "budget": 0
+  },
+  "coefficient_necessary_bounds_same_n6": {
+    "lambda_upper_from_DELETE": 2,
+    "lambda_lower_from_KEEP": 4,
+    "contradiction": true
+  },
+  "coefficient_scope": "all nonnegative lambda, including choices separately per n; algebraic argument PE02",
+  "analytic_global_maxima_proof": "PE02_EXACT_EXTREMA_AND_B_OBSTRUCTION.md",
+  "global_auxiliary_trees_enumerated": 0,
+  "global_extrema_are_written_proof_not_finite_exhaustion": true,
+  "source_controls": 4,
+  "complete_source_rows": 22,
+  "actual_pair_closure": true,
+  "closed_totals": {
+    "A": 18,
+    "Q_B": 0,
+    "Z_B": 12
+  },
+  "CD_counterexample": false,
+  "other_replay_J_labels_claimed": false,
+  "finite_potential_fits": 0,
+  "new_pair_graphs": 0,
+  "new_metric_graphs": 0,
+  "new_BFS_calls": 0,
+  "certificate_sha256": "5729a4f23dc3c847f1349bcf4f1ab138f9e199beca6c9a7ac5d93cb3467e9db1"
+}

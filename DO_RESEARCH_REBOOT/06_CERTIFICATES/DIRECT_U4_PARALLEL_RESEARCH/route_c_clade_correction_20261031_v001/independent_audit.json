@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "fixed_source_controls": 9,
+  "closed_replay_accesses": 17,
+  "full_source_edges_checked": 26,
+  "primitive_rotation_identities_checked": 75,
+  "exact_interval_and_fraction_arithmetic": true,
+  "all_oriented_events_agree": true,
+  "old_root_DELETE": {
+    "delta_G": "21/8",
+    "delta_R": "-21/8",
+    "delta_Psi": 0
+  },
+  "full_B_counterexample": {
+    "n": 6,
+    "a": 0,
+    "q": 2,
+    "z": 1,
+    "delta_Psi": -1,
+    "required_upper_bound": -2
+  },
+  "rescaling_controls": [
+    {
+      "n": 6,
+      "necessary_c_upper_from_DELETE": "6/5",
+      "necessary_c_lower_from_KEEP": "2",
+      "overlap": false
+    },
+    {
+      "n": 7,
+      "necessary_c_upper_from_DELETE": "1",
+      "necessary_c_lower_from_KEEP": "3/2",
+      "overlap": false
+    }
+  ],
+  "actual_diagonal_pair_closure": true,
+  "closed_totals": {
+    "A": 19,
+    "Q_B": 4,
+    "Z_B": 12
+  },
+  "finite_fits": 0,
+  "new_pair_graphs": 0,
+  "CoarseDouble_refuted": false,
+  "certificate_sha256": "964b429910d4e7d64ed0da3b5e02df0c145535a6d81ec46370b05252819d429c"
+}

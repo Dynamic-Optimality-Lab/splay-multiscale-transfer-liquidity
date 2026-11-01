@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-31",
+  "results": [
+    {
+      "claim": "Explicit terminal K=F-alpha, with residual right antichain matching",
+      "status": "SOURCE DEFINITION",
+      "source": "AT01_TERMINAL_DEFINITION_AND_PROVED_LAWS.md"
+    },
+    {
+      "claim": "Fixed-C primitive A one-Lipschitz law for K",
+      "status": "PROVED\u2014UNIVERSAL",
+      "proof": "AT01_TERMINAL_DEFINITION_AND_PROVED_LAWS.md"
+    },
+    {
+      "claim": "Full universal root-conditioned B repayment Delta Phi=-q",
+      "status": "PROVED\u2014UNIVERSAL",
+      "proof": "AT01_TERMINAL_DEFINITION_AND_PROVED_LAWS.md"
+    },
+    {
+      "claim": "Unbounded equal-root reserve and both known all-size DELETE-family repairs",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "proof": "AT02_ALL_SIZE_REPAIRS_AND_OPEN_ROOT_STEPS.md"
+    },
+    {
+      "claim": "Full DELETE follows if all depth-one/two root steps have increment<=2",
+      "status": "CONDITIONAL",
+      "open_premise": "root-step condition (R)",
+      "proof": "AT02_ALL_SIZE_REPAIRS_AND_OPEN_ROOT_STEPS.md"
+    },
+    {
+      "claim": "Universal root-step condition (R)",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Universal DELETE for this completed Phi",
+      "status": "OPEN",
+      "qualification": "not inferred from frozen finite survival"
+    },
+    {
+      "claim": "Arbitrary-fringe whole-helper safety for this new terminal K",
+      "status": "OPEN",
+      "qualification": "only m=0 helper controls checked; old F/Ehat proofs not transferred"
+    },
+    {
+      "claim": "Six frozen controls, reflections, full closed word and optimal antichain evaluations",
+      "status": "FINITE-EXACT",
+      "certificate": "antichain_terminal_certificate.json",
+      "audit": "independent_audit.json"
+    },
+    {
+      "claim": "Both universal bounds for this explicit correction",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN"
+    }
+  ],
+  "before": "Scalar terminal F refuted, joint terminal correction open",
+  "result": "Antichain terminal function repairs old families, proves terminal stability and B; frozen audit survives",
+  "after": "Explicit unrefuted candidate; universal DELETE reduced to root steps but unproved",
+  "original_load_bearing_obligations_discharged": [],
+  "new_assumptions_for_original_theorem": [],
+  "net_full_original_proof_advancement": 0,
+  "strategy_review": "AT03_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null
+}

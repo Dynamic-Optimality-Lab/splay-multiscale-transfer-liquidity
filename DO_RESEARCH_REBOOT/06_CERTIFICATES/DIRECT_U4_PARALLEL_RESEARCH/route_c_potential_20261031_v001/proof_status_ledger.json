@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-31",
+  "timezone": "Asia/Karachi",
+  "claims": [
+    {
+      "id": "SP-RAW-B-PAYMENT",
+      "status": "PROVED UNIVERSAL CONDITIONAL ON A ROOTED AT TARGET",
+      "function": "G",
+      "proof": "SP02_RAW_GEOMETRIC_RESERVE_LEMMAS.md",
+      "complete_potential": false
+    },
+    {
+      "id": "SP-RAW-PRIOR-FRINGE-HELPERS",
+      "status": "PROVED UNIVERSAL RESTRICTED FAMILY",
+      "function": "G",
+      "arbitrary_fringe_size_and_shape": true
+    },
+    {
+      "id": "SP-RAW-DELETE",
+      "status": "REFUTED ANALYTICALLY",
+      "claim": "G is a complete source potential"
+    },
+    {
+      "id": "SP-ENVELOPE-DELETE",
+      "status": "PROVED UNIVERSAL",
+      "function": "Psi",
+      "proof": "SP03_ENVELOPE_LAW_AND_ALL_SIZE_REFUTATION.md"
+    },
+    {
+      "id": "SP-ENVELOPE-COMPLETE",
+      "status": "REFUTED EXACT AND ANALYTICALLY",
+      "all_n_family": "n>=6",
+      "finite_control": "explicit_potential_countercertificate.json"
+    },
+    {
+      "id": "SP-PARAMETER-COROLLARY",
+      "status": "REFUTED ANALYTICALLY",
+      "scope": "fixed 0<r<1/4, fixed lambda>=0; same envelope construction"
+    },
+    {
+      "id": "ROUTE-C-GENERAL",
+      "status": "OPEN"
+    },
+    {
+      "id": "CD-U",
+      "status": "OPEN"
+    },
+    {
+      "id": "DYNAMIC-OPTIMALITY",
+      "status": "OPEN"
+    }
+  ],
+  "new_fitted_parameters": 0,
+  "larger_finite_fits": 0,
+  "net_positive_CD_U_proof_advancement": 0,
+  "Stage11G_modified": false
+}

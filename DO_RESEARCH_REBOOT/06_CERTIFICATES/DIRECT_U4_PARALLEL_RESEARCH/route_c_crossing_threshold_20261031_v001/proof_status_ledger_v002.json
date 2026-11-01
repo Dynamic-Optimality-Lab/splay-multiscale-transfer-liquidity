@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-31",
+  "results": [
+    {
+      "claim": "Hk DELETE bound for every fixed positive k and every finite same-key pair",
+      "status": "PROVED\u2014UNIVERSAL",
+      "proof": "CT01_STRUCTURAL_DEFINITION_AND_DELETE_v002.md"
+    },
+    {
+      "claim": "H2 full root-conditioned B law",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "CT02_EXACT_REPAYMENT_OBSTRUCTION.md",
+      "witness": {
+        "n": 4,
+        "a": 0,
+        "q": 1,
+        "z": 1,
+        "H2_change": 0,
+        "required_upper": -1
+      }
+    },
+    {
+      "claim": "Every fixed positive integer crossing threshold fails as a universal source potential",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "CT02_EXACT_REPAYMENT_OBSTRUCTION.md",
+      "scope": "fixed k independent of n; excludes no size-dependent or weighted profile"
+    },
+    {
+      "claim": "Finite source incidences, reflected controls and physical closed replay",
+      "status": "FINITE-EXACT",
+      "certificate": "crossing_certificate.json",
+      "independent_audit": "independent_audit.json"
+    },
+    {
+      "claim": "Existence of a structural potential satisfying both universal source bounds",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN"
+    }
+  ],
+  "before": "Capped residual candidate refuted; monotone bracket class excluded; general potential open",
+  "result": "Crossing-threshold A law proved; B law and fixed threshold class refuted",
+  "after": "General structural potential and CD remain open",
+  "original_load_bearing_obligations_discharged": [],
+  "new_assumptions_for_original_theorem": [],
+  "net_full_original_proof_advancement": 0,
+  "strategy_review": "CT03_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null,
+  "delivery_link_erratum": "CT06_DELIVERY_LINK_ERRATUM.md"
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-31",
+  "results": [
+    {
+      "claim": "Root-conditioned B nonincrease for P",
+      "status": "PROVED\u2014UNIVERSAL",
+      "proof": "RS01_DEFINITION_AND_TRANSPORT_LAWS.md",
+      "qualification": "weak <=0, not full <=-q"
+    },
+    {
+      "claim": "A primitive one-Lipschitz bound for P when its root is preserved",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "proof": "RS01_DEFINITION_AND_TRANSPORT_LAWS.md"
+    },
+    {
+      "claim": "All-size opposite-vine repayment and established arbitrary-fringe whole-helper laws for P",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "proof": "RS02_NAMED_REPAYMENT_CLASSES.md"
+    },
+    {
+      "claim": "Full universal DELETE bound for P",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "RS03_UNBOUNDED_DELETE_OBSTRUCTION.md",
+      "counterexample": {
+        "n": 6,
+        "a": 1,
+        "q": 0,
+        "P_before": 1,
+        "P_after": 4,
+        "budget": 2
+      }
+    },
+    {
+      "claim": "Uniformly bounded additive correction repairs P DELETE on all valid pairs",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "RS03_UNBOUNDED_DELETE_OBSTRUCTION.md",
+      "scope": "all-valid-pair family, fixed size-independent bound"
+    },
+    {
+      "claim": "Four frozen starved source consumers, matching duals and closed replay",
+      "status": "FINITE-EXACT",
+      "certificate": "root_matching_certificate.json",
+      "independent_audit": "independent_audit.json"
+    },
+    {
+      "claim": "Full universal root-conditioned B q-law for P",
+      "status": "OPEN",
+      "qualification": "not established or refuted universally in this run"
+    },
+    {
+      "claim": "Globally coupled potential satisfying both full source bounds",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN"
+    }
+  ],
+  "before": "Local crossing thresholds refuted; general globally coupled construction open",
+  "result": "Global root-eligible matching transport and named laws; unbounded root-changing DELETE refutation",
+  "after": "Generic structural potential and CD remain open",
+  "original_load_bearing_premises_discharged": [],
+  "new_assumptions_for_original_theorem": [],
+  "net_full_original_proof_advancement": 0,
+  "strategy_review": "RS04_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null
+}

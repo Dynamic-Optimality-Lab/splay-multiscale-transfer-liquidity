@@ -1,0 +1,158 @@
+{
+  "status": "EXACT_CERTIFICATES_AND_STRICT_SOURCE_FILTER",
+  "date": "2026-11-01",
+  "gate_sha256": "7c39ca4e07a2da690262a18a373ae1acd40798c4a2cc069cdbb0f7ac529ce663",
+  "corpus_cases": 14,
+  "existing_cuts_checked": 636,
+  "accepted_existing_cuts": 592,
+  "rejected_existing_cuts": 44,
+  "certificate_loss_classes": {
+    "source-positive open suffix": 44
+  },
+  "fresh_budget_outcomes": [
+    {
+      "case": 0,
+      "name": "deep_KEEP_split_payer",
+      "E": 4,
+      "C_D": 26,
+      "L_fresh": 4,
+      "Gamma": -26,
+      "constructed_cut": 0
+    },
+    {
+      "case": 1,
+      "name": "deep_KEEP_split_payer_reflection",
+      "E": 4,
+      "C_D": 26,
+      "L_fresh": 4,
+      "Gamma": -26,
+      "constructed_cut": 0
+    },
+    {
+      "case": 2,
+      "name": "preserved_cross_run_essential_split",
+      "E": 5,
+      "C_D": 28,
+      "L_fresh": 6,
+      "Gamma": -29,
+      "constructed_cut": 0
+    },
+    {
+      "case": 3,
+      "name": "preserved_cross_run_essential_split_reflection",
+      "E": 5,
+      "C_D": 28,
+      "L_fresh": 6,
+      "Gamma": -29,
+      "constructed_cut": 0
+    },
+    {
+      "case": 4,
+      "name": "preserved_preserved_two_distinct_runs_one_batch_payer",
+      "E": 3,
+      "C_D": 12,
+      "L_fresh": 5,
+      "Gamma": -14,
+      "constructed_cut": 0
+    },
+    {
+      "case": 5,
+      "name": "preserved_preserved_two_distinct_runs_one_batch_payer_reflection",
+      "E": 3,
+      "C_D": 12,
+      "L_fresh": 5,
+      "Gamma": -14,
+      "constructed_cut": 0
+    },
+    {
+      "case": 6,
+      "name": "preserved_preserved_preserved_two_anchors_one_delayed_pool",
+      "E": 3,
+      "C_D": 8,
+      "L_fresh": 5,
+      "Gamma": -10,
+      "constructed_cut": 0
+    },
+    {
+      "case": 7,
+      "name": "preserved_preserved_preserved_two_anchors_one_delayed_pool_reflection",
+      "E": 3,
+      "C_D": 8,
+      "L_fresh": 5,
+      "Gamma": -10,
+      "constructed_cut": 0
+    },
+    {
+      "case": 8,
+      "name": "preserved_preserved_preserved_preserved_genuine_B_delayed_child_payer",
+      "E": 1,
+      "C_D": 10,
+      "L_fresh": 5,
+      "Gamma": -14,
+      "constructed_cut": 0
+    },
+    {
+      "case": 9,
+      "name": "preserved_preserved_preserved_preserved_genuine_B_delayed_child_payer_reflection",
+      "E": 1,
+      "C_D": 10,
+      "L_fresh": 5,
+      "Gamma": -14,
+      "constructed_cut": 0
+    },
+    {
+      "case": 10,
+      "name": "preserved_preserved_preserved_preserved_preserved_old_child_successor",
+      "E": 1,
+      "C_D": 10,
+      "L_fresh": 6,
+      "Gamma": -15,
+      "constructed_cut": 0
+    },
+    {
+      "case": 11,
+      "name": "preserved_preserved_preserved_preserved_preserved_old_child_successor_reflection",
+      "E": 1,
+      "C_D": 10,
+      "L_fresh": 6,
+      "Gamma": -15,
+      "constructed_cut": 0
+    },
+    {
+      "case": 12,
+      "name": "H5_normal",
+      "E": 5,
+      "C_D": 4,
+      "L_fresh": 5,
+      "Gamma": -4,
+      "constructed_cut": 17
+    },
+    {
+      "case": 13,
+      "name": "H5_reflected",
+      "E": 5,
+      "C_D": 4,
+      "L_fresh": 5,
+      "Gamma": -4,
+      "constructed_cut": 17
+    }
+  ],
+  "fresh_budget_covered_cases": 14,
+  "positive_Gamma_control_cases": [],
+  "universal_proof": "clipped debt identity, stationary run recurrence, minimum-prefix cut and FI domination",
+  "strictness_witness": "all H_m,m>=5: E=m>C_D=4 and L_fresh>=m, hence Gamma<=-4",
+  "obstruction_class": "O_fresh={reachable closed source walks:E>C_D+L_fresh}",
+  "all_cut_FI_rejecting_new_witnesses": 0,
+  "new_source_words": 0,
+  "new_source_engine_calls": 0,
+  "new_m_values_replayed": 0,
+  "larger_finite_fits": 0,
+  "matching_terminal_line": "FROZEN",
+  "universal_CD": "OPEN",
+  "automatic_successor_launched": false,
+  "fixed_corpus_sources.json_sha256": "7562b2bb074ccdbe23204d41ce5257c718ad0664451a5d524ba609733b2c4367",
+  "source_fact_table.json_sha256": "14c89fbafb59f13842fc5c73f881ba6f642e42326b3e7d2055c2d7be50cb32b8",
+  "cut_recurrence_traces.json_sha256": "efda4524ac31f53d520488bd1eb1132dedcf5d5ac7930d305c6ab9dfc5ca1172",
+  "FI_rejection_certificates.json_sha256": "9f5c6f98bc5b1673e52c779830440c8317269197aa6db72e3c6e7dc62c587c3b",
+  "fresh_run_budget_certificate.json_sha256": "723a1c90faebbc6aff7e6e56e21181dad401c9e0996b2d8747b4cfe1f1ea8d6b"
+}

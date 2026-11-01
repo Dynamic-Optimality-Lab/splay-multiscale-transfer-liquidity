@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "date": "2026-10-31",
+  "complete_cycle_source_rows": 44,
+  "complete_reachability_prefix_rows": 4,
+  "pointer_source_accesses": 92,
+  "sharp_root_child_controls": 2,
+  "cyclic_cuts_verified": 44,
+  "exact_demand_credit_assignments": 22,
+  "no_credit_reuse": true,
+  "actual_diagonal_reachability": true,
+  "actual_pair_closure": true,
+  "closed_totals_per_orientation": {
+    "A": 31,
+    "Q_B": 11,
+    "Z_B": 16,
+    "weight": 51
+  },
+  "positive_block_pair": {
+    "positive_delta": 1,
+    "successor_delta": -4,
+    "pair_delta": -3
+  },
+  "named_old_class_exclusions": [
+    {
+      "AJ_rejected": true,
+      "AK_AL_rejected": true,
+      "AM_rejected": true,
+      "AN_AO_rejected_by_positive_count": true,
+      "AP_rejected_by_next_key": true,
+      "AQ_AR_AS_multi_positive_components_rejected": true,
+      "support_le_5_classes_rejected": true
+    },
+    {
+      "AJ_rejected": true,
+      "AK_AL_rejected": true,
+      "AM_rejected": true,
+      "AN_AO_rejected_by_positive_count": true,
+      "AP_rejected_by_next_key": true,
+      "AQ_AR_AS_multi_positive_components_rejected": true,
+      "support_le_5_classes_rejected": true
+    }
+  ],
+  "old_recognizers_executed": false,
+  "producer_imported": false,
+  "allocation_optimizer_used": false,
+  "universal_CD": "OPEN",
+  "restricted_class": "PROVED—RESTRICTED DOMAIN",
+  "all_size_proof": "SC01; unbounded-support nonvacuity SC02; no finite extrapolation",
+  "finite_fits": 0,
+  "larger_finite_sizes": 0,
+  "matching_terminal_line": "FROZEN",
+  "certificate_sha256": "b8d1ea8b9a902c04072054e16aef45cad00bc82b4f5eff975b20e0647d6edc5a"
+}

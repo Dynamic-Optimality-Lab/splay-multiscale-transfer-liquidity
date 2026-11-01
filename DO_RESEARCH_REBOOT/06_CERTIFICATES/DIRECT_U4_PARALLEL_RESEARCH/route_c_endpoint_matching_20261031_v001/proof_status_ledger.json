@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-31",
+  "candidate": "E=(n-1)-maximum proper-subtree endpoint matching cardinality; min=min OR max=max; full sets fixed together",
+  "claims": [
+    {
+      "claim": "E is an explicit nonlinear repair of F with 0<=E<=F",
+      "status": "SOURCE DEFINITION",
+      "proof": "EM01_DEFINITION_AND_DELETE.md"
+    },
+    {
+      "claim": "E obeys DELETE on every finite same-key source pair",
+      "status": "PROVED\u2014UNIVERSAL",
+      "scope": "Delta E<=d_A<=2a; all orientations, fringe shapes and present keys",
+      "proof": "EM01_DEFINITION_AND_DELETE.md"
+    },
+    {
+      "claim": "E pays full q on opposite-vine root-conditioned accesses",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "scope": "all sizes and both orientations; Delta E=-(q+2) for n>=4; boundary cases separately proved",
+      "proof": "EM02_OPPOSITE_VINE_PROOF.md"
+    },
+    {
+      "claim": "E preserves the arbitrary-fringe zero-weight helper family",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "six-key L branch at allowed m=0: a=1,q=2,Delta E=1>0",
+      "proof": "EM03_EXACT_HELPER_OBSTRUCTION.md"
+    },
+    {
+      "claim": "E satisfies the complete uniform source-potential inequality",
+      "status": "REFUTED\u2014EXACT",
+      "scope": "same whole KEEP counterexample, not an extra micro-step constraint",
+      "proof": "EM03_EXACT_HELPER_OBSTRUCTION.md"
+    },
+    {
+      "claim": "Matching values, hand certificates, costs and paired source closure",
+      "status": "FINITE-EXACT",
+      "scope": "18 certified graphs; 3 prescribed controls and 11 closed replay operations; 14 source edges",
+      "proof": "independent_audit.json"
+    },
+    {
+      "claim": "Some nonlinear subtree-set repair satisfies all requested laws",
+      "status": "OPEN",
+      "scope": "this one candidate is excluded; other constructions are not refuted"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN",
+      "scope": "neither a universal proof nor a counterexample was obtained"
+    },
+    {
+      "claim": "Downstream Dynamic Optimality assembly",
+      "status": "CONDITIONAL",
+      "scope": "original obligations and statuses unchanged"
+    }
+  ],
+  "original_load_bearing_obligations_discharged": [],
+  "net_advancement_of_full_original_proof": 0,
+  "positive_partial_content": [
+    "universal DELETE for explicit nonlinear E",
+    "uniform full-q opposite-vine proof"
+  ],
+  "new_assumptions_for_original_theorem": [],
+  "first_obstruction_stop": true,
+  "mandatory_strategy_review_completed": "EM05_MANDATORY_STRATEGY_REVIEW.md",
+  "two_nonadvancing_subtree_set_audits": [
+    "route_c_clade_correction_20261031_v001",
+    "route_c_endpoint_matching_20261031_v001"
+  ],
+  "next_automatic_campaign": null,
+  "finite_potential_fits": 0,
+  "new_source_state_graphs": 0,
+  "Stage11G_writes_performed": false
+}

@@ -1,0 +1,4322 @@
+{
+  "date": "2026-10-31",
+  "definition": "Hk=sum over C0(A) of indicator(number of B chords crossing (min(I)-1,max(I)+1)>=k)",
+  "controls": [
+    {
+      "label": "principal_four_key_starved_KEEP",
+      "source_A": [
+        4,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            null
+          ]
+        ],
+        null
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "mode": "K",
+      "key": 4,
+      "destination_A": [
+        4,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            null
+          ]
+        ],
+        null
+      ],
+      "destination_B": [
+        4,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        null
+      ],
+      "dA": 0,
+      "dB": 3,
+      "a": 0,
+      "q": 1,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "RR",
+          2,
+          4,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          4,
+          "R"
+        ]
+      ],
+      "source_values": {
+        "A_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "B_intervals": [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "crossing_degrees": [
+          1,
+          3,
+          1
+        ],
+        "H1": 3,
+        "H2": 1,
+        "H3": 1
+      },
+      "after_A_values": {
+        "A_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "B_intervals": [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "crossing_degrees": [
+          1,
+          3,
+          1
+        ],
+        "H1": 3,
+        "H2": 1,
+        "H3": 1
+      },
+      "destination_values": {
+        "A_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "B_intervals": [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            1,
+            2
+          ],
+          [],
+          [
+            1
+          ]
+        ],
+        "crossing_degrees": [
+          2,
+          0,
+          1
+        ],
+        "H1": 2,
+        "H2": 1,
+        "H3": 0
+      },
+      "delta_H2": 0,
+      "budget": -1,
+      "H2_law_holds": false
+    },
+    {
+      "label": "registered_opposite_vines_3",
+      "source_A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "mode": "K",
+      "key": 3,
+      "destination_A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "dA": 0,
+      "dB": 2,
+      "a": 0,
+      "q": 1,
+      "z": 0,
+      "events_A": [],
+      "events_B": [
+        [
+          "RR",
+          1,
+          3,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "A_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "B_intervals": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "crossing_degrees": [
+          1,
+          2
+        ],
+        "H1": 2,
+        "H2": 1,
+        "H3": 0
+      },
+      "after_A_values": {
+        "A_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "B_intervals": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "crossing_degrees": [
+          1,
+          2
+        ],
+        "H1": 2,
+        "H2": 1,
+        "H3": 0
+      },
+      "destination_values": {
+        "A_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "B_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "crossing_adjacency": [
+          [],
+          []
+        ],
+        "crossing_degrees": [
+          0,
+          0
+        ],
+        "H1": 0,
+        "H2": 0,
+        "H3": 0
+      },
+      "delta_H2": -1,
+      "budget": -1,
+      "H2_law_holds": true
+    },
+    {
+      "label": "registered_opposite_vines_6",
+      "source_A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "mode": "K",
+      "key": 6,
+      "destination_A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_B": [
+        6,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        null
+      ],
+      "dA": 0,
+      "dB": 5,
+      "a": 0,
+      "q": 2,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "RR",
+          4,
+          6,
+          "-"
+        ],
+        [
+          "RR",
+          2,
+          6,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          6,
+          "R"
+        ]
+      ],
+      "source_values": {
+        "A_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "B_intervals": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "crossing_degrees": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "H1": 5,
+        "H2": 4,
+        "H3": 3
+      },
+      "after_A_values": {
+        "A_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "B_intervals": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "crossing_degrees": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "H1": 5,
+        "H2": 4,
+        "H3": 3
+      },
+      "destination_values": {
+        "A_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "B_intervals": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            1,
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          []
+        ],
+        "crossing_degrees": [
+          2,
+          1,
+          3,
+          2,
+          0
+        ],
+        "H1": 4,
+        "H2": 3,
+        "H3": 1
+      },
+      "delta_H2": -1,
+      "budget": -2,
+      "H2_law_holds": false
+    }
+  ],
+  "reflections": [
+    {
+      "label": "reflection_of_principal_four_key_starved_KEEP",
+      "source_A": [
+        1,
+        null,
+        [
+          3,
+          [
+            2,
+            null,
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ]
+      ],
+      "source_B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "mode": "K",
+      "key": 1,
+      "destination_A": [
+        1,
+        null,
+        [
+          3,
+          [
+            2,
+            null,
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          4,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "dA": 0,
+      "dB": 3,
+      "a": 0,
+      "q": 1,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "LL",
+          1,
+          3,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          4,
+          "L"
+        ]
+      ],
+      "source_values": {
+        "A_intervals": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "B_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "crossing_degrees": [
+          1,
+          3,
+          1
+        ],
+        "H1": 3,
+        "H2": 1,
+        "H3": 1
+      },
+      "after_A_values": {
+        "A_intervals": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "B_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "crossing_degrees": [
+          1,
+          3,
+          1
+        ],
+        "H1": 3,
+        "H2": 1,
+        "H3": 1
+      },
+      "destination_values": {
+        "A_intervals": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "B_intervals": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            2
+          ],
+          [],
+          [
+            0,
+            2
+          ]
+        ],
+        "crossing_degrees": [
+          1,
+          0,
+          2
+        ],
+        "H1": 2,
+        "H2": 1,
+        "H3": 0
+      },
+      "delta_H2": 0,
+      "budget": -1,
+      "H2_law_holds": false
+    },
+    {
+      "label": "reflection_of_registered_opposite_vines_3",
+      "source_A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "source_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "mode": "K",
+      "key": 1,
+      "destination_A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "dA": 0,
+      "dB": 2,
+      "a": 0,
+      "q": 1,
+      "z": 0,
+      "events_A": [],
+      "events_B": [
+        [
+          "LL",
+          1,
+          3,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "A_intervals": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "B_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0,
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "crossing_degrees": [
+          2,
+          1
+        ],
+        "H1": 2,
+        "H2": 1,
+        "H3": 0
+      },
+      "after_A_values": {
+        "A_intervals": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "B_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0,
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "crossing_degrees": [
+          2,
+          1
+        ],
+        "H1": 2,
+        "H2": 1,
+        "H3": 0
+      },
+      "destination_values": {
+        "A_intervals": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "B_intervals": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "crossing_adjacency": [
+          [],
+          []
+        ],
+        "crossing_degrees": [
+          0,
+          0
+        ],
+        "H1": 0,
+        "H2": 0,
+        "H3": 0
+      },
+      "delta_H2": -1,
+      "budget": -1,
+      "H2_law_holds": true
+    },
+    {
+      "label": "reflection_of_registered_opposite_vines_6",
+      "source_A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "source_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "mode": "K",
+      "key": 1,
+      "destination_A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          6,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "dA": 0,
+      "dB": 5,
+      "a": 0,
+      "q": 2,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "LL",
+          1,
+          3,
+          "-"
+        ],
+        [
+          "LL",
+          1,
+          5,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          6,
+          "L"
+        ]
+      ],
+      "source_values": {
+        "A_intervals": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "B_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4
+          ]
+        ],
+        "crossing_degrees": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "H1": 5,
+        "H2": 4,
+        "H3": 3
+      },
+      "after_A_values": {
+        "A_intervals": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "B_intervals": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "crossing_adjacency": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4
+          ]
+        ],
+        "crossing_degrees": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "H1": 5,
+        "H2": 4,
+        "H3": 3
+      },
+      "destination_values": {
+        "A_intervals": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "B_intervals": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "crossing_adjacency": [
+          [],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "crossing_degrees": [
+          0,
+          2,
+          3,
+          1,
+          2
+        ],
+        "H1": 4,
+        "H2": 3,
+        "H3": 1
+      },
+      "delta_H2": -1,
+      "budget": -2,
+      "H2_law_holds": false
+    }
+  ],
+  "threshold_partition": {
+    "k=1_control": 2,
+    "k=2_control": 0,
+    "k>=3_control": 1
+  },
+  "closed_witness": {
+    "initial_A": [
+      1,
+      null,
+      [
+        2,
+        null,
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            null
+          ]
+        ]
+      ]
+    ],
+    "initial_B": [
+      1,
+      null,
+      [
+        2,
+        null,
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            null
+          ]
+        ]
+      ]
+    ],
+    "word": [
+      [
+        "D",
+        4
+      ],
+      [
+        "D",
+        2
+      ],
+      [
+        "D",
+        4
+      ],
+      [
+        "K",
+        4
+      ],
+      [
+        "K",
+        1
+      ],
+      [
+        "K",
+        2
+      ],
+      [
+        "K",
+        3
+      ],
+      [
+        "K",
+        4
+      ],
+      [
+        "K",
+        3
+      ],
+      [
+        "K",
+        2
+      ],
+      [
+        "K",
+        1
+      ]
+    ],
+    "failed_edge_index": 3,
+    "full_replay": [
+      {
+        "label": "closed_word_0",
+        "source_A": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "mode": "D",
+        "key": 4,
+        "destination_A": [
+          4,
+          [
+            1,
+            null,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          null
+        ],
+        "destination_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "RR",
+            2,
+            4,
+            "-"
+          ],
+          [
+            "ZIG",
+            1,
+            4,
+            "R"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "A_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            3,
+            1,
+            2
+          ],
+          "H1": 3,
+          "H2": 2,
+          "H3": 1
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            3,
+            1,
+            2
+          ],
+          "H1": 3,
+          "H2": 2,
+          "H3": 1
+        },
+        "delta_H2": 2,
+        "budget": 4,
+        "H2_law_holds": true
+      },
+      {
+        "label": "closed_word_1",
+        "source_A": [
+          4,
+          [
+            1,
+            null,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          null
+        ],
+        "source_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "mode": "D",
+        "key": 2,
+        "destination_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        "destination_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "RL",
+            1,
+            3,
+            "-"
+          ],
+          [
+            "ZIG",
+            2,
+            4,
+            "L"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "A_intervals": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            3,
+            1,
+            2
+          ],
+          "H1": 3,
+          "H2": 2,
+          "H3": 1
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            []
+          ],
+          "crossing_degrees": [
+            1,
+            1,
+            0
+          ],
+          "H1": 2,
+          "H2": 0,
+          "H3": 0
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            []
+          ],
+          "crossing_degrees": [
+            1,
+            1,
+            0
+          ],
+          "H1": 2,
+          "H2": 0,
+          "H3": 0
+        },
+        "delta_H2": -2,
+        "budget": 4,
+        "H2_law_holds": true
+      },
+      {
+        "label": "closed_word_2",
+        "source_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        "source_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "mode": "D",
+        "key": 4,
+        "destination_A": [
+          4,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        "destination_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "ZIG",
+            2,
+            4,
+            "R"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            []
+          ],
+          "crossing_degrees": [
+            1,
+            1,
+            0
+          ],
+          "H1": 2,
+          "H2": 0,
+          "H3": 0
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            1,
+            3,
+            1
+          ],
+          "H1": 3,
+          "H2": 1,
+          "H3": 1
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            1,
+            3,
+            1
+          ],
+          "H1": 3,
+          "H2": 1,
+          "H3": 1
+        },
+        "delta_H2": 1,
+        "budget": 2,
+        "H2_law_holds": true
+      },
+      {
+        "label": "closed_word_3",
+        "source_A": [
+          4,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        "source_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 4,
+        "destination_A": [
+          4,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        "destination_B": [
+          4,
+          [
+            1,
+            null,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          null
+        ],
+        "dA": 0,
+        "dB": 3,
+        "a": 0,
+        "q": 1,
+        "z": 1,
+        "events_A": [],
+        "events_B": [
+          [
+            "RR",
+            2,
+            4,
+            "-"
+          ],
+          [
+            "ZIG",
+            1,
+            4,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            1,
+            3,
+            1
+          ],
+          "H1": 3,
+          "H2": 1,
+          "H3": 1
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            1,
+            3,
+            1
+          ],
+          "H1": 3,
+          "H2": 1,
+          "H3": 1
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              1,
+              2
+            ],
+            [],
+            [
+              1
+            ]
+          ],
+          "crossing_degrees": [
+            2,
+            0,
+            1
+          ],
+          "H1": 2,
+          "H2": 1,
+          "H3": 0
+        },
+        "delta_H2": 0,
+        "budget": -1,
+        "H2_law_holds": false
+      },
+      {
+        "label": "closed_word_4",
+        "source_A": [
+          4,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        "source_B": [
+          4,
+          [
+            1,
+            null,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          null
+        ],
+        "mode": "K",
+        "key": 1,
+        "destination_A": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              4,
+              [
+                3,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        "dA": 2,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "LL",
+            1,
+            4,
+            "-"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            1,
+            4,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              1,
+              2
+            ],
+            [],
+            [
+              1
+            ]
+          ],
+          "crossing_degrees": [
+            2,
+            0,
+            1
+          ],
+          "H1": 2,
+          "H2": 1,
+          "H3": 0
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            1,
+            1,
+            3
+          ],
+          "H1": 3,
+          "H2": 1,
+          "H3": 1
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "crossing_degrees": [
+            0,
+            1,
+            2
+          ],
+          "H1": 2,
+          "H2": 1,
+          "H3": 0
+        },
+        "delta_H2": 0,
+        "budget": 2,
+        "H2_law_holds": true
+      },
+      {
+        "label": "closed_word_5",
+        "source_A": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              4,
+              [
+                3,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        "mode": "K",
+        "key": 2,
+        "destination_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": 3,
+        "a": 1,
+        "q": 1,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            2,
+            "R"
+          ]
+        ],
+        "events_B": [
+          [
+            "LL",
+            2,
+            4,
+            "-"
+          ],
+          [
+            "ZIG",
+            1,
+            2,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "A_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "crossing_degrees": [
+            0,
+            1,
+            2
+          ],
+          "H1": 2,
+          "H2": 1,
+          "H3": 0
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "crossing_degrees": [
+            3,
+            1,
+            2
+          ],
+          "H1": 3,
+          "H2": 2,
+          "H3": 1
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [
+              2
+            ],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            1,
+            0
+          ],
+          "H1": 1,
+          "H2": 0,
+          "H3": 0
+        },
+        "delta_H2": -1,
+        "budget": 1,
+        "H2_law_holds": true
+      },
+      {
+        "label": "closed_word_6",
+        "source_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 3,
+        "destination_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ],
+        "destination_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ],
+        "dA": 2,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "RL",
+            2,
+            4,
+            "-"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            2,
+            3,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [
+              2
+            ],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            1,
+            0
+          ],
+          "H1": 1,
+          "H2": 0,
+          "H3": 0
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [
+              1
+            ],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            1,
+            0
+          ],
+          "H1": 1,
+          "H2": 0,
+          "H3": 0
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "delta_H2": 0,
+        "budget": 2,
+        "H2_law_holds": true
+      },
+      {
+        "label": "closed_word_7",
+        "source_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ],
+        "source_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ],
+        "mode": "K",
+        "key": 4,
+        "destination_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "destination_B": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            3,
+            4,
+            "R"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            3,
+            4,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            [
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            1
+          ],
+          "H1": 1,
+          "H2": 0,
+          "H3": 0
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "delta_H2": 0,
+        "budget": 2,
+        "H2_law_holds": true
+      },
+      {
+        "label": "closed_word_8",
+        "source_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "source_B": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "mode": "K",
+        "key": 3,
+        "destination_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ],
+        "destination_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            3,
+            4,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            3,
+            4,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            [
+              2
+            ]
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            1
+          ],
+          "H1": 1,
+          "H2": 0,
+          "H3": 0
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "delta_H2": 0,
+        "budget": 2,
+        "H2_law_holds": true
+      },
+      {
+        "label": "closed_word_9",
+        "source_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ],
+        "source_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ],
+        "mode": "K",
+        "key": 2,
+        "destination_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            2,
+            3,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            2,
+            3,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [
+              1
+            ],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            1,
+            0
+          ],
+          "H1": 1,
+          "H2": 0,
+          "H3": 0
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "delta_H2": 0,
+        "budget": 2,
+        "H2_law_holds": true
+      },
+      {
+        "label": "closed_word_10",
+        "source_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 1,
+        "destination_A": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            2,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            1,
+            2,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "A_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "after_A_values": {
+          "A_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [
+              0
+            ],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            1,
+            0,
+            0
+          ],
+          "H1": 1,
+          "H2": 0,
+          "H3": 0
+        },
+        "destination_values": {
+          "A_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "B_intervals": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "crossing_adjacency": [
+            [],
+            [],
+            []
+          ],
+          "crossing_degrees": [
+            0,
+            0,
+            0
+          ],
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "delta_H2": 0,
+        "budget": 2,
+        "H2_law_holds": true
+      }
+    ],
+    "A": 12,
+    "Q_B": 2,
+    "Z_B": 8
+  },
+  "connector": {
+    "single_tree_BFS_calls": 1,
+    "n": 4,
+    "states_visited": 14,
+    "states_expanded": 10,
+    "requests": 40
+  },
+  "no_larger_finite_fits": true,
+  "new_pair_graphs": 0
+}

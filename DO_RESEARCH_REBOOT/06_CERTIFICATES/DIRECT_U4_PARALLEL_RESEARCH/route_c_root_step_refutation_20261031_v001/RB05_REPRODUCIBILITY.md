@@ -1,0 +1,11 @@
+# Reproducing the root bound refutation
+
+The [producer](audit_root_bound.py) imports the unchanged pinned AT evaluator as a read-only module and calls only its in-memory source, terminal-value and trace helpers. It never calls the old module's main/save functions. New output is written exclusively in this run. This preserves the candidate definition exactly, rather than testing a nearby variant.
+
+The new [independent verifier](independent_verify.py) imports neither new nor old producer and invokes no matching algorithm. It reconstructs every proper interval and residual endpoint graph, regenerates all maximal B antichains, checks every matching/cover equality and alpha maximum, recomputes raw P, actual source operations and completion values with the pointer engine, and checks both zig orientations and full physical paired closure. The all-odd-size proof is the interval/parity argument in RB01, not a finite fit or formal-kernel compilation.
+
+One bounded n=7 single-tree BFS finds the prefix for the already specified analytic source. It does not evaluate potential values during search or construct source-pair inequalities. The resulting prefix and closed word are replayed by both source engines. The candidate's actual DELETE cost remains separate from the hypothetical completion charge.
+
+Scripts use exclusive mode x and intentionally refuse to overwrite completed outputs. To reproduce, copy this run's scripts and RB00 into a fresh sibling versioned directory under DIRECT_U4_PARALLEL_RESEARCH, preserving relative depth and the prior AT evaluator/inputs. Run Python -X utf8 -B with the new audit_root_bound.py path, then the new independent_verify.py path. Preserve all completed runs. No installation is needed.
+
+For read-only delivery verification, recompute hashes in delivery_manifest.json and entry_source_pins.json, including the unchanged evaluator/definition hashes, and compare the certificate hash with independent_audit.json. The manifest excludes itself. final_integrity.json records gate/source preservation, Stage11G inventory/bytes, tracked state, scope and local report links. Historical AT OPEN reports are preserved; the new ledger states the subsequent exact refutation.

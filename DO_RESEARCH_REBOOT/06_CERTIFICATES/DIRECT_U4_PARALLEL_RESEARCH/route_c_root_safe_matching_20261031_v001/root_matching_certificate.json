@@ -1,0 +1,10815 @@
+{
+  "date": "2026-10-31",
+  "controls": [
+    {
+      "label": "old_six_key_hook",
+      "source_A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "source_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "mode": "K",
+      "key": 1,
+      "destination_A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          6,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "dA": 0,
+      "dB": 5,
+      "a": 0,
+      "q": 2,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "LL",
+          1,
+          3,
+          "-"
+        ],
+        [
+          "LL",
+          1,
+          5,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          6,
+          "L"
+        ]
+      ],
+      "source_values": {
+        "F": 5,
+        "mu_root": 0,
+        "P": 5,
+        "root_A": 1,
+        "d_B_root_A": 5,
+        "graph_id": 0
+      },
+      "after_A_values": {
+        "F": 5,
+        "mu_root": 0,
+        "P": 5,
+        "root_A": 1,
+        "d_B_root_A": 5,
+        "graph_id": 0
+      },
+      "destination_values": {
+        "F": 2,
+        "mu_root": 0,
+        "P": 2,
+        "root_A": 1,
+        "d_B_root_A": 0,
+        "graph_id": 1
+      },
+      "delta_P": -3,
+      "budget": -2,
+      "whole_law_holds": true,
+      "B_full_q_holds": true
+    },
+    {
+      "label": "padded_six_key_hook",
+      "source_A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "source_B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "mode": "K",
+      "key": 1,
+      "destination_A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          4,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "dA": 0,
+      "dB": 4,
+      "a": 0,
+      "q": 2,
+      "z": 0,
+      "events_A": [],
+      "events_B": [
+        [
+          "LL",
+          1,
+          3,
+          "-"
+        ],
+        [
+          "LL",
+          1,
+          5,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 4,
+        "mu_root": 0,
+        "P": 4,
+        "root_A": 1,
+        "d_B_root_A": 4,
+        "graph_id": 2
+      },
+      "after_A_values": {
+        "F": 4,
+        "mu_root": 0,
+        "P": 4,
+        "root_A": 1,
+        "d_B_root_A": 4,
+        "graph_id": 2
+      },
+      "destination_values": {
+        "F": 2,
+        "mu_root": 0,
+        "P": 2,
+        "root_A": 1,
+        "d_B_root_A": 0,
+        "graph_id": 3
+      },
+      "delta_P": -2,
+      "budget": -2,
+      "whole_law_holds": true,
+      "B_full_q_holds": true
+    },
+    {
+      "label": "four_key_conflict_transfer",
+      "source_A": [
+        4,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            null
+          ]
+        ],
+        null
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "mode": "K",
+      "key": 4,
+      "destination_A": [
+        4,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            null
+          ]
+        ],
+        null
+      ],
+      "destination_B": [
+        4,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        null
+      ],
+      "dA": 0,
+      "dB": 3,
+      "a": 0,
+      "q": 1,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "RR",
+          2,
+          4,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          4,
+          "R"
+        ]
+      ],
+      "source_values": {
+        "F": 3,
+        "mu_root": 0,
+        "P": 3,
+        "root_A": 4,
+        "d_B_root_A": 3,
+        "graph_id": 4
+      },
+      "after_A_values": {
+        "F": 3,
+        "mu_root": 0,
+        "P": 3,
+        "root_A": 4,
+        "d_B_root_A": 3,
+        "graph_id": 4
+      },
+      "destination_values": {
+        "F": 2,
+        "mu_root": 1,
+        "P": 1,
+        "root_A": 4,
+        "d_B_root_A": 0,
+        "graph_id": 5
+      },
+      "delta_P": -2,
+      "budget": -1,
+      "whole_law_holds": true,
+      "B_full_q_holds": true
+    },
+    {
+      "label": "six_key_opposite_vines",
+      "source_A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "mode": "K",
+      "key": 6,
+      "destination_A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_B": [
+        6,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        null
+      ],
+      "dA": 0,
+      "dB": 5,
+      "a": 0,
+      "q": 2,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "RR",
+          4,
+          6,
+          "-"
+        ],
+        [
+          "RR",
+          2,
+          6,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          6,
+          "R"
+        ]
+      ],
+      "source_values": {
+        "F": 5,
+        "mu_root": 0,
+        "P": 5,
+        "root_A": 6,
+        "d_B_root_A": 5,
+        "graph_id": 6
+      },
+      "after_A_values": {
+        "F": 5,
+        "mu_root": 0,
+        "P": 5,
+        "root_A": 6,
+        "d_B_root_A": 5,
+        "graph_id": 6
+      },
+      "destination_values": {
+        "F": 4,
+        "mu_root": 2,
+        "P": 2,
+        "root_A": 6,
+        "d_B_root_A": 0,
+        "graph_id": 7
+      },
+      "delta_P": -3,
+      "budget": -2,
+      "whole_law_holds": true,
+      "B_full_q_holds": true
+    },
+    {
+      "label": "root_change_DELETE_family_n6",
+      "source_A": [
+        1,
+        null,
+        [
+          6,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "source_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "mode": "D",
+      "key": 6,
+      "destination_A": [
+        6,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "destination_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "dA": 1,
+      "dB": null,
+      "a": 1,
+      "q": 0,
+      "z": 0,
+      "events_A": [
+        [
+          "ZIG",
+          1,
+          6,
+          "R"
+        ]
+      ],
+      "events_B": [],
+      "source_values": {
+        "F": 5,
+        "mu_root": 4,
+        "P": 1,
+        "root_A": 1,
+        "d_B_root_A": 1,
+        "graph_id": 8
+      },
+      "after_A_values": {
+        "F": 5,
+        "mu_root": 1,
+        "P": 4,
+        "root_A": 6,
+        "d_B_root_A": 4,
+        "graph_id": 9
+      },
+      "destination_values": {
+        "F": 5,
+        "mu_root": 1,
+        "P": 4,
+        "root_A": 6,
+        "d_B_root_A": 4,
+        "graph_id": 9
+      },
+      "delta_P": 3,
+      "budget": 2,
+      "whole_law_holds": false,
+      "B_full_q_holds": true
+    }
+  ],
+  "reflections": [
+    {
+      "label": "reflection_old_six_key_hook",
+      "source_A": [
+        6,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "mode": "K",
+      "key": 6,
+      "destination_A": [
+        6,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "destination_B": [
+        6,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        null
+      ],
+      "dA": 0,
+      "dB": 5,
+      "a": 0,
+      "q": 2,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "RR",
+          4,
+          6,
+          "-"
+        ],
+        [
+          "RR",
+          2,
+          6,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          6,
+          "R"
+        ]
+      ],
+      "source_values": {
+        "F": 5,
+        "mu_root": 0,
+        "P": 5,
+        "root_A": 6,
+        "d_B_root_A": 5,
+        "graph_id": 10
+      },
+      "after_A_values": {
+        "F": 5,
+        "mu_root": 0,
+        "P": 5,
+        "root_A": 6,
+        "d_B_root_A": 5,
+        "graph_id": 10
+      },
+      "destination_values": {
+        "F": 2,
+        "mu_root": 0,
+        "P": 2,
+        "root_A": 6,
+        "d_B_root_A": 0,
+        "graph_id": 11
+      },
+      "delta_P": -3,
+      "budget": -2,
+      "whole_law_holds": true,
+      "B_full_q_holds": true
+    },
+    {
+      "label": "reflection_padded_six_key_hook",
+      "source_A": [
+        6,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "source_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "mode": "K",
+      "key": 6,
+      "destination_A": [
+        6,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "destination_B": [
+        6,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        null
+      ],
+      "dA": 0,
+      "dB": 4,
+      "a": 0,
+      "q": 2,
+      "z": 0,
+      "events_A": [],
+      "events_B": [
+        [
+          "RR",
+          4,
+          6,
+          "-"
+        ],
+        [
+          "RR",
+          2,
+          6,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 4,
+        "mu_root": 0,
+        "P": 4,
+        "root_A": 6,
+        "d_B_root_A": 4,
+        "graph_id": 12
+      },
+      "after_A_values": {
+        "F": 4,
+        "mu_root": 0,
+        "P": 4,
+        "root_A": 6,
+        "d_B_root_A": 4,
+        "graph_id": 12
+      },
+      "destination_values": {
+        "F": 2,
+        "mu_root": 0,
+        "P": 2,
+        "root_A": 6,
+        "d_B_root_A": 0,
+        "graph_id": 13
+      },
+      "delta_P": -2,
+      "budget": -2,
+      "whole_law_holds": true,
+      "B_full_q_holds": true
+    },
+    {
+      "label": "reflection_four_key_conflict_transfer",
+      "source_A": [
+        1,
+        null,
+        [
+          3,
+          [
+            2,
+            null,
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ]
+      ],
+      "source_B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "mode": "K",
+      "key": 1,
+      "destination_A": [
+        1,
+        null,
+        [
+          3,
+          [
+            2,
+            null,
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          4,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "dA": 0,
+      "dB": 3,
+      "a": 0,
+      "q": 1,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "LL",
+          1,
+          3,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          4,
+          "L"
+        ]
+      ],
+      "source_values": {
+        "F": 3,
+        "mu_root": 0,
+        "P": 3,
+        "root_A": 1,
+        "d_B_root_A": 3,
+        "graph_id": 14
+      },
+      "after_A_values": {
+        "F": 3,
+        "mu_root": 0,
+        "P": 3,
+        "root_A": 1,
+        "d_B_root_A": 3,
+        "graph_id": 14
+      },
+      "destination_values": {
+        "F": 2,
+        "mu_root": 1,
+        "P": 1,
+        "root_A": 1,
+        "d_B_root_A": 0,
+        "graph_id": 15
+      },
+      "delta_P": -2,
+      "budget": -1,
+      "whole_law_holds": true,
+      "B_full_q_holds": true
+    },
+    {
+      "label": "reflection_six_key_opposite_vines",
+      "source_A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "source_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "mode": "K",
+      "key": 1,
+      "destination_A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          6,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "dA": 0,
+      "dB": 5,
+      "a": 0,
+      "q": 2,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "LL",
+          1,
+          3,
+          "-"
+        ],
+        [
+          "LL",
+          1,
+          5,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          6,
+          "L"
+        ]
+      ],
+      "source_values": {
+        "F": 5,
+        "mu_root": 0,
+        "P": 5,
+        "root_A": 1,
+        "d_B_root_A": 5,
+        "graph_id": 16
+      },
+      "after_A_values": {
+        "F": 5,
+        "mu_root": 0,
+        "P": 5,
+        "root_A": 1,
+        "d_B_root_A": 5,
+        "graph_id": 16
+      },
+      "destination_values": {
+        "F": 4,
+        "mu_root": 2,
+        "P": 2,
+        "root_A": 1,
+        "d_B_root_A": 0,
+        "graph_id": 17
+      },
+      "delta_P": -3,
+      "budget": -2,
+      "whole_law_holds": true,
+      "B_full_q_holds": true
+    },
+    {
+      "label": "reflection_root_change_DELETE_family_n6",
+      "source_A": [
+        6,
+        [
+          1,
+          null,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        null
+      ],
+      "source_B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "mode": "D",
+      "key": 1,
+      "destination_A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "dA": 1,
+      "dB": null,
+      "a": 1,
+      "q": 0,
+      "z": 0,
+      "events_A": [
+        [
+          "ZIG",
+          1,
+          6,
+          "L"
+        ]
+      ],
+      "events_B": [],
+      "source_values": {
+        "F": 5,
+        "mu_root": 4,
+        "P": 1,
+        "root_A": 6,
+        "d_B_root_A": 1,
+        "graph_id": 18
+      },
+      "after_A_values": {
+        "F": 5,
+        "mu_root": 1,
+        "P": 4,
+        "root_A": 1,
+        "d_B_root_A": 4,
+        "graph_id": 19
+      },
+      "destination_values": {
+        "F": 5,
+        "mu_root": 1,
+        "P": 4,
+        "root_A": 1,
+        "d_B_root_A": 4,
+        "graph_id": 19
+      },
+      "delta_P": 3,
+      "budget": 2,
+      "whole_law_holds": false,
+      "B_full_q_holds": true
+    }
+  ],
+  "matching_graphs": [
+    {
+      "A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 5,
+      "P": 5,
+      "d_B_root_A": 5
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          6,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 2,
+      "P": 2,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 4,
+      "P": 4,
+      "d_B_root_A": 4
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          4,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 2,
+      "P": 2,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        4,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            null
+          ]
+        ],
+        null
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "root_A": 4,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 3,
+      "P": 3,
+      "d_B_root_A": 3
+    },
+    {
+      "A": [
+        4,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            null
+          ]
+        ],
+        null
+      ],
+      "B": [
+        4,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        null
+      ],
+      "root_A": 4,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          3
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [],
+        [
+          1
+        ]
+      ],
+      "matching": [
+        [
+          1,
+          1
+        ]
+      ],
+      "cover_left": [
+        1
+      ],
+      "cover_right": [],
+      "mu_root": 1,
+      "F": 2,
+      "P": 1,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 5,
+      "P": 5,
+      "d_B_root_A": 5
+    },
+    {
+      "A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B": [
+        6,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        null
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [],
+        [
+          0
+        ],
+        [],
+        [
+          2
+        ]
+      ],
+      "matching": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "cover_left": [
+        1,
+        3
+      ],
+      "cover_right": [],
+      "mu_root": 2,
+      "F": 4,
+      "P": 2,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          6,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [
+        [
+          1,
+          1
+        ]
+      ],
+      "adjacency": [
+        [],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "matching": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "cover_left": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cover_right": [],
+      "mu_root": 4,
+      "F": 5,
+      "P": 1,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        6,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          1,
+          1
+        ]
+      ],
+      "ineligible_B_intervals": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [
+          0
+        ],
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ]
+      ],
+      "cover_left": [
+        0
+      ],
+      "cover_right": [],
+      "mu_root": 1,
+      "F": 5,
+      "P": 4,
+      "d_B_root_A": 4
+    },
+    {
+      "A": [
+        6,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 5,
+      "P": 5,
+      "d_B_root_A": 5
+    },
+    {
+      "A": [
+        6,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        6,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        null
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 2,
+      "P": 2,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        6,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 4,
+      "P": 4,
+      "d_B_root_A": 4
+    },
+    {
+      "A": [
+        6,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        6,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        null
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 2,
+      "P": 2,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          3,
+          [
+            2,
+            null,
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 3,
+      "P": 3,
+      "d_B_root_A": 3
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          3,
+          [
+            2,
+            null,
+            null
+          ],
+          [
+            4,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          4,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          2,
+          4
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [
+          0
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ]
+      ],
+      "cover_left": [
+        0
+      ],
+      "cover_right": [],
+      "mu_root": 1,
+      "F": 2,
+      "P": 1,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 5,
+      "P": 5,
+      "d_B_root_A": 5
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          6,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          2,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [
+          2
+        ],
+        [],
+        [
+          3
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "cover_left": [
+        0,
+        2
+      ],
+      "cover_right": [],
+      "mu_root": 2,
+      "F": 4,
+      "P": 2,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        6,
+        [
+          1,
+          null,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        null
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "ineligible_B_intervals": [
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "cover_left": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cover_right": [],
+      "mu_root": 4,
+      "F": 5,
+      "P": 1,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          6,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        [],
+        [
+          0
+        ]
+      ],
+      "matching": [
+        [
+          4,
+          0
+        ]
+      ],
+      "cover_left": [
+        4
+      ],
+      "cover_right": [],
+      "mu_root": 1,
+      "F": 5,
+      "P": 4,
+      "d_B_root_A": 4
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 2,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [],
+      "adjacency": [],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 0,
+      "P": 0,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 4,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 2,
+      "P": 2,
+      "d_B_root_A": 2
+    },
+    {
+      "A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 4,
+      "P": 4,
+      "d_B_root_A": 4
+    },
+    {
+      "A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 3,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [
+        [
+          3,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [
+          0
+        ]
+      ],
+      "matching": [
+        [
+          2,
+          0
+        ]
+      ],
+      "cover_left": [
+        2
+      ],
+      "cover_right": [],
+      "mu_root": 1,
+      "F": 3,
+      "P": 2,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        6,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              null
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 4,
+      "P": 4,
+      "d_B_root_A": 4
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          6,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          2,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "matching": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "cover_left": [
+        1,
+        2,
+        3
+      ],
+      "cover_right": [],
+      "mu_root": 3,
+      "F": 4,
+      "P": 1,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 2,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          3,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [
+        [
+          2,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "matching": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "cover_left": [
+        2,
+        3
+      ],
+      "cover_right": [],
+      "mu_root": 2,
+      "F": 4,
+      "P": 2,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 2,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "matching": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "cover_left": [
+        1,
+        2
+      ],
+      "cover_right": [],
+      "mu_root": 2,
+      "F": 3,
+      "P": 1,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "root_A": 3,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        [],
+        [
+          0
+        ]
+      ],
+      "matching": [
+        [
+          1,
+          0
+        ]
+      ],
+      "cover_left": [
+        1
+      ],
+      "cover_right": [],
+      "mu_root": 1,
+      "F": 2,
+      "P": 1,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          [
+            5,
+            null,
+            null
+          ],
+          null
+        ]
+      ],
+      "B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "root_A": 4,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          6,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [
+        [
+          4,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 2,
+      "P": 2,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          [
+            5,
+            null,
+            null
+          ],
+          null
+        ]
+      ],
+      "B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "root_A": 4,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          5,
+          5
+        ]
+      ],
+      "eligible_right_residual": [
+        [
+          6,
+          6
+        ]
+      ],
+      "ineligible_B_intervals": [],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 1,
+      "P": 1,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "root_A": 5,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          4
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          5,
+          6
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 1,
+      "P": 1,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "root_A": 5,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [],
+      "adjacency": [],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 0,
+      "P": 0,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          5
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 1,
+      "P": 1,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "root_A": 6,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "left_residual": [],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [],
+      "adjacency": [],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 0,
+      "P": 0,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "root_A": 5,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "left_residual": [
+        [
+          6,
+          6
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          1,
+          5
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 1,
+      "P": 1,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "root_A": 4,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          5,
+          6
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          1,
+          4
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 1,
+      "P": 1,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "root_A": 4,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [],
+      "adjacency": [],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 0,
+      "P": 0,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "root_A": 3,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          4,
+          6
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          1,
+          3
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 1,
+      "P": 1,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "root_A": 3,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [],
+      "adjacency": [],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 0,
+      "P": 0,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "root_A": 2,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          6
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          1,
+          2
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 1,
+      "P": 1,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          6
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          1,
+          1
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 1,
+      "P": 1,
+      "d_B_root_A": 1
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 1,
+      "all_A_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [],
+      "adjacency": [],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 0,
+      "P": 0,
+      "d_B_root_A": 0
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "root_A": 2,
+      "all_A_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_B_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_pairs": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          1
+        ]
+      ],
+      "eligible_right_residual": [],
+      "ineligible_B_intervals": [
+        [
+          2,
+          6
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu_root": 0,
+      "F": 1,
+      "P": 1,
+      "d_B_root_A": 1
+    }
+  ],
+  "closed_witness": {
+    "initial_A": [
+      2,
+      [
+        1,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ]
+    ],
+    "initial_B": [
+      2,
+      [
+        1,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ]
+    ],
+    "word": [
+      [
+        "D",
+        4
+      ],
+      [
+        "D",
+        6
+      ],
+      [
+        "D",
+        3
+      ],
+      [
+        "D",
+        6
+      ],
+      [
+        "D",
+        1
+      ],
+      [
+        "D",
+        6
+      ],
+      [
+        "K",
+        1
+      ],
+      [
+        "K",
+        2
+      ],
+      [
+        "K",
+        3
+      ],
+      [
+        "K",
+        4
+      ],
+      [
+        "K",
+        5
+      ],
+      [
+        "K",
+        6
+      ],
+      [
+        "K",
+        5
+      ],
+      [
+        "K",
+        4
+      ],
+      [
+        "K",
+        3
+      ],
+      [
+        "K",
+        2
+      ],
+      [
+        "K",
+        1
+      ],
+      [
+        "K",
+        2
+      ]
+    ],
+    "failed_edge_index": 5,
+    "full_replay": [
+      {
+        "label": "closed_0",
+        "source_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "D",
+        "key": 4,
+        "destination_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 2,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "RR",
+            2,
+            4,
+            "-"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 2,
+          "d_B_root_A": 0,
+          "graph_id": 20
+        },
+        "after_A_values": {
+          "F": 2,
+          "mu_root": 0,
+          "P": 2,
+          "root_A": 4,
+          "d_B_root_A": 2,
+          "graph_id": 21
+        },
+        "destination_values": {
+          "F": 2,
+          "mu_root": 0,
+          "P": 2,
+          "root_A": 4,
+          "d_B_root_A": 2,
+          "graph_id": 21
+        },
+        "delta_P": 2,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_1",
+        "source_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "D",
+        "key": 6,
+        "destination_A": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 2,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "RR",
+            4,
+            6,
+            "-"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 2,
+          "mu_root": 0,
+          "P": 2,
+          "root_A": 4,
+          "d_B_root_A": 2,
+          "graph_id": 21
+        },
+        "after_A_values": {
+          "F": 4,
+          "mu_root": 0,
+          "P": 4,
+          "root_A": 6,
+          "d_B_root_A": 4,
+          "graph_id": 22
+        },
+        "destination_values": {
+          "F": 4,
+          "mu_root": 0,
+          "P": 4,
+          "root_A": 6,
+          "d_B_root_A": 4,
+          "graph_id": 22
+        },
+        "delta_P": 2,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_2",
+        "source_A": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "D",
+        "key": 3,
+        "destination_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "LL",
+            3,
+            5,
+            "-"
+          ],
+          [
+            "ZIG",
+            3,
+            6,
+            "L"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 4,
+          "mu_root": 0,
+          "P": 4,
+          "root_A": 6,
+          "d_B_root_A": 4,
+          "graph_id": 22
+        },
+        "after_A_values": {
+          "F": 3,
+          "mu_root": 1,
+          "P": 2,
+          "root_A": 3,
+          "d_B_root_A": 1,
+          "graph_id": 23
+        },
+        "destination_values": {
+          "F": 3,
+          "mu_root": 1,
+          "P": 2,
+          "root_A": 3,
+          "d_B_root_A": 1,
+          "graph_id": 23
+        },
+        "delta_P": -2,
+        "budget": 4,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_3",
+        "source_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "D",
+        "key": 6,
+        "destination_A": [
+          6,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "ZIG",
+            3,
+            6,
+            "R"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 3,
+          "mu_root": 1,
+          "P": 2,
+          "root_A": 3,
+          "d_B_root_A": 1,
+          "graph_id": 23
+        },
+        "after_A_values": {
+          "F": 4,
+          "mu_root": 0,
+          "P": 4,
+          "root_A": 6,
+          "d_B_root_A": 4,
+          "graph_id": 24
+        },
+        "destination_values": {
+          "F": 4,
+          "mu_root": 0,
+          "P": 4,
+          "root_A": 6,
+          "d_B_root_A": 4,
+          "graph_id": 24
+        },
+        "delta_P": 2,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_4",
+        "source_A": [
+          6,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "D",
+        "key": 1,
+        "destination_A": [
+          1,
+          null,
+          [
+            6,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ],
+            null
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "LL",
+            1,
+            3,
+            "-"
+          ],
+          [
+            "ZIG",
+            1,
+            6,
+            "L"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 4,
+          "mu_root": 0,
+          "P": 4,
+          "root_A": 6,
+          "d_B_root_A": 4,
+          "graph_id": 24
+        },
+        "after_A_values": {
+          "F": 5,
+          "mu_root": 4,
+          "P": 1,
+          "root_A": 1,
+          "d_B_root_A": 1,
+          "graph_id": 8
+        },
+        "destination_values": {
+          "F": 5,
+          "mu_root": 4,
+          "P": 1,
+          "root_A": 1,
+          "d_B_root_A": 1,
+          "graph_id": 8
+        },
+        "delta_P": -3,
+        "budget": 4,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_5",
+        "source_A": [
+          1,
+          null,
+          [
+            6,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ],
+            null
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "D",
+        "key": 6,
+        "destination_A": [
+          6,
+          [
+            1,
+            null,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ],
+          null
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            6,
+            "R"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 5,
+          "mu_root": 4,
+          "P": 1,
+          "root_A": 1,
+          "d_B_root_A": 1,
+          "graph_id": 8
+        },
+        "after_A_values": {
+          "F": 5,
+          "mu_root": 1,
+          "P": 4,
+          "root_A": 6,
+          "d_B_root_A": 4,
+          "graph_id": 9
+        },
+        "destination_values": {
+          "F": 5,
+          "mu_root": 1,
+          "P": 4,
+          "root_A": 6,
+          "d_B_root_A": 4,
+          "graph_id": 9
+        },
+        "delta_P": 3,
+        "budget": 2,
+        "whole_law_holds": false,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_6",
+        "source_A": [
+          6,
+          [
+            1,
+            null,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ],
+          null
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 1,
+        "destination_A": [
+          1,
+          null,
+          [
+            6,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ],
+            null
+          ]
+        ],
+        "destination_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  [
+                    6,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            6,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            1,
+            2,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "F": 5,
+          "mu_root": 1,
+          "P": 4,
+          "root_A": 6,
+          "d_B_root_A": 4,
+          "graph_id": 9
+        },
+        "after_A_values": {
+          "F": 5,
+          "mu_root": 4,
+          "P": 1,
+          "root_A": 1,
+          "d_B_root_A": 1,
+          "graph_id": 8
+        },
+        "destination_values": {
+          "F": 4,
+          "mu_root": 3,
+          "P": 1,
+          "root_A": 1,
+          "d_B_root_A": 0,
+          "graph_id": 25
+        },
+        "delta_P": -3,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_7",
+        "source_A": [
+          1,
+          null,
+          [
+            6,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ],
+            null
+          ]
+        ],
+        "source_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  [
+                    6,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 2,
+        "destination_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            6,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            null
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 2,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "RL",
+            1,
+            6,
+            "-"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            1,
+            2,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "F": 4,
+          "mu_root": 3,
+          "P": 1,
+          "root_A": 1,
+          "d_B_root_A": 0,
+          "graph_id": 25
+        },
+        "after_A_values": {
+          "F": 4,
+          "mu_root": 2,
+          "P": 2,
+          "root_A": 2,
+          "d_B_root_A": 1,
+          "graph_id": 26
+        },
+        "destination_values": {
+          "F": 3,
+          "mu_root": 2,
+          "P": 1,
+          "root_A": 2,
+          "d_B_root_A": 0,
+          "graph_id": 27
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_8",
+        "source_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            6,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            null
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 3,
+        "destination_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        "destination_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 2,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "RL",
+            2,
+            6,
+            "-"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            2,
+            3,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "F": 3,
+          "mu_root": 2,
+          "P": 1,
+          "root_A": 2,
+          "d_B_root_A": 0,
+          "graph_id": 27
+        },
+        "after_A_values": {
+          "F": 3,
+          "mu_root": 1,
+          "P": 2,
+          "root_A": 3,
+          "d_B_root_A": 1,
+          "graph_id": 23
+        },
+        "destination_values": {
+          "F": 2,
+          "mu_root": 1,
+          "P": 1,
+          "root_A": 3,
+          "d_B_root_A": 0,
+          "graph_id": 28
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_9",
+        "source_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        "source_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 4,
+        "destination_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            [
+              5,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        "destination_B": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "dA": 2,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "RL",
+            3,
+            6,
+            "-"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            3,
+            4,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "F": 2,
+          "mu_root": 1,
+          "P": 1,
+          "root_A": 3,
+          "d_B_root_A": 0,
+          "graph_id": 28
+        },
+        "after_A_values": {
+          "F": 2,
+          "mu_root": 0,
+          "P": 2,
+          "root_A": 4,
+          "d_B_root_A": 1,
+          "graph_id": 29
+        },
+        "destination_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 4,
+          "d_B_root_A": 0,
+          "graph_id": 30
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_10",
+        "source_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            [
+              5,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        "source_B": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 5,
+        "destination_A": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "dA": 2,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "RL",
+            4,
+            6,
+            "-"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            4,
+            5,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 4,
+          "d_B_root_A": 0,
+          "graph_id": 30
+        },
+        "after_A_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 5,
+          "d_B_root_A": 1,
+          "graph_id": 31
+        },
+        "destination_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 5,
+          "d_B_root_A": 0,
+          "graph_id": 32
+        },
+        "delta_P": -1,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_11",
+        "source_A": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "source_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "mode": "K",
+        "key": 6,
+        "destination_A": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "destination_B": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            5,
+            6,
+            "R"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            5,
+            6,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 5,
+          "d_B_root_A": 0,
+          "graph_id": 32
+        },
+        "after_A_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 6,
+          "d_B_root_A": 1,
+          "graph_id": 33
+        },
+        "destination_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 6,
+          "d_B_root_A": 0,
+          "graph_id": 34
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_12",
+        "source_A": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "source_B": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "mode": "K",
+        "key": 5,
+        "destination_A": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            5,
+            6,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            5,
+            6,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 6,
+          "d_B_root_A": 0,
+          "graph_id": 34
+        },
+        "after_A_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 5,
+          "d_B_root_A": 1,
+          "graph_id": 35
+        },
+        "destination_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 5,
+          "d_B_root_A": 0,
+          "graph_id": 32
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_13",
+        "source_A": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "source_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "mode": "K",
+        "key": 4,
+        "destination_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            4,
+            5,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            4,
+            5,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 5,
+          "d_B_root_A": 0,
+          "graph_id": 32
+        },
+        "after_A_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 4,
+          "d_B_root_A": 1,
+          "graph_id": 36
+        },
+        "destination_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 4,
+          "d_B_root_A": 0,
+          "graph_id": 37
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_14",
+        "source_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 3,
+        "destination_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            3,
+            4,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            3,
+            4,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 4,
+          "d_B_root_A": 0,
+          "graph_id": 37
+        },
+        "after_A_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 3,
+          "d_B_root_A": 1,
+          "graph_id": 38
+        },
+        "destination_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 3,
+          "d_B_root_A": 0,
+          "graph_id": 39
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_15",
+        "source_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 2,
+        "destination_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            2,
+            3,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            2,
+            3,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 3,
+          "d_B_root_A": 0,
+          "graph_id": 39
+        },
+        "after_A_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 2,
+          "d_B_root_A": 1,
+          "graph_id": 40
+        },
+        "destination_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 2,
+          "d_B_root_A": 0,
+          "graph_id": 20
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_16",
+        "source_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 1,
+        "destination_A": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  [
+                    6,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  [
+                    6,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            2,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            1,
+            2,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 2,
+          "d_B_root_A": 0,
+          "graph_id": 20
+        },
+        "after_A_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 1,
+          "d_B_root_A": 1,
+          "graph_id": 41
+        },
+        "destination_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 1,
+          "d_B_root_A": 0,
+          "graph_id": 42
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      },
+      {
+        "label": "closed_17",
+        "source_A": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  [
+                    6,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  [
+                    6,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "mode": "K",
+        "key": 2,
+        "destination_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            2,
+            "R"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            1,
+            2,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 1,
+          "d_B_root_A": 0,
+          "graph_id": 42
+        },
+        "after_A_values": {
+          "F": 1,
+          "mu_root": 0,
+          "P": 1,
+          "root_A": 2,
+          "d_B_root_A": 1,
+          "graph_id": 43
+        },
+        "destination_values": {
+          "F": 0,
+          "mu_root": 0,
+          "P": 0,
+          "root_A": 2,
+          "d_B_root_A": 0,
+          "graph_id": 20
+        },
+        "delta_P": 0,
+        "budget": 2,
+        "whole_law_holds": true,
+        "B_full_q_holds": true
+      }
+    ],
+    "A": 20,
+    "Q_B": 0,
+    "Z_B": 12
+  },
+  "connector": {
+    "single_tree_BFS_calls": 1,
+    "n": 6,
+    "states_visited": 130,
+    "states_expanded": 118,
+    "source_requests": 708
+  },
+  "all_size_DELETE_family": {
+    "n_min": 3,
+    "source_F": "n-1",
+    "destination_F": "n-1",
+    "source_mu": "n-2",
+    "destination_mu": 1,
+    "source_P": 1,
+    "destination_P": "n-2",
+    "delta_P": "n-3",
+    "a": 1,
+    "violates_for": "n>=6"
+  },
+  "finite_potential_fits": 0,
+  "new_pair_graphs": 0
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-31",
+  "results": [
+    {
+      "claim": "Explicit R=max_T[P(T,B)-rho(A,T)]-P, with P<=J<=F",
+      "status": "PROVED\u2014UNIVERSAL",
+      "proof": "PE01_EXPLICIT_CORRECTION_AND_DELETE.md"
+    },
+    {
+      "claim": "Full universal DELETE law for J=P+R",
+      "status": "PROVED\u2014UNIVERSAL",
+      "proof": "PE01_EXPLICIT_CORRECTION_AND_DELETE.md"
+    },
+    {
+      "claim": "R is unbounded and reduces the registered DELETE drift to +1",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "scope": "all n>=4 in the explicit family",
+      "proof": "PE02_EXACT_EXTREMA_AND_B_OBSTRUCTION.md"
+    },
+    {
+      "claim": "Full universal B repayment for J",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "PE02_EXACT_EXTREMA_AND_B_OBSTRUCTION.md",
+      "witness": {
+        "n": 6,
+        "a": 0,
+        "q": 0,
+        "z": 1,
+        "J_before": 3,
+        "J_after": 4,
+        "required_upper": 0
+      }
+    },
+    {
+      "claim": "A nonnegative lambda_n makes max_T[P(T,B)-lambda_n rho(A,T)] satisfy both source laws",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "PE02_EXACT_EXTREMA_AND_B_OBSTRUCTION.md",
+      "same_n6_necessary_bounds": {
+        "from_DELETE": "lambda<=2",
+        "from_KEEP": "lambda>=4"
+      }
+    },
+    {
+      "claim": "Eight local P duals, one-zig witnesses, correction arithmetic and source closure",
+      "status": "FINITE-EXACT",
+      "certificate": "p_envelope_certificate.json",
+      "audit": "independent_audit.json"
+    },
+    {
+      "claim": "An arbitrary explicit unbounded correction to P satisfying both universal laws",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN"
+    }
+  ],
+  "before": "P root-changing DELETE drift unbounded; general two-law correction open",
+  "result": "Explicit unbounded correction and universal DELETE; exact B and scalar-penalty class refutation",
+  "after": "General unbounded two-law correction and CD remain open",
+  "original_load_bearing_obligations_discharged": [],
+  "new_assumptions_for_original_theorem": [],
+  "net_full_original_proof_advancement": 0,
+  "strategy_review": "PE04_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null
+}

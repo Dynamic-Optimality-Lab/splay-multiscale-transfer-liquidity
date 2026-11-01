@@ -1,0 +1,7461 @@
+{
+  "status": "EXACT certificates, not all-cut counterexamples",
+  "certificates": [
+    {
+      "case": 0,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "last_minimum_offset": 43,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 43,
+          "block": 0,
+          "leader": 0,
+          "key": 13,
+          "delta": 4,
+          "C": 2,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 4,
+          "debt_before": 0,
+          "debt_after": 4,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        4
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 4,
+      "positive_excess": 4,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 4,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 0,
+      "cut": 2,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        1
+      ],
+      "last_minimum_offset": 42,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0,
+        1
+      ],
+      "busy_steps": [
+        {
+          "turn": 42,
+          "block": 0,
+          "leader": 0,
+          "key": 13,
+          "delta": 4,
+          "C": 2,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 4,
+          "debt_before": 0,
+          "debt_after": 4,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 43,
+          "block": 1,
+          "leader": 1,
+          "key": 11,
+          "delta": -3,
+          "C": 6,
+          "q": 3,
+          "fact_ids": [
+            "0:1"
+          ],
+          "minimum_ceiling": 3,
+          "reservation": 3,
+          "certified_offer": 3,
+          "reserved_loss": 0,
+          "x": -3,
+          "debt_before": 4,
+          "debt_after": 1,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              3
+            ]
+          ],
+          "loans": [
+            {
+              "anchor": 0,
+              "payer": 1,
+              "residual_start": 0,
+              "residual_end": 3,
+              "unit_start": 3,
+              "unit_end": 6
+            }
+          ],
+          "lent": 3,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        4,
+        1
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 1,
+      "positive_excess": 4,
+      "certified_offer_sum": 3,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 1,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "last_minimum_offset": 43,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 43,
+          "block": 0,
+          "leader": 0,
+          "key": 1,
+          "delta": 4,
+          "C": 2,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 4,
+          "debt_before": 0,
+          "debt_after": 4,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        4
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 4,
+      "positive_excess": 4,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 4,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 1,
+      "cut": 2,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        1
+      ],
+      "last_minimum_offset": 42,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0,
+        1
+      ],
+      "busy_steps": [
+        {
+          "turn": 42,
+          "block": 0,
+          "leader": 0,
+          "key": 1,
+          "delta": 4,
+          "C": 2,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 4,
+          "debt_before": 0,
+          "debt_after": 4,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 43,
+          "block": 1,
+          "leader": 1,
+          "key": 3,
+          "delta": -3,
+          "C": 6,
+          "q": 3,
+          "fact_ids": [
+            "0:1"
+          ],
+          "minimum_ceiling": 3,
+          "reservation": 3,
+          "certified_offer": 3,
+          "reserved_loss": 0,
+          "x": -3,
+          "debt_before": 4,
+          "debt_after": 1,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              3
+            ]
+          ],
+          "loans": [
+            {
+              "anchor": 0,
+              "payer": 1,
+              "residual_start": 0,
+              "residual_end": 3,
+              "unit_start": 3,
+              "unit_end": 6
+            }
+          ],
+          "lent": 3,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        4,
+        1
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 1,
+      "positive_excess": 4,
+      "certified_offer_sum": 3,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 2,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        1,
+        -1,
+        -3,
+        -5,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -21,
+        -27,
+        -23
+      ],
+      "last_minimum_offset": 43,
+      "minimum_prefix_value": -27,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 43,
+          "block": 0,
+          "leader": 0,
+          "key": 13,
+          "delta": 4,
+          "C": 2,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 4,
+          "debt_before": 0,
+          "debt_after": 4,
+          "history": [
+            2,
+            0
+          ],
+          "residual_cursors": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        4
+      ],
+      "paid_source_history_before_busy": [
+        2
+      ],
+      "terminal_debt": 4,
+      "positive_excess": 4,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 4,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 2,
+      "cut": 3,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        -2,
+        -1
+      ],
+      "last_minimum_offset": 43,
+      "minimum_prefix_value": -2,
+      "busy_blocks": [
+        2
+      ],
+      "busy_steps": [
+        {
+          "turn": 43,
+          "block": 2,
+          "leader": 2,
+          "key": 12,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0,
+            2
+          ],
+          "residual_cursors": [
+            [
+              0,
+              4
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        0
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 3,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        1,
+        -1,
+        -3,
+        -5,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -9,
+        -21,
+        -27,
+        -23
+      ],
+      "last_minimum_offset": 43,
+      "minimum_prefix_value": -27,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 43,
+          "block": 0,
+          "leader": 0,
+          "key": 1,
+          "delta": 4,
+          "C": 2,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 4,
+          "debt_before": 0,
+          "debt_after": 4,
+          "history": [
+            2,
+            0
+          ],
+          "residual_cursors": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        4
+      ],
+      "paid_source_history_before_busy": [
+        2
+      ],
+      "terminal_debt": 4,
+      "positive_excess": 4,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 4,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 3,
+      "cut": 3,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        -2,
+        -1
+      ],
+      "last_minimum_offset": 43,
+      "minimum_prefix_value": -2,
+      "busy_blocks": [
+        2
+      ],
+      "busy_steps": [
+        {
+          "turn": 43,
+          "block": 2,
+          "leader": 2,
+          "key": 2,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0,
+            2
+          ],
+          "residual_cursors": [
+            [
+              0,
+              4
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        0
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 4,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        1,
+        1,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -12,
+        -10
+      ],
+      "last_minimum_offset": 41,
+      "minimum_prefix_value": -12,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 41,
+          "block": 0,
+          "leader": 0,
+          "key": 13,
+          "delta": 2,
+          "C": 4,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 4,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 2,
+          "debt_before": 0,
+          "debt_after": 2,
+          "history": [
+            2,
+            0
+          ],
+          "residual_cursors": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        2
+      ],
+      "paid_source_history_before_busy": [
+        2
+      ],
+      "terminal_debt": 2,
+      "positive_excess": 2,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 2,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 4,
+      "cut": 3,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        -2,
+        -1
+      ],
+      "last_minimum_offset": 41,
+      "minimum_prefix_value": -2,
+      "busy_blocks": [
+        2
+      ],
+      "busy_steps": [
+        {
+          "turn": 41,
+          "block": 2,
+          "leader": 2,
+          "key": 12,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0,
+            2
+          ],
+          "residual_cursors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        0
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 4,
+      "cut": 4,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        -2,
+        -1,
+        -1
+      ],
+      "last_minimum_offset": 40,
+      "minimum_prefix_value": -2,
+      "busy_blocks": [
+        2,
+        3
+      ],
+      "busy_steps": [
+        {
+          "turn": 40,
+          "block": 2,
+          "leader": 2,
+          "key": 12,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0,
+            2
+          ],
+          "residual_cursors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 41,
+          "block": 3,
+          "leader": 3,
+          "key": 11,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "0:3",
+            "2:3"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            0,
+            2
+          ],
+          "residual_cursors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        0
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 5,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        1,
+        1,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -12,
+        -10
+      ],
+      "last_minimum_offset": 41,
+      "minimum_prefix_value": -12,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 41,
+          "block": 0,
+          "leader": 0,
+          "key": 1,
+          "delta": 2,
+          "C": 4,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 4,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 2,
+          "debt_before": 0,
+          "debt_after": 2,
+          "history": [
+            2,
+            0
+          ],
+          "residual_cursors": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        2
+      ],
+      "paid_source_history_before_busy": [
+        2
+      ],
+      "terminal_debt": 2,
+      "positive_excess": 2,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 2,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 5,
+      "cut": 3,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        -2,
+        -1
+      ],
+      "last_minimum_offset": 41,
+      "minimum_prefix_value": -2,
+      "busy_blocks": [
+        2
+      ],
+      "busy_steps": [
+        {
+          "turn": 41,
+          "block": 2,
+          "leader": 2,
+          "key": 2,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0,
+            2
+          ],
+          "residual_cursors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        0
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 5,
+      "cut": 4,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        -2,
+        -1,
+        -1
+      ],
+      "last_minimum_offset": 40,
+      "minimum_prefix_value": -2,
+      "busy_blocks": [
+        2,
+        3
+      ],
+      "busy_steps": [
+        {
+          "turn": 40,
+          "block": 2,
+          "leader": 2,
+          "key": 2,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0,
+            2
+          ],
+          "residual_cursors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 41,
+          "block": 3,
+          "leader": 3,
+          "key": 3,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "0:3",
+            "2:3"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            0,
+            2
+          ],
+          "residual_cursors": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        0
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 6,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        1,
+        1,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -12,
+        -10
+      ],
+      "last_minimum_offset": 40,
+      "minimum_prefix_value": -12,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 40,
+          "block": 0,
+          "leader": 0,
+          "key": 13,
+          "delta": 2,
+          "C": 4,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 4,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 2,
+          "debt_before": 0,
+          "debt_after": 2,
+          "history": [
+            1,
+            0
+          ],
+          "residual_cursors": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        2
+      ],
+      "paid_source_history_before_busy": [
+        1
+      ],
+      "terminal_debt": 2,
+      "positive_excess": 2,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 2,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 6,
+      "cut": 2,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3
+      ],
+      "last_minimum_offset": 39,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0,
+        1
+      ],
+      "busy_steps": [
+        {
+          "turn": 39,
+          "block": 0,
+          "leader": 0,
+          "key": 13,
+          "delta": 2,
+          "C": 4,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 4,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 2,
+          "debt_before": 0,
+          "debt_after": 2,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 40,
+          "block": 1,
+          "leader": 1,
+          "key": 12,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 2,
+          "debt_after": 3,
+          "history": [
+            0,
+            1
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        2,
+        3
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 3,
+      "positive_excess": 3,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 3,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 6,
+      "cut": 3,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        3
+      ],
+      "last_minimum_offset": 38,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0,
+        1,
+        2
+      ],
+      "busy_steps": [
+        {
+          "turn": 38,
+          "block": 0,
+          "leader": 0,
+          "key": 13,
+          "delta": 2,
+          "C": 4,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 4,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 2,
+          "debt_before": 0,
+          "debt_after": 2,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 39,
+          "block": 1,
+          "leader": 1,
+          "key": 12,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 2,
+          "debt_after": 3,
+          "history": [
+            0,
+            1
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 40,
+          "block": 2,
+          "leader": 2,
+          "key": 11,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "0:2",
+            "1:2"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 3,
+          "debt_after": 3,
+          "history": [
+            0,
+            1
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        2,
+        3,
+        3
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 3,
+      "positive_excess": 3,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 3,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 7,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        1,
+        1,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -12,
+        -10
+      ],
+      "last_minimum_offset": 40,
+      "minimum_prefix_value": -12,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 40,
+          "block": 0,
+          "leader": 0,
+          "key": 1,
+          "delta": 2,
+          "C": 4,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 4,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 2,
+          "debt_before": 0,
+          "debt_after": 2,
+          "history": [
+            1,
+            0
+          ],
+          "residual_cursors": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        2
+      ],
+      "paid_source_history_before_busy": [
+        1
+      ],
+      "terminal_debt": 2,
+      "positive_excess": 2,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 2,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 7,
+      "cut": 2,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3
+      ],
+      "last_minimum_offset": 39,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0,
+        1
+      ],
+      "busy_steps": [
+        {
+          "turn": 39,
+          "block": 0,
+          "leader": 0,
+          "key": 1,
+          "delta": 2,
+          "C": 4,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 4,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 2,
+          "debt_before": 0,
+          "debt_after": 2,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 40,
+          "block": 1,
+          "leader": 1,
+          "key": 2,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 2,
+          "debt_after": 3,
+          "history": [
+            0,
+            1
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        2,
+        3
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 3,
+      "positive_excess": 3,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 3,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 7,
+      "cut": 3,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        3
+      ],
+      "last_minimum_offset": 38,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0,
+        1,
+        2
+      ],
+      "busy_steps": [
+        {
+          "turn": 38,
+          "block": 0,
+          "leader": 0,
+          "key": 1,
+          "delta": 2,
+          "C": 4,
+          "q": 6,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 4,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 2,
+          "debt_before": 0,
+          "debt_after": 2,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 39,
+          "block": 1,
+          "leader": 1,
+          "key": 2,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 2,
+          "debt_after": 3,
+          "history": [
+            0,
+            1
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 40,
+          "block": 2,
+          "leader": 2,
+          "key": 3,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "0:2",
+            "1:2"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 3,
+          "debt_after": 3,
+          "history": [
+            0,
+            1
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        2,
+        3,
+        3
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 3,
+      "positive_excess": 3,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 3,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 8,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "last_minimum_offset": 22,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 22,
+          "block": 0,
+          "leader": 0,
+          "key": 7,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 9,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "last_minimum_offset": 22,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 22,
+          "block": 0,
+          "leader": 0,
+          "key": 1,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 10,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "last_minimum_offset": 21,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 21,
+          "block": 0,
+          "leader": 0,
+          "key": 7,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 11,
+      "cut": 1,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "last_minimum_offset": 21,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        0
+      ],
+      "busy_steps": [
+        {
+          "turn": 21,
+          "block": 0,
+          "leader": 0,
+          "key": 1,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            0
+          ],
+          "residual_cursors": [
+            [
+              0,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 18,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        17
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 17,
+          "leader": 17,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            34,
+            51,
+            68,
+            85,
+            17
+          ],
+          "residual_cursors": [
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        34,
+        51,
+        68,
+        85
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          17,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 19,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        17,
+        18
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 17,
+          "leader": 17,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            34,
+            51,
+            68,
+            85,
+            17
+          ],
+          "residual_cursors": [
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 18,
+          "leader": 18,
+          "key": 4,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "34:18",
+            "51:18",
+            "68:18",
+            "85:18",
+            "17:18"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            34,
+            51,
+            68,
+            85,
+            17
+          ],
+          "residual_cursors": [
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        34,
+        51,
+        68,
+        85
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          17,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 35,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        34
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 34,
+          "leader": 34,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            51,
+            68,
+            85,
+            17,
+            34
+          ],
+          "residual_cursors": [
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        51,
+        68,
+        85,
+        17
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          34,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 36,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        34,
+        35
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 34,
+          "leader": 34,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            51,
+            68,
+            85,
+            17,
+            34
+          ],
+          "residual_cursors": [
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 35,
+          "leader": 35,
+          "key": 4,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "51:35",
+            "68:35",
+            "85:35",
+            "17:35",
+            "34:35"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            51,
+            68,
+            85,
+            17,
+            34
+          ],
+          "residual_cursors": [
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        51,
+        68,
+        85,
+        17
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          34,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 52,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        51
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 51,
+          "leader": 51,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            68,
+            85,
+            17,
+            34,
+            51
+          ],
+          "residual_cursors": [
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        68,
+        85,
+        17,
+        34
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          51,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 53,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        51,
+        52
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 51,
+          "leader": 51,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            68,
+            85,
+            17,
+            34,
+            51
+          ],
+          "residual_cursors": [
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 52,
+          "leader": 52,
+          "key": 4,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "68:52",
+            "85:52",
+            "17:52",
+            "34:52",
+            "51:52"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            68,
+            85,
+            17,
+            34,
+            51
+          ],
+          "residual_cursors": [
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        68,
+        85,
+        17,
+        34
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          51,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 69,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        68
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 68,
+          "leader": 68,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            85,
+            17,
+            34,
+            51,
+            68
+          ],
+          "residual_cursors": [
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        85,
+        17,
+        34,
+        51
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          68,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 70,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        68,
+        69
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 68,
+          "leader": 68,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            85,
+            17,
+            34,
+            51,
+            68
+          ],
+          "residual_cursors": [
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 69,
+          "leader": 69,
+          "key": 4,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "85:69",
+            "17:69",
+            "34:69",
+            "51:69",
+            "68:69"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            85,
+            17,
+            34,
+            51,
+            68
+          ],
+          "residual_cursors": [
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        85,
+        17,
+        34,
+        51
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          68,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 86,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        85
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 85,
+          "leader": 85,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            17,
+            34,
+            51,
+            68,
+            85
+          ],
+          "residual_cursors": [
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          85,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 12,
+      "cut": 87,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        85,
+        86
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 85,
+          "leader": 85,
+          "key": 6,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            17,
+            34,
+            51,
+            68,
+            85
+          ],
+          "residual_cursors": [
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 86,
+          "leader": 86,
+          "key": 4,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "17:86",
+            "34:86",
+            "51:86",
+            "68:86",
+            "85:86"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            17,
+            34,
+            51,
+            68,
+            85
+          ],
+          "residual_cursors": [
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          85,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 18,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        17
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 17,
+          "leader": 17,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            34,
+            51,
+            68,
+            85,
+            17
+          ],
+          "residual_cursors": [
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        34,
+        51,
+        68,
+        85
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          17,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 19,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        17,
+        18
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 17,
+          "leader": 17,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            34,
+            51,
+            68,
+            85,
+            17
+          ],
+          "residual_cursors": [
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 18,
+          "leader": 18,
+          "key": 10,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "34:18",
+            "51:18",
+            "68:18",
+            "85:18",
+            "17:18"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            34,
+            51,
+            68,
+            85,
+            17
+          ],
+          "residual_cursors": [
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        34,
+        51,
+        68,
+        85
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          17,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 35,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        34
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 34,
+          "leader": 34,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            51,
+            68,
+            85,
+            17,
+            34
+          ],
+          "residual_cursors": [
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        51,
+        68,
+        85,
+        17
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          34,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 36,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        34,
+        35
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 34,
+          "leader": 34,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            51,
+            68,
+            85,
+            17,
+            34
+          ],
+          "residual_cursors": [
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 35,
+          "leader": 35,
+          "key": 10,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "51:35",
+            "68:35",
+            "85:35",
+            "17:35",
+            "34:35"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            51,
+            68,
+            85,
+            17,
+            34
+          ],
+          "residual_cursors": [
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        51,
+        68,
+        85,
+        17
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          34,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 52,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        51
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 51,
+          "leader": 51,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            68,
+            85,
+            17,
+            34,
+            51
+          ],
+          "residual_cursors": [
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        68,
+        85,
+        17,
+        34
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          51,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 53,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        51,
+        52
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 51,
+          "leader": 51,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            68,
+            85,
+            17,
+            34,
+            51
+          ],
+          "residual_cursors": [
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 52,
+          "leader": 52,
+          "key": 10,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "68:52",
+            "85:52",
+            "17:52",
+            "34:52",
+            "51:52"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            68,
+            85,
+            17,
+            34,
+            51
+          ],
+          "residual_cursors": [
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        68,
+        85,
+        17,
+        34
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          51,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 69,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        68
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 68,
+          "leader": 68,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            85,
+            17,
+            34,
+            51,
+            68
+          ],
+          "residual_cursors": [
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        85,
+        17,
+        34,
+        51
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          68,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 70,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -3,
+        -3
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": -4,
+      "busy_blocks": [
+        68,
+        69
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 68,
+          "leader": 68,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            85,
+            17,
+            34,
+            51,
+            68
+          ],
+          "residual_cursors": [
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 69,
+          "leader": 69,
+          "key": 10,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "85:69",
+            "17:69",
+            "34:69",
+            "51:69",
+            "68:69"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            85,
+            17,
+            34,
+            51,
+            68
+          ],
+          "residual_cursors": [
+            [
+              85,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        85,
+        17,
+        34,
+        51
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          68,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 86,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "last_minimum_offset": 101,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        85
+      ],
+      "busy_steps": [
+        {
+          "turn": 101,
+          "block": 85,
+          "leader": 85,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            17,
+            34,
+            51,
+            68,
+            85
+          ],
+          "residual_cursors": [
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1
+      ],
+      "paid_source_history_before_busy": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          85,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    },
+    {
+      "case": 13,
+      "cut": 87,
+      "prefix_sums": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "last_minimum_offset": 100,
+      "minimum_prefix_value": 0,
+      "busy_blocks": [
+        85,
+        86
+      ],
+      "busy_steps": [
+        {
+          "turn": 100,
+          "block": 85,
+          "leader": 85,
+          "key": 8,
+          "delta": 1,
+          "C": 2,
+          "q": 3,
+          "fact_ids": [],
+          "minimum_ceiling": null,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 1,
+          "debt_before": 0,
+          "debt_after": 1,
+          "history": [
+            17,
+            34,
+            51,
+            68,
+            85
+          ],
+          "residual_cursors": [
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        },
+        {
+          "turn": 101,
+          "block": 86,
+          "leader": 86,
+          "key": 10,
+          "delta": 0,
+          "C": 2,
+          "q": 2,
+          "fact_ids": [
+            "17:86",
+            "34:86",
+            "51:86",
+            "68:86",
+            "85:86"
+          ],
+          "minimum_ceiling": 2,
+          "reservation": 2,
+          "certified_offer": 0,
+          "reserved_loss": 0,
+          "x": 0,
+          "debt_before": 1,
+          "debt_after": 1,
+          "history": [
+            17,
+            34,
+            51,
+            68,
+            85
+          ],
+          "residual_cursors": [
+            [
+              17,
+              1
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              85,
+              0
+            ]
+          ],
+          "loans": [],
+          "lent": 0,
+          "retired_unused": 0
+        }
+      ],
+      "relative_busy_prefix_balances": [
+        1,
+        1
+      ],
+      "paid_source_history_before_busy": [
+        17,
+        34,
+        51,
+        68
+      ],
+      "terminal_debt": 1,
+      "positive_excess": 1,
+      "certified_offer_sum": 0,
+      "source_delta_sum": 1,
+      "reserved_loss_sum": 0,
+      "loss_class": "source-positive open suffix",
+      "unpaid_demands": [
+        [
+          0,
+          85,
+          2
+        ]
+      ],
+      "all_lendable_suffix_units_spent_while_busy": true,
+      "reset_history_at_busy_start": false,
+      "prefix_units_imported": false,
+      "whole_cycle_FI_rejection_claimed": false
+    }
+  ],
+  "certificate_count": 44,
+  "all_keep_original_full_cut_history": true
+}

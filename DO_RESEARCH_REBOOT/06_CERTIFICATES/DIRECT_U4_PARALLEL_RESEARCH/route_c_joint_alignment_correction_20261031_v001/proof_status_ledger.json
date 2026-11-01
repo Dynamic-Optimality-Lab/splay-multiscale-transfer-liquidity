@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-31",
+  "results": [
+    {
+      "claim": "Explicit nonnegative unbounded joint R_joint=mu_r times different-root indicator",
+      "status": "SOURCE DEFINITION",
+      "source": "JA01_JOINT_CONSTRUCTION_AND_PARTIAL_LAWS.md"
+    },
+    {
+      "claim": "H DELETE bound when source roots differ, and root-no-op case",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "proof": "JA01_JOINT_CONSTRUCTION_AND_PARTIAL_LAWS.md"
+    },
+    {
+      "claim": "Registered all-size drift/zero-double repairs, opposite vines and arbitrary-fringe whole helpers for H",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "proof": "JA01_JOINT_CONSTRUCTION_AND_PARTIAL_LAWS.md"
+    },
+    {
+      "claim": "Universal DELETE bound for H",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "JA02_EQUAL_ROOT_DELETE_AND_CLASS_OBSTRUCTION.md",
+      "counterexample": {
+        "n": 6,
+        "a": 1,
+        "q": 0,
+        "H_source": 1,
+        "H_destination": 5,
+        "budget": 2
+      }
+    },
+    {
+      "claim": "A nonnegative joint R vanishing on every equal-root pair can satisfy full DELETE for P+R",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "JA02_EQUAL_ROOT_DELETE_AND_CLASS_OBSTRUCTION.md",
+      "qualification": "does not exclude signed R or R(A,A)=0 alone"
+    },
+    {
+      "claim": "Seven controls/reflections, inherited local P duals and physical paired closure",
+      "status": "FINITE-EXACT",
+      "certificate": "joint_alignment_certificate.json",
+      "audit": "independent_audit.json"
+    },
+    {
+      "claim": "Full universal root-conditioned B q-law for H",
+      "status": "OPEN",
+      "qualification": "not established or refuted in this run; stopped after DELETE refutation"
+    },
+    {
+      "claim": "Explicit unbounded joint correction satisfying both universal bounds",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN"
+    }
+  ],
+  "before": "Scalar metric envelopes and scalar B-maximum normalizations refuted; generic joint correction open",
+  "result": "Joint correction passes old controls, fails equal-root DELETE; nonnegative equal-root-zero class excluded",
+  "after": "Generic joint correction and CD remain open",
+  "original_load_bearing_obligations_discharged": [],
+  "new_assumptions_for_original_theorem": [],
+  "net_full_original_proof_advancement": 0,
+  "strategy_review": "JA03_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null
+}

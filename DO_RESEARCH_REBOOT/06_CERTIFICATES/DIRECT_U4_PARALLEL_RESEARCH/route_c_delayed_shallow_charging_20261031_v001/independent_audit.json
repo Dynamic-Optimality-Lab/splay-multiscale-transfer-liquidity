@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "date": "2026-10-31",
+  "complete_cycle_source_rows": 90,
+  "complete_reachability_prefix_rows": 8,
+  "pointer_source_accesses": 186,
+  "exact_credit_assignments": 46,
+  "cyclic_cuts_verified": 90,
+  "depth_tax_controls": 6,
+  "zero_double_zig_changes_verified": 2,
+  "no_credit_reuse": true,
+  "canonical_first_payers_verified": true,
+  "disjoint_intervals_verified": true,
+  "source_reachability_and_pair_closure": true,
+  "strict_extension_of_SC": true,
+  "preserved_SC_witnesses": 2,
+  "witnesses": [
+    {
+      "name": "genuine_B_delayed_child_payer",
+      "A": 30,
+      "Q_B": 12,
+      "Z_B": 16,
+      "weight": 48,
+      "old_SC": false
+    },
+    {
+      "name": "genuine_B_delayed_child_payer_reflection",
+      "A": 30,
+      "Q_B": 12,
+      "Z_B": 16,
+      "weight": 48,
+      "old_SC": false
+    },
+    {
+      "name": "preserved_old_child_successor",
+      "A": 31,
+      "Q_B": 11,
+      "Z_B": 16,
+      "weight": 51,
+      "old_SC": true
+    },
+    {
+      "name": "preserved_old_child_successor_reflection",
+      "A": 31,
+      "Q_B": 11,
+      "Z_B": 16,
+      "weight": 51,
+      "old_SC": true
+    }
+  ],
+  "producer_imported": false,
+  "allocation_optimizer_used": false,
+  "old_recognizers_executed": false,
+  "serialization_only_v002_correction_verified": true,
+  "initial_failed_artifacts_preserved": true,
+  "all_size_theorem": "analytic proof in DS01; no finite extrapolation",
+  "restricted_class": "PROVED—RESTRICTED DOMAIN",
+  "universal_CD": "OPEN",
+  "matching_terminal_line": "FROZEN",
+  "finite_fits": 0,
+  "larger_finite_sizes": 0,
+  "certificate_sha256": "264d91e8dc6ea524cf1a242ecd871dda7ef65f1708baac4200957ed4a0d45809"
+}

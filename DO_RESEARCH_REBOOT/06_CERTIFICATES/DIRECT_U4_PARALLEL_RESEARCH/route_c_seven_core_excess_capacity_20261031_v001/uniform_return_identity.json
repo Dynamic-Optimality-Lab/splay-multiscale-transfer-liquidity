@@ -1,0 +1,904 @@
+{
+  "status": "PROVED—RESTRICTED DOMAIN",
+  "quantifiers": "For every integer m>=0 and every untouched BST fringe F with keys greater than7, including empty F",
+  "initial": "(R_[1,7] with F at7.right, same tree)",
+  "prefix": [
+    {
+      "mode": "DELETE",
+      "key": 3
+    },
+    {
+      "mode": "DELETE",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 6
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    }
+  ],
+  "loop": [
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 6
+    },
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    },
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 6
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    }
+  ],
+  "exit": [
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 6
+    },
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    }
+  ],
+  "loop_start_pair": [
+    60,
+    94
+  ],
+  "identity": "prefix * W^m * exit returns the exact initial A/B pair",
+  "E": "2+2m",
+  "C_D": 4,
+  "G_B": "2+3m",
+  "J_B": "m",
+  "A": "24+36m",
+  "Q_B": "21+31m",
+  "Z_B": "8+13m",
+  "actions": "19+24m",
+  "physical_resets": 2,
+  "reset_a_values": [
+    1,
+    1
+  ],
+  "threshold": "all m>=5 satisfy E>C_D and G_B,J_B>=5",
+  "all_size_specialization": "For every n>=7 choose F=R_[8,n]; no new finite sizes replayed",
+  "reflection": "reverse key order, swap children, and reflect grouped events",
+  "J_boundary_values": {
+    "last_prefix_q": 1,
+    "first_W_q": 3,
+    "last_W_q": 1,
+    "first_exit_q": 3
+  },
+  "recurrent_R7_inputs": [
+    {
+      "state": 164,
+      "source_pair": [
+        0,
+        6
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        346
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 589,
+      "source_pair": [
+        0,
+        15
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        347
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 593,
+      "source_pair": [
+        0,
+        1
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        313
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 654,
+      "source_pair": [
+        0,
+        16
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        350
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 656,
+      "source_pair": [
+        0,
+        2
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        314
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 672,
+      "source_pair": [
+        0,
+        5
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        315
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 1875,
+      "source_pair": [
+        0,
+        14
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        317
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 2349,
+      "source_pair": [
+        0,
+        7
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        348
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 3832,
+      "source_pair": [
+        0,
+        48
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        322
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 3840,
+      "source_pair": [
+        0,
+        43
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        355
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 4021,
+      "source_pair": [
+        0,
+        47
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        357
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 4052,
+      "source_pair": [
+        0,
+        44
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        356
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 4858,
+      "source_pair": [
+        0,
+        49
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        330
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 4941,
+      "source_pair": [
+        0,
+        42
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        319
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 9208,
+      "source_pair": [
+        0,
+        8
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        349
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 10232,
+      "source_pair": [
+        0,
+        3
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        344
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 10386,
+      "source_pair": [
+        0,
+        22
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        321
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 11080,
+      "source_pair": [
+        0,
+        21
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        352
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 12497,
+      "source_pair": [
+        0,
+        50
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        331
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 12919,
+      "source_pair": [
+        0,
+        4
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        345
+      ],
+      "destination_state": 0,
+      "diagonal_destination": false
+    },
+    {
+      "state": 13881,
+      "source_pair": [
+        0,
+        19
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 2,
+      "destination_pair": [
+        428,
+        351
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 14424,
+      "source_pair": [
+        0,
+        17
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        316
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 15070,
+      "source_pair": [
+        0,
+        20
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        320
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 15090,
+      "source_pair": [
+        0,
+        45
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        318
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 15537,
+      "source_pair": [
+        0,
+        18
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        317
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 16554,
+      "source_pair": [
+        0,
+        9
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        311
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 17050,
+      "source_pair": [
+        0,
+        46
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        319
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 17269,
+      "source_pair": [
+        0,
+        11
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        313
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 17329,
+      "source_pair": [
+        0,
+        10
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        312
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 17459,
+      "source_pair": [
+        0,
+        51
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        353
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 17845,
+      "source_pair": [
+        0,
+        53
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        355
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 17885,
+      "source_pair": [
+        0,
+        52
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        354
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 18020,
+      "source_pair": [
+        0,
+        13
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        315
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    },
+    {
+      "state": 18327,
+      "source_pair": [
+        0,
+        55
+      ],
+      "DELETE_costs": [
+        1,
+        1
+      ],
+      "actual_B_q_on_7": 1,
+      "destination_pair": [
+        428,
+        357
+      ],
+      "destination_state": null,
+      "diagonal_destination": false
+    }
+  ],
+  "arbitrary_n_non_diagonal_cycle_claimed": false,
+  "immediate_spare_helpers_for_H5": [
+    {
+      "demand_occurrence": 2,
+      "helper_occurrence": 3,
+      "demand_excess": 1,
+      "helper_actual_spare": 1
+    },
+    {
+      "demand_occurrence": 8,
+      "helper_occurrence": 9,
+      "demand_excess": 1,
+      "helper_actual_spare": 2
+    },
+    {
+      "demand_occurrence": 16,
+      "helper_occurrence": 17,
+      "demand_excess": 1,
+      "helper_actual_spare": 1
+    },
+    {
+      "demand_occurrence": 32,
+      "helper_occurrence": 33,
+      "demand_excess": 1,
+      "helper_actual_spare": 2
+    },
+    {
+      "demand_occurrence": 40,
+      "helper_occurrence": 41,
+      "demand_excess": 1,
+      "helper_actual_spare": 1
+    },
+    {
+      "demand_occurrence": 56,
+      "helper_occurrence": 57,
+      "demand_excess": 1,
+      "helper_actual_spare": 2
+    },
+    {
+      "demand_occurrence": 64,
+      "helper_occurrence": 65,
+      "demand_excess": 1,
+      "helper_actual_spare": 1
+    },
+    {
+      "demand_occurrence": 80,
+      "helper_occurrence": 81,
+      "demand_excess": 1,
+      "helper_actual_spare": 2
+    },
+    {
+      "demand_occurrence": 88,
+      "helper_occurrence": 89,
+      "demand_excess": 1,
+      "helper_actual_spare": 1
+    },
+    {
+      "demand_occurrence": 104,
+      "helper_occurrence": 105,
+      "demand_excess": 1,
+      "helper_actual_spare": 2
+    },
+    {
+      "demand_occurrence": 112,
+      "helper_occurrence": 113,
+      "demand_excess": 1,
+      "helper_actual_spare": 1
+    },
+    {
+      "demand_occurrence": 128,
+      "helper_occurrence": 129,
+      "demand_excess": 1,
+      "helper_actual_spare": 1
+    }
+  ],
+  "new_original_CD_walk_class_settled": false,
+  "FI_acceptance": "NOT CLASSIFIED",
+  "UD_rejection_every_cut": "NOT ESTABLISHED",
+  "matching_terminal_line": "FROZEN",
+  "universal_CD": "OPEN"
+}

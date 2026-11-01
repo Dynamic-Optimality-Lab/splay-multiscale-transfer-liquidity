@@ -1,0 +1,157 @@
+{
+  "status": "FIXED_ZERO_OFFER_RETURN_MECHANISM_REFUTED",
+  "fixed_return_sha256": "b9edacb0ff0d24b5b13b77ac646482cd59cfe2e01a6db07364af2894dbcdabfe",
+  "completion_scope_sha256": "382a87c552605e8dfd02a305fe698c4ab10ac990b0ae22ab7e9733f301a68a1d",
+  "boundary_state": 4327,
+  "core_successors": [
+    {
+      "key": 2,
+      "target": 520,
+      "target_pair": [
+        134,
+        148
+      ],
+      "a": 1,
+      "q": 0,
+      "delta": -2,
+      "C": 2,
+      "old_ceiling": 1,
+      "old_offer": 1,
+      "diagonal_destination": false
+    },
+    {
+      "key": 3,
+      "target": 930,
+      "target_pair": [
+        176,
+        176
+      ],
+      "a": 1,
+      "q": 1,
+      "delta": -1,
+      "C": 2,
+      "old_ceiling": 2,
+      "old_offer": 0,
+      "diagonal_destination": true
+    },
+    {
+      "key": 4,
+      "target": 2002,
+      "target_pair": [
+        219,
+        214
+      ],
+      "a": 1,
+      "q": 1,
+      "delta": -1,
+      "C": 2,
+      "old_ceiling": 1,
+      "old_offer": 1,
+      "diagonal_destination": false
+    },
+    {
+      "key": 5,
+      "target": 224,
+      "target_pair": [
+        241,
+        239
+      ],
+      "a": 2,
+      "q": 2,
+      "delta": -2,
+      "C": 4,
+      "old_ceiling": 2,
+      "old_offer": 2,
+      "diagonal_destination": false
+    },
+    {
+      "key": 6,
+      "target": 756,
+      "target_pair": [
+        263,
+        262
+      ],
+      "a": 2,
+      "q": 1,
+      "delta": -3,
+      "C": 4,
+      "old_ceiling": 2,
+      "old_offer": 2,
+      "diagonal_destination": false
+    },
+    {
+      "key": 7,
+      "target": 7566,
+      "target_pair": [
+        356,
+        350
+      ],
+      "a": 2,
+      "q": 2,
+      "delta": -2,
+      "C": 4,
+      "old_ceiling": 2,
+      "old_offer": 2,
+      "diagonal_destination": false
+    }
+  ],
+  "root_noop_key": 1,
+  "fringe_depth_formulas": {
+    "variable": "f=depth within F>=0",
+    "current_d_A": "5+f",
+    "current_d_B": "5+f",
+    "post_anchor_h": "2+f",
+    "first_entry_role": "grandparent outer fringe in final LR",
+    "old_U": "4+f",
+    "old_ceiling_at_k2": "floor((4+f)/2)+1",
+    "even_f": {
+      "f": "2u",
+      "u_domain": "nonnegative integers",
+      "C": [
+        6,
+        2
+      ],
+      "q": [
+        2,
+        1
+      ],
+      "ceiling": [
+        3,
+        1
+      ],
+      "offer": [
+        3,
+        1
+      ]
+    },
+    "odd_f": {
+      "f": "2u+1",
+      "u_domain": "nonnegative integers",
+      "C": [
+        6,
+        2
+      ],
+      "q": [
+        3,
+        1
+      ],
+      "ceiling": [
+        3,
+        1
+      ],
+      "offer": [
+        3,
+        1
+      ]
+    },
+    "coefficient_format": "[constant,coefficient of u]",
+    "minimum_offer": 3
+  },
+  "closed_source_dichotomy": "next KEEP pays or synchronizes; leaving diagonal regime before any positive/unequal return requires a KEEP-less block, which offers>=2",
+  "excluded_run_pattern": "positive source anchor4676 followed by KEEP-containing blocks4,1",
+  "excluded_run_bound": "T_i>=e_i=1, hence g_i<=0 on every closed source continuation in this embedding",
+  "arbitrary_upper_fringe": true,
+  "no_new_source_word_search_after_failure": true,
+  "strict_new_closed_walk_PF_coverage": "NOT ESTABLISHED",
+  "universal_CD": "OPEN"
+}

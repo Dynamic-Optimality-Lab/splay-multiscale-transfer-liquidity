@@ -1,0 +1,1076 @@
+{
+  "schema": "source-spine-coupling-obstruction-v1",
+  "date": "2026-10-31",
+  "frames": [
+    {
+      "case": "LL",
+      "before_template": [
+        "g",
+        [
+          "p",
+          [
+            "x",
+            "A",
+            "B"
+          ],
+          "C"
+        ],
+        "D"
+      ],
+      "after_template": [
+        "x",
+        "A",
+        [
+          "p",
+          "B",
+          [
+            "g",
+            "C",
+            "D"
+          ]
+        ]
+      ],
+      "pivot_keys": {
+        "g": 10,
+        "p": 7,
+        "x": 3
+      },
+      "source_right_spine": [
+        "g",
+        "RS(D)"
+      ],
+      "destination_right_spine": [
+        "x",
+        "p",
+        "g",
+        "RS(D)"
+      ],
+      "removed_pivot_tokens": [],
+      "old_greater_pivots_retained": [
+        "g"
+      ],
+      "arbitrary_fringe_spine_suffix_unchanged": true,
+      "elementary_rotations": 2,
+      "source_B": [
+        10,
+        [
+          7,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ],
+          [
+            9,
+            [
+              8,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          12,
+          [
+            11,
+            null,
+            null
+          ],
+          [
+            13,
+            null,
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          7,
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ],
+          [
+            10,
+            [
+              9,
+              [
+                8,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              12,
+              [
+                11,
+                null,
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "access_key": 3,
+      "d": 2,
+      "events": [
+        [
+          "LL",
+          3,
+          10,
+          "-"
+        ]
+      ],
+      "q": 1,
+      "z": 0
+    },
+    {
+      "case": "RR",
+      "before_template": [
+        "g",
+        "A",
+        [
+          "p",
+          "B",
+          [
+            "x",
+            "C",
+            "D"
+          ]
+        ]
+      ],
+      "after_template": [
+        "x",
+        [
+          "p",
+          [
+            "g",
+            "A",
+            "B"
+          ],
+          "C"
+        ],
+        "D"
+      ],
+      "pivot_keys": {
+        "g": 3,
+        "p": 7,
+        "x": 10
+      },
+      "source_right_spine": [
+        "g",
+        "p",
+        "x",
+        "RS(D)"
+      ],
+      "destination_right_spine": [
+        "x",
+        "RS(D)"
+      ],
+      "removed_pivot_tokens": [
+        "g",
+        "p"
+      ],
+      "old_greater_pivots_retained": [],
+      "arbitrary_fringe_spine_suffix_unchanged": true,
+      "elementary_rotations": 2,
+      "source_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          7,
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ],
+          [
+            10,
+            [
+              9,
+              [
+                8,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              12,
+              [
+                11,
+                null,
+                null
+              ],
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        10,
+        [
+          7,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ],
+          [
+            9,
+            [
+              8,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          12,
+          [
+            11,
+            null,
+            null
+          ],
+          [
+            13,
+            null,
+            null
+          ]
+        ]
+      ],
+      "access_key": 10,
+      "d": 2,
+      "events": [
+        [
+          "RR",
+          3,
+          10,
+          "-"
+        ]
+      ],
+      "q": 1,
+      "z": 0
+    },
+    {
+      "case": "LR",
+      "before_template": [
+        "g",
+        [
+          "p",
+          "A",
+          [
+            "x",
+            "B",
+            "C"
+          ]
+        ],
+        "D"
+      ],
+      "after_template": [
+        "x",
+        [
+          "p",
+          "A",
+          "B"
+        ],
+        [
+          "g",
+          "C",
+          "D"
+        ]
+      ],
+      "pivot_keys": {
+        "g": 10,
+        "p": 3,
+        "x": 7
+      },
+      "source_right_spine": [
+        "g",
+        "RS(D)"
+      ],
+      "destination_right_spine": [
+        "x",
+        "g",
+        "RS(D)"
+      ],
+      "removed_pivot_tokens": [],
+      "old_greater_pivots_retained": [
+        "g"
+      ],
+      "arbitrary_fringe_spine_suffix_unchanged": true,
+      "elementary_rotations": 2,
+      "source_B": [
+        10,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            7,
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              [
+                6,
+                null,
+                null
+              ]
+            ],
+            [
+              9,
+              [
+                8,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        [
+          12,
+          [
+            11,
+            null,
+            null
+          ],
+          [
+            13,
+            null,
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        7,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        [
+          10,
+          [
+            9,
+            [
+              8,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            12,
+            [
+              11,
+              null,
+              null
+            ],
+            [
+              13,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "access_key": 7,
+      "d": 2,
+      "events": [
+        [
+          "LR",
+          3,
+          10,
+          "-"
+        ]
+      ],
+      "q": 1,
+      "z": 0
+    },
+    {
+      "case": "RL",
+      "before_template": [
+        "g",
+        "A",
+        [
+          "p",
+          [
+            "x",
+            "B",
+            "C"
+          ],
+          "D"
+        ]
+      ],
+      "after_template": [
+        "x",
+        [
+          "g",
+          "A",
+          "B"
+        ],
+        [
+          "p",
+          "C",
+          "D"
+        ]
+      ],
+      "pivot_keys": {
+        "g": 3,
+        "p": 10,
+        "x": 7
+      },
+      "source_right_spine": [
+        "g",
+        "p",
+        "RS(D)"
+      ],
+      "destination_right_spine": [
+        "x",
+        "p",
+        "RS(D)"
+      ],
+      "removed_pivot_tokens": [
+        "g"
+      ],
+      "old_greater_pivots_retained": [
+        "p"
+      ],
+      "arbitrary_fringe_spine_suffix_unchanged": true,
+      "elementary_rotations": 2,
+      "source_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          10,
+          [
+            7,
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              [
+                6,
+                null,
+                null
+              ]
+            ],
+            [
+              9,
+              [
+                8,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            12,
+            [
+              11,
+              null,
+              null
+            ],
+            [
+              13,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        7,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        [
+          10,
+          [
+            9,
+            [
+              8,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            12,
+            [
+              11,
+              null,
+              null
+            ],
+            [
+              13,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "access_key": 7,
+      "d": 2,
+      "events": [
+        [
+          "RL",
+          3,
+          10,
+          "-"
+        ]
+      ],
+      "q": 1,
+      "z": 0
+    },
+    {
+      "case": "ZIG_L",
+      "before_template": [
+        "g",
+        [
+          "x",
+          "A",
+          "B"
+        ],
+        "C"
+      ],
+      "after_template": [
+        "x",
+        "A",
+        [
+          "g",
+          "B",
+          "C"
+        ]
+      ],
+      "pivot_keys": {
+        "g": 7,
+        "x": 3
+      },
+      "source_right_spine": [
+        "g",
+        "RS(C)"
+      ],
+      "destination_right_spine": [
+        "x",
+        "g",
+        "RS(C)"
+      ],
+      "removed_pivot_tokens": [],
+      "old_greater_pivots_retained": [
+        "g"
+      ],
+      "arbitrary_fringe_spine_suffix_unchanged": true,
+      "elementary_rotations": 1,
+      "source_B": [
+        7,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        [
+          11,
+          [
+            9,
+            [
+              8,
+              null,
+              null
+            ],
+            [
+              10,
+              null,
+              null
+            ]
+          ],
+          [
+            13,
+            [
+              12,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          7,
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ],
+          [
+            11,
+            [
+              9,
+              [
+                8,
+                null,
+                null
+              ],
+              [
+                10,
+                null,
+                null
+              ]
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "access_key": 3,
+      "d": 1,
+      "events": [
+        [
+          "ZIG",
+          3,
+          7,
+          "L"
+        ]
+      ],
+      "q": 0,
+      "z": 1
+    },
+    {
+      "case": "ZIG_R",
+      "before_template": [
+        "g",
+        "A",
+        [
+          "x",
+          "B",
+          "C"
+        ]
+      ],
+      "after_template": [
+        "x",
+        [
+          "g",
+          "A",
+          "B"
+        ],
+        "C"
+      ],
+      "pivot_keys": {
+        "g": 3,
+        "x": 7
+      },
+      "source_right_spine": [
+        "g",
+        "x",
+        "RS(C)"
+      ],
+      "destination_right_spine": [
+        "x",
+        "RS(C)"
+      ],
+      "removed_pivot_tokens": [
+        "g"
+      ],
+      "old_greater_pivots_retained": [],
+      "arbitrary_fringe_spine_suffix_unchanged": true,
+      "elementary_rotations": 1,
+      "source_B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          7,
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ],
+          [
+            11,
+            [
+              9,
+              [
+                8,
+                null,
+                null
+              ],
+              [
+                10,
+                null,
+                null
+              ]
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        7,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        [
+          11,
+          [
+            9,
+            [
+              8,
+              null,
+              null
+            ],
+            [
+              10,
+              null,
+              null
+            ]
+          ],
+          [
+            13,
+            [
+              12,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "access_key": 7,
+      "d": 1,
+      "events": [
+        [
+          "ZIG",
+          3,
+          7,
+          "R"
+        ]
+      ],
+      "q": 0,
+      "z": 1
+    }
+  ],
+  "symbolic_status": "six source frame identities with arbitrary-fringe suffixes",
+  "global_right_rotation_removes_old_spine_vertices": 0,
+  "global_left_rotation_removes_at_most_old_spine_vertices": 1,
+  "per_splay_elementary_rotations": "2*q+z <= 2*a",
+  "post_KEEP12_processed_spine_vertices": 2,
+  "descending_KEEP_additions": 11,
+  "hot_13_depth_lower_bound": "12-2*T",
+  "integer_case_table": [
+    {
+      "pure_A_grouped_events": 0,
+      "d_A13_lower_bound": 12,
+      "a13_lower_bound": 6,
+      "e13_upper_bound": 0,
+      "e11_upper_bound": 0,
+      "E_cell_upper_bound": 0,
+      "C_D_cell": 0
+    },
+    {
+      "pure_A_grouped_events": 1,
+      "d_A13_lower_bound": 10,
+      "a13_lower_bound": 5,
+      "e13_upper_bound": 0,
+      "e11_upper_bound": 1,
+      "E_cell_upper_bound": 1,
+      "C_D_cell": 2
+    },
+    {
+      "pure_A_grouped_events": 2,
+      "d_A13_lower_bound": 8,
+      "a13_lower_bound": 4,
+      "e13_upper_bound": 0,
+      "e11_upper_bound": 1,
+      "E_cell_upper_bound": 1,
+      "C_D_cell": 4
+    },
+    {
+      "pure_A_grouped_events": 3,
+      "d_A13_lower_bound": 6,
+      "a13_lower_bound": 3,
+      "e13_upper_bound": 0,
+      "e11_upper_bound": 1,
+      "E_cell_upper_bound": 1,
+      "C_D_cell": 6
+    },
+    {
+      "pure_A_grouped_events": 4,
+      "d_A13_lower_bound": 4,
+      "a13_lower_bound": 2,
+      "e13_upper_bound": 2,
+      "e11_upper_bound": 1,
+      "E_cell_upper_bound": 3,
+      "C_D_cell": 8
+    },
+    {
+      "pure_A_grouped_events": 5,
+      "d_A13_lower_bound": 2,
+      "a13_lower_bound": 1,
+      "e13_upper_bound": 4,
+      "e11_upper_bound": 1,
+      "E_cell_upper_bound": 5,
+      "C_D_cell": 10
+    }
+  ],
+  "tail_case": {
+    "T_at_least": 6,
+    "E_cell_at_most": 5,
+    "C_D_cell_at_least": 12
+  },
+  "two_one_StepEv_reset_result": {
+    "T_total": 2,
+    "C_D": 4,
+    "a13_at_least": 4,
+    "E_at_most": 1,
+    "E_greater_than_C_D_possible": false
+  },
+  "positive_powers_and_arbitrary_A_insertions": "analytic cell proof: E<=C_D",
+  "requested_fixed_word_coupling": "REFUTED—EXACT by source structural obstruction",
+  "actual_FI_UD_cut_trials": 0,
+  "word_searches": 0,
+  "larger_finite_fits": 0
+}

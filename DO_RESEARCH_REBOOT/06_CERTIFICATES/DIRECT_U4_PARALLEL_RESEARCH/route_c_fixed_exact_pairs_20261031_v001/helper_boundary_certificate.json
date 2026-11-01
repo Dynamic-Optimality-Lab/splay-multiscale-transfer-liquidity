@@ -1,0 +1,58 @@
+{
+  "kind": "symbolic core and boundary-port rank identity, not a finite fringe fit",
+  "ordering_nonempty": "c1<c2<c3<c4<l<=h<c5<c6; min is compared only with min, max only with max",
+  "empty_substitution": {"l": "c5", "h": "c4"},
+  "interior": "D is the unchanged endpoint graph on C(U) and C(V) after all exact common fringe sets are fixed and removed; k=m-c_int vertices remain on each side",
+  "left_port": "one new LEFT vertex with edges to interior RIGHT vertices having minimum l",
+  "right_port": "one new RIGHT vertex with edges to interior LEFT vertices having maximum h",
+  "port_to_port_edge": false,
+  "empty_fringe_ports": "both ports are isolated",
+  "A_tables": {
+    "before": {"a1": ["c1","c1"], "a2": ["c1","c5"], "a3": ["c3","c5"], "a4": ["c4","c5"], "a5": ["l","c5"]},
+    "after": {"a1": ["c1","c1"], "a3": ["c3","c5"], "a4": ["c4","c5"], "a5": ["l","c5"], "a6": ["c3","c6"]}
+  },
+  "B_tables": {
+    "L_before": {"b1": ["c1","c3"], "b2": ["c2","c3"], "b3": ["c3","c3"], "b4": ["c1","h"], "b5": ["c1","c5"]},
+    "L_after": {"b1": ["c1","c1"], "b3": ["c3","c3"], "b4": ["c3","h"], "b5": ["c3","c6"], "b6": ["c6","c6"]},
+    "R_before": {"b1": ["c1","c1"], "b2": ["c1","c2"], "b3": ["c1","c3"], "b4": ["c1","h"], "b5": ["c1","c5"]},
+    "R_after": {"b1": ["c1","c1"], "b3": ["c3","h"], "b4": ["c4","h"], "b5": ["c3","c6"], "b6": ["c6","c6"]}
+  },
+  "reductions": [
+    {
+      "state": "L_before", "A_table": "before",
+      "forced_core_pairs": [["a2","b5"]],
+      "private_edges": [{"left":"a1","right":"b1","private_endpoint":"right"},{"left":"a3","right":"b3","private_endpoint":"right"}],
+      "remaining_left_port_ids": ["a5"], "remaining_right_port_ids": ["b4"],
+      "kernel": "LH", "core_forced_count": 1, "private_edge_count": 2,
+      "protected_rank_formula": "c_int+3+mu_LH"
+    },
+    {
+      "state": "L_after", "A_table": "after",
+      "forced_core_pairs": [["a1","b1"],["a6","b5"]],
+      "private_edges": [{"left":"a3","right":"b3","private_endpoint":"right"}],
+      "remaining_left_port_ids": ["a5"], "remaining_right_port_ids": ["b4"],
+      "kernel": "LH", "core_forced_count": 2, "private_edge_count": 1,
+      "protected_rank_formula": "c_int+3+mu_LH"
+    },
+    {
+      "state": "R_before", "A_table": "before",
+      "forced_core_pairs": [["a1","b1"],["a2","b5"]],
+      "private_edges": [],
+      "remaining_left_port_ids": ["a5"], "remaining_right_port_ids": ["b4"],
+      "kernel": "LH", "core_forced_count": 2, "private_edge_count": 0,
+      "protected_rank_formula": "c_int+2+mu_LH"
+    },
+    {
+      "state": "R_after", "A_table": "after",
+      "forced_core_pairs": [["a1","b1"],["a6","b5"]],
+      "private_edges": [{"left":"a3","right":"b3","private_endpoint":"left"},{"left":"a4","right":"b4","private_endpoint":"left"}],
+      "remaining_left_port_ids": ["a5"], "remaining_right_port_ids": [],
+      "kernel": "L", "core_forced_count": 2, "private_edge_count": 2,
+      "protected_rank_formula": "c_int+4+mu_L"
+    }
+  ],
+  "elementary_rank_bound": "0 <= mu_LH-mu_L <= 1, by adding one RIGHT vertex",
+  "helper_change_L": "0",
+  "helper_change_R": "-2+(mu_LH-mu_L), hence either -2 or -1",
+  "domain": "arbitrary finite same-key U,V; m=0 included; every internal fringe structure is untouched by the source access"
+}

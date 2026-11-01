@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "protected_graphs_verified": 38,
+  "residual_matching_cover_equalities": 38,
+  "residual_edges_covered": 84,
+  "symbolic_core_reductions_verified": 12,
+  "actual_core_tables_checked": 16,
+  "symbolic_endpoint_cases": [
+    "distinct fringe extrema",
+    "coincident fringe extrema",
+    "empty fringe"
+  ],
+  "universal_helper_rank_identities": {
+    "L": "K_before=K_after=c_int+3+mu_LH",
+    "R": "K_after-K_before=2+mu_L-mu_LH in {1,2}"
+  },
+  "one_added_right_vertex_lemma": "proved analytically in FX03, not inferred from finite controls",
+  "source_controls": 8,
+  "whole_source_edges_replayed": 22,
+  "all_oriented_events_agree": true,
+  "full_law_counterexample": {
+    "Ehat_source": 1,
+    "Ehat_destination": 2,
+    "a": 0,
+    "q": 2,
+    "delta_Ehat": 1,
+    "budget": -2
+  },
+  "closed_word_accesses": 14,
+  "actual_diagonal_pair_closure": true,
+  "closed_totals": {
+    "A": 19,
+    "Q_B": 5,
+    "Z_B": 4
+  },
+  "finite_potential_fits": 0,
+  "new_source_state_graphs": 0,
+  "CoarseDouble_refuted": false,
+  "source_certificate_sha256": "8d5132cecc8b04029430ba1310f82717e924cec39a6f96719c41fe9cf609b274",
+  "boundary_certificate_sha256": "ed269c404c768468f9f28716a58b2b206586224c8a3567e817956142b13d92f4"
+}

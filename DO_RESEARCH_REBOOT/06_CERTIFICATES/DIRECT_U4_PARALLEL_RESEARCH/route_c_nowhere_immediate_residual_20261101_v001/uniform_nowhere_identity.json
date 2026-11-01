@@ -1,0 +1,230 @@
+{
+  "status": "PROVED—RESTRICTED DOMAIN",
+  "quantifiers": "all integers m>=0, every untouched BST fringe F>7 including empty",
+  "start_pair_core_ids": [
+    0,
+    4
+  ],
+  "start_A_core": [
+    1,
+    null,
+    [
+      2,
+      null,
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ],
+  "start_B_core": [
+    1,
+    null,
+    [
+      2,
+      null,
+      [
+        3,
+        null,
+        [
+          4,
+          null,
+          [
+            7,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ]
+      ]
+    ]
+  ],
+  "prefix": [
+    {
+      "mode": "DELETE",
+      "key": 3
+    },
+    {
+      "mode": "DELETE",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 6
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    }
+  ],
+  "loop": [
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    },
+    {
+      "mode": "KEEP",
+      "key": 6
+    },
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    }
+  ],
+  "return_word": [
+    {
+      "mode": "KEEP",
+      "key": 5
+    },
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 6
+    },
+    {
+      "mode": "KEEP",
+      "key": 7
+    },
+    {
+      "mode": "KEEP",
+      "key": 2
+    },
+    {
+      "mode": "KEEP",
+      "key": 4
+    },
+    {
+      "mode": "KEEP",
+      "key": 3
+    },
+    {
+      "mode": "KEEP",
+      "key": 1
+    }
+  ],
+  "actions": "17+17m",
+  "A": "22+23m",
+  "Q_B": "18+16m",
+  "Z_B": "8+11m",
+  "E": "m",
+  "C_D": 4,
+  "G_B": "m",
+  "J_B": "m",
+  "R_imm": "m",
+  "physical_resets": 2,
+  "each_DELETE_a": 1,
+  "nowhere_diagonal": true,
+  "paired_closed": true,
+  "threshold": "every m>=5 satisfies all numerical bounds and R_imm>C_D",
+  "n_extension": "all n>=7 by replacing fringe with R_[8,n]; arbitrary fringe also permitted",
+  "source_reachability_prefix_separate": true,
+  "prefix_units_used": 0,
+  "proper_power_of_reset_word": false,
+  "simple_cycle_claimed": false,
+  "FI_acceptance": "NOT CLASSIFIED",
+  "UD_rejection_every_cut": "NOT ESTABLISHED",
+  "universal_CD": "OPEN"
+}

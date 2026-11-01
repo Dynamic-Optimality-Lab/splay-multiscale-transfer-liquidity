@@ -1,0 +1,9 @@
+# Reproducing the root restricted matching audit
+
+The producer [audit_root_matching.py](audit_root_matching.py) reads four frozen prior consumers, evaluates one new six-key DELETE source and their reflections, and constructs an explicit closed paired replay. It uses both source engines and issues matching plus equal-size vertex-cover certificates for every evaluated residual graph. It performs one n=6 single-tree connector BFS; this is not a potential fit or pair graph.
+
+The [independent verifier](independent_verify.py) imports neither the producer nor its matching algorithm nor the tuple source engine. It reconstructs all subtree sets, eligible and ineligible B vertices, forced common pairs, endpoint edges, exact dual equality, full pointer-source events and costs, shared replay states and actual paired closure. Its PASS audit binds the certificate by SHA256. Analytic all-size proofs are written in RS01-RS03, rather than inferred from finite matching checks.
+
+Both scripts write exclusively with mode x and intentionally refuse to overwrite outputs. Reproduction requires copying the scripts and RS00 gate to a fresh sibling versioned run directory under DIRECT_U4_PARALLEL_RESEARCH, retaining the same repository-relative directory depth and the existing prior inputs. From the repository root run Python -X utf8 -B with the new audit_root_matching.py path and then the new independent_verify.py path. Preserve all existing output directories. No installation is needed.
+
+For read-only delivery verification, recompute all hashes in delivery_manifest.json and the source hashes in entry_source_pins.json. The manifest excludes itself. final_integrity.json records the final source and Stage 11G comparison, tracked Git state and scope checks. The written gate hash is pinned at entry. No formal-kernel compilation or universal proof of the full-q B law is claimed.

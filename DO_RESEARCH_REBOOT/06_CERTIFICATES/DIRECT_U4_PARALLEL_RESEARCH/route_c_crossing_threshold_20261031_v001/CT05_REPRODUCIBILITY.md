@@ -1,0 +1,9 @@
+# Reproducibility of the crossing reserve audit
+
+The producer is [audit_crossing.py](audit_crossing.py). It evaluates the three source operations frozen in CT00 and their reflections, compares tuple and pointer source engines, and locates a connector using one n=4 single-tree BFS. It fits no potential values. The [independent verifier](independent_verify.py) imports neither the producer nor the tuple source; it uses the existing pointer source, reconstructs every proper interval and checks the entire chord incidence relation with a different predicate.
+
+Both programs write JSON outputs exclusively with mode x and intentionally refuse to overwrite their outputs. To reproduce, copy the scripts and the frozen CT00 gate into a fresh sibling versioned run directory under DIRECT_U4_PARALLEL_RESEARCH; preserve their depth relative to the repository and prior capped run. Run from the repository root with Python -X utf8 -B, first audit_crossing.py and then independent_verify.py, using the new paths. The producer pins current sources and all files present in the Stage 11G final-closure directory. Existing output runs must remain untouched.
+
+To verify the delivered files without changing them, recompute SHA256 hashes in delivery_manifest.json and source hashes in entry_source_pins.json. Compare the certificate SHA256 to independent_audit.json. The manifest excludes itself. final_integrity.json records the source preservation comparison and clean tracked Git state. No kernel/formal proof compilation is claimed; the universal DELETE argument and fixed-threshold class proof are written mathematical arguments with independently checked finite source witnesses.
+
+All runtime outputs, logs and scripts in this audit stay in the append-only run directory. No package installation, dependency change, Stage 11G command, larger fit or new pair graph is required.

@@ -1,0 +1,9955 @@
+{
+  "status": "FOUR_NAMED_LAWS_ACHIEVED_BUT_FULL_POTENTIAL_AND_MONOTONE_AGGREGATION_CLASS_REFUTED",
+  "candidate": "J=max(Ehat,F-t_n)=F-min(mu,t_n), t_n=max(0,floor(n/2)-2)",
+  "controls": [
+    {
+      "label": "reused_opposite_vines_6",
+      "mode": "K",
+      "key": 6,
+      "source_A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_B": [
+        6,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        null
+      ],
+      "dA": 0,
+      "dB": 5,
+      "a": 0,
+      "q": 2,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "RR",
+          4,
+          6,
+          "-"
+        ],
+        [
+          "RR",
+          2,
+          6,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          6,
+          "R"
+        ]
+      ],
+      "source_values": {
+        "F": 5,
+        "Ehat": 5,
+        "J": 5,
+        "cap": 1,
+        "graph_id": 0
+      },
+      "after_A_values": {
+        "F": 5,
+        "Ehat": 5,
+        "J": 5,
+        "cap": 1,
+        "graph_id": 0
+      },
+      "destination_values": {
+        "F": 4,
+        "Ehat": 2,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 1
+      },
+      "delta_J": -2,
+      "budget": -2,
+      "inequality_holds": true
+    },
+    {
+      "label": "reused_helper_L_m0",
+      "mode": "K",
+      "key": 2,
+      "source_A": [
+        6,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "source_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "dA": 1,
+      "dB": 4,
+      "a": 1,
+      "q": 2,
+      "z": 0,
+      "events_A": [
+        [
+          "ZIG",
+          2,
+          6,
+          "L"
+        ]
+      ],
+      "events_B": [
+        [
+          "LR",
+          1,
+          4,
+          "-"
+        ],
+        [
+          "LL",
+          2,
+          6,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 4,
+        "Ehat": 2,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 2
+      },
+      "after_A_values": {
+        "F": 5,
+        "Ehat": 2,
+        "J": 4,
+        "cap": 1,
+        "graph_id": 3
+      },
+      "destination_values": {
+        "F": 3,
+        "Ehat": 2,
+        "J": 2,
+        "cap": 1,
+        "graph_id": 4
+      },
+      "delta_J": -1,
+      "budget": 0,
+      "inequality_holds": true,
+      "meta": {
+        "family": "L",
+        "m": 0,
+        "core": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fringe_keys": [],
+        "mirror": false
+      }
+    },
+    {
+      "label": "reused_helper_R_m0",
+      "mode": "K",
+      "key": 2,
+      "source_A": [
+        6,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "source_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          5,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "dA": 1,
+      "dB": 4,
+      "a": 1,
+      "q": 2,
+      "z": 0,
+      "events_A": [
+        [
+          "ZIG",
+          2,
+          6,
+          "L"
+        ]
+      ],
+      "events_B": [
+        [
+          "LL",
+          2,
+          4,
+          "-"
+        ],
+        [
+          "LL",
+          2,
+          6,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 3,
+        "Ehat": 3,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 5
+      },
+      "after_A_values": {
+        "F": 4,
+        "Ehat": 3,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 6
+      },
+      "destination_values": {
+        "F": 3,
+        "Ehat": 1,
+        "J": 2,
+        "cap": 1,
+        "graph_id": 7
+      },
+      "delta_J": -1,
+      "budget": 0,
+      "inequality_holds": true,
+      "meta": {
+        "family": "R",
+        "m": 0,
+        "core": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fringe_keys": [],
+        "mirror": false
+      }
+    },
+    {
+      "label": "reused_helper_L_m1",
+      "mode": "K",
+      "key": 2,
+      "source_A": [
+        7,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "source_B": [
+        7,
+        [
+          6,
+          [
+            4,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          7,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          [
+            7,
+            null,
+            null
+          ]
+        ]
+      ],
+      "dA": 1,
+      "dB": 4,
+      "a": 1,
+      "q": 2,
+      "z": 0,
+      "events_A": [
+        [
+          "ZIG",
+          2,
+          7,
+          "L"
+        ]
+      ],
+      "events_B": [
+        [
+          "LR",
+          1,
+          4,
+          "-"
+        ],
+        [
+          "LL",
+          2,
+          7,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 4,
+        "Ehat": 2,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 8
+      },
+      "after_A_values": {
+        "F": 5,
+        "Ehat": 2,
+        "J": 4,
+        "cap": 1,
+        "graph_id": 9
+      },
+      "destination_values": {
+        "F": 3,
+        "Ehat": 2,
+        "J": 2,
+        "cap": 1,
+        "graph_id": 10
+      },
+      "delta_J": -1,
+      "budget": 0,
+      "inequality_holds": true,
+      "meta": {
+        "family": "L",
+        "m": 1,
+        "core": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "fringe_keys": [
+          5
+        ],
+        "mirror": false
+      }
+    },
+    {
+      "label": "reused_helper_R_m1",
+      "mode": "K",
+      "key": 2,
+      "source_A": [
+        7,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "source_B": [
+        7,
+        [
+          6,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          7,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          [
+            7,
+            null,
+            null
+          ]
+        ]
+      ],
+      "dA": 1,
+      "dB": 4,
+      "a": 1,
+      "q": 2,
+      "z": 0,
+      "events_A": [
+        [
+          "ZIG",
+          2,
+          7,
+          "L"
+        ]
+      ],
+      "events_B": [
+        [
+          "LL",
+          2,
+          4,
+          "-"
+        ],
+        [
+          "LL",
+          2,
+          7,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 3,
+        "Ehat": 3,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 11
+      },
+      "after_A_values": {
+        "F": 4,
+        "Ehat": 3,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 12
+      },
+      "destination_values": {
+        "F": 3,
+        "Ehat": 1,
+        "J": 2,
+        "cap": 1,
+        "graph_id": 13
+      },
+      "delta_J": -1,
+      "budget": 0,
+      "inequality_holds": true,
+      "meta": {
+        "family": "R",
+        "m": 1,
+        "core": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "fringe_keys": [
+          5
+        ],
+        "mirror": false
+      }
+    },
+    {
+      "label": "reused_helper_L_m0_mirror",
+      "mode": "K",
+      "key": 5,
+      "source_A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              6,
+              [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "destination_A": [
+        5,
+        [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "destination_B": [
+        5,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "dA": 1,
+      "dB": 4,
+      "a": 1,
+      "q": 2,
+      "z": 0,
+      "events_A": [
+        [
+          "ZIG",
+          1,
+          5,
+          "R"
+        ]
+      ],
+      "events_B": [
+        [
+          "RL",
+          3,
+          6,
+          "-"
+        ],
+        [
+          "RR",
+          1,
+          5,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 4,
+        "Ehat": 2,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 14
+      },
+      "after_A_values": {
+        "F": 5,
+        "Ehat": 2,
+        "J": 4,
+        "cap": 1,
+        "graph_id": 15
+      },
+      "destination_values": {
+        "F": 3,
+        "Ehat": 2,
+        "J": 2,
+        "cap": 1,
+        "graph_id": 16
+      },
+      "delta_J": -1,
+      "budget": 0,
+      "inequality_holds": true,
+      "meta": {
+        "family": "L",
+        "m": 0,
+        "core": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fringe_keys": [],
+        "mirror": true
+      }
+    },
+    {
+      "label": "reused_helper_R_m0_mirror",
+      "mode": "K",
+      "key": 5,
+      "source_A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_A": [
+        5,
+        [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "destination_B": [
+        5,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "dA": 1,
+      "dB": 4,
+      "a": 1,
+      "q": 2,
+      "z": 0,
+      "events_A": [
+        [
+          "ZIG",
+          1,
+          5,
+          "R"
+        ]
+      ],
+      "events_B": [
+        [
+          "RR",
+          3,
+          5,
+          "-"
+        ],
+        [
+          "RR",
+          1,
+          5,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 3,
+        "Ehat": 3,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 17
+      },
+      "after_A_values": {
+        "F": 4,
+        "Ehat": 3,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 18
+      },
+      "destination_values": {
+        "F": 3,
+        "Ehat": 1,
+        "J": 2,
+        "cap": 1,
+        "graph_id": 19
+      },
+      "delta_J": -1,
+      "budget": 0,
+      "inequality_holds": true,
+      "meta": {
+        "family": "R",
+        "m": 0,
+        "core": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fringe_keys": [],
+        "mirror": true
+      }
+    },
+    {
+      "label": "reused_hook_vine_full_law_safeguard",
+      "mode": "K",
+      "key": 1,
+      "source_A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "source_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          6,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "dA": 0,
+      "dB": 5,
+      "a": 0,
+      "q": 2,
+      "z": 1,
+      "events_A": [],
+      "events_B": [
+        [
+          "LL",
+          1,
+          3,
+          "-"
+        ],
+        [
+          "LL",
+          1,
+          5,
+          "-"
+        ],
+        [
+          "ZIG",
+          1,
+          6,
+          "L"
+        ]
+      ],
+      "source_values": {
+        "F": 5,
+        "Ehat": 1,
+        "J": 4,
+        "cap": 1,
+        "graph_id": 20
+      },
+      "after_A_values": {
+        "F": 5,
+        "Ehat": 1,
+        "J": 4,
+        "cap": 1,
+        "graph_id": 20
+      },
+      "destination_values": {
+        "F": 2,
+        "Ehat": 2,
+        "J": 2,
+        "cap": 1,
+        "graph_id": 21
+      },
+      "delta_J": -2,
+      "budget": -2,
+      "inequality_holds": true
+    },
+    {
+      "label": "derived_starved_L_helper_B",
+      "mode": "K",
+      "key": 2,
+      "source_A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "source_B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "destination_A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "destination_B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "dA": 0,
+      "dB": 4,
+      "a": 0,
+      "q": 2,
+      "z": 0,
+      "events_A": [],
+      "events_B": [
+        [
+          "LR",
+          1,
+          4,
+          "-"
+        ],
+        [
+          "LL",
+          2,
+          6,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 5,
+        "Ehat": 2,
+        "J": 4,
+        "cap": 1,
+        "graph_id": 3
+      },
+      "after_A_values": {
+        "F": 5,
+        "Ehat": 2,
+        "J": 4,
+        "cap": 1,
+        "graph_id": 3
+      },
+      "destination_values": {
+        "F": 3,
+        "Ehat": 2,
+        "J": 2,
+        "cap": 1,
+        "graph_id": 4
+      },
+      "delta_J": -2,
+      "budget": -2,
+      "inequality_holds": true
+    },
+    {
+      "label": "padded_five_core_hook_safeguard",
+      "mode": "K",
+      "key": 1,
+      "source_A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "source_B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "destination_A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          4,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "dA": 0,
+      "dB": 4,
+      "a": 0,
+      "q": 2,
+      "z": 0,
+      "events_A": [],
+      "events_B": [
+        [
+          "LL",
+          1,
+          3,
+          "-"
+        ],
+        [
+          "LL",
+          1,
+          5,
+          "-"
+        ]
+      ],
+      "source_values": {
+        "F": 4,
+        "Ehat": 1,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 22
+      },
+      "after_A_values": {
+        "F": 4,
+        "Ehat": 1,
+        "J": 3,
+        "cap": 1,
+        "graph_id": 22
+      },
+      "destination_values": {
+        "F": 2,
+        "Ehat": 2,
+        "J": 2,
+        "cap": 1,
+        "graph_id": 23
+      },
+      "delta_J": -1,
+      "budget": -2,
+      "inequality_holds": false
+    }
+  ],
+  "protected_matching_graphs": [
+    {
+      "A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "right_residual": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "protected_rank": 0,
+      "Ehat": 5,
+      "origin": "inherited fixed_exact_pair_certificate graph 0"
+    },
+    {
+      "A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B": [
+        6,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "adjacency": [
+        [],
+        [
+          0
+        ],
+        [],
+        [
+          2
+        ]
+      ],
+      "matching": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "cover_left": [
+        1,
+        3
+      ],
+      "cover_right": [],
+      "mu": 2,
+      "protected_rank": 3,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 1"
+    },
+    {
+      "A": [
+        6,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1
+        ],
+        [
+          3
+        ],
+        [],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "cover_left": [
+        0,
+        1
+      ],
+      "cover_right": [],
+      "mu": 2,
+      "protected_rank": 3,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 2"
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "forced_exact_intervals": [],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "cover_left": [
+        0
+      ],
+      "cover_right": [
+        2,
+        4
+      ],
+      "mu": 3,
+      "protected_rank": 3,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 3"
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1
+        ],
+        [],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ]
+      ],
+      "cover_left": [
+        0
+      ],
+      "cover_right": [],
+      "mu": 1,
+      "protected_rank": 3,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 4"
+    },
+    {
+      "A": [
+        6,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "protected_rank": 2,
+      "Ehat": 3,
+      "origin": "inherited fixed_exact_pair_certificate graph 5"
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "adjacency": [
+        [
+          3
+        ],
+        [],
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "matching": [
+        [
+          0,
+          3
+        ]
+      ],
+      "cover_left": [],
+      "cover_right": [
+        3
+      ],
+      "mu": 1,
+      "protected_rank": 2,
+      "Ehat": 3,
+      "origin": "inherited fixed_exact_pair_certificate graph 6"
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          5,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "cover_left": [
+        0,
+        1
+      ],
+      "cover_right": [],
+      "mu": 2,
+      "protected_rank": 4,
+      "Ehat": 1,
+      "origin": "inherited fixed_exact_pair_certificate graph 7"
+    },
+    {
+      "A": [
+        7,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        7,
+        [
+          6,
+          [
+            4,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          6
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1
+        ],
+        [
+          3
+        ],
+        [],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "cover_left": [
+        0,
+        1
+      ],
+      "cover_right": [],
+      "mu": 2,
+      "protected_rank": 4,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 8"
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          7,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        7,
+        [
+          6,
+          [
+            4,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          5,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "cover_left": [
+        0
+      ],
+      "cover_right": [
+        2,
+        4
+      ],
+      "mu": 3,
+      "protected_rank": 4,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 9"
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          7,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          [
+            7,
+            null,
+            null
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1
+        ],
+        [],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ]
+      ],
+      "cover_left": [
+        0
+      ],
+      "cover_right": [],
+      "mu": 1,
+      "protected_rank": 4,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 10"
+    },
+    {
+      "A": [
+        7,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      "B": [
+        7,
+        [
+          6,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "protected_rank": 3,
+      "Ehat": 3,
+      "origin": "inherited fixed_exact_pair_certificate graph 11"
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          7,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        7,
+        [
+          6,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "adjacency": [
+        [
+          3
+        ],
+        [],
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "matching": [
+        [
+          0,
+          3
+        ]
+      ],
+      "cover_left": [],
+      "cover_right": [
+        3
+      ],
+      "mu": 1,
+      "protected_rank": 3,
+      "Ehat": 3,
+      "origin": "inherited fixed_exact_pair_certificate graph 12"
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          7,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ],
+          [
+            7,
+            null,
+            null
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "adjacency": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "cover_left": [
+        0,
+        1
+      ],
+      "cover_right": [],
+      "mu": 2,
+      "protected_rank": 5,
+      "Ehat": 1,
+      "origin": "inherited fixed_exact_pair_certificate graph 13"
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              6,
+              [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          2,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "matching": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "cover_left": [
+        2,
+        3
+      ],
+      "cover_right": [],
+      "mu": 2,
+      "protected_rank": 3,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 14"
+    },
+    {
+      "A": [
+        5,
+        [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              6,
+              [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [],
+      "left_residual": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "adjacency": [
+        [
+          2
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "matching": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "cover_left": [
+        4
+      ],
+      "cover_right": [
+        0,
+        2
+      ],
+      "mu": 3,
+      "protected_rank": 3,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 15"
+    },
+    {
+      "A": [
+        5,
+        [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        5,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [
+          1,
+          2
+        ]
+      ],
+      "matching": [
+        [
+          2,
+          1
+        ]
+      ],
+      "cover_left": [
+        2
+      ],
+      "cover_right": [],
+      "mu": 1,
+      "protected_rank": 3,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 16"
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "protected_rank": 2,
+      "Ehat": 3,
+      "origin": "inherited fixed_exact_pair_certificate graph 17"
+    },
+    {
+      "A": [
+        5,
+        [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "matching": [
+        [
+          1,
+          0
+        ]
+      ],
+      "cover_left": [],
+      "cover_right": [
+        0
+      ],
+      "mu": 1,
+      "protected_rank": 2,
+      "Ehat": 3,
+      "origin": "inherited fixed_exact_pair_certificate graph 18"
+    },
+    {
+      "A": [
+        5,
+        [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        5,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "adjacency": [
+        [],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "matching": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "cover_left": [
+        1,
+        2
+      ],
+      "cover_right": [],
+      "mu": 2,
+      "protected_rank": 4,
+      "Ehat": 1,
+      "origin": "inherited fixed_exact_pair_certificate graph 19"
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "adjacency": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "cover_left": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cover_right": [],
+      "mu": 4,
+      "protected_rank": 4,
+      "Ehat": 1,
+      "origin": "inherited fixed_exact_pair_certificate graph 20"
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          6,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "adjacency": [
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "protected_rank": 3,
+      "Ehat": 2,
+      "origin": "inherited fixed_exact_pair_certificate graph 21"
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "adjacency": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "cover_left": [
+        0,
+        1,
+        2
+      ],
+      "cover_right": [],
+      "mu": 3,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 4,
+      "Ehat": 1
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          4,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 3,
+      "Ehat": 2
+    },
+    {
+      "A": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [],
+      "right_residual": [],
+      "adjacency": [],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "protected_rank": 5,
+      "Ehat": 0,
+      "origin": "inherited fixed_exact_pair_certificate graph 36"
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          4,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "adjacency": [
+        [
+          2
+        ],
+        [],
+        [
+          2
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          2
+        ]
+      ],
+      "cover_left": [],
+      "cover_right": [
+        2
+      ],
+      "mu": 1,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 2,
+      "Ehat": 3
+    },
+    {
+      "A": [
+        3,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            null
+          ]
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          2
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 2,
+      "Ehat": 3
+    },
+    {
+      "A": [
+        1,
+        null,
+        [
+          3,
+          [
+            2,
+            null,
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "adjacency": [
+        [
+          1
+        ],
+        [],
+        [],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          1
+        ]
+      ],
+      "cover_left": [
+        0
+      ],
+      "cover_right": [],
+      "mu": 1,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 2,
+      "Ehat": 3
+    },
+    {
+      "A": [
+        5,
+        [
+          1,
+          null,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "adjacency": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "cover_left": [
+        0,
+        1
+      ],
+      "cover_right": [],
+      "mu": 2,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 4,
+      "Ehat": 1
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          5,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        1,
+        null,
+        [
+          4,
+          [
+            2,
+            null,
+            [
+              3,
+              null,
+              null
+            ]
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        []
+      ],
+      "matching": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "cover_left": [
+        1,
+        2
+      ],
+      "cover_right": [],
+      "mu": 2,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 3,
+      "Ehat": 2
+    },
+    {
+      "A": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          5,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          4,
+          [
+            3,
+            null,
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "adjacency": [
+        [
+          0
+        ],
+        []
+      ],
+      "matching": [
+        [
+          0,
+          0
+        ]
+      ],
+      "cover_left": [
+        0
+      ],
+      "cover_right": [],
+      "mu": 1,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 4,
+      "Ehat": 1
+    },
+    {
+      "A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          [
+            4,
+            null,
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          4,
+          [
+            3,
+            null,
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "adjacency": [
+        [],
+        [],
+        [
+          1,
+          2
+        ]
+      ],
+      "matching": [
+        [
+          2,
+          1
+        ]
+      ],
+      "cover_left": [
+        2
+      ],
+      "cover_right": [],
+      "mu": 1,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 3,
+      "Ehat": 2
+    },
+    {
+      "A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          [
+            4,
+            null,
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          4,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          5,
+          6
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 4,
+      "Ehat": 1
+    },
+    {
+      "A": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          3
+        ]
+      ],
+      "right_residual": [
+        [
+          4,
+          6
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 4,
+      "Ehat": 1
+    },
+    {
+      "A": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [],
+      "right_residual": [],
+      "adjacency": [],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 5,
+      "Ehat": 0
+    },
+    {
+      "A": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            null
+          ]
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          4
+        ]
+      ],
+      "right_residual": [
+        [
+          5,
+          6
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 4,
+      "Ehat": 1
+    },
+    {
+      "A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "left_residual": [
+        [
+          1,
+          5
+        ]
+      ],
+      "right_residual": [
+        [
+          6,
+          6
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "protected_rank": 4,
+      "Ehat": 1,
+      "origin": "inherited fixed_exact_pair_certificate graph 37"
+    },
+    {
+      "A": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "left_residual": [],
+      "right_residual": [],
+      "adjacency": [],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "protected_rank": 5,
+      "Ehat": 0,
+      "origin": "inherited fixed_exact_pair_certificate graph 22"
+    },
+    {
+      "A": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          null
+        ]
+      ],
+      "B": [
+        6,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "all_left": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "all_right": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "forced_exact_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "left_residual": [
+        [
+          6,
+          6
+        ]
+      ],
+      "right_residual": [
+        [
+          1,
+          5
+        ]
+      ],
+      "adjacency": [
+        []
+      ],
+      "matching": [],
+      "cover_left": [],
+      "cover_right": [],
+      "mu": 0,
+      "origin": "new fixed current-pair evaluation",
+      "protected_rank": 4,
+      "Ehat": 1
+    }
+  ],
+  "monotone_obstruction": {
+    "n": 6,
+    "class": "J=phi_n(F,Ehat), coordinatewise nondecreasing and Ehat<=J<=F",
+    "opposite_source": [
+      5,
+      5
+    ],
+    "opposite_destination": [
+      4,
+      2
+    ],
+    "opposite_budget": -2,
+    "padded_source": [
+      4,
+      1
+    ],
+    "padded_destination": [
+      2,
+      2
+    ],
+    "padded_budget": -2,
+    "forced_diagonal_values": {
+      "phi(5,5)": 5,
+      "phi(2,2)": 2
+    },
+    "necessary_inequalities": [
+      "phi(4,2)<=3",
+      "phi(4,1)>=4",
+      "phi(4,1)<=phi(4,2)"
+    ],
+    "contradiction": "4<=phi(4,1)<=phi(4,2)<=3",
+    "cap_corollary": "At n=6 opposite vines require cap>=1, padded hook requires cap=0; no nonnegative size-dependent cap solves full B repayment",
+    "scope": "This excludes the stated monotone scalar aggregation class, not all structural corrections."
+  },
+  "closed_witness": {
+    "initial_A": [
+      5,
+      [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      [
+        6,
+        null,
+        null
+      ]
+    ],
+    "initial_B": [
+      5,
+      [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      [
+        6,
+        null,
+        null
+      ]
+    ],
+    "word": [
+      [
+        "D",
+        1
+      ],
+      [
+        "D",
+        3
+      ],
+      [
+        "D",
+        1
+      ],
+      [
+        "D",
+        5
+      ],
+      [
+        "D",
+        1
+      ],
+      [
+        "K",
+        1
+      ],
+      [
+        "K",
+        1
+      ],
+      [
+        "K",
+        2
+      ],
+      [
+        "K",
+        3
+      ],
+      [
+        "K",
+        4
+      ],
+      [
+        "K",
+        5
+      ],
+      [
+        "K",
+        6
+      ],
+      [
+        "K",
+        5
+      ]
+    ],
+    "failed_edge_index": 5,
+    "full_replay": [
+      {
+        "label": "closed_0",
+        "mode": "D",
+        "key": 1,
+        "source_A": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "source_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_A": [
+          1,
+          null,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "dA": 4,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "LL",
+            1,
+            3,
+            "-"
+          ],
+          [
+            "LL",
+            1,
+            5,
+            "-"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 0,
+          "Ehat": 0,
+          "J": 0,
+          "cap": 1,
+          "graph_id": 24
+        },
+        "after_A_values": {
+          "F": 4,
+          "Ehat": 3,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 25
+        },
+        "destination_values": {
+          "F": 4,
+          "Ehat": 3,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 25
+        },
+        "delta_J": 3,
+        "budget": 4,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_1",
+        "mode": "D",
+        "key": 3,
+        "source_A": [
+          1,
+          null,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_A": [
+          3,
+          [
+            1,
+            null,
+            [
+              2,
+              null,
+              null
+            ]
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "LR",
+            2,
+            4,
+            "-"
+          ],
+          [
+            "ZIG",
+            1,
+            3,
+            "R"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 4,
+          "Ehat": 3,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 25
+        },
+        "after_A_values": {
+          "F": 3,
+          "Ehat": 3,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 26
+        },
+        "destination_values": {
+          "F": 3,
+          "Ehat": 3,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 26
+        },
+        "delta_J": 0,
+        "budget": 4,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_2",
+        "mode": "D",
+        "key": 1,
+        "source_A": [
+          3,
+          [
+            1,
+            null,
+            [
+              2,
+              null,
+              null
+            ]
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_A": [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "destination_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "dA": 1,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            3,
+            "L"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 3,
+          "Ehat": 3,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 26
+        },
+        "after_A_values": {
+          "F": 4,
+          "Ehat": 3,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 27
+        },
+        "destination_values": {
+          "F": 4,
+          "Ehat": 3,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 27
+        },
+        "delta_J": 0,
+        "budget": 2,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_3",
+        "mode": "D",
+        "key": 5,
+        "source_A": [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_A": [
+          5,
+          [
+            1,
+            null,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "dA": 3,
+        "dB": null,
+        "a": 2,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "RR",
+            3,
+            5,
+            "-"
+          ],
+          [
+            "ZIG",
+            1,
+            5,
+            "R"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 4,
+          "Ehat": 3,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 27
+        },
+        "after_A_values": {
+          "F": 3,
+          "Ehat": 1,
+          "J": 2,
+          "cap": 1,
+          "graph_id": 28
+        },
+        "destination_values": {
+          "F": 3,
+          "Ehat": 1,
+          "J": 2,
+          "cap": 1,
+          "graph_id": 28
+        },
+        "delta_J": -1,
+        "budget": 4,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_4",
+        "mode": "D",
+        "key": 1,
+        "source_A": [
+          5,
+          [
+            1,
+            null,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "source_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_A": [
+          1,
+          null,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "dA": 1,
+        "dB": null,
+        "a": 1,
+        "q": 0,
+        "z": 0,
+        "events_A": [
+          [
+            "ZIG",
+            1,
+            5,
+            "L"
+          ]
+        ],
+        "events_B": [],
+        "source_values": {
+          "F": 3,
+          "Ehat": 1,
+          "J": 2,
+          "cap": 1,
+          "graph_id": 28
+        },
+        "after_A_values": {
+          "F": 4,
+          "Ehat": 1,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 22
+        },
+        "destination_values": {
+          "F": 4,
+          "Ehat": 1,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 22
+        },
+        "delta_J": 1,
+        "budget": 2,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_5",
+        "mode": "K",
+        "key": 1,
+        "source_A": [
+          1,
+          null,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_A": [
+          1,
+          null,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          1,
+          null,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 0,
+        "dB": 4,
+        "a": 0,
+        "q": 2,
+        "z": 0,
+        "events_A": [],
+        "events_B": [
+          [
+            "LL",
+            1,
+            3,
+            "-"
+          ],
+          [
+            "LL",
+            1,
+            5,
+            "-"
+          ]
+        ],
+        "source_values": {
+          "F": 4,
+          "Ehat": 1,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 22
+        },
+        "after_A_values": {
+          "F": 4,
+          "Ehat": 1,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 22
+        },
+        "destination_values": {
+          "F": 2,
+          "Ehat": 2,
+          "J": 2,
+          "cap": 1,
+          "graph_id": 23
+        },
+        "delta_J": -1,
+        "budget": -2,
+        "inequality_holds": false
+      },
+      {
+        "label": "closed_6",
+        "mode": "K",
+        "key": 1,
+        "source_A": [
+          1,
+          null,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          1,
+          null,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          1,
+          null,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          1,
+          null,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 0,
+        "dB": 0,
+        "a": 0,
+        "q": 0,
+        "z": 0,
+        "events_A": [],
+        "events_B": [],
+        "source_values": {
+          "F": 2,
+          "Ehat": 2,
+          "J": 2,
+          "cap": 1,
+          "graph_id": 23
+        },
+        "after_A_values": {
+          "F": 2,
+          "Ehat": 2,
+          "J": 2,
+          "cap": 1,
+          "graph_id": 23
+        },
+        "destination_values": {
+          "F": 2,
+          "Ehat": 2,
+          "J": 2,
+          "cap": 1,
+          "graph_id": 23
+        },
+        "delta_J": 0,
+        "budget": 0,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_7",
+        "mode": "K",
+        "key": 2,
+        "source_A": [
+          1,
+          null,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          1,
+          null,
+          [
+            4,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            5,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 4,
+        "dB": 2,
+        "a": 2,
+        "q": 1,
+        "z": 0,
+        "events_A": [
+          [
+            "LL",
+            2,
+            4,
+            "-"
+          ],
+          [
+            "RL",
+            1,
+            5,
+            "-"
+          ]
+        ],
+        "events_B": [
+          [
+            "RL",
+            1,
+            4,
+            "-"
+          ]
+        ],
+        "source_values": {
+          "F": 2,
+          "Ehat": 2,
+          "J": 2,
+          "cap": 1,
+          "graph_id": 23
+        },
+        "after_A_values": {
+          "F": 4,
+          "Ehat": 2,
+          "J": 3,
+          "cap": 1,
+          "graph_id": 29
+        },
+        "destination_values": {
+          "F": 2,
+          "Ehat": 1,
+          "J": 1,
+          "cap": 1,
+          "graph_id": 30
+        },
+        "delta_J": -1,
+        "budget": 3,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_8",
+        "mode": "K",
+        "key": 3,
+        "source_A": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            5,
+            [
+              3,
+              null,
+              [
+                4,
+                null,
+                null
+              ]
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "dA": 2,
+        "dB": 2,
+        "a": 1,
+        "q": 1,
+        "z": 0,
+        "events_A": [
+          [
+            "RL",
+            2,
+            5,
+            "-"
+          ]
+        ],
+        "events_B": [
+          [
+            "RL",
+            2,
+            4,
+            "-"
+          ]
+        ],
+        "source_values": {
+          "F": 2,
+          "Ehat": 1,
+          "J": 1,
+          "cap": 1,
+          "graph_id": 30
+        },
+        "after_A_values": {
+          "F": 3,
+          "Ehat": 2,
+          "J": 2,
+          "cap": 1,
+          "graph_id": 31
+        },
+        "destination_values": {
+          "F": 1,
+          "Ehat": 1,
+          "J": 1,
+          "cap": 1,
+          "graph_id": 32
+        },
+        "delta_J": 0,
+        "budget": 1,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_9",
+        "mode": "K",
+        "key": 4,
+        "source_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        "destination_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_B": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "dA": 2,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "RL",
+            3,
+            5,
+            "-"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            3,
+            4,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "F": 1,
+          "Ehat": 1,
+          "J": 1,
+          "cap": 1,
+          "graph_id": 32
+        },
+        "after_A_values": {
+          "F": 1,
+          "Ehat": 1,
+          "J": 1,
+          "cap": 1,
+          "graph_id": 33
+        },
+        "destination_values": {
+          "F": 0,
+          "Ehat": 0,
+          "J": 0,
+          "cap": 1,
+          "graph_id": 34
+        },
+        "delta_J": -1,
+        "budget": 2,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_10",
+        "mode": "K",
+        "key": 5,
+        "source_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "source_B": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              null
+            ]
+          ]
+        ],
+        "destination_A": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            4,
+            5,
+            "R"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            4,
+            5,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "Ehat": 0,
+          "J": 0,
+          "cap": 1,
+          "graph_id": 34
+        },
+        "after_A_values": {
+          "F": 1,
+          "Ehat": 1,
+          "J": 1,
+          "cap": 1,
+          "graph_id": 35
+        },
+        "destination_values": {
+          "F": 0,
+          "Ehat": 0,
+          "J": 0,
+          "cap": 1,
+          "graph_id": 24
+        },
+        "delta_J": 0,
+        "budget": 2,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_11",
+        "mode": "K",
+        "key": 6,
+        "source_A": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "source_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_A": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "destination_B": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            5,
+            6,
+            "R"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            5,
+            6,
+            "R"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "Ehat": 0,
+          "J": 0,
+          "cap": 1,
+          "graph_id": 24
+        },
+        "after_A_values": {
+          "F": 1,
+          "Ehat": 1,
+          "J": 1,
+          "cap": 1,
+          "graph_id": 36
+        },
+        "destination_values": {
+          "F": 0,
+          "Ehat": 0,
+          "J": 0,
+          "cap": 1,
+          "graph_id": 37
+        },
+        "delta_J": 0,
+        "budget": 2,
+        "inequality_holds": true
+      },
+      {
+        "label": "closed_12",
+        "mode": "K",
+        "key": 5,
+        "source_A": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "source_B": [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "destination_A": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "destination_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            null,
+            null
+          ]
+        ],
+        "dA": 1,
+        "dB": 1,
+        "a": 1,
+        "q": 0,
+        "z": 1,
+        "events_A": [
+          [
+            "ZIG",
+            5,
+            6,
+            "L"
+          ]
+        ],
+        "events_B": [
+          [
+            "ZIG",
+            5,
+            6,
+            "L"
+          ]
+        ],
+        "source_values": {
+          "F": 0,
+          "Ehat": 0,
+          "J": 0,
+          "cap": 1,
+          "graph_id": 37
+        },
+        "after_A_values": {
+          "F": 1,
+          "Ehat": 1,
+          "J": 1,
+          "cap": 1,
+          "graph_id": 38
+        },
+        "destination_values": {
+          "F": 0,
+          "Ehat": 0,
+          "J": 0,
+          "cap": 1,
+          "graph_id": 24
+        },
+        "delta_J": 0,
+        "budget": 2,
+        "inequality_holds": true
+      }
+    ],
+    "A": 15,
+    "Q_B": 4,
+    "Z_B": 4,
+    "actual_pair_closure": true
+  },
+  "single_tree_connector_search": {
+    "visited_single_trees": 104,
+    "expanded_single_trees": 61,
+    "requests_examined": 366
+  },
+  "four_named_requirements_achieved": true,
+  "global_candidate_refuted": true,
+  "finite_potential_fits": 0,
+  "new_pair_state_graphs": 0,
+  "larger_helper_samples": 0,
+  "connector_BFS_calls": 1,
+  "CoarseDouble_refuted": false,
+  "next_automatic_campaign": null
+}

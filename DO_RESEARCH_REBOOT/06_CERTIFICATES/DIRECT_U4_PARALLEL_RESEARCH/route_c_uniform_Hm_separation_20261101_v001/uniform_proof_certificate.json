@@ -1,0 +1,286 @@
+{
+  "status": "PROVED—RESTRICTED DOMAIN; analytic proof supplied in UH01",
+  "quantifiers": "every integer m>=5, every untouched BST fringe F>7 including empty, both orientations",
+  "source_kernel_sha256": "2c31d90aae728f2cf890a8d72ed148101c917eae5bd5f9133929cc567e73201f",
+  "short_lag_UD_cases": {
+    "normal": [
+      {
+        "W_slot": 10,
+        "key": 4,
+        "a": 1,
+        "q": 2,
+        "h": 4,
+        "k": 0,
+        "UD_ceiling": 2,
+        "capacity": 2,
+        "slack": 0
+      },
+      {
+        "W_slot": 11,
+        "key": 5,
+        "a": 1,
+        "q": 1,
+        "h": 3,
+        "k": 1,
+        "UD_ceiling": 2,
+        "capacity": 2,
+        "slack": 0
+      },
+      {
+        "W_slot": 12,
+        "key": 3,
+        "a": 1,
+        "q": 1,
+        "h": 2,
+        "k": 2,
+        "UD_ceiling": 3,
+        "capacity": 2,
+        "slack": 1
+      },
+      {
+        "W_slot": 13,
+        "key": 2,
+        "a": 1,
+        "q": 0,
+        "h": 1,
+        "k": 3,
+        "UD_ceiling": 3,
+        "capacity": 2,
+        "slack": 1
+      },
+      {
+        "W_slot": 14,
+        "key": 3,
+        "a": 1,
+        "q": 0,
+        "h": 2,
+        "k": 4,
+        "UD_ceiling": 5,
+        "capacity": 2,
+        "slack": 3
+      },
+      {
+        "W_slot": 15,
+        "key": 7,
+        "a": 2,
+        "q": 1,
+        "h": 1,
+        "k": 5,
+        "UD_ceiling": 5,
+        "capacity": 4,
+        "slack": 1
+      },
+      {
+        "W_slot": 16,
+        "key": 1,
+        "a": 2,
+        "q": 1,
+        "h": 2,
+        "k": 6,
+        "UD_ceiling": 7,
+        "capacity": 4,
+        "slack": 3
+      }
+    ],
+    "reflected": [
+      {
+        "W_slot": 10,
+        "key": 10,
+        "a": 1,
+        "q": 2,
+        "h": 4,
+        "k": 0,
+        "UD_ceiling": 2,
+        "capacity": 2,
+        "slack": 0
+      },
+      {
+        "W_slot": 11,
+        "key": 9,
+        "a": 1,
+        "q": 1,
+        "h": 3,
+        "k": 1,
+        "UD_ceiling": 2,
+        "capacity": 2,
+        "slack": 0
+      },
+      {
+        "W_slot": 12,
+        "key": 11,
+        "a": 1,
+        "q": 1,
+        "h": 2,
+        "k": 2,
+        "UD_ceiling": 3,
+        "capacity": 2,
+        "slack": 1
+      },
+      {
+        "W_slot": 13,
+        "key": 12,
+        "a": 1,
+        "q": 0,
+        "h": 1,
+        "k": 3,
+        "UD_ceiling": 3,
+        "capacity": 2,
+        "slack": 1
+      },
+      {
+        "W_slot": 14,
+        "key": 11,
+        "a": 1,
+        "q": 0,
+        "h": 2,
+        "k": 4,
+        "UD_ceiling": 5,
+        "capacity": 2,
+        "slack": 3
+      },
+      {
+        "W_slot": 15,
+        "key": 7,
+        "a": 2,
+        "q": 1,
+        "h": 1,
+        "k": 5,
+        "UD_ceiling": 5,
+        "capacity": 4,
+        "slack": 1
+      },
+      {
+        "W_slot": 16,
+        "key": 13,
+        "a": 2,
+        "q": 1,
+        "h": 2,
+        "k": 6,
+        "UD_ceiling": 7,
+        "capacity": 4,
+        "slack": 3
+      }
+    ]
+  },
+  "FI_source_frame": {
+    "normal": {
+      "h": 3,
+      "access_depth": 4,
+      "lca_depth": 3,
+      "operations": [
+        {
+          "case": "RL",
+          "site_depth": 2,
+          "grandparent": 3,
+          "parent": 5
+        },
+        {
+          "case": "LR",
+          "site_depth": 0,
+          "grandparent": 6,
+          "parent": 2
+        }
+      ],
+      "entry_operation": 0,
+      "entry_role": "parent",
+      "mu": 0,
+      "outer_doubles": 1,
+      "matching_outer_doubles": 0,
+      "U": 2
+    },
+    "reflected": {
+      "h": 3,
+      "access_depth": 4,
+      "lca_depth": 3,
+      "operations": [
+        {
+          "case": "LR",
+          "site_depth": 2,
+          "grandparent": 11,
+          "parent": 9
+        },
+        {
+          "case": "RL",
+          "site_depth": 0,
+          "grandparent": 8,
+          "parent": 12
+        }
+      ],
+      "entry_operation": 0,
+      "entry_role": "parent",
+      "mu": 0,
+      "outer_doubles": 1,
+      "matching_outer_doubles": 0,
+      "U": 2
+    }
+  },
+  "active_core_keys": 7,
+  "maximum_A_depth": 6,
+  "maximum_KEEP_capacity": 6,
+  "exhaustive_payer_cases": [
+    "k>=7 gives cUD>=7>6>=2a",
+    "0<=k<=6 is exactly W slots10..16 of same copy"
+  ],
+  "all_KEEP_B_changes": true,
+  "phase_B_changes": {
+    "P": 6,
+    "W": 17,
+    "X": 9
+  },
+  "only_positive_phase": "W",
+  "positive_W_slot": 9,
+  "successive_anchor_B_change_gaps": {
+    "internal_repeat": 17,
+    "wrap_through_X_P": 32
+  },
+  "UD_KEEP_lending_impossible": true,
+  "UD_total_lendable_DELETE_capacity": 4,
+  "UD_debts": "m",
+  "UD_final_debt_lower_bound": "m-4",
+  "UD_cut0_final_debt": "m",
+  "UD_cut2_final_debt": "m-4",
+  "UD_accepted_cuts": 0,
+  "FI_latest_KEEP5_fact": {
+    "h": 3,
+    "k": 1,
+    "U": 2,
+    "ceiling": 1,
+    "capacity": 2,
+    "own_q": 1
+  },
+  "FI_older_KEEP5_facts": "same T and first KEEP4; k>=1, cFI=k>=1",
+  "FI_immediate_KEEP4_latest_fact": {
+    "h": 4,
+    "k": 0,
+    "ceiling": 2,
+    "capacity": 2,
+    "own_q": 2
+  },
+  "FI_immediate_KEEP4_older_facts": "k>=17, U(4,4)=0, cFI=k-1>=16",
+  "FI_local_debt_recurrence": [
+    0,
+    1,
+    1,
+    0
+  ],
+  "positive_occurrence": "i_r=17+17r, 0<=r<m",
+  "symbolic_residual_demand": "(0,i_r,2)",
+  "symbolic_donor_unit": "(0,i_r+2,0,1)",
+  "total_blocks": "17+17m",
+  "FI_rejected_cuts": "{18+17r,19+17r:0<=r<m}",
+  "FI_rejected_count": "2m",
+  "FI_rejected_final_debt": 1,
+  "FI_accepted_count": "17+15m",
+  "FI_canonical_accepted_cut": 0,
+  "FI_cut0_distinct_demand_assignments": "18+16m",
+  "FI_DELETE_or_startup_units_used": 0,
+  "reused_units": 0,
+  "periods_per_cut": 1,
+  "exact_three_block_supports_disjoint": true,
+  "new_m_values_replayed": 0,
+  "new_source_engine_calls": 0,
+  "larger_finite_fits": 0,
+  "matching_terminal_line": "FROZEN",
+  "universal_CD": "OPEN",
+  "automatic_successor_launched": false
+}

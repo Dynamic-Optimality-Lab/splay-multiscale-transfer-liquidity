@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-31",
+  "results": [
+    {
+      "claim": "Universal A-root zig/double bound2 for the fixed completed AT potential",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "RB01_ALL_ODD_ROOT_ZIG_REFUTATION.md",
+      "witness": {
+        "n": 7,
+        "dA": 1,
+        "a": 1,
+        "actual_q": 0,
+        "Phi_before": 4,
+        "Phi_after": 7,
+        "increment": 3,
+        "bound": 2
+      }
+    },
+    {
+      "claim": "Universal DELETE for the unchanged completed antichain candidate",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "RB01_ALL_ODD_ROOT_ZIG_REFUTATION.md"
+    },
+    {
+      "claim": "Unbounded root-zig drift (n-1)/2 on all odd n>=7",
+      "status": "PROVED\u2014RESTRICTED DOMAIN",
+      "proof": "RB01_ALL_ODD_ROOT_ZIG_REFUTATION.md"
+    },
+    {
+      "claim": "Scalar f_n(K_completed)+Q repairs this root-step failure",
+      "status": "REFUTED\u2014EXACT",
+      "proof": "RB01_ALL_ODD_ROOT_ZIG_REFUTATION.md",
+      "scope": "same completion and terminal K; not all terminal functions"
+    },
+    {
+      "claim": "Fixed-C terminal A stability and full universal B repayment",
+      "status": "PROVED\u2014UNIVERSAL",
+      "qualification": "inherited valid component theorems; not refuted by a change of completed C",
+      "proof": "../route_c_antichain_terminal_20261031_v001/AT01_TERMINAL_DEFINITION_AND_PROVED_LAWS.md"
+    },
+    {
+      "claim": "Both zig orientations, exact packing optima and actual closed replay",
+      "status": "FINITE-EXACT",
+      "certificate": "root_bound_countercertificate.json",
+      "audit": "independent_audit.json"
+    },
+    {
+      "claim": "Separate classification of root-double-only cases",
+      "status": "OPEN",
+      "qualification": "not attempted after zig refuted the universal conjunction"
+    },
+    {
+      "claim": "General explicit joint correction satisfying both universal bounds",
+      "status": "OPEN"
+    },
+    {
+      "claim": "Universal Coarse-Double",
+      "status": "OPEN"
+    }
+  ],
+  "before": "AT candidate survived frozen audit; root-step bound and universal DELETE open",
+  "result": "Exact all-odd root-zig counterfamily and reachable n7 certificate",
+  "after": "Fixed candidate and universal root-step bound refuted; generic Step3/CD open",
+  "requested_local_objective": "completed by exact refutation",
+  "original_load_bearing_obligations_discharged": [],
+  "new_assumptions_for_original_theorem": [],
+  "net_full_original_proof_advancement": 0,
+  "strategy_review": "RB03_STRATEGY_REVIEW.md",
+  "next_automatic_campaign": null
+}

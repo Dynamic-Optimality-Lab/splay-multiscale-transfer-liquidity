@@ -1,0 +1,58 @@
+{
+  "client_completion_date": "2026-10-31",
+  "timezone": "Asia/Karachi",
+  "claims": [
+    {
+      "id": "RA-TRANSPORT",
+      "status": "PROVED UNIVERSAL SOURCE IDENTITY",
+      "scope": "physical primitive/StepEv depth-profile transport, arbitrary hanging trees",
+      "proof": "RA01_UNIFORM_ROTATION_IDENTITY.md",
+      "positive_signed_invariant": false
+    },
+    {
+      "id": "RA-ZERO-HELPER-FRINGE",
+      "status": "PROVED UNIVERSAL FAMILY IDENTITY",
+      "scope": "six-core helpers with arbitrary paired fringe, all m",
+      "proof": "RA02_ZERO_HELPER_ARBITRARY_FRINGE_PROOF.md"
+    },
+    {
+      "id": "RA-DETERMINISTIC-HIST-UPDATE",
+      "status": "REFUTED EXACT",
+      "claim": "deterministic next histogram from complete input H,roots,key,source depths/costs",
+      "all_histogram_potentials_refuted": false
+    },
+    {
+      "id": "RA-POSITIVE-B-MOMENT-BOUNDED-REPAIR",
+      "status": "REFUTED ANALYTICALLY ALL SIZE",
+      "scope": "fixed alpha, beta>0; repair oscillation bounded independently of n",
+      "proof": "RA03_UNIFORM_MOMENT_REPAIR_OBSTRUCTION.md"
+    },
+    {
+      "id": "RA-CONTROLS",
+      "status": "FINITE EXACT",
+      "whole_accesses": 16,
+      "StepEvs": 48,
+      "closed_cycles": 2,
+      "new_fits": 0
+    },
+    {
+      "id": "RC-NONLINEAR-HIST-ALL",
+      "status": "OPEN"
+    },
+    {
+      "id": "RC-GENERAL",
+      "status": "OPEN"
+    },
+    {
+      "id": "CD-U",
+      "status": "OPEN"
+    },
+    {
+      "id": "DYNAMIC-OPTIMALITY",
+      "status": "OPEN"
+    }
+  ],
+  "net_positive_CD_U_proof_advancement": 0,
+  "Stage11G_changed": false,
+  "universal_positive_campaign_gate": "NOT PASSED: no constructed F or signed all-profile update bound"
+}

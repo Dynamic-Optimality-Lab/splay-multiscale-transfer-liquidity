@@ -1,0 +1,200 @@
+{
+  "status": "PASS_FINITE_EXACT",
+  "n": 7,
+  "all_size_proof": false,
+  "source_certificate_sha256": "499ad682bf979f87038fc559c0f2d4fff8819e0952d048ee94a10d3ea0be0ee0",
+  "pointer_shape_accesses_rederived": 3003,
+  "physical_pairs": 184041,
+  "summary_states": 90812,
+  "concrete_edge_inequalities_checked": 2576574,
+  "minimum_residual": 0,
+  "maximum_residual": 9,
+  "residual_histogram": {
+    "0": 332948,
+    "1": 153560,
+    "2": 533386,
+    "3": 335434,
+    "4": 577856,
+    "5": 236284,
+    "6": 239334,
+    "7": 109434,
+    "8": 38444,
+    "9": 19894
+  },
+  "potential_range": [
+    -3,
+    0
+  ],
+  "overwritten_setup_walk": [
+    {
+      "access": 0,
+      "operation": "D6",
+      "a": 3,
+      "q": 0,
+      "potential_source": -2,
+      "potential_destination": 0,
+      "drop": -2,
+      "reward": -6,
+      "residual": 4
+    },
+    {
+      "access": 1,
+      "operation": "D7",
+      "a": 1,
+      "q": 0,
+      "potential_source": 0,
+      "potential_destination": 0,
+      "drop": 0,
+      "reward": -2,
+      "residual": 2
+    },
+    {
+      "access": 2,
+      "operation": "K7",
+      "a": 0,
+      "q": 3,
+      "potential_source": 0,
+      "potential_destination": -3,
+      "drop": 3,
+      "reward": 3,
+      "residual": 0
+    },
+    {
+      "access": 3,
+      "operation": "D6",
+      "a": 1,
+      "q": 0,
+      "potential_source": -3,
+      "potential_destination": -1,
+      "drop": -2,
+      "reward": -2,
+      "residual": 0
+    },
+    {
+      "access": 4,
+      "operation": "K6",
+      "a": 0,
+      "q": 1,
+      "potential_source": -1,
+      "potential_destination": -3,
+      "drop": 2,
+      "reward": 1,
+      "residual": 1
+    },
+    {
+      "access": 5,
+      "operation": "D5",
+      "a": 2,
+      "q": 0,
+      "potential_source": -3,
+      "potential_destination": -1,
+      "drop": -2,
+      "reward": -4,
+      "residual": 2
+    },
+    {
+      "access": 6,
+      "operation": "K5",
+      "a": 0,
+      "q": 1,
+      "potential_source": -1,
+      "potential_destination": -3,
+      "drop": 2,
+      "reward": 1,
+      "residual": 1
+    },
+    {
+      "access": 7,
+      "operation": "D4",
+      "a": 1,
+      "q": 0,
+      "potential_source": -3,
+      "potential_destination": -1,
+      "drop": -2,
+      "reward": -2,
+      "residual": 0
+    },
+    {
+      "access": 8,
+      "operation": "K4",
+      "a": 0,
+      "q": 0,
+      "potential_source": -1,
+      "potential_destination": -3,
+      "drop": 2,
+      "reward": 0,
+      "residual": 2
+    },
+    {
+      "access": 9,
+      "operation": "D3",
+      "a": 1,
+      "q": 0,
+      "potential_source": -3,
+      "potential_destination": -1,
+      "drop": -2,
+      "reward": -2,
+      "residual": 0
+    },
+    {
+      "access": 10,
+      "operation": "K3",
+      "a": 0,
+      "q": 1,
+      "potential_source": -1,
+      "potential_destination": -3,
+      "drop": 2,
+      "reward": 1,
+      "residual": 1
+    },
+    {
+      "access": 11,
+      "operation": "D2",
+      "a": 1,
+      "q": 0,
+      "potential_source": -3,
+      "potential_destination": -1,
+      "drop": -2,
+      "reward": -2,
+      "residual": 0
+    },
+    {
+      "access": 12,
+      "operation": "K2",
+      "a": 0,
+      "q": 0,
+      "potential_source": -1,
+      "potential_destination": -2,
+      "drop": 1,
+      "reward": 0,
+      "residual": 1
+    },
+    {
+      "access": 13,
+      "operation": "D1",
+      "a": 1,
+      "q": 0,
+      "potential_source": -2,
+      "potential_destination": 0,
+      "drop": -2,
+      "reward": -2,
+      "residual": 0
+    },
+    {
+      "access": 14,
+      "operation": "K1",
+      "a": 0,
+      "q": 0,
+      "potential_source": 0,
+      "potential_destination": -2,
+      "drop": 2,
+      "reward": 0,
+      "residual": 2
+    }
+  ],
+  "closed_walk_reward": -16,
+  "closed_walk_potential_drop": 0,
+  "K7_potential_drop": 3,
+  "independence": "No quotient builder/solver or tuple transition engine imported. Pointer rotations, features, costs and all concrete inequalities regenerated.",
+  "CPU_seconds": 1.719
+}
