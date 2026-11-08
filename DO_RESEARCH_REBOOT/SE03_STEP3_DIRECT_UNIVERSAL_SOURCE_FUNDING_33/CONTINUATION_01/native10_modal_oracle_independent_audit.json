@@ -1,0 +1,22 @@
+{
+  "status": "PASS_LOSSLESS_COMPLETE_MODAL_B_DEBT_REPRESENTATION",
+  "old_nonzero_coefficients_streamed": 1769616,
+  "new_explicit_override_states": 1013185,
+  "includes_original_zero_override_states": 475429,
+  "all_old_positive_states_verified": true,
+  "all_old_omitted_zero_states_verified": "exact per-column missing counts and explicit zero coverage when baseline is positive; otherwise zero default, with no spurious positive override",
+  "source_semantics_or_coefficients_changed": false,
+  "original_state_record_peak_during_producer": 1769616,
+  "independent_audit_state_records": "only the new1,013,185 overrides plus small B-column counters; old positive coefficients streamed from immutable bytes",
+  "lookup": "base[b]+override.get(canonical(a,b),0), signed overrides allowed",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "external_or_formal_proof_assistant_verification": false,
+  "old_checked_pickle_sha256": "5d708a78b52a806fa95db32244cff8e12d1e063acf6b1e46848dc4525c7a0cad",
+  "input_sha256": {
+    "native10_B_modal_factored_debt.pkl": "1aa7fe588493632444205b9a82b06456c0d5d7117383acb80795064533981caf",
+    "native10_credit_certificate.json": "60a8453ecbf7e7a35cb7af45ef00d9c6285558ad424724bc16bc6881204d1d0b",
+    "native10_source_actions.json": "36438e382a4fe50eca206a15bbb54cc8510effee1311addbf755486b839e8f95"
+  },
+  "principal_U33": "OPEN"
+}

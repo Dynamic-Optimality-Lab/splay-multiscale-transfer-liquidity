@@ -1,0 +1,23 @@
+{
+  "status": "INDEPENDENT_LITERAL_LOW_CONTRACT_AND_GAMMA0_AUDIT_PASS",
+  "source": "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\06_CERTIFICATES\\DIRECT_CDK5N_11F_STRICT_CLOSURE\\STRICT_LOW_COMPILER.py",
+  "source_sha256": "d621355f3745c0e0ce182c60197fd3f3e83a126237013cc4b7ae951c4731183a",
+  "original_AST_conjuncts_present": [
+    "C.append(d.EQ(macro_H(d, wit), Hv))",
+    "C.append(d.LE(Hv, d.const_int(2, 2)))",
+    "C.append(root_terminated(d, wit, bt, st, bs[e], e, active))",
+    "C.append(same_keep_target(d, wit, inv, bt, e, active))",
+    "C.append(d.LE(d.ADD(bt.q, bt.q, 5), bd_last))",
+    "C.append(d.LT(bd_last, d.ADD(d.ADD(bt.q, bt.q, 5), d.const_int(2, 5), 5)))",
+    "C.append(tisS)",
+    "C.append(marked)",
+    "C.append(chg)",
+    "C.append(d.EQ(wv, d.SUB(d.ADD(Hv, Hv, 3), bt.q, 5)))"
+  ],
+  "original_H_upper_bound": 2,
+  "Gamma0_actual_preterminal_floor_inequality_UNSAT": true,
+  "HIGH_contract_unchanged": true,
+  "new_original_root_evaluations": 0,
+  "new_finite_tests": 0,
+  "completed_semantic_checks_replayed": 0
+}

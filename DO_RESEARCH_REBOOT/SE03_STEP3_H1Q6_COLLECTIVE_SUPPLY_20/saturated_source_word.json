@@ -1,0 +1,39 @@
+{
+  "status": "SYMBOLIC_ORIGINAL_SOURCE_CONSTRUCTION_NOT_EXECUTED_AUDIT_PENDING",
+  "base_word_artifact": "DO_RESEARCH_REBOOT/SE03_STEP3_RR7_CREATOR_MARKED_FRONTIERS_18/rr7_source_candidate.json",
+  "base_word_field": "word",
+  "base_word_name": "unreflected A80",
+  "range_convention": "inclusive, one-based",
+  "word_recipe": [
+    {"base_range": [1, 41]},
+    {"new_actual_operations": [["K", 1], ["K", 5]]},
+    {"base_range": [42, 43]},
+    {"new_actual_operations": [["D", 13], ["D", 12], ["D", 11], ["D", 10], ["D", 9], ["D", 8], ["D", 7], ["D", 6], ["D", 5], ["D", 4], ["D", 3], ["D", 2], ["D", 1], ["D", 2], ["D", 3], ["D", 4], ["D", 5], ["D", 13], ["D", 1], ["D", 13], ["D", 3], ["D", 1], ["D", 2], ["D", 1], ["D", 13], ["K", 1], ["K", 3]]},
+    {"base_range": [44, 45]},
+    {"new_actual_operations": [["D", 13], ["D", 12], ["D", 11], ["D", 10], ["D", 9], ["D", 8], ["D", 7], ["D", 6], ["D", 5], ["D", 4], ["D", 3], ["D", 2], ["D", 1]]},
+    {"new_DELETE_operations_of_base_targets": [1, 45]},
+    {"base_range": [46, 80]}
+  ],
+  "length": 167,
+  "all_original_operations_preserved_as_subsequence": true,
+  "initial_A_BF": "same exact initial pair as base A80 after its actual reaching prefix P,A80,A80",
+  "A_BF_closure": "proved by explicit B return gadget and A reset/source-prefix synchronization; SATURATED_SOURCE_WITNESS.md",
+  "full_Q": 66,
+  "total_A": "not numerically replayed or asserted",
+  "critical_original_occurrences": {
+    "third_predecessor": {"occurrence": 71, "target": 1, "Q": 1, "H_at_least": 2, "u": 0, "beta": 1, "z": 1},
+    "second_predecessor": {"occurrence": 72, "target": 3, "H": 1, "Q": 2, "u": 1, "beta": 1, "z": 1, "A_case": "RL"},
+    "immediate_predecessor": {"occurrence": 73, "target": 1, "H": 1, "Q": 1, "u": 0, "beta": 1, "z": 1, "A_case": "ZIG"},
+    "deep_recovery": {"occurrence": 74, "target": 13, "H": 1, "Q": 6, "u": 6, "beta": 0, "z": 1, "A_case": "RR"}
+  },
+  "zero_origins": [[9, 2], [13, 2]],
+  "transported_births": [[74, 4], [74, 2]],
+  "own_payment": {"demand": [74, 2], "unit": [74, 1, 1]},
+  "third_predecessor_payment": {"demand": [74, 4], "unit": [71, 1, 1]},
+  "auxiliary_BE_recurrence": "existence inherited from finite original-source recurrence; numeric u,L and actual f6 not exhibited",
+  "effective_owner_availability": "not assumed for new source; licensed complete-map exchange required",
+  "new_source_engine_calls": 0,
+  "new_independent_audits": 0,
+  "refutes_two_predecessor_guard_automatic_coverage": true,
+  "refutes_main_U20": false
+}

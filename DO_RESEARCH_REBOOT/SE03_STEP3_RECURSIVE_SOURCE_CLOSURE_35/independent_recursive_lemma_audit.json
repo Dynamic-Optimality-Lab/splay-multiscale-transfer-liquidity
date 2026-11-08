@@ -1,0 +1,74 @@
+{
+  "status": "PASS_DISTINCT_STATIC_RECURSION_SOURCE_LEMMA_AUDIT",
+  "input_sha256": {
+    "ROTATION_LEVEL_OVERLAP_IDENTITIES.md": "af3aa025f18fcad53ad61b077b723151bb316bf82744387f8c90f112ad1e17fe",
+    "PRIVATE_CAPACITY_RECURSION.md": "21b10f9eea1aa2ef8edf064d28f51a35603f6e3f4b945c8d3791e8cd8b5333a5",
+    "CYCLIC_BIRTH_INTERSECTION.md": "d6eeac4cbf3f6d895036961843e6a7f86270aab6105fa53bf644ceb65a6c06db",
+    "SOURCE_COALITION_REDUCTION.md": "4e91960fd0fad1d6a6f01067b70a3de7bc4a6da06807d25ee58bb5135f0e3733",
+    "KEEP_RETIREMENT_ORDER.md": "4e71f53ed624a25f43672ea2c527878f5364da14b3b0be57c58ae75915e9d826",
+    "SHALLOW_ANCHOR_RETURN_BARRIER.md": "fb6a7fb447f136347989e36f449ee2d0ab11a41a3172f661e4e6f1c0446d39cf",
+    "MINIMAL_CONNECTED_COUNTERCUT.md": "e3f05d983fdcfbf81c11265505004a4c83e40186054ca25f0a5ae6e8c51ba18d",
+    "ABSTRACT_COMPENSATION_COUNTERMODEL.md": "b00265a87c4a8875497526521533362d8a7cf3c6ea010e1407794e746693a86b"
+  },
+  "accepted_source_graph_sha256": "f8405ebd6bf75049826a61a0a09ff6b30ab221c6701114ba27d94f8dbb5df7af",
+  "source_snapshot_checks": [
+    {
+      "source": "C33_36",
+      "foreign_KEEP_retirements": 5,
+      "cyclic_pairs": 120,
+      "source_queries": 0
+    },
+    {
+      "source": "frame13",
+      "foreign_KEEP_retirements": 0,
+      "cyclic_pairs": 325,
+      "source_queries": 0
+    },
+    {
+      "source": "W199",
+      "foreign_KEEP_retirements": 3,
+      "cyclic_pairs": 465,
+      "source_queries": 0
+    },
+    {
+      "source": "W459",
+      "foreign_KEEP_retirements": 11,
+      "cyclic_pairs": 1953,
+      "source_queries": 0
+    },
+    {
+      "source": "N85",
+      "foreign_KEEP_retirements": 2,
+      "cyclic_pairs": 1128,
+      "source_queries": 0
+    }
+  ],
+  "free_term_shallow_return_cases": [
+    "depth1 zig",
+    "depth2 RR",
+    "depth2 RL",
+    "their reflected frames"
+  ],
+  "countermodel": {
+    "sigma": 3,
+    "overlap": 4,
+    "local_unused": 0,
+    "deficit": 1,
+    "proper_coalitions_pass": true,
+    "source_realized": false,
+    "SI34_refutation": false
+  },
+  "written_proofs_reviewed": [
+    "exact capacity/marginal identities",
+    "fixed-source peeling/order independence",
+    "B path-to-star disjoint-subtree argument",
+    "foreign KEEP root separation",
+    "DELETE identity-subword contraction and actual occurrence transport",
+    "well-founded countercut normalization"
+  ],
+  "verification_scope": "same-agent independent implementation and written proof/static checks; not formal theorem-prover certification or external review",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "ROOT35": "ACTIVE",
+  "uniform_PEEL35": "ACTIVE"
+}

@@ -1,0 +1,135 @@
+{
+  "status": "UNIVERSAL_CROSS_MEDIAN_CHILD_AND_SOURCE_DEBT_AUDIT_PASS",
+  "constructor_identities_both_actual_orientations": [
+    "unique_marked_child_return",
+    "min_helper_L",
+    "min_helper_LL",
+    "min_helper_LR",
+    "max_helper_RR",
+    "min_B_depth2",
+    "max_B_depth2"
+  ],
+  "all_side_blocks_arbitrary": true,
+  "count_slack_identities": [
+    {
+      "constant": 3,
+      "B_slack": -1
+    },
+    {
+      "constant": 5,
+      "A_slack": -1
+    },
+    {
+      "constant": 5,
+      "B_slack": -1
+    }
+  ],
+  "signed_residuals": {
+    "child_weight1": {
+      "target_excess_above1": 1
+    },
+    "child_weight2": {
+      "target_debt": 1
+    },
+    "helper_weight_at_least2": {
+      "weight_excess_above2": 1,
+      "target_debt": 1
+    },
+    "unchanged_source": {
+      "old_residual": 1,
+      "target_increment": 1
+    }
+  },
+  "lineage_source_case_dependencies": [
+    {
+      "stage": "Q",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "R",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "S/T/L",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "J",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "K/C/Z",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "N",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "Kx/Cx/G7",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "KB/RB/CB/TB/GB",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "I",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "Z_unmarked_ancestors",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "J/G_marked",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "boundary/relay_caps",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    },
+    {
+      "stage": "exposure_caps",
+      "old_valid_H1_preserved": true,
+      "strictly_raised_source_H1_proved_in_original_source_case": true
+    }
+  ],
+  "old_row_preservation_does_not_alone_imply_fresh_source_validity": true,
+  "remaining_failure_exact_source_debt_equals_psi": true,
+  "all_C_source_LOW_rows_proved": true,
+  "all_old_valid_LOW_rows_preserved": true,
+  "new_debt": "D_child=max(D_spread,2*1_C)",
+  "new_psi_queries": 0,
+  "new_original_transition_evaluations": 0,
+  "new_finite_tests": 0,
+  "completed_semantic_checks_replayed": 0,
+  "proof_hashes": {
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER01/SATURATION_THEOREM.md": "acb7f0f2801fbdb59676737c9b61ade3e1fad55482343f71d800763f0c44b3d0",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/CUT_PAIR_THEOREM.md": "213f023f187146d6281d4d959a453f71e5a83ea9ed16f30da32971345754e9e7",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/BURIED_CUT_THEOREM.md": "994adba54b5c4d0ebcc0a0ca9d1593e68c1b5d44ab4806c82204ae7776f43361",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER04/RELEASE_CAPACITY_THEOREM.md": "77ded2cfad3c75cf7cf6a2dd98a131df7ab0d4d62627bffbd3c6b79d348511cd",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER05/RR_RELEASE_THEOREM.md": "4d817d7e2fe075805647a41ba042aaac51a44967e52ee624b5648c7bc8925e01",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER06/ANONYMOUS_RELEASE_THEOREM.md": "074e6ab7d4b779638340f1f4634285de1a8403e41217ebac1c2f709e99166241",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/DIRECT_BARRIER_THEOREM.md": "acaf4ced83f2071cf3844b8e9c3a591785ffa2ad81d631757e336ffbaddacc23",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER08/BURIED_BARRIER_THEOREM.md": "007539ec4db8213add612850b47dc89293cbf5bd62b9025534fb3895a29a5a43",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER09/INTERVAL_CHILD_THEOREM.md": "ee771d15beeb4b29713843b232d6fef442a7880213a3da9c067e5e2dd9376134",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER10/GRANDCHILD_THEOREM.md": "4fb941c78a7d4a2de4bc4ded1b27fdd0624715e06aa292b9b00750d964688385",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/MARKED_RELAY_THEOREM.md": "69474d98fb886eb0896ab6a7a16ce478cc4e2b0dda02facb5df6cf858bdb1602",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER12/DEPTH_FIVE_RELAY_THEOREM.md": "0e05df9ea0c806ea6c3cd19d86ff07ca469725239feb769f979b91f0bccdc974",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER13/NON_EXTREMAL_EXPOSURE_THEOREM.md": "cb304f4506961b8275a2e3fc8f0ae68f06285f2c4032bdacade7af8aa0754a0a"
+  },
+  "Step4_complete": false
+}

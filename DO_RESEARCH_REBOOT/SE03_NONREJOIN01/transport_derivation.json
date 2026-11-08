@@ -1,0 +1,483 @@
+{
+  "status": "PASS_EXACT_NAMED_UNIVERSAL_SCHEMAS",
+  "proofs": [
+    {
+      "name": "erased_Kz",
+      "source": [
+        "y",
+        "A",
+        [
+          "p",
+          "B",
+          [
+            "z",
+            "C",
+            [
+              "w",
+              "D",
+              "E"
+            ]
+          ]
+        ]
+      ],
+      "recipe": [
+        [
+          [],
+          "RR"
+        ]
+      ],
+      "destination": [
+        "z",
+        [
+          "p",
+          [
+            "y",
+            "A",
+            "B"
+          ],
+          "C"
+        ],
+        [
+          "w",
+          "D",
+          "E"
+        ]
+      ],
+      "universally_quantified_hangers": true
+    },
+    {
+      "name": "retained_Kw_F",
+      "source": [
+        "z",
+        [
+          "p",
+          [
+            "y",
+            "A",
+            "B"
+          ],
+          "C"
+        ],
+        [
+          "w",
+          "D",
+          "E"
+        ]
+      ],
+      "recipe": [
+        [
+          [],
+          "R"
+        ]
+      ],
+      "destination": [
+        "w",
+        [
+          "z",
+          [
+            "p",
+            [
+              "y",
+              "A",
+              "B"
+            ],
+            "C"
+          ],
+          "D"
+        ],
+        "E"
+      ],
+      "universally_quantified_hangers": true
+    },
+    {
+      "name": "retained_Kw_E",
+      "source": [
+        "y",
+        "A",
+        [
+          "p",
+          "B",
+          [
+            "z",
+            "C",
+            [
+              "w",
+              "D",
+              "E"
+            ]
+          ]
+        ]
+      ],
+      "recipe": [
+        [
+          [
+            2
+          ],
+          "RR"
+        ],
+        [
+          [],
+          "R"
+        ]
+      ],
+      "destination": [
+        "w",
+        [
+          "y",
+          "A",
+          [
+            "z",
+            [
+              "p",
+              "B",
+              "C"
+            ],
+            "D"
+          ]
+        ],
+        "E"
+      ],
+      "universally_quantified_hangers": true
+    },
+    {
+      "name": "retained_Ky_F",
+      "source": [
+        "w",
+        [
+          "z",
+          [
+            "p",
+            [
+              "y",
+              "A",
+              "B"
+            ],
+            "C"
+          ],
+          "D"
+        ],
+        "E"
+      ],
+      "recipe": [
+        [
+          [
+            1
+          ],
+          "LL"
+        ],
+        [
+          [],
+          "L"
+        ]
+      ],
+      "destination": [
+        "y",
+        "A",
+        [
+          "w",
+          [
+            "p",
+            "B",
+            [
+              "z",
+              "C",
+              "D"
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "universally_quantified_hangers": true
+    },
+    {
+      "name": "retained_Ky_E",
+      "source": [
+        "w",
+        [
+          "y",
+          "A",
+          [
+            "z",
+            [
+              "p",
+              "B",
+              "C"
+            ],
+            "D"
+          ]
+        ],
+        "E"
+      ],
+      "recipe": [
+        [
+          [],
+          "L"
+        ]
+      ],
+      "destination": [
+        "y",
+        "A",
+        [
+          "w",
+          [
+            "z",
+            [
+              "p",
+              "B",
+              "C"
+            ],
+            "D"
+          ],
+          "E"
+        ]
+      ],
+      "universally_quantified_hangers": true
+    },
+    {
+      "name": "retained_Kp_F",
+      "source": [
+        "y",
+        "A",
+        [
+          "w",
+          [
+            "p",
+            "B",
+            [
+              "z",
+              "C",
+              "D"
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "recipe": [
+        [
+          [],
+          "RL"
+        ]
+      ],
+      "destination": [
+        "p",
+        [
+          "y",
+          "A",
+          "B"
+        ],
+        [
+          "w",
+          [
+            "z",
+            "C",
+            "D"
+          ],
+          "E"
+        ]
+      ],
+      "universally_quantified_hangers": true
+    },
+    {
+      "name": "retained_Kp_E",
+      "source": [
+        "y",
+        "A",
+        [
+          "w",
+          [
+            "z",
+            [
+              "p",
+              "B",
+              "C"
+            ],
+            "D"
+          ],
+          "E"
+        ]
+      ],
+      "recipe": [
+        [
+          [
+            2
+          ],
+          "LL"
+        ],
+        [
+          [],
+          "R"
+        ]
+      ],
+      "destination": [
+        "p",
+        [
+          "y",
+          "A",
+          "B"
+        ],
+        [
+          "z",
+          "C",
+          [
+            "w",
+            "D",
+            "E"
+          ]
+        ]
+      ],
+      "universally_quantified_hangers": true
+    },
+    {
+      "name": "parity_Kz",
+      "source": [
+        "y",
+        [
+          "v",
+          "L",
+          "R"
+        ],
+        [
+          "p",
+          "B",
+          [
+            "z",
+            "C",
+            "D"
+          ]
+        ]
+      ],
+      "recipe": [
+        [
+          [],
+          "RR"
+        ]
+      ],
+      "destination": [
+        "z",
+        [
+          "p",
+          [
+            "y",
+            [
+              "v",
+              "L",
+              "R"
+            ],
+            "B"
+          ],
+          "C"
+        ],
+        "D"
+      ],
+      "universally_quantified_hangers": true
+    },
+    {
+      "name": "parity_Kv_F",
+      "source": [
+        "z",
+        [
+          "p",
+          [
+            "y",
+            [
+              "v",
+              "L",
+              "R"
+            ],
+            "B"
+          ],
+          "C"
+        ],
+        "D"
+      ],
+      "recipe": [
+        [
+          [
+            1
+          ],
+          "LL"
+        ],
+        [
+          [],
+          "L"
+        ]
+      ],
+      "destination": [
+        "v",
+        "L",
+        [
+          "z",
+          [
+            "y",
+            "R",
+            [
+              "p",
+              "B",
+              "C"
+            ]
+          ],
+          "D"
+        ]
+      ],
+      "universally_quantified_hangers": true
+    },
+    {
+      "name": "parity_Kv_E",
+      "source": [
+        "y",
+        [
+          "v",
+          "L",
+          "R"
+        ],
+        [
+          "p",
+          "B",
+          [
+            "z",
+            "C",
+            "D"
+          ]
+        ]
+      ],
+      "recipe": [
+        [
+          [],
+          "L"
+        ]
+      ],
+      "destination": [
+        "v",
+        "L",
+        [
+          "y",
+          "R",
+          [
+            "p",
+            "B",
+            [
+              "z",
+              "C",
+              "D"
+            ]
+          ]
+        ]
+      ],
+      "universally_quantified_hangers": true
+    }
+  ],
+  "persistent_distinctions": 3,
+  "signed_prefix": {
+    "D": 1,
+    "J": 0,
+    "Delta": 1
+  },
+  "cross_key_remainder_retained": true,
+  "maximum_potential_rejected": true,
+  "unbounded_positive_injection_proved": "m+1 versus two bits; arbitrary m",
+  "uniform_compensation_proved": false,
+  "new_CD_class_proved": false,
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_rows_replayed": 0
+}

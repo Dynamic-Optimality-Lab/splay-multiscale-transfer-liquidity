@@ -1,0 +1,98 @@
+{
+  "status": "PASS_LOCAL_BRIDGES_ONLY_SIGNED_REPAYMENT_OPEN",
+  "padding_controls": [
+    {
+      "core": 6,
+      "private_helper_control": false,
+      "operations": 22,
+      "cost_preserved": true
+    },
+    {
+      "core": 6,
+      "private_helper_control": true,
+      "operations": 26,
+      "cost_preserved": true
+    },
+    {
+      "core": 7,
+      "private_helper_control": false,
+      "operations": 23,
+      "cost_preserved": true
+    },
+    {
+      "core": 7,
+      "private_helper_control": true,
+      "operations": 27,
+      "cost_preserved": true
+    },
+    {
+      "core": 8,
+      "private_helper_control": false,
+      "operations": 24,
+      "cost_preserved": true
+    },
+    {
+      "core": 8,
+      "private_helper_control": true,
+      "operations": 28,
+      "cost_preserved": true
+    },
+    {
+      "core": 9,
+      "private_helper_control": false,
+      "operations": 25,
+      "cost_preserved": true
+    },
+    {
+      "core": 9,
+      "private_helper_control": true,
+      "operations": 29,
+      "cost_preserved": true
+    }
+  ],
+  "core10_geometry_cases": {
+    "internal_one_double_peel": 2,
+    "no_peel": 2
+  },
+  "core10_cold_source_details": [
+    {
+      "occurrence": 5,
+      "cold": 10,
+      "evicted": 8,
+      "Q": 4,
+      "ancestor": true,
+      "recent4_core": 6
+    },
+    {
+      "occurrence": 10,
+      "cold": 8,
+      "evicted": 10,
+      "Q": 2,
+      "ancestor": true,
+      "recent4_core": 6
+    },
+    {
+      "occurrence": 11,
+      "cold": 10,
+      "evicted": 1,
+      "Q": 1,
+      "ancestor": false,
+      "recent4_core": 7
+    },
+    {
+      "occurrence": 16,
+      "cold": 1,
+      "evicted": 10,
+      "Q": 0,
+      "ancestor": false,
+      "recent4_core": 7
+    }
+  ],
+  "universal_padding_proof": "old-key paths unchanged; rotations commute with gap/leaf grafts; comparison only, no new A donor",
+  "universal_deficiency1_proof": "recent r-2 complement has3/4 nodes; forbidden processed unmarked loss; v first-double demotion",
+  "M3_application": "inherited universal LOCAL nine-Score theorem permits unmarked Score leaves; no graph/solver modified",
+  "repayment_signs": "NOT_PROVED",
+  "uniform_source_supply": "OPEN",
+  "new_finite_tests": 8,
+  "source_engine_calls": 644
+}

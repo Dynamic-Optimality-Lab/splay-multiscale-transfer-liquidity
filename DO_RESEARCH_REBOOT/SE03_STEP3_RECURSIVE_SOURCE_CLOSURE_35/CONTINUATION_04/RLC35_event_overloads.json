@@ -1,0 +1,194 @@
+{
+  "status": "EXACT_STORED_SOURCE_RLC_EVENT_OVERLOADS",
+  "controls": [
+    {
+      "source": "AF",
+      "event_load_peak": 2,
+      "overloaded_events": [],
+      "total_event_excess": 0,
+      "raw_collision_units": 5,
+      "total_claims": 36
+    },
+    {
+      "source": "CCR",
+      "event_load_peak": 3,
+      "overloaded_events": [
+        {
+          "event": [
+            67,
+            1
+          ],
+          "source_kind": "K",
+          "source_target": 11,
+          "genuine_F": true,
+          "event_pattern": "RL",
+          "actual_rotation_pivots": [
+            13,
+            7
+          ],
+          "actual_before": [
+            7,
+            [
+              1,
+              null,
+              [
+                3,
+                [
+                  2,
+                  null,
+                  null
+                ],
+                [
+                  5,
+                  [
+                    4,
+                    null,
+                    null
+                  ],
+                  [
+                    6,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ],
+            [
+              13,
+              [
+                11,
+                [
+                  9,
+                  [
+                    8,
+                    null,
+                    null
+                  ],
+                  [
+                    10,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  12,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ]
+          ],
+          "actual_after": [
+            11,
+            [
+              7,
+              [
+                1,
+                null,
+                [
+                  3,
+                  [
+                    2,
+                    null,
+                    null
+                  ],
+                  [
+                    5,
+                    [
+                      4,
+                      null,
+                      null
+                    ],
+                    [
+                      6,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ],
+              [
+                9,
+                [
+                  8,
+                  null,
+                  null
+                ],
+                [
+                  10,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            [
+              13,
+              [
+                12,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          "claims": [
+            {
+              "demand": [
+                56,
+                2
+              ],
+              "key": 13,
+              "type": "DIRECT",
+              "bit": [
+                67,
+                1,
+                1
+              ],
+              "pivot": 7
+            },
+            {
+              "demand": [
+                65,
+                1
+              ],
+              "key": 13,
+              "type": "SELF",
+              "bit": [
+                67,
+                1,
+                0
+              ],
+              "pivot": 13,
+              "next_consumer": 67
+            },
+            {
+              "demand": [
+                67,
+                2
+              ],
+              "key": 11,
+              "type": "DIRECT",
+              "bit": [
+                67,
+                1,
+                0
+              ],
+              "pivot": 13
+            }
+          ],
+          "excess": 1
+        }
+      ],
+      "total_event_excess": 1,
+      "raw_collision_units": 6,
+      "total_claims": 22
+    }
+  ],
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "JR35": "OPEN",
+  "input_sha256": {
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\independent_RLC35_and_B_only_control.json": "4a91360a8ed4085284c12c0ba4d1886081e5ffa51324cd4d1f905adf6aa910ef"
+  }
+}

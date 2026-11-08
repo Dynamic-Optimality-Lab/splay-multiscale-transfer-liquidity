@@ -1,0 +1,2154 @@
+{
+  "status": "PASS",
+  "C_all_negative_words_impossible_both_actual_orientations": "REUSED_COMPLETED_PREFIX_OF_FIRST_AUDIT",
+  "X_complete_inverse_derivations": [
+    {
+      "negative_depth": 6,
+      "proof": {
+        "output": [
+          5,
+          [
+            3,
+            [
+              0,
+              null,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ],
+            [
+              4,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        "depth": 6,
+        "core_count": 9,
+        "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+        "branches": [
+          {
+            "word": "LL",
+            "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+          },
+          {
+            "word": "RR",
+            "subproof": {
+              "output": [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                [
+                  8,
+                  [
+                    6,
+                    null,
+                    [
+                      7,
+                      null,
+                      null
+                    ]
+                  ],
+                  null
+                ]
+              ],
+              "depth": 4,
+              "core_count": 5,
+              "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+              "branches": [
+                {
+                  "word": "LL",
+                  "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                },
+                {
+                  "word": "RR",
+                  "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                },
+                {
+                  "word": "LR",
+                  "subproof": {
+                    "output": [
+                      5,
+                      null,
+                      [
+                        6,
+                        null,
+                        [
+                          7,
+                          null,
+                          null
+                        ]
+                      ]
+                    ],
+                    "depth": 2,
+                    "core_count": 3,
+                    "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+                    "branches": [
+                      {
+                        "word": "LL",
+                        "subproof": {
+                          "output": [
+                            5,
+                            null,
+                            null
+                          ],
+                          "depth": 0,
+                          "core_count": 1,
+                          "reason": "IDENTITY_WORD"
+                        }
+                      },
+                      {
+                        "word": "RR",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "LR",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "RL",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      }
+                    ],
+                    "algebraic_solution_count": 1
+                  }
+                },
+                {
+                  "word": "RL",
+                  "subproof": {
+                    "output": [
+                      5,
+                      null,
+                      [
+                        6,
+                        null,
+                        [
+                          7,
+                          null,
+                          null
+                        ]
+                      ]
+                    ],
+                    "depth": 2,
+                    "core_count": 3,
+                    "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+                    "branches": [
+                      {
+                        "word": "LL",
+                        "subproof": {
+                          "output": [
+                            5,
+                            null,
+                            null
+                          ],
+                          "depth": 0,
+                          "core_count": 1,
+                          "reason": "IDENTITY_WORD"
+                        }
+                      },
+                      {
+                        "word": "RR",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "LR",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "RL",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      }
+                    ],
+                    "algebraic_solution_count": 1
+                  }
+                }
+              ],
+              "algebraic_solution_count": 2
+            }
+          },
+          {
+            "word": "LR",
+            "subproof": {
+              "output": [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              "depth": 4,
+              "core_count": 4,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          },
+          {
+            "word": "RL",
+            "subproof": {
+              "output": [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              "depth": 4,
+              "core_count": 4,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          }
+        ],
+        "algebraic_solution_count": 2
+      },
+      "actual_opposite_proof": {
+        "output": [
+          3,
+          [
+            0,
+            null,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              8,
+              [
+                6,
+                null,
+                [
+                  7,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ]
+          ]
+        ],
+        "depth": 6,
+        "core_count": 9,
+        "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+        "branches": [
+          {
+            "word": "LL",
+            "subproof": {
+              "output": [
+                3,
+                [
+                  0,
+                  null,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ]
+                ],
+                [
+                  4,
+                  null,
+                  null
+                ]
+              ],
+              "depth": 4,
+              "core_count": 5,
+              "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+              "branches": [
+                {
+                  "word": "LL",
+                  "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                },
+                {
+                  "word": "RR",
+                  "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                },
+                {
+                  "word": "LR",
+                  "subproof": {
+                    "output": [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    "depth": 2,
+                    "core_count": 3,
+                    "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+                    "branches": [
+                      {
+                        "word": "LL",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "RR",
+                        "subproof": {
+                          "output": [
+                            3,
+                            null,
+                            null
+                          ],
+                          "depth": 0,
+                          "core_count": 1,
+                          "reason": "IDENTITY_WORD"
+                        }
+                      },
+                      {
+                        "word": "LR",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "RL",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      }
+                    ],
+                    "algebraic_solution_count": 1
+                  }
+                },
+                {
+                  "word": "RL",
+                  "subproof": {
+                    "output": [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    "depth": 2,
+                    "core_count": 3,
+                    "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+                    "branches": [
+                      {
+                        "word": "LL",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "RR",
+                        "subproof": {
+                          "output": [
+                            3,
+                            null,
+                            null
+                          ],
+                          "depth": 0,
+                          "core_count": 1,
+                          "reason": "IDENTITY_WORD"
+                        }
+                      },
+                      {
+                        "word": "LR",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "RL",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      }
+                    ],
+                    "algebraic_solution_count": 1
+                  }
+                }
+              ],
+              "algebraic_solution_count": 2
+            }
+          },
+          {
+            "word": "RR",
+            "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+          },
+          {
+            "word": "LR",
+            "subproof": {
+              "output": [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                [
+                  4,
+                  null,
+                  null
+                ]
+              ],
+              "depth": 4,
+              "core_count": 4,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          },
+          {
+            "word": "RL",
+            "subproof": {
+              "output": [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                [
+                  4,
+                  null,
+                  null
+                ]
+              ],
+              "depth": 4,
+              "core_count": 4,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          }
+        ],
+        "algebraic_solution_count": 2
+      }
+    },
+    {
+      "negative_depth": 7,
+      "proof": {
+        "output": [
+          5,
+          [
+            3,
+            [
+              0,
+              null,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ],
+            [
+              4,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        "depth": 7,
+        "core_count": 9,
+        "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+        "branches": [
+          {
+            "word": "L",
+            "subproof": {
+              "output": [
+                5,
+                [
+                  3,
+                  [
+                    0,
+                    null,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    4,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              "depth": 6,
+              "core_count": 8,
+              "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+              "branches": [
+                {
+                  "word": "LL",
+                  "subproof": {
+                    "output": [
+                      5,
+                      [
+                        3,
+                        [
+                          0,
+                          null,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ]
+                        ],
+                        [
+                          4,
+                          null,
+                          null
+                        ]
+                      ],
+                      null
+                    ],
+                    "depth": 4,
+                    "core_count": 6,
+                    "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+                    "branches": [
+                      {
+                        "word": "LL",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "RR",
+                        "subproof": {
+                          "output": [
+                            5,
+                            [
+                              4,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          "depth": 2,
+                          "core_count": 2,
+                          "reason": "DISTINCT_PATH_CAPACITY"
+                        }
+                      },
+                      {
+                        "word": "LR",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "RL",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      }
+                    ],
+                    "algebraic_solution_count": 0
+                  }
+                },
+                {
+                  "word": "RR",
+                  "subproof": {
+                    "output": [
+                      5,
+                      [
+                        4,
+                        null,
+                        null
+                      ],
+                      [
+                        6,
+                        null,
+                        [
+                          7,
+                          null,
+                          null
+                        ]
+                      ]
+                    ],
+                    "depth": 4,
+                    "core_count": 4,
+                    "reason": "DISTINCT_PATH_CAPACITY"
+                  }
+                },
+                {
+                  "word": "LR",
+                  "subproof": {
+                    "output": [
+                      5,
+                      [
+                        4,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    "depth": 4,
+                    "core_count": 2,
+                    "reason": "DISTINCT_PATH_CAPACITY"
+                  }
+                },
+                {
+                  "word": "RL",
+                  "subproof": {
+                    "output": [
+                      5,
+                      [
+                        4,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    "depth": 4,
+                    "core_count": 2,
+                    "reason": "DISTINCT_PATH_CAPACITY"
+                  }
+                }
+              ],
+              "algebraic_solution_count": 0
+            }
+          },
+          {
+            "word": "R",
+            "subproof": {
+              "output": [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                [
+                  8,
+                  [
+                    6,
+                    null,
+                    [
+                      7,
+                      null,
+                      null
+                    ]
+                  ],
+                  null
+                ]
+              ],
+              "depth": 6,
+              "core_count": 5,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          }
+        ],
+        "algebraic_solution_count": 0
+      },
+      "actual_opposite_proof": {
+        "output": [
+          3,
+          [
+            0,
+            null,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              8,
+              [
+                6,
+                null,
+                [
+                  7,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ]
+          ]
+        ],
+        "depth": 7,
+        "core_count": 9,
+        "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+        "branches": [
+          {
+            "word": "L",
+            "subproof": {
+              "output": [
+                3,
+                [
+                  0,
+                  null,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ]
+                ],
+                [
+                  4,
+                  null,
+                  null
+                ]
+              ],
+              "depth": 6,
+              "core_count": 5,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          },
+          {
+            "word": "R",
+            "subproof": {
+              "output": [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                [
+                  5,
+                  [
+                    4,
+                    null,
+                    null
+                  ],
+                  [
+                    8,
+                    [
+                      6,
+                      null,
+                      [
+                        7,
+                        null,
+                        null
+                      ]
+                    ],
+                    null
+                  ]
+                ]
+              ],
+              "depth": 6,
+              "core_count": 8,
+              "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+              "branches": [
+                {
+                  "word": "LL",
+                  "subproof": {
+                    "output": [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        4,
+                        null,
+                        null
+                      ]
+                    ],
+                    "depth": 4,
+                    "core_count": 4,
+                    "reason": "DISTINCT_PATH_CAPACITY"
+                  }
+                },
+                {
+                  "word": "RR",
+                  "subproof": {
+                    "output": [
+                      3,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          null,
+                          null
+                        ],
+                        [
+                          8,
+                          [
+                            6,
+                            null,
+                            [
+                              7,
+                              null,
+                              null
+                            ]
+                          ],
+                          null
+                        ]
+                      ]
+                    ],
+                    "depth": 4,
+                    "core_count": 6,
+                    "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+                    "branches": [
+                      {
+                        "word": "LL",
+                        "subproof": {
+                          "output": [
+                            3,
+                            null,
+                            [
+                              4,
+                              null,
+                              null
+                            ]
+                          ],
+                          "depth": 2,
+                          "core_count": 2,
+                          "reason": "DISTINCT_PATH_CAPACITY"
+                        }
+                      },
+                      {
+                        "word": "RR",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "LR",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      },
+                      {
+                        "word": "RL",
+                        "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+                      }
+                    ],
+                    "algebraic_solution_count": 0
+                  }
+                },
+                {
+                  "word": "LR",
+                  "subproof": {
+                    "output": [
+                      3,
+                      null,
+                      [
+                        4,
+                        null,
+                        null
+                      ]
+                    ],
+                    "depth": 4,
+                    "core_count": 2,
+                    "reason": "DISTINCT_PATH_CAPACITY"
+                  }
+                },
+                {
+                  "word": "RL",
+                  "subproof": {
+                    "output": [
+                      3,
+                      null,
+                      [
+                        4,
+                        null,
+                        null
+                      ]
+                    ],
+                    "depth": 4,
+                    "core_count": 2,
+                    "reason": "DISTINCT_PATH_CAPACITY"
+                  }
+                }
+              ],
+              "algebraic_solution_count": 0
+            }
+          }
+        ],
+        "algebraic_solution_count": 0
+      }
+    },
+    {
+      "negative_depth": 8,
+      "proof": {
+        "output": [
+          5,
+          [
+            3,
+            [
+              0,
+              null,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ],
+            [
+              4,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ],
+            null
+          ]
+        ],
+        "depth": 8,
+        "core_count": 9,
+        "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+        "branches": [
+          {
+            "word": "LL",
+            "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+          },
+          {
+            "word": "RR",
+            "subproof": {
+              "output": [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                [
+                  8,
+                  [
+                    6,
+                    null,
+                    [
+                      7,
+                      null,
+                      null
+                    ]
+                  ],
+                  null
+                ]
+              ],
+              "depth": 6,
+              "core_count": 5,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          },
+          {
+            "word": "LR",
+            "subproof": {
+              "output": [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              "depth": 6,
+              "core_count": 4,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          },
+          {
+            "word": "RL",
+            "subproof": {
+              "output": [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              "depth": 6,
+              "core_count": 4,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          }
+        ],
+        "algebraic_solution_count": 0
+      },
+      "actual_opposite_proof": {
+        "output": [
+          3,
+          [
+            0,
+            null,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              8,
+              [
+                6,
+                null,
+                [
+                  7,
+                  null,
+                  null
+                ]
+              ],
+              null
+            ]
+          ]
+        ],
+        "depth": 8,
+        "core_count": 9,
+        "reason": "EXHAUSTIVE_LAST_OPERATION_INVERSION",
+        "branches": [
+          {
+            "word": "LL",
+            "subproof": {
+              "output": [
+                3,
+                [
+                  0,
+                  null,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ]
+                ],
+                [
+                  4,
+                  null,
+                  null
+                ]
+              ],
+              "depth": 6,
+              "core_count": 5,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          },
+          {
+            "word": "RR",
+            "reason": "ABSENT_REQUIRED_CONSTRUCTOR"
+          },
+          {
+            "word": "LR",
+            "subproof": {
+              "output": [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                [
+                  4,
+                  null,
+                  null
+                ]
+              ],
+              "depth": 6,
+              "core_count": 4,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          },
+          {
+            "word": "RL",
+            "subproof": {
+              "output": [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                [
+                  4,
+                  null,
+                  null
+                ]
+              ],
+              "depth": 6,
+              "core_count": 4,
+              "reason": "DISTINCT_PATH_CAPACITY"
+            }
+          }
+        ],
+        "algebraic_solution_count": 0
+      }
+    }
+  ],
+  "both_predecessors_have_no_negative_incoming": [
+    {
+      "predecessor": "P",
+      "negative_depth": 6,
+      "proof": {
+        "processed_term": [
+          0,
+          null,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              4,
+              null,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ],
+        "required_depth": 6,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "LL",
+            "subproof": {
+              "processed_term": [
+                0,
+                null,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              "required_depth": 4,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "RR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "LR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      },
+      "actual_opposite_proof": {
+        "processed_term": [
+          8,
+          [
+            5,
+            [
+              4,
+              [
+                0,
+                null,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    [
+                      3,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ],
+              null
+            ],
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "required_depth": 6,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "LL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RR",
+            "subproof": {
+              "processed_term": [
+                8,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              "required_depth": 4,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "LR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      }
+    },
+    {
+      "predecessor": "P",
+      "negative_depth": 7,
+      "proof": {
+        "processed_term": [
+          0,
+          null,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              4,
+              null,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ],
+        "required_depth": 7,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "L",
+            "subproof": {
+              "processed_term": [
+                0,
+                null,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              "required_depth": 6,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "R",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      },
+      "actual_opposite_proof": {
+        "processed_term": [
+          8,
+          [
+            5,
+            [
+              4,
+              [
+                0,
+                null,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    [
+                      3,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ],
+              null
+            ],
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "required_depth": 7,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "L",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "R",
+            "subproof": {
+              "processed_term": [
+                8,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              "required_depth": 6,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "predecessor": "P",
+      "negative_depth": 8,
+      "proof": {
+        "processed_term": [
+          0,
+          null,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              4,
+              null,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ],
+        "required_depth": 8,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "LL",
+            "subproof": {
+              "processed_term": [
+                0,
+                null,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              "required_depth": 6,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "RR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "LR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      },
+      "actual_opposite_proof": {
+        "processed_term": [
+          8,
+          [
+            5,
+            [
+              4,
+              [
+                0,
+                null,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    [
+                      3,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ],
+              null
+            ],
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "required_depth": 8,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "LL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RR",
+            "subproof": {
+              "processed_term": [
+                8,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              "required_depth": 6,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "LR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      }
+    },
+    {
+      "predecessor": "P2",
+      "negative_depth": 6,
+      "proof": {
+        "processed_term": [
+          0,
+          null,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              8,
+              [
+                4,
+                null,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ]
+              ],
+              null
+            ]
+          ]
+        ],
+        "required_depth": 6,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "LL",
+            "subproof": {
+              "processed_term": [
+                0,
+                null,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              "required_depth": 4,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "RR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "LR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      },
+      "actual_opposite_proof": {
+        "processed_term": [
+          8,
+          [
+            5,
+            [
+              0,
+              null,
+              [
+                4,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    [
+                      3,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                null
+              ]
+            ],
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "required_depth": 6,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "LL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RR",
+            "subproof": {
+              "processed_term": [
+                8,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              "required_depth": 4,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "LR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      }
+    },
+    {
+      "predecessor": "P2",
+      "negative_depth": 7,
+      "proof": {
+        "processed_term": [
+          0,
+          null,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              8,
+              [
+                4,
+                null,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ]
+              ],
+              null
+            ]
+          ]
+        ],
+        "required_depth": 7,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "L",
+            "subproof": {
+              "processed_term": [
+                0,
+                null,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              "required_depth": 6,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "R",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      },
+      "actual_opposite_proof": {
+        "processed_term": [
+          8,
+          [
+            5,
+            [
+              0,
+              null,
+              [
+                4,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    [
+                      3,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                null
+              ]
+            ],
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "required_depth": 7,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "L",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "R",
+            "subproof": {
+              "processed_term": [
+                8,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              "required_depth": 6,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "predecessor": "P2",
+      "negative_depth": 8,
+      "proof": {
+        "processed_term": [
+          0,
+          null,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            [
+              8,
+              [
+                4,
+                null,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ]
+              ],
+              null
+            ]
+          ]
+        ],
+        "required_depth": 8,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "LL",
+            "subproof": {
+              "processed_term": [
+                0,
+                null,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              "required_depth": 6,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "RR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "LR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      },
+      "actual_opposite_proof": {
+        "processed_term": [
+          8,
+          [
+            5,
+            [
+              0,
+              null,
+              [
+                4,
+                [
+                  1,
+                  null,
+                  [
+                    2,
+                    null,
+                    [
+                      3,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                null
+              ]
+            ],
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "required_depth": 8,
+        "core_count": 9,
+        "reason": "ALL_EXHAUSTIVE_LAST_OPERATION_CASES_IMPOSSIBLE",
+        "branches": [
+          {
+            "last_word": "LL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RR",
+            "subproof": {
+              "processed_term": [
+                8,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              "required_depth": 6,
+              "core_count": 3,
+              "reason": "PATH_REQUIRES_MORE_DISTINCT_CORES_THAN_PRESENT"
+            }
+          },
+          {
+            "last_word": "LR",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          },
+          {
+            "last_word": "RL",
+            "reason": "REQUIRED_CHILD_ABSENT"
+          }
+        ]
+      }
+    }
+  ],
+  "saved_complete_negative_recurrence_inference": {
+    "psi_C": 0,
+    "psi_P": 0,
+    "psi_P2": 0,
+    "psi_X": 1
+  },
+  "no_original_model_population_or_psi_bank_tests": true
+}

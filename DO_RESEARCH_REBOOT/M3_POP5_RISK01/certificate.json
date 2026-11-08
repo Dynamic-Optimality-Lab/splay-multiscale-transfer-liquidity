@@ -1,0 +1,162 @@
+{
+  "status": "PROVED_RESTRICTED_DOMAIN_TOTAL5_PREFIX",
+  "finite_campaign_status": "STOPPED_ON_FIRST_NEW_FAILURE",
+  "source_workflow_status": "SOURCE_AUDIT_WORKFLOW_COMPLETE",
+  "new_canonical_certificates": 70,
+  "new_original_signatures": 140,
+  "new_signature_count_by_support_size": {
+    "2": 92,
+    "3": 48,
+    "4": 0,
+    "5": 0
+  },
+  "new_mask_signature_sectors": 17640,
+  "total4_vectors_covered": 715,
+  "total5_multi_vectors_covered": 140,
+  "total5_multi_vectors_remaining": 1852,
+  "total5_vectors_covered_including_old_singles": 150,
+  "combined_signature_vectors": 3761,
+  "combined_mask_signature_sectors": 473886,
+  "canonical_queries_independently_audited": 29978075,
+  "explicit_integer_residuals": 2014034390,
+  "minimum_residual": 0,
+  "maximum_queries_per_phase": 697802,
+  "maximum_DP_records": 811072,
+  "maximum_construction_records": 1295337,
+  "finite_CPU_ceiling": 7200,
+  "prior_finite_CPU_retained": 4055.96875,
+  "additional_finite_CPU_charged": 3139.234375,
+  "cumulative_whole_process_finite_CPU_charged": 7195.203125,
+  "complete_old_phases_repeated": 0,
+  "complete_old_audits_replayed": 0,
+  "source_batches_passed": 2,
+  "new_original_source_roots": 84,
+  "new_full_state_mixed_cycles": 4,
+  "source_CPU_seconds": 161.75,
+  "source_per_phase_CPU_cap": 300,
+  "uniform_finite_walk_bound": -7,
+  "closed_mixed_walk_bound": 0,
+  "R1_R4_preserved": true,
+  "CPU_caps_preserved": [
+    120,
+    300,
+    300
+  ],
+  "query_cap_preserved": 2000000,
+  "other_caps_unchanged": true,
+  "h0_correction_preserved": true,
+  "Bank25": 25,
+  "T": 266,
+  "alpha_depth": 2,
+  "new_observables": 0,
+  "failure": {
+    "sigma": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "phase": "audit",
+    "status": "UNKNOWN_OR_FAILED",
+    "CPU_charged": 3.765625,
+    "CPU_cap": 3.5625,
+    "error": {
+      "type": "AssertionError",
+      "message": "UNKNOWN independent query/CPU cap"
+    },
+    "query_cap": 2000000,
+    "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_POP5_RISK01/log_s0004001000_audit.txt",
+    "reason": null,
+    "obstruction": null,
+    "returncode": 1,
+    "cumulative_finite_CPU": 7195.203125
+  },
+  "source_failure": null,
+  "finite_only_unpromoted_signatures": [],
+  "full_M3_proved": false,
+  "Stage04_started": false,
+  "negative_original_cycle_certified": false,
+  "integrity": {
+    "status": "PASS",
+    "old_files_unchanged": 11506,
+    "head": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+    "tracked_tree_clean": true,
+    "writes_confined_here": true,
+    "write_claim_scope": "this campaign only",
+    "concurrent_U4_additions": 3
+  },
+  "all_total5_multi_support_span_at_most_two_covered": true,
+  "new_certified_signatures_by_span": {
+    "1": 36,
+    "2": 80,
+    "3": 24,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "stop_details": {
+    "status": "UNKNOWN_FINITE_ALLOWANCE_RESERVE_NOT_MATHEMATICAL_REFUTATION",
+    "sigma": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "gap_multiplicities": {
+      "3": 4,
+      "6": 1
+    },
+    "phase": "audit",
+    "current_maximum_audit_CPU_cap": 300,
+    "allocated_audit_CPU_from_remaining_balance": 3.5625,
+    "whole_failed_audit_process_CPU": 3.765625,
+    "finite_CPU_ceiling": 7200,
+    "prior_finite_CPU_retained": 4055.96875,
+    "cumulative_finite_CPU_charged": 7195.203125,
+    "CPU_left_reserved": 4.796875,
+    "guard_reserve": 5,
+    "canonical_query_cap_unchanged": 2000000,
+    "complete_enumeration_queries": 342348,
+    "last_persisted_independent_family_query_count": 67380,
+    "exact_partial_independent_query_count_not_persisted": true,
+    "independent_grammar_and_residual_audit_unfinished": true,
+    "candidate_not_promoted": true,
+    "original_negative_cycle_certified": false,
+    "next_finite_case_started": false,
+    "failed_phase_retried_or_split": false,
+    "completed_input_files_saved_for_future_explicit_continuation": [
+      {
+        "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_POP5_RISK01/s0004001000/relation.json",
+        "sha256": "33fd46ba3c4721f7bf1b8abdfc30bb9fdd7e33ae96ed5aa30686c3f403c5111c"
+      },
+      {
+        "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_POP5_RISK01/s0004001000/potential.json",
+        "sha256": "ae734bdc2db4a42ca4545e4d88d52432572b805823c207e7c9462bcd6f16e6aa"
+      },
+      {
+        "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_POP5_RISK01/s0004001000/build_status.json",
+        "sha256": "b446adff3a9a2bcb277e01468259bc24b105187c315bbc1f2910d9540d1906dc"
+      },
+      {
+        "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_POP5_RISK01/s0004001000/construction.json",
+        "sha256": "2fa579b5b0cfc01aca238e87c02b0fbd4fd333836463c580dff9218972e41e09"
+      }
+    ],
+    "only_pre_registered_source_checks_for_completed70_cases_follow": true
+  }
+}

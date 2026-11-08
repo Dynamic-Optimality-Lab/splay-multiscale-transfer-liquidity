@@ -1,0 +1,2495 @@
+{
+  "status": "PUBLISHED_CURRENT_OWNER_COURSE_CORRECTION",
+  "active_authorization": "../resource_amendment_1440.json",
+  "controller": "../run_phase_1440.py",
+  "entry_snapshot": "resources_checkpoint.json",
+  "branch": "coarse-double-branch",
+  "head": "8c378d49283b3738b18e7175886772a98025e4e9",
+  "tracked_clean": true,
+  "untracked_paths_count": 17970,
+  "untracked_path_inventory_sha256": "2d4a18caf6e8e94d5eff1697ba48d91472b9de4884310c1da4a159dd33d9cf11",
+  "global_CPU": 4904.046875,
+  "global_cap": 7200,
+  "symbolic_CPU": 1203.453125,
+  "symbolic_cap": 1440,
+  "independent_CPU": 499.21875,
+  "independent_cap": 600,
+  "source_queries": 2998335,
+  "source_query_cap": 3000000,
+  "remaining_queries": 1665,
+  "remaining_symbolic_CPU_including_reserve": 236.546875,
+  "remaining_independent_CPU_including_reserve": 100.78125,
+  "remaining_global_CPU": 2295.953125,
+  "source_query_batch_cap": 50000,
+  "Bank25": 25,
+  "global_reserve": 5,
+  "controller_reserve": 1,
+  "live_state_limit": 2000000,
+  "DAG_limit": 4000000,
+  "stored_edge_limit": 5000000,
+  "memory_limit_bytes": 34359738368,
+  "wall_limit_hours": 12,
+  "phase_caps_unchanged": {
+    "proof": 20,
+    "independent": 90,
+    "core": 20,
+    "verify": 90,
+    "verify17": 90,
+    "verify18": 90
+  },
+  "cumulative_usage_reset": false,
+  "all_run_charges_including_failures": [
+    {
+      "phase": "core10",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.53125,
+      "controller_CPU": 0.171875,
+      "total_CPU": 1.703125,
+      "queries": 202
+    },
+    {
+      "phase": "core12",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.5,
+      "controller_CPU": 0.21875,
+      "total_CPU": 1.71875,
+      "queries": 138
+    },
+    {
+      "phase": "core13",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.328125,
+      "controller_CPU": 0.171875,
+      "total_CPU": 0.5,
+      "queries": 3066
+    },
+    {
+      "phase": "core14",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.390625,
+      "queries": 142
+    },
+    {
+      "phase": "core15",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.234375,
+      "controller_CPU": 0.1875,
+      "total_CPU": 1.421875,
+      "queries": 4060
+    },
+    {
+      "phase": "core16",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.375,
+      "controller_CPU": 0.15625,
+      "total_CPU": 0.53125,
+      "queries": 176
+    },
+    {
+      "phase": "core18",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.09375,
+      "controller_CPU": 0.265625,
+      "total_CPU": 2.359375,
+      "queries": 0
+    },
+    {
+      "phase": "core19",
+      "group": "symbolic",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 5.671875,
+      "controller_CPU": 0.609375,
+      "total_CPU": 6.28125,
+      "queries": 0
+    },
+    {
+      "phase": "core20",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.671875,
+      "controller_CPU": 0.28125,
+      "total_CPU": 0.953125,
+      "queries": 89
+    },
+    {
+      "phase": "core21",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.265625,
+      "controller_CPU": 0.421875,
+      "total_CPU": 1.6875,
+      "queries": 81
+    },
+    {
+      "phase": "core22",
+      "group": "symbolic",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 1.484375,
+      "controller_CPU": 0.640625,
+      "total_CPU": 2.125,
+      "queries": 56
+    },
+    {
+      "phase": "core23",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.765625,
+      "controller_CPU": 0.734375,
+      "total_CPU": 2.5,
+      "queries": 33
+    },
+    {
+      "phase": "core24",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.703125,
+      "controller_CPU": 0.28125,
+      "total_CPU": 0.984375,
+      "queries": 35
+    },
+    {
+      "phase": "core25",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.546875,
+      "controller_CPU": 0.328125,
+      "total_CPU": 0.875,
+      "queries": 32
+    },
+    {
+      "phase": "core26",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.578125,
+      "controller_CPU": 0.3125,
+      "total_CPU": 0.890625,
+      "queries": 32
+    },
+    {
+      "phase": "core27",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.546875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.75,
+      "queries": 32
+    },
+    {
+      "phase": "core28",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.609375,
+      "controller_CPU": 0.328125,
+      "total_CPU": 0.9375,
+      "queries": 32
+    },
+    {
+      "phase": "core29",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.59375,
+      "controller_CPU": 0.3125,
+      "total_CPU": 0.90625,
+      "queries": 32
+    },
+    {
+      "phase": "core2",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.28125,
+      "controller_CPU": 0.3125,
+      "total_CPU": 1.59375,
+      "queries": 19805
+    },
+    {
+      "phase": "core30",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.515625,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.78125,
+      "queries": 30
+    },
+    {
+      "phase": "core31",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.5625,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.8125,
+      "queries": 32
+    },
+    {
+      "phase": "core32",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.5,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.703125,
+      "queries": 31
+    },
+    {
+      "phase": "core33",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.640625,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.890625,
+      "queries": 32
+    },
+    {
+      "phase": "core34",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.625,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.890625,
+      "queries": 24
+    },
+    {
+      "phase": "core35",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.265625,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.515625,
+      "queries": 125
+    },
+    {
+      "phase": "core36",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.65625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 0.953125,
+      "queries": 31
+    },
+    {
+      "phase": "core37",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.609375,
+      "controller_CPU": 0.296875,
+      "total_CPU": 0.90625,
+      "queries": 29
+    },
+    {
+      "phase": "core38",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.46875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.734375,
+      "queries": 28
+    },
+    {
+      "phase": "core3",
+      "group": "symbolic",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.296875,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.53125,
+      "queries": 152
+    },
+    {
+      "phase": "core4",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.328125,
+      "controller_CPU": 0.359375,
+      "total_CPU": 0.6875,
+      "queries": 152
+    },
+    {
+      "phase": "core5",
+      "group": "symbolic",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.203125,
+      "controller_CPU": 0.28125,
+      "total_CPU": 0.484375,
+      "queries": 12
+    },
+    {
+      "phase": "core6",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.546875,
+      "controller_CPU": 0.421875,
+      "total_CPU": 0.96875,
+      "queries": 44
+    },
+    {
+      "phase": "core7",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.34375,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.59375,
+      "queries": 11726
+    },
+    {
+      "phase": "core8",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.921875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 1.125,
+      "queries": 118
+    },
+    {
+      "phase": "core9",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.90625,
+      "controller_CPU": 0.1875,
+      "total_CPU": 2.09375,
+      "queries": 512
+    },
+    {
+      "phase": "core",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.25,
+      "controller_CPU": 0.171875,
+      "total_CPU": 0.421875,
+      "queries": 11440
+    },
+    {
+      "phase": "independent",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.359375,
+      "queries": 0
+    },
+    {
+      "phase": "proof100",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.578125,
+      "controller_CPU": 0.265625,
+      "total_CPU": 1.84375,
+      "queries": 0
+    },
+    {
+      "phase": "proof101",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.25,
+      "controller_CPU": 0.25,
+      "total_CPU": 2.5,
+      "queries": 0
+    },
+    {
+      "phase": "proof102",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.59375,
+      "controller_CPU": 0.21875,
+      "total_CPU": 1.8125,
+      "queries": 0
+    },
+    {
+      "phase": "proof103",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.75,
+      "controller_CPU": 0.265625,
+      "total_CPU": 1.015625,
+      "queries": 0
+    },
+    {
+      "phase": "proof104",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.890625,
+      "controller_CPU": 0.3125,
+      "total_CPU": 2.203125,
+      "queries": 0
+    },
+    {
+      "phase": "proof105",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.25,
+      "controller_CPU": 0.296875,
+      "total_CPU": 2.546875,
+      "queries": 0
+    },
+    {
+      "phase": "proof106",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.171875,
+      "controller_CPU": 0.28125,
+      "total_CPU": 0.453125,
+      "queries": 0
+    },
+    {
+      "phase": "proof107",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.140625,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.34375,
+      "queries": 0
+    },
+    {
+      "phase": "proof108",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.359375,
+      "queries": 0
+    },
+    {
+      "phase": "proof109",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.21875,
+      "total_CPU": 0.40625,
+      "queries": 0
+    },
+    {
+      "phase": "proof10",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.578125,
+      "controller_CPU": 0.171875,
+      "total_CPU": 3.75,
+      "queries": 0
+    },
+    {
+      "phase": "proof110",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 18.203125,
+      "controller_CPU": 0.40625,
+      "total_CPU": 18.609375,
+      "queries": 0
+    },
+    {
+      "phase": "proof111",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.59375,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.828125,
+      "queries": 0
+    },
+    {
+      "phase": "proof112",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.984375,
+      "controller_CPU": 0.296875,
+      "total_CPU": 1.28125,
+      "queries": 0
+    },
+    {
+      "phase": "proof113",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.140625,
+      "controller_CPU": 0.21875,
+      "total_CPU": 2.359375,
+      "queries": 0
+    },
+    {
+      "phase": "proof114",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.40625,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.671875,
+      "queries": 0
+    },
+    {
+      "phase": "proof115",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.5625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 0.859375,
+      "queries": 0
+    },
+    {
+      "phase": "proof116",
+      "group": "symbolic",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 20.078125,
+      "controller_CPU": 0.296875,
+      "total_CPU": 20.375,
+      "queries": 0
+    },
+    {
+      "phase": "proof117",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.015625,
+      "controller_CPU": 0.3125,
+      "total_CPU": 3.328125,
+      "queries": 0
+    },
+    {
+      "phase": "proof118",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.546875,
+      "controller_CPU": 0.28125,
+      "total_CPU": 3.828125,
+      "queries": 0
+    },
+    {
+      "phase": "proof119",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 15.640625,
+      "controller_CPU": 0.375,
+      "total_CPU": 16.015625,
+      "queries": 0
+    },
+    {
+      "phase": "proof11",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.0,
+      "controller_CPU": 0.21875,
+      "total_CPU": 1.21875,
+      "queries": 0
+    },
+    {
+      "phase": "proof120",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 7.671875,
+      "controller_CPU": 0.328125,
+      "total_CPU": 8.0,
+      "queries": 0
+    },
+    {
+      "phase": "proof121",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 12.515625,
+      "controller_CPU": 0.265625,
+      "total_CPU": 12.78125,
+      "queries": 0
+    },
+    {
+      "phase": "proof122",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.765625,
+      "controller_CPU": 0.234375,
+      "total_CPU": 4.0,
+      "queries": 0
+    },
+    {
+      "phase": "proof123",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.203125,
+      "controller_CPU": 0.328125,
+      "total_CPU": 3.53125,
+      "queries": 0
+    },
+    {
+      "phase": "proof124",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 12.640625,
+      "controller_CPU": 0.34375,
+      "total_CPU": 12.984375,
+      "queries": 0
+    },
+    {
+      "phase": "proof125",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 13.984375,
+      "controller_CPU": 0.296875,
+      "total_CPU": 14.28125,
+      "queries": 0
+    },
+    {
+      "phase": "proof126",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 14.875,
+      "controller_CPU": 0.359375,
+      "total_CPU": 15.234375,
+      "queries": 0
+    },
+    {
+      "phase": "proof127",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 15.390625,
+      "controller_CPU": 0.328125,
+      "total_CPU": 15.71875,
+      "queries": 0
+    },
+    {
+      "phase": "proof128",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.296875,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.53125,
+      "queries": 0
+    },
+    {
+      "phase": "proof129",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 0.453125,
+      "queries": 0
+    },
+    {
+      "phase": "proof12",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.59375,
+      "controller_CPU": 0.296875,
+      "total_CPU": 16.890625,
+      "queries": 0
+    },
+    {
+      "phase": "proof130",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.21875,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.46875,
+      "queries": 0
+    },
+    {
+      "phase": "proof131",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 0.453125,
+      "queries": 0
+    },
+    {
+      "phase": "proof132",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.171875,
+      "controller_CPU": 0.21875,
+      "total_CPU": 0.390625,
+      "queries": 0
+    },
+    {
+      "phase": "proof133",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.21875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.484375,
+      "queries": 0
+    },
+    {
+      "phase": "proof134",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.515625,
+      "controller_CPU": 0.3125,
+      "total_CPU": 0.828125,
+      "queries": 0
+    },
+    {
+      "phase": "proof135",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.09375,
+      "controller_CPU": 0.34375,
+      "total_CPU": 0.4375,
+      "queries": 0
+    },
+    {
+      "phase": "proof136",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 15.78125,
+      "controller_CPU": 0.296875,
+      "total_CPU": 16.078125,
+      "queries": 0
+    },
+    {
+      "phase": "proof137",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.40625,
+      "queries": 0
+    },
+    {
+      "phase": "proof138",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 11.25,
+      "controller_CPU": 0.4375,
+      "total_CPU": 11.6875,
+      "queries": 0
+    },
+    {
+      "phase": "proof139",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.859375,
+      "controller_CPU": 0.5625,
+      "total_CPU": 17.421875,
+      "queries": 0
+    },
+    {
+      "phase": "proof13",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 14.515625,
+      "controller_CPU": 0.21875,
+      "total_CPU": 14.734375,
+      "queries": 0
+    },
+    {
+      "phase": "proof140",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 7.8125,
+      "controller_CPU": 0.34375,
+      "total_CPU": 8.15625,
+      "queries": 0
+    },
+    {
+      "phase": "proof141",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 12.3125,
+      "controller_CPU": 0.375,
+      "total_CPU": 12.6875,
+      "queries": 0
+    },
+    {
+      "phase": "proof142",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.140625,
+      "controller_CPU": 0.3125,
+      "total_CPU": 0.453125,
+      "queries": 0
+    },
+    {
+      "phase": "proof143",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 7.765625,
+      "controller_CPU": 0.359375,
+      "total_CPU": 8.125,
+      "queries": 0
+    },
+    {
+      "phase": "proof144",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.359375,
+      "controller_CPU": 0.359375,
+      "total_CPU": 16.71875,
+      "queries": 0
+    },
+    {
+      "phase": "proof145",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.265625,
+      "controller_CPU": 0.34375,
+      "total_CPU": 16.609375,
+      "queries": 0
+    },
+    {
+      "phase": "proof146",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.3125,
+      "controller_CPU": 0.28125,
+      "total_CPU": 16.59375,
+      "queries": 0
+    },
+    {
+      "phase": "proof147",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.375,
+      "controller_CPU": 0.3125,
+      "total_CPU": 16.6875,
+      "queries": 0
+    },
+    {
+      "phase": "proof148",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.40625,
+      "controller_CPU": 0.265625,
+      "total_CPU": 16.671875,
+      "queries": 0
+    },
+    {
+      "phase": "proof149",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.59375,
+      "controller_CPU": 0.296875,
+      "total_CPU": 16.890625,
+      "queries": 0
+    },
+    {
+      "phase": "proof14",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.609375,
+      "controller_CPU": 0.203125,
+      "total_CPU": 2.8125,
+      "queries": 0
+    },
+    {
+      "phase": "proof150",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.734375,
+      "controller_CPU": 0.359375,
+      "total_CPU": 17.09375,
+      "queries": 0
+    },
+    {
+      "phase": "proof151",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.609375,
+      "controller_CPU": 0.328125,
+      "total_CPU": 16.9375,
+      "queries": 0
+    },
+    {
+      "phase": "proof152",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.5625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 16.859375,
+      "queries": 0
+    },
+    {
+      "phase": "proof153",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 16.65625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 16.953125,
+      "queries": 0
+    },
+    {
+      "phase": "proof154",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 4.0625,
+      "controller_CPU": 0.640625,
+      "total_CPU": 4.703125,
+      "queries": 0
+    },
+    {
+      "phase": "proof155",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.609375,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.875,
+      "queries": 0
+    },
+    {
+      "phase": "proof156",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.265625,
+      "controller_CPU": 0.3125,
+      "total_CPU": 0.578125,
+      "queries": 0
+    },
+    {
+      "phase": "proof157",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 14.96875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 15.234375,
+      "queries": 0
+    },
+    {
+      "phase": "proof158",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.90625,
+      "controller_CPU": 0.359375,
+      "total_CPU": 1.265625,
+      "queries": 0
+    },
+    {
+      "phase": "proof159",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.65625,
+      "controller_CPU": 0.328125,
+      "total_CPU": 0.984375,
+      "queries": 0
+    },
+    {
+      "phase": "proof15",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.859375,
+      "controller_CPU": 0.265625,
+      "total_CPU": 1.125,
+      "queries": 0
+    },
+    {
+      "phase": "proof160",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.546875,
+      "controller_CPU": 0.296875,
+      "total_CPU": 0.84375,
+      "queries": 0
+    },
+    {
+      "phase": "proof161",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.1875,
+      "controller_CPU": 0.28125,
+      "total_CPU": 3.46875,
+      "queries": 0
+    },
+    {
+      "phase": "proof162",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.453125,
+      "controller_CPU": 0.296875,
+      "total_CPU": 0.75,
+      "queries": 0
+    },
+    {
+      "phase": "proof163",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "controller_CPU": 0.34375,
+      "total_CPU": 0.46875,
+      "queries": 0
+    },
+    {
+      "phase": "proof16",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.21875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.421875,
+      "queries": 0
+    },
+    {
+      "phase": "proof17",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.484375,
+      "controller_CPU": 0.296875,
+      "total_CPU": 2.78125,
+      "queries": 0
+    },
+    {
+      "phase": "proof18",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 8.859375,
+      "controller_CPU": 0.1875,
+      "total_CPU": 9.046875,
+      "queries": 0
+    },
+    {
+      "phase": "proof19",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 10.296875,
+      "controller_CPU": 0.25,
+      "total_CPU": 10.546875,
+      "queries": 0
+    },
+    {
+      "phase": "proof20",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 5.5,
+      "controller_CPU": 0.25,
+      "total_CPU": 5.75,
+      "queries": 0
+    },
+    {
+      "phase": "proof21",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 8.765625,
+      "controller_CPU": 0.25,
+      "total_CPU": 9.015625,
+      "queries": 0
+    },
+    {
+      "phase": "proof22",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 9.5,
+      "controller_CPU": 0.171875,
+      "total_CPU": 9.671875,
+      "queries": 0
+    },
+    {
+      "phase": "proof23",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 10.8125,
+      "controller_CPU": 0.265625,
+      "total_CPU": 11.078125,
+      "queries": 0
+    },
+    {
+      "phase": "proof24",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 18.0625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 18.359375,
+      "queries": 0
+    },
+    {
+      "phase": "proof25",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 13.125,
+      "controller_CPU": 0.25,
+      "total_CPU": 13.375,
+      "queries": 0
+    },
+    {
+      "phase": "proof26",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 8.4375,
+      "controller_CPU": 0.625,
+      "total_CPU": 9.0625,
+      "queries": 0
+    },
+    {
+      "phase": "proof27",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 6.3125,
+      "controller_CPU": 0.21875,
+      "total_CPU": 6.53125,
+      "queries": 0
+    },
+    {
+      "phase": "proof28",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.609375,
+      "controller_CPU": 0.171875,
+      "total_CPU": 0.78125,
+      "queries": 0
+    },
+    {
+      "phase": "proof29",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.078125,
+      "controller_CPU": 0.171875,
+      "total_CPU": 2.25,
+      "queries": 0
+    },
+    {
+      "phase": "proof2",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 13.328125,
+      "controller_CPU": 0.21875,
+      "total_CPU": 13.546875,
+      "queries": 0
+    },
+    {
+      "phase": "proof30",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.171875,
+      "total_CPU": 0.328125,
+      "queries": 0
+    },
+    {
+      "phase": "proof31",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.15625,
+      "total_CPU": 0.34375,
+      "queries": 0
+    },
+    {
+      "phase": "proof32",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 5.484375,
+      "controller_CPU": 0.28125,
+      "total_CPU": 5.765625,
+      "queries": 0
+    },
+    {
+      "phase": "proof33",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 10.484375,
+      "controller_CPU": 0.25,
+      "total_CPU": 10.734375,
+      "queries": 0
+    },
+    {
+      "phase": "proof34",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.765625,
+      "controller_CPU": 0.140625,
+      "total_CPU": 1.90625,
+      "queries": 0
+    },
+    {
+      "phase": "proof35",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 9.171875,
+      "controller_CPU": 0.578125,
+      "total_CPU": 9.75,
+      "queries": 0
+    },
+    {
+      "phase": "proof36",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.21875,
+      "controller_CPU": 0.578125,
+      "total_CPU": 1.796875,
+      "queries": 0
+    },
+    {
+      "phase": "proof37",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.71875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.984375,
+      "queries": 0
+    },
+    {
+      "phase": "proof38",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 18.390625,
+      "controller_CPU": 0.234375,
+      "total_CPU": 18.625,
+      "queries": 0
+    },
+    {
+      "phase": "proof39",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 8.859375,
+      "controller_CPU": 0.234375,
+      "total_CPU": 9.09375,
+      "queries": 0
+    },
+    {
+      "phase": "proof3",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 18.4375,
+      "controller_CPU": 0.28125,
+      "total_CPU": 18.71875,
+      "queries": 0
+    },
+    {
+      "phase": "proof40",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.546875,
+      "controller_CPU": 0.171875,
+      "total_CPU": 0.71875,
+      "queries": 0
+    },
+    {
+      "phase": "proof41",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.640625,
+      "controller_CPU": 0.1875,
+      "total_CPU": 1.828125,
+      "queries": 0
+    },
+    {
+      "phase": "proof42",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 18.46875,
+      "controller_CPU": 0.390625,
+      "total_CPU": 18.859375,
+      "queries": 0
+    },
+    {
+      "phase": "proof43",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 4.71875,
+      "controller_CPU": 0.1875,
+      "total_CPU": 4.90625,
+      "queries": 0
+    },
+    {
+      "phase": "proof44",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.4375,
+      "controller_CPU": 0.15625,
+      "total_CPU": 1.59375,
+      "queries": 0
+    },
+    {
+      "phase": "proof45",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.921875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 2.125,
+      "queries": 0
+    },
+    {
+      "phase": "proof46",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.453125,
+      "controller_CPU": 0.25,
+      "total_CPU": 2.703125,
+      "queries": 0
+    },
+    {
+      "phase": "proof47",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.8125,
+      "controller_CPU": 0.21875,
+      "total_CPU": 4.03125,
+      "queries": 0
+    },
+    {
+      "phase": "proof48",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.515625,
+      "controller_CPU": 0.1875,
+      "total_CPU": 0.703125,
+      "queries": 0
+    },
+    {
+      "phase": "proof49",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.984375,
+      "controller_CPU": 0.203125,
+      "total_CPU": 2.1875,
+      "queries": 0
+    },
+    {
+      "phase": "proof4",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 19.6875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 19.953125,
+      "queries": 0
+    },
+    {
+      "phase": "proof50",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.84375,
+      "controller_CPU": 0.25,
+      "total_CPU": 1.09375,
+      "queries": 0
+    },
+    {
+      "phase": "proof51",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 6.921875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 7.125,
+      "queries": 0
+    },
+    {
+      "phase": "proof52",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.515625,
+      "controller_CPU": 0.234375,
+      "total_CPU": 1.75,
+      "queries": 0
+    },
+    {
+      "phase": "proof53",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 6.390625,
+      "controller_CPU": 0.28125,
+      "total_CPU": 6.671875,
+      "queries": 0
+    },
+    {
+      "phase": "proof54",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.5625,
+      "controller_CPU": 0.203125,
+      "total_CPU": 1.765625,
+      "queries": 0
+    },
+    {
+      "phase": "proof55",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.984375,
+      "controller_CPU": 0.25,
+      "total_CPU": 1.234375,
+      "queries": 0
+    },
+    {
+      "phase": "proof56",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.609375,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.859375,
+      "queries": 0
+    },
+    {
+      "phase": "proof57",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.703125,
+      "controller_CPU": 0.203125,
+      "total_CPU": 1.90625,
+      "queries": 0
+    },
+    {
+      "phase": "proof58",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.28125,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.484375,
+      "queries": 0
+    },
+    {
+      "phase": "proof59",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.203125,
+      "controller_CPU": 0.25,
+      "total_CPU": 1.453125,
+      "queries": 0
+    },
+    {
+      "phase": "proof5",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.375,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.609375,
+      "queries": 0
+    },
+    {
+      "phase": "proof60",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 7.109375,
+      "controller_CPU": 0.609375,
+      "total_CPU": 7.71875,
+      "queries": 0
+    },
+    {
+      "phase": "proof61",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.546875,
+      "controller_CPU": 0.34375,
+      "total_CPU": 1.890625,
+      "queries": 0
+    },
+    {
+      "phase": "proof64",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.046875,
+      "controller_CPU": 0.21875,
+      "total_CPU": 1.265625,
+      "queries": 0
+    },
+    {
+      "phase": "proof65",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.34375,
+      "controller_CPU": 0.21875,
+      "total_CPU": 0.5625,
+      "queries": 0
+    },
+    {
+      "phase": "proof66",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.328125,
+      "controller_CPU": 0.171875,
+      "total_CPU": 3.5,
+      "queries": 0
+    },
+    {
+      "phase": "proof67",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.34375,
+      "controller_CPU": 0.25,
+      "total_CPU": 1.59375,
+      "queries": 0
+    },
+    {
+      "phase": "proof68",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.375,
+      "controller_CPU": 0.21875,
+      "total_CPU": 1.59375,
+      "queries": 0
+    },
+    {
+      "phase": "proof69",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.59375,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.84375,
+      "queries": 0
+    },
+    {
+      "phase": "proof6",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 8.75,
+      "controller_CPU": 0.640625,
+      "total_CPU": 9.390625,
+      "queries": 0
+    },
+    {
+      "phase": "proof70",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.546875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 1.75,
+      "queries": 0
+    },
+    {
+      "phase": "proof71",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.578125,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.78125,
+      "queries": 0
+    },
+    {
+      "phase": "proof72",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.3125,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.578125,
+      "queries": 0
+    },
+    {
+      "phase": "proof73",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.234375,
+      "controller_CPU": 0.453125,
+      "total_CPU": 0.6875,
+      "queries": 0
+    },
+    {
+      "phase": "proof74",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.9375,
+      "controller_CPU": 0.359375,
+      "total_CPU": 2.296875,
+      "queries": 0
+    },
+    {
+      "phase": "proof75",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.921875,
+      "controller_CPU": 0.25,
+      "total_CPU": 1.171875,
+      "queries": 0
+    },
+    {
+      "phase": "proof76",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.734375,
+      "controller_CPU": 0.25,
+      "total_CPU": 1.984375,
+      "queries": 0
+    },
+    {
+      "phase": "proof77",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.40625,
+      "controller_CPU": 0.25,
+      "total_CPU": 3.65625,
+      "queries": 0
+    },
+    {
+      "phase": "proof78",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.453125,
+      "queries": 0
+    },
+    {
+      "phase": "proof79",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.0625,
+      "controller_CPU": 0.21875,
+      "total_CPU": 2.28125,
+      "queries": 0
+    },
+    {
+      "phase": "proof7",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 17.359375,
+      "controller_CPU": 0.28125,
+      "total_CPU": 17.640625,
+      "queries": 0
+    },
+    {
+      "phase": "proof80",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.734375,
+      "controller_CPU": 0.359375,
+      "total_CPU": 1.09375,
+      "queries": 0
+    },
+    {
+      "phase": "proof81",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.171875,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.40625,
+      "queries": 0
+    },
+    {
+      "phase": "proof82",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 17.6875,
+      "controller_CPU": 0.90625,
+      "total_CPU": 18.59375,
+      "queries": 0
+    },
+    {
+      "phase": "proof83",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.765625,
+      "controller_CPU": 0.265625,
+      "total_CPU": 2.03125,
+      "queries": 0
+    },
+    {
+      "phase": "proof84",
+      "group": "symbolic",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 1.96875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 2.234375,
+      "queries": 0
+    },
+    {
+      "phase": "proof85",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.578125,
+      "controller_CPU": 0.359375,
+      "total_CPU": 3.9375,
+      "queries": 0
+    },
+    {
+      "phase": "proof86",
+      "group": "symbolic",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.421875,
+      "queries": 0
+    },
+    {
+      "phase": "proof87",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.421875,
+      "controller_CPU": 0.296875,
+      "total_CPU": 2.71875,
+      "queries": 0
+    },
+    {
+      "phase": "proof88",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.125,
+      "controller_CPU": 0.28125,
+      "total_CPU": 2.40625,
+      "queries": 0
+    },
+    {
+      "phase": "proof89",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.109375,
+      "controller_CPU": 0.3125,
+      "total_CPU": 0.421875,
+      "queries": 0
+    },
+    {
+      "phase": "proof8",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 18.25,
+      "controller_CPU": 0.25,
+      "total_CPU": 18.5,
+      "queries": 0
+    },
+    {
+      "phase": "proof90",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.46875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 1.734375,
+      "queries": 0
+    },
+    {
+      "phase": "proof91",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.75,
+      "controller_CPU": 0.28125,
+      "total_CPU": 4.03125,
+      "queries": 0
+    },
+    {
+      "phase": "proof93",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.015625,
+      "controller_CPU": 0.28125,
+      "total_CPU": 2.296875,
+      "queries": 0
+    },
+    {
+      "phase": "proof94",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 6.90625,
+      "controller_CPU": 0.265625,
+      "total_CPU": 7.171875,
+      "queries": 0
+    },
+    {
+      "phase": "proof95",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 0.453125,
+      "queries": 0
+    },
+    {
+      "phase": "proof96",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.65625,
+      "controller_CPU": 0.3125,
+      "total_CPU": 1.96875,
+      "queries": 0
+    },
+    {
+      "phase": "proof97",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 18.484375,
+      "controller_CPU": 0.375,
+      "total_CPU": 18.859375,
+      "queries": 0
+    },
+    {
+      "phase": "proof98",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.0,
+      "controller_CPU": 0.296875,
+      "total_CPU": 1.296875,
+      "queries": 0
+    },
+    {
+      "phase": "proof9",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 13.03125,
+      "controller_CPU": 0.359375,
+      "total_CPU": 13.390625,
+      "queries": 0
+    },
+    {
+      "phase": "proof",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.21875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.421875,
+      "queries": 0
+    },
+    {
+      "phase": "verify10",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 6.40625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 6.703125,
+      "queries": 0
+    },
+    {
+      "phase": "verify11",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 4.84375,
+      "controller_CPU": 0.234375,
+      "total_CPU": 5.078125,
+      "queries": 0
+    },
+    {
+      "phase": "verify12",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 5.125,
+      "controller_CPU": 0.203125,
+      "total_CPU": 5.328125,
+      "queries": 0
+    },
+    {
+      "phase": "verify13",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 5.21875,
+      "controller_CPU": 0.296875,
+      "total_CPU": 5.515625,
+      "queries": 0
+    },
+    {
+      "phase": "verify14",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.796875,
+      "controller_CPU": 0.1875,
+      "total_CPU": 0.984375,
+      "queries": 118
+    },
+    {
+      "phase": "verify15",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.265625,
+      "controller_CPU": 0.234375,
+      "total_CPU": 1.5,
+      "queries": 512
+    },
+    {
+      "phase": "verify16",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.203125,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.4375,
+      "queries": 202
+    },
+    {
+      "phase": "verify17",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 2.625,
+      "controller_CPU": 0.21875,
+      "total_CPU": 2.84375,
+      "queries": 0
+    },
+    {
+      "phase": "verify18",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 25.015625,
+      "controller_CPU": 0.234375,
+      "total_CPU": 25.25,
+      "queries": 0
+    },
+    {
+      "phase": "verify19",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 2.65625,
+      "controller_CPU": 0.1875,
+      "total_CPU": 2.84375,
+      "queries": 138
+    },
+    {
+      "phase": "verify20",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.171875,
+      "controller_CPU": 0.171875,
+      "total_CPU": 0.34375,
+      "queries": 63
+    },
+    {
+      "phase": "verify21",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.203125,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.40625,
+      "queries": 268
+    },
+    {
+      "phase": "verify22",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.359375,
+      "queries": 0
+    },
+    {
+      "phase": "verify23",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.296875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.5,
+      "queries": 4060
+    },
+    {
+      "phase": "verify24",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.171875,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.375,
+      "queries": 0
+    },
+    {
+      "phase": "verify25",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.28125,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.53125,
+      "queries": 0
+    },
+    {
+      "phase": "verify26",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.203125,
+      "total_CPU": 0.359375,
+      "queries": 176
+    },
+    {
+      "phase": "verify27",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.9375,
+      "controller_CPU": 0.203125,
+      "total_CPU": 1.140625,
+      "queries": 0
+    },
+    {
+      "phase": "verify28",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.28125,
+      "controller_CPU": 0.21875,
+      "total_CPU": 0.5,
+      "queries": 0
+    },
+    {
+      "phase": "verify29",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.453125,
+      "controller_CPU": 0.21875,
+      "total_CPU": 0.671875,
+      "queries": 708
+    },
+    {
+      "phase": "verify2",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.390625,
+      "controller_CPU": 0.3125,
+      "total_CPU": 0.703125,
+      "queries": 152
+    },
+    {
+      "phase": "verify30",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.9375,
+      "controller_CPU": 0.234375,
+      "total_CPU": 1.171875,
+      "queries": 0
+    },
+    {
+      "phase": "verify31",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.5,
+      "controller_CPU": 0.328125,
+      "total_CPU": 1.828125,
+      "queries": 0
+    },
+    {
+      "phase": "verify32",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.359375,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.59375,
+      "queries": 0
+    },
+    {
+      "phase": "verify33",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.296875,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.546875,
+      "queries": 3003
+    },
+    {
+      "phase": "verify34",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 2.703125,
+      "controller_CPU": 0.40625,
+      "total_CPU": 3.109375,
+      "queries": 0
+    },
+    {
+      "phase": "verify35",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 2.265625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 2.5625,
+      "queries": 0
+    },
+    {
+      "phase": "verify36",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.390625,
+      "controller_CPU": 0.34375,
+      "total_CPU": 0.734375,
+      "queries": 0
+    },
+    {
+      "phase": "verify37",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.375,
+      "controller_CPU": 0.265625,
+      "total_CPU": 1.640625,
+      "queries": 378
+    },
+    {
+      "phase": "verify38",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 2.9375,
+      "controller_CPU": 0.546875,
+      "total_CPU": 3.484375,
+      "queries": 282
+    },
+    {
+      "phase": "verify39",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.359375,
+      "controller_CPU": 0.328125,
+      "total_CPU": 1.6875,
+      "queries": 906
+    },
+    {
+      "phase": "verify3",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.203125,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.453125,
+      "queries": 552
+    },
+    {
+      "phase": "verify40",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.328125,
+      "controller_CPU": 0.359375,
+      "total_CPU": 1.6875,
+      "queries": 830
+    },
+    {
+      "phase": "verify41",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.25,
+      "controller_CPU": 0.21875,
+      "total_CPU": 0.46875,
+      "queries": 0
+    },
+    {
+      "phase": "verify42",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.171875,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.421875,
+      "queries": 0
+    },
+    {
+      "phase": "verify43",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.390625,
+      "queries": 0
+    },
+    {
+      "phase": "verify44",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.90625,
+      "controller_CPU": 0.25,
+      "total_CPU": 2.15625,
+      "queries": 0
+    },
+    {
+      "phase": "verify45",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.109375,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.359375,
+      "queries": 56
+    },
+    {
+      "phase": "verify46",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.71875,
+      "controller_CPU": 0.34375,
+      "total_CPU": 2.0625,
+      "queries": 96
+    },
+    {
+      "phase": "verify47",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 2.140625,
+      "controller_CPU": 0.28125,
+      "total_CPU": 2.421875,
+      "queries": 0
+    },
+    {
+      "phase": "verify48",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.75,
+      "controller_CPU": 0.3125,
+      "total_CPU": 2.0625,
+      "queries": 0
+    },
+    {
+      "phase": "verify49",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.171875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.4375,
+      "queries": 0
+    },
+    {
+      "phase": "verify4",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.140625,
+      "controller_CPU": 0.15625,
+      "total_CPU": 0.296875,
+      "queries": 57
+    },
+    {
+      "phase": "verify50",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.953125,
+      "controller_CPU": 0.21875,
+      "total_CPU": 1.171875,
+      "queries": 93
+    },
+    {
+      "phase": "verify51",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.265625,
+      "total_CPU": 0.453125,
+      "queries": 0
+    },
+    {
+      "phase": "verify52",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.21875,
+      "controller_CPU": 0.21875,
+      "total_CPU": 0.4375,
+      "queries": 0
+    },
+    {
+      "phase": "verify53",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.84375,
+      "controller_CPU": 0.265625,
+      "total_CPU": 1.109375,
+      "queries": 56
+    },
+    {
+      "phase": "verify54",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.90625,
+      "controller_CPU": 0.265625,
+      "total_CPU": 2.171875,
+      "queries": 0
+    },
+    {
+      "phase": "verify55",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.28125,
+      "controller_CPU": 0.328125,
+      "total_CPU": 0.609375,
+      "queries": 0
+    },
+    {
+      "phase": "verify56",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 6.140625,
+      "controller_CPU": 0.3125,
+      "total_CPU": 6.453125,
+      "queries": 0
+    },
+    {
+      "phase": "verify57",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.140625,
+      "controller_CPU": 0.21875,
+      "total_CPU": 0.359375,
+      "queries": 0
+    },
+    {
+      "phase": "verify58",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.390625,
+      "queries": 0
+    },
+    {
+      "phase": "verify59",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.4375,
+      "queries": 0
+    },
+    {
+      "phase": "verify5",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.3125,
+      "controller_CPU": 0.15625,
+      "total_CPU": 0.46875,
+      "queries": 0
+    },
+    {
+      "phase": "verify60",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.453125,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.703125,
+      "queries": 0
+    },
+    {
+      "phase": "verify61",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.421875,
+      "controller_CPU": 0.1875,
+      "total_CPU": 0.609375,
+      "queries": 0
+    },
+    {
+      "phase": "verify62",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "controller_CPU": 0.234375,
+      "total_CPU": 0.359375,
+      "queries": 124
+    },
+    {
+      "phase": "verify63",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.140625,
+      "controller_CPU": 0.296875,
+      "total_CPU": 0.4375,
+      "queries": 0
+    },
+    {
+      "phase": "verify64",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.140625,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.390625,
+      "queries": 0
+    },
+    {
+      "phase": "verify65",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.890625,
+      "controller_CPU": 0.234375,
+      "total_CPU": 1.125,
+      "queries": 60
+    },
+    {
+      "phase": "verify66",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "controller_CPU": 0.28125,
+      "total_CPU": 0.40625,
+      "queries": 0
+    },
+    {
+      "phase": "verify67",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 14.0,
+      "controller_CPU": 0.359375,
+      "total_CPU": 14.359375,
+      "queries": 0
+    },
+    {
+      "phase": "verify68",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 8.515625,
+      "controller_CPU": 0.328125,
+      "total_CPU": 8.84375,
+      "queries": 0
+    },
+    {
+      "phase": "verify69",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 7.34375,
+      "controller_CPU": 0.296875,
+      "total_CPU": 7.640625,
+      "queries": 0
+    },
+    {
+      "phase": "verify6",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 2.953125,
+      "controller_CPU": 0.109375,
+      "total_CPU": 3.0625,
+      "queries": 19805
+    },
+    {
+      "phase": "verify70",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.078125,
+      "controller_CPU": 0.28125,
+      "total_CPU": 1.359375,
+      "queries": 0
+    },
+    {
+      "phase": "verify71",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 3.671875,
+      "controller_CPU": 0.328125,
+      "total_CPU": 4.0,
+      "queries": 0
+    },
+    {
+      "phase": "verify72",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.515625,
+      "controller_CPU": 0.25,
+      "total_CPU": 0.765625,
+      "queries": 28
+    },
+    {
+      "phase": "verify73",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.953125,
+      "controller_CPU": 0.25,
+      "total_CPU": 2.203125,
+      "queries": 0
+    },
+    {
+      "phase": "verify74",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.359375,
+      "controller_CPU": 0.3125,
+      "total_CPU": 0.671875,
+      "queries": 138
+    },
+    {
+      "phase": "verify75",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.375,
+      "total_CPU": 0.5625,
+      "queries": 0
+    },
+    {
+      "phase": "verify76",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.140625,
+      "controller_CPU": 0.34375,
+      "total_CPU": 0.484375,
+      "queries": 0
+    },
+    {
+      "phase": "verify7",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.234375,
+      "controller_CPU": 0.15625,
+      "total_CPU": 0.390625,
+      "queries": 45
+    },
+    {
+      "phase": "verify8",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.65625,
+      "controller_CPU": 0.1875,
+      "total_CPU": 1.84375,
+      "queries": 0
+    },
+    {
+      "phase": "verify9",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 5.953125,
+      "controller_CPU": 0.4375,
+      "total_CPU": 6.390625,
+      "queries": 0
+    },
+    {
+      "phase": "verify",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.3125,
+      "controller_CPU": 0.171875,
+      "total_CPU": 0.484375,
+      "queries": 11440
+    }
+  ],
+  "metadata_only_publication_CPU": "excluded under inherited metadata convention; separately recorded in publication_exit.json",
+  "new_cap_request_pending": false,
+  "principal_U33": "OPEN",
+  "outcome": "A-L_STRUCTURAL_REDUCTION_NOT_PRINCIPAL_COMPLETION"
+}

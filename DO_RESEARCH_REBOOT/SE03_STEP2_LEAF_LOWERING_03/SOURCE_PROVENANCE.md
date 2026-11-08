@@ -1,0 +1,55 @@
+# Source provenance and status ledger
+
+Branch `coarse-double-branch`, HEAD `8c378d49283b3738b18e7175886772a98025e4e9`; tracked files clean.
+
+All1578 inherited/local pins revalidated; full ledger dependency_pins.json and dependency_revalidation.json.
+
+| Exact repository path | Status | Inspection/reuse | SHA256 |
+|---|---|---|---|
+| `DO_RESEARCH_REBOOT/ORIGINAL_PIPELINE.md` | SOURCE DEFINITION | original semantics previously inspected and reused | `3804b3bd5beb6fd2bbddcc7ac8d69f1a7d21a39a7fbd33c5fb397cd939eb896a` |
+| `DO_RESEARCH_REBOOT/RESEARCH_RULES.md` | SOURCE RULES | permanent discipline reused | `c6b35f746f107ad8a1c226aefdb2b43711a4982fd9717fe513d7080f25d299bc` |
+| `DO_RESEARCH_REBOOT/CD5_BASE01/CD5_PROOF.md` | PROVED certified support<=5 | inherited full proof reused, not reopened | `6380c55270c8c52505e2726e27a8fee734cac9812f39271b608cc282b34e88be` |
+| `DO_RESEARCH_REBOOT/M3_XFER21/FULL_M3_PROOF.md` | PROVED frozen M3 source domain | inherited full proof reused without changing-chart extrapolation | `c54eb065947495c890adc945e3a2856218e6f1536728545f9d4fc3500c92b2c3` |
+| `DO_RESEARCH_REBOOT/SE03_STEP1_FUND01/AUXILIARY_FUNDING_THEOREM.md` | PROVED auxiliary physical allocation | source event/ownership proof inspected and unchanged | `134a17f13e05e2052a29733a83b556875d466fab90e415c11d041658ffab03e3` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_REPAY02/RETAINED_GAP_RESERVATION.md` | PROVED auxiliary domain | gE/fE distinction preserved | `736dcf6b1d8e8789b0a7b4d0c3a6957f5b53bc3dfbe91d6a91258b2c24ef567a` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/CLOSED_CORE_SUBTREE_DENSITY.md` | PROVED original closed-source structure | set-inclusion and density proof inspected/reused | `5ce1bece8c4aa6fc273de5198d616a6c3905a4785f299f843da92e99d3f7f0e0` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_DONOR05/CLOSED_MAXIMAL_SAME_SIDE.md` | PROVED original closed maximal sources | full source mass/persistence proof inspected/reused | `ad1655f40193be2383e2338ee7cebf8ebe4cfccd294266945a9fa690eadaceba` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_DONOR05/MARKED_PARENT_PROJECTION.md` | PROVED exact source bridge | full compression proof inspected and used directly | `07dd34174acc446806e07eb4ace90a3e0233f55f692b05270e1f00ab18a71abd` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_DONOR05/NEGATIVE_SEED_CORE11.md` | PROVED restricted source seed/leaf facts | full accessibility and leaf-floor arguments inspected/reused | `9904d93e8bc2751a22611c2236c57590ac76fdd2660303bb7674a1907fd0872b` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/MAXIMUM_DEPTH_SUCCESSOR_REPAYMENT.md` | PROVED successor/pairing | actual fan and disjoint packet proof reused | `7bec09c38aede39370c4400637bdc1c6f196aa39bb0c4732e7b9102ee23c4a40` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/PAIRED_RANGE_TWO_TARGET.md` | PROVED partition; debt OPEN | original actual packets preserved | `7f03315b64aa5f11db54e062a306cf4a9d8b6b04ccc1c62b225cd090e9a4ca79` |
+| `python/independent/splay.py` | FROZEN SOURCE DEFINITION | distinct tagged-term trace used read-only; convenience cost not used | `3a178c131c70c08419f18d1035dfb32beb5aa781673098ffbd4a5293f91d2f01` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/SOURCE_SPEC.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `4ab2bad40615bacebb0b35fbd7131d8635e8ccdca70925955812810a44b0e2bf` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/NEG2_CLASSIFICATION.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `d6171469f3219e462282da0811cec2249493f2339d38d0e495fc6017c89b7c4a` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/NEG2_PAIRED.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `7dbe9ed1f877fb836f088ba17c3008e8fc9564b58037b78ac0b55ac03ed03dcd` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/NEG2_SINGLETON.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `a94991780412e6e1149ec1f05a6c16017d21bdb164c2754f0b7b5d4f5c2237e3` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/SOURCE_REPLAY.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `797676b6661e2f38f7ff5367a6fc9ceb12f591e50bf534377d5c562efa953f5c` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/SOURCE_REPLAY_ADDENDUM.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `4337ce4b993f9e0ec38585d9e0568ab5a3628f1834c8b3f08d2b8ba2804deea2` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/COLD_NEG2_FINAL.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `97a4c70a749965b309e971aaa253a8cca3a748d921231d9bec18bbab76251ace` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/CHECKPOINT.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `24e922968f6e9c423ed535cc17f7fc7e9bf753f3761a14ed90f78777640453eb` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/source_model.py` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `56293faffed92ac7e685a99e178c5d13fc7be76037161690e8d94efebaebc81a` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/symbolic_replay.json` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `5b076db342da25025fc64cc2ea847d6852143e3116546e11fe09e40edab5ff18` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/debt_v3_audit.json` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `dba6b7f053eaafb039dc0bf8098ddfc748f30aae5d618524ab88228a3c2c1bff` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/source_proof_audit.json` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `7ec343e4c25ab01602fd91e3305ea9477fdd8d9499487745e22e9437a0005cc2` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/FZ_SOURCE_SPEC.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `9f9cb0b1fe4fe5cf10213dc5da0691d8b51174f4fcc11d60eefe4005efa2348e` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/FORCED_REGION_RECONSTRUCTION.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `144af63b64ee037702a03b6af94d7be4b9d5a5bf28eb774a5dd7f0c46e88bd27` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/ZERO_PREDECESSOR_CLOSURE.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `7ad269adffb6750e9713a9e78c42491e2a753c4ff0d44dc5e230d0908395ba8d` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/PLUS_ONE_PREDECESSORS.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `bde79f8e557c36a33cfd6fcccc8534f7e8bde3ab47200d6704e1c6e69559d25e` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/RETURN_BARRIER.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `b36f760162619232a2373ba7bff45217978ca24c4ea14e7508292d1823b33fcc` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/EXACT_SOURCE_REPLAY.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `02e612d0089505ca8e1bef84b92312df1e3d9bca2125ccca54e3f6fbbeb5d4cf` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/FINAL_VERDICT.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `4ef683f9154b463628cf736a0e732798c07f278f527af768ed500ee59099b9f5` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/CHECKPOINT.md` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `0ce644b864bfb8546269a5887ac3ab485be873053d98a02b2f6b4096cb4b9d4e` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/forced_regions.json` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `b7c728bf7eb494ca140d167b3479c069abccf368c9717a74eab6c12918713c95` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/incoming_family_v2.json` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `850586f65e20de75527078224ab35bac572a7f32e8acc62c3584319725e5998e` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/absolute_source_ids.json` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `130e4e578e5089fa3932f0943aefa89954e9030def359170f9d4b88cd45b607b` |
+| `DO_RESEARCH_REBOOT/SE03_STEP2_FORCED_ZERO_INCOMING_02/resources_checkpoint.json` | ACCEPTED scoped inherited proof/data | full source/verdict inspected/reused; Sigma prose leaf count explicitly corrected in new campaign where relevant | `a0bbca7365bc2627b76ddd6a1365c9b62b86ee63f51d3f5a6b89b3b74969d117` |
+
+External directives (all read at their stated authority; current Campaign03 authorizes this work):
+
+- `C:\Users\Saif malik\.codex\attachments\0202b78f-c0f4-4eb9-9158-8848d5ed842e\Pasted text.txt` — `0efdb745ef51a8a282e7c99dcacb05b77d199039012c8b6f0e8c4e21bb1563bd`
+- `C:\Users\Saif malik\.codex\attachments\11d5ff4b-394a-4d5a-a91d-19d0bfb482d9\Pasted text.txt` — `d9b27497c07a418ee43f73495e91c34799b77680bc2c0b375c0120bf7b1b7091`
+- `C:\Users\Saif malik\.codex\attachments\271a3c0b-7930-4cf9-9728-0a31c3b80487\Pasted text.txt` — `c8f6b1241adc2480f86f4a48181e0a5c1aa0cecf60315884b753c28da3625e71`
+
+No missing premise is invented. No remote snapshot substituted. Prior source tests are reused,
+not replayed as new evidence. The known restricted results do not close general R0/R1,
+width-two existence, Step2, core9/10, Step3 or Universal CD.

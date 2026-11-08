@@ -1,0 +1,145 @@
+{
+  "files": [
+    {
+      "file": "prefix_dp.py",
+      "source_sha256": "8309ee093b1853d6892892c54c8461ae69bc474d377f41b5546158381ebc7aa2",
+      "new_sha256": "aaf5fe1a377c1803363520e8b0489b3c7d6c13b1a0d698320a256e94931258cd",
+      "exact_replacements": [
+        [
+          "M3_POP4_RISK07",
+          "M3_POP5_RISK01"
+        ]
+      ]
+    },
+    {
+      "file": "construct.py",
+      "source_sha256": "c5fc5a80d2b12b032a149b43105e6303f1764b5697bf9a9c61786e5f16f9fdc6",
+      "new_sha256": "9697da53ba3f95154fff67c7fa46795dca8f39c4a43408460aa66272fd02cd52",
+      "exact_replacements": [
+        [
+          "M3_POP4_RISK07",
+          "M3_POP5_RISK01"
+        ],
+        [
+          "one four-unit signature",
+          "one five-unit signature"
+        ]
+      ]
+    },
+    {
+      "file": "audit.py",
+      "source_sha256": "5728ca667a8eb967ea8b499cea10a672926b2acbcd36fbd17a4e948f6c3f545a",
+      "new_sha256": "9116af7c63e91908f299eb4fcd502f53921007cfeb751f6114f0da76fd8aae94",
+      "exact_replacements": [
+        [
+          "M3_POP4_RISK07",
+          "M3_POP5_RISK01"
+        ]
+      ]
+    },
+    {
+      "file": "candidate_decoder.py",
+      "source_sha256": "c2ca03a1c655156ca7ebb67f5de8fc6a3b9726e14a79366b33b45def6f1106e7",
+      "new_sha256": "3f6f6c211fc14acc0564be4412a4cd4431954db92b7ead555ba71f64c42d2e39",
+      "exact_replacements": [
+        [
+          "M3_POP4_RISK07",
+          "M3_POP5_RISK01"
+        ],
+        [
+          "sum(sig)!=4",
+          "sum(sig)!=5"
+        ],
+        [
+          "PopulationFour",
+          "PopulationFive"
+        ],
+        [
+          "population4",
+          "population5"
+        ],
+        [
+          "total4",
+          "total5"
+        ]
+      ]
+    },
+    {
+      "file": "certified_decoder.py",
+      "source_sha256": "4e4b7c1e48123c4865ae656ff92edc31953e159a26a2931330c2bffd73eefb17",
+      "new_sha256": "c48f5337decc17c0a0633e30fea883cd3203f4dcd8ceb8926377356fa3807d9f",
+      "exact_replacements": [
+        [
+          "M3_POP4_RISK07",
+          "M3_POP5_RISK01"
+        ],
+        [
+          "sum(sig)!=4",
+          "sum(sig)!=5"
+        ],
+        [
+          "PopulationFour",
+          "PopulationFive"
+        ],
+        [
+          "population4",
+          "population5"
+        ],
+        [
+          "total4",
+          "total5"
+        ]
+      ]
+    },
+    {
+      "file": "source_audit_batch.py",
+      "source_sha256": "c5a1e0bc7c0391afddb81c8257b54dbc3c1f62cf05df7a6066af289c184efc3b",
+      "new_sha256": "ba6311dbdd2051245d3dcc23c520ce585944d0da707a0496497eb00b4b22c14a",
+      "exact_replacements": [
+        [
+          "M3_POP4_RISK07",
+          "M3_POP5_RISK01"
+        ],
+        [
+          "population4",
+          "population5"
+        ],
+        [
+          "PopulationFour",
+          "PopulationFive"
+        ],
+        [
+          "pop4_",
+          "pop5_"
+        ],
+        [
+          "RENEWED_TOTAL4_SOURCE_BATCH_PASS",
+          "TOTAL5_SOURCE_BATCH_PASS"
+        ]
+      ]
+    },
+    {
+      "file": "audit_source_batches.py",
+      "source_sha256": "cdbbfe8f57ac597a9fd03798019534c8c9c7453824d2745ed5b1941ba8330f49",
+      "new_sha256": "1df830fae02fea8396077f508b9b3662571981dfc56e35d80f850dc964ab2cc8",
+      "exact_replacements": [
+        [
+          "M3_POP4_RISK07",
+          "M3_POP5_RISK01"
+        ],
+        [
+          "RENEWED_TOTAL4_SOURCE_BATCH_PASS",
+          "TOTAL5_SOURCE_BATCH_PASS"
+        ]
+      ]
+    }
+  ],
+  "only_location_population_scope_and_labels_changed": true,
+  "recurrence_grammar_residuals_source_predicates_and_guards_unchanged": true,
+  "CPU_caps": [
+    120,
+    300,
+    300
+  ],
+  "query_cap": 2000000
+}

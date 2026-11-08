@@ -1,0 +1,158 @@
+{
+  "status": "PASS_DISTINCT_POOL_RECONSTRUCTION_AND_MAXFLOW",
+  "input_sha256": {
+    "pooled_source_results.json": "f8405ebd6bf75049826a61a0a09ff6b30ab221c6701114ba27d94f8dbb5df7af",
+    "retirement_pools.py": "0d50bac0dcfcc38af5f77cfa3d313f5f0d732ddf19ed30e77ce230ea6ae76590"
+  },
+  "source_receipts": [
+    {
+      "source": "C33_36",
+      "source_hash": "5e00eb81aed692ab9982b5b4e3401e89827245a52748cf770ac21fa26d00e4b4",
+      "raw": {
+        "maxflow": 36,
+        "complete": true,
+        "unpaid": 36,
+        "old_values_preserved": 0
+      },
+      "macro_count": 16,
+      "archive_only": {
+        "maxflow": 36,
+        "complete": true,
+        "unpaid": 4,
+        "old_values_preserved": 32
+      },
+      "accepted_four_endpoints": {
+        "maxflow": 36,
+        "complete": true,
+        "unpaid": 4,
+        "old_values_preserved": 32
+      },
+      "current_owners": {
+        "maxflow": 36,
+        "complete": true,
+        "unpaid": 0,
+        "old_values_preserved": 36
+      }
+    },
+    {
+      "source": "frame13",
+      "source_hash": "9afa1e911a554a45ada678f25fe599821a667f381aab20416530df0c10eb6bcf",
+      "raw": {
+        "maxflow": 36,
+        "complete": true,
+        "unpaid": 36,
+        "old_values_preserved": 0
+      },
+      "macro_count": 26
+    },
+    {
+      "source": "W199",
+      "source_hash": "78d50e4ff4c6f5eb7e2925fd5fb90b184cae2cb2d85834fe4f81074c1f2f845e",
+      "raw": {
+        "maxflow": 58,
+        "complete": true,
+        "unpaid": 58,
+        "old_values_preserved": 0
+      },
+      "macro_count": 31,
+      "current_owners": {
+        "maxflow": 58,
+        "complete": true,
+        "unpaid": 0,
+        "old_values_preserved": 58
+      }
+    },
+    {
+      "source": "W459",
+      "source_hash": "75d1762d94c9e0aa9da105b2204cc9a6b3e20a02f2845276300c185c265c4602",
+      "raw": {
+        "maxflow": 114,
+        "complete": true,
+        "unpaid": 114,
+        "old_values_preserved": 0
+      },
+      "macro_count": 63,
+      "current_owners": {
+        "maxflow": 114,
+        "complete": true,
+        "unpaid": 0,
+        "old_values_preserved": 114
+      }
+    },
+    {
+      "source": "N85",
+      "source_hash": "43a3d38a5cf157c0aa049411700351641597d8fed27babf1ebf41a3ad14b01b3",
+      "raw": {
+        "maxflow": 66,
+        "complete": true,
+        "unpaid": 66,
+        "old_values_preserved": 0
+      },
+      "macro_count": 48
+    }
+  ],
+  "collision_source_sha256": "bda474c2e27873aa90aa7c85a78d1a383bb10a0d37ae385f905fb6d9b026079f",
+  "local_collision_alternative_pairs": [
+    [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1,
+        1
+      ]
+    ]
+  ],
+  "collision_owner_scope": "raw source-prefix alternatives only; no additional frozen map assumed",
+  "source_engine_calls": 0,
+  "source_queries": 0,
+  "universal_source_expansion": "OPEN",
+  "original_source_license": "NOT_VERIFIED_BY_THIS_STATIC_LAYER",
+  "Bank25_universal": "OPEN"
+}

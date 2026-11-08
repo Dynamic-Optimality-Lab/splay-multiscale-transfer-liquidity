@@ -1,0 +1,143 @@
+{
+  "status": "PROVED_UNIVERSAL_LOW_SAFE_OPERATION_AND_RESTRICTED_Q_UNION_R_WALK_THEOREM",
+  "R_small_end": "two smallest marked a<b; root b with a at L/LR and b.right PORT, or root a with b at R and b.right PORT",
+  "R_large_end": "two largest marked a<b; root a with b at R/RL and a.left PORT, or root b with a at L and a.left PORT",
+  "additional_guards": "root sync, valid core B, V exactly the other pair member",
+  "explicit_operation": "F=max(D,h_R), h_R=min(2,w_x+2) on R,0 elsewhere",
+  "operation_premises": "public psi<=D<=2; no global feasibility assumption",
+  "each_previously_valid_original_LOW_inequality_preserved": true,
+  "Score_bearing_Gamma1_helpers_included": true,
+  "private_inventory_invariance_or_extremizer_transport_assumed": false,
+  "B_after_extreme_helper_then_other_core_old_root_depth_at_most": 3,
+  "explicit_combined_debt": "D_R=max(D_Q,h_R)",
+  "LOW_source_coverage": "ALL original LOW edges with source in Q union R",
+  "protected_incoming_LOW_transfers": "weights0/+1 to debt2 R; +1 to debt1 R; zero to debt1 R from source<=1",
+  "finite_walk_bound_when_LOW_sources_in_Q_union_R": -7,
+  "full_state_closed_walk_bound_when_LOW_sources_in_Q_union_R": 0,
+  "remaining_open": [
+    "cut below depth-two shadow",
+    "additional exposed marked targets",
+    "other non-Q/non-R H1/H2 transfers"
+  ],
+  "full_M3_status": "OPEN",
+  "DynamicOptimality_status": "OPEN",
+  "new_whole_signature_certificates": 0,
+  "original_negative_cycle_certified": false,
+  "new_finite_tests": 0,
+  "R1_R4_preserved": true,
+  "h0_correction_preserved": true,
+  "full_compiler_formalization_claimed": false,
+  "NET_ADVANCEMENT": "LOW-safe public clause handles anonymous exposure and Score-bearing helper sources in R, preserving completed Q coverage",
+  "resources": {
+    "prior_uniform_CPU_charge_retained": 756.5,
+    "new_symbolic_checker_CPU": 0.15625,
+    "new_controller_CPU_through_finally": 0.203125,
+    "new_compute_CPU": 0.359375,
+    "cumulative_accounted_CPU": 756.859375,
+    "finite_CPU_ceiling": 7200,
+    "guaranteed_remaining_CPU": 6443.140625,
+    "reserve": 5,
+    "old_signature_campaign_ledger_unchanged": 7195.203125,
+    "new_finite_tests": 0,
+    "new_source_transition_queries": 0,
+    "new_original_root_evaluations": 0,
+    "new_label_fits": 0,
+    "new_bank_censuses": 0,
+    "completed_semantic_checks_replayed": 0,
+    "symbolic_phase_CPU_cap": 120,
+    "construction_CPU_cap": 300,
+    "audit_source_CPU_cap": 300,
+    "canonical_query_live_record_limit": 2000000,
+    "DAG_limit": 4000000,
+    "stored_edge_limit": 5000000,
+    "RAM_GiB_limit": 32,
+    "current_caps_preserved": true,
+    "metadata_hashing_convention": "entry/final immutable-file bookkeeping excluded as previously"
+  },
+  "integrity": {
+    "status": "PASS",
+    "old_files_unchanged": 13565,
+    "HEAD": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+    "tracked_tree_clean": true,
+    "this_campaign_writes_confined_here": true,
+    "unrelated_concurrent_U4_additions": 17
+  },
+  "files": [
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/audit.py",
+      "sha256": "88f759589fa95503b0a2487c1e7b9c8e04fc46e986e176e1304b6a5717972e75"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/certificate.json",
+      "sha256": "fb15b38a5c508126bff383a50122c0b4618320f072dad78cbbdbbd33be1e1e64"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/concurrent_additions.json",
+      "sha256": "2d5d5da2c48be59a69e82777372f1461c726a987701b0a4037312596c4078f94"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/controller_exit.json",
+      "sha256": "e1f9b014a380281b7ab88c0587feb4fc2abaabd2788079945666c441bbf16299"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/CUT_PAIR_THEOREM.md",
+      "sha256": "213f023f187146d6281d4d959a453f71e5a83ea9ed16f30da32971345754e9e7"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/dependencies.json",
+      "sha256": "a95aaf4284b5fb540ea291443e97087a48a03a4b761d44cadce7649c4c80c9fc"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/entry.py",
+      "sha256": "10caf712dafd6d9ac9d72042602a791a735cfe8f7fd42a10beed6d40cce7704c"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/entry_baseline.json",
+      "sha256": "7bb8750d036797e7646286252d666513e031b34bffceb775858c1b2847b68d9d"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/finalize.py",
+      "sha256": "efc48f166e51af3eab67613ad806ec7689f1608bfad8440b7d94528bb7b2aaa0"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/integrity.json",
+      "sha256": "232eb826a53248a63c10df7da9284c8ee2c8ce4abae0a6e53969e9ae9c2d62e3"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/log_symbolic_audit.txt",
+      "sha256": "a7dedccfa7d9c84f245c60614494a34ef76dfa376b03d796261e629f2607c56d"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/PRE_EXECUTION.md",
+      "sha256": "73f89b698400cbf1e288f923e33b8d54a51684bfa54b143f2ecbf2346cb1ffec"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/PROOF_AUDIT.md",
+      "sha256": "8dbcc4e0f3088efa88f18ca108401c75c2d19b3cc7005c8d373776d4d2c09400"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/resources.json",
+      "sha256": "0b375f9798ee92a7a76aea4d65f06f5592075a161923c5f92415082ff4bcf50d"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/RESULT.md",
+      "sha256": "32b5a97b988ff4c821fa7866cf4da875f20343ed242e985fc9e00a642d1555dd"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/run.py",
+      "sha256": "fcbf6ca39400aacfbcc0a70614e43726cb9b60e934c70b7966c92f6d0b0ed727"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/run_result.json",
+      "sha256": "bc301044d8fe9bdfd649c14d6d09f07bb36cc45c087443f98c3d69d4bc087ee8"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/symbolic_audit.json",
+      "sha256": "f87f4420e2021d6624c5bcedd7a638affd17c6cac1f8050ebb048ed5f3001da1"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER02/symbolic_audit_exit.json",
+      "sha256": "f0572b87ded81eb0dd29cdbe12c6d939c70f0473c9306918f7803ba78ee56028"
+    }
+  ]
+}

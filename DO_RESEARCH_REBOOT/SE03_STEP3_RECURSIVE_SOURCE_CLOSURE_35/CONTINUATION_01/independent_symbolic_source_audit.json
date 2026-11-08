@@ -1,0 +1,205 @@
+{
+  "status": "PASS_SYMBOLIC_SOURCE_CLOSURE_POOL_EXHAUSTIVENESS_AND_LOCAL_REPAIR_AUDIT",
+  "input_sha256": {
+    "SYMBOLIC_B_CLOSURE.md": "1ac035c104fdd213a9dac0c87298a3b56956b95296da410419076728c2fa65cf",
+    "SOURCE_CONSTRUCTION.md": "aa78b2445a1bf9f1a9a6e5b2fb9e501497f362fb80ba969ca80091fb8fac4239",
+    "EXACT_NEGATIVE_CUT.md": "16d9b784f27dabbfaded6d3edb871dd81ea21c216162e67c9d59264883fedae7",
+    "DEPENDENCIES_AND_SCOPE.md": "94d2310ef42414e5cccfdbcb32a3b1ef01d8aa13a45a4335b07dedcd86ed7bb5",
+    "SOURCE_REPAIR_AND_PARENT_STATUS.md": "f63b5ef2f257591d8ef15077c626be3c51a5d47373707605e453322d5a40edde"
+  },
+  "critical_audit_sha256": "5cb281120ddf57d0ce98856b15ac1eb9a0d4d973837226a126ca16a45dca274f",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "mathematical_source_proof": "SS frame induction, same-key transformation with rigid largest-leaf lift, finite erased/chart recurrence, exact birth-interval pool exhaustion",
+  "Gamma_words": "canonical shortest words, finite by accepted theorem; not expanded/replayed",
+  "no_DELETE_only_return_loops": "shortest words and initial root15 separation",
+  "selected_demand_count": 9,
+  "joint_pool_size": 8,
+  "sigma": 3,
+  "overlap": 4,
+  "local_unused": 0,
+  "SI34_mathematical_result": "REFUTED_AT_DECLARED_SOURCE_SCOPE",
+  "entire_source_CD_margin_lower_bound_per_word": 4,
+  "independent_block_repairs": [
+    {
+      "target": 5,
+      "comparison_pairs": [
+        [
+          [
+            "h2",
+            1
+          ],
+          [
+            "h2",
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "v5",
+            1
+          ],
+          [
+            "v5",
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "v5",
+            2
+          ],
+          [
+            "v5",
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            "v5",
+            3
+          ],
+          [
+            "h2",
+            1,
+            1
+          ]
+        ]
+      ],
+      "bank_trace": [
+        0,
+        2,
+        1,
+        3,
+        0
+      ],
+      "working_peak": 3,
+      "natural_owners_preserved": true,
+      "scope": "independent source-block comparison, not actual arbitrary a0 update"
+    },
+    {
+      "target": 9,
+      "comparison_pairs": [
+        [
+          [
+            "h4",
+            1
+          ],
+          [
+            "h4",
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "v9",
+            1
+          ],
+          [
+            "v9",
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "v9",
+            2
+          ],
+          [
+            "v9",
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            "v9",
+            3
+          ],
+          [
+            "h4",
+            1,
+            1
+          ]
+        ]
+      ],
+      "bank_trace": [
+        0,
+        2,
+        1,
+        3,
+        0
+      ],
+      "working_peak": 3,
+      "natural_owners_preserved": true,
+      "scope": "independent source-block comparison, not actual arbitrary a0 update"
+    },
+    {
+      "target": 13,
+      "comparison_pairs": [
+        [
+          [
+            "h6",
+            1
+          ],
+          [
+            "h6",
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "v13",
+            1
+          ],
+          [
+            "v13",
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            "v13",
+            2
+          ],
+          [
+            "v13",
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            "v13",
+            3
+          ],
+          [
+            "h6",
+            1,
+            1
+          ]
+        ]
+      ],
+      "bank_trace": [
+        0,
+        2,
+        1,
+        3,
+        0
+      ],
+      "working_peak": 3,
+      "natural_owners_preserved": true,
+      "scope": "independent source-block comparison, not actual arbitrary a0 update"
+    }
+  ],
+  "universal_owner_or_Bank25_refuted": false,
+  "full_numerical_source_replay": false,
+  "trust": "same-agent distinct implementation/static mathematical audit; not external peer review or formal proof assistant"
+}

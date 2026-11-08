@@ -1,0 +1,175 @@
+{
+  "status": "PASS_SOURCE_EXACT_FULL_B_AND_FULL_MULTISET_FORMULA_REFUTATION",
+  "scope": "ANY real F(actual B, full multiset of D10 over distinct contractions), fixed old debt on singleton contraction, same gap1 private inventory",
+  "scalar_chain": [
+    "u=F(6736,[0,1])>=1",
+    "v=F(8777,[0,1])>=u",
+    "v<=0"
+  ],
+  "contradiction": "1<=v<=0",
+  "width_nonnegativity_or_HIGH_envelopes_used": false,
+  "actual_source_edges": [
+    {
+      "period": [
+        124,
+        246
+      ],
+      "packet_t": 168,
+      "costs": [
+        150,
+        18,
+        15
+      ],
+      "CD_margin": 282,
+      "new_fresh_A_accesses": 30,
+      "checked_G4_hull_instances": 92,
+      "checked_full_B_rigid_gap_instances": 62,
+      "checked_erased_B_rigid_gap_instances": 58,
+      "genuine_KEEP_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "all_original_operations_accounted_for": true,
+      "all_A_B_BE_and_recency_seams_close": true,
+      "source_B": 618,
+      "target_B": 6736,
+      "source_value_set": [
+        1
+      ],
+      "target_value_set": [
+        0,
+        1
+      ],
+      "source_value_multiset": [
+        1
+      ],
+      "target_value_multiset": [
+        0,
+        1
+      ],
+      "price": 0
+    },
+    {
+      "period": [
+        106,
+        210
+      ],
+      "packet_t": 144,
+      "costs": [
+        120,
+        19,
+        16
+      ],
+      "CD_margin": 221,
+      "new_fresh_A_accesses": 32,
+      "checked_G4_hull_instances": 72,
+      "checked_full_B_rigid_gap_instances": 66,
+      "checked_erased_B_rigid_gap_instances": 62,
+      "genuine_KEEP_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "all_original_operations_accounted_for": true,
+      "all_A_B_BE_and_recency_seams_close": true,
+      "source_B": 6736,
+      "target_B": 8777,
+      "source_value_set": [
+        0,
+        1
+      ],
+      "target_value_set": [
+        0,
+        1
+      ],
+      "source_value_multiset": [
+        0,
+        1
+      ],
+      "target_value_multiset": [
+        0,
+        1
+      ],
+      "price": 0
+    },
+    {
+      "period": [
+        114,
+        226
+      ],
+      "packet_t": 157,
+      "costs": [
+        136,
+        21,
+        19
+      ],
+      "CD_margin": 251,
+      "new_fresh_A_accesses": 31,
+      "checked_G4_hull_instances": 81,
+      "checked_full_B_rigid_gap_instances": 64,
+      "checked_erased_B_rigid_gap_instances": 60,
+      "genuine_KEEP_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "all_original_operations_accounted_for": true,
+      "all_A_B_BE_and_recency_seams_close": true,
+      "source_B": 8777,
+      "target_B": 1902,
+      "source_value_set": [
+        0,
+        1
+      ],
+      "target_value_set": [
+        0
+      ],
+      "source_value_multiset": [
+        0,
+        1
+      ],
+      "target_value_multiset": [
+        0
+      ],
+      "price": 0
+    }
+  ],
+  "source_queries": 93,
+  "source_engine_calls": 93,
+  "verification_method": "fresh mutable non-hull A accesses plus previously independently checked complete G4/ten-anchor identities composed through EVERY remaining original operation and exact common-source closure",
+  "not_an_actual_full_A_state_path_or_CD_counterexample": true,
+  "no_physical_bits_assigned_or_frozen_owners_changed": true,
+  "principal_U33": "OPEN",
+  "input_sha256": {
+    "B_full_spectrum_edge_0_closed_source.json": "68e725e92b1994a26f115b38f02d2116dfb2580bf30a6f60185295d86018b782",
+    "B_full_spectrum_edge_1_closed_source.json": "5eb2db06f466da072e10678aec041b996950c8d04bb2108711f7aeb7e48a4416",
+    "B_full_spectrum_edge_2_closed_source.json": "985d908d25c8da648372d3e3820a9df2169d8a3dbab0451826f39436fd756e33",
+    "native10_modal_oracle_independent_audit.json": "4c2113c3d0e32bcf66080e56b57cec17078611647f7ccccc0089bd9eb7efa379",
+    "native10_source_independent_audit.json": "36e867d6cc54647fcc0b256a7f946b25ebce6973e277eb9f9a7264793e2e2271",
+    "four_hull_source_basis_independent_audit.json": "eb606b40cbbd373b302ea1e2c8e8eff379f248652e941f28c004d2e18e4f994a",
+    "B_full_spectrum_result_02.json": "5c1181a0d572f2f96238e8c190cf94217d65c295ad1a2f7bfb66f8ca9d85426c",
+    "closed_word_composition_independent.py": "f1a5a5958382fe68369f997844a0d9e95d384c97d07fd1a0f767d2cf462ff091"
+  }
+}

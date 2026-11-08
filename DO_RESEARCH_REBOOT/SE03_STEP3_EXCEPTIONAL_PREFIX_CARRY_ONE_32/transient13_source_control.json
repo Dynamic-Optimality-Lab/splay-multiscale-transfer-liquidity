@@ -1,0 +1,314 @@
+{
+  "status": "PASS_EXACT_TRANSIENT_DEBT_TWO_OPERATION",
+  "source_queries": 2,
+  "source_before_short_occurrence": 128,
+  "target": 13,
+  "mode": "K",
+  "before_A": [
+    9,
+    [
+      7,
+      [
+        5,
+        [
+          4,
+          [
+            2,
+            [
+              1,
+              "F0",
+              "F1"
+            ],
+            [
+              3,
+              "F2",
+              "F3"
+            ]
+          ],
+          "F4"
+        ],
+        [
+          6,
+          "F5",
+          "F6"
+        ]
+      ],
+      [
+        8,
+        "F7",
+        "F8"
+      ]
+    ],
+    [
+      11,
+      [
+        10,
+        "F9",
+        "F10"
+      ],
+      [
+        13,
+        [
+          12,
+          "F11",
+          "F12"
+        ],
+        "F13"
+      ]
+    ]
+  ],
+  "before_BF": [
+    9,
+    [
+      6,
+      [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                "F0",
+                "F1"
+              ],
+              "F2"
+            ],
+            "F3"
+          ],
+          "F4"
+        ],
+        "F5"
+      ],
+      [
+        8,
+        [
+          7,
+          "F6",
+          "F7"
+        ],
+        "F8"
+      ]
+    ],
+    [
+      10,
+      "F9",
+      [
+        11,
+        "F10",
+        [
+          12,
+          "F11",
+          [
+            13,
+            "F12",
+            "F13"
+          ]
+        ]
+      ]
+    ]
+  ],
+  "short_BE_before": [
+    9,
+    [
+      5,
+      [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              "F0",
+              "F1"
+            ],
+            "F2"
+          ],
+          "F3"
+        ],
+        "F4"
+      ],
+      [
+        7,
+        [
+          6,
+          "F5",
+          "F6"
+        ],
+        [
+          8,
+          "F7",
+          "F8"
+        ]
+      ]
+    ],
+    [
+      10,
+      "F9",
+      [
+        13,
+        [
+          12,
+          [
+            11,
+            "F10",
+            "F11"
+          ],
+          "F12"
+        ],
+        "F13"
+      ]
+    ]
+  ],
+  "A_path": "RR",
+  "A_events": [
+    {
+      "case": "RR",
+      "G": 9,
+      "P": 11,
+      "target": 13,
+      "kind": "DOUBLE"
+    }
+  ],
+  "A_cost": 1,
+  "BF_path": "RRRR",
+  "BF_events": [
+    {
+      "case": "RR",
+      "G": 11,
+      "P": 12,
+      "target": 13,
+      "kind": "DOUBLE"
+    },
+    {
+      "case": "RR",
+      "G": 9,
+      "P": 10,
+      "target": 13,
+      "kind": "DOUBLE"
+    }
+  ],
+  "QF": 2,
+  "after_A": [
+    13,
+    [
+      11,
+      [
+        9,
+        [
+          7,
+          [
+            5,
+            [
+              4,
+              [
+                2,
+                [
+                  1,
+                  "F0",
+                  "F1"
+                ],
+                [
+                  3,
+                  "F2",
+                  "F3"
+                ]
+              ],
+              "F4"
+            ],
+            [
+              6,
+              "F5",
+              "F6"
+            ]
+          ],
+          [
+            8,
+            "F7",
+            "F8"
+          ]
+        ],
+        [
+          10,
+          "F9",
+          "F10"
+        ]
+      ],
+      [
+        12,
+        "F11",
+        "F12"
+      ]
+    ],
+    "F13"
+  ],
+  "after_BF": [
+    13,
+    [
+      10,
+      [
+        9,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    "F0",
+                    "F1"
+                  ],
+                  "F2"
+                ],
+                "F3"
+              ],
+              "F4"
+            ],
+            "F5"
+          ],
+          [
+            8,
+            [
+              7,
+              "F6",
+              "F7"
+            ],
+            "F8"
+          ]
+        ],
+        "F9"
+      ],
+      [
+        12,
+        [
+          11,
+          "F10",
+          "F11"
+        ],
+        "F12"
+      ]
+    ],
+    "F13"
+  ],
+  "BE_after": {
+    "ordinary_splay": 13,
+    "input": "short_BE_before"
+  },
+  "BE_after_evaluated": false,
+  "inherited_sigma_through9": -1,
+  "new_E_before": 1,
+  "new_E_after": 0,
+  "new_sigma": -1,
+  "intermediate_total_sigma": -2,
+  "is_first_return7": false,
+  "is_FR32_counterexample": false,
+  "scope": "new actual A/BF access from accepted reachable after9; erased state is an exact unevaluated original operation; closure supplied by written inverse loop"
+}

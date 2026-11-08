@@ -1,0 +1,77 @@
+{
+  "prior_uniform_CPU": 3219.078125,
+  "new_CPU_all_children_and_whole_controllers": 1.140625,
+  "cumulative_uniform_CPU": 3220.21875,
+  "global_allowance": 7200,
+  "required_reserve": 5,
+  "remaining_CPU_including_reserve": 3979.78125,
+  "original_SE03_phase_groups": {
+    "symbolic": {
+      "inherited_CPU": 7.109375,
+      "new_CPU": 0.5,
+      "combined_CPU": 7.609375,
+      "cap": 120
+    },
+    "independent": {
+      "inherited_CPU": 10.59375,
+      "new_CPU": 0.640625,
+      "combined_CPU": 11.234375,
+      "cap": 300
+    }
+  },
+  "attempts": [
+    {
+      "phase": "derivation",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.109375,
+      "whole_controller_CPU": 0.140625,
+      "charged_CPU": 0.25,
+      "allocated_child_cap": 111.75,
+      "peak_working_set_bytes_observed": 14127104
+    },
+    {
+      "phase": "flux_independent",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "whole_controller_CPU": 0.21875,
+      "charged_CPU": 0.34375,
+      "allocated_child_cap": 287.890625,
+      "peak_working_set_bytes_observed": 14123008
+    },
+    {
+      "phase": "flux",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "whole_controller_CPU": 0.125,
+      "charged_CPU": 0.25,
+      "allocated_child_cap": 111.515625,
+      "peak_working_set_bytes_observed": 14315520
+    },
+    {
+      "phase": "independent",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.109375,
+      "whole_controller_CPU": 0.1875,
+      "charged_CPU": 0.296875,
+      "allocated_child_cap": 288.25,
+      "peak_working_set_bytes_observed": 14008320
+    }
+  ],
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "new_canonical_queries": 0,
+  "canonical_query_cap": 2000000,
+  "live_record_cap": 2000000,
+  "DAG_cap": 4000000,
+  "stored_edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "wall_cap_hours": 12,
+  "old_signature_ledger_unchanged": 7195.203125,
+  "metadata_excluded_by_inherited_convention": true,
+  "no_cap_reset_or_raise": true
+}

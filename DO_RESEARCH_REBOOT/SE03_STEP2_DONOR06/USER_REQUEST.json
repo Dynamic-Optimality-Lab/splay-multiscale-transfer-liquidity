@@ -1,0 +1,13 @@
+{
+  "target": "Close arbitrary core11 A-dependent zero/+1 transfers, then core10 and universal six-key Step2",
+  "constraints": [
+    "R1-R4",
+    "Bank25=25",
+    "fixed allocations",
+    "inherited cumulative resource caps",
+    "reuse completed proofs",
+    "independent source audit",
+    "no finite tests"
+  ],
+  "completion_rule": "Partial theorems and rejected candidates are not Step2 closure."
+}

@@ -1,0 +1,148 @@
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": null, "word": [[0]], "profiles": 66900, "total_queries": 66900, "classes": 23073, "options": 66900, "CPU": 0.672}
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": null, "word": [[1]], "profiles": 68144, "total_queries": 135044, "classes": 33229, "options": 135044, "CPU": 1.484}
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": null, "word": [[0, 0]], "profiles": 256424, "total_queries": 391468, "classes": 40654, "options": 391468, "CPU": 5.0}
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": null, "word": [[0, 1]], "profiles": 62223, "total_queries": 453691, "classes": 41214, "options": 453691, "CPU": 5.953}
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": null, "word": [[1, 0]], "profiles": 61188, "total_queries": 514879, "classes": 41615, "options": 514879, "CPU": 6.656}
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": null, "word": [[1, 1]], "profiles": 256424, "total_queries": 771303, "classes": 46533, "options": 771303, "CPU": 10.109}
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": 0, "word": [[0], [1, 0]], "profiles": 6884, "total_queries": 778187, "classes": 46533, "options": 778187, "CPU": 10.297}
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": 0, "word": [[0], [1, 1]], "profiles": 15294, "total_queries": 793481, "classes": 46533, "options": 793481, "CPU": 10.469}
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": 0, "word": [[0, 0], [1]], "profiles": 6884, "total_queries": 800365, "classes": 46533, "options": 800365, "CPU": 10.672}
+{"sigma": [1, 0, 0, 1, 0, 1, 1, 0, 0, 0], "helper": 0, "word": [[0, 0], [1, 0]], "profiles": 41134, "total_queries": 841499, "classes": 46557, "options": 841499, "CPU": 11.266}
+{
+  "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+  "sigma": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "reason": null,
+  "queries": 841499,
+  "private_root_production_visits": 1121541,
+  "analytic_root_production_rejections": 110325,
+  "classes": 46557,
+  "option_count": 841499,
+  "peak_DP_records": 982089,
+  "allocated_CPU_cap": 120,
+  "cpu_seconds": 11.562,
+  "families": [
+    {
+      "helper": null,
+      "word": [
+        [
+          0
+        ]
+      ],
+      "count": 66900
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1
+        ]
+      ],
+      "count": 68144
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          0
+        ]
+      ],
+      "count": 256424
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          1
+        ]
+      ],
+      "count": 62223
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 61188
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          1
+        ]
+      ],
+      "count": 256424
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 6884
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "count": 15294
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "count": 6884
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 41134
+    }
+  ],
+  "full_M3_proved": false
+}

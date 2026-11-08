@@ -1,0 +1,576 @@
+{
+  "version": 1,
+  "root": "ROOT35",
+  "root_status": "BLOCKED",
+  "blocker_type": "unresolved mathematical source lemma; no justified smaller source reduction",
+  "not_A_or_E": true,
+  "not_terminal_A_L": true,
+  "proof_routes": {
+    "ROOT35": [
+      [
+        "PEEL35"
+      ],
+      [
+        "MIN35",
+        "COMP35"
+      ],
+      [
+        "INHERITED_EXTERIOR",
+        "ONE35",
+        "MULTI35"
+      ]
+    ]
+  },
+  "boxes": [
+    {
+      "id": "ROOT35",
+      "parent": null,
+      "target": "For all W,S, overlap<=sigma+local_unused",
+      "source_scope": "original reachable paired-closed maximal core2r-1, every r>=7, all C34 coalitions",
+      "hypotheses": [],
+      "inherited_results": [
+        "C34_LPR",
+        "C34_EX_PR"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "An admissible W,S with positive exact delta",
+      "reduction_justification": "Alternative routes below; no invented numerical descent",
+      "status": "BLOCKED",
+      "verification_status": "No universal proof or original negative cut",
+      "parent_bridge": "Would supply raw PR source law only",
+      "artifact": "C35_ROOT_THEOREM.md",
+      "edge_type": "required",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "ATOM35",
+      "parent": "ROOT35",
+      "target": "Exact operation-indicator capacity and REM/CL identities",
+      "source_scope": "all fixed C34 physical pool systems",
+      "hypotheses": [],
+      "inherited_results": [
+        "C34_OR34"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A literal pool violates an identity",
+      "reduction_justification": "Exhaustive r=0/r>=1 and own-membership cases",
+      "status": "PROVED",
+      "verification_status": "written mathematical proof and verify85 same-agent distinct static/source-snapshot audit",
+      "parent_bridge": "Defines the exact private marginal and cut",
+      "artifact": "ROTATION_LEVEL_OVERLAP_IDENTITIES.md",
+      "edge_type": "inherited-interface",
+      "blocker": null
+    },
+    {
+      "id": "PEEL35",
+      "parent": "ROOT35",
+      "target": "Every nonempty source coalition has p_m>=Q_m",
+      "source_scope": "original reachable paired-closed maximal core2r-1, every r>=7, all C34 coalitions",
+      "hypotheses": [],
+      "inherited_results": [
+        "ATOM35",
+        "C34_LPR"
+      ],
+      "required_children": [
+        "CORE35"
+      ],
+      "dual_falsification_objective": "A source coalition with every private capacity<Q",
+      "reduction_justification": "Stronger shared sufficient invariant; induction step reduces |S|; source premise itself unproved",
+      "status": "BLOCKED",
+      "verification_status": "Six fixed-source orders pass, not an all-source theorem",
+      "parent_bridge": "PEEL+REM proves ROOT35 by |S|-induction",
+      "artifact": "PRIVATE_CAPACITY_RECURSION.md",
+      "edge_type": "alternative-sufficient-route",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "CORE35",
+      "parent": "PEEL35",
+      "target": "Complete deletion/order-independence theorem for fixed finite graph",
+      "source_scope": "fixed physical neighborhood graph, no source universality",
+      "hypotheses": [],
+      "inherited_results": [
+        "ATOM35"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A deletion certificate or order-independence claim fails",
+      "reduction_justification": "Remaining vertex count strictly decreases",
+      "status": "PROVED",
+      "verification_status": "written mathematical proof and verify85 same-agent distinct static/source-snapshot audit; verify84 checks all six fixed-source certificates",
+      "parent_bridge": "A complete full order proves every subcoalition of that W",
+      "artifact": "PRIVATE_CAPACITY_RECURSION.md",
+      "edge_type": "required",
+      "blocker": null
+    },
+    {
+      "id": "MIN35",
+      "parent": "ROOT35",
+      "target": "Every source failure has the normalized minimal form",
+      "source_scope": "original reachable paired-closed maximal core2r-1, every r>=7, all C34 coalitions",
+      "hypotheses": [],
+      "inherited_results": [
+        "C34_LPR",
+        "C34_EX_PR",
+        "ATOM35",
+        "LOOP35"
+      ],
+      "required_children": [
+        "LOOP35"
+      ],
+      "dual_falsification_objective": "A normalized reduction loses source validity or positivity",
+      "reduction_justification": "Lexicographic (|S|,|W|), with valid guarded reductions only",
+      "status": "PROVED",
+      "verification_status": "written mathematical proof and verify85 same-agent distinct static/source-snapshot audit",
+      "parent_bridge": "Reduces any root failure to COMP35 class",
+      "artifact": "MINIMAL_CONNECTED_COUNTERCUT.md",
+      "edge_type": "source-normalization",
+      "blocker": null
+    },
+    {
+      "id": "LOOP35",
+      "parent": "MIN35",
+      "target": "Deleting exact A-return DELETE-only subword preserves a negative raw cut",
+      "source_scope": "different constructed source, same surviving KEEP boundaries and fixed legal cut",
+      "hypotheses": [],
+      "inherited_results": [
+        "C34_OR34"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A remaining state, cost, birth or pool differs after transport",
+      "reduction_justification": "Same |S| and strictly fewer source operations",
+      "status": "PROVED",
+      "verification_status": "written mathematical proof and verify85 same-agent distinct static/source-snapshot audit",
+      "parent_bridge": "Eliminates actual DELETE identity loops; not unconditional owner projection",
+      "artifact": "SOURCE_COALITION_REDUCTION.md",
+      "edge_type": "required",
+      "blocker": null
+    },
+    {
+      "id": "COMP35",
+      "parent": "ROOT35",
+      "target": "No positive delta on MIN35-normalized original source cuts",
+      "source_scope": "original reachable paired-closed maximal core2r-1, every r>=7, all C34 coalitions; normalized connected nonpeelable DELETE-loop-free cuts",
+      "hypotheses": [],
+      "inherited_results": [
+        "MIN35",
+        "BIRTH35",
+        "KEEP35"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A source-realized normalized positive cut",
+      "reduction_justification": "Proper source normal form via proved descent; no further descending reduction established",
+      "status": "BLOCKED",
+      "verification_status": "Numerical consequences insufficient; no original source cut found",
+      "parent_bridge": "MIN35+COMP35 reconstructs ROOT35",
+      "artifact": "SOURCE_FORCED_COMPENSATION.md",
+      "edge_type": "alternative-sufficient-route",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "BIRTH35",
+      "parent": "COMP35",
+      "target": "One common unrefreshed old B ancestor per cyclic arc; at most two shared first tickets per pair",
+      "source_scope": "original reachable paired-closed maximal core2r-1, every r>=7, all C34 coalitions",
+      "hypotheses": [],
+      "inherited_results": [
+        "C15_PATH_TO_STAR",
+        "C34_OR34"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A legitimate pair violates either bound",
+      "reduction_justification": "Uniform disjoint marked-subtree argument, independent of source size",
+      "status": "PROVED",
+      "verification_status": "written mathematical proof and verify85 same-agent distinct static/source-snapshot audit",
+      "parent_bridge": "Necessary source constraint only; not many-consumer compensation",
+      "artifact": "CYCLIC_BIRTH_INTERSECTION.md",
+      "edge_type": "source-interface",
+      "blocker": null
+    },
+    {
+      "id": "KEEP35",
+      "parent": "COMP35",
+      "target": "External KEEP retirement has y<x<g or g<x<y",
+      "source_scope": "original reachable paired-closed maximal core2r-1, every r>=7, all C34 coalitions",
+      "hypotheses": [],
+      "inherited_results": [
+        "C15_DESCENDANT_MONOTONICITY",
+        "C34_OR34"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "An admissible foreign KEEP retirement has another order",
+      "reduction_justification": "Exhaustive left/right pivot cases and B root separation",
+      "status": "PROVED",
+      "verification_status": "written mathematical proof and verify85 same-agent distinct static/source-snapshot audit",
+      "parent_bridge": "Constrains genuine-producer cycles; DELETE/mixed effects remain",
+      "artifact": "KEEP_RETIREMENT_ORDER.md",
+      "edge_type": "source-interface",
+      "blocker": null
+    },
+    {
+      "id": "MODEL35",
+      "parent": "COMP35",
+      "target": "Numerical atomic consequences alone do not force delta<=0",
+      "source_scope": "abstract incidence system ONLY, no original BST realization",
+      "hypotheses": [],
+      "inherited_results": [],
+      "required_children": [],
+      "dual_falsification_objective": "Countermodel arithmetic or stated proper-subset checks fail",
+      "reduction_justification": "One exact finite matrix, no universality from source samples",
+      "status": "PROVED",
+      "verification_status": "written mathematical proof and verify85 same-agent distinct static/source-snapshot audit",
+      "parent_bridge": "Rejects a weakened numerical reconstruction, not ROOT35",
+      "artifact": "ABSTRACT_COMPENSATION_COUNTERMODEL.md",
+      "edge_type": "logical-insufficiency",
+      "blocker": null
+    },
+    {
+      "id": "REAL35",
+      "parent": "COMP35",
+      "target": "Source-realize the specific three-macro MODEL35 incidence matrix",
+      "source_scope": "fixed three-selected-macro pattern in an original admissible source",
+      "hypotheses": [],
+      "inherited_results": [
+        "MODEL35",
+        "KEEP35",
+        "BIRTH35"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "Prove that this exact matrix is source-unrealizable",
+      "reduction_justification": "Narrow fixed-incidence dual candidate, not exhaustive positive decomposition",
+      "status": "BLOCKED",
+      "verification_status": "No actual original-source realization or complete impossibility proof",
+      "parent_bridge": "A realized negative model would refute ROOT; excluding it would not prove ROOT",
+      "artifact": "COUNTERCUT_REALIZABILITY.md",
+      "edge_type": "dual-candidate-route",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "SHALLOW35",
+      "parent": "REAL35",
+      "target": "Three consecutive cost1 monotone returns to one anchor are impossible",
+      "source_scope": "ordinary A accesses a,x1,a,x2,a,x3, strict monotonicity, no positive intervening events",
+      "hypotheses": [],
+      "inherited_results": [],
+      "required_children": [],
+      "dual_falsification_objective": "A valid depth<=2 path for all three consumers",
+      "reduction_justification": "Finite exhaustive depth1/RR/RL split plus reflection",
+      "status": "PROVED",
+      "verification_status": "written mathematical proof and verify85 same-agent distinct static/source-snapshot audit",
+      "parent_bridge": "Excludes one realization template; complement explicitly unresolved",
+      "artifact": "SHALLOW_ANCHOR_RETURN_BARRIER.md",
+      "edge_type": "partial-dual-exclusion",
+      "blocker": null
+    },
+    {
+      "id": "ONE35",
+      "parent": "ROOT35",
+      "target": "GPR for exactly one interior macro and any exterior multiplicity",
+      "source_scope": "original reachable paired-closed maximal core2r-1, every r>=7, all C34 coalitions; exactly one interior macro",
+      "hypotheses": [],
+      "inherited_results": [
+        "C34_EX_PR"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A source-negative coalition in that class",
+      "reduction_justification": "One branch of finite exhaustive interior-count partition",
+      "status": "BLOCKED",
+      "verification_status": "Augmentation reaches a cut unless a new source fact is proved",
+      "parent_bridge": "With exterior and MULTI35, gives every root Hall inequality",
+      "artifact": "ONE_INTERIOR_AND_MULTIPLE_INTERIOR.md",
+      "edge_type": "partition-route",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "MULTI35",
+      "parent": "ROOT35",
+      "target": "GPR for at least two interior macros",
+      "source_scope": "original reachable paired-closed maximal core2r-1, every r>=7, all C34 coalitions; at least two interior macros",
+      "hypotheses": [],
+      "inherited_results": [
+        "ATOM35"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A source-negative coalition in that class",
+      "reduction_justification": "Complement branch of same exhaustive finite partition",
+      "status": "BLOCKED",
+      "verification_status": "Arbitrary solvent-cluster contraction lacks private/extendibility premise",
+      "parent_bridge": "With exterior and ONE35 reconstructs root; no separate map freezing",
+      "artifact": "ONE_INTERIOR_AND_MULTIPLE_INTERIOR.md",
+      "edge_type": "partition-route",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "H35",
+      "parent": "U35",
+      "target": "Independent complete original Type A/B h extending natural h0",
+      "source_scope": "all required original sources and support sizes",
+      "hypotheses": [],
+      "inherited_results": [
+        "C14_GATE_U"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A genuine failure of all permitted source license constructions",
+      "reduction_justification": "Root law would be one input; no claim raw cover supplies full license",
+      "status": "BLOCKED",
+      "verification_status": "Inherited base/MR/nonexcess only",
+      "parent_bridge": "Required original E_r2 source comparison",
+      "artifact": "GLOBAL_INDEPENDENT_FULL_H.md",
+      "edge_type": "required",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "SC35",
+      "parent": "U35",
+      "target": "All required smaller-core source/owner coverage",
+      "source_scope": "all r>=7 and all smaller full cores",
+      "hypotheses": [],
+      "inherited_results": [
+        "C14_I6"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A source-valid failure of a proposed smaller-core bridge",
+      "reduction_justification": "No valid all-r projection or induction established",
+      "status": "BLOCKED",
+      "verification_status": "Six-key base retained, not extrapolated",
+      "parent_bridge": "Needed domain coverage independent of maximal ROOT35",
+      "artifact": "SMALLER_CORE_SOURCE_BRIDGE.md",
+      "edge_type": "required",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "OWNER-1",
+      "parent": "U35",
+      "target": "Source-forced eligible terminals",
+      "source_scope": "every legitimate fixed fE/a0/Gamma on actual period",
+      "hypotheses": [],
+      "inherited_results": [
+        "C13_FULL_EXCHANGE",
+        "C15_FROZEN_OWNER_INTERFACE"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A legitimate source/input with no required interface",
+      "reduction_justification": "Conditional algebra does not supply source existence",
+      "status": "BLOCKED",
+      "verification_status": "Source premise remains missing",
+      "parent_bridge": "Needed original all-source owner clause",
+      "artifact": "FROZEN_OWNER_TERMINAL_THEOREM.md",
+      "edge_type": "required",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "OWNER-4",
+      "parent": "U35",
+      "target": "Original source-license compatibility with natural h0",
+      "source_scope": "every legitimate fixed fE/a0/Gamma on actual period",
+      "hypotheses": [],
+      "inherited_results": [
+        "C13_FULL_EXCHANGE",
+        "C15_FROZEN_OWNER_INTERFACE"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A legitimate source/input with no required interface",
+      "reduction_justification": "Conditional algebra does not supply source existence",
+      "status": "BLOCKED",
+      "verification_status": "Source premise remains missing",
+      "parent_bridge": "Needed original all-source owner clause",
+      "artifact": "FROZEN_OWNER_TERMINAL_THEOREM.md",
+      "edge_type": "required",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "OWNER-2",
+      "parent": "U35",
+      "target": "Inherited conditional owner/retirement/transport clause 2 under its exact supplied certificate",
+      "source_scope": "original accepted input/license/period hypotheses ARE GIVEN",
+      "hypotheses": [
+        "complete licensed h where required",
+        "legitimate fixed a0/fE/Gamma",
+        "original common/retirement and legal-cut premises"
+      ],
+      "inherited_results": [
+        "C13_FULL_EXCHANGE",
+        "C14_PERIOD",
+        "C15_OWNER_INTERFACE"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A counterexample satisfying all stated supplied-license hypotheses",
+      "reduction_justification": "Finite injectivity or actual occurrence-bijection induction",
+      "status": "PROVED",
+      "verification_status": "Inherited accepted proof reused; no new all-source premise inferred",
+      "parent_bridge": "Usable only after original source premises are established",
+      "artifact": "FROZEN_OWNER_TERMINAL_THEOREM.md",
+      "edge_type": "required",
+      "blocker": null
+    },
+    {
+      "id": "OWNER-3",
+      "parent": "U35",
+      "target": "Inherited conditional owner/retirement/transport clause 3 under its exact supplied certificate",
+      "source_scope": "original accepted input/license/period hypotheses ARE GIVEN",
+      "hypotheses": [
+        "complete licensed h where required",
+        "legitimate fixed a0/fE/Gamma",
+        "original common/retirement and legal-cut premises"
+      ],
+      "inherited_results": [
+        "C13_FULL_EXCHANGE",
+        "C14_PERIOD",
+        "C15_OWNER_INTERFACE"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A counterexample satisfying all stated supplied-license hypotheses",
+      "reduction_justification": "Finite injectivity or actual occurrence-bijection induction",
+      "status": "PROVED",
+      "verification_status": "Inherited accepted proof reused; no new all-source premise inferred",
+      "parent_bridge": "Usable only after original source premises are established",
+      "artifact": "FROZEN_OWNER_TERMINAL_THEOREM.md",
+      "edge_type": "required",
+      "blocker": null
+    },
+    {
+      "id": "OWNER-5",
+      "parent": "U35",
+      "target": "Inherited conditional owner/retirement/transport clause 5 under its exact supplied certificate",
+      "source_scope": "original accepted input/license/period hypotheses ARE GIVEN",
+      "hypotheses": [
+        "complete licensed h where required",
+        "legitimate fixed a0/fE/Gamma",
+        "original common/retirement and legal-cut premises"
+      ],
+      "inherited_results": [
+        "C13_FULL_EXCHANGE",
+        "C14_PERIOD",
+        "C15_OWNER_INTERFACE"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A counterexample satisfying all stated supplied-license hypotheses",
+      "reduction_justification": "Finite injectivity or actual occurrence-bijection induction",
+      "status": "PROVED",
+      "verification_status": "Inherited accepted proof reused; no new all-source premise inferred",
+      "parent_bridge": "Usable only after original source premises are established",
+      "artifact": "FROZEN_OWNER_TERMINAL_THEOREM.md",
+      "edge_type": "required",
+      "blocker": null
+    },
+    {
+      "id": "OWNER-6",
+      "parent": "U35",
+      "target": "Inherited conditional owner/retirement/transport clause 6 under its exact supplied certificate",
+      "source_scope": "original accepted input/license/period hypotheses ARE GIVEN",
+      "hypotheses": [
+        "complete licensed h where required",
+        "legitimate fixed a0/fE/Gamma",
+        "original common/retirement and legal-cut premises"
+      ],
+      "inherited_results": [
+        "C13_FULL_EXCHANGE",
+        "C14_PERIOD",
+        "C15_OWNER_INTERFACE"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A counterexample satisfying all stated supplied-license hypotheses",
+      "reduction_justification": "Finite injectivity or actual occurrence-bijection induction",
+      "status": "PROVED",
+      "verification_status": "Inherited accepted proof reused; no new all-source premise inferred",
+      "parent_bridge": "Usable only after original source premises are established",
+      "artifact": "FROZEN_OWNER_TERMINAL_THEOREM.md",
+      "edge_type": "required",
+      "blocker": null
+    },
+    {
+      "id": "OWNER-7",
+      "parent": "U35",
+      "target": "Inherited conditional owner/retirement/transport clause 7 under its exact supplied certificate",
+      "source_scope": "original accepted input/license/period hypotheses ARE GIVEN",
+      "hypotheses": [
+        "complete licensed h where required",
+        "legitimate fixed a0/fE/Gamma",
+        "original common/retirement and legal-cut premises"
+      ],
+      "inherited_results": [
+        "C13_FULL_EXCHANGE",
+        "C14_PERIOD",
+        "C15_OWNER_INTERFACE"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A counterexample satisfying all stated supplied-license hypotheses",
+      "reduction_justification": "Finite injectivity or actual occurrence-bijection induction",
+      "status": "PROVED",
+      "verification_status": "Inherited accepted proof reused; no new all-source premise inferred",
+      "parent_bridge": "Usable only after original source premises are established",
+      "artifact": "FROZEN_OWNER_TERMINAL_THEOREM.md",
+      "edge_type": "required",
+      "blocker": null
+    },
+    {
+      "id": "OWNER-8",
+      "parent": "U35",
+      "target": "Inherited conditional owner/retirement/transport clause 8 under its exact supplied certificate",
+      "source_scope": "original accepted input/license/period hypotheses ARE GIVEN",
+      "hypotheses": [
+        "complete licensed h where required",
+        "legitimate fixed a0/fE/Gamma",
+        "original common/retirement and legal-cut premises"
+      ],
+      "inherited_results": [
+        "C13_FULL_EXCHANGE",
+        "C14_PERIOD",
+        "C15_OWNER_INTERFACE"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "A counterexample satisfying all stated supplied-license hypotheses",
+      "reduction_justification": "Finite injectivity or actual occurrence-bijection induction",
+      "status": "PROVED",
+      "verification_status": "Inherited accepted proof reused; no new all-source premise inferred",
+      "parent_bridge": "Usable only after original source premises are established",
+      "artifact": "FROZEN_OWNER_TERMINAL_THEOREM.md",
+      "edge_type": "required",
+      "blocker": null
+    },
+    {
+      "id": "OWNER-9",
+      "parent": "U35",
+      "target": "Construct the universal original Bank25 trace",
+      "source_scope": "arbitrary required sources",
+      "hypotheses": [],
+      "inherited_results": [
+        "C14_BANK",
+        "C33_SEED_TRACE_MERGE"
+      ],
+      "required_children": [],
+      "dual_falsification_objective": "Source-valid failure of the allowed scheduling architecture",
+      "reduction_justification": "No raw-matching-to-trace descent has been proved",
+      "status": "BLOCKED",
+      "verification_status": "Restricted MR trace/conditional merge retained",
+      "parent_bridge": "Original E_r3 storage requirement",
+      "artifact": "BANK25_CONSTRUCTION.md",
+      "edge_type": "required",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    },
+    {
+      "id": "U35",
+      "parent": null,
+      "target": "Complete original all-r Gate U source mechanism",
+      "source_scope": "all required supports, cores and legal owner inputs",
+      "hypotheses": [],
+      "inherited_results": [
+        "C14_CONDITIONAL_TRANSFER"
+      ],
+      "required_children": [
+        "H35",
+        "SC35",
+        "OWNER-1",
+        "OWNER-4",
+        "OWNER-9"
+      ],
+      "dual_falsification_objective": "A legal all-route architecture countercertificate",
+      "reduction_justification": "Current PR route still requires source and original interface clauses",
+      "status": "BLOCKED",
+      "verification_status": "No unconditional source transfer",
+      "parent_bridge": "Would permit original transfer, not claimed",
+      "artifact": "E_R2_E_R3_COMPLETION.md",
+      "edge_type": "required",
+      "blocker": "joint source compensation or original source-interface premise not proved"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "EXACT_MANUSCRIPT_SOURCE_RECIPES_NOT_EXECUTED_INDEPENDENT_AUDIT_PENDING",
+  "notation": "Kk=original KEEP key k; Dk=original A-only DELETE access, no physical deletion; tree=[key,left,right], null=empty",
+  "common_T0_base": [9,[2,[1,null,null],[8,[3,null,[4,null,[7,[6,[5,null,null],null],null]]],null]],[12,[10,null,[11,null,null]],[13,null,null]]],
+  "marked": [1,3,5,7,9,11,13],
+  "G": 1, "R": 13, "C": 11, "K": 9, "x": 5,
+  "extra_private_variants": {"G3": "add14 as13.right in T0", "R3": "add0 as1.left in T0"},
+  "U_KEEP_targets": [1,3,9,7,3,5,3,7,9,3,1,9],
+  "V_G_KEEP_targets": [1,13,1,11,1,13,1,9],
+  "V_R_KEEP_targets": [13,1,13,11,1,13,1,9],
+  "P_DELETE_targets": [12,1,11,1,13,1,12,1,11,13,1],
+  "source_period_recipe": "U ; Reset ; PrepVariant ; first7KEEPs(V_Y) ; D5 ; K9 ; Reset",
+  "cases": [
+    {"id": "G2", "Reset": "D13,D12,...,D1", "PrepVariant": "P", "V": "V_G", "occurrences": 58, "j": 37, "g": 39, "s": 40, "t": 41, "v": 42, "p": 43, "catcher_DELETE5": 44},
+    {"id": "R2", "Reset": "D13,D12,...,D1", "PrepVariant": "P,D13", "V": "V_R", "occurrences": 59, "j": 38, "g": 40, "s": 41, "t": 42, "v": 43, "p": 44, "catcher_DELETE5": 45},
+    {"id": "G3", "Reset": "D14,D13,...,D1", "PrepVariant": "P,D11,D1,D14,D1", "V": "V_G", "occurrences": 64, "j": 42, "g": 44, "s": 45, "t": 46, "v": 47, "p": 48, "catcher_DELETE5": 49},
+    {"id": "R3", "Reset": "D13,D12,...,D0,D1", "PrepVariant": "P,D11,D1,D13,D0,D13", "V": "V_R", "occurrences": 67, "j": 44, "g": 46, "s": 47, "t": 48, "v": 49, "p": 50, "catcher_DELETE5": 51}
+  ],
+  "full_B": {"U_Q": 18, "V_Q": 14, "period_Q": 32, "period_returns": "T0 exactly", "marked_core": 13},
+  "A": {"period_initial": "Reset(T0)", "period_final": "same canonical reset tree", "reachable_prefix_from_diagonal": "Reset", "helper_H_each": 1, "catcher_original_H": 1, "catcher_shadow_H": 2},
+  "erased_alignment": {"erased_key": 11, "Theta": "deterministic B_E map of one literal W", "T_i": "Theta^i(T0)", "u": "least i>=1 with a future repetition", "L": "least positive period at T_u", "actual_prefix": "Reset,W^u", "actual_closed_period": "W^L", "numeric_u_L_computed": false, "closure_basis": "finite deterministic BST state space and explicit A/B_F W closure"},
+  "scope_warning": "These source-valid closed controls realize all four local helper cases using a DELETE5 catcher. They do not assert that D5 is a genuine Q6 KEEP or supply a new fully replayed hard-spine/owner witness.",
+  "owners": {"new_fE": "not computed", "new_a": "not computed", "old_maps_modified": false},
+  "new_replay_calls": 0,
+  "independent_audit": "PENDING"
+}

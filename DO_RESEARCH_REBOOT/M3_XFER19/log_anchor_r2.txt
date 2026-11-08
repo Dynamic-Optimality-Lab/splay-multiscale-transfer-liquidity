@@ -1,0 +1,133 @@
+{
+  "status": "ANCHOR_SIGNED_SAFETY_NOT_PROVED",
+  "generic_zero_target_coverage": "PROVED",
+  "signed_jobs_required": 2070,
+  "signed_jobs_proved": 15,
+  "new_symbolic_queries": 9,
+  "cheap_floor_refinements": 1,
+  "range_floor_omissions": 2385,
+  "unresolved": {
+    "kind": "SYMBOLIC_SIGNED_SAFETY_COUNTERMODEL",
+    "job": 15,
+    "helper": null,
+    "word": [
+      [
+        1
+      ]
+    ],
+    "source_core": 581,
+    "target_key": 5,
+    "destination_core": 2645,
+    "weight": 0,
+    "B_source": [
+      0,
+      null,
+      [
+        3,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            null
+          ]
+        ],
+        [
+          6,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              7,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ]
+    ],
+    "B_destination": [
+      5,
+      [
+        3,
+        [
+          0,
+          null,
+          [
+            1,
+            null,
+            [
+              2,
+              null,
+              null
+            ]
+          ]
+        ],
+        [
+          4,
+          null,
+          null
+        ]
+      ],
+      [
+        6,
+        null,
+        [
+          8,
+          [
+            7,
+            null,
+            null
+          ],
+          null
+        ]
+      ]
+    ],
+    "original_negative_cycle_claimed": false,
+    "source_alpha": [
+      0,
+      10,
+      5,
+      10,
+      10,
+      2,
+      6
+    ],
+    "target_alpha": [
+      5,
+      0,
+      6,
+      10,
+      2,
+      9,
+      7
+    ],
+    "marked_keys": [
+      0,
+      2,
+      3,
+      5,
+      6
+    ],
+    "anchor_source": 1,
+    "anchor_target": 0,
+    "old_floor_source": 0,
+    "old_floor_target": 0,
+    "actual_new_residual_with_translated_floor": -1,
+    "protected_types": []
+  },
+  "new_finite_population_or_mask_tests": 0,
+  "completed_semantic_checks_replayed": 0,
+  "new_original_root_evaluations": 0,
+  "Step4_complete": false
+}

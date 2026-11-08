@@ -1,0 +1,991 @@
+{
+  "status": "SOURCE_LEVEL_H2_GRAMMAR_RECURSION_RECORDED",
+  "A_H2_boundary_transitions": 948,
+  "coverage": "one depth3/4 marked access, or two depth1/2 accesses; first marked or exposed private root/grandchild; arbitrary rigid private hangers",
+  "reports": [
+    {
+      "core": 9,
+      "H2_edges_checked": 141060,
+      "failures": [],
+      "status": "H2_RELEASE_PRESERVED_ON_THIS_RESTRICTED_GRAMMAR",
+      "scope": "marked A core6 before/after, first BF mask; not whole original source domain"
+    },
+    {
+      "core": 10,
+      "H2_edges_checked": 212815,
+      "failures": [],
+      "status": "H2_RELEASE_PRESERVED_ON_THIS_RESTRICTED_GRAMMAR",
+      "scope": "marked A core6 before/after, first BF mask; not whole original source domain"
+    },
+    {
+      "core": 11,
+      "H2_edges_checked": 246462,
+      "failures": [
+        {
+          "A_source": 1,
+          "A_target": 117,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                20,
+                "F1",
+                [
+                  30,
+                  "F2",
+                  [
+                    40,
+                    "F3",
+                    [
+                      60,
+                      [
+                        50,
+                        "F4",
+                        "F5"
+                      ],
+                      "F6"
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              30,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                30
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                40,
+                [
+                  30,
+                  [
+                    20,
+                    [
+                      10,
+                      "F0",
+                      "F1"
+                    ],
+                    "F2"
+                  ],
+                  "F3"
+                ],
+                [
+                  50,
+                  "F4",
+                  "F5"
+                ]
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 2,
+          "A_target": 126,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                20,
+                "F1",
+                [
+                  30,
+                  "F2",
+                  [
+                    50,
+                    [
+                      40,
+                      "F3",
+                      "F4"
+                    ],
+                    [
+                      60,
+                      "F5",
+                      "F6"
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              30,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                30
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                50,
+                [
+                  30,
+                  [
+                    20,
+                    [
+                      10,
+                      "F0",
+                      "F1"
+                    ],
+                    "F2"
+                  ],
+                  [
+                    40,
+                    "F3",
+                    "F4"
+                  ]
+                ],
+                "F5"
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 3,
+          "A_target": 111,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                20,
+                "F1",
+                [
+                  30,
+                  "F2",
+                  [
+                    60,
+                    [
+                      40,
+                      "F3",
+                      [
+                        50,
+                        "F4",
+                        "F5"
+                      ]
+                    ],
+                    "F6"
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              30,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                30
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                30,
+                [
+                  20,
+                  [
+                    10,
+                    "F0",
+                    "F1"
+                  ],
+                  "F2"
+                ],
+                [
+                  40,
+                  "F3",
+                  [
+                    50,
+                    "F4",
+                    "F5"
+                  ]
+                ]
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 4,
+          "A_target": 112,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                20,
+                "F1",
+                [
+                  30,
+                  "F2",
+                  [
+                    60,
+                    [
+                      50,
+                      [
+                        40,
+                        "F3",
+                        "F4"
+                      ],
+                      "F5"
+                    ],
+                    "F6"
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              30,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                30
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                30,
+                [
+                  20,
+                  [
+                    10,
+                    "F0",
+                    "F1"
+                  ],
+                  "F2"
+                ],
+                [
+                  50,
+                  [
+                    40,
+                    "F3",
+                    "F4"
+                  ],
+                  "F5"
+                ]
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 5,
+          "A_target": 129,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                20,
+                "F1",
+                [
+                  40,
+                  [
+                    30,
+                    "F2",
+                    "F3"
+                  ],
+                  [
+                    50,
+                    "F4",
+                    [
+                      60,
+                      "F5",
+                      "F6"
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              40,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                40
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                50,
+                [
+                  40,
+                  [
+                    20,
+                    [
+                      10,
+                      "F0",
+                      "F1"
+                    ],
+                    [
+                      30,
+                      "F2",
+                      "F3"
+                    ]
+                  ],
+                  "F4"
+                ],
+                "F5"
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 6,
+          "A_target": 115,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                20,
+                "F1",
+                [
+                  40,
+                  [
+                    30,
+                    "F2",
+                    "F3"
+                  ],
+                  [
+                    60,
+                    [
+                      50,
+                      "F4",
+                      "F5"
+                    ],
+                    "F6"
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              40,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                40
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                40,
+                [
+                  20,
+                  [
+                    10,
+                    "F0",
+                    "F1"
+                  ],
+                  [
+                    30,
+                    "F2",
+                    "F3"
+                  ]
+                ],
+                [
+                  50,
+                  "F4",
+                  "F5"
+                ]
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 7,
+          "A_target": 123,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                20,
+                "F1",
+                [
+                  50,
+                  [
+                    30,
+                    "F2",
+                    [
+                      40,
+                      "F3",
+                      "F4"
+                    ]
+                  ],
+                  [
+                    60,
+                    "F5",
+                    "F6"
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              50,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                50
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                50,
+                [
+                  20,
+                  [
+                    10,
+                    "F0",
+                    "F1"
+                  ],
+                  [
+                    30,
+                    "F2",
+                    [
+                      40,
+                      "F3",
+                      "F4"
+                    ]
+                  ]
+                ],
+                "F5"
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 8,
+          "A_target": 124,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                20,
+                "F1",
+                [
+                  50,
+                  [
+                    40,
+                    [
+                      30,
+                      "F2",
+                      "F3"
+                    ],
+                    "F4"
+                  ],
+                  [
+                    60,
+                    "F5",
+                    "F6"
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              50,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                50
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                50,
+                [
+                  20,
+                  [
+                    10,
+                    "F0",
+                    "F1"
+                  ],
+                  [
+                    40,
+                    [
+                      30,
+                      "F2",
+                      "F3"
+                    ],
+                    "F4"
+                  ]
+                ],
+                "F5"
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 14,
+          "A_target": 130,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                30,
+                [
+                  20,
+                  "F1",
+                  "F2"
+                ],
+                [
+                  40,
+                  "F3",
+                  [
+                    50,
+                    "F4",
+                    [
+                      60,
+                      "F5",
+                      "F6"
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              40,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                40
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                50,
+                [
+                  40,
+                  [
+                    30,
+                    [
+                      10,
+                      "F0",
+                      [
+                        20,
+                        "F1",
+                        "F2"
+                      ]
+                    ],
+                    "F3"
+                  ],
+                  "F4"
+                ],
+                "F5"
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 15,
+          "A_target": 116,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                30,
+                [
+                  20,
+                  "F1",
+                  "F2"
+                ],
+                [
+                  40,
+                  "F3",
+                  [
+                    60,
+                    [
+                      50,
+                      "F4",
+                      "F5"
+                    ],
+                    "F6"
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              40,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                40
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                40,
+                [
+                  30,
+                  [
+                    10,
+                    "F0",
+                    [
+                      20,
+                      "F1",
+                      "F2"
+                    ]
+                  ],
+                  "F3"
+                ],
+                [
+                  50,
+                  "F4",
+                  "F5"
+                ]
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 16,
+          "A_target": 125,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                30,
+                [
+                  20,
+                  "F1",
+                  "F2"
+                ],
+                [
+                  50,
+                  [
+                    40,
+                    "F3",
+                    "F4"
+                  ],
+                  [
+                    60,
+                    "F5",
+                    "F6"
+                  ]
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              50,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                50
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                50,
+                [
+                  30,
+                  [
+                    10,
+                    "F0",
+                    [
+                      20,
+                      "F1",
+                      "F2"
+                    ]
+                  ],
+                  [
+                    40,
+                    "F3",
+                    "F4"
+                  ]
+                ],
+                "F5"
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        },
+        {
+          "A_source": 17,
+          "A_target": 111,
+          "BF_source": 0,
+          "BF_target": 1425,
+          "full_target_key": 11,
+          "Q": 5,
+          "H": 2,
+          "debt_before": 0,
+          "debt_after": 0,
+          "signed_residual": -1,
+          "A_symbolic_receipt": {
+            "source_A": [
+              10,
+              "F0",
+              [
+                30,
+                [
+                  20,
+                  "F1",
+                  "F2"
+                ],
+                [
+                  60,
+                  [
+                    40,
+                    "F3",
+                    [
+                      50,
+                      "F4",
+                      "F5"
+                    ]
+                  ],
+                  "F6"
+                ]
+              ]
+            ],
+            "positive_accesses": [
+              20,
+              60
+            ],
+            "source_word": [
+              [
+                "D",
+                20
+              ],
+              [
+                "K",
+                60
+              ]
+            ],
+            "target_A": [
+              60,
+              [
+                30,
+                [
+                  20,
+                  [
+                    10,
+                    "F0",
+                    "F1"
+                  ],
+                  "F2"
+                ],
+                [
+                  40,
+                  "F3",
+                  [
+                    50,
+                    "F4",
+                    "F5"
+                  ]
+                ]
+              ],
+              "F6"
+            ],
+            "kind": "marked"
+          },
+          "status": "LOCAL_NECESSARY_SOURCE_RELEASE_FAILURE; full period embedding not established"
+        }
+      ],
+      "status": "H2_CANDIDATE_EXTENSION_OPEN_WITH_ADVERSE_LOCAL_EDGES",
+      "scope": "marked A core6 before/after, first BF mask; not whole original source domain"
+    }
+  ],
+  "source_engine_calls": 2320,
+  "counterexample_scope": "no local edge is promoted to full closed-period refutation"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS_UNIFORM_CONTRACTION_SPECTRUM_POPULATION_LIFT_AND_CONDITIONAL_FIXED_CORE_BRIDGE",
+  "uniform_parameters": "all finite n>=2, all positive whole H, arbitrary permitted private populations/source length",
+  "unary_identity_proofs": [
+    {
+      "source": "u(private_empty_side,X)",
+      "projection": "Join(empty,Pi(X))",
+      "result": "Pi(X)"
+    },
+    {
+      "source": "u(X,private_empty_side)",
+      "projection": "Join(Pi(X),empty)",
+      "result": "Pi(X)"
+    }
+  ],
+  "multiset_invariance": "EXACT distinct-projection-set identity, not population sampling or a guessed unary credit exemption",
+  "known_node_bound": "2n+2H-3",
+  "ten_anchor_LOW_bound": 21,
+  "logical_ledger": {
+    "LOW": "same H,Q and exact source/target Pi sets under inactive-unary source contraction; all active helper operands retained",
+    "HIGH": "6-Q+Ftarget-Fsource >=6-Q+l_target-u_source>=0",
+    "integrality": "Ds<=w+Dt with integer w implies floor(Ds)<=w+floor(Dt); integer intervals/singletons retained",
+    "source_funding": "conditional on the still-unproved COMPLETE LOW law and explicit b-dependent bounds; then actual first-min(H,3) events, h0 inclusion and original carry prove working<=9",
+    "not_proved": "existence of F, completed LOW source coverage, arbitrary larger B cores, all-r E_r, or unconditional fE eligibility"
+  },
+  "F_candidate_status": "OPEN; global[0,3] prototype bounds do not yet supply the required b-specific bounds",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "finite_population_tests_used": false,
+  "principal_U33": "OPEN",
+  "external_or_formal_proof_assistant_verification": false,
+  "input_sha256": {
+    "CONTRACTION_SPECTRUM_POPULATION_LIFT.md": "d977cacb9d92ea424b5760a8291d277021b5fa9448934897e94e5f4643c98a2f",
+    "B_SENSITIVE_FROZEN_PROOF_BOX.md": "c5372f0f5deff1e66fd96457d658ff1ae628c5b067489d64578e6b9c411bd3ae",
+    "native10_complete_independent_audit.json": "6ab3d9d2cf63d1cd7b29b101be6d2045d467bca10a11a098e93facfca0f5e36f",
+    "EXTERIOR_PRIVATE_POPULATION_SOURCE_THEOREM.md": "bdb62591026841ebcd9e5cab528a14f13aa6fee8644082ccd2c1c2e0abae4ada",
+    "exterior_private_population_independent_audit.json": "e72eb30b564e7547721bb4ba015c9f86a87413cd8f5a053142de456dccf88a4f"
+  },
+  "inherited_active_frame_path": "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP2_CD6_FINAL_ASSEMBLY_14\\UNIFORM_R_TRANSFER.md",
+  "inherited_active_frame_sha256": "0d60121dfd15db899c900e9bde73b0a9ca1354787f5682cbfe0070c69c8fa664"
+}

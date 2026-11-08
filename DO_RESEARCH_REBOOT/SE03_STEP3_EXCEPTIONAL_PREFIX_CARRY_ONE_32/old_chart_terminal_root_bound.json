@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETE_STATIC_TERMINAL_ROOT_ANALYSIS",
+  "new_source_queries": 0,
+  "candidate": "D6(root7)<=E7(with extra inactive9 child)+1",
+  "candidate_holds": true,
+  "maximum_difference": 1,
+  "states_checked": 3432,
+  "violating_BF_blocks": [],
+  "maximum_witness": {
+    "BF_index": 1221,
+    "BF_tree": [
+      7,
+      [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              "F0",
+              "F1"
+            ],
+            "F2"
+          ],
+          "F3"
+        ],
+        [
+          6,
+          [
+            5,
+            "F4",
+            "F5"
+          ],
+          "F6"
+        ]
+      ],
+      [
+        8,
+        "F7",
+        [
+          9,
+          "F8",
+          [
+            10,
+            "F9",
+            [
+              11,
+              "F10",
+              "F11"
+            ]
+          ]
+        ]
+      ]
+    ],
+    "E6": 1,
+    "root_degree": 3,
+    "E7_with_inactive9_child": 2,
+    "max_D6": 3,
+    "debt_offset": 382937
+  },
+  "scope": "necessary old six-key syntax; not a new source realization or automatic q5 packet-boundary license"
+}

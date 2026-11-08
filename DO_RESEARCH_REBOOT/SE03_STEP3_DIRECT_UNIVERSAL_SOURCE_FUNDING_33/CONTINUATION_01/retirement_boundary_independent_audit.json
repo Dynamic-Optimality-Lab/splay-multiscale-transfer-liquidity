@@ -1,0 +1,140 @@
+{
+  "status": "PASS_UNIFORM_H1_RETIREMENT_AND_SOURCE_EXACT_H2_NONSIMULATION",
+  "uniform_H1_source_preimage_cases": [
+    {
+      "orientation": "LL",
+      "source": [
+        6,
+        [
+          3,
+          [
+            2,
+            "A",
+            "E"
+          ],
+          "C"
+        ],
+        "D"
+      ],
+      "comparison_source": [
+        6,
+        [
+          2,
+          "A",
+          "C"
+        ],
+        "D"
+      ],
+      "projected_target": [
+        2,
+        "A",
+        [
+          6,
+          "C",
+          "D"
+        ]
+      ],
+      "costs": [
+        1,
+        1
+      ],
+      "reflected_identity": true
+    },
+    {
+      "orientation": "LR",
+      "source": [
+        6,
+        [
+          2,
+          "A",
+          [
+            3,
+            "E",
+            "C"
+          ]
+        ],
+        "D"
+      ],
+      "comparison_source": [
+        6,
+        [
+          3,
+          "A",
+          "C"
+        ],
+        "D"
+      ],
+      "projected_target": [
+        3,
+        "A",
+        [
+          6,
+          "C",
+          "D"
+        ]
+      ],
+      "costs": [
+        1,
+        1
+      ],
+      "reflected_identity": true
+    }
+  ],
+  "H1_exhaustiveness": "private branch must be middle of the length-two marked-root/marked-target path; two orientations and their reflections",
+  "H1_lower_envelope_corollary": "inherits a verified ordinary signed source law at its actual domain; not a signed law for arbitrary new J",
+  "uniform_H2_counterfamily": "written free-term equations and <=2 positive-event word classification; source gap is comparison geometry",
+  "exact_control_old_source_indices": [
+    8860,
+    8902
+  ],
+  "exact_control_unique_target": 5549,
+  "all_22_ordinary_comparisons_independently_checked": true,
+  "original_source_verification": {
+    "period": [
+      102,
+      202
+    ],
+    "packet_t": 139,
+    "costs": [
+      118,
+      18,
+      18
+    ],
+    "CD_margin": 218,
+    "new_fresh_A_accesses": 28,
+    "checked_G4_hull_instances": 72,
+    "checked_full_B_rigid_gap_instances": 58,
+    "checked_erased_B_rigid_gap_instances": 56,
+    "genuine_KEEP_anchors": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "all_original_operations_accounted_for": true,
+    "all_A_B_BE_and_recency_seams_close": true
+  },
+  "not_a_CD_counterexample": true,
+  "not_all_comparison_architectures_refuted": true,
+  "frozen_owners_unchanged": true,
+  "source_queries": 28,
+  "source_engine_calls": 28,
+  "principal_U33": "OPEN",
+  "external_or_formal_verification": false,
+  "input_sha256": {
+    "ONE_BRANCH_RETIREMENT_BOUNDARY.md": "f209d05b388ef54934ce9b46c75f47b9e9cf6d9d62b990ddb04c700554287f8f",
+    "RETIREMENT_NO_TWO_EVENT_SIMULATION.md": "7bf17b932d4e90e76568fa9d4f1f367254818253b949180c6deb26d8c719a62b",
+    "retirement_preimage_closed_source.json": "c0421f2fd0fb0d97c4de8a45058e7610a4599bee230d74c468ae6d6dcc670217",
+    "retirement_two_event_comparison_certificate.json": "39d83680a26fcab53a1b0d1fe94dc4269af35414ef25204d4ab7fd7077021026",
+    "audit_verify72.py": "fb273619ef980e21d0ff19e7251058ccf79e8b775ffc166f7fce73295bf0685c",
+    "closed_word_composition_independent_v2.py": "1b9622b6e43f0b3d3177d34bd8d6dac18e77a5abaae4f07527bee47237e92ecf",
+    "native10_source_independent_audit.json": "36e867d6cc54647fcc0b256a7f946b25ebce6973e277eb9f9a7264793e2e2271",
+    "four_hull_source_basis_independent_audit.json": "eb606b40cbbd373b302ea1e2c8e8eff379f248652e941f28c004d2e18e4f994a"
+  }
+}

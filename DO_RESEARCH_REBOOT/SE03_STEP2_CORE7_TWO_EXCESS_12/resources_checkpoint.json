@@ -1,0 +1,141 @@
+{
+  "status": "ALL_EXISTING_CAPS_PRESERVED_ALL_RUNS_CHARGED",
+  "prior_CPU": 3415.84375,
+  "cumulative_CPU": 3439.609375,
+  "ceiling": 7200,
+  "required_reserve": 5,
+  "remaining_CPU": 3760.390625,
+  "available_before_reserve": 3755.390625,
+  "cumulative_group_CPU": {
+    "symbolic": 71.421875,
+    "independent": 166.8125
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "remaining_group_CPU": {
+    "symbolic": 48.578125,
+    "independent": 133.1875
+  },
+  "phases": [
+    {
+      "phase": "construction2",
+      "status": "PASS",
+      "accepted": true,
+      "group": "symbolic",
+      "child_CPU": 3.234375,
+      "whole_controller_CPU": 0.203125,
+      "charge": 3.4375,
+      "source_calls": 8064,
+      "finite_control_count_from_semantic_receipt": 433,
+      "historical_period_rows": 0
+    },
+    {
+      "phase": "construction",
+      "status": "FAILED_OR_UNKNOWN",
+      "accepted": false,
+      "group": "symbolic",
+      "child_CPU": 0.5625,
+      "whole_controller_CPU": 0.296875,
+      "charge": 0.859375,
+      "source_calls": 8064,
+      "finite_control_count_from_semantic_receipt": 0,
+      "historical_period_rows": 0
+    },
+    {
+      "phase": "controls",
+      "status": "PASS",
+      "accepted": true,
+      "group": "independent",
+      "child_CPU": 5.609375,
+      "whole_controller_CPU": 0.203125,
+      "charge": 5.8125,
+      "source_calls": 27820,
+      "finite_control_count_from_semantic_receipt": 0,
+      "historical_period_rows": 1856
+    },
+    {
+      "phase": "geometry",
+      "status": "PASS",
+      "accepted": true,
+      "group": "symbolic",
+      "child_CPU": 0.421875,
+      "whole_controller_CPU": 0.203125,
+      "charge": 0.625,
+      "source_calls": 3003,
+      "finite_control_count_from_semantic_receipt": 0,
+      "historical_period_rows": 0
+    },
+    {
+      "phase": "independent2",
+      "status": "FAILED_OR_UNKNOWN",
+      "accepted": false,
+      "group": "independent",
+      "child_CPU": 1.40625,
+      "whole_controller_CPU": 0.171875,
+      "charge": 1.578125,
+      "source_calls": 9667,
+      "finite_control_count_from_semantic_receipt": 0,
+      "historical_period_rows": 0
+    },
+    {
+      "phase": "independent3",
+      "status": "PASS",
+      "accepted": true,
+      "group": "independent",
+      "child_CPU": 1.59375,
+      "whole_controller_CPU": 0.203125,
+      "charge": 1.796875,
+      "source_calls": 9667,
+      "finite_control_count_from_semantic_receipt": 62641,
+      "historical_period_rows": 0
+    },
+    {
+      "phase": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "accepted": false,
+      "group": "independent",
+      "child_CPU": 0.140625,
+      "whole_controller_CPU": 0.1875,
+      "charge": 0.328125,
+      "source_calls": 0,
+      "finite_control_count_from_semantic_receipt": 0,
+      "historical_period_rows": 0
+    },
+    {
+      "phase": "ownership",
+      "status": "PASS",
+      "accepted": true,
+      "group": "independent",
+      "child_CPU": 7.78125,
+      "whole_controller_CPU": 0.203125,
+      "charge": 7.984375,
+      "source_calls": 0,
+      "finite_control_count_from_semantic_receipt": 366363,
+      "historical_period_rows": 0
+    },
+    {
+      "phase": "seal",
+      "status": "PASS",
+      "accepted": true,
+      "group": "independent",
+      "child_CPU": 1.171875,
+      "whole_controller_CPU": 0.171875,
+      "charge": 1.34375,
+      "source_calls": 0,
+      "finite_control_count_from_semantic_receipt": 0,
+      "historical_period_rows": 0
+    }
+  ],
+  "campaign_source_engine_calls": 66285,
+  "query_live_cap": 2000000,
+  "DAG_cap": 4000000,
+  "edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "wall_cap_hours": 12,
+  "no_reset": true,
+  "failed_drafts": "all child/controller CPU and all completed source calls retained",
+  "metadata_convention": "unchanged inherited entry/provenance/prose/publication exclusion; all proof/replay/ownership/seal child and whole controller CPU charged",
+  "this_publication_metadata_CPU_excluded": 0.53125
+}

@@ -1,0 +1,11 @@
+{
+  "status": "IMPLEMENTATION_FILTER_ERROR_CORRECTED",
+  "failed_script_preserved": "certify_core3.py",
+  "corrected_script": "certify_core3_v2.py",
+  "error": "Anonymous A-root canonical index 0 was grouped as S-key 0 without checking the isS flag.",
+  "correction": "Only root rows with kind=0 and isS=true enter ordinary core-root buckets.",
+  "registered_domain_changed": false,
+  "mathematical_refinement_test_failed": false,
+  "potential_inequality_failed": false,
+  "result_files_overwritten": false
+}

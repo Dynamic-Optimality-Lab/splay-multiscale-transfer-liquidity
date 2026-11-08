@@ -1,0 +1,28 @@
+{
+  "status": "PASS_CAUSAL_INDEPENDENT_FULL_RECEIPT_AND_LEGAL_TRANSPORT",
+  "reports": [
+    {
+      "reflected": false,
+      "source_cut_before_macro": 0,
+      "max_working_units": 3,
+      "one_carried_unit": true,
+      "native_source_time_valid_at_this_cut": true,
+      "fixed_aux_cut_transport": "both endpoints, no old assignment or source unit duplicated",
+      "demand_count": 10
+    },
+    {
+      "reflected": true,
+      "source_cut_before_macro": 0,
+      "max_working_units": 3,
+      "one_carried_unit": true,
+      "native_source_time_valid_at_this_cut": true,
+      "fixed_aux_cut_transport": "both endpoints, no old assignment or source unit duplicated",
+      "demand_count": 10
+    }
+  ],
+  "universal_working_bound": 4,
+  "bound_reason": "one carried bit plus at most Q<=3 selected own bits; all other actual bits remain reserve",
+  "final_owner_exchange": "block/cyclic receipt on fixed I, no native chronology asserted for its relocated endpoint",
+  "source_engine_calls": 0,
+  "new_finite_tests": 2
+}

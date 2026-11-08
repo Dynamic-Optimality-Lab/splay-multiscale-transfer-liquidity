@@ -1,0 +1,44 @@
+{
+  "prior_sealed_uniform_CPU": 3195.546875,
+  "new_CPU_including_all_children_and_controllers": 1.15625,
+  "cumulative_uniform_CPU": 3196.703125,
+  "global_allowance": 7200,
+  "remaining_CPU_including_reserve": 4003.296875,
+  "required_reserve": 5,
+  "per_phase": [
+    {
+      "phase": "assemble",
+      "child_CPU": 0.15625,
+      "whole_controller_CPU": 0.1875,
+      "charged_CPU": 0.34375,
+      "allocated_CPU_cap": 120.0,
+      "peak_working_set_bytes_observed": 15237120
+    },
+    {
+      "phase": "independent",
+      "child_CPU": 0.578125,
+      "whole_controller_CPU": 0.234375,
+      "charged_CPU": 0.8125,
+      "allocated_CPU_cap": 300.0,
+      "peak_working_set_bytes_observed": 28606464
+    }
+  ],
+  "old_signature_ledger_unchanged": 7195.203125,
+  "no_old_phase_renewal_or_cap_increase": true,
+  "canonical_query_cap": 2000000,
+  "new_canonical_queries": 0,
+  "live_record_cap": 2000000,
+  "new_live_graph_records": 0,
+  "input_DAG_cap": 4000000,
+  "new_compiled_input_DAG_nodes": 0,
+  "stored_edge_cap": 5000000,
+  "new_stored_graph_edges": 0,
+  "memory_cap_bytes": 34359738368,
+  "per_phase_wall_cap_hours": 12,
+  "proof_object_bytes": 6384,
+  "universal_affine_proof_schemas": 6,
+  "symbolic_integer_interval_partitions": 2,
+  "new_finite_tests": 0,
+  "completed_semantic_checks_replayed": 0,
+  "metadata_bookkeeping_excluded_by_inherited_convention": true
+}

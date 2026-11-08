@@ -1,0 +1,95 @@
+"""SE02 symbolic proof inventory; no concrete sources or solver executed."""
+import json,sys,time
+from pathlib import Path
+B=Path(__file__).resolve().parent
+def write(n,d):
+    with (B/n).open('x',encoding='utf-8') as f:json.dump(d,f,indent=2)
+def affine(name,ge,eq,mg,me,goal):
+    return {'name':name,'ge':ge,'eq':eq,'mg':mg,'me':me,'goal':goal}
+def main():
+    p={'status':'SE02_DERIVATION_AWAITING_INDEPENDENT_AUDIT',
+      'general_domain':'arbitrary original reachable fully closed walks with r>=6 genuine KEEP keys',
+      'alignment':{'interval':'[uN,(u+L)N)','L':'positive multiple of erased recurrent period',
+        'A_trajectory_preserved':True,'aligned_A':'L*A','aligned_full_Q':'L*Q',
+        'erased_Q':'actual Q_E on that interval','per_original_period':'divide R,R_z,Delta,D,J together by L',
+        'transient_correction':'Delta_aligned=Delta_total_through_u_plus_L-Delta_preperiod',
+        'preperiod_credits_available':False},
+      'marginal':{'identity':'R=R_z-Delta','decomposition':'Delta=D+J',
+        'direct':'sum original q on erased Kz over aligned interval',
+        'indirect':'sum(q_full-q_erased) on retained Ky,y!=z over aligned interval',
+        'indirect_sign_assumed':False,'nongenuine_and_zero_operations_retained':True},
+      'primitive_gains':{
+        'rotate_right_child':{'p':1,'c':-1,'L':1,'M':0,'R':-1,'outside':0},
+        'rotate_left_child':{'p':1,'c':-1,'L':-1,'M':0,'R':1,'outside':0}},
+      'parity':{'identity':'2j=f-e-(f mod2)+(e mod2)',
+        'delta_ge2':'j>=1','delta_eq1':'j=(e mod2)','delta_eq0':'j=0',
+        'delta_eq_minus1':'j=-(f mod2)','delta_le_minus2':'j<=-1'},
+      'protected_theorem':{
+        'blocks':'disjoint cyclic z-run then y-run,y!=z; each run nonempty and has a KEEP',
+        'all_Kz_in_blocks':True,'source_roots':'A and B both rooted at y at each block entry',
+        'B_z_geometry':'same-side grandchild','A_z_geometry':'child or same-side grandchild',
+        'arbitrary_run_modes_and_lengths':True,'full_paired_identity':True,
+        'erased_block_B_identity':True,'outside_full_state_resynchronization':True,
+        'block_boundary_alignment':{'u':0,'L':1},
+        'arbitrary_active_B_cut':{'u':1,'L':1,'first_erased_Q':'Q0+1','recurrent_erased_Q':'Q0'},
+        'per_block':{'A':2,'Q_full':2,'Q_erased':0,'D':1,'J':1,'Delta':2},
+        'donor':'first real A event of z-run; ZIG or LL/RR DOUBLE',
+        'bit0_consumer':'B DOUBLE at first full KEEP z',
+        'bit1_consumer':'B DOUBLE at first full KEEP y',
+        'donor_at_or_before_consumers':True,
+        'reserved_pool':'all4 A units per block excluded from contracted gamma0',
+        'used_pool':'only2 bits of first z A event',
+        'injective_ids':'copy,block,source_occurrence,A_event,bit',
+        'contracted_support':'at most r-1','contracted_walk':'source-legal reachable fully paired-closed',
+        'cost_relations':['A=A0+2m','Q_full=Q0+2m','Q_erased=Q0'],
+        'given_CD_of_backbone':'Q0<=2A0','conclusion':'Q_full<=2A-2m',
+        'six_key_specialization':'unconditional via sealed CD(5)',
+        'arbitrary_support_statement':'conditional on smaller-support theorem AND the stated source guard',
+        'every_walk_has_guarded_key':False,'Delta_le_Rz_assumed':False},
+      'new_family':{
+        'order':['z','p','b1','b2','b3','b4','b5','b6'],
+        'marked_roles':['z','b1','b2','b3','b4','b6'],
+        'core_witness_paths':{'z':['b1','p','z'],'b6':['b1','b2','b3','b4','b5','b6']},
+        'arbitrary_mark_free_hangers':9,'m_domain':'every integer m>=1',
+        'P':['DELETE z','KEEP z','KEEP b1'],
+        'W':['KEEP b2','KEEP b3','KEEP b4','KEEP b6','KEEP b4','KEEP b3','KEEP b2','KEEP b1'],
+        'W_source_rules':['R','R','R','RR','LL','L','L','L'],
+        'W_A':8,'W_Q':2,'G':6,'fixed_core_size':8,
+        'aligned_u':0,'aligned_L':1,
+        'costs':{'A':'2m+8','Q_full':'2m+2','Q_erased':'2','D':'m','J':'m','Delta':'2m','R':'2m+14','R_z':'4m+14'},
+        'strictly_outside_CD5_and_core_le7':True,
+        'novel_against_every_historical_packet_closure_claimed':False},
+      'stress':{'inherited_RR_LL':'passes with exact direct1+indirect1 compensation',
+        'negative_indirect':'far-side w depth3->1 gives j=-1',
+        'missing_first_z_A_event':'guard rejects; no preperiod borrowing',
+        'zigzag_A_return':'full-tree contraction fails; guard rejects',
+        'interleaving_third_key':'outside guard; general signed equations retained'},
+      'affine_schemas':[
+        affine('aligned_residual',[],[{'R':1,'S':-2,'QF':1},{'Rz':1,'S':-2,'QE':1},{'Delta':1,'QF':-1,'QE':1}],
+          [],[1,-1,1],{'R':1,'Rz':-1,'Delta':1}),
+        affine('direct_indirect_split',[],[{'Delta':1,'QF':-1,'QE':1},{'QF':1,'D':-1,'F':-1},
+          {'QE':1,'E':-1},{'J':1,'F':-1,'E':1}],[],[1,1,-1,-1],{'Delta':1,'D':-1,'J':-1}),
+        affine('transient_subtraction',[],[{'tail':1,'FT':-1,'FP':1,'ET':1,'EP':-1},
+          {'total':1,'FT':-1,'ET':1},{'pre':1,'FP':-1,'EP':1}],[],[1,-1,1],{'tail':1,'total':-1,'pre':1}),
+        affine('parity_identity',[],[{'f':1,'qf':-2,'bf':-1},{'e':1,'qe':-2,'be':-1},{'j':1,'qf':-1,'qe':1}],
+          [],[-1,1,2],{'j':2,'f':-1,'e':1,'bf':1,'be':-1}),
+        affine('positive_band_contradiction',[{'d':1,'1':-2},{'j':-1},{'1':1,'bf':-1},{'be':1}],
+          [{'d':1,'j':-2,'bf':-1,'be':1}],[1,2,1,1],[-1],{'1':-1}),
+        affine('negative_band_contradiction',[{'d':-1,'1':-2},{'j':1},{'bf':1},{'1':1,'be':-1}],
+          [{'d':1,'j':-2,'bf':-1,'be':1}],[1,2,1,1],[1],{'1':-1}),
+        affine('protected_compensation',[{'A0':2,'Q0':-1}],
+          [{'A':1,'A0':-1,'m':-2},{'Q':1,'Q0':-1,'m':-2}],[1],[2,-1],{'A':2,'Q':-1,'m':-2}),
+        affine('six_family_slack',[],[{'A':1,'m':-2,'1':-8},{'Q':1,'m':-2,'1':-2}],
+          [],[2,-1],{'A':2,'Q':-1,'m':-2,'1':-14})],
+      'new_finite_tests':0,'new_solver_queries':0,'new_original_root_queries':0,
+      'completed_semantic_checks_replayed':0,'frozen_graph_modified':False,'matching_terminal_modified':False,
+      'Bank25':25,'uniform_support_induction_proved':False,'unrestricted_CD_proved':False,
+      'Dynamic_Optimality_proved':False}
+    assert time.process_time()<float(sys.argv[1])
+    write('derivation.json',p)
+    print(json.dumps({'status':'SE02_SYMBOLIC_DERIVATION_WRITTEN','universal_CD':'OPEN','new_finite_tests':0}))
+if __name__=='__main__':
+    error=None
+    try:main()
+    except BaseException as ex:error={'type':type(ex).__name__,'message':str(ex)};raise
+    finally:write('audit_derivation_exit.json',{'whole_process_CPU_seconds':time.process_time(),'error':error})

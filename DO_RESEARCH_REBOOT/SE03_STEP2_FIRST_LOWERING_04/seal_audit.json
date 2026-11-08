@@ -1,0 +1,43 @@
+{
+  "status": "PASS_OUTCOME_B_ONLY",
+  "outcome": "B",
+  "witness_families": [
+    {
+      "family": "entry_family.json",
+      "period": 68,
+      "prefix": 68,
+      "A_bit_units": 162,
+      "BF_demands": 28,
+      "cold_negative": true,
+      "entry": "E0"
+    },
+    {
+      "family": "e1_family.json",
+      "period": 90,
+      "prefix": 90,
+      "A_bit_units": 250,
+      "BF_demands": 44,
+      "cold_negative": true,
+      "entry": "E1"
+    }
+  ],
+  "all_physical_operation_and_period_interfaces": true,
+  "independent_engine_and_reflections": "PASS",
+  "generic_exit_source_proof_review": {
+    "singleton_q4": "five path marks plus one mass-zero offpath block; extra mark parent determines S5/S4",
+    "paired_q5_q1": "six-mark fan then extreme marked leaf return; sole-child marked root P4",
+    "zero_length": "T root degrees1,4,5 cannot equal loss-source degrees2,3",
+    "N_prefix": "S4/P4 actual q2 outputs D4; all D4 q2 accesses lower; source paths only narrowed by legality",
+    "A_no_invented_normalform": "original six one-event cases, actual source inventories preserved",
+    "witnesses": "E0/E1 full original closures and exact charts independently checked",
+    "post_loss": "restricted suffix guards and induction only; generic residual OPEN"
+  },
+  "Sigma_predecessor_leaf3_preserved": true,
+  "new_potential_constructed": false,
+  "width_two_obstruction": false,
+  "original_CD_counterexample": false,
+  "Step2": "OPEN",
+  "Universal_CD": "OPEN",
+  "source_engine_calls": 510,
+  "new_finite_tests": 0
+}

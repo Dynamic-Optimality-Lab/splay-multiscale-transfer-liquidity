@@ -1,0 +1,39 @@
+{
+  "name": "D_hid",
+  "old_debt": "D_exp from Transfer13 unchanged as an inherited function",
+  "formula": "min(D_exp(s),1) if H_min(s) or H_max(s), else D_exp(s)",
+  "H_min": {
+    "valid_ordered_nine_core_projection": true,
+    "A_Score_root_equals_B_root": true,
+    "root_in": [
+      7,
+      8
+    ],
+    "core_left_child": 0,
+    "core_height_at_least": 7,
+    "alpha_L_kind": 0,
+    "anonymous_clause": "An(LL) or (An(L) and An(LR))",
+    "exclude_nonroot_alpha_kind0_isS_true_index": 0
+  },
+  "H_max": {
+    "valid_ordered_nine_core_projection": true,
+    "A_Score_root_equals_B_root": true,
+    "root_in": [
+      0,
+      1
+    ],
+    "core_right_child": 8,
+    "core_height_at_least": 7,
+    "alpha_R_kind": 0,
+    "anonymous_clause": "An(RR) or (An(R) and An(RL))",
+    "exclude_nonroot_alpha_kind0_isS_true_index": 8
+  },
+  "An_definition": "alpha.kind=0 and alpha.isS=false; unused index unrestricted",
+  "new_shared_observable_or_private_witness_coordinate": false,
+  "root_unused_kind_and_all_other_unnamed_unused_fields_unrestricted": true,
+  "old_invalid_core_totalization_retained": true,
+  "floor_psi_retained": true,
+  "E1_floor1_retained": true,
+  "floor_Lambda_retained": false,
+  "old_rows_transported_by_safe_ceiling_theorem_not_Lambda_input_premise": true
+}

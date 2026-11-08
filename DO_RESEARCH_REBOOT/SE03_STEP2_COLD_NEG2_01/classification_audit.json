@@ -1,0 +1,46 @@
+{
+  "status": "PASS_EXHAUSTIVE_COST_CLASSIFICATION_AND_EXACT_REFUTATION_SCOPE",
+  "universal_classification": [
+    "singleton H1,Q4",
+    "actual q5/q1 pair Hsum2,Q6"
+  ],
+  "core_sizes": {
+    "6..8": "no price-2",
+    "9": "singleton d8 if actual source-valid",
+    "10": "singleton d8/9 if actual source-valid",
+    "11": "singleton d8; pair d10,d2"
+  },
+  "H0_full_genuine_excluded_by": "A synchronized old root cannot change under zero events to a different genuine target",
+  "no_qE_qF_confusion": true,
+  "root_repeats_retained": true,
+  "both_packet_operations_actual": true,
+  "gates": {
+    "A": "PASS",
+    "B": "PASS",
+    "C": "REFUTED_EXACT_PAIRED",
+    "D": "REFUTED_EXACT_SINGLETON",
+    "E": "PASS_SCOPED_REPLAYS",
+    "F": "PASS_INTERFACE_NO_NEW_INJECTION",
+    "G": "NO_ARCHITECTURE_COUNTERPATH_FOUND"
+  },
+  "terminal_outcome": "B_NORMALIZATION_REFUTED",
+  "candidate_changed": false,
+  "rejected_drafts": [
+    "debt: JSON term decoding error",
+    "debt_v2: unproved Omega target capacity2 assumption"
+  ],
+  "failed_CPU_charges_retained": true,
+  "all16_necessary_masks_exercised_as_controls": true,
+  "all16_masks_claimed_realizable": false,
+  "source_engine_calls": 0,
+  "new_finite_tests": 0,
+  "entire_Step2": "OPEN",
+  "CD6": "OPEN",
+  "Step3": "OPEN",
+  "Universal_CD": "OPEN",
+  "Dynamic_Optimality": "OPEN",
+  "new_full_allocator_constructed": false,
+  "generic_width2_architecture_refuted": false,
+  "original_CD_counterexample": false,
+  "next_bounded_target": "actual H1 zero/+1 incoming compatibility of forced-zero NEG2-source region, not a patched formula"
+}

@@ -1,0 +1,287 @@
+{
+  "status": "INDEPENDENT_CORRECTION_CANCELLATION_REFUTED_EXACT",
+  "gate_sha256": "7a9afc8c083cdb4e125ed1ddb2bf23a4d911b8fa7689b6e7798a35eb9b5734da",
+  "old_source_certificate_sha256": "5417ec9ffdcbb87826f1a8c08e75d8340d1bd9f0d70f17f2f86982a0c39af2bd",
+  "source_episode_word": [
+    7,
+    11,
+    1
+  ],
+  "source_episode_indices": [
+    7,
+    8,
+    9
+  ],
+  "complete_A_returns": true,
+  "comparison_corrections_in_A_episode": [
+    {
+      "block": 9,
+      "source_event": 0,
+      "case": "LL",
+      "old_external_key": 11,
+      "old_child_key": 7,
+      "comparison_rotation": "right at11 promoting7"
+    }
+  ],
+  "number_of_A_comparison_corrections": 1,
+  "opposite_A_comparison_corrections": 0,
+  "source_before_final_A": [
+    11,
+    [
+      7,
+      [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        9,
+        [
+          8,
+          null,
+          null
+        ],
+        [
+          10,
+          null,
+          null
+        ]
+      ]
+    ],
+    [
+      12,
+      null,
+      [
+        13,
+        null,
+        null
+      ]
+    ]
+  ],
+  "local_splay": [
+    1,
+    null,
+    [
+      7,
+      [
+        2,
+        null,
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      [
+        9,
+        [
+          8,
+          null,
+          null
+        ],
+        [
+          10,
+          null,
+          null
+        ]
+      ]
+    ]
+  ],
+  "base_lift": [
+    1,
+    null,
+    [
+      11,
+      [
+        7,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                6,
+                [
+                  5,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ]
+        ],
+        [
+          9,
+          [
+            8,
+            null,
+            null
+          ],
+          [
+            10,
+            null,
+            null
+          ]
+        ]
+      ],
+      [
+        12,
+        null,
+        [
+          13,
+          null,
+          null
+        ]
+      ]
+    ]
+  ],
+  "corrected_result": [
+    1,
+    null,
+    [
+      7,
+      [
+        2,
+        null,
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      [
+        11,
+        [
+          9,
+          [
+            8,
+            null,
+            null
+          ],
+          [
+            10,
+            null,
+            null
+          ]
+        ],
+        [
+          12,
+          null,
+          [
+            13,
+            null,
+            null
+          ]
+        ]
+      ]
+    ]
+  ],
+  "original_A_source": [
+    1,
+    null,
+    [
+      7,
+      [
+        2,
+        null,
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ]
+      ],
+      [
+        11,
+        [
+          9,
+          [
+            8,
+            null,
+            null
+          ],
+          [
+            10,
+            null,
+            null
+          ]
+        ],
+        [
+          12,
+          null,
+          [
+            13,
+            null,
+            null
+          ]
+        ]
+      ]
+    ]
+  ],
+  "base_part_alone_is_not_closed": true,
+  "correction_restores_actual_A_source": true,
+  "refuted_scope": "per-tree pairwise cancellation of the root-lift comparison corrections on a complete source return",
+  "arbitrary_coupled_cancellation_refuted": false,
+  "FE02_CD": "OPEN",
+  "Coarse_Double_counterexample": false
+}

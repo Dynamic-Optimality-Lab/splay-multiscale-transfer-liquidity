@@ -1,0 +1,53 @@
+# Exact local provenance and dependency status
+
+Branch coarse-double-branch; HEAD 8c378d49283b3738b18e7175886772a98025e4e9. Tracked tree clean at entry;
+entry.json preserves the exact full untracked inventory. Authoritative local
+state used; no remote snapshot substituted. All2314 transitive pins
+plus external directives verified at entry and revalidated at final seal.
+The table distinguishes direct proof inspection from transitive byte checks.
+Other inherited pinned proofs are reused at their sealed scopes, not all
+independently rederived in Campaign12. No missing critical premise remains.
+
+| Repository-relative exact path | Status / proof inspection / use | SHA256 |
+|---|---|---|
+|DO_RESEARCH_REBOOT/ORIGINAL_PIPELINE.md|SOURCE DEFINITION; original present-key costs/model inspected|3804b3bd5beb6fd2bbddcc7ac8d69f1a7d21a39a7fbd33c5fb397cd939eb896a|
+|DO_RESEARCH_REBOOT/RESEARCH_RULES.md|SOURCE RULES; exact proof/status/scope discipline inspected|c6b35f746f107ad8a1c226aefdb2b43711a4982fd9717fe513d7080f25d299bc|
+|DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11G_FINAL_CLOSURE/11G_FOUR_RULE_FREEZE.md|R1–R4 SOURCE CONTRACT; literal frozen architecture inspected|5a70d322041ceddcd220602b656784f2668e50f81c9fc2db235a91b167ec703a|
+|DO_RESEARCH_REBOOT/SE03_STEP1_FUND01/AUXILIARY_FUNDING_THEOREM.md|PROVED special five-key/core9 explicit bank at exact scope; inspected, no selector extension|134a17f13e05e2052a29733a83b556875d466fab90e415c11d041658ffab03e3|
+|DO_RESEARCH_REBOOT/SE03_STEP1_FUND01/SOURCE_IDS_AND_CYCLIC_CUT.md|PROVED aligned period/canonical legal cut; inspected|862e3c60dda74a6cb3d17315d08857de710cae4ea6baaa921a29c739b1efb29e|
+|DO_RESEARCH_REBOOT/SE03_STEP1_FUND01/SIGNED_CANCELLATION.md|PROVED exact common/full-only/E-only retirement; inspected|626b4dd9a03ff200b10068bd0c2c37399585aa9ff52523768a4c0f4b8d382643|
+|DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/IMPROVED_FULL_DEBT_TARGET.md|CONDITIONAL debt; ONLY PROVED complete-full/common-owner exchange used; inspected|6e545d56d2bc204501ee41809dc1e5d00ee83493f4ed3c95f58825ac90c6e6c0|
+|DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/PACKET_PERIOD_TRANSPORT.md|PROVED both-endpoint actual period bijection; inspected|39c97731674347593126466f423666c10b53693356adeed6c129a1a36426acc4|
+|DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/CYCLIC_DONOR_ID_AUDIT.md|PROVED Gamma legal-copy interface; inspected/fresh historical replay|288544d2a0e2fb209240c36cf65c4922684d7b16558e9915ea8b3409ee43bbbe|
+|DO_RESEARCH_REBOOT/SE03_STEP2_FULL_FUNDING_CLOSURE_10/RESIDUAL_SLOT_THEOREM.md|PROVED general actual-ID partial map/anchors; full proof inspected|19c6cf6b507732d34ccf499ce1237d26bd4fa25667bb52bdba1f829d8718a633|
+|DO_RESEARCH_REBOOT/SE03_STEP2_FULL_FUNDING_CLOSURE_10/PHYSICAL_DONOR_LEDGER.md|PROVED exact inventory; old OPEN supply not assumed|63ee1a7ce70d4333c10b935e8eb68e8105bb64c508aa0aa98deac8a10ebc5c22|
+|DO_RESEARCH_REBOOT/SE03_STEP2_FULL_FUNDING_CLOSURE_10/FROZEN_FE_AUDIT.md|PROVED ownership interface at true scope; inspected|4da08c750587b3249b78af2935f38ab6414803acf91a666cbb839ecd76214747|
+|DO_RESEARCH_REBOOT/SE03_STEP2_FULL_FUNDING_CLOSURE_10/SIX_KEY_SOURCE_PARTITION.md|PROVED necessary core/macro partition; inspected|2d180367a29aee16d986023bf9c07fd8a26ee7494429df4dd0fee9333f876b3b|
+|DO_RESEARCH_REBOOT/SE03_STEP2_FULL_FUNDING_CLOSURE_10/CHART_BOUNDARY_CORRECTIONS.md|PROVED identities; no chart-sign repayment imported|2a798c9d7c4cc35d34f960ce6905db4b61da662e29310a29684b6d3a35ab9e31|
+|DO_RESEARCH_REBOOT/SE03_STEP2_FULL_FUNDING_CLOSURE_10/PERIOD_CUT_VALIDITY.md|PROVED transport component; inspected|847420f68a945dd3c8dd88d6e408d1d71c312c5ef29db135ad758e90666d34ca|
+|DO_RESEARCH_REBOOT/SE03_STEP2_FULL_FUNDING_CLOSURE_10/physical_exchange.py|IMMUTABLE exact partial/common algorithm; inspected and reverse-audited|9a8ce6240c24326e8449810d7210f5958c78ea31ee2cfc0bfcbb1531235f6cce|
+|DO_RESEARCH_REBOOT/SE03_STEP2_FULL_FUNDING_CLOSURE_10/deficient_source_schemas.json|EXACT source-family data, inspected and replayed; not universal evidence|0f788203eec86428e8325e298a1bf6f0151bcd39e989125b4f14a9503ee1804b|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/FULL_PROOF.md|PROVED one-slot only; local structural facts independently re-established|3a6c9b82a0271f0c304426a8a052f456fcbf754720ba07fea743b6be4e8e4887|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/CHECKPOINT.md|SEALED one-slot checkpoint; inspected|d821c9665f44407b652fe46bc8da56baf9f358e0434b0906d00047db92caf08e|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/FINAL_VERDICT.md|OUTCOME A at exact ONE-slot scope; inspected|5a0419d4a637e2658ec3effc240608bdfbb355a964a526672eb2ceb6685963df|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/CORE7_ONE_SLOT_CLASSIFICATION.md|PROVED necessary source grammar; inspected/regenerated|6fcdd8187a148b205950ab76d1f697f72054f1f5ecc15904a851c74533a0485d|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/ZERO_SURPLUS_RIGIDITY.md|PROVED H1 necessary normal form; inspected, no convergence assumption|24df3bb1a34304ebb1521757726fd616316c22ef8ecfac417a7c909c6cbe223e|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/ZERO_SURPLUS_DONOR.md|PROVED incoming-path free-tree lemma; inspected and reproved|397e59ef00ff26e9cd22deae553e07b881bd6b0a21ab2ff6a08ed97aa414a1b2|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/NONLOCAL_DONOR_LEMMA.md|PROVED original-common receipt interface; inspected, simultaneous bridge supplied|b80db51db997cbbee1d6674a619796dd3d98291088b7485fdbc4fad289798670|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/PHYSICAL_SINGLE_SLOT_INJECTION.md|PROVED single-slot construction; inspected, not applied wholesale|d9e734f12c14588627ee04a4bf8b4d7e536ff71e4708f36fc2ab7a1c71903b3e|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/AVAILABLE_BIT_INVENTORY.md|PROVED one-slot inventory, exact definitions reused|aee92d174dd0692fa93476336d2ed8ff83203e93c15b1abf0deb48dd94ef481c|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/POSITIVE_SURPLUS_PROOF.md|PROVED one-slot source stream, new two-block stream supplied|db08cb0864194a839b956288731fccb730dcd609e65d38387dc6296e02d3ce5e|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/INDEPENDENT_AUDIT.md|Accepted same-agent distinct implementation scope; inspected|5a4d85acbc6a8e83b4f778c4de96bb67c003663d72c70f48236b5e6f792fa6f6|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/ADVERSARIAL_AUDIT.md|Accepted limitations/counterrules, inspected|e9115b70148278a69529ec94119bfc79b712967fce6bc9ac41d382451bc0520f|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/UNIFORM_SINGLE_SLOT_INTERFACE.md|U11 component proved/general U OPEN; inspected, U12 separately scoped|a09a658eba0544fb5d868d4e5c0e8b46162e34dd1a66fadddb2139ba3ef8375c|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/seal_audit2.json|AUTHORITATIVE final11 seal; inspected/hashed|b718f192442d5aa1979e7f0a743ae3c04b6aa91b10c9e2cb5a1bbeebe8a9a167|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/resources_checkpoint.json|AUTHORITATIVE3415.84375 cumulative CPU, entry exact|a8e5ed7d2875b256a3c6b7f607227f7f5aeeadd457c6e7450e24810b8275bbc0|
+|DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/campaign_manifest.json|AUTHORITATIVE109-file manifest; every hash verified|9b1d7dc33a668fff19d78023ce5672206ce04e6f85ee4af3b4e08910630cc801|
+|DO_RESEARCH_REBOOT/SE03_STEP2_COLD_NEG2_01/source_model.py|IMMUTABLE primary/independent source rotations inspected, no legacy depth+1 proxy used|56293faffed92ac7e685a99e178c5d13fc7be76037161690e8d94efebaebc81a|
+|python/independent/splay.py|IMMUTABLE primary/independent source rotations inspected, no legacy depth+1 proxy used|3a178c131c70c08419f18d1035dfb32beb5aa781673098ffbd4a5293f91d2f01|
+
+External original IAGS/R1–R4 and current Campaign12 directive are pinned
+by exact absolute path/hash in dependency_pins.json. The refuted changing-
+chart Hamiltonian normalization remains REFUTED; only its independently
+reproved structural fork lemma is inherited. CD5/M3/Step1 and06–09 stay
+at their sealed scopes. Campaign10 full funding stays UNRESOLVED.

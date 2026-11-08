@@ -1,0 +1,103 @@
+{
+  "status": "FINITE_EXACT_VERIFIED",
+  "gap": 3,
+  "reflected_gap": 6,
+  "models": 79726,
+  "source_case_queries": 241776,
+  "states": 556980,
+  "edges_independently_regenerated": 3556717,
+  "range": [
+    -2,
+    0
+  ],
+  "destination_debt_floor": true,
+  "minimum_residual": 0,
+  "residual_histogram": {
+    "2": 208569,
+    "1": 2074923,
+    "0": 1258684,
+    "3": 14541
+  },
+  "range_safe_rows": 824948,
+  "debt_safe_rows": {
+    "0": 229839,
+    "1": 596627
+  },
+  "core_reflection_debt_mismatches": 0,
+  "potential_sha256": "3f52f2f0a24e8f5d54385c4f8ccb108df02331bfd1481a65c69c5d45d16a0707",
+  "cpu_seconds": 14.406,
+  "samples": {
+    "w1": {
+      "node": 0,
+      "source_B": 0,
+      "source_shadow": 0,
+      "w": 1,
+      "q": 1,
+      "H": 1,
+      "target": 2,
+      "destination_shadow": 2,
+      "witness": 0,
+      "A_depth": 2
+    },
+    "w0": {
+      "node": 2,
+      "source_B": 0,
+      "source_shadow": 61,
+      "w": 0,
+      "q": 2,
+      "H": 1,
+      "target": 4,
+      "destination_shadow": 63,
+      "witness": 48,
+      "A_depth": 2
+    },
+    "w-1": {
+      "node": 4,
+      "source_B": 0,
+      "source_shadow": 115,
+      "w": -1,
+      "q": 3,
+      "H": 1,
+      "target": 6,
+      "destination_shadow": 117,
+      "witness": 83,
+      "A_depth": 2
+    },
+    "w-2": {
+      "node": 6,
+      "source_B": 0,
+      "source_shadow": 143,
+      "w": -2,
+      "q": 4,
+      "H": 1,
+      "target": 8,
+      "destination_shadow": 145,
+      "witness": 96,
+      "A_depth": 2
+    },
+    "three_fringe_fork_w1": {
+      "node": 256476,
+      "source_B": 2333,
+      "source_shadow": 1167,
+      "w": 1,
+      "q": 1,
+      "H": 1,
+      "target": 6,
+      "destination_shadow": 622,
+      "witness": 4918,
+      "A_depth": 2
+    },
+    "three_fringe_fork_w0": {
+      "node": 256478,
+      "source_B": 2333,
+      "source_shadow": 1169,
+      "w": 0,
+      "q": 2,
+      "H": 1,
+      "target": 8,
+      "destination_shadow": 625,
+      "witness": 4921,
+      "A_depth": 2
+    }
+  }
+}

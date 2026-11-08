@@ -1,0 +1,327 @@
+{
+  "status": "FINITE_EXACT_VERIFIED",
+  "states": 519712,
+  "edges_independently_regenerated": 4089363,
+  "seed_models": 48450,
+  "four_node_models": 38760,
+  "source_case_queries": 348441,
+  "range": [
+    -2,
+    0
+  ],
+  "residual_histogram": {
+    "2": 802772,
+    "1": 1999779,
+    "0": 1174759,
+    "3": 112053
+  },
+  "minimum_residual": 0,
+  "range_safe_rows": 891631,
+  "potential_sha256": "3dbc5e1f67af157c0b64b3d379ab3e64b74ed680c2604dc15222624407df991b",
+  "cpu_seconds": 12.25,
+  "samples": {
+    "H1w1": {
+      "node": 0,
+      "edge": 0,
+      "source_B": 0,
+      "q": 1,
+      "w": 1,
+      "source_shadow": 0,
+      "H": 1,
+      "target": 2,
+      "destination_shadow": 2,
+      "model": 0,
+      "word": [
+        [
+          "K",
+          2
+        ]
+      ],
+      "A_depths": [
+        2
+      ]
+    },
+    "H1w0": {
+      "node": 2,
+      "edge": 48,
+      "source_B": 0,
+      "q": 2,
+      "w": 0,
+      "source_shadow": 61,
+      "H": 1,
+      "target": 4,
+      "destination_shadow": 63,
+      "model": 174,
+      "word": [
+        [
+          "K",
+          4
+        ]
+      ],
+      "A_depths": [
+        2
+      ]
+    },
+    "H1w-1": {
+      "node": 4,
+      "edge": 83,
+      "source_B": 0,
+      "q": 3,
+      "w": -1,
+      "source_shadow": 115,
+      "H": 1,
+      "target": 6,
+      "destination_shadow": 117,
+      "model": 227,
+      "word": [
+        [
+          "K",
+          6
+        ]
+      ],
+      "A_depths": [
+        2
+      ]
+    },
+    "H1w-2": {
+      "node": 6,
+      "edge": 96,
+      "source_B": 0,
+      "q": 4,
+      "w": -2,
+      "source_shadow": 143,
+      "H": 1,
+      "target": 8,
+      "destination_shadow": 145,
+      "model": 297,
+      "word": [
+        [
+          "K",
+          8
+        ]
+      ],
+      "A_depths": [
+        2
+      ]
+    },
+    "double_anonymous_source_H1w1": {
+      "node": 100148,
+      "edge": 812515,
+      "source_B": 1430,
+      "q": 1,
+      "w": 1,
+      "source_shadow": 460,
+      "H": 1,
+      "target": 3,
+      "destination_shadow": 457,
+      "model": 1432,
+      "word": [
+        [
+          "K",
+          3
+        ]
+      ],
+      "A_depths": [
+        2
+      ]
+    },
+    "double_anonymous_source_H1w0": {
+      "node": 100152,
+      "edge": 812563,
+      "source_B": 1430,
+      "q": 2,
+      "w": 0,
+      "source_shadow": 501,
+      "H": 1,
+      "target": 5,
+      "destination_shadow": 498,
+      "model": 1656,
+      "word": [
+        [
+          "K",
+          5
+        ]
+      ],
+      "A_depths": [
+        2
+      ]
+    },
+    "double_anonymous_source_H1w-1": {
+      "node": 100156,
+      "edge": 812589,
+      "source_B": 1430,
+      "q": 3,
+      "w": -1,
+      "source_shadow": 533,
+      "H": 1,
+      "target": 7,
+      "destination_shadow": 530,
+      "model": 1736,
+      "word": [
+        [
+          "K",
+          7
+        ]
+      ],
+      "A_depths": [
+        2
+      ]
+    },
+    "H2w1": {
+      "node": 100185,
+      "edge": 812789,
+      "source_B": 1430,
+      "q": 3,
+      "w": 1,
+      "source_shadow": 655,
+      "H": 2,
+      "target": 5,
+      "destination_shadow": 656,
+      "model": 2239,
+      "word": [
+        [
+          "K",
+          -1
+        ],
+        [
+          "K",
+          5
+        ]
+      ],
+      "A_depths": [
+        1,
+        2
+      ]
+    },
+    "double_anonymous_source_H2w1": {
+      "node": 100186,
+      "edge": 812795,
+      "source_B": 1430,
+      "q": 3,
+      "w": 1,
+      "source_shadow": 657,
+      "H": 2,
+      "target": 5,
+      "destination_shadow": 656,
+      "model": 2240,
+      "word": [
+        [
+          "K",
+          -2
+        ],
+        [
+          "K",
+          5
+        ]
+      ],
+      "A_depths": [
+        1,
+        2
+      ]
+    },
+    "H2w0": {
+      "node": 100219,
+      "edge": 812957,
+      "source_B": 1430,
+      "q": 4,
+      "w": 0,
+      "source_shadow": 719,
+      "H": 2,
+      "target": 7,
+      "destination_shadow": 720,
+      "model": 2451,
+      "word": [
+        [
+          "K",
+          -1
+        ],
+        [
+          "K",
+          7
+        ]
+      ],
+      "A_depths": [
+        1,
+        2
+      ]
+    },
+    "double_anonymous_source_H2w0": {
+      "node": 100220,
+      "edge": 812960,
+      "source_B": 1430,
+      "q": 4,
+      "w": 0,
+      "source_shadow": 721,
+      "H": 2,
+      "target": 7,
+      "destination_shadow": 720,
+      "model": 2452,
+      "word": [
+        [
+          "K",
+          -2
+        ],
+        [
+          "K",
+          7
+        ]
+      ],
+      "A_depths": [
+        1,
+        2
+      ]
+    },
+    "three_anonymous_H2_w1": {
+      "node": 287055,
+      "edge": 1830909,
+      "source_B": 2529,
+      "q": 3,
+      "w": 1,
+      "source_shadow": 1132,
+      "H": 2,
+      "target": 4,
+      "destination_shadow": 1062,
+      "model": 10633,
+      "word": [
+        [
+          "K",
+          -2
+        ],
+        [
+          "K",
+          4
+        ]
+      ],
+      "A_depths": [
+        2,
+        2
+      ]
+    },
+    "three_anonymous_H2_w0": {
+      "node": 344887,
+      "edge": 2195665,
+      "source_B": 3003,
+      "q": 4,
+      "w": 0,
+      "source_shadow": 1186,
+      "H": 2,
+      "target": 6,
+      "destination_shadow": 1170,
+      "model": 19700,
+      "word": [
+        [
+          "K",
+          -2
+        ],
+        [
+          "K",
+          6
+        ]
+      ],
+      "A_depths": [
+        2,
+        2
+      ]
+    }
+  }
+}

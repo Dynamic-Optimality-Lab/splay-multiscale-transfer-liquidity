@@ -1,0 +1,37 @@
+{
+  "status": "UNIVERSAL_STATIC_BOUNDARY_SOURCE_INTERVAL_AND_SIGN_AUDIT_PASS",
+  "universal_integer_proofs": [
+    {
+      "theorem": "anonymous_interval_elimination_forward",
+      "all_symbolic_integer_assignments": "UNSAT_negation"
+    },
+    {
+      "theorem": "anonymous_interval_elimination_constructive_reverse",
+      "all_symbolic_integer_assignments": "UNSAT_negation"
+    },
+    {
+      "theorem": "every_original_static_source_grammar_production_satisfies_SC",
+      "all_symbolic_integer_assignments": "UNSAT_negation"
+    },
+    {
+      "theorem": "all_previously_valid_LOW_rows_preserved_when_sources_unchanged",
+      "all_symbolic_integer_assignments": "UNSAT_negation"
+    },
+    {
+      "theorem": "every_nonnegative_incoming_row_to_saturated_boundary",
+      "all_symbolic_integer_assignments": "UNSAT_negation"
+    }
+  ],
+  "new_symbolic_queries": 5,
+  "source_AST_premises": "original shadow7 propagation, shadow_match7, Score uniqueness/cover and completed protected-prefix coverage",
+  "no_actual_LOW_source_value_is_changed": true,
+  "all_old_signed_LOW_rows_preserved": true,
+  "new_debt": "D_bad=max(D_current,2*I[P and not SC])",
+  "HIGH_h0_full_state_scopes_and_source_debt_theorem_preserved": true,
+  "new_finite_population_or_mask_tests": 0,
+  "new_original_root_evaluations": 0,
+  "completed_checks_replayed": 0,
+  "independent_of_H1_word_builder": true,
+  "external_review_or_full_compiler_formalization_claimed": false,
+  "Step4_complete": false
+}

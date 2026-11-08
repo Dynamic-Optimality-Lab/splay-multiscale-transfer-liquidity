@@ -1,0 +1,196 @@
+{
+  "status": "NO_TWO_EVENT_OLD_COMPARISON_FOR_EXACT_RETIREMENT_CONTROL",
+  "old_sources": [
+    8860,
+    8902
+  ],
+  "unique_old_target": 5549,
+  "all_comparisons": [
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": null,
+      "terminal_KEEP": 2,
+      "ordinary_H": 1,
+      "old_destination": 5423,
+      "matches_target": false
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 1,
+      "terminal_KEEP": 2,
+      "ordinary_H": 3,
+      "old_destination": 5549,
+      "matches_target": true
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 2,
+      "terminal_KEEP": 2,
+      "ordinary_H": 1,
+      "old_destination": 5423,
+      "matches_target": false
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 3,
+      "terminal_KEEP": 2,
+      "ordinary_H": 3,
+      "old_destination": 5050,
+      "matches_target": false
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 4,
+      "terminal_KEEP": 2,
+      "ordinary_H": 3,
+      "old_destination": 4862,
+      "matches_target": false
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 5,
+      "terminal_KEEP": 2,
+      "ordinary_H": 2,
+      "old_destination": 5423,
+      "matches_target": false
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 6,
+      "terminal_KEEP": 2,
+      "ordinary_H": 1,
+      "old_destination": 5423,
+      "matches_target": false
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 7,
+      "terminal_KEEP": 2,
+      "ordinary_H": 3,
+      "old_destination": 5612,
+      "matches_target": false
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 8,
+      "terminal_KEEP": 2,
+      "ordinary_H": 3,
+      "old_destination": 5612,
+      "matches_target": false
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 9,
+      "terminal_KEEP": 2,
+      "ordinary_H": 4,
+      "old_destination": 5788,
+      "matches_target": false
+    },
+    {
+      "old_source": 8860,
+      "optional_DELETE_proxy": 10,
+      "terminal_KEEP": 2,
+      "ordinary_H": 4,
+      "old_destination": 5616,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": null,
+      "terminal_KEEP": 2,
+      "ordinary_H": 2,
+      "old_destination": 5521,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 1,
+      "terminal_KEEP": 2,
+      "ordinary_H": 3,
+      "old_destination": 5423,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 2,
+      "terminal_KEEP": 2,
+      "ordinary_H": 2,
+      "old_destination": 5521,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 3,
+      "terminal_KEEP": 2,
+      "ordinary_H": 2,
+      "old_destination": 4994,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 4,
+      "terminal_KEEP": 2,
+      "ordinary_H": 3,
+      "old_destination": 4904,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 5,
+      "terminal_KEEP": 2,
+      "ordinary_H": 2,
+      "old_destination": 4994,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 6,
+      "terminal_KEEP": 2,
+      "ordinary_H": 2,
+      "old_destination": 5521,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 7,
+      "terminal_KEEP": 2,
+      "ordinary_H": 3,
+      "old_destination": 5521,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 8,
+      "terminal_KEEP": 2,
+      "ordinary_H": 4,
+      "old_destination": 5695,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 9,
+      "terminal_KEEP": 2,
+      "ordinary_H": 4,
+      "old_destination": 5529,
+      "matches_target": false
+    },
+    {
+      "old_source": 8902,
+      "optional_DELETE_proxy": 10,
+      "terminal_KEEP": 2,
+      "ordinary_H": 5,
+      "old_destination": 6071,
+      "matches_target": false
+    }
+  ],
+  "exhaustiveness": "With total H<=2 there are at most two positive accesses; the final root is x. Zero repeats can be removed for calculation only, so the possibilities are direct x or one arbitrary old DELETE proxy then x. All original operations remain in the actual source word.",
+  "not_a_CD_counterexample": true,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "principal_U33": "OPEN",
+  "input_sha256": {
+    "single_private_retirement_preimage_candidate.json": "7c99a8a5e060e638f5c6137763aa193b1f00366c9c07ecd8668fc8ad141fe898",
+    "retirement_preimage_closed_source.json": "c0421f2fd0fb0d97c4de8a45058e7610a4599bee230d74c468ae6d6dcc670217",
+    "native10_source_actions.json": "36438e382a4fe50eca206a15bbb54cc8510effee1311addbf755486b839e8f95"
+  }
+}

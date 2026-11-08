@@ -1,0 +1,111 @@
+{
+  "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+  "sigma": [
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "canonical_transition_queries": 489645,
+  "private_assignment_visits": 556839,
+  "independent_root_productions": 558891,
+  "analytic_root_productions_rejected": 2052,
+  "duplicate_private_assignments_quotiented": 67194,
+  "families": [
+    {
+      "helper": null,
+      "word": [
+        [
+          0
+        ]
+      ],
+      "count": 43217,
+      "private_assignment_visits": 49645
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1
+        ]
+      ],
+      "count": 43253,
+      "private_assignment_visits": 49681
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          0
+        ]
+      ],
+      "count": 163340,
+      "private_assignment_visits": 185008
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          1
+        ]
+      ],
+      "count": 38463,
+      "private_assignment_visits": 44101
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 38032,
+      "private_assignment_visits": 43396
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          1
+        ]
+      ],
+      "count": 163340,
+      "private_assignment_visits": 185008
+    }
+  ],
+  "classes": 34992,
+  "access_options": 489645,
+  "J_range": [
+    -2,
+    0
+  ],
+  "changed_states": 425090,
+  "explicit_residuals": 35533404,
+  "minimum_residual": 0,
+  "residual_histogram": {
+    "0": 20234535,
+    "2": 2578303,
+    "1": 12720566
+  },
+  "product_states_streamed": 14441238,
+  "zero_source_states_discharged": 11441912,
+  "analytic": {
+    "range": 8049278
+  },
+  "allocated_CPU_cap": 120,
+  "cpu_seconds": 27.469,
+  "potential_sha256": "a48100e937fb161395df7ff0058912fc2057fc60e206f30c1fd83208dff377c3",
+  "analytic_fiber_coverage": "REPRESENTATION_PROOF.md and independent selector audit",
+  "source_family_audit_pending": true,
+  "full_M3_proved": false
+}

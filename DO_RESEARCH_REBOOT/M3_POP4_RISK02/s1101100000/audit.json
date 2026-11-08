@@ -1,0 +1,169 @@
+{
+  "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+  "sigma": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "canonical_transition_queries": 773140,
+  "private_assignment_visits": 1004342,
+  "independent_root_productions": 1125377,
+  "analytic_root_productions_rejected": 121035,
+  "duplicate_private_assignments_quotiented": 231202,
+  "families": [
+    {
+      "helper": null,
+      "word": [
+        [
+          0
+        ]
+      ],
+      "count": 61339,
+      "private_assignment_visits": 83274
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1
+        ]
+      ],
+      "count": 63339,
+      "private_assignment_visits": 85310
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          0
+        ]
+      ],
+      "count": 238526,
+      "private_assignment_visits": 306343
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          1
+        ]
+      ],
+      "count": 57703,
+      "private_assignment_visits": 78942
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 56165,
+      "private_assignment_visits": 74700
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          1
+        ]
+      ],
+      "count": 242222,
+      "private_assignment_visits": 310759
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 5308,
+      "private_assignment_visits": 6526
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "count": 14284,
+      "private_assignment_visits": 17244
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "count": 5308,
+      "private_assignment_visits": 6526
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 28946,
+      "private_assignment_visits": 34718
+    }
+  ],
+  "classes": 43419,
+  "access_options": 773140,
+  "J_range": [
+    -2,
+    0
+  ],
+  "changed_states": 499642,
+  "explicit_residuals": 49656668,
+  "minimum_residual": 0,
+  "residual_histogram": {
+    "0": 28661119,
+    "2": 3498403,
+    "1": 17497146
+  },
+  "product_states_streamed": 19715331,
+  "zero_source_states_discharged": 16056988,
+  "analytic": {
+    "range": 13250194,
+    "nonchildless_exit": 3291992
+  },
+  "allocated_CPU_cap": 120,
+  "cpu_seconds": 46.328,
+  "potential_sha256": "aca5e2aa32987dcfece216b7781884f299978396f9f1df41dce105449aaa1cd0",
+  "analytic_fiber_coverage": "REPRESENTATION_PROOF.md and independent selector audit",
+  "source_family_audit_pending": true,
+  "full_M3_proved": false
+}

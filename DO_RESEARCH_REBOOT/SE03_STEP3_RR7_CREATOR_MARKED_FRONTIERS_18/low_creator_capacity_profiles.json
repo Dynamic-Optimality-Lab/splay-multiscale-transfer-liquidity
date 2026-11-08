@@ -1,0 +1,108 @@
+{
+  "status": "EXACT_BOUND_PARTITION_NOT_FINITE_SOURCE_PROOF",
+  "r": 7,
+  "bound_g": "g<=min(r-1,2H)",
+  "bound_m": "m<=min(2H,floor((r+1)/2))",
+  "H_at_most": 4,
+  "overfull_rows": [
+    {
+      "H": 1,
+      "m": 1,
+      "g_min": 2,
+      "g_max": 2,
+      "tail": 1,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 1,
+      "m": 2,
+      "g_min": 1,
+      "g_max": 2,
+      "tail": 0,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 2,
+      "m": 1,
+      "g_min": 4,
+      "g_max": 4,
+      "tail": 3,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 2,
+      "m": 2,
+      "g_min": 3,
+      "g_max": 4,
+      "tail": 2,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 2,
+      "m": 3,
+      "g_min": 2,
+      "g_max": 4,
+      "tail": 1,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 2,
+      "m": 4,
+      "g_min": 1,
+      "g_max": 4,
+      "tail": 0,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 3,
+      "m": 1,
+      "g_min": 6,
+      "g_max": 6,
+      "tail": 5,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 3,
+      "m": 2,
+      "g_min": 5,
+      "g_max": 6,
+      "tail": 4,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 3,
+      "m": 3,
+      "g_min": 4,
+      "g_max": 6,
+      "tail": 3,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 3,
+      "m": 4,
+      "g_min": 3,
+      "g_max": 6,
+      "tail": 2,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 4,
+      "m": 3,
+      "g_min": 6,
+      "g_max": 6,
+      "tail": 5,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    },
+    {
+      "H": 4,
+      "m": 4,
+      "g_min": 5,
+      "g_max": 6,
+      "tail": 4,
+      "source_realizability": "NOT_ASSERTED_BY_NUMERICAL_BOUNDS"
+    }
+  ],
+  "numerical_triples": 26,
+  "counter_realizes_one_low_profile": "overfull_source_result.json: H1,m2,g>=1,tail0",
+  "higher_r": "use symbolic threshold ceil((r-1+floor((r+1)/2))/2); no all-r finite cutoff asserted"
+}

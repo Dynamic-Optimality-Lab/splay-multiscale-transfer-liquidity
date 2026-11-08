@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_PRED01\audit.py", line 90, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_PRED01\audit.py", line 46, in main
+    if bounds%8192==0:guard(2*smallN+len(p['values']))
+                      ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_PRED01\audit.py", line 26, in guard
+    assert peak<2000000,'UNKNOWN independent predicate-audit record cap'
+           ^^^^^^^^^^^^
+AssertionError: UNKNOWN independent predicate-audit record cap

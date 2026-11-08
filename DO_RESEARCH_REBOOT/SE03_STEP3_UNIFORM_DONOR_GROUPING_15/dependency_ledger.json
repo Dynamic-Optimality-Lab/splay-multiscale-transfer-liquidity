@@ -1,0 +1,155 @@
+{
+  "status": "EXACT_SOURCE_SCOPE_LEDGER",
+  "rows": [
+    {
+      "theorem": "CD6 and I6 base",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CD6_FINAL_CERTIFICATE.json",
+      "sha256": "0ec0767e5212bda70b051a1e172464eed6c8c9a787937ea2601481cb438cc2cc",
+      "status": "PROVED",
+      "scope_and_assumptions": "original six-key paired-closed full source; all full cores6\u201311",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "accepted immutable implementation, same agent; certificate and full proof inspected",
+      "conditions_for_arbitrary_support_use": "base only, no arbitrary-r donor supply"
+    },
+    {
+      "theorem": "Exact I(r),E_r sufficient transfer",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/UNIFORM_R_TRANSFER.md",
+      "sha256": "0d60121dfd15db899c900e9bde73b0a9ca1354787f5682cbfe0070c69c8fa664",
+      "status": "PROVED_SUFFICIENT",
+      "scope_and_assumptions": "arbitrary r conditional on source license and owner/period/storage clauses",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "proof inspected, current reconstruction",
+      "conditions_for_arbitrary_support_use": "source clauses2/3 remain open; not an unconditional induction"
+    },
+    {
+      "theorem": "Marked-core density and set growth",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/CLOSED_CORE_SUBTREE_DENSITY.md",
+      "sha256": "5ce1bece8c4aa6fc273de5198d616a6c3905a4785f299f843da92e99d3f7f0e0",
+      "status": "PROVED",
+      "scope_and_assumptions": "all closed marked B supports and arbitrary private BSTs",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "source proof inspected/reused accepted receipt",
+      "conditions_for_arbitrary_support_use": "does not prove source A credit supply"
+    },
+    {
+      "theorem": "Maximal all-SS",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_DONOR05/CLOSED_MAXIMAL_SAME_SIDE.md",
+      "sha256": "ad1655f40193be2383e2338ee7cebf8ebe4cfccd294266945a9fa690eadaceba",
+      "status": "PROVED",
+      "scope_and_assumptions": "closed core2r-1, all r>=2",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "source proof inspected",
+      "conditions_for_arbitrary_support_use": "not smaller nonmaximal cores"
+    },
+    {
+      "theorem": "Deep fan and ACTUAL successor",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/MAXIMUM_DEPTH_SUCCESSOR_REPAYMENT.md",
+      "sha256": "7bec09c38aede39370c4400637bdc1c6f196aa39bb0c4732e7b9102ee23c4a40",
+      "status": "PROVED",
+      "scope_and_assumptions": "maximum-depth2r-2 in actual closed maximal core",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "source proof inspected",
+      "conditions_for_arbitrary_support_use": "q1 successor includes all actual intervening operations"
+    },
+    {
+      "theorem": "Uniform Gamma source and repair",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/UNIFORM_RANGE_OBSTRUCTION.md",
+      "sha256": "3a8b41b4b2905d8f8baf80e14e6b5bfa1aefd65fa996cf5af04e8f04ebb6e222",
+      "status": "PROVED",
+      "scope_and_assumptions": "arbitrary r and independent ordered BST gaps",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "source induction proof inspected, accepted source audits reused",
+      "conditions_for_arbitrary_support_use": "cost/closure identity only, not arbitrary word funding"
+    },
+    {
+      "theorem": "Modified Gamma and width",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_REPAY01/PAIRED_RANGE_TWO_TARGET.md",
+      "sha256": "7f03315b64aa5f11db54e062a306cf4a9d8b6b04ccc1c62b225cd090e9a4ca79",
+      "status": "PROVED_NECESSARY_BOUND",
+      "scope_and_assumptions": "actual paired H2/Qr source family, width>=r-4",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "source proof inspected",
+      "conditions_for_arbitrary_support_use": "no width sufficiency inferred"
+    },
+    {
+      "theorem": "Uniform residual anchors",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_FULL_FUNDING_CLOSURE_10/RESIDUAL_SLOT_THEOREM.md",
+      "sha256": "19c6cf6b507732d34ccf499ce1237d26bd4fa25667bb52bdba1f829d8718a633",
+      "status": "PROVED",
+      "scope_and_assumptions": "any finite support, actual source packets and supplied original owners",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "proof inspected; exact original exchange unchanged",
+      "conditions_for_arbitrary_support_use": "anchors are demands, not donors"
+    },
+    {
+      "theorem": "All-paid source augmentation",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CORE7_SINGLE_EXCESS_11/NONLOCAL_DONOR_LEMMA.md",
+      "sha256": "b80db51db997cbbee1d6674a619796dd3d98291088b7485fdbc4fad289798670",
+      "status": "PROVED_INTERFACE",
+      "scope_and_assumptions": "finite actual D/U, independently source-certified comparison and fixed paid map",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "source eligibility/path proof inspected",
+      "conditions_for_arbitrary_support_use": "complete supply premise or explicit partial blocked frontier retained"
+    },
+    {
+      "theorem": "Arbitrary-count source funding",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_MULTICORE_FUNDING_CLOSURE_13/CORE7_FULL_FUNDING.md",
+      "sha256": "9f9872682c55671dc23ed28c9e15f5b162e9647273c990ff30964fda66ab0a32",
+      "status": "PROVED_RESTRICTED",
+      "scope_and_assumptions": "six-key core7, all finite slot counts",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "accepted separate seal reused",
+      "conditions_for_arbitrary_support_use": "one predecessor unit does not pay arbitrary-r deficits"
+    },
+    {
+      "theorem": "Core8 full source funding",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_MULTICORE_FUNDING_CLOSURE_13/CORE8_FULL_FUNDING.md",
+      "sha256": "1a981288a63936df4aed2f6bdb4363ca6007110e09563a0f9ddba0f12e91a40a",
+      "status": "PROVED_RESTRICTED",
+      "scope_and_assumptions": "six-key core8,13 masks, all populations/counts",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "accepted immutable source seal reused",
+      "conditions_for_arbitrary_support_use": "not arbitrary support by analogy"
+    },
+    {
+      "theorem": "Unrestricted six-key A/private lifting",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_UNARY_A_LIFT_14/funding_seal.json",
+      "sha256": "710bc55e6bffb6738e736c96c0871103775ffccdd4961e98324bfe5ea979c872",
+      "status": "PROVED_RESTRICTED",
+      "scope_and_assumptions": "six-key full cores9\u201311, all A ancestors/private BSTs",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "separate immutable frame/table/owner audit reused",
+      "conditions_for_arbitrary_support_use": "no all-r signed law inferred"
+    },
+    {
+      "theorem": "Original period/frozen contracts",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/ABSOLUTE_PERIOD_ALIGNMENT.md",
+      "sha256": "2c2e3b80b59478d50bc4f5a7d3f3021e4bbf16c07a13316576237946f75fe41e",
+      "status": "PROVED_INTERFACE",
+      "scope_and_assumptions": "same actual I, both-endpoint transport, original legal owner cuts",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "source proof/current Gamma replay inspected",
+      "conditions_for_arbitrary_support_use": "never borrow a prefix or adjacent copy"
+    },
+    {
+      "theorem": "Gamma26 original control",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/gamma_period_replay.json",
+      "sha256": "611ad74cc5e1695810697793d60ac198ef16aead297f8e845b34b3f571deba86",
+      "status": "PROVED_CONTROL",
+      "scope_and_assumptions": "original26 operations,9/10/12/13,forced cut restrictions",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "accepted immutable replay reused",
+      "conditions_for_arbitrary_support_use": "not modified Gamma28"
+    },
+    {
+      "theorem": "Historical Sigma and reflection",
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/independent_audit.json",
+      "sha256": "64a86685f08ae61dcaa55449e2923bb679be5a21408997a299f9f224df855e09",
+      "status": "PROVED_CONTROLS_ONLY",
+      "scope_and_assumptions": "all accepted14 source controls and source-ID bridge",
+      "physical_semantics": "original ceil(depthA/2) StepEvs/two bits and floor(depthB/2) doubles; DELETE access only",
+      "audit_and_inspection": "accepted14 replay/checker reused",
+      "conditions_for_arbitrary_support_use": "not an all-r proof from finite controls"
+    }
+  ]
+}

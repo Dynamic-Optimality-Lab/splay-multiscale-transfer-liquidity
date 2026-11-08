@@ -1,0 +1,23 @@
+{
+  "status": "UNKNOWN_RESOURCE_LIMIT_NOT_A_MATHEMATICAL_OBSTRUCTION",
+  "sigma": [1, 1, 0, 0, 1, 0, 0, 0, 1, 0],
+  "phase": "prefix_dp",
+  "report": "s1100100010/build_status.json",
+  "guard": "prefix_dp.py:137: if queries+n>1000000: raise RuntimeError('canonical source-query cap')",
+  "completed_canonical_queries": 960889,
+  "canonical_query_cap": 1000000,
+  "remaining_query_headroom": 39111,
+  "next_family_size_lower_bound_from_triggered_guard": 39112,
+  "exact_next_family_size_not_recorded": true,
+  "admission_check_stopped_before_next_family_queries": true,
+  "per_phase_CPU_cap": 120,
+  "whole_process_CPU_charged": 14.75,
+  "renewed_finite_CPU_total": 4718.984375,
+  "renewed_finite_CPU_allowance": 7200,
+  "partial_relation_not_a_certificate": true,
+  "no_later_cases_started": true,
+  "failed_enumeration_not_retried": true,
+  "negative_original_cycle_certified": false,
+  "range_two_template_refuted": false,
+  "next_requirement_under_unchanged_caps": "A proved complete reduction in canonical queries for this signature; additional CPU alone does not resolve this admission limit."
+}

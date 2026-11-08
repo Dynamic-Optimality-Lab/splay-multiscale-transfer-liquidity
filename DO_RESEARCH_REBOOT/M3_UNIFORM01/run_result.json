@@ -1,0 +1,71 @@
+{
+  "status": "STOPPED_ON_FIRST_NEW_CAP_OR_FAILURE",
+  "completed_finite_cases": [],
+  "counterexample_case": 0,
+  "failure": {
+    "phase": "original_lift",
+    "index": 0,
+    "CPU_charged": 6.65625,
+    "allocated_cap": 300,
+    "status": "UNKNOWN_OR_FAILED",
+    "returncode": 1,
+    "error": {
+      "type": "AssertionError",
+      "message": "First expansion is not an accepted ORIGINAL root"
+    },
+    "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_UNIFORM01/log_000_original_lift.txt"
+  },
+  "fresh_authorized_finite_allowance": 7200,
+  "whole_process_CPU_charged": 34.0625,
+  "prior_finite_CPU_ledger_unchanged": 7195.203125,
+  "events": [
+    {
+      "phase": "construct_candidate",
+      "index": 0,
+      "CPU_charged": 5.140625,
+      "allocated_cap": 120,
+      "status": "ONE_STEP_CANDIDATE_CONSTRUCTED_UNAUDITED",
+      "returncode": 0,
+      "error": null,
+      "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_UNIFORM01/log_000_construct_candidate.txt"
+    },
+    {
+      "phase": "audit_candidate",
+      "index": 0,
+      "CPU_charged": 21.453125,
+      "allocated_cap": 300,
+      "status": "ONE_STEP_CANDIDATE_REFUTED_IN_PROOF_RELATION",
+      "returncode": 0,
+      "error": null,
+      "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_UNIFORM01/log_000_audit_candidate.txt"
+    },
+    {
+      "phase": "audit_obstruction",
+      "index": 0,
+      "CPU_charged": 0.8125,
+      "allocated_cap": 300,
+      "status": "INDEPENDENT_DIRECT_COUNTEREXAMPLE_AUDIT_PASS",
+      "returncode": 0,
+      "error": null,
+      "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_UNIFORM01/log_000_audit_obstruction.txt"
+    },
+    {
+      "phase": "original_lift",
+      "index": 0,
+      "CPU_charged": 6.65625,
+      "allocated_cap": 300,
+      "status": "UNKNOWN_OR_FAILED",
+      "returncode": 1,
+      "error": {
+        "type": "AssertionError",
+        "message": "First expansion is not an accepted ORIGINAL root"
+      },
+      "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_UNIFORM01/log_000_original_lift.txt"
+    }
+  ],
+  "no_later_corpus_after_first_counterexample": true,
+  "no_candidate_exception_patch_or_horizon_increase": true,
+  "wall_seconds": 37.68907910003327,
+  "M3_status": "OPEN",
+  "uniform_J_proved": false
+}

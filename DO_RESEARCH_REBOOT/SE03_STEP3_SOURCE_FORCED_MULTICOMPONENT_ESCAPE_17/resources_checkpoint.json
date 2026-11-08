@@ -1,0 +1,91 @@
+{
+  "status": "U17_UNRESOLVED_CAPS_PRESERVED_NEW_DERIVATIONS_AUDIT_PENDING",
+  "prior_cumulative_CPU": 3608.328125,
+  "campaign_CPU": 2.0,
+  "cumulative_CPU": 3610.328125,
+  "remaining_CPU": 3589.671875,
+  "reserve": 5,
+  "cumulative_group_CPU": {
+    "symbolic": 109.828125,
+    "independent": 299.125
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "group_remaining": {
+    "symbolic": 10.171875,
+    "independent": 0.875
+  },
+  "independent_remaining_below_unchanged_controller_reserve": true,
+  "new_independent_runs": 0,
+  "C15_final_integrity_suffix": "PENDING_NOT_COMPLETED_BY_METADATA",
+  "C16_and_C17_required_audit": "PENDING",
+  "campaign_source_engine_calls": 0,
+  "inherited_C15_plus_C16_source_engine_calls": 5912,
+  "C15_plus_C16_plus_C17_source_engine_calls": 5912,
+  "older_query_ledgers": "preserved in pinned predecessor receipts; no original counter reset",
+  "query_cap": 2000000,
+  "live_record_cap": 2000000,
+  "DAG_cap": 4000000,
+  "stored_edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "max_observed_memory_this_campaign": 47529984,
+  "wall_cap_hours": 12,
+  "Bank25": 25,
+  "general_Bank25_realization": "OPEN_NOT_PROMOTED",
+  "no_cap_reset": true,
+  "all_proof_construction_controller_runs_charged": true,
+  "runs": [
+    {
+      "phase": "coupling",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.109375,
+      "controller_CPU": 0.25,
+      "charge": 0.359375,
+      "source_engine_calls": 0,
+      "new_finite_source_histories": 0,
+      "old_semantic_rows_replayed": 0,
+      "peak_working_set_bytes": 16789504
+    },
+    {
+      "phase": "lineage",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.203125,
+      "controller_CPU": 0.171875,
+      "charge": 0.375,
+      "source_engine_calls": 0,
+      "new_finite_source_histories": 0,
+      "old_semantic_rows_replayed": 0,
+      "peak_working_set_bytes": 34295808
+    },
+    {
+      "phase": "preparation",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.515625,
+      "controller_CPU": 0.234375,
+      "charge": 0.75,
+      "source_engine_calls": 0,
+      "new_finite_source_histories": 0,
+      "old_semantic_rows_replayed": 0,
+      "peak_working_set_bytes": 44306432
+    },
+    {
+      "phase": "provenance",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.328125,
+      "controller_CPU": 0.1875,
+      "charge": 0.515625,
+      "source_engine_calls": 0,
+      "new_finite_source_histories": 0,
+      "old_semantic_rows_replayed": 0,
+      "peak_working_set_bytes": 47529984
+    }
+  ],
+  "metadata_CPU_convention": "inherited entry/publication exclusion only; no source or independent check reclassified",
+  "publication_metadata_CPU_excluded": 0.25
+}

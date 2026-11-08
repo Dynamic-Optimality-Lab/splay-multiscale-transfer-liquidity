@@ -1,0 +1,167 @@
+{
+  "status": "PROVED_RESTRICTED_DOMAIN",
+  "theorem": "DIRECT_BARRIER_J7_LOW_SAFE_ZERO_RELEASE_CAPACITY",
+  "input_class": "any public Lambda<=D<=2; no global feasibility assumption",
+  "operation_order": [
+    "K1",
+    "C1",
+    "G7_2"
+  ],
+  "explicit_combined_debt": "D_direct=max(D_anon,1_K,1_C,2*1_G7)",
+  "new_capacity_region": "J7=7(4(L,6(5,E)),8); A4L with permitted LL separator OR A4LL; V subset4..8; actual dual",
+  "each_previously_valid_original_LOW_row_preserved": true,
+  "all_G7_source_original_LOW_rows_proved": true,
+  "new_LRR_zero_releases_all_A_positions_and_separator_types_closed": true,
+  "LRL_existing_J6_coverage_reused_not_counted_new": true,
+  "new_parametric_helper_barrier_weight_bound": 2,
+  "helper_Score_emptiness_assumed": false,
+  "private_inventory_or_gap_inferred": false,
+  "S_family_frontier": {
+    "source_words": 8,
+    "distinct_successors": 6,
+    "covered_words": 4,
+    "remaining_words": 4,
+    "remaining_cores": [
+      "B6",
+      "B7",
+      "B8"
+    ],
+    "remaining_B_depth_of_4": 2,
+    "not_a_global_M3_obligation_count": true
+  },
+  "both_actual_LOW_orientations_proved": true,
+  "independent_universal_symbolic_audit": "PASS",
+  "full_compiler_formalization_claimed": false,
+  "external_human_or_model_review_claimed": false,
+  "global_zero_LOW_coverage_proved": false,
+  "full_M3_status": "OPEN",
+  "DynamicOptimality_status": "OPEN",
+  "remaining_open": [
+    "S zero buried-barrier B6/B7/B8",
+    "other zero H1 marked configurations",
+    "zero H2/Gamma1 outside completed classes",
+    "global zero/+1 completeness"
+  ],
+  "new_whole_signature_certificates": 0,
+  "original_negative_cycle_certified": false,
+  "finite_walk_bound_with_stated_LOW_coverage": -7,
+  "full_closed_walk_bound_with_stated_LOW_coverage": 0,
+  "new_finite_tests": 0,
+  "R1_R4_preserved": true,
+  "h0_correction_preserved": true,
+  "NET_ADVANCEMENT": "complete local eight-to-six map and new explicit J7 signed capacity; direct-B-barrier half closed",
+  "resources": {
+    "prior_uniform_CPU_charge_retained": 758.3125,
+    "new_symbolic_checker_CPU": 0.1875,
+    "new_controller_CPU_through_finally": 0.15625,
+    "new_compute_CPU": 0.34375,
+    "cumulative_accounted_CPU": 758.65625,
+    "finite_CPU_ceiling": 7200,
+    "guaranteed_remaining_CPU": 6441.34375,
+    "reserve": 5,
+    "old_signature_campaign_ledger_unchanged": 7195.203125,
+    "symbolic_phase_CPU_cap": 120,
+    "construction_CPU_cap": 300,
+    "audit_source_CPU_cap": 300,
+    "canonical_query_live_record_limit": 2000000,
+    "DAG_limit": 4000000,
+    "stored_edge_limit": 5000000,
+    "RAM_GiB_limit": 32,
+    "observed_peak_audit_working_set_bytes": 21368832,
+    "new_finite_tests": 0,
+    "new_source_transition_queries": 0,
+    "new_original_root_evaluations": 0,
+    "new_saved_psi_queries": 0,
+    "new_label_fits": 0,
+    "new_bank_censuses": 0,
+    "completed_semantic_checks_replayed": 0,
+    "current_caps_preserved": true,
+    "metadata_hashing_convention": "entry/final immutable-file bookkeeping excluded as previously"
+  },
+  "integrity": {
+    "status": "PASS",
+    "old_files_unchanged": 13771,
+    "HEAD": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+    "tracked_tree_clean": true,
+    "campaign_writes_confined_here": true,
+    "unrelated_concurrent_U4_additions": 0
+  },
+  "files": [
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/audit.py",
+      "sha256": "cc6aa95f570367fb94766fc90474fbd6ed8bd1fd54f659b5be64ad464a658714"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/certificate.json",
+      "sha256": "634b52d07314870b947a378c2736e23af4f3b1c948e99d6b32a361a99440d6fd"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/concurrent_additions.json",
+      "sha256": "4e31e7343cbca3ef14af4270f3b3cd7a497477a6182151e66dd9d192a728aca6"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/controller_exit.json",
+      "sha256": "c7283ff17924490c6e0b3085f861a7006f2f1ff5e7156e7a2ffed62f51a60b64"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/dependencies.json",
+      "sha256": "5c7ddbd959e80d0759b3be69e2ca8b1699d5039f36b7e69c00d9f1e7aa22147c"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/DIRECT_BARRIER_THEOREM.md",
+      "sha256": "acaf4ced83f2071cf3844b8e9c3a591785ffa2ad81d631757e336ffbaddacc23"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/entry.py",
+      "sha256": "c75e8d149576f0302eed2073dfbbcc812c62d8bcfddd72febd3fc07252cca65d"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/entry_baseline.json",
+      "sha256": "a5a973b502569b85da24534e6a09a67f4d97061b080d976b4147b27801f854da"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/finalize.py",
+      "sha256": "6083f3b6266458a3bd013ce2d6f892063c2167af1ed660b339a678f5b80a3d87"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/integrity.json",
+      "sha256": "a8f6c8bf904f4cc96400a5d4482b9b7139a398e85da0e77640d9417451b1e7a4"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/log_symbolic_audit.txt",
+      "sha256": "9008d163d542453d45aa464d18b564191b42487b1cb931ff96be1245e183c4d8"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/PRE_EXECUTION.md",
+      "sha256": "805a539de6de95da9d698dc5057371f32bd0e99be7587adac1be69c106e5072c"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/PROOF_AUDIT.md",
+      "sha256": "b4fc1d3965805e1a9126222c515b7cf8594c07e1c9eda90741d869546116bfa5"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/resources.json",
+      "sha256": "fda96e52c0958fb85891cce5fe9c5edf3781c3bc11b34895dbd3b7ab7bd3d45d"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/RESULT.md",
+      "sha256": "40536d92dfd5ececbcca2815e96cd204ba07bdb0a52cf9b302e289de87681a1a"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/run.py",
+      "sha256": "50412e5d96332e4e43937e7bf209af945b85192d0763c8b7d7c8793f369eae0c"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/run_result.json",
+      "sha256": "ba6a1ff9756248fd40a2947dae2102a01b9dbbd748b600295bcf1122b46ce9eb"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/symbolic_audit.json",
+      "sha256": "f4a7d54426f76f62c3802d984f846eba11d48bc87b3c97083e2132eea3a52cd3"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER07/symbolic_audit_exit.json",
+      "sha256": "6b7f0293f1a26f4ea80101b53183ca4fe948059484314884bc76b960e092c5a1"
+    }
+  ]
+}

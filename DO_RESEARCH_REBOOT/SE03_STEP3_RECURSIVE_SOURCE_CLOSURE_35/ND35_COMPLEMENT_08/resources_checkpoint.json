@@ -1,0 +1,91 @@
+{
+  "global_CPU_before_publication": 6389.09375,
+  "group_CPU_before_publication": {
+    "symbolic": 2448.71875,
+    "independent": 739.0
+  },
+  "caps": {
+    "global": 7200,
+    "symbolic": 2640,
+    "independent": 750,
+    "queries": 3100000,
+    "query_batch": 50000,
+    "Bank25": 25
+  },
+  "queries": 3050330,
+  "query_remaining": 49670,
+  "new_phase_receipts_including_failures": [
+    {
+      "phase": "core78",
+      "group": "symbolic",
+      "CPU": 1.34375,
+      "queries": 28,
+      "status": "PASS"
+    },
+    {
+      "phase": "core79",
+      "group": "symbolic",
+      "CPU": 1.125,
+      "queries": 55,
+      "status": "PASS"
+    },
+    {
+      "phase": "proof297",
+      "group": "symbolic",
+      "CPU": 0.859375,
+      "queries": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "proof298",
+      "group": "symbolic",
+      "CPU": 0.75,
+      "queries": 0,
+      "status": "FAILED_OR_UNKNOWN"
+    },
+    {
+      "phase": "proof299",
+      "group": "symbolic",
+      "CPU": 0.71875,
+      "queries": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "proof300",
+      "group": "symbolic",
+      "CPU": 0.875,
+      "queries": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "proof301",
+      "group": "symbolic",
+      "CPU": 0.8125,
+      "queries": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "proof302",
+      "group": "symbolic",
+      "CPU": 1.0,
+      "queries": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "verify159",
+      "group": "independent",
+      "CPU": 0.96875,
+      "queries": 55,
+      "status": "PASS"
+    }
+  ],
+  "usage_reset": false,
+  "other_caps_unchanged": true,
+  "publication_charge_reference": [
+    "run_proof303_result.json",
+    "controller_proof303_exit.json"
+  ],
+  "outcome": "P",
+  "Objective_I": "OPEN",
+  "Objective_II": "DEFERRED"
+}

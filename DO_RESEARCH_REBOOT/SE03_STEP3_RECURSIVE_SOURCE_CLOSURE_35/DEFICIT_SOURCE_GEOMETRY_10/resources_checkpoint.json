@@ -1,0 +1,52 @@
+{
+  "scope": "C35_STEP2_EXACT_SOURCE_GEOMETRY_ONLY",
+  "branch": "coarse-double-branch",
+  "HEAD": "8c378d49283b3738b18e7175886772a98025e4e9",
+  "before_CPU": {
+    "global": 6391.453125,
+    "symbolic": 2450.46875,
+    "independent": 739.609375
+  },
+  "after_CPU": {
+    "global": 6392.953125,
+    "symbolic": 2451.21875,
+    "independent": 740.359375
+  },
+  "caps": {
+    "global": 7200,
+    "symbolic": 2640,
+    "independent": 750,
+    "source_queries": 3100000,
+    "query_batch": 50000,
+    "Bank25": 25
+  },
+  "source_queries_before": 3050330,
+  "source_queries_after": 3050330,
+  "new_source_queries": 0,
+  "new_source_engine_calls": 0,
+  "usage_reset": false,
+  "other_caps_unchanged": true,
+  "controller": "../../SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33/CONTINUATION_01/run_phase_2640_audit750_q3100000.py",
+  "new_phase_receipts": [
+    {
+      "phase": "proof305",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.21875,
+      "controller_CPU": 0.53125,
+      "source_queries": 0
+    },
+    {
+      "phase": "verify161",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.234375,
+      "controller_CPU": 0.515625,
+      "source_queries": 0
+    }
+  ],
+  "outcome": "A_FORWARD_SOURCE_STRUCTURAL_INTERFACE",
+  "no_reverse_realization_claim": true,
+  "no_new_matching_or_potential": true,
+  "stopped_after_Step2": true
+}

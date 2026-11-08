@@ -1,0 +1,57 @@
+{
+  "status": "STOPPED_ON_FIRST_SIGN_RUN_COUNTEREXAMPLE",
+  "completed_finite_cases": [],
+  "counterexample_case": 0,
+  "failure": null,
+  "prior_conservative_uniform_charge": 622.0625,
+  "new_child_process_CPU": 32.515625,
+  "controller_CPU_before_result_write": 0.125,
+  "finite_CPU_ceiling": 7200,
+  "events": [
+    {
+      "phase": "construct",
+      "index": 0,
+      "CPU_charged": 4.71875,
+      "allocated_cap": 120,
+      "status": "SIGN_RUN_CANDIDATE_CONSTRUCTED_UNAUDITED",
+      "returncode": 0,
+      "error": null,
+      "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_UNIFORM02/log_000_construct.txt"
+    },
+    {
+      "phase": "audit",
+      "index": 0,
+      "CPU_charged": 22.25,
+      "allocated_cap": 300,
+      "status": "SIGN_RUN_CANDIDATE_REFUTED_IN_PROOF_RELATION",
+      "returncode": 0,
+      "error": null,
+      "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_UNIFORM02/log_000_audit.txt"
+    },
+    {
+      "phase": "audit_obstruction",
+      "index": 0,
+      "CPU_charged": 0.671875,
+      "allocated_cap": 300,
+      "status": "INDEPENDENT_PROMOTION_ENDPOINT_AUDIT_PASS",
+      "returncode": 0,
+      "error": null,
+      "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_UNIFORM02/log_000_audit_obstruction.txt"
+    },
+    {
+      "phase": "original_lift",
+      "index": 0,
+      "CPU_charged": 4.875,
+      "allocated_cap": 300,
+      "status": "FIRST_NEW_COMPLETION_ROOT_FALSE_UNLIFTED",
+      "returncode": 0,
+      "error": null,
+      "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_UNIFORM02/log_000_original_lift.txt"
+    }
+  ],
+  "no_later_corpus_after_first_counterexample": true,
+  "no_added_sign_alternation_or_horizon": true,
+  "wall_seconds": 34.3891751000192,
+  "M3_status": "OPEN",
+  "uniform_J_proved": false
+}

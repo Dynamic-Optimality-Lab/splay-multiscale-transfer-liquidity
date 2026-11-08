@@ -1,0 +1,84 @@
+{
+  "status": "COMPLETE",
+  "edge_scans": 5,
+  "cases": [
+    {
+      "exception": {
+        "entry_core": 952,
+        "target": 2,
+        "terminal_depth": 6,
+        "q": 3,
+        "w": 1,
+        "gap0_childless_at_exit": true,
+        "exit_core": 1917,
+        "psi_source": 2,
+        "psi_destination": 0,
+        "residual": -1
+      },
+      "mask": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "visited_states": 1,
+      "found_negative_return": false,
+      "return_path": [],
+      "candidate_weight": null
+    },
+    {
+      "exception": {
+        "entry_core": 1710,
+        "target": 2,
+        "terminal_depth": 6,
+        "q": 3,
+        "w": 1,
+        "gap0_childless_at_exit": true,
+        "exit_core": 1937,
+        "psi_source": 2,
+        "psi_destination": 0,
+        "residual": -1
+      },
+      "mask": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "visited_states": 4,
+      "found_negative_return": false,
+      "return_path": [],
+      "candidate_weight": null
+    },
+    {
+      "exception": {
+        "entry_core": 2538,
+        "target": 3,
+        "terminal_depth": 6,
+        "q": 3,
+        "w": 1,
+        "gap0_childless_at_exit": true,
+        "exit_core": 2141,
+        "psi_source": 2,
+        "psi_destination": 0,
+        "residual": -1
+      },
+      "mask": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ],
+      "visited_states": 3,
+      "found_negative_return": false,
+      "return_path": [],
+      "candidate_weight": null
+    }
+  ],
+  "negative_B_candidates": 0,
+  "cpu_seconds": 0.188,
+  "scope": "A-unfiltered B candidates only; no original cycle without full-state lifting"
+}

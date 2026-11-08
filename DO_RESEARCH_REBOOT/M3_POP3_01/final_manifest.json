@@ -1,0 +1,849 @@
+{
+  "status": "PROVED_RESTRICTED_DOMAIN_14_POPULATION_THREE_SIGNATURES",
+  "leading_signatures": [
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "covered_signatures": [
+    [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1
+    ],
+    [
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+    ]
+  ],
+  "legal_masks": 126,
+  "new_signature_count": 14,
+  "new_mask_signature_sectors": 1764,
+  "both_chi8_regions_where_realizable": true,
+  "J_range": [
+    -2,
+    0
+  ],
+  "uniform_finite_walk_bound": -7,
+  "closed_mixed_walk_lower_bound": 0,
+  "canonical_transition_queries": 3401548,
+  "private_assignment_visits": 3842972,
+  "private_duplicate_rows_removed_by_proved_identity": 441424,
+  "finite_access_options": 3389683,
+  "independent_explicit_residuals": 185027368,
+  "minimum_residual": 0,
+  "maximum_canonical_queries_per_phase": 619990,
+  "maximum_DP_records": 576208,
+  "maximum_construction_records": 1203999,
+  "finite_CPU_seconds": 328.862,
+  "source_CPU_seconds": 82.656,
+  "original_source_roots": 51,
+  "fully_closed_new_mixed_cycles": 14,
+  "completed_old_source_checks_repeated": 0,
+  "combined_bank": {
+    "signature_vectors": 2720,
+    "mask_signature_sectors": 342720,
+    "walk_bound": -7,
+    "closed_walk_bound": 0
+  },
+  "remaining_total3_signature_vectors": 196,
+  "remaining_larger_multi_support_populations": true,
+  "remaining_uncovered_branch": "support>=2 and (total>=4 or uncovered total3 positions), NH>=1, DL>2NH+PL",
+  "R1_R4_preserved": true,
+  "h0_correction_retained": true,
+  "Bank25": 25,
+  "full_M3_proved": false,
+  "negative_original_cycle_certified": false,
+  "integrity": {
+    "status": "PASS",
+    "old_files_unchanged": 2513,
+    "head": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+    "tracked_tree_clean": true,
+    "new_writes_confined_here": true
+  },
+  "files": [
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/audit.py",
+      "sha256": "42a4cedfdd84fed0aa3d7831677b2664f2a6464148167bc5bfd4c26c5fce0639"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/certificate.json",
+      "sha256": "c013c889587b3e242bae5ab6d25b3a7bd73fccaed6c913d6b272970d848f9735"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/combination_check.json",
+      "sha256": "526351480d219a3cd66dfb5f8f5fb981f0ab8a9b0453b1bac654913648170ab8"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/combined_certificate.py",
+      "sha256": "0197981ad7d3551c517c6775c74e65236a9120184bc2a149503f01499e96f9a1"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/construct.py",
+      "sha256": "99e4f41fee866cea27071b277fe092e35761dd75b445fac8fb7571a6b42d1c00"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/decoder.py",
+      "sha256": "b76fff9fe7de572c39097f4a62341d8a4302acfa68048e263135cd4c00a5c546"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/entry.py",
+      "sha256": "8b7bc2ce3ac7307e654283753a22832b02178a9d16edc45219fae8d7c752501f"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/entry_baseline.json",
+      "sha256": "55a7414d2541777c21e7187e053e2d6e1431d74dc2c99a318063b0f808ee79b3"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/finalize.py",
+      "sha256": "e31a28a51e05317490cea4085b07959dfdbdb85d201e30c232bebf09ee0e1768"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/integrity.json",
+      "sha256": "86b50609cc08da1f191149c13cb2b1406dc0bec326bd1b919c5dee82061fe6fc"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/ISOLATED_STATE_EXTENSION.md",
+      "sha256": "4ec18bb1b1348a715feea510c19fa12f9224f91b51b8dfe1bb5f5149d1ce3334"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s012_audit.txt",
+      "sha256": "7d636623e7ec90ca2bc5f2f1d4ef271c6c22cc74cf01fa0a9ec872199508bc7d"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s012_construct.txt",
+      "sha256": "a653d27d9a873866573b822780703c3a7c382cc05dfc3666787be479ce816a2d"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s012_prefix_dp.txt",
+      "sha256": "d66107fec8d83fd9065181603fa8d89daea518bbcc9c32128f0c578d3af0be84"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s021_audit.txt",
+      "sha256": "19359da61033e1fbf35a24285eb10cd354090f6418d1507c955f730ef1e241a3"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s021_construct.txt",
+      "sha256": "d5b904aad66ae2b331666661540cf3fe92821feb94930062ee89b85a0b19ebf1"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s021_prefix_dp.txt",
+      "sha256": "4adaec4de93695831d99d407d38af57c64e3dc7900ee677eaa3ca66efe66d057"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s102_audit.txt",
+      "sha256": "183fdbd55eadb3bb1a44f67312669f1887a46de1258a8716cd526204f11d4148"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s102_construct.txt",
+      "sha256": "c5189b2b6defa3ab3c65a1c587a1a29d49d2a3567aa02d3a68f5c3ce5c9a45e4"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s102_prefix_dp.txt",
+      "sha256": "34a4e4c8c09668dba5dde7326118cd47d2d742058bccb02a022d4402df73c404"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s111_audit.txt",
+      "sha256": "dee93315836f4355ec731609c01f315a25e7fc3f2eda64eda34774da0d236077"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s111_construct.txt",
+      "sha256": "9f053988646b028d9bbb8fcaf7c43c40829e68e24a6f1a3aa023e81b687b8af4"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s111_prefix_dp.txt",
+      "sha256": "ad7aa786b674e74d2eb3e700ed96e348615d077571e75e9baf461b582db61e82"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s120_audit.txt",
+      "sha256": "4c68ff98c6f9a3c4378e77da3def0d8d07aa40cfccfb2d55fdd769ce14313313"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s120_construct.txt",
+      "sha256": "be4385d8f5d1597517ce5a0f023738d373a490ce5e758633d8f9e2762acf144c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s120_prefix_dp.txt",
+      "sha256": "a1e530c3da3f6694b47ef219f1afb012a85241c3b422e18d2170f3474e4bcd86"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s201_audit.txt",
+      "sha256": "e566b795a4adf0c8be04660dd9a5b58ca82a54ecd2335eba41d30a4a19482082"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s201_construct.txt",
+      "sha256": "93d41d44363c3820acc7fccfd4edb10457a8ce134c2e18713607b4a40272b92e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s201_prefix_dp.txt",
+      "sha256": "48d0a61114e6bc35404673eb6e826dca5419fe69ba634564ff7e7932f6658e98"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/log_s210_audit.txt",
+      "sha256": "d737ab48ea9eaba53e27026f216bdedef0b261ecbb5529ed45a21c0fca05f0ba"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/package_metadata.py",
+      "sha256": "b1313d4c72b0c5372986a6e70a452b814eabcefd5aad322df35bf0b153b60f39"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/PRE_EXECUTION.md",
+      "sha256": "1d16be5ba9e787159ea97e9d58e711544814bf6871b424eb0bb8ed1ad2acf6f8"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/prefix_dp.py",
+      "sha256": "8bdbe713b7cb07c3b06eafa631bc19843c73d203268e7a7a9164da5fbc3f4802"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/RESULT.md",
+      "sha256": "edfac4b9ea96b2be0c3a922b98b0ba1965d1ef555bc5dafd40ad1fb5ba884892"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_001.json",
+      "sha256": "7049569587cbc0ba08812e9731b59e7510fa5c3a9ee6d685228c2f82b1a99b87"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_002.json",
+      "sha256": "66c6435112ed61c594d20079c018acad9a181ab28ce0d599e419ef412cad9fde"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_003.json",
+      "sha256": "93b7499e14426bb191f9a7831d6d2f99d701ce23cb5519e751a689035152697b"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_004.json",
+      "sha256": "37d3dfe6dabfa74a96ddc824085e9bd97d04fa49b4400ab00a303cf980ab307a"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_005.json",
+      "sha256": "39b731156051ba17641e8638fcd8392226059b90e25eb5551fc116d533b99b25"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_006.json",
+      "sha256": "a85e675851930de813f89398a9a69e44a93c3d004f30e57d1efefc9773197090"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_007.json",
+      "sha256": "bbcd1eba08aaf7c33f340b63dc89f0c7ccb49a61fcff85b4379121e1b44f0f16"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_008.json",
+      "sha256": "8541b0ea5f36e2fd33bfba58f8893ff0c72fa45ef6dea1487a3cc921c5abd8f4"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_009.json",
+      "sha256": "6eebe7071a140be1f6376a460ca6392907f089abdce6ffa5bd39ca33ce42a882"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_010.json",
+      "sha256": "18f56aa36e009b2198b9e182dd8159133f156602e783a7bd09eeb5f076d920e3"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_011.json",
+      "sha256": "31dba5cd3254c38cb0c2f687713f95f7230823a17f65fd73bdd9650fd9604f45"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_012.json",
+      "sha256": "55a22114fdcdb10986be1bf36ab0d132274100ea12eed8ffee8ef7c5058008e4"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_013.json",
+      "sha256": "21d0407a2a31ef12dcc74c93707772b967692a4725f10c365db7ce15cf1e7cca"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_014.json",
+      "sha256": "0394621c15385207ed6fdcef21ddfb81ed11b72d4e035bdb741a519141edaeb8"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_015.json",
+      "sha256": "c6ca3d42196d00970b8a095a8167ece24c84f2aadbb49973fc7fc8feb61ec731"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_016.json",
+      "sha256": "057048008f8c761f7c9de87e7ba1f869ffbb59687588e6b6466db9934874cba6"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_017.json",
+      "sha256": "bd677b8b405b3b8602bd47b85d4102c660ab5544edcfe8fbe91b23d1b0f53c33"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_018.json",
+      "sha256": "04486d3ebc6717b4b75647d5db6de75655a471eb7f1d1bfb7e8be373fbd1b013"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_019.json",
+      "sha256": "e9d7cdb74da9afddef94b8caf4d225a0c4b4bbc547cade44a67b29dc752c8c3f"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_020.json",
+      "sha256": "8a5ff2e57d049b0dbe6a6a07cd96f044ce71416836f971d3aa380d39b9b38e35"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_021.json",
+      "sha256": "29f4bca02ac73220ffbb685dfcb858c9412be96e3c98ce63201d43730bb047be"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_022.json",
+      "sha256": "73a81b41bfd997f9376422b752e8fb83b74c5cea9c9e34cca56784ee5b2e2e50"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_023.json",
+      "sha256": "d6d41034d023cb1ffd078b045cbc6df36f2e801963f9d040348ff753ae727398"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_024.json",
+      "sha256": "37df3a95d198532877ec1cf14911d77d5e380442d44e7f8464aa912f0f89cb00"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_025.json",
+      "sha256": "4aec1c01be069642a662c8cc75712bcb995b2bbee6c5d9d46c345a627c1862f5"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_026.json",
+      "sha256": "c380acaa2a92cd5dc4b2f80a74fb0cb0fc058801fc1c5ad899b2181f8e07ea00"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_027.json",
+      "sha256": "bd55c6e472809074402974918cf6a283ad4fc795ad3b2fde5031bace229dc8d6"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_028.json",
+      "sha256": "5e3ae30bb05a58dee4509ca64f67444d6e213e88942bc919220aeb7925693c06"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_029.json",
+      "sha256": "7f624bb46e7d74874a51e92e0543c4c210c447e6658ba0174e8daa7da2ff736c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_030.json",
+      "sha256": "8a1bbf5bb53e647f7c858d7e09935e126b2e4314505f47d1b32b3bcfe1b61b08"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_031.json",
+      "sha256": "6d6caa1b6aa84cdc48f53066b83f401acd14d17eb4dc75ca43a1c5451312eecc"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_032.json",
+      "sha256": "07ec4846e11638542666eae1cae96e05d103cb382835a0b31f2289657153bf6c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_033.json",
+      "sha256": "0b166ce801dfa9bcc24dd8a551ecf33f809ed3bdfcdaebddb193bd8e7ea7dfdb"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_034.json",
+      "sha256": "dc162e89010bd6e369edb2e2450bebbcd7609269318b787211f6a2cecde1549b"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_035.json",
+      "sha256": "0153d1ea2628506360d7ceb023a6e66e0b9aca0e78197e214dd3833450b9a37a"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_036.json",
+      "sha256": "7c1d37b7278be48dcb6ae17ee49edeaa49982c4c06418db968d1611ed18d2cf1"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_037.json",
+      "sha256": "4e136b41506cdc493b5fc5b65751a546a9174a9f92b9e8a3b97c135b70ae72e5"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_038.json",
+      "sha256": "fd80a31a8662709ec4800654f948b613ad98a9faf89d8f60596c268ea41d7975"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_039.json",
+      "sha256": "404b19a200d4a6813ef33ef4c28acaf8b8394e7470c02c430cbc0bea85f6e13c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_040.json",
+      "sha256": "7770b0a51d8b2a8a2ff867ef7a2693c1435a4a5f1ce5bd526f20b1329ddd3575"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_041.json",
+      "sha256": "638e368770cd2f80304870738da7d3dbccd20038b63188581c11a6ac803fceab"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_042.json",
+      "sha256": "0d51ac49c3baffb33db7ba6016c94daff4a7721eedc2274f1b86037f4d5a7fd7"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_043.json",
+      "sha256": "508b0efd338035cde5271a12b2137b3a4979de16af7ef20b30ca2e7af8e7159c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_044.json",
+      "sha256": "4e500c40e28f2c5c32151fd1b4fe2e9a103f226e666847839ab05babd666cc05"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_045.json",
+      "sha256": "5db860290d4f32b54320378277f9eb2c3c0571478269a4eb6e7968fcdb054cb2"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_046.json",
+      "sha256": "53b102b45b4b9b3261b0a33df05c98bc71dc901cd0562663cc41433e9f7f44d8"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_047.json",
+      "sha256": "32e9408f1c3fe58326afb62b808e38d782a4851944cd2d55d1e8261ed117f726"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_048.json",
+      "sha256": "752cb99d3b42e1e32fdf2b9c17a53201047ee6bbafe6eb601441fe8f47c23785"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_049.json",
+      "sha256": "5013f0bfd94448ed698e090eeb1b5b62ac3a93ba04f6102ea9c44295d16644d9"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_050.json",
+      "sha256": "b9fd1652a7191b94121e2b443e1bbc40100450e3719e507e34ce5ba8b0d084f8"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/root_051.json",
+      "sha256": "f83320e3dada2f2aeb8acf67dd40ec7dfffdd5f220d5c9820bbc82f3071307e3"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/run.py",
+      "sha256": "7033088301b928f1f0a1bec56be7e7969620dd0dba057ff1eb71c5d2a43ed6df"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/run_result.json",
+      "sha256": "181bd14b357dec9a368c314076e6b309228642b33d43ac8d9eb4f12b499793ea"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s012/audit.json",
+      "sha256": "7b0dfb8576d4a7f1dd00813d2e4fcecde37410bf195e22a2d974dc5985d71510"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s012/build_status.json",
+      "sha256": "106a1eea32ba769529567f6bbf3d09537d456bf740491cf747b8c4e3f5ed1bab"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s012/construction.json",
+      "sha256": "1ebb670041150360e4cc843eca6671cb3672ffd5004010b7f506f90204117de2"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s012/metadata.json",
+      "sha256": "43e796c12336e55de780f4acc7decb9b0bc4d48e2f819df56920deca3ba9c531"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s012/potential.json",
+      "sha256": "ebe5f6381460ce03249ecbe01a8596bfc5f974bef6fc18cb3b579466667fbadb"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s012/relation.json",
+      "sha256": "1a9905a65b88c1f28485eabc8fb74664238d3cd30fc7aede6e34e7b155ae24ce"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s021/audit.json",
+      "sha256": "4229e098abfc439841cc103cf8e053301ac3b65838e4a3c91dbc9d9522cc0335"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s021/build_status.json",
+      "sha256": "1209562e887c89121604deea407c9b2d7a2043d6218032bd756ab03b5bf0b2b9"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s021/construction.json",
+      "sha256": "b7f352ac2807809065c0a419a1145887e1761fc016f3ff3e5460c0c6fa061f6e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s021/metadata.json",
+      "sha256": "f6bbfa3d121dca34b0f965732322bce9816b7eaf0f26a70df4a38ed0921d367c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s021/potential.json",
+      "sha256": "0cba0ace2cb8faccad71b8cf9bff58addb4be21a614817e8a5f897cb36fbf996"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s021/relation.json",
+      "sha256": "76301615e1c435ac64ced5dfa87d31d3b2610b7683042a6d15bbb3f4cb3c4e8f"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s102/audit.json",
+      "sha256": "00b9c7832a3174596abe119f51687e25bc34964ce425185f19819c935f6353b9"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s102/build_status.json",
+      "sha256": "fe9225dfba9e338765a5a8e4d7de7a292f74fa7aec6864d6711a1feab00e05f3"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s102/construction.json",
+      "sha256": "1ee3dc0fefc1b078545c74117a135d2fe3b9dc876df7fb78acdb685210a93ac4"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s102/metadata.json",
+      "sha256": "ab247a96deb8fcb516a3241abcddb6732fa6fc89b6c3a41c3c3d6b5044041e54"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s102/potential.json",
+      "sha256": "3a8c8176f847a4ef6af0abdf96a5f0aca860edc0327093b01194edfcf071bb01"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s102/relation.json",
+      "sha256": "afd6db6e8dbec7dd62e0da937ccb94a9093ea3bc08f02a6515075d1d1990fcc8"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s111/audit.json",
+      "sha256": "94a7bf5ed821967ecb841cec8d90ee60f7ca1b45cbb6480c61e3fae951a40b42"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s111/build_status.json",
+      "sha256": "82690d0f82d8a1b5bab07010d1d5c743b0c72a919b54290d05ccb93b95748b19"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s111/construction.json",
+      "sha256": "0d60b8ff3d478133f0472b667c4a524d44db450b1d97a7ffe9e4bea77bf31a47"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s111/metadata.json",
+      "sha256": "b9b2547f85856abe3c74de5cb3c0a87096d83da8540fc249bf9824b7db56f924"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s111/potential.json",
+      "sha256": "e370d7c01abb698271f1898a07c80b451287ad6f3c05694351e154650b7ab01e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s111/relation.json",
+      "sha256": "7f91902674eddfdbc1c44af0ee6274421de9cf6875b5e406dd8dc4559c290c80"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s120/audit.json",
+      "sha256": "08c5fca36fdbc7595d69fd668ecc67fd21a8f09ac4fe2df3588c8a48be3fb117"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s120/build_status.json",
+      "sha256": "9bbb4484ce89c70f293919f69f0746b406c8e44827d6935b4e104f31042b5a23"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s120/construction.json",
+      "sha256": "09c016f98e45199d4d63cd2395844f38a4889a38fcaca7b7e05d70ffc995c367"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s120/metadata.json",
+      "sha256": "cc51672af5c7dda70269ae41929ded0e4cd5950ce7e403ba6d725aad21ed2764"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s120/potential.json",
+      "sha256": "efad4cae7457ef9933477bb0877aad2cd09c9f6c4dc1e73fc18edda354420f64"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s120/relation.json",
+      "sha256": "29fd75c1b21221f64bb6cbe8379fabce4b678bb270fdf921ff2d606fd88fb895"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s201/audit.json",
+      "sha256": "667d07f4672eee70d70b6998aefbe8e714b2aeac1521982833c59be9bc70dfe6"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s201/build_status.json",
+      "sha256": "39ae7976e55c41363653dc8b589015fd61147a2d0eefb88f6dd0e54816bd21b4"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s201/construction.json",
+      "sha256": "7f982c74e8d130ffc6249765a460cf1b8359f5b27b5540e328e2350e8e139862"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s201/metadata.json",
+      "sha256": "a025ee5929551df570755bc46242381764a3c0d9a475be4e5b6a55b93af17746"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s201/potential.json",
+      "sha256": "92f5f57475e2fce7e87ce10ca19a870a6ca24dfbc1916623815a46baa74c3a30"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s201/relation.json",
+      "sha256": "ccb31d1358986af85b2153c2a3df24cd50b900c2b3215a99597a8f289fba02d2"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s210/audit.json",
+      "sha256": "8affada2f89e08578287b44ec12ff3e358f9c61a804d2b632cff7bbc34be4485"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s210/build_status.json",
+      "sha256": "bb1114707eadbcaa99edbc52b55e849b561752c43ff58a59d77f05be0d780637"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s210/construction.json",
+      "sha256": "b61b911fe6638e360a17d4c4c83da4ef80a4ca6b30eabc69a6dcddba44235b20"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s210/metadata.json",
+      "sha256": "6ad3965eb8a9a08eb0983b50ac781b1296db662eb3f074298aacee2acf9f2497"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s210/potential.json",
+      "sha256": "ad34ba888203391ed54463a80351c51bf9b57fb6aea521ae2fec5db20b7f03d9"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/s210/relation.json",
+      "sha256": "a70da33d947b018b0a74ba60060429044a53ab2b1fafaafc586ad1b28d47d945"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/semantic_attributes.json",
+      "sha256": "ba9e6425099bb8b4ff6ddb892f316481a0ded1dfa3c160295d85679ca0a48e6b"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_0000000012.json",
+      "sha256": "9a7eee831265b0faeda58037915a32a0f8bef54e34de0aa8e8ad2f7ba9cc9131"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_0000000021.json",
+      "sha256": "0ef51cba5f81217b31739a7819408f681f9e949391ae95efa74e76fb10125a84"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_0000000102.json",
+      "sha256": "ad22eae3e11f273c2ff59267dd2ee7ffddeba632ae40551621888a6aeef5b786"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_0000000111.json",
+      "sha256": "2cdb2c8de725ab6694e9c2b6d6b4b936ede0dbd6b11b0c0d23cd9775f134ca4c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_0000000120.json",
+      "sha256": "f379a2a3be07fc6e8d11c25d62bff4625f449f07c4586215c73be72aca7f5f90"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_0000000201.json",
+      "sha256": "d42617a5b81ebc70b3d55940636f638f36c37d184b6b452638e1761e16471191"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_0000000210.json",
+      "sha256": "0e40b4e3b7d84921826fb824ec22af45c34dd1b01180945fe1997093873e230c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_0120000000.json",
+      "sha256": "a767ff95bcd798b47d30f51f30baac516eb05a7dd82060b938a896d0037eb827"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_0210000000.json",
+      "sha256": "854b52364d51cf11aedc605a1499a8e024bccf9d2f5d7fefbcbedbaef2b9fe2a"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_1020000000.json",
+      "sha256": "e139b1d2504e5d319d9a333e74c9d222d987c58f43e9851630ffb9b1cc353e21"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_1110000000.json",
+      "sha256": "97fde8b8e335bd68646fa799aa8e8bf35799bdc79acc6c64e13e292cae9df129"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_1200000000.json",
+      "sha256": "000a9ae5a5f70c3a197b30dd0de3fe78355b09ad8e938912d670bb775cea7b86"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_2010000000.json",
+      "sha256": "4a318dc41224fdc777a53c565f08adfc6b8890d542bf38877bba6cdeaa85184a"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_2100000000.json",
+      "sha256": "01d7da37b654b0fd851eaf3f7b82be9db0c14ce64a747a262ad4e38d6b98a552"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_audit.json",
+      "sha256": "c23b8b448c09d7d818f2acf3248bab570b37a63b940a9feb3a35f89a1a09fcb2"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/source_audit.py",
+      "sha256": "a95c6b188ff3a76305372777a8ff14c479cfeb77c02e3b678bf1a1bd72220ff9"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/SOURCE_PROOF.md",
+      "sha256": "4230621ea03f2d7d437d4d0efdffef8fbb742e8065b47603a4c455985170f679"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_POP3_01/verify_combination.py",
+      "sha256": "f5e249eb8ba117c4590a40ea64b870a1974c76152a69d47c3eb5a9555255f938"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "prior_CPU": 3253.1875,
+  "cumulative_CPU": 3328.53125,
+  "allowance": 7200,
+  "required_reserve": 5,
+  "remaining_including_reserve": 3871.46875,
+  "cumulative_group_CPU": {
+    "symbolic": 54.078125,
+    "independent": 73.078125
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "campaign_source_engine_calls": 56482,
+  "query_cap": 2000000,
+  "maximum_observed_working_set": 334663680,
+  "mandatory_old_period_rows_replayed": 1082,
+  "new_control_period_rows_replayed": 152,
+  "phases": [
+    {
+      "phase": "adversarial",
+      "group": "independent",
+      "whole_child_CPU": 25.6875,
+      "whole_controller_CPU": 0.890625,
+      "charge": 26.578125,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "closure",
+      "group": "symbolic",
+      "whole_child_CPU": 22.953125,
+      "whole_controller_CPU": 0.53125,
+      "charge": 23.484375,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "controls2",
+      "group": "independent",
+      "whole_child_CPU": 0.3125,
+      "whole_controller_CPU": 0.21875,
+      "charge": 0.53125,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "controls",
+      "group": "independent",
+      "whole_child_CPU": 0.3125,
+      "whole_controller_CPU": 0.171875,
+      "charge": 0.484375,
+      "technical_status": "FAILED_OR_UNKNOWN"
+    },
+    {
+      "phase": "delete_event",
+      "group": "independent",
+      "whole_child_CPU": 0.453125,
+      "whole_controller_CPU": 0.4375,
+      "charge": 0.890625,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "independent2",
+      "group": "independent",
+      "whole_child_CPU": 17.65625,
+      "whole_controller_CPU": 0.234375,
+      "charge": 17.890625,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "independent",
+      "group": "independent",
+      "whole_child_CPU": 0.734375,
+      "whole_controller_CPU": 0.25,
+      "charge": 0.984375,
+      "technical_status": "FAILED_OR_UNKNOWN"
+    },
+    {
+      "phase": "seal",
+      "group": "independent",
+      "whole_child_CPU": 1.421875,
+      "whole_controller_CPU": 0.1875,
+      "charge": 1.609375,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "seed_diagnostic",
+      "group": "independent",
+      "whole_child_CPU": 1.578125,
+      "whole_controller_CPU": 0.1875,
+      "charge": 1.765625,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "seeds",
+      "group": "symbolic",
+      "whole_child_CPU": 0.890625,
+      "whole_controller_CPU": 0.234375,
+      "charge": 1.125,
+      "technical_status": "PASS"
+    }
+  ],
+  "failed_attempts_wholly_charged": true,
+  "metadata_CPU_excluded_by_inherited_convention": true,
+  "no_cap_or_allowance_reset": true
+}

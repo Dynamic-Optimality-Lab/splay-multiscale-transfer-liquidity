@@ -1,0 +1,63 @@
+{
+  "scope": "C35_STEP3_GLOBAL_FUNDING_ATTEMPT",
+  "branch": "coarse-double-branch",
+  "HEAD": "8c378d49283b3738b18e7175886772a98025e4e9",
+  "before_CPU": {
+    "global": 6392.953125,
+    "symbolic": 2451.21875,
+    "independent": 740.359375
+  },
+  "after_CPU": {
+    "global": 6394.71875,
+    "symbolic": 2452.375,
+    "independent": 740.96875
+  },
+  "caps": {
+    "global": 7200,
+    "symbolic": 2640,
+    "independent": 750,
+    "source_queries": 3100000,
+    "query_batch": 50000,
+    "Bank25": 25
+  },
+  "source_queries_before": 3050330,
+  "source_queries_after": 3050330,
+  "new_source_queries": 0,
+  "new_source_engine_calls": 0,
+  "usage_reset": false,
+  "other_caps_unchanged": true,
+  "controller": "../../SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33/CONTINUATION_01/run_phase_2640_audit750_q3100000.py",
+  "new_phase_receipts": [
+    {
+      "phase": "proof306",
+      "group": "symbolic",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.203125,
+      "controller_CPU": 0.453125,
+      "source_queries": 0,
+      "failure": "incorrect access-only VINE own-funding assertion; script and receipt preserved"
+    },
+    {
+      "phase": "proof307",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.140625,
+      "controller_CPU": 0.359375,
+      "source_queries": 0
+    },
+    {
+      "phase": "verify162",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.421875,
+      "source_queries": 0
+    }
+  ],
+  "outcome": "P_UNIVERSAL_FUNDING_OPEN",
+  "restricted_direct_rule": "REFUTED_EXACT_PINNED_SOURCE_COUNTERCUTS",
+  "complete_control_comparisons": "VERIFIED_WITH_G1_LITERAL",
+  "resource_exhaustion_claimed": false,
+  "universal_scalar_CD_proved": false,
+  "Gate_U_or_Bank25_promotion": false
+}

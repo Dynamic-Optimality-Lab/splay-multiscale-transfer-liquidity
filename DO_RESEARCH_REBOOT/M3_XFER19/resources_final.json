@@ -1,0 +1,166 @@
+{
+  "prior_uniform_CPU": 766.703125,
+  "new_CPU_including_all_failed_attempts_and_controllers": 1562.640625,
+  "cumulative_uniform_CPU": 2329.34375,
+  "global_CPU_allowance": 7200,
+  "remaining_CPU_including_reserve": 4870.65625,
+  "required_reserve": 5,
+  "phase_groups": [
+    {
+      "name": "global_quantified_construction",
+      "cap": 300,
+      "charged_CPU": 294.546875,
+      "phases": [
+        "quantified",
+        "quantified_shared"
+      ]
+    },
+    {
+      "name": "reduced_correction_construction",
+      "cap": 300,
+      "charged_CPU": 293.703125,
+      "phases": [
+        "correction",
+        "correction_v2",
+        "correction_v3"
+      ]
+    },
+    {
+      "name": "original_anchor_source_audit",
+      "cap": 300,
+      "charged_CPU": 294.84375,
+      "phases": [
+        "anchor",
+        "anchor_r1",
+        "anchor_r2",
+        "anchor_r3",
+        "anchor_closure"
+      ]
+    },
+    {
+      "name": "original_union_independent_audit",
+      "cap": 300,
+      "charged_CPU": 296.21875,
+      "phases": [
+        "anchor_union"
+      ]
+    },
+    {
+      "name": "seven_family_source_audit",
+      "cap": 300,
+      "charged_CPU": 23.359375,
+      "phases": [
+        "seven",
+        "seven_closure"
+      ]
+    },
+    {
+      "name": "seven_family_independent_audit",
+      "cap": 300,
+      "charged_CPU": 18.078125,
+      "phases": [
+        "seven_independent"
+      ]
+    },
+    {
+      "name": "normalized_maximal_source_theorem",
+      "cap": 300,
+      "charged_CPU": 296.421875,
+      "phases": [
+        "maximal"
+      ]
+    },
+    {
+      "name": "normalized_independent_final_audit",
+      "cap": 300,
+      "charged_CPU": 36.75,
+      "phases": [
+        "final_source",
+        "certificate",
+        "scope"
+      ]
+    },
+    {
+      "name": "pair_symbolic",
+      "cap": 120,
+      "charged_CPU": 1.0,
+      "phases": [
+        "pair",
+        "pair_v2"
+      ]
+    },
+    {
+      "name": "lower_return_symbolic",
+      "cap": 120,
+      "charged_CPU": 1.171875,
+      "phases": [
+        "lower_return",
+        "lower_return_v2"
+      ]
+    },
+    {
+      "name": "normalization_symbolic",
+      "cap": 120,
+      "charged_CPU": 1.375,
+      "phases": [
+        "normalization",
+        "normalization_v2"
+      ]
+    },
+    {
+      "name": "boundary",
+      "cap": 120,
+      "charged_CPU": 0.8125,
+      "phases": [
+        "boundary"
+      ]
+    },
+    {
+      "name": "compatible",
+      "cap": 120,
+      "charged_CPU": 1.0,
+      "phases": [
+        "compatible"
+      ]
+    },
+    {
+      "name": "lower_v2",
+      "cap": 120,
+      "charged_CPU": 1.359375,
+      "phases": [
+        "lower_v2"
+      ]
+    },
+    {
+      "name": "reset",
+      "cap": 120,
+      "charged_CPU": 1.390625,
+      "phases": [
+        "reset"
+      ]
+    },
+    {
+      "name": "upper_pair",
+      "cap": 120,
+      "charged_CPU": 0.609375,
+      "phases": [
+        "upper_pair"
+      ]
+    }
+  ],
+  "all_phase_caps_preserved": true,
+  "original_signature_ledger_unchanged": 7195.203125,
+  "canonical_query_cap": 2000000,
+  "live_record_cap": 2000000,
+  "largest_published_clause_formula": 3413,
+  "input_DAG_cap": 4000000,
+  "input_DAG_conservative_bound": 1186300,
+  "stored_edge_cap": 5000000,
+  "proof_records": 6806,
+  "peak_working_set_bytes_observed": 6380113920,
+  "memory_cap_bytes": 34359738368,
+  "per_phase_wall_limit_hours": 12,
+  "no_finite_tests": true,
+  "no_completed_semantic_replays": true,
+  "metadata_CPU_excluded_by_inherited_convention": true
+}

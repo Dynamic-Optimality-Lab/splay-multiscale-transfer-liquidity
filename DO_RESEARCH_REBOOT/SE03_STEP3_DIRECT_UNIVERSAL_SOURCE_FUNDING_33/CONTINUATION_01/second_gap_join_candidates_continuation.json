@@ -1,0 +1,332 @@
+{
+  "status": "ALL_THREE_SECOND_GAP_JOIN_CANDIDATES_REFUTED_RAW",
+  "gap": 2,
+  "candidate_failures": {
+    "nearest_root": {
+      "source_A": [
+        2,
+        "F0",
+        [
+          5,
+          [
+            4,
+            "F1",
+            "E"
+          ],
+          [
+            10,
+            [
+              6,
+              "E",
+              [
+                8,
+                "F3",
+                "F4"
+              ]
+            ],
+            [
+              12,
+              "F5",
+              [
+                14,
+                "F6",
+                [
+                  16,
+                  "F7",
+                  [
+                    18,
+                    "F8",
+                    [
+                      20,
+                      "F9",
+                      "F10"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        10,
+        [
+          5,
+          [
+            2,
+            "F0",
+            [
+              4,
+              "F1",
+              "E"
+            ]
+          ],
+          [
+            6,
+            "E",
+            [
+              8,
+              "F3",
+              "F4"
+            ]
+          ]
+        ],
+        [
+          12,
+          "F5",
+          [
+            14,
+            "F6",
+            [
+              16,
+              "F7",
+              [
+                18,
+                "F8",
+                [
+                  20,
+                  "F9",
+                  "F10"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 5,
+      "source_B_core_index": 651,
+      "B_target_core_index": 7858,
+      "target_actual_key": 10,
+      "H": 1,
+      "Q": 2,
+      "price": 0,
+      "projection_rule": "nearest_root",
+      "old_source_A_index": 561,
+      "old_projected_target_index": 8104,
+      "D_source": 1,
+      "D_target": 0,
+      "signed_margin": -1
+    },
+    "predecessor": {
+      "source_A": [
+        12,
+        [
+          5,
+          [
+            2,
+            "F0",
+            [
+              4,
+              "F1",
+              "E"
+            ]
+          ],
+          [
+            6,
+            "E",
+            [
+              8,
+              "F3",
+              [
+                10,
+                "F4",
+                "F5"
+              ]
+            ]
+          ]
+        ],
+        [
+          14,
+          "F6",
+          [
+            16,
+            "F7",
+            [
+              18,
+              "F8",
+              [
+                20,
+                "F9",
+                "F10"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        2,
+        "F0",
+        [
+          5,
+          [
+            4,
+            "F1",
+            "E"
+          ],
+          [
+            12,
+            [
+              6,
+              "E",
+              [
+                8,
+                "F3",
+                [
+                  10,
+                  "F4",
+                  "F5"
+                ]
+              ]
+            ],
+            [
+              14,
+              "F6",
+              [
+                16,
+                "F7",
+                [
+                  18,
+                  "F8",
+                  [
+                    20,
+                    "F9",
+                    "F10"
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 5,
+      "source_B_core_index": 8944,
+      "B_target_core_index": 2165,
+      "target_actual_key": 2,
+      "H": 1,
+      "Q": 2,
+      "price": 0,
+      "projection_rule": "predecessor",
+      "old_source_A_index": 8398,
+      "old_projected_target_index": 645,
+      "D_source": 1,
+      "D_target": 0,
+      "signed_margin": -1
+    },
+    "smaller_side": {
+      "source_A": [
+        12,
+        [
+          5,
+          [
+            2,
+            "F0",
+            [
+              4,
+              "F1",
+              "E"
+            ]
+          ],
+          [
+            6,
+            "E",
+            [
+              8,
+              "F3",
+              [
+                10,
+                "F4",
+                "F5"
+              ]
+            ]
+          ]
+        ],
+        [
+          14,
+          "F6",
+          [
+            16,
+            "F7",
+            [
+              18,
+              "F8",
+              [
+                20,
+                "F9",
+                "F10"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        2,
+        "F0",
+        [
+          5,
+          [
+            4,
+            "F1",
+            "E"
+          ],
+          [
+            12,
+            [
+              6,
+              "E",
+              [
+                8,
+                "F3",
+                [
+                  10,
+                  "F4",
+                  "F5"
+                ]
+              ]
+            ],
+            [
+              14,
+              "F6",
+              [
+                16,
+                "F7",
+                [
+                  18,
+                  "F8",
+                  [
+                    20,
+                    "F9",
+                    "F10"
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 5,
+      "source_B_core_index": 8944,
+      "B_target_core_index": 2165,
+      "target_actual_key": 2,
+      "H": 1,
+      "Q": 2,
+      "price": 0,
+      "projection_rule": "smaller_side",
+      "old_source_A_index": 8398,
+      "old_projected_target_index": 645,
+      "D_source": 1,
+      "D_target": 0,
+      "signed_margin": -1
+    }
+  },
+  "old_A_cursor": 1,
+  "old_A_total": 16796,
+  "B_couplings": {
+    "predecessor": 29,
+    "smaller_side": 29
+  },
+  "source_identity_instantiations": 2,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "explicit_closed_source_embedding": "PENDING",
+  "principal_U33": "OPEN"
+}

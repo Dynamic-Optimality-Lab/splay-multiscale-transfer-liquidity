@@ -1,0 +1,178 @@
+{
+  "status": "DEPTH_FIVE_CENTRAL_RELAY_UNIVERSAL_SYMBOLIC_AUDIT_PASS",
+  "new_universal_term_certificates": [
+    "odd5_remaining_LL",
+    "odd5_remaining_LL_actual_other_side",
+    "odd5_remaining_LR",
+    "odd5_remaining_LR_actual_other_side",
+    "K_direct_b_return",
+    "K_direct_b_return_actual_other_side",
+    "K_three_level_b_return",
+    "K_three_level_b_return_actual_other_side",
+    "Q8_common_zero_top",
+    "Q8_common_zero_top_actual_other_side",
+    "C8_common_zero_top",
+    "C8_common_zero_top_actual_other_side",
+    "Q8_LRL",
+    "Q8_LRL_actual_other_side",
+    "Q8_LRR",
+    "Q8_LRR_actual_other_side",
+    "C8_RLL",
+    "C8_RLL_actual_other_side",
+    "C8_RLR",
+    "C8_RLR_actual_other_side",
+    "C5_upper_depth2",
+    "C5_upper_depth2_actual_other_side",
+    "C5_upper_depth3_RL",
+    "C5_upper_depth3_RL_actual_other_side",
+    "C5_upper_depth3_RR",
+    "C5_upper_depth3_RR_actual_other_side",
+    "unique_C5_deep_block_specialization_by_order",
+    "P8_plus1_key5",
+    "P8_plus1_key5_actual_other_side",
+    "P8_zero_key6",
+    "P8_zero_key6_actual_other_side",
+    "C5_A_upper_RR_to_Score4_LL",
+    "C5_A_upper_RR_to_Score4_LL_actual_other_side",
+    "P8_A_zero6_to_Bdry",
+    "P8_A_zero6_to_Bdry_actual_other_side",
+    "Q8_A_zero_to_Rsh",
+    "Q8_A_zero_to_Rsh_actual_other_side",
+    "C8_A_zero_to_Rsh",
+    "C8_A_zero_to_Rsh_actual_other_side",
+    "J8_plus1_to_Q8",
+    "J8_plus1_to_Q8_actual_other_side",
+    "C_minimum_LL_helper",
+    "C_minimum_LL_helper_actual_other_side",
+    "C_maximum_RR_helper",
+    "C_maximum_RR_helper_actual_other_side"
+  ],
+  "odd5_top_cases_complete_after_arbitrary_lowest_pair": true,
+  "K_b_depths": [
+    2,
+    3
+  ],
+  "K_c_depth": 1,
+  "Rsh_shallow_a_transport_on_reused_published_outputs": [
+    {
+      "published_exit": "J5_key6",
+      "new_a_depth": 3
+    },
+    {
+      "published_exit": "J5_key7",
+      "new_a_depth": 3
+    },
+    {
+      "published_exit": "J6_key5",
+      "new_a_depth": 2
+    },
+    {
+      "published_exit": "J6_key7",
+      "new_a_depth": 3
+    },
+    {
+      "published_exit": "J7_key5",
+      "new_a_depth": 2
+    },
+    {
+      "published_exit": "J7_key6",
+      "new_a_depth": 2
+    }
+  ],
+  "Q8_C8_upper_plus1_bounds": [
+    {
+      "case": "Q8_LRL",
+      "a_depth": 2,
+      "max_off_path_upper_block_depth": 3,
+      "only_one_off_path_upper_core": true
+    },
+    {
+      "case": "Q8_LRR",
+      "a_depth": 3,
+      "max_off_path_upper_block_depth": 3,
+      "only_one_off_path_upper_core": true
+    },
+    {
+      "case": "C8_RLL",
+      "a_depth": 2,
+      "max_off_path_upper_block_depth": 3,
+      "only_one_off_path_upper_core": true
+    },
+    {
+      "case": "C8_RLR",
+      "a_depth": 2,
+      "max_off_path_upper_block_depth": 3,
+      "only_one_off_path_upper_core": true
+    }
+  ],
+  "C5_unique_deep_upper_block_proved_by_order_and_three_core_count": true,
+  "C5_exception_P8_and_opposite_endpoint_closed": true,
+  "span4_J8_C8_and_opposite_endpoint_closed": true,
+  "Bdry_V_guard_implied_at_every_actual_source_in_separate_prose_audit": true,
+  "Bdry_changes_no_actual_LOW_source": true,
+  "new_return_predicates_have_no_V_filter": true,
+  "C_and_K_helpers_original_H2_weight_at_least": 2,
+  "P_helpers_original_H2_weight_at_least": 2,
+  "Rsh_and_Q_helpers_use_completed_parametric_barrier": true,
+  "signed_slacks": {
+    "positive1_to_E1_or_old_K1": {
+      "credit_excess": 1
+    },
+    "positive2_range": {
+      "target_debt": 1
+    },
+    "zero_to_prior_cap2": {},
+    "H2_weight_at_least2": {
+      "weight_excess": 1,
+      "target_debt": 1
+    },
+    "unchanged_source": {
+      "old_residual": 1,
+      "target_increment": 1
+    },
+    "nonnegative_incoming_cap2": {
+      "weight_nonnegative": 1,
+      "source_room": 1
+    }
+  },
+  "operation_order": [
+    "Bdry",
+    "Rsh",
+    "Q8",
+    "P8",
+    "C5_or_C8",
+    "K",
+    "J8",
+    "G45"
+  ],
+  "each_previously_valid_LOW_row_preserved_by_each_operation": true,
+  "all_new_region_source_LOW_rows_proved": true,
+  "central_main_all_spans_and_both_B_zero_depths_4_5_proved": true,
+  "central_G45_zero_H1_source_target_values": 2,
+  "central_G45_zero_H1_signed_residual": 0,
+  "all_nonnegative_incoming_new_region_rows_proved": true,
+  "all_admissible_signatures_and_full_original_states": true,
+  "new_finite_tests": 0,
+  "new_source_transition_queries": 0,
+  "new_original_root_evaluations": 0,
+  "new_saved_psi_queries": 0,
+  "new_label_fits": 0,
+  "new_bank_censuses": 0,
+  "completed_semantic_checks_replayed": 0,
+  "reused_proof_hashes": {
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER09/symbolic_audit.json": "6fa31643661b6ddb918a69247e73069625026194b09cb478726f1bb8a419e3e4",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER08/certificate.json": "dde7ef47f449c99555eb9979fc84cb7d4e30f950a13b5b44aca7bdd390b72a3b",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/symbolic_audit.json": "df0141e9c1eaae76b6868206a28e66622470e7b1dcce11f5de2ce00873e8179b"
+  },
+  "new_AST_source_hashes": {
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_PARAMETRIC_PORT_COMPILER/PC_B_CONTROLLER.py": "3137135eaa9c0c92ae3fd7d57b9f06b90d7fff8524d7063c27cb3b62082c99db"
+  },
+  "full_compiler_formalization_claimed": false,
+  "external_human_or_model_review_claimed": false,
+  "Step4_complete": false,
+  "global_zero_LOW_coverage_proved": false,
+  "full_M3_status": "OPEN",
+  "remaining_independent_obligation": "original zero LOW outside the union of proved guarded classes",
+  "CPU_seconds": 0.1875,
+  "CPU_cap": 120.0
+}

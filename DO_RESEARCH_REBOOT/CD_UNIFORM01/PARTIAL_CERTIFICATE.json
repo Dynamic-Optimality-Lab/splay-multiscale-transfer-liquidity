@@ -1,0 +1,40 @@
+{
+  "status": "AUDITED_PARTIAL_RESULTS_UNRESTRICTED_CD_OPEN",
+  "original_target": "unrestricted original CD: Q_B<=2A on every reachable fully closed Pair Access walk",
+  "unrestricted_CD_proved": false,
+  "uniform_support_induction_proved": false,
+  "original_CD_counterexample_found": false,
+  "proved_restricted_extension": "original reachable fully closed walks with |G|<=5 OR nonempty G and fixed marked core size<=7",
+  "proved_universal_subbridge": "support-erased histories have reachable fully closed recurrent outputs",
+  "refuted_extension_mechanisms": [
+    "fixed HIGH cap2C-q with next-genuine-KEEP segmentation and universal closure-preserving coverage",
+    "same marked-height-six bit beyond core7",
+    "unqualified nondecreasing-B-charge support erasure"
+  ],
+  "remaining_open": "source-exact signed support reduction for true2A-Q; marginal cost/credit control beyond the proved closure construction",
+  "documents": [
+    "HIGH_TRUNCATION_OBSTRUCTION.md",
+    "MARK_SUBSET_LIFT.md",
+    "SUPPORT_ERASURE_CLOSURE.md"
+  ],
+  "independent_audit": "independent_audit.json",
+  "audit_explanation": "PROOF_AUDIT.md",
+  "dependency_pins": "dependency_pins.json",
+  "resources": "resources_final.json",
+  "CD5_existing_seal_unchanged": true,
+  "R1_R4_preserved": true,
+  "Bank25": 25,
+  "new_finite_tests": 0,
+  "completed_semantic_checks_replayed": 0,
+  "Dynamic_Optimality_proved": false,
+  "audit_scope": "separate symbolic/source/quantifier audit reusing completed premises; not external review or whole-compiler formalization",
+  "partial_publication_gates": {
+    "named_proofs": "PASS",
+    "independent_audit": "PASS",
+    "phase_controllers": "PASS",
+    "resources": "PASS",
+    "declared_input_hashes": "PASS",
+    "HEAD_tracked_tree": "PASS"
+  },
+  "unrestricted_CD_publication_gate": "FAIL_OPEN_SIGNED_SUPPORT_LIFT"
+}

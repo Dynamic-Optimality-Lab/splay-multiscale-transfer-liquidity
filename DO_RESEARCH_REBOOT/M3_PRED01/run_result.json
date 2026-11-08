@@ -1,0 +1,80 @@
+{
+  "status": "STOPPED_ON_FIRST_NEW_CAP_OR_FAILURE",
+  "prior_conservative_uniform_charge": 665.75,
+  "new_child_process_CPU": 47.578125,
+  "finite_CPU_ceiling": 7200,
+  "events": [
+    {
+      "phase": "basis",
+      "index": null,
+      "allocated_cap": 120,
+      "CPU_charged": 0.390625,
+      "returncode": 0,
+      "error": null,
+      "status": "EXACT_705_COMPLETED_TOTAL4_PATTERN_BASIS_INDEXED"
+    },
+    {
+      "phase": "construct",
+      "index": 0,
+      "allocated_cap": 120,
+      "CPU_charged": 2.109375,
+      "returncode": 0,
+      "error": null,
+      "status": "POPULATION_THRESHOLD_PREDICATES_CONSTRUCTED_UNAUDITED"
+    },
+    {
+      "phase": "audit",
+      "index": 0,
+      "allocated_cap": 300,
+      "CPU_charged": 38.984375,
+      "returncode": 0,
+      "error": null,
+      "status": "FINITE_EXACT_THRESHOLD_PREDICATES_SIGNED_PRESERVATION_PASS"
+    },
+    {
+      "phase": "construct",
+      "index": 1,
+      "allocated_cap": 120,
+      "CPU_charged": 4.0625,
+      "returncode": 0,
+      "error": null,
+      "status": "POPULATION_THRESHOLD_PREDICATES_CONSTRUCTED_UNAUDITED"
+    },
+    {
+      "phase": "audit",
+      "index": 1,
+      "allocated_cap": 300,
+      "CPU_charged": 2.03125,
+      "returncode": 1,
+      "error": {
+        "type": "AssertionError",
+        "message": "UNKNOWN independent predicate-audit record cap"
+      },
+      "status": "UNKNOWN_OR_FAILED"
+    }
+  ],
+  "passed_case_indices": [
+    0
+  ],
+  "first_counterexample_case": null,
+  "failure": {
+    "phase": "audit",
+    "index": 1,
+    "allocated_cap": 300,
+    "CPU_charged": 2.03125,
+    "returncode": 1,
+    "error": {
+      "type": "AssertionError",
+      "message": "UNKNOWN independent predicate-audit record cap"
+    },
+    "status": "UNKNOWN_OR_FAILED"
+  },
+  "no_larger_basis_or_sign_horizon_after_failure": true,
+  "old_transition_censuses_not_repeated": true,
+  "new_source_transition_queries": 0,
+  "uniform_predicate_preservation_proved": false,
+  "new_original_sector_certificates": 0,
+  "negative_cycle_certified": false,
+  "M3_status": "OPEN",
+  "NET_ORIGINAL_M3_PROOF_ADVANCEMENT": 0
+}

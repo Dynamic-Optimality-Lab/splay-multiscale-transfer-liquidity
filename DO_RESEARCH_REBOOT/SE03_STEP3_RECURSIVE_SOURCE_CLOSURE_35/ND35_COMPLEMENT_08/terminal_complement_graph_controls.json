@@ -1,0 +1,179 @@
+{
+  "status": "EXACT_TERMINAL_COMPLEMENT_GRAPH_CONTROL",
+  "controls": [
+    {
+      "source": "AF",
+      "internal_demands": 4,
+      "fixed_gT_entry_matching_size": 3,
+      "cut": {
+        "demands": [
+          [
+            86,
+            5
+          ]
+        ],
+        "units": [],
+        "deficiency": 1
+      },
+      "matching": [
+        {
+          "demand": [
+            86,
+            2
+          ],
+          "unit": [
+            74,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            86,
+            3
+          ],
+          "unit": [
+            77,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            86,
+            4
+          ],
+          "unit": [
+            80,
+            1,
+            0
+          ]
+        }
+      ],
+      "fixed_partial_source_matching": "g_T, not any frozen owner input",
+      "failure_is_only_this_restricted_complement_rule": true
+    },
+    {
+      "source": "CCR",
+      "internal_demands": 9,
+      "fixed_gT_entry_matching_size": 7,
+      "cut": {
+        "demands": [
+          [
+            59,
+            2
+          ],
+          [
+            68,
+            2
+          ]
+        ],
+        "units": [],
+        "deficiency": 2
+      },
+      "matching": [
+        {
+          "demand": [
+            56,
+            1
+          ],
+          "unit": [
+            51,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            57,
+            1
+          ],
+          "unit": [
+            54,
+            3,
+            0
+          ]
+        },
+        {
+          "demand": [
+            58,
+            1
+          ],
+          "unit": [
+            52,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            65,
+            1
+          ],
+          "unit": [
+            60,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            66,
+            1
+          ],
+          "unit": [
+            62,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            67,
+            1
+          ],
+          "unit": [
+            60,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            68,
+            1
+          ],
+          "unit": [
+            63,
+            1,
+            0
+          ]
+        }
+      ],
+      "fixed_partial_source_matching": "g_T, not any frozen owner input",
+      "failure_is_only_this_restricted_complement_rule": true
+    },
+    {
+      "source": "NONMAX",
+      "internal_demands": 0,
+      "fixed_gT_entry_matching_size": 0,
+      "cut": {
+        "demands": [],
+        "units": [],
+        "deficiency": 0
+      },
+      "matching": [],
+      "fixed_partial_source_matching": "g_T, not any frozen owner input",
+      "failure_is_only_this_restricted_complement_rule": true
+    }
+  ],
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "Objective_I": "OPEN",
+  "input_sha256": {
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\root_entry_graph_controls.json": "3c7e41a7e1bd547b7980f350be6cd9554d1411a27d7fe753e4e7e58579dc983f",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\terminal_neutral_controls.json": "e112b08a7ec109ebdcac6ac46c101284b93fc506c8d7b358aa427fa068eb7cf4",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\COMPLETE_MATCHING_NORMALIZATION.md": "37b93276848aa878fff551f3d1f5d5b064e3b78e898837a4a01196e0d64035bb",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\analyze_terminal_complement_graph.py": "6632ce0e17c96dbb441d8da251a6512a065b1b8eb7b57b51737674e6710d462e"
+  }
+}

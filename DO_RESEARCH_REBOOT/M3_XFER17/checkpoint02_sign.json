@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "symbolic_coefficients": {
+    "row_transport_coefficients": {
+      "w": 1,
+      "Dt": 1,
+      "Es": -1
+    },
+    "off_P_negative_coefficients": {
+      "w": 1,
+      "Et": 1
+    },
+    "off_P_nonnegative_residual_basis": {
+      "nonnegative_weight": 1,
+      "target_debt": 1
+    },
+    "transport_nonnegative_basis": {
+      "old_residual": 1,
+      "source_reduction": 1
+    },
+    "negative_nonnegative_basis": {
+      "old_core_residual": 1,
+      "target_floor_excess": 1,
+      "psi_source": 1
+    }
+  },
+  "any_previously_valid_LOW_row_preserved": true,
+  "all_off_P_LOW_rows_proved": true,
+  "global_psi_or_Lambda_floor_for_D_term_claimed": false,
+  "psi_floor_at_every_LOW_destination_preserved": true,
+  "HIGH_h0_range_glue_preserved": true
+}

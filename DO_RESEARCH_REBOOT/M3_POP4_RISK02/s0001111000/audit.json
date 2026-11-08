@@ -1,0 +1,111 @@
+{
+  "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+  "sigma": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "canonical_transition_queries": 522916,
+  "private_assignment_visits": 731490,
+  "independent_root_productions": 733962,
+  "analytic_root_productions_rejected": 2472,
+  "duplicate_private_assignments_quotiented": 208574,
+  "families": [
+    {
+      "helper": null,
+      "word": [
+        [
+          0
+        ]
+      ],
+      "count": 43038,
+      "private_assignment_visits": 60800
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1
+        ]
+      ],
+      "count": 43038,
+      "private_assignment_visits": 60800
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          0
+        ]
+      ],
+      "count": 180358,
+      "private_assignment_visits": 251463
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          1
+        ]
+      ],
+      "count": 38062,
+      "private_assignment_visits": 53482
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 38062,
+      "private_assignment_visits": 53482
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          1
+        ]
+      ],
+      "count": 180358,
+      "private_assignment_visits": 251463
+    }
+  ],
+  "classes": 35871,
+  "access_options": 522916,
+  "J_range": [
+    -2,
+    0
+  ],
+  "changed_states": 434408,
+  "explicit_residuals": 38574980,
+  "minimum_residual": 0,
+  "residual_histogram": {
+    "0": 21991022,
+    "2": 2766546,
+    "1": 13817412
+  },
+  "product_states_streamed": 14307020,
+  "zero_source_states_discharged": 11216986,
+  "analytic": {
+    "range": 8318072
+  },
+  "allocated_CPU_cap": 120,
+  "cpu_seconds": 30.891,
+  "potential_sha256": "5b981d7b603fa5ab9890d4ad316329086079a7306c3f7b342382e99675459a48",
+  "analytic_fiber_coverage": "REPRESENTATION_PROOF.md and independent selector audit",
+  "source_family_audit_pending": true,
+  "full_M3_proved": false
+}

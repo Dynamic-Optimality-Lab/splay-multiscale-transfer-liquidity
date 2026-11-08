@@ -1,0 +1,98 @@
+{
+  "status": "SOURCE_EXACT_SYMBOLIC_E2A_COUNTEREXAMPLE_TO_GLOBAL_L2",
+  "r": 7,
+  "physical_keys": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "genuine_marks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "source_word": [
+    "KEEP13",
+    "DELETE1",
+    "DELETE Gamma_low",
+    {
+      "KEEP": [
+        1,
+        3,
+        1,
+        5,
+        1,
+        7,
+        1,
+        9,
+        1,
+        11
+      ]
+    },
+    {
+      "KEEP": [
+        1,
+        9,
+        1,
+        7,
+        1,
+        5,
+        1,
+        3,
+        1
+      ]
+    },
+    "DELETE Gamma_reset"
+  ],
+  "source_family": "AF35; same transformation definitions, every operation retained",
+  "target": 3,
+  "H": 1,
+  "Q": 2,
+  "old_marked_path": [
+    1,
+    13,
+    3
+  ],
+  "old_path_ancestor_degrees": [
+    1,
+    5
+  ],
+  "old_target_degree": 0,
+  "new_degrees": {
+    "3": 2,
+    "13": 4,
+    "1": 0
+  },
+  "L2_source": 3,
+  "L2_target": 2,
+  "physical_price": 0,
+  "signed_margin": -1,
+  "whole_B_Q": 38,
+  "paired_closure": "AF35 symbolic proof, full transformations not numerically expanded",
+  "whole_source_full_comparison": "AF35 complete independent h, working2",
+  "full_numeric_replay": false,
+  "UCF35_refuted": false,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "input_sha256": {
+    "SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\UNIFORM_A_REALIZATION_OVER_CLOSED_B.md": "907419177de92dab3a4a13313969e12ade15c94805fe8358c1a5294d4fbfa574",
+    "SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\SOURCE_JOINT_REPAIR_03\\SOURCE_ONLY_B_BOUND.md": "7a3b78edea11c34acbd71b1fc90c4825405a224bee756e03ac5b8f7698bdbea3",
+    "SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_02\\ANCHORED_FAMILY_COMPLETE_FUNDING.md": "74dd1c17b36ddd5d4e3c72f85aff84e8ac8c9f6acbe3ce7a4804800038d5f680",
+    "SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_02\\DESCENDING_SWEEP_RETURN.md": "7cca183c52fb99d3d182f9a357996b0f7fa342b94d1a1483e776480ff10d6389",
+    "SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_01\\SYMBOLIC_B_CLOSURE.md": "1ac035c104fdd213a9dac0c87298a3b56956b95296da410419076728c2fa65cf"
+  }
+}

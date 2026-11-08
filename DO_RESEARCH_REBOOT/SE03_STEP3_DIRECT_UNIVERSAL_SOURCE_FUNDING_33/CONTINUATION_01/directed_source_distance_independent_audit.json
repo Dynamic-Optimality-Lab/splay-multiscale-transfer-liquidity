@@ -1,0 +1,133 @@
+{
+  "status": "PASS_EXACT_DIRECTED_SPLAY_PREPARATION_DISTANCE_FAMILY_REFUTATION",
+  "uniform_A_only_DELETE_cone_preservation": "proved by directed triangle inequalities for alpha>=0,beta<=0,alpha-beta<=2; exact a=0 identity included",
+  "KEEP_obstruction": "H1/Q3 with forward11->8, reverse7->10 gives -1-3(alpha-beta)<0",
+  "lambda_margin": -7,
+  "any_function_only_of_both_directed_distances": "refuted by unchanged(8,6), H1/Q3 source",
+  "all_original_7_key_primitive_actions_independently_replayed": 3003,
+  "exact_shortest_path_vectors_checked": 8,
+  "shortest_path_proof": "all weighted-edge lower labels plus a positive-cost tight predecessor at every nonsource vertex prove matching attainable upper labels",
+  "source_records": [
+    {
+      "kind": "constant_negative_edge",
+      "source": {
+        "period": [
+          50,
+          98
+        ],
+        "natural_packet": [
+          63,
+          63
+        ],
+        "H": 1,
+        "Q": 3,
+        "price": -1,
+        "CD_margin": 113,
+        "root_before": 1,
+        "root_after": 2,
+        "delta_before": [
+          0,
+          1,
+          -2,
+          -4,
+          -5,
+          -3,
+          -2
+        ],
+        "delta_after": [
+          -2,
+          0,
+          -3,
+          -2,
+          -5,
+          -1,
+          -2
+        ],
+        "full_pair_before": [
+          37,
+          131
+        ],
+        "full_pair_after": [
+          169,
+          167
+        ],
+        "primitive_identity_instantiations_checked": 194,
+        "terminal_A_cost": 1
+      },
+      "distances_before": [
+        11,
+        7
+      ],
+      "distances_after": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "unchanged_both_directed_distances_negative_edge",
+      "source": {
+        "period": [
+          47,
+          92
+        ],
+        "natural_packet": [
+          58,
+          58
+        ],
+        "H": 1,
+        "Q": 3,
+        "price": -1,
+        "CD_margin": 107,
+        "root_before": 1,
+        "root_after": 3,
+        "delta_before": [
+          0,
+          -1,
+          1,
+          -2,
+          -2,
+          -5,
+          -6
+        ],
+        "delta_after": [
+          -2,
+          -1,
+          0,
+          -1,
+          0,
+          -3,
+          -4
+        ],
+        "full_pair_before": [
+          1,
+          103
+        ],
+        "full_pair_after": [
+          189,
+          186
+        ],
+        "primitive_identity_instantiations_checked": 186,
+        "terminal_A_cost": 1
+      },
+      "distances_before": [
+        8,
+        6
+      ],
+      "distances_after": [
+        8,
+        6
+      ]
+    }
+  ],
+  "source_queries": 3003,
+  "not_a_Coarse_Double_counterexample": true,
+  "principal_U33": "OPEN",
+  "external_or_formal_verification": false,
+  "input_sha256": {
+    "directed_source_distance_closed_sources.json": "e4bb0060fe9a0e5429df58c9b2bbefadb34893b2ab26f7c379d5e6b23e771466",
+    "directed_source_event_distances7.json": "c41a677f79ee34a95c941482f87f18a6f53613ce1212a53158f89e3f5f9ede52",
+    "geodesic_seven_metric_table.json": "a28384e738d576a26806dc18445aa9468683821ce47caf37f65ba91529c187e6",
+    "DIRECTED_SOURCE_DISTANCE_DELETE_LEMMA.md": "604251c9260674b89f3b5565c6fee8cde7abdd3970aff03768994bc9a9cbdffa",
+    "DIRECTED_SOURCE_DISTANCE_DELETE_CONE.md": "6580e8355877d3ef3bd175310fe667332fb5a4b915fb1b48987ec6e60153d294"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "status": "STOPPED_ON_FIRST_NEW_THRESHOLD_COUNTEREXAMPLE",
+  "prior_conservative_uniform_charge": 713.59375,
+  "new_child_process_CPU": 25.59375,
+  "finite_CPU_ceiling": 7200,
+  "events": [
+    {
+      "phase": "prepare",
+      "index": null,
+      "allocated_cap": 120,
+      "CPU_charged": 0.96875,
+      "returncode": 0,
+      "error": null,
+      "status": "MEMORY_RETRY_INPUTS_AND_STREAM_READER_PREPARED"
+    },
+    {
+      "phase": "critical_budget",
+      "index": null,
+      "allocated_cap": 120,
+      "CPU_charged": 0.34375,
+      "returncode": 0,
+      "error": null,
+      "status": "EXACT_MAX_PLUS_CRITICAL_PREFIX_BUDGET_CONSTRUCTED_UNAUDITED"
+    },
+    {
+      "phase": "audit_critical",
+      "index": null,
+      "allocated_cap": 300,
+      "CPU_charged": 0.40625,
+      "returncode": 0,
+      "error": null,
+      "status": "INDEPENDENT_COMPLETE_CRITICAL_BUDGET_REDUCTION_AUDIT_PASS"
+    },
+    {
+      "phase": "audit",
+      "index": 0,
+      "allocated_cap": 300,
+      "CPU_charged": 23.875,
+      "returncode": 0,
+      "error": null,
+      "status": "THRESHOLD_PREDICATES_REFUTED_IN_SAVED_RELATION"
+    }
+  ],
+  "passed_case_indices": [],
+  "first_counterexample_case": 0,
+  "failure": null,
+  "old_completed_first_case_not_repeated": true,
+  "authorized_old_candidate_construction_reused": true,
+  "no_larger_basis_or_sign_horizon": true,
+  "uniform_preservation_proved": false,
+  "new_original_sector_certificates": 0,
+  "original_negative_cycle_certified": false,
+  "M3_status": "OPEN",
+  "NET_ORIGINAL_M3_PROOF_ADVANCEMENT": 0
+}

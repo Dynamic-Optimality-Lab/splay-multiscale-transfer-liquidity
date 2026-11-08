@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_EXCEPTIONAL_PREFIX_CARRY_ONE_32\CONTINUATION_01\audit_threephase.py", line 258, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_EXCEPTIONAL_PREFIX_CARRY_ONE_32\CONTINUATION_01\audit_threephase.py", line 96, in main
+    a6={ph:[ai[proj(v,([1000,2000,3000,4000,6000,7000] if ph==0 else [1000,2000,3000,5000,6000,7000]))] for v in A7] for ph in (0,1)}
+            ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: (4500, (1000, None, (2000, None, (3000, None, (4000, None, None)))), (5000, None, (6000, None, None)))

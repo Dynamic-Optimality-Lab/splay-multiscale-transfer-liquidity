@@ -1,0 +1,203 @@
+{
+  "status": "PASS_SYMBOLIC_FREE_TERM_RETIREMENT_EXACTNESS_AND_OBSTRUCTION_AUDIT",
+  "free_term_cases": {
+    "LL": [
+      {
+        "pivot": "G",
+        "lost": [
+          [
+            "G",
+            "A"
+          ],
+          [
+            "G",
+            "B"
+          ],
+          [
+            "G",
+            "P"
+          ],
+          [
+            "G",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      },
+      {
+        "pivot": "P",
+        "lost": [
+          [
+            "P",
+            "A"
+          ],
+          [
+            "P",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      }
+    ],
+    "RR": [
+      {
+        "pivot": "G",
+        "lost": [
+          [
+            "G",
+            "A"
+          ],
+          [
+            "G",
+            "B"
+          ],
+          [
+            "G",
+            "P"
+          ],
+          [
+            "G",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      },
+      {
+        "pivot": "P",
+        "lost": [
+          [
+            "P",
+            "A"
+          ],
+          [
+            "P",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      }
+    ],
+    "LR": [
+      {
+        "pivot": "P",
+        "lost": [
+          [
+            "P",
+            "C"
+          ],
+          [
+            "P",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      },
+      {
+        "pivot": "G",
+        "lost": [
+          [
+            "G",
+            "A"
+          ],
+          [
+            "G",
+            "B"
+          ],
+          [
+            "G",
+            "P"
+          ],
+          [
+            "G",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      }
+    ],
+    "RL": [
+      {
+        "pivot": "P",
+        "lost": [
+          [
+            "P",
+            "C"
+          ],
+          [
+            "P",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      },
+      {
+        "pivot": "G",
+        "lost": [
+          [
+            "G",
+            "A"
+          ],
+          [
+            "G",
+            "B"
+          ],
+          [
+            "G",
+            "P"
+          ],
+          [
+            "G",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      }
+    ],
+    "L": [
+      {
+        "pivot": "G",
+        "lost": [
+          [
+            "G",
+            "A"
+          ],
+          [
+            "G",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      }
+    ],
+    "R": [
+      {
+        "pivot": "G",
+        "lost": [
+          [
+            "G",
+            "A"
+          ],
+          [
+            "G",
+            "y"
+          ]
+        ],
+        "processed_subtree_rigid": true
+      }
+    ]
+  },
+  "proof_method": "six exhaustive operation frames plus written induction over arbitrary outer frames; each A/B/C/D is an independent arbitrary rigid BST term",
+  "new_source_queries": 0,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "source_scope": "OR34 all ordinary A splays; exterior PR compatibility conditional on inherited maximal-core extreme ticket theorem",
+  "minimal_obstruction": "at least two macros, one excess, one interior, connected complete-neighborhood overlap; hypothetical cuts only",
+  "principal_JIO34": "OPEN",
+  "universal_global_expansion": "OPEN",
+  "universal_Bank25": "OPEN",
+  "trust": "same-agent distinct implementation/static audit; not external review or a proof assistant",
+  "input_sha256": {
+    "OPERATION_RETIREMENT_EXACTNESS.md": "a5ed1c2fe0b92077e3be5e9245451e9d5fead0c11a016c0dc1ed19c69dc60d67",
+    "MINIMAL_GLOBAL_OWNER_OBSTRUCTION.md": "5c93d34cbc35f67cd95f8f736bf853d91f4ee1e74bb2bcdcb2d856eee1364056"
+  }
+}

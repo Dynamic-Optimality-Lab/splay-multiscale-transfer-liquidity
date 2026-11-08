@@ -1,0 +1,190 @@
+{
+  "status": "ALL_CAPS_PRESERVED_NO_RESET",
+  "prior_cumulative_CPU": 3507.703125,
+  "campaign_CPU": 83.171875,
+  "cumulative_CPU": 3590.875,
+  "remaining_CPU": 3609.125,
+  "cumulative_group_CPU": {
+    "symbolic": 102.984375,
+    "independent": 286.515625
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "group_remaining": {
+    "symbolic": 17.015625,
+    "independent": 13.484375
+  },
+  "reserve": 5,
+  "query_cap": 2000000,
+  "campaign_source_engine_calls_including_failed_and_superseded": 721650,
+  "max_observed_phase_memory": 418422784,
+  "memory_cap_bytes": 34359738368,
+  "live_record_cap": 2000000,
+  "largest_direct_pair_state_table": 785222,
+  "legacy_first_mask_dense_array_cells": 879522,
+  "tables_processed_sequentially": true,
+  "DAG_cap": 4000000,
+  "stored_edge_cap": 5000000,
+  "wall_cap_hours": 12,
+  "Bank25": 25,
+  "proved_working_bank": 11,
+  "new_finite_tests": 0,
+  "old_semantic_rows_replayed_in_new_owner_audit": 0,
+  "failed_and_superseded_work_charged": true,
+  "runs": [
+    {
+      "phase": "branch9_2",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.5625,
+      "controller_CPU": 0.1875,
+      "charged_CPU": 1.75,
+      "source_engine_calls": 0,
+      "peak_working_set_bytes_observed": 74903552
+    },
+    {
+      "phase": "branch9",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 1.59375,
+      "controller_CPU": 0.203125,
+      "charged_CPU": 1.796875,
+      "source_engine_calls": 0,
+      "peak_working_set_bytes_observed": 74801152
+    },
+    {
+      "phase": "branch_all",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 6.71875,
+      "controller_CPU": 0.21875,
+      "charged_CPU": 6.9375,
+      "source_engine_calls": 138415,
+      "peak_working_set_bytes_observed": 102830080
+    },
+    {
+      "phase": "branch_grammar2",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.796875,
+      "controller_CPU": 0.171875,
+      "charged_CPU": 2.96875,
+      "source_engine_calls": 98572,
+      "peak_working_set_bytes_observed": 36499456
+    },
+    {
+      "phase": "branch_grammar",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 3.65625,
+      "controller_CPU": 0.25,
+      "charged_CPU": 3.90625,
+      "source_engine_calls": 95278,
+      "peak_working_set_bytes_observed": 36016128
+    },
+    {
+      "phase": "branch_independent2",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 6.125,
+      "controller_CPU": 0.65625,
+      "charged_CPU": 6.78125,
+      "source_engine_calls": 98572,
+      "peak_working_set_bytes_observed": 83406848
+    },
+    {
+      "phase": "branch_independent",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 3.765625,
+      "controller_CPU": 0.1875,
+      "charged_CPU": 3.953125,
+      "source_engine_calls": 98572,
+      "peak_working_set_bytes_observed": 83963904
+    },
+    {
+      "phase": "branch_owners",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 6.046875,
+      "controller_CPU": 0.359375,
+      "charged_CPU": 6.40625,
+      "source_engine_calls": 0,
+      "peak_working_set_bytes_observed": 418422784
+    },
+    {
+      "phase": "branch_tables",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 34.984375,
+      "controller_CPU": 0.40625,
+      "charged_CPU": 35.390625,
+      "source_engine_calls": 138415,
+      "peak_working_set_bytes_observed": 81842176
+    },
+    {
+      "phase": "final",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 3.890625,
+      "controller_CPU": 0.703125,
+      "charged_CPU": 4.59375,
+      "source_engine_calls": 0,
+      "peak_working_set_bytes_observed": 156897280
+    },
+    {
+      "phase": "grammar",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.921875,
+      "controller_CPU": 0.1875,
+      "charged_CPU": 1.109375,
+      "source_engine_calls": 26552,
+      "peak_working_set_bytes_observed": 118181888
+    },
+    {
+      "phase": "independent",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 2.421875,
+      "controller_CPU": 0.296875,
+      "charged_CPU": 2.71875,
+      "source_engine_calls": 26552,
+      "peak_working_set_bytes_observed": 147537920
+    },
+    {
+      "phase": "lift",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 2.46875,
+      "controller_CPU": 0.1875,
+      "charged_CPU": 2.65625,
+      "source_engine_calls": 0,
+      "peak_working_set_bytes_observed": 142254080
+    },
+    {
+      "phase": "seal_unary",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 1.28125,
+      "controller_CPU": 0.203125,
+      "charged_CPU": 1.484375,
+      "source_engine_calls": 0,
+      "peak_working_set_bytes_observed": 155770880
+    },
+    {
+      "phase": "source",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.546875,
+      "controller_CPU": 0.171875,
+      "charged_CPU": 0.71875,
+      "source_engine_calls": 722,
+      "peak_working_set_bytes_observed": 121892864
+    }
+  ],
+  "metadata_CPU_excluded_convention": "inherited; entry/publication-only metadata excluded, all proof/construction/replay/audit/seal and controller CPU charged",
+  "publication_metadata_CPU_seconds": 0.21875
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_core22.py", line 58, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_core22.py", line 17, in main
+    S.path=tickpath;G=HullCompiler(S.trace);native=json.loads((B/'native10_source_actions.json').read_text());T=list(map(fr,native['trees']));C=Compiler(native);family=json.loads((B/'contraction_debt_set_formula_candidate.json').read_text());edges={(v['source_mask'],v['target_mask']):v for v in family['edges']};e=edges[4,10];second=edges[10,5];assert fr(e['actual_A_target'])==fr(second['source_A']) and e['B_target_core_index']==second['source_B_core_index'];private=e['private_key'];gap=(private-1)//2
+                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

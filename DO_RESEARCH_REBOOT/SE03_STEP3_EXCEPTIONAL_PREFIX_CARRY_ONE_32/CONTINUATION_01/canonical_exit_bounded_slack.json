@@ -1,0 +1,9360 @@
+{
+  "status": "COMPLETE_BOUNDED_SLACK_TERMINAL_EXCLUSION",
+  "new_source_queries": 0,
+  "processed": 1528,
+  "edge_checks": 10372,
+  "updates": 601,
+  "halt": null,
+  "canonical_source_states": [
+    {
+      "name": "A",
+      "A": 505,
+      "BF": 1281,
+      "D": 1,
+      "minimum_slack": 0
+    },
+    {
+      "name": "B",
+      "A": 551,
+      "BF": 1424,
+      "D": 0,
+      "minimum_slack": 0
+    },
+    {
+      "name": "C",
+      "A": 720,
+      "BF": 2393,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "name": "D",
+      "A": 720,
+      "BF": 1781,
+      "D": 1,
+      "minimum_slack": 0
+    },
+    {
+      "name": "E",
+      "A": 505,
+      "BF": 1283,
+      "D": 0,
+      "minimum_slack": 0
+    },
+    {
+      "name": "F",
+      "A": 505,
+      "BF": 1284,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "name": "G",
+      "A": 720,
+      "BF": 2162,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "name": "A",
+      "A": 499,
+      "BF": 1281,
+      "D": 1,
+      "minimum_slack": 0
+    },
+    {
+      "name": "B",
+      "A": 549,
+      "BF": 1424,
+      "D": 0,
+      "minimum_slack": 0
+    },
+    {
+      "name": "C",
+      "A": 718,
+      "BF": 2393,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "name": "D",
+      "A": 718,
+      "BF": 1781,
+      "D": 1,
+      "minimum_slack": 0
+    },
+    {
+      "name": "E",
+      "A": 499,
+      "BF": 1283,
+      "D": 0,
+      "minimum_slack": 0
+    },
+    {
+      "name": "F",
+      "A": 499,
+      "BF": 1284,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "name": "G",
+      "A": 718,
+      "BF": 2162,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "name": "A",
+      "A": 502,
+      "BF": 1281,
+      "D": 2,
+      "minimum_slack": 1
+    },
+    {
+      "name": "B",
+      "A": 550,
+      "BF": 1424,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "name": "C",
+      "A": 719,
+      "BF": 2393,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "name": "D",
+      "A": 719,
+      "BF": 1781,
+      "D": 2,
+      "minimum_slack": 1
+    },
+    {
+      "name": "E",
+      "A": 502,
+      "BF": 1283,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "name": "F",
+      "A": 502,
+      "BF": 1284,
+      "D": 2,
+      "minimum_slack": 3
+    },
+    {
+      "name": "G",
+      "A": 719,
+      "BF": 2162,
+      "D": 1,
+      "minimum_slack": 3
+    }
+  ],
+  "guard": "full source-proved H1 upper phase; first lower exit has prescribed H lower bound; any upper H>=2 departs",
+  "reached_by_slack": {
+    "0": 5,
+    "1": 216,
+    "2": 1307
+  },
+  "entry_states": [
+    {
+      "A": 505,
+      "BF": 1281,
+      "D": 1,
+      "initial_slack": 0
+    },
+    {
+      "A": 499,
+      "BF": 1281,
+      "D": 1,
+      "initial_slack": 0
+    },
+    {
+      "A": 502,
+      "BF": 1281,
+      "D": 2,
+      "initial_slack": 1
+    }
+  ],
+  "reached_states": [
+    {
+      "A": 4,
+      "BF": 11,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 5,
+      "BF": 11,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 6,
+      "BF": 11,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 10,
+      "BF": 11,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 11,
+      "BF": 11,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 12,
+      "BF": 11,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 1,
+      "BF": 93,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 0,
+      "BF": 612,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 612,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 169,
+      "BF": 612,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 67,
+      "BF": 614,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 169,
+      "BF": 614,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 67,
+      "BF": 619,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 169,
+      "BF": 619,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 68,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 71,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 72,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 73,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 77,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 78,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 79,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 170,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 173,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 174,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 175,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 179,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 180,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 181,
+      "BF": 623,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 0,
+      "BF": 629,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 629,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 68,
+      "BF": 629,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 70,
+      "BF": 629,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 71,
+      "BF": 629,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 77,
+      "BF": 629,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 169,
+      "BF": 629,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 170,
+      "BF": 629,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 172,
+      "BF": 629,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 173,
+      "BF": 629,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 179,
+      "BF": 629,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 649,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 70,
+      "BF": 663,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 72,
+      "BF": 681,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 71,
+      "BF": 685,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 0,
+      "BF": 748,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 1,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 2,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 3,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 4,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 5,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 6,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 7,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 8,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 9,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 10,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 11,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 12,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 16,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 17,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 18,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 19,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 20,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 21,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 22,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 23,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 24,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 25,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 26,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 27,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 28,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 29,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 30,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 31,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 32,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 33,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 34,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 35,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 36,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 37,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 38,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 39,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 40,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 41,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 42,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 43,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 44,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 45,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 46,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 47,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 48,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 49,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 50,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 51,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 52,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 53,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 54,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 55,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 56,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 57,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 58,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 59,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 60,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 61,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 62,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 63,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 64,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 65,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 66,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 748,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 70,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 71,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 72,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 73,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 74,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 75,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 76,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 77,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 78,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 79,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 80,
+      "BF": 748,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 83,
+      "BF": 748,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 86,
+      "BF": 748,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 89,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 90,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 91,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 92,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 93,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 94,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 95,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 96,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 97,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 98,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 99,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 100,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 101,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 102,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 103,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 104,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 105,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 106,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 107,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 108,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 109,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 110,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 111,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 112,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 113,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 114,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 115,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 116,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 117,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 118,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 119,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 120,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 121,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 122,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 123,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 124,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 125,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 126,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 127,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 128,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 129,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 130,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 131,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 132,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 133,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 134,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 135,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 136,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 137,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 138,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 139,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 140,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 141,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 142,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 143,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 144,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 145,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 146,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 147,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 148,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 149,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 150,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 151,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 152,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 153,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 154,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 155,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 156,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 157,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 158,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 159,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 160,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 161,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 162,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 163,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 164,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 165,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 166,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 167,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 168,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 169,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 0
+    },
+    {
+      "A": 170,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 171,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 172,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 173,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 174,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 175,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 176,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 177,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 178,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 179,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 180,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 181,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 185,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 186,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 187,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 188,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 189,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 190,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 191,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 192,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 193,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 194,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 195,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 196,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 197,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 198,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 199,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 200,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 201,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 202,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 203,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 204,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 205,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 206,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 207,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 208,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 209,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 210,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 211,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 212,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 213,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 214,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 215,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 216,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 217,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 218,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 219,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 220,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 221,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 222,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 223,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 224,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 225,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 226,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 227,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 228,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 229,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 230,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 231,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 232,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 233,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 234,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 235,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 236,
+      "BF": 748,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 239,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 240,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 241,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 242,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 243,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 244,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 245,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 246,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 247,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 248,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 249,
+      "BF": 748,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 252,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 253,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 254,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 255,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 256,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 257,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 258,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 259,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 260,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 261,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 262,
+      "BF": 748,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 265,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 266,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 267,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 268,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 269,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 270,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 271,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 272,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 273,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 274,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 275,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 276,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 277,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 278,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 279,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 280,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 281,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 282,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 283,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 284,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 285,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 286,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 287,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 288,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 289,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 290,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 291,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 292,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 293,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 294,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 295,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 296,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 297,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 298,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 299,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 300,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 301,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 302,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 303,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 304,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 305,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 306,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 307,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 308,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 309,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 310,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 311,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 312,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 313,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 314,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 315,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 316,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 317,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 318,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 319,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 320,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 321,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 322,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 323,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 324,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 325,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 326,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 327,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 328,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 329,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 330,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 331,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 332,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 333,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 334,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 335,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 336,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 337,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 338,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 339,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 340,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 341,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 342,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 343,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 344,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 345,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 346,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 347,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 348,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 349,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 350,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 351,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 352,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 353,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 354,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 355,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 356,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 357,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 358,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 359,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 360,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 361,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 362,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 363,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 364,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 365,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 366,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 367,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 368,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 369,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 370,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 371,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 372,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 373,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 374,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 375,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 376,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 377,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 378,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 379,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 380,
+      "BF": 748,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 0,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 68,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 69,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 80,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 83,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 86,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 169,
+      "BF": 750,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 236,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 249,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 262,
+      "BF": 750,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 751,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 169,
+      "BF": 751,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 755,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 169,
+      "BF": 755,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 5,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 11,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 68,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 69,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 70,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 72,
+      "BF": 759,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 78,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 170,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 174,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 180,
+      "BF": 759,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 808,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 70,
+      "BF": 808,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 74,
+      "BF": 808,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 169,
+      "BF": 808,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 172,
+      "BF": 808,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 176,
+      "BF": 808,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 71,
+      "BF": 810,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 816,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 0,
+      "BF": 826,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 1,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 2,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 3,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 4,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 5,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 6,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 7,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 8,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 9,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 10,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 11,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 12,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 13,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 14,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 15,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 19,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 20,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 21,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 22,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 23,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 24,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 25,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 26,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 27,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 28,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 29,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 30,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 31,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 32,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 33,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 34,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 35,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 36,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 37,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 38,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 39,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 40,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 41,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 42,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 43,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 44,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 45,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 46,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 47,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 48,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 49,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 50,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 51,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 52,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 53,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 54,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 55,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 56,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 57,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 58,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 59,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 60,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 61,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 62,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 63,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 64,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 65,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 66,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 0
+    },
+    {
+      "A": 68,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 69,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 71,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 72,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 73,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 74,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 75,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 76,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 77,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 78,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 79,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 80,
+      "BF": 826,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 81,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 82,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 83,
+      "BF": 826,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 84,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 85,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 86,
+      "BF": 826,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 87,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 88,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 92,
+      "BF": 826,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 102,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 103,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 104,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 105,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 106,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 107,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 108,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 109,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 110,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 111,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 112,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 113,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 114,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 115,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 116,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 117,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 118,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 119,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 120,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 121,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 122,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 123,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 124,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 125,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 126,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 127,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 128,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 129,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 130,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 131,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 132,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 133,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 134,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 135,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 136,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 137,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 138,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 139,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 140,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 141,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 142,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 143,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 144,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 145,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 146,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 147,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 148,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 149,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 150,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 151,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 152,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 153,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 154,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 155,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 156,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 157,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 158,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 159,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 160,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 161,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 162,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 163,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 164,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 165,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 166,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 167,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 168,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 169,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 0
+    },
+    {
+      "A": 170,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 171,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 172,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 173,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 174,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 175,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 176,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 177,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 178,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 179,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 180,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 181,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 182,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 183,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 184,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 188,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 189,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 190,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 191,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 192,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 193,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 194,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 195,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 196,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 197,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 198,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 199,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 200,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 201,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 202,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 203,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 204,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 205,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 206,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 207,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 208,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 209,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 210,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 211,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 212,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 213,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 214,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 215,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 216,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 217,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 218,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 219,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 220,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 221,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 222,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 223,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 224,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 225,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 226,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 227,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 228,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 229,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 230,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 231,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 232,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 233,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 234,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 235,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 236,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 237,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 238,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 240,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 241,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 242,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 243,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 244,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 245,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 246,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 247,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 248,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 249,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 250,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 251,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 253,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 254,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 255,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 256,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 257,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 258,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 259,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 260,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 261,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 262,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 263,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 264,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 266,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 267,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 268,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 269,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 270,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 271,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 272,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 273,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 274,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 276,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 277,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 279,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 280,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 282,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 283,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 284,
+      "BF": 826,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 285,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 286,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 288,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 289,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 291,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 292,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 294,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 295,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 297,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 298,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 300,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 301,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 303,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 304,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 306,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 307,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 309,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 310,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 312,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 313,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 314,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 315,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 316,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 317,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 318,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 319,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 320,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 321,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 322,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 323,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 324,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 325,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 326,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 327,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 328,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 329,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 330,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 331,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 332,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 333,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 334,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 335,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 336,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 337,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 338,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 339,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 340,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 341,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 342,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 343,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 344,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 345,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 346,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 347,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 348,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 349,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 350,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 351,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 352,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 353,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 354,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 355,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 356,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 357,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 358,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 359,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 360,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 361,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 362,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 363,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 364,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 365,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 366,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 367,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 368,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 369,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 370,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 371,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 372,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 373,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 374,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 375,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 376,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 377,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 378,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 379,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 380,
+      "BF": 826,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 0,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 1,
+      "BF": 828,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 2,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 3,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 4,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 5,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 6,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 7,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 8,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 9,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 10,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 11,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 12,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 13,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 14,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 15,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 16,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 17,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 18,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 32,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 33,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 34,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 35,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 36,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 37,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 38,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 39,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 40,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 41,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 42,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 43,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 44,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 45,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 46,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 47,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 48,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 49,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 50,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 51,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 52,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 53,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 54,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 55,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 56,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 57,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 58,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 59,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 60,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 61,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 62,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 63,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 64,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 65,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 66,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 67,
+      "BF": 828,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 68,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 69,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 70,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 74,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 75,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 76,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 77,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 78,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 79,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 80,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 82,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 83,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 85,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 86,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 88,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 169,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 170,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 171,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 172,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 173,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 174,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 175,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 176,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 177,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 178,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 179,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 180,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 181,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 182,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 183,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 184,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 185,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 186,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 187,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 201,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 202,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 203,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 204,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 205,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 206,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 207,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 208,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 209,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 210,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 211,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 212,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 213,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 214,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 215,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 216,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 217,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 218,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 219,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 220,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 221,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 222,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 223,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 224,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 225,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 226,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 227,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 228,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 229,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 230,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 231,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 232,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 233,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 234,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 235,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 236,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 237,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 238,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 239,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 243,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 244,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 245,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 246,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 247,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 248,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 249,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 250,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 251,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 252,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 256,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 257,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 258,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 259,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 260,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 261,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 262,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 263,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 264,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 265,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 269,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 270,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 271,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 272,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 273,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 274,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 275,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 277,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 278,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 280,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 281,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 283,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 284,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 286,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 287,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 289,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 290,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 292,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 293,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 295,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 296,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 298,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 299,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 301,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 302,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 304,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 305,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 307,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 308,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 310,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 311,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 313,
+      "BF": 828,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 67,
+      "BF": 944,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 946,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 67,
+      "BF": 962,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 70,
+      "BF": 962,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 74,
+      "BF": 962,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 172,
+      "BF": 962,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 67,
+      "BF": 968,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 385,
+      "BF": 980,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 386,
+      "BF": 980,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 387,
+      "BF": 980,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 391,
+      "BF": 980,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 392,
+      "BF": 980,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 393,
+      "BF": 980,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 386,
+      "BF": 981,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 392,
+      "BF": 981,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 388,
+      "BF": 1020,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 392,
+      "BF": 1038,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 382,
+      "BF": 1062,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 452,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 453,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 454,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 458,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 459,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 460,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 465,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 466,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 467,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 478,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 479,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 480,
+      "BF": 1142,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 453,
+      "BF": 1143,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 459,
+      "BF": 1143,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 474,
+      "BF": 1146,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 448,
+      "BF": 1175,
+      "D": 0,
+      "minimum_slack": 0
+    },
+    {
+      "A": 461,
+      "BF": 1175,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 474,
+      "BF": 1175,
+      "D": 0,
+      "minimum_slack": 0
+    },
+    {
+      "A": 448,
+      "BF": 1177,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 474,
+      "BF": 1177,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 448,
+      "BF": 1182,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 474,
+      "BF": 1182,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 449,
+      "BF": 1186,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 453,
+      "BF": 1186,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 459,
+      "BF": 1186,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 475,
+      "BF": 1186,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 479,
+      "BF": 1186,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 485,
+      "BF": 1186,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 448,
+      "BF": 1192,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 449,
+      "BF": 1192,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 451,
+      "BF": 1192,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 452,
+      "BF": 1192,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 458,
+      "BF": 1192,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 461,
+      "BF": 1192,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 474,
+      "BF": 1192,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 475,
+      "BF": 1192,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 477,
+      "BF": 1192,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 478,
+      "BF": 1192,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 484,
+      "BF": 1192,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 448,
+      "BF": 1196,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 474,
+      "BF": 1196,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 499,
+      "BF": 1213,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 499,
+      "BF": 1215,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 500,
+      "BF": 1215,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 501,
+      "BF": 1239,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 499,
+      "BF": 1240,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 500,
+      "BF": 1275,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 501,
+      "BF": 1275,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 503,
+      "BF": 1275,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 506,
+      "BF": 1275,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 499,
+      "BF": 1281,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 505,
+      "BF": 1281,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 499,
+      "BF": 1283,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 500,
+      "BF": 1283,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 501,
+      "BF": 1283,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 505,
+      "BF": 1283,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 506,
+      "BF": 1283,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 507,
+      "BF": 1283,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 499,
+      "BF": 1284,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 505,
+      "BF": 1284,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 542,
+      "BF": 1308,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 545,
+      "BF": 1322,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 546,
+      "BF": 1322,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 547,
+      "BF": 1322,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 550,
+      "BF": 1326,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 542,
+      "BF": 1331,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 549,
+      "BF": 1333,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 551,
+      "BF": 1333,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 542,
+      "BF": 1349,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 542,
+      "BF": 1387,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 544,
+      "BF": 1387,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 549,
+      "BF": 1387,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 551,
+      "BF": 1387,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 584,
+      "BF": 1387,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 586,
+      "BF": 1387,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 549,
+      "BF": 1407,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 549,
+      "BF": 1422,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 550,
+      "BF": 1422,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 551,
+      "BF": 1422,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 549,
+      "BF": 1424,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 551,
+      "BF": 1424,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 687,
+      "BF": 1447,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 674,
+      "BF": 1565,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 676,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 677,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 678,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 679,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 680,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 681,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 685,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 686,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 688,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 689,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 690,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 691,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 692,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 693,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 694,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 708,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 709,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 710,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 711,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 712,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 713,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 714,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 715,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 716,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 717,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 1565,
+      "D": 1,
+      "minimum_slack": 1
+    },
+    {
+      "A": 719,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 720,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 721,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 722,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 723,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 724,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 725,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 726,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 727,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 728,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 729,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 730,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 731,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 732,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 733,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 734,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 735,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 736,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 737,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 738,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 739,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 740,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 741,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 742,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 743,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 744,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 745,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 746,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 747,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 748,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 749,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 750,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 751,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 752,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 753,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 754,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 755,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 756,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 757,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 758,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 759,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 760,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 761,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 842,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 843,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 844,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 845,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 846,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 847,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 848,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 849,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 850,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 851,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 852,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 853,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 854,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 855,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 856,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 857,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 858,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 859,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 860,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 861,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 862,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 863,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 864,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 865,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 866,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 867,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 877,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 878,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 879,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 880,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 881,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 882,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 883,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 884,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 885,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 886,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 887,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 888,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 889,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 890,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 891,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 892,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 893,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 894,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 895,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 896,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 897,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 898,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 899,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 900,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 901,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 902,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 903,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 904,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 905,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 906,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 920,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 921,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 922,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 923,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 924,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 925,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 926,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 927,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 928,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 929,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 930,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 931,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 932,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 933,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 934,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 935,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 936,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 937,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 938,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 939,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 940,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 941,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 942,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 943,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 944,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 945,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 946,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 947,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 948,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 949,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 950,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 951,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 952,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 953,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 954,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 955,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 956,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 957,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 958,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 959,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 960,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 961,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 962,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 963,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 964,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 965,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 966,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 967,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 968,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 969,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 970,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 971,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 972,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 973,
+      "BF": 1565,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 1568,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 673,
+      "BF": 1569,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 1571,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 593,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 594,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 595,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 596,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 597,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 598,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 599,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 600,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 601,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 602,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 603,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 604,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 605,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 606,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 607,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 608,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 609,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 610,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 611,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 612,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 613,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 614,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 615,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 616,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 617,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 618,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 619,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 620,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 621,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 622,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 623,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 624,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 625,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 626,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 627,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 628,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 629,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 630,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 631,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 632,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 633,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 634,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 635,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 636,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 637,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 638,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 639,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 640,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 641,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 642,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 643,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 644,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 645,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 646,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 647,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 648,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 649,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 650,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 651,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 652,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 653,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 654,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 655,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 656,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 657,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 658,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 659,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 660,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 661,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 662,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 663,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 664,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 665,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 666,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 667,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 668,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 669,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 670,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 671,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 672,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 673,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 674,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 675,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 695,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 696,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 697,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 698,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 699,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 700,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 701,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 702,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 703,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 704,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 705,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 706,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 707,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 714,
+      "BF": 1643,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 715,
+      "BF": 1643,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 716,
+      "BF": 1643,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 718,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 721,
+      "BF": 1643,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 722,
+      "BF": 1643,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 723,
+      "BF": 1643,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 762,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 763,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 764,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 765,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 766,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 767,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 768,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 769,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 770,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 771,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 772,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 773,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 774,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 775,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 776,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 777,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 778,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 779,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 780,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 781,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 782,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 783,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 784,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 785,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 786,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 787,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 788,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 789,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 790,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 791,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 792,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 793,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 794,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 795,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 796,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 797,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 798,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 799,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 800,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 801,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 802,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 803,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 804,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 805,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 806,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 807,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 808,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 809,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 810,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 811,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 812,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 813,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 814,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 815,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 816,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 817,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 818,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 819,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 820,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 821,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 822,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 823,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 824,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 825,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 826,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 827,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 828,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 829,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 830,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 831,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 832,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 833,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 834,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 835,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 836,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 837,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 838,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 839,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 840,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 841,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 868,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 869,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 870,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 871,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 872,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 873,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 874,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 875,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 876,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 907,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 908,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 909,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 910,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 911,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 912,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 913,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 914,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 915,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 916,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 917,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 918,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 919,
+      "BF": 1643,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 674,
+      "BF": 1644,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 1644,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 687,
+      "BF": 1659,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 931,
+      "BF": 1659,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 674,
+      "BF": 1687,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 677,
+      "BF": 1687,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 680,
+      "BF": 1687,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 686,
+      "BF": 1687,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 688,
+      "BF": 1687,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 1687,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 719,
+      "BF": 1687,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 720,
+      "BF": 1687,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 881,
+      "BF": 1687,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 884,
+      "BF": 1687,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 887,
+      "BF": 1687,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 615,
+      "BF": 1706,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 673,
+      "BF": 1706,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 674,
+      "BF": 1706,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 711,
+      "BF": 1706,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 713,
+      "BF": 1706,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 753,
+      "BF": 1706,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 784,
+      "BF": 1706,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 698,
+      "BF": 1712,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 711,
+      "BF": 1712,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 714,
+      "BF": 1712,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 715,
+      "BF": 1712,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 716,
+      "BF": 1712,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 1712,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 721,
+      "BF": 1712,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 722,
+      "BF": 1712,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 723,
+      "BF": 1712,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 730,
+      "BF": 1712,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 673,
+      "BF": 1744,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 679,
+      "BF": 1744,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 686,
+      "BF": 1744,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 688,
+      "BF": 1744,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 880,
+      "BF": 1744,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 886,
+      "BF": 1744,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 1764,
+      "D": 2,
+      "minimum_slack": 2
+    },
+    {
+      "A": 686,
+      "BF": 1779,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 687,
+      "BF": 1779,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 688,
+      "BF": 1779,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 930,
+      "BF": 1779,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 931,
+      "BF": 1779,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 932,
+      "BF": 1779,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 686,
+      "BF": 1781,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 687,
+      "BF": 1781,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 688,
+      "BF": 1781,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 718,
+      "BF": 1781,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 720,
+      "BF": 1781,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 930,
+      "BF": 1781,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 931,
+      "BF": 1781,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 932,
+      "BF": 1781,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 718,
+      "BF": 2151,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 2162,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 720,
+      "BF": 2162,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 711,
+      "BF": 2277,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 714,
+      "BF": 2291,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 715,
+      "BF": 2291,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 716,
+      "BF": 2291,
+      "D": 1,
+      "minimum_slack": 2
+    },
+    {
+      "A": 719,
+      "BF": 2295,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 711,
+      "BF": 2300,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 2302,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 720,
+      "BF": 2302,
+      "D": 0,
+      "minimum_slack": 1
+    },
+    {
+      "A": 711,
+      "BF": 2318,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 711,
+      "BF": 2356,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 713,
+      "BF": 2356,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 2356,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 720,
+      "BF": 2356,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 753,
+      "BF": 2356,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 755,
+      "BF": 2356,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 2376,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 718,
+      "BF": 2391,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 719,
+      "BF": 2391,
+      "D": 0,
+      "minimum_slack": 2
+    },
+    {
+      "A": 720,
+      "BF": 2391,
+      "D": 0,
+      "minimum_slack": 2
+    }
+  ],
+  "adverse_terminal_count": 1493,
+  "abstract_failure_count": 0,
+  "first_abstract_failure": null,
+  "abstract_failures": [],
+  "one_abstract_path": [],
+  "path_is_source_counterexample": false,
+  "scope": "static necessary COMPLETE cached packet graph; all endpoint and private7 source realization distinctions retained"
+}

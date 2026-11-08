@@ -1,0 +1,47 @@
+{
+  "status": "PASS_LOCAL_FOLLOWING_SURPLUS_RULE_AND_OWNER_COMPOSITION",
+  "unit_rule": "bit1 of min(H,3)-th actual A event in next genuine auxiliary macro",
+  "sufficient_source_cases": [
+    "H>=3",
+    "H2 and q<=2",
+    "H1/q1: inverse fan forces targetD2"
+  ],
+  "general_rule": "apply if 2min(H,3)-q+targetD-1>=1",
+  "old_tail_disjointness": "new auxiliary ordinal<=3, old tail ordinal>=4",
+  "return_module_disjointness": "auxiliary macro starts at full q1 return versus full q5 critical operation",
+  "cross_following_disjointness": "different originating returns imply different next auxiliary macros",
+  "psi_fan_constructor": "all k: k-1 left pair removals plus5-k right pair removals; total4; inherited fan and negative-core laws",
+  "residual_first_following_families": [
+    {
+      "H": 1,
+      "q": 2,
+      "entry_D": 1,
+      "target_D": 1
+    },
+    {
+      "H": 1,
+      "q": 3,
+      "entry_D": 1,
+      "target_D": 2
+    },
+    {
+      "H": 2,
+      "q": 3,
+      "entry_D": 1,
+      "target_D": 0
+    },
+    {
+      "H": 2,
+      "q": 4,
+      "entry_D": 1,
+      "target_D": 1
+    }
+  ],
+  "multi_macro_donor_termination_proved": false,
+  "all_auxiliary_packet_patterns_covered": false,
+  "all_original_cold_demands_funded": false,
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "Step2": "OPEN"
+}

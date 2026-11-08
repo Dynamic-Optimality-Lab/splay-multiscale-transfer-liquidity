@@ -1,0 +1,43 @@
+{
+  "status": "PASS_EXACT_NEW_SOURCE_AND_UNIFORM_INDUCTION_INTERFACES",
+  "source_queries": 580,
+  "old_W199_replay_repeated": false,
+  "new_source_length": 459,
+  "source_funding": "complete114-demand source map, peak6, all successes kept",
+  "counterexample_scope": "refutes pure one-frame/at-most3-natural-deficit catchment forcing; NOT a funding obstruction",
+  "hybrid_source_comparison_peak": 8,
+  "template_profiles": {
+    "FIRST_V": 4,
+    "REPEAT_V": 4,
+    "W": 6
+  },
+  "induction_transitions": [
+    {
+      "block": "FIRST_V",
+      "incoming": "empty",
+      "outgoing": "stored original u577"
+    },
+    {
+      "block": "REPEAT_V",
+      "incoming": "stored original u577",
+      "outgoing": "same original u577"
+    },
+    {
+      "block": "W",
+      "incoming": "stored original u577",
+      "outgoing": "empty"
+    }
+  ],
+  "source_uniform_scope": "specified V^m W receipt construction, every integer m>=1, and ordered14-gap BST substitutions",
+  "verification_boundary": "exact source/policy and base/self-loop/final templates checked by distinct implementation; induction and opaque-subtree commutation are inspectable mathematical arguments, not formal proof-assistant certification",
+  "same_agent_distinct_implementation": true,
+  "external_peer_review": false,
+  "complete_U28_proved": false,
+  "sha256": {
+    "catchment_forcing_countercertificate.json": "75d1762d94c9e0aa9da105b2204cc9a6b3e20a02f2845276300c185c265c4602",
+    "hybrid_partition_receipt.json": "b9da3617e967981c4a266887637ebc7933545ec8c4530bc8c3f97c5579260563",
+    "uniform_insertion_templates.json": "8281ef48d3a4b864b847905c85a857fa08ad3032d587ced677ee28906d4e452c",
+    "NEUTRAL_INSERTION_FAMILY_THEOREM.md": "6082b51c78d0a6bc5696cf41e094a8fbfd13e0b663394e33d2010ae10ec32137",
+    "CATCHMENT_COMPARISON_THEOREM.md": "6d0dba07651b959faacc5e89fbd8a5520cd68c1e8bcde46967407879c7af2f94"
+  }
+}

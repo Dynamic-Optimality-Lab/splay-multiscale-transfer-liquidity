@@ -1,0 +1,592 @@
+{
+  "status": "E_SI34_SOURCE_COUNTERCERTIFICATE",
+  "source": {
+    "kind": "EXACT_SYMBOLIC_CONSTRUCTIVE_SOURCE",
+    "physical_keys": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "genuine_full_keys": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "erased_key": 3,
+    "initial_A": [
+      15,
+      [
+        14,
+        [
+          1,
+          null,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              [
+                7,
+                [
+                  6,
+                  null,
+                  null
+                ],
+                [
+                  9,
+                  [
+                    8,
+                    null,
+                    null
+                  ],
+                  [
+                    11,
+                    [
+                      10,
+                      null,
+                      null
+                    ],
+                    [
+                      13,
+                      [
+                        12,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        null
+      ],
+      null
+    ],
+    "initial_full_B": {
+      "kind": "right_vine",
+      "keys": [
+        1,
+        15
+      ]
+    },
+    "desired_A_before_forward": [
+      1,
+      null,
+      [
+        3,
+        [
+          2,
+          null,
+          null
+        ],
+        [
+          5,
+          [
+            4,
+            null,
+            null
+          ],
+          [
+            7,
+            [
+              6,
+              null,
+              null
+            ],
+            [
+              9,
+              [
+                8,
+                null,
+                null
+              ],
+              [
+                11,
+                [
+                  10,
+                  null,
+                  null
+                ],
+                [
+                  13,
+                  [
+                    12,
+                    null,
+                    null
+                  ],
+                  [
+                    14,
+                    null,
+                    [
+                      15,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "gamma_low": {
+      "definition": "shortest lexicographic ordinary-splay word over1..14",
+      "input_low_tree": [
+        1,
+        null,
+        [
+          14,
+          [
+            3,
+            [
+              2,
+              null,
+              null
+            ],
+            [
+              5,
+              [
+                4,
+                null,
+                null
+              ],
+              [
+                7,
+                [
+                  6,
+                  null,
+                  null
+                ],
+                [
+                  9,
+                  [
+                    8,
+                    null,
+                    null
+                  ],
+                  [
+                    11,
+                    [
+                      10,
+                      null,
+                      null
+                    ],
+                    [
+                      13,
+                      [
+                        12,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          null
+        ]
+      ],
+      "output_low_tree": [
+        1,
+        null,
+        [
+          3,
+          [
+            2,
+            null,
+            null
+          ],
+          [
+            5,
+            [
+              4,
+              null,
+              null
+            ],
+            [
+              7,
+              [
+                6,
+                null,
+                null
+              ],
+              [
+                9,
+                [
+                  8,
+                  null,
+                  null
+                ],
+                [
+                  11,
+                  [
+                    10,
+                    null,
+                    null
+                  ],
+                  [
+                    13,
+                    [
+                      12,
+                      null,
+                      null
+                    ],
+                    [
+                      14,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_use": "all letters are original DELETEs in15-key tree with rigid leaf15"
+    },
+    "gamma_wrap": {
+      "definition": "shortest lexicographic ordinary-splay word over1..15",
+      "input_tree_expression": "Splay(Rword,Splay(Fword,T))",
+      "output_tree": [
+        15,
+        [
+          14,
+          [
+            1,
+            null,
+            [
+              3,
+              [
+                2,
+                null,
+                null
+              ],
+              [
+                5,
+                [
+                  4,
+                  null,
+                  null
+                ],
+                [
+                  7,
+                  [
+                    6,
+                    null,
+                    null
+                  ],
+                  [
+                    9,
+                    [
+                      8,
+                      null,
+                      null
+                    ],
+                    [
+                      11,
+                      [
+                        10,
+                        null,
+                        null
+                      ],
+                      [
+                        13,
+                        [
+                          12,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          null
+        ],
+        null
+      ]
+    },
+    "word": [
+      {
+        "kind": "KEEP",
+        "key": 15
+      },
+      {
+        "kind": "DELETE",
+        "key": 1
+      },
+      {
+        "kind": "DELETE_WORD",
+        "word": "gamma_low"
+      },
+      {
+        "kind": "KEEP_WORD",
+        "word": [
+          1,
+          3,
+          1,
+          5,
+          1,
+          7,
+          1,
+          9,
+          1,
+          11,
+          1,
+          13
+        ]
+      },
+      {
+        "kind": "KEEP_WORD",
+        "word": [
+          1,
+          11,
+          1,
+          9,
+          1,
+          7,
+          1,
+          5,
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "kind": "DELETE_WORD",
+        "word": "gamma_wrap"
+      }
+    ],
+    "reaching_prefix": "DELETE shortest-lex Gamma_1..15(right_vine_1..15, initial_A)",
+    "closed_period": "first repeated BE/tree and recent-chart boundary state after warmup: actual copies u..u+L-1",
+    "source_word_fully_expanded_numerically": false,
+    "all_original_costs_retained": true
+  },
+  "absolute_parameter_definitions": {
+    "b": "actual offset before initial KEEP15 in a selected copy inside the aligned original period",
+    "ell": "actual length of gamma_low"
+  },
+  "selected_macros": [
+    {
+      "target": 5,
+      "absolute_occurrence": "b+ell+6",
+      "H": 1,
+      "Q": 3,
+      "old_B_marked_ancestors": [
+        1,
+        3,
+        15
+      ],
+      "all_retiring_operations": [
+        "b+2",
+        "b+ell+6"
+      ],
+      "natural_macro_operations": [
+        "b+ell+6"
+      ]
+    },
+    {
+      "target": 9,
+      "absolute_occurrence": "b+ell+10",
+      "H": 1,
+      "Q": 3,
+      "old_B_marked_ancestors": [
+        1,
+        7,
+        15
+      ],
+      "all_retiring_operations": [
+        "b+2",
+        "b+ell+10"
+      ],
+      "natural_macro_operations": [
+        "b+ell+10"
+      ]
+    },
+    {
+      "target": 13,
+      "absolute_occurrence": "b+ell+14",
+      "H": 1,
+      "Q": 3,
+      "old_B_marked_ancestors": [
+        1,
+        11,
+        15
+      ],
+      "all_retiring_operations": [
+        "b+2",
+        "b+ell+14"
+      ],
+      "natural_macro_operations": [
+        "b+ell+14"
+      ]
+    }
+  ],
+  "actual_B_demands": [
+    [
+      "b+ell+6",
+      1
+    ],
+    [
+      "b+ell+6",
+      2
+    ],
+    [
+      "b+ell+6",
+      3
+    ],
+    [
+      "b+ell+10",
+      1
+    ],
+    [
+      "b+ell+10",
+      2
+    ],
+    [
+      "b+ell+10",
+      3
+    ],
+    [
+      "b+ell+14",
+      1
+    ],
+    [
+      "b+ell+14",
+      2
+    ],
+    [
+      "b+ell+14",
+      3
+    ]
+  ],
+  "exact_neighborhoods": {
+    "5": [
+      [
+        "b+2",
+        1,
+        0
+      ],
+      [
+        "b+2",
+        1,
+        1
+      ],
+      [
+        "b+ell+6",
+        1,
+        0
+      ],
+      [
+        "b+ell+6",
+        1,
+        1
+      ]
+    ],
+    "9": [
+      [
+        "b+2",
+        1,
+        0
+      ],
+      [
+        "b+2",
+        1,
+        1
+      ],
+      [
+        "b+ell+10",
+        1,
+        0
+      ],
+      [
+        "b+ell+10",
+        1,
+        1
+      ]
+    ],
+    "13": [
+      [
+        "b+2",
+        1,
+        0
+      ],
+      [
+        "b+2",
+        1,
+        1
+      ],
+      [
+        "b+ell+14",
+        1,
+        0
+      ],
+      [
+        "b+ell+14",
+        1,
+        1
+      ]
+    ]
+  },
+  "total_demand": 9,
+  "distinct_units": 8,
+  "sigma": 3,
+  "overlap": 4,
+  "local_unused": 0,
+  "deficit": 1,
+  "connected": true,
+  "each_private_capacity": 2,
+  "all_selected_own_excess": true,
+  "no_DELETE_only_return_loop": true,
+  "source_CD_margin_lower_bound_per_word": 4,
+  "physical_owner_maps_modified": false,
+  "original_architecture_refuted": false,
+  "full_source_numerically_replayed": false,
+  "critical_source_replayed_by_distinct_implementations": true,
+  "source_proof_artifacts": {
+    "SYMBOLIC_B_CLOSURE.md": "1ac035c104fdd213a9dac0c87298a3b56956b95296da410419076728c2fa65cf",
+    "SOURCE_CONSTRUCTION.md": "aa78b2445a1bf9f1a9a6e5b2fb9e501497f362fb80ba969ca80091fb8fac4239",
+    "EXACT_NEGATIVE_CUT.md": "16d9b784f27dabbfaded6d3edb871dd81ea21c216162e67c9d59264883fedae7",
+    "SI34_SOURCE_REFUTATION.md": "278619c2a1bf0436e9ad1dd13729d7563bc45cfb83af5ea789a0c8feea005074"
+  },
+  "audit_receipts": {
+    "independent_critical_source_audit.json": "5cb281120ddf57d0ce98856b15ac1eb9a0d4d973837226a126ca16a45dca274f",
+    "independent_symbolic_source_audit.json": "5e26af24cc71f4652b574f3b6955b6399e7bb717428716ae13a721088e29d002"
+  }
+}

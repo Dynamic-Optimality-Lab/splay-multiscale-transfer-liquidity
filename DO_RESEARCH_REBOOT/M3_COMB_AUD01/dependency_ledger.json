@@ -1,0 +1,142 @@
+{
+  "status": "ACYCLIC_WITH_EXPLICIT_OPEN_LEAF",
+  "topological_order": [
+    "SOURCE_LOW",
+    "SOURCE_HIGH_PRODUCT",
+    "LOW_PRIMITIVES",
+    "LOW_SOURCE_REDUCTION",
+    "CORE_DEBT",
+    "FINITE_LOW_TABLES",
+    "HIGH_SOURCE_CLASSIFICATION",
+    "HIGH_TOLL_ABSORPTION",
+    "LOW_CHI8_CONSERVATION",
+    "FIXED_GAP_SHARED_J",
+    "GLOBAL_SINGLE_GAP_W",
+    "ALL_SIGNATURE_BALANCED_CYCLES",
+    "MULTI_GAP_HARD_DEFICIT",
+    "FULL_M3"
+  ],
+  "nodes": [
+    {
+      "id": "SOURCE_LOW",
+      "status": "SOURCE_DEFINITION",
+      "depends": [],
+      "evidence": "frozen STRICT_LOW_COMPILER and imported interpreters/inventory/repairs"
+    },
+    {
+      "id": "SOURCE_HIGH_PRODUCT",
+      "status": "SOURCE_DEFINITION",
+      "depends": [],
+      "evidence": "frozen STRICT_HIGH_COMPILER, CW_PRODUCT and S03 projections"
+    },
+    {
+      "id": "LOW_PRIMITIVES",
+      "status": "INDEPENDENT_EXACT_PASS",
+      "depends": [
+        "SOURCE_LOW"
+      ],
+      "evidence": "408 full-field core rotations,3570 max-pair identities"
+    },
+    {
+      "id": "LOW_SOURCE_REDUCTION",
+      "status": "SOURCE_PROOF_REVIEWED",
+      "depends": [
+        "SOURCE_LOW",
+        "LOW_PRIMITIVES"
+      ],
+      "evidence": "H1 fusion; Gamma0 terminal debt; Gamma1 two-access form; S-empty ghost erasure; <=3 retained anonymous classification",
+      "scope": "single fixed gap; not multiple-positive-gap allocation determinacy; does not assume M1 cycle sign"
+    },
+    {
+      "id": "CORE_DEBT",
+      "status": "INDEPENDENT_EXACT_PASS",
+      "depends": [
+        "LOW_PRIMITIVES"
+      ],
+      "evidence": "4862 trees,43758 reference accesses,4224 negative edges,acyclic debt maximum2"
+    },
+    {
+      "id": "FINITE_LOW_TABLES",
+      "status": "INDEPENDENT_EXACT_PASS",
+      "depends": [
+        "CORE_DEBT"
+      ],
+      "evidence": "19174005 rows and all analytic omissions, independently enumerated A profiles"
+    },
+    {
+      "id": "HIGH_SOURCE_CLASSIFICATION",
+      "status": "SOURCE_PROOF_REVIEWED",
+      "depends": [
+        "SOURCE_HIGH_PRODUCT"
+      ],
+      "evidence": "unique core path h<=8; source max-sentinel claimant; incompatible detour fails by entry10; literal0 cases"
+    },
+    {
+      "id": "HIGH_TOLL_ABSORPTION",
+      "status": "INDEPENDENT_EXACT_PASS_WITH_SOURCE_REDUCTION",
+      "depends": [
+        "HIGH_SOURCE_CLASSIFICATION"
+      ],
+      "evidence": "11340 dirty root claims,171 chi8 boundary identities,9 clean final-write identities; endpoint order argument"
+    },
+    {
+      "id": "LOW_CHI8_CONSERVATION",
+      "status": "SOURCE_PROOF_REVIEWED_AND_PRIMITIVE_PASS",
+      "depends": [
+        "SOURCE_LOW",
+        "LOW_PRIMITIVES"
+      ],
+      "evidence": "real ordered rotations; gap9 absent preserves core8 right pair; present gap9 excludes chi8 endpoints"
+    },
+    {
+      "id": "FIXED_GAP_SHARED_J",
+      "status": "PROVED_RESTRICTED_DOMAIN",
+      "depends": [
+        "LOW_SOURCE_REDUCTION",
+        "CORE_DEBT",
+        "FINITE_LOW_TABLES"
+      ],
+      "evidence": "static signature dispatch; actual low boundary maps into table; population remains opaque; mathematical low reflection only"
+    },
+    {
+      "id": "GLOBAL_SINGLE_GAP_W",
+      "status": "PROVED_RESTRICTED_DOMAIN",
+      "depends": [
+        "FIXED_GAP_SHARED_J",
+        "HIGH_TOLL_ABSORPTION",
+        "LOW_CHI8_CONSERVATION",
+        "SOURCE_HIGH_PRODUCT"
+      ],
+      "evidence": "W_O=J-5chi8; W_M=-5chi8; exact inequalities; independent private OM/MO witnesses share actual M"
+    },
+    {
+      "id": "ALL_SIGNATURE_BALANCED_CYCLES",
+      "status": "PROVED_RESTRICTED_DOMAIN",
+      "depends": [
+        "HIGH_TOLL_ABSORPTION",
+        "LOW_CHI8_CONSERVATION"
+      ],
+      "evidence": "every closed mixed walk stays in one region; weight>=2N_H+P_L-D_L"
+    },
+    {
+      "id": "MULTI_GAP_HARD_DEFICIT",
+      "status": "OPEN",
+      "depends": [],
+      "evidence": "no supplied total J or direct sign theorem; witness pair blocks literal completion"
+    },
+    {
+      "id": "FULL_M3",
+      "status": "INCOMPLETE",
+      "depends": [
+        "GLOBAL_SINGLE_GAP_W",
+        "ALL_SIGNATURE_BALANCED_CYCLES",
+        "MULTI_GAP_HARD_DEFICIT"
+      ],
+      "evidence": "a complete partition still contains an OPEN branch"
+    }
+  ],
+  "withdrawn_ACL01_initial_promotion_used_as_premise": false,
+  "old_B_only_negative_cycle_used_as_original_counterexample": false,
+  "inactive_legacy_imports_distinguished_from_mathematical_premises": true,
+  "source_reduction_proofs_are_not_finite_sampling_or_machine_formalization": true
+}

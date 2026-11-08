@@ -1,0 +1,17 @@
+{"critical_groups": 378, "unknown_core_functions": 303, "all_core_types": 4862}
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_XFER19\audit_correction.py", line 161, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_XFER19\audit_correction.py", line 118, in main
+    if p[0]==int(x>r):add_clause('ZERO',None,(p,),sources[0],x,j,0,k)
+                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_XFER19\audit_correction.py", line 106, in add_clause
+    target=z3.If(lower(j,b)>=corr(j,b),lower(j,b),corr(j,b))
+                 ~~~~~^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_XFER19\audit_correction.py", line 66, in lower
+    p=get_floor(i)
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_XFER19\audit_correction.py", line 52, in get_floor
+    t=ts[i];r=t[0];a=(z3.IntVal(r),)+proto
+                     ~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate tuple (not "list") to tuple

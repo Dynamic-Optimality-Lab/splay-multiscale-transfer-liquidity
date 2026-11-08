@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "original_roots_independently_replayed": 10,
+  "genuine_destination_floors": 9,
+  "adversarial_inventory_rejections": [
+    {
+      "label": "multi_S_port_RL_to_LR",
+      "mutated": "MXLv_hs2_0_3",
+      "root": false
+    },
+    {
+      "label": "empty_port_negative_False",
+      "mutated": "MXLv_z0_2_1",
+      "root": false
+    }
+  ],
+  "high_only_alpha_control": {
+    "label": "high_to_invalid_low_alpha",
+    "original_high_root": true,
+    "potential": 0
+  },
+  "entry_files_preserved": 185,
+  "first_finite_harness_failure": "v1 attempted to normalize private anonymous-root patterns; these have no registered joint states. v2/v3 retain all ordinary state checks and explicitly exclude those private patterns.",
+  "cpu_seconds": 22.922
+}

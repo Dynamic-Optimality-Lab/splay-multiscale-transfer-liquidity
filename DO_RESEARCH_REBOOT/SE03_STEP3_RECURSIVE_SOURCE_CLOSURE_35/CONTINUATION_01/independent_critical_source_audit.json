@@ -1,0 +1,50 @@
+{
+  "status": "PASS_DISTINCT_CRITICAL_SOURCE_EXECUTIONS_AND_COUNTERCUT_ARITHMETIC",
+  "input_sha256": {
+    "new_A_primitive_rows.json": "328cdd8ff0dea23378c3a2cd4ae756630e48e9c8c1af91d31f3f57ce5c46e857",
+    "critical_B_primitive_rows.json": "d8e5b84d664993b632e1f150fd246cdf07181a9878ea2ed5767c272b076cc8ec",
+    "countercut_candidate.json": "59509f30cb37dc8611c18a26c3beb77abec78597defa1a49472f1f3db1b509ba",
+    "SYMBOLIC_B_CLOSURE.md": "1ac035c104fdd213a9dac0c87298a3b56956b95296da410419076728c2fa65cf",
+    "SOURCE_CONSTRUCTION.md": "aa78b2445a1bf9f1a9a6e5b2fb9e501497f362fb80ba969ca80091fb8fac4239",
+    "EXACT_NEGATIVE_CUT.md": "16d9b784f27dabbfaded6d3edb871dd81ea21c216162e67c9d59264883fedae7",
+    "DEPENDENCIES_AND_SCOPE.md": "94d2310ef42414e5cccfdbcb32a3b1ef01d8aa13a45a4335b07dedcd86ed7bb5"
+  },
+  "A_checks": [
+    {
+      "target": 5,
+      "A_event_cost": 1,
+      "actual_own_rotation_pivots": [
+        1,
+        3
+      ]
+    },
+    {
+      "target": 9,
+      "A_event_cost": 1,
+      "actual_own_rotation_pivots": [
+        1,
+        7
+      ]
+    },
+    {
+      "target": 13,
+      "A_event_cost": 1,
+      "actual_own_rotation_pivots": [
+        1,
+        11
+      ]
+    }
+  ],
+  "new_A_queries": 11,
+  "new_B_queries": 3,
+  "source_queries": 14,
+  "source_engine_calls": 14,
+  "first_DELETE1": "proved as original LL depth2, not freshly replayed",
+  "full_B_closure": "symbolic source induction, independent free-term audit separate",
+  "Gamma_and_erased_period": "accepted transformation theorem plus deterministic finite recurrence; NOT numerically expanded",
+  "full_new_source_replayed": false,
+  "physical_pool_union": 8,
+  "original_selected_demands": 9,
+  "old_sources_owners_unchanged": true,
+  "trust": "same-agent distinct implementation; not external peer review/formal proof assistant"
+}

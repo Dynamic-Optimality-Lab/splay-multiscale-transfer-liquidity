@@ -1,0 +1,238 @@
+{
+  "campaign": "IAGS-11G-S03-M2-DSK01",
+  "created_utc": "2026-10-28T18:38:31.219783+00:00",
+  "status": "COMPLETE",
+  "branch": "coarse-double-branch",
+  "local_head": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+  "remote_branch_ref": "refs/heads/coarse-double-branch",
+  "remote_branch_tip": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+  "tracked_tree_unchanged": true,
+  "baseline_files_preserved": 17,
+  "new_paths_confined_to_authorized_scope": true,
+  "solver_invoked": false,
+  "graph": "G_AF",
+  "bank25": 25,
+  "theorem_ledger": {
+    "dirty_source_high_weight": "PROVED—UNIVERSAL: w>=0",
+    "M2": "PROVED—UNIVERSAL",
+    "M1": "OPEN",
+    "M3": "OPEN",
+    "Step03": "OPEN",
+    "Step04": "UNAUTHORIZED",
+    "DynamicOptimality": "OPEN"
+  },
+  "potential": {
+    "ordinary_and_midpoint": "-3 * indicator(kr[8]==0 and rr[8]==19)",
+    "OM": "Phi(m)-Phi(s)<=w",
+    "MO": "Phi(t)-Phi(m)=0",
+    "scope": "high edges only"
+  },
+  "certificate": {
+    "original_DAG_cases": 6300,
+    "right_cases": 2555,
+    "left_cases": 3745,
+    "failures": 0,
+    "original_DAG_nodes": 14600,
+    "cpu_seconds": 147.578,
+    "cap_cpu_seconds": 300
+  },
+  "controls": {
+    "queries": 39,
+    "accepted": 21,
+    "rejected": 18,
+    "potential_violations": 0
+  },
+  "provenance_audit": {
+    "status": "PASS",
+    "symbolic_rows_audited": 6300,
+    "right_rows": 2555,
+    "left_rows": 3745,
+    "controls_audited": 39,
+    "python_files_parsed": 7,
+    "manifest_hashes_checked": 0,
+    "note": "Provenance audit; symbolic reductions are certified by the completed production-DAG run."
+  },
+  "files": [
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11G_FINAL_CLOSURE/STEP03_UNIVERSAL_POTENTIAL_CERTIFICATE/IAGS_WSIGN02A_ZERO_COST_IMPOSSIBILITY/IAGS_11G_S03_M2_DSK01_DIRTY_SMALLER_KEY_SIGN.md",
+      "sha256": "b3c3bd62bc96d29965776f0301c6c17fdb23e86ee19c16d97491afff9f1dec8b"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/audit_certificate.py",
+      "sha256": "524a113f422a6c94445fb26d67e46685a0083275c6fe341ee585b68d8cfe68e2"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/certify_dirty.py",
+      "sha256": "297b46ba589b950cee3e2f087037cc53cf19f9c585074195c176a387394af625"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/diagnostic.json",
+      "sha256": "d0c973a760d3147ccf291de701708ccda9f361f3fe8e82bacb2fb80ea82ff086"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/diagnostic.py",
+      "sha256": "630c4313787be7fe43ad429bedf6784c35c226e3924b8b73e12b3e2c49990163"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/full_high_controls.json",
+      "sha256": "92f551ddb2f59052359430c7935134de4203480bfbaadc9d4bffcd08bac383c9"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/left_diagnostic.json",
+      "sha256": "94d0a4a4577a5571bdfe2727bd23440c3151e7590a78d39e3fad5bb368c64fd9"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/left_diagnostic.py",
+      "sha256": "06c66c8056084690d09db0a314c3b31fdc26db1630482bc44b685d5fe62a07f3"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/left_successor_probe.json",
+      "sha256": "e0f350c5afd0d04e96199ad40a9ed49ea2e59bb410481124027e7316e8f124b1"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/probe_left_successor.py",
+      "sha256": "18f905ed0b17a1417e0be6fabd56bce88156527c34b27861d65aebaad02cdb80"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/proof_certificate.json",
+      "sha256": "a7139a6030d09cc7d71714006ef679f7ac3eaf19a31cc55282f8fbf0eef80f33"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/static_partition.json",
+      "sha256": "04bc2be0724cf7a1f4e49c279478b44d258a49e2294992a361f930bee6d6ff40"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/verify_full_high.py",
+      "sha256": "e3955529fed4504d877e257a3af28c5f189fcd04b09a775c7d3464487944208a"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_DSK01/verify_static_partition.py",
+      "sha256": "17ac65bf1a0ac2a6052996df646949aeaf7961d953088887bf69d7edf2697d9d"
+    }
+  ],
+  "frozen_dependencies": [
+    {
+      "path": "DO_RESEARCH_REBOOT/RESEARCH_RULES.md",
+      "sha256": "c6b35f746f107ad8a1c226aefdb2b43711a4982fd9717fe513d7080f25d299bc"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11G_FINAL_CLOSURE/11G_FOUR_RULE_FREEZE.md",
+      "sha256": "5a70d322041ceddcd220602b656784f2668e50f81c9fc2db235a91b167ec703a"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11G_FINAL_CLOSURE/11G_SOLVER_AND_ARCHITECTURE_FREEZE.json",
+      "sha256": "3d3bbf2d570329c792da901b7f406ac66599c32de422f75f96ed2f9dbb0661fe"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_PARAMETRIC_PORT_COMPILER/PC_TYPED_DAG.py",
+      "sha256": "ec17b28e0ba688fd8aeae08409fab7ea789bc458a00716afaf87117a4095ce6e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_PARAMETRIC_PORT_COMPILER/PC_B_CONTROLLER.py",
+      "sha256": "3137135eaa9c0c92ae3fd7d57b9f06b90d7fff8524d7063c27cb3b62082c99db"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_STRICT_CLOSURE/STRICT_B_CONTROLLER.py",
+      "sha256": "325a367b92b5d01655403588a56866ae5998390b851b4a00ca146e2f25e4dd60"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_STRICT_CLOSURE/STRICT_LOW_COMPILER.py",
+      "sha256": "d621355f3745c0e0ce182c60197fd3f3e83a126237013cc4b7ae951c4731183a"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_CLOSED_WALK_CORE_RESCUE/STRICT_HIGH_COMPILER.py",
+      "sha256": "b5136fa0efa0c3fa9bec472b19a89a58c9bb0697ecbd919c034c362e4ce91b64"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_CLOSED_WALK_CORE_RESCUE/CW_PRODUCT_COMPILER.py",
+      "sha256": "ea2ad851f0a9489088a97b66bddaec4cc6612d03f26519bfbec20630649ab086"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_FINAL_CLOSURE/STEP03_EXACT_QUANTIFIED_OPERATORS/S03_EDGE_PROJECTIONS.py",
+      "sha256": "872136f2446fa7258134a8d294c0bb6d00d102bb8f23d83c53850fad33e000e3"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_FINAL_CLOSURE/STEP01_PRODUCTION_CONSTRAINT_SOLVER/S01_BACKEND_FREEZE.json",
+      "sha256": "cc3b36a3caa1eccf9a9d467fb974331058a047a4498449fd993f4e8733971e85"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11G_FINAL_CLOSURE/STEP03_UNIVERSAL_POTENTIAL_CERTIFICATE/IAGS_WSIGN02A_ZERO_COST_IMPOSSIBILITY/IAGS_11G_S03_M2_ESD01_ORIENTED_SENTINEL_DEBT.md",
+      "sha256": "617ec07c22ec6cb01924a7a2473df27e920e83a7cbd5798fcab7577932c0b7d2"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11G_FINAL_CLOSURE/STEP03_UNIVERSAL_POTENTIAL_CERTIFICATE/IAGS_WSIGN02A_ZERO_COST_IMPOSSIBILITY/IAGS_11G_S03_M2_HIGH_ONLY_B_PROJECTION.md",
+      "sha256": "036fc6a1fb1a3586e4fd9832fbac07b5c217f87a04e4de99fc079e5d57957ae9"
+    }
+  ],
+  "baseline_preservation": [
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11G_FINAL_CLOSURE/STEP03_UNIVERSAL_POTENTIAL_CERTIFICATE/IAGS_WSIGN02A_ZERO_COST_IMPOSSIBILITY/IAGS_11G_S03_M2_R8R01_IMMEDIATE_KEY8_REPEAT.md",
+      "sha256": "b245d11f4820eaa7c6495fd3546ec717241b7f8b946aa2841c7fd589d70f9be7"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11G_FINAL_CLOSURE/STEP03_UNIVERSAL_POTENTIAL_CERTIFICATE/IAGS_WSIGN02A_ZERO_COST_IMPOSSIBILITY/IAGS_11G_S03_M2_SEP01_SEPARATED_KEY8_REPAYMENT.md",
+      "sha256": "601d3c33d24dcff2f707e4ada60a702df31f05d69d49a13d849b25999341cdad"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_COMP_MSINK_G0_POST_MSINK/DLSS_arithmetic_erratum.md",
+      "sha256": "6cfd4fe4d17648849e3c24a8a53eea1919960e96da193ee006fe7b485ccc40d6"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_COMP_MSINK_G0_R1HARD/MSINK_frozen_theorem.md",
+      "sha256": "31dc305829879f67c60b2f3b64bad09330652d66439e0bd977125dba217ebd55"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_COMP_MSINK_G0_R1HARD/MSINK_universal_payment_proof.md",
+      "sha256": "8049a0965bf840be359071f561222e736d937c1724064c1a9b901c891ce25ed7"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_COMP_MSINK_PROOF_POST_MSINK/DLSSP_cross_validation.py",
+      "sha256": "ed3eff30e33564dcdd9d524ac77f775e2d48913437f710f9d08b309e94261f42"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5_N_COMP_MSINK_G0_R1HARD/MSINK_finalization_az_report.md",
+      "sha256": "a74d389472fbae09e91e5eb91e4cf573062355e810da8288ab47484c6a756734"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5_N_COMP_MSINK_G0_R1HARD/MSINK_finalization_terminal_status.json",
+      "sha256": "4b81034fbd8f395b99de6d2e19efe8b82927a3e5791cf5a79190841cea128f39"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_SEP01/certify_patterns.py",
+      "sha256": "759567a93af0cb134a4dd02a6b3305730cf4aba0371e887606508d7623470937"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_SEP01/experiment.py",
+      "sha256": "31fcfd41b62b08e2144fbb979db6ed7e614820adb58f4ea31677be5090ac7f66"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_SEP01/full_high_controls.json",
+      "sha256": "466602a433de5bf3e6cd93b8cd1ad9236668a1f3c29af0cc1f20295a6fe4181c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_SEP01/manifest.json",
+      "sha256": "48e22b9559855ddf49d740f82f43c7ae90dc564d0d051d8302a7c6a2079a4abe"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_SEP01/orientation_controls.json",
+      "sha256": "ca4ef30bb79708add4e9d02576830c7a0298e0fa21fcd75c278aa57f7971759e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_SEP01/proof_certificate.json",
+      "sha256": "16d6cb2d0fd37961c54011fcc9058b3793ee70f6993b4b357200bc19d99a083e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_SEP01/verify_full_high.py",
+      "sha256": "dde643216e76b9f7ce75cb42d44204548b36ccfc8f5eecd1f3d865db9fead612"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M2_SEP01/verify_orientation.py",
+      "sha256": "4330f7f94baf64f567ee2ae991b231b5cba36b279c3c2be77a4be45338a48875"
+    },
+    {
+      "path": "x.json",
+      "sha256": "c7d73801f24fdcbb3a1517d8966e1d08d9306fcac9c1162a5844006a8857f2d4"
+    }
+  ],
+  "manifest_excludes_own_hash": true
+}

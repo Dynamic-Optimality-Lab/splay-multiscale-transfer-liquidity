@@ -1,0 +1,4256 @@
+{
+  "status": "PASS",
+  "checks": {
+    "new root audit passed on the exact fixed source certificate": 1,
+    "physical transition provenance unchanged": 1,
+    "exact departure epsilon from source H agrees with verified physical output": 76,
+    "every exact return increment agrees with verified original transition": 380,
+    "source +2 displacement yields nonnegative gain deficit": 380,
+    "exact source telescoping return-depth reconstruction": 76,
+    "exact parity-correct return-double loss identity": 76,
+    "exact summed source-return identity": 4,
+    "each intermediate tracked-key source occurrence counted exactly once": 4,
+    "column closure reduces deficit sum to the same exact identity": 4,
+    "exact A/B source-cost translations": 2,
+    "paired return-loss cost identities": 2,
+    "paired conservation diagnostic is exactly source signed cost": 2
+  },
+  "total_checks": 1008,
+  "source_PG_sha256": "0b32fb999760f9ed383d5d1f57bba2f0d63aa756dde9a6c1640f9c31af6040b8",
+  "root_audit_sha256": "e58943241fe633cb192114d01bcf9e33026f2a6faf8cfc972555caab203df6c7",
+  "original_transitions_already_verified_by_both_engines": true,
+  "new_source_engine_calls": 0,
+  "data": {
+    "ordinary": {
+      "A": {
+        "side": "A",
+        "rows": [
+          {
+            "block": 0,
+            "key": 7,
+            "previous_same_block": 13,
+            "L": 6,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 15,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 16,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 1,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 18,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 7,
+            "beta": 3,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 1,
+            "key": 5,
+            "previous_same_block": 10,
+            "L": 10,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 12,
+                "key": 5,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 13,
+                "key": 5,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 5,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 15,
+                "key": 5,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 16,
+                "key": 5,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 5,
+                "before_depth": 4,
+                "source_H": 2,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 18,
+                "key": 5,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 0,
+                "key": 5,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 15,
+            "beta": 7,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 2,
+            "key": 3,
+            "previous_same_block": 17,
+            "L": 4,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 0,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 1,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 3,
+            "key": 1,
+            "previous_same_block": 18,
+            "L": 4,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 1,
+                "key": 1,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 1,
+                "before_depth": 2,
+                "source_H": 1,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 5,
+            "beta": 3,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 4,
+            "key": 5,
+            "previous_same_block": 1,
+            "L": 3,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 3,
+                "key": 5,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 1,
+            "beta": 0,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 5,
+            "key": 6,
+            "previous_same_block": 12,
+            "L": 12,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 14,
+                "key": 6,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 15,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 16,
+                "key": 6,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 6,
+                "before_depth": 5,
+                "source_H": 3,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 18,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 0,
+                "key": 6,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 1,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 2,
+                "key": 6,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 3,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 4,
+                "key": 6,
+                "before_depth": 4,
+                "source_H": 2,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              }
+            ],
+            "K": 19,
+            "beta": 9,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 6,
+            "key": 4,
+            "previous_same_block": 6,
+            "L": 19,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 8,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 11,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 12,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 4,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 4,
+                "before_depth": 5,
+                "source_H": 4,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 4,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 16,
+                "key": 4,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 4,
+                "before_depth": 5,
+                "source_H": 3,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 18,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 0,
+                "key": 4,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 1,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 2,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 3,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 4,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 5,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 33,
+            "beta": 17,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 7,
+            "key": 1,
+            "previous_same_block": 3,
+            "L": 4,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 5,
+                "key": 1,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 1,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 8,
+            "key": 2,
+            "previous_same_block": 15,
+            "L": 12,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 17,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 18,
+                "key": 2,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 0,
+                "key": 2,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 1,
+                "key": 2,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 2,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 3,
+                "key": 2,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 4,
+                "key": 2,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 5,
+                "key": 2,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 2,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 7,
+                "key": 2,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 19,
+            "beta": 9,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 9,
+            "key": 1,
+            "previous_same_block": 7,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 10,
+            "key": 5,
+            "previous_same_block": 4,
+            "L": 6,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 6,
+                "key": 5,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 7,
+                "key": 5,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 5,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 5,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 5,
+            "double_count": 2,
+            "zig": 1
+          },
+          {
+            "block": 11,
+            "key": 1,
+            "previous_same_block": 9,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 12,
+            "key": 6,
+            "previous_same_block": 5,
+            "L": 7,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 7,
+                "key": 6,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 6,
+                "before_depth": 4,
+                "source_H": 1,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              },
+              {
+                "block": 11,
+                "key": 6,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 9,
+            "beta": 4,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 13,
+            "key": 7,
+            "previous_same_block": 0,
+            "L": 13,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 2,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 3,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 4,
+                "key": 7,
+                "before_depth": 3,
+                "source_H": 1,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 5,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 6,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 7,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 7,
+                "before_depth": 5,
+                "source_H": 2,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              },
+              {
+                "block": 11,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 12,
+                "key": 7,
+                "before_depth": 3,
+                "source_H": 1,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              }
+            ],
+            "K": 22,
+            "beta": 11,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 14,
+            "key": 1,
+            "previous_same_block": 11,
+            "L": 3,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 13,
+                "key": 1,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 1,
+            "beta": 1,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 15,
+            "key": 2,
+            "previous_same_block": 8,
+            "L": 7,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 10,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 11,
+                "key": 2,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 12,
+                "key": 2,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 2,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 2,
+                "before_depth": 5,
+                "source_H": 4,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 7,
+            "beta": 3,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 16,
+            "key": 1,
+            "previous_same_block": 14,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 17,
+            "key": 3,
+            "previous_same_block": 2,
+            "L": 15,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 4,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 5,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 3,
+                "before_depth": 2,
+                "source_H": 1,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 7,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 8,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 3,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 11,
+                "key": 3,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 12,
+                "key": 3,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 3,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 3,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 3,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 16,
+                "key": 3,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 24,
+            "beta": 12,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 18,
+            "key": 1,
+            "previous_same_block": 16,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          }
+        ],
+        "M": 114,
+        "double_count": 14,
+        "zigs": 11,
+        "sum_eta": 15,
+        "sum_K": 174,
+        "sum_beta": 85,
+        "return_loss": 100,
+        "StepEv_total": 25
+      },
+      "B": {
+        "side": "B",
+        "rows": [
+          {
+            "block": 0,
+            "key": 7,
+            "previous_same_block": 13,
+            "L": 6,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 15,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 16,
+                "key": 7,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 18,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 6,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 6,
+            "double_count": 3,
+            "zig": 0
+          },
+          {
+            "block": 1,
+            "key": 5,
+            "previous_same_block": 10,
+            "L": 10,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 12,
+                "key": 5,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 13,
+                "key": 5,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 5,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 5,
+                "before_depth": 2,
+                "source_H": 1,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 16,
+                "key": 5,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 5,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 18,
+                "key": 5,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 0,
+                "key": 5,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 14,
+            "beta": 7,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 2,
+            "key": 3,
+            "previous_same_block": 17,
+            "L": 4,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 0,
+                "key": 3,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 1,
+                "key": 3,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 3,
+            "beta": 2,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 3,
+            "key": 1,
+            "previous_same_block": 18,
+            "L": 4,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 1,
+                "key": 1,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 1,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 4,
+            "key": 5,
+            "previous_same_block": 1,
+            "L": 3,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 3,
+                "key": 5,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              }
+            ],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 5,
+            "key": 6,
+            "previous_same_block": 12,
+            "L": 12,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 14,
+                "key": 6,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 15,
+                "key": 6,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 16,
+                "key": 6,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 18,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 5,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 0,
+                "key": 6,
+                "before_depth": 5,
+                "source_H": 3,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 1,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 2,
+                "key": 6,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 3,
+                "key": 6,
+                "before_depth": 3,
+                "source_H": 5,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 4,
+                "key": 6,
+                "before_depth": 5,
+                "source_H": 2,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              }
+            ],
+            "K": 19,
+            "beta": 9,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 6,
+            "key": 4,
+            "previous_same_block": 6,
+            "L": 19,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 8,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 11,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 12,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 4,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 4,
+                "before_depth": 5,
+                "source_H": 4,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 4,
+                "before_depth": 4,
+                "source_H": 2,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 16,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 1,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 18,
+                "key": 4,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 0,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 1,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 3,
+                "key": 4,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 4,
+                "key": 4,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 5,
+                "key": 4,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 32,
+            "beta": 16,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 7,
+            "key": 1,
+            "previous_same_block": 3,
+            "L": 4,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 5,
+                "key": 1,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 1,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 3,
+            "beta": 1,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 8,
+            "key": 2,
+            "previous_same_block": 15,
+            "L": 12,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 17,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 18,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 0,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 1,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 3,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 4,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 5,
+                "key": 2,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 2,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 7,
+                "key": 2,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 19,
+            "beta": 9,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 9,
+            "key": 1,
+            "previous_same_block": 7,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 10,
+            "key": 5,
+            "previous_same_block": 4,
+            "L": 6,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 6,
+                "key": 5,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 7,
+                "key": 5,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 5,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 5,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 5,
+            "beta": 2,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 11,
+            "key": 1,
+            "previous_same_block": 9,
+            "L": 2,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 12,
+            "key": 6,
+            "previous_same_block": 5,
+            "L": 7,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 7,
+                "key": 6,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 6,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 6,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 6,
+                "before_depth": 5,
+                "source_H": 1,
+                "actual_shift": -4,
+                "gain_deficit": 6
+              },
+              {
+                "block": 11,
+                "key": 6,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              }
+            ],
+            "K": 9,
+            "beta": 5,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 13,
+            "key": 7,
+            "previous_same_block": 0,
+            "L": 13,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 2,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 3,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 4,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 1,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              },
+              {
+                "block": 5,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 6,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 7,
+                "key": 7,
+                "before_depth": 3,
+                "source_H": 5,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 7,
+                "before_depth": 5,
+                "source_H": 5,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 7,
+                "before_depth": 5,
+                "source_H": 6,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 7,
+                "before_depth": 6,
+                "source_H": 2,
+                "actual_shift": -4,
+                "gain_deficit": 6
+              },
+              {
+                "block": 11,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 12,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 1,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              }
+            ],
+            "K": 22,
+            "beta": 11,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 14,
+            "key": 1,
+            "previous_same_block": 11,
+            "L": 3,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 13,
+                "key": 1,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 1,
+            "beta": 0,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 15,
+            "key": 2,
+            "previous_same_block": 8,
+            "L": 7,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 10,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 11,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 12,
+                "key": 2,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 13,
+                "key": 2,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 2,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 8,
+            "beta": 4,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 16,
+            "key": 1,
+            "previous_same_block": 14,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 17,
+            "key": 3,
+            "previous_same_block": 2,
+            "L": 15,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 4,
+                "key": 3,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 5,
+                "key": 3,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 3,
+                "before_depth": 3,
+                "source_H": 1,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 7,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 8,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 3,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 3,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 11,
+                "key": 3,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 12,
+                "key": 3,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 3,
+                "before_depth": 5,
+                "source_H": 6,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 3,
+                "before_depth": 6,
+                "source_H": 5,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 3,
+                "before_depth": 5,
+                "source_H": 3,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 16,
+                "key": 3,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 24,
+            "beta": 12,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 18,
+            "key": 1,
+            "previous_same_block": 16,
+            "L": 2,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          }
+        ],
+        "M": 114,
+        "double_count": 22,
+        "zigs": 7,
+        "sum_eta": 10,
+        "sum_K": 167,
+        "sum_beta": 82,
+        "return_loss": 92,
+        "StepEv_total": 29
+      },
+      "R_A": 89,
+      "R_B": 92,
+      "Q_minus_2A": -28
+    },
+    "reflected": {
+      "A": {
+        "side": "A",
+        "rows": [
+          {
+            "block": 0,
+            "key": 7,
+            "previous_same_block": 13,
+            "L": 6,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 15,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 16,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 1,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 18,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 7,
+            "beta": 3,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 1,
+            "key": 9,
+            "previous_same_block": 10,
+            "L": 10,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 12,
+                "key": 9,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 13,
+                "key": 9,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 9,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 15,
+                "key": 9,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 16,
+                "key": 9,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 9,
+                "before_depth": 4,
+                "source_H": 2,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 18,
+                "key": 9,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 0,
+                "key": 9,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 15,
+            "beta": 7,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 2,
+            "key": 11,
+            "previous_same_block": 17,
+            "L": 4,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 0,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 1,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 3,
+            "key": 13,
+            "previous_same_block": 18,
+            "L": 4,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 1,
+                "key": 13,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 13,
+                "before_depth": 2,
+                "source_H": 1,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 5,
+            "beta": 3,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 4,
+            "key": 9,
+            "previous_same_block": 1,
+            "L": 3,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 3,
+                "key": 9,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 1,
+            "beta": 0,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 5,
+            "key": 8,
+            "previous_same_block": 12,
+            "L": 12,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 14,
+                "key": 8,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 15,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 16,
+                "key": 8,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 8,
+                "before_depth": 5,
+                "source_H": 3,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 18,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 0,
+                "key": 8,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 1,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 2,
+                "key": 8,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 3,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 4,
+                "key": 8,
+                "before_depth": 4,
+                "source_H": 2,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              }
+            ],
+            "K": 19,
+            "beta": 9,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 6,
+            "key": 10,
+            "previous_same_block": 6,
+            "L": 19,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 8,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 11,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 12,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 10,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 10,
+                "before_depth": 5,
+                "source_H": 4,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 10,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 16,
+                "key": 10,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 10,
+                "before_depth": 5,
+                "source_H": 3,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 18,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 0,
+                "key": 10,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 1,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 2,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 3,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 4,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 5,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 33,
+            "beta": 17,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 7,
+            "key": 13,
+            "previous_same_block": 3,
+            "L": 4,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 5,
+                "key": 13,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 13,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 8,
+            "key": 12,
+            "previous_same_block": 15,
+            "L": 12,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 17,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 18,
+                "key": 12,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 0,
+                "key": 12,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 1,
+                "key": 12,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 12,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 3,
+                "key": 12,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 4,
+                "key": 12,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 5,
+                "key": 12,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 12,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 7,
+                "key": 12,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 19,
+            "beta": 9,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 9,
+            "key": 13,
+            "previous_same_block": 7,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 10,
+            "key": 9,
+            "previous_same_block": 4,
+            "L": 6,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 6,
+                "key": 9,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 7,
+                "key": 9,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 9,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 9,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 5,
+            "double_count": 2,
+            "zig": 1
+          },
+          {
+            "block": 11,
+            "key": 13,
+            "previous_same_block": 9,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 12,
+            "key": 8,
+            "previous_same_block": 5,
+            "L": 7,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 7,
+                "key": 8,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 8,
+                "before_depth": 4,
+                "source_H": 1,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              },
+              {
+                "block": 11,
+                "key": 8,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 9,
+            "beta": 4,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 13,
+            "key": 7,
+            "previous_same_block": 0,
+            "L": 13,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 2,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 3,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 4,
+                "key": 7,
+                "before_depth": 3,
+                "source_H": 1,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 5,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 6,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 7,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 7,
+                "before_depth": 5,
+                "source_H": 2,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              },
+              {
+                "block": 11,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 12,
+                "key": 7,
+                "before_depth": 3,
+                "source_H": 1,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              }
+            ],
+            "K": 22,
+            "beta": 11,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 14,
+            "key": 13,
+            "previous_same_block": 11,
+            "L": 3,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 13,
+                "key": 13,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 1,
+            "beta": 1,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 15,
+            "key": 12,
+            "previous_same_block": 8,
+            "L": 7,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 10,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 11,
+                "key": 12,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 12,
+                "key": 12,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 12,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 12,
+                "before_depth": 5,
+                "source_H": 4,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 7,
+            "beta": 3,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 16,
+            "key": 13,
+            "previous_same_block": 14,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 17,
+            "key": 11,
+            "previous_same_block": 2,
+            "L": 15,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 4,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 5,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 11,
+                "before_depth": 2,
+                "source_H": 1,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 7,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 8,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 11,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 11,
+                "key": 11,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 12,
+                "key": 11,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 11,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 11,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 11,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 16,
+                "key": 11,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 24,
+            "beta": 12,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 18,
+            "key": 13,
+            "previous_same_block": 16,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          }
+        ],
+        "M": 114,
+        "double_count": 14,
+        "zigs": 11,
+        "sum_eta": 15,
+        "sum_K": 174,
+        "sum_beta": 85,
+        "return_loss": 100,
+        "StepEv_total": 25
+      },
+      "B": {
+        "side": "B",
+        "rows": [
+          {
+            "block": 0,
+            "key": 7,
+            "previous_same_block": 13,
+            "L": 6,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 15,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 16,
+                "key": 7,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 18,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 6,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 6,
+            "double_count": 3,
+            "zig": 0
+          },
+          {
+            "block": 1,
+            "key": 9,
+            "previous_same_block": 10,
+            "L": 10,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 12,
+                "key": 9,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 13,
+                "key": 9,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 9,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 9,
+                "before_depth": 2,
+                "source_H": 1,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 16,
+                "key": 9,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 9,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 18,
+                "key": 9,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 0,
+                "key": 9,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 14,
+            "beta": 7,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 2,
+            "key": 11,
+            "previous_same_block": 17,
+            "L": 4,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 0,
+                "key": 11,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 1,
+                "key": 11,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 3,
+            "beta": 2,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 3,
+            "key": 13,
+            "previous_same_block": 18,
+            "L": 4,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 1,
+                "key": 13,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 13,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 4,
+            "beta": 2,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 4,
+            "key": 9,
+            "previous_same_block": 1,
+            "L": 3,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 3,
+                "key": 9,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              }
+            ],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 5,
+            "key": 8,
+            "previous_same_block": 12,
+            "L": 12,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 14,
+                "key": 8,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 15,
+                "key": 8,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 16,
+                "key": 8,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 18,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 5,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 0,
+                "key": 8,
+                "before_depth": 5,
+                "source_H": 3,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 1,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 2,
+                "key": 8,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 3,
+                "key": 8,
+                "before_depth": 3,
+                "source_H": 5,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 4,
+                "key": 8,
+                "before_depth": 5,
+                "source_H": 2,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              }
+            ],
+            "K": 19,
+            "beta": 9,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 6,
+            "key": 10,
+            "previous_same_block": 6,
+            "L": 19,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 8,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 11,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 12,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 10,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 10,
+                "before_depth": 5,
+                "source_H": 4,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 10,
+                "before_depth": 4,
+                "source_H": 2,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 16,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 17,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 1,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 18,
+                "key": 10,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 0,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 1,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 3,
+                "key": 10,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 4,
+                "key": 10,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 5,
+                "key": 10,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 32,
+            "beta": 16,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 7,
+            "key": 13,
+            "previous_same_block": 3,
+            "L": 4,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 5,
+                "key": 13,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 13,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              }
+            ],
+            "K": 3,
+            "beta": 1,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 8,
+            "key": 12,
+            "previous_same_block": 15,
+            "L": 12,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 17,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 18,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 0,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 1,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 2,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 3,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 4,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 5,
+                "key": 12,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 12,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 7,
+                "key": 12,
+                "before_depth": 3,
+                "source_H": 2,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 19,
+            "beta": 9,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 9,
+            "key": 13,
+            "previous_same_block": 7,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 10,
+            "key": 9,
+            "previous_same_block": 4,
+            "L": 6,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 6,
+                "key": 9,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 7,
+                "key": 9,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 9,
+                "before_depth": 3,
+                "source_H": 3,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 9,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 5,
+            "beta": 2,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 11,
+            "key": 13,
+            "previous_same_block": 9,
+            "L": 2,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 12,
+            "key": 8,
+            "previous_same_block": 5,
+            "L": 7,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 7,
+                "key": 8,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 8,
+                "before_depth": 4,
+                "source_H": 4,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 8,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 8,
+                "before_depth": 5,
+                "source_H": 1,
+                "actual_shift": -4,
+                "gain_deficit": 6
+              },
+              {
+                "block": 11,
+                "key": 8,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              }
+            ],
+            "K": 9,
+            "beta": 5,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 13,
+            "key": 7,
+            "previous_same_block": 0,
+            "L": 13,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 2,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 3,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 4,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 1,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              },
+              {
+                "block": 5,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 6,
+                "key": 7,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 7,
+                "key": 7,
+                "before_depth": 3,
+                "source_H": 5,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 8,
+                "key": 7,
+                "before_depth": 5,
+                "source_H": 5,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 7,
+                "before_depth": 5,
+                "source_H": 6,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 7,
+                "before_depth": 6,
+                "source_H": 2,
+                "actual_shift": -4,
+                "gain_deficit": 6
+              },
+              {
+                "block": 11,
+                "key": 7,
+                "before_depth": 2,
+                "source_H": 4,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 12,
+                "key": 7,
+                "before_depth": 4,
+                "source_H": 1,
+                "actual_shift": -3,
+                "gain_deficit": 5
+              }
+            ],
+            "K": 22,
+            "beta": 11,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 14,
+            "key": 13,
+            "previous_same_block": 11,
+            "L": 3,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 13,
+                "key": 13,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 1,
+            "beta": 0,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          },
+          {
+            "block": 15,
+            "key": 12,
+            "previous_same_block": 8,
+            "L": 7,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [
+              {
+                "block": 10,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 11,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 12,
+                "key": 12,
+                "before_depth": 1,
+                "source_H": 3,
+                "actual_shift": 2,
+                "gain_deficit": 0
+              },
+              {
+                "block": 13,
+                "key": 12,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 12,
+                "before_depth": 4,
+                "source_H": 3,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              }
+            ],
+            "K": 8,
+            "beta": 4,
+            "pre_access_depth": 3,
+            "double_count": 1,
+            "zig": 1
+          },
+          {
+            "block": 16,
+            "key": 13,
+            "previous_same_block": 14,
+            "L": 2,
+            "epsilon": 1,
+            "eta": 1,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 1,
+            "double_count": 0,
+            "zig": 1
+          },
+          {
+            "block": 17,
+            "key": 11,
+            "previous_same_block": 2,
+            "L": 15,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [
+              {
+                "block": 4,
+                "key": 11,
+                "before_depth": 2,
+                "source_H": 2,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 5,
+                "key": 11,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 6,
+                "key": 11,
+                "before_depth": 3,
+                "source_H": 1,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 7,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 8,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 1,
+                "actual_shift": 0,
+                "gain_deficit": 2
+              },
+              {
+                "block": 9,
+                "key": 11,
+                "before_depth": 1,
+                "source_H": 2,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 10,
+                "key": 11,
+                "before_depth": 2,
+                "source_H": 3,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 11,
+                "key": 11,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 12,
+                "key": 11,
+                "before_depth": 4,
+                "source_H": 5,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 13,
+                "key": 11,
+                "before_depth": 5,
+                "source_H": 6,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              },
+              {
+                "block": 14,
+                "key": 11,
+                "before_depth": 6,
+                "source_H": 5,
+                "actual_shift": -1,
+                "gain_deficit": 3
+              },
+              {
+                "block": 15,
+                "key": 11,
+                "before_depth": 5,
+                "source_H": 3,
+                "actual_shift": -2,
+                "gain_deficit": 4
+              },
+              {
+                "block": 16,
+                "key": 11,
+                "before_depth": 3,
+                "source_H": 4,
+                "actual_shift": 1,
+                "gain_deficit": 1
+              }
+            ],
+            "K": 24,
+            "beta": 12,
+            "pre_access_depth": 4,
+            "double_count": 2,
+            "zig": 0
+          },
+          {
+            "block": 18,
+            "key": 13,
+            "previous_same_block": 16,
+            "L": 2,
+            "epsilon": 2,
+            "eta": 0,
+            "intermediate_terms": [],
+            "K": 0,
+            "beta": 0,
+            "pre_access_depth": 2,
+            "double_count": 1,
+            "zig": 0
+          }
+        ],
+        "M": 114,
+        "double_count": 22,
+        "zigs": 7,
+        "sum_eta": 10,
+        "sum_K": 167,
+        "sum_beta": 82,
+        "return_loss": 92,
+        "StepEv_total": 29
+      },
+      "R_A": 89,
+      "R_B": 92,
+      "Q_minus_2A": -28
+    }
+  },
+  "scope": "exact source accounting diagnostic; no joint A/B inequality proved",
+  "identity_not_counted_as_rigidity_advancement": true,
+  "FE02_rigidity": "OPEN",
+  "FE02_CD": "OPEN",
+  "no_new_witnesses_sizes_or_repetitions": true
+}

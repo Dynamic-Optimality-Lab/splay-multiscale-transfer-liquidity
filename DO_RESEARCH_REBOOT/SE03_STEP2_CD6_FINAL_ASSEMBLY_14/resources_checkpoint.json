@@ -1,0 +1,93 @@
+{
+  "status": "ALL_CURRENT_CAPS_PRESERVED_NO_RESET",
+  "prior_cumulative_CPU": 3590.875,
+  "campaign_CPU": 9.0625,
+  "cumulative_CPU": 3599.9375,
+  "remaining_CPU": 3600.0625,
+  "reserve": 5,
+  "cumulative_group_CPU": {
+    "symbolic": 103.625,
+    "independent": 294.9375
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "group_remaining": {
+    "symbolic": 16.375,
+    "independent": 5.0625
+  },
+  "source_engine_calls": 4850,
+  "original_source_rows_replayed_once": 3328,
+  "resumed_semantic_replays": 0,
+  "query_cap": 2000000,
+  "live_record_cap": 2000000,
+  "DAG_cap": 4000000,
+  "stored_edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "max_observed_memory": 468066304,
+  "wall_cap_hours": 12,
+  "no_new_exhaustive_graph_or_table_run": true,
+  "Bank25": 25,
+  "full_witness_working_bound": 11,
+  "all_failed_runs_and_controllers_charged": true,
+  "runs": [
+    {
+      "phase": "assembly",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.421875,
+      "controller_CPU": 0.21875,
+      "charge": 0.640625,
+      "source_engine_calls": 0,
+      "old_semantic_rows_replayed": 0,
+      "peak_working_set_bytes": 79155200
+    },
+    {
+      "phase": "final",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 4.34375,
+      "controller_CPU": 0.15625,
+      "charge": 4.5,
+      "source_engine_calls": 4850,
+      "old_semantic_rows_replayed": 3328,
+      "peak_working_set_bytes": 468066304
+    },
+    {
+      "phase": "resume2",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.296875,
+      "controller_CPU": 0.296875,
+      "charge": 0.59375,
+      "source_engine_calls": 0,
+      "old_semantic_rows_replayed": 0,
+      "peak_working_set_bytes": 24227840
+    },
+    {
+      "phase": "resume3",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 2.453125,
+      "controller_CPU": 0.40625,
+      "charge": 2.859375,
+      "source_engine_calls": 0,
+      "old_semantic_rows_replayed": 0,
+      "peak_working_set_bytes": 177209344
+    },
+    {
+      "phase": "resume",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.296875,
+      "controller_CPU": 0.171875,
+      "charge": 0.46875,
+      "source_engine_calls": 0,
+      "old_semantic_rows_replayed": 0,
+      "peak_working_set_bytes": 25104384
+    }
+  ],
+  "metadata_CPU_convention": "inherited entry/publication-only exclusion; every proof/construction/replay/audit/seal and controller charged",
+  "publication_metadata_CPU_excluded": 0.28125
+}

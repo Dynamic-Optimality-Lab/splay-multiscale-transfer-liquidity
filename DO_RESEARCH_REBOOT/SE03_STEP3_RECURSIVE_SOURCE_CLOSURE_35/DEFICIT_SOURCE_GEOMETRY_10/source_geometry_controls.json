@@ -1,0 +1,3037 @@
+{
+  "status": "PASS_STEP2_LITERAL_IDENTITIES_AND_CACHED_GEOMETRY",
+  "free_term_proofs": {
+    "four_frames": [
+      {
+        "pattern": "LL",
+        "before": [
+          "g",
+          [
+            "p",
+            [
+              "x",
+              "T0",
+              "T1"
+            ],
+            "T2"
+          ],
+          "T3"
+        ],
+        "intermediate": [
+          "p",
+          [
+            "x",
+            "T0",
+            "T1"
+          ],
+          [
+            "g",
+            "T2",
+            "T3"
+          ]
+        ],
+        "after": [
+          "x",
+          "T0",
+          [
+            "p",
+            "T1",
+            [
+              "g",
+              "T2",
+              "T3"
+            ]
+          ]
+        ],
+        "ports": [
+          {
+            "removed": [
+              "U0",
+              "U1",
+              "U2",
+              "p",
+              "x"
+            ],
+            "created": [
+              "U2",
+              "U3",
+              "g"
+            ]
+          },
+          {
+            "removed": [
+              "U0",
+              "U1",
+              "x"
+            ],
+            "created": [
+              "U1",
+              "U2",
+              "U3",
+              "g",
+              "p"
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "RR",
+        "before": [
+          "g",
+          "T0",
+          [
+            "p",
+            "T1",
+            [
+              "x",
+              "T2",
+              "T3"
+            ]
+          ]
+        ],
+        "intermediate": [
+          "p",
+          [
+            "g",
+            "T0",
+            "T1"
+          ],
+          [
+            "x",
+            "T2",
+            "T3"
+          ]
+        ],
+        "after": [
+          "x",
+          [
+            "p",
+            [
+              "g",
+              "T0",
+              "T1"
+            ],
+            "T2"
+          ],
+          "T3"
+        ],
+        "ports": [
+          {
+            "removed": [
+              "U1",
+              "U2",
+              "U3",
+              "p",
+              "x"
+            ],
+            "created": [
+              "U0",
+              "U1",
+              "g"
+            ]
+          },
+          {
+            "removed": [
+              "U2",
+              "U3",
+              "x"
+            ],
+            "created": [
+              "U0",
+              "U1",
+              "U2",
+              "g",
+              "p"
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "LR",
+        "before": [
+          "g",
+          [
+            "p",
+            "T0",
+            [
+              "x",
+              "T1",
+              "T2"
+            ]
+          ],
+          "T3"
+        ],
+        "intermediate": [
+          "g",
+          [
+            "x",
+            [
+              "p",
+              "T0",
+              "T1"
+            ],
+            "T2"
+          ],
+          "T3"
+        ],
+        "after": [
+          "x",
+          [
+            "p",
+            "T0",
+            "T1"
+          ],
+          [
+            "g",
+            "T2",
+            "T3"
+          ]
+        ],
+        "ports": [
+          {
+            "removed": [
+              "U1",
+              "U2",
+              "x"
+            ],
+            "created": [
+              "U0",
+              "U1",
+              "p"
+            ]
+          },
+          {
+            "removed": [
+              "U0",
+              "U1",
+              "U2",
+              "p",
+              "x"
+            ],
+            "created": [
+              "U2",
+              "U3",
+              "g"
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "RL",
+        "before": [
+          "g",
+          "T0",
+          [
+            "p",
+            [
+              "x",
+              "T1",
+              "T2"
+            ],
+            "T3"
+          ]
+        ],
+        "intermediate": [
+          "g",
+          "T0",
+          [
+            "x",
+            "T1",
+            [
+              "p",
+              "T2",
+              "T3"
+            ]
+          ]
+        ],
+        "after": [
+          "x",
+          [
+            "g",
+            "T0",
+            "T1"
+          ],
+          [
+            "p",
+            "T2",
+            "T3"
+          ]
+        ],
+        "ports": [
+          {
+            "removed": [
+              "U1",
+              "U2",
+              "x"
+            ],
+            "created": [
+              "U2",
+              "U3",
+              "p"
+            ]
+          },
+          {
+            "removed": [
+              "U1",
+              "U2",
+              "U3",
+              "p",
+              "x"
+            ],
+            "created": [
+              "U0",
+              "U1",
+              "g"
+            ]
+          }
+        ]
+      }
+    ],
+    "exact_return": {
+      "before": [
+        "G",
+        "A",
+        [
+          "C",
+          [
+            "x",
+            "B0",
+            "B1"
+          ],
+          [
+            "R",
+            "D",
+            "E"
+          ]
+        ]
+      ],
+      "after_R": [
+        "R",
+        [
+          "C",
+          [
+            "G",
+            "A",
+            [
+              "x",
+              "B0",
+              "B1"
+            ]
+          ],
+          "D"
+        ],
+        "E"
+      ],
+      "after_RG": [
+        "G",
+        "A",
+        [
+          "C",
+          [
+            "x",
+            "B0",
+            "B1"
+          ],
+          [
+            "R",
+            "D",
+            "E"
+          ]
+        ]
+      ],
+      "future_x": [
+        "x",
+        [
+          "G",
+          "A",
+          "B0"
+        ],
+        [
+          "C",
+          "B1",
+          [
+            "R",
+            "D",
+            "E"
+          ]
+        ]
+      ]
+    },
+    "interpretation": "free-term rotation identities, no original-source engine calls"
+  },
+  "controls": [
+    {
+      "source": "AF",
+      "residual": 4,
+      "ports": [
+        {
+          "demand": [
+            86,
+            2
+          ],
+          "B_rotation": 96,
+          "label": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "addition_fine_index": 48,
+          "witness_fine_index": 48,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            74,
+            1,
+            0
+          ],
+          "root_before": 5,
+          "root_after": 2,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            86,
+            2
+          ],
+          "B_rotation": 97,
+          "label": [
+            1,
+            2,
+            3
+          ],
+          "addition_fine_index": 46,
+          "witness_fine_index": 48,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            74,
+            1,
+            0
+          ],
+          "root_before": 5,
+          "root_after": 2,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            86,
+            3
+          ],
+          "B_rotation": 98,
+          "label": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "addition_fine_index": 60,
+          "witness_fine_index": 60,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            77,
+            1,
+            0
+          ],
+          "root_before": 7,
+          "root_after": 2,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            86,
+            3
+          ],
+          "B_rotation": 99,
+          "label": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "addition_fine_index": 58,
+          "witness_fine_index": 60,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            77,
+            1,
+            0
+          ],
+          "root_before": 7,
+          "root_after": 2,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            86,
+            4
+          ],
+          "B_rotation": 100,
+          "label": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "addition_fine_index": 72,
+          "witness_fine_index": 72,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            80,
+            1,
+            0
+          ],
+          "root_before": 9,
+          "root_after": 2,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            86,
+            4
+          ],
+          "B_rotation": 101,
+          "label": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "addition_fine_index": 70,
+          "witness_fine_index": 72,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            80,
+            1,
+            0
+          ],
+          "root_before": 9,
+          "root_after": 2,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            86,
+            5
+          ],
+          "B_rotation": 102,
+          "label": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "addition_fine_index": 84,
+          "witness_fine_index": 84,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            83,
+            1,
+            0
+          ],
+          "root_before": 11,
+          "root_after": 2,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            86,
+            5
+          ],
+          "B_rotation": 103,
+          "label": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "addition_fine_index": 82,
+          "witness_fine_index": 84,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            83,
+            1,
+            0
+          ],
+          "root_before": 11,
+          "root_after": 2,
+          "wrapped_label_run": false
+        }
+      ],
+      "double_geometry": [
+        {
+          "demand": [
+            86,
+            2
+          ],
+          "pattern": "LL",
+          "W": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "removed": [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                5
+              ],
+              "A_LCA": 5,
+              "blockers": [
+                3,
+                4
+              ]
+            },
+            {
+              "created": [
+                2,
+                3,
+                4,
+                5
+              ],
+              "A_LCA": 2,
+              "blockers": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            86,
+            3
+          ],
+          "pattern": "LL",
+          "W": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "removed": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                7
+              ],
+              "A_LCA": 7,
+              "blockers": [
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "created": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "A_LCA": 2,
+              "blockers": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            86,
+            4
+          ],
+          "pattern": "LL",
+          "W": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "removed": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                9
+              ],
+              "A_LCA": 9,
+              "blockers": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            },
+            {
+              "created": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "A_LCA": 2,
+              "blockers": [
+                10,
+                11,
+                12,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            86,
+            5
+          ],
+          "pattern": "LL",
+          "W": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "removed": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                11
+              ],
+              "A_LCA": 11,
+              "blockers": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ]
+            },
+            {
+              "created": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "A_LCA": 2,
+              "blockers": [
+                12,
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "rotation_groups": [
+        {
+          "beta": [
+            74,
+            1,
+            0
+          ],
+          "source_root_change": [
+            5,
+            2
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 3,
+          "labels": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            77,
+            1,
+            0
+          ],
+          "source_root_change": [
+            7,
+            2
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 5,
+          "labels": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            80,
+            1,
+            0
+          ],
+          "source_root_change": [
+            9,
+            2
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 7,
+          "labels": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            83,
+            1,
+            0
+          ],
+          "source_root_change": [
+            11,
+            2
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 9,
+          "labels": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": [
+            93,
+            2
+          ],
+          "raw_free": false
+        }
+      ],
+      "event_groups": [
+        {
+          "event": [
+            74,
+            1
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                74,
+                1,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                74,
+                1,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            77,
+            1
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                77,
+                1,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                77,
+                1,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            80,
+            1
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                80,
+                1,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                80,
+                1,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            83,
+            1
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                83,
+                1,
+                0
+              ],
+              "frozen_g1_owner": [
+                93,
+                2
+              ]
+            },
+            {
+              "bit": [
+                83,
+                1,
+                1
+              ],
+              "frozen_g1_owner": [
+                90,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "max_rotation_load": 2,
+      "max_event_load": 2,
+      "old_assignments_modified": false
+    },
+    {
+      "source": "CCR",
+      "residual": 9,
+      "ports": [
+        {
+          "demand": [
+            56,
+            1
+          ],
+          "B_rotation": 13,
+          "label": [
+            12,
+            13
+          ],
+          "addition_fine_index": 6,
+          "witness_fine_index": 6,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            53,
+            1,
+            1
+          ],
+          "root_before": 11,
+          "root_after": 13,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            56,
+            1
+          ],
+          "B_rotation": 14,
+          "label": [
+            13
+          ],
+          "addition_fine_index": 72,
+          "witness_fine_index": 6,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            53,
+            1,
+            1
+          ],
+          "root_before": 11,
+          "root_after": 13,
+          "wrapped_label_run": true
+        },
+        {
+          "demand": [
+            57,
+            1
+          ],
+          "B_rotation": 18,
+          "label": [
+            5,
+            6
+          ],
+          "addition_fine_index": 63,
+          "witness_fine_index": 11,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            54,
+            3,
+            0
+          ],
+          "root_before": 13,
+          "root_after": 5,
+          "wrapped_label_run": true
+        },
+        {
+          "demand": [
+            57,
+            1
+          ],
+          "B_rotation": 19,
+          "label": [
+            5
+          ],
+          "addition_fine_index": 62,
+          "witness_fine_index": 11,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            54,
+            3,
+            0
+          ],
+          "root_before": 13,
+          "root_after": 5,
+          "wrapped_label_run": true
+        },
+        {
+          "demand": [
+            58,
+            1
+          ],
+          "B_rotation": 26,
+          "label": [
+            9,
+            10
+          ],
+          "addition_fine_index": 71,
+          "witness_fine_index": 4,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            52,
+            2,
+            0
+          ],
+          "root_before": 3,
+          "root_after": 9,
+          "wrapped_label_run": true
+        },
+        {
+          "demand": [
+            58,
+            1
+          ],
+          "B_rotation": 27,
+          "label": [
+            9
+          ],
+          "addition_fine_index": 70,
+          "witness_fine_index": 4,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            52,
+            2,
+            0
+          ],
+          "root_before": 3,
+          "root_after": 9,
+          "wrapped_label_run": true
+        },
+        {
+          "demand": [
+            59,
+            2
+          ],
+          "B_rotation": 36,
+          "label": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "addition_fine_index": 33,
+          "witness_fine_index": 33,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            59,
+            1,
+            1
+          ],
+          "root_before": 5,
+          "root_after": 3,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            59,
+            2
+          ],
+          "B_rotation": 37,
+          "label": [
+            1,
+            2,
+            3
+          ],
+          "addition_fine_index": 20,
+          "witness_fine_index": 33,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            59,
+            1,
+            1
+          ],
+          "root_before": 5,
+          "root_after": 3,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            65,
+            1
+          ],
+          "B_rotation": 57,
+          "label": [
+            10,
+            11,
+            12,
+            13
+          ],
+          "addition_fine_index": 53,
+          "witness_fine_index": 53,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            64,
+            1,
+            0
+          ],
+          "root_before": 1,
+          "root_after": 1,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            65,
+            1
+          ],
+          "B_rotation": 58,
+          "label": [
+            13
+          ],
+          "addition_fine_index": 28,
+          "witness_fine_index": 56,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            64,
+            2,
+            1
+          ],
+          "root_before": 7,
+          "root_after": 13,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            66,
+            1
+          ],
+          "B_rotation": 62,
+          "label": [
+            6,
+            7
+          ],
+          "addition_fine_index": 19,
+          "witness_fine_index": 49,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            62,
+            2,
+            1
+          ],
+          "root_before": 5,
+          "root_after": 7,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            66,
+            1
+          ],
+          "B_rotation": 63,
+          "label": [
+            7
+          ],
+          "addition_fine_index": 18,
+          "witness_fine_index": 49,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            62,
+            2,
+            1
+          ],
+          "root_before": 5,
+          "root_after": 7,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            67,
+            1
+          ],
+          "B_rotation": 70,
+          "label": [
+            10,
+            11
+          ],
+          "addition_fine_index": 27,
+          "witness_fine_index": 43,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            60,
+            2,
+            1
+          ],
+          "root_before": 5,
+          "root_after": 11,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            67,
+            1
+          ],
+          "B_rotation": 71,
+          "label": [
+            11
+          ],
+          "addition_fine_index": 26,
+          "witness_fine_index": 43,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            60,
+            2,
+            1
+          ],
+          "root_before": 5,
+          "root_after": 11,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            68,
+            1
+          ],
+          "B_rotation": 78,
+          "label": [
+            1,
+            2
+          ],
+          "addition_fine_index": 51,
+          "witness_fine_index": 51,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            63,
+            1,
+            1
+          ],
+          "root_before": 7,
+          "root_after": 7,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            68,
+            1
+          ],
+          "B_rotation": 79,
+          "label": [
+            1
+          ],
+          "addition_fine_index": 34,
+          "witness_fine_index": 52,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            63,
+            2,
+            0
+          ],
+          "root_before": 7,
+          "root_after": 1,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            68,
+            2
+          ],
+          "B_rotation": 80,
+          "label": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "addition_fine_index": 77,
+          "witness_fine_index": 77,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            68,
+            1,
+            1
+          ],
+          "root_before": 7,
+          "root_after": 1,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            68,
+            2
+          ],
+          "B_rotation": 81,
+          "label": [
+            1,
+            2,
+            3
+          ],
+          "addition_fine_index": 64,
+          "witness_fine_index": 77,
+          "witness_type": "ROOT_ENTRY",
+          "beta": [
+            68,
+            1,
+            1
+          ],
+          "root_before": 7,
+          "root_after": 1,
+          "wrapped_label_run": false
+        }
+      ],
+      "double_geometry": [
+        {
+          "demand": [
+            56,
+            1
+          ],
+          "pattern": "RR",
+          "W": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "removed": [
+            [
+              12,
+              13
+            ],
+            [
+              13
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                9,
+                10,
+                11
+              ],
+              "A_LCA": 9,
+              "blockers": [
+                6,
+                7,
+                8,
+                12
+              ]
+            },
+            {
+              "created": [
+                9,
+                10,
+                11,
+                12
+              ],
+              "A_LCA": 9,
+              "blockers": [
+                6,
+                7,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            57,
+            1
+          ],
+          "pattern": "LL",
+          "W": [
+            5,
+            6,
+            7
+          ],
+          "removed": [
+            [
+              5,
+              6
+            ],
+            [
+              5
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                7
+              ],
+              "A_LCA": 7,
+              "blockers": [
+                6,
+                8
+              ]
+            },
+            {
+              "created": [
+                6,
+                7
+              ],
+              "A_LCA": 7,
+              "blockers": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            58,
+            1
+          ],
+          "pattern": "LL",
+          "W": [
+            9,
+            10,
+            11
+          ],
+          "removed": [
+            [
+              9,
+              10
+            ],
+            [
+              9
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                11
+              ],
+              "A_LCA": 11,
+              "blockers": [
+                10,
+                12
+              ]
+            },
+            {
+              "created": [
+                10,
+                11
+              ],
+              "A_LCA": 11,
+              "blockers": [
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            59,
+            2
+          ],
+          "pattern": "LL",
+          "W": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "removed": [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                5,
+                6,
+                7
+              ],
+              "A_LCA": 5,
+              "blockers": [
+                4,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            {
+              "created": [
+                4,
+                5,
+                6,
+                7
+              ],
+              "A_LCA": 5,
+              "blockers": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            65,
+            1
+          ],
+          "pattern": "RR",
+          "W": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "removed": [
+            [
+              10,
+              11,
+              12,
+              13
+            ],
+            [
+              13
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                9,
+                10,
+                11
+              ],
+              "A_LCA": 11,
+              "blockers": [
+                8,
+                12
+              ]
+            },
+            {
+              "created": [
+                9,
+                10,
+                11,
+                12
+              ],
+              "A_LCA": 11,
+              "blockers": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            66,
+            1
+          ],
+          "pattern": "RR",
+          "W": [
+            5,
+            6,
+            7
+          ],
+          "removed": [
+            [
+              6,
+              7
+            ],
+            [
+              7
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                5
+              ],
+              "A_LCA": 5,
+              "blockers": [
+                4,
+                6
+              ]
+            },
+            {
+              "created": [
+                5,
+                6
+              ],
+              "A_LCA": 5,
+              "blockers": [
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            67,
+            1
+          ],
+          "pattern": "RR",
+          "W": [
+            9,
+            10,
+            11
+          ],
+          "removed": [
+            [
+              10,
+              11
+            ],
+            [
+              11
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                9
+              ],
+              "A_LCA": 9,
+              "blockers": [
+                8,
+                10
+              ]
+            },
+            {
+              "created": [
+                9,
+                10
+              ],
+              "A_LCA": 9,
+              "blockers": [
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            68,
+            1
+          ],
+          "pattern": "LL",
+          "W": [
+            1,
+            2,
+            3
+          ],
+          "removed": [
+            [
+              1,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                3
+              ],
+              "A_LCA": 3,
+              "blockers": [
+                2,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "created": [
+                2,
+                3
+              ],
+              "A_LCA": 3,
+              "blockers": [
+                4,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            68,
+            2
+          ],
+          "pattern": "LL",
+          "W": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "removed": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                5,
+                6,
+                7
+              ],
+              "A_LCA": 7,
+              "blockers": [
+                2,
+                3,
+                4,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            {
+              "created": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "A_LCA": 7,
+              "blockers": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "rotation_groups": [
+        {
+          "beta": [
+            52,
+            2,
+            0
+          ],
+          "source_root_change": [
+            3,
+            9
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 3,
+          "labels": [
+            [
+              9
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "Psi_change": 0,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            53,
+            1,
+            1
+          ],
+          "source_root_change": [
+            11,
+            13
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 2,
+          "labels": [
+            [
+              13
+            ],
+            [
+              12,
+              13
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": [
+            56,
+            2
+          ],
+          "raw_free": false
+        },
+        {
+          "beta": [
+            54,
+            3,
+            0
+          ],
+          "source_root_change": [
+            13,
+            5
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 4,
+          "labels": [
+            [
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "Psi_change": 0,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            59,
+            1,
+            1
+          ],
+          "source_root_change": [
+            5,
+            3
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 4,
+          "labels": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": [
+            59,
+            1
+          ],
+          "raw_free": false
+        },
+        {
+          "beta": [
+            60,
+            2,
+            1
+          ],
+          "source_root_change": [
+            5,
+            11
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 4,
+          "labels": [
+            [
+              11
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "Psi_change": 0,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            62,
+            2,
+            1
+          ],
+          "source_root_change": [
+            5,
+            7
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 2,
+          "labels": [
+            [
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "Psi_change": 0,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            63,
+            1,
+            1
+          ],
+          "source_root_change": [
+            7,
+            7
+          ],
+          "mode": "SINGLETON",
+          "tag_count": 1,
+          "bound": 1,
+          "labels": [
+            [
+              1,
+              2
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": [
+            66,
+            3
+          ],
+          "raw_free": false
+        },
+        {
+          "beta": [
+            63,
+            2,
+            0
+          ],
+          "source_root_change": [
+            7,
+            1
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 1,
+          "bound": 2,
+          "labels": [
+            [
+              1
+            ]
+          ],
+          "Psi_change": 0,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            64,
+            1,
+            0
+          ],
+          "source_root_change": [
+            1,
+            1
+          ],
+          "mode": "SINGLETON",
+          "tag_count": 1,
+          "bound": 1,
+          "labels": [
+            [
+              10,
+              11,
+              12,
+              13
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": [
+            65,
+            2
+          ],
+          "raw_free": false
+        },
+        {
+          "beta": [
+            64,
+            2,
+            1
+          ],
+          "source_root_change": [
+            7,
+            13
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 1,
+          "bound": 3,
+          "labels": [
+            [
+              13
+            ]
+          ],
+          "Psi_change": 0,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            68,
+            1,
+            1
+          ],
+          "source_root_change": [
+            7,
+            1
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 2,
+          "bound": 4,
+          "labels": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": [
+            68,
+            3
+          ],
+          "raw_free": false
+        }
+      ],
+      "event_groups": [
+        {
+          "event": [
+            52,
+            2
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                52,
+                2,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                52,
+                2,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            53,
+            1
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                53,
+                1,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                53,
+                1,
+                1
+              ],
+              "frozen_g1_owner": [
+                56,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "event": [
+            54,
+            3
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                54,
+                3,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                54,
+                3,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            59,
+            1
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                59,
+                1,
+                0
+              ],
+              "frozen_g1_owner": [
+                59,
+                3
+              ]
+            },
+            {
+              "bit": [
+                59,
+                1,
+                1
+              ],
+              "frozen_g1_owner": [
+                59,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "event": [
+            60,
+            2
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                60,
+                2,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                60,
+                2,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            62,
+            2
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                62,
+                2,
+                0
+              ],
+              "frozen_g1_owner": [
+                67,
+                3
+              ]
+            },
+            {
+              "bit": [
+                62,
+                2,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            63,
+            1
+          ],
+          "tag_count": 1,
+          "actual_units": [
+            {
+              "bit": [
+                63,
+                1,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                63,
+                1,
+                1
+              ],
+              "frozen_g1_owner": [
+                66,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "event": [
+            63,
+            2
+          ],
+          "tag_count": 1,
+          "actual_units": [
+            {
+              "bit": [
+                63,
+                2,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                63,
+                2,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            64,
+            1
+          ],
+          "tag_count": 1,
+          "actual_units": [
+            {
+              "bit": [
+                64,
+                1,
+                0
+              ],
+              "frozen_g1_owner": [
+                65,
+                2
+              ]
+            },
+            {
+              "bit": [
+                64,
+                1,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            64,
+            2
+          ],
+          "tag_count": 1,
+          "actual_units": [
+            {
+              "bit": [
+                64,
+                2,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                64,
+                2,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            68,
+            1
+          ],
+          "tag_count": 2,
+          "actual_units": [
+            {
+              "bit": [
+                68,
+                1,
+                0
+              ],
+              "frozen_g1_owner": [
+                58,
+                3
+              ]
+            },
+            {
+              "bit": [
+                68,
+                1,
+                1
+              ],
+              "frozen_g1_owner": [
+                68,
+                3
+              ]
+            }
+          ]
+        }
+      ],
+      "max_rotation_load": 2,
+      "max_event_load": 2,
+      "old_assignments_modified": false
+    },
+    {
+      "source": "NONMAX",
+      "residual": 0,
+      "ports": [],
+      "double_geometry": [],
+      "rotation_groups": [],
+      "event_groups": [],
+      "max_rotation_load": 0,
+      "max_event_load": 0,
+      "old_assignments_modified": false
+    },
+    {
+      "source": "VINE8",
+      "residual": 2,
+      "ports": [
+        {
+          "demand": [
+            8,
+            1
+          ],
+          "B_rotation": 7,
+          "label": [
+            7,
+            8
+          ],
+          "addition_fine_index": 5,
+          "witness_fine_index": 5,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            6,
+            1,
+            0
+          ],
+          "root_before": 6,
+          "root_after": 7,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            8,
+            1
+          ],
+          "B_rotation": 8,
+          "label": [
+            8
+          ],
+          "addition_fine_index": 6,
+          "witness_fine_index": 6,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            7,
+            1,
+            0
+          ],
+          "root_before": 7,
+          "root_after": 8,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            8,
+            2
+          ],
+          "B_rotation": 9,
+          "label": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "addition_fine_index": 3,
+          "witness_fine_index": 3,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            4,
+            1,
+            0
+          ],
+          "root_before": 4,
+          "root_after": 5,
+          "wrapped_label_run": false
+        },
+        {
+          "demand": [
+            8,
+            2
+          ],
+          "B_rotation": 10,
+          "label": [
+            6,
+            7,
+            8
+          ],
+          "addition_fine_index": 4,
+          "witness_fine_index": 4,
+          "witness_type": "A_ADDITION",
+          "beta": [
+            5,
+            1,
+            0
+          ],
+          "root_before": 5,
+          "root_after": 6,
+          "wrapped_label_run": false
+        }
+      ],
+      "double_geometry": [
+        {
+          "demand": [
+            8,
+            1
+          ],
+          "pattern": "RR",
+          "W": [
+            6,
+            7,
+            8
+          ],
+          "removed": [
+            [
+              7,
+              8
+            ],
+            [
+              8
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                6
+              ],
+              "A_LCA": 6,
+              "blockers": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "created": [
+                6,
+                7
+              ],
+              "A_LCA": 7,
+              "blockers": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "demand": [
+            8,
+            2
+          ],
+          "pattern": "RR",
+          "W": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "removed": [
+            [
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              6,
+              7,
+              8
+            ]
+          ],
+          "created": [
+            {
+              "created": [
+                4
+              ],
+              "A_LCA": 4,
+              "blockers": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "created": [
+                4,
+                5,
+                6,
+                7
+              ],
+              "A_LCA": 7,
+              "blockers": [
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ],
+      "rotation_groups": [
+        {
+          "beta": [
+            4,
+            1,
+            0
+          ],
+          "source_root_change": [
+            4,
+            5
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 1,
+          "bound": 1,
+          "labels": [
+            [
+              5,
+              6,
+              7,
+              8
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            5,
+            1,
+            0
+          ],
+          "source_root_change": [
+            5,
+            6
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 1,
+          "bound": 1,
+          "labels": [
+            [
+              6,
+              7,
+              8
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            6,
+            1,
+            0
+          ],
+          "source_root_change": [
+            6,
+            7
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 1,
+          "bound": 1,
+          "labels": [
+            [
+              7,
+              8
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": null,
+          "raw_free": true
+        },
+        {
+          "beta": [
+            7,
+            1,
+            0
+          ],
+          "source_root_change": [
+            7,
+            8
+          ],
+          "mode": "S_ROOT_PROMOTION_CHAIN",
+          "tag_count": 1,
+          "bound": 1,
+          "labels": [
+            [
+              8
+            ]
+          ],
+          "Psi_change": 1,
+          "frozen_g1_owner": [
+            8,
+            3
+          ],
+          "raw_free": false
+        }
+      ],
+      "event_groups": [
+        {
+          "event": [
+            4,
+            1
+          ],
+          "tag_count": 1,
+          "actual_units": [
+            {
+              "bit": [
+                4,
+                1,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                4,
+                1,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            5,
+            1
+          ],
+          "tag_count": 1,
+          "actual_units": [
+            {
+              "bit": [
+                5,
+                1,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                5,
+                1,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            6,
+            1
+          ],
+          "tag_count": 1,
+          "actual_units": [
+            {
+              "bit": [
+                6,
+                1,
+                0
+              ],
+              "frozen_g1_owner": null
+            },
+            {
+              "bit": [
+                6,
+                1,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        },
+        {
+          "event": [
+            7,
+            1
+          ],
+          "tag_count": 1,
+          "actual_units": [
+            {
+              "bit": [
+                7,
+                1,
+                0
+              ],
+              "frozen_g1_owner": [
+                8,
+                3
+              ]
+            },
+            {
+              "bit": [
+                7,
+                1,
+                1
+              ],
+              "frozen_g1_owner": null
+            }
+          ]
+        }
+      ],
+      "max_rotation_load": 1,
+      "max_event_load": 1,
+      "old_assignments_modified": false
+    }
+  ],
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "universal_proof": "written symbolic four-frame/LCA/canonical-tag/chain theorems",
+  "no_new_matching_or_potential": true,
+  "input_sha256": {
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\lifetime_controls.json": "3b1b603a02a64ef41688f079a646702e7f815da099bad76e52e10386348dac3f",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\exact_challenge_sources.json": "1e116ac926c31da489b44297ce8aa08ca03ad72dd85ce35d068f4bb760872817",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\independent_audit.json": "20bbd0ce2ea8de1cf828980ecc58bcf225d5957f2dd16a908f801f54576ecfbc",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\LIFETIME_NORMAL_FORM.md": "e9af0b2e5151274f78a5c387d669d970e706f9952f8a41dbac1d9c9b15d51d9a",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\ROOT_ENTRY_LEMMA.md": "06b91be70b3345ed1eefe61eb42d720e5feab43c2aaab928ed4115f70106d0eb",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\ND35_COMPLEMENT_08\\ZIG_RELEASE_COMPLEMENT_THEOREM.md": "4f066ffa66bdf431e7e77979af82704de9bbabe135d8f3ef427429e49d68aca5",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\PC35_RELEASE_COMPLETION_09\\release_completion_controls.json": "67884ea4bfc83ac6dd27fc4c1a3d97560d96b5b293027f8d27c74e77fd1cf27c",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\PC35_RELEASE_COMPLETION_09\\independent_release_audit.json": "42cb9b2ae2201724a5ea8215ff79a7f121bff73bfcdc831803f52352d18230c7",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\PC35_RELEASE_COMPLETION_09\\STEP1_PC35_RELEASE_COMPLETION.md": "f5921efcfc19febd908d97350b3338f89cecb8ab131487d08ed8e59263c09377",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\PC35_RELEASE_COMPLETION_09\\STEP1_EXACT_RESIDUAL_IDENTITY.md": "7479a533f41cf2933f00409fafbad16f76678fee2f5a0161d22103ab316c238c",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\DEFICIT_SOURCE_GEOMETRY_10\\STEP2_EXACT_SOURCE_GEOMETRY.md": "49df1292a9eaf282b19c81dbf2af08f8d56a967413ac2c36d4b53616cd0df5d3",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\DEFICIT_SOURCE_GEOMETRY_10\\STEP2_INTERACTION_THEOREM.md": "0e1cb90700bae25026e99c13d5789499ac566336fe889dfdfe88054fbcbcf035",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\DEFICIT_SOURCE_GEOMETRY_10\\derive_source_geometry.py": "1dcf8ae85cb35ac0b2efb6d1fa34dbc72592acfc7c32c9fe2eddffc3d641c78e",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\SOURCE_JOINT_REPAIR_03\\actual_monotone_return_source.json": "5e00eb81aed692ab9982b5b4e3401e89827245a52748cf770ac21fa26d00e4b4",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\cluster_collateral_closed_source.json": "9bdacf3235d8fa3a47c27e814ee587713daf09d6823651c87f0f425f81afee7a",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\maximal_completion_original_source.json": "a68b5540c5783b983dc55b7601a9ed64a86a549ff1730ae80942dd62c59ddd5c"
+  }
+}

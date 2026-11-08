@@ -1,0 +1,124 @@
+{
+  "status": "SINGLE_PRIVATE_RETIREMENT_PREIMAGE_RAW_FAILURE",
+  "candidate": {
+    "source_A": [
+      12,
+      [
+        10,
+        [
+          5,
+          [
+            4,
+            [
+              2,
+              "F0",
+              "F1"
+            ],
+            "E"
+          ],
+          [
+            6,
+            "E",
+            [
+              8,
+              "F3",
+              "F4"
+            ]
+          ]
+        ],
+        "F5"
+      ],
+      [
+        14,
+        "F6",
+        [
+          16,
+          "F7",
+          [
+            18,
+            "F8",
+            [
+              20,
+              "F9",
+              "F10"
+            ]
+          ]
+        ]
+      ]
+    ],
+    "actual_A_target": [
+      4,
+      [
+        2,
+        "F0",
+        "F1"
+      ],
+      [
+        12,
+        [
+          5,
+          "E",
+          [
+            10,
+            [
+              6,
+              "E",
+              [
+                8,
+                "F3",
+                "F4"
+              ]
+            ],
+            "F5"
+          ]
+        ],
+        [
+          14,
+          "F6",
+          [
+            16,
+            "F7",
+            [
+              18,
+              "F8",
+              [
+                20,
+                "F9",
+                "F10"
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "private_key": 5,
+    "target_actual_key": 4,
+    "H": 2,
+    "DELETE_helper": null,
+    "source_contraction_indices": [
+      8860,
+      8902
+    ],
+    "target_contraction_index": 5549,
+    "operation_word": [
+      [
+        "K",
+        4
+      ]
+    ],
+    "comparison_rule": "old helper unchanged; private helper may use ANY anchor proxy, even root, at whole old H<=actual H",
+    "all_permitted_old_source_projections_and_proxies_checked": true
+  },
+  "source_shapes": 17,
+  "retirement_cases": 86,
+  "case_kinds": {
+    "direct": 34,
+    "private_helper": 24,
+    "old_helper": 28
+  },
+  "known_prefix_complete": false,
+  "source_identity_instantiations": 341,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "principal_U33": "OPEN"
+}

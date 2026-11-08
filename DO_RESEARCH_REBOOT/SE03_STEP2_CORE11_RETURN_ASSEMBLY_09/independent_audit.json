@@ -1,0 +1,45 @@
+{
+  "status": "PASS_COMPLETE_INDEPENDENT_CORE11_RETURN_ASSEMBLY",
+  "BF_contexts": 2394,
+  "BF_edges": 3698,
+  "paired_source_BF_contexts": 32,
+  "paired_sectors": 62,
+  "paired_sector_aliases": {
+    "successor_is_pair_source_root": 32,
+    "successor_is_old_root": 16,
+    "four_distinct": 14
+  },
+  "destination_two_way_language_incidences": 16682,
+  "plus1_cases": 62,
+  "plus1_two_way_language_incidences": 5440,
+  "independent_forward_seed_groups": 444,
+  "independent_recent_seed_frames": 2220,
+  "producer_seed_groups": 644,
+  "producer_recent_seed_frames": 3220,
+  "backward_frames": 4858,
+  "zero_predecessor_incidences": 2688,
+  "state_shapes": [
+    {
+      "leaves": 2,
+      "marked_root_degree": 1,
+      "frames": 2208
+    },
+    {
+      "leaves": 2,
+      "marked_root_degree": 2,
+      "frames": 2650
+    }
+  ],
+  "q4_cold_contexts": 128,
+  "q4_final_zero_contexts": 48,
+  "q4_penultimate_loss_contexts": 48,
+  "q4_H2Q3_incoming": 0,
+  "cold_NEG2S_targets_L4_degree4": 128,
+  "paired_targets_L4_degree1": 62,
+  "budget1": "paired destination L1: only H1Q1 consumes budget; all genuine zero outputs L>=2",
+  "budget0": "all 4858 records have L2 and every H1Q2 inverse contained; H2Q4/pairedH3Q6 excluded by L4",
+  "new_finite_tests": 0,
+  "source_engine_calls": 6344,
+  "CPU": 13.03125,
+  "trust": "same-agent distinct immutable engine, independent forward frames and inverse code; no formal assistant/external review"
+}

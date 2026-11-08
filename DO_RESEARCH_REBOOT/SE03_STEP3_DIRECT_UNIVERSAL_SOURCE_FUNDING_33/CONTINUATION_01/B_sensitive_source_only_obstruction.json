@@ -1,0 +1,355 @@
+{
+  "status": "B_SENSITIVE_DEBT_SET_SOURCE_ONLY_FORMULA_REFUTATION_CANDIDATE",
+  "source_inequalities": 19111,
+  "variables": 8550,
+  "contradiction": {
+    "type": "FROZEN_SINGLETON_UPPER",
+    "end_feature": 25921,
+    "required": 1,
+    "upper": 0,
+    "last_derivation": 1198
+  },
+  "causal_edges": [
+    {
+      "source_A": [
+        2,
+        "F0",
+        [
+          3,
+          "new_gap",
+          [
+            6,
+            [
+              4,
+              "F1",
+              "F2"
+            ],
+            [
+              20,
+              [
+                18,
+                [
+                  16,
+                  [
+                    14,
+                    [
+                      12,
+                      [
+                        10,
+                        [
+                          8,
+                          "F3",
+                          "F4"
+                        ],
+                        "F5"
+                      ],
+                      "F6"
+                    ],
+                    "F7"
+                  ],
+                  "F8"
+                ],
+                "F9"
+              ],
+              "F10"
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        6,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "new_gap"
+          ],
+          [
+            4,
+            "F1",
+            "F2"
+          ]
+        ],
+        [
+          20,
+          [
+            18,
+            [
+              16,
+              [
+                14,
+                [
+                  12,
+                  [
+                    10,
+                    [
+                      8,
+                      "F3",
+                      "F4"
+                    ],
+                    "F5"
+                  ],
+                  "F6"
+                ],
+                "F7"
+              ],
+              "F8"
+            ],
+            "F9"
+          ],
+          "F10"
+        ]
+      ],
+      "private_key": 3,
+      "source_B_core_index": 3277,
+      "B_target_core_index": 6496,
+      "target_actual_key": 6,
+      "H": 1,
+      "Q": 2,
+      "price": 0,
+      "source_kind": "unary_RR",
+      "source_feature": 52436,
+      "target_feature": 103941,
+      "source_value_set": [
+        2
+      ],
+      "target_value_set": [
+        0,
+        2
+      ]
+    },
+    {
+      "source_A": [
+        6,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "new_gap"
+          ],
+          [
+            4,
+            "F1",
+            "F2"
+          ]
+        ],
+        [
+          18,
+          [
+            12,
+            [
+              10,
+              [
+                8,
+                "F3",
+                "F4"
+              ],
+              "F5"
+            ],
+            [
+              16,
+              [
+                14,
+                "F6",
+                "F7"
+              ],
+              "F8"
+            ]
+          ],
+          [
+            20,
+            "F9",
+            "F10"
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        12,
+        [
+          6,
+          [
+            3,
+            [
+              2,
+              "F0",
+              "new_gap"
+            ],
+            [
+              4,
+              "F1",
+              "F2"
+            ]
+          ],
+          [
+            10,
+            [
+              8,
+              "F3",
+              "F4"
+            ],
+            "F5"
+          ]
+        ],
+        [
+          18,
+          [
+            16,
+            [
+              14,
+              "F6",
+              "F7"
+            ],
+            "F8"
+          ],
+          [
+            20,
+            "F9",
+            "F10"
+          ]
+        ]
+      ],
+      "private_key": 3,
+      "source_B_core_index": 6496,
+      "B_target_core_index": 8680,
+      "target_actual_key": 12,
+      "H": 1,
+      "Q": 2,
+      "price": 0,
+      "source_kind": "actual_successor",
+      "source_feature": 103941,
+      "target_feature": 138886,
+      "source_value_set": [
+        0,
+        2
+      ],
+      "target_value_set": [
+        1,
+        2
+      ]
+    },
+    {
+      "source_A": [
+        12,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "new_gap"
+          ],
+          [
+            6,
+            [
+              4,
+              "F1",
+              "F2"
+            ],
+            [
+              10,
+              [
+                8,
+                "F3",
+                "F4"
+              ],
+              "F5"
+            ]
+          ]
+        ],
+        [
+          14,
+          "F6",
+          [
+            20,
+            [
+              18,
+              [
+                16,
+                "F7",
+                "F8"
+              ],
+              "F9"
+            ],
+            "F10"
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        2,
+        "F0",
+        [
+          3,
+          "new_gap",
+          [
+            12,
+            [
+              6,
+              [
+                4,
+                "F1",
+                "F2"
+              ],
+              [
+                10,
+                [
+                  8,
+                  "F3",
+                  "F4"
+                ],
+                "F5"
+              ]
+            ],
+            [
+              14,
+              "F6",
+              [
+                20,
+                [
+                  18,
+                  [
+                    16,
+                    "F7",
+                    "F8"
+                  ],
+                  "F9"
+                ],
+                "F10"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 3,
+      "source_B_core_index": 8680,
+      "B_target_core_index": 1620,
+      "target_actual_key": 2,
+      "H": 1,
+      "Q": 1,
+      "price": 1,
+      "source_kind": "actual_successor",
+      "source_feature": 138886,
+      "target_feature": 25921,
+      "source_value_set": [
+        1,
+        2
+      ],
+      "target_value_set": [
+        0
+      ]
+    }
+  ],
+  "start_feature": 52436,
+  "start_lower_value": 2,
+  "end_frozen_value": 0,
+  "total_price": 1,
+  "signed_margin_sum": -1,
+  "optional_B_envelope_bounds_used": false,
+  "width_bound_used": false,
+  "nonnegativity_used": true,
+  "singleton_agreement_used": true,
+  "queue_pending": 105,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "principal_U33": "OPEN"
+}

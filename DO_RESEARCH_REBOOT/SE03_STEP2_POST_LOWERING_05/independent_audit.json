@@ -1,0 +1,82 @@
+{
+  "status": "PASS_STRUCTURAL_SUFFIX_REDUCTION_AND_NEW_SOURCE_WITNESS",
+  "new_source_cases": [
+    {
+      "reflected": false,
+      "all_new_original_operations_and_reaching_prefix_equal": true,
+      "costs": {
+        "A": 139,
+        "QF": 54,
+        "QE": 16,
+        "CD_slack": 224
+      },
+      "new_first_loss": "3->2",
+      "zero_suffix_exactly_one_possible_move": true,
+      "frontier_only_relaxed_B_conditions": true,
+      "cold_A_depth": 8,
+      "restricted_zero_suffix_exclusion": true
+    },
+    {
+      "reflected": true,
+      "all_new_original_operations_and_reaching_prefix_equal": true,
+      "costs": {
+        "A": 139,
+        "QF": 54,
+        "QE": 16,
+        "CD_slack": 224
+      },
+      "new_first_loss": "3->2",
+      "zero_suffix_exactly_one_possible_move": true,
+      "frontier_only_relaxed_B_conditions": true,
+      "cold_A_depth": 8,
+      "restricted_zero_suffix_exclusion": true
+    }
+  ],
+  "placement_controls": [
+    {
+      "fixture": "entry_family",
+      "root": 5,
+      "marked_children": [
+        3,
+        11
+      ],
+      "marked_branch_sizes": [
+        2,
+        3
+      ],
+      "both_marked_children_right": false
+    },
+    {
+      "fixture": "e1_family",
+      "root": 1,
+      "marked_children": [
+        7,
+        9
+      ],
+      "marked_branch_sizes": [
+        2,
+        3
+      ],
+      "both_marked_children_right": true
+    }
+  ],
+  "parent_count_controls": {
+    "rooted_labeled_marked_parent_maps": 1296,
+    "count_checks": {
+      "q2_into_L2": 480,
+      "q2_neutral_L2": 240,
+      "cold_q4_shapes": 480,
+      "q5_sources": 120
+    },
+    "scope": "independent finite stress-check of universal count identities; no BST realization or weighted graph claim"
+  },
+  "turnaround_exact_free_term_identity": true,
+  "shield_first_upper_node_frames": true,
+  "universal_proof_basis": "symbolic source equations/counting/induction in reports, NOT finite negative preparation search",
+  "full_E0_suffix_universal": "OPEN",
+  "full_E1_suffix_universal": "OPEN",
+  "complete_cheap_return": false,
+  "independence": "same-agent separate immutable recursive-frame engine and term representation; not external peer review/formal verification",
+  "source_engine_calls": 627,
+  "new_finite_tests": 0
+}

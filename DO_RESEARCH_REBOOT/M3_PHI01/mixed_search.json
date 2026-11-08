@@ -1,0 +1,653 @@
+{
+  "status": "COMPLETE",
+  "core_B_trees": 4862,
+  "examined_B_sources": 3584,
+  "low_extensions": 359720,
+  "low_prefix_counts": {
+    "legal_low_prefix_1": 14336,
+    "legal_low_prefix_2": 54024,
+    "legal_low_prefix_3": 201496
+  },
+  "closed_return_candidates": 17051,
+  "minima": {
+    "1": 6,
+    "3": 4,
+    "2": 9
+  },
+  "best_candidates": {
+    "1": {
+      "A0": [
+        2,
+        [
+          1,
+          [
+            0,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              7,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "B0": [
+        2,
+        [
+          0,
+          null,
+          [
+            1,
+            null,
+            null
+          ]
+        ],
+        [
+          3,
+          null,
+          [
+            4,
+            null,
+            [
+              5,
+              null,
+              [
+                6,
+                null,
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "low_legs": [
+        {
+          "target": 4,
+          "dA": 2,
+          "dB": 2,
+          "H": 1,
+          "q": 1,
+          "w": 1
+        }
+      ],
+      "A_before_high": [
+        4,
+        [
+          2,
+          [
+            1,
+            [
+              0,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            3,
+            null,
+            null
+          ]
+        ],
+        [
+          6,
+          [
+            5,
+            null,
+            null
+          ],
+          [
+            8,
+            [
+              7,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "B_before_high": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              0,
+              null,
+              [
+                1,
+                null,
+                null
+              ]
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          5,
+          null,
+          [
+            6,
+            null,
+            [
+              7,
+              null,
+              [
+                8,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "high_target": 2,
+      "high_d": 2,
+      "high_q": 1,
+      "high_w": 5,
+      "low_weight": 1,
+      "total_weight": 6,
+      "mask": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "closure": "exact concrete B; high resets endpoint A shadow to A0"
+    },
+    "3": {
+      "A0": [
+        2,
+        [
+          1,
+          [
+            0,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              7,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "B0": [
+        2,
+        [
+          0,
+          null,
+          [
+            1,
+            null,
+            null
+          ]
+        ],
+        [
+          5,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              7,
+              [
+                6,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "low_legs": [
+        {
+          "target": 6,
+          "dA": 1,
+          "dB": 4,
+          "H": 1,
+          "q": 2,
+          "w": 0
+        },
+        {
+          "target": 4,
+          "dA": 2,
+          "dB": 4,
+          "H": 1,
+          "q": 2,
+          "w": 0
+        },
+        {
+          "target": 8,
+          "dA": 2,
+          "dB": 4,
+          "H": 1,
+          "q": 2,
+          "w": 0
+        }
+      ],
+      "A_before_high": [
+        8,
+        [
+          6,
+          [
+            4,
+            [
+              2,
+              [
+                1,
+                [
+                  0,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                3,
+                null,
+                null
+              ]
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          [
+            7,
+            null,
+            null
+          ]
+        ],
+        null
+      ],
+      "B_before_high": [
+        8,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  0,
+                  null,
+                  [
+                    1,
+                    null,
+                    null
+                  ]
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            7,
+            [
+              6,
+              null,
+              null
+            ],
+            null
+          ]
+        ],
+        null
+      ],
+      "high_target": 2,
+      "high_d": 4,
+      "high_q": 2,
+      "high_w": 4,
+      "low_weight": 0,
+      "total_weight": 4,
+      "mask": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "closure": "exact concrete B; high resets endpoint A shadow to A0"
+    },
+    "2": {
+      "A0": [
+        2,
+        [
+          1,
+          [
+            0,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              5,
+              null,
+              null
+            ]
+          ],
+          [
+            8,
+            [
+              7,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "B0": [
+        2,
+        [
+          0,
+          null,
+          [
+            1,
+            null,
+            null
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            null,
+            null
+          ],
+          [
+            6,
+            [
+              5,
+              null,
+              null
+            ],
+            [
+              7,
+              null,
+              [
+                8,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "low_legs": [
+        {
+          "target": 6,
+          "dA": 1,
+          "dB": 2,
+          "H": 1,
+          "q": 1,
+          "w": 1
+        },
+        {
+          "target": 4,
+          "dA": 2,
+          "dB": 1,
+          "H": 1,
+          "q": 0,
+          "w": 2
+        }
+      ],
+      "A_before_high": [
+        4,
+        [
+          2,
+          [
+            1,
+            [
+              0,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            3,
+            null,
+            null
+          ]
+        ],
+        [
+          6,
+          [
+            5,
+            null,
+            null
+          ],
+          [
+            8,
+            [
+              7,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      "B_before_high": [
+        4,
+        [
+          2,
+          [
+            0,
+            null,
+            [
+              1,
+              null,
+              null
+            ]
+          ],
+          [
+            3,
+            null,
+            null
+          ]
+        ],
+        [
+          6,
+          [
+            5,
+            null,
+            null
+          ],
+          [
+            7,
+            null,
+            [
+              8,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "high_target": 2,
+      "high_d": 1,
+      "high_q": 0,
+      "high_w": 6,
+      "low_weight": 3,
+      "total_weight": 9,
+      "mask": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "closure": "exact concrete B; high resets endpoint A shadow to A0"
+    }
+  },
+  "most_negative_low_edge": {
+    "A": [
+      0,
+      null,
+      [
+        6,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              4,
+              [
+                3,
+                null,
+                null
+              ],
+              [
+                5,
+                null,
+                null
+              ]
+            ]
+          ]
+        ],
+        [
+          8,
+          [
+            7,
+            null,
+            null
+          ],
+          null
+        ]
+      ]
+    ],
+    "B": [
+      0,
+      null,
+      [
+        8,
+        [
+          1,
+          null,
+          [
+            2,
+            null,
+            [
+              7,
+              [
+                3,
+                null,
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    [
+                      6,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ],
+              null
+            ]
+          ]
+        ],
+        null
+      ]
+    ],
+    "leg": {
+      "target": 6,
+      "dA": 1,
+      "dB": 8,
+      "H": 1,
+      "q": 4,
+      "w": -2
+    },
+    "root": 0
+  },
+  "negative_cycle_candidates": [],
+  "cpu_seconds": 0.953,
+  "scope": "fixed mask; balanced A source per marked B root; 1..3 fused low accesses then one canonical high return; no claim beyond corpus"
+}

@@ -1,0 +1,426 @@
+{
+  "status": "PASS_CERTIFIED_NORMALIZED_ENDPOINTS_AND_REFUTATION",
+  "method": "read frozen psi/depth/destination facts; evaluate accepted capacity floor only at states whose old tall ceilings are false; no solver",
+  "lineage": "D_exp>=max(psi,c); XFER16 sole ceiling false here; XFER17 marked proper root retained; XFER18/19/21 maxima",
+  "source_normalization": "literal Hhidden predicate; marked role2 visible at authorized nonroot R in Omega/Sigma",
+  "witnesses": [
+    {
+      "name": "Omega_plus",
+      "endpoints": {
+        "source": {
+          "core_index_reused": 0,
+          "visible_marked_Scores": [
+            2
+          ],
+          "margins_reused": [
+            {
+              "Score": 2,
+              "key": 3,
+              "q": 1,
+              "psi_after": 0,
+              "margin": 1
+            }
+          ],
+          "psi": 0,
+          "capacity_c": 1,
+          "tall_H_ceiling_B_conditions_false": true,
+          "accepted_D_lower_bound": 1,
+          "normalized_D_exact": 1,
+          "normalized_D_interval": [
+            1,
+            1
+          ],
+          "matched_accepted_clauses": [],
+          "known_real_alpha": {
+            "": {
+              "kind": 0,
+              "isS": true,
+              "index": 0,
+              "key": 1
+            },
+            "L": {
+              "not_a_known_ScoreAt": true
+            },
+            "R": {
+              "kind": 0,
+              "isS": true,
+              "index": 2,
+              "key": 3
+            },
+            "LL": {
+              "not_a_known_ScoreAt": true
+            },
+            "LR": {
+              "not_a_known_ScoreAt": true
+            },
+            "RL": {
+              "kind": 0,
+              "isS": true,
+              "index": 1,
+              "key": 2
+            },
+            "RR": {
+              "not_a_known_ScoreAt": true
+            }
+          }
+        },
+        "target": {
+          "core_index_reused": 345,
+          "visible_marked_Scores": [
+            2,
+            8
+          ],
+          "margins_reused": [
+            {
+              "Score": 2,
+              "key": 3,
+              "q": 2,
+              "psi_after": 0,
+              "margin": 0
+            },
+            {
+              "Score": 8,
+              "key": 11,
+              "q": 1,
+              "psi_after": 2,
+              "margin": 3
+            }
+          ],
+          "psi": 0,
+          "capacity_c": 0,
+          "tall_H_ceiling_B_conditions_false": true,
+          "accepted_D_lower_bound": 1,
+          "normalized_D_exact": null,
+          "normalized_D_interval": [
+            1,
+            2
+          ],
+          "matched_accepted_clauses": [
+            {
+              "origin": "Final",
+              "id": 27,
+              "level": 1
+            }
+          ],
+          "known_real_alpha": {
+            "": {
+              "kind": 0,
+              "isS": true,
+              "index": 0,
+              "key": 1
+            },
+            "L": {
+              "not_a_known_ScoreAt": true
+            },
+            "R": {
+              "kind": 0,
+              "isS": true,
+              "index": 2,
+              "key": 3
+            },
+            "LL": {
+              "not_a_known_ScoreAt": true
+            },
+            "LR": {
+              "not_a_known_ScoreAt": true
+            },
+            "RL": {
+              "kind": 0,
+              "isS": true,
+              "index": 1,
+              "key": 2
+            },
+            "RR": {
+              "kind": 0,
+              "isS": true,
+              "index": 8,
+              "key": 11
+            }
+          }
+        }
+      },
+      "H": 2,
+      "Q": 6,
+      "w": -2,
+      "residual_upper": -1,
+      "residual_exact": null
+    },
+    {
+      "name": "Gamma_pair",
+      "endpoints": {
+        "source": {
+          "core_index_reused": 0,
+          "visible_marked_Scores": [],
+          "margins_reused": [],
+          "psi": 0,
+          "capacity_c": 2,
+          "tall_H_ceiling_B_conditions_false": true,
+          "accepted_D_lower_bound": 2,
+          "normalized_D_exact": 0,
+          "normalized_D_interval": [
+            0,
+            0
+          ],
+          "matched_accepted_clauses": [],
+          "known_real_alpha": {
+            "": {
+              "kind": 0,
+              "isS": true,
+              "index": 0,
+              "key": 1
+            },
+            "L": {
+              "not_a_known_ScoreAt": true
+            },
+            "R": {
+              "kind": 0,
+              "isS": true,
+              "index": 3,
+              "key": 4
+            },
+            "LL": {
+              "not_a_known_ScoreAt": true
+            },
+            "LR": {
+              "not_a_known_ScoreAt": true
+            },
+            "RL": {
+              "kind": 0,
+              "isS": true,
+              "index": 1,
+              "key": 2
+            },
+            "RR": {
+              "not_a_known_ScoreAt": true
+            }
+          }
+        },
+        "target": {
+          "core_index_reused": 345,
+          "visible_marked_Scores": [
+            8
+          ],
+          "margins_reused": [
+            {
+              "Score": 8,
+              "key": 11,
+              "q": 1,
+              "psi_after": 2,
+              "margin": 3
+            }
+          ],
+          "psi": 0,
+          "capacity_c": 2,
+          "tall_H_ceiling_B_conditions_false": true,
+          "accepted_D_lower_bound": 2,
+          "normalized_D_exact": 2,
+          "normalized_D_interval": [
+            2,
+            2
+          ],
+          "matched_accepted_clauses": [
+            {
+              "origin": "Final",
+              "id": 27,
+              "level": 1
+            }
+          ],
+          "known_real_alpha": {
+            "": {
+              "kind": 0,
+              "isS": true,
+              "index": 0,
+              "key": 1
+            },
+            "L": {
+              "not_a_known_ScoreAt": true
+            },
+            "R": {
+              "kind": 0,
+              "isS": true,
+              "index": 3,
+              "key": 4
+            },
+            "LL": {
+              "not_a_known_ScoreAt": true
+            },
+            "LR": {
+              "not_a_known_ScoreAt": true
+            },
+            "RL": {
+              "kind": 0,
+              "isS": true,
+              "index": 1,
+              "key": 2
+            },
+            "RR": {
+              "kind": 0,
+              "isS": true,
+              "index": 8,
+              "key": 11
+            }
+          }
+        }
+      },
+      "H": 2,
+      "Q": 6,
+      "w": -2,
+      "residual_upper": 0,
+      "residual_exact": 0
+    },
+    {
+      "name": "Sigma_singleton",
+      "endpoints": {
+        "source": {
+          "core_index_reused": 0,
+          "visible_marked_Scores": [
+            2
+          ],
+          "margins_reused": [
+            {
+              "Score": 2,
+              "key": 3,
+              "q": 1,
+              "psi_after": 0,
+              "margin": 1
+            }
+          ],
+          "psi": 0,
+          "capacity_c": 1,
+          "tall_H_ceiling_B_conditions_false": true,
+          "accepted_D_lower_bound": 1,
+          "normalized_D_exact": 1,
+          "normalized_D_interval": [
+            1,
+            1
+          ],
+          "matched_accepted_clauses": [],
+          "known_real_alpha": {
+            "": {
+              "kind": 0,
+              "isS": true,
+              "index": 0,
+              "key": 1
+            },
+            "L": {
+              "not_a_known_ScoreAt": true
+            },
+            "R": {
+              "kind": 0,
+              "isS": true,
+              "index": 2,
+              "key": 3
+            },
+            "LL": {
+              "not_a_known_ScoreAt": true
+            },
+            "LR": {
+              "not_a_known_ScoreAt": true
+            },
+            "RL": {
+              "kind": 0,
+              "isS": true,
+              "index": 1,
+              "key": 2
+            },
+            "RR": {
+              "not_a_known_ScoreAt": true
+            }
+          }
+        },
+        "target": {
+          "core_index_reused": 2835,
+          "visible_marked_Scores": [
+            0,
+            2,
+            8
+          ],
+          "margins_reused": [
+            {
+              "Score": 0,
+              "key": 1,
+              "q": 1,
+              "psi_after": 0,
+              "margin": 1
+            },
+            {
+              "Score": 2,
+              "key": 3,
+              "q": 1,
+              "psi_after": 1,
+              "margin": 2
+            },
+            {
+              "Score": 8,
+              "key": 9,
+              "q": 1,
+              "psi_after": 0,
+              "margin": 1
+            }
+          ],
+          "psi": 2,
+          "capacity_c": 1,
+          "tall_H_ceiling_B_conditions_false": true,
+          "accepted_D_lower_bound": 2,
+          "normalized_D_exact": 2,
+          "normalized_D_interval": [
+            2,
+            2
+          ],
+          "matched_accepted_clauses": [],
+          "known_real_alpha": {
+            "": {
+              "kind": 0,
+              "isS": true,
+              "index": 6,
+              "key": 7
+            },
+            "L": {
+              "kind": 0,
+              "isS": true,
+              "index": 2,
+              "key": 3
+            },
+            "R": {
+              "kind": 0,
+              "isS": true,
+              "index": 7,
+              "key": 8
+            },
+            "LL": {
+              "kind": 0,
+              "isS": true,
+              "index": 0,
+              "key": 1
+            },
+            "LR": {
+              "kind": 0,
+              "isS": true,
+              "index": 3,
+              "key": 4
+            },
+            "RL": {
+              "not_a_known_ScoreAt": true
+            },
+            "RR": {
+              "kind": 0,
+              "isS": true,
+              "index": 8,
+              "key": 9
+            }
+          }
+        }
+      },
+      "H": 1,
+      "Q": 4,
+      "w": -2,
+      "residual_upper": -1,
+      "residual_exact": -1
+    }
+  ],
+  "old_semantic_rows_replayed": 0,
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "whole_width2_architecture_refuted": false,
+  "entire_Step2_proved": false
+}

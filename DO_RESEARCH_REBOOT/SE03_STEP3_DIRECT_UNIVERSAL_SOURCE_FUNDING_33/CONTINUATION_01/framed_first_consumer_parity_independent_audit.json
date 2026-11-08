@@ -1,0 +1,299 @@
+{
+  "status": "PASS_FRAMED_PARITY_FREE_TERM_BASE_IDENTITIES",
+  "method": "separate zipper kernel; manual producer algebra has no executable search",
+  "terminal_classes": [
+    {
+      "terminal_class": "EVEN",
+      "source_terms": [
+        [
+          10,
+          [
+            0,
+            "A",
+            [
+              2,
+              "J",
+              [
+                5,
+                "L",
+                "U"
+              ]
+            ]
+          ],
+          "E"
+        ],
+        [
+          10,
+          [
+            2,
+            [
+              0,
+              "A",
+              "J"
+            ],
+            [
+              5,
+              "L",
+              "U"
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "target": 5,
+      "result_terms": [
+        [
+          5,
+          [
+            2,
+            [
+              0,
+              "A",
+              "J"
+            ],
+            "L"
+          ],
+          [
+            10,
+            "U",
+            "E"
+          ]
+        ],
+        [
+          5,
+          [
+            2,
+            [
+              0,
+              "A",
+              "J"
+            ],
+            "L"
+          ],
+          [
+            10,
+            "U",
+            "E"
+          ]
+        ]
+      ],
+      "event_costs": [
+        2,
+        1
+      ],
+      "reflected_identity_checked": true
+    },
+    {
+      "terminal_class": "ODD_LEFT",
+      "source_terms": [
+        [
+          10,
+          [
+            0,
+            "A",
+            [
+              2,
+              "J",
+              [
+                6,
+                [
+                  4,
+                  "L",
+                  "U"
+                ],
+                "V"
+              ]
+            ]
+          ],
+          "E"
+        ],
+        [
+          10,
+          [
+            2,
+            [
+              0,
+              "A",
+              "J"
+            ],
+            [
+              6,
+              [
+                4,
+                "L",
+                "U"
+              ],
+              "V"
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "target": 4,
+      "result_terms": [
+        [
+          4,
+          [
+            0,
+            "A",
+            [
+              2,
+              "J",
+              "L"
+            ]
+          ],
+          [
+            10,
+            [
+              6,
+              "U",
+              "V"
+            ],
+            "E"
+          ]
+        ],
+        [
+          4,
+          [
+            2,
+            [
+              0,
+              "A",
+              "J"
+            ],
+            "L"
+          ],
+          [
+            10,
+            [
+              6,
+              "U",
+              "V"
+            ],
+            "E"
+          ]
+        ]
+      ],
+      "event_costs": [
+        2,
+        2
+      ],
+      "reflected_identity_checked": true
+    },
+    {
+      "terminal_class": "ODD_RIGHT",
+      "source_terms": [
+        [
+          10,
+          [
+            0,
+            "A",
+            [
+              2,
+              "J",
+              [
+                4,
+                "V",
+                [
+                  6,
+                  "L",
+                  "U"
+                ]
+              ]
+            ]
+          ],
+          "E"
+        ],
+        [
+          10,
+          [
+            2,
+            [
+              0,
+              "A",
+              "J"
+            ],
+            [
+              4,
+              "V",
+              [
+                6,
+                "L",
+                "U"
+              ]
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "target": 6,
+      "result_terms": [
+        [
+          6,
+          [
+            0,
+            "A",
+            [
+              4,
+              [
+                2,
+                "J",
+                "V"
+              ],
+              "L"
+            ]
+          ],
+          [
+            10,
+            "U",
+            "E"
+          ]
+        ],
+        [
+          6,
+          [
+            4,
+            [
+              2,
+              [
+                0,
+                "A",
+                "J"
+              ],
+              "V"
+            ],
+            "L"
+          ],
+          [
+            10,
+            "U",
+            "E"
+          ]
+        ]
+      ],
+      "event_costs": [
+        2,
+        2
+      ],
+      "reflected_identity_checked": true
+    }
+  ],
+  "original_identities": 6,
+  "reflected_identities": 6,
+  "arbitrary_depth_lifting": "manuscript common-X bottom-up-double induction; not a finite-depth test",
+  "arbitrary_ordered_subtree_payloads": true,
+  "physical_funding_theorem": false,
+  "normalized_owner_theorem": false,
+  "Bank25_theorem": false,
+  "principal_U33": "OPEN",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "fresh_source_replay": false,
+  "external_or_formal_verification": false,
+  "input_sha256": {
+    "FRAMED_FIRST_CONSUMER_PARITY.md": "1ff0ac6365590181fc92068b4844905a182f08f6252acdd88be18d16c9a50efa",
+    "audit_verify64.py": "ff062d3dbe868ad4091e1daab5e756295c9aa424c60f87ceb98abde728486208",
+    "audit_verify36.py": "0e6c8662bfcb02e939e861449759071d3559175ae1d887126ccdd64b9696f939",
+    "framed_return_and_core13_independent_audit.json": "7ceaefc1adbaa59e1bff8f1c84278a60f4f92ecd1adb1ca74513bdee04ba7e95"
+  }
+}

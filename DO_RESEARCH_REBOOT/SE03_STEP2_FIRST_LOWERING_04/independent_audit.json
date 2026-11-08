@@ -1,0 +1,123 @@
+{
+  "status": "PASS_BOTH_ENTRY_CLASSES_AND_EXAMPLE_SUFFIX_CLOSURES",
+  "witnesses": [
+    {
+      "family": "entry_family.json",
+      "reflected": false,
+      "complete_actual_source_closure": true,
+      "physical_costs": {
+        "A": 81,
+        "QF": 28,
+        "QE": 22,
+        "original_CD_slack": 134
+      },
+      "entry_class": "E0",
+      "entry_prefix_weight": 0,
+      "first_loss_is_genuine": true,
+      "old_semantic_rows_replayed": 0
+    },
+    {
+      "family": "entry_family.json",
+      "reflected": true,
+      "complete_actual_source_closure": true,
+      "physical_costs": {
+        "A": 81,
+        "QF": 28,
+        "QE": 22,
+        "original_CD_slack": 134
+      },
+      "entry_class": "E0",
+      "entry_prefix_weight": 0,
+      "first_loss_is_genuine": true,
+      "old_semantic_rows_replayed": 0
+    },
+    {
+      "family": "e1_family.json",
+      "reflected": false,
+      "complete_actual_source_closure": true,
+      "physical_costs": {
+        "A": 125,
+        "QF": 44,
+        "QE": 14,
+        "original_CD_slack": 206
+      },
+      "entry_class": "E1",
+      "entry_prefix_weight": 1,
+      "first_loss_is_genuine": true,
+      "old_semantic_rows_replayed": 0
+    },
+    {
+      "family": "e1_family.json",
+      "reflected": true,
+      "complete_actual_source_closure": true,
+      "physical_costs": {
+        "A": 125,
+        "QF": 44,
+        "QE": 14,
+        "original_CD_slack": 206
+      },
+      "entry_class": "E1",
+      "entry_prefix_weight": 1,
+      "first_loss_is_genuine": true,
+      "old_semantic_rows_replayed": 0
+    }
+  ],
+  "suffixes": [
+    {
+      "family": "entry_family.json",
+      "reflected": false,
+      "exact_full_state_cells": 50,
+      "all_distinguished_macro_endpoints_covered": true,
+      "private_helpers_excluded_by_source_depth_or_no_near_hole": true,
+      "paired_unknowns_discharged": [
+        {
+          "target": 1,
+          "A_source_depth": 6,
+          "minimum_first_H": 3
+        }
+      ],
+      "no_cold_NEG2_source_in_closure": true
+    },
+    {
+      "family": "entry_family.json",
+      "reflected": true,
+      "exact_full_state_cells": 50,
+      "all_distinguished_macro_endpoints_covered": true,
+      "private_helpers_excluded_by_source_depth_or_no_near_hole": true,
+      "paired_unknowns_discharged": [
+        {
+          "target": 11,
+          "A_source_depth": 6,
+          "minimum_first_H": 3
+        }
+      ],
+      "no_cold_NEG2_source_in_closure": true
+    },
+    {
+      "family": "e1_family.json",
+      "reflected": false,
+      "exact_full_state_cells": 1,
+      "all_distinguished_macro_endpoints_covered": true,
+      "private_helpers_excluded_by_source_depth_or_no_near_hole": true,
+      "paired_unknowns_discharged": [],
+      "no_cold_NEG2_source_in_closure": true
+    },
+    {
+      "family": "e1_family.json",
+      "reflected": true,
+      "exact_full_state_cells": 1,
+      "all_distinguished_macro_endpoints_covered": true,
+      "private_helpers_excluded_by_source_depth_or_no_near_hole": true,
+      "paired_unknowns_discharged": [],
+      "no_cold_NEG2_source_in_closure": true
+    }
+  ],
+  "previous_conservative_q5_suffix_flag": "DISCHARGED: only first target has A depth6, requiring first_H>=3 and pair_H>=4, price>=2",
+  "universal_lifting": "every accessed key in witness/allowed suffix bodies is distinguished; no free gap is entered; source completeness excludes private helpers before induction",
+  "Sigma_leaf3_control_preserved": true,
+  "complete_cheap_return_found": false,
+  "global_return_barrier": "OPEN",
+  "independence": "same agent, different immutable recursive-frame engine and term representation; no external peer review or formal-assistant claim",
+  "source_engine_calls": 906,
+  "new_finite_tests": 0
+}

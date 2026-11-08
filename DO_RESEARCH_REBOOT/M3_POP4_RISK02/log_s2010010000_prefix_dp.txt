@@ -1,0 +1,178 @@
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": null, "word": [[0]], "profiles": 64189, "total_queries": 64189, "classes": 21810, "options": 64189, "CPU": 0.547}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": null, "word": [[1]], "profiles": 66913, "total_queries": 131102, "classes": 31537, "options": 131102, "CPU": 1.125}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": null, "word": [[0, 0]], "profiles": 223345, "total_queries": 354447, "classes": 38423, "options": 354447, "CPU": 3.797}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": null, "word": [[0, 1]], "profiles": 60424, "total_queries": 414871, "classes": 38794, "options": 414871, "CPU": 4.375}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": null, "word": [[1, 0]], "profiles": 59664, "total_queries": 474535, "classes": 39146, "options": 474535, "CPU": 5.141}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": null, "word": [[1, 1]], "profiles": 223345, "total_queries": 697880, "classes": 43118, "options": 697880, "CPU": 7.578}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": 0, "word": [[0], [1, 0]], "profiles": 8366, "total_queries": 706246, "classes": 43118, "options": 706246, "CPU": 7.719}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": 0, "word": [[0], [1, 1]], "profiles": 24306, "total_queries": 730552, "classes": 43118, "options": 730552, "CPU": 8.25}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": 0, "word": [[0, 0], [1]], "profiles": 8366, "total_queries": 738918, "classes": 43118, "options": 738918, "CPU": 8.406}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": 0, "word": [[0, 0], [1, 0]], "profiles": 43748, "total_queries": 782666, "classes": 43135, "options": 782666, "CPU": 8.969}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": 0, "word": [[0, 1], [1, 0]], "profiles": 5324, "total_queries": 787990, "classes": 43152, "options": 787990, "CPU": 9.109}
+{"sigma": [2, 0, 1, 0, 0, 1, 0, 0, 0, 0], "helper": 0, "word": [[0, 1], [1, 1]], "profiles": 5460, "total_queries": 793450, "classes": 43152, "options": 787990, "CPU": 9.156}
+{
+  "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+  "sigma": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "reason": null,
+  "queries": 793450,
+  "private_root_production_visits": 1030216,
+  "analytic_root_production_rejections": 161476,
+  "classes": 43152,
+  "option_count": 787990,
+  "peak_DP_records": 856069,
+  "allocated_CPU_cap": 120,
+  "cpu_seconds": 9.359,
+  "families": [
+    {
+      "helper": null,
+      "word": [
+        [
+          0
+        ]
+      ],
+      "count": 64189
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1
+        ]
+      ],
+      "count": 66913
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          0
+        ]
+      ],
+      "count": 223345
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          0,
+          1
+        ]
+      ],
+      "count": 60424
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 59664
+    },
+    {
+      "helper": null,
+      "word": [
+        [
+          1,
+          1
+        ]
+      ],
+      "count": 223345
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 8366
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "count": 24306
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "count": 8366
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 43748
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "count": 5324
+    },
+    {
+      "helper": 0,
+      "word": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "count": 5460
+    }
+  ],
+  "full_M3_proved": false
+}

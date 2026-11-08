@@ -1,0 +1,136 @@
+{
+  "status": "PARTIAL_TARGETED_CONTRACTION_FALSIFICATION",
+  "failures": {
+    "max": {
+      "candidate": "max_over_all_BST_anchor_contractions",
+      "private_key": 3,
+      "source_A": [
+        6,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "z_gap"
+          ],
+          [
+            4,
+            "F1",
+            "F2"
+          ]
+        ],
+        [
+          8,
+          "F3",
+          [
+            10,
+            "F4",
+            [
+              12,
+              "F5",
+              [
+                14,
+                "F6",
+                [
+                  16,
+                  "F7",
+                  [
+                    18,
+                    "F8",
+                    [
+                      20,
+                      "F9",
+                      "F10"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "source_B_core_index": 6827,
+      "target_anchor": 1,
+      "target_actual_key": 2,
+      "actual_A_target": [
+        2,
+        "F0",
+        [
+          3,
+          "z_gap",
+          [
+            6,
+            [
+              4,
+              "F1",
+              "F2"
+            ],
+            [
+              8,
+              "F3",
+              [
+                10,
+                "F4",
+                [
+                  12,
+                  "F5",
+                  [
+                    14,
+                    "F6",
+                    [
+                      16,
+                      "F7",
+                      [
+                        18,
+                        "F8",
+                        [
+                          20,
+                          "F9",
+                          "F10"
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "H": 1,
+      "Q": 1,
+      "price": 1,
+      "D_source": 2,
+      "D_target": 0,
+      "signed_margin": -1,
+      "all_source_projection_indices": [
+        6292,
+        6721
+      ],
+      "all_target_projection_indices": [
+        1430
+      ],
+      "all_source_projection_debts": [
+        0,
+        2
+      ],
+      "all_target_projection_debts": [
+        0
+      ],
+      "B_target_core_index": 106,
+      "source_validity": "common-initial closed-B A-realization theorem applies; explicit original source word PENDING"
+    }
+  },
+  "states_inspected": 1024,
+  "coefficient_couplings_inspected": 3215058,
+  "accepted_primitive_rigid_leaf_instantiations": 5487,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "primary_U33": "OPEN",
+  "no_original_CD_counterexample_claim": true,
+  "input_sha256": {
+    "native10_source_actions.json": "36438e382a4fe50eca206a15bbb54cc8510effee1311addbf755486b839e8f95",
+    "native10_debt_03.pkl": "5d708a78b52a806fa95db32244cff8e12d1e063acf6b1e46848dc4525c7a0cad",
+    "native10_complete_independent_audit.json": "6ab3d9d2cf63d1cd7b29b101be6d2045d467bca10a11a098e93facfca0f5e36f"
+  }
+}

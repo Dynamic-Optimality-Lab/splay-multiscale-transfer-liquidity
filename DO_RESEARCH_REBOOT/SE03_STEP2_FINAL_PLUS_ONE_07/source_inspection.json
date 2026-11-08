@@ -1,0 +1,88 @@
+{
+  "status": "PASS_CURRENT_LOCAL_SOURCE_RECONSTRUCTION",
+  "Campaign06_inspected": [
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/FULL_PROOF.md",
+      "sha256": "d45515762d0b34b689fad32e6c5d86fef506e8e9a8a937d8790293b9175ae230",
+      "bytes": 15723,
+      "status": "accepted inherited interface; not reopened"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/CASE_LEDGER.md",
+      "sha256": "7bc46729c35b4d198486b16bfff586eaea5d219214ce17981eefebfce3c66282",
+      "bytes": 1472,
+      "status": "accepted inherited interface; not reopened"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/saturation3.json",
+      "sha256": "9f7a272cd60dec34b578143829616cb8fbfdbf65711354bfe7463768c4042de2",
+      "bytes": 547088,
+      "status": "accepted inherited interface; not reopened",
+      "closed": true,
+      "goal": null,
+      "records": 260,
+      "leaf_budget_observations": {
+        "0": 140,
+        "1": 120
+      },
+      "recorded_status": "SYMBOLIC_BACKWARD_CLOSED"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/independent_audit.json",
+      "sha256": "6723a5a00d1adea0989f16888cba6a26073dad7229b306188b5e63fb4574b646",
+      "bytes": 5813,
+      "status": "accepted inherited interface; not reopened",
+      "recorded_status": "PASS_UNIVERSAL_SYMBOLIC_COVERAGE_AND_CLOSURE"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/adversarial_audit.json",
+      "sha256": "b75874f1897dd915534682b95aad8062fd3188385664cdfe10c5ae19a021514e",
+      "bytes": 1888,
+      "status": "accepted inherited interface; not reopened",
+      "recorded_status": "PASS_ADVERSARIAL_UNIVERSAL_COVERAGE"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/interface_audit.json",
+      "sha256": "b45350101d44317483385872c5d894b32450ed7ab2ec834153689dadfb2407c8",
+      "bytes": 878,
+      "status": "accepted inherited interface; not reopened",
+      "recorded_status": "PASS_SOURCE_INTERFACE_ASSEMBLY"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/INDEPENDENT_AUDIT.md",
+      "sha256": "1740c29d9726f3c4e62570a4de16c7347ea8612e97cad6b348cba7322f5f218a",
+      "bytes": 2734,
+      "status": "accepted inherited interface; not reopened"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/campaign_manifest.json",
+      "sha256": "e9ad8b83e0ef499366268003cf800f0e61694d31b2989c2aea9603d76593184d",
+      "bytes": 911875,
+      "status": "accepted inherited interface; not reopened"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/seal_audit.json",
+      "sha256": "df74a1ac8857156bc3d66234882f642b0accba415b634e2cf232f130937cff55",
+      "bytes": 1118,
+      "status": "accepted inherited interface; not reopened",
+      "recorded_status": "PASS_COMPLETE_TP_DEPTH3_ASSEMBLY"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/resources_checkpoint.json",
+      "sha256": "1388b2fba24e5a4ed0381dda3db1b67a3a64020d838aba1a91641bd56e3a6ffd",
+      "bytes": 3478,
+      "status": "accepted inherited interface; not reopened"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_TERMINAL_PAIR_06/CHECKPOINT.md",
+      "sha256": "781f8b3fc1eefe68936143555d65569609dc62329a6816f7aeba2124674916fc",
+      "bytes": 1892,
+      "status": "accepted inherited interface; not reopened"
+    }
+  ],
+  "invalid_saturation_json": "preserved, excluded from proof inheritance",
+  "critical_source_gaps": [],
+  "old_normalization": "REFUTED",
+  "Step2": "OPEN",
+  "TP_DEPTH3": "PROVED at sealed scope"
+}

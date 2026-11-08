@@ -1,0 +1,120 @@
+{
+  "status": "PROVED_RESTRICTED_DOMAIN",
+  "theorem": "UNMARKED_ANCESTOR_GRANDCHILD_LOW_SAFE_CAPACITY_OUTSIDE_S",
+  "input_class": "any public Lambda<=D<=2; preserves each previously valid LOW row individually",
+  "main_region": "Z: synchronized unmarked Score root r; unmarked Score child p; marked grandchild x; stated cuts/barrier",
+  "public_cases": {
+    "LL": {
+      "order": "x<p<r",
+      "opaque": [
+        "LR",
+        "R"
+      ],
+      "barrier": "marked labels below p exactly {x}"
+    },
+    "LR": {
+      "order": "p<x<r",
+      "opaque": [
+        "LL",
+        "R"
+      ],
+      "barrier": "marked labels strictly between p,r exactly {x}"
+    },
+    "RL": {
+      "order": "r<x<p",
+      "opaque": [
+        "L",
+        "RR"
+      ],
+      "barrier": "marked labels strictly between r,p exactly {x}"
+    },
+    "RR": {
+      "order": "r<p<x",
+      "opaque": [
+        "L",
+        "RL"
+      ],
+      "barrier": "marked labels above p exactly {x}"
+    }
+  },
+  "explicit_cap": "h_Z=min(2,w_x+2) on Z; 0 elsewhere",
+  "explicit_combined_debt": "D_grand=max(D_interval,h_Z)",
+  "all_Z_source_H1_targets_have_empty_V": true,
+  "target_debt_already_for_old_Lambda_D_and_new_F": 2,
+  "each_previously_valid_original_LOW_row_preserved": true,
+  "all_Z_source_nonnegative_H1_rows_valid_for_old_D_and_F": true,
+  "all_Z_source_zero_H1_F_source_and_target_debts": 2,
+  "all_Z_source_zero_H1_F_signed_residuals": 0,
+  "all_Z_source_LOW_rows_for_current_D_interval_input_proved": true,
+  "all_Z_source_H1_current_F_exact_residual": "max(w,0)",
+  "negative_source_cap_uses_previously_valid_actual_negative_H1_row": true,
+  "arbitrary_typed_input_D_clamped_to_h_Z": false,
+  "nonnegative_incoming_to_Z2_rows_proved": true,
+  "all_nonnegative_incoming_to_all_Z_rows_claimed": false,
+  "Gamma1_from_Z_excluded": "no actual anonymous source depth1/2 target",
+  "Gamma0_may_expose_hidden_marks_original_actual_preterminal_floor_reused": true,
+  "LL_RR_depth1_G_second_level_reads_old_root_opaque_children": true,
+  "both_actual_LOW_orientations_and_all_four_positions_proved": true,
+  "all_admissible_signatures_and_independent_private_completions": true,
+  "strict_current_debt_increase": "published helper_reset_2 B fact; source8(1(0(A,B),C),D), marks0/2/4/6/7:0->2",
+  "new_bank_or_saved_label_queries_for_strictness": 0,
+  "private_inventory_or_hidden_rank_inferred": false,
+  "prior_complete_S_and_interval_child_coverage_preserved": true,
+  "independent_universal_symbolic_audit": "PASS",
+  "full_compiler_formalization_claimed": false,
+  "external_human_or_model_review_claimed": false,
+  "all_outside_S_grandchild_zero_H1_coverage_proved": false,
+  "global_zero_LOW_coverage_proved": false,
+  "full_M3_status": "OPEN",
+  "DynamicOptimality_status": "OPEN",
+  "remaining_open": [
+    "other uncovered marked-ancestor or anonymous-parent grandchild H1 classes",
+    "other uncovered grandchild H1 classes without these cuts/barriers",
+    "remaining child and shallow-helper zero/+1 transfer classes",
+    "global signed LOW validity"
+  ],
+  "new_whole_signature_certificates": 0,
+  "original_negative_cycle_certified": false,
+  "finite_walk_bound_with_stated_LOW_coverage": -7,
+  "full_closed_walk_bound_with_stated_LOW_coverage": 0,
+  "new_finite_tests": 0,
+  "R1_R4_preserved": true,
+  "h0_correction_preserved": true,
+  "NET_ADVANCEMENT": "four guarded outside-S grandchild zero H1 classes discharged; strict public capacity increase; every old LOW row preserved",
+  "resources": {
+    "prior_uniform_CPU_charge_retained": 759.515625,
+    "new_symbolic_checker_CPU": 0.15625,
+    "new_controller_CPU_through_finally": 0.140625,
+    "new_compute_CPU": 0.296875,
+    "cumulative_accounted_CPU": 759.8125,
+    "finite_CPU_ceiling": 7200,
+    "guaranteed_remaining_CPU": 6440.1875,
+    "reserve": 5,
+    "old_signature_campaign_ledger_unchanged": 7195.203125,
+    "symbolic_phase_CPU_cap": 120,
+    "construction_CPU_cap": 300,
+    "audit_source_CPU_cap": 300,
+    "canonical_query_live_record_limit": 2000000,
+    "DAG_limit": 4000000,
+    "stored_edge_limit": 5000000,
+    "RAM_GiB_limit": 32,
+    "observed_peak_audit_working_set_bytes": 21544960,
+    "new_finite_tests": 0,
+    "new_source_transition_queries": 0,
+    "new_original_root_evaluations": 0,
+    "new_saved_psi_queries": 0,
+    "new_label_fits": 0,
+    "new_bank_censuses": 0,
+    "completed_semantic_checks_replayed": 0,
+    "current_caps_preserved": true,
+    "metadata_hashing_convention": "entry/final immutable-file bookkeeping excluded as previously"
+  },
+  "integrity": {
+    "status": "PASS",
+    "old_files_unchanged": 13876,
+    "HEAD": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+    "tracked_tree_clean": true,
+    "campaign_writes_confined_here": true,
+    "unrelated_concurrent_U4_additions": 14
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "EXPLICIT_USER_AUTHORIZATION_CUMULATIVE_NOT_RESET",
+  "question_item_id": "request_user_input_async/call_3805c507be344954a9ef18a5c3c410aa/0",
+  "user_answer_verbatim": "Authorize the bounded query increase",
+  "authorized_request": "Raise cumulative source-query cap from 2,000,000 to 3,000,000, at most 50,000 queries per batch; keep CPU caps240/600, global7200, Bank25 and all other limits unchanged",
+  "old_cumulative_query_cap": 2000000,
+  "new_cumulative_query_cap": 3000000,
+  "charged_queries_at_continuation_entry": 2000000,
+  "per_batch_query_cap": 50000,
+  "CPU_caps_unchanged": {"symbolic":240,"independent":600,"global":7200},
+  "Bank25":25,
+  "usage_reset":false
+}

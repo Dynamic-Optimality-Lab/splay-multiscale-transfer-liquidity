@@ -1,0 +1,180 @@
+{
+  "status": "MARKED_RELAY_UNIVERSAL_SYMBOLIC_AUDIT_PASS",
+  "universal_identities": [
+    "J_minus_c_exit",
+    "J_plus_c_exit",
+    "G_minus_A_to_J",
+    "G_plus_A_to_J",
+    "core_depth4_minus_00",
+    "core_depth4_plus_00",
+    "core_depth4_minus_01",
+    "core_depth4_plus_01",
+    "core_depth4_minus_10",
+    "core_depth4_plus_10",
+    "core_depth4_minus_11",
+    "core_depth4_plus_11"
+  ],
+  "complete_depth4_bottom_word_certificates": [
+    {
+      "bottom_word": [
+        0,
+        0
+      ],
+      "both_actual_top_orientations": true,
+      "final_b_depth": 1,
+      "final_c_depth": 2,
+      "full_target_J_structural_guard": true
+    },
+    {
+      "bottom_word": [
+        0,
+        1
+      ],
+      "both_actual_top_orientations": true,
+      "final_b_depth": 1,
+      "final_c_depth": 2,
+      "full_target_J_structural_guard": true
+    },
+    {
+      "bottom_word": [
+        1,
+        0
+      ],
+      "both_actual_top_orientations": true,
+      "final_b_depth": 1,
+      "final_c_depth": 2,
+      "full_target_J_structural_guard": true
+    },
+    {
+      "bottom_word": [
+        1,
+        1
+      ],
+      "both_actual_top_orientations": true,
+      "final_b_depth": 1,
+      "final_c_depth": 2,
+      "full_target_J_structural_guard": true
+    }
+  ],
+  "helper_A_depth_and_opposite_block_certificates": [
+    {
+      "case": "minimum_L",
+      "old_a_depth": 1,
+      "b_depth": 2,
+      "c_depth": 3,
+      "whole_opposite_block_unchanged": true,
+      "c_not_terminal_charge1": true
+    },
+    {
+      "case": "minimum_LL",
+      "old_a_depth": 2,
+      "b_depth": 3,
+      "c_depth": 4,
+      "whole_opposite_block_unchanged": true,
+      "c_not_terminal_charge1": true
+    },
+    {
+      "case": "minimum_LR",
+      "old_a_depth": 1,
+      "b_depth": 2,
+      "c_depth": 3,
+      "whole_opposite_block_unchanged": true,
+      "c_not_terminal_charge1": true
+    },
+    {
+      "case": "maximum_R",
+      "old_a_depth": 1,
+      "b_depth": 2,
+      "c_depth": 3,
+      "whole_opposite_block_unchanged": true,
+      "c_not_terminal_charge1": true
+    },
+    {
+      "case": "maximum_RR",
+      "old_a_depth": 2,
+      "b_depth": 3,
+      "c_depth": 4,
+      "whole_opposite_block_unchanged": true,
+      "c_not_terminal_charge1": true
+    },
+    {
+      "case": "maximum_RL",
+      "old_a_depth": 1,
+      "b_depth": 2,
+      "c_depth": 3,
+      "whole_opposite_block_unchanged": true,
+      "c_not_terminal_charge1": true
+    }
+  ],
+  "J_c_exit_marked_core_count_bounds": {
+    "minus_between_marks_depth_bound": "c-b<=3",
+    "minus_upper_marks_depth_bound": "8-c<=3 because (b-4)+(c-b-1)>=0",
+    "plus_between_marks_depth_bound": "b-c<=3",
+    "plus_lower_marks_depth_bound": "c<=3 because (4-b)+(b-c-1)>=0",
+    "old_a_depth": 2,
+    "old_b_depth": 1,
+    "every_marked_label_after_J_c_exit_depth_at_most": 3
+  },
+  "signed_slacks": {
+    "J_weight2_b_exit": {
+      "target_debt": 1
+    },
+    "J_weight1_c_exit": {
+      "E1_credit_excess": 1
+    },
+    "J_Gamma1_weight_at_least3": {
+      "constant": 1,
+      "weight_excess": 1,
+      "target_debt": 1
+    },
+    "G_zero_a_exit_to_J": {},
+    "G_weight2_b_exit": {
+      "target_debt": 1
+    },
+    "unchanged_source": {
+      "old_residual": 1,
+      "target_increment": 1
+    },
+    "nonnegative_incoming_J_or_G": {
+      "weight_nonnegative": 1,
+      "source_room_below2": 1
+    }
+  },
+  "J_no_V_filter_or_private_completion_guard": true,
+  "main_full_G_boundary_targets_still_satisfy_J": true,
+  "J_actual_H1_targets_only_b_c_by_extremal_pair_order": true,
+  "J_Gamma1_terminal_only_a_or_b_and_original_B_q_at_most": 1,
+  "J_Gamma1_original_H2_weight_at_least": 3,
+  "G_no_actual_anonymous_source_charge1_target": true,
+  "operation_order": [
+    "J_capacity2",
+    "G_capacity2"
+  ],
+  "each_previously_valid_LOW_row_preserved_by_each_operation": true,
+  "all_J_and_G_source_LOW_rows_proved": true,
+  "G_zero_marked_grandchild_residual_exactly": 0,
+  "both_ancestors_marked": true,
+  "main_G_sources_outside_S": true,
+  "all_nonnegative_incoming_J_G_rows_valid": true,
+  "negative_incoming_blanket_validity_claimed": false,
+  "all_compatible_core_subtrees_and_admissible_signatures": true,
+  "strict_numerical_increase_of_old_debt_claimed": false,
+  "new_finite_tests": 0,
+  "new_source_transition_queries": 0,
+  "new_original_root_evaluations": 0,
+  "new_saved_psi_queries": 0,
+  "new_label_fits": 0,
+  "new_bank_censuses": 0,
+  "completed_semantic_checks_replayed": 0,
+  "completed_provenance_reused_sha256": "6fa31643661b6ddb918a69247e73069625026194b09cb478726f1bb8a419e3e4",
+  "new_source_AST_hashes": {
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_PARAMETRIC_PORT_COMPILER/PC_ROTATION_INTERPRETER.py": "f15a8de6ebdb0eec8935261269e77c3729cf1c8c12d8cb0f56172403c21e9c53"
+  },
+  "full_compiler_formalization_claimed": false,
+  "external_human_or_model_review_claimed": false,
+  "all_marked_ancestor_grandchild_zero_H1_coverage_proved": false,
+  "global_zero_LOW_coverage_proved": false,
+  "full_M3_status": "OPEN",
+  "CPU_seconds": 0.171875,
+  "CPU_cap": 120.0
+}

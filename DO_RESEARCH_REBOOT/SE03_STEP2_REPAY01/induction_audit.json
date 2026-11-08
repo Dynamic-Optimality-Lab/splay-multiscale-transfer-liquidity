@@ -1,0 +1,30 @@
+{
+  "status": "PASS_NECESSARY_RANGE_THEOREM_ONLY",
+  "method": "independent primitive free-term induction steps and rational affine identities",
+  "r_quantification": "all integers r>=3; no r instantiated or enumerated",
+  "fringe_quantification": "all ordered BST gap variables; suffix E arbitrary",
+  "source_induction_steps": [
+    "neighbor_RR_LL_inverse",
+    "maximum_vine_RR_step",
+    "ascending_RRLL_step",
+    "preparation_LLLL",
+    "critical_RR",
+    "repair_LLR_then_R",
+    "warm_steady_erasure_join"
+  ],
+  "totals": {
+    "A": "6r-2",
+    "QF": "6r-6",
+    "QE_recurrent": "6r-12",
+    "QF-QE": "6",
+    "full_slack": "6r+2"
+  },
+  "potential_range_necessary": "K>=r-3",
+  "range_sufficient_proved": false,
+  "Step2_complete": false,
+  "uniform_induction_proved": false,
+  "finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_rows_replayed": 0,
+  "external_peer_review": false
+}

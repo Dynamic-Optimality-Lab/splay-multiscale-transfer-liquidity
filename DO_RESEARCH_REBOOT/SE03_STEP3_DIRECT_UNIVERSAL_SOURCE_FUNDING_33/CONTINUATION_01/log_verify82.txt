@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_verify82.py", line 3, in <module>
+    runpy.run_path(str(Path(__file__).resolve().parents[2]/'SE03_STEP3_GLOBAL_JOINT_OWNERSHIP_34/audit_maximal_diagnostic.py'),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_GLOBAL_JOINT_OWNERSHIP_34\audit_maximal_diagnostic.py", line 108, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_GLOBAL_JOINT_OWNERSHIP_34\audit_maximal_diagnostic.py", line 100, in main
+    assert all(len(M|set().union(*(I.amap(r['B0'])[x] for x in M)))==13 for r in rr)
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_GLOBAL_JOINT_OWNERSHIP_34\audit_maximal_diagnostic.py", line 100, in <genexpr>
+    assert all(len(M|set().union(*(I.amap(r['B0'])[x] for x in M)))==13 for r in rr)
+                     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_GLOBAL_JOINT_OWNERSHIP_34\audit_maximal_diagnostic.py", line 100, in <genexpr>
+    assert all(len(M|set().union(*(I.amap(r['B0'])[x] for x in M)))==13 for r in rr)
+                                   ~~~~~~~~~~~~~~~^^^
+KeyError: 1

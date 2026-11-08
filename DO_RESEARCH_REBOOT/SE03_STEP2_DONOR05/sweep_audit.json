@@ -1,0 +1,187 @@
+{
+  "status": "PASS_COMPLETE_EXTREME_SWEEP_SOURCE_CLASS",
+  "sweep_induction_frame": {
+    "source": [
+      "mi",
+      "L",
+      [
+        "ui",
+        "B",
+        [
+          "mr",
+          [
+            "uj",
+            [
+              "mj",
+              "C",
+              "D"
+            ],
+            "Tail"
+          ],
+          "E"
+        ]
+      ]
+    ],
+    "target": [
+      "mj",
+      [
+        "ui",
+        [
+          "mi",
+          "L",
+          "B"
+        ],
+        "C"
+      ],
+      [
+        "uj",
+        "D",
+        [
+          "mr",
+          "Tail",
+          "E"
+        ]
+      ]
+    ],
+    "double_word": [
+      "LL",
+      "RR"
+    ],
+    "actual_q": 2
+  },
+  "monotone_A_H1_old_extreme_depth_increments": [
+    1,
+    2,
+    1
+  ],
+  "sweep_H1_forces_old_extreme_depth": 5,
+  "source_target_cover_next_packet_H_at_least": 4,
+  "next_episode_H_at_least": 9,
+  "deficient_episodes_not_adjacent": true,
+  "episode_Q": 15,
+  "episode_minH": 7,
+  "selected_threshold": 8,
+  "debt_range": 1,
+  "residuals": {
+    "deficient": 0,
+    "nondef_after_def": 0,
+    "nondef_after_nondef": 1
+  },
+  "full_allocator": "actual FIFO episode bank, first min(H,8) source events, pay15 original IDs, zero endpoint bank",
+  "max_boundary_bank": 1,
+  "max_selected_units": 16,
+  "max_within_episode_queue": 17,
+  "witness": {
+    "word": [
+      {
+        "occurrence": 1,
+        "op": "K",
+        "key": 11
+      },
+      {
+        "occurrence": 2,
+        "op": "K",
+        "key": 1
+      },
+      {
+        "occurrence": 3,
+        "op": "K",
+        "key": 3
+      },
+      {
+        "occurrence": 4,
+        "op": "K",
+        "key": 5
+      },
+      {
+        "occurrence": 5,
+        "op": "K",
+        "key": 7
+      },
+      {
+        "occurrence": 6,
+        "op": "K",
+        "key": 9
+      },
+      {
+        "occurrence": 7,
+        "op": "K",
+        "key": 11
+      },
+      {
+        "occurrence": 8,
+        "op": "K",
+        "key": 1
+      },
+      {
+        "occurrence": 9,
+        "op": "K",
+        "key": 11
+      },
+      {
+        "occurrence": 10,
+        "op": "K",
+        "key": 9
+      },
+      {
+        "occurrence": 11,
+        "op": "K",
+        "key": 7
+      },
+      {
+        "occurrence": 12,
+        "op": "K",
+        "key": 5
+      },
+      {
+        "occurrence": 13,
+        "op": "K",
+        "key": 3
+      },
+      {
+        "occurrence": 14,
+        "op": "D",
+        "key": 1
+      },
+      {
+        "occurrence": 15,
+        "op": "D",
+        "key": 11
+      },
+      {
+        "occurrence": 16,
+        "op": "D",
+        "key": 1
+      },
+      {
+        "occurrence": 17,
+        "op": "K",
+        "key": 1
+      }
+    ],
+    "A_recurrent": 32,
+    "QF": 30,
+    "full_slack": 34,
+    "recurrent_input": [
+      "P_full_max_min",
+      "R11"
+    ],
+    "reaching_prefix": "one actual period from diagonalR11 reaches the input; its cost is excluded from donors",
+    "one_H2_q5q1_packet": true,
+    "realizable_deficient_episode_claimed": false
+  },
+  "fixed_owner_composition": "complete g permits exact alternating paths while retaining common and all compatible paid original receipts",
+  "arbitrary_DELETE_helpers": true,
+  "arbitrary_nongenuine_KEEPS": true,
+  "all_original_operations_covered_once": true,
+  "all_auxiliary_patterns_within_class_covered": true,
+  "no_rejoin_assumed": true,
+  "prep_tail_guard_required": false,
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "new_graphs": 0,
+  "universal_Step2": false,
+  "core10_covered": false,
+  "other_core11_words_covered": false
+}

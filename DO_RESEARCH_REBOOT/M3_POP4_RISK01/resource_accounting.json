@@ -1,0 +1,37 @@
+{
+  "status": "CPU_DEADLINE_STOP_REMAINING_ALLOWANCE_RESERVED",
+  "completed_reported_CPU_seconds": 7195.421,
+  "additional_failed_phase_budget_charge": 4.579,
+  "failed_phase_charge_is_allocation_not_measurement": true,
+  "conservative_cumulative_CPU_charge": 7200.0,
+  "ceiling": 7200,
+  "captured_processes": 55,
+  "process_CPU_measurements_compared_with_saved_reports": 55,
+  "failed_phase_details": {
+    "sigma": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "phase": "audit",
+    "allocated_CPU_cap": 2.579,
+    "whole_process_CPU_seconds": null,
+    "exact_failure_CPU_known": false,
+    "monitor_missing_short_process": true,
+    "remaining_allowance_reserved_instead_of_fabricating_CPU": true,
+    "last_logged_family_CPU_lower_bound": 2.594,
+    "last_logged_completed_family_queries": 76604,
+    "independent_CPU_cap_assertion": true,
+    "last_traceback_line": "AssertionError: UNKNOWN independent query/CPU cap",
+    "accounting": "remaining ALLOCATION charged, not measured CPU"
+  },
+  "source_queries_repeated": 0,
+  "finite_phases_repeated": 0
+}

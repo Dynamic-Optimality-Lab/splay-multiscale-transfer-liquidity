@@ -1,0 +1,181 @@
+{
+  "status": "SOURCE_DERIVATION_AUDIT_PENDING",
+  "reports": [
+    {
+      "source": "A80",
+      "consecutive_zero_runs": [
+        {
+          "macros": [
+            2
+          ],
+          "length": 1,
+          "leaf_before": 4,
+          "leaf_after": 3
+        },
+        {
+          "macros": [
+            6
+          ],
+          "length": 1,
+          "leaf_before": 3,
+          "leaf_after": 2
+        }
+      ],
+      "positive_leaf_recovery": [
+        {
+          "macro": 0,
+          "H": 28,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 56
+        },
+        {
+          "macro": 3,
+          "H": 2,
+          "Q": 2,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 3
+        },
+        {
+          "macro": 11,
+          "H": 21,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 42
+        },
+        {
+          "macro": 17,
+          "H": 1,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 2
+        },
+        {
+          "macro": 23,
+          "H": 1,
+          "Q": 6,
+          "leaf_gain": 5,
+          "comparison_unused_own_count": 1
+        },
+        {
+          "macro": 31,
+          "H": 1,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 2
+        },
+        {
+          "macro": 37,
+          "H": 1,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 2
+        },
+        {
+          "macro": 39,
+          "H": 3,
+          "Q": 3,
+          "leaf_gain": 2,
+          "comparison_unused_own_count": 5
+        },
+        {
+          "macro": 40,
+          "H": 2,
+          "Q": 2,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 3
+        }
+      ]
+    },
+    {
+      "source": "B82",
+      "consecutive_zero_runs": [
+        {
+          "macros": [
+            1,
+            2
+          ],
+          "length": 2,
+          "leaf_before": 5,
+          "leaf_after": 3
+        },
+        {
+          "macros": [
+            6
+          ],
+          "length": 1,
+          "leaf_before": 3,
+          "leaf_after": 2
+        }
+      ],
+      "positive_leaf_recovery": [
+        {
+          "macro": 0,
+          "H": 33,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 66
+        },
+        {
+          "macro": 3,
+          "H": 3,
+          "Q": 2,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 5
+        },
+        {
+          "macro": 11,
+          "H": 21,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 42
+        },
+        {
+          "macro": 17,
+          "H": 1,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 2
+        },
+        {
+          "macro": 23,
+          "H": 1,
+          "Q": 6,
+          "leaf_gain": 5,
+          "comparison_unused_own_count": 1
+        },
+        {
+          "macro": 31,
+          "H": 1,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 2
+        },
+        {
+          "macro": 37,
+          "H": 1,
+          "Q": 1,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 2
+        },
+        {
+          "macro": 39,
+          "H": 3,
+          "Q": 3,
+          "leaf_gain": 2,
+          "comparison_unused_own_count": 5
+        },
+        {
+          "macro": 40,
+          "H": 2,
+          "Q": 2,
+          "leaf_gain": 1,
+          "comparison_unused_own_count": 3
+        }
+      ]
+    }
+  ],
+  "uniform_lemma": "A chronological run of H1/Q2,beta2,z1 zero macros has length<=r-3. The recovery of B leaves does not force equally many unused A bits.",
+  "universal_LOW_supply": "OPEN",
+  "source_engine_calls": 0
+}

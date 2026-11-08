@@ -1,0 +1,3278 @@
+{
+  "original_PG_sha256": "0b32fb999760f9ed383d5d1f57bba2f0d63aa756dde9a6c1640f9c31af6040b8",
+  "original_FE_sha256": "68b399034a3890b3f3ecd703b63304e261e47682ac250413c200536bd1b4a088",
+  "source_formula_sha256": "ddca97a0151a5da0daf48be4d59b52981663db40b39531c49b4fb6f36cc84e54",
+  "regression": {
+    "ordinary": {
+      "return_rows": [
+        {
+          "block": 0,
+          "key": 7,
+          "previous_same_block": 13,
+          "cyclic_gap": 6,
+          "departure_block": 14,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 5,
+          "actual_a": 1,
+          "actual_q": 3,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 1,
+          "key": 5,
+          "previous_same_block": 10,
+          "cyclic_gap": 10,
+          "departure_block": 11,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 9,
+          "actual_a": 1,
+          "actual_q": 2,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 2,
+          "key": 3,
+          "previous_same_block": 17,
+          "cyclic_gap": 4,
+          "departure_block": 18,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 3,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 3,
+          "key": 1,
+          "previous_same_block": 18,
+          "cyclic_gap": 4,
+          "departure_block": 0,
+          "departure_source_profile": {
+            "access_depth": 6,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 3,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 4,
+          "key": 5,
+          "previous_same_block": 1,
+          "cyclic_gap": 3,
+          "departure_block": 2,
+          "departure_source_profile": {
+            "access_depth": 3,
+            "original_first_directions": [
+              "L",
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 1,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 1,
+          "short_gap_donor": true
+        },
+        {
+          "block": 5,
+          "key": 6,
+          "previous_same_block": 12,
+          "cyclic_gap": 12,
+          "departure_block": 13,
+          "departure_source_profile": {
+            "access_depth": 1,
+            "original_first_directions": [
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 10,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 6,
+          "key": 4,
+          "previous_same_block": 6,
+          "cyclic_gap": 19,
+          "departure_block": 7,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 18,
+          "actual_a": 2,
+          "actual_q": 2,
+          "capacity": 4,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 7,
+          "key": 1,
+          "previous_same_block": 3,
+          "cyclic_gap": 4,
+          "departure_block": 4,
+          "departure_source_profile": {
+            "access_depth": 3,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 2,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 8,
+          "key": 2,
+          "previous_same_block": 15,
+          "cyclic_gap": 12,
+          "departure_block": 16,
+          "departure_source_profile": {
+            "access_depth": 1,
+            "original_first_directions": [
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 10,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 9,
+          "key": 1,
+          "previous_same_block": 7,
+          "cyclic_gap": 2,
+          "departure_block": 8,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "R",
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 0,
+          "actual_a": 1,
+          "actual_q": 0,
+          "capacity": 2,
+          "forced_unused_capacity": 2,
+          "short_gap_donor": true
+        },
+        {
+          "block": 10,
+          "key": 5,
+          "previous_same_block": 4,
+          "cyclic_gap": 6,
+          "departure_block": 5,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "R",
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 4,
+          "actual_a": 3,
+          "actual_q": 2,
+          "capacity": 6,
+          "forced_unused_capacity": 2,
+          "short_gap_donor": true
+        },
+        {
+          "block": 11,
+          "key": 1,
+          "previous_same_block": 9,
+          "cyclic_gap": 2,
+          "departure_block": 10,
+          "departure_source_profile": {
+            "access_depth": 4,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 1,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 1,
+          "short_gap_donor": true
+        },
+        {
+          "block": 12,
+          "key": 6,
+          "previous_same_block": 5,
+          "cyclic_gap": 7,
+          "departure_block": 6,
+          "departure_source_profile": {
+            "access_depth": 4,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 6,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 13,
+          "key": 7,
+          "previous_same_block": 0,
+          "cyclic_gap": 13,
+          "departure_block": 1,
+          "departure_source_profile": {
+            "access_depth": 4,
+            "original_first_directions": [
+              "L",
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 11,
+          "actual_a": 1,
+          "actual_q": 0,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 14,
+          "key": 1,
+          "previous_same_block": 11,
+          "cyclic_gap": 3,
+          "departure_block": 12,
+          "departure_source_profile": {
+            "access_depth": 3,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 1,
+          "actual_a": 2,
+          "actual_q": 1,
+          "capacity": 4,
+          "forced_unused_capacity": 3,
+          "short_gap_donor": true
+        },
+        {
+          "block": 15,
+          "key": 2,
+          "previous_same_block": 8,
+          "cyclic_gap": 7,
+          "departure_block": 9,
+          "departure_source_profile": {
+            "access_depth": 1,
+            "original_first_directions": [
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 5,
+          "actual_a": 2,
+          "actual_q": 1,
+          "capacity": 4,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 16,
+          "key": 1,
+          "previous_same_block": 14,
+          "cyclic_gap": 2,
+          "departure_block": 15,
+          "departure_source_profile": {
+            "access_depth": 3,
+            "original_first_directions": [
+              "R",
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 0,
+          "actual_a": 1,
+          "actual_q": 0,
+          "capacity": 2,
+          "forced_unused_capacity": 2,
+          "short_gap_donor": true
+        },
+        {
+          "block": 17,
+          "key": 3,
+          "previous_same_block": 2,
+          "cyclic_gap": 15,
+          "departure_block": 3,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 14,
+          "actual_a": 2,
+          "actual_q": 2,
+          "capacity": 4,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 18,
+          "key": 1,
+          "previous_same_block": 16,
+          "cyclic_gap": 2,
+          "departure_block": 17,
+          "departure_source_profile": {
+            "access_depth": 4,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 1,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 1,
+          "short_gap_donor": true
+        }
+      ],
+      "source_forced_donor": 4,
+      "direct_injection": {
+        "donor_block": 4,
+        "assignments": [
+          {
+            "demand": [
+              0,
+              0,
+              0
+            ],
+            "unit": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              0,
+              1
+            ],
+            "unit": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              1,
+              0
+            ],
+            "unit": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              1,
+              1
+            ],
+            "unit": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              2,
+              0
+            ],
+            "unit": [
+              0,
+              2,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              3,
+              0
+            ],
+            "unit": [
+              0,
+              3,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              4,
+              0
+            ],
+            "unit": [
+              0,
+              4,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              0,
+              2
+            ],
+            "unit": [
+              0,
+              4,
+              0,
+              1
+            ],
+            "kind": "source_short_return_loan"
+          },
+          {
+            "demand": [
+              0,
+              5,
+              0
+            ],
+            "unit": [
+              0,
+              5,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              6,
+              0
+            ],
+            "unit": [
+              0,
+              6,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              6,
+              1
+            ],
+            "unit": [
+              0,
+              6,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              7,
+              0
+            ],
+            "unit": [
+              0,
+              7,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              8,
+              0
+            ],
+            "unit": [
+              0,
+              8,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              10,
+              0
+            ],
+            "unit": [
+              0,
+              10,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              10,
+              1
+            ],
+            "unit": [
+              0,
+              10,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              11,
+              0
+            ],
+            "unit": [
+              0,
+              11,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              12,
+              0
+            ],
+            "unit": [
+              0,
+              12,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              14,
+              0
+            ],
+            "unit": [
+              0,
+              14,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              15,
+              0
+            ],
+            "unit": [
+              0,
+              15,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              17,
+              0
+            ],
+            "unit": [
+              0,
+              17,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              17,
+              1
+            ],
+            "unit": [
+              0,
+              17,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              18,
+              0
+            ],
+            "unit": [
+              0,
+              18,
+              0,
+              0
+            ],
+            "kind": "own"
+          }
+        ],
+        "complete": true,
+        "paid_demands": 22,
+        "physical_capacity": 50,
+        "unused_units": 28,
+        "startup_units_used": 0,
+        "reused_units": 0,
+        "selected_from": "original-source return-gap/last-operation bound; not FE reservation"
+      },
+      "source_totals": {
+        "N": 19,
+        "s": 7,
+        "A": 25,
+        "Q_B": 22,
+        "E": 1,
+        "negative_slack": 29,
+        "positive_blocks": [
+          0
+        ],
+        "sum_gaps": 133,
+        "sum_eta": 10
+      },
+      "inherited_FE_cut0": {
+        "protocol": "FE",
+        "cut": 0,
+        "periods": 1,
+        "steps": [
+          {
+            "scan_index": 0,
+            "block": 0,
+            "key": 7,
+            "capacity": 2,
+            "own_q": 3,
+            "delta": 1,
+            "history": [
+              0
+            ],
+            "facts": [],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 0,
+            "signed_input": 1,
+            "debt_before": 0,
+            "debt_after": 1,
+            "loans": []
+          },
+          {
+            "scan_index": 1,
+            "block": 1,
+            "key": 5,
+            "capacity": 2,
+            "own_q": 2,
+            "delta": 0,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 0,
+                "first_key": null,
+                "ceiling": 2
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 0,
+            "signed_input": 0,
+            "debt_before": 1,
+            "debt_after": 1,
+            "loans": []
+          },
+          {
+            "scan_index": 2,
+            "block": 2,
+            "key": 3,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 1,
+                "first_key": 5,
+                "ceiling": 1
+              }
+            ],
+            "reservation": 1,
+            "offer": 1,
+            "reserved_loss": 0,
+            "signed_input": -1,
+            "debt_before": 1,
+            "debt_after": 0,
+            "loans": [
+              {
+                "demand": [
+                  0,
+                  0,
+                  2
+                ],
+                "unit": [
+                  0,
+                  2,
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "scan_index": 3,
+            "block": 3,
+            "key": 1,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 2,
+                "first_key": 5,
+                "ceiling": 2
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 4,
+            "block": 4,
+            "key": 5,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 3,
+                "first_key": 5,
+                "ceiling": 2
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 5,
+            "block": 5,
+            "key": 6,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 4,
+                "first_key": 5,
+                "ceiling": 4
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 6,
+            "block": 6,
+            "key": 4,
+            "capacity": 4,
+            "own_q": 2,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 5,
+                "first_key": 5,
+                "ceiling": 5
+              }
+            ],
+            "reservation": 4,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 7,
+            "block": 7,
+            "key": 1,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 6,
+                "first_key": 5,
+                "ceiling": 6
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 8,
+            "block": 8,
+            "key": 2,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 7,
+                "first_key": 5,
+                "ceiling": 6
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 9,
+            "block": 9,
+            "key": 1,
+            "capacity": 2,
+            "own_q": 0,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 8,
+                "first_key": 5,
+                "ceiling": 8
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 10,
+            "block": 10,
+            "key": 5,
+            "capacity": 6,
+            "own_q": 2,
+            "delta": -4,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 9,
+                "first_key": 5,
+                "ceiling": 8
+              }
+            ],
+            "reservation": 6,
+            "offer": 0,
+            "reserved_loss": 4,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 11,
+            "block": 11,
+            "key": 1,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 10,
+                "first_key": 5,
+                "ceiling": 10
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 12,
+            "block": 12,
+            "key": 6,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 11,
+                "first_key": 5,
+                "ceiling": 11
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 13,
+            "block": 13,
+            "key": 7,
+            "capacity": 2,
+            "own_q": 0,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 12,
+                "first_key": 5,
+                "ceiling": 11
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 14,
+            "block": 14,
+            "key": 1,
+            "capacity": 4,
+            "own_q": 1,
+            "delta": -3,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 13,
+                "first_key": 5,
+                "ceiling": 13
+              }
+            ],
+            "reservation": 4,
+            "offer": 0,
+            "reserved_loss": 3,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 15,
+            "block": 15,
+            "key": 2,
+            "capacity": 4,
+            "own_q": 1,
+            "delta": -3,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 14,
+                "first_key": 5,
+                "ceiling": 13
+              }
+            ],
+            "reservation": 4,
+            "offer": 0,
+            "reserved_loss": 3,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 16,
+            "block": 16,
+            "key": 1,
+            "capacity": 2,
+            "own_q": 0,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 15,
+                "first_key": 5,
+                "ceiling": 15
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 17,
+            "block": 17,
+            "key": 3,
+            "capacity": 4,
+            "own_q": 2,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 16,
+                "first_key": 5,
+                "ceiling": 16
+              }
+            ],
+            "reservation": 4,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 18,
+            "block": 18,
+            "key": 1,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 17,
+                "first_key": 5,
+                "ceiling": 17
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          }
+        ],
+        "assignments": [
+          {
+            "demand": [
+              0,
+              0,
+              0
+            ],
+            "unit": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "kind": "positive_own"
+          },
+          {
+            "demand": [
+              0,
+              0,
+              1
+            ],
+            "unit": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "kind": "positive_own"
+          },
+          {
+            "demand": [
+              0,
+              1,
+              0
+            ],
+            "unit": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              1,
+              1
+            ],
+            "unit": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              2,
+              0
+            ],
+            "unit": [
+              0,
+              2,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              0,
+              2
+            ],
+            "unit": [
+              0,
+              2,
+              0,
+              1
+            ],
+            "kind": "loan"
+          },
+          {
+            "demand": [
+              0,
+              3,
+              0
+            ],
+            "unit": [
+              0,
+              3,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              4,
+              0
+            ],
+            "unit": [
+              0,
+              4,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              5,
+              0
+            ],
+            "unit": [
+              0,
+              5,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              6,
+              0
+            ],
+            "unit": [
+              0,
+              6,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              6,
+              1
+            ],
+            "unit": [
+              0,
+              6,
+              0,
+              1
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              7,
+              0
+            ],
+            "unit": [
+              0,
+              7,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              8,
+              0
+            ],
+            "unit": [
+              0,
+              8,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              10,
+              0
+            ],
+            "unit": [
+              0,
+              10,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              10,
+              1
+            ],
+            "unit": [
+              0,
+              10,
+              0,
+              1
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              11,
+              0
+            ],
+            "unit": [
+              0,
+              11,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              12,
+              0
+            ],
+            "unit": [
+              0,
+              12,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              14,
+              0
+            ],
+            "unit": [
+              0,
+              14,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              15,
+              0
+            ],
+            "unit": [
+              0,
+              15,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              17,
+              0
+            ],
+            "unit": [
+              0,
+              17,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              17,
+              1
+            ],
+            "unit": [
+              0,
+              17,
+              0,
+              1
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              18,
+              0
+            ],
+            "unit": [
+              0,
+              18,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          }
+        ],
+        "unpaid": [],
+        "accepted": true,
+        "final_debt": 0,
+        "startup_units_used": 0,
+        "reused_units": 0,
+        "signed_balance": 0,
+        "minimum_prefix": 0
+      }
+    },
+    "reflected": {
+      "return_rows": [
+        {
+          "block": 0,
+          "key": 7,
+          "previous_same_block": 13,
+          "cyclic_gap": 6,
+          "departure_block": 14,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 5,
+          "actual_a": 1,
+          "actual_q": 3,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 1,
+          "key": 9,
+          "previous_same_block": 10,
+          "cyclic_gap": 10,
+          "departure_block": 11,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 9,
+          "actual_a": 1,
+          "actual_q": 2,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 2,
+          "key": 11,
+          "previous_same_block": 17,
+          "cyclic_gap": 4,
+          "departure_block": 18,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 3,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 3,
+          "key": 13,
+          "previous_same_block": 18,
+          "cyclic_gap": 4,
+          "departure_block": 0,
+          "departure_source_profile": {
+            "access_depth": 6,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 3,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 4,
+          "key": 9,
+          "previous_same_block": 1,
+          "cyclic_gap": 3,
+          "departure_block": 2,
+          "departure_source_profile": {
+            "access_depth": 3,
+            "original_first_directions": [
+              "R",
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 1,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 1,
+          "short_gap_donor": true
+        },
+        {
+          "block": 5,
+          "key": 8,
+          "previous_same_block": 12,
+          "cyclic_gap": 12,
+          "departure_block": 13,
+          "departure_source_profile": {
+            "access_depth": 1,
+            "original_first_directions": [
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 10,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 6,
+          "key": 10,
+          "previous_same_block": 6,
+          "cyclic_gap": 19,
+          "departure_block": 7,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 18,
+          "actual_a": 2,
+          "actual_q": 2,
+          "capacity": 4,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 7,
+          "key": 13,
+          "previous_same_block": 3,
+          "cyclic_gap": 4,
+          "departure_block": 4,
+          "departure_source_profile": {
+            "access_depth": 3,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 2,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 8,
+          "key": 12,
+          "previous_same_block": 15,
+          "cyclic_gap": 12,
+          "departure_block": 16,
+          "departure_source_profile": {
+            "access_depth": 1,
+            "original_first_directions": [
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 10,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 9,
+          "key": 13,
+          "previous_same_block": 7,
+          "cyclic_gap": 2,
+          "departure_block": 8,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "L",
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 0,
+          "actual_a": 1,
+          "actual_q": 0,
+          "capacity": 2,
+          "forced_unused_capacity": 2,
+          "short_gap_donor": true
+        },
+        {
+          "block": 10,
+          "key": 9,
+          "previous_same_block": 4,
+          "cyclic_gap": 6,
+          "departure_block": 5,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "L",
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 4,
+          "actual_a": 3,
+          "actual_q": 2,
+          "capacity": 6,
+          "forced_unused_capacity": 2,
+          "short_gap_donor": true
+        },
+        {
+          "block": 11,
+          "key": 13,
+          "previous_same_block": 9,
+          "cyclic_gap": 2,
+          "departure_block": 10,
+          "departure_source_profile": {
+            "access_depth": 4,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 1,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 1,
+          "short_gap_donor": true
+        },
+        {
+          "block": 12,
+          "key": 8,
+          "previous_same_block": 5,
+          "cyclic_gap": 7,
+          "departure_block": 6,
+          "departure_source_profile": {
+            "access_depth": 4,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 6,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 13,
+          "key": 7,
+          "previous_same_block": 0,
+          "cyclic_gap": 13,
+          "departure_block": 1,
+          "departure_source_profile": {
+            "access_depth": 4,
+            "original_first_directions": [
+              "R",
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 11,
+          "actual_a": 1,
+          "actual_q": 0,
+          "capacity": 2,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 14,
+          "key": 13,
+          "previous_same_block": 11,
+          "cyclic_gap": 3,
+          "departure_block": 12,
+          "departure_source_profile": {
+            "access_depth": 3,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 1,
+          "actual_a": 2,
+          "actual_q": 1,
+          "capacity": 4,
+          "forced_unused_capacity": 3,
+          "short_gap_donor": true
+        },
+        {
+          "block": 15,
+          "key": 12,
+          "previous_same_block": 8,
+          "cyclic_gap": 7,
+          "departure_block": 9,
+          "departure_source_profile": {
+            "access_depth": 1,
+            "original_first_directions": [
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 5,
+          "actual_a": 2,
+          "actual_q": 1,
+          "capacity": 4,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 16,
+          "key": 13,
+          "previous_same_block": 14,
+          "cyclic_gap": 2,
+          "departure_block": 15,
+          "departure_source_profile": {
+            "access_depth": 3,
+            "original_first_directions": [
+              "L",
+              "R"
+            ],
+            "old_root_depth": 1,
+            "eta": 1,
+            "reason": "final_zig_or_outer_cross"
+          },
+          "eta": 1,
+          "B_double_source_bound": 0,
+          "actual_a": 1,
+          "actual_q": 0,
+          "capacity": 2,
+          "forced_unused_capacity": 2,
+          "short_gap_donor": true
+        },
+        {
+          "block": 17,
+          "key": 11,
+          "previous_same_block": 2,
+          "cyclic_gap": 15,
+          "departure_block": 3,
+          "departure_source_profile": {
+            "access_depth": 2,
+            "original_first_directions": [
+              "R",
+              "R"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 14,
+          "actual_a": 2,
+          "actual_q": 2,
+          "capacity": 4,
+          "forced_unused_capacity": 0,
+          "short_gap_donor": false
+        },
+        {
+          "block": 18,
+          "key": 13,
+          "previous_same_block": 16,
+          "cyclic_gap": 2,
+          "departure_block": 17,
+          "departure_source_profile": {
+            "access_depth": 4,
+            "original_first_directions": [
+              "L",
+              "L"
+            ],
+            "old_root_depth": 2,
+            "eta": 0,
+            "reason": "even_outer_same_side"
+          },
+          "eta": 0,
+          "B_double_source_bound": 1,
+          "actual_a": 1,
+          "actual_q": 1,
+          "capacity": 2,
+          "forced_unused_capacity": 1,
+          "short_gap_donor": true
+        }
+      ],
+      "source_forced_donor": 4,
+      "direct_injection": {
+        "donor_block": 4,
+        "assignments": [
+          {
+            "demand": [
+              0,
+              0,
+              0
+            ],
+            "unit": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              0,
+              1
+            ],
+            "unit": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              1,
+              0
+            ],
+            "unit": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              1,
+              1
+            ],
+            "unit": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              2,
+              0
+            ],
+            "unit": [
+              0,
+              2,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              3,
+              0
+            ],
+            "unit": [
+              0,
+              3,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              4,
+              0
+            ],
+            "unit": [
+              0,
+              4,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              0,
+              2
+            ],
+            "unit": [
+              0,
+              4,
+              0,
+              1
+            ],
+            "kind": "source_short_return_loan"
+          },
+          {
+            "demand": [
+              0,
+              5,
+              0
+            ],
+            "unit": [
+              0,
+              5,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              6,
+              0
+            ],
+            "unit": [
+              0,
+              6,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              6,
+              1
+            ],
+            "unit": [
+              0,
+              6,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              7,
+              0
+            ],
+            "unit": [
+              0,
+              7,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              8,
+              0
+            ],
+            "unit": [
+              0,
+              8,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              10,
+              0
+            ],
+            "unit": [
+              0,
+              10,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              10,
+              1
+            ],
+            "unit": [
+              0,
+              10,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              11,
+              0
+            ],
+            "unit": [
+              0,
+              11,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              12,
+              0
+            ],
+            "unit": [
+              0,
+              12,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              14,
+              0
+            ],
+            "unit": [
+              0,
+              14,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              15,
+              0
+            ],
+            "unit": [
+              0,
+              15,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              17,
+              0
+            ],
+            "unit": [
+              0,
+              17,
+              0,
+              0
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              17,
+              1
+            ],
+            "unit": [
+              0,
+              17,
+              0,
+              1
+            ],
+            "kind": "own"
+          },
+          {
+            "demand": [
+              0,
+              18,
+              0
+            ],
+            "unit": [
+              0,
+              18,
+              0,
+              0
+            ],
+            "kind": "own"
+          }
+        ],
+        "complete": true,
+        "paid_demands": 22,
+        "physical_capacity": 50,
+        "unused_units": 28,
+        "startup_units_used": 0,
+        "reused_units": 0,
+        "selected_from": "original-source return-gap/last-operation bound; not FE reservation"
+      },
+      "source_totals": {
+        "N": 19,
+        "s": 7,
+        "A": 25,
+        "Q_B": 22,
+        "E": 1,
+        "negative_slack": 29,
+        "positive_blocks": [
+          0
+        ],
+        "sum_gaps": 133,
+        "sum_eta": 10
+      },
+      "inherited_FE_cut0": {
+        "protocol": "FE",
+        "cut": 0,
+        "periods": 1,
+        "steps": [
+          {
+            "scan_index": 0,
+            "block": 0,
+            "key": 7,
+            "capacity": 2,
+            "own_q": 3,
+            "delta": 1,
+            "history": [
+              0
+            ],
+            "facts": [],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 0,
+            "signed_input": 1,
+            "debt_before": 0,
+            "debt_after": 1,
+            "loans": []
+          },
+          {
+            "scan_index": 1,
+            "block": 1,
+            "key": 9,
+            "capacity": 2,
+            "own_q": 2,
+            "delta": 0,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 0,
+                "first_key": null,
+                "ceiling": 2
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 0,
+            "signed_input": 0,
+            "debt_before": 1,
+            "debt_after": 1,
+            "loans": []
+          },
+          {
+            "scan_index": 2,
+            "block": 2,
+            "key": 11,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 1,
+                "first_key": 9,
+                "ceiling": 1
+              }
+            ],
+            "reservation": 1,
+            "offer": 1,
+            "reserved_loss": 0,
+            "signed_input": -1,
+            "debt_before": 1,
+            "debt_after": 0,
+            "loans": [
+              {
+                "demand": [
+                  0,
+                  0,
+                  2
+                ],
+                "unit": [
+                  0,
+                  2,
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "scan_index": 3,
+            "block": 3,
+            "key": 13,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 2,
+                "first_key": 9,
+                "ceiling": 2
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 4,
+            "block": 4,
+            "key": 9,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 3,
+                "first_key": 9,
+                "ceiling": 2
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 5,
+            "block": 5,
+            "key": 8,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 4,
+                "first_key": 9,
+                "ceiling": 4
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 6,
+            "block": 6,
+            "key": 10,
+            "capacity": 4,
+            "own_q": 2,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 5,
+                "first_key": 9,
+                "ceiling": 5
+              }
+            ],
+            "reservation": 4,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 7,
+            "block": 7,
+            "key": 13,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 6,
+                "first_key": 9,
+                "ceiling": 6
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 8,
+            "block": 8,
+            "key": 12,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 7,
+                "first_key": 9,
+                "ceiling": 6
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 9,
+            "block": 9,
+            "key": 13,
+            "capacity": 2,
+            "own_q": 0,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 8,
+                "first_key": 9,
+                "ceiling": 8
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 10,
+            "block": 10,
+            "key": 9,
+            "capacity": 6,
+            "own_q": 2,
+            "delta": -4,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 9,
+                "first_key": 9,
+                "ceiling": 8
+              }
+            ],
+            "reservation": 6,
+            "offer": 0,
+            "reserved_loss": 4,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 11,
+            "block": 11,
+            "key": 13,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 10,
+                "first_key": 9,
+                "ceiling": 10
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 12,
+            "block": 12,
+            "key": 8,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 11,
+                "first_key": 9,
+                "ceiling": 11
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 13,
+            "block": 13,
+            "key": 7,
+            "capacity": 2,
+            "own_q": 0,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 12,
+                "first_key": 9,
+                "ceiling": 11
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 14,
+            "block": 14,
+            "key": 13,
+            "capacity": 4,
+            "own_q": 1,
+            "delta": -3,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 13,
+                "first_key": 9,
+                "ceiling": 13
+              }
+            ],
+            "reservation": 4,
+            "offer": 0,
+            "reserved_loss": 3,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 15,
+            "block": 15,
+            "key": 12,
+            "capacity": 4,
+            "own_q": 1,
+            "delta": -3,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 14,
+                "first_key": 9,
+                "ceiling": 13
+              }
+            ],
+            "reservation": 4,
+            "offer": 0,
+            "reserved_loss": 3,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 16,
+            "block": 16,
+            "key": 13,
+            "capacity": 2,
+            "own_q": 0,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 15,
+                "first_key": 9,
+                "ceiling": 15
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 17,
+            "block": 17,
+            "key": 11,
+            "capacity": 4,
+            "own_q": 2,
+            "delta": -2,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 16,
+                "first_key": 9,
+                "ceiling": 16
+              }
+            ],
+            "reservation": 4,
+            "offer": 0,
+            "reserved_loss": 2,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          },
+          {
+            "scan_index": 18,
+            "block": 18,
+            "key": 13,
+            "capacity": 2,
+            "own_q": 1,
+            "delta": -1,
+            "history": [
+              0
+            ],
+            "facts": [
+              {
+                "anchor": 0,
+                "k": 17,
+                "first_key": 9,
+                "ceiling": 17
+              }
+            ],
+            "reservation": 2,
+            "offer": 0,
+            "reserved_loss": 1,
+            "signed_input": 0,
+            "debt_before": 0,
+            "debt_after": 0,
+            "loans": []
+          }
+        ],
+        "assignments": [
+          {
+            "demand": [
+              0,
+              0,
+              0
+            ],
+            "unit": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "kind": "positive_own"
+          },
+          {
+            "demand": [
+              0,
+              0,
+              1
+            ],
+            "unit": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "kind": "positive_own"
+          },
+          {
+            "demand": [
+              0,
+              1,
+              0
+            ],
+            "unit": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              1,
+              1
+            ],
+            "unit": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              2,
+              0
+            ],
+            "unit": [
+              0,
+              2,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              0,
+              2
+            ],
+            "unit": [
+              0,
+              2,
+              0,
+              1
+            ],
+            "kind": "loan"
+          },
+          {
+            "demand": [
+              0,
+              3,
+              0
+            ],
+            "unit": [
+              0,
+              3,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              4,
+              0
+            ],
+            "unit": [
+              0,
+              4,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              5,
+              0
+            ],
+            "unit": [
+              0,
+              5,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              6,
+              0
+            ],
+            "unit": [
+              0,
+              6,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              6,
+              1
+            ],
+            "unit": [
+              0,
+              6,
+              0,
+              1
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              7,
+              0
+            ],
+            "unit": [
+              0,
+              7,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              8,
+              0
+            ],
+            "unit": [
+              0,
+              8,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              10,
+              0
+            ],
+            "unit": [
+              0,
+              10,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              10,
+              1
+            ],
+            "unit": [
+              0,
+              10,
+              0,
+              1
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              11,
+              0
+            ],
+            "unit": [
+              0,
+              11,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              12,
+              0
+            ],
+            "unit": [
+              0,
+              12,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              14,
+              0
+            ],
+            "unit": [
+              0,
+              14,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              15,
+              0
+            ],
+            "unit": [
+              0,
+              15,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              17,
+              0
+            ],
+            "unit": [
+              0,
+              17,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              17,
+              1
+            ],
+            "unit": [
+              0,
+              17,
+              0,
+              1
+            ],
+            "kind": "payer_own"
+          },
+          {
+            "demand": [
+              0,
+              18,
+              0
+            ],
+            "unit": [
+              0,
+              18,
+              0,
+              0
+            ],
+            "kind": "payer_own"
+          }
+        ],
+        "unpaid": [],
+        "accepted": true,
+        "final_debt": 0,
+        "startup_units_used": 0,
+        "reused_units": 0,
+        "signed_balance": 0,
+        "minimum_prefix": 0
+      }
+    }
+  },
+  "formal_budget_noncontradiction_signature": {
+    "source_tree_status": "NONE PROVIDED: formal integer signature only, NOT a source witness",
+    "N": 4,
+    "s": 4,
+    "a": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "q": [
+      3,
+      2,
+      2,
+      2
+    ],
+    "L": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "eta": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "formal_signature_not_a_counterexample": true,
+  "actual_saturated_return_found": false,
+  "FE02_rigidity": "OPEN",
+  "FE02_CD": "OPEN",
+  "new_root_gap_subtheorem": "PROVED—UNIVERSAL",
+  "repetitions": "m=1 is the FE02 positive control; m>1 only inherited FE01 regression, not a FE02 theorem instance",
+  "new_key_counts": 0,
+  "larger_finite_fits": 0,
+  "source_searches": 0,
+  "larger_repetitions_replayed": 0
+}

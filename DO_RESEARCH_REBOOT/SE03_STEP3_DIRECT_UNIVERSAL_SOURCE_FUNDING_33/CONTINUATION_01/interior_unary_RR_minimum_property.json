@@ -1,0 +1,131 @@
+{
+  "status": "MIN_CONTRACTION_UNARY_RR_RULE_REFUTED",
+  "failure": {
+    "candidate": "min_over_all_BST_anchor_contractions",
+    "private_key": 15,
+    "source_A": [
+      14,
+      [
+        4,
+        [
+          2,
+          "F0",
+          "F1"
+        ],
+        [
+          6,
+          "F2",
+          [
+            8,
+            "F3",
+            [
+              10,
+              "F4",
+              [
+                12,
+                "F5",
+                "F6"
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        15,
+        "new_gap",
+        [
+          20,
+          [
+            18,
+            [
+              16,
+              "F7",
+              "F8"
+            ],
+            "F9"
+          ],
+          "F10"
+        ]
+      ]
+    ],
+    "source_B_core_index": 9226,
+    "target_anchor": 10,
+    "target_actual_key": 20,
+    "actual_A_target": [
+      20,
+      [
+        15,
+        [
+          14,
+          [
+            4,
+            [
+              2,
+              "F0",
+              "F1"
+            ],
+            [
+              6,
+              "F2",
+              [
+                8,
+                "F3",
+                [
+                  10,
+                  "F4",
+                  [
+                    12,
+                    "F5",
+                    "F6"
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "new_gap"
+        ],
+        [
+          18,
+          [
+            16,
+            "F7",
+            "F8"
+          ],
+          "F9"
+        ]
+      ],
+      "F10"
+    ],
+    "H": 1,
+    "Q": 1,
+    "price": 1,
+    "D_source": 2,
+    "D_target": 0,
+    "signed_margin": -1,
+    "all_source_projection_indices": [
+      9200
+    ],
+    "all_target_projection_indices": [
+      14758,
+      16277,
+      16706
+    ],
+    "all_source_projection_debts": [
+      2
+    ],
+    "all_target_projection_debts": [
+      1,
+      1,
+      0
+    ],
+    "B_target_core_index": 14770
+  },
+  "stage": "positive_coefficients",
+  "old_A_motifs": 7072,
+  "potentially_constraining_couplings": 3,
+  "accepted_source_identity_instantiations": 7072,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "all_source_populations": "not claimed by a partial coefficient check",
+  "principal_U33": "OPEN"
+}

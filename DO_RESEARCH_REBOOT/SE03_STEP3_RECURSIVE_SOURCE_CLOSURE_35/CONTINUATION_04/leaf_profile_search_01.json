@@ -1,0 +1,162 @@
+{
+  "status": "INFORMATION_CLASS_REFUTED",
+  "next_B": 2464,
+  "B_count": 3876,
+  "nodes": 15300,
+  "edges": 125575,
+  "source_constraints": 28711697,
+  "processed": 723253,
+  "max_D": 10,
+  "reason": "NEGATIVE_INFORMATION_CYCLE",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "input_sha256": "8fc9cc9044163673737e8d1f8a8f16876fe9e5d6a981dea00f6b78f226d07787",
+  "JR35": "OPEN",
+  "cycle_edges": [
+    {
+      "s": 1864362,
+      "t": 6210218,
+      "w": 0,
+      "B_edge": 1912,
+      "H": 1,
+      "source_row": 204,
+      "A_source": 102,
+      "A_target": 2409
+    },
+    {
+      "s": 10029738,
+      "t": 1864362,
+      "w": 1,
+      "B_edge": 8664,
+      "H": 1,
+      "source_row": 8461,
+      "A_source": 3640,
+      "A_target": 593
+    },
+    {
+      "s": 1,
+      "t": 10029738,
+      "w": -4,
+      "B_edge": 5,
+      "H": 1,
+      "source_row": 205,
+      "A_source": 102,
+      "A_target": 4021
+    },
+    {
+      "s": 5849094,
+      "t": 1,
+      "w": 1,
+      "B_edge": 4520,
+      "H": 1,
+      "source_row": 3939,
+      "A_source": 2307,
+      "A_target": 0
+    },
+    {
+      "s": 7192586,
+      "t": 5849094,
+      "w": 0,
+      "B_edge": 5779,
+      "H": 1,
+      "source_row": 5001,
+      "A_source": 2688,
+      "A_target": 2307
+    },
+    {
+      "s": 7987242,
+      "t": 7192586,
+      "w": 0,
+      "B_edge": 6619,
+      "H": 1,
+      "source_row": 5917,
+      "A_source": 2902,
+      "A_target": 2688
+    },
+    {
+      "s": 8675498,
+      "t": 7987242,
+      "w": 0,
+      "B_edge": 7322,
+      "H": 1,
+      "source_row": 6617,
+      "A_source": 3070,
+      "A_target": 2889
+    },
+    {
+      "s": 4264618,
+      "t": 8675498,
+      "w": 0,
+      "B_edge": 4016,
+      "H": 1,
+      "source_row": 909,
+      "A_source": 487,
+      "A_target": 3058
+    },
+    {
+      "s": 9364138,
+      "t": 4264618,
+      "w": 1,
+      "B_edge": 7909,
+      "H": 1,
+      "source_row": 7791,
+      "A_source": 3361,
+      "A_target": 487
+    },
+    {
+      "s": 4255830,
+      "t": 9364138,
+      "w": -1,
+      "B_edge": 4012,
+      "H": 1,
+      "source_row": 911,
+      "A_source": 487,
+      "A_target": 3361
+    },
+    {
+      "s": 8900618,
+      "t": 4255830,
+      "w": 0,
+      "B_edge": 7591,
+      "H": 2,
+      "source_row": 34902,
+      "A_source": 3130,
+      "A_target": 0
+    },
+    {
+      "s": 8200234,
+      "t": 8900618,
+      "w": 0,
+      "B_edge": 6868,
+      "H": 1,
+      "source_row": 6172,
+      "A_source": 2955,
+      "A_target": 3131
+    },
+    {
+      "s": 7491754,
+      "t": 8200234,
+      "w": 0,
+      "B_edge": 6127,
+      "H": 1,
+      "source_row": 5345,
+      "A_source": 2759,
+      "A_target": 2958
+    },
+    {
+      "s": 6210218,
+      "t": 7491754,
+      "w": 0,
+      "B_edge": 4944,
+      "H": 1,
+      "source_row": 3997,
+      "A_source": 2326,
+      "A_target": 2774
+    }
+  ],
+  "cycle_weight": -2,
+  "cycle_length": 14,
+  "scope": "ALL functions of full B and the complete leaf-indexed unchanged D6 vector",
+  "is_original_source_cycle": false,
+  "Coarse_Double_refuted": false
+}

@@ -1,0 +1,52 @@
+{
+  "status": "NO_ARCHITECTURE_CERTIFICATE_FROM_THIS_BOUNDED_SEARCH",
+  "reports": [
+    {
+      "family": "Omega_plus",
+      "reason": "EXHAUSTED_RESTRICTED_SOURCE_FAMILY",
+      "exact_states": 6,
+      "popped": 6,
+      "remaining_queue": 0,
+      "includes_erased_B_in_identity": true
+    },
+    {
+      "family": "Gamma_pair",
+      "reason": "EXHAUSTED_RESTRICTED_SOURCE_FAMILY",
+      "exact_states": 2,
+      "popped": 2,
+      "remaining_queue": 0,
+      "includes_erased_B_in_identity": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "reason": "EXHAUSTED_RESTRICTED_SOURCE_FAMILY",
+      "exact_states": 4,
+      "popped": 4,
+      "remaining_queue": 0,
+      "includes_erased_B_in_identity": true
+    }
+  ],
+  "candidate": null,
+  "states_total": 12,
+  "candidate_packet_proposals": 20,
+  "source_helpers_searched": "actual distinguished keys1..11 only; arbitrary private-fringe helper targets NOT exhausted",
+  "full_state_identity": "actual A,BF,BE,recent; fixed M,z,ready phase per seed; all gap terms retained",
+  "packet_types": [
+    "H1Q2 zero",
+    "H2Q4 zero",
+    "H3Q6 zero pair",
+    "H1Q1 +1",
+    "H2Q3 +1"
+  ],
+  "no_source_graph_or_solver_modified": true,
+  "universal_barrier_proved": false,
+  "limits": {
+    "CPU_seconds": 45,
+    "exact_states": 25000,
+    "packet_proposals": 200000,
+    "splay_calls": 1500000
+  },
+  "child_CPU": 0.015625,
+  "source_engine_calls": 91,
+  "new_finite_tests": 0
+}

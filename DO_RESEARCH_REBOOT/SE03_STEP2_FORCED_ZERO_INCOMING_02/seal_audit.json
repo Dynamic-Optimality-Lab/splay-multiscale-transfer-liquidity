@@ -1,0 +1,40 @@
+{
+  "status": "PASS_PARTIAL_SOURCE_RESULT_ONLY",
+  "outcome": "D",
+  "files_present": [
+    "FZ_SOURCE_SPEC.md",
+    "FORCED_REGION_RECONSTRUCTION.md",
+    "ZERO_PREDECESSOR_CLOSURE.md",
+    "PLUS_ONE_PREDECESSORS.md",
+    "RETURN_BARRIER.md",
+    "EXACT_SOURCE_REPLAY.md",
+    "FINAL_VERDICT.md",
+    "CHECKPOINT.md"
+  ],
+  "all_new_source_operations_covered_exactly_once": true,
+  "current_family_absolute_period_ids": true,
+  "complete_actual_state_closure": true,
+  "proof_review": {
+    "forced_range_endpoints": "range endpoints are forced by -2; no old formula used",
+    "arbitrary_zero_predecessors": "finite-path telescoping and no-last-edge proof for restricted C11",
+    "cost_exhaustion": "singleton Q<=4,H>=1; pair Q6,H>=2; large H automatic",
+    "core_constancy": "labeled set inclusion along every original KEEP and exact closure",
+    "first_entry": "fan q_next<=6-q excludes q3/q4 outputs before q4/q5; pair output q_next<=2",
+    "U_unary_extreme": "two independent SS identities plus processed-subtree persistence",
+    "marked_leaf_identity": "off-path parents fixed; only target and its old ancestors can change leaf status",
+    "leaf_return_bound": "six marks give F<=2,T>=4; only H1q1/q2 may lose leaves along cheap paths; count losses",
+    "source_hangers": "new word never enters holes; source claims lift by structural substitution induction",
+    "limits": "search does not cover anonymous helper targets; universal parent barrier explicitly remains OPEN",
+    "ownership": "no allocation created; every new word operation has one packet owner and absolute IDs",
+    "scope": "core11 lemmas do not exclude core9/10 or identify changing recent-five charts"
+  },
+  "scope_universal_barrier": "OPEN",
+  "width2_existence": "OPEN",
+  "Step2": "OPEN",
+  "Step3": "OPEN",
+  "Universal_CD": "OPEN",
+  "new_frozen_graph_or_solver": false,
+  "audit_kind": "same-agent independent source engine and separately checked mathematical derivation; not external review",
+  "source_engine_calls": 0,
+  "new_finite_tests": 0
+}

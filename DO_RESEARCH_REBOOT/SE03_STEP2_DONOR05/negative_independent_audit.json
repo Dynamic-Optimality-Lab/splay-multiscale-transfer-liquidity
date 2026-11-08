@@ -1,0 +1,31 @@
+{
+  "status": "PASS_EXPLICIT_NEGATIVE_WORD_SEED_AT_CORE11_SCOPE",
+  "independent_geometric_argument": [
+    "each offpath child has mass0 because M subtrees1 and U subtrees0",
+    "SS path of q pairs has q+1 marked vertices; pruning gives exact fan",
+    "nonextreme path marks have forbidden fixed prefix, so extra target enters root or extreme mark port",
+    "q4 leaves one block and therefore nextq<=2",
+    "q3 leaves two blocks; nextq3 needs both in ONE extreme port and all its four vertices on the new path",
+    "after that q3, omitted first-path marks remain in one/two old unmarked fan arms at former root",
+    "former root is a new path extreme; root-to-port prefix is at most one double",
+    "arm child of marked type is a LEAF; other child is unmarked, so legal traversal contributes at most one double",
+    "therefore q3/q3 output has no negative continuation",
+    "q5 then extreme return has the same one-prefix plus one-arm bound, nextq<=2"
+  ],
+  "important_equality_case": "all two outside blocks in the extreme port, leaving no other global marks in inner-source hangers",
+  "candidate_is_not_full_potential": true,
+  "B_only_counterproof": "every B edge separately has a reachable fully closed actualH1 realization; B-only labels coincide across contexts, so summation contradicts2C-Q<0",
+  "closure_control": "finite-map recurrence on actual finite keyset, no finite test; reaching prefix unused as capacity",
+  "no_negative_source_cycle_claimed": true,
+  "A_information_is_necessary": true,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "new_finite_tests": 0,
+  "new_graphs": 0,
+  "same_agent_separate_derivation": true,
+  "external_peer_review": false,
+  "whole_compiler_formalization": false,
+  "Step2": "OPEN",
+  "Step3": "OPEN",
+  "Universal_CD": "OPEN"
+}

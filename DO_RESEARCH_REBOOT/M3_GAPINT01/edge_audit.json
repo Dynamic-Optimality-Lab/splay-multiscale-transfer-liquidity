@@ -1,0 +1,115 @@
+{
+  "status": "FINITE_EXACT_VERIFIED",
+  "gap": 1,
+  "reflected_gap": 8,
+  "models": 72214,
+  "source_case_queries": 195449,
+  "states": 621923,
+  "edges_independently_regenerated": 4217313,
+  "range": [
+    -2,
+    0
+  ],
+  "destination_debt_floor": true,
+  "minimum_residual": 0,
+  "residual_histogram": {
+    "2": 251663,
+    "1": 2434978,
+    "0": 1513578,
+    "3": 17094
+  },
+  "range_safe_rows": 965121,
+  "debt_safe_rows": {
+    "0": 258515,
+    "1": 730425
+  },
+  "core_reflection_debt_mismatches": 0,
+  "potential_sha256": "343e06f241c5e900ccbca41a6534ccb7e8114e19c2dfcbf4cc47d59b0248fd88",
+  "cpu_seconds": 10.0,
+  "samples": {
+    "w1": {
+      "node": 0,
+      "source_B": 0,
+      "source_shadow": 0,
+      "w": 1,
+      "q": 1,
+      "H": 1,
+      "target": 2,
+      "destination_shadow": 2,
+      "witness": 0,
+      "A_depth": 2
+    },
+    "w0": {
+      "node": 2,
+      "source_B": 0,
+      "source_shadow": 61,
+      "w": 0,
+      "q": 2,
+      "H": 1,
+      "target": 4,
+      "destination_shadow": 63,
+      "witness": 48,
+      "A_depth": 2
+    },
+    "w-1": {
+      "node": 4,
+      "source_B": 0,
+      "source_shadow": 115,
+      "w": -1,
+      "q": 3,
+      "H": 1,
+      "target": 6,
+      "destination_shadow": 117,
+      "witness": 83,
+      "A_depth": 2
+    },
+    "w-2": {
+      "node": 6,
+      "source_B": 0,
+      "source_shadow": 143,
+      "w": -2,
+      "q": 4,
+      "H": 1,
+      "target": 8,
+      "destination_shadow": 145,
+      "witness": 96,
+      "A_depth": 2
+    },
+    "three_fringe_fork_w1": {
+      "node": 205129,
+      "source_B": 1859,
+      "source_shadow": 1372,
+      "w": 1,
+      "q": 1,
+      "H": 1,
+      "target": 4,
+      "destination_shadow": 556,
+      "witness": 6011,
+      "A_depth": 2
+    },
+    "three_fringe_fork_w0": {
+      "node": 205131,
+      "source_B": 1859,
+      "source_shadow": 1374,
+      "w": 0,
+      "q": 2,
+      "H": 1,
+      "target": 6,
+      "destination_shadow": 571,
+      "witness": 6026,
+      "A_depth": 2
+    },
+    "three_fringe_fork_w-1": {
+      "node": 205133,
+      "source_B": 1859,
+      "source_shadow": 1376,
+      "w": -1,
+      "q": 3,
+      "H": 1,
+      "target": 8,
+      "destination_shadow": 578,
+      "witness": 6033,
+      "A_depth": 2
+    }
+  }
+}

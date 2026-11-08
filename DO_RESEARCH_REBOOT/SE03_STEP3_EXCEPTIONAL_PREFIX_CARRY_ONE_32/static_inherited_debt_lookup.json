@@ -1,0 +1,213 @@
+{
+  "status": "PASS_STATIC_SAVED_CERTIFICATE_LOOKUP",
+  "new_source_queries": 0,
+  "negative_integer_classes": [
+    [
+      2,
+      1,
+      1,
+      -1
+    ],
+    [
+      2,
+      2,
+      1,
+      -1
+    ],
+    [
+      2,
+      2,
+      2,
+      -2
+    ],
+    [
+      3,
+      1,
+      1,
+      -1
+    ],
+    [
+      3,
+      2,
+      1,
+      -1
+    ],
+    [
+      4,
+      1,
+      1,
+      -1
+    ]
+  ],
+  "lookups": [
+    {
+      "name": "C31_after127_9",
+      "A_quotient": [
+        4000,
+        [
+          3000,
+          [
+            1500,
+            [
+              1000,
+              null,
+              null
+            ],
+            [
+              2000,
+              null,
+              null
+            ]
+          ],
+          null
+        ],
+        [
+          5000,
+          null,
+          [
+            6000,
+            null,
+            null
+          ]
+        ]
+      ],
+      "BF_core": [
+        7,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    "F0",
+                    "F1"
+                  ],
+                  "F2"
+                ],
+                "F3"
+              ],
+              "F4"
+            ],
+            "F5"
+          ],
+          "F6"
+        ],
+        [
+          8,
+          "F7",
+          [
+            9,
+            "F8",
+            [
+              10,
+              "F9",
+              [
+                11,
+                "F10",
+                "F11"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "A_index": 505,
+      "BF_index": 1281,
+      "debt_index": 385295,
+      "D6": 1,
+      "source": "literal projection of existing C31 replay; no newly executed source transition"
+    },
+    {
+      "name": "C31_after128_5",
+      "A_quotient": [
+        3000,
+        [
+          1500,
+          [
+            1000,
+            null,
+            null
+          ],
+          [
+            2000,
+            null,
+            null
+          ]
+        ],
+        [
+          4000,
+          null,
+          [
+            5000,
+            null,
+            [
+              6000,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "BF_core": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                "F0",
+                "F1"
+              ],
+              "F2"
+            ],
+            "F3"
+          ],
+          "F4"
+        ],
+        [
+          6,
+          "F5",
+          [
+            7,
+            "F6",
+            [
+              8,
+              "F7",
+              [
+                9,
+                "F8",
+                [
+                  10,
+                  "F9",
+                  [
+                    11,
+                    "F10",
+                    "F11"
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "A_index": 474,
+      "BF_index": 1175,
+      "debt_index": 381169,
+      "D6": 0,
+      "source": "literal projection of existing C31 replay; no newly executed source transition"
+    }
+  ],
+  "scope": "six-mark debt entries only; no claimed open-seven-source boundary or terminal inequality",
+  "input_sha256": {
+    "SE03_STEP2_UNARY_A_LIFT_14\\branch_grammar2.json": "e77471777f703a3a40fcf43dd8aa491bd752dad8eb619b8967ce14b8d4dade6d",
+    "SE03_STEP2_UNARY_A_LIFT_14\\branch_core11_mask0.json": "3a39e04957a1cd1b589bbe0fe5f7d3e5ace3b9693f64441a0b5dcbfa57975d09"
+  }
+}

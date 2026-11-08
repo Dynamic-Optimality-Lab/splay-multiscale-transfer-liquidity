@@ -1,0 +1,42 @@
+{
+  "status": "SIGNED_COMPOSITION_PASS_FULL_STEP4_COVERAGE_UNPROVED",
+  "accepted_new_proofs": [
+    {
+      "phase": "spread_v2",
+      "audit_hash": "feaf1a8ea7358406c5cd41872a93d14ffddcaef38ea493869c227f7102e21e91"
+    },
+    {
+      "phase": "child",
+      "audit_hash": "b521aeeb02c78d72174372418a6140a920a1e938b9d5590fab18cb8f083a5ef7"
+    },
+    {
+      "phase": "maskfree",
+      "audit_hash": "5fdfb63faea5daa90ac9f3c39d9bc4ece5629a00e6686d6ddf3b19802935cb9e"
+    },
+    {
+      "phase": "central_v2",
+      "audit_hash": "4ca3b506039b30b89165936aabbf8490948975e24923d59a4d21e3899e5da1ed"
+    },
+    {
+      "phase": "allcentral",
+      "audit_hash": "22278ae02ca377a9f87ce190e2d8f375b774eeac1d531667af043f4e80d88729"
+    }
+  ],
+  "failed_attempts_retained": [
+    "spread",
+    "central"
+  ],
+  "new_signed_rows_proved": true,
+  "all_old_valid_LOW_rows_preserved": true,
+  "HIGH_h0_glue_preserved": true,
+  "all_original_state_scope_and_transition_semantics_retained": true,
+  "new_finite_tests": 0,
+  "new_original_root_or_saved_psi_queries": 0,
+  "completed_semantic_checks_replayed": 0,
+  "requested_complete_Step4_achieved": false,
+  "Step4_complete": false,
+  "M3_status": "OPEN",
+  "unproved_exact_implication": "every remaining marked-source original zero H1 has D_current(t)>=psi(Bs)=D_current(s)",
+  "new_negative_cycle_certified": false,
+  "new_whole_signature_certificates": 0
+}

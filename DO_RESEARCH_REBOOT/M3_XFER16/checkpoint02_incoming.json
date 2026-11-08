@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "all_constructor_ids": [
+    "arbitrary_processed_spine_pair_growth_LL",
+    "arbitrary_processed_spine_pair_growth_RR",
+    "arbitrary_processed_spine_pair_growth_LR",
+    "arbitrary_processed_spine_pair_growth_RL",
+    "processed_spine_final_zig_growth_left",
+    "processed_spine_final_zig_growth_right",
+    "extreme_depth4_forbidden_minimum_left_child",
+    "extreme_depth4_forbidden_minimum_left_child_actual_opposite_primitives",
+    "extreme_depth5_old_root_at_left_child",
+    "extreme_depth5_old_root_at_left_child_actual_opposite_primitives",
+    "near_extreme_d4_upper_None_FORK",
+    "near_extreme_d4_upper_None_FORK_actual_opposite",
+    "near_extreme_d5_upper_None_FORK",
+    "near_extreme_d5_upper_None_FORK_actual_opposite",
+    "near_extreme_d4_upper_0_EXCEPTION",
+    "near_extreme_d4_upper_0_EXCEPTION_actual_opposite",
+    "near_extreme_d4_upper_1_OLD_ROOT",
+    "near_extreme_d4_upper_1_OLD_ROOT_actual_opposite",
+    "near_extreme_d4_upper_2_FORK",
+    "near_extreme_d4_upper_2_FORK_actual_opposite",
+    "near_extreme_d4_upper_3_FORK",
+    "near_extreme_d4_upper_3_FORK_actual_opposite",
+    "near_extreme_d5_upper_0_FORK",
+    "near_extreme_d5_upper_0_FORK_actual_opposite",
+    "near_extreme_d5_upper_1_OLD_ROOT",
+    "near_extreme_d5_upper_1_OLD_ROOT_actual_opposite",
+    "near_extreme_d5_upper_2_OLD_ROOT",
+    "near_extreme_d5_upper_2_OLD_ROOT_actual_opposite",
+    "near_extreme_d5_upper_3_FORK",
+    "near_extreme_d5_upper_3_FORK_actual_opposite",
+    "near_extreme_d5_upper_4_FORK",
+    "near_extreme_d5_upper_4_FORK_actual_opposite",
+    "exceptional_d4_source_and_target_exact",
+    "exceptional_d4_source_and_target_exact_actual_opposite_primitives"
+  ],
+  "complete_zero_incoming_spine_cases": [
+    {
+      "B_depth": 4,
+      "upper_ancestor_position": null,
+      "conclusion": "FORK",
+      "mandatory_lower_fork_role": "a1",
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 5,
+      "upper_ancestor_position": null,
+      "conclusion": "FORK",
+      "mandatory_lower_fork_role": "a2",
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 4,
+      "upper_ancestor_position": 0,
+      "conclusion": "EXCEPTION",
+      "mandatory_lower_fork_role": null,
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 4,
+      "upper_ancestor_position": 1,
+      "conclusion": "OLD_ROOT",
+      "mandatory_lower_fork_role": null,
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 4,
+      "upper_ancestor_position": 2,
+      "conclusion": "FORK",
+      "mandatory_lower_fork_role": "a1",
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 4,
+      "upper_ancestor_position": 3,
+      "conclusion": "FORK",
+      "mandatory_lower_fork_role": "a1",
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 5,
+      "upper_ancestor_position": 0,
+      "conclusion": "FORK",
+      "mandatory_lower_fork_role": "a1",
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 5,
+      "upper_ancestor_position": 1,
+      "conclusion": "OLD_ROOT",
+      "mandatory_lower_fork_role": null,
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 5,
+      "upper_ancestor_position": 2,
+      "conclusion": "OLD_ROOT",
+      "mandatory_lower_fork_role": null,
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 5,
+      "upper_ancestor_position": 3,
+      "conclusion": "FORK",
+      "mandatory_lower_fork_role": "a2",
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    },
+    {
+      "B_depth": 5,
+      "upper_ancestor_position": 4,
+      "conclusion": "FORK",
+      "mandatory_lower_fork_role": "a2",
+      "side_blocks": "ALL arbitrary compatible blocks",
+      "actual_opposite_constructor_identity": true
+    }
+  ],
+  "exceptional_source_height_at_least": 6,
+  "nonexception_old_root_extreme_observation_contradiction": true
+}

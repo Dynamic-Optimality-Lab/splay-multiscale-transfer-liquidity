@@ -1,0 +1,62 @@
+{
+  "status": "PASS_ACTUAL_NORMALIZED_SOURCE_COMPOSITION_6_TO_10",
+  "actual_period": [
+    39,
+    76
+  ],
+  "A_events": 53,
+  "physical_A_units": 106,
+  "full_demands": 27,
+  "canonical_I6_input": "native core6 own-map, no unprovided five-key/core9 source reservation",
+  "stage_records": [
+    {
+      "support": 7,
+      "demands": 11,
+      "common": 9,
+      "retired_E_only": 0,
+      "old_effective_owners_preserved": 11,
+      "new_owners": 0,
+      "working_peak": 8
+    },
+    {
+      "support": 8,
+      "demands": 13,
+      "common": 10,
+      "retired_E_only": 1,
+      "old_effective_owners_preserved": 12,
+      "new_owners": 1,
+      "working_peak": 8
+    },
+    {
+      "support": 9,
+      "demands": 21,
+      "common": 10,
+      "retired_E_only": 3,
+      "old_effective_owners_preserved": 21,
+      "new_owners": 0,
+      "working_peak": 8
+    },
+    {
+      "support": 10,
+      "demands": 27,
+      "common": 16,
+      "retired_E_only": 5,
+      "old_effective_owners_preserved": 25,
+      "new_owners": 2,
+      "working_peak": 9
+    }
+  ],
+  "all_old_success_paths_and_values_preserved": true,
+  "source_closure_all_five_B_executions": true,
+  "source_backbone_bound": 10,
+  "new_source_queries": 138,
+  "counterexample_to_CD": false,
+  "uniform_support_transfer_claimed": false,
+  "principal_U33": "OPEN",
+  "external_or_formal_verification": false,
+  "input_sha256": {
+    "native10_normalized_owner_chain.json": "3ef76b9d4c5b87314ba2a79feaa70f12ee0943050ac467f3f4cfbd1963bb8d16",
+    "native10_credit_certificate.json": "60a8453ecbf7e7a35cb7af45ef00d9c6285558ad424724bc16bc6881204d1d0b",
+    "NATIVE_TEN_SOURCE_THEOREM.md": "797362a15dc3b74c4bc88187fd85d370364b44f461ee88b09dbd862a02310209"
+  }
+}

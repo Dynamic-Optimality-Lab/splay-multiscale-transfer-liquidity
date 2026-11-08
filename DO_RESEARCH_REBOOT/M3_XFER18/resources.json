@@ -1,0 +1,90 @@
+{
+  "prior_uniform_CPU_charge": 763.703125,
+  "all_attempts_including_failures": [
+    {
+      "phase": "allcentral",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "controller_CPU": 0.09375,
+      "charge": 0.21875,
+      "peak_working_set_bytes": 18591744
+    },
+    {
+      "phase": "central",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.234375,
+      "controller_CPU": 0.140625,
+      "charge": 0.375,
+      "peak_working_set_bytes": 19845120
+    },
+    {
+      "phase": "central_v2",
+      "status": "PASS",
+      "child_CPU": 0.15625,
+      "controller_CPU": 0.1875,
+      "charge": 0.34375,
+      "peak_working_set_bytes": 19116032
+    },
+    {
+      "phase": "child",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.234375,
+      "charge": 0.421875,
+      "peak_working_set_bytes": 30990336
+    },
+    {
+      "phase": "composition",
+      "status": "PASS",
+      "child_CPU": 0.234375,
+      "controller_CPU": 0.203125,
+      "charge": 0.4375,
+      "peak_working_set_bytes": 17928192
+    },
+    {
+      "phase": "maskfree",
+      "status": "PASS",
+      "child_CPU": 0.09375,
+      "controller_CPU": 0.171875,
+      "charge": 0.265625,
+      "peak_working_set_bytes": 18444288
+    },
+    {
+      "phase": "spread",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.25,
+      "controller_CPU": 0.203125,
+      "charge": 0.453125,
+      "peak_working_set_bytes": 18825216
+    },
+    {
+      "phase": "spread_v2",
+      "status": "PASS",
+      "child_CPU": 0.296875,
+      "controller_CPU": 0.1875,
+      "charge": 0.484375,
+      "peak_working_set_bytes": 31977472
+    }
+  ],
+  "new_compute_CPU": 3.0,
+  "cumulative_accounted_CPU": 766.703125,
+  "finite_CPU_ceiling": 7200,
+  "remaining_CPU": 6433.296875,
+  "reserve": 5,
+  "old_signature_CPU_ledger_unchanged": 7195.203125,
+  "per_phase_caps": {
+    "symbolic": 120,
+    "construction": 300,
+    "source_audit": 300
+  },
+  "canonical_query_live_record_limit": 2000000,
+  "DAG_limit": 4000000,
+  "stored_edge_limit": 5000000,
+  "RAM_GiB": 32,
+  "new_finite_tests": 0,
+  "new_original_source_root_evaluations": 0,
+  "new_saved_psi_queries": 0,
+  "completed_semantic_checks_replayed": 0,
+  "resource_caps_preserved": true,
+  "metadata_hashing_convention": "entry/final immutable-file bookkeeping excluded as previously"
+}

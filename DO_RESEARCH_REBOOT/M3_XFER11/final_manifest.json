@@ -1,0 +1,175 @@
+{
+  "status": "PROVED_RESTRICTED_DOMAIN",
+  "theorem": "MARKED_ANCESTOR_DEPTH4_GRANDCHILD_TWO_CREDIT_RELAY_OUTSIDE_S",
+  "input_class": "any public Lambda<=D<=2; preserves each previously valid LOW row individually",
+  "minus_mark_guard": "first two marks a<b, b in4/5; marked c>b, c-b<=3",
+  "plus_mark_guard": "two largest marks a>b, b in3/4; marked c<b, b-c<=3",
+  "main_G_minus": "rootc, A L=b/LL=a, LR/R nonreal; core c,Lb and depth(a)=4",
+  "main_G_plus": "rootc, A R=b/RR=a, L/RL nonreal; core c,Rb and depth(a)=4",
+  "aux_J_minus": "roota, A R=b/RR=c and core a,Rb,Rc; no V or further A filter",
+  "aux_J_plus": "roota, A L=b/LL=c and core a,Lb,Lc; no V or further A filter",
+  "both_main_ancestors_marked": true,
+  "all_main_G_sources_outside_S": true,
+  "ordered_operations": [
+    "D1=max(D,2*1_J)",
+    "F=max(D1,2*1_G)"
+  ],
+  "explicit_current_debt": "D_marked=max(D_grand,2*1_J,2*1_G)",
+  "each_previously_valid_LOW_row_preserved_by_each_operation": true,
+  "all_J_and_G_source_original_LOW_rows_proved": true,
+  "main_zero_H1_source_and_target_debts": 2,
+  "main_zero_H1_signed_residual": 0,
+  "J_H1_b_weight": 2,
+  "J_H1_c_weight": 1,
+  "after_J_c_exit_all_marked_core_depths_at_most": 3,
+  "after_J_c_exit_existing_E1_floor_at_least": 1,
+  "J_Gamma1_allowed_terminal": "old a or b only",
+  "J_Gamma1_original_terminal_q_at_most": 1,
+  "J_Gamma1_original_H2_weight_at_least": 3,
+  "initial_helper_Score_emptiness_assumed": false,
+  "G_Gamma1_excluded_by_no_actual_anonymous_source_charge1_target": true,
+  "Gamma0_can_expose_other_marks_actual_preterminal_floor_reused": true,
+  "main_depth4_bottom_pair_path_words_complete": true,
+  "J_G_boundary_without_fresh_source_completion_retained": true,
+  "no_private_inventory_or_hidden_weak_LE_rank_inferred": true,
+  "all_compatible_core_subtrees_and_admissible_signatures": true,
+  "all_nonnegative_incoming_J_G_rows_valid": true,
+  "negative_incoming_blanket_repair_claimed": false,
+  "strict_numerical_increase_over_old_debt_claimed": false,
+  "prior_S_child_unmarked_ancestor_and_negative_H1_coverage_preserved": true,
+  "independent_universal_symbolic_audit": "PASS",
+  "full_compiler_formalization_claimed": false,
+  "external_human_or_model_review_claimed": false,
+  "all_marked_ancestor_grandchild_zero_H1_coverage_proved": false,
+  "global_zero_LOW_coverage_proved": false,
+  "full_M3_status": "OPEN",
+  "DynamicOptimality_status": "OPEN",
+  "remaining_open": [
+    "other uncovered depth5 marked-ancestor grandchild zero H1 classes",
+    "larger marked spans and zigzag marked-ancestor grandchild classes",
+    "other uncovered grandchild/child and shallow-helper zero/+1 classes",
+    "global signed LOW validity"
+  ],
+  "new_whole_signature_certificates": 0,
+  "original_negative_cycle_certified": false,
+  "finite_walk_bound_with_stated_LOW_coverage": -7,
+  "full_closed_walk_bound_with_stated_LOW_coverage": 0,
+  "new_finite_tests": 0,
+  "R1_R4_preserved": true,
+  "h0_correction_preserved": true,
+  "NET_ADVANCEMENT": "explicit two-credit J/G relay proves uniform marked-root/marked-parent depth4 zero H1 rows outside S, all J/G-source LOW and nonnegative incoming rows",
+  "resources": {
+    "prior_uniform_CPU_charge_retained": 759.8125,
+    "new_symbolic_checker_CPU": 0.1875,
+    "new_controller_CPU_through_finally": 0.1875,
+    "new_compute_CPU": 0.375,
+    "cumulative_accounted_CPU": 760.1875,
+    "finite_CPU_ceiling": 7200,
+    "guaranteed_remaining_CPU": 6439.8125,
+    "reserve": 5,
+    "old_signature_campaign_ledger_unchanged": 7195.203125,
+    "symbolic_phase_CPU_cap": 120,
+    "construction_CPU_cap": 300,
+    "audit_source_CPU_cap": 300,
+    "canonical_query_live_record_limit": 2000000,
+    "DAG_limit": 4000000,
+    "stored_edge_limit": 5000000,
+    "RAM_GiB_limit": 32,
+    "observed_peak_audit_working_set_bytes": 21086208,
+    "new_finite_tests": 0,
+    "new_source_transition_queries": 0,
+    "new_original_root_evaluations": 0,
+    "new_saved_psi_queries": 0,
+    "new_label_fits": 0,
+    "new_bank_censuses": 0,
+    "completed_semantic_checks_replayed": 0,
+    "current_caps_preserved": true,
+    "metadata_hashing_convention": "entry/final immutable-file bookkeeping excluded as previously"
+  },
+  "integrity": {
+    "status": "PASS",
+    "old_files_unchanged": 13910,
+    "HEAD": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+    "tracked_tree_clean": true,
+    "campaign_writes_confined_here": true,
+    "unrelated_concurrent_U4_additions": 0
+  },
+  "files": [
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/audit.py",
+      "sha256": "41ca1cb9576e1eb35936fef574f2032db60df1d6db32580ec11f315cfce3b7fe"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/certificate.json",
+      "sha256": "c3f5630e98efefb61cf9207ef2c94c5daadd6465a65f878ecf9f1aeccffbed10"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/concurrent_additions.json",
+      "sha256": "4e31e7343cbca3ef14af4270f3b3cd7a497477a6182151e66dd9d192a728aca6"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/controller_exit.json",
+      "sha256": "bead9f6a5360152bfcdd204fcb5f578072cd9f7fdbbff300fff65c7b0c595570"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/dependencies.json",
+      "sha256": "ba0a7c093682aafaacfbe96e3cd3681f173ddde22b3d839ceee1ae16c772ca8a"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/entry.py",
+      "sha256": "bda9cde5baedbfe1e54912a007a734add11433524161b679e372db29790bd190"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/entry_baseline.json",
+      "sha256": "8a323af66a2f3f60662acd0b63e41fb791d0e5ed63162ae383355f576399f60d"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/finalize.py",
+      "sha256": "0a910cf835117db96254a59454442d56bea7e1b121a51fdda2893ad55ec25d40"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/integrity.json",
+      "sha256": "2053b23d4d148769be068b8736a08249429adec539c888a08aa64dfcecb7c2aa"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/log_symbolic_audit.txt",
+      "sha256": "6dc8d8863027faaba419aa9e5203516592e90b6ebaffdbb2f5fee49c0c2eef89"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/MARKED_RELAY_THEOREM.md",
+      "sha256": "69474d98fb886eb0896ab6a7a16ce478cc4e2b0dda02facb5df6cf858bdb1602"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/PRE_EXECUTION.md",
+      "sha256": "4be421e366b13bcfcaf107b4147e9bdd6a3c6a245311fa68f9b60fe79eb38bf9"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/PROOF_AUDIT.md",
+      "sha256": "7ee869088f252787296ce5cc5ae3a8db6a23c124b98a486e0c3efd31c2213572"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/resources.json",
+      "sha256": "f1ff51fcc1a8ac7135743b3153f749131a7003020c8b3f7efd95448abb668466"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/RESULT.md",
+      "sha256": "5767b9be33ff9821d9f694aea943f756c57817e4cbc095eb37bf9fd289b5ed3d"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/run.py",
+      "sha256": "6fcb8016839bcf77d071165c95e04241ee64d93425fd7c26533b9a73ed02637f"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/run_result.json",
+      "sha256": "c01deff3c2f2ccdbfe06903bdb25affa35de8d0cc4ee9a24171702e8c95906d5"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/symbolic_audit.json",
+      "sha256": "df0141e9c1eaae76b6868206a28e66622470e7b1dcce11f5de2ce00873e8179b"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER11/symbolic_audit_exit.json",
+      "sha256": "6b7f0293f1a26f4ea80101b53183ca4fe948059484314884bc76b960e092c5a1"
+    }
+  ]
+}

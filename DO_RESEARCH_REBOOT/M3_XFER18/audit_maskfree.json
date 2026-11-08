@@ -1,0 +1,138 @@
+{
+  "status": "ALL_MASK_SPREAD_UNIVERSAL_AUDIT_PASS",
+  "new_identities_both_actual_orientations": [
+    "Z_new_target1_core",
+    "Q_zero6_core",
+    "K_zero4_core",
+    "Z_new_target1_A",
+    "Q_zero6_A"
+  ],
+  "completed_original_spread_identities_reused_not_replayed": true,
+  "entire_core_depth_proofs": {
+    "C4": {
+      "4": 0,
+      "2": 1,
+      "0": 2,
+      "1": 3,
+      "3": 2,
+      "5": 1,
+      "7": 2,
+      "6": 3,
+      "8": 3
+    },
+    "EU": {
+      "4": 0,
+      "2": 1,
+      "0": 2,
+      "1": 3,
+      "3": 2,
+      "6": 1,
+      "5": 2,
+      "7": 2,
+      "8": 3
+    },
+    "EW": {
+      "4": 0,
+      "2": 1,
+      "0": 2,
+      "1": 3,
+      "3": 2,
+      "6": 1,
+      "5": 2,
+      "8": 2,
+      "7": 3
+    },
+    "EK": {
+      "4": 0,
+      "2": 1,
+      "1": 2,
+      "0": 3,
+      "3": 2,
+      "6": 1,
+      "5": 2,
+      "7": 2,
+      "8": 3
+    }
+  },
+  "fresh_source_target_cover": {
+    "Z": {
+      "possible_nonroot_Scores": [
+        0,
+        1,
+        4,
+        6,
+        8
+      ],
+      "hidden_below_observed_separators": [
+        3,
+        5,
+        7
+      ]
+    },
+    "V": {
+      "possible_nonroot_Scores": [
+        2,
+        6,
+        7
+      ],
+      "hidden_below_LL2": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    "Q": {
+      "possible_nonroot_Scores": [
+        0,
+        2,
+        6
+      ],
+      "Score_empty_intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  },
+  "universal_signed_slacks": {
+    "new_Z_plus1": {
+      "Q_excess_above1": 1
+    },
+    "Q_zero6": {
+      "K_excess_above1": 1
+    },
+    "K_zero4": {
+      "E1_excess_above1": 1
+    },
+    "V_new_marked7_positive": {
+      "target_debt": 1
+    },
+    "old_row_transport": {
+      "old_residual": 1,
+      "target_increment": 1
+    }
+  },
+  "all_legal_five_bit_masks_quantified": true,
+  "new_debt": "D_allmarks=max(D_child,1_Ustar,1_Wstar,1_Kstar,1_Qstar,1_Vstar,2_Zstar)",
+  "ordered_operations": [
+    "U1",
+    "W1",
+    "K1",
+    "Q1",
+    "V1",
+    "Z2"
+  ],
+  "new_finite_population_or_mask_tests": 0,
+  "new_original_root_or_psi_queries": 0,
+  "completed_semantic_checks_replayed": 0,
+  "all_old_valid_LOW_rows_preserved": true,
+  "all_Z_source_LOW_rows_proved_for_every_mask": true,
+  "Step4_complete": false
+}

@@ -1,0 +1,76 @@
+{
+  "status": "PASS_EXHAUSTIVE_POSITIVE_CORE10_SOURCE_FLUX",
+  "polynomials": "(constant, coefficient_of_lambda), 0<=lambda<=1",
+  "upper_target_RR_rows": {
+    "P=M0,G=U0": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "P=U0,G=M0": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "P=U0,G=U0": [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "P=U0,G=U1": [
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "P=U1,G=U0": [
+      [
+        0,
+        0
+      ],
+      [
+        -1,
+        0
+      ]
+    ]
+  },
+  "LL_foreign_flux": "0 or -(1-lambda)",
+  "mixed_foreign_flux": 0,
+  "own_channel_flux": "nonpositive by separately proved source theorem",
+  "only_total_positive_patterns": [
+    "RR G=M0,P=U0,target=M1",
+    "LL G=M1,P=U1,target=M0"
+  ],
+  "each_creation_delta": 1,
+  "total_K_range": [
+    0,
+    4
+  ],
+  "cyclic_flux_matching": "actual minimum-K event seam; births push, negative-event removal ordinals pop; empty endpoint token stack",
+  "tokens_are_A_bits": false,
+  "original_B_demands_paid": false,
+  "Step2": "OPEN",
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "new_graphs": 0
+}

@@ -1,0 +1,187 @@
+{
+  "status": "PASS_UNIVERSAL_AFFINE_PROOF_SCHEMAS",
+  "identities": [
+    {
+      "name": "post_payment_bank",
+      "left": {
+        "M": 1,
+        "D": -1,
+        "C": 2,
+        "Q": -1
+      },
+      "right": {
+        "M": 1,
+        "C": 2,
+        "Q": -1,
+        "D": -1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "reserve_per_macro",
+      "left": {
+        "H": 2,
+        "Q": -1,
+        "E": 1,
+        "D": -1
+      },
+      "right": {
+        "H": 2,
+        "Q": -1,
+        "E": 1,
+        "D": -1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "physical_local_conservation",
+      "left": {
+        "H": 2,
+        "M": 1,
+        "D": -1
+      },
+      "right": {
+        "H": 2,
+        "D": -1,
+        "M": 1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "bank_upper_bound",
+      "left": {
+        "one": 2,
+        "M": -1,
+        "D": 1
+      },
+      "right": {
+        "one": 2,
+        "M": -1,
+        "D": 1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "queue_peak_bound",
+      "left": {
+        "one": 8,
+        "M": -1,
+        "D": 1,
+        "C": -2
+      },
+      "right": {
+        "one": 8,
+        "M": -1,
+        "D": 1,
+        "C": -2
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "LOW_exact_clipped_price",
+      "left": {
+        "H": 2,
+        "Q": -1
+      },
+      "right": {
+        "H": 2,
+        "Q": -1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "HIGH_exact_clipped_price",
+      "left": {
+        "one": 6,
+        "Q": -1
+      },
+      "right": {
+        "one": 6,
+        "Q": -1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "HIGH_tail_for_all_H_ge3",
+      "left": {
+        "T": 2
+      },
+      "right": {
+        "T": 2
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "constant_raw_chi_endpoint_difference",
+      "left": {
+        "E": -1,
+        "D": 1
+      },
+      "right": {
+        "D": 1,
+        "E": -1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "signed_surplus_is_imported_edge_slack",
+      "left": {
+        "C": 2,
+        "Q": -1,
+        "E": 1,
+        "D": -1
+      },
+      "right": {
+        "C": 2,
+        "Q": -1,
+        "E": 1,
+        "D": -1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "available_pool",
+      "left": {
+        "A2": 1,
+        "QE": -1,
+        "N": 1
+      },
+      "right": {
+        "A2": 1,
+        "QE": -1,
+        "N": 1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    },
+    {
+      "name": "remaining_original_slack",
+      "left": {
+        "A2": 1,
+        "QE": -1,
+        "N": 1,
+        "P": -1
+      },
+      "right": {
+        "A2": 1,
+        "QE": -1,
+        "P": -1,
+        "N": 1
+      },
+      "status": "FORMAL_AFFINE_IDENTITY"
+    }
+  ],
+  "nonnegative_premises": [
+    "0<=D,E<=M<=2",
+    "C=min(H,3)",
+    "S=2C-Q+E-D>=0 from actual M3/source bridge"
+  ],
+  "actual_source_event_IDs_required": true,
+  "initial_bank": "M-D=0 at selected maximum debt",
+  "cyclic_closure": "all source/abstract endpoints fully equal; D_end=D_start=M",
+  "allocation_new_finite_inputs_run": 0,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "Step1_scope": "auxiliary funding and explicit unused source units only",
+  "original_marginal_repayment_proved": false,
+  "uniform_support_induction_proved": false
+}

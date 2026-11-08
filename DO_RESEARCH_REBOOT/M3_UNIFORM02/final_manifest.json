@@ -1,0 +1,245 @@
+{
+  "status": "SIGN_RUN_CANDIDATE_REFUTED_ON_SAVED_PROOF_RELATION",
+  "candidate": "D=min(2,N*(C*(psi))); J=-D; exact promotion simplification",
+  "old_plus1_minus1_transfer_fixed": true,
+  "old_regression_residual": 0,
+  "independent_formula_identity_audit": true,
+  "C_attainment_rows": 78028,
+  "nonnegative_closure_checks": 3765183,
+  "negative_promotion_checks": 18917,
+  "new_signed_rows_until_failure": 829402,
+  "new_failing_weight": 1,
+  "source_D": 2,
+  "destination_D": 0,
+  "required_destination_D": 1,
+  "candidate_residual": -1,
+  "existing_certificate_residual": 0,
+  "independent_direct_endpoint_audit": true,
+  "final_candidate_labels_used_by_direct_audit": false,
+  "new_original_root_attempts": 1,
+  "new_original_root_accepted": 0,
+  "original_validity_of_candidate": "OPEN",
+  "original_negative_cycle_certified": false,
+  "uniform_J_proved": false,
+  "M3_status": "OPEN",
+  "NET_ORIGINAL_PROOF_ADVANCEMENT": 0,
+  "mandatory_strategy_review_completed": true,
+  "further_automatic_sign_alternation_search": false,
+  "R1_R4_preserved": true,
+  "h0_correction_preserved": true,
+  "resources": {
+    "prior_conservative_uniform_charge_retained": 622.0625,
+    "new_exact_child_process_CPU": 32.515625,
+    "new_controller_CPU_through_finally": 0.125,
+    "new_measured_experimental_CPU": 32.640625,
+    "cumulative_accounted_CPU": 654.703125,
+    "finite_CPU_ceiling": 7200,
+    "guaranteed_remaining_CPU": 6545.296875,
+    "old_sigma_campaign_ledger_unchanged": 7195.203125,
+    "CPU_caps": [
+      120,
+      300,
+      300
+    ],
+    "source_CPU_cap": 300,
+    "canonical_query_cap": 2000000,
+    "new_source_word_queries": 0,
+    "new_original_root_evaluations": 1,
+    "new_original_roots_accepted": 0,
+    "saved_canonical_profiles_reused": 492892,
+    "peak_construct_records": 1332494,
+    "peak_independent_audit_records": 1686495,
+    "metadata_hashing_convention": "entry/final preservation bookkeeping excluded as in prior campaigns; child experimental and controller CPU charged"
+  },
+  "integrity": {
+    "status": "PASS",
+    "old_files_unchanged": 13057,
+    "head": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+    "tracked_tree_clean": true,
+    "writes_confined_here": true,
+    "claim_scope": "this campaign only",
+    "concurrent_U4_additions": 16
+  },
+  "files": [
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/audit.py",
+      "sha256": "342e36c1b646c277f128b5270eeb2bfede79dcaecd2d84f5ef56169777947660"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/audit_obstruction.py",
+      "sha256": "784a9cd7ff4017365a1c449fc0c9c2fd313c965cd731e075ba16f8246ccc683b"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/attainment_trace.json",
+      "sha256": "cb0716ed7e257a8ac9649676bf9c86ff4380272b1ff0d49641ac48d0c7e8ba72"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/audit.json",
+      "sha256": "d18e06a172c8c211ad8db2ec38d590728cce634cc84b80fffbf857544b4e459f"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/audit_exit.json",
+      "sha256": "2fa4ab8c6d2aef7757e1c6e9eeac97f7459e8cb57552b5d9673cfe54c2c95399"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/C_attainment.json",
+      "sha256": "c7e21a2ea1c553fae4db0e827b2d4b18185a9bae886679d5bf61ff971af607f7"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/C_values.json",
+      "sha256": "b3476f835479063b8faecf966bfded742632b205ff72e943148d3402e1be0fa1"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/candidate.json",
+      "sha256": "1f770fd3edc4dd195a7f37d999cbf0481654fa5831fda9957656a889ffcb7d1e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/construct_exit.json",
+      "sha256": "5250c4aa7f2fb3f7e9bd48402098e96e22d3a70eb4f3fe4508a30b0416edc3b3"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/construction.json",
+      "sha256": "148928c8d28b8bff9cac3cf0d29477d327488acddcf6791ffcf5c7813a9d0363"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/formula_identity_audit.json",
+      "sha256": "d63e5497f5db7235a8ee4f3be2640aad5c7a524a6672bd8f9150e2b500d7960e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/initial.json",
+      "sha256": "f622d375296dc7e9099379278d9c51f2836e1c92bd8040fdc927a783100e584a"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/obstruction.json",
+      "sha256": "ba3ca4c4452c34795edce7593205abd7bef88dd5ee8b696968e4ce3c61ff96f7"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/obstruction_audit.json",
+      "sha256": "218f05efa48fb039d82177ffb1905ff95dabddaf28b68ce24d46f4126df9be77"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/obstruction_audit_exit.json",
+      "sha256": "440de06f692105ed924fe06a4e6bbd401820b171ba1ece97b1b440ba0579fa36"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/original_attempt.json",
+      "sha256": "1a4bae88aef619223df9123a186bf9847817779dac122ccb2e6c928ea6ef723c"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/original_control.json",
+      "sha256": "dc5a357c5ed3a82718c7fa9eda972880194eb1d0c3b38e9288eb2cc2428efbce"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/case_000/original_lift_exit.json",
+      "sha256": "94c52c08893407bc894ac58ea7bd31f9de7990e0fc2e02d78c9d7fd63f64e77d"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/certificate.json",
+      "sha256": "591eb27cb985ab5e5294791505ff87a5dbd2e02001822331eef020bec1aa182e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/concurrent_additions.json",
+      "sha256": "7540ae039772da7dc20cf19aaa837e71641aaed08624ae079abe40dbe20f6174"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/construct.py",
+      "sha256": "a6750988cc1da2cecba3dc81b1513890dc08d7f60775b91c84eaf5025a997252"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/controller_exit.json",
+      "sha256": "fba45ea1ec65afcd414608fb6846f62699f4552b7dc38d5ace31b70a2efbf79d"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/dependencies.json",
+      "sha256": "519303576fcc47af6a4c3999d2a96487e442c30b08550062d64a06f48eab9eb1"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/entry.py",
+      "sha256": "0a95e77215ad9067fd4ffe0c98fd81327877fc3508d287cab8206e9342acfb8f"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/entry_baseline.json",
+      "sha256": "70cb65744bd9cbdaa24f21f05eacf82f4517c2728382259d034cfcaf694cda3e"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/finalize.py",
+      "sha256": "310ccdf9ab844a5b06ad763cc642353e424b4668adc912781cc2c60b1e081f76"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/FORMULA.md",
+      "sha256": "a5e4e3a4f964ec84594d876fb3764a4eaedd072995ba1af4c45e2fca4291a3dd"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/integrity.json",
+      "sha256": "6eeb75033dfd0f01f5eec8d64dbd8254a804cd047bf5da492a87bca1c328b476"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/log_000_audit.txt",
+      "sha256": "aeedd672a1fe41ec091e5259155281cb5ad2fa6e975c82749248140c024e4018"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/log_000_audit_obstruction.txt",
+      "sha256": "011f4ca5673eebb7d80c3efbd165c834a4d93a38ca6701fd634fe83df783aef9"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/log_000_construct.txt",
+      "sha256": "816e8e5fe45af864028ea329ebd55403c8f66f8418fb763b69770d740748219f"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/log_000_original_lift.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/original_lift.py",
+      "sha256": "68f55f554a8a33313339629dd57a897cc14ddfa484b75a4cf1d4a0ce73078a5b"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/phase_000_audit.json",
+      "sha256": "1fb5761fe2a8b2c22814cc490acbc2bdf448fd9820051707b09ae3c4e65a5ac7"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/phase_000_audit_obstruction.json",
+      "sha256": "5d10fe76abc8b0eee0d9f4f78db6252b21f235901e9600277f77467f79adbb6d"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/phase_000_construct.json",
+      "sha256": "ba4a564e89086287338de9094a4db5b1f23e9c49ea85c651502d12a0c4b894bf"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/phase_000_original_lift.json",
+      "sha256": "32b49883fd98ce79fd7c9fa7e4d1928bcb14011cd6313cb4f2ea1fbb9fbcdc6b"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/PRE_EXECUTION.md",
+      "sha256": "987f6aab9725b51bb00ee7d9f0b3868e1c2712acdfd2f1032614798600aaf514"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/prepare_source.py",
+      "sha256": "77e5e49b77358c27fd3816425d64c803594376c2e91185c2d2172dc5012d4798"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/PROOF_AUDIT.md",
+      "sha256": "66e81d32d3fa3e54897f2912bfc98695807df4aeb88b3aac4d918f0ec8c512f8"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/resources.json",
+      "sha256": "9240e67a2dbbe853808c82968fcabd8125cae70cdb94e33dcf31f715920a32c6"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/RESULT.md",
+      "sha256": "03b7d1a97d2fbc239d5b8335616eaf077525af0cf7f1b4aadd8f79f7109a9ff0"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/run.py",
+      "sha256": "a7e41da94b10f37c364765a7ce63bc7e1fe76cf7836f9eca05ff010410b66cd3"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/run_result.json",
+      "sha256": "3517f6a84ed59595a0874d2a58c3ce49e191c7a81641c55efa13596c33467741"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/M3_UNIFORM02/STRATEGY_REVIEW.md",
+      "sha256": "5cb13d8589ce258827a58c82fdd9eb07beee9f76aa5a81cd358d4b2bf31ac51f"
+    }
+  ]
+}

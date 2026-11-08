@@ -1,0 +1,182 @@
+{
+  "status": "PASS_UNIVERSAL_FRAME_AND_MASS_IDENTITIES",
+  "frames": [
+    {
+      "case": "LL",
+      "source": [
+        "g",
+        [
+          "p",
+          [
+            "x",
+            "A",
+            "B"
+          ],
+          "C"
+        ],
+        "D"
+      ],
+      "target": [
+        "x",
+        "A",
+        [
+          "p",
+          "B",
+          [
+            "g",
+            "C",
+            "D"
+          ]
+        ]
+      ],
+      "delta_signed_subtree_sum": {
+        "1": -2,
+        "a": -2,
+        "b": -1,
+        "g": 2,
+        "c": 1,
+        "d": 2
+      }
+    },
+    {
+      "case": "RR",
+      "source": [
+        "g",
+        "A",
+        [
+          "p",
+          "B",
+          [
+            "x",
+            "C",
+            "D"
+          ]
+        ]
+      ],
+      "target": [
+        "x",
+        [
+          "p",
+          [
+            "g",
+            "A",
+            "B"
+          ],
+          "C"
+        ],
+        "D"
+      ],
+      "delta_signed_subtree_sum": {
+        "1": -2,
+        "g": 2,
+        "a": 2,
+        "b": 1,
+        "c": -1,
+        "d": -2
+      }
+    },
+    {
+      "case": "LR",
+      "source": [
+        "g",
+        [
+          "p",
+          "A",
+          [
+            "x",
+            "B",
+            "C"
+          ]
+        ],
+        "D"
+      ],
+      "target": [
+        "x",
+        [
+          "p",
+          "A",
+          "B"
+        ],
+        [
+          "g",
+          "C",
+          "D"
+        ]
+      ],
+      "delta_signed_subtree_sum": {
+        "1": -2,
+        "b": -1,
+        "g": 1,
+        "c": -1,
+        "d": 1
+      }
+    },
+    {
+      "case": "RL",
+      "source": [
+        "g",
+        "A",
+        [
+          "p",
+          [
+            "x",
+            "B",
+            "C"
+          ],
+          "D"
+        ]
+      ],
+      "target": [
+        "x",
+        [
+          "g",
+          "A",
+          "B"
+        ],
+        [
+          "p",
+          "C",
+          "D"
+        ]
+      ],
+      "delta_signed_subtree_sum": {
+        "1": -2,
+        "g": 1,
+        "a": 1,
+        "b": -1,
+        "c": -1
+      }
+    }
+  ],
+  "signed_mass_scope": "all actual closed maximal cores2r-1, r>=2, all mark-free ambient BST hangers",
+  "initial_and_final_density": "source marked mass1; source unmarked mass0/1; processed subtrees have final fixed masses",
+  "classification": [
+    {
+      "event": "SS",
+      "G": "marked",
+      "P": "unmarked source mass0",
+      "delta_K": 0
+    },
+    {
+      "event": "SS",
+      "G": "unmarked source mass1",
+      "P": "unmarked source mass1",
+      "delta_K": -1
+    },
+    {
+      "event": "mixed",
+      "G": "unmarked source mass1",
+      "P": "unmarked source mass1",
+      "delta_K": -2
+    }
+  ],
+  "terminal_zig": "impossible: marked root1 + rebuilt target1 + nonnegative hanger exceeds source mass1",
+  "closure": "all decrements nonnegative; full B closure forces every decrement0",
+  "no_positive_unmarked_vertex": "first access inside its rigid marked-descendant set must consume it, contradicting zero-change pair language",
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "new_graphs": 0,
+  "Step2_complete": false,
+  "core10_covered": false
+}

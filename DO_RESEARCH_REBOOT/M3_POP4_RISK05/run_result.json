@@ -1,0 +1,1261 @@
+{
+  "status": "STOPPED_ON_FIRST_NEW_FAILURE",
+  "completed_signatures": [
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ]
+  ],
+  "failure": {
+    "sigma": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "phase": "audit",
+    "status": "UNKNOWN_OR_FAILED",
+    "CPU_charged": 21.71875,
+    "CPU_cap": 21.4375,
+    "error": {
+      "type": "AssertionError",
+      "message": "UNKNOWN independent query/CPU cap"
+    },
+    "query_cap": 2000000,
+    "log": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_POP4_RISK05/log_s1000011010_audit.txt",
+    "returncode": 1,
+    "cumulative_finite_CPU": 7195.28125
+  },
+  "new_signature_vectors": 32,
+  "renewed_CPU_charged": 7195.28125,
+  "finite_CPU_ceiling": 7200,
+  "prior_current_finite_CPU_retained": 4718.984375,
+  "additional_finite_CPU_charged": 2476.296875,
+  "metadata_CPU_charged": 42.5625,
+  "query_cap_user_authorized": 2000000,
+  "other_caps_unchanged": true,
+  "reused_completed_old_phases": 0,
+  "completed_old_audits_replayed": 0,
+  "old_capped_enumeration_explicitly_retried": true,
+  "phase_events": [
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 24.109375,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 33.328125,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 108.4375,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 25.8125,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 30.328125,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 96.03125,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 24.625,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 34.125,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 96.8125,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 26.1875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 35.3125,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 96.046875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 26.703125,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 30.359375,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 97.375,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 25.578125,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 35.09375,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 95.96875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 27.796875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 28.296875,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 107.046875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 24.90625,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 32.421875,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 104.125,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 25.453125,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 32.1875,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 99.21875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 23.734375,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 33.125,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 90.6875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 26.09375,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 35.1875,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 102.328125,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 24.25,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 34.890625,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 96.796875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 15.3125,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 19.515625,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 57.421875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 14.71875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 18.984375,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 54.734375,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 16.109375,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 30.71875,
+      "CPU_cap": 300,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 92.671875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 25.046875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 32.53125,
+      "CPU_cap": 199.953125,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+      "CPU_charged": 94.1875,
+      "CPU_cap": 120,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "prefix_dp",
+      "status": "COMPLETE_RISK_GUARDED_PREFIX_RELATION_UNAUDITED",
+      "CPU_charged": 21.15625,
+      "CPU_cap": 70.71875,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "construct",
+      "status": "CONSTRUCTED_UNAUDITED",
+      "CPU_charged": 28.125,
+      "CPU_cap": 49.5625,
+      "error": null,
+      "query_cap": 2000000
+    },
+    {
+      "sigma": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "phase": "audit",
+      "status": "UNKNOWN_OR_FAILED",
+      "CPU_charged": 21.71875,
+      "CPU_cap": 21.4375,
+      "error": {
+        "type": "AssertionError",
+        "message": "UNKNOWN independent query/CPU cap"
+      },
+      "query_cap": 2000000
+    }
+  ],
+  "wall_seconds": 2554.163051300042,
+  "full_M3_proved": false
+}

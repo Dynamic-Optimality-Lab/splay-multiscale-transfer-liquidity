@@ -1,0 +1,340 @@
+{
+  "status": "ROOT_AWARE_CAUSAL_SCALAR_CHAIN_EXTRACTED",
+  "edges": [
+    {
+      "source_mask": 4,
+      "target_mask": 58,
+      "price": -1,
+      "kind": "source_unary_RR",
+      "source_A": [
+        2,
+        "F0",
+        [
+          3,
+          "new_gap",
+          [
+            8,
+            [
+              6,
+              [
+                4,
+                "F1",
+                "F2"
+              ],
+              "F3"
+            ],
+            [
+              20,
+              [
+                18,
+                [
+                  16,
+                  [
+                    14,
+                    [
+                      12,
+                      [
+                        10,
+                        "F4",
+                        "F5"
+                      ],
+                      "F6"
+                    ],
+                    "F7"
+                  ],
+                  "F8"
+                ],
+                "F9"
+              ],
+              "F10"
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        8,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "new_gap"
+          ],
+          [
+            6,
+            [
+              4,
+              "F1",
+              "F2"
+            ],
+            "F3"
+          ]
+        ],
+        [
+          20,
+          [
+            18,
+            [
+              16,
+              [
+                14,
+                [
+                  12,
+                  [
+                    10,
+                    "F4",
+                    "F5"
+                  ],
+                  "F6"
+                ],
+                "F7"
+              ],
+              "F8"
+            ],
+            "F9"
+          ],
+          "F10"
+        ]
+      ],
+      "private_key": 3,
+      "source_B_core_index": 3281,
+      "B_target_core_index": 7360,
+      "target_actual_key": 8,
+      "H": 1,
+      "Q": 3,
+      "source_value_mask": 4,
+      "target_value_mask": 10,
+      "source_root_rank": 1,
+      "target_root_rank": 4
+    },
+    {
+      "source_mask": 58,
+      "target_mask": 37,
+      "price": 1,
+      "kind": "actual_successor_of_unary_RR",
+      "source_A": [
+        8,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "new_gap"
+          ],
+          [
+            6,
+            [
+              4,
+              "F1",
+              "F2"
+            ],
+            "F3"
+          ]
+        ],
+        [
+          20,
+          [
+            18,
+            [
+              16,
+              [
+                14,
+                [
+                  12,
+                  [
+                    10,
+                    "F4",
+                    "F5"
+                  ],
+                  "F6"
+                ],
+                "F7"
+              ],
+              "F8"
+            ],
+            "F9"
+          ],
+          "F10"
+        ]
+      ],
+      "actual_A_target": [
+        6,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "new_gap"
+          ],
+          [
+            4,
+            "F1",
+            "F2"
+          ]
+        ],
+        [
+          8,
+          "F3",
+          [
+            20,
+            [
+              18,
+              [
+                16,
+                [
+                  14,
+                  [
+                    12,
+                    [
+                      10,
+                      "F4",
+                      "F5"
+                    ],
+                    "F6"
+                  ],
+                  "F7"
+                ],
+                "F8"
+              ],
+              "F9"
+            ],
+            "F10"
+          ]
+        ]
+      ],
+      "private_key": 3,
+      "source_B_core_index": 7360,
+      "B_target_core_index": 6370,
+      "target_actual_key": 6,
+      "H": 1,
+      "Q": 1,
+      "source_value_mask": 10,
+      "target_value_mask": 5,
+      "source_root_rank": 4,
+      "target_root_rank": 3
+    },
+    {
+      "source_mask": 37,
+      "target_mask": 1,
+      "price": 1,
+      "kind": "accepted_closed_control",
+      "control_file": "interior_max_contraction_closed_source.json",
+      "source_A": [
+        6,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "z_gap"
+          ],
+          [
+            4,
+            "F1",
+            "F2"
+          ]
+        ],
+        [
+          8,
+          "F3",
+          [
+            10,
+            "F4",
+            [
+              12,
+              "F5",
+              [
+                14,
+                "F6",
+                [
+                  16,
+                  "F7",
+                  [
+                    18,
+                    "F8",
+                    [
+                      20,
+                      "F9",
+                      "F10"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        2,
+        "F0",
+        [
+          3,
+          "z_gap",
+          [
+            6,
+            [
+              4,
+              "F1",
+              "F2"
+            ],
+            [
+              8,
+              "F3",
+              [
+                10,
+                "F4",
+                [
+                  12,
+                  "F5",
+                  [
+                    14,
+                    "F6",
+                    [
+                      16,
+                      "F7",
+                      [
+                        18,
+                        "F8",
+                        [
+                          20,
+                          "F9",
+                          "F10"
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 3,
+      "source_B_core_index": 6827,
+      "B_target_core_index": 106,
+      "target_actual_key": 2,
+      "H": 1,
+      "Q": 1,
+      "source_value_mask": 5,
+      "target_value_mask": 1,
+      "source_root_rank": 3,
+      "target_root_rank": 1
+    }
+  ],
+  "start_feature_code": 4,
+  "start_frozen_value": 2,
+  "end_feature_code": 1,
+  "end_frozen_value": 0,
+  "total_source_packet_price": 1,
+  "sum_of_signed_margins": -1,
+  "intermediate_width_bound_used": false,
+  "all_physical_private_keys": [
+    3,
+    3,
+    3
+  ],
+  "source_path_warning": "These representative edges need not concatenate as full source states. The contradiction concerns a common root-aware profile function; each edge must separately receive original-source closed embedding.",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "principal_U33": "OPEN"
+}

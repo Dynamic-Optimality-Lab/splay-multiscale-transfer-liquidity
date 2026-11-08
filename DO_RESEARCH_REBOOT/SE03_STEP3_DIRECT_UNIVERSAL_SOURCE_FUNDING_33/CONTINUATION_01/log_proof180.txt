@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_proof180.py", line 3, in <module>
+    runpy.run_path(str(Path(__file__).resolve().parents[2]/'SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35/CONTINUATION_04/prepare_cached_product.py'),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\CONTINUATION_04\prepare_cached_product.py", line 96, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\CONTINUATION_04\prepare_cached_product.py", line 38, in main
+    s=freeze(r['BF_before'] if 'BF_before' in r else r['before'][1])
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\CONTINUATION_04\prepare_cached_product.py", line 11, in freeze
+    def freeze(t):return None if t is None else (t[0],freeze(t[1]),freeze(t[2]))
+                                                      ~~~~~~^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\CONTINUATION_04\prepare_cached_product.py", line 11, in freeze
+    def freeze(t):return None if t is None else (t[0],freeze(t[1]),freeze(t[2]))
+                                                      ~~~~~~^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\CONTINUATION_04\prepare_cached_product.py", line 11, in freeze
+    def freeze(t):return None if t is None else (t[0],freeze(t[1]),freeze(t[2]))
+                                                      ~~~~~~^^^^^^
+  [Previous line repeated 2 more times]
+IndexError: string index out of range

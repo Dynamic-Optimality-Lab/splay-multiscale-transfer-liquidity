@@ -1,0 +1,443 @@
+{
+  "status": "SOURCE_EXCLUSION_NOT_A_COUNTEREXAMPLE_TO_FIRST_RETURN_REPAYMENT",
+  "candidate_transition": {
+    "occurrence": 120,
+    "mode": "K",
+    "target": 7,
+    "genuine_F": true,
+    "A_path": "R",
+    "BF_path": "RLR",
+    "BE_path": "RR",
+    "A_events": [
+      {
+        "case": "R",
+        "P": 5,
+        "target": 7,
+        "kind": "ZIG"
+      }
+    ],
+    "BF_events": [
+      {
+        "case": "LR",
+        "G": 10,
+        "P": 6,
+        "target": 7,
+        "kind": "DOUBLE"
+      },
+      {
+        "case": "R",
+        "P": 5,
+        "target": 7,
+        "kind": "ZIG"
+      }
+    ],
+    "BE_events": [
+      {
+        "case": "RR",
+        "G": 5,
+        "P": 6,
+        "target": 7,
+        "kind": "DOUBLE"
+      }
+    ],
+    "a": 1,
+    "qF": 1,
+    "qE": 1,
+    "before": [
+      [
+        5,
+        [
+          4,
+          [
+            2,
+            [
+              1,
+              "F0",
+              "F1"
+            ],
+            [
+              3,
+              "F2",
+              "F3"
+            ]
+          ],
+          "F4"
+        ],
+        [
+          7,
+          [
+            6,
+            "F5",
+            "F6"
+          ],
+          [
+            11,
+            [
+              8,
+              "F7",
+              [
+                10,
+                [
+                  9,
+                  "F8",
+                  "F9"
+                ],
+                "F10"
+              ]
+            ],
+            [
+              13,
+              [
+                12,
+                "F11",
+                "F12"
+              ],
+              "F13"
+            ]
+          ]
+        ]
+      ],
+      [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                "F0",
+                "F1"
+              ],
+              "F2"
+            ],
+            "F3"
+          ],
+          "F4"
+        ],
+        [
+          10,
+          [
+            6,
+            "F5",
+            [
+              7,
+              "F6",
+              [
+                8,
+                "F7",
+                [
+                  9,
+                  "F8",
+                  "F9"
+                ]
+              ]
+            ]
+          ],
+          [
+            11,
+            "F10",
+            [
+              12,
+              "F11",
+              [
+                13,
+                "F12",
+                "F13"
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                "F0",
+                "F1"
+              ],
+              "F2"
+            ],
+            "F3"
+          ],
+          "F4"
+        ],
+        [
+          6,
+          "F5",
+          [
+            7,
+            "F6",
+            [
+              10,
+              [
+                8,
+                "F7",
+                [
+                  9,
+                  "F8",
+                  "F9"
+                ]
+              ],
+              [
+                13,
+                [
+                  12,
+                  [
+                    11,
+                    "F10",
+                    "F11"
+                  ],
+                  "F12"
+                ],
+                "F13"
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "after": [
+      [
+        7,
+        [
+          5,
+          [
+            4,
+            [
+              2,
+              [
+                1,
+                "F0",
+                "F1"
+              ],
+              [
+                3,
+                "F2",
+                "F3"
+              ]
+            ],
+            "F4"
+          ],
+          [
+            6,
+            "F5",
+            "F6"
+          ]
+        ],
+        [
+          11,
+          [
+            8,
+            "F7",
+            [
+              10,
+              [
+                9,
+                "F8",
+                "F9"
+              ],
+              "F10"
+            ]
+          ],
+          [
+            13,
+            [
+              12,
+              "F11",
+              "F12"
+            ],
+            "F13"
+          ]
+        ]
+      ],
+      [
+        7,
+        [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  "F0",
+                  "F1"
+                ],
+                "F2"
+              ],
+              "F3"
+            ],
+            "F4"
+          ],
+          [
+            6,
+            "F5",
+            "F6"
+          ]
+        ],
+        [
+          10,
+          [
+            8,
+            "F7",
+            [
+              9,
+              "F8",
+              "F9"
+            ]
+          ],
+          [
+            11,
+            "F10",
+            [
+              12,
+              "F11",
+              [
+                13,
+                "F12",
+                "F13"
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        7,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    "F0",
+                    "F1"
+                  ],
+                  "F2"
+                ],
+                "F3"
+              ],
+              "F4"
+            ],
+            "F5"
+          ],
+          "F6"
+        ],
+        [
+          10,
+          [
+            8,
+            "F7",
+            [
+              9,
+              "F8",
+              "F9"
+            ]
+          ],
+          [
+            13,
+            [
+              12,
+              [
+                11,
+                "F10",
+                "F11"
+              ],
+              "F12"
+            ],
+            "F13"
+          ]
+        ]
+      ]
+    ]
+  },
+  "full_marked_core_before": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "full_marked_core_after": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "lost_labels": [
+    6
+  ],
+  "all_other_marked_paths": [
+    {
+      "target": 1,
+      "path": "LLLL",
+      "SS_necessary_condition": true
+    },
+    {
+      "target": 3,
+      "path": "LL",
+      "SS_necessary_condition": true
+    },
+    {
+      "target": 7,
+      "path": "RLR",
+      "SS_necessary_condition": false
+    },
+    {
+      "target": 9,
+      "path": "RLRRR",
+      "SS_necessary_condition": false
+    },
+    {
+      "target": 11,
+      "path": "RR",
+      "SS_necessary_condition": true
+    },
+    {
+      "target": 13,
+      "path": "RRRR",
+      "SS_necessary_condition": true
+    }
+  ],
+  "permitted_immediate_SS_targets": [
+    1,
+    3,
+    11,
+    13
+  ],
+  "closed_domain_exclusion": "fixed-mark ancestor core cannot grow under marked full-B accesses; strict loss cannot return to the same full tree",
+  "population_scope": "this exact B anchor configuration plus arbitrary ordered external-gap substitution and reflection",
+  "first_return_signed_theorem": "OPEN; the immediate low-cost return was invalid, not a refutation",
+  "source_queries": 9
+}

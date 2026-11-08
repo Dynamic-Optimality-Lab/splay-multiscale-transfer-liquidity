@@ -1,0 +1,11 @@
+from pathlib import Path
+BASE=Path('DO_RESEARCH_REBOOT/M3_UNITPAIR01');out=BASE/'finalize_v2.py';assert not out.exists();s=(BASE/'finalize.py').read_text()
+s=s.replace("BASE/'source_audit.json'","BASE/'source_audit_v3.json'")
+s=s.replace("assert source['cpu_seconds']+outer['cpu_seconds']<300","assert source['registered_family_CPU_including_prototypes']<300")
+s=s.replace("round(source['cpu_seconds']+outer['cpu_seconds'],3)","source['registered_family_CPU_including_prototypes']")
+s=s.replace("'original_roots':139,'full_closed_mixed_controls':45,","'original_roots':139,'full_closed_mixed_controls':45,'source_cases_reused_with_provenance':22,'source_cases_with_saved_final_environments':23,")
+s=s.replace('including45 fresh fully closed mixed cycles','including45 fully closed mixed cycle controls')
+s=s.replace('The bounded unchanged-source family audit evaluates139 complete original','The bounded unchanged-source family audit verifies139 unique complete original')
+s=s.replace('Closure checks all147 original O coordinates', 'The first22 deterministic support cases reuse observed successful original\nchecks from the preserved prototype (reused_controls.json); the remaining23\nsave fresh raw environments in source_audit_v3.json. No lost in-memory\nprototype environment is claimed to have been saved. Reuse and fixture-only\npreparation optimizations are justified in SOURCE_AUDIT_REUSE.md; all\nprototype CPU, outer-helper CPU and a conservative stop margin remain\ninside the SAME300-second source budget.\n\nClosure checks all147 original O coordinates')
+with out.open('x',encoding='utf-8') as f:f.write(s)
+print('Created finalize_v2.py; prototype costs and reused-case provenance retained.',flush=True)

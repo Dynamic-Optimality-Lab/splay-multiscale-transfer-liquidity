@@ -1,0 +1,223 @@
+{
+  "status": "ALL_EXISTING_CAPS_PRESERVED",
+  "prior_CPU": 3439.609375,
+  "cumulative_CPU": 3507.703125,
+  "ceiling": 7200,
+  "required_reserve": 5,
+  "remaining_CPU": 3692.296875,
+  "available_before_reserve": 3687.296875,
+  "cumulative_group_CPU": {
+    "symbolic": 81.859375,
+    "independent": 224.46875
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "remaining_group_CPU": {
+    "symbolic": 38.140625,
+    "independent": 75.53125
+  },
+  "phases": [
+    {
+      "phase": "A6_independent",
+      "group": "independent",
+      "child_CPU": 34.5625,
+      "whole_controller_CPU": 0.375,
+      "charge": 34.9375,
+      "source_engine_calls": 14662,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "A6_source",
+      "group": "independent",
+      "child_CPU": 0.546875,
+      "whole_controller_CPU": 0.203125,
+      "charge": 0.75,
+      "source_engine_calls": 7094,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "bf10",
+      "group": "symbolic",
+      "child_CPU": 0.4375,
+      "whole_controller_CPU": 0.171875,
+      "charge": 0.609375,
+      "source_engine_calls": 7905,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "bf11",
+      "group": "symbolic",
+      "child_CPU": 0.9375,
+      "whole_controller_CPU": 0.21875,
+      "charge": 1.15625,
+      "source_engine_calls": 11970,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "bf8",
+      "group": "symbolic",
+      "child_CPU": 0.4375,
+      "whole_controller_CPU": 0.171875,
+      "charge": 0.609375,
+      "source_engine_calls": 9746,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "bf9",
+      "group": "symbolic",
+      "child_CPU": 0.3125,
+      "whole_controller_CPU": 0.140625,
+      "charge": 0.453125,
+      "source_engine_calls": 4515,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "cheapA",
+      "group": "symbolic",
+      "child_CPU": 1.984375,
+      "whole_controller_CPU": 0.140625,
+      "charge": 2.125,
+      "source_engine_calls": 372,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "controls",
+      "group": "independent",
+      "child_CPU": 6.390625,
+      "whole_controller_CPU": 0.21875,
+      "charge": 6.609375,
+      "source_engine_calls": 37487,
+      "historical_period_rows": 1856,
+      "status": "PASS"
+    },
+    {
+      "phase": "core7",
+      "group": "independent",
+      "child_CPU": 0.953125,
+      "whole_controller_CPU": 0.203125,
+      "charge": 1.15625,
+      "source_engine_calls": 2733,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "core8",
+      "group": "independent",
+      "child_CPU": 1.453125,
+      "whole_controller_CPU": 0.15625,
+      "charge": 1.609375,
+      "source_engine_calls": 19562,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "count_witnesses",
+      "group": "independent",
+      "child_CPU": 5.75,
+      "whole_controller_CPU": 0.21875,
+      "charge": 5.96875,
+      "source_engine_calls": 30088,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "h2_basis",
+      "group": "symbolic",
+      "child_CPU": 0.921875,
+      "whole_controller_CPU": 0.203125,
+      "charge": 1.125,
+      "source_engine_calls": 2320,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "h2_release",
+      "group": "symbolic",
+      "child_CPU": 1.09375,
+      "whole_controller_CPU": 0.203125,
+      "charge": 1.296875,
+      "source_engine_calls": 2320,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "packet_completion",
+      "group": "symbolic",
+      "child_CPU": 2.109375,
+      "whole_controller_CPU": 0.140625,
+      "charge": 2.25,
+      "source_engine_calls": 372,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "packet_verify",
+      "group": "independent",
+      "child_CPU": 1.6875,
+      "whole_controller_CPU": 0.203125,
+      "charge": 1.890625,
+      "source_engine_calls": 7582,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "paired_release",
+      "group": "symbolic",
+      "child_CPU": 0.640625,
+      "whole_controller_CPU": 0.171875,
+      "charge": 0.8125,
+      "source_engine_calls": 372,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "refinement",
+      "group": "independent",
+      "child_CPU": 0.578125,
+      "whole_controller_CPU": 0.265625,
+      "charge": 0.84375,
+      "source_engine_calls": 1139,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "seal7",
+      "group": "independent",
+      "child_CPU": 0.828125,
+      "whole_controller_CPU": 0.21875,
+      "charge": 1.046875,
+      "source_engine_calls": 0,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "phase": "seal",
+      "group": "independent",
+      "child_CPU": 2.625,
+      "whole_controller_CPU": 0.21875,
+      "charge": 2.84375,
+      "source_engine_calls": 0,
+      "historical_period_rows": 0,
+      "status": "PASS"
+    }
+  ],
+  "campaign_source_engine_calls": 160239,
+  "query_live_cap": 2000000,
+  "DAG_cap": 4000000,
+  "edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "wall_cap_hours": 12,
+  "no_reset": true,
+  "stopping_reason": "MATHEMATICAL_PROOF_LIMIT_NOT_RESOURCE_EXHAUSTION",
+  "metadata_convention": "unchanged inherited entry/provenance/prose/publication exclusion; all proof/route/source/check/seal and whole controller CPU charged",
+  "this_publication_metadata_CPU_excluded": 0.21875
+}

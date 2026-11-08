@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_core19.py", line 53, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_core19.py", line 50, in main
+    out('internal_max_unary_pullback_source_candidate.json',result);print(json.dumps({k:v for k,v in result.items() if k not in ('actual_B_before','actual_A_after','actual_B_after','actual_A_events','actual_B_events','failure')},failure={k:v for k,v in failure.items() if k!='actual_A_before'} if failure else None))
+                                                                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 234, in dumps
+    return cls(
+           ~~~^
+        skipkeys=skipkeys, ensure_ascii=ensure_ascii,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        check_circular=check_circular, allow_nan=allow_nan, indent=indent,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        separators=separators, default=default, sort_keys=sort_keys,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **kw).encode(obj)
+        ^^^^^
+TypeError: JSONEncoder.__init__() got an unexpected keyword argument 'failure'

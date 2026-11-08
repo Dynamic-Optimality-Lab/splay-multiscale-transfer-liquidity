@@ -1,0 +1,244 @@
+{
+  "status": "FREE_TERM_IDENTITIES_AND_REUSED_SOURCE_ENDPOINTS_CHECKED",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "free_frames": {
+    "even_consumer_RR": {
+      "before": [
+        "a",
+        "z",
+        [
+          "p",
+          "L",
+          [
+            "x",
+            "E",
+            "R"
+          ]
+        ]
+      ],
+      "after": [
+        "x",
+        [
+          "p",
+          [
+            "a",
+            "z",
+            "L"
+          ],
+          "E"
+        ],
+        "R"
+      ]
+    },
+    "following_anchor_LL": {
+      "before": [
+        "x",
+        [
+          "p",
+          [
+            "a",
+            "z",
+            "L"
+          ],
+          "E"
+        ],
+        "R"
+      ],
+      "after": [
+        "a",
+        "z",
+        [
+          "p",
+          "L",
+          [
+            "x",
+            "E",
+            "R"
+          ]
+        ]
+      ]
+    },
+    "odd_consumer_RR_then_zig": {
+      "before": [
+        "a",
+        "z",
+        [
+          "p",
+          "L",
+          [
+            "x",
+            "E",
+            [
+              "y",
+              "O",
+              "R"
+            ]
+          ]
+        ]
+      ],
+      "after": [
+        "y",
+        [
+          "a",
+          "z",
+          [
+            "x",
+            [
+              "p",
+              "L",
+              "E"
+            ],
+            "O"
+          ]
+        ],
+        "R"
+      ]
+    },
+    "following_anchor_zig": {
+      "before": [
+        "y",
+        [
+          "a",
+          "z",
+          [
+            "x",
+            [
+              "p",
+              "L",
+              "E"
+            ],
+            "O"
+          ]
+        ],
+        "R"
+      ],
+      "after": [
+        "a",
+        "z",
+        [
+          "y",
+          [
+            "x",
+            [
+              "p",
+              "L",
+              "E"
+            ],
+            "O"
+          ],
+          "R"
+        ]
+      ]
+    }
+  },
+  "SI34_missing_reset_clusters": [
+    [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    [
+      10,
+      11,
+      12,
+      13
+    ],
+    [
+      12,
+      13
+    ]
+  ],
+  "SI34_reset_H_lower_bound": 4,
+  "arbitrary_r_schema": {
+    "r_min": 4,
+    "n": "2*r-1",
+    "m": "2*r-3",
+    "missing_reset_clusters": "r",
+    "reset_H_lower_bound": "ceil(r/2)",
+    "full_Q": "8*r-18",
+    "full_KEEP_count": "4*r-8",
+    "source_family_only": true,
+    "complete_h": true,
+    "bank_bound": 2,
+    "global_frozen_input_compatibility": "CONDITIONAL; not supplied for arbitrary r"
+  },
+  "universal_UCF35": "OPEN",
+  "SI34": "REFUTED",
+  "input_sha256": {
+    "DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_02\\RESET_CLUSTER_LOWER_BOUND.md": "b0aec37ffb9e9c8e7606a2b52424ba4853761fd5cbe979fa35b2b6e8315a9ee5",
+    "DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_02\\DESCENDING_SWEEP_RETURN.md": "7cca183c52fb99d3d182f9a357996b0f7fa342b94d1a1483e776480ff10d6389",
+    "DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_02\\ANCHORED_FAMILY_COMPLETE_FUNDING.md": "74dd1c17b36ddd5d4e3c72f85aff84e8ac8c9f6acbe3ce7a4804800038d5f680",
+    "DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_01\\SI34_source_countercertificate.json": "c9881ccdb0ddf45ad4096d043c6c4914db581d8691c17c3cc1a754bc795aeee5"
+  }
+}

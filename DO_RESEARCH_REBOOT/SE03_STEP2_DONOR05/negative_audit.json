@@ -1,0 +1,62 @@
+{
+  "status": "PASS_FULL_CORE11_NEGATIVE_SEED_ONLY",
+  "dependencies": [
+    "closed maximal same-side source theorem",
+    "completed fan induction",
+    "completed old-root exposure",
+    "completed W9 B word and arbitrary-fringe commutation",
+    "finite-map recurrence"
+  ],
+  "fan_port_count": "q+1 path marks, 5-q external mass-zero blocks",
+  "next_target_bound": "q_next<=1+blocks_in_port",
+  "fan_arm_types": {
+    "unmarked_right_spine": {
+      "marked_leaf_side": "L",
+      "other_side_type": "U_FAN"
+    },
+    "unmarked_left_spine": {
+      "marked_leaf_side": "R",
+      "other_side_type": "U_FAN"
+    }
+  },
+  "negative_word_classification": [
+    "one q4 singleton, deficit2",
+    "one q5/q1 packet, deficit2",
+    "one q3 singleton, deficit1",
+    "two consecutive q3 singletons, deficit2"
+  ],
+  "no_third_q3": "all remaining original fan marks lie in rigid unmarked fan arms; each admits at most one double after its attachment mark",
+  "seed_definition": {
+    "N1": "output of legal SS q3",
+    "N2": "output of legal SS q4, q5/q1 or q3/q3",
+    "psi11": "2 onN2,1 onN1\\N2,0 otherwise"
+  },
+  "proved_rows": [
+    "all negative singleton/pair rows",
+    "singleton H2/q3",
+    "singleton H2/q4",
+    "paired Hsum3",
+    "all price>=2"
+  ],
+  "remaining_seed_rows": [
+    "singleton H1/q1",
+    "singleton H1/q2"
+  ],
+  "seed2_marked_leaf_minimum": 4,
+  "A_dependent_completion_proved": false,
+  "core10_covered": false,
+  "B_only_obstruction": {
+    "family": "W9^m K11 K9, m>=2, old right gap expanded to actual10/11 subtree",
+    "Q": "18m+2",
+    "C": "8m+2",
+    "Q-2C": "2m-2>0",
+    "actual_H1_edge_realization": "insert Dx,Dg before preceding Kg; repeat to actual A recurrence",
+    "different_A_contexts_not_concatenated": true,
+    "negative_original_cycle_claimed": false
+  },
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "new_graphs": 0,
+  "Step2": "OPEN"
+}

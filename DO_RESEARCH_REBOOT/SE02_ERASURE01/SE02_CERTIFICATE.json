@@ -1,0 +1,182 @@
+{
+  "status": "PROVED_RESTRICTED_SOURCE_EXACT_SIGNED_ERASURE_COMPENSATION",
+  "general_accounting": "aligned R=R_z-Delta; Delta=direct erased-key sum + signed other-KEEP interference",
+  "general_accounting_domain": "arbitrary original reachable fully closed walks with r>=6 genuine KEEP keys",
+  "alignment": {
+    "interval": "[uN,(u+L)N)",
+    "L": "positive multiple of erased recurrent period",
+    "A_trajectory_preserved": true,
+    "aligned_A": "L*A",
+    "aligned_full_Q": "L*Q",
+    "erased_Q": "actual Q_E on that interval",
+    "per_original_period": "divide R,R_z,Delta,D,J together by L",
+    "transient_correction": "Delta_aligned=Delta_total_through_u_plus_L-Delta_preperiod",
+    "preperiod_credits_available": false
+  },
+  "compensation_theorem": {
+    "blocks": "disjoint cyclic z-run then y-run,y!=z; each run nonempty and has a KEEP",
+    "all_Kz_in_blocks": true,
+    "source_roots": "A and B both rooted at y at each block entry",
+    "B_z_geometry": "same-side grandchild",
+    "A_z_geometry": "child or same-side grandchild",
+    "arbitrary_run_modes_and_lengths": true,
+    "full_paired_identity": true,
+    "erased_block_B_identity": true,
+    "outside_full_state_resynchronization": true,
+    "block_boundary_alignment": {
+      "u": 0,
+      "L": 1
+    },
+    "arbitrary_active_B_cut": {
+      "u": 1,
+      "L": 1,
+      "first_erased_Q": "Q0+1",
+      "recurrent_erased_Q": "Q0"
+    },
+    "per_block": {
+      "A": 2,
+      "Q_full": 2,
+      "Q_erased": 0,
+      "D": 1,
+      "J": 1,
+      "Delta": 2
+    },
+    "donor": "first real A event of z-run; ZIG or LL/RR DOUBLE",
+    "bit0_consumer": "B DOUBLE at first full KEEP z",
+    "bit1_consumer": "B DOUBLE at first full KEEP y",
+    "donor_at_or_before_consumers": true,
+    "reserved_pool": "all4 A units per block excluded from contracted gamma0",
+    "used_pool": "only2 bits of first z A event",
+    "injective_ids": "copy,block,source_occurrence,A_event,bit",
+    "contracted_support": "at most r-1",
+    "contracted_walk": "source-legal reachable fully paired-closed",
+    "cost_relations": [
+      "A=A0+2m",
+      "Q_full=Q0+2m",
+      "Q_erased=Q0"
+    ],
+    "given_CD_of_backbone": "Q0<=2A0",
+    "conclusion": "Q_full<=2A-2m",
+    "six_key_specialization": "unconditional via sealed CD(5)",
+    "arbitrary_support_statement": "conditional on smaller-support theorem AND the stated source guard",
+    "every_walk_has_guarded_key": false,
+    "Delta_le_Rz_assumed": false
+  },
+  "new_original_family": {
+    "order": [
+      "z",
+      "p",
+      "b1",
+      "b2",
+      "b3",
+      "b4",
+      "b5",
+      "b6"
+    ],
+    "marked_roles": [
+      "z",
+      "b1",
+      "b2",
+      "b3",
+      "b4",
+      "b6"
+    ],
+    "core_witness_paths": {
+      "z": [
+        "b1",
+        "p",
+        "z"
+      ],
+      "b6": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    "arbitrary_mark_free_hangers": 9,
+    "m_domain": "every integer m>=1",
+    "P": [
+      "DELETE z",
+      "KEEP z",
+      "KEEP b1"
+    ],
+    "W": [
+      "KEEP b2",
+      "KEEP b3",
+      "KEEP b4",
+      "KEEP b6",
+      "KEEP b4",
+      "KEEP b3",
+      "KEEP b2",
+      "KEEP b1"
+    ],
+    "W_source_rules": [
+      "R",
+      "R",
+      "R",
+      "RR",
+      "LL",
+      "L",
+      "L",
+      "L"
+    ],
+    "W_A": 8,
+    "W_Q": 2,
+    "G": 6,
+    "fixed_core_size": 8,
+    "aligned_u": 0,
+    "aligned_L": 1,
+    "costs": {
+      "A": "2m+8",
+      "Q_full": "2m+2",
+      "Q_erased": "2",
+      "D": "m",
+      "J": "m",
+      "Delta": "2m",
+      "R": "2m+14",
+      "R_z": "4m+14"
+    },
+    "strictly_outside_CD5_and_core_le7": true,
+    "novel_against_every_historical_packet_closure_claimed": false
+  },
+  "principal_six_key_result": "for guarded walks with at most six genuine keys, Q_B<=2A-2m by source contraction and sealed CD(5)",
+  "strict_new_entry_domain": "all-m/all-fringe six-genuine-key/core8 family, outside CD(5) and core<=7",
+  "global_historical_bank_novelty_claimed": false,
+  "proofs": [
+    "FOUR_RULE_GATE.md",
+    "ERASURE_ALIGNMENT.md",
+    "ROTATION_INTERFERENCE.md",
+    "PROTECTED_COMPENSATION.md",
+    "SIX_KEY_CORE8_FAMILY.md",
+    "STRESS_TESTS.md",
+    "PROOF_AUDIT.md",
+    "BEFORE_RESULT_AFTER.md"
+  ],
+  "independent_audit": "independent_audit_v2.json",
+  "resources": "resources_final.json",
+  "dependency_pins": "dependency_pins.json",
+  "new_finite_tests": 0,
+  "completed_semantic_checks_replayed": 0,
+  "R1_R4_preserved": true,
+  "frozen_nine_core_graph_modified": false,
+  "matching_terminal_modified": false,
+  "Bank25": 25,
+  "uniform_support_induction_proved": false,
+  "unrestricted_CD_proved": false,
+  "Dynamic_Optimality_proved": false,
+  "remaining_obligation": "nonresetting/interleaved erasure compensation and a source completeness/key-selection argument for all required walks",
+  "audit_scope": "separate symbolic/source/physical-reservation audit; completed premises reused; not external review or whole-compiler formalization",
+  "restricted_publication_gates": {
+    "source_compensation": "PASS",
+    "new_six_key_core8_family": "PASS",
+    "independent_complete_audit_v2": "PASS",
+    "failure_record_preserved_and_charged": "PASS",
+    "resource_groups": "PASS",
+    "inherited_hashes": "PASS",
+    "HEAD_tracked_tree": "PASS"
+  },
+  "universal_CD_publication_gate": "OPEN_NOT_PROVED"
+}

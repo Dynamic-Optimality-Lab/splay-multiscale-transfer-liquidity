@@ -1,0 +1,67 @@
+"""SE02 continuation: symbolic repeat-gap transfer proof object."""
+import json,sys,time
+from pathlib import Path
+B=Path(__file__).resolve().parent
+def write(n,d):
+    with (B/n).open('x',encoding='utf-8') as f:json.dump(d,f,indent=2)
+def schema(name,ge,eq,mg,me,goal):
+    return {'name':name,'ge':ge,'eq':eq,'mg':mg,'me':me,'goal':goal}
+def main():
+    p={'status':'REPEAT_GAP_DERIVATION_AWAITING_SEPARATE_AUDIT',
+      'novelty_correction':{
+        'first_paired_reset_family_in_CD5_concatenation_closure':True,
+        'first_family_counted_as_genuinely_new_coverage':False},
+      'theorem':{
+        'domain':'original reachable fully paired-closed, six genuine KEEP keys, marked B core8',
+        'key_selection':'some specified z satisfies the stated B-return-pulse guard; not assumed for all walks',
+        'B_guard':'z same-side grandchild of root y; Kz-only until next non-z KEEP y; arbitrary DELETE targets',
+        'all_Kz_in_pulses':True,'A_geometry_or_reset_required':False,
+        'erased_core_bound':'C_M0(B_start) subset original core8; marked erasure KEEPs cannot grow it',
+        'strong_auxiliary_bound':'Q_E<=2 C_E from completed RT2/K4/K5-LOW, not from scalar CD(5)',
+        'funding_pool':'two bits of first real A event in each erased KEEP-change gap',
+        'repeat_gap_donor':'first actual A StepEv at first request leaving repeated key y',
+        'donor_source_modes':['DELETE any different key','erased KEEP z'],
+        'donor_source_event_types':['ZIG','LL','RR','LR','RL'],
+        'bit0_consumer':'first Kz B DOUBLE','bit1_consumer':'return Ky B DOUBLE',
+        'donor_at_or_before_both_consumers':True,
+        'distinct_pulse_returns_distinct_repeat_gaps':True,
+        'repeat_and_change_gap_pools_disjoint':True,
+        'A_event_bound':'A>=C_E+2m',
+        'costs':['D=m','J=m','Delta=2m','Q_full=Q_E+2m'],
+        'conclusion':'Q_full<=2A-2m',
+        'guard_completeness_proved':False,
+        'funding_available_on_all_smaller_support_walks':False,
+        'uniform_support_induction_proved':False},
+      'primitive_family':{
+        'order':['z','p','b1','b2','b3','b4','b5','b6'],
+        'marked_roles':['z','b1','b2','b3','b4','b6'],'free_gap_hangers':9,
+        'V':['b2','b3','b4','b6'],'V_inverse':['b4','b3','b2','b1'],
+        'word':'Db2,Dz,Kz,Db1,Kb1,K(V),D(V_inverse),Dp,Db1,D(V),K(V_inverse)',
+        'occurrences':23,'A':23,'Q_full':4,'Q_erased':2,'C_E':8,
+        'D':1,'J':1,'Delta':2,'R':42,'R_z':44,
+        'donor':'Db2 at occurrence1: actual A child ZIG',
+        'direct_consumer':'Kz at occurrence3, a0 q1',
+        'indirect_consumer':'Kb1 at occurrence5, a0 q1',
+        'B_pulse_returns_A':False,
+        'G':6,'core':8,'proper_repeated_paired_vertices':0,
+        'all_repetitions':'m>=1 with costs and distinct unit IDs multiplied by m',
+        'outside_CD5_corele7_and_their_proper_paired_subwalk_concatenations':True,
+        'novel_against_all_noncompositional_historical_classes_claimed':False},
+      'affine_schemas':[
+        schema('repeat_gap_compensation',[{'C':2,'QE':-1},{'A':1,'C':-1,'m':-2}],
+          [{'Q':1,'QE':-1,'m':-2}],[1,2],[-1],{'A':2,'Q':-1,'m':-2}),
+        schema('family_true_slack',[],[{'A':1,'m':-23},{'Q':1,'m':-4}],[],[2,-1],{'A':2,'Q':-1,'m':-42}),
+        schema('family_marginal',[],[{'Delta':1,'Q':-1,'QE':1},{'Q':1,'m':-4},{'QE':1,'m':-2}],
+          [],[1,1,-1],{'Delta':1,'m':-2}),
+        schema('disjoint_reservation_capacity',[{'A':1,'C':-1,'m':-2}],[],[2],[],{'A':2,'C':-2,'m':-4})],
+      'new_finite_tests':0,'new_solver_queries':0,'new_original_root_queries':0,
+      'completed_semantic_checks_replayed':0,'matching_terminal_modified':False,'frozen_graph_modified':False,
+      'Bank25':25,'unrestricted_CD_proved':False,'uniform_support_induction_proved':False}
+    assert time.process_time()<float(sys.argv[1])
+    write('repeat_gap_derivation.json',p)
+    print(json.dumps({'status':'REPEAT_GAP_SYMBOLIC_PROOF_WRITTEN','universal_CD':'OPEN'}))
+if __name__=='__main__':
+    error=None
+    try:main()
+    except BaseException as ex:error={'type':type(ex).__name__,'message':str(ex)};raise
+    finally:write('audit_repeat_gap_exit.json',{'whole_process_CPU_seconds':time.process_time(),'error':error})

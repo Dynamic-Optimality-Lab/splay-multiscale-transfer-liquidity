@@ -1,0 +1,368 @@
+{
+  "status": "ALL_THREE_B_GUIDED_JOINS_FAILED_RAW",
+  "methods": [
+    "B_root_depth_left_tie",
+    "B_root_depth_right_tie",
+    "B_minimum_subtree_depth"
+  ],
+  "failures": {
+    "B_root_depth_left_tie": {
+      "source_A": [
+        10,
+        [
+          5,
+          [
+            2,
+            "F0",
+            [
+              4,
+              "F1",
+              "E"
+            ]
+          ],
+          [
+            6,
+            "E",
+            [
+              8,
+              "F3",
+              "F4"
+            ]
+          ]
+        ],
+        [
+          12,
+          "F5",
+          [
+            14,
+            "F6",
+            [
+              16,
+              "F7",
+              [
+                18,
+                "F8",
+                [
+                  20,
+                  "F9",
+                  "F10"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        2,
+        "F0",
+        [
+          5,
+          [
+            4,
+            "F1",
+            "E"
+          ],
+          [
+            10,
+            [
+              6,
+              "E",
+              [
+                8,
+                "F3",
+                "F4"
+              ]
+            ],
+            [
+              12,
+              "F5",
+              [
+                14,
+                "F6",
+                [
+                  16,
+                  "F7",
+                  [
+                    18,
+                    "F8",
+                    [
+                      20,
+                      "F9",
+                      "F10"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 5,
+      "source_B_core_index": 8037,
+      "B_target_core_index": 578,
+      "target_actual_key": 2,
+      "H": 1,
+      "Q": 1,
+      "price": 1,
+      "source_feature": 523,
+      "target_feature": 1324,
+      "source_contraction_indices": [
+        7810,
+        7894,
+        8104
+      ],
+      "target_contraction_indices": [
+        561,
+        2123,
+        2207
+      ],
+      "projection_rule": "B_root_depth_left_tie",
+      "old_source_A_index": 7810,
+      "old_projected_target_index": 561,
+      "D_source": 2,
+      "D_target": 0,
+      "signed_margin": -1
+    },
+    "B_minimum_subtree_depth": {
+      "source_A": [
+        10,
+        [
+          5,
+          [
+            2,
+            "F0",
+            [
+              4,
+              "F1",
+              "E"
+            ]
+          ],
+          [
+            6,
+            "E",
+            [
+              8,
+              "F3",
+              "F4"
+            ]
+          ]
+        ],
+        [
+          12,
+          "F5",
+          [
+            14,
+            "F6",
+            [
+              16,
+              "F7",
+              [
+                18,
+                "F8",
+                [
+                  20,
+                  "F9",
+                  "F10"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        2,
+        "F0",
+        [
+          5,
+          [
+            4,
+            "F1",
+            "E"
+          ],
+          [
+            10,
+            [
+              6,
+              "E",
+              [
+                8,
+                "F3",
+                "F4"
+              ]
+            ],
+            [
+              12,
+              "F5",
+              [
+                14,
+                "F6",
+                [
+                  16,
+                  "F7",
+                  [
+                    18,
+                    "F8",
+                    [
+                      20,
+                      "F9",
+                      "F10"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 5,
+      "source_B_core_index": 8037,
+      "B_target_core_index": 578,
+      "target_actual_key": 2,
+      "H": 1,
+      "Q": 1,
+      "price": 1,
+      "source_feature": 523,
+      "target_feature": 1324,
+      "source_contraction_indices": [
+        7810,
+        7894,
+        8104
+      ],
+      "target_contraction_indices": [
+        561,
+        2123,
+        2207
+      ],
+      "projection_rule": "B_minimum_subtree_depth",
+      "old_source_A_index": 7810,
+      "old_projected_target_index": 561,
+      "D_source": 2,
+      "D_target": 0,
+      "signed_margin": -1
+    },
+    "B_root_depth_right_tie": {
+      "source_A": [
+        10,
+        [
+          5,
+          [
+            2,
+            "F0",
+            [
+              4,
+              "F1",
+              "E"
+            ]
+          ],
+          [
+            6,
+            "E",
+            [
+              8,
+              "F3",
+              "F4"
+            ]
+          ]
+        ],
+        [
+          12,
+          "F5",
+          [
+            14,
+            "F6",
+            [
+              16,
+              "F7",
+              [
+                18,
+                "F8",
+                [
+                  20,
+                  "F9",
+                  "F10"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        2,
+        "F0",
+        [
+          5,
+          [
+            4,
+            "F1",
+            "E"
+          ],
+          [
+            10,
+            [
+              6,
+              "E",
+              [
+                8,
+                "F3",
+                "F4"
+              ]
+            ],
+            [
+              12,
+              "F5",
+              [
+                14,
+                "F6",
+                [
+                  16,
+                  "F7",
+                  [
+                    18,
+                    "F8",
+                    [
+                      20,
+                      "F9",
+                      "F10"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 5,
+      "source_B_core_index": 8039,
+      "B_target_core_index": 580,
+      "target_actual_key": 2,
+      "H": 1,
+      "Q": 1,
+      "price": 1,
+      "source_feature": 567,
+      "target_feature": 1328,
+      "source_contraction_indices": [
+        7810,
+        7894,
+        8104
+      ],
+      "target_contraction_indices": [
+        561,
+        2123,
+        2207
+      ],
+      "projection_rule": "B_root_depth_right_tie",
+      "old_source_A_index": 8104,
+      "old_projected_target_index": 561,
+      "D_source": 2,
+      "D_target": 0,
+      "signed_margin": -1
+    }
+  },
+  "constraints_read": 10641,
+  "B_depth_maps": 6940,
+  "scope": "same original one-private-gap2 source; selectors use actual full source and target B separately",
+  "closed_source_embedding": "not yet newly replayed; exact failed source edges retained",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "principal_U33": "OPEN"
+}

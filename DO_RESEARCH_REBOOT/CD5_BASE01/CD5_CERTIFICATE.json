@@ -1,0 +1,146 @@
+{
+  "status": "PROVED_CD5_COMPLETE_ORIGINAL_CLOSED_WALK_BASE",
+  "theorem": "forall original reachable fully closed gamma: |G(gamma)|<=5 implies Q_B(gamma)<=2A(gamma)",
+  "domain": {
+    "finite_ordered_key_set": "arbitrary",
+    "ambient_size": "arbitrary",
+    "word_length": "arbitrary finite",
+    "reachability": "from some common-tree diagonal",
+    "cycle_start_must_be_diagonal": false,
+    "closure": "both full labeled trees",
+    "genuine_KEEP_support_max": 5,
+    "KEEP_DELETE": true,
+    "all_requests_present": true,
+    "DELETE_freezes_B_and_removes_no_key": true,
+    "DELETE_support_unrestricted": true,
+    "zero_cost_and_nongenuine_KEEP": true,
+    "primitive_and_nonprimitive": true,
+    "fringe_and_relabeling": "arbitrary original admissible",
+    "new_population_or_mask_restriction": false
+  },
+  "costs": {
+    "depth": "edge depth; root0",
+    "A": "sum ceil(d_A/2)",
+    "Q_B": "sum floor(d_B/2) on KEEP; DELETE0",
+    "LT_cost_substituted": false
+  },
+  "normalization": {
+    "G_empty": "all B charges zero",
+    "G_nonempty": "M_KEEP=G by cyclic latest-genuine-root provenance",
+    "nongenuine_KEEP_A_cost_retained": true,
+    "cyclic_seam_uses_full_B_closure": true
+  },
+  "core_geometry": {
+    "definition": "C_M(B)=union of root-to-mark paths",
+    "marked_step": "C_M(B_next) subset C_M(B)",
+    "closed_walk": "one fixed full labeled core S",
+    "visited_mark_bound": "|S|<=2|M|-1",
+    "five_key_core_interval": [
+      5,
+      9
+    ],
+    "whole_walk_branches": [
+      "core<=8 throughout",
+      "core=9 throughout"
+    ],
+    "old_label_swap_claim_used": false
+  },
+  "exhaustive_partition": {
+    "domain": [
+      0,
+      5
+    ],
+    "integer": true,
+    "branches": [
+      {
+        "interval": [
+          0,
+          0
+        ],
+        "leaf": "zero"
+      },
+      {
+        "interval": [
+          1,
+          3
+        ],
+        "leaf": "RT2"
+      },
+      {
+        "interval": [
+          4,
+          4
+        ],
+        "leaf": "K4"
+      },
+      {
+        "interval": [
+          5,
+          5
+        ],
+        "leaf": "five_split"
+      }
+    ],
+    "five_split": {
+      "domain": [
+        5,
+        9
+      ],
+      "integer": true,
+      "branches": [
+        {
+          "interval": [
+            5,
+            8
+          ],
+          "leaf": "K5_LOW"
+        },
+        {
+          "interval": [
+            9,
+            9
+          ],
+          "leaf": "K5_CORE9"
+        }
+      ]
+    }
+  },
+  "leaf_conclusions": {
+    "zero": "Q_B<=2A",
+    "RT2": "Q_B<=2A",
+    "K4": "Q_B<=2A",
+    "K5_LOW": "Q_B<=2A",
+    "K5_CORE9": "Q_B<=2A"
+  },
+  "completed_components": {
+    "RT2": "../06_CERTIFICATES/DIRECT_NFKS_RT2/DIRECT_NFKS_RT2_coarse_double_class_proof.md",
+    "K4": "../06_CERTIFICATES/DIRECT_CD_K4/DIRECT_CD_K4_original_class_proof.md",
+    "K5_LOW": "../06_CERTIFICATES/DIRECT_CDK5_LOW/DIRECT_CDK5_LOW_restricted_class_proof.md",
+    "K5_CORE9": "../RESTRICTED_CD_STEP04/RESTRICTED_CD_CERTIFICATE.json"
+  },
+  "mandatory_open_CD5_dependencies": [],
+  "no_new_assumptions": true,
+  "R1_R4_preserved": true,
+  "Bank25": 25,
+  "proof": "CD5_PROOF.md",
+  "domain_audit": "DOMAIN_AUDIT.md",
+  "independent_audit": "independent_audit.json",
+  "audit_explanation": "PROOF_AUDIT.md",
+  "resources": "resources_final.json",
+  "dependency_pins": "dependency_pins.json",
+  "independent_audit_scope": "separate source/scope/case/affine audit reusing completed proofs; not external peer review or whole-compiler formalization",
+  "new_finite_tests": 0,
+  "completed_semantic_checks_replayed": 0,
+  "prefix_bound_claimed": false,
+  "unrestricted_CD_proved": false,
+  "Dynamic_Optimality_proved": false,
+  "publication_gates": {
+    "mathematical_union": "PASS",
+    "independent_audit": "PASS",
+    "all_original_cases": "PASS",
+    "phase_controllers": "PASS",
+    "cumulative_resources": "PASS",
+    "declared_dependency_hashes": "PASS",
+    "HEAD_and_tracked_tree": "PASS"
+  }
+}

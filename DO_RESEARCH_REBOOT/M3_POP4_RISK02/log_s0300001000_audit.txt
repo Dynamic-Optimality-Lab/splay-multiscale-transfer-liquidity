@@ -1,0 +1,51 @@
+{"sigma": [0, 3, 0, 0, 0, 0, 1, 0, 0, 0], "helper": null, "word": [[0]], "canonical_queries": 43724, "private_visits": 43920, "CPU": 1.891}
+{"sigma": [0, 3, 0, 0, 0, 0, 1, 0, 0, 0], "helper": null, "word": [[1]], "canonical_queries": 87542, "private_visits": 87882, "CPU": 2.672}
+{"sigma": [0, 3, 0, 0, 0, 0, 1, 0, 0, 0], "helper": null, "word": [[0, 0]], "canonical_queries": 203876, "private_visits": 204512, "CPU": 4.875}
+{"sigma": [0, 3, 0, 0, 0, 0, 1, 0, 0, 0], "helper": null, "word": [[0, 1]], "canonical_queries": 243828, "private_visits": 244628, "CPU": 5.625}
+{"sigma": [0, 3, 0, 0, 0, 0, 1, 0, 0, 0], "helper": null, "word": [[1, 0]], "canonical_queries": 282358, "private_visits": 283246, "CPU": 6.297}
+{"sigma": [0, 3, 0, 0, 0, 0, 1, 0, 0, 0], "helper": null, "word": [[1, 1]], "canonical_queries": 401158, "private_visits": 402342, "CPU": 8.453}
+{
+  "status": "INDEPENDENT_RISK_PREFIX_AND_RESIDUAL_PASS",
+  "sigma": [
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "canonical_transition_queries": 401158,
+  "private_assignment_visits": 402342,
+  "independent_root_productions": 406410,
+  "analytic_root_productions_rejected": 4068,
+  "duplicate_private_assignments_quotiented": 1184,
+  "classes": 32584,
+  "access_options": 401158,
+  "J_range": [
+    -2,
+    0
+  ],
+  "changed_states": 375684,
+  "explicit_residuals": 28221058,
+  "minimum_residual": 0,
+  "residual_histogram": {
+    "0": 16215379,
+    "2": 2033987,
+    "1": 9971692
+  },
+  "product_states_streamed": 14280251,
+  "zero_source_states_discharged": 11519288,
+  "analytic": {
+    "range": 6845027
+  },
+  "allocated_CPU_cap": 120,
+  "cpu_seconds": 22.312,
+  "potential_sha256": "63bdb6bcf2fb7b8f5127a86ff03fd15dac7caaa0f5f3e7122b0adcabfa0addd6",
+  "analytic_fiber_coverage": "REPRESENTATION_PROOF.md and independent selector audit",
+  "source_family_audit_pending": true,
+  "full_M3_proved": false
+}

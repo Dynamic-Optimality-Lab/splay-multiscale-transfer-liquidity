@@ -1,0 +1,169 @@
+{
+  "status": "PASS_SOURCE_EXACT_THREE_B_GUIDED_PROJECTION_REFUTATIONS",
+  "refuted_rules": [
+    {
+      "rule": "B_root_depth_left_tie",
+      "source_word": "B_guided_root_left_closed_source.json",
+      "old_projected_indices": [
+        7810,
+        561
+      ],
+      "debt_values": [
+        2,
+        0
+      ],
+      "original_packet_H_Q_price": [
+        1,
+        1,
+        1
+      ],
+      "signed_margin": -1,
+      "source_verification": {
+        "period": [
+          126,
+          250
+        ],
+        "packet_t": 170,
+        "costs": [
+          151,
+          20,
+          19
+        ],
+        "CD_margin": 282,
+        "new_fresh_A_accesses": 31,
+        "checked_G4_hull_instances": 93,
+        "checked_full_B_rigid_gap_instances": 64,
+        "checked_erased_B_rigid_gap_instances": 60,
+        "genuine_KEEP_anchors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "all_original_operations_accounted_for": true,
+        "all_A_B_BE_and_recency_seams_close": true
+      }
+    },
+    {
+      "rule": "B_minimum_subtree_depth",
+      "source_word": "B_guided_root_left_closed_source.json",
+      "old_projected_indices": [
+        7810,
+        561
+      ],
+      "debt_values": [
+        2,
+        0
+      ],
+      "original_packet_H_Q_price": [
+        1,
+        1,
+        1
+      ],
+      "signed_margin": -1,
+      "source_verification": {
+        "period": [
+          126,
+          250
+        ],
+        "packet_t": 170,
+        "costs": [
+          151,
+          20,
+          19
+        ],
+        "CD_margin": 282,
+        "new_fresh_A_accesses": 31,
+        "checked_G4_hull_instances": 93,
+        "checked_full_B_rigid_gap_instances": 64,
+        "checked_erased_B_rigid_gap_instances": 60,
+        "genuine_KEEP_anchors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "all_original_operations_accounted_for": true,
+        "all_A_B_BE_and_recency_seams_close": true
+      }
+    },
+    {
+      "rule": "B_root_depth_right_tie",
+      "source_word": "B_guided_root_right_closed_source.json",
+      "old_projected_indices": [
+        8104,
+        561
+      ],
+      "debt_values": [
+        2,
+        0
+      ],
+      "original_packet_H_Q_price": [
+        1,
+        1,
+        1
+      ],
+      "signed_margin": -1,
+      "source_verification": {
+        "period": [
+          117,
+          232
+        ],
+        "packet_t": 159,
+        "costs": [
+          139,
+          20,
+          20
+        ],
+        "CD_margin": 258,
+        "new_fresh_A_accesses": 29,
+        "checked_G4_hull_instances": 86,
+        "checked_full_B_rigid_gap_instances": 60,
+        "checked_erased_B_rigid_gap_instances": 58,
+        "genuine_KEEP_anchors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "all_original_operations_accounted_for": true,
+        "all_A_B_BE_and_recency_seams_close": true
+      }
+    }
+  ],
+  "method": "independent breadth-first B order, iterative zipper join, mutable non-hull accesses; accepted complete source bases for every remaining original operation",
+  "not_all_B_sensitive_debts_refuted": true,
+  "not_a_CD_counterexample": true,
+  "frozen_owners_unchanged": true,
+  "principal_U33": "OPEN",
+  "source_queries": 60,
+  "source_engine_calls": 60,
+  "input_sha256": {
+    "B_guided_root_left_closed_source.json": "87ceb43110d265243150535b0b486f943119d01dca1e2d43d94d5f1f58762443",
+    "B_guided_root_right_closed_source.json": "c34b6882d0915d9e82deecc27278f5dd8932aa979a6c370ba8a0bc4768f1557c",
+    "B_guided_contraction_candidates.json": "74b15ca34aa357d7cd992b8cea1a575202e61f043608d67a4a098136d46f9b56",
+    "audit_verify65.py": "201221fdbd0564ffd6e7509ea9908de3d05eec573d9fab019bbafbb7948f9c3c",
+    "closed_word_composition_independent_v2.py": "1b9622b6e43f0b3d3177d34bd8d6dac18e77a5abaae4f07527bee47237e92ecf",
+    "native10_source_independent_audit.json": "36e867d6cc54647fcc0b256a7f946b25ebce6973e277eb9f9a7264793e2e2271",
+    "native10_modal_oracle_independent_audit.json": "4c2113c3d0e32bcf66080e56b57cec17078611647f7ccccc0089bd9eb7efa379",
+    "four_hull_source_basis_independent_audit.json": "eb606b40cbbd373b302ea1e2c8e8eff379f248652e941f28c004d2e18e4f994a"
+  }
+}

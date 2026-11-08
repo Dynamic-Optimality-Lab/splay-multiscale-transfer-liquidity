@@ -1,0 +1,134 @@
+{
+  "status": "SAVED_FIX_A_GEOMETRY_CONTROL",
+  "before_A": [
+    11,
+    [
+      7,
+      [
+        5,
+        [
+          4,
+          [
+            2,
+            [
+              1,
+              "F0",
+              "F1"
+            ],
+            [
+              3,
+              "F2",
+              "F3"
+            ]
+          ],
+          "F4"
+        ],
+        [
+          6,
+          "F5",
+          "F6"
+        ]
+      ],
+      [
+        8,
+        "F7",
+        [
+          10,
+          [
+            9,
+            "F8",
+            "F9"
+          ],
+          "F10"
+        ]
+      ]
+    ],
+    [
+      13,
+      [
+        12,
+        "F11",
+        "F12"
+      ],
+      "F13"
+    ]
+  ],
+  "target": 9,
+  "A_path": "LRRL",
+  "A_events": [
+    {
+      "case": "RL",
+      "G": 8,
+      "P": 10,
+      "target": 9,
+      "kind": "DOUBLE"
+    },
+    {
+      "case": "LR",
+      "G": 11,
+      "P": 7,
+      "target": 9,
+      "kind": "DOUBLE"
+    }
+  ],
+  "after_A": [
+    9,
+    [
+      7,
+      [
+        5,
+        [
+          4,
+          [
+            2,
+            [
+              1,
+              "F0",
+              "F1"
+            ],
+            [
+              3,
+              "F2",
+              "F3"
+            ]
+          ],
+          "F4"
+        ],
+        [
+          6,
+          "F5",
+          "F6"
+        ]
+      ],
+      [
+        8,
+        "F7",
+        "F8"
+      ]
+    ],
+    [
+      11,
+      [
+        10,
+        "F9",
+        "F10"
+      ],
+      [
+        13,
+        [
+          12,
+          "F11",
+          "F12"
+        ],
+        "F13"
+      ]
+    ]
+  ],
+  "A_cost": 2,
+  "matching_counter_PREFIX_cost": 1,
+  "B_geometry_same_as_PREFIX_activation": true,
+  "full_B_Q": 3,
+  "sigma_E_if_this_immediate_activation": 2,
+  "scope": "the saved FIX state immediately after first upper11, ONE proposed activation; not all FIX continuations",
+  "source_queries": 1
+}

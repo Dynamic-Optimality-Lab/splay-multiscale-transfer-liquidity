@@ -1,0 +1,97 @@
+{
+  "status": "PASS_ALL_INHERITED_CAPS_PRESERVED",
+  "prior_CPU": 3348.671875,
+  "cumulative_CPU": 3399.796875,
+  "ceiling": 7200,
+  "required_reserve": 5,
+  "remaining_CPU": 3800.203125,
+  "available_before_reserve": 3795.203125,
+  "cumulative_group_CPU": {
+    "symbolic": 63.609375,
+    "independent": 134.8125
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "remaining_group_CPU": {
+    "symbolic": 56.390625,
+    "independent": 165.1875
+  },
+  "phases": [
+    {
+      "phase": "adversarial",
+      "group": "independent",
+      "whole_child_CPU": 1.90625,
+      "whole_controller_CPU": 0.203125,
+      "charge": 2.109375,
+      "source_engine_calls": 11962,
+      "peak_working_set": 92704768
+    },
+    {
+      "phase": "closure",
+      "group": "symbolic",
+      "whole_child_CPU": 2.21875,
+      "whole_controller_CPU": 0.203125,
+      "charge": 2.421875,
+      "source_engine_calls": 12269,
+      "peak_working_set": 62369792
+    },
+    {
+      "phase": "controls",
+      "group": "independent",
+      "whole_child_CPU": 0.3125,
+      "whole_controller_CPU": 0.1875,
+      "charge": 0.5,
+      "source_engine_calls": 8200,
+      "peak_working_set": 26447872
+    },
+    {
+      "phase": "independent",
+      "group": "independent",
+      "whole_child_CPU": 13.5,
+      "whole_controller_CPU": 0.3125,
+      "charge": 13.8125,
+      "source_engine_calls": 6344,
+      "peak_working_set": 129540096
+    },
+    {
+      "phase": "inherited",
+      "group": "independent",
+      "whole_child_CPU": 27.875,
+      "whole_controller_CPU": 0.484375,
+      "charge": 28.359375,
+      "source_engine_calls": 20184,
+      "peak_working_set": 333393920
+    },
+    {
+      "phase": "seal",
+      "group": "independent",
+      "whole_child_CPU": 2.015625,
+      "whole_controller_CPU": 0.390625,
+      "charge": 2.40625,
+      "source_engine_calls": 0,
+      "peak_working_set": 89956352
+    },
+    {
+      "phase": "seeds",
+      "group": "symbolic",
+      "whole_child_CPU": 1.328125,
+      "whole_controller_CPU": 0.1875,
+      "charge": 1.515625,
+      "source_engine_calls": 14544,
+      "peak_working_set": 66564096
+    }
+  ],
+  "source_engine_calls_this_campaign": 73503,
+  "query_cap": 2000000,
+  "live_cap": 2000000,
+  "DAG_cap": 4000000,
+  "edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "wall_cap_hours": 12,
+  "no_reset": true,
+  "new_finite_tests": 0,
+  "metadata_convention": "entry/provenance/publication excluded as inherited; all proof/replay/seal child and controller CPU charged",
+  "metadata_publisher_CPU_this_invocation_excluded": 0.421875
+}

@@ -1,0 +1,16 @@
+{"critical_groups": 378, "unknown_core_functions": 303, "all_core_types": 4862}
+{"clauses": 1000, "input_DAG": 27716, "CPU": 29.203125}
+{"clauses": 2000, "input_DAG": 54295, "CPU": 55.46875}
+{"clauses": 3000, "input_DAG": 79946, "CPU": 80.390625}
+{"clauses": 4000, "input_DAG": 105452, "CPU": 103.390625}
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_XFER19\audit_correction_v3.py", line 161, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_XFER19\audit_correction_v3.py", line 132, in main
+    if p[0]==int(x>r):add_clause('SIDE',None,(p,),i,x,j,w)
+                      ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_XFER19\audit_correction_v3.py", line 102, in add_clause
+    assert time.process_time()<CAP-5 and len(records)<2000000
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

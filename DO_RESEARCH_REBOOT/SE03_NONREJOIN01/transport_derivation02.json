@@ -1,0 +1,524 @@
+{
+  "status": "PASS_NAMED_UNIVERSAL_SOURCE_IDENTITIES",
+  "proofs": [
+    {
+      "name": "P_full_p1",
+      "source": [
+        "g",
+        [
+          "p",
+          "A",
+          [
+            "s",
+            [
+              "x",
+              "B",
+              "C"
+            ],
+            "D"
+          ]
+        ],
+        "E"
+      ],
+      "recipe": [
+        [
+          [],
+          "L"
+        ]
+      ],
+      "destination": [
+        "p",
+        "A",
+        [
+          "g",
+          [
+            "s",
+            [
+              "x",
+              "B",
+              "C"
+            ],
+            "D"
+          ],
+          "E"
+        ]
+      ],
+      "target": "p",
+      "target_source_path": [
+        1
+      ],
+      "source_depth": 1
+    },
+    {
+      "name": "P_full_x",
+      "source": [
+        "p",
+        "A",
+        [
+          "g",
+          [
+            "s",
+            [
+              "x",
+              "B",
+              "C"
+            ],
+            "D"
+          ],
+          "E"
+        ]
+      ],
+      "recipe": [
+        [
+          [
+            2
+          ],
+          "LL"
+        ],
+        [
+          [],
+          "R"
+        ]
+      ],
+      "destination": [
+        "x",
+        [
+          "p",
+          "A",
+          "B"
+        ],
+        [
+          "s",
+          "C",
+          [
+            "g",
+            "D",
+            "E"
+          ]
+        ]
+      ],
+      "target": "x",
+      "target_source_path": [
+        2,
+        1,
+        1
+      ],
+      "source_depth": 3
+    },
+    {
+      "name": "P_full_p2",
+      "source": [
+        "x",
+        [
+          "p",
+          "A",
+          "B"
+        ],
+        [
+          "s",
+          "C",
+          [
+            "g",
+            "D",
+            "E"
+          ]
+        ]
+      ],
+      "recipe": [
+        [
+          [],
+          "L"
+        ]
+      ],
+      "destination": [
+        "p",
+        "A",
+        [
+          "x",
+          "B",
+          [
+            "s",
+            "C",
+            [
+              "g",
+              "D",
+              "E"
+            ]
+          ]
+        ]
+      ],
+      "target": "p",
+      "target_source_path": [
+        1
+      ],
+      "source_depth": 1
+    },
+    {
+      "name": "P_full_g",
+      "source": [
+        "p",
+        "A",
+        [
+          "x",
+          "B",
+          [
+            "s",
+            "C",
+            [
+              "g",
+              "D",
+              "E"
+            ]
+          ]
+        ]
+      ],
+      "recipe": [
+        [
+          [
+            2
+          ],
+          "RR"
+        ],
+        [
+          [],
+          "R"
+        ]
+      ],
+      "destination": [
+        "g",
+        [
+          "p",
+          "A",
+          [
+            "s",
+            [
+              "x",
+              "B",
+              "C"
+            ],
+            "D"
+          ]
+        ],
+        "E"
+      ],
+      "target": "g",
+      "target_source_path": [
+        2,
+        2,
+        2
+      ],
+      "source_depth": 3
+    },
+    {
+      "name": "P_erased_first_x",
+      "source": [
+        "g",
+        [
+          "p",
+          "A",
+          [
+            "s",
+            [
+              "x",
+              "B",
+              "C"
+            ],
+            "D"
+          ]
+        ],
+        "E"
+      ],
+      "recipe": [
+        [
+          [
+            1
+          ],
+          "RL"
+        ],
+        [
+          [],
+          "L"
+        ]
+      ],
+      "destination": [
+        "x",
+        [
+          "p",
+          "A",
+          "B"
+        ],
+        [
+          "g",
+          [
+            "s",
+            "C",
+            "D"
+          ],
+          "E"
+        ]
+      ],
+      "target": "x",
+      "target_source_path": [
+        1,
+        2,
+        1
+      ],
+      "source_depth": 3
+    },
+    {
+      "name": "P_erased_first_g",
+      "source": [
+        "x",
+        [
+          "p",
+          "A",
+          "B"
+        ],
+        [
+          "g",
+          [
+            "s",
+            "C",
+            "D"
+          ],
+          "E"
+        ]
+      ],
+      "recipe": [
+        [
+          [],
+          "R"
+        ]
+      ],
+      "destination": [
+        "g",
+        [
+          "x",
+          [
+            "p",
+            "A",
+            "B"
+          ],
+          [
+            "s",
+            "C",
+            "D"
+          ]
+        ],
+        "E"
+      ],
+      "target": "g",
+      "target_source_path": [
+        2
+      ],
+      "source_depth": 1
+    },
+    {
+      "name": "P_erased_recurrent_x",
+      "source": [
+        "g",
+        [
+          "x",
+          [
+            "p",
+            "A",
+            "B"
+          ],
+          [
+            "s",
+            "C",
+            "D"
+          ]
+        ],
+        "E"
+      ],
+      "recipe": [
+        [
+          [],
+          "L"
+        ]
+      ],
+      "destination": [
+        "x",
+        [
+          "p",
+          "A",
+          "B"
+        ],
+        [
+          "g",
+          [
+            "s",
+            "C",
+            "D"
+          ],
+          "E"
+        ]
+      ],
+      "target": "x",
+      "target_source_path": [
+        1
+      ],
+      "source_depth": 1
+    },
+    {
+      "name": "P_erased_recurrent_g",
+      "source": [
+        "x",
+        [
+          "p",
+          "A",
+          "B"
+        ],
+        [
+          "g",
+          [
+            "s",
+            "C",
+            "D"
+          ],
+          "E"
+        ]
+      ],
+      "recipe": [
+        [
+          [],
+          "R"
+        ]
+      ],
+      "destination": [
+        "g",
+        [
+          "x",
+          [
+            "p",
+            "A",
+            "B"
+          ],
+          [
+            "s",
+            "C",
+            "D"
+          ]
+        ],
+        "E"
+      ],
+      "target": "g",
+      "target_source_path": [
+        2
+      ],
+      "source_depth": 1
+    },
+    {
+      "name": "minimum_contraction_full",
+      "source": [
+        "g",
+        [
+          "z",
+          "EMPTY",
+          [
+            "p",
+            [
+              "x",
+              "A",
+              "B"
+            ],
+            "C"
+          ]
+        ],
+        "D"
+      ],
+      "recipe": [
+        [
+          [
+            1
+          ],
+          "RL"
+        ],
+        [
+          [],
+          "L"
+        ]
+      ],
+      "destination": [
+        "x",
+        [
+          "z",
+          "EMPTY",
+          "A"
+        ],
+        [
+          "g",
+          [
+            "p",
+            "B",
+            "C"
+          ],
+          "D"
+        ]
+      ],
+      "target": "x",
+      "target_source_path": [
+        1,
+        2,
+        1
+      ],
+      "source_depth": 3
+    },
+    {
+      "name": "minimum_contraction_projected",
+      "source": [
+        "g",
+        [
+          "p",
+          [
+            "x",
+            "A",
+            "B"
+          ],
+          "C"
+        ],
+        "D"
+      ],
+      "recipe": [
+        [
+          [],
+          "LL"
+        ]
+      ],
+      "destination": [
+        "x",
+        "A",
+        [
+          "p",
+          "B",
+          [
+            "g",
+            "C",
+            "D"
+          ]
+        ]
+      ],
+      "target": "x",
+      "target_source_path": [
+        1,
+        1
+      ],
+      "source_depth": 2
+    }
+  ],
+  "P": {
+    "A": 6,
+    "Q_F": 2,
+    "Q_E_first": 1,
+    "Q_E_recurrent": 0,
+    "D": 0,
+    "J_per_recurrent_period": 2
+  },
+  "six_key_amplification": "J>=2m-2 on aligned block; m>=4, not exact Q_E",
+  "genuinely_new_CD_domain_established": false,
+  "uniform_support_extension": false,
+  "source_engine_calls": 0,
+  "new_finite_tests": 0,
+  "old_semantic_rows_replayed": 0
+}

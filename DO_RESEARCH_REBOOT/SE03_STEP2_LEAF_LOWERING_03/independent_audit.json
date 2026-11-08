@@ -1,0 +1,37 @@
+{
+  "status": "PASS_SEPARATE_SOURCE_REPLAY_AND_COMPLETE_FRAME_CLOSURES",
+  "all70_original_operations_and_reflection": true,
+  "actual_A_B_BE_closure": true,
+  "actual_costs": {
+    "A": 83,
+    "QF": 26,
+    "QE": 24,
+    "original_CD_slack": 140
+  },
+  "two_losses_then_zero_restoration": [
+    4,
+    3,
+    2,
+    3
+  ],
+  "universal_local_classification_audit": "leaf loss iff target marked-leaf and both ancestors retain offpath marks; r6 branches2,3",
+  "one_event_A_oldroot_positions": [
+    "L",
+    "R",
+    "LL",
+    "RR"
+  ],
+  "two_double_B_paths": [
+    "LLLL",
+    "LLRR",
+    "RRLL",
+    "RRRR"
+  ],
+  "forward_complete_source_grammar_guards_checked": true,
+  "all_reflected_backward_identities_checked": true,
+  "new_known_family_R0_R1_exclusion": "PROVED conditional only on the explicit source-completeness/lifting proof in report",
+  "global_R0_R1": "OPEN",
+  "audit_independence": "same agent; distinct immutable engine/term format and separate proof derivation; no external reviewer/formal proof assistant",
+  "source_engine_calls": 562,
+  "new_finite_tests": 0
+}

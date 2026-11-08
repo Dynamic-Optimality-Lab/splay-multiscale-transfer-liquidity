@@ -1,0 +1,133 @@
+{
+  "prior_uniform_CPU": 3207.125,
+  "new_CPU_all_children_controllers_and_manual_charge": 4.015625,
+  "cumulative_uniform_CPU": 3211.140625,
+  "global_allowance": 7200,
+  "remaining_CPU_including_reserve": 3988.859375,
+  "required_reserve": 5,
+  "original_SE03_phase_groups": {
+    "symbolic": {
+      "inherited_CPU": 2.25,
+      "new_CPU": 1.28125,
+      "cap": 120,
+      "combined_CPU": 3.53125
+    },
+    "independent": {
+      "inherited_CPU": 3.5,
+      "new_CPU": 2.734375,
+      "cap": 300,
+      "combined_CPU": 6.234375
+    }
+  },
+  "attempts": [
+    {
+      "phase": "composition",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "child_CPU": 0.171875,
+      "controller_CPU": 0.15625,
+      "charged_CPU": 0.328125,
+      "allocated_child_cap": 293.390625,
+      "peak_working_set_bytes_observed": 15093760
+    },
+    {
+      "phase": "composition_v2",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.1875,
+      "controller_CPU": 0.25,
+      "charged_CPU": 0.4375,
+      "allocated_child_cap": 292.96875,
+      "peak_working_set_bytes_observed": 14508032
+    },
+    {
+      "phase": "density",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.125,
+      "controller_CPU": 0.1875,
+      "charged_CPU": 0.3125,
+      "allocated_child_cap": 293.96875,
+      "peak_working_set_bytes_observed": 14327808
+    },
+    {
+      "phase": "induction",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.21875,
+      "controller_CPU": 0.203125,
+      "charged_CPU": 0.421875,
+      "allocated_child_cap": 294.609375,
+      "peak_working_set_bytes_observed": 14716928
+    },
+    {
+      "phase": "safe_levels",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.078125,
+      "controller_CPU": 0.15625,
+      "charged_CPU": 0.234375,
+      "allocated_child_cap": 294.234375,
+      "peak_working_set_bytes_observed": 14503936
+    },
+    {
+      "phase": "separate",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.5625,
+      "controller_CPU": 0.125,
+      "charged_CPU": 0.6875,
+      "allocated_child_cap": 295.390625,
+      "peak_working_set_bytes_observed": 30482432
+    },
+    {
+      "phase": "source_terms",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.078125,
+      "controller_CPU": 0.203125,
+      "charged_CPU": 0.28125,
+      "allocated_child_cap": 116.546875,
+      "peak_working_set_bytes_observed": 14585856
+    },
+    {
+      "phase": "successor",
+      "group": "independent",
+      "status": "PASS",
+      "child_CPU": 0.09375,
+      "controller_CPU": 0.21875,
+      "charged_CPU": 0.3125,
+      "allocated_child_cap": 293.640625,
+      "peak_working_set_bytes_observed": 14262272
+    }
+  ],
+  "manual_conservative_charge": {
+    "operation": "Read already derived universal free terms and compare full/erased symbolic endpoints",
+    "result": "All 26 full/erased symbolic endpoint terms differ; initial terms differ",
+    "phase_group": "symbolic",
+    "charged_CPU_seconds": 1.0,
+    "charge_kind": "Conservative upper charge for one single-threaded Python invocation outside bounded controller",
+    "observed_shell_call_wall_seconds": 0.4410509,
+    "finite_tests": 0,
+    "source_engine_calls": 0,
+    "old_rows_replayed": 0,
+    "note": "Included in checkpoint cumulative global and original symbolic group accounting; not excluded as metadata. Subsequent allocations remain below all group caps even with this extra charge."
+  },
+  "resource_cap_reached": false,
+  "cap_reset_or_renewal": false,
+  "old_signature_ledger_unchanged": 7195.203125,
+  "canonical_query_cap": 2000000,
+  "new_canonical_queries": 0,
+  "live_record_cap": 2000000,
+  "new_live_records": 0,
+  "input_DAG_cap": 4000000,
+  "new_compiled_DAG_nodes": 0,
+  "stored_edge_cap": 5000000,
+  "new_stored_edges": 0,
+  "memory_cap_bytes": 34359738368,
+  "per_phase_wall_hours": 12,
+  "new_finite_tests": 0,
+  "new_source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "metadata_exclusion": "inherited provenance, file preparation and bookkeeping convention"
+}

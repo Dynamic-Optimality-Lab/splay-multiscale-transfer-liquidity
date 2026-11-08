@@ -1,0 +1,57 @@
+{
+  "status": "PASS_NEW_SCOPED_SOURCE_DERIVATIONS",
+  "generic_frames": [
+    "LL",
+    "RR",
+    "LR",
+    "RL"
+  ],
+  "free_port_owner_preservation": true,
+  "recency": "new edges from just-accessed root; child access removes every initial incoming edge within one period",
+  "channels": "arbitrary delta+1 threshold-crossing channels; interval flow telescopes; root own-channel charge1",
+  "own_channel_SS_rows": [
+    {
+      "P": "own U",
+      "G": "own M",
+      "delta_K": {}
+    },
+    {
+      "P": "own U",
+      "G": "foreign",
+      "delta_K": {
+        "e": -1
+      },
+      "premise": "e>=0"
+    },
+    {
+      "P": "own U",
+      "G": "own U",
+      "delta_K": {
+        "one": -1
+      }
+    },
+    {
+      "P": "foreign",
+      "G": "foreign",
+      "delta_K": {}
+    },
+    {
+      "P": "foreign",
+      "G": "own U",
+      "delta_K": {
+        "one": -1
+      }
+    }
+  ],
+  "own_channel_mixed_delta": "-I[G ownU]-I[P ownU]",
+  "own_channel_terminal_zig_delta": 0,
+  "envelope_obstruction": "unique actual nine-Score chart at R11; normalized source1, pair-2, target<=2",
+  "core10_repayment_proved": false,
+  "core11_zero_plus1_completion_proved": false,
+  "full_donor_allocation_proved": false,
+  "Step2": "OPEN",
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "new_graphs": 0
+}

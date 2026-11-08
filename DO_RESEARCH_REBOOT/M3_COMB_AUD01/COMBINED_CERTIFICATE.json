@@ -1,0 +1,136 @@
+{
+  "name": "Combined independently audited RESTRICTED M3 certificate",
+  "status": "PASS_RESTRICTED_DOMAIN_FULL_M3_INCOMPLETE",
+  "full_M3_complete": false,
+  "domain": {
+    "mu": "9-bit masks with exactly five marked cores",
+    "sigma": "ten integers0..266; at most one positive component",
+    "signature_vectors": 2661,
+    "mask_signature_sectors": 335286,
+    "chi8": "both regions and entering paths"
+  },
+  "source_state": "(mu,b,alpha,sigma)",
+  "ordinary_raw_coordinate_count": 147,
+  "midpoint_raw_coordinate_count": 127,
+  "potential": {
+    "O": "J-5*chi8",
+    "M": "-5*chi8",
+    "range": [
+      -7,
+      0
+    ],
+    "low_table_range": [
+      -2,
+      0
+    ],
+    "decoder": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/candidate.py",
+    "zero_support_table": "canonical gap0"
+  },
+  "weights": {
+    "OO": "2H-q at actual terminal source",
+    "OM": "6-q",
+    "MO": 0,
+    "MM": "no edge"
+  },
+  "tables": [
+    {
+      "canonical_gap": 0,
+      "covers_gaps": [
+        0,
+        9
+      ],
+      "catalog": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAP01/catalog.json",
+        "sha256": "06f532c8d26cecf50d73bd72cd8c3f49337a5845afa37eb36e8067380343e479"
+      },
+      "values": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAP01/potential.bin",
+        "sha256": "3dbc5e1f67af157c0b64b3d379ab3e64b74ed680c2604dc15222624407df991b"
+      },
+      "states": 519712,
+      "verified_edges": 4089363,
+      "audit": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/finite_gap0.json"
+    },
+    {
+      "canonical_gap": 1,
+      "covers_gaps": [
+        1,
+        8
+      ],
+      "catalog": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAPINT01/catalog.json",
+        "sha256": "783c58092774ae8660ca28eebd50d9c05e5962cdb7fc0bf78285ba05d91d359b"
+      },
+      "values": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAPINT01/potential.bin",
+        "sha256": "343e06f241c5e900ccbca41a6534ccb7e8114e19c2dfcbf4cc47d59b0248fd88"
+      },
+      "states": 621923,
+      "verified_edges": 4217313,
+      "audit": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/finite_gap1.json"
+    },
+    {
+      "canonical_gap": 2,
+      "covers_gaps": [
+        2,
+        7
+      ],
+      "catalog": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAPINT02/catalog.json",
+        "sha256": "bcf61d0dd1d631ada5b6c001d521ab59f8e165a3ad85a5130a937a8ca509d7c7"
+      },
+      "values": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAPINT02/potential.bin",
+        "sha256": "d09c329356075a100faf8851bb0bbe38e79e6d80bea94114e189b6c1465cb2bb"
+      },
+      "states": 587493,
+      "verified_edges": 3957645,
+      "audit": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/finite_gap2.json"
+    },
+    {
+      "canonical_gap": 3,
+      "covers_gaps": [
+        3,
+        6
+      ],
+      "catalog": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAPINT03/catalog.json",
+        "sha256": "1b29fce3754a4ea7741f59944eba7e408f1f9d933cc4033baa7d3c555020a8ad"
+      },
+      "values": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAPINT03/potential.bin",
+        "sha256": "3f52f2f0a24e8f5d54385c4f8ccb108df02331bfd1481a65c69c5d45d16a0707"
+      },
+      "states": 556980,
+      "verified_edges": 3556717,
+      "audit": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/finite_gap3.json"
+    },
+    {
+      "canonical_gap": 4,
+      "covers_gaps": [
+        4,
+        5
+      ],
+      "catalog": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAPINT04/catalog.json",
+        "sha256": "7f56370e745e93dfd96cfcd8503aef089c254a610929c130f8405c28f23786b3"
+      },
+      "values": {
+        "path": "DO_RESEARCH_REBOOT/M3_GAPINT04/potential.bin",
+        "sha256": "2c49a822abba5f4c4c33102cbf27e0ea765b343c1792adc3f5991b729d331c5b"
+      },
+      "states": 543278,
+      "verified_edges": 3352967,
+      "audit": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/finite_gap4.json"
+    }
+  ],
+  "dependencies": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/dependency_ledger.json",
+  "universal_all_signature_consequence": "closed weight >= 2*N_H+P_L-D_L",
+  "uncovered_obligation": "multiple positive gaps, N_H>=1, D_L>2*N_H+P_L, in both chi8 regions",
+  "original_negative_cycle_certified": false,
+  "source_and_interface_audit": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/actual_projected_product_audit_v2.json",
+  "original_semantics_and_full_closure_audit": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/original_semantics_audit.json",
+  "verdict": "DO_RESEARCH_REBOOT/M3_COMB_AUD01/coverage_audit.json",
+  "Bank25": 25,
+  "Stage04_run": false
+}

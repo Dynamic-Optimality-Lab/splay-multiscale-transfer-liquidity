@@ -1,0 +1,1014 @@
+{
+  "gate_sha256": "e586a1e5df3fa4154fe6d356ad29dc30ad201bb9974e1a51f5d6cef8c492cf9b",
+  "contexts": {
+    "LL": {
+      "classification": {
+        "kind": "disagreement_interval",
+        "external_depth": 2,
+        "lower": null,
+        "upper": 8,
+        "internal_depth_A": 0,
+        "internal_depth_B": 2,
+        "even_even": true,
+        "internal_A": [
+          3,
+          "I0_A",
+          [
+            5,
+            "I1_A",
+            [
+              7,
+              "I2_A",
+              "I3_A"
+            ]
+          ]
+        ],
+        "internal_B": [
+          7,
+          [
+            5,
+            [
+              3,
+              "I0_B",
+              "I1_B"
+            ],
+            "I2_B"
+          ],
+          "I3_B"
+        ],
+        "core_count": 2
+      },
+      "row": {
+        "occurrence": 0,
+        "mode": "KEEP",
+        "key": 3,
+        "source_A": [
+          10,
+          [
+            8,
+            [
+              3,
+              "I0_A",
+              [
+                5,
+                "I1_A",
+                [
+                  7,
+                  "I2_A",
+                  "I3_A"
+                ]
+              ]
+            ],
+            "S1_A"
+          ],
+          "S0_A"
+        ],
+        "source_B": [
+          10,
+          [
+            8,
+            [
+              7,
+              [
+                5,
+                [
+                  3,
+                  "I0_B",
+                  "I1_B"
+                ],
+                "I2_B"
+              ],
+              "I3_B"
+            ],
+            "S1_B"
+          ],
+          "S0_B"
+        ],
+        "destination_A": [
+          3,
+          "I0_A",
+          [
+            8,
+            [
+              5,
+              "I1_A",
+              [
+                7,
+                "I2_A",
+                "I3_A"
+              ]
+            ],
+            [
+              10,
+              "S1_A",
+              "S0_A"
+            ]
+          ]
+        ],
+        "destination_B": [
+          3,
+          "I0_B",
+          [
+            8,
+            [
+              5,
+              "I1_B",
+              [
+                7,
+                "I2_B",
+                "I3_B"
+              ]
+            ],
+            [
+              10,
+              "S1_B",
+              "S0_B"
+            ]
+          ]
+        ],
+        "d_A": 2,
+        "d_B": 4,
+        "a": 1,
+        "q": 2,
+        "delta": 0,
+        "A_events": [
+          [
+            "LL",
+            3,
+            10,
+            "-"
+          ]
+        ],
+        "B_events": [
+          [
+            "LL",
+            3,
+            7,
+            "-"
+          ],
+          [
+            "LL",
+            3,
+            10,
+            "-"
+          ]
+        ],
+        "z": 0
+      },
+      "before": {
+        "constant": 2,
+        "opaque_size_coefficients": {}
+      },
+      "after": {
+        "constant": 5,
+        "opaque_size_coefficients": {}
+      },
+      "old_common_keys": [
+        8,
+        10
+      ],
+      "new_common_keys": [
+        3,
+        5,
+        7,
+        8,
+        10
+      ]
+    },
+    "RR": {
+      "classification": {
+        "kind": "disagreement_interval",
+        "external_depth": 2,
+        "lower": 2,
+        "upper": null,
+        "internal_depth_A": 0,
+        "internal_depth_B": 2,
+        "even_even": true,
+        "internal_A": [
+          3,
+          "I0_A",
+          [
+            5,
+            "I1_A",
+            [
+              7,
+              "I2_A",
+              "I3_A"
+            ]
+          ]
+        ],
+        "internal_B": [
+          7,
+          [
+            5,
+            [
+              3,
+              "I0_B",
+              "I1_B"
+            ],
+            "I2_B"
+          ],
+          "I3_B"
+        ],
+        "core_count": 2
+      },
+      "row": {
+        "occurrence": 0,
+        "mode": "KEEP",
+        "key": 3,
+        "source_A": [
+          0,
+          "S0_A",
+          [
+            2,
+            "S1_A",
+            [
+              3,
+              "I0_A",
+              [
+                5,
+                "I1_A",
+                [
+                  7,
+                  "I2_A",
+                  "I3_A"
+                ]
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          0,
+          "S0_B",
+          [
+            2,
+            "S1_B",
+            [
+              7,
+              [
+                5,
+                [
+                  3,
+                  "I0_B",
+                  "I1_B"
+                ],
+                "I2_B"
+              ],
+              "I3_B"
+            ]
+          ]
+        ],
+        "destination_A": [
+          3,
+          [
+            2,
+            [
+              0,
+              "S0_A",
+              "S1_A"
+            ],
+            "I0_A"
+          ],
+          [
+            5,
+            "I1_A",
+            [
+              7,
+              "I2_A",
+              "I3_A"
+            ]
+          ]
+        ],
+        "destination_B": [
+          3,
+          [
+            2,
+            [
+              0,
+              "S0_B",
+              "S1_B"
+            ],
+            "I0_B"
+          ],
+          [
+            5,
+            "I1_B",
+            [
+              7,
+              "I2_B",
+              "I3_B"
+            ]
+          ]
+        ],
+        "d_A": 2,
+        "d_B": 4,
+        "a": 1,
+        "q": 2,
+        "delta": 0,
+        "A_events": [
+          [
+            "RR",
+            0,
+            3,
+            "-"
+          ]
+        ],
+        "B_events": [
+          [
+            "LL",
+            3,
+            7,
+            "-"
+          ],
+          [
+            "RR",
+            0,
+            3,
+            "-"
+          ]
+        ],
+        "z": 0
+      },
+      "before": {
+        "constant": 2,
+        "opaque_size_coefficients": {}
+      },
+      "after": {
+        "constant": 5,
+        "opaque_size_coefficients": {}
+      },
+      "old_common_keys": [
+        0,
+        2
+      ],
+      "new_common_keys": [
+        0,
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    "LR": {
+      "classification": {
+        "kind": "disagreement_interval",
+        "external_depth": 2,
+        "lower": 2,
+        "upper": 10,
+        "internal_depth_A": 0,
+        "internal_depth_B": 2,
+        "even_even": true,
+        "internal_A": [
+          3,
+          "I0_A",
+          [
+            5,
+            "I1_A",
+            [
+              7,
+              "I2_A",
+              "I3_A"
+            ]
+          ]
+        ],
+        "internal_B": [
+          7,
+          [
+            5,
+            [
+              3,
+              "I0_B",
+              "I1_B"
+            ],
+            "I2_B"
+          ],
+          "I3_B"
+        ],
+        "core_count": 2
+      },
+      "row": {
+        "occurrence": 0,
+        "mode": "KEEP",
+        "key": 3,
+        "source_A": [
+          10,
+          [
+            2,
+            "S1_A",
+            [
+              3,
+              "I0_A",
+              [
+                5,
+                "I1_A",
+                [
+                  7,
+                  "I2_A",
+                  "I3_A"
+                ]
+              ]
+            ]
+          ],
+          "S0_A"
+        ],
+        "source_B": [
+          10,
+          [
+            2,
+            "S1_B",
+            [
+              7,
+              [
+                5,
+                [
+                  3,
+                  "I0_B",
+                  "I1_B"
+                ],
+                "I2_B"
+              ],
+              "I3_B"
+            ]
+          ],
+          "S0_B"
+        ],
+        "destination_A": [
+          3,
+          [
+            2,
+            "S1_A",
+            "I0_A"
+          ],
+          [
+            10,
+            [
+              5,
+              "I1_A",
+              [
+                7,
+                "I2_A",
+                "I3_A"
+              ]
+            ],
+            "S0_A"
+          ]
+        ],
+        "destination_B": [
+          3,
+          [
+            2,
+            "S1_B",
+            "I0_B"
+          ],
+          [
+            10,
+            [
+              5,
+              "I1_B",
+              [
+                7,
+                "I2_B",
+                "I3_B"
+              ]
+            ],
+            "S0_B"
+          ]
+        ],
+        "d_A": 2,
+        "d_B": 4,
+        "a": 1,
+        "q": 2,
+        "delta": 0,
+        "A_events": [
+          [
+            "LR",
+            2,
+            10,
+            "-"
+          ]
+        ],
+        "B_events": [
+          [
+            "LL",
+            3,
+            7,
+            "-"
+          ],
+          [
+            "LR",
+            2,
+            10,
+            "-"
+          ]
+        ],
+        "z": 0
+      },
+      "before": {
+        "constant": 2,
+        "opaque_size_coefficients": {}
+      },
+      "after": {
+        "constant": 5,
+        "opaque_size_coefficients": {}
+      },
+      "old_common_keys": [
+        2,
+        10
+      ],
+      "new_common_keys": [
+        2,
+        3,
+        5,
+        7,
+        10
+      ]
+    },
+    "RL": {
+      "classification": {
+        "kind": "disagreement_interval",
+        "external_depth": 2,
+        "lower": 0,
+        "upper": 8,
+        "internal_depth_A": 0,
+        "internal_depth_B": 2,
+        "even_even": true,
+        "internal_A": [
+          3,
+          "I0_A",
+          [
+            5,
+            "I1_A",
+            [
+              7,
+              "I2_A",
+              "I3_A"
+            ]
+          ]
+        ],
+        "internal_B": [
+          7,
+          [
+            5,
+            [
+              3,
+              "I0_B",
+              "I1_B"
+            ],
+            "I2_B"
+          ],
+          "I3_B"
+        ],
+        "core_count": 2
+      },
+      "row": {
+        "occurrence": 0,
+        "mode": "KEEP",
+        "key": 3,
+        "source_A": [
+          0,
+          "S0_A",
+          [
+            8,
+            [
+              3,
+              "I0_A",
+              [
+                5,
+                "I1_A",
+                [
+                  7,
+                  "I2_A",
+                  "I3_A"
+                ]
+              ]
+            ],
+            "S1_A"
+          ]
+        ],
+        "source_B": [
+          0,
+          "S0_B",
+          [
+            8,
+            [
+              7,
+              [
+                5,
+                [
+                  3,
+                  "I0_B",
+                  "I1_B"
+                ],
+                "I2_B"
+              ],
+              "I3_B"
+            ],
+            "S1_B"
+          ]
+        ],
+        "destination_A": [
+          3,
+          [
+            0,
+            "S0_A",
+            "I0_A"
+          ],
+          [
+            8,
+            [
+              5,
+              "I1_A",
+              [
+                7,
+                "I2_A",
+                "I3_A"
+              ]
+            ],
+            "S1_A"
+          ]
+        ],
+        "destination_B": [
+          3,
+          [
+            0,
+            "S0_B",
+            "I0_B"
+          ],
+          [
+            8,
+            [
+              5,
+              "I1_B",
+              [
+                7,
+                "I2_B",
+                "I3_B"
+              ]
+            ],
+            "S1_B"
+          ]
+        ],
+        "d_A": 2,
+        "d_B": 4,
+        "a": 1,
+        "q": 2,
+        "delta": 0,
+        "A_events": [
+          [
+            "RL",
+            0,
+            8,
+            "-"
+          ]
+        ],
+        "B_events": [
+          [
+            "LL",
+            3,
+            7,
+            "-"
+          ],
+          [
+            "RL",
+            0,
+            8,
+            "-"
+          ]
+        ],
+        "z": 0
+      },
+      "before": {
+        "constant": 2,
+        "opaque_size_coefficients": {}
+      },
+      "after": {
+        "constant": 5,
+        "opaque_size_coefficients": {}
+      },
+      "old_common_keys": [
+        0,
+        8
+      ],
+      "new_common_keys": [
+        0,
+        3,
+        5,
+        7,
+        8
+      ]
+    },
+    "ZIG_L": {
+      "classification": {
+        "kind": "disagreement_interval",
+        "external_depth": 1,
+        "lower": null,
+        "upper": 8,
+        "internal_depth_A": 0,
+        "internal_depth_B": 2,
+        "even_even": true,
+        "internal_A": [
+          3,
+          "I0_A",
+          [
+            5,
+            "I1_A",
+            [
+              7,
+              "I2_A",
+              "I3_A"
+            ]
+          ]
+        ],
+        "internal_B": [
+          7,
+          [
+            5,
+            [
+              3,
+              "I0_B",
+              "I1_B"
+            ],
+            "I2_B"
+          ],
+          "I3_B"
+        ],
+        "core_count": 1
+      },
+      "row": {
+        "occurrence": 0,
+        "mode": "KEEP",
+        "key": 3,
+        "source_A": [
+          8,
+          [
+            3,
+            "I0_A",
+            [
+              5,
+              "I1_A",
+              [
+                7,
+                "I2_A",
+                "I3_A"
+              ]
+            ]
+          ],
+          "S0_A"
+        ],
+        "source_B": [
+          8,
+          [
+            7,
+            [
+              5,
+              [
+                3,
+                "I0_B",
+                "I1_B"
+              ],
+              "I2_B"
+            ],
+            "I3_B"
+          ],
+          "S0_B"
+        ],
+        "destination_A": [
+          3,
+          "I0_A",
+          [
+            8,
+            [
+              5,
+              "I1_A",
+              [
+                7,
+                "I2_A",
+                "I3_A"
+              ]
+            ],
+            "S0_A"
+          ]
+        ],
+        "destination_B": [
+          3,
+          "I0_B",
+          [
+            8,
+            [
+              5,
+              "I1_B",
+              [
+                7,
+                "I2_B",
+                "I3_B"
+              ]
+            ],
+            "S0_B"
+          ]
+        ],
+        "d_A": 1,
+        "d_B": 3,
+        "a": 1,
+        "q": 1,
+        "delta": -1,
+        "A_events": [
+          [
+            "ZIG",
+            3,
+            8,
+            "L"
+          ]
+        ],
+        "B_events": [
+          [
+            "LL",
+            3,
+            7,
+            "-"
+          ],
+          [
+            "ZIG",
+            3,
+            8,
+            "L"
+          ]
+        ],
+        "z": 1
+      },
+      "before": {
+        "constant": 1,
+        "opaque_size_coefficients": {}
+      },
+      "after": {
+        "constant": 4,
+        "opaque_size_coefficients": {}
+      },
+      "old_common_keys": [
+        8
+      ],
+      "new_common_keys": [
+        3,
+        5,
+        7,
+        8
+      ]
+    },
+    "ZIG_R": {
+      "classification": {
+        "kind": "disagreement_interval",
+        "external_depth": 1,
+        "lower": 2,
+        "upper": null,
+        "internal_depth_A": 0,
+        "internal_depth_B": 2,
+        "even_even": true,
+        "internal_A": [
+          3,
+          "I0_A",
+          [
+            5,
+            "I1_A",
+            [
+              7,
+              "I2_A",
+              "I3_A"
+            ]
+          ]
+        ],
+        "internal_B": [
+          7,
+          [
+            5,
+            [
+              3,
+              "I0_B",
+              "I1_B"
+            ],
+            "I2_B"
+          ],
+          "I3_B"
+        ],
+        "core_count": 1
+      },
+      "row": {
+        "occurrence": 0,
+        "mode": "KEEP",
+        "key": 3,
+        "source_A": [
+          2,
+          "S0_A",
+          [
+            3,
+            "I0_A",
+            [
+              5,
+              "I1_A",
+              [
+                7,
+                "I2_A",
+                "I3_A"
+              ]
+            ]
+          ]
+        ],
+        "source_B": [
+          2,
+          "S0_B",
+          [
+            7,
+            [
+              5,
+              [
+                3,
+                "I0_B",
+                "I1_B"
+              ],
+              "I2_B"
+            ],
+            "I3_B"
+          ]
+        ],
+        "destination_A": [
+          3,
+          [
+            2,
+            "S0_A",
+            "I0_A"
+          ],
+          [
+            5,
+            "I1_A",
+            [
+              7,
+              "I2_A",
+              "I3_A"
+            ]
+          ]
+        ],
+        "destination_B": [
+          3,
+          [
+            2,
+            "S0_B",
+            "I0_B"
+          ],
+          [
+            5,
+            "I1_B",
+            [
+              7,
+              "I2_B",
+              "I3_B"
+            ]
+          ]
+        ],
+        "d_A": 1,
+        "d_B": 3,
+        "a": 1,
+        "q": 1,
+        "delta": -1,
+        "A_events": [
+          [
+            "ZIG",
+            2,
+            3,
+            "R"
+          ]
+        ],
+        "B_events": [
+          [
+            "LL",
+            3,
+            7,
+            "-"
+          ],
+          [
+            "ZIG",
+            2,
+            3,
+            "R"
+          ]
+        ],
+        "z": 1
+      },
+      "before": {
+        "constant": 1,
+        "opaque_size_coefficients": {}
+      },
+      "after": {
+        "constant": 4,
+        "opaque_size_coefficients": {}
+      },
+      "old_common_keys": [
+        2
+      ],
+      "new_common_keys": [
+        2,
+        3,
+        5,
+        7
+      ]
+    }
+  },
+  "purpose": "six literal outer source identities; proof is arbitrary-context induction"
+}

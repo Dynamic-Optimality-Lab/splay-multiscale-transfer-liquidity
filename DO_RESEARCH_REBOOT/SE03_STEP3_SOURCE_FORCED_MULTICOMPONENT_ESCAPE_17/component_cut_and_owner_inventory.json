@@ -1,0 +1,316 @@
+{
+  "status": "PRODUCER_PROOF_DERIVATION_AUDIT_PENDING",
+  "components": [
+    {
+      "root": [
+        15,
+        3
+      ],
+      "frontier": [
+        42,
+        2
+      ],
+      "demands": [
+        [
+          15,
+          3
+        ],
+        [
+          42,
+          1
+        ],
+        [
+          42,
+          2
+        ]
+      ],
+      "internal_comparison_units": [
+        [
+          42,
+          1,
+          0
+        ],
+        [
+          42,
+          1,
+          1
+        ]
+      ],
+      "fixed_paid_units": [
+        [
+          42,
+          1,
+          0
+        ],
+        [
+          42,
+          1,
+          1
+        ]
+      ],
+      "deficiency_for_this_comparison_only": 1,
+      "source_complete_saturated": false
+    },
+    {
+      "root": [
+        15,
+        5
+      ],
+      "frontier": [
+        41,
+        2
+      ],
+      "demands": [
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          41,
+          2
+        ],
+        [
+          44,
+          1
+        ]
+      ],
+      "internal_comparison_units": [
+        [
+          17,
+          1,
+          0
+        ],
+        [
+          34,
+          1,
+          0
+        ],
+        [
+          41,
+          1,
+          1
+        ],
+        [
+          44,
+          1,
+          0
+        ]
+      ],
+      "fixed_paid_units": [
+        [
+          17,
+          1,
+          0
+        ],
+        [
+          34,
+          1,
+          0
+        ],
+        [
+          41,
+          1,
+          1
+        ],
+        [
+          44,
+          1,
+          0
+        ]
+      ],
+      "deficiency_for_this_comparison_only": 1,
+      "source_complete_saturated": false
+    }
+  ],
+  "union_demands": [
+    [
+      15,
+      1
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      15,
+      5
+    ],
+    [
+      41,
+      1
+    ],
+    [
+      41,
+      2
+    ],
+    [
+      42,
+      1
+    ],
+    [
+      42,
+      2
+    ],
+    [
+      44,
+      1
+    ]
+  ],
+  "union_internal_units": [
+    [
+      17,
+      1,
+      0
+    ],
+    [
+      34,
+      1,
+      0
+    ],
+    [
+      41,
+      1,
+      1
+    ],
+    [
+      42,
+      1,
+      0
+    ],
+    [
+      42,
+      1,
+      1
+    ],
+    [
+      44,
+      1,
+      0
+    ]
+  ],
+  "initial_comparison_boundary_holes": [
+    [
+      41,
+      2
+    ],
+    [
+      42,
+      2
+    ]
+  ],
+  "two_bit_source_escape_inventory": [
+    {
+      "root": [
+        15,
+        3
+      ],
+      "unit": [
+        35,
+        2,
+        1
+      ],
+      "mode": "D",
+      "access_target": 11,
+      "A_path": "LRRRRL",
+      "A_events_at_occurrence": [
+        {
+          "case": "RL",
+          "G": 10,
+          "P": 12,
+          "target": 11,
+          "kind": "DOUBLE"
+        },
+        {
+          "case": "RR",
+          "G": 6,
+          "P": 8,
+          "target": 11,
+          "kind": "DOUBLE"
+        },
+        {
+          "case": "LR",
+          "G": 13,
+          "P": 4,
+          "target": 11,
+          "kind": "DOUBLE"
+        }
+      ],
+      "selected_StepEv": {
+        "case": "RR",
+        "G": 6,
+        "P": 8,
+        "target": 11,
+        "kind": "DOUBLE"
+      },
+      "old_effective_full_owner": null,
+      "old_leaf_comparison_preimage": null,
+      "archived_auxiliary_owner": null,
+      "auxiliary_status": "UNUSED_BY_f6"
+    },
+    {
+      "root": [
+        15,
+        5
+      ],
+      "unit": [
+        35,
+        2,
+        0
+      ],
+      "mode": "D",
+      "access_target": 11,
+      "A_path": "LRRRRL",
+      "A_events_at_occurrence": [
+        {
+          "case": "RL",
+          "G": 10,
+          "P": 12,
+          "target": 11,
+          "kind": "DOUBLE"
+        },
+        {
+          "case": "RR",
+          "G": 6,
+          "P": 8,
+          "target": 11,
+          "kind": "DOUBLE"
+        },
+        {
+          "case": "LR",
+          "G": 13,
+          "P": 4,
+          "target": 11,
+          "kind": "DOUBLE"
+        }
+      ],
+      "selected_StepEv": {
+        "case": "RR",
+        "G": 6,
+        "P": 8,
+        "target": 11,
+        "kind": "DOUBLE"
+      },
+      "old_effective_full_owner": null,
+      "old_leaf_comparison_preimage": null,
+      "archived_auxiliary_owner": null,
+      "auxiliary_status": "UNUSED_BY_f6"
+    }
+  ],
+  "old_single_bit_candidate": [
+    [
+      15,
+      1,
+      1
+    ]
+  ],
+  "physical_coupling": "candidate restriction assigns the same singleton tail pool to two otherwise disjoint blocked comparison components",
+  "not_full_source_cut": "the preparation-tail edges leave it, so it is not saturated under all demonstrated source rules"
+}

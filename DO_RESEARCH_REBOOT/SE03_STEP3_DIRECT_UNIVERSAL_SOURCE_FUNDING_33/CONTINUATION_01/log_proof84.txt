@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_proof84.py", line 18, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_proof84.py", line 13, in main
+    R=json.loads((B/'native10_complete_independent_audit.json').read_text());raw=(B/'native10_debt_03.pkl').read_bytes();assert hashlib.sha256(raw).hexdigest()==R['input_sha256'];L=pickle.loads(raw)['level'];debt=lambda a,b:L.get(min(a*N+b,mir[a]*N+mir[b]),0);src=[debt(a,v) for a in source_projs];dst=[debt(a,bt) for a in target_projs];assert debt(bt,bt)==0 and min(dst)==0;ds=min(src);margin=2-q-ds;assert margin<0
+                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

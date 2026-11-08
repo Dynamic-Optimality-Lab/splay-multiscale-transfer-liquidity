@@ -1,0 +1,65 @@
+{
+  "outcome": "UNRESOLVED",
+  "principal_FR32_CARRY1": "OPEN",
+  "terminal_carry_two_counterexample": false,
+  "restricted_mathematical_derivations": {
+    "FR32_N9": "all EXC without activation9 before tau have D_out<=1",
+    "FR32_H": "immediate H1 activation9 and H_tau>=3 have D_out=0",
+    "FR32_U": "arbitrary finite H1 upper-only words force lower exit, debt<=1 at that exit"
+  },
+  "new_transient_two_control": {
+    "literal_closed_word": "transient_W105_certificate.json",
+    "terminal_debt": 0,
+    "intermediate_debt": 2,
+    "Q": 88,
+    "A_lower_bound": 62,
+    "CD_margin_lower_bound": 36,
+    "full_word_and_period_replayed": false
+  },
+  "static_terminal_necessary_tuple_failures": 1493,
+  "actual_H2_candidate_sectors": [
+    {
+      "A_index": 381,
+      "BF_index": 1060,
+      "D6": 3,
+      "quotient_gap_depth_lower_bound": 2,
+      "return_H_lower_bound": 1,
+      "E6": 1,
+      "k3_anc9": 1,
+      "cached_q9": 1,
+      "proposed_terminal_bound": 0,
+      "margin": -3
+    },
+    {
+      "A_index": 381,
+      "BF_index": 1063,
+      "D6": 3,
+      "quotient_gap_depth_lower_bound": 2,
+      "return_H_lower_bound": 1,
+      "E6": 1,
+      "k3_anc9": 1,
+      "cached_q9": 1,
+      "proposed_terminal_bound": 0,
+      "margin": -3
+    }
+  ],
+  "next_source_target": "actual Lambda_new>=1 in A381/BF1060 or1063, immediate H1 activation with D6(v)=1 and actual return H2; real Lambda0 would refute principal",
+  "remaining_parent_obligations": [
+    "H1 activated return sectors",
+    "delayed/other cold9 D-transfer",
+    "actual source slack/reachability",
+    "global normalized owners",
+    "repeated carry/eventual repayment"
+  ],
+  "new_source_execution": "2 producer queries A/BF post9 KEEP13; 1 distinct BF query; erased state expression only",
+  "new_static_independent_arithmetic": "PASS",
+  "source_induction_kernel_or_external_audit": "PENDING",
+  "external_audit": false,
+  "full_normalized_owner_receipt_evaluated": false,
+  "historical_owners_modified": false,
+  "Bank25": 25,
+  "Coarse_Double_counterexample": false,
+  "Gate_U": "OPEN",
+  "branch": "coarse-double-branch",
+  "HEAD": "8c378d49283b3738b18e7175886772a98025e4e9"
+}

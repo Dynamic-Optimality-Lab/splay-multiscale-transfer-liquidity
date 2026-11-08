@@ -1,0 +1,35 @@
+{
+  "status": "UNIFORM_CAPPED_DEFICIT_POPULATION_LIFT_DERIVED_AUDIT_PENDING",
+  "scope": {
+    "r": "arbitrary r>=2 in an original closed B history",
+    "h": "whole original A packet cost bound",
+    "k": "specified nonnegative negative cutoff",
+    "candidate": "F_r(shared marked root,ordered max(q_B-2a_A,-k))"
+  },
+  "formulas": {
+    "Q0": "floor((c-1)/2)<=r-1",
+    "L": "Q0+k",
+    "R": "Q0+k+2h",
+    "A_prefix": "1+(r-1)*R+2h",
+    "known_key_identities": "c+(r-1)*R+2h<=r^2+2rh+k(r-1)",
+    "active_path_keys": "<=1+2H",
+    "nonidentity_original_operations": "<=2H",
+    "even_padding": "delta_prime=delta-2m",
+    "odd_padding": "delta_prime=delta-2m-2*I[old_A_depth_even]"
+  },
+  "all_original_zero_operations_retained": true,
+  "H_is_whole_packet_not_terminal_access": true,
+  "private_terms": "arbitrary with actual common-key and order constraints; never finite population surrogates",
+  "new_source_queries": 0,
+  "LOW_sign_proof_supplied": false,
+  "HIGH_proof_supplied": false,
+  "F_formula_supplied": false,
+  "principal_U33": "OPEN",
+  "input_sha256": {
+    "SE03_STEP2_REPAY01/CLOSED_CORE_SUBTREE_DENSITY.md": "5ce1bece8c4aa6fc273de5198d616a6c3905a4785f299f843da92e99d3f7f0e0",
+    "CAPPED_DEFICIT_PRIVATE_POPULATION_LIFT.md": "1fe7d97cc844ffb802c07910f85208b4ca8df94d43bb8097827b67f21761188a",
+    "PADDING_TRANSLATION_RULES.md": "fa1826e632312b4abd7c49e69a293e23ca8d7aa2d596eeb8ccddd5d12dc10814",
+    "UNIFORM_A_REALIZATION_OVER_CLOSED_B.md": "907419177de92dab3a4a13313969e12ade15c94805fe8358c1a5294d4fbfa574",
+    "uniform_A_realization_independent_audit.json": "d702b046950b69b7e74768c2775a5ca9010c603b339d76a3fab932c0dbb4fb1a"
+  }
+}

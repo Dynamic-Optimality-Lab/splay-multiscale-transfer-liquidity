@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "total_checks": 20549,
+  "checks": {
+    "A-edge-depth-cost": 383,
+    "B-double-edge-depth-cost": 291,
+    "actual-physical-A-unit": 50,
+    "actual-physical-B-demand": 50,
+    "all-depth-fringe-deficit": 56,
+    "all-ordered-gap-fringes": 2,
+    "closed-complete-pair-not-just-root": 9,
+    "closed-control-total": 3,
+    "complete-core-successor-table": 120,
+    "complete-parity-classification": 3,
+    "core-successor-sync-flag": 24,
+    "cyclic-maximal-block-boundaries": 9,
+    "diagonal-reachability-of-closed-control": 9,
+    "every-B-double-paid-once": 3,
+    "exact-fringe-parity-coefficients": 56,
+    "exactly-one-positive-block": 9,
+    "exposure-increment-exactly-one": 3,
+    "failed-initial-proposal-retained": 1,
+    "frozen-19-block-costs": 1,
+    "frozen-alternative-donor-source-capacity": 2,
+    "frozen-inherited-file": 1043,
+    "full-one-internal-rotation-identity": 1,
+    "history-source-chain": 266,
+    "independent-A-events": 383,
+    "independent-A-tree": 383,
+    "independent-B-events": 291,
+    "independent-B-tree": 291,
+    "last-unit-rule": 3,
+    "last-unit-source-available": 3,
+    "mixed-costed-projection": 3,
+    "mixed-endpoint-projection": 3,
+    "mixed-zero-followers": 3,
+    "no-imported-credit": 3,
+    "no-reused-unit-or-demand": 50,
+    "one-period-cut-order": 3,
+    "only-declared-saturated-successor": 2,
+    "opaque-subtree-untouched": 1662,
+    "ordered-core-preserved": 383,
+    "parity-identity": 2,
+    "pointer-parent-links": 10196,
+    "positive-and-donor-source-cost": 3,
+    "positive-cut-full-pair-closure": 3,
+    "positive-cut-real-source": 50,
+    "recorded-A_events": 294,
+    "recorded-B_events": 294,
+    "recorded-a": 294,
+    "recorded-d_A": 294,
+    "recorded-d_B": 294,
+    "recorded-delta": 291,
+    "recorded-destination_A": 294,
+    "recorded-destination_B": 294,
+    "recorded-key": 294,
+    "recorded-mode": 294,
+    "recorded-q": 294,
+    "recorded-source_A": 294,
+    "recorded-source_B": 294,
+    "recorded-z": 294,
+    "source-exposure-with-unchanged-G": 1,
+    "source-fringe-root-depth": 28,
+    "source-parity-exposure": 1,
+    "terminal-zig-kept": 291,
+    "three-exposure-parity-configurations": 1
+  },
+  "parity_cases": [
+    {
+      "z_A_before": 1,
+      "z_A_after": 0,
+      "z_B_before": 0,
+      "z_B_after": 0,
+      "delta_G": 0,
+      "delta_E": 1
+    },
+    {
+      "z_A_before": 1,
+      "z_A_after": 0,
+      "z_B_before": 1,
+      "z_B_after": 0,
+      "delta_G": -1,
+      "delta_E": 1
+    },
+    {
+      "z_A_before": 1,
+      "z_A_after": 0,
+      "z_B_before": 1,
+      "z_B_after": 1,
+      "delta_G": 0,
+      "delta_E": 1
+    }
+  ],
+  "mixed_physical_owner_checks": [
+    {
+      "overlap": "4",
+      "rows": [
+        {
+          "key": 4,
+          "A_leader_occurrence": 0,
+          "B_first_KEEP_occurrence": 2,
+          "a": 1,
+          "q": 1,
+          "A_events": [
+            [
+              "ZIG",
+              4,
+              7,
+              "L"
+            ]
+          ],
+          "B_events": [
+            [
+              "LR",
+              1,
+              7,
+              "-"
+            ]
+          ],
+          "same_costed_endpoint": true
+        }
+      ]
+    },
+    {
+      "overlap": "2",
+      "rows": [
+        {
+          "key": 2,
+          "A_leader_occurrence": 0,
+          "B_first_KEEP_occurrence": 2,
+          "a": 1,
+          "q": 2,
+          "A_events": [
+            [
+              "ZIG",
+              2,
+              7,
+              "L"
+            ]
+          ],
+          "B_events": [
+            [
+              "LL",
+              2,
+              4,
+              "-"
+            ],
+            [
+              "LR",
+              1,
+              7,
+              "-"
+            ]
+          ],
+          "same_costed_endpoint": true
+        },
+        {
+          "key": 4,
+          "A_leader_occurrence": 0,
+          "B_first_KEEP_occurrence": 2,
+          "a": 2,
+          "q": 1,
+          "A_events": [
+            [
+              "RR",
+              2,
+              4,
+              "-"
+            ],
+            [
+              "ZIG",
+              4,
+              7,
+              "L"
+            ]
+          ],
+          "B_events": [
+            [
+              "LR",
+              1,
+              7,
+              "-"
+            ]
+          ],
+          "same_costed_endpoint": true
+        }
+      ]
+    }
+  ],
+  "old_19_block_donors": {
+    "2": {
+      "A_unit": [
+        2,
+        0,
+        1
+      ],
+      "B_double": [
+        0,
+        2
+      ],
+      "A_event": [
+        "ZIG",
+        3,
+        5,
+        "L"
+      ],
+      "distinct_alternative_not_cumulative": true
+    },
+    "4": {
+      "A_unit": [
+        4,
+        0,
+        1
+      ],
+      "B_double": [
+        0,
+        2
+      ],
+      "A_event": [
+        "RR",
+        1,
+        5,
+        "-"
+      ],
+      "distinct_alternative_not_cumulative": true
+    }
+  },
+  "new_closed_controls": {
+    "base": {
+      "blocks": 15,
+      "A": 27,
+      "Q": 16,
+      "donor": 6
+    },
+    "overlap4": {
+      "blocks": 17,
+      "A": 28,
+      "Q": 17,
+      "donor": 7
+    },
+    "overlap2": {
+      "blocks": 18,
+      "A": 33,
+      "Q": 17,
+      "donor": 8
+    }
+  },
+  "both_original_engines": true,
+  "opaque_fringe_replay_both_engines": true,
+  "unrestricted_FE02_CD": "OPEN",
+  "universal_Coarse_Double": "OPEN",
+  "larger_finite_fits": 0,
+  "larger_key_count_replays": 0,
+  "new_size_sweep": false,
+  "actual_CD_counterexample_claimed": false,
+  "FE01_PG02_unchanged": true,
+  "script_sha256": "6e4f714e7309d891aec998d6c697a71c163492b92d24840d5d589e9b32cad318",
+  "source_hashes": {
+    "python\\independent\\splay.py": "3a178c131c70c08419f18d1035dfb32beb5aa781673098ffbd4a5293f91d2f01",
+    "python\\liquidity\\legacy_embedding.py": "20284bbc810a2c64c1b4f66f431b5479795b6d6658d258bb5d4a4f4b543e1cb2"
+  },
+  "certificate_hashes": {
+    "source_discharge_certificate.json": "9202aefbd70879f1f59ccacdfd12e525abac741be5848f4d8856054b11941474",
+    "overlap_discharge_certificate.json": "ee4a7903f29cc23beae3d18e637eac5a67fd045dac9581ae391df8ecb0b9963c",
+    "closed_discharge_certificate.json": "5e49d955ef327b985031c2b01be5d565edd571c3a11479411e3ef4a4e0f50635",
+    "fixed_connector_certificate.json": "5c05e748450d4104d599ba36444bc94f7c94e9a81c921ce63028a4681cd2bf37",
+    "overlap_connector_certificate.json": "6edbe3607cb330e77384f4239bed481aba01bd7bbb6a03493100299d5cf218be"
+  }
+}

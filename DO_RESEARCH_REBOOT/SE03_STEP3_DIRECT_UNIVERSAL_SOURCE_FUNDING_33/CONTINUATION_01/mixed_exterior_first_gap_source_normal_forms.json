@@ -1,0 +1,8337 @@
+{
+  "status": "COMPLETE_MIXED_EXTERIOR_FIRST_GAP_SOURCE_GRAMMAR",
+  "direct_schemas": [
+    {
+      "path": "LL",
+      "colors": [
+        "m",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 0,
+      "source": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "projected_source": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LR",
+      "colors": [
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        2,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "X1",
+            "X2"
+          ]
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_source": [
+        2,
+        [
+          -0.5,
+          "E",
+          [
+            1,
+            "X1",
+            "X2"
+          ]
+        ],
+        "X3"
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LR",
+      "old_H": 1
+    },
+    {
+      "path": "RR",
+      "colors": [
+        "m",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_H": 1,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "LLL",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 0,
+      "source": [
+        3,
+        [
+          2,
+          [
+            1,
+            [
+              0,
+              "E",
+              "E"
+            ],
+            "E"
+          ],
+          "X3"
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          3,
+          [
+            1,
+            "E",
+            [
+              2,
+              "E",
+              "X3"
+            ]
+          ],
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          0,
+          "E",
+          "X3"
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LLL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 0,
+      "source": [
+        3,
+        [
+          2,
+          [
+            1,
+            [
+              0,
+              "E",
+              "E"
+            ],
+            "X2"
+          ],
+          "X3"
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          3,
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ],
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          2,
+          [
+            0,
+            "E",
+            "X2"
+          ],
+          "X3"
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "EXTRA_EVENT_LL",
+      "old_path": "LL",
+      "old_H": 1
+    },
+    {
+      "path": "LLR",
+      "colors": [
+        "L",
+        "m",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        3,
+        [
+          2,
+          [
+            0,
+            "E",
+            [
+              1,
+              "E",
+              "E"
+            ]
+          ],
+          "X3"
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          3,
+          [
+            2,
+            "E",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          1,
+          "E",
+          "X3"
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LLR",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        3,
+        [
+          2,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            [
+              1,
+              "X1",
+              "X2"
+            ]
+          ],
+          "X3"
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          2,
+          [
+            -0.5,
+            "E",
+            [
+              1,
+              "X1",
+              "X2"
+            ]
+          ],
+          "X3"
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LLR",
+      "old_H": 2
+    },
+    {
+      "path": "LRL",
+      "colors": [
+        "L",
+        "m",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "E"
+            ],
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          3,
+          [
+            2,
+            "E",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          1,
+          "E",
+          "X3"
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LRL",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        3,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            [
+              1,
+              "X1",
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          -0.5,
+          "E",
+          [
+            2,
+            [
+              1,
+              "X1",
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRL",
+      "old_H": 2
+    },
+    {
+      "path": "LRR",
+      "colors": [
+        "L",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0.5,
+      "target": 2,
+      "source": [
+        3,
+        [
+          0,
+          "E",
+          [
+            1,
+            [
+              0.5,
+              "E",
+              "E"
+            ],
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ]
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            [
+              0.5,
+              "E",
+              "E"
+            ]
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          0.5,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        2,
+        [
+          0.5,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LR",
+      "old_H": 1
+    },
+    {
+      "path": "LRR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        3,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ]
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LR",
+      "old_H": 1
+    },
+    {
+      "path": "LRR",
+      "colors": [
+        "F",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        3,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ]
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            "E"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          -0.5,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        2,
+        [
+          -0.5,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LR",
+      "old_H": 1
+    },
+    {
+      "path": "LRR",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        3,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "X1",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ]
+        ],
+        "X4"
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            "X1"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        3,
+        [
+          -0.5,
+          "E",
+          [
+            1,
+            "X1",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ]
+        ],
+        "X4"
+      ],
+      "projected_after": [
+        2,
+        [
+          1,
+          [
+            -0.5,
+            "E",
+            "X1"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRR",
+      "old_H": 2
+    },
+    {
+      "path": "RLR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          3,
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ],
+          "X4"
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RL",
+      "old_H": 1
+    },
+    {
+      "path": "RLR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          3,
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          3,
+          "X3",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RRL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RL",
+      "old_H": 1
+    },
+    {
+      "path": "RRL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "E"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          3,
+          "X3",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RRR",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "E",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "E"
+            ],
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          "X3"
+        ],
+        "X4"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RRR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "EXTRA_EVENT_RR",
+      "old_path": "RR",
+      "old_H": 1
+    },
+    {
+      "path": "LLLL",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 0,
+      "source": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              [
+                0,
+                "E",
+                "E"
+              ],
+              "E"
+            ],
+            "E"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          3,
+          [
+            1,
+            "E",
+            [
+              2,
+              "E",
+              "E"
+            ]
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          0,
+          "E",
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LLLL",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 0,
+      "source": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              [
+                0,
+                "E",
+                "E"
+              ],
+              "E"
+            ],
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          3,
+          [
+            1,
+            "E",
+            [
+              2,
+              "E",
+              "X3"
+            ]
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            0,
+            "E",
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LL",
+      "old_H": 1
+    },
+    {
+      "path": "LLLL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 0,
+      "source": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              1,
+              [
+                0,
+                "E",
+                "E"
+              ],
+              "X2"
+            ],
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          3,
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              0,
+              "E",
+              "X2"
+            ],
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "INHERITED_LLL",
+      "old_path": "LLL",
+      "old_H": 2
+    },
+    {
+      "path": "LLLR",
+      "colors": [
+        "L",
+        "m",
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              0,
+              "E",
+              [
+                1,
+                "E",
+                "E"
+              ]
+            ],
+            "E"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          3,
+          [
+            2,
+            "E",
+            "E"
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          1,
+          "E",
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LLLR",
+      "colors": [
+        "L",
+        "m",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              0,
+              "E",
+              [
+                1,
+                "E",
+                "E"
+              ]
+            ],
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          3,
+          [
+            2,
+            "E",
+            "X3"
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            1,
+            "E",
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LL",
+      "old_H": 1
+    },
+    {
+      "path": "LLLR",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              0,
+              [
+                -0.5,
+                "E",
+                "E"
+              ],
+              [
+                1,
+                "X1",
+                "X2"
+              ]
+            ],
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            2,
+            [
+              -0.5,
+              "E",
+              [
+                1,
+                "X1",
+                "X2"
+              ]
+            ],
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LLLR",
+      "old_H": 2
+    },
+    {
+      "path": "LLRL",
+      "colors": [
+        "L",
+        "m",
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        4,
+        [
+          3,
+          [
+            0,
+            "E",
+            [
+              2,
+              [
+                1,
+                "E",
+                "E"
+              ],
+              "E"
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          3,
+          [
+            2,
+            "E",
+            "E"
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          1,
+          "E",
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LLRL",
+      "colors": [
+        "L",
+        "m",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        4,
+        [
+          3,
+          [
+            0,
+            "E",
+            [
+              2,
+              [
+                1,
+                "E",
+                "E"
+              ],
+              "X3"
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          3,
+          [
+            2,
+            "E",
+            "X3"
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            1,
+            "E",
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LL",
+      "old_H": 1
+    },
+    {
+      "path": "LLRL",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        4,
+        [
+          3,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            [
+              2,
+              [
+                1,
+                "X1",
+                "X2"
+              ],
+              "X3"
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            -0.5,
+            "E",
+            [
+              2,
+              [
+                1,
+                "X1",
+                "X2"
+              ],
+              "X3"
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LLRL",
+      "old_H": 2
+    },
+    {
+      "path": "LLRR",
+      "colors": [
+        "L",
+        "L",
+        "m",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 2,
+      "target": 2,
+      "source": [
+        4,
+        [
+          3,
+          [
+            0,
+            "E",
+            [
+              1,
+              "E",
+              [
+                2,
+                "E",
+                "E"
+              ]
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "E"
+        ],
+        [
+          3,
+          "E",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          2,
+          "E",
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        "E",
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LLRR",
+      "colors": [
+        "L",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0.5,
+      "target": 2,
+      "source": [
+        4,
+        [
+          3,
+          [
+            0,
+            "E",
+            [
+              1,
+              [
+                0.5,
+                "E",
+                "E"
+              ],
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            [
+              0.5,
+              "E",
+              "E"
+            ]
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            0.5,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          0.5,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "INHERITED_LLR",
+      "old_path": "LLR",
+      "old_H": 2
+    },
+    {
+      "path": "LLRR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        4,
+        [
+          3,
+          [
+            0,
+            "E",
+            [
+              1,
+              "E",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            0,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "INHERITED_LLR",
+      "old_path": "LLR",
+      "old_H": 2
+    },
+    {
+      "path": "LLRR",
+      "colors": [
+        "F",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        4,
+        [
+          3,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            [
+              1,
+              "E",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            "E"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            -0.5,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          -0.5,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "INHERITED_LLR",
+      "old_path": "LLR",
+      "old_H": 2
+    },
+    {
+      "path": "LLRR",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        4,
+        [
+          3,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            [
+              1,
+              "X1",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            "X1"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            -0.5,
+            "E",
+            [
+              1,
+              "X1",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          1,
+          [
+            -0.5,
+            "E",
+            "X1"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LLRR",
+      "old_H": 2
+    },
+    {
+      "path": "LRLL",
+      "colors": [
+        "L",
+        "m",
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                "E",
+                "E"
+              ],
+              "E"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          4,
+          [
+            2,
+            "E",
+            [
+              3,
+              "E",
+              "X4"
+            ]
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          1,
+          "E",
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LRLL",
+      "colors": [
+        "L",
+        "m",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                "E",
+                "E"
+              ],
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          4,
+          [
+            2,
+            "E",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            1,
+            "E",
+            "X3"
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "EXTRA_EVENT_LL",
+      "old_path": "LL",
+      "old_H": 1
+    },
+    {
+      "path": "LRLL",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        4,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                "X1",
+                "X2"
+              ],
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        [
+          4,
+          [
+            2,
+            "X2",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          -0.5,
+          "E",
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                "X1",
+                "X2"
+              ],
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        [
+          4,
+          [
+            2,
+            "X2",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRLL",
+      "old_H": 2
+    },
+    {
+      "path": "LRLR",
+      "colors": [
+        "L",
+        "L",
+        "m",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 2,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            [
+              1,
+              "E",
+              [
+                2,
+                "E",
+                "E"
+              ]
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "E"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "E",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          2,
+          "E",
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        "E",
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LRLR",
+      "colors": [
+        "L",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0.5,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            [
+              1,
+              [
+                0.5,
+                "E",
+                "E"
+              ],
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            [
+              0.5,
+              "E",
+              "E"
+            ],
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          3,
+          [
+            0.5,
+            "E",
+            [
+              2,
+              "X2",
+              "X3"
+            ]
+          ],
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          0.5,
+          "E",
+          "X2"
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LLR",
+      "old_H": 2
+    },
+    {
+      "path": "LRLR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            [
+              1,
+              "E",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRL",
+      "old_H": 2
+    },
+    {
+      "path": "LRLR",
+      "colors": [
+        "F",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            3,
+            [
+              1,
+              "E",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          -0.5,
+          "E",
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          -0.5,
+          "E",
+          "X2"
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRL",
+      "old_H": 2
+    },
+    {
+      "path": "LRLR",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            3,
+            [
+              1,
+              "X1",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "X1",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          -0.5,
+          "E",
+          [
+            3,
+            [
+              1,
+              "X1",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          -0.5,
+          "E",
+          [
+            1,
+            "X1",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRLR",
+      "old_H": 2
+    },
+    {
+      "path": "LRRL",
+      "colors": [
+        "L",
+        "L",
+        "m",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 2,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            [
+              3,
+              [
+                2,
+                "E",
+                "E"
+              ],
+              "X4"
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "E"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "E",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          2,
+          "E",
+          "X4"
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        "E",
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "L",
+      "old_H": 1
+    },
+    {
+      "path": "LRRL",
+      "colors": [
+        "L",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0.5,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            1,
+            [
+              0.5,
+              "E",
+              "E"
+            ],
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "X4"
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            [
+              0.5,
+              "E",
+              "E"
+            ],
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          0.5,
+          "E",
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          0.5,
+          "E",
+          "X2"
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRL",
+      "old_H": 2
+    },
+    {
+      "path": "LRRL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "X4"
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRL",
+      "old_H": 2
+    },
+    {
+      "path": "LRRL",
+      "colors": [
+        "F",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "E",
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "X4"
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          -0.5,
+          "E",
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          -0.5,
+          "E",
+          "X2"
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRL",
+      "old_H": 2
+    },
+    {
+      "path": "LRRL",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        4,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "X1",
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "X4"
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "X1",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          -0.5,
+          "E",
+          [
+            1,
+            "X1",
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "X4"
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        2,
+        [
+          -0.5,
+          "E",
+          [
+            1,
+            "X1",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRRL",
+      "old_H": 2
+    },
+    {
+      "path": "LRRR",
+      "colors": [
+        "L",
+        "L",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 1.5,
+      "target": 3,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            [
+              2,
+              [
+                1.5,
+                "E",
+                "E"
+              ],
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              [
+                1.5,
+                "E",
+                "E"
+              ]
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          1.5,
+          "E",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        3,
+        [
+          1.5,
+          "E",
+          "X3"
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LR",
+      "old_H": 1
+    },
+    {
+      "path": "LRRR",
+      "colors": [
+        "L",
+        "m",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 1,
+      "target": 3,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            [
+              2,
+              "E",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "E"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          1,
+          "E",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        3,
+        [
+          1,
+          "E",
+          "X3"
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LR",
+      "old_H": 1
+    },
+    {
+      "path": "LRRR",
+      "colors": [
+        "L",
+        "F",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0.5,
+      "target": 3,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            1,
+            [
+              0.5,
+              "E",
+              "E"
+            ],
+            [
+              2,
+              "E",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              [
+                0.5,
+                "E",
+                "E"
+              ],
+              "E"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          0.5,
+          "E",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        3,
+        [
+          0.5,
+          "E",
+          "X3"
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LR",
+      "old_H": 1
+    },
+    {
+      "path": "LRRR",
+      "colors": [
+        "L",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0.5,
+      "target": 3,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            1,
+            [
+              0.5,
+              "E",
+              "E"
+            ],
+            [
+              2,
+              "X2",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              [
+                0.5,
+                "E",
+                "E"
+              ],
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          0.5,
+          "E",
+          [
+            2,
+            "X2",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        3,
+        [
+          2,
+          [
+            0.5,
+            "E",
+            "X2"
+          ],
+          "X3"
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRR",
+      "old_H": 2
+    },
+    {
+      "path": "LRRR",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            [
+              2,
+              "E",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "E"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          "X3"
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LR",
+      "old_H": 1
+    },
+    {
+      "path": "LRRR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "LRR_MIN_LEFT",
+      "old_path": "LRR",
+      "old_H": 2
+    },
+    {
+      "path": "LRRR",
+      "colors": [
+        "F",
+        "F",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 3,
+      "source": [
+        4,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "E",
+            [
+              2,
+              "E",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            [
+              1,
+              "E",
+              "E"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          -0.5,
+          "E",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        3,
+        [
+          -0.5,
+          "E",
+          "X3"
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LR",
+      "old_H": 1
+    },
+    {
+      "path": "LRRR",
+      "colors": [
+        "F",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 3,
+      "source": [
+        4,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            [
+              1,
+              "E",
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          -0.5,
+          "E",
+          [
+            2,
+            "X2",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        3,
+        [
+          -0.5,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "LRR_MIN_LEFT",
+      "old_path": "LRR",
+      "old_H": 2
+    },
+    {
+      "path": "LRRR",
+      "colors": [
+        "F",
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 3,
+      "source": [
+        4,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "X1",
+            [
+              2,
+              "X2",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            [
+              1,
+              "X1",
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        4,
+        [
+          -0.5,
+          "E",
+          [
+            1,
+            "X1",
+            [
+              2,
+              "X2",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ]
+        ],
+        "X5"
+      ],
+      "projected_after": [
+        3,
+        [
+          -0.5,
+          "E",
+          [
+            2,
+            [
+              1,
+              "X1",
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "LRRR",
+      "old_H": 2
+    },
+    {
+      "path": "RLLR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            3,
+            [
+              1,
+              "E",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ],
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "RLL_MIN_ROOT",
+      "old_path": "RLL",
+      "old_H": 2
+    },
+    {
+      "path": "RLLR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            3,
+            [
+              1,
+              "E",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ],
+            "X4"
+          ],
+          "E"
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RL",
+      "old_H": 1
+    },
+    {
+      "path": "RLLR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "H",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            3,
+            [
+              1,
+              "E",
+              [
+                2,
+                "X2",
+                "X3"
+              ]
+            ],
+            "E"
+          ],
+          "E"
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "E"
+          ],
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RLRL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            1,
+            "E",
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "X4"
+            ]
+          ],
+          "X5"
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "RLL_MIN_ROOT",
+      "old_path": "RLL",
+      "old_H": 2
+    },
+    {
+      "path": "RLRL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            1,
+            "E",
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "X4"
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RL",
+      "old_H": 1
+    },
+    {
+      "path": "RLRL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "H",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            1,
+            "E",
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "E"
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        [
+          4,
+          [
+            3,
+            "X3",
+            "E"
+          ],
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RLRR",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            1,
+            "E",
+            [
+              2,
+              "E",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ],
+          "X5"
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "E"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          "X3"
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RL",
+      "old_H": 1
+    },
+    {
+      "path": "RLRR",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            1,
+            "E",
+            [
+              2,
+              "E",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "E"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          "X3"
+        ],
+        "X4"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RLRR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ],
+          "X5"
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            2,
+            "X2",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ],
+          "X5"
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RLR",
+      "old_H": 2
+    },
+    {
+      "path": "RLRR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            1,
+            "E",
+            [
+              2,
+              "X2",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ]
+          ],
+          "E"
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            [
+              1,
+              "E",
+              "X2"
+            ],
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "EXTRA_EVENT_RR",
+      "old_path": "RR",
+      "old_H": 1
+    },
+    {
+      "path": "RRLL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "X4"
+            ],
+            "X5"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RLL",
+      "old_H": 2
+    },
+    {
+      "path": "RRLL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "X4"
+            ],
+            "E"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "E"
+          ]
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          [
+            2,
+            "X2",
+            "X3"
+          ],
+          "X4"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RL",
+      "old_H": 1
+    },
+    {
+      "path": "RRLL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "H",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                "X2",
+                "X3"
+              ],
+              "E"
+            ],
+            "E"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "X2"
+        ],
+        [
+          3,
+          "X3",
+          [
+            4,
+            "E",
+            "E"
+          ]
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RRLR",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            4,
+            [
+              2,
+              "E",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ],
+            "X5"
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "E",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          "X3"
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RL",
+      "old_H": 1
+    },
+    {
+      "path": "RRLR",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            4,
+            [
+              2,
+              "E",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ],
+            "E"
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "E",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          "X3"
+        ],
+        "X4"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RRLR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            4,
+            [
+              2,
+              "X2",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ],
+            "X5"
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            2,
+            "X2",
+            [
+              3,
+              "X3",
+              "X4"
+            ]
+          ],
+          "X5"
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RLR",
+      "old_H": 2
+    },
+    {
+      "path": "RRLR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            4,
+            [
+              2,
+              "X2",
+              [
+                3,
+                "X3",
+                "X4"
+              ]
+            ],
+            "E"
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "EXTRA_EVENT_RR",
+      "old_path": "RR",
+      "old_H": 1
+    },
+    {
+      "path": "RRRL",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "E",
+            [
+              4,
+              [
+                3,
+                "X3",
+                "X4"
+              ],
+              "X5"
+            ]
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "E",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          4,
+          [
+            3,
+            "X3",
+            "X4"
+          ],
+          "X5"
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          "X3"
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RL",
+      "old_H": 1
+    },
+    {
+      "path": "RRRL",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "E",
+            [
+              4,
+              [
+                3,
+                "X3",
+                "X4"
+              ],
+              "E"
+            ]
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "E",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          "X3",
+          "X4"
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          "X3"
+        ],
+        "X4"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RRRL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            [
+              4,
+              [
+                3,
+                "X3",
+                "X4"
+              ],
+              "X5"
+            ]
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          [
+            4,
+            [
+              3,
+              "X3",
+              "X4"
+            ],
+            "X5"
+          ]
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RRL",
+      "old_H": 2
+    },
+    {
+      "path": "RRRL",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 3,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            [
+              4,
+              [
+                3,
+                "X3",
+                "X4"
+              ],
+              "E"
+            ]
+          ]
+        ]
+      ],
+      "actual_after": [
+        3,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        [
+          4,
+          "X4",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ]
+      ],
+      "projected_after": [
+        3,
+        [
+          0,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ],
+        "X4"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "EXTRA_EVENT_RR",
+      "old_path": "RR",
+      "old_H": 1
+    },
+    {
+      "path": "RRRR",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 4,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "E",
+            [
+              3,
+              "E",
+              [
+                4,
+                "X4",
+                "X5"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_after": [
+        4,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            3,
+            [
+              2,
+              "E",
+              "E"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          4,
+          "X4",
+          "X5"
+        ]
+      ],
+      "projected_after": [
+        4,
+        [
+          0,
+          "E",
+          "X4"
+        ],
+        "X5"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "R",
+      "old_H": 1
+    },
+    {
+      "path": "RRRR",
+      "colors": [
+        "m",
+        "F",
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 4,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "E",
+            [
+              3,
+              "X3",
+              [
+                4,
+                "X4",
+                "X5"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_after": [
+        4,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            3,
+            [
+              2,
+              "E",
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          3,
+          "X3",
+          [
+            4,
+            "X4",
+            "X5"
+          ]
+        ]
+      ],
+      "projected_after": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            "X3",
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "EXTRA_EVENT_RR",
+      "old_path": "RR",
+      "old_H": 1
+    },
+    {
+      "path": "RRRR",
+      "colors": [
+        "m",
+        "F",
+        "M",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 4,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            [
+              3,
+              "X3",
+              [
+                4,
+                "X4",
+                "X5"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_after": [
+        4,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          [
+            3,
+            "X3",
+            [
+              4,
+              "X4",
+              "X5"
+            ]
+          ]
+        ]
+      ],
+      "projected_after": [
+        4,
+        [
+          0,
+          "E",
+          [
+            3,
+            [
+              2,
+              "X2",
+              "X3"
+            ],
+            "X4"
+          ]
+        ],
+        "X5"
+      ],
+      "actual_H": 2,
+      "kind": "direct",
+      "label": "COMMUTING",
+      "old_path": "RRR",
+      "old_H": 2
+    }
+  ],
+  "helper_schemas": [
+    {
+      "path": "L",
+      "colors": [
+        "m",
+        "F"
+      ],
+      "minimum_anchor": 0,
+      "target": 0,
+      "source": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        "X2"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          "X2"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        "X2"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        "X2"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 0,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "L",
+      "colors": [
+        "F",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 0,
+      "source": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        "X2"
+      ],
+      "actual_after": [
+        0,
+        [
+          -0.5,
+          "E",
+          "E"
+        ],
+        [
+          1,
+          "X1",
+          "X2"
+        ]
+      ],
+      "projected_source": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        "X2"
+      ],
+      "projected_after": [
+        -0.5,
+        "E",
+        [
+          1,
+          "X1",
+          "X2"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": -0.5,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "R",
+      "colors": [
+        "m",
+        "F"
+      ],
+      "minimum_anchor": 0,
+      "target": 1,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          "X2"
+        ]
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        "X2"
+      ],
+      "projected_source": [
+        0,
+        "E",
+        "X2"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        "X2"
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": 0,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "R",
+      "colors": [
+        "F",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        0,
+        [
+          -0.5,
+          "E",
+          "E"
+        ],
+        [
+          1,
+          "X1",
+          "X2"
+        ]
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        "X2"
+      ],
+      "projected_source": [
+        -0.5,
+        "E",
+        [
+          1,
+          "X1",
+          "X2"
+        ]
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        "X2"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 1,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "LL",
+      "colors": [
+        "L",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0.5,
+      "target": 0,
+      "source": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            [
+              0.5,
+              "E",
+              "E"
+            ]
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          1,
+          [
+            0.5,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "projected_source": [
+        2,
+        [
+          0.5,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_after": [
+        0.5,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": 0.5,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "LL",
+      "colors": [
+        "m",
+        "F",
+        "F"
+      ],
+      "minimum_anchor": 0,
+      "target": 0,
+      "source": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "E"
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "E",
+            "X3"
+          ]
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        "X3"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        "X3"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 0,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "LL",
+      "colors": [
+        "m",
+        "F",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 0,
+      "source": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "X2"
+        ],
+        "E"
+      ],
+      "actual_after": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            "E"
+          ]
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        "X2"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        "X2"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 0,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "LL",
+      "colors": [
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 0,
+      "source": [
+        2,
+        [
+          1,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            "E"
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        0,
+        [
+          -0.5,
+          "E",
+          "E"
+        ],
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "projected_source": [
+        2,
+        [
+          -0.5,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_after": [
+        -0.5,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": -0.5,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "LL",
+      "colors": [
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 0,
+      "source": [
+        2,
+        [
+          1,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            "X1"
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        0,
+        [
+          -0.5,
+          "E",
+          "E"
+        ],
+        [
+          1,
+          "X1",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "projected_source": [
+        2,
+        [
+          1,
+          [
+            -0.5,
+            "E",
+            "X1"
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_after": [
+        -0.5,
+        "E",
+        [
+          1,
+          "X1",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": -0.5,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "LR",
+      "colors": [
+        "L",
+        "m",
+        "F"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "E"
+          ]
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          2,
+          "E",
+          "X3"
+        ]
+      ],
+      "projected_source": [
+        1,
+        "E",
+        "X3"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        "X3"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 1,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "LR",
+      "colors": [
+        "L",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0.5,
+      "target": 1,
+      "source": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            [
+              0.5,
+              "E",
+              "E"
+            ],
+            "X2"
+          ]
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          [
+            0.5,
+            "E",
+            "E"
+          ]
+        ],
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_source": [
+        2,
+        [
+          0.5,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_after": [
+        0.5,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": 0.5,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "LR",
+      "colors": [
+        "m",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 1,
+      "source": [
+        2,
+        [
+          0,
+          "E",
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_source": [
+        2,
+        [
+          0,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": 0,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "LR",
+      "colors": [
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        2,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "E",
+            "X2"
+          ]
+        ],
+        "X3"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "E"
+        ],
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_source": [
+        2,
+        [
+          -0.5,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_after": [
+        -0.5,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": -0.5,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "LR",
+      "colors": [
+        "F",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        2,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          [
+            1,
+            "X1",
+            "X2"
+          ]
+        ],
+        "E"
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        [
+          2,
+          "X2",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        -0.5,
+        "E",
+        [
+          1,
+          "X1",
+          "X2"
+        ]
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        "X2"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 1,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "RL",
+      "colors": [
+        "L",
+        "m",
+        "F"
+      ],
+      "minimum_anchor": 1,
+      "target": 1,
+      "source": [
+        0,
+        "E",
+        [
+          2,
+          [
+            1,
+            "E",
+            "E"
+          ],
+          "X3"
+        ]
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          2,
+          "E",
+          "X3"
+        ]
+      ],
+      "projected_source": [
+        1,
+        "E",
+        "X3"
+      ],
+      "projected_after": [
+        1,
+        "E",
+        "X3"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 1,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "RL",
+      "colors": [
+        "m",
+        "F",
+        "F"
+      ],
+      "minimum_anchor": 0,
+      "target": 1,
+      "source": [
+        0,
+        "E",
+        [
+          2,
+          [
+            1,
+            "E",
+            "E"
+          ],
+          "X3"
+        ]
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          2,
+          "E",
+          "X3"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        "X3"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        "X3"
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": 0,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "RL",
+      "colors": [
+        "m",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0,
+      "target": 1,
+      "source": [
+        0,
+        "E",
+        [
+          2,
+          [
+            1,
+            "E",
+            "X2"
+          ],
+          "X3"
+        ]
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        0,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": 0,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "RL",
+      "colors": [
+        "m",
+        "F",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 1,
+      "source": [
+        0,
+        "E",
+        [
+          2,
+          [
+            1,
+            "E",
+            "X2"
+          ],
+          "E"
+        ]
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          "E",
+          "E"
+        ],
+        [
+          2,
+          "X2",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        0,
+        "E",
+        "X2"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        "X2"
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": 0,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "RL",
+      "colors": [
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        0,
+        [
+          -0.5,
+          "E",
+          "E"
+        ],
+        [
+          2,
+          [
+            1,
+            "X1",
+            "X2"
+          ],
+          "X3"
+        ]
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_source": [
+        -0.5,
+        "E",
+        [
+          2,
+          [
+            1,
+            "X1",
+            "X2"
+          ],
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 1,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "RL",
+      "colors": [
+        "F",
+        "M",
+        "H"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 1,
+      "source": [
+        0,
+        [
+          -0.5,
+          "E",
+          "E"
+        ],
+        [
+          2,
+          [
+            1,
+            "X1",
+            "X2"
+          ],
+          "E"
+        ]
+      ],
+      "actual_after": [
+        1,
+        [
+          0,
+          [
+            -0.5,
+            "E",
+            "E"
+          ],
+          "X1"
+        ],
+        [
+          2,
+          "X2",
+          "E"
+        ]
+      ],
+      "projected_source": [
+        -0.5,
+        "E",
+        [
+          1,
+          "X1",
+          "X2"
+        ]
+      ],
+      "projected_after": [
+        1,
+        [
+          -0.5,
+          "E",
+          "X1"
+        ],
+        "X2"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 1,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "RR",
+      "colors": [
+        "L",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": 0.5,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          [
+            0.5,
+            "E",
+            "E"
+          ],
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            [
+              0.5,
+              "E",
+              "E"
+            ]
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_source": [
+        0.5,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          0.5,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 2,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "RR",
+      "colors": [
+        "m",
+        "F",
+        "F"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "E",
+            "X3"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "E"
+        ],
+        "X3"
+      ],
+      "projected_source": [
+        0,
+        "E",
+        "X3"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        "X3"
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": 0,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "RR",
+      "colors": [
+        "m",
+        "F",
+        "H"
+      ],
+      "minimum_anchor": 0,
+      "target": 2,
+      "source": [
+        0,
+        "E",
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            "E"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            "E",
+            "E"
+          ],
+          "X2"
+        ],
+        "E"
+      ],
+      "projected_source": [
+        0,
+        "E",
+        "X2"
+      ],
+      "projected_after": [
+        0,
+        "E",
+        "X2"
+      ],
+      "actual_H": 1,
+      "kind": "marked_root_private_helper",
+      "old_target": 0,
+      "old_H": 0,
+      "commutes": true
+    },
+    {
+      "path": "RR",
+      "colors": [
+        "F",
+        "F",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        0,
+        [
+          -0.5,
+          "E",
+          "E"
+        ],
+        [
+          1,
+          "E",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            "E"
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_source": [
+        -0.5,
+        "E",
+        [
+          2,
+          "X2",
+          "X3"
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          -0.5,
+          "E",
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 2,
+      "old_H": 1,
+      "commutes": true
+    },
+    {
+      "path": "RR",
+      "colors": [
+        "F",
+        "M",
+        "M"
+      ],
+      "minimum_anchor": -0.5,
+      "target": 2,
+      "source": [
+        0,
+        [
+          -0.5,
+          "E",
+          "E"
+        ],
+        [
+          1,
+          "X1",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "actual_after": [
+        2,
+        [
+          1,
+          [
+            0,
+            [
+              -0.5,
+              "E",
+              "E"
+            ],
+            "X1"
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "projected_source": [
+        -0.5,
+        "E",
+        [
+          1,
+          "X1",
+          [
+            2,
+            "X2",
+            "X3"
+          ]
+        ]
+      ],
+      "projected_after": [
+        2,
+        [
+          1,
+          [
+            -0.5,
+            "E",
+            "X1"
+          ],
+          "X2"
+        ],
+        "X3"
+      ],
+      "actual_H": 1,
+      "kind": "private_root_marked_target",
+      "old_target": 2,
+      "old_H": 1,
+      "commutes": true
+    }
+  ],
+  "class_counts": {
+    "COMMUTING": 64,
+    "EXTRA_EVENT_LL": 2,
+    "EXTRA_EVENT_RR": 5,
+    "INHERITED_LLL": 1,
+    "INHERITED_LLR": 3,
+    "LRR_MIN_LEFT": 2,
+    "RLL_MIN_ROOT": 2
+  },
+  "unresolved": [],
+  "population_scope": "arbitrary finite; every length<=4 direct path operand exposed, remaining anchor-free/anchor1/arbitrary higher-anchor payloads are free terms",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "principal_U33": "OPEN"
+}

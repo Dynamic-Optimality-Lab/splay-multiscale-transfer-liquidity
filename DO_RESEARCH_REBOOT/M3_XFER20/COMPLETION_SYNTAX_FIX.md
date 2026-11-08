@@ -1,0 +1,1 @@
+The first completion audit did not execute: one unmatched parenthesis in the lazy capacity-floor expression caused a SyntaxError. Version2 writes the expression in separate statements. No theorem or hypothesis changed. The failed child and controller charges are deducted from the SAME positive source/construction300-CPU allowance; both original artifacts remain.

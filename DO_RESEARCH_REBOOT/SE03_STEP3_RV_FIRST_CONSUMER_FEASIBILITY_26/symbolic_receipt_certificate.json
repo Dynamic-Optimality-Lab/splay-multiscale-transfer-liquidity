@@ -1,0 +1,39 @@
+{
+  "status": "MANUSCRIPT_FORMULA_AND_SCOPE_INDEX_NOT_EXECUTED_OR_AUDITED",
+  "contains_actual_new_source_witness": false,
+  "physical_unit": "u_v=(tau_v,1,1)",
+  "full_natural_demand": "d_v=(kappa_v,2), full-only",
+  "high_backend": {
+    "pool_order": "selected_fresh_spares + old_bank",
+    "incoming_rank": "r",
+    "packet_price": "w=2min(H,4)-Q",
+    "consumed": "r+w<=0",
+    "kept": "1<=r+w<=L_after",
+    "kept_rank": "r+w",
+    "discarded": "r+w>L_after",
+    "kept_gap_change": "g_after=g_before-(w+D_after-D_before)",
+    "after_p_epsilon0": "rank4 exceeds maxL3; discarded",
+    "after_p_epsilon1": "rank2 if L_p>=2; gap<=1",
+    "first_consumers": [
+      {"packet": "H1/Q3 singleton", "r": "1", "auxiliary_double": "3"},
+      {"packet": "H1/Q4 singleton", "r": "1 or2", "auxiliary_double": "2+r"},
+      {"packet": "actual q5/q1 bothH1", "r": "1 or2", "auxiliary_double": "first macro3+r"}
+    ]
+  },
+  "full_owner": "actual l6 inverse if u_v in common image, otherwise d_v; stays frozen",
+  "direct_paths_conditions": "raw f6=h6, epsilon1, actual indicated consumer, valid single C23 R excision; q5 successor preserved",
+  "direct_paths": {
+    "core8_e3": ["u_v", "E3", "P0", "deleted_aux_Dp"],
+    "high_e4": ["u_v", "E4", "P1", "E3", "P0", "deleted_aux_Dp"],
+    "high_e5_pair": ["u_v", "E5", "S1", "E3", "P0", "deleted_aux_Dp"]
+  },
+  "terminal_is_free_bit": false,
+  "same_selected_full_R_block": "H_X(Dp)=u_v; each displayed path completes to an isolated frozen common-owner cycle",
+  "unpaid_roots_can_enter_that_cycle": false,
+  "cycle_applies_to_unselected_or_changed_normalized_map": false,
+  "full_Dp": "already frozen common natural owner P0",
+  "source_realizability_of_guarded_consumer": "UNKNOWN",
+  "counting_extension_premise": "given ACTUAL complete independent H:F->U on same I",
+  "counting_extension_conclusion": "distinct a-free endpoints extend all fixed a values",
+  "full_source_or_Bank25_license_proved": false
+}

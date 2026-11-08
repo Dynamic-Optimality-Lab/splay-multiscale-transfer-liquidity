@@ -1,0 +1,1457 @@
+{
+  "status": "FIRST_RETURN_STOPPING_RULE_REFUTED_EXACT",
+  "source_table_sha256": "2b5721768b2f88d66da6940de68406f8c534ae3482a3ec4c5781323dba406198",
+  "source_relation_sha256": "30d1d724817d3f2ecb5a687428793a62d0b275d0195932adc3ad4f322ff839f9",
+  "source_audit_sha256": "0a3073286bf1d3b1061d095bdd0a4aa3d46b96b3dd37645de23b0d4db545c826",
+  "counts": {
+    "positive_anchors_examined": 193,
+    "first_payers_examined": 743,
+    "second_payers_examined": 64,
+    "third_payers_examined": 5,
+    "first_returns_examined": 1
+  },
+  "selected": {
+    "anchor": {
+      "source": 17478,
+      "key": 7,
+      "target": 8544,
+      "a": 1,
+      "q": 3,
+      "delta": 1
+    },
+    "first_key": 5,
+    "post_anchor_T": [
+      7,
+      [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          4,
+          [
+            3,
+            null,
+            null
+          ],
+          [
+            6,
+            [
+              5,
+              null,
+              null
+            ],
+            null
+          ]
+        ]
+      ],
+      null
+    ],
+    "payers": [
+      {
+        "source": 8544,
+        "key": 5,
+        "target": 1929,
+        "a": 1,
+        "q": 2,
+        "delta": 0,
+        "k": 0,
+        "profile": {
+          "source_depth": 4,
+          "access_depth": 4,
+          "operations": [
+            {
+              "case": "RL",
+              "site_depth": 2,
+              "grandparent": 4,
+              "parent": 6
+            },
+            {
+              "case": "LR",
+              "site_depth": 0,
+              "grandparent": 7,
+              "parent": 2
+            }
+          ],
+          "entry": null,
+          "role": "accessed",
+          "parent_outer_fringe": false,
+          "old_mu": 0,
+          "new_mu": 0,
+          "outer_doubles": 0,
+          "matching_outer_doubles": 0,
+          "old_U": 0,
+          "PF_U": 0
+        },
+        "ceiling": 2,
+        "capacity": 2,
+        "offer": 0
+      },
+      {
+        "source": 1929,
+        "key": 3,
+        "target": 954,
+        "a": 1,
+        "q": 1,
+        "delta": -1,
+        "k": 1,
+        "profile": {
+          "source_depth": 3,
+          "access_depth": 4,
+          "operations": [
+            {
+              "case": "RL",
+              "site_depth": 2,
+              "grandparent": 4,
+              "parent": 6
+            },
+            {
+              "case": "LR",
+              "site_depth": 0,
+              "grandparent": 7,
+              "parent": 2
+            }
+          ],
+          "entry": 0,
+          "role": "other",
+          "parent_outer_fringe": false,
+          "old_mu": 2,
+          "new_mu": 2,
+          "outer_doubles": 1,
+          "matching_outer_doubles": 0,
+          "old_U": 4,
+          "PF_U": 4
+        },
+        "ceiling": 2,
+        "capacity": 2,
+        "offer": 0
+      },
+      {
+        "source": 954,
+        "key": 1,
+        "target": 2451,
+        "a": 1,
+        "q": 1,
+        "delta": -1,
+        "k": 2,
+        "profile": {
+          "source_depth": 2,
+          "access_depth": 4,
+          "operations": [
+            {
+              "case": "RL",
+              "site_depth": 2,
+              "grandparent": 4,
+              "parent": 6
+            },
+            {
+              "case": "LR",
+              "site_depth": 0,
+              "grandparent": 7,
+              "parent": 2
+            }
+          ],
+          "entry": 1,
+          "role": "other",
+          "parent_outer_fringe": true,
+          "old_mu": 2,
+          "new_mu": 0,
+          "outer_doubles": 0,
+          "matching_outer_doubles": 0,
+          "old_U": 4,
+          "PF_U": 2
+        },
+        "ceiling": 2,
+        "capacity": 2,
+        "offer": 0
+      },
+      {
+        "source": 2451,
+        "key": 5,
+        "target": 2293,
+        "a": 1,
+        "q": 1,
+        "delta": -1,
+        "k": 3,
+        "profile": {
+          "source_depth": 4,
+          "access_depth": 4,
+          "operations": [
+            {
+              "case": "RL",
+              "site_depth": 2,
+              "grandparent": 4,
+              "parent": 6
+            },
+            {
+              "case": "LR",
+              "site_depth": 0,
+              "grandparent": 7,
+              "parent": 2
+            }
+          ],
+          "entry": null,
+          "role": "accessed",
+          "parent_outer_fringe": false,
+          "old_mu": 0,
+          "new_mu": 0,
+          "outer_doubles": 0,
+          "matching_outer_doubles": 0,
+          "old_U": 0,
+          "PF_U": 0
+        },
+        "ceiling": 2,
+        "capacity": 2,
+        "offer": 0
+      }
+    ]
+  },
+  "first_return_off_diagonal": true,
+  "debt_at_first_return": 1,
+  "later_positive_exit": null,
+  "zero_offer_extension": [],
+  "saturated_clock": 3,
+  "cost_one_pools_capacity": 2,
+  "saturated_reachability_nodes_examined": 120,
+  "closure": [
+    {
+      "source": 2293,
+      "key": 6,
+      "target": 2395,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 2395,
+      "key": 4,
+      "target": 3219,
+      "a": 2,
+      "q": 2,
+      "delta": -2
+    },
+    {
+      "source": 3219,
+      "key": 1,
+      "target": 4864,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 4864,
+      "key": 2,
+      "target": 1741,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 1741,
+      "key": 1,
+      "target": 2356,
+      "a": 1,
+      "q": 0,
+      "delta": -2
+    },
+    {
+      "source": 2356,
+      "key": 5,
+      "target": 698,
+      "a": 3,
+      "q": 2,
+      "delta": -4
+    },
+    {
+      "source": 698,
+      "key": 1,
+      "target": 1926,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 1926,
+      "key": 6,
+      "target": 4211,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 4211,
+      "key": 7,
+      "target": 7431,
+      "a": 1,
+      "q": 0,
+      "delta": -2
+    },
+    {
+      "source": 7431,
+      "key": 1,
+      "target": 10907,
+      "a": 2,
+      "q": 1,
+      "delta": -3
+    },
+    {
+      "source": 10907,
+      "key": 2,
+      "target": 13897,
+      "a": 2,
+      "q": 1,
+      "delta": -3
+    },
+    {
+      "source": 13897,
+      "key": 1,
+      "target": 15970,
+      "a": 1,
+      "q": 0,
+      "delta": -2
+    },
+    {
+      "source": 15970,
+      "key": 3,
+      "target": 16599,
+      "a": 2,
+      "q": 2,
+      "delta": -2
+    },
+    {
+      "source": 16599,
+      "key": 1,
+      "target": 17478,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    }
+  ],
+  "startup_seed_state": 0,
+  "startup_seed_pair": [
+    428,
+    345
+  ],
+  "startup_common_KEEP": [
+    {
+      "source": 0,
+      "key": 2,
+      "target": 2,
+      "a": 3,
+      "q": 0,
+      "delta": -6
+    },
+    {
+      "source": 2,
+      "key": 6,
+      "target": 17,
+      "a": 2,
+      "q": 1,
+      "delta": -3
+    },
+    {
+      "source": 17,
+      "key": 5,
+      "target": 100,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 100,
+      "key": 1,
+      "target": 381,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 381,
+      "key": 7,
+      "target": 1149,
+      "a": 2,
+      "q": 1,
+      "delta": -3
+    },
+    {
+      "source": 1149,
+      "key": 6,
+      "target": 2829,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 2829,
+      "key": 7,
+      "target": 5559,
+      "a": 1,
+      "q": 0,
+      "delta": -2
+    },
+    {
+      "source": 5559,
+      "key": 1,
+      "target": 8981,
+      "a": 2,
+      "q": 1,
+      "delta": -3
+    },
+    {
+      "source": 8981,
+      "key": 2,
+      "target": 12345,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 12345,
+      "key": 1,
+      "target": 14946,
+      "a": 1,
+      "q": 0,
+      "delta": -2
+    },
+    {
+      "source": 14946,
+      "key": 3,
+      "target": 16599,
+      "a": 3,
+      "q": 2,
+      "delta": -4
+    },
+    {
+      "source": 16599,
+      "key": 1,
+      "target": 17478,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    }
+  ],
+  "source_prefix_rows": [
+    {
+      "occurrence": 0,
+      "mode": "DELETE",
+      "key": 3,
+      "source_A": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_A": 2,
+      "a": 1,
+      "A_events": [
+        [
+          "RR",
+          1,
+          3,
+          "-"
+        ]
+      ],
+      "d_B": null,
+      "q": 0,
+      "z": 0,
+      "B_events": []
+    },
+    {
+      "occurrence": 1,
+      "mode": "DELETE",
+      "key": 5,
+      "source_A": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        [
+          4,
+          null,
+          [
+            5,
+            null,
+            [
+              6,
+              null,
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_A": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          [
+            7,
+            null,
+            [
+              8,
+              null,
+              [
+                9,
+                null,
+                [
+                  10,
+                  null,
+                  [
+                    11,
+                    null,
+                    [
+                      12,
+                      null,
+                      [
+                        13,
+                        null,
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_A": 2,
+      "a": 1,
+      "A_events": [
+        [
+          "RR",
+          3,
+          5,
+          "-"
+        ]
+      ],
+      "d_B": null,
+      "q": 0,
+      "z": 0,
+      "B_events": []
+    },
+    {
+      "occurrence": 2,
+      "mode": "KEEP",
+      "key": 7,
+      "source_A": [
+        5,
+        [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          6,
+          null,
+          [
+            7,
+            null,
+            [
+              8,
+              null,
+              [
+                9,
+                null,
+                [
+                  10,
+                  null,
+                  [
+                    11,
+                    null,
+                    [
+                      12,
+                      null,
+                      [
+                        13,
+                        null,
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "source_B": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                [
+                  6,
+                  null,
+                  [
+                    7,
+                    null,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        [
+                          10,
+                          null,
+                          [
+                            11,
+                            null,
+                            [
+                              12,
+                              null,
+                              [
+                                13,
+                                null,
+                                null
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_A": [
+        7,
+        [
+          6,
+          [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        [
+          8,
+          null,
+          [
+            9,
+            null,
+            [
+              10,
+              null,
+              [
+                11,
+                null,
+                [
+                  12,
+                  null,
+                  [
+                    13,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "destination_B": [
+        7,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          [
+            4,
+            [
+              3,
+              null,
+              null
+            ],
+            [
+              6,
+              [
+                5,
+                null,
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        [
+          8,
+          null,
+          [
+            9,
+            null,
+            [
+              10,
+              null,
+              [
+                11,
+                null,
+                [
+                  12,
+                  null,
+                  [
+                    13,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "d_A": 2,
+      "a": 1,
+      "A_events": [
+        [
+          "RR",
+          5,
+          7,
+          "-"
+        ]
+      ],
+      "d_B": 6,
+      "q": 3,
+      "z": 0,
+      "B_events": [
+        [
+          "RR",
+          5,
+          7,
+          "-"
+        ],
+        [
+          "RR",
+          3,
+          7,
+          "-"
+        ],
+        [
+          "RR",
+          1,
+          7,
+          "-"
+        ]
+      ]
+    }
+  ],
+  "closed_rows": [
+    {
+      "source": 17478,
+      "key": 7,
+      "target": 8544,
+      "a": 1,
+      "q": 3,
+      "delta": 1
+    },
+    {
+      "source": 8544,
+      "key": 5,
+      "target": 1929,
+      "a": 1,
+      "q": 2,
+      "delta": 0,
+      "k": 0,
+      "profile": {
+        "source_depth": 4,
+        "access_depth": 4,
+        "operations": [
+          {
+            "case": "RL",
+            "site_depth": 2,
+            "grandparent": 4,
+            "parent": 6
+          },
+          {
+            "case": "LR",
+            "site_depth": 0,
+            "grandparent": 7,
+            "parent": 2
+          }
+        ],
+        "entry": null,
+        "role": "accessed",
+        "parent_outer_fringe": false,
+        "old_mu": 0,
+        "new_mu": 0,
+        "outer_doubles": 0,
+        "matching_outer_doubles": 0,
+        "old_U": 0,
+        "PF_U": 0
+      },
+      "ceiling": 2,
+      "capacity": 2,
+      "offer": 0
+    },
+    {
+      "source": 1929,
+      "key": 3,
+      "target": 954,
+      "a": 1,
+      "q": 1,
+      "delta": -1,
+      "k": 1,
+      "profile": {
+        "source_depth": 3,
+        "access_depth": 4,
+        "operations": [
+          {
+            "case": "RL",
+            "site_depth": 2,
+            "grandparent": 4,
+            "parent": 6
+          },
+          {
+            "case": "LR",
+            "site_depth": 0,
+            "grandparent": 7,
+            "parent": 2
+          }
+        ],
+        "entry": 0,
+        "role": "other",
+        "parent_outer_fringe": false,
+        "old_mu": 2,
+        "new_mu": 2,
+        "outer_doubles": 1,
+        "matching_outer_doubles": 0,
+        "old_U": 4,
+        "PF_U": 4
+      },
+      "ceiling": 2,
+      "capacity": 2,
+      "offer": 0
+    },
+    {
+      "source": 954,
+      "key": 1,
+      "target": 2451,
+      "a": 1,
+      "q": 1,
+      "delta": -1,
+      "k": 2,
+      "profile": {
+        "source_depth": 2,
+        "access_depth": 4,
+        "operations": [
+          {
+            "case": "RL",
+            "site_depth": 2,
+            "grandparent": 4,
+            "parent": 6
+          },
+          {
+            "case": "LR",
+            "site_depth": 0,
+            "grandparent": 7,
+            "parent": 2
+          }
+        ],
+        "entry": 1,
+        "role": "other",
+        "parent_outer_fringe": true,
+        "old_mu": 2,
+        "new_mu": 0,
+        "outer_doubles": 0,
+        "matching_outer_doubles": 0,
+        "old_U": 4,
+        "PF_U": 2
+      },
+      "ceiling": 2,
+      "capacity": 2,
+      "offer": 0
+    },
+    {
+      "source": 2451,
+      "key": 5,
+      "target": 2293,
+      "a": 1,
+      "q": 1,
+      "delta": -1,
+      "k": 3,
+      "profile": {
+        "source_depth": 4,
+        "access_depth": 4,
+        "operations": [
+          {
+            "case": "RL",
+            "site_depth": 2,
+            "grandparent": 4,
+            "parent": 6
+          },
+          {
+            "case": "LR",
+            "site_depth": 0,
+            "grandparent": 7,
+            "parent": 2
+          }
+        ],
+        "entry": null,
+        "role": "accessed",
+        "parent_outer_fringe": false,
+        "old_mu": 0,
+        "new_mu": 0,
+        "outer_doubles": 0,
+        "matching_outer_doubles": 0,
+        "old_U": 0,
+        "PF_U": 0
+      },
+      "ceiling": 2,
+      "capacity": 2,
+      "offer": 0
+    },
+    {
+      "source": 2293,
+      "key": 6,
+      "target": 2395,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 2395,
+      "key": 4,
+      "target": 3219,
+      "a": 2,
+      "q": 2,
+      "delta": -2
+    },
+    {
+      "source": 3219,
+      "key": 1,
+      "target": 4864,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 4864,
+      "key": 2,
+      "target": 1741,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 1741,
+      "key": 1,
+      "target": 2356,
+      "a": 1,
+      "q": 0,
+      "delta": -2
+    },
+    {
+      "source": 2356,
+      "key": 5,
+      "target": 698,
+      "a": 3,
+      "q": 2,
+      "delta": -4
+    },
+    {
+      "source": 698,
+      "key": 1,
+      "target": 1926,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 1926,
+      "key": 6,
+      "target": 4211,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    },
+    {
+      "source": 4211,
+      "key": 7,
+      "target": 7431,
+      "a": 1,
+      "q": 0,
+      "delta": -2
+    },
+    {
+      "source": 7431,
+      "key": 1,
+      "target": 10907,
+      "a": 2,
+      "q": 1,
+      "delta": -3
+    },
+    {
+      "source": 10907,
+      "key": 2,
+      "target": 13897,
+      "a": 2,
+      "q": 1,
+      "delta": -3
+    },
+    {
+      "source": 13897,
+      "key": 1,
+      "target": 15970,
+      "a": 1,
+      "q": 0,
+      "delta": -2
+    },
+    {
+      "source": 15970,
+      "key": 3,
+      "target": 16599,
+      "a": 2,
+      "q": 2,
+      "delta": -2
+    },
+    {
+      "source": 16599,
+      "key": 1,
+      "target": 17478,
+      "a": 1,
+      "q": 1,
+      "delta": -1
+    }
+  ],
+  "closed_word": [
+    7,
+    5,
+    3,
+    1,
+    5,
+    6,
+    4,
+    1,
+    2,
+    1,
+    5,
+    1,
+    6,
+    7,
+    1,
+    2,
+    1,
+    3,
+    1
+  ],
+  "closed_A": 25,
+  "closed_Q": 22,
+  "original_eligibility_U4_counterexample": false,
+  "CD_counterexample": false,
+  "larger_finite_fits": 0,
+  "source_engine_calls": 0,
+  "new_key_count_sweeps": 0,
+  "unchanged_FI_PF_algorithms": true,
+  "matching_terminal": "FROZEN"
+}

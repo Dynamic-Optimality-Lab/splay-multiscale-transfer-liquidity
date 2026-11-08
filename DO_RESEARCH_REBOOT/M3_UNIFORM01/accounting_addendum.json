@@ -1,0 +1,15 @@
+{
+  "status": "CONSERVATIVE_ACCOUNTING_UPPER_BOUND",
+  "exact_measured_child_process_CPU": 34.0625,
+  "controller_actual_CPU_not_directly_recorded": true,
+  "saved_main_wall_seconds": 37.68907910003327,
+  "first_exec_wall_seconds_with_construct_complete": 10.003043,
+  "logical_processors": 12,
+  "controller_wall_upper_bound_rounded_seconds": 49,
+  "controller_CPU_conservative_charge": 588,
+  "accounted_total_CPU_upper_bound": 622.0625,
+  "fresh_allowance": 7200,
+  "guaranteed_remaining_CPU_budget": 6577.9375,
+  "old_ledger_unchanged": 7195.203125,
+  "explanation": "A process cannot consume more CPU than all host logical processors busy throughout its lifetime. Controller main wall plus the observed startup interval bounds that lifetime. This deliberately overcharges bookkeeping; it is not an invented exact CPU measurement."
+}

@@ -1,0 +1,35 @@
+{
+  "status": "CENTRAL_RESET_UNIVERSAL_AUDIT_PASS_AFTER_CORRECTED_INVERSE_COVERAGE",
+  "all_previous_constructor_identities_and_C_word_checks_reused_not_replayed": true,
+  "X_negative_predecessor_count": 2,
+  "all_X_C_source_LOW_rows_proved": true,
+  "all_old_valid_LOW_rows_preserved": true,
+  "universal_signed_slacks": {
+    "C_zero_to_X2": {},
+    "X_plus1_to_floor1": {
+      "target_excess_above1": 1
+    },
+    "Y_zero_to_Z1": {
+      "target_excess_above1": 1
+    },
+    "Z_positive_at1": {
+      "weight_excess_above1": 1,
+      "target_debt": 1
+    },
+    "C_X_helpers_range_safe": {
+      "weight_excess_above2": 1,
+      "target_debt": 1
+    },
+    "unchanged_source": {
+      "old_residual": 1,
+      "target_increment": 1
+    }
+  },
+  "new_debt": "D_central=max(D_allmarks,1_Zcentral,1_Ycentral,2_Xcentral,2_Ccentral)",
+  "new_finite_tests": 0,
+  "new_original_root_or_saved_psi_queries": 0,
+  "completed_checks_replayed": 0,
+  "failed_first_attempt_retained": true,
+  "exact_source_debt_induction_preserved": true,
+  "Step4_complete": false
+}

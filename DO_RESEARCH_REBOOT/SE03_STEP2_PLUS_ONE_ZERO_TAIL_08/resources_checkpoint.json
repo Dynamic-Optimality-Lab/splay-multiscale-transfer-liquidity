@@ -1,0 +1,80 @@
+{
+  "prior_CPU": 3328.53125,
+  "cumulative_CPU": 3348.671875,
+  "allowance": 7200,
+  "required_reserve": 5,
+  "remaining_including_reserve": 3851.328125,
+  "cumulative_group_CPU": {
+    "symbolic": 59.671875,
+    "independent": 87.625
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "campaign_source_engine_calls": 45366,
+  "query_cap": 2000000,
+  "maximum_observed_working_set": 134209536,
+  "mandatory_old_period_rows_replayed": 1234,
+  "phases": [
+    {
+      "phase": "adversarial",
+      "group": "independent",
+      "whole_child_CPU": 5.328125,
+      "whole_controller_CPU": 0.3125,
+      "charge": 5.640625,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "closure",
+      "group": "symbolic",
+      "whole_child_CPU": 3.171875,
+      "whole_controller_CPU": 0.328125,
+      "charge": 3.5,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "controls",
+      "group": "independent",
+      "whole_child_CPU": 0.703125,
+      "whole_controller_CPU": 0.5625,
+      "charge": 1.265625,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "independent",
+      "group": "independent",
+      "whole_child_CPU": 6.09375,
+      "whole_controller_CPU": 0.34375,
+      "charge": 6.4375,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "seal",
+      "group": "independent",
+      "whole_child_CPU": 1.015625,
+      "whole_controller_CPU": 0.1875,
+      "charge": 1.203125,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "seeds",
+      "group": "symbolic",
+      "whole_child_CPU": 0.75,
+      "whole_controller_CPU": 0.171875,
+      "charge": 0.921875,
+      "technical_status": "PASS"
+    },
+    {
+      "phase": "separator",
+      "group": "symbolic",
+      "whole_child_CPU": 0.859375,
+      "whole_controller_CPU": 0.3125,
+      "charge": 1.171875,
+      "technical_status": "PASS"
+    }
+  ],
+  "metadata_CPU_excluded_by_inherited_convention": true,
+  "no_cap_or_allowance_reset": true,
+  "all_full_child_and_controller_charges_included": true
+}

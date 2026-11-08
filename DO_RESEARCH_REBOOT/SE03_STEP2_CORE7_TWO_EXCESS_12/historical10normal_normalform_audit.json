@@ -1,0 +1,80 @@
+{
+  "status": "PASS_UNIFORM_COMPONENTS_LOCAL_REPAIR_REFUTED_MAIN_OPEN",
+  "residual_anchor_small_map_pairs": 5329,
+  "counterexamples_dual_replayed": 4,
+  "source_reports": [
+    {
+      "name": "SE03_STEP2_FORCED_ZERO_INCOMING_02",
+      "reflected": false,
+      "original_period_operations": 75,
+      "reaching_copies_for_audit": 1,
+      "A": 93,
+      "QF": 42,
+      "QE": 32,
+      "original_CD_slack": 144,
+      "A_BF_BE_recent_and_chart_closure": true,
+      "operations_partitioned_once": true,
+      "H1Q1_positive_event_mode_counts": {
+        "K": 14
+      },
+      "nongenuine_full_KEEP_aux_double_changes": 0
+    },
+    {
+      "name": "SE03_STEP2_FORCED_ZERO_INCOMING_02",
+      "reflected": true,
+      "original_period_operations": 75,
+      "reaching_copies_for_audit": 1,
+      "A": 93,
+      "QF": 42,
+      "QE": 32,
+      "original_CD_slack": 144,
+      "A_BF_BE_recent_and_chart_closure": true,
+      "operations_partitioned_once": true,
+      "H1Q1_positive_event_mode_counts": {
+        "K": 14
+      },
+      "nongenuine_full_KEEP_aux_double_changes": 0
+    },
+    {
+      "name": "SE03_STEP2_FINAL_PLUS_ONE_07",
+      "reflected": false,
+      "original_period_operations": 76,
+      "reaching_copies_for_audit": 1,
+      "A": 93,
+      "QF": 42,
+      "QE": 32,
+      "original_CD_slack": 144,
+      "A_BF_BE_recent_and_chart_closure": true,
+      "operations_partitioned_once": true,
+      "H1Q1_positive_event_mode_counts": {
+        "K": 13,
+        "D": 1
+      },
+      "nongenuine_full_KEEP_aux_double_changes": 0
+    },
+    {
+      "name": "SE03_STEP2_FINAL_PLUS_ONE_07",
+      "reflected": true,
+      "original_period_operations": 76,
+      "reaching_copies_for_audit": 1,
+      "A": 93,
+      "QF": 42,
+      "QE": 32,
+      "original_CD_slack": 144,
+      "A_BF_BE_recent_and_chart_closure": true,
+      "operations_partitioned_once": true,
+      "H1Q1_positive_event_mode_counts": {
+        "K": 13,
+        "D": 1
+      },
+      "nongenuine_full_KEEP_aux_double_changes": 0
+    }
+  ],
+  "source_engine_calls": 2008,
+  "old_semantic_rows_replayed": 302,
+  "new_finite_tests": 0,
+  "residual_anchor_theorem": "universal algebraic proof, map cases are additional regression assertions",
+  "local_repair": "REFUTED_EXACT",
+  "global_source_supply": "OPEN",
+  "Step2": "OPEN"
+}

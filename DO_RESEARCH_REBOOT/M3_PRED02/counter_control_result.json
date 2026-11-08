@@ -1,0 +1,34 @@
+{
+  "status": "ORIGINAL_PREDICATE_REFUTATION_INDEPENDENTLY_CERTIFIED",
+  "retained_CPU_before_control": 739.5,
+  "new_child_process_CPU": 14.75,
+  "events": [
+    {
+      "phase": "audit_endpoints",
+      "allocated_cap": 300,
+      "CPU_charged": 2.578125,
+      "returncode": 0,
+      "error": null,
+      "status": "INDEPENDENT_DIRECT_THRESHOLD_ENDPOINT_OBSTRUCTION_VERIFIED"
+    },
+    {
+      "phase": "construct_witness",
+      "allocated_cap": 300,
+      "CPU_charged": 6.65625,
+      "returncode": 0,
+      "error": null,
+      "status": "SAT_ORIGINAL_LOW_THRESHOLD_PREDICATE_COUNTEREXAMPLE"
+    },
+    {
+      "phase": "verify_witness",
+      "allocated_cap": 300,
+      "CPU_charged": 5.515625,
+      "returncode": 0,
+      "error": null,
+      "status": "INDEPENDENT_ORIGINAL_LOW_THRESHOLD_COUNTEREXAMPLE_VERIFIED"
+    }
+  ],
+  "failure": null,
+  "later_predicate_tests_executed_after_refutation": false,
+  "M3_status": "OPEN"
+}

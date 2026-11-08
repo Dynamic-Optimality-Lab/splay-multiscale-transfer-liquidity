@@ -1,0 +1,48 @@
+{
+  "status": "PASS_SEPARATE_SOURCE_AND_FRAME_DERIVATIONS",
+  "new_family_and_reflection_replayed": true,
+  "same_exact_F_T_checked_again": true,
+  "actual_costs": {
+    "A": 93,
+    "QF": 42,
+    "QE": 32,
+    "CD_slack": 144
+  },
+  "known_core_shapes": [
+    {
+      "family": "Omega_plus",
+      "F_U_unary": true,
+      "F_marked_leaves": 1,
+      "T_marked_leaves": 4
+    },
+    {
+      "family": "Gamma_pair",
+      "F_U_unary": true,
+      "F_marked_leaves": 1,
+      "T_marked_leaves": 4
+    },
+    {
+      "family": "Sigma_singleton",
+      "F_U_unary": true,
+      "F_marked_leaves": 2,
+      "T_marked_leaves": 4
+    }
+  ],
+  "two_inner_LL_and_RR_free_term_identities": true,
+  "inverse_H1_zig_and_LR_free_term_identities": true,
+  "symbolic_scope": "opaque ordered holes; arbitrary finite gap substitutions, no hole internals inspected",
+  "universal_logic_audit": {
+    "forced_values_and_zero_closure": "telescoping proved in RETURN_BARRIER.md",
+    "cost_grammar": "H and Q lower/upper bounds plus parity; H>=4 pair and H>=3 singleton positive",
+    "core11_first_entry": "q>=3 output lies N1/N2; outgoing q4/q5 incompatible by inherited fan bound",
+    "U_unary_extreme_destination": "second SS double creates a branching unmarked vertex; later outer frames preserve it",
+    "zero_closure_of_restricted_known_B_shapes": "no final zero edge, so no nonempty finite zero path",
+    "core11_F_T_disjoint": "q>=4 source has at most two marked leaves; negative-two target at least four",
+    "global_return_barrier": "NOT PROVED; generic F/Z and core9/10 left open"
+  },
+  "independence": "same agent, separate immutable recursive-frame engine; not external peer review or full formalization",
+  "new_potential_constructed": false,
+  "architecture_refuted": false,
+  "source_engine_calls": 254,
+  "new_finite_tests": 0
+}

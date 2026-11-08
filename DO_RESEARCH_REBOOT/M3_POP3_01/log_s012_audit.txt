@@ -1,0 +1,40 @@
+{"sigma": [0, 1, 2], "helper": null, "word": [[0]], "canonical_queries": 33312, "private_visits": 40275, "CPU": 1.5}
+{"sigma": [0, 1, 2], "helper": null, "word": [[1]], "canonical_queries": 66624, "private_visits": 80550, "CPU": 2.0}
+{"sigma": [0, 1, 2], "helper": null, "word": [[0, 0]], "canonical_queries": 161835, "private_visits": 190197, "CPU": 4.047}
+{"sigma": [0, 1, 2], "helper": null, "word": [[0, 1]], "canonical_queries": 191504, "private_visits": 226475, "CPU": 4.922}
+{"sigma": [0, 1, 2], "helper": null, "word": [[1, 0]], "canonical_queries": 219499, "private_visits": 260124, "CPU": 5.578}
+{"sigma": [0, 1, 2], "helper": null, "word": [[1, 1]], "canonical_queries": 314710, "private_visits": 369771, "CPU": 8.562}
+{
+  "status": "INDEPENDENT_POPULATION_PREFIX_AND_RESIDUAL_PASS",
+  "sigma": [
+    0,
+    1,
+    2
+  ],
+  "canonical_transition_queries": 314710,
+  "private_assignment_visits": 369771,
+  "duplicate_private_assignments_quotiented": 55061,
+  "classes": 26721,
+  "access_options": 314710,
+  "J_range": [
+    -2,
+    0
+  ],
+  "changed_states": 311176,
+  "explicit_residuals": 21703890,
+  "minimum_residual": 0,
+  "residual_histogram": {
+    "1": 7541761,
+    "0": 12651525,
+    "2": 1510604
+  },
+  "product_states_streamed": 12198434,
+  "zero_source_states_discharged": 9946452,
+  "analytic": {
+    "range": 5667592
+  },
+  "cpu_seconds": 22.875,
+  "potential_sha256": "ebe5f6381460ce03249ecbe01a8596bfc5f974bef6fc18cb3b579466667fbadb",
+  "source_family_audit_pending": true,
+  "full_M3_proved": false
+}

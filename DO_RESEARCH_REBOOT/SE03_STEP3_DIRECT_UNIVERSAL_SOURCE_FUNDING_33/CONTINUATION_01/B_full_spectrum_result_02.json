@@ -1,0 +1,373 @@
+{
+  "status": "FULL_B_AND_FULL_DEBT_MULTISET_FORMULA_REFUTATION_CANDIDATE",
+  "serial": 2,
+  "seed_cursor": 19111,
+  "seed_total": 19111,
+  "next_coefficient": 1769616,
+  "positive_stream_complete": true,
+  "source_couplings": 542422,
+  "variables": 31738,
+  "edge_records": 85732,
+  "updates": 9178,
+  "maximum_discovery_label": 3,
+  "contradiction": {
+    "type": "FROZEN_SINGLE_PROJECTION_UPPER",
+    "end_feature": 9555,
+    "end_value": 0,
+    "required": 1,
+    "start_feature": 12225,
+    "start_lower": 1
+  },
+  "causal_edges": [
+    {
+      "source_A": [
+        2,
+        "F0",
+        [
+          3,
+          "new_gap",
+          [
+            6,
+            [
+              4,
+              "F1",
+              "F2"
+            ],
+            [
+              10,
+              [
+                8,
+                "F3",
+                "F4"
+              ],
+              [
+                14,
+                [
+                  12,
+                  "F5",
+                  "F6"
+                ],
+                [
+                  18,
+                  [
+                    16,
+                    "F7",
+                    "F8"
+                  ],
+                  [
+                    20,
+                    "F9",
+                    "F10"
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        6,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "new_gap"
+          ],
+          [
+            4,
+            "F1",
+            "F2"
+          ]
+        ],
+        [
+          10,
+          [
+            8,
+            "F3",
+            "F4"
+          ],
+          [
+            14,
+            [
+              12,
+              "F5",
+              "F6"
+            ],
+            [
+              18,
+              [
+                16,
+                "F7",
+                "F8"
+              ],
+              [
+                20,
+                "F9",
+                "F10"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 3,
+      "source_B_core_index": 618,
+      "B_target_core_index": 6736,
+      "target_actual_key": 6,
+      "H": 1,
+      "Q": 2,
+      "price": 0,
+      "source_kind": "unary_RR",
+      "source_feature": 12225,
+      "target_feature": 12234,
+      "source_value_set": [
+        1
+      ],
+      "target_value_set": [
+        0,
+        1
+      ],
+      "source_value_multiset": [
+        1
+      ],
+      "target_value_multiset": [
+        0,
+        1
+      ]
+    },
+    {
+      "source_A": [
+        6,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "new_gap"
+          ],
+          [
+            4,
+            "F1",
+            "F2"
+          ]
+        ],
+        [
+          10,
+          [
+            8,
+            "F3",
+            "F4"
+          ],
+          [
+            12,
+            "F5",
+            [
+              14,
+              "F6",
+              [
+                18,
+                [
+                  16,
+                  "F7",
+                  "F8"
+                ],
+                [
+                  20,
+                  "F9",
+                  "F10"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        12,
+        [
+          10,
+          [
+            6,
+            [
+              3,
+              [
+                2,
+                "F0",
+                "new_gap"
+              ],
+              [
+                4,
+                "F1",
+                "F2"
+              ]
+            ],
+            [
+              8,
+              "F3",
+              "F4"
+            ]
+          ],
+          "F5"
+        ],
+        [
+          14,
+          "F6",
+          [
+            18,
+            [
+              16,
+              "F7",
+              "F8"
+            ],
+            [
+              20,
+              "F9",
+              "F10"
+            ]
+          ]
+        ]
+      ],
+      "private_key": 3,
+      "source_B_core_index": 6736,
+      "B_target_core_index": 8777,
+      "target_actual_key": 12,
+      "H": 1,
+      "Q": 2,
+      "price": 0,
+      "source_kind": "actual_successor",
+      "source_feature": 12234,
+      "target_feature": 30098,
+      "source_value_multiset": [
+        0,
+        1
+      ],
+      "target_value_multiset": [
+        0,
+        1
+      ]
+    },
+    {
+      "source_A": [
+        12,
+        [
+          3,
+          [
+            2,
+            "F0",
+            "new_gap"
+          ],
+          [
+            4,
+            "F1",
+            [
+              6,
+              "F2",
+              [
+                8,
+                "F3",
+                [
+                  10,
+                  "F4",
+                  "F5"
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          14,
+          "F6",
+          [
+            16,
+            "F7",
+            [
+              18,
+              "F8",
+              [
+                20,
+                "F9",
+                "F10"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "actual_A_target": [
+        2,
+        "F0",
+        [
+          3,
+          "new_gap",
+          [
+            12,
+            [
+              4,
+              "F1",
+              [
+                6,
+                "F2",
+                [
+                  8,
+                  "F3",
+                  [
+                    10,
+                    "F4",
+                    "F5"
+                  ]
+                ]
+              ]
+            ],
+            [
+              14,
+              "F6",
+              [
+                16,
+                "F7",
+                [
+                  18,
+                  "F8",
+                  [
+                    20,
+                    "F9",
+                    "F10"
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      "private_key": 3,
+      "source_B_core_index": 8777,
+      "B_target_core_index": 1902,
+      "target_actual_key": 2,
+      "H": 1,
+      "Q": 2,
+      "price": 0,
+      "source_kind": "anonymous_branch_at_arbitrary_B",
+      "source_feature": 30098,
+      "target_feature": 9555,
+      "source_value_multiset": [
+        0,
+        1
+      ],
+      "target_value_multiset": [
+        0
+      ]
+    }
+  ],
+  "optional_HIGH_bounds_used": false,
+  "upper_width_used_on_new_states": false,
+  "exact_single_projection_compatibility": true,
+  "source_identity_instantiations": 0,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "not_a_universal_passing_test": true,
+  "principal_U33": "OPEN",
+  "branch_pairs_visited": 3977,
+  "branch_cursor": [
+    19,
+    1
+  ],
+  "branch_stream_complete": false,
+  "oracle": "independently checked lossless modal-B factor of unchanged old debt"
+}

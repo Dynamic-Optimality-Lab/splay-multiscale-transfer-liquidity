@@ -1,0 +1,109 @@
+{
+  "status": "UNIVERSAL_ERASURE_ROTATION_SCHEMAS_SYMBOLICALLY_VERIFIED",
+  "method": "equational normalization on arbitrary subtree variables, not population/tree instantiation",
+  "schemas": [
+    {
+      "orientation": "RIGHT",
+      "quantified_subtrees": [
+        "A",
+        "B",
+        "C"
+      ],
+      "quantified_node_identities": [
+        "p",
+        "x"
+      ],
+      "preconditions": [
+        "p and x Score-bearing before rotation"
+      ],
+      "normal_form": [
+        "smart",
+        "x",
+        [
+          "project",
+          [
+            "var",
+            "A"
+          ]
+        ],
+        [
+          "smart",
+          "p",
+          [
+            "project",
+            [
+              "var",
+              "B"
+            ]
+          ],
+          [
+            "project",
+            [
+              "var",
+              "C"
+            ]
+          ]
+        ]
+      ],
+      "post_rotation_parent_may_be_erased": true
+    },
+    {
+      "orientation": "LEFT",
+      "quantified_subtrees": [
+        "A",
+        "B",
+        "C"
+      ],
+      "quantified_node_identities": [
+        "p",
+        "x"
+      ],
+      "preconditions": [
+        "p and x Score-bearing before rotation"
+      ],
+      "normal_form": [
+        "smart",
+        "x",
+        [
+          "smart",
+          "p",
+          [
+            "project",
+            [
+              "var",
+              "A"
+            ]
+          ],
+          [
+            "project",
+            [
+              "var",
+              "B"
+            ]
+          ]
+        ],
+        [
+          "project",
+          [
+            "var",
+            "C"
+          ]
+        ]
+      ],
+      "post_rotation_parent_may_be_erased": true
+    }
+  ],
+  "primitive_lemma_scope": "private proper-prefix term algebra under Score-support premises",
+  "support_preservation_and_idempotence": "structural induction in ERASURE_LEMMA.md",
+  "context_and_splay_lift": "path/context induction in ERASURE_LEMMA.md",
+  "full_source_formalization_claimed": false,
+  "new_finite_population_tests": 0,
+  "new_source_transition_queries": 0,
+  "new_original_root_evaluations": 0,
+  "certificate_labels_read": false,
+  "shared_state_descent_established": false,
+  "Score_empty_helper_simulation_established": false,
+  "M3_status": "OPEN",
+  "CPU_seconds": 0.0,
+  "CPU_cap": 120
+}

@@ -1,0 +1,134 @@
+{
+  "status": "PASS_CAPS_PRESERVED_PROOF_LIMIT_NOT_RESOURCE_LIMIT",
+  "prior_CPU": 3399.796875,
+  "cumulative_CPU": 3404.1875,
+  "ceiling": 7200,
+  "reserve": 5,
+  "remaining_CPU": 3795.8125,
+  "available_before_reserve": 3790.8125,
+  "cumulative_group_CPU": {
+    "symbolic": 65.25,
+    "independent": 137.5625
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "remaining_group_CPU": {
+    "symbolic": 54.75,
+    "independent": 162.4375
+  },
+  "phases": [
+    {
+      "phase": "bridges2",
+      "status": "PASS",
+      "group": "independent",
+      "child_CPU": 0.140625,
+      "whole_controller_CPU": 0.15625,
+      "charge": 0.296875,
+      "source_calls": 644,
+      "declared_finite_checks": 8,
+      "old_rows_replayed": 0
+    },
+    {
+      "phase": "bridges",
+      "status": "FAILED_OR_UNKNOWN",
+      "group": "independent",
+      "child_CPU": 0.15625,
+      "whole_controller_CPU": 0.140625,
+      "charge": 0.296875,
+      "source_calls": 474,
+      "declared_finite_checks": 8,
+      "old_rows_replayed": 0
+    },
+    {
+      "phase": "classification",
+      "status": "PASS",
+      "group": "symbolic",
+      "child_CPU": 0.140625,
+      "whole_controller_CPU": 0.1875,
+      "charge": 0.328125,
+      "source_calls": 0,
+      "declared_finite_checks": 0,
+      "old_rows_replayed": 0
+    },
+    {
+      "phase": "donor_rule",
+      "status": "PASS",
+      "group": "symbolic",
+      "child_CPU": 0.3125,
+      "whole_controller_CPU": 0.203125,
+      "charge": 0.515625,
+      "source_calls": 0,
+      "declared_finite_checks": 0,
+      "old_rows_replayed": 0
+    },
+    {
+      "phase": "funding",
+      "status": "PASS",
+      "group": "symbolic",
+      "child_CPU": 0.140625,
+      "whole_controller_CPU": 0.234375,
+      "charge": 0.375,
+      "source_calls": 0,
+      "declared_finite_checks": 0,
+      "old_rows_replayed": 0
+    },
+    {
+      "phase": "independent",
+      "status": "PASS",
+      "group": "independent",
+      "child_CPU": 0.265625,
+      "whole_controller_CPU": 0.171875,
+      "charge": 0.4375,
+      "source_calls": 1260,
+      "declared_finite_checks": 5343,
+      "old_rows_replayed": 26
+    },
+    {
+      "phase": "normalform",
+      "status": "PASS",
+      "group": "independent",
+      "child_CPU": 0.265625,
+      "whole_controller_CPU": 0.265625,
+      "charge": 0.53125,
+      "source_calls": 2008,
+      "declared_finite_checks": 0,
+      "old_rows_replayed": 302
+    },
+    {
+      "phase": "seal",
+      "status": "PASS",
+      "group": "independent",
+      "child_CPU": 1.03125,
+      "whole_controller_CPU": 0.15625,
+      "charge": 1.1875,
+      "source_calls": 0,
+      "declared_finite_checks": 0,
+      "old_rows_replayed": 0
+    },
+    {
+      "phase": "sources",
+      "status": "PASS",
+      "group": "symbolic",
+      "child_CPU": 0.25,
+      "whole_controller_CPU": 0.171875,
+      "charge": 0.421875,
+      "source_calls": 4218,
+      "declared_finite_checks": 32,
+      "old_rows_replayed": 0
+    }
+  ],
+  "source_engine_calls": 8604,
+  "failed_CPU_included": true,
+  "2M_query_live_cap": 2000000,
+  "DAG_cap": 4000000,
+  "edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "wall_cap_hours": 12,
+  "metadata_exclusion": "same inherited entry/provenance/publication convention; every proof/replay/seal child and whole controller charged",
+  "stopping_reason": "no proved arbitrary-history residual donor supply; local repair refuted; no circular Hall/cardinality substitution",
+  "CPU_exhausted": false,
+  "no_budget_reset": true,
+  "metadata_CPU_this_invocation_excluded": 0.15625
+}

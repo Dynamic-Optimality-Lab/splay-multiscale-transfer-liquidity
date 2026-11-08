@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "identities": [
+    "arbitrary_processed_spine_pair_growth_LL",
+    "arbitrary_processed_spine_pair_growth_RR",
+    "arbitrary_processed_spine_pair_growth_LR",
+    "arbitrary_processed_spine_pair_growth_RL",
+    "processed_spine_final_zig_growth_left",
+    "processed_spine_final_zig_growth_right"
+  ],
+  "pair_growth": [
+    {
+      "word": "LL",
+      "old_target_side_depth_increase_at_most": 1,
+      "new_ancestor_depth_at_most": 2
+    },
+    {
+      "word": "RR",
+      "old_target_side_depth_increase_at_most": 1,
+      "new_ancestor_depth_at_most": 2
+    },
+    {
+      "word": "LR",
+      "old_target_side_depth_increase_at_most": 1,
+      "new_ancestor_depth_at_most": 2
+    },
+    {
+      "word": "RL",
+      "old_target_side_depth_increase_at_most": 1,
+      "new_ancestor_depth_at_most": 2
+    }
+  ],
+  "negative_output_height_bounds": [
+    {
+      "negative_access_depth": 6,
+      "spine_bound": 4,
+      "off_path_core_count": 2,
+      "full_height_bound": 6
+    },
+    {
+      "negative_access_depth": 7,
+      "spine_bound": 5,
+      "off_path_core_count": 1,
+      "full_height_bound": 6
+    },
+    {
+      "negative_access_depth": 8,
+      "spine_bound": 5,
+      "off_path_core_count": 0,
+      "full_height_bound": 5
+    }
+  ],
+  "psi_height_ge7_zero_by_completed_incoming_recurrence": true
+}

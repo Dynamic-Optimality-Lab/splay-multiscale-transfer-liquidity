@@ -1,0 +1,45 @@
+{
+  "campaign": "SE03_STEP2_REPAY01",
+  "status": "OPEN_NOT_SUCCESSFULLY_COMPLETED",
+  "requested_completion_gate_satisfied": false,
+  "Step1": "SEALED_UNCHANGED",
+  "Step2": "OPEN",
+  "Step3_uniform_coverage": "OPEN",
+  "support_induction": "OPEN",
+  "unrestricted_CD": "OPEN",
+  "Dynamic_Optimality": "OPEN",
+  "new_structural_theorems": [
+    "set growth at most2 distinct labels",
+    "closed-core subtree density",
+    "maximal-core sorted marked/unmarked alternation",
+    "max-depth fan and mandatory q1 successor"
+  ],
+  "new_source_repayment": "disjoint maximum-depth packets with Hsum>=ceil(r/2); all six-core11 H2/q5 negatives paid",
+  "new_candidate": "width2 threshold4 on complete singleton/q5-pair source partition; baseline unproved",
+  "remaining_core11_negatives": [
+    "singleton H1/q3",
+    "singleton H1/q4",
+    "q5+q1 packet Hsum2"
+  ],
+  "remaining_core10_negatives": [
+    "H1/q3",
+    "H1/q4"
+  ],
+  "remaining_transfers": "all corresponding zero/+1 obligations need one complete state-defined invariant",
+  "new_original_CD_coverage": false,
+  "original_CD_counterexample_found": false,
+  "checkpoint_reason": "No global signed debt invariant or complete source repayment derived; not cap exhaustion",
+  "resource_cap_reached": false,
+  "cumulative_uniform_CPU": 3211.140625,
+  "R1_R4_preserved": true,
+  "Bank25": 25,
+  "frozen_graph_modified": false,
+  "matching_terminal_modified": false,
+  "h0_preserved": {
+    "actual": 0,
+    "declared": 18,
+    "q": 9,
+    "w": -3
+  },
+  "external_peer_review": false
+}

@@ -1,0 +1,64 @@
+{
+  "status": "PASS_COMPLETE_FIXED_PATTERN_OVERLAP_PROOF",
+  "pattern": [
+    1,
+    2,
+    1,
+    3,
+    1,
+    2,
+    1,
+    6
+  ],
+  "proper_shifts": [
+    {
+      "shift": 1,
+      "first_terminal_Q": 6,
+      "second_interior_index": 6,
+      "second_Q": 1
+    },
+    {
+      "shift": 2,
+      "first_terminal_Q": 6,
+      "second_interior_index": 5,
+      "second_Q": 2
+    },
+    {
+      "shift": 3,
+      "first_terminal_Q": 6,
+      "second_interior_index": 4,
+      "second_Q": 1
+    },
+    {
+      "shift": 4,
+      "first_terminal_Q": 6,
+      "second_interior_index": 3,
+      "second_Q": 3
+    },
+    {
+      "shift": 5,
+      "first_terminal_Q": 6,
+      "second_interior_index": 2,
+      "second_Q": 1
+    },
+    {
+      "shift": 6,
+      "first_terminal_Q": 6,
+      "second_interior_index": 1,
+      "second_Q": 2
+    },
+    {
+      "shift": 7,
+      "first_terminal_Q": 6,
+      "second_interior_index": 0,
+      "second_Q": 1
+    }
+  ],
+  "scope": "any actual source word containing this exact cost pattern; no claim that all order classes have it",
+  "arbitrary_collection_bridge": "pairwise macro-disjointness plus distinct actual unit IDs",
+  "effective_freedom_proved": false,
+  "complete_U28": false,
+  "finite_BST_tests": 0,
+  "source_queries": 0,
+  "proof_sha256": "6c09122d14aa8b8219475821c33faf869d94dd7ab533cf9ed5a3ca2819917674"
+}

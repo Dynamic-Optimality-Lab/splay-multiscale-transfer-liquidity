@@ -1,0 +1,255 @@
+{
+  "status": "COMPOSITION_PROOF_OBJECT_AWAITING_INDEPENDENT_AUDIT",
+  "theorem": "forall W in W_5^9: Q_B(W) <= 2 A(W)",
+  "domain": {
+    "genuine_KEEP_keys": 5,
+    "marked_core_nodes": 9,
+    "legal_masks": 126,
+    "gap_slots": 10,
+    "signatures": "all original admissible ten-component saturated signatures",
+    "fringe": "arbitrary admissible",
+    "word_lengths": "arbitrary finite",
+    "closure": "exact labeled paired A/B tree closure",
+    "KEEP_DELETE": true,
+    "zero_cost": true,
+    "nongenuine_KEEP": true,
+    "E3_E4": true,
+    "primitive_and_nonprimitive": true,
+    "reachability_filter": false,
+    "new_support_or_population_bound": false
+  },
+  "graph": {
+    "region": "G_star = G_AF",
+    "ordinary_coordinates": 147,
+    "midpoint_coordinates": 127,
+    "weights": {
+      "OO": "original2H-q",
+      "OM": "original6-q",
+      "MO": 0,
+      "MM": "no edge"
+    },
+    "all_raw_fields_retained": true,
+    "SAME_full_midpoint": true,
+    "independent_private_witnesses": true,
+    "HIGH_v_free": true,
+    "MM": "FALSE"
+  },
+  "potential": {
+    "ordinary": "W(O)=-D(O)-5*chi8(O.b)",
+    "midpoint": "W(M)=-5*chi8(M.b)",
+    "debt_equation": "D=max(F4,1_(P AND N AND C1),2*1_(P AND N AND C2))",
+    "debt_range": [
+      0,
+      2
+    ],
+    "chi8": "original raw b.kr[8]==0 AND b.rr[8]==19",
+    "original_h0": {
+      "actual_depth": 0,
+      "declared_depth": 18,
+      "q": 9,
+      "weight": -3
+    },
+    "fixed_current_public_state_only": true
+  },
+  "quantifiers": {
+    "simulation": "forall W in W_5^9 exists P in G_AF: closed(P) and w(P)<=2A(W)-Q_B(W)",
+    "edge_sign": "forall original edges (u,v): w(u,v)>=Phi(v)-Phi(u)",
+    "walk_sign": "forall finite P in G_star: w(P)>=Phi(end(P))-Phi(start(P))",
+    "cycle_sign": "forall closed P in G_star: w(P)>=0",
+    "conclusion": "forall W in W_5^9: Q_B(W)<=2A(W)"
+  },
+  "dependencies": [
+    {
+      "id": "11F",
+      "uses": [],
+      "kind": "imported_closed_simulation_and_upper_bound"
+    },
+    {
+      "id": "coverage",
+      "uses": [],
+      "kind": "imported_G_star_equals_G_AF"
+    },
+    {
+      "id": "pointwise",
+      "uses": [],
+      "kind": "imported_sealed_XFER21_all_original_edges"
+    },
+    {
+      "id": "walk_sign",
+      "uses": [
+        "pointwise"
+      ],
+      "kind": "length_induction"
+    },
+    {
+      "id": "Step03",
+      "uses": [
+        "walk_sign"
+      ],
+      "kind": "full_endpoint_equality"
+    },
+    {
+      "id": "RestrictedCD",
+      "uses": [
+        "11F",
+        "coverage",
+        "Step03"
+      ],
+      "kind": "existential_elimination_and_inequality"
+    }
+  ],
+  "linear_certificates": [
+    {
+      "name": "low_macro_upper_direction",
+      "nonnegative_premises": [],
+      "equality_zero_premises": [
+        {
+          "H": 2,
+          "q": -1,
+          "w": -1
+        }
+      ],
+      "nonnegative_multipliers": [],
+      "equality_multipliers": [
+        1
+      ],
+      "conclusion_nonnegative": {
+        "H": 2,
+        "q": -1,
+        "w": -1
+      }
+    },
+    {
+      "name": "high_macro_upper_direction",
+      "nonnegative_premises": [
+        {
+          "H": 1,
+          "1": -3
+        }
+      ],
+      "equality_zero_premises": [
+        {
+          "w": 1,
+          "q": 1,
+          "1": -6
+        }
+      ],
+      "nonnegative_multipliers": [
+        2
+      ],
+      "equality_multipliers": [
+        -1
+      ],
+      "conclusion_nonnegative": {
+        "H": 2,
+        "q": -1,
+        "w": -1
+      }
+    },
+    {
+      "name": "walk_base",
+      "nonnegative_premises": [],
+      "equality_zero_premises": [
+        {
+          "S": 1
+        },
+        {
+          "end": 1,
+          "start": -1
+        }
+      ],
+      "nonnegative_multipliers": [],
+      "equality_multipliers": [
+        1,
+        -1
+      ],
+      "conclusion_nonnegative": {
+        "S": 1,
+        "end": -1,
+        "start": 1
+      }
+    },
+    {
+      "name": "walk_induction",
+      "nonnegative_premises": [
+        {
+          "S": 1,
+          "mid": -1,
+          "start": 1
+        },
+        {
+          "w": 1,
+          "end": -1,
+          "mid": 1
+        }
+      ],
+      "equality_zero_premises": [],
+      "nonnegative_multipliers": [
+        1,
+        1
+      ],
+      "equality_multipliers": [],
+      "conclusion_nonnegative": {
+        "S": 1,
+        "w": 1,
+        "end": -1,
+        "start": 1
+      }
+    },
+    {
+      "name": "closed_walk",
+      "nonnegative_premises": [
+        {
+          "S": 1,
+          "end": -1,
+          "start": 1
+        }
+      ],
+      "equality_zero_premises": [
+        {
+          "end": 1,
+          "start": -1
+        }
+      ],
+      "nonnegative_multipliers": [
+        1
+      ],
+      "equality_multipliers": [
+        1
+      ],
+      "conclusion_nonnegative": {
+        "S": 1
+      }
+    },
+    {
+      "name": "terminal_composition",
+      "nonnegative_premises": [
+        {
+          "S": 1
+        },
+        {
+          "A": 2,
+          "Q": -1,
+          "S": -1
+        }
+      ],
+      "equality_zero_premises": [],
+      "nonnegative_multipliers": [
+        1,
+        1
+      ],
+      "equality_multipliers": [],
+      "conclusion_nonnegative": {
+        "A": 2,
+        "Q": -1
+      }
+    }
+  ],
+  "no_new_finite_tests": true,
+  "new_SMT_queries": 0,
+  "new_original_root_queries": 0,
+  "completed_semantic_checks_replayed": 0,
+  "unrestricted_CD_proved": false,
+  "Dynamic_Optimality_proved": false,
+  "Bank25": 25
+}

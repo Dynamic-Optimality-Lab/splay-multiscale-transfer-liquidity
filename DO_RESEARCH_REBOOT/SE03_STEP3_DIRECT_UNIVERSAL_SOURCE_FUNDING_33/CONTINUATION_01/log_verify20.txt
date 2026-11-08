@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_verify20.py", line 67, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_verify20.py", line 50, in main
+    assert boundary==(lru,elru) and fr(z['rows'][0]['before'])==fr(z['rows'][-1]['after']);assert {r['target'] for r in z['rows'] if r['genuine_F']}==set(range(1,8));lo,hi=z['natural_window'];seg=[rows[t] for t in range(lo,hi+1)];assert rows[lo-1]['genuine_F'] and seg[-1]['genuine_F'] and not any(r['genuine_F'] for r in seg[:-1]);H=sum(r['a'] for r in seg);Q=sum(r['qF'] for r in seg);rho=[]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

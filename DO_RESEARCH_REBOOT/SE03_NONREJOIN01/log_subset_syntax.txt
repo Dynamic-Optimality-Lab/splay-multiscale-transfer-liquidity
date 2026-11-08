@@ -1,0 +1,201 @@
+{
+  "Step4": {
+    "clauses": 3413,
+    "positive_literal_count_histogram": {
+      "0": 384,
+      "2": 2391,
+      "3": 514,
+      "4": 69,
+      "5": 55
+    },
+    "negative_literal_count_histogram": {
+      "0": 3413
+    },
+    "saturated_positive_examples": [
+      {
+        "index": 3339,
+        "clause": {
+          "core": 86,
+          "level": 1,
+          "kind": "score_cube",
+          "marks": [
+            0,
+            1,
+            2,
+            6,
+            8
+          ],
+          "score_equalities": [
+            [
+              2,
+              2
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              6
+            ]
+          ]
+        }
+      },
+      {
+        "index": 3340,
+        "clause": {
+          "core": 86,
+          "level": 1,
+          "kind": "score_cube",
+          "marks": [
+            0,
+            1,
+            2,
+            6,
+            8
+          ],
+          "score_equalities": [
+            [
+              2,
+              2
+            ],
+            [
+              6,
+              6
+            ]
+          ]
+        }
+      }
+    ],
+    "negative_examples": []
+  },
+  "completion": {
+    "clauses": 4359,
+    "positive_literal_count_histogram": {
+      "0": 275,
+      "2": 344,
+      "3": 2710,
+      "4": 402,
+      "5": 628
+    },
+    "negative_literal_count_histogram": {
+      "0": 3783,
+      "1": 542,
+      "2": 34
+    },
+    "saturated_positive_examples": [
+      {
+        "index": 743,
+        "clause": {
+          "kind": "score_cube",
+          "core": 2347,
+          "level": 1,
+          "marks": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "score_equalities": [
+            [
+              4,
+              2
+            ],
+            [
+              6,
+              5
+            ]
+          ]
+        }
+      },
+      {
+        "index": 744,
+        "clause": {
+          "kind": "score_cube",
+          "core": 2347,
+          "level": 1,
+          "marks": [
+            0,
+            2,
+            4,
+            5,
+            6
+          ],
+          "score_equalities": [
+            [
+              4,
+              2
+            ],
+            [
+              6,
+              5
+            ]
+          ]
+        }
+      }
+    ],
+    "negative_examples": [
+      {
+        "index": 1357,
+        "clause": {
+          "kind": "score_cube",
+          "core": 2330,
+          "level": 1,
+          "marks": [
+            2,
+            3,
+            4
+          ],
+          "score_equalities": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          "nonmarks": [
+            0
+          ]
+        }
+      },
+      {
+        "index": 1372,
+        "clause": {
+          "kind": "score_cube",
+          "core": 2540,
+          "level": 1,
+          "marks": [
+            4,
+            5,
+            6
+          ],
+          "score_equalities": [
+            [
+              2,
+              6
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "nonmarks": [
+            7
+          ]
+        }
+      }
+    ]
+  }
+}

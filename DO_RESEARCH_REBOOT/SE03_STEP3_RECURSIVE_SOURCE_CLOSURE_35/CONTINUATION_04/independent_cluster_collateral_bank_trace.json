@@ -1,0 +1,1343 @@
+{
+  "status": "PASS",
+  "working_peak": 5,
+  "period": [
+    51,
+    68
+  ],
+  "trace": [
+    {
+      "t": 51,
+      "j": 1,
+      "before": [],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            51,
+            1,
+            0
+          ],
+          "action": "emit_own",
+          "demand": [
+            56,
+            1
+          ]
+        },
+        {
+          "unit": [
+            51,
+            1,
+            1
+          ],
+          "action": "emit_own",
+          "demand": [
+            56,
+            2
+          ]
+        }
+      ],
+      "after": []
+    },
+    {
+      "t": 52,
+      "j": 1,
+      "before": [],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            52,
+            1,
+            0
+          ],
+          "action": "store_selected_collateral",
+          "demand": [
+            57,
+            3
+          ]
+        },
+        {
+          "unit": [
+            52,
+            1,
+            1
+          ],
+          "action": "store_selected_collateral",
+          "demand": [
+            58,
+            3
+          ]
+        }
+      ],
+      "after": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 52,
+      "j": 2,
+      "before": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            52,
+            2,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            52,
+            2,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 53,
+      "j": 1,
+      "before": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            53,
+            1,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            53,
+            1,
+            1
+          ],
+          "action": "store_selected_collateral",
+          "demand": [
+            59,
+            3
+          ]
+        }
+      ],
+      "after": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 54,
+      "j": 1,
+      "before": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            54,
+            1,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            54,
+            1,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 54,
+      "j": 2,
+      "before": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            54,
+            2,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            54,
+            2,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 54,
+      "j": 3,
+      "before": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            54,
+            3,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            54,
+            3,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 55,
+      "j": 1,
+      "before": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            55,
+            1,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            55,
+            1,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 57,
+      "j": 1,
+      "before": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            57,
+            1,
+            0
+          ],
+          "action": "emit_own",
+          "demand": [
+            57,
+            1
+          ]
+        },
+        {
+          "unit": [
+            57,
+            1,
+            1
+          ],
+          "action": "emit_own",
+          "demand": [
+            57,
+            2
+          ]
+        }
+      ],
+      "after": [
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "consume_at_macro_end": [
+        57,
+        3
+      ],
+      "unit": [
+        52,
+        1,
+        0
+      ],
+      "after": [
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 58,
+      "j": 1,
+      "before": [
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            58,
+            1,
+            0
+          ],
+          "action": "emit_own",
+          "demand": [
+            58,
+            1
+          ]
+        },
+        {
+          "unit": [
+            58,
+            1,
+            1
+          ],
+          "action": "emit_own",
+          "demand": [
+            58,
+            2
+          ]
+        }
+      ],
+      "after": [
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "consume_at_macro_end": [
+        58,
+        3
+      ],
+      "unit": [
+        52,
+        1,
+        1
+      ],
+      "after": [
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 59,
+      "j": 1,
+      "before": [
+        [
+          53,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            59,
+            1,
+            0
+          ],
+          "action": "emit_own",
+          "demand": [
+            59,
+            1
+          ]
+        },
+        {
+          "unit": [
+            59,
+            1,
+            1
+          ],
+          "action": "emit_own",
+          "demand": [
+            59,
+            2
+          ]
+        }
+      ],
+      "after": [
+        [
+          53,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "consume_at_macro_end": [
+        59,
+        3
+      ],
+      "unit": [
+        53,
+        1,
+        1
+      ],
+      "after": []
+    },
+    {
+      "t": 60,
+      "j": 1,
+      "before": [],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            60,
+            1,
+            0
+          ],
+          "action": "emit_own",
+          "demand": [
+            65,
+            1
+          ]
+        },
+        {
+          "unit": [
+            60,
+            1,
+            1
+          ],
+          "action": "emit_own",
+          "demand": [
+            65,
+            2
+          ]
+        }
+      ],
+      "after": []
+    },
+    {
+      "t": 60,
+      "j": 2,
+      "before": [],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            60,
+            2,
+            0
+          ],
+          "action": "store_selected_collateral",
+          "demand": [
+            66,
+            3
+          ]
+        },
+        {
+          "unit": [
+            60,
+            2,
+            1
+          ],
+          "action": "store_selected_collateral",
+          "demand": [
+            67,
+            3
+          ]
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 61,
+      "j": 1,
+      "before": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            61,
+            1,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            61,
+            1,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 62,
+      "j": 1,
+      "before": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            62,
+            1,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            62,
+            1,
+            1
+          ],
+          "action": "store_selected_collateral",
+          "demand": [
+            68,
+            3
+          ]
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 62,
+      "j": 2,
+      "before": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            62,
+            2,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            62,
+            2,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 63,
+      "j": 1,
+      "before": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            63,
+            1,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            63,
+            1,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 63,
+      "j": 2,
+      "before": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            63,
+            2,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            63,
+            2,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 64,
+      "j": 1,
+      "before": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            64,
+            1,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            64,
+            1,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 64,
+      "j": 2,
+      "before": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            64,
+            2,
+            0
+          ],
+          "action": "release",
+          "demand": null
+        },
+        {
+          "unit": [
+            64,
+            2,
+            1
+          ],
+          "action": "release",
+          "demand": null
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 66,
+      "j": 1,
+      "before": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            66,
+            1,
+            0
+          ],
+          "action": "emit_own",
+          "demand": [
+            66,
+            1
+          ]
+        },
+        {
+          "unit": [
+            66,
+            1,
+            1
+          ],
+          "action": "emit_own",
+          "demand": [
+            66,
+            2
+          ]
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "consume_at_macro_end": [
+        66,
+        3
+      ],
+      "unit": [
+        60,
+        2,
+        0
+      ],
+      "after": [
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 67,
+      "j": 1,
+      "before": [
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            67,
+            1,
+            0
+          ],
+          "action": "emit_own",
+          "demand": [
+            67,
+            1
+          ]
+        },
+        {
+          "unit": [
+            67,
+            1,
+            1
+          ],
+          "action": "emit_own",
+          "demand": [
+            67,
+            2
+          ]
+        }
+      ],
+      "after": [
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "consume_at_macro_end": [
+        67,
+        3
+      ],
+      "unit": [
+        60,
+        2,
+        1
+      ],
+      "after": [
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "t": 68,
+      "j": 1,
+      "before": [
+        [
+          62,
+          1,
+          1
+        ]
+      ],
+      "admitted": 2,
+      "actions": [
+        {
+          "unit": [
+            68,
+            1,
+            0
+          ],
+          "action": "emit_own",
+          "demand": [
+            68,
+            1
+          ]
+        },
+        {
+          "unit": [
+            68,
+            1,
+            1
+          ],
+          "action": "emit_own",
+          "demand": [
+            68,
+            2
+          ]
+        }
+      ],
+      "after": [
+        [
+          62,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "consume_at_macro_end": [
+        68,
+        3
+      ],
+      "unit": [
+        62,
+        1,
+        1
+      ],
+      "after": []
+    }
+  ]
+}

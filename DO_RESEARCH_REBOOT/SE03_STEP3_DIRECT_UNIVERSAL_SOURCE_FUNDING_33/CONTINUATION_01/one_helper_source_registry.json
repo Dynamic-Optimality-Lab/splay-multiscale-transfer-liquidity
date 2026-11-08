@@ -1,0 +1,89 @@
+{
+  "status": "FIVE_DIRECT_SOURCE_CASES_EXPORTED_AUDIT_PENDING",
+  "direct": [
+    {
+      "helper": 1,
+      "nonzero_coefficients": 456047,
+      "file": "one_helper_p1_certificate.json",
+      "sha256": "0a4a1fee98b7cdeea4daa93db26f8586acff5d6fbec4a53a7cfefef18bd52362"
+    },
+    {
+      "helper": 2,
+      "nonzero_coefficients": 702774,
+      "file": "one_helper_p2_certificate.json",
+      "sha256": "d6db530e61c5b919b2c9332ed1c52b84c961fbb98a840c2410f6c4bd52fdf14b"
+    },
+    {
+      "helper": 3,
+      "nonzero_coefficients": 744465,
+      "file": "one_helper_p3_certificate.json",
+      "sha256": "661228b10bc489518a127136a4564148751e03471178b5ef1703b238105a6fd0"
+    },
+    {
+      "helper": 4,
+      "nonzero_coefficients": 767532,
+      "file": "one_helper_p4_certificate.json",
+      "sha256": "39b21d1f6507cbbb97d279c32419c8e3f8cf35d681a27e85879f77ac84801072"
+    },
+    {
+      "helper": 5,
+      "nonzero_coefficients": 775205,
+      "file": "one_helper_p5_certificate.json",
+      "sha256": "d0d1a62ba883dfe3ac466ca88fd36be7107b7de3d3a562e0c149da73710b4b51"
+    }
+  ],
+  "all_ordered_helper_positions": [
+    {
+      "helper": 1,
+      "direct_case": 1,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 2,
+      "direct_case": 2,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 3,
+      "direct_case": 3,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 4,
+      "direct_case": 4,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 5,
+      "direct_case": 5,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 6,
+      "direct_case": 5,
+      "reflect_both_trees": true
+    },
+    {
+      "helper": 7,
+      "direct_case": 4,
+      "reflect_both_trees": true
+    },
+    {
+      "helper": 8,
+      "direct_case": 3,
+      "reflect_both_trees": true
+    },
+    {
+      "helper": 9,
+      "direct_case": 2,
+      "reflect_both_trees": true
+    },
+    {
+      "helper": 10,
+      "direct_case": 1,
+      "reflect_both_trees": true
+    }
+  ],
+  "reflection": "Aphysical key k->11-k; BF normalized Score i->10-i; helper p->11-p",
+  "principal_U33": "OPEN"
+}

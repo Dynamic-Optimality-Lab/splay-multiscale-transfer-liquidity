@@ -1,0 +1,91 @@
+{
+  "status": "FINITE_EXACT_VERIFIED",
+  "gap": 4,
+  "reflected_gap": 5,
+  "models": 80570,
+  "source_case_queries": 248397,
+  "states": 543278,
+  "edges_independently_regenerated": 3352967,
+  "range": [
+    -2,
+    0
+  ],
+  "destination_debt_floor": true,
+  "minimum_residual": 0,
+  "residual_histogram": {
+    "2": 202746,
+    "1": 1961653,
+    "0": 1174567,
+    "3": 14001
+  },
+  "range_safe_rows": 793590,
+  "debt_safe_rows": {
+    "0": 207030,
+    "1": 563481
+  },
+  "core_reflection_debt_mismatches": 0,
+  "potential_sha256": "2c49a822abba5f4c4c33102cbf27e0ea765b343c1792adc3f5991b729d331c5b",
+  "cpu_seconds": 9.5,
+  "samples": {
+    "w1": {
+      "node": 0,
+      "source_B": 0,
+      "source_shadow": 0,
+      "w": 1,
+      "q": 1,
+      "H": 1,
+      "target": 2,
+      "destination_shadow": 2,
+      "witness": 0,
+      "A_depth": 2
+    },
+    "w0": {
+      "node": 2,
+      "source_B": 0,
+      "source_shadow": 61,
+      "w": 0,
+      "q": 2,
+      "H": 1,
+      "target": 4,
+      "destination_shadow": 63,
+      "witness": 48,
+      "A_depth": 2
+    },
+    "w-1": {
+      "node": 4,
+      "source_B": 0,
+      "source_shadow": 115,
+      "w": -1,
+      "q": 3,
+      "H": 1,
+      "target": 6,
+      "destination_shadow": 117,
+      "witness": 83,
+      "A_depth": 2
+    },
+    "w-2": {
+      "node": 6,
+      "source_B": 0,
+      "source_shadow": 143,
+      "w": -2,
+      "q": 4,
+      "H": 1,
+      "target": 8,
+      "destination_shadow": 145,
+      "witness": 96,
+      "A_depth": 2
+    },
+    "three_fringe_fork_w1": {
+      "node": 287809,
+      "source_B": 2529,
+      "source_shadow": 1106,
+      "w": 1,
+      "q": 1,
+      "H": 1,
+      "target": 7,
+      "destination_shadow": 630,
+      "witness": 4657,
+      "A_depth": 2
+    }
+  }
+}

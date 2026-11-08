@@ -1,0 +1,89 @@
+{
+  "status": "PASS_NEW_TYPED_RESERVATION_REGRESSION",
+  "scope": "archived32-to36 construction only; actual current36 map remains unchanged",
+  "historical_a0_count": 32,
+  "claim_bound_reservations": [
+    {
+      "demand": [
+        86,
+        3
+      ],
+      "unit": [
+        72,
+        1,
+        0
+      ]
+    },
+    {
+      "demand": [
+        86,
+        5
+      ],
+      "unit": [
+        78,
+        1,
+        0
+      ]
+    }
+  ],
+  "frozen_augmented_count": 34,
+  "final_count": 36,
+  "new_paths": [
+    {
+      "root": [
+        86,
+        4
+      ],
+      "steps": [
+        [
+          [
+            86,
+            4
+          ],
+          [
+            75,
+            1,
+            0
+          ]
+        ]
+      ],
+      "terminal": [
+        75,
+        1,
+        0
+      ]
+    },
+    {
+      "root": [
+        86,
+        6
+      ],
+      "steps": [
+        [
+          [
+            86,
+            6
+          ],
+          [
+            81,
+            1,
+            0
+          ]
+        ]
+      ],
+      "terminal": [
+        81,
+        1,
+        0
+      ]
+    }
+  ],
+  "equals_existing_current_full36": true,
+  "current_frozen_input_rolled_back": false,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "input_sha256": {
+    "SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\SOURCE_JOINT_REPAIR_03\\actual_monotone_return_source.json": "5e00eb81aed692ab9982b5b4e3401e89827245a52748cf770ac21fa26d00e4b4",
+    "SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\SOURCE_JOINT_REPAIR_03\\actual_auxiliary_owner_extension.json": "c4058ea49bc1c4ae4dcaaa3b32cc12d45800dacb3d9ac014dec29634328594ae"
+  }
+}

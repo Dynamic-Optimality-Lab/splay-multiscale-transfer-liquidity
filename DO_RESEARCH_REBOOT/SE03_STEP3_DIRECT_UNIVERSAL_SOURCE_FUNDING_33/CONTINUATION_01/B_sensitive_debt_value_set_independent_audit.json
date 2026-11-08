@@ -1,0 +1,178 @@
+{
+  "status": "PASS_SOURCE_EXACT_ANY_FULL_B_SENSITIVE_DEBT_VALUE_SET_RULE_REFUTATION",
+  "scope": "ANY real F(actual B, SET of old D10 contraction values), nonnegative, F(B,{d})=d; fixed same one-private-gap1 signature",
+  "scalar_chain": [
+    "F(6496,{0,2})>=2",
+    "F(8680,{1,2})>=F(6496,{0,2})",
+    "F(8680,{1,2})<=1"
+  ],
+  "contradiction": "2<=F(8680,{1,2})<=1",
+  "width_or_optional_HIGH_envelopes_used": false,
+  "full_multiset_rules": "NOT REFUTED: intermediate[1,2] differs from[1,1,2] at B8680",
+  "actual_source_edges": [
+    {
+      "period": [
+        156,
+        310
+      ],
+      "packet_t": 215,
+      "costs": [
+        190,
+        19,
+        18
+      ],
+      "CD_margin": 361,
+      "new_fresh_A_accesses": 32,
+      "checked_G4_hull_instances": 122,
+      "checked_full_B_rigid_gap_instances": 66,
+      "checked_erased_B_rigid_gap_instances": 62,
+      "genuine_KEEP_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "all_original_operations_accounted_for": true,
+      "all_A_B_BE_and_recency_seams_close": true,
+      "source_B": 3277,
+      "target_B": 6496,
+      "source_value_set": [
+        2
+      ],
+      "target_value_set": [
+        0,
+        2
+      ],
+      "source_value_multiset": [
+        2
+      ],
+      "target_value_multiset": [
+        0,
+        2
+      ],
+      "price": 0
+    },
+    {
+      "period": [
+        136,
+        270
+      ],
+      "packet_t": 189,
+      "costs": [
+        166,
+        18,
+        15
+      ],
+      "CD_margin": 314,
+      "new_fresh_A_accesses": 32,
+      "checked_G4_hull_instances": 102,
+      "checked_full_B_rigid_gap_instances": 66,
+      "checked_erased_B_rigid_gap_instances": 62,
+      "genuine_KEEP_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "all_original_operations_accounted_for": true,
+      "all_A_B_BE_and_recency_seams_close": true,
+      "source_B": 6496,
+      "target_B": 8680,
+      "source_value_set": [
+        0,
+        2
+      ],
+      "target_value_set": [
+        1,
+        2
+      ],
+      "source_value_multiset": [
+        0,
+        2
+      ],
+      "target_value_multiset": [
+        1,
+        2
+      ],
+      "price": 0
+    },
+    {
+      "period": [
+        116,
+        230
+      ],
+      "packet_t": 163,
+      "costs": [
+        141,
+        19,
+        19
+      ],
+      "CD_margin": 263,
+      "new_fresh_A_accesses": 32,
+      "checked_G4_hull_instances": 82,
+      "checked_full_B_rigid_gap_instances": 66,
+      "checked_erased_B_rigid_gap_instances": 64,
+      "genuine_KEEP_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "all_original_operations_accounted_for": true,
+      "all_A_B_BE_and_recency_seams_close": true,
+      "source_B": 8680,
+      "target_B": 1620,
+      "source_value_set": [
+        1,
+        2
+      ],
+      "target_value_set": [
+        0
+      ],
+      "source_value_multiset": [
+        1,
+        1,
+        2
+      ],
+      "target_value_multiset": [
+        0
+      ],
+      "price": 1
+    }
+  ],
+  "source_queries": 96,
+  "source_engine_calls": 96,
+  "verification_method": "fresh mutable A for non-hull accesses plus independently checked complete G4/ten-anchor identities for EVERY remaining original operation; exact common-source composition and physical periods; not all operations reported as new engine replays",
+  "no_physical_bits_assigned_or_frozen_owners_changed": true,
+  "not_an_actual_full_A_state_path_or_CD_counterexample": true,
+  "principal_U33": "OPEN",
+  "input_sha256": {
+    "B_sensitive_set_edge_0_closed_source.json": "550966cc2835048980b8687e8f43570bbd7339ee8a916e0eb98af0aa65d8867f",
+    "B_sensitive_set_edge_1_closed_source.json": "6fbf38cc99d547088bbeba045329314a5eb76e706b25b338eda7d1522efdc692",
+    "B_sensitive_set_edge_2_closed_source.json": "db34a4da516a4cd5634132de9c4c890606da9b6bb66bcb3db03be526bf5c8746",
+    "native10_credit_certificate.json": "60a8453ecbf7e7a35cb7af45ef00d9c6285558ad424724bc16bc6881204d1d0b",
+    "native10_source_independent_audit.json": "36e867d6cc54647fcc0b256a7f946b25ebce6973e277eb9f9a7264793e2e2271",
+    "four_hull_source_basis_independent_audit.json": "eb606b40cbbd373b302ea1e2c8e8eff379f248652e941f28c004d2e18e4f994a",
+    "B_sensitive_source_only_obstruction.json": "7690603c76b9e953bd6f0869c568cbde34cf32e04ae99d049daf11ce3091c608",
+    "B_sensitive_full_multiset_chain_candidate.json": "699f031bb9e50202e6dbe980061395ae8842b162b703dd4c3650cc878be404a3",
+    "closed_word_composition_independent.py": "f1a5a5958382fe68369f997844a0d9e95d384c97d07fd1a0f767d2cf462ff091"
+  }
+}

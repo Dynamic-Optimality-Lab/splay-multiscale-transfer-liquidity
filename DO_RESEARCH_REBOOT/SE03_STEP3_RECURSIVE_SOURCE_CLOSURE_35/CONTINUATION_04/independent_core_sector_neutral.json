@@ -1,0 +1,7325 @@
+{
+  "status": "PASS_CSL_LOCAL_INJECTIONS_AND_NEUTRAL_SOURCE_PARTITIONS",
+  "controls": [
+    {
+      "source": "CCR",
+      "M": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "S": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "outside_S_physical_keys": [],
+      "period": [
+        51,
+        68
+      ],
+      "A": 23,
+      "Q": 22,
+      "P": 15,
+      "N": 2,
+      "B0": 9,
+      "B1": 13,
+      "B2": 0,
+      "Z1": 0,
+      "old_h0_values_preserved": 16,
+      "CSL_unpaid_labels": 6,
+      "CSL_macro_annotations": [
+        {
+          "end_t": 56,
+          "H": 8,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 57,
+          "H": 1,
+          "Q": 3,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 2,
+          "unpaid": 1,
+          "paths": [
+            {
+              "unpaid": [
+                57,
+                3
+              ],
+              "path": [
+                {
+                  "demand": [
+                    57,
+                    3
+                  ],
+                  "actual_first_loss_bit": [
+                    57,
+                    1,
+                    0
+                  ],
+                  "frozen_own_demand": [
+                    57,
+                    1
+                  ]
+                }
+              ],
+              "terminal_missing_sector_demand": [
+                57,
+                1
+              ],
+              "labels": [
+                [
+                  5
+                ],
+                [
+                  5,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "end_t": 58,
+          "H": 1,
+          "Q": 3,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 2,
+          "unpaid": 1,
+          "paths": [
+            {
+              "unpaid": [
+                58,
+                3
+              ],
+              "path": [
+                {
+                  "demand": [
+                    58,
+                    3
+                  ],
+                  "actual_first_loss_bit": [
+                    58,
+                    1,
+                    1
+                  ],
+                  "frozen_own_demand": [
+                    58,
+                    2
+                  ]
+                }
+              ],
+              "terminal_missing_sector_demand": [
+                58,
+                2
+              ],
+              "labels": [
+                [
+                  9,
+                  10,
+                  11
+                ],
+                [
+                  9,
+                  10,
+                  11,
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "end_t": 59,
+          "H": 1,
+          "Q": 3,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 1,
+          "unpaid": 1,
+          "paths": [
+            {
+              "unpaid": [
+                59,
+                3
+              ],
+              "path": [
+                {
+                  "demand": [
+                    59,
+                    3
+                  ],
+                  "actual_first_loss_bit": [
+                    59,
+                    1,
+                    0
+                  ],
+                  "frozen_own_demand": [
+                    59,
+                    1
+                  ]
+                }
+              ],
+              "terminal_missing_sector_demand": [
+                59,
+                1
+              ],
+              "labels": [
+                [
+                  3
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "end_t": 65,
+          "H": 9,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 66,
+          "H": 1,
+          "Q": 3,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 2,
+          "unpaid": 1,
+          "paths": [
+            {
+              "unpaid": [
+                66,
+                3
+              ],
+              "path": [
+                {
+                  "demand": [
+                    66,
+                    3
+                  ],
+                  "actual_first_loss_bit": [
+                    66,
+                    1,
+                    0
+                  ],
+                  "frozen_own_demand": [
+                    66,
+                    1
+                  ]
+                }
+              ],
+              "terminal_missing_sector_demand": [
+                66,
+                1
+              ],
+              "labels": [
+                [
+                  7
+                ],
+                [
+                  6,
+                  7
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "end_t": 67,
+          "H": 1,
+          "Q": 3,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 2,
+          "unpaid": 1,
+          "paths": [
+            {
+              "unpaid": [
+                67,
+                3
+              ],
+              "path": [
+                {
+                  "demand": [
+                    67,
+                    3
+                  ],
+                  "actual_first_loss_bit": [
+                    67,
+                    1,
+                    1
+                  ],
+                  "frozen_own_demand": [
+                    67,
+                    2
+                  ]
+                }
+              ],
+              "terminal_missing_sector_demand": [
+                67,
+                2
+              ],
+              "labels": [
+                [
+                  9,
+                  10,
+                  11
+                ],
+                [
+                  9,
+                  10,
+                  11,
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "end_t": 68,
+          "H": 1,
+          "Q": 3,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 1,
+          "unpaid": 1,
+          "paths": [
+            {
+              "unpaid": [
+                68,
+                3
+              ],
+              "path": [
+                {
+                  "demand": [
+                    68,
+                    3
+                  ],
+                  "actual_first_loss_bit": [
+                    68,
+                    1,
+                    0
+                  ],
+                  "frozen_own_demand": [
+                    68,
+                    1
+                  ]
+                }
+              ],
+              "terminal_missing_sector_demand": [
+                68,
+                1
+              ],
+              "labels": [
+                [
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "g_plus": [
+        {
+          "demand": [
+            56,
+            2
+          ],
+          "actual_bit": [
+            53,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            57,
+            2
+          ],
+          "actual_bit": [
+            57,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            57,
+            3
+          ],
+          "actual_bit": [
+            51,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            58,
+            2
+          ],
+          "actual_bit": [
+            58,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            58,
+            3
+          ],
+          "actual_bit": [
+            68,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            59,
+            1
+          ],
+          "actual_bit": [
+            59,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            59,
+            3
+          ],
+          "actual_bit": [
+            59,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            65,
+            2
+          ],
+          "actual_bit": [
+            64,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            66,
+            2
+          ],
+          "actual_bit": [
+            66,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            66,
+            3
+          ],
+          "actual_bit": [
+            63,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            67,
+            2
+          ],
+          "actual_bit": [
+            67,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            67,
+            3
+          ],
+          "actual_bit": [
+            62,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            68,
+            3
+          ],
+          "actual_bit": [
+            68,
+            1,
+            1
+          ]
+        }
+      ],
+      "analytical_remainder_bits": [
+        [
+          51,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          0
+        ],
+        [
+          52,
+          1,
+          1
+        ],
+        [
+          52,
+          2,
+          0
+        ],
+        [
+          52,
+          2,
+          1
+        ],
+        [
+          53,
+          1,
+          0
+        ],
+        [
+          54,
+          1,
+          0
+        ],
+        [
+          54,
+          1,
+          1
+        ],
+        [
+          54,
+          2,
+          0
+        ],
+        [
+          54,
+          2,
+          1
+        ],
+        [
+          54,
+          3,
+          0
+        ],
+        [
+          54,
+          3,
+          1
+        ],
+        [
+          55,
+          1,
+          0
+        ],
+        [
+          55,
+          1,
+          1
+        ],
+        [
+          57,
+          1,
+          1
+        ],
+        [
+          58,
+          1,
+          0
+        ],
+        [
+          60,
+          1,
+          0
+        ],
+        [
+          60,
+          1,
+          1
+        ],
+        [
+          60,
+          2,
+          0
+        ],
+        [
+          60,
+          2,
+          1
+        ],
+        [
+          61,
+          1,
+          0
+        ],
+        [
+          61,
+          1,
+          1
+        ],
+        [
+          62,
+          1,
+          0
+        ],
+        [
+          62,
+          1,
+          1
+        ],
+        [
+          62,
+          2,
+          1
+        ],
+        [
+          63,
+          1,
+          0
+        ],
+        [
+          63,
+          2,
+          0
+        ],
+        [
+          63,
+          2,
+          1
+        ],
+        [
+          64,
+          1,
+          1
+        ],
+        [
+          64,
+          2,
+          0
+        ],
+        [
+          64,
+          2,
+          1
+        ],
+        [
+          66,
+          1,
+          1
+        ],
+        [
+          67,
+          1,
+          0
+        ]
+      ],
+      "cyclic_level_pairings": [
+        {
+          "level": 11,
+          "positive_source_step": 1,
+          "actual_bit": [
+            51,
+            1,
+            1
+          ],
+          "decrease_source_step": 23,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            57,
+            3
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 25,
+          "actual_bit": [
+            58,
+            1,
+            1
+          ],
+          "decrease_source_step": 29,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            58,
+            2
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 33,
+          "actual_bit": [
+            59,
+            1,
+            1
+          ],
+          "decrease_source_step": 35,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            59,
+            1
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 42,
+          "actual_bit": [
+            60,
+            2,
+            0
+          ],
+          "decrease_source_step": 45,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 11,
+          "positive_source_step": 51,
+          "actual_bit": [
+            63,
+            1,
+            1
+          ],
+          "decrease_source_step": 67,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            66,
+            3
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 69,
+          "actual_bit": [
+            67,
+            1,
+            1
+          ],
+          "decrease_source_step": 73,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            67,
+            2
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 77,
+          "actual_bit": [
+            68,
+            1,
+            1
+          ],
+          "decrease_source_step": 83,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            68,
+            3
+          ]
+        },
+        {
+          "level": 12,
+          "positive_source_step": 6,
+          "actual_bit": [
+            53,
+            1,
+            1
+          ],
+          "decrease_source_step": 16,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            56,
+            2
+          ]
+        },
+        {
+          "level": 12,
+          "positive_source_step": 17,
+          "actual_bit": [
+            57,
+            1,
+            0
+          ],
+          "decrease_source_step": 21,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            57,
+            2
+          ]
+        },
+        {
+          "level": 12,
+          "positive_source_step": 53,
+          "actual_bit": [
+            64,
+            1,
+            0
+          ],
+          "decrease_source_step": 60,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            65,
+            2
+          ]
+        },
+        {
+          "level": 12,
+          "positive_source_step": 61,
+          "actual_bit": [
+            66,
+            1,
+            0
+          ],
+          "decrease_source_step": 65,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            66,
+            2
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 76,
+          "actual_bit": [
+            68,
+            1,
+            0
+          ],
+          "decrease_source_step": 31,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            58,
+            3
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 32,
+          "actual_bit": [
+            59,
+            1,
+            0
+          ],
+          "decrease_source_step": 39,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            59,
+            3
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 41,
+          "actual_bit": [
+            60,
+            1,
+            1
+          ],
+          "decrease_source_step": 46,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 10,
+          "positive_source_step": 48,
+          "actual_bit": [
+            62,
+            2,
+            0
+          ],
+          "decrease_source_step": 75,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            67,
+            3
+          ]
+        }
+      ],
+      "h0_preserving_new_partial_pairs": [
+        {
+          "demand": [
+            57,
+            3
+          ],
+          "actual_bit": [
+            53,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            66,
+            3
+          ],
+          "actual_bit": [
+            63,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            67,
+            3
+          ],
+          "actual_bit": [
+            62,
+            2,
+            0
+          ]
+        }
+      ],
+      "neutral_liability_paths": [
+        {
+          "unpaid_start": [
+            57,
+            3
+          ],
+          "path": [
+            {
+              "demand": [
+                57,
+                3
+              ],
+              "g_plus_bit": [
+                51,
+                1,
+                1
+              ],
+              "h0_owner": [
+                56,
+                2
+              ]
+            },
+            {
+              "demand": [
+                56,
+                2
+              ],
+              "g_plus_bit": [
+                53,
+                1,
+                1
+              ],
+              "h0_owner": null
+            }
+          ],
+          "actual_h0_unowned_bit": [
+            53,
+            1,
+            1
+          ],
+          "neutral_liability": null
+        },
+        {
+          "unpaid_start": [
+            58,
+            3
+          ],
+          "path": [
+            {
+              "demand": [
+                58,
+                3
+              ],
+              "g_plus_bit": [
+                68,
+                1,
+                0
+              ],
+              "h0_owner": [
+                68,
+                1
+              ]
+            }
+          ],
+          "actual_h0_unowned_bit": null,
+          "neutral_liability": [
+            68,
+            1
+          ]
+        },
+        {
+          "unpaid_start": [
+            59,
+            3
+          ],
+          "path": [
+            {
+              "demand": [
+                59,
+                3
+              ],
+              "g_plus_bit": [
+                59,
+                1,
+                0
+              ],
+              "h0_owner": [
+                59,
+                1
+              ]
+            },
+            {
+              "demand": [
+                59,
+                1
+              ],
+              "g_plus_bit": [
+                59,
+                1,
+                1
+              ],
+              "h0_owner": [
+                59,
+                2
+              ]
+            }
+          ],
+          "actual_h0_unowned_bit": null,
+          "neutral_liability": [
+            59,
+            2
+          ]
+        },
+        {
+          "unpaid_start": [
+            66,
+            3
+          ],
+          "path": [
+            {
+              "demand": [
+                66,
+                3
+              ],
+              "g_plus_bit": [
+                63,
+                1,
+                1
+              ],
+              "h0_owner": null
+            }
+          ],
+          "actual_h0_unowned_bit": [
+            63,
+            1,
+            1
+          ],
+          "neutral_liability": null
+        },
+        {
+          "unpaid_start": [
+            67,
+            3
+          ],
+          "path": [
+            {
+              "demand": [
+                67,
+                3
+              ],
+              "g_plus_bit": [
+                62,
+                2,
+                0
+              ],
+              "h0_owner": null
+            }
+          ],
+          "actual_h0_unowned_bit": [
+            62,
+            2,
+            0
+          ],
+          "neutral_liability": null
+        },
+        {
+          "unpaid_start": [
+            68,
+            3
+          ],
+          "path": [
+            {
+              "demand": [
+                68,
+                3
+              ],
+              "g_plus_bit": [
+                68,
+                1,
+                1
+              ],
+              "h0_owner": [
+                68,
+                2
+              ]
+            }
+          ],
+          "actual_h0_unowned_bit": null,
+          "neutral_liability": [
+            68,
+            2
+          ]
+        }
+      ],
+      "original_owners_modified": false,
+      "Bank25_or_full_frozen_policy_license_claimed": false
+    },
+    {
+      "source": "AF",
+      "M": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "S": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "outside_S_physical_keys": [],
+      "period": [
+        66,
+        130
+      ],
+      "A": 77,
+      "Q": 36,
+      "P": 76,
+      "N": 30,
+      "B0": 4,
+      "B1": 18,
+      "B2": 14,
+      "Z1": 0,
+      "old_h0_values_preserved": 32,
+      "CSL_unpaid_labels": 4,
+      "CSL_macro_annotations": [
+        {
+          "end_t": 66,
+          "H": 34,
+          "Q": 6,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 5,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 67,
+          "H": 1,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 70,
+          "H": 2,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 73,
+          "H": 4,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 76,
+          "H": 4,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 79,
+          "H": 4,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 82,
+          "H": 4,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 85,
+          "H": 3,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 86,
+          "H": 1,
+          "Q": 6,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 4,
+          "unpaid": 4,
+          "paths": [
+            {
+              "unpaid": [
+                86,
+                3
+              ],
+              "path": [],
+              "terminal_missing_sector_demand": [
+                86,
+                3
+              ],
+              "labels": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ]
+            },
+            {
+              "unpaid": [
+                86,
+                4
+              ],
+              "path": [],
+              "terminal_missing_sector_demand": [
+                86,
+                4
+              ],
+              "labels": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "unpaid": [
+                86,
+                5
+              ],
+              "path": [],
+              "terminal_missing_sector_demand": [
+                86,
+                5
+              ],
+              "labels": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              ]
+            },
+            {
+              "unpaid": [
+                86,
+                6
+              ],
+              "path": [
+                {
+                  "demand": [
+                    86,
+                    6
+                  ],
+                  "actual_first_loss_bit": [
+                    86,
+                    1,
+                    0
+                  ],
+                  "frozen_own_demand": [
+                    86,
+                    1
+                  ]
+                },
+                {
+                  "demand": [
+                    86,
+                    1
+                  ],
+                  "actual_first_loss_bit": [
+                    86,
+                    1,
+                    1
+                  ],
+                  "frozen_own_demand": [
+                    86,
+                    2
+                  ]
+                }
+              ],
+              "terminal_missing_sector_demand": [
+                86,
+                2
+              ],
+              "labels": [
+                [
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "end_t": 87,
+          "H": 1,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 90,
+          "H": 2,
+          "Q": 2,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 1,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 93,
+          "H": 3,
+          "Q": 2,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 1,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 96,
+          "H": 4,
+          "Q": 2,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 1,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 99,
+          "H": 3,
+          "Q": 2,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 1,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 102,
+          "H": 4,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 105,
+          "H": 3,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        }
+      ],
+      "g_plus": [
+        {
+          "demand": [
+            66,
+            1
+          ],
+          "actual_bit": [
+            66,
+            6,
+            1
+          ]
+        },
+        {
+          "demand": [
+            66,
+            2
+          ],
+          "actual_bit": [
+            66,
+            5,
+            1
+          ]
+        },
+        {
+          "demand": [
+            66,
+            3
+          ],
+          "actual_bit": [
+            66,
+            4,
+            1
+          ]
+        },
+        {
+          "demand": [
+            66,
+            4
+          ],
+          "actual_bit": [
+            66,
+            3,
+            1
+          ]
+        },
+        {
+          "demand": [
+            66,
+            5
+          ],
+          "actual_bit": [
+            66,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            66,
+            6
+          ],
+          "actual_bit": [
+            66,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            67,
+            1
+          ],
+          "actual_bit": [
+            67,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            70,
+            1
+          ],
+          "actual_bit": [
+            69,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            70,
+            2
+          ],
+          "actual_bit": [
+            69,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            73,
+            1
+          ],
+          "actual_bit": [
+            72,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            73,
+            2
+          ],
+          "actual_bit": [
+            72,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            76,
+            1
+          ],
+          "actual_bit": [
+            75,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            76,
+            2
+          ],
+          "actual_bit": [
+            75,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            79,
+            1
+          ],
+          "actual_bit": [
+            78,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            79,
+            2
+          ],
+          "actual_bit": [
+            78,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            82,
+            1
+          ],
+          "actual_bit": [
+            81,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            82,
+            2
+          ],
+          "actual_bit": [
+            81,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            85,
+            1
+          ],
+          "actual_bit": [
+            84,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            86,
+            1
+          ],
+          "actual_bit": [
+            86,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            86,
+            6
+          ],
+          "actual_bit": [
+            86,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            87,
+            1
+          ],
+          "actual_bit": [
+            87,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            90,
+            1
+          ],
+          "actual_bit": [
+            89,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            90,
+            2
+          ],
+          "actual_bit": [
+            83,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            93,
+            1
+          ],
+          "actual_bit": [
+            92,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            93,
+            2
+          ],
+          "actual_bit": [
+            83,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            96,
+            1
+          ],
+          "actual_bit": [
+            95,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            96,
+            2
+          ],
+          "actual_bit": [
+            94,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            99,
+            1
+          ],
+          "actual_bit": [
+            98,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            99,
+            2
+          ],
+          "actual_bit": [
+            94,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            102,
+            1
+          ],
+          "actual_bit": [
+            101,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            102,
+            2
+          ],
+          "actual_bit": [
+            100,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            105,
+            1
+          ],
+          "actual_bit": [
+            104,
+            1,
+            1
+          ]
+        }
+      ],
+      "analytical_remainder_bits": [
+        [
+          66,
+          1,
+          0
+        ],
+        [
+          66,
+          2,
+          0
+        ],
+        [
+          66,
+          3,
+          0
+        ],
+        [
+          66,
+          4,
+          0
+        ],
+        [
+          66,
+          5,
+          0
+        ],
+        [
+          66,
+          6,
+          0
+        ],
+        [
+          67,
+          1,
+          0
+        ],
+        [
+          69,
+          1,
+          0
+        ],
+        [
+          69,
+          2,
+          0
+        ],
+        [
+          71,
+          1,
+          0
+        ],
+        [
+          71,
+          1,
+          1
+        ],
+        [
+          72,
+          1,
+          1
+        ],
+        [
+          72,
+          2,
+          1
+        ],
+        [
+          72,
+          3,
+          0
+        ],
+        [
+          72,
+          3,
+          1
+        ],
+        [
+          74,
+          1,
+          0
+        ],
+        [
+          74,
+          1,
+          1
+        ],
+        [
+          75,
+          1,
+          1
+        ],
+        [
+          75,
+          2,
+          1
+        ],
+        [
+          75,
+          3,
+          0
+        ],
+        [
+          75,
+          3,
+          1
+        ],
+        [
+          77,
+          1,
+          0
+        ],
+        [
+          77,
+          1,
+          1
+        ],
+        [
+          78,
+          1,
+          1
+        ],
+        [
+          78,
+          2,
+          1
+        ],
+        [
+          78,
+          3,
+          0
+        ],
+        [
+          78,
+          3,
+          1
+        ],
+        [
+          80,
+          1,
+          0
+        ],
+        [
+          80,
+          1,
+          1
+        ],
+        [
+          81,
+          1,
+          1
+        ],
+        [
+          81,
+          2,
+          1
+        ],
+        [
+          81,
+          3,
+          0
+        ],
+        [
+          81,
+          3,
+          1
+        ],
+        [
+          84,
+          1,
+          1
+        ],
+        [
+          84,
+          2,
+          0
+        ],
+        [
+          84,
+          2,
+          1
+        ],
+        [
+          87,
+          1,
+          1
+        ],
+        [
+          89,
+          1,
+          0
+        ],
+        [
+          89,
+          1,
+          1
+        ],
+        [
+          89,
+          2,
+          1
+        ],
+        [
+          91,
+          1,
+          0
+        ],
+        [
+          91,
+          1,
+          1
+        ],
+        [
+          92,
+          1,
+          0
+        ],
+        [
+          92,
+          1,
+          1
+        ],
+        [
+          92,
+          2,
+          0
+        ],
+        [
+          95,
+          1,
+          0
+        ],
+        [
+          95,
+          1,
+          1
+        ],
+        [
+          95,
+          2,
+          0
+        ],
+        [
+          95,
+          3,
+          0
+        ],
+        [
+          95,
+          3,
+          1
+        ],
+        [
+          97,
+          1,
+          0
+        ],
+        [
+          97,
+          1,
+          1
+        ],
+        [
+          98,
+          1,
+          0
+        ],
+        [
+          98,
+          1,
+          1
+        ],
+        [
+          98,
+          2,
+          0
+        ],
+        [
+          100,
+          1,
+          0
+        ],
+        [
+          101,
+          1,
+          0
+        ],
+        [
+          101,
+          1,
+          1
+        ],
+        [
+          101,
+          2,
+          0
+        ],
+        [
+          101,
+          3,
+          0
+        ],
+        [
+          101,
+          3,
+          1
+        ],
+        [
+          103,
+          1,
+          0
+        ],
+        [
+          103,
+          1,
+          1
+        ],
+        [
+          104,
+          1,
+          0
+        ],
+        [
+          104,
+          2,
+          0
+        ],
+        [
+          104,
+          2,
+          1
+        ],
+        [
+          107,
+          1,
+          0
+        ],
+        [
+          107,
+          1,
+          1
+        ],
+        [
+          108,
+          1,
+          0
+        ],
+        [
+          108,
+          1,
+          1
+        ],
+        [
+          109,
+          1,
+          0
+        ],
+        [
+          109,
+          1,
+          1
+        ],
+        [
+          109,
+          2,
+          0
+        ],
+        [
+          109,
+          2,
+          1
+        ],
+        [
+          110,
+          1,
+          0
+        ],
+        [
+          110,
+          1,
+          1
+        ],
+        [
+          111,
+          1,
+          0
+        ],
+        [
+          111,
+          1,
+          1
+        ],
+        [
+          111,
+          2,
+          0
+        ],
+        [
+          111,
+          2,
+          1
+        ],
+        [
+          112,
+          1,
+          0
+        ],
+        [
+          112,
+          1,
+          1
+        ],
+        [
+          113,
+          1,
+          0
+        ],
+        [
+          113,
+          1,
+          1
+        ],
+        [
+          113,
+          2,
+          0
+        ],
+        [
+          113,
+          2,
+          1
+        ],
+        [
+          114,
+          1,
+          0
+        ],
+        [
+          114,
+          1,
+          1
+        ],
+        [
+          115,
+          1,
+          0
+        ],
+        [
+          115,
+          1,
+          1
+        ],
+        [
+          115,
+          2,
+          0
+        ],
+        [
+          115,
+          2,
+          1
+        ],
+        [
+          116,
+          1,
+          0
+        ],
+        [
+          116,
+          1,
+          1
+        ],
+        [
+          117,
+          1,
+          0
+        ],
+        [
+          117,
+          1,
+          1
+        ],
+        [
+          118,
+          1,
+          0
+        ],
+        [
+          118,
+          1,
+          1
+        ],
+        [
+          119,
+          1,
+          0
+        ],
+        [
+          119,
+          1,
+          1
+        ],
+        [
+          120,
+          1,
+          0
+        ],
+        [
+          120,
+          1,
+          1
+        ],
+        [
+          121,
+          1,
+          0
+        ],
+        [
+          121,
+          1,
+          1
+        ],
+        [
+          122,
+          1,
+          0
+        ],
+        [
+          122,
+          1,
+          1
+        ],
+        [
+          123,
+          1,
+          0
+        ],
+        [
+          123,
+          1,
+          1
+        ],
+        [
+          124,
+          1,
+          0
+        ],
+        [
+          124,
+          1,
+          1
+        ],
+        [
+          125,
+          1,
+          0
+        ],
+        [
+          125,
+          1,
+          1
+        ],
+        [
+          126,
+          1,
+          0
+        ],
+        [
+          126,
+          1,
+          1
+        ],
+        [
+          127,
+          1,
+          0
+        ],
+        [
+          127,
+          1,
+          1
+        ],
+        [
+          128,
+          1,
+          0
+        ],
+        [
+          128,
+          1,
+          1
+        ],
+        [
+          129,
+          1,
+          0
+        ],
+        [
+          129,
+          1,
+          1
+        ],
+        [
+          130,
+          1,
+          0
+        ],
+        [
+          130,
+          1,
+          1
+        ]
+      ],
+      "cyclic_level_pairings": [
+        {
+          "level": 1,
+          "positive_source_step": 0,
+          "actual_bit": [
+            66,
+            1,
+            0
+          ],
+          "decrease_source_step": 23,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            66,
+            6
+          ]
+        },
+        {
+          "level": 1,
+          "positive_source_step": 24,
+          "actual_bit": [
+            67,
+            1,
+            0
+          ],
+          "decrease_source_step": 27,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            67,
+            1
+          ]
+        },
+        {
+          "level": 1,
+          "positive_source_step": 28,
+          "actual_bit": [
+            69,
+            1,
+            0
+          ],
+          "decrease_source_step": 35,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            70,
+            2
+          ]
+        },
+        {
+          "level": 1,
+          "positive_source_step": 36,
+          "actual_bit": [
+            71,
+            1,
+            0
+          ],
+          "decrease_source_step": 197,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 1,
+          "actual_bit": [
+            66,
+            1,
+            1
+          ],
+          "decrease_source_step": 22,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            66,
+            6
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 25,
+          "actual_bit": [
+            67,
+            1,
+            1
+          ],
+          "decrease_source_step": 26,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            67,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 29,
+          "actual_bit": [
+            69,
+            1,
+            1
+          ],
+          "decrease_source_step": 34,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            70,
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 37,
+          "actual_bit": [
+            71,
+            1,
+            1
+          ],
+          "decrease_source_step": 196,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 3,
+          "positive_source_step": 2,
+          "actual_bit": [
+            66,
+            2,
+            0
+          ],
+          "decrease_source_step": 21,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            66,
+            5
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 30,
+          "actual_bit": [
+            69,
+            2,
+            0
+          ],
+          "decrease_source_step": 33,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            70,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 38,
+          "actual_bit": [
+            72,
+            1,
+            0
+          ],
+          "decrease_source_step": 47,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            73,
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 48,
+          "actual_bit": [
+            74,
+            1,
+            0
+          ],
+          "decrease_source_step": 195,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 4,
+          "positive_source_step": 3,
+          "actual_bit": [
+            66,
+            2,
+            1
+          ],
+          "decrease_source_step": 20,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            66,
+            5
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 31,
+          "actual_bit": [
+            69,
+            2,
+            1
+          ],
+          "decrease_source_step": 32,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            70,
+            1
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 39,
+          "actual_bit": [
+            72,
+            1,
+            1
+          ],
+          "decrease_source_step": 45,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            73,
+            1
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 49,
+          "actual_bit": [
+            74,
+            1,
+            1
+          ],
+          "decrease_source_step": 194,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 5,
+          "positive_source_step": 4,
+          "actual_bit": [
+            66,
+            3,
+            0
+          ],
+          "decrease_source_step": 19,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            66,
+            4
+          ]
+        },
+        {
+          "level": 5,
+          "positive_source_step": 40,
+          "actual_bit": [
+            72,
+            2,
+            0
+          ],
+          "decrease_source_step": 44,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            73,
+            1
+          ]
+        },
+        {
+          "level": 5,
+          "positive_source_step": 50,
+          "actual_bit": [
+            75,
+            1,
+            0
+          ],
+          "decrease_source_step": 59,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            76,
+            2
+          ]
+        },
+        {
+          "level": 5,
+          "positive_source_step": 60,
+          "actual_bit": [
+            77,
+            1,
+            0
+          ],
+          "decrease_source_step": 193,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 6,
+          "positive_source_step": 5,
+          "actual_bit": [
+            66,
+            3,
+            1
+          ],
+          "decrease_source_step": 18,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            66,
+            4
+          ]
+        },
+        {
+          "level": 6,
+          "positive_source_step": 41,
+          "actual_bit": [
+            72,
+            2,
+            1
+          ],
+          "decrease_source_step": 42,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 6,
+          "positive_source_step": 51,
+          "actual_bit": [
+            75,
+            1,
+            1
+          ],
+          "decrease_source_step": 57,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            76,
+            1
+          ]
+        },
+        {
+          "level": 6,
+          "positive_source_step": 61,
+          "actual_bit": [
+            77,
+            1,
+            1
+          ],
+          "decrease_source_step": 192,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 7,
+          "positive_source_step": 6,
+          "actual_bit": [
+            66,
+            4,
+            0
+          ],
+          "decrease_source_step": 17,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            66,
+            3
+          ]
+        },
+        {
+          "level": 7,
+          "positive_source_step": 52,
+          "actual_bit": [
+            75,
+            2,
+            0
+          ],
+          "decrease_source_step": 56,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            76,
+            1
+          ]
+        },
+        {
+          "level": 7,
+          "positive_source_step": 62,
+          "actual_bit": [
+            78,
+            1,
+            0
+          ],
+          "decrease_source_step": 71,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            79,
+            2
+          ]
+        },
+        {
+          "level": 7,
+          "positive_source_step": 72,
+          "actual_bit": [
+            80,
+            1,
+            0
+          ],
+          "decrease_source_step": 191,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 8,
+          "positive_source_step": 7,
+          "actual_bit": [
+            66,
+            4,
+            1
+          ],
+          "decrease_source_step": 16,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            66,
+            3
+          ]
+        },
+        {
+          "level": 8,
+          "positive_source_step": 53,
+          "actual_bit": [
+            75,
+            2,
+            1
+          ],
+          "decrease_source_step": 54,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 8,
+          "positive_source_step": 63,
+          "actual_bit": [
+            78,
+            1,
+            1
+          ],
+          "decrease_source_step": 69,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            79,
+            1
+          ]
+        },
+        {
+          "level": 8,
+          "positive_source_step": 73,
+          "actual_bit": [
+            80,
+            1,
+            1
+          ],
+          "decrease_source_step": 190,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 9,
+          "positive_source_step": 8,
+          "actual_bit": [
+            66,
+            5,
+            0
+          ],
+          "decrease_source_step": 15,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            66,
+            2
+          ]
+        },
+        {
+          "level": 9,
+          "positive_source_step": 64,
+          "actual_bit": [
+            78,
+            2,
+            0
+          ],
+          "decrease_source_step": 68,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            79,
+            1
+          ]
+        },
+        {
+          "level": 9,
+          "positive_source_step": 74,
+          "actual_bit": [
+            81,
+            1,
+            0
+          ],
+          "decrease_source_step": 83,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            82,
+            2
+          ]
+        },
+        {
+          "level": 9,
+          "positive_source_step": 84,
+          "actual_bit": [
+            83,
+            1,
+            0
+          ],
+          "decrease_source_step": 125,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            93,
+            2
+          ]
+        },
+        {
+          "level": 9,
+          "positive_source_step": 126,
+          "actual_bit": [
+            94,
+            1,
+            0
+          ],
+          "decrease_source_step": 145,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            99,
+            2
+          ]
+        },
+        {
+          "level": 9,
+          "positive_source_step": 146,
+          "actual_bit": [
+            100,
+            1,
+            0
+          ],
+          "decrease_source_step": 189,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 10,
+          "positive_source_step": 9,
+          "actual_bit": [
+            66,
+            5,
+            1
+          ],
+          "decrease_source_step": 14,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            66,
+            2
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 65,
+          "actual_bit": [
+            78,
+            2,
+            1
+          ],
+          "decrease_source_step": 66,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 10,
+          "positive_source_step": 75,
+          "actual_bit": [
+            81,
+            1,
+            1
+          ],
+          "decrease_source_step": 81,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            82,
+            1
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 85,
+          "actual_bit": [
+            83,
+            1,
+            1
+          ],
+          "decrease_source_step": 116,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            90,
+            2
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 117,
+          "actual_bit": [
+            91,
+            1,
+            0
+          ],
+          "decrease_source_step": 120,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 10,
+          "positive_source_step": 121,
+          "actual_bit": [
+            92,
+            2,
+            1
+          ],
+          "decrease_source_step": 123,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            93,
+            1
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 127,
+          "actual_bit": [
+            94,
+            1,
+            1
+          ],
+          "decrease_source_step": 136,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            96,
+            2
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 137,
+          "actual_bit": [
+            97,
+            1,
+            0
+          ],
+          "decrease_source_step": 140,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 10,
+          "positive_source_step": 141,
+          "actual_bit": [
+            98,
+            2,
+            1
+          ],
+          "decrease_source_step": 143,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            99,
+            1
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 147,
+          "actual_bit": [
+            100,
+            1,
+            1
+          ],
+          "decrease_source_step": 156,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            102,
+            2
+          ]
+        },
+        {
+          "level": 10,
+          "positive_source_step": 157,
+          "actual_bit": [
+            103,
+            1,
+            0
+          ],
+          "decrease_source_step": 168,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 10,
+          "positive_source_step": 169,
+          "actual_bit": [
+            109,
+            2,
+            0
+          ],
+          "decrease_source_step": 172,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 10,
+          "positive_source_step": 173,
+          "actual_bit": [
+            111,
+            2,
+            0
+          ],
+          "decrease_source_step": 176,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 10,
+          "positive_source_step": 177,
+          "actual_bit": [
+            113,
+            2,
+            0
+          ],
+          "decrease_source_step": 180,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 10,
+          "positive_source_step": 181,
+          "actual_bit": [
+            115,
+            2,
+            0
+          ],
+          "decrease_source_step": 188,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 11,
+          "positive_source_step": 10,
+          "actual_bit": [
+            66,
+            6,
+            0
+          ],
+          "decrease_source_step": 13,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            66,
+            1
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 76,
+          "actual_bit": [
+            81,
+            2,
+            0
+          ],
+          "decrease_source_step": 80,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            82,
+            1
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 86,
+          "actual_bit": [
+            84,
+            1,
+            0
+          ],
+          "decrease_source_step": 91,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            85,
+            1
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 92,
+          "actual_bit": [
+            86,
+            1,
+            0
+          ],
+          "decrease_source_step": 105,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            86,
+            6
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 106,
+          "actual_bit": [
+            87,
+            1,
+            0
+          ],
+          "decrease_source_step": 109,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            87,
+            1
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 112,
+          "actual_bit": [
+            89,
+            2,
+            0
+          ],
+          "decrease_source_step": 114,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            90,
+            1
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 131,
+          "actual_bit": [
+            95,
+            2,
+            1
+          ],
+          "decrease_source_step": 134,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            96,
+            1
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 148,
+          "actual_bit": [
+            101,
+            1,
+            0
+          ],
+          "decrease_source_step": 154,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            102,
+            1
+          ]
+        },
+        {
+          "level": 11,
+          "positive_source_step": 158,
+          "actual_bit": [
+            104,
+            1,
+            0
+          ],
+          "decrease_source_step": 163,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 11,
+          "positive_source_step": 164,
+          "actual_bit": [
+            107,
+            1,
+            1
+          ],
+          "decrease_source_step": 165,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 11,
+          "positive_source_step": 166,
+          "actual_bit": [
+            108,
+            1,
+            1
+          ],
+          "decrease_source_step": 167,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 11,
+          "positive_source_step": 170,
+          "actual_bit": [
+            110,
+            1,
+            0
+          ],
+          "decrease_source_step": 171,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 11,
+          "positive_source_step": 174,
+          "actual_bit": [
+            112,
+            1,
+            0
+          ],
+          "decrease_source_step": 175,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 11,
+          "positive_source_step": 178,
+          "actual_bit": [
+            114,
+            1,
+            0
+          ],
+          "decrease_source_step": 179,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 11,
+          "positive_source_step": 182,
+          "actual_bit": [
+            116,
+            1,
+            0
+          ],
+          "decrease_source_step": 183,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 11,
+          "positive_source_step": 184,
+          "actual_bit": [
+            117,
+            1,
+            1
+          ],
+          "decrease_source_step": 187,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 12,
+          "positive_source_step": 11,
+          "actual_bit": [
+            66,
+            6,
+            1
+          ],
+          "decrease_source_step": 12,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            66,
+            1
+          ]
+        },
+        {
+          "level": 12,
+          "positive_source_step": 77,
+          "actual_bit": [
+            81,
+            2,
+            1
+          ],
+          "decrease_source_step": 78,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 12,
+          "positive_source_step": 87,
+          "actual_bit": [
+            84,
+            1,
+            1
+          ],
+          "decrease_source_step": 88,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 12,
+          "positive_source_step": 93,
+          "actual_bit": [
+            86,
+            1,
+            1
+          ],
+          "decrease_source_step": 94,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            86,
+            1
+          ]
+        },
+        {
+          "level": 12,
+          "positive_source_step": 151,
+          "actual_bit": [
+            101,
+            2,
+            1
+          ],
+          "decrease_source_step": 153,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            102,
+            1
+          ]
+        },
+        {
+          "level": 12,
+          "positive_source_step": 159,
+          "actual_bit": [
+            104,
+            1,
+            1
+          ],
+          "decrease_source_step": 162,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            105,
+            1
+          ]
+        },
+        {
+          "level": 12,
+          "positive_source_step": 185,
+          "actual_bit": [
+            118,
+            1,
+            0
+          ],
+          "decrease_source_step": 186,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        }
+      ],
+      "h0_preserving_new_partial_pairs": [],
+      "neutral_liability_paths": [
+        {
+          "unpaid_start": [
+            86,
+            3
+          ],
+          "path": [],
+          "actual_h0_unowned_bit": null,
+          "neutral_liability": [
+            86,
+            3
+          ]
+        },
+        {
+          "unpaid_start": [
+            86,
+            4
+          ],
+          "path": [],
+          "actual_h0_unowned_bit": null,
+          "neutral_liability": [
+            86,
+            4
+          ]
+        },
+        {
+          "unpaid_start": [
+            86,
+            5
+          ],
+          "path": [],
+          "actual_h0_unowned_bit": null,
+          "neutral_liability": [
+            86,
+            5
+          ]
+        },
+        {
+          "unpaid_start": [
+            86,
+            6
+          ],
+          "path": [
+            {
+              "demand": [
+                86,
+                6
+              ],
+              "g_plus_bit": [
+                86,
+                1,
+                0
+              ],
+              "h0_owner": [
+                86,
+                1
+              ]
+            },
+            {
+              "demand": [
+                86,
+                1
+              ],
+              "g_plus_bit": [
+                86,
+                1,
+                1
+              ],
+              "h0_owner": [
+                86,
+                2
+              ]
+            }
+          ],
+          "actual_h0_unowned_bit": null,
+          "neutral_liability": [
+            86,
+            2
+          ]
+        }
+      ],
+      "original_owners_modified": false,
+      "Bank25_or_full_frozen_policy_license_claimed": false
+    },
+    {
+      "source": "NONMAX",
+      "M": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "S": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "outside_S_physical_keys": [],
+      "period": [
+        8,
+        14
+      ],
+      "A": 13,
+      "Q": 8,
+      "P": 21,
+      "N": 0,
+      "B0": 0,
+      "B1": 0,
+      "B2": 8,
+      "Z1": 5,
+      "old_h0_values_preserved": 8,
+      "CSL_unpaid_labels": 0,
+      "CSL_macro_annotations": [
+        {
+          "end_t": 8,
+          "H": 2,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 9,
+          "H": 2,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 10,
+          "H": 2,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 11,
+          "H": 2,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 12,
+          "H": 2,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 13,
+          "H": 2,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 14,
+          "H": 1,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        }
+      ],
+      "g_plus": [
+        {
+          "demand": [
+            8,
+            1
+          ],
+          "actual_bit": [
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            9,
+            1
+          ],
+          "actual_bit": [
+            9,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            9,
+            2
+          ],
+          "actual_bit": [
+            9,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            10,
+            1
+          ],
+          "actual_bit": [
+            10,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            11,
+            1
+          ],
+          "actual_bit": [
+            11,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            12,
+            1
+          ],
+          "actual_bit": [
+            12,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            13,
+            1
+          ],
+          "actual_bit": [
+            13,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            14,
+            1
+          ],
+          "actual_bit": [
+            14,
+            1,
+            1
+          ]
+        }
+      ],
+      "analytical_remainder_bits": [
+        [
+          8,
+          1,
+          0
+        ],
+        [
+          8,
+          1,
+          1
+        ],
+        [
+          8,
+          2,
+          1
+        ],
+        [
+          9,
+          1,
+          0
+        ],
+        [
+          9,
+          2,
+          0
+        ],
+        [
+          10,
+          1,
+          0
+        ],
+        [
+          10,
+          1,
+          1
+        ],
+        [
+          10,
+          2,
+          1
+        ],
+        [
+          11,
+          1,
+          0
+        ],
+        [
+          11,
+          1,
+          1
+        ],
+        [
+          11,
+          2,
+          1
+        ],
+        [
+          12,
+          1,
+          0
+        ],
+        [
+          12,
+          1,
+          1
+        ],
+        [
+          12,
+          2,
+          1
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          1
+        ],
+        [
+          13,
+          2,
+          1
+        ],
+        [
+          14,
+          1,
+          0
+        ]
+      ],
+      "cyclic_level_pairings": [
+        {
+          "level": 1,
+          "positive_source_step": 0,
+          "actual_bit": [
+            8,
+            1,
+            0
+          ],
+          "decrease_source_step": 5,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 6,
+          "actual_bit": [
+            9,
+            1,
+            0
+          ],
+          "decrease_source_step": 13,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            9,
+            2
+          ]
+        },
+        {
+          "level": 1,
+          "positive_source_step": 14,
+          "actual_bit": [
+            10,
+            1,
+            0
+          ],
+          "decrease_source_step": 19,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 20,
+          "actual_bit": [
+            11,
+            1,
+            0
+          ],
+          "decrease_source_step": 25,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 26,
+          "actual_bit": [
+            12,
+            1,
+            0
+          ],
+          "decrease_source_step": 31,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 32,
+          "actual_bit": [
+            13,
+            1,
+            0
+          ],
+          "decrease_source_step": 37,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 38,
+          "actual_bit": [
+            14,
+            1,
+            0
+          ],
+          "decrease_source_step": 41,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            14,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 1,
+          "actual_bit": [
+            8,
+            1,
+            1
+          ],
+          "decrease_source_step": 4,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            8,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 7,
+          "actual_bit": [
+            9,
+            1,
+            1
+          ],
+          "decrease_source_step": 12,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            9,
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 15,
+          "actual_bit": [
+            10,
+            1,
+            1
+          ],
+          "decrease_source_step": 18,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            10,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 21,
+          "actual_bit": [
+            11,
+            1,
+            1
+          ],
+          "decrease_source_step": 24,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            11,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 27,
+          "actual_bit": [
+            12,
+            1,
+            1
+          ],
+          "decrease_source_step": 30,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            12,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 33,
+          "actual_bit": [
+            13,
+            1,
+            1
+          ],
+          "decrease_source_step": 36,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            13,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 39,
+          "actual_bit": [
+            14,
+            1,
+            1
+          ],
+          "decrease_source_step": 40,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            14,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 2,
+          "actual_bit": [
+            8,
+            2,
+            0
+          ],
+          "decrease_source_step": 3,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            8,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 8,
+          "actual_bit": [
+            9,
+            2,
+            0
+          ],
+          "decrease_source_step": 11,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            9,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 16,
+          "actual_bit": [
+            10,
+            2,
+            0
+          ],
+          "decrease_source_step": 17,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            10,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 22,
+          "actual_bit": [
+            11,
+            2,
+            0
+          ],
+          "decrease_source_step": 23,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            11,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 28,
+          "actual_bit": [
+            12,
+            2,
+            0
+          ],
+          "decrease_source_step": 29,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            12,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 34,
+          "actual_bit": [
+            13,
+            2,
+            0
+          ],
+          "decrease_source_step": 35,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            13,
+            1
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 9,
+          "actual_bit": [
+            9,
+            2,
+            1
+          ],
+          "decrease_source_step": 10,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            9,
+            1
+          ]
+        }
+      ],
+      "h0_preserving_new_partial_pairs": [],
+      "neutral_liability_paths": [],
+      "original_owners_modified": false,
+      "Bank25_or_full_frozen_policy_license_claimed": false
+    },
+    {
+      "source": "PRIVATE_HELPER",
+      "M": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "S": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "outside_S_physical_keys": [
+        3
+      ],
+      "period": [
+        124,
+        246
+      ],
+      "A": 150,
+      "Q": 18,
+      "P": 95,
+      "N": 45,
+      "B0": 1,
+      "B1": 6,
+      "B2": 11,
+      "Z1": 22,
+      "old_h0_values_preserved": 18,
+      "CSL_unpaid_labels": 0,
+      "CSL_macro_annotations": [
+        {
+          "end_t": 167,
+          "H": 109,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 168,
+          "H": 1,
+          "Q": 2,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 1,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 169,
+          "H": 2,
+          "Q": 3,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 1,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 170,
+          "H": 2,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 171,
+          "H": 2,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 172,
+          "H": 2,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 173,
+          "H": 2,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 174,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 175,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 176,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 177,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 178,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 179,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 180,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 181,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 182,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 183,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 184,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 185,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 186,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 187,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 188,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 189,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 190,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 191,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 192,
+          "H": 1,
+          "Q": 0,
+          "present_sectors": 0,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 193,
+          "H": 3,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 194,
+          "H": 3,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 195,
+          "H": 2,
+          "Q": 2,
+          "present_sectors": 2,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 196,
+          "H": 1,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        },
+        {
+          "end_t": 197,
+          "H": 2,
+          "Q": 1,
+          "present_sectors": 1,
+          "doubly_missing_sectors": 0,
+          "unpaid": 0,
+          "paths": []
+        }
+      ],
+      "g_plus": [
+        {
+          "demand": [
+            168,
+            1
+          ],
+          "actual_bit": [
+            168,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            168,
+            2
+          ],
+          "actual_bit": [
+            163,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            169,
+            1
+          ],
+          "actual_bit": [
+            169,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            169,
+            3
+          ],
+          "actual_bit": [
+            169,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            170,
+            1
+          ],
+          "actual_bit": [
+            170,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            171,
+            1
+          ],
+          "actual_bit": [
+            171,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            171,
+            2
+          ],
+          "actual_bit": [
+            171,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            172,
+            1
+          ],
+          "actual_bit": [
+            172,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            173,
+            1
+          ],
+          "actual_bit": [
+            173,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            193,
+            1
+          ],
+          "actual_bit": [
+            193,
+            3,
+            0
+          ]
+        },
+        {
+          "demand": [
+            193,
+            2
+          ],
+          "actual_bit": [
+            193,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            194,
+            1
+          ],
+          "actual_bit": [
+            194,
+            3,
+            0
+          ]
+        },
+        {
+          "demand": [
+            194,
+            2
+          ],
+          "actual_bit": [
+            194,
+            2,
+            0
+          ]
+        },
+        {
+          "demand": [
+            195,
+            1
+          ],
+          "actual_bit": [
+            195,
+            2,
+            1
+          ]
+        },
+        {
+          "demand": [
+            195,
+            2
+          ],
+          "actual_bit": [
+            195,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            196,
+            1
+          ],
+          "actual_bit": [
+            196,
+            1,
+            1
+          ]
+        },
+        {
+          "demand": [
+            197,
+            1
+          ],
+          "actual_bit": [
+            197,
+            2,
+            0
+          ]
+        }
+      ],
+      "analytical_remainder_bits": [
+        [
+          124,
+          1,
+          0
+        ],
+        [
+          124,
+          1,
+          1
+        ],
+        [
+          125,
+          1,
+          0
+        ],
+        [
+          125,
+          1,
+          1
+        ],
+        [
+          126,
+          1,
+          0
+        ],
+        [
+          126,
+          1,
+          1
+        ],
+        [
+          127,
+          1,
+          0
+        ],
+        [
+          127,
+          1,
+          1
+        ],
+        [
+          128,
+          1,
+          0
+        ],
+        [
+          128,
+          1,
+          1
+        ],
+        [
+          129,
+          1,
+          0
+        ],
+        [
+          129,
+          1,
+          1
+        ],
+        [
+          130,
+          1,
+          0
+        ],
+        [
+          130,
+          1,
+          1
+        ],
+        [
+          131,
+          1,
+          0
+        ],
+        [
+          131,
+          1,
+          1
+        ],
+        [
+          132,
+          1,
+          0
+        ],
+        [
+          132,
+          1,
+          1
+        ],
+        [
+          133,
+          1,
+          0
+        ],
+        [
+          133,
+          1,
+          1
+        ],
+        [
+          134,
+          1,
+          0
+        ],
+        [
+          134,
+          1,
+          1
+        ],
+        [
+          135,
+          1,
+          0
+        ],
+        [
+          135,
+          1,
+          1
+        ],
+        [
+          136,
+          1,
+          0
+        ],
+        [
+          136,
+          1,
+          1
+        ],
+        [
+          137,
+          1,
+          0
+        ],
+        [
+          137,
+          1,
+          1
+        ],
+        [
+          138,
+          1,
+          0
+        ],
+        [
+          138,
+          1,
+          1
+        ],
+        [
+          139,
+          1,
+          0
+        ],
+        [
+          139,
+          1,
+          1
+        ],
+        [
+          140,
+          1,
+          0
+        ],
+        [
+          140,
+          1,
+          1
+        ],
+        [
+          141,
+          1,
+          0
+        ],
+        [
+          141,
+          1,
+          1
+        ],
+        [
+          142,
+          1,
+          0
+        ],
+        [
+          142,
+          1,
+          1
+        ],
+        [
+          143,
+          1,
+          0
+        ],
+        [
+          143,
+          1,
+          1
+        ],
+        [
+          144,
+          1,
+          0
+        ],
+        [
+          144,
+          1,
+          1
+        ],
+        [
+          145,
+          1,
+          0
+        ],
+        [
+          145,
+          1,
+          1
+        ],
+        [
+          146,
+          1,
+          0
+        ],
+        [
+          146,
+          1,
+          1
+        ],
+        [
+          147,
+          1,
+          0
+        ],
+        [
+          147,
+          1,
+          1
+        ],
+        [
+          148,
+          1,
+          0
+        ],
+        [
+          148,
+          1,
+          1
+        ],
+        [
+          149,
+          1,
+          0
+        ],
+        [
+          149,
+          1,
+          1
+        ],
+        [
+          149,
+          2,
+          0
+        ],
+        [
+          149,
+          2,
+          1
+        ],
+        [
+          150,
+          1,
+          0
+        ],
+        [
+          150,
+          1,
+          1
+        ],
+        [
+          150,
+          2,
+          0
+        ],
+        [
+          150,
+          2,
+          1
+        ],
+        [
+          151,
+          1,
+          0
+        ],
+        [
+          151,
+          1,
+          1
+        ],
+        [
+          152,
+          1,
+          0
+        ],
+        [
+          152,
+          1,
+          1
+        ],
+        [
+          153,
+          1,
+          0
+        ],
+        [
+          153,
+          1,
+          1
+        ],
+        [
+          154,
+          1,
+          0
+        ],
+        [
+          154,
+          1,
+          1
+        ],
+        [
+          154,
+          2,
+          0
+        ],
+        [
+          154,
+          2,
+          1
+        ],
+        [
+          155,
+          1,
+          0
+        ],
+        [
+          155,
+          1,
+          1
+        ],
+        [
+          155,
+          2,
+          0
+        ],
+        [
+          155,
+          2,
+          1
+        ],
+        [
+          156,
+          1,
+          0
+        ],
+        [
+          156,
+          1,
+          1
+        ],
+        [
+          157,
+          1,
+          0
+        ],
+        [
+          157,
+          1,
+          1
+        ],
+        [
+          158,
+          1,
+          0
+        ],
+        [
+          158,
+          1,
+          1
+        ],
+        [
+          159,
+          1,
+          0
+        ],
+        [
+          159,
+          1,
+          1
+        ],
+        [
+          159,
+          2,
+          0
+        ],
+        [
+          159,
+          2,
+          1
+        ],
+        [
+          160,
+          1,
+          0
+        ],
+        [
+          160,
+          1,
+          1
+        ],
+        [
+          160,
+          2,
+          0
+        ],
+        [
+          160,
+          2,
+          1
+        ],
+        [
+          161,
+          1,
+          0
+        ],
+        [
+          161,
+          1,
+          1
+        ],
+        [
+          162,
+          1,
+          0
+        ],
+        [
+          162,
+          1,
+          1
+        ],
+        [
+          163,
+          1,
+          1
+        ],
+        [
+          164,
+          1,
+          0
+        ],
+        [
+          164,
+          1,
+          1
+        ],
+        [
+          164,
+          2,
+          0
+        ],
+        [
+          164,
+          2,
+          1
+        ],
+        [
+          165,
+          1,
+          0
+        ],
+        [
+          165,
+          1,
+          1
+        ],
+        [
+          165,
+          2,
+          0
+        ],
+        [
+          165,
+          2,
+          1
+        ],
+        [
+          166,
+          1,
+          0
+        ],
+        [
+          166,
+          1,
+          1
+        ],
+        [
+          168,
+          1,
+          0
+        ],
+        [
+          169,
+          1,
+          1
+        ],
+        [
+          169,
+          2,
+          1
+        ],
+        [
+          170,
+          1,
+          0
+        ],
+        [
+          170,
+          1,
+          1
+        ],
+        [
+          170,
+          2,
+          1
+        ],
+        [
+          171,
+          1,
+          0
+        ],
+        [
+          171,
+          2,
+          0
+        ],
+        [
+          172,
+          1,
+          0
+        ],
+        [
+          172,
+          1,
+          1
+        ],
+        [
+          172,
+          2,
+          1
+        ],
+        [
+          173,
+          1,
+          0
+        ],
+        [
+          173,
+          1,
+          1
+        ],
+        [
+          173,
+          2,
+          1
+        ],
+        [
+          174,
+          1,
+          0
+        ],
+        [
+          174,
+          1,
+          1
+        ],
+        [
+          175,
+          1,
+          0
+        ],
+        [
+          175,
+          1,
+          1
+        ],
+        [
+          176,
+          1,
+          0
+        ],
+        [
+          176,
+          1,
+          1
+        ],
+        [
+          177,
+          1,
+          0
+        ],
+        [
+          177,
+          1,
+          1
+        ],
+        [
+          178,
+          1,
+          0
+        ],
+        [
+          178,
+          1,
+          1
+        ],
+        [
+          179,
+          1,
+          0
+        ],
+        [
+          179,
+          1,
+          1
+        ],
+        [
+          180,
+          1,
+          0
+        ],
+        [
+          180,
+          1,
+          1
+        ],
+        [
+          181,
+          1,
+          0
+        ],
+        [
+          181,
+          1,
+          1
+        ],
+        [
+          182,
+          1,
+          0
+        ],
+        [
+          182,
+          1,
+          1
+        ],
+        [
+          183,
+          1,
+          0
+        ],
+        [
+          183,
+          1,
+          1
+        ],
+        [
+          184,
+          1,
+          0
+        ],
+        [
+          184,
+          1,
+          1
+        ],
+        [
+          185,
+          1,
+          0
+        ],
+        [
+          185,
+          1,
+          1
+        ],
+        [
+          186,
+          1,
+          0
+        ],
+        [
+          186,
+          1,
+          1
+        ],
+        [
+          187,
+          1,
+          0
+        ],
+        [
+          187,
+          1,
+          1
+        ],
+        [
+          188,
+          1,
+          0
+        ],
+        [
+          188,
+          1,
+          1
+        ],
+        [
+          189,
+          1,
+          0
+        ],
+        [
+          189,
+          1,
+          1
+        ],
+        [
+          190,
+          1,
+          0
+        ],
+        [
+          190,
+          1,
+          1
+        ],
+        [
+          191,
+          1,
+          0
+        ],
+        [
+          191,
+          1,
+          1
+        ],
+        [
+          192,
+          1,
+          0
+        ],
+        [
+          192,
+          1,
+          1
+        ],
+        [
+          193,
+          1,
+          0
+        ],
+        [
+          193,
+          2,
+          0
+        ],
+        [
+          193,
+          2,
+          1
+        ],
+        [
+          193,
+          3,
+          1
+        ],
+        [
+          194,
+          1,
+          0
+        ],
+        [
+          194,
+          1,
+          1
+        ],
+        [
+          194,
+          2,
+          1
+        ],
+        [
+          194,
+          3,
+          1
+        ],
+        [
+          195,
+          1,
+          0
+        ],
+        [
+          195,
+          2,
+          0
+        ],
+        [
+          196,
+          1,
+          0
+        ],
+        [
+          197,
+          1,
+          0
+        ],
+        [
+          197,
+          1,
+          1
+        ],
+        [
+          197,
+          2,
+          1
+        ],
+        [
+          198,
+          1,
+          0
+        ],
+        [
+          198,
+          1,
+          1
+        ],
+        [
+          199,
+          1,
+          0
+        ],
+        [
+          199,
+          1,
+          1
+        ],
+        [
+          200,
+          1,
+          0
+        ],
+        [
+          200,
+          1,
+          1
+        ],
+        [
+          201,
+          1,
+          0
+        ],
+        [
+          201,
+          1,
+          1
+        ],
+        [
+          202,
+          1,
+          0
+        ],
+        [
+          202,
+          1,
+          1
+        ],
+        [
+          203,
+          1,
+          0
+        ],
+        [
+          203,
+          1,
+          1
+        ],
+        [
+          204,
+          1,
+          0
+        ],
+        [
+          204,
+          1,
+          1
+        ],
+        [
+          205,
+          1,
+          0
+        ],
+        [
+          205,
+          1,
+          1
+        ],
+        [
+          206,
+          1,
+          0
+        ],
+        [
+          206,
+          1,
+          1
+        ],
+        [
+          207,
+          1,
+          0
+        ],
+        [
+          207,
+          1,
+          1
+        ],
+        [
+          208,
+          1,
+          0
+        ],
+        [
+          208,
+          1,
+          1
+        ],
+        [
+          209,
+          1,
+          0
+        ],
+        [
+          209,
+          1,
+          1
+        ],
+        [
+          210,
+          1,
+          0
+        ],
+        [
+          210,
+          1,
+          1
+        ],
+        [
+          211,
+          1,
+          0
+        ],
+        [
+          211,
+          1,
+          1
+        ],
+        [
+          212,
+          1,
+          0
+        ],
+        [
+          212,
+          1,
+          1
+        ],
+        [
+          213,
+          1,
+          0
+        ],
+        [
+          213,
+          1,
+          1
+        ],
+        [
+          214,
+          1,
+          0
+        ],
+        [
+          214,
+          1,
+          1
+        ],
+        [
+          215,
+          1,
+          0
+        ],
+        [
+          215,
+          1,
+          1
+        ],
+        [
+          216,
+          1,
+          0
+        ],
+        [
+          216,
+          1,
+          1
+        ],
+        [
+          217,
+          1,
+          0
+        ],
+        [
+          217,
+          1,
+          1
+        ],
+        [
+          218,
+          1,
+          0
+        ],
+        [
+          218,
+          1,
+          1
+        ],
+        [
+          219,
+          1,
+          0
+        ],
+        [
+          219,
+          1,
+          1
+        ],
+        [
+          220,
+          1,
+          0
+        ],
+        [
+          220,
+          1,
+          1
+        ],
+        [
+          221,
+          1,
+          0
+        ],
+        [
+          221,
+          1,
+          1
+        ],
+        [
+          222,
+          1,
+          0
+        ],
+        [
+          222,
+          1,
+          1
+        ],
+        [
+          223,
+          1,
+          0
+        ],
+        [
+          223,
+          1,
+          1
+        ],
+        [
+          224,
+          1,
+          0
+        ],
+        [
+          224,
+          1,
+          1
+        ],
+        [
+          224,
+          2,
+          0
+        ],
+        [
+          224,
+          2,
+          1
+        ],
+        [
+          225,
+          1,
+          0
+        ],
+        [
+          225,
+          1,
+          1
+        ],
+        [
+          225,
+          2,
+          0
+        ],
+        [
+          225,
+          2,
+          1
+        ],
+        [
+          226,
+          1,
+          0
+        ],
+        [
+          226,
+          1,
+          1
+        ],
+        [
+          227,
+          1,
+          0
+        ],
+        [
+          227,
+          1,
+          1
+        ],
+        [
+          228,
+          1,
+          0
+        ],
+        [
+          228,
+          1,
+          1
+        ],
+        [
+          229,
+          1,
+          0
+        ],
+        [
+          229,
+          1,
+          1
+        ],
+        [
+          230,
+          1,
+          0
+        ],
+        [
+          230,
+          1,
+          1
+        ],
+        [
+          230,
+          2,
+          0
+        ],
+        [
+          230,
+          2,
+          1
+        ],
+        [
+          231,
+          1,
+          0
+        ],
+        [
+          231,
+          1,
+          1
+        ],
+        [
+          231,
+          2,
+          0
+        ],
+        [
+          231,
+          2,
+          1
+        ],
+        [
+          232,
+          1,
+          0
+        ],
+        [
+          232,
+          1,
+          1
+        ],
+        [
+          233,
+          1,
+          0
+        ],
+        [
+          233,
+          1,
+          1
+        ],
+        [
+          234,
+          1,
+          0
+        ],
+        [
+          234,
+          1,
+          1
+        ],
+        [
+          235,
+          1,
+          0
+        ],
+        [
+          235,
+          1,
+          1
+        ],
+        [
+          236,
+          1,
+          0
+        ],
+        [
+          236,
+          1,
+          1
+        ],
+        [
+          236,
+          2,
+          0
+        ],
+        [
+          236,
+          2,
+          1
+        ],
+        [
+          237,
+          1,
+          0
+        ],
+        [
+          237,
+          1,
+          1
+        ],
+        [
+          237,
+          2,
+          0
+        ],
+        [
+          237,
+          2,
+          1
+        ],
+        [
+          238,
+          1,
+          0
+        ],
+        [
+          238,
+          1,
+          1
+        ],
+        [
+          239,
+          1,
+          0
+        ],
+        [
+          239,
+          1,
+          1
+        ],
+        [
+          239,
+          2,
+          0
+        ],
+        [
+          239,
+          2,
+          1
+        ],
+        [
+          240,
+          1,
+          0
+        ],
+        [
+          240,
+          1,
+          1
+        ],
+        [
+          240,
+          2,
+          0
+        ],
+        [
+          240,
+          2,
+          1
+        ],
+        [
+          241,
+          1,
+          0
+        ],
+        [
+          241,
+          1,
+          1
+        ],
+        [
+          242,
+          1,
+          0
+        ],
+        [
+          242,
+          1,
+          1
+        ],
+        [
+          243,
+          1,
+          0
+        ],
+        [
+          243,
+          1,
+          1
+        ],
+        [
+          243,
+          2,
+          0
+        ],
+        [
+          243,
+          2,
+          1
+        ],
+        [
+          244,
+          1,
+          0
+        ],
+        [
+          244,
+          1,
+          1
+        ],
+        [
+          245,
+          1,
+          0
+        ],
+        [
+          245,
+          1,
+          1
+        ],
+        [
+          246,
+          1,
+          0
+        ],
+        [
+          246,
+          1,
+          1
+        ]
+      ],
+      "cyclic_level_pairings": [
+        {
+          "level": 1,
+          "positive_source_step": 0,
+          "actual_bit": [
+            124,
+            1,
+            0
+          ],
+          "decrease_source_step": 2,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 3,
+          "actual_bit": [
+            126,
+            1,
+            0
+          ],
+          "decrease_source_step": 4,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 6,
+          "actual_bit": [
+            129,
+            1,
+            0
+          ],
+          "decrease_source_step": 94,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 95,
+          "actual_bit": [
+            172,
+            1,
+            1
+          ],
+          "decrease_source_step": 115,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 116,
+          "actual_bit": [
+            178,
+            1,
+            1
+          ],
+          "decrease_source_step": 117,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 118,
+          "actual_bit": [
+            179,
+            1,
+            0
+          ],
+          "decrease_source_step": 119,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 120,
+          "actual_bit": [
+            180,
+            1,
+            0
+          ],
+          "decrease_source_step": 121,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 122,
+          "actual_bit": [
+            181,
+            1,
+            0
+          ],
+          "decrease_source_step": 123,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 124,
+          "actual_bit": [
+            182,
+            1,
+            0
+          ],
+          "decrease_source_step": 125,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 126,
+          "actual_bit": [
+            183,
+            1,
+            0
+          ],
+          "decrease_source_step": 127,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 128,
+          "actual_bit": [
+            184,
+            1,
+            0
+          ],
+          "decrease_source_step": 129,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 130,
+          "actual_bit": [
+            185,
+            1,
+            0
+          ],
+          "decrease_source_step": 131,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 132,
+          "actual_bit": [
+            186,
+            1,
+            0
+          ],
+          "decrease_source_step": 133,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 134,
+          "actual_bit": [
+            187,
+            1,
+            0
+          ],
+          "decrease_source_step": 135,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 136,
+          "actual_bit": [
+            188,
+            1,
+            0
+          ],
+          "decrease_source_step": 137,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 138,
+          "actual_bit": [
+            189,
+            1,
+            0
+          ],
+          "decrease_source_step": 139,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 140,
+          "actual_bit": [
+            190,
+            1,
+            0
+          ],
+          "decrease_source_step": 141,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 142,
+          "actual_bit": [
+            191,
+            1,
+            0
+          ],
+          "decrease_source_step": 143,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 145,
+          "actual_bit": [
+            192,
+            1,
+            1
+          ],
+          "decrease_source_step": 146,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 147,
+          "actual_bit": [
+            193,
+            1,
+            0
+          ],
+          "decrease_source_step": 178,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 179,
+          "actual_bit": [
+            197,
+            1,
+            1
+          ],
+          "decrease_source_step": 189,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 190,
+          "actual_bit": [
+            203,
+            1,
+            1
+          ],
+          "decrease_source_step": 191,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 192,
+          "actual_bit": [
+            205,
+            1,
+            0
+          ],
+          "decrease_source_step": 247,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 249,
+          "actual_bit": [
+            242,
+            1,
+            0
+          ],
+          "decrease_source_step": 254,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 1,
+          "positive_source_step": 255,
+          "actual_bit": [
+            245,
+            1,
+            0
+          ],
+          "decrease_source_step": 256,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 7,
+          "actual_bit": [
+            129,
+            1,
+            1
+          ],
+          "decrease_source_step": 8,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 9,
+          "actual_bit": [
+            131,
+            1,
+            0
+          ],
+          "decrease_source_step": 93,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            171,
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 96,
+          "actual_bit": [
+            172,
+            2,
+            0
+          ],
+          "decrease_source_step": 98,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            172,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 100,
+          "actual_bit": [
+            173,
+            1,
+            1
+          ],
+          "decrease_source_step": 110,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 111,
+          "actual_bit": [
+            176,
+            1,
+            1
+          ],
+          "decrease_source_step": 112,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 113,
+          "actual_bit": [
+            177,
+            1,
+            0
+          ],
+          "decrease_source_step": 114,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 148,
+          "actual_bit": [
+            193,
+            1,
+            1
+          ],
+          "decrease_source_step": 155,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            193,
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 156,
+          "actual_bit": [
+            194,
+            1,
+            0
+          ],
+          "decrease_source_step": 165,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 166,
+          "actual_bit": [
+            195,
+            1,
+            0
+          ],
+          "decrease_source_step": 173,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            195,
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 174,
+          "actual_bit": [
+            196,
+            1,
+            0
+          ],
+          "decrease_source_step": 177,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            196,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 180,
+          "actual_bit": [
+            197,
+            2,
+            0
+          ],
+          "decrease_source_step": 182,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            197,
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "positive_source_step": 183,
+          "actual_bit": [
+            198,
+            1,
+            0
+          ],
+          "decrease_source_step": 185,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 186,
+          "actual_bit": [
+            200,
+            1,
+            0
+          ],
+          "decrease_source_step": 187,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 193,
+          "actual_bit": [
+            205,
+            1,
+            1
+          ],
+          "decrease_source_step": 194,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 195,
+          "actual_bit": [
+            207,
+            1,
+            0
+          ],
+          "decrease_source_step": 240,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 242,
+          "actual_bit": [
+            239,
+            1,
+            0
+          ],
+          "decrease_source_step": 245,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 2,
+          "positive_source_step": 251,
+          "actual_bit": [
+            243,
+            1,
+            1
+          ],
+          "decrease_source_step": 253,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 3,
+          "positive_source_step": 10,
+          "actual_bit": [
+            131,
+            1,
+            1
+          ],
+          "decrease_source_step": 11,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 3,
+          "positive_source_step": 12,
+          "actual_bit": [
+            133,
+            1,
+            0
+          ],
+          "decrease_source_step": 49,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 3,
+          "positive_source_step": 50,
+          "actual_bit": [
+            159,
+            2,
+            0
+          ],
+          "decrease_source_step": 85,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 3,
+          "positive_source_step": 87,
+          "actual_bit": [
+            171,
+            1,
+            1
+          ],
+          "decrease_source_step": 92,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            171,
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 101,
+          "actual_bit": [
+            173,
+            2,
+            0
+          ],
+          "decrease_source_step": 103,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            173,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 105,
+          "actual_bit": [
+            174,
+            1,
+            1
+          ],
+          "decrease_source_step": 106,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 3,
+          "positive_source_step": 108,
+          "actual_bit": [
+            175,
+            1,
+            1
+          ],
+          "decrease_source_step": 109,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 3,
+          "positive_source_step": 150,
+          "actual_bit": [
+            193,
+            2,
+            1
+          ],
+          "decrease_source_step": 153,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            193,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 157,
+          "actual_bit": [
+            194,
+            1,
+            1
+          ],
+          "decrease_source_step": 164,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            194,
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 167,
+          "actual_bit": [
+            195,
+            1,
+            1
+          ],
+          "decrease_source_step": 172,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            195,
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 175,
+          "actual_bit": [
+            196,
+            1,
+            1
+          ],
+          "decrease_source_step": 176,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            196,
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "positive_source_step": 196,
+          "actual_bit": [
+            207,
+            1,
+            1
+          ],
+          "decrease_source_step": 197,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 3,
+          "positive_source_step": 198,
+          "actual_bit": [
+            209,
+            1,
+            0
+          ],
+          "decrease_source_step": 233,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 3,
+          "positive_source_step": 235,
+          "actual_bit": [
+            236,
+            1,
+            0
+          ],
+          "decrease_source_step": 238,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 4,
+          "positive_source_step": 15,
+          "actual_bit": [
+            136,
+            1,
+            0
+          ],
+          "decrease_source_step": 48,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 4,
+          "positive_source_step": 51,
+          "actual_bit": [
+            160,
+            1,
+            0
+          ],
+          "decrease_source_step": 70,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            168,
+            2
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 71,
+          "actual_bit": [
+            169,
+            1,
+            0
+          ],
+          "decrease_source_step": 79,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            169,
+            3
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 81,
+          "actual_bit": [
+            170,
+            1,
+            1
+          ],
+          "decrease_source_step": 84,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            170,
+            1
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 88,
+          "actual_bit": [
+            171,
+            2,
+            0
+          ],
+          "decrease_source_step": 91,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            171,
+            1
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 151,
+          "actual_bit": [
+            193,
+            3,
+            0
+          ],
+          "decrease_source_step": 152,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            193,
+            1
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 158,
+          "actual_bit": [
+            194,
+            2,
+            0
+          ],
+          "decrease_source_step": 163,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            194,
+            2
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 168,
+          "actual_bit": [
+            195,
+            2,
+            0
+          ],
+          "decrease_source_step": 171,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            195,
+            1
+          ]
+        },
+        {
+          "level": 4,
+          "positive_source_step": 201,
+          "actual_bit": [
+            212,
+            1,
+            0
+          ],
+          "decrease_source_step": 230,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 5,
+          "positive_source_step": 16,
+          "actual_bit": [
+            136,
+            1,
+            1
+          ],
+          "decrease_source_step": 17,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 5,
+          "positive_source_step": 18,
+          "actual_bit": [
+            138,
+            1,
+            0
+          ],
+          "decrease_source_step": 47,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 5,
+          "positive_source_step": 52,
+          "actual_bit": [
+            160,
+            1,
+            1
+          ],
+          "decrease_source_step": 54,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 5,
+          "positive_source_step": 56,
+          "actual_bit": [
+            163,
+            1,
+            0
+          ],
+          "decrease_source_step": 69,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            168,
+            2
+          ]
+        },
+        {
+          "level": 5,
+          "positive_source_step": 72,
+          "actual_bit": [
+            169,
+            1,
+            1
+          ],
+          "decrease_source_step": 75,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            169,
+            1
+          ]
+        },
+        {
+          "level": 5,
+          "positive_source_step": 82,
+          "actual_bit": [
+            170,
+            2,
+            0
+          ],
+          "decrease_source_step": 83,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            170,
+            1
+          ]
+        },
+        {
+          "level": 5,
+          "positive_source_step": 89,
+          "actual_bit": [
+            171,
+            2,
+            1
+          ],
+          "decrease_source_step": 90,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            171,
+            1
+          ]
+        },
+        {
+          "level": 5,
+          "positive_source_step": 159,
+          "actual_bit": [
+            194,
+            2,
+            1
+          ],
+          "decrease_source_step": 162,
+          "slot": "B_DOUBLE_EXTRA_RELEASE",
+          "demand": [
+            194,
+            1
+          ]
+        },
+        {
+          "level": 5,
+          "positive_source_step": 169,
+          "actual_bit": [
+            195,
+            2,
+            1
+          ],
+          "decrease_source_step": 170,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            195,
+            1
+          ]
+        },
+        {
+          "level": 5,
+          "positive_source_step": 202,
+          "actual_bit": [
+            212,
+            1,
+            1
+          ],
+          "decrease_source_step": 203,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 5,
+          "positive_source_step": 204,
+          "actual_bit": [
+            214,
+            1,
+            0
+          ],
+          "decrease_source_step": 223,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 5,
+          "positive_source_step": 225,
+          "actual_bit": [
+            230,
+            1,
+            0
+          ],
+          "decrease_source_step": 228,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 6,
+          "positive_source_step": 20,
+          "actual_bit": [
+            140,
+            1,
+            0
+          ],
+          "decrease_source_step": 44,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 6,
+          "positive_source_step": 58,
+          "actual_bit": [
+            164,
+            1,
+            1
+          ],
+          "decrease_source_step": 61,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 6,
+          "positive_source_step": 63,
+          "actual_bit": [
+            166,
+            1,
+            0
+          ],
+          "decrease_source_step": 64,
+          "slot": "B_ZIG_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 6,
+          "positive_source_step": 66,
+          "actual_bit": [
+            168,
+            1,
+            1
+          ],
+          "decrease_source_step": 68,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            168,
+            1
+          ]
+        },
+        {
+          "level": 6,
+          "positive_source_step": 73,
+          "actual_bit": [
+            169,
+            2,
+            0
+          ],
+          "decrease_source_step": 74,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            169,
+            1
+          ]
+        },
+        {
+          "level": 6,
+          "positive_source_step": 160,
+          "actual_bit": [
+            194,
+            3,
+            0
+          ],
+          "decrease_source_step": 161,
+          "slot": "GOOD_DOUBLE_PAYMENT",
+          "demand": [
+            194,
+            1
+          ]
+        },
+        {
+          "level": 6,
+          "positive_source_step": 206,
+          "actual_bit": [
+            216,
+            1,
+            0
+          ],
+          "decrease_source_step": 221,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 7,
+          "positive_source_step": 21,
+          "actual_bit": [
+            141,
+            1,
+            0
+          ],
+          "decrease_source_step": 28,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 7,
+          "positive_source_step": 30,
+          "actual_bit": [
+            149,
+            1,
+            0
+          ],
+          "decrease_source_step": 37,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 7,
+          "positive_source_step": 39,
+          "actual_bit": [
+            154,
+            1,
+            0
+          ],
+          "decrease_source_step": 42,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 7,
+          "positive_source_step": 207,
+          "actual_bit": [
+            217,
+            1,
+            0
+          ],
+          "decrease_source_step": 214,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 7,
+          "positive_source_step": 215,
+          "actual_bit": [
+            224,
+            1,
+            0
+          ],
+          "decrease_source_step": 220,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 8,
+          "positive_source_step": 22,
+          "actual_bit": [
+            141,
+            1,
+            1
+          ],
+          "decrease_source_step": 23,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 8,
+          "positive_source_step": 24,
+          "actual_bit": [
+            143,
+            1,
+            0
+          ],
+          "decrease_source_step": 27,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 8,
+          "positive_source_step": 31,
+          "actual_bit": [
+            149,
+            1,
+            1
+          ],
+          "decrease_source_step": 35,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 8,
+          "positive_source_step": 208,
+          "actual_bit": [
+            217,
+            1,
+            1
+          ],
+          "decrease_source_step": 209,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 8,
+          "positive_source_step": 210,
+          "actual_bit": [
+            219,
+            1,
+            0
+          ],
+          "decrease_source_step": 213,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        },
+        {
+          "level": 8,
+          "positive_source_step": 217,
+          "actual_bit": [
+            224,
+            2,
+            0
+          ],
+          "decrease_source_step": 218,
+          "slot": "A_NEGATIVE_RELEASE",
+          "demand": null
+        }
+      ],
+      "h0_preserving_new_partial_pairs": [],
+      "neutral_liability_paths": [],
+      "original_owners_modified": false,
+      "Bank25_or_full_frozen_policy_license_claimed": false
+    }
+  ],
+  "source_queries": 183,
+  "source_engine_calls": 183,
+  "identical_A_B_primitives_reused": 9,
+  "new_semantics": "fine source observables for new uniform derivations; previously accepted closure/E/charts reused",
+  "root_JR35": "OPEN",
+  "full_source_funding_or_Bank25_promotion": false,
+  "input_sha256": {
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\cluster_collateral_closed_source.json": "9bdacf3235d8fa3a47c27e814ee587713daf09d6823651c87f0f425f81afee7a",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\SOURCE_JOINT_REPAIR_03\\actual_monotone_return_source.json": "5e00eb81aed692ab9982b5b4e3401e89827245a52748cf770ac21fa26d00e4b4",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\maximal_completion_original_source.json": "a68b5540c5783b983dc55b7601a9ed64a86a549ff1730ae80942dd62c59ddd5c",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\B_full_spectrum_edge_0_closed_source.json": "68e725e92b1994a26f115b38f02d2116dfb2580bf30a6f60185295d86018b782",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\CORE_SECTOR_LIABILITY_THEOREM.md": "10424ea8fe1555ccb5c2ce136c1e945f039c8348b54981571da8ad5ff5031cb3",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\NEUTRAL_DOUBLE_SOURCE_DECOMPOSITION.md": "e449db5f2384707f231c1a097541d98b0847ceaa2acd1564e48d05e6a8d254df",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\ND35_CSL35_PROOF_REVIEW.md": "6742a73ca8d83cbe274adab039bc19645dbd6f6cef070977949df244c6c5595d",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\independent_source_bridges_collateral_audit.json": "b032e05b1c8536c6285b8e76ca6c03958d9ef1d31b3a14cc5ae41b42ba419d11",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\SOURCE_JOINT_REPAIR_03\\independent_source_audit.json": "921a1f94e0bfb5d99329a033ba1b62a0ace5a9ea5dc8ccf15d34e91e55f2f72e",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\B_full_spectrum_formula_independent_audit.json": "03a5ea3ddb1f5330a145122ed5ea227b13543c7fd70bc3ade142ee2d15b3b59d"
+  }
+}

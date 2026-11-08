@@ -1,0 +1,84 @@
+{
+  "status": "PROVED_UNIVERSAL_RESTRICTED_COARSE_DOUBLE_W5_CORE9",
+  "theorem": "forall W in W_5^9: Q_B(W) <= 2 A(W)",
+  "domain": {
+    "genuine_KEEP_keys": 5,
+    "marked_core_nodes": 9,
+    "legal_masks": 126,
+    "gap_slots": 10,
+    "signatures": "all original admissible ten-component saturated signatures",
+    "fringe": "arbitrary admissible",
+    "word_lengths": "arbitrary finite",
+    "closure": "exact labeled paired A/B tree closure",
+    "KEEP_DELETE": true,
+    "zero_cost": true,
+    "nongenuine_KEEP": true,
+    "E3_E4": true,
+    "primitive_and_nonprimitive": true,
+    "reachability_filter": false,
+    "new_support_or_population_bound": false
+  },
+  "graph": {
+    "region": "G_star = G_AF",
+    "ordinary_coordinates": 147,
+    "midpoint_coordinates": 127,
+    "weights": {
+      "OO": "original2H-q",
+      "OM": "original6-q",
+      "MO": 0,
+      "MM": "no edge"
+    },
+    "all_raw_fields_retained": true,
+    "SAME_full_midpoint": true,
+    "independent_private_witnesses": true,
+    "HIGH_v_free": true,
+    "MM": "FALSE"
+  },
+  "principal_derivation": "forall W choose its 11F closed P: 0 <= w(P) <= 2A(W)-Q_B(W)",
+  "dependencies": {
+    "simulation": "../06_CERTIFICATES/DIRECT_CDK5N_11F_FINAL_CLOSURE/STEP04_UNIVERSAL_CERTIFICATION/S04_STAGE11F_COMPLETION_CERTIFICATE.md",
+    "pointwise_sign": "../M3_XFER21/M3_CERTIFICATE.json",
+    "full_graph_coverage": "../06_CERTIFICATES/DIRECT_CDK5N_11G_FINAL_CLOSURE/STEP01_GRAPH_DOMAIN_AND_REDUCTION/G01_SOURCE_COVERAGE_THEOREM.md",
+    "exact_pins": "dependency_pins.json"
+  },
+  "potential": {
+    "ordinary": "W(O)=-D(O)-5*chi8(O.b)",
+    "midpoint": "W(M)=-5*chi8(M.b)",
+    "debt_equation": "D=max(F4,1_(P AND N AND C1),2*1_(P AND N AND C2))",
+    "debt_range": [
+      0,
+      2
+    ],
+    "chi8": "original raw b.kr[8]==0 AND b.rr[8]==19",
+    "original_h0": {
+      "actual_depth": 0,
+      "declared_depth": 18,
+      "q": 9,
+      "weight": -3
+    },
+    "fixed_current_public_state_only": true
+  },
+  "Step03_M1_M2_M3_closed": true,
+  "Step04_closed": true,
+  "mandatory_open_dependencies": [],
+  "R1_R4_preserved": true,
+  "Bank25": 25,
+  "proof": "RESTRICTED_CD_PROOF.md",
+  "domain_audit": "DOMAIN_AND_DEPENDENCY_AUDIT.md",
+  "independent_audit": "independent_audit.json",
+  "audit_explanation": "PROOF_AUDIT.md",
+  "resources": "resources_final.json",
+  "new_finite_tests": 0,
+  "completed_semantic_checks_replayed": 0,
+  "independent_audit_scope": "separate exact composition/source-interface checker; reuses completed universal theorems; not external peer review or whole-compiler formalization",
+  "unrestricted_Coarse_Double_proved": false,
+  "Dynamic_Optimality_proved": false,
+  "publication_gates": {
+    "mathematical_composition": "PASS",
+    "independent_audit": "PASS",
+    "phase_controllers": "PASS",
+    "cumulative_resources": "PASS",
+    "declared_dependency_hashes": "PASS",
+    "HEAD_and_tracked_tree": "PASS"
+  }
+}

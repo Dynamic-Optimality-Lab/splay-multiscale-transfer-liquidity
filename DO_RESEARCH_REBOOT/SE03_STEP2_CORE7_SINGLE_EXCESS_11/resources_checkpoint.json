@@ -1,0 +1,163 @@
+{
+  "status": "PASS_ALL_EXISTING_CAPS_PRESERVED",
+  "prior_CPU": 3404.1875,
+  "cumulative_CPU": 3415.84375,
+  "ceiling": 7200,
+  "required_reserve": 5,
+  "remaining_CPU": 3784.15625,
+  "available_before_reserve": 3779.15625,
+  "cumulative_group_CPU": {
+    "symbolic": 66.5,
+    "independent": 147.96875
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "remaining_group_CPU": {
+    "symbolic": 53.5,
+    "independent": 152.03125
+  },
+  "phases": [
+    {
+      "phase": "blocked",
+      "group": "independent",
+      "child_CPU": 0.15625,
+      "whole_controller_CPU": 0.140625,
+      "charge": 0.296875,
+      "reported_source_calls": 0,
+      "actual_source_calls": 0,
+      "new_finite_controls": 1,
+      "old_period_rows": 0
+    },
+    {
+      "phase": "construction2",
+      "group": "symbolic",
+      "child_CPU": 0.15625,
+      "whole_controller_CPU": 0.234375,
+      "charge": 0.390625,
+      "reported_source_calls": 96,
+      "actual_source_calls": 96,
+      "new_finite_controls": 6,
+      "old_period_rows": 0
+    },
+    {
+      "phase": "construction",
+      "group": "symbolic",
+      "child_CPU": 0.203125,
+      "whole_controller_CPU": 0.140625,
+      "charge": 0.34375,
+      "reported_source_calls": 0,
+      "actual_source_calls": 102,
+      "new_finite_controls": 6,
+      "old_period_rows": 0
+    },
+    {
+      "phase": "controls",
+      "group": "independent",
+      "child_CPU": 5.09375,
+      "whole_controller_CPU": 0.15625,
+      "charge": 5.25,
+      "reported_source_calls": 27820,
+      "actual_source_calls": 27820,
+      "new_finite_controls": 0,
+      "old_period_rows": 1856
+    },
+    {
+      "phase": "eligibility",
+      "group": "independent",
+      "child_CPU": 0.234375,
+      "whole_controller_CPU": 0.140625,
+      "charge": 0.375,
+      "reported_source_calls": 0,
+      "actual_source_calls": 0,
+      "new_finite_controls": 5256,
+      "old_period_rows": 0
+    },
+    {
+      "phase": "geometry",
+      "group": "symbolic",
+      "child_CPU": 0.25,
+      "whole_controller_CPU": 0.265625,
+      "charge": 0.515625,
+      "reported_source_calls": 3003,
+      "actual_source_calls": 3003,
+      "new_finite_controls": 0,
+      "old_period_rows": 0
+    },
+    {
+      "phase": "independent",
+      "group": "independent",
+      "child_CPU": 0.375,
+      "whole_controller_CPU": 0.140625,
+      "charge": 0.515625,
+      "reported_source_calls": 3121,
+      "actual_source_calls": 3121,
+      "new_finite_controls": 31110,
+      "old_period_rows": 0
+    },
+    {
+      "phase": "ownership",
+      "group": "independent",
+      "child_CPU": 1.09375,
+      "whole_controller_CPU": 0.140625,
+      "charge": 1.234375,
+      "reported_source_calls": 338,
+      "actual_source_calls": 338,
+      "new_finite_controls": 699,
+      "old_period_rows": 0
+    },
+    {
+      "phase": "seal2",
+      "group": "independent",
+      "child_CPU": 0.90625,
+      "whole_controller_CPU": 0.21875,
+      "charge": 1.125,
+      "reported_source_calls": 0,
+      "actual_source_calls": 0,
+      "new_finite_controls": 0,
+      "old_period_rows": 0
+    },
+    {
+      "phase": "seal",
+      "group": "independent",
+      "child_CPU": 1.109375,
+      "whole_controller_CPU": 0.21875,
+      "charge": 1.328125,
+      "reported_source_calls": 0,
+      "actual_source_calls": 0,
+      "new_finite_controls": 0,
+      "old_period_rows": 0
+    },
+    {
+      "phase": "stream",
+      "group": "independent",
+      "child_CPU": 0.140625,
+      "whole_controller_CPU": 0.140625,
+      "charge": 0.28125,
+      "reported_source_calls": 0,
+      "actual_source_calls": 0,
+      "new_finite_controls": 2,
+      "old_period_rows": 0
+    }
+  ],
+  "actual_source_engine_calls": 34480,
+  "query_accounting_correction": {
+    "status": "EXACT_STATIC_TRACE_ACCOUNTING_FOR_SUPERSEDED_DRAFT",
+    "phase": "construction",
+    "controller_reported_source_calls": 0,
+    "actual_source_calls": 102,
+    "reason": "p.replay has one A trace per operation and full/duplicate-E traces per KEEP when erased=None; explicit call counter absent in initial draft",
+    "draft_internal_estimate": 138,
+    "accepted_source_receipt": "physical_receipts2.json, actual erased recurrence, counted96 calls",
+    "CPU": "original child/controller already fully charged; no semantic check repeated to repair this ledger"
+  },
+  "query_live_cap": 2000000,
+  "DAG_cap": 4000000,
+  "edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "wall_cap_hours": 12,
+  "no_reset": true,
+  "metadata_convention": "same inherited entry/provenance/publication exclusion; all proof/replay/seal child and whole controller CPU charged",
+  "metadata_CPU_this_publication_excluded": 0.109375
+}

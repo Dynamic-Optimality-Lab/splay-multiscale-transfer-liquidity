@@ -1,0 +1,13 @@
+{"sigma": [1, 0, 0, 0, 0, 1, 1, 0, 1, 0], "helper": null, "word": [[0]], "canonical_queries": 75158, "private_visits": 91797, "CPU": 4.109}
+{"sigma": [1, 0, 0, 0, 0, 1, 1, 0, 1, 0], "helper": null, "word": [[1]], "canonical_queries": 151192, "private_visits": 184986, "CPU": 6.672}
+{"sigma": [1, 0, 0, 0, 0, 1, 1, 0, 1, 0], "helper": null, "word": [[0, 0]], "canonical_queries": 425945, "private_visits": 507278, "CPU": 16.391}
+{"sigma": [1, 0, 0, 0, 0, 1, 1, 0, 1, 0], "helper": null, "word": [[0, 1]], "canonical_queries": 495789, "private_visits": 592306, "CPU": 18.938}
+{"sigma": [1, 0, 0, 0, 0, 1, 1, 0, 1, 0], "helper": null, "word": [[1, 0]], "canonical_queries": 565777, "private_visits": 678201, "CPU": 21.453}
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_POP4_RISK05\audit.py", line 149, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_POP4_RISK05\audit.py", line 105, in main
+    assert queries<=2000000 and time.process_time()-start<CPU_CAP,'UNKNOWN independent query/CPU cap'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: UNKNOWN independent query/CPU cap

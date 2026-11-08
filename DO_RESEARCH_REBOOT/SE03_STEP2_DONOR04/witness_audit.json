@@ -1,0 +1,265 @@
+{
+  "status": "PASS_SOURCE_COMPOSITION_AND_RECEIPT",
+  "universal_fringe_variables": "F0..F11, all arbitrary ordered BSTs, never instantiated",
+  "word": [
+    {
+      "occurrence": 1,
+      "op": "K",
+      "key": 3
+    },
+    {
+      "occurrence": 2,
+      "op": "K",
+      "key": 5
+    },
+    {
+      "occurrence": 3,
+      "op": "K",
+      "key": 7
+    },
+    {
+      "occurrence": 4,
+      "op": "K",
+      "key": 9
+    },
+    {
+      "occurrence": 5,
+      "op": "K",
+      "key": 11
+    },
+    {
+      "occurrence": 6,
+      "op": "K",
+      "key": 9
+    },
+    {
+      "occurrence": 7,
+      "op": "K",
+      "key": 7
+    },
+    {
+      "occurrence": 8,
+      "op": "K",
+      "key": 5
+    },
+    {
+      "occurrence": 9,
+      "op": "K",
+      "key": 3
+    },
+    {
+      "occurrence": 10,
+      "op": "D",
+      "key": 1
+    },
+    {
+      "occurrence": 11,
+      "op": "D",
+      "key": 11
+    },
+    {
+      "occurrence": 12,
+      "op": "D",
+      "key": 1
+    },
+    {
+      "occurrence": 13,
+      "op": "K",
+      "key": 1
+    },
+    {
+      "occurrence": 14,
+      "op": "K",
+      "key": 11
+    },
+    {
+      "occurrence": 15,
+      "op": "K",
+      "key": 1
+    },
+    {
+      "occurrence": 16,
+      "op": "K",
+      "key": 3
+    },
+    {
+      "occurrence": 17,
+      "op": "K",
+      "key": 5
+    },
+    {
+      "occurrence": 18,
+      "op": "K",
+      "key": 7
+    },
+    {
+      "occurrence": 19,
+      "op": "K",
+      "key": 9
+    },
+    {
+      "occurrence": 20,
+      "op": "K",
+      "key": 11
+    },
+    {
+      "occurrence": 21,
+      "op": "K",
+      "key": 9
+    },
+    {
+      "occurrence": 22,
+      "op": "K",
+      "key": 7
+    },
+    {
+      "occurrence": 23,
+      "op": "K",
+      "key": 5
+    },
+    {
+      "occurrence": 24,
+      "op": "K",
+      "key": 3
+    },
+    {
+      "occurrence": 25,
+      "op": "K",
+      "key": 1
+    }
+  ],
+  "reused_identity_chain": [
+    {
+      "identity": "old W6 prefix",
+      "input": "R11",
+      "output": "T3",
+      "A": 9
+    },
+    {
+      "identity": "DONOR03 V A D1",
+      "input": "T3",
+      "output": "R11",
+      "A": 1
+    },
+    {
+      "identity": "old H6 max/min A, modes D",
+      "input": "R11",
+      "output": "P_full_max_min",
+      "A": 6
+    },
+    {
+      "identity": "K1 A root identity",
+      "input": "P_full_max_min",
+      "output": "P_full_max_min",
+      "A": 0
+    },
+    {
+      "identity": "old RR/LL inverse frame on roles1,2,11",
+      "input": "P_full_max_min",
+      "output": "P_full_max_min",
+      "A": 2
+    },
+    {
+      "identity": "old H6 ten-KEEP suffix",
+      "input": "P_full_max_min",
+      "output": "R11",
+      "A": 14
+    }
+  ],
+  "counts": {
+    "operations": 25,
+    "KEEP": 22,
+    "DELETE": 3,
+    "A": 32,
+    "QF": 30,
+    "QE_steady": 24,
+    "QE_first": 25,
+    "D3": 5,
+    "J3": 1,
+    "N": 0,
+    "P": 6,
+    "full_slack": 34
+  },
+  "actual_return_debt": 2,
+  "lower_floor_reused": "Hamiltonian normalization final source-capacity proof, same relative fixed nine-Score shape and visible marked maximum",
+  "receipt": [
+    {
+      "demand": [
+        1,
+        1
+      ],
+      "unit": [
+        11,
+        2,
+        0
+      ],
+      "class": "TAIL"
+    },
+    {
+      "demand": [
+        9,
+        1
+      ],
+      "unit": [
+        11,
+        2,
+        1
+      ],
+      "class": "TAIL"
+    },
+    {
+      "demand": [
+        16,
+        1
+      ],
+      "unit": [
+        11,
+        3,
+        0
+      ],
+      "class": "TAIL"
+    },
+    {
+      "demand": [
+        16,
+        2
+      ],
+      "unit": [
+        11,
+        3,
+        1
+      ],
+      "class": "TAIL"
+    },
+    {
+      "demand": [
+        24,
+        1
+      ],
+      "unit": [
+        11,
+        4,
+        0
+      ],
+      "class": "TAIL"
+    },
+    {
+      "demand": [
+        14,
+        5
+      ],
+      "unit": [
+        15,
+        1,
+        1
+      ],
+      "class": "RETURN_SURPLUS"
+    }
+  ],
+  "guard_failing_witness_claimed": false,
+  "universal_unguarded_closure": false,
+  "old_semantic_rows_replayed": 0,
+  "source_engine_calls": 0,
+  "new_finite_tests": 0,
+  "Step2": "OPEN"
+}

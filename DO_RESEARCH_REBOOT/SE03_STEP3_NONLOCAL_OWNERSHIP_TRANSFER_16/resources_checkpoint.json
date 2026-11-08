@@ -1,0 +1,57 @@
+{
+  "status": "CAPS_PRESERVED_U16_UNRESOLVED_NEW_INDEPENDENT_AUDIT_PENDING",
+  "prior_cumulative_CPU": 3607.6875,
+  "campaign_CPU": 0.640625,
+  "cumulative_CPU": 3608.328125,
+  "remaining_CPU": 3591.671875,
+  "reserve": 5,
+  "cumulative_group_CPU": {
+    "symbolic": 107.828125,
+    "independent": 299.125
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "group_remaining": {
+    "symbolic": 12.171875,
+    "independent": 0.875
+  },
+  "independent_remaining_below_unchanged_controller_reserve": true,
+  "new_independent_runs": 0,
+  "C15_integrity_seal": "PENDING_NOT_COMPLETED_BY_ENTRY_METADATA",
+  "campaign_source_engine_calls": 0,
+  "inherited_C15_source_engine_calls_including_failed_and_recovered_cutoff": 5912,
+  "C15_plus_C16_source_engine_calls": 5912,
+  "older_query_ledgers": "preserved in pinned predecessors; no new query or counter reset",
+  "query_cap": 2000000,
+  "live_record_cap": 2000000,
+  "DAG_cap": 4000000,
+  "stored_edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "max_observed_memory_this_campaign": 47202304,
+  "wall_cap_hours": 12,
+  "Bank25": 25,
+  "uniform_Bank25_schedule": "OPEN_NOT_PROMOTED",
+  "no_cap_reset": true,
+  "all_proof_construction_controller_runs_charged": true,
+  "runs": [
+    {
+      "phase": "construction",
+      "group": "symbolic",
+      "status": "PASS",
+      "child_CPU": 0.40625,
+      "controller_CPU": 0.234375,
+      "charge": 0.640625,
+      "source_engine_calls": 0,
+      "peak_working_set_bytes": 47202304
+    }
+  ],
+  "metadata_CPU_convention": "inherited entry/publication exclusion; no independent check reclassified",
+  "metadata_anchor_failures_preserved": [
+    "prepare_dependency_ledger.py: absent anticipated C13 FULL_PROOF.md",
+    "prepare_dependency_ledger_v2.py: absent anticipated C13 independent_audit.json"
+  ],
+  "actual_C13_dependencies_discovered": "CORE7_FULL_FUNDING.md and core7_seal.json",
+  "publication_metadata_CPU_excluded": 0.375
+}

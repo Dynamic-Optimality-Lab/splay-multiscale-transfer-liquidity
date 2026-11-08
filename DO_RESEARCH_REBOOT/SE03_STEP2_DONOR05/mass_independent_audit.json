@@ -1,0 +1,33 @@
+{
+  "status": "PASS_NEW_CLOSED_MAXIMAL_SOURCE_THEOREM",
+  "independent_representation": "dictionary primitive rotations versus tuple formulas/polynomial mass sums",
+  "proof_steps": [
+    "inorder interval alternation bounds every source subtree mass by1",
+    "marked source subtree mass1, unmarked source subtree mass0/1 by density",
+    "processed roots and original offpath hangers retain their internal label sets",
+    "rebuilt target mass1 and two proper masses0 at every pair",
+    "parent marked impossible since mass would be>=2",
+    "SS marked G -> two offpath masses0 -> K unchanged",
+    "SS unmarked G -> two offpath masses1 -> K decreases1",
+    "mixed -> both source unmarked masses1 -> K decreases2",
+    "zig at marked whole root would require mass>=2 -> impossible",
+    "full B closure forbids all strict decreases",
+    "any surviving unmarked mass1 is consumed at first descendant KEEP -> contradiction"
+  ],
+  "pitfall_checked": "processed subtrees are rigid under LATER outer frames; initial density not assumed on the entire intermediate tree",
+  "conclusion": "all actual B doubles same-side, marked G/unmarked P, all unmarked core subtree masses0",
+  "scope": "actual B-closed maximal core, all r>=2 and arbitrary finite ambient BSTs",
+  "frozen_graph_filtered": false,
+  "A_cost_bound_proved": false,
+  "core10_covered": false,
+  "new_finite_tests": 0,
+  "source_engine_calls": 0,
+  "old_semantic_rows_replayed": 0,
+  "new_graphs": 0,
+  "same_agent_separate_derivation": true,
+  "external_peer_review": false,
+  "whole_compiler_formalization": false,
+  "Step2": "OPEN",
+  "Step3": "OPEN",
+  "Universal_CD": "OPEN"
+}

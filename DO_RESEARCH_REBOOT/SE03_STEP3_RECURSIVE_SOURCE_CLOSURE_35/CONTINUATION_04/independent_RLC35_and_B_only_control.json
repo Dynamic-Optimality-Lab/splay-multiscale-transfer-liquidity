@@ -1,0 +1,7350 @@
+{
+  "status": "PASS_UNIFORM_RLC35_IDENTITIES_AND_EXACT_B_ONLY_SOURCE_COUNTERCONTROL",
+  "RLC_controls": [
+    {
+      "source": "AF",
+      "demands": 36,
+      "direct_groups": 31,
+      "SELF_claims": 5,
+      "same_key_SELF_collision_units": 0,
+      "forward_DIRECT_SELF_pairs": 5,
+      "forward_SELF_h0_checks": 0,
+      "raw_unmarked_or_virtual_reserve_units": 81,
+      "collisions": [
+        {
+          "unit": [
+            89,
+            2,
+            0
+          ],
+          "claims": [
+            {
+              "demand": [
+                87,
+                1
+              ],
+              "key": 13,
+              "type": "SELF",
+              "bit": [
+                89,
+                2,
+                0
+              ],
+              "pivot": 13,
+              "next_consumer": 90
+            },
+            {
+              "demand": [
+                90,
+                2
+              ],
+              "key": 11,
+              "type": "DIRECT",
+              "bit": [
+                89,
+                2,
+                0
+              ],
+              "pivot": 13
+            }
+          ]
+        },
+        {
+          "unit": [
+            92,
+            2,
+            1
+          ],
+          "claims": [
+            {
+              "demand": [
+                90,
+                1
+              ],
+              "key": 11,
+              "type": "SELF",
+              "bit": [
+                92,
+                2,
+                1
+              ],
+              "pivot": 11,
+              "next_consumer": 93
+            },
+            {
+              "demand": [
+                93,
+                2
+              ],
+              "key": 9,
+              "type": "DIRECT",
+              "bit": [
+                92,
+                2,
+                1
+              ],
+              "pivot": 11
+            }
+          ]
+        },
+        {
+          "unit": [
+            95,
+            2,
+            1
+          ],
+          "claims": [
+            {
+              "demand": [
+                93,
+                1
+              ],
+              "key": 9,
+              "type": "SELF",
+              "bit": [
+                95,
+                2,
+                1
+              ],
+              "pivot": 9,
+              "next_consumer": 96
+            },
+            {
+              "demand": [
+                96,
+                2
+              ],
+              "key": 7,
+              "type": "DIRECT",
+              "bit": [
+                95,
+                2,
+                1
+              ],
+              "pivot": 9
+            }
+          ]
+        },
+        {
+          "unit": [
+            98,
+            2,
+            1
+          ],
+          "claims": [
+            {
+              "demand": [
+                96,
+                1
+              ],
+              "key": 7,
+              "type": "SELF",
+              "bit": [
+                98,
+                2,
+                1
+              ],
+              "pivot": 7,
+              "next_consumer": 99
+            },
+            {
+              "demand": [
+                99,
+                2
+              ],
+              "key": 5,
+              "type": "DIRECT",
+              "bit": [
+                98,
+                2,
+                1
+              ],
+              "pivot": 7
+            }
+          ]
+        },
+        {
+          "unit": [
+            101,
+            2,
+            1
+          ],
+          "claims": [
+            {
+              "demand": [
+                99,
+                1
+              ],
+              "key": 5,
+              "type": "SELF",
+              "bit": [
+                101,
+                2,
+                1
+              ],
+              "pivot": 5,
+              "next_consumer": 102
+            },
+            {
+              "demand": [
+                102,
+                2
+              ],
+              "key": 3,
+              "type": "DIRECT",
+              "bit": [
+                101,
+                2,
+                1
+              ],
+              "pivot": 5
+            }
+          ]
+        }
+      ],
+      "raw_assignment": [
+        {
+          "demand": [
+            66,
+            1
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            91,
+            1,
+            0
+          ],
+          "pivot": 11
+        },
+        {
+          "demand": [
+            66,
+            2
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            94,
+            1,
+            0
+          ],
+          "pivot": 9
+        },
+        {
+          "demand": [
+            66,
+            3
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            97,
+            1,
+            0
+          ],
+          "pivot": 7
+        },
+        {
+          "demand": [
+            66,
+            4
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            100,
+            1,
+            0
+          ],
+          "pivot": 5
+        },
+        {
+          "demand": [
+            66,
+            5
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            103,
+            1,
+            0
+          ],
+          "pivot": 3
+        },
+        {
+          "demand": [
+            66,
+            6
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            107,
+            1,
+            1
+          ],
+          "pivot": 1
+        },
+        {
+          "demand": [
+            67,
+            1
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            67,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            70,
+            1
+          ],
+          "key": 3,
+          "type": "DIRECT",
+          "bit": [
+            69,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            70,
+            2
+          ],
+          "key": 3,
+          "type": "DIRECT",
+          "bit": [
+            69,
+            2,
+            0
+          ],
+          "pivot": 1
+        },
+        {
+          "demand": [
+            73,
+            1
+          ],
+          "key": 5,
+          "type": "DIRECT",
+          "bit": [
+            72,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            73,
+            2
+          ],
+          "key": 5,
+          "type": "DIRECT",
+          "bit": [
+            72,
+            2,
+            0
+          ],
+          "pivot": 3
+        },
+        {
+          "demand": [
+            76,
+            1
+          ],
+          "key": 7,
+          "type": "DIRECT",
+          "bit": [
+            75,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            76,
+            2
+          ],
+          "key": 7,
+          "type": "DIRECT",
+          "bit": [
+            75,
+            2,
+            0
+          ],
+          "pivot": 5
+        },
+        {
+          "demand": [
+            79,
+            1
+          ],
+          "key": 9,
+          "type": "DIRECT",
+          "bit": [
+            78,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            79,
+            2
+          ],
+          "key": 9,
+          "type": "DIRECT",
+          "bit": [
+            78,
+            2,
+            0
+          ],
+          "pivot": 7
+        },
+        {
+          "demand": [
+            82,
+            1
+          ],
+          "key": 11,
+          "type": "DIRECT",
+          "bit": [
+            81,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            82,
+            2
+          ],
+          "key": 11,
+          "type": "DIRECT",
+          "bit": [
+            81,
+            2,
+            0
+          ],
+          "pivot": 9
+        },
+        {
+          "demand": [
+            85,
+            1
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            84,
+            1,
+            0
+          ],
+          "pivot": 11
+        },
+        {
+          "demand": [
+            86,
+            1
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            71,
+            1,
+            0
+          ],
+          "pivot": 3
+        },
+        {
+          "demand": [
+            86,
+            2
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            74,
+            1,
+            0
+          ],
+          "pivot": 5
+        },
+        {
+          "demand": [
+            86,
+            3
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            77,
+            1,
+            0
+          ],
+          "pivot": 7
+        },
+        {
+          "demand": [
+            86,
+            4
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            80,
+            1,
+            0
+          ],
+          "pivot": 9
+        },
+        {
+          "demand": [
+            86,
+            5
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            83,
+            1,
+            0
+          ],
+          "pivot": 11
+        },
+        {
+          "demand": [
+            86,
+            6
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            86,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            87,
+            1
+          ],
+          "key": 13,
+          "type": "SELF",
+          "bit": [
+            89,
+            2,
+            0
+          ],
+          "pivot": 13,
+          "next_consumer": 90
+        },
+        {
+          "demand": [
+            90,
+            1
+          ],
+          "key": 11,
+          "type": "SELF",
+          "bit": [
+            92,
+            2,
+            1
+          ],
+          "pivot": 11,
+          "next_consumer": 93
+        },
+        {
+          "demand": [
+            93,
+            1
+          ],
+          "key": 9,
+          "type": "SELF",
+          "bit": [
+            95,
+            2,
+            1
+          ],
+          "pivot": 9,
+          "next_consumer": 96
+        },
+        {
+          "demand": [
+            96,
+            1
+          ],
+          "key": 7,
+          "type": "SELF",
+          "bit": [
+            98,
+            2,
+            1
+          ],
+          "pivot": 7,
+          "next_consumer": 99
+        },
+        {
+          "demand": [
+            99,
+            1
+          ],
+          "key": 5,
+          "type": "SELF",
+          "bit": [
+            101,
+            2,
+            1
+          ],
+          "pivot": 5,
+          "next_consumer": 102
+        },
+        {
+          "demand": [
+            102,
+            1
+          ],
+          "key": 3,
+          "type": "DIRECT",
+          "bit": [
+            87,
+            1,
+            0
+          ],
+          "pivot": 1
+        },
+        {
+          "demand": [
+            90,
+            2
+          ],
+          "key": 11,
+          "type": "DIRECT",
+          "bit": [
+            89,
+            2,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            93,
+            2
+          ],
+          "key": 9,
+          "type": "DIRECT",
+          "bit": [
+            92,
+            2,
+            1
+          ],
+          "pivot": 11
+        },
+        {
+          "demand": [
+            96,
+            2
+          ],
+          "key": 7,
+          "type": "DIRECT",
+          "bit": [
+            95,
+            2,
+            1
+          ],
+          "pivot": 9
+        },
+        {
+          "demand": [
+            99,
+            2
+          ],
+          "key": 5,
+          "type": "DIRECT",
+          "bit": [
+            98,
+            2,
+            1
+          ],
+          "pivot": 7
+        },
+        {
+          "demand": [
+            102,
+            2
+          ],
+          "key": 3,
+          "type": "DIRECT",
+          "bit": [
+            101,
+            2,
+            1
+          ],
+          "pivot": 5
+        },
+        {
+          "demand": [
+            105,
+            1
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            104,
+            1,
+            0
+          ],
+          "pivot": 3
+        }
+      ],
+      "h0_or_fE_mutated": false
+    },
+    {
+      "source": "CCR",
+      "demands": 22,
+      "direct_groups": 15,
+      "SELF_claims": 7,
+      "same_key_SELF_collision_units": 0,
+      "forward_DIRECT_SELF_pairs": 6,
+      "forward_SELF_h0_checks": 3,
+      "raw_unmarked_or_virtual_reserve_units": 6,
+      "collisions": [
+        {
+          "unit": [
+            53,
+            1,
+            1
+          ],
+          "claims": [
+            {
+              "demand": [
+                56,
+                1
+              ],
+              "key": 13,
+              "type": "DIRECT",
+              "bit": [
+                53,
+                1,
+                1
+              ],
+              "pivot": 11
+            },
+            {
+              "demand": [
+                67,
+                3
+              ],
+              "key": 11,
+              "type": "SELF",
+              "bit": [
+                53,
+                1,
+                1
+              ],
+              "pivot": 11,
+              "next_consumer": 56
+            }
+          ]
+        },
+        {
+          "unit": [
+            54,
+            1,
+            0
+          ],
+          "claims": [
+            {
+              "demand": [
+                57,
+                1
+              ],
+              "key": 5,
+              "type": "DIRECT",
+              "bit": [
+                54,
+                1,
+                0
+              ],
+              "pivot": 7
+            },
+            {
+              "demand": [
+                66,
+                2
+              ],
+              "key": 7,
+              "type": "SELF",
+              "bit": [
+                54,
+                1,
+                0
+              ],
+              "pivot": 7,
+              "next_consumer": 57
+            }
+          ]
+        },
+        {
+          "unit": [
+            60,
+            2,
+            0
+          ],
+          "claims": [
+            {
+              "demand": [
+                57,
+                2
+              ],
+              "key": 5,
+              "type": "DIRECT",
+              "bit": [
+                60,
+                2,
+                0
+              ],
+              "pivot": 3
+            },
+            {
+              "demand": [
+                59,
+                3
+              ],
+              "key": 3,
+              "type": "SELF",
+              "bit": [
+                60,
+                2,
+                0
+              ],
+              "pivot": 3,
+              "next_consumer": 57
+            }
+          ]
+        },
+        {
+          "unit": [
+            60,
+            1,
+            1
+          ],
+          "claims": [
+            {
+              "demand": [
+                58,
+                3
+              ],
+              "key": 9,
+              "type": "SELF",
+              "bit": [
+                60,
+                1,
+                1
+              ],
+              "pivot": 9,
+              "next_consumer": 65
+            },
+            {
+              "demand": [
+                67,
+                1
+              ],
+              "key": 11,
+              "type": "DIRECT",
+              "bit": [
+                60,
+                1,
+                1
+              ],
+              "pivot": 9
+            }
+          ]
+        },
+        {
+          "unit": [
+            63,
+            1,
+            1
+          ],
+          "claims": [
+            {
+              "demand": [
+                59,
+                2
+              ],
+              "key": 3,
+              "type": "SELF",
+              "bit": [
+                63,
+                1,
+                1
+              ],
+              "pivot": 3,
+              "next_consumer": 68
+            },
+            {
+              "demand": [
+                68,
+                1
+              ],
+              "key": 1,
+              "type": "DIRECT",
+              "bit": [
+                63,
+                1,
+                1
+              ],
+              "pivot": 3
+            }
+          ]
+        },
+        {
+          "unit": [
+            67,
+            1,
+            0
+          ],
+          "claims": [
+            {
+              "demand": [
+                65,
+                1
+              ],
+              "key": 13,
+              "type": "SELF",
+              "bit": [
+                67,
+                1,
+                0
+              ],
+              "pivot": 13,
+              "next_consumer": 67
+            },
+            {
+              "demand": [
+                67,
+                2
+              ],
+              "key": 11,
+              "type": "DIRECT",
+              "bit": [
+                67,
+                1,
+                0
+              ],
+              "pivot": 13
+            }
+          ]
+        }
+      ],
+      "raw_assignment": [
+        {
+          "demand": [
+            56,
+            1
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            53,
+            1,
+            1
+          ],
+          "pivot": 11
+        },
+        {
+          "demand": [
+            67,
+            3
+          ],
+          "key": 11,
+          "type": "SELF",
+          "bit": [
+            53,
+            1,
+            1
+          ],
+          "pivot": 11,
+          "next_consumer": 56
+        },
+        {
+          "demand": [
+            56,
+            2
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            67,
+            1,
+            1
+          ],
+          "pivot": 7
+        },
+        {
+          "demand": [
+            57,
+            1
+          ],
+          "key": 5,
+          "type": "DIRECT",
+          "bit": [
+            54,
+            1,
+            0
+          ],
+          "pivot": 7
+        },
+        {
+          "demand": [
+            66,
+            2
+          ],
+          "key": 7,
+          "type": "SELF",
+          "bit": [
+            54,
+            1,
+            0
+          ],
+          "pivot": 7,
+          "next_consumer": 57
+        },
+        {
+          "demand": [
+            57,
+            2
+          ],
+          "key": 5,
+          "type": "DIRECT",
+          "bit": [
+            60,
+            2,
+            0
+          ],
+          "pivot": 3
+        },
+        {
+          "demand": [
+            59,
+            3
+          ],
+          "key": 3,
+          "type": "SELF",
+          "bit": [
+            60,
+            2,
+            0
+          ],
+          "pivot": 3,
+          "next_consumer": 57
+        },
+        {
+          "demand": [
+            57,
+            3
+          ],
+          "key": 5,
+          "type": "DIRECT",
+          "bit": [
+            59,
+            1,
+            0
+          ],
+          "pivot": 9
+        },
+        {
+          "demand": [
+            58,
+            1
+          ],
+          "key": 9,
+          "type": "DIRECT",
+          "bit": [
+            52,
+            1,
+            0
+          ],
+          "pivot": 11
+        },
+        {
+          "demand": [
+            58,
+            2
+          ],
+          "key": 9,
+          "type": "DIRECT",
+          "bit": [
+            58,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            58,
+            3
+          ],
+          "key": 9,
+          "type": "SELF",
+          "bit": [
+            60,
+            1,
+            1
+          ],
+          "pivot": 9,
+          "next_consumer": 65
+        },
+        {
+          "demand": [
+            65,
+            2
+          ],
+          "key": 13,
+          "type": "DIRECT",
+          "bit": [
+            58,
+            1,
+            1
+          ],
+          "pivot": 5
+        },
+        {
+          "demand": [
+            59,
+            1
+          ],
+          "key": 3,
+          "type": "DIRECT",
+          "bit": [
+            51,
+            1,
+            1
+          ],
+          "pivot": 1
+        },
+        {
+          "demand": [
+            59,
+            2
+          ],
+          "key": 3,
+          "type": "SELF",
+          "bit": [
+            63,
+            1,
+            1
+          ],
+          "pivot": 3,
+          "next_consumer": 68
+        },
+        {
+          "demand": [
+            68,
+            2
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            59,
+            1,
+            1
+          ],
+          "pivot": 5
+        },
+        {
+          "demand": [
+            65,
+            1
+          ],
+          "key": 13,
+          "type": "SELF",
+          "bit": [
+            67,
+            1,
+            0
+          ],
+          "pivot": 13,
+          "next_consumer": 67
+        },
+        {
+          "demand": [
+            67,
+            1
+          ],
+          "key": 11,
+          "type": "DIRECT",
+          "bit": [
+            60,
+            1,
+            1
+          ],
+          "pivot": 9
+        },
+        {
+          "demand": [
+            66,
+            1
+          ],
+          "key": 7,
+          "type": "DIRECT",
+          "bit": [
+            62,
+            2,
+            1
+          ],
+          "pivot": 5
+        },
+        {
+          "demand": [
+            66,
+            3
+          ],
+          "key": 7,
+          "type": "SELF",
+          "bit": [
+            68,
+            1,
+            1
+          ],
+          "pivot": 7,
+          "next_consumer": 68
+        },
+        {
+          "demand": [
+            68,
+            3
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            66,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            67,
+            2
+          ],
+          "key": 11,
+          "type": "DIRECT",
+          "bit": [
+            67,
+            1,
+            0
+          ],
+          "pivot": 13
+        },
+        {
+          "demand": [
+            68,
+            1
+          ],
+          "key": 1,
+          "type": "DIRECT",
+          "bit": [
+            63,
+            1,
+            1
+          ],
+          "pivot": 3
+        }
+      ],
+      "h0_or_fE_mutated": false
+    }
+  ],
+  "B_only_countercontrol": {
+    "initial_A_and_B": [
+      7,
+      [
+        6,
+        [
+          5,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              4,
+              [
+                3,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          null
+        ],
+        null
+      ],
+      [
+        10,
+        [
+          8,
+          null,
+          [
+            9,
+            null,
+            null
+          ]
+        ],
+        [
+          13,
+          [
+            12,
+            [
+              11,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ]
+      ]
+    ],
+    "source_prefix_from_right_vine": [
+      5,
+      7,
+      9,
+      13,
+      7
+    ],
+    "word": [
+      1,
+      11,
+      3,
+      9,
+      1,
+      13,
+      5,
+      7
+    ],
+    "source_rows": [
+      {
+        "KEEP": 1,
+        "before": [
+          7,
+          [
+            6,
+            [
+              5,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  4,
+                  [
+                    3,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            10,
+            [
+              8,
+              null,
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              13,
+              [
+                12,
+                [
+                  11,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        "after": [
+          1,
+          null,
+          [
+            6,
+            [
+              2,
+              null,
+              [
+                5,
+                [
+                  4,
+                  [
+                    3,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ]
+            ],
+            [
+              7,
+              null,
+              [
+                10,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  13,
+                  [
+                    12,
+                    [
+                      11,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "H_when_A_equals_B": 2,
+        "Q": 2,
+        "events": [
+          {
+            "j": 1,
+            "pattern": "LL",
+            "grandparent": 5,
+            "parent": 2,
+            "rotations": [
+              {
+                "pivot": 5,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    10,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      13,
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  7,
+                  [
+                    6,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ],
+                  [
+                    10,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      13,
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 2,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  7,
+                  [
+                    6,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ],
+                  [
+                    10,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      13,
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  7,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          5,
+                          [
+                            4,
+                            [
+                              3,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ],
+                    null
+                  ],
+                  [
+                    10,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      13,
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 2,
+            "pattern": "LL",
+            "grandparent": 7,
+            "parent": 6,
+            "rotations": [
+              {
+                "pivot": 7,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  7,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          5,
+                          [
+                            4,
+                            [
+                              3,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ],
+                    null
+                  ],
+                  [
+                    10,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      13,
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  6,
+                  [
+                    1,
+                    null,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  [
+                    7,
+                    null,
+                    [
+                      10,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          null
+                        ]
+                      ],
+                      [
+                        13,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 6,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  6,
+                  [
+                    1,
+                    null,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  [
+                    7,
+                    null,
+                    [
+                      10,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          null
+                        ]
+                      ],
+                      [
+                        13,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        10,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          13,
+                          [
+                            12,
+                            [
+                              11,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "KEEP": 11,
+        "before": [
+          1,
+          null,
+          [
+            6,
+            [
+              2,
+              null,
+              [
+                5,
+                [
+                  4,
+                  [
+                    3,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ]
+            ],
+            [
+              7,
+              null,
+              [
+                10,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ],
+                [
+                  13,
+                  [
+                    12,
+                    [
+                      11,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "after": [
+          11,
+          [
+            6,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ]
+              ]
+            ],
+            [
+              10,
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              null
+            ]
+          ],
+          [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ]
+        ],
+        "H_when_A_equals_B": 3,
+        "Q": 3,
+        "events": [
+          {
+            "j": 1,
+            "pattern": "LL",
+            "grandparent": 13,
+            "parent": 12,
+            "rotations": [
+              {
+                "pivot": 13,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        10,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          13,
+                          [
+                            12,
+                            [
+                              11,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        10,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 12,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        10,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        10,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 2,
+            "pattern": "RR",
+            "grandparent": 7,
+            "parent": 10,
+            "rotations": [
+              {
+                "pivot": 7,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      7,
+                      null,
+                      [
+                        10,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 10,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      11,
+                      [
+                        10,
+                        [
+                          7,
+                          null,
+                          [
+                            8,
+                            null,
+                            [
+                              9,
+                              null,
+                              null
+                            ]
+                          ]
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 3,
+            "pattern": "RR",
+            "grandparent": 1,
+            "parent": 6,
+            "rotations": [
+              {
+                "pivot": 1,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      11,
+                      [
+                        10,
+                        [
+                          7,
+                          null,
+                          [
+                            8,
+                            null,
+                            [
+                              9,
+                              null,
+                              null
+                            ]
+                          ]
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  6,
+                  [
+                    1,
+                    null,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  [
+                    11,
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ],
+                    [
+                      12,
+                      null,
+                      [
+                        13,
+                        null,
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 6,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  6,
+                  [
+                    1,
+                    null,
+                    [
+                      2,
+                      null,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  [
+                    11,
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ],
+                    [
+                      12,
+                      null,
+                      [
+                        13,
+                        null,
+                        null
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  11,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          5,
+                          [
+                            4,
+                            [
+                              3,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "KEEP": 3,
+        "before": [
+          11,
+          [
+            6,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ]
+              ]
+            ],
+            [
+              10,
+              [
+                7,
+                null,
+                [
+                  8,
+                  null,
+                  [
+                    9,
+                    null,
+                    null
+                  ]
+                ]
+              ],
+              null
+            ]
+          ],
+          [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ]
+        ],
+        "after": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ],
+            [
+              11,
+              [
+                10,
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                null
+              ],
+              [
+                12,
+                null,
+                [
+                  13,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "H_when_A_equals_B": 3,
+        "Q": 3,
+        "events": [
+          {
+            "j": 1,
+            "pattern": "LL",
+            "grandparent": 5,
+            "parent": 4,
+            "rotations": [
+              {
+                "pivot": 5,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  11,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          5,
+                          [
+                            4,
+                            [
+                              3,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  11,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 4,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  11,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  11,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          3,
+                          null,
+                          [
+                            4,
+                            null,
+                            [
+                              5,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 2,
+            "pattern": "RR",
+            "grandparent": 1,
+            "parent": 2,
+            "rotations": [
+              {
+                "pivot": 1,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  11,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          3,
+                          null,
+                          [
+                            4,
+                            null,
+                            [
+                              5,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  11,
+                  [
+                    6,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 2,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  11,
+                  [
+                    6,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  11,
+                  [
+                    6,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        4,
+                        null,
+                        [
+                          5,
+                          null,
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 3,
+            "pattern": "LL",
+            "grandparent": 11,
+            "parent": 6,
+            "rotations": [
+              {
+                "pivot": 11,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  11,
+                  [
+                    6,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        4,
+                        null,
+                        [
+                          5,
+                          null,
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  6,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ]
+                  ],
+                  [
+                    11,
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ],
+                    [
+                      12,
+                      null,
+                      [
+                        13,
+                        null,
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 6,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  6,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ]
+                  ],
+                  [
+                    11,
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      null
+                    ],
+                    [
+                      12,
+                      null,
+                      [
+                        13,
+                        null,
+                        null
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      11,
+                      [
+                        10,
+                        [
+                          7,
+                          null,
+                          [
+                            8,
+                            null,
+                            [
+                              9,
+                              null,
+                              null
+                            ]
+                          ]
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "KEEP": 9,
+        "before": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          [
+            6,
+            [
+              4,
+              null,
+              [
+                5,
+                null,
+                null
+              ]
+            ],
+            [
+              11,
+              [
+                10,
+                [
+                  7,
+                  null,
+                  [
+                    8,
+                    null,
+                    [
+                      9,
+                      null,
+                      null
+                    ]
+                  ]
+                ],
+                null
+              ],
+              [
+                12,
+                null,
+                [
+                  13,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "after": [
+          9,
+          [
+            6,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            [
+              8,
+              [
+                7,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            10,
+            null,
+            [
+              11,
+              null,
+              [
+                12,
+                null,
+                [
+                  13,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "H_when_A_equals_B": 3,
+        "Q": 3,
+        "events": [
+          {
+            "j": 1,
+            "pattern": "RR",
+            "grandparent": 7,
+            "parent": 8,
+            "rotations": [
+              {
+                "pivot": 7,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      11,
+                      [
+                        10,
+                        [
+                          7,
+                          null,
+                          [
+                            8,
+                            null,
+                            [
+                              9,
+                              null,
+                              null
+                            ]
+                          ]
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      11,
+                      [
+                        10,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 8,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      11,
+                      [
+                        10,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      11,
+                      [
+                        10,
+                        [
+                          9,
+                          [
+                            8,
+                            [
+                              7,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 2,
+            "pattern": "LL",
+            "grandparent": 11,
+            "parent": 10,
+            "rotations": [
+              {
+                "pivot": 11,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      11,
+                      [
+                        10,
+                        [
+                          9,
+                          [
+                            8,
+                            [
+                              7,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 10,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      9,
+                      [
+                        8,
+                        [
+                          7,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 3,
+            "pattern": "RR",
+            "grandparent": 3,
+            "parent": 6,
+            "rotations": [
+              {
+                "pivot": 3,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    6,
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      9,
+                      [
+                        8,
+                        [
+                          7,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  6,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ]
+                  ],
+                  [
+                    9,
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 6,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  6,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    [
+                      4,
+                      null,
+                      [
+                        5,
+                        null,
+                        null
+                      ]
+                    ]
+                  ],
+                  [
+                    9,
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  9,
+                  [
+                    6,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        4,
+                        null,
+                        [
+                          5,
+                          null,
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    10,
+                    null,
+                    [
+                      11,
+                      null,
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "KEEP": 1,
+        "before": [
+          9,
+          [
+            6,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                4,
+                null,
+                [
+                  5,
+                  null,
+                  null
+                ]
+              ]
+            ],
+            [
+              8,
+              [
+                7,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            10,
+            null,
+            [
+              11,
+              null,
+              [
+                12,
+                null,
+                [
+                  13,
+                  null,
+                  null
+                ]
+              ]
+            ]
+          ]
+        ],
+        "after": [
+          1,
+          null,
+          [
+            6,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ],
+            [
+              9,
+              [
+                8,
+                [
+                  7,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                10,
+                null,
+                [
+                  11,
+                  null,
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "H_when_A_equals_B": 2,
+        "Q": 2,
+        "events": [
+          {
+            "j": 1,
+            "pattern": "LL",
+            "grandparent": 3,
+            "parent": 2,
+            "rotations": [
+              {
+                "pivot": 3,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  9,
+                  [
+                    6,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        4,
+                        null,
+                        [
+                          5,
+                          null,
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    10,
+                    null,
+                    [
+                      11,
+                      null,
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  9,
+                  [
+                    6,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    10,
+                    null,
+                    [
+                      11,
+                      null,
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 2,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  9,
+                  [
+                    6,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    10,
+                    null,
+                    [
+                      11,
+                      null,
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  9,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          3,
+                          null,
+                          [
+                            4,
+                            null,
+                            [
+                              5,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    10,
+                    null,
+                    [
+                      11,
+                      null,
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 2,
+            "pattern": "LL",
+            "grandparent": 9,
+            "parent": 6,
+            "rotations": [
+              {
+                "pivot": 9,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  9,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          3,
+                          null,
+                          [
+                            4,
+                            null,
+                            [
+                              5,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    10,
+                    null,
+                    [
+                      11,
+                      null,
+                      [
+                        12,
+                        null,
+                        [
+                          13,
+                          null,
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  6,
+                  [
+                    1,
+                    null,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    9,
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 6,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  6,
+                  [
+                    1,
+                    null,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    9,
+                    [
+                      8,
+                      [
+                        7,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    [
+                      10,
+                      null,
+                      [
+                        11,
+                        null,
+                        [
+                          12,
+                          null,
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      9,
+                      [
+                        8,
+                        [
+                          7,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "KEEP": 13,
+        "before": [
+          1,
+          null,
+          [
+            6,
+            [
+              2,
+              null,
+              [
+                3,
+                null,
+                [
+                  4,
+                  null,
+                  [
+                    5,
+                    null,
+                    null
+                  ]
+                ]
+              ]
+            ],
+            [
+              9,
+              [
+                8,
+                [
+                  7,
+                  null,
+                  null
+                ],
+                null
+              ],
+              [
+                10,
+                null,
+                [
+                  11,
+                  null,
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        "after": [
+          13,
+          [
+            6,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  [
+                    4,
+                    null,
+                    [
+                      5,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            [
+              10,
+              [
+                9,
+                [
+                  8,
+                  [
+                    7,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                12,
+                [
+                  11,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "H_when_A_equals_B": 3,
+        "Q": 3,
+        "events": [
+          {
+            "j": 1,
+            "pattern": "RR",
+            "grandparent": 11,
+            "parent": 12,
+            "rotations": [
+              {
+                "pivot": 11,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      9,
+                      [
+                        8,
+                        [
+                          7,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        10,
+                        null,
+                        [
+                          11,
+                          null,
+                          [
+                            12,
+                            null,
+                            [
+                              13,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      9,
+                      [
+                        8,
+                        [
+                          7,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        10,
+                        null,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 12,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      9,
+                      [
+                        8,
+                        [
+                          7,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        10,
+                        null,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          [
+                            13,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      9,
+                      [
+                        8,
+                        [
+                          7,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        10,
+                        null,
+                        [
+                          13,
+                          [
+                            12,
+                            [
+                              11,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 2,
+            "pattern": "RR",
+            "grandparent": 9,
+            "parent": 10,
+            "rotations": [
+              {
+                "pivot": 9,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      9,
+                      [
+                        8,
+                        [
+                          7,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        10,
+                        null,
+                        [
+                          13,
+                          [
+                            12,
+                            [
+                              11,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        13,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 10,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        13,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      13,
+                      [
+                        10,
+                        [
+                          9,
+                          [
+                            8,
+                            [
+                              7,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 3,
+            "pattern": "RR",
+            "grandparent": 1,
+            "parent": 6,
+            "rotations": [
+              {
+                "pivot": 1,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  1,
+                  null,
+                  [
+                    6,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      13,
+                      [
+                        10,
+                        [
+                          9,
+                          [
+                            8,
+                            [
+                              7,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  6,
+                  [
+                    1,
+                    null,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    13,
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ]
+                ]
+              },
+              {
+                "pivot": 6,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  6,
+                  [
+                    1,
+                    null,
+                    [
+                      2,
+                      null,
+                      [
+                        3,
+                        null,
+                        [
+                          4,
+                          null,
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    13,
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ]
+                ],
+                "after": [
+                  13,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          3,
+                          null,
+                          [
+                            4,
+                            null,
+                            [
+                              5,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "KEEP": 5,
+        "before": [
+          13,
+          [
+            6,
+            [
+              1,
+              null,
+              [
+                2,
+                null,
+                [
+                  3,
+                  null,
+                  [
+                    4,
+                    null,
+                    [
+                      5,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            [
+              10,
+              [
+                9,
+                [
+                  8,
+                  [
+                    7,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              [
+                12,
+                [
+                  11,
+                  null,
+                  null
+                ],
+                null
+              ]
+            ]
+          ],
+          null
+        ],
+        "after": [
+          5,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              4,
+              [
+                3,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            6,
+            null,
+            [
+              13,
+              [
+                10,
+                [
+                  9,
+                  [
+                    8,
+                    [
+                      7,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                [
+                  12,
+                  [
+                    11,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              null
+            ]
+          ]
+        ],
+        "H_when_A_equals_B": 3,
+        "Q": 3,
+        "events": [
+          {
+            "j": 1,
+            "pattern": "RR",
+            "grandparent": 3,
+            "parent": 4,
+            "rotations": [
+              {
+                "pivot": 3,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  13,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          3,
+                          null,
+                          [
+                            4,
+                            null,
+                            [
+                              5,
+                              null,
+                              null
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ],
+                "after": [
+                  13,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ]
+              },
+              {
+                "pivot": 4,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  13,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          [
+                            5,
+                            null,
+                            null
+                          ]
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ],
+                "after": [
+                  13,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          5,
+                          [
+                            4,
+                            [
+                              3,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ]
+              }
+            ]
+          },
+          {
+            "j": 2,
+            "pattern": "RR",
+            "grandparent": 1,
+            "parent": 2,
+            "rotations": [
+              {
+                "pivot": 1,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  13,
+                  [
+                    6,
+                    [
+                      1,
+                      null,
+                      [
+                        2,
+                        null,
+                        [
+                          5,
+                          [
+                            4,
+                            [
+                              3,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ],
+                "after": [
+                  13,
+                  [
+                    6,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ]
+              },
+              {
+                "pivot": 2,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  13,
+                  [
+                    6,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ],
+                "after": [
+                  13,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ]
+              }
+            ]
+          },
+          {
+            "j": 3,
+            "pattern": "LL",
+            "grandparent": 13,
+            "parent": 6,
+            "rotations": [
+              {
+                "pivot": 13,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  13,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ],
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ],
+                  null
+                ],
+                "after": [
+                  6,
+                  [
+                    5,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        4,
+                        [
+                          3,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ],
+                  [
+                    13,
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ]
+                ]
+              },
+              {
+                "pivot": 6,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  6,
+                  [
+                    5,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        4,
+                        [
+                          3,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ],
+                  [
+                    13,
+                    [
+                      10,
+                      [
+                        9,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ]
+                ],
+                "after": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      13,
+                      [
+                        10,
+                        [
+                          9,
+                          [
+                            8,
+                            [
+                              7,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ]
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "KEEP": 7,
+        "before": [
+          5,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            [
+              4,
+              [
+                3,
+                null,
+                null
+              ],
+              null
+            ]
+          ],
+          [
+            6,
+            null,
+            [
+              13,
+              [
+                10,
+                [
+                  9,
+                  [
+                    8,
+                    [
+                      7,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                [
+                  12,
+                  [
+                    11,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              null
+            ]
+          ]
+        ],
+        "after": [
+          7,
+          [
+            6,
+            [
+              5,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                [
+                  4,
+                  [
+                    3,
+                    null,
+                    null
+                  ],
+                  null
+                ]
+              ],
+              null
+            ],
+            null
+          ],
+          [
+            10,
+            [
+              8,
+              null,
+              [
+                9,
+                null,
+                null
+              ]
+            ],
+            [
+              13,
+              [
+                12,
+                [
+                  11,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ]
+          ]
+        ],
+        "H_when_A_equals_B": 3,
+        "Q": 3,
+        "events": [
+          {
+            "j": 1,
+            "pattern": "LL",
+            "grandparent": 9,
+            "parent": 8,
+            "rotations": [
+              {
+                "pivot": 9,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      13,
+                      [
+                        10,
+                        [
+                          9,
+                          [
+                            8,
+                            [
+                              7,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      13,
+                      [
+                        10,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 8,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      13,
+                      [
+                        10,
+                        [
+                          8,
+                          [
+                            7,
+                            null,
+                            null
+                          ],
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      13,
+                      [
+                        10,
+                        [
+                          7,
+                          null,
+                          [
+                            8,
+                            null,
+                            [
+                              9,
+                              null,
+                              null
+                            ]
+                          ]
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 2,
+            "pattern": "LL",
+            "grandparent": 13,
+            "parent": 10,
+            "rotations": [
+              {
+                "pivot": 13,
+                "direction": "right",
+                "bit": 0,
+                "before": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      13,
+                      [
+                        10,
+                        [
+                          7,
+                          null,
+                          [
+                            8,
+                            null,
+                            [
+                              9,
+                              null,
+                              null
+                            ]
+                          ]
+                        ],
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ]
+                  ]
+                ],
+                "after": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      [
+                        13,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 10,
+                "direction": "right",
+                "bit": 1,
+                "before": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      10,
+                      [
+                        7,
+                        null,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ]
+                      ],
+                      [
+                        13,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      7,
+                      null,
+                      [
+                        10,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          13,
+                          [
+                            12,
+                            [
+                              11,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "j": 3,
+            "pattern": "RR",
+            "grandparent": 5,
+            "parent": 6,
+            "rotations": [
+              {
+                "pivot": 5,
+                "direction": "left",
+                "bit": 0,
+                "before": [
+                  5,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    [
+                      4,
+                      [
+                        3,
+                        null,
+                        null
+                      ],
+                      null
+                    ]
+                  ],
+                  [
+                    6,
+                    null,
+                    [
+                      7,
+                      null,
+                      [
+                        10,
+                        [
+                          8,
+                          null,
+                          [
+                            9,
+                            null,
+                            null
+                          ]
+                        ],
+                        [
+                          13,
+                          [
+                            12,
+                            [
+                              11,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  6,
+                  [
+                    5,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        4,
+                        [
+                          3,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ],
+                  [
+                    7,
+                    null,
+                    [
+                      10,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          null
+                        ]
+                      ],
+                      [
+                        13,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ]
+                ]
+              },
+              {
+                "pivot": 6,
+                "direction": "left",
+                "bit": 1,
+                "before": [
+                  6,
+                  [
+                    5,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      [
+                        4,
+                        [
+                          3,
+                          null,
+                          null
+                        ],
+                        null
+                      ]
+                    ],
+                    null
+                  ],
+                  [
+                    7,
+                    null,
+                    [
+                      10,
+                      [
+                        8,
+                        null,
+                        [
+                          9,
+                          null,
+                          null
+                        ]
+                      ],
+                      [
+                        13,
+                        [
+                          12,
+                          [
+                            11,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ]
+                    ]
+                  ]
+                ],
+                "after": [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        [
+                          4,
+                          [
+                            3,
+                            null,
+                            null
+                          ],
+                          null
+                        ]
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  [
+                    10,
+                    [
+                      8,
+                      null,
+                      [
+                        9,
+                        null,
+                        null
+                      ]
+                    ],
+                    [
+                      13,
+                      [
+                        12,
+                        [
+                          11,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ]
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "genuine_support": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "full_core": 13,
+    "Q": 22,
+    "A": 22,
+    "Q_minus_2_genuine_macros": 6,
+    "original_CD_margin_2A_minus_Q": 22,
+    "full_A_B_closure": "literal; A=B source invariant at every operation",
+    "erased_chart_closure": "accepted actual finite recurrence after warmup on repeated literal word; numeric u,L not newly replayed",
+    "claim": "B-only Q<=2 macro bound REFUTED; not Coarse-Double or JR35"
+  },
+  "uniform_proof_review": "common proxy tenure; earlier-to-next actual root-loss; distinct within each group; all collision type/pivot and time implications; raw reserve exclusion; cyclic seam caveat",
+  "RLC_universal_joint_injection": "NOT_PROVED",
+  "JR35": "OPEN",
+  "reservation": "DEFERRED",
+  "source_queries": 8,
+  "source_engine_calls": 8,
+  "independent_is_same_agent_distinct_implementation": true,
+  "input_sha256": {
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\independent_fresh_proxy_loss.json": "0af49f60eb35de98446623d929e60ac2d4896fed39ab4ad9eb8c01c31f234e8e",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\REVERSE_LOSS_COLLISION_NORMAL_FORM.md": "0c874f582d436ea84a4b6534bfb4a8fb6c72500327721df3ad2f0ee6ccb2f7c1",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\\CONTINUATION_01\\SOURCE_JOINT_REPAIR_03\\actual_monotone_return_source.json": "5e00eb81aed692ab9982b5b4e3401e89827245a52748cf770ac21fa26d00e4b4",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\cluster_collateral_closed_source.json": "9bdacf3235d8fa3a47c27e814ee587713daf09d6823651c87f0f425f81afee7a",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\maximal_B_only_bound_result.json": "8012090f637e1601125c040c573a27dffe016cdc8eba7d9d8eedc4749977a74f",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\maximal_B_grammar.json": "c29707a3945ccd9e7afecade124a027f13248360eea8ddc51d339a6810068af2",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\active_a10_model.json": "1c718ecbe4cb331b2ba99f4778ee863fb513b452ff2de29c9399c76f658555cf",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35\\CONTINUATION_04\\audit_RLC35_and_B_only_control.py": "392c51a4fcec2dac593432a676874a73fb14c90107c6570972d7a5c5a2f2c095",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP2_CD6_FINAL_ASSEMBLY_14\\UNIFORM_R_TRANSFER.md": "0d60121dfd15db899c900e9bde73b0a9ca1354787f5682cbfe0070c69c8fa664"
+  }
+}

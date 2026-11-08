@@ -1,0 +1,30 @@
+{
+  "target": "COLD-NEG2: prove/refute exact normalized width-two chart debt endpoint0->2 on every source-valid weight-2 cold packet",
+  "packet_price": "2min(H,4)-Q",
+  "classes": [
+    "singleton H1,Q4",
+    "actual q5/q1 pair Hsum2,Q6"
+  ],
+  "terminal_outcomes": [
+    "A NEG2 proved",
+    "B normalized candidate refuted",
+    "C partial",
+    "D dependency blocked"
+  ],
+  "constraints": [
+    "R1-R4",
+    "Bank25",
+    "existing allocation ownership",
+    "all resource caps",
+    "append-only research",
+    "inspect local latest source",
+    "Gates A-G"
+  ],
+  "tests": "Gate E actual deterministic bottom-up replay explicitly authorized; not universal evidence",
+  "forbidden_promotions": [
+    "entire Step2",
+    "CD6",
+    "Universal CD",
+    "Dynamic Optimality"
+  ]
+}

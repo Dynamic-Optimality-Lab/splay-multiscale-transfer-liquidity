@@ -1,0 +1,95 @@
+{
+  "status": "UNIFORM_MANUSCRIPT_LEMMA_ALGEBRA_CERTIFICATE",
+  "variables": [
+    "L",
+    "c",
+    "g",
+    "k",
+    "j"
+  ],
+  "assumptions": {
+    "k_nonnegative": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "j_nonnegative": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "j_below_k": [
+      0,
+      0,
+      0,
+      1,
+      -1,
+      -1
+    ],
+    "band_capacity": [
+      1,
+      -1,
+      -1,
+      -1,
+      0,
+      0
+    ]
+  },
+  "unit_ordinal": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    1
+  ],
+  "lower_identity": {
+    "goal": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "nonnegative_terms": {
+      "j_nonnegative": 1
+    },
+    "positive_constant": 1
+  },
+  "upper_identity": {
+    "goal": [
+      1,
+      -1,
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    "nonnegative_terms": {
+      "band_capacity": 1,
+      "j_below_k": 1
+    },
+    "positive_constant": 0
+  },
+  "source_premises": [
+    "original actual clean full macro D*KEEP, terminal full-nonroot KEEP",
+    "six-key high-core raw selector and its original natural owners; each packet budget<=8",
+    "no selected T19 arrival in this supplier macro; creator payments are LAST g units",
+    "all later effective insertions have complete comparison/exception provenance",
+    "static source/block eligibility for the proposed immediate-next-macro demand",
+    "baseline cut-record profile plus new interval load<=25"
+  ],
+  "does_not_assert": [
+    "a supplier exists for every guarded recovery",
+    "exception load is universally small",
+    "generic prefixes remain<=8 for arbitrary support",
+    "Bank25 follows from Hall"
+  ]
+}

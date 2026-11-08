@@ -1,0 +1,20 @@
+{
+  "status": "EXACT_FROZEN_SINGLETON_ELIMINATION_PRODUCER",
+  "old_feature_records": 284213,
+  "new_mutable_feature_records": 125376,
+  "old_stored_edges": 1488720,
+  "new_stored_mutable_edges": 415910,
+  "constraints_by_type": {
+    "frozen_to_frozen": 797878,
+    "frozen_to_mutable": 65324,
+    "mutable_to_frozen": 209608,
+    "mutable_to_mutable": 415910
+  },
+  "unary_endpoint_local_lemma_reused": "unary_boundary_independent_audit.json; local sign depends only on the two packet endpoints, not other boundaries",
+  "rule": "frozen->mutable seeds already satisfied; mutable->frozen becomes literal source upper bound; mutable->mutable remains edge; fixed source values never change",
+  "all_current_causal_parent_updates_retained": 5381,
+  "discovery_only_not_a_full_certificate": true,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "principal_U33": "OPEN"
+}

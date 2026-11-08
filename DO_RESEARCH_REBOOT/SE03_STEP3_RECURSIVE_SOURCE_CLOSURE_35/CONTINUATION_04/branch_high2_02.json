@@ -1,0 +1,110 @@
+{
+  "status": "RELAXATION_REFUTED",
+  "processed": 35310,
+  "relaxations": 10729342,
+  "max_D": 11,
+  "positive_exception_cells": 959306,
+  "cycle": {
+    "nodes": [
+      6066391,
+      13663607,
+      11415185,
+      17559866,
+      9535362,
+      12699955,
+      10659793,
+      17494310
+    ],
+    "steps": [
+      {
+        "source_code": 13663607,
+        "target_code": 6066391,
+        "H": 1,
+        "q": 3,
+        "weight": -1,
+        "B_edge_index": 7953,
+        "H1_row_index": 7732,
+        "kind": "EXACT_SOURCE_H1_QUOTIENT"
+      },
+      {
+        "source_code": 11415185,
+        "target_code": 13663607,
+        "H": 1,
+        "q": 3,
+        "weight": -1,
+        "B_edge_index": 6470,
+        "H1_row_index": 5867,
+        "kind": "EXACT_SOURCE_H1_QUOTIENT"
+      },
+      {
+        "source_code": 17559866,
+        "target_code": 11415185,
+        "H": 1,
+        "q": 3,
+        "weight": -1,
+        "B_edge_index": 9506,
+        "H1_row_index": 10286,
+        "kind": "EXACT_SOURCE_H1_QUOTIENT"
+      },
+      {
+        "source_code": 9535362,
+        "target_code": 17559866,
+        "H": 2,
+        "q": 2,
+        "weight": 2,
+        "B_edge_index": 5332,
+        "H1_row_index": -1,
+        "kind": "CONSERVATIVE_HIGH2_ARBITRARY_ENDPOINT"
+      },
+      {
+        "source_code": 12699955,
+        "target_code": 9535362,
+        "H": 1,
+        "q": 3,
+        "weight": -1,
+        "B_edge_index": 7407,
+        "H1_row_index": 6820,
+        "kind": "EXACT_SOURCE_H1_QUOTIENT"
+      },
+      {
+        "source_code": 10659793,
+        "target_code": 12699955,
+        "H": 1,
+        "q": 3,
+        "weight": -1,
+        "B_edge_index": 5966,
+        "H1_row_index": 5382,
+        "kind": "EXACT_SOURCE_H1_QUOTIENT"
+      },
+      {
+        "source_code": 17494310,
+        "target_code": 10659793,
+        "H": 1,
+        "q": 3,
+        "weight": -1,
+        "B_edge_index": 9479,
+        "H1_row_index": 9943,
+        "kind": "EXACT_SOURCE_H1_QUOTIENT"
+      },
+      {
+        "source_code": 6066391,
+        "target_code": 17494310,
+        "H": 2,
+        "q": 2,
+        "weight": 2,
+        "B_edge_index": 3961,
+        "H1_row_index": -1,
+        "kind": "CONSERVATIVE_HIGH2_ARBITRARY_ENDPOINT"
+      }
+    ],
+    "weight": -2
+  },
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "JR35": "OPEN",
+  "input_sha256": {
+    "branch_H1_r7.json": "a0a6d34c854cd5109bfd8ba5ca58dd95817e815e464ee563dd6297d4bb0282df",
+    "active_a10_model.json": "1c718ecbe4cb331b2ba99f4778ee863fb513b452ff2de29c9399c76f658555cf"
+  },
+  "meaning": "conservative quotient model only; not an original-source or CD refutation"
+}

@@ -1,0 +1,77 @@
+{
+  "status": "FAIL_FULL_M3_COVERAGE_INCOMPLETE",
+  "single_gap_signature_vectors": 2661,
+  "single_gap_mask_signature_sectors": 335286,
+  "closed_cycle_partition": [
+    {
+      "domain": "support(sigma)<=1",
+      "status": "PROVED_RESTRICTED_DOMAIN",
+      "mechanism": "explicit W=J-5*chi8 on O; -5*chi8 on M"
+    },
+    {
+      "domain": "support(sigma)>=2 AND D_L<=2*N_H+P_L",
+      "status": "PROVED_RESTRICTED_DOMAIN",
+      "mechanism": "universal high toll and exact signed sum"
+    },
+    {
+      "domain": "support(sigma)>=2 AND N_H>=1 AND D_L>2*N_H+P_L",
+      "status": "OPEN",
+      "mechanism": null
+    }
+  ],
+  "both_chi8_regions_in_residual_domain": true,
+  "actual_original_low_states_rejected_by_candidate": [
+    {
+      "record_file": "DO_RESEARCH_REBOOT/M3_GAPMULTI01/obstruction.json",
+      "index": 0,
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mu": 341,
+      "full_original_root_replayed": true,
+      "weight": 0,
+      "candidate_undefined": true,
+      "is_negative_cycle": false
+    },
+    {
+      "record_file": "DO_RESEARCH_REBOOT/M3_GAPMULTI01/obstruction.json",
+      "index": 1,
+      "sigma": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mu": 341,
+      "full_original_root_replayed": true,
+      "weight": 0,
+      "candidate_undefined": true,
+      "is_negative_cycle": false
+    }
+  ],
+  "arithmetic_gap_example": {
+    "N_H": 1,
+    "P_L": 0,
+    "D_L": 3,
+    "proved_lower_bound": -1,
+    "assertion": "illustrates insufficiency of the bound; not an exhibited walk"
+  },
+  "negative_original_cycle_certified": false,
+  "multi_gap_literal_completion_obstruction": "two equal full original edges have different hidden S allocations; refutes that extension only",
+  "no_total_potential_or_alternative_residual_sign_proof_supplied": true
+}

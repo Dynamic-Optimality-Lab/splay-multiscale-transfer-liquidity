@@ -1,0 +1,166 @@
+{
+  "status": "PASS_SOURCE_EXACT_THREE_SECOND_GAP_JOIN_REFUTATIONS",
+  "private_key": 5,
+  "anchor_physical_keys": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20
+  ],
+  "three_distinct_candidate_rules": [
+    {
+      "rule": "nearest_root",
+      "old_projected_indices": [
+        561,
+        8104
+      ],
+      "debt": [
+        1,
+        0
+      ],
+      "signed_margin": -1,
+      "closed_source": "second_gap_nearest_root_closed_source.json",
+      "source_verification": {
+        "period": [
+          128,
+          254
+        ],
+        "packet_t": 171,
+        "costs": [
+          154,
+          20,
+          17
+        ],
+        "CD_margin": 288,
+        "new_fresh_A_accesses": 32,
+        "checked_G4_hull_instances": 94,
+        "checked_full_B_rigid_gap_instances": 66,
+        "checked_erased_B_rigid_gap_instances": 62,
+        "genuine_KEEP_anchors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "all_original_operations_accounted_for": true,
+        "all_A_B_BE_and_recency_seams_close": true
+      }
+    },
+    {
+      "rule": "predecessor",
+      "old_projected_indices": [
+        8398,
+        645
+      ],
+      "debt": [
+        1,
+        0
+      ],
+      "signed_margin": -1,
+      "closed_source": "second_gap_predecessor_closed_source.json",
+      "source_verification": {
+        "period": [
+          100,
+          198
+        ],
+        "packet_t": 141,
+        "costs": [
+          111,
+          9,
+          9
+        ],
+        "CD_margin": 213,
+        "new_fresh_A_accesses": 24,
+        "checked_G4_hull_instances": 74,
+        "checked_full_B_rigid_gap_instances": 50,
+        "checked_erased_B_rigid_gap_instances": 48,
+        "genuine_KEEP_anchors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "all_original_operations_accounted_for": true,
+        "all_A_B_BE_and_recency_seams_close": true
+      }
+    },
+    {
+      "rule": "smaller_side",
+      "old_projected_indices": [
+        8398,
+        645
+      ],
+      "debt": [
+        1,
+        0
+      ],
+      "signed_margin": -1,
+      "closed_source": "second_gap_predecessor_closed_source.json",
+      "source_verification": {
+        "period": [
+          100,
+          198
+        ],
+        "packet_t": 141,
+        "costs": [
+          111,
+          9,
+          9
+        ],
+        "CD_margin": 213,
+        "new_fresh_A_accesses": 24,
+        "checked_G4_hull_instances": 74,
+        "checked_full_B_rigid_gap_instances": 50,
+        "checked_erased_B_rigid_gap_instances": 48,
+        "genuine_KEEP_anchors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "all_original_operations_accounted_for": true,
+        "all_A_B_BE_and_recency_seams_close": true
+      }
+    }
+  ],
+  "source_queries": 56,
+  "source_engine_calls": 56,
+  "verification_method": "independent iterative zipper join and mutable non-hull splays; all other original operations composed from accepted complete source bases",
+  "not_an_arbitrary_geometry_rule_refutation": true,
+  "not_a_CD_counterexample": true,
+  "frozen_owners_unchanged": true,
+  "principal_U33": "OPEN",
+  "input_sha256": {
+    "second_gap_nearest_root_closed_source.json": "becd87f929a6097e7d3d61182f77e9a0b225070120771fa71358748c7f97fa14",
+    "second_gap_predecessor_closed_source.json": "2347fd53efbc3503ea20a7e6c0a003390c0f8c8801ede623f2d6ff0306aaef91",
+    "closed_word_composition_independent_v2.py": "1b9622b6e43f0b3d3177d34bd8d6dac18e77a5abaae4f07527bee47237e92ecf",
+    "native10_modal_oracle_independent_audit.json": "4c2113c3d0e32bcf66080e56b57cec17078611647f7ccccc0089bd9eb7efa379",
+    "native10_source_independent_audit.json": "36e867d6cc54647fcc0b256a7f946b25ebce6973e277eb9f9a7264793e2e2271",
+    "four_hull_source_basis_independent_audit.json": "eb606b40cbbd373b302ea1e2c8e8eff379f248652e941f28c004d2e18e4f994a",
+    "second_gap_join_candidates_continuation.json": "c014c4c8bc7dec303951b1c181c0d9c5d920b2445c10cbf5a58fdf07cbce6819"
+  }
+}

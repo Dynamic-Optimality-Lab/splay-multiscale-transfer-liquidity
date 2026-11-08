@@ -1,0 +1,151 @@
+{
+  "status": "PRODUCER_NEW_OWNER_FRONTIER_AND_RESERVE_ANALYSIS",
+  "source": "one_helper_original_source_and_owners.json",
+  "period": [
+    1,
+    54
+  ],
+  "legitimate_parent_input": "archived actual certified six-key fE, normalized natural effective a; old source/owner audit reused by hash",
+  "frozen_owner_count": 30,
+  "unpaid_root_count": 2,
+  "natural_excess_slots": [
+    [
+      31,
+      3
+    ],
+    [
+      31,
+      4
+    ]
+  ],
+  "natural_comparison_paths": [
+    {
+      "root": [
+        31,
+        3
+      ],
+      "steps": [],
+      "terminal": null,
+      "hole": [
+        31,
+        3
+      ]
+    },
+    {
+      "root": [
+        31,
+        4
+      ],
+      "steps": [],
+      "terminal": null,
+      "hole": [
+        31,
+        4
+      ]
+    }
+  ],
+  "complete_comparison_paths": [
+    {
+      "root": [
+        31,
+        3
+      ],
+      "steps": [
+        {
+          "demand": [
+            31,
+            3
+          ],
+          "unit": [
+            32,
+            1,
+            1
+          ],
+          "frozen_owner": null,
+          "natural_reservation": null
+        }
+      ],
+      "terminal": [
+        32,
+        1,
+        1
+      ],
+      "hole": null
+    },
+    {
+      "root": [
+        31,
+        4
+      ],
+      "steps": [
+        {
+          "demand": [
+            31,
+            4
+          ],
+          "unit": [
+            36,
+            2,
+            0
+          ],
+          "frozen_owner": null,
+          "natural_reservation": null
+        }
+      ],
+      "terminal": [
+        36,
+        2,
+        0
+      ],
+      "hole": null
+    }
+  ],
+  "actual_new_assignments": [
+    {
+      "demand": [
+        31,
+        3
+      ],
+      "unit": [
+        32,
+        1,
+        1
+      ]
+    },
+    {
+      "demand": [
+        31,
+        4
+      ],
+      "unit": [
+        36,
+        2,
+        0
+      ]
+    }
+  ],
+  "natural_reservation_release_examples": [],
+  "exact_inventory_partition": {
+    "original_units": 136,
+    "full_demands": 32,
+    "auxiliary_demands": 18,
+    "common": 18,
+    "full_only": 14,
+    "auxiliary_only_retired": 0,
+    "additional_frozen_successes": 12,
+    "raw_auxiliary_unused": 118,
+    "retired_units": 0,
+    "actual_unowned_after_frozen_successes": 106,
+    "unpaid": 2,
+    "raw_balance": 104
+  },
+  "no_old_source_or_owner_audit_repeated": true,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "principal_U33": "OPEN",
+  "input_sha256": {
+    "one_helper_original_source_and_owners.json": "f240ec35c064c6082a2ec1a7a4a673774a3d4544ac7d3fe59aecf6128a6a2dbf",
+    "one_helper_original_source_independent_audit.json": "5f59c1de55e4ae8d2682f3b81fcf70bb094d33db84043737ebbb7f25b03a59b0",
+    "OWNER_COUPLED_RESERVE_IDENTITY.md": "6ff3791b898dfa59ab931198cb643a7efd6977138723d08579ae4a3d3d44d3e7"
+  }
+}

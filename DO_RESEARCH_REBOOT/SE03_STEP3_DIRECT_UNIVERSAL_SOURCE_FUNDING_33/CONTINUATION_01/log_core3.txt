@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_core3.py", line 55, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\audit_core3.py", line 41, in main
+    v=own_map(rows);full=build(rows,v['macros'],v['h0']);assert set(full['h'])==v['D']
+                         ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\SE03_STEP3_DIRECT_UNIVERSAL_SOURCE_FUNDING_33\CONTINUATION_01\core8_source_allocator.py", line 14, in build
+    ds=[debt(m['rows'][0]['before'][1]) for m in macros];dt=[debt(m['rows'][-1]['after'][1]) for m in macros]
+             ~^^^^^^^^
+KeyError: 'rows'

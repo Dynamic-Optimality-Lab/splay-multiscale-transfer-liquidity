@@ -1,0 +1,123 @@
+{
+  "status": "ORIGINAL_CUMULATIVE_CAPS_PRESERVED_INDEPENDENT_GUARD_INTERRUPTED_FINAL_SEAL",
+  "prior_cumulative_CPU": 3599.9375,
+  "campaign_CPU": 7.75,
+  "cumulative_CPU": 3607.6875,
+  "remaining_CPU": 3592.3125,
+  "reserve": 5,
+  "cumulative_group_CPU": {
+    "symbolic": 107.1875,
+    "independent": 299.125
+  },
+  "group_caps": {
+    "symbolic": 120,
+    "independent": 300
+  },
+  "group_remaining": {
+    "symbolic": 12.8125,
+    "independent": 0.875
+  },
+  "independent_remaining_below_controller_reserve": true,
+  "source_engine_calls_including_failed_attempts_and_recovered_cutoff_receipt": 5912,
+  "query_cap": 2000000,
+  "new_complete_source_histories_audited": 8,
+  "additional_actual_erased_owner_cases_audited": 7,
+  "initial_nonfalsifying_probe": "FAILED_EXPECTED_COUNTEREXAMPLE_ASSERTION; no completed certificate promoted",
+  "final_source_checks": "PASS_RECEIPT_EXISTS",
+  "final_integrity_seal": "INTERRUPTED_CAP_NO_SEAL_ISSUED",
+  "controller_internal_child_allocation": 2.84375,
+  "observed_child_CPU": 2.875,
+  "internal_poll_guard_overshoot": 0.03125,
+  "original_independent_group_cap_exceeded": false,
+  "live_record_cap": 2000000,
+  "DAG_cap": 4000000,
+  "stored_edge_cap": 5000000,
+  "memory_cap_bytes": 34359738368,
+  "max_observed_memory": 66928640,
+  "wall_cap_hours": 12,
+  "Bank25": "UNCHANGED; no unsupported arbitrary-r working reserve promoted",
+  "no_cap_reset": true,
+  "all_failed_and_cutoff_runs_charged": true,
+  "runs": [
+    {
+      "phase": "discovery2",
+      "group": "symbolic",
+      "status": "PASS",
+      "termination": null,
+      "child_CPU": 0.359375,
+      "controller_CPU": 0.203125,
+      "charge": 0.5625,
+      "source_engine_calls": 874,
+      "query_count_recovery": null,
+      "reported_probe_quota_not_completed_certificate_count": 4,
+      "peak_working_set_bytes": 22659072
+    },
+    {
+      "phase": "discovery",
+      "group": "symbolic",
+      "status": "FAILED_OR_UNKNOWN",
+      "termination": null,
+      "child_CPU": 0.515625,
+      "controller_CPU": 0.46875,
+      "charge": 0.984375,
+      "source_engine_calls": 292,
+      "query_count_recovery": null,
+      "reported_probe_quota_not_completed_certificate_count": 4,
+      "peak_working_set_bytes": 20103168
+    },
+    {
+      "phase": "independent",
+      "group": "independent",
+      "status": "FAILED_OR_UNKNOWN",
+      "termination": "CAP",
+      "child_CPU": 2.875,
+      "controller_CPU": 1.3125,
+      "charge": 4.1875,
+      "source_engine_calls": 3105,
+      "query_count_recovery": "completed pre-cut source-check receipt; controller0 was missing-exit fallback",
+      "reported_probe_quota_not_completed_certificate_count": 0,
+      "peak_working_set_bytes": 62423040
+    },
+    {
+      "phase": "owner_images",
+      "group": "symbolic",
+      "status": "PASS",
+      "termination": null,
+      "child_CPU": 0.625,
+      "controller_CPU": 0.21875,
+      "charge": 0.84375,
+      "source_engine_calls": 685,
+      "query_count_recovery": null,
+      "reported_probe_quota_not_completed_certificate_count": 7,
+      "peak_working_set_bytes": 66928640
+    },
+    {
+      "phase": "splice",
+      "group": "symbolic",
+      "status": "PASS",
+      "termination": null,
+      "child_CPU": 0.28125,
+      "controller_CPU": 0.203125,
+      "charge": 0.484375,
+      "source_engine_calls": 0,
+      "query_count_recovery": null,
+      "reported_probe_quota_not_completed_certificate_count": 0,
+      "peak_working_set_bytes": 36290560
+    },
+    {
+      "phase": "zero_run",
+      "group": "symbolic",
+      "status": "PASS",
+      "termination": null,
+      "child_CPU": 0.453125,
+      "controller_CPU": 0.234375,
+      "charge": 0.6875,
+      "source_engine_calls": 956,
+      "query_count_recovery": null,
+      "reported_probe_quota_not_completed_certificate_count": 4,
+      "peak_working_set_bytes": 22278144
+    }
+  ],
+  "metadata_CPU_convention": "inherited entry/publication exclusion; every proof/construction/source/audit/controller charge retained",
+  "publication_metadata_CPU_excluded": 1.203125
+}

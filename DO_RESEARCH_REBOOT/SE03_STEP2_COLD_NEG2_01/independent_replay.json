@@ -1,0 +1,624 @@
+{
+  "status": "PASS_FROZEN_SOURCE_ENGINE_REPLAYS",
+  "engine": "python/independent/splay.py trace only; depth+1 pair costs NOT used",
+  "fixtures": [
+    {
+      "family": "Omega_plus",
+      "fringes": "empty",
+      "reflected": false,
+      "ambient_keys": 11,
+      "two_copy_AF_and_E_closure": true,
+      "A": 48,
+      "QF": 32,
+      "QE": 24
+    },
+    {
+      "family": "Omega_plus",
+      "fringes": "empty",
+      "reflected": true,
+      "ambient_keys": 11,
+      "two_copy_AF_and_E_closure": true,
+      "A": 48,
+      "QF": 32,
+      "QE": 24
+    },
+    {
+      "family": "Omega_plus",
+      "fringes": "balanced",
+      "reflected": false,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 48,
+      "QF": 32,
+      "QE": 24
+    },
+    {
+      "family": "Omega_plus",
+      "fringes": "balanced",
+      "reflected": true,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 48,
+      "QF": 32,
+      "QE": 24
+    },
+    {
+      "family": "Omega_plus",
+      "fringes": "chain",
+      "reflected": false,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 48,
+      "QF": 32,
+      "QE": 24
+    },
+    {
+      "family": "Omega_plus",
+      "fringes": "chain",
+      "reflected": true,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 48,
+      "QF": 32,
+      "QE": 24
+    },
+    {
+      "family": "Gamma_pair",
+      "fringes": "empty",
+      "reflected": false,
+      "ambient_keys": 11,
+      "two_copy_AF_and_E_closure": true,
+      "A": 36,
+      "QF": 30,
+      "QE": 24
+    },
+    {
+      "family": "Gamma_pair",
+      "fringes": "empty",
+      "reflected": true,
+      "ambient_keys": 11,
+      "two_copy_AF_and_E_closure": true,
+      "A": 36,
+      "QF": 30,
+      "QE": 24
+    },
+    {
+      "family": "Gamma_pair",
+      "fringes": "balanced",
+      "reflected": false,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 36,
+      "QF": 30,
+      "QE": 24
+    },
+    {
+      "family": "Gamma_pair",
+      "fringes": "balanced",
+      "reflected": true,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 36,
+      "QF": 30,
+      "QE": 24
+    },
+    {
+      "family": "Gamma_pair",
+      "fringes": "chain",
+      "reflected": false,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 36,
+      "QF": 30,
+      "QE": 24
+    },
+    {
+      "family": "Gamma_pair",
+      "fringes": "chain",
+      "reflected": true,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 36,
+      "QF": 30,
+      "QE": 24
+    },
+    {
+      "family": "Sigma_singleton",
+      "fringes": "empty",
+      "reflected": false,
+      "ambient_keys": 11,
+      "two_copy_AF_and_E_closure": true,
+      "A": 95,
+      "QF": 42,
+      "QE": 32
+    },
+    {
+      "family": "Sigma_singleton",
+      "fringes": "empty",
+      "reflected": true,
+      "ambient_keys": 11,
+      "two_copy_AF_and_E_closure": true,
+      "A": 95,
+      "QF": 42,
+      "QE": 32
+    },
+    {
+      "family": "Sigma_singleton",
+      "fringes": "balanced",
+      "reflected": false,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 95,
+      "QF": 42,
+      "QE": 32
+    },
+    {
+      "family": "Sigma_singleton",
+      "fringes": "balanced",
+      "reflected": true,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 95,
+      "QF": 42,
+      "QE": 32
+    },
+    {
+      "family": "Sigma_singleton",
+      "fringes": "chain",
+      "reflected": false,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 95,
+      "QF": 42,
+      "QE": 32
+    },
+    {
+      "family": "Sigma_singleton",
+      "fringes": "chain",
+      "reflected": true,
+      "ambient_keys": 47,
+      "two_copy_AF_and_E_closure": true,
+      "A": 95,
+      "QF": 42,
+      "QE": 32
+    },
+    {
+      "family": "core10_control",
+      "fringes": "empty",
+      "reflected": false,
+      "A": 20,
+      "QF": 18,
+      "full_pair_closed": true,
+      "scope": "two reflected actual masks, not realization of all16 necessary masks"
+    },
+    {
+      "family": "core10_control",
+      "fringes": "empty",
+      "reflected": true,
+      "A": 20,
+      "QF": 18,
+      "full_pair_closed": true,
+      "scope": "two reflected actual masks, not realization of all16 necessary masks"
+    },
+    {
+      "family": "core10_control",
+      "fringes": "balanced",
+      "reflected": false,
+      "A": 20,
+      "QF": 18,
+      "full_pair_closed": true,
+      "scope": "two reflected actual masks, not realization of all16 necessary masks"
+    },
+    {
+      "family": "core10_control",
+      "fringes": "balanced",
+      "reflected": true,
+      "A": 20,
+      "QF": 18,
+      "full_pair_closed": true,
+      "scope": "two reflected actual masks, not realization of all16 necessary masks"
+    },
+    {
+      "family": "Omega_plus_zero_gap_extension",
+      "reflected": false,
+      "operations": 86,
+      "inserted_zero_operations": 48,
+      "all_original_costs_preserved": true,
+      "actual_AF_E_closure": true
+    },
+    {
+      "family": "Omega_plus_zero_gap_extension",
+      "reflected": true,
+      "operations": 86,
+      "inserted_zero_operations": 48,
+      "all_original_costs_preserved": true,
+      "actual_AF_E_closure": true
+    }
+  ],
+  "all_retained_seams": [
+    {
+      "family": "Omega_plus",
+      "cut_after": 0,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 2,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 3,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 4,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 5,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 6,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 7,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 8,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 10,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 20,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 21,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 22,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 30,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 31,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 32,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 33,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 34,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 35,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Omega_plus",
+      "cut_after": 36,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 0,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 2,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 3,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 4,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 5,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 6,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 7,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 8,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 12,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 13,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 14,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 20,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 21,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 22,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 23,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 24,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 25,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Gamma_pair",
+      "cut_after": 26,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 0,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 1,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 2,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 3,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 4,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 5,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 6,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 7,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 8,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 9,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 10,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 11,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 12,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 13,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 14,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 15,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 16,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 17,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 46,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 70,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 71,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 72,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 74,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    },
+    {
+      "family": "Sigma_singleton",
+      "cut_after": 75,
+      "full_and_erased_closure": true,
+      "ID_transport_bijective": true
+    }
+  ],
+  "all_critical_costs_and_full_trees_agree": true,
+  "A_mixed_orientations_seen": [
+    "LL",
+    "LR",
+    "RL",
+    "RR",
+    "ZIG"
+  ],
+  "core10_masks": "one concrete mask and its actual reflection; remaining14 necessary masks not promoted",
+  "debt_reflection": "source Dhat1 follows visible marked third path label, q1 margin>=1 and false tall ceiling in each orientation; no psi symmetry assumed",
+  "GateG": "all saved witness minima -2; no width-two architecture counterpath found",
+  "source_finite_tests_are_universal_proof": false,
+  "new_allocations_claimed": false,
+  "same_agent_independent_derivation": true,
+  "external_peer_review": false,
+  "whole_compiler_formalization": false,
+  "new_finite_tests": 85,
+  "source_engine_calls": 9822
+}

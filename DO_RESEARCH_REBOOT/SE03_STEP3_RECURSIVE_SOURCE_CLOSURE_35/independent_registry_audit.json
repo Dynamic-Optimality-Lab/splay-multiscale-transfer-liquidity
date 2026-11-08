@@ -1,0 +1,48 @@
+{
+  "status": "PASS_DEPENDENCY_DAG_AND_SCOPE_AUDIT_NOT_ROOT_PROOF",
+  "input_sha256": {
+    "proof_boxes.json": "828c5ec505d4e899d53ef511311374b3b50afe4cdc8f605221caa343dedd7106",
+    "proof_debt.json": "4e690c681a3f2cf439e771d94e134511b11c8ea53e8bb6ab3961abd4e7a9fb02",
+    "C35_ROOT_RECONSTRUCTION.md": "507ea8696b163eca00c069b63d241ea9e4913f9dd565063caca081db0c69df4a",
+    "C35_TERMINAL_VERDICT.md": "038214db8246bd80ffc6d71f9d977c2a5370965d185c1de48c780d4f1b7bdf04"
+  },
+  "closed_boxes": [
+    "ATOM35",
+    "CORE35",
+    "MIN35",
+    "LOOP35",
+    "BIRTH35",
+    "KEEP35",
+    "MODEL35",
+    "SHALLOW35",
+    "OWNER-2",
+    "OWNER-3",
+    "OWNER-5",
+    "OWNER-6",
+    "OWNER-7",
+    "OWNER-8"
+  ],
+  "unresolved_boxes": [
+    "ROOT35",
+    "PEEL35",
+    "COMP35",
+    "REAL35",
+    "ONE35",
+    "MULTI35",
+    "H35",
+    "SC35",
+    "OWNER-1",
+    "OWNER-4",
+    "OWNER-9",
+    "U35"
+  ],
+  "proof_dependency_graph_acyclic": true,
+  "no_required_active_child_hidden": true,
+  "conditional_owner_hypotheses_preserved": true,
+  "source_root_verdict": "UNRESOLVED_MATHEMATICAL_BLOCKER",
+  "source_law_proved": false,
+  "source_countercut_proved": false,
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "trust": "same-agent separate implementation audit; not external peer review or formal proof-assistant verification"
+}

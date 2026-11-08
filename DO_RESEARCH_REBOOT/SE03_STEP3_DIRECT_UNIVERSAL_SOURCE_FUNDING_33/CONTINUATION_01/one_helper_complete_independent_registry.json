@@ -1,0 +1,94 @@
+{
+  "status": "COMPLETE_ONE_HELPER_SOURCE_THEOREM_ALL_TEN_ORDERED_GAPS",
+  "direct_case_audits": [
+    {
+      "helper": 1,
+      "audit": "one_helper_p1_independent_audit.json",
+      "sha256": "0c9eba0b03066b70974ec24bed5b859aa18ef27e5090c3235fb23d896afb9eb3",
+      "coefficients": 456047
+    },
+    {
+      "helper": 2,
+      "audit": "one_helper_p2_independent_audit.json",
+      "sha256": "b40ee18e73576d7fc78e1b3ac4f535537db94270a3391a78eab92b7786c19b72",
+      "coefficients": 702774
+    },
+    {
+      "helper": 3,
+      "audit": "one_helper_p3_independent_audit.json",
+      "sha256": "819e5c494b93cc512ffa00a0f72f4c1c9899ac0d27d8e18f48c761fbed0216ed",
+      "coefficients": 744465
+    },
+    {
+      "helper": 4,
+      "audit": "one_helper_p4_independent_audit.json",
+      "sha256": "88d31cc272559718cd82ab49830b9d66e0227bffd5344fe6796c5bef4eef4dc8",
+      "coefficients": 767532
+    },
+    {
+      "helper": 5,
+      "audit": "one_helper_p5_independent_audit.json",
+      "sha256": "1ed4c803cd9f82aaaf93fd6ac1fb64f7e91f70a71458a48aee8bca56476ca207",
+      "coefficients": 775205
+    }
+  ],
+  "reflections": [
+    {
+      "helper": 1,
+      "direct_case": 1,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 2,
+      "direct_case": 2,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 3,
+      "direct_case": 3,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 4,
+      "direct_case": 4,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 5,
+      "direct_case": 5,
+      "reflect_both_trees": false
+    },
+    {
+      "helper": 6,
+      "direct_case": 5,
+      "reflect_both_trees": true
+    },
+    {
+      "helper": 7,
+      "direct_case": 4,
+      "reflect_both_trees": true
+    },
+    {
+      "helper": 8,
+      "direct_case": 3,
+      "reflect_both_trees": true
+    },
+    {
+      "helper": 9,
+      "direct_case": 2,
+      "reflect_both_trees": true
+    },
+    {
+      "helper": 10,
+      "direct_case": 1,
+      "reflect_both_trees": true
+    }
+  ],
+  "primitive_lift_audit": "ten_anchor_schema_independent_audit.json",
+  "actual_owner_source_audit": "one_helper_original_source_independent_audit.json",
+  "width": 2,
+  "working_bound": 8,
+  "all_quantifiers": "exactly the backbone/private-gap scope of ONE_HELPER_SOURCE_THEOREM.md",
+  "principal_U33": "OPEN",
+  "independent_review": "distinct implementations operated by same agent; not external or formal certification"
+}

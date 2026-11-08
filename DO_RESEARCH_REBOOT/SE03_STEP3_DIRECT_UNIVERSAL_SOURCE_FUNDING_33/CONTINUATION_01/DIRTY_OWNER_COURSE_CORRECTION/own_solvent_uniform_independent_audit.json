@@ -1,0 +1,95 @@
+{
+  "status": "PASS_UNIFORM_OWN_SOLVENT_SOURCE_LICENSE_SYMBOLIC_CERTIFICATE",
+  "scope": "all support/private population/source length/owner multiplicity under actual local Q_m<=2H_m and the original supplied source/period/exchange contracts",
+  "integer_classes": [
+    {
+      "parity": "EVEN",
+      "Q_affine": [
+        0,
+        2,
+        0
+      ],
+      "H_affine": [
+        0,
+        1,
+        1
+      ],
+      "c_affine": [
+        0,
+        1,
+        0
+      ],
+      "2c_minus_Q": [
+        0,
+        0,
+        0
+      ],
+      "H_minus_c": [
+        0,
+        0,
+        1
+      ],
+      "2H_minus_Q": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "parity": "ODD",
+      "Q_affine": [
+        1,
+        2,
+        0
+      ],
+      "H_affine": [
+        1,
+        1,
+        1
+      ],
+      "c_affine": [
+        1,
+        1,
+        0
+      ],
+      "2c_minus_Q": [
+        1,
+        0,
+        0
+      ],
+      "H_minus_c": [
+        0,
+        0,
+        1
+      ],
+      "2H_minus_Q": [
+        1,
+        0,
+        2
+      ]
+    }
+  ],
+  "all_integer_pairs_covered": "Q even/odd; k=floor(Q/2),s=H-ceil(Q/2)>=0",
+  "no_finite_BST_or_population_test": true,
+  "own_donor_rule": "demand i uses actual macro unit i; existence from Q<=2H; disjoint macro IDs give injection",
+  "natural_owners_in_selected_pairs": true,
+  "D_constant": 0,
+  "working_bound": 2,
+  "storage_contract": "independent-h original static within-macro output, not all-event endpoint storage",
+  "owner_extension": "uses the unchanged inspected support-free C15 theorem, not an assumed initially free natural unit",
+  "source_expansion_for_deficit_macros": "OPEN",
+  "source_queries": 0,
+  "source_engine_calls": 0,
+  "principal_U33": "OPEN",
+  "external_or_formal_proof_assistant_verification": false,
+  "input_sha256": {
+    "OWN_SOLVENT_UNIFORM_CERTIFICATE.md": "ce22609821984cd1a681438b579db919236487ec330a66e64875be369d7e59a0",
+    "SOURCE_FORCED_DONOR_EXPANSION.md": "7c57caa4e90024ab54fce3ca2f1768eb4b9832cbbce6641f679666d9338c6ce9",
+    "DIRTY_FRAME_BANK25_SCHEDULE.md": "3c828ded1779560790e51b3dc78d41d90b22648369e41ccc8ab9ea7c458e3ff9",
+    "FROZEN_OWNER_BLOCKING_STRUCTURE.md": "1715c6e8af60c7a18df5a9939fe4858f651c347cff119356ef5e73d880198405",
+    "OWNER_PROFILE_REDUCTION.md": "5eb4f83e2ef1a9a4dd09e3afb9de1129df992b6cf806a8a9f3d91142ab706506",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP2_CD6_FINAL_ASSEMBLY_14\\UNIFORM_R_TRANSFER.md": "0d60121dfd15db899c900e9bde73b0a9ca1354787f5682cbfe0070c69c8fa664",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP2_CD6_FINAL_ASSEMBLY_14\\CARRY_STORAGE_SEAM.md": "5e0160b9b1e5af492aecce7aae5e1bf9d1ef5654303dd902c63018a8adcbfc9c",
+    "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\SE03_STEP3_UNIFORM_DONOR_GROUPING_15\\FROZEN_OWNER_EXCHANGE.md": "e376879f126cdf85c664869106caa86d954fab5f3233b212c9f954a06cbd24e6"
+  }
+}

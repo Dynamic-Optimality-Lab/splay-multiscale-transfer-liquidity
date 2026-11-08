@@ -1,0 +1,29 @@
+{
+  "name": "D_current",
+  "formula": "max(D_term,1_A1,2*1_A2)",
+  "A1": [
+    "all-mask spread U",
+    "all-mask spread W",
+    "all-mask spread K",
+    "all-mask spread Q",
+    "all-mask spread V",
+    "all-mask central Y",
+    "all-mask central Z"
+  ],
+  "A2": [
+    "all-mask spread Z",
+    "cross-median unique child C",
+    "all-mask central X",
+    "all-mask central C"
+  ],
+  "all_regions_include_P_and_both_actual_orientations": true,
+  "all_original_masks_and_signatures_quantified": true,
+  "source_debt_at_every_remaining_H1_failure_equals_psi": true,
+  "range": [
+    0,
+    2
+  ],
+  "private_inventory_history_or_new_state_coordinate_used": false,
+  "global_psi_floor_outside_P_claimed": false,
+  "LOW_destination_psi_E1_floors_preserved": true
+}

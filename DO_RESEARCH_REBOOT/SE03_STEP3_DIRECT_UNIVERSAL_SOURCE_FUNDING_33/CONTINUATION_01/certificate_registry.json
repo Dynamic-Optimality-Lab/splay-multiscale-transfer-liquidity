@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "id": "ALL_B_CORE_LE8",
+      "status": "PROVED_SOURCE_CLASS",
+      "proof": "CORE_AT_MOST_EIGHT_SOURCE_THEOREM.md",
+      "audit": "eight_core_independent_audit.json"
+    },
+    {
+      "id": "NATIVE9",
+      "status": "PROVED_SOURCE_CLASS",
+      "proof": "NATIVE_NINE_SOURCE_THEOREM.md",
+      "audit": "native9_sparse_independent_audit.json"
+    },
+    {
+      "id": "BF9_ONE_A_HELPER_ALL_GAPS",
+      "status": "PROVED_SOURCE_CLASS",
+      "proof": "ONE_HELPER_SOURCE_THEOREM.md",
+      "audit": "one_helper_complete_independent_registry.json"
+    },
+    {
+      "id": "ACTUAL_R7_FROZEN_OWNER_EXTENSION",
+      "status": "PROVED_INSTANCE",
+      "audit": "one_helper_original_source_independent_audit.json"
+    },
+    {
+      "id": "C1_NATURAL_PRICE",
+      "status": "REFUTED_RULE_NOT_CD",
+      "proof": "NINE_CORE_C1_FAILURE.md"
+    },
+    {
+      "id": "COST_FREE_UNARY_PROJECTION",
+      "status": "REFUTED_BRIDGE",
+      "proof": "UNARY_PROJECTION_BRIDGE_REFUTATION.md"
+    },
+    {
+      "id": "UNARY_RETURN_FAMILY_REPAIR",
+      "status": "PROVED_FAMILY_INTERFACE",
+      "proof": "UNARY_SOURCE_REPAIR_THEOREM.md",
+      "audit": "unary_source_repair_independent_audit.json"
+    },
+    {
+      "id": "NATIVE10_PRIMITIVES",
+      "status": "PROVED_SOURCE_KERNEL",
+      "audit": "native10_source_independent_audit.json"
+    },
+    {
+      "id": "NATIVE10_RANGE_LE2",
+      "status": "REFUTED_RULE_NOT_CD",
+      "proof": "NATIVE10_WIDTH_THREE_LOWER_BOUND.md",
+      "audit": "native10_width3_lower_independent_audit.json"
+    },
+    {
+      "id": "NATIVE10_RANGE3",
+      "status": "OPEN_SAVED_CANDIDATE_FAILS_CHECK",
+      "audit": "native10_checkpoint_complete_audit.json",
+      "checkpoint": "native10_debt_02.pkl"
+    },
+    {
+      "id": "UNIVERSAL_E_R_AND_GATE_U",
+      "status": "OPEN",
+      "proof": "SOURCE_COVERAGE_AND_GATE_U.md"
+    }
+  ],
+  "independent_verification": "distinct implementations, same agent; no external/formal certification",
+  "principal_U33": "OPEN",
+  "inherited_frozen_pins": "dependency_pins.json"
+}

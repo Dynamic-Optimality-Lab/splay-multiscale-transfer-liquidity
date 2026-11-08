@@ -1,0 +1,157 @@
+{
+  "status": "PROVED_UNIVERSAL_THREE_CLAUSE_LOW_SAFE_OPERATION_AND_RESTRICTED_BURIED_CUT_REPAYMENT",
+  "small_end_pair": "two smallest marked a<b, b in4/5",
+  "large_end_pair": "two largest marked a<b, a in3/4; order-dual guards",
+  "L": "port source root b,aLL,b.right PORT,V={a}; dual root a,bRR,a.left PORT",
+  "T": "buried boundary root a,bRR,V={b},Bdepth(b)<=3; dual root b,aLL,Bdepth(a)<=3",
+  "S": "release root b,aLL,Bdepth(a)<=3,other marks allowed; dual root a,bRR,Bdepth(b)<=3",
+  "input_class": "explicit public Lambda<=D<=2; no global feasibility premise",
+  "three_ordered_operations": [
+    "max(D,1_S)",
+    "max(previous,2_T)",
+    "max(previous,2_L)"
+  ],
+  "final_explicit_debt": "D_cut=max(D_R,1_S,2_T,2_L)",
+  "each_previously_valid_LOW_inequality_preserved": true,
+  "new_all_LOW_source_coverage": [
+    "L",
+    "T",
+    "S only where FINAL D_cut<=1"
+  ],
+  "previous_Q_R_LOW_coverage_preserved": true,
+  "all_missing_LL_RR_port_sources_outside_E1_for_extreme_pair_covered": true,
+  "central_root_auxiliary": "Gamma1 source core r in[3,5] has w>=1",
+  "fresh_hidden_branch_marked_exposure_allowed": true,
+  "lost_port_inferred_or_private_witness_persisted": false,
+  "incoming_protected_transfers": "0/+1 to L/T; +1 to S; zero to S from source<=1",
+  "covered_walk_LOW_sources": "Q union R union L union T union{S:D_cut<=1}",
+  "finite_walk_bound": -7,
+  "full_state_closed_walk_bound": 0,
+  "remaining_open": [
+    "uncovered S debt2 zero releases",
+    "buried states without T B-depth guard",
+    "other marked configurations and noncovered LOW sources"
+  ],
+  "all_S_debt2_solved": false,
+  "full_M3_status": "OPEN",
+  "DynamicOptimality_status": "OPEN",
+  "new_whole_signature_certificates": 0,
+  "original_negative_cycle_certified": false,
+  "new_finite_tests": 0,
+  "R1_R4_preserved": true,
+  "h0_correction_preserved": true,
+  "full_compiler_formalization_claimed": false,
+  "NET_ADVANCEMENT": "two-credit same-direction burial/return plus one-credit marked-exposure release, with precise S2 frontier",
+  "resources": {
+    "prior_uniform_CPU_charge_retained": 756.859375,
+    "new_symbolic_checker_CPU": 0.1875,
+    "new_controller_CPU_through_finally": 0.171875,
+    "new_compute_CPU": 0.359375,
+    "cumulative_accounted_CPU": 757.21875,
+    "finite_CPU_ceiling": 7200,
+    "guaranteed_remaining_CPU": 6442.78125,
+    "reserve": 5,
+    "old_signature_campaign_ledger_unchanged": 7195.203125,
+    "new_finite_tests": 0,
+    "new_source_transition_queries": 0,
+    "new_original_root_evaluations": 0,
+    "new_label_fits": 0,
+    "new_bank_censuses": 0,
+    "completed_semantic_checks_replayed": 0,
+    "symbolic_phase_CPU_cap": 120,
+    "construction_CPU_cap": 300,
+    "audit_source_CPU_cap": 300,
+    "canonical_query_live_record_limit": 2000000,
+    "DAG_limit": 4000000,
+    "stored_edge_limit": 5000000,
+    "RAM_GiB_limit": 32,
+    "current_caps_preserved": true,
+    "metadata_hashing_convention": "entry/final immutable-file bookkeeping excluded as previously"
+  },
+  "integrity": {
+    "status": "PASS",
+    "old_files_unchanged": 13616,
+    "HEAD": "fea2a25b05e97f726b6e1891cebb12c4cfca821a",
+    "tracked_tree_clean": true,
+    "this_campaign_writes_confined_here": true,
+    "unrelated_concurrent_U4_additions": 12
+  },
+  "files": [
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/audit.py",
+      "sha256": "c188df3d983c2096c5122b64af912c1f38893326b65db8964d528ccea7007f1f"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/BURIED_CUT_THEOREM.md",
+      "sha256": "994adba54b5c4d0ebcc0a0ca9d1593e68c1b5d44ab4806c82204ae7776f43361"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/certificate.json",
+      "sha256": "0cf893a2a8232c896f5950ae0434a5fe8d6ef314c226da2f1195488a1f54efef"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/concurrent_additions.json",
+      "sha256": "3c995273bd7713665ccb0ddb619c38f90518693af92d2f5a1ae00a593b4e2b62"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/controller_exit.json",
+      "sha256": "cd339d0f490066a93e3c7e67caf0eb9f96d9eb42e320110600b29cc457629088"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/dependencies.json",
+      "sha256": "8ef6d26291d6c68aeda19c43b5516737b102b3ab2a3f344a560c06f7389c753a"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/entry.py",
+      "sha256": "10caf712dafd6d9ac9d72042602a791a735cfe8f7fd42a10beed6d40cce7704c"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/entry_baseline.json",
+      "sha256": "95abf068333fbf531765f6a10787c1794d0fd7452fd732619b7c409943f754a6"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/finalize.py",
+      "sha256": "759f67fef28167ece37f76df66b0f8ca96c8431b5185a58b18250549803b1c3e"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/integrity.json",
+      "sha256": "b90fee468d420cd9cad3dfbc05789d3cf5165f45ed41664244e95c23f6bed4f0"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/log_symbolic_audit.txt",
+      "sha256": "0ba7ce5fd15ce367b2ca03129ffd648f3656918448d08aa3c4696fbc4cae44c0"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/PRE_EXECUTION.md",
+      "sha256": "0460f3f52a85ff9b9b15918a7d72a2013980ab495c754ca00b2ae0938fd81570"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/PROOF_AUDIT.md",
+      "sha256": "38f6d2acf0432b55834296adf15a0bf36e00fc169684c90ae4ba5ccfbfa8c277"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/resources.json",
+      "sha256": "e6d72184f4a2424ef8f919ab974c55a9320b747568020a12b87d865ae639d343"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/RESULT.md",
+      "sha256": "5adc43a93abc511499d57288999ee82a508c6f9571f0b89f091e95ead7e5e1d1"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/run.py",
+      "sha256": "2bedcca43c3e3aa3e0bc1079b40de3187f8fa0e7adc9f3523082fe9a0bfb1b52"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/run_result.json",
+      "sha256": "22f91e96555baa4052c015da34bc0a7ae29afe594596c50111fb77928e402144"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/symbolic_audit.json",
+      "sha256": "8fa010852b431d951b9b233fa239f7e6e9d2989d0b17f8e4ed6e11c61cc86f3d"
+    },
+    {
+      "path": "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER03/symbolic_audit_exit.json",
+      "sha256": "1234a4a9ffac0dada39f955e6ed25f483709ad9789743a94b42e8dc47743ea99"
+    }
+  ]
+}

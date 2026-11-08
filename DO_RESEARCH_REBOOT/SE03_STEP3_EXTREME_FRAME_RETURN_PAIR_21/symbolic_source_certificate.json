@@ -1,0 +1,56 @@
+{
+  "status": "MANUSCRIPT_SYMBOLIC_CERTIFICATE_NOT_EXECUTED_NOT_INDEPENDENT_AUDIT",
+  "primary_theorem": "UNRESOLVED_EFFECTIVE_OWNER_CLOSURE",
+  "smaller_theorem": "E21_COMP_DERIVATION_COMPLETE_AUDIT_PENDING",
+  "source": {
+    "reachable_paired_closed_required": true,
+    "maximal_full_core": "2r-1",
+    "r": ">=7",
+    "deep_Q": "r-1",
+    "H_e": 1,
+    "selected_arrivals": 2,
+    "literal_deep_Q6_requires_r": 7,
+    "key_order": "G < x < C < R",
+    "marked_B_ancestor_order_root_first": ["G", "R", "C", "K", "...", "x"],
+    "K": "remaining chain root, G<K<C, K!=x",
+    "formal_terms_do_not_assert_global_realizability": true
+  },
+  "H1_macro_grammar": ["(D_oldRoot | K_oldRoot)* K_target", "(D_oldRoot | K_oldRoot)* D_target (D_target)* K_target"],
+  "terms": {
+    "U": "G(A,C(x(B0,B1),R(D,E)))",
+    "after_v": "R(C(G(A,x(B0,B1)),D),E)",
+    "after_p": "G(A,C(x(B0,B1),R(D,E)))",
+    "after_e": "x(G(A,B0),C(B1,R(D,E)))",
+    "V1": "C(G(A,x0),R(D,E))",
+    "V2": "C(P(A0,G(A1,x0)),R(D,E)), P<G",
+    "W1": "C(G(A,x0),R(D,E))",
+    "W2": "C(G(A,x0),P(R(D,E),F)), P>R",
+    "A_G1": "G(A,C(x0,R(D,E)))",
+    "A_G2": "G(A,R(C(x0,D),E))",
+    "A_G3": "G(A,P(R(C(x0,D),E),F)), P>R",
+    "A_Gextra": "G(A,P(C(x0,R(D,E)),F)), P>R",
+    "A_R1": "R(C(G(A,x0),D),E)",
+    "A_R2": "R(G(A,C(x0,D)),E)",
+    "A_R3": "R(P(A0,G(A1,C(x0,D))),E), P<G"
+  },
+  "return_events": [
+    {"macro": "v", "target": "R", "case": "RR", "A_StepEv": 1},
+    {"macro": "p", "target": "G", "case": "LL", "A_StepEv": 1},
+    {"macro": "e", "target": "x", "case": "RL", "A_StepEv": 1}
+  ],
+  "longest_unary_predecessor_source_signature": [
+    {"offset": -7, "name": "j", "Q": 1, "u": 0, "beta": 1, "z": 1, "H": ">=2 forced"},
+    {"offset": -6, "name": "h", "Q": 2, "u": 1, "beta": 1, "z": 1, "H": 1},
+    {"offset": -5, "name": "g", "Q": 1, "u": 0, "beta": 1, "z": 1, "H": 1},
+    {"offset": -4, "name": "s", "Q": 3, "u": 2, "beta": 1, "z": 1, "H": 1},
+    {"offset": -3, "name": "t", "Q": 1, "u": 0, "beta": 1, "z": 1, "H": 1},
+    {"offset": -2, "name": "v", "Q": 2, "u": 1, "beta": 1, "z": 1, "H": 1},
+    {"offset": -1, "name": "p", "Q": 1, "u": 0, "beta": 1, "z": 1, "H": 1}
+  ],
+  "donor_rule": "first applicable source case of EXTREME_NONLOCAL_SUPPLY; last positive occurrence tau of chosen supplier, unit(tau,a_tau,1)",
+  "joint_noncollision": "all macros from supplier through e-exclusive have Q<=3<r-1, hence are in disjoint actual deep-free cyclic gaps",
+  "reflection": "reverse keys and swap L/R in every term, keeping occurrence and bit IDs",
+  "new_rotation_replay_count": 0,
+  "new_closed_extreme_owner_witness_count": 0,
+  "effective_owners_of_new_symbolic_bits": "UNKNOWN_ACTUAL_SOURCE_INPUT_NOT_ASSUMED_FREE"
+}

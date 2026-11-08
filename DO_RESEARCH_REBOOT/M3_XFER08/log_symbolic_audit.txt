@@ -1,0 +1,102 @@
+{
+  "status": "BURIED_BARRIER_UNIVERSAL_SYMBOLIC_AUDIT_PASS",
+  "new_equational_certificates": [
+    "proxy_final_zig",
+    "proxy_final_RR",
+    "proxy_final_RL",
+    "maximum_proxy_zig_dual",
+    "maximum_proxy_LL_dual",
+    "maximum_proxy_LR_dual",
+    "B6_key4",
+    "B6_key4_dual",
+    "B7_key4",
+    "B7_key4_dual",
+    "B8_key4",
+    "B8_key4_dual",
+    "B6_key8",
+    "B6_key8_dual",
+    "B7_key6",
+    "B7_key6_dual",
+    "B8_key7",
+    "B8_key7_dual",
+    "B8_key6",
+    "B8_key6_dual",
+    "H8_zero_key4",
+    "H8_zero_key4_dual"
+  ],
+  "proxy_final_parent_either_terminal_or_previous_neighbor": true,
+  "final_minimum_proxy_parent_is_core0_by_order_and_leaf": true,
+  "final_maximum_proxy_parent_is_core8_by_order_and_leaf": true,
+  "main_and_H8_minimum_helper_weight_at_least": 2,
+  "global_Gamma1_cheap_helper_initial_B_depth_at_most": 2,
+  "terminal_q_not_sum_of_helper_and_terminal_q": true,
+  "main_plus1_exit_table_complete": true,
+  "R_B_depth4_and_depth5_return_bounds": {
+    "central4": 3,
+    "old_root": 3
+  },
+  "no_V_filter_on_R_or_K_boundaries": true,
+  "C_B_no_extra_A_guard": true,
+  "H8_zero4_endpoint_all_marked_B_depths_at_most": 3,
+  "main_a_depth_guard": 5,
+  "C_a_depth_guard": 3,
+  "T_a_depth_guard": 7,
+  "guard_covers_all_original_S_zero_incoming_edges": true,
+  "safe_operation_order": [
+    "K_B1",
+    "R_B1",
+    "C_B1",
+    "T_B1",
+    "G_B2"
+  ],
+  "each_previously_valid_LOW_row_preserved": true,
+  "all_G_B_source_LOW_rows_proved": true,
+  "complete_eight_word_S_zero_frontier_closed": true,
+  "all_zero_LOW_with_S_source_covered": true,
+  "both_actual_LOW_orientations_proved": true,
+  "signed_residuals": {
+    "K_positive": {
+      "weight_excess": 1,
+      "target_debt": 1
+    },
+    "R_zero_to_K": {
+      "credit_excess": 1
+    },
+    "C_zero_to_R_or_E1": {
+      "credit_excess": 1
+    },
+    "T_zero_to_E1": {
+      "credit_excess": 1
+    },
+    "main_plus1_to_supported_region": {
+      "credit_excess": 1
+    },
+    "main_paid_or_helper": {
+      "weight_excess": 1,
+      "target_debt": 1
+    },
+    "incoming_S_zero": {
+      "source_room_below2": 1
+    }
+  },
+  "new_finite_tests": 0,
+  "new_source_transition_queries": 0,
+  "new_original_root_evaluations": 0,
+  "new_saved_psi_queries": 0,
+  "new_label_fits": 0,
+  "new_bank_censuses": 0,
+  "completed_semantic_checks_replayed": 0,
+  "old_eight_spine_map_and_negative_core_checks_reused_not_replayed": true,
+  "source_hashes": {
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_PARAMETRIC_PORT_COMPILER/PC_B_CONTROLLER.py": "3137135eaa9c0c92ae3fd7d57b9f06b90d7fff8524d7063c27cb3b62082c99db",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_STRICT_CLOSURE/STRICT_B_CONTROLLER.py": "325a367b92b5d01655403588a56866ae5998390b851b4a00ca146e2f25e4dd60",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_STRICT_CLOSURE/STRICT_LOW_COMPILER.py": "d621355f3745c0e0ce182c60197fd3f3e83a126237013cc4b7ae951c4731183a",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_PARAMETRIC_PORT_COMPILER/PC_ROTATION_INTERPRETER.py": "f15a8de6ebdb0eec8935261269e77c3729cf1c8c12d8cb0f56172403c21e9c53"
+  },
+  "full_compiler_formalization_claimed": false,
+  "external_human_or_model_review_claimed": false,
+  "global_zero_LOW_coverage_proved": false,
+  "full_M3_status": "OPEN",
+  "CPU_seconds": 0.21875,
+  "CPU_cap": 120.0
+}

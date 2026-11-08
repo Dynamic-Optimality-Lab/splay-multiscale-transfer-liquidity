@@ -1,0 +1,239 @@
+{
+  "status": "GRANDCHILD_UNMARKED_ANCESTOR_UNIVERSAL_SYMBOLIC_AUDIT_PASS",
+  "case_certificates": [
+    {
+      "case": "LL",
+      "universal_pair_identity": true,
+      "source_no_actual_anonymous_depth1_or2": true,
+      "barrier": [
+        "LOW",
+        "p"
+      ],
+      "exposed_nonopaque_blocks": [
+        {
+          "block": "A",
+          "path": [
+            0
+          ],
+          "interval": [
+            "LOW",
+            "x"
+          ],
+          "inside_public_barrier": true,
+          "marked_x_strictly_inside": false
+        },
+        {
+          "block": "B",
+          "path": [
+            1,
+            0
+          ],
+          "interval": [
+            "x",
+            "p"
+          ],
+          "inside_public_barrier": true,
+          "marked_x_strictly_inside": false
+        }
+      ],
+      "depth1_G_second_shadow_level": [
+        {
+          "alias_block": "A",
+          "old_root_children": [
+            "C",
+            "D"
+          ],
+          "both_opaque": true
+        }
+      ],
+      "proper_marked_nodes_excluded_by_barrier_and_uniqueness": true,
+      "all_G_labels_are_old_unmarked_r": true,
+      "target_V_empty": true
+    },
+    {
+      "case": "LR",
+      "universal_pair_identity": true,
+      "source_no_actual_anonymous_depth1_or2": true,
+      "barrier": [
+        "p",
+        "r"
+      ],
+      "exposed_nonopaque_blocks": [
+        {
+          "block": "B",
+          "path": [
+            0,
+            1
+          ],
+          "interval": [
+            "p",
+            "x"
+          ],
+          "inside_public_barrier": true,
+          "marked_x_strictly_inside": false
+        },
+        {
+          "block": "C",
+          "path": [
+            1,
+            0
+          ],
+          "interval": [
+            "x",
+            "r"
+          ],
+          "inside_public_barrier": true,
+          "marked_x_strictly_inside": false
+        }
+      ],
+      "depth1_G_second_shadow_level": [],
+      "proper_marked_nodes_excluded_by_barrier_and_uniqueness": true,
+      "all_G_labels_are_old_unmarked_r": true,
+      "target_V_empty": true
+    },
+    {
+      "case": "RL",
+      "universal_pair_identity": true,
+      "source_no_actual_anonymous_depth1_or2": true,
+      "barrier": [
+        "r",
+        "p"
+      ],
+      "exposed_nonopaque_blocks": [
+        {
+          "block": "B",
+          "path": [
+            0,
+            1
+          ],
+          "interval": [
+            "r",
+            "x"
+          ],
+          "inside_public_barrier": true,
+          "marked_x_strictly_inside": false
+        },
+        {
+          "block": "C",
+          "path": [
+            1,
+            0
+          ],
+          "interval": [
+            "x",
+            "p"
+          ],
+          "inside_public_barrier": true,
+          "marked_x_strictly_inside": false
+        }
+      ],
+      "depth1_G_second_shadow_level": [],
+      "proper_marked_nodes_excluded_by_barrier_and_uniqueness": true,
+      "all_G_labels_are_old_unmarked_r": true,
+      "target_V_empty": true
+    },
+    {
+      "case": "RR",
+      "universal_pair_identity": true,
+      "source_no_actual_anonymous_depth1_or2": true,
+      "barrier": [
+        "p",
+        "HIGH"
+      ],
+      "exposed_nonopaque_blocks": [
+        {
+          "block": "C",
+          "path": [
+            0,
+            1
+          ],
+          "interval": [
+            "p",
+            "x"
+          ],
+          "inside_public_barrier": true,
+          "marked_x_strictly_inside": false
+        },
+        {
+          "block": "D",
+          "path": [
+            1
+          ],
+          "interval": [
+            "x",
+            "HIGH"
+          ],
+          "inside_public_barrier": true,
+          "marked_x_strictly_inside": false
+        }
+      ],
+      "depth1_G_second_shadow_level": [
+        {
+          "alias_block": "D",
+          "old_root_children": [
+            "A",
+            "B"
+          ],
+          "both_opaque": true
+        }
+      ],
+      "proper_marked_nodes_excluded_by_barrier_and_uniqueness": true,
+      "all_G_labels_are_old_unmarked_r": true,
+      "target_V_empty": true
+    }
+  ],
+  "signed_slacks": {
+    "raised_nonnegative_H1": {
+      "weight_nonnegative": 1
+    },
+    "raised_negative_H1": {},
+    "unchanged_source": {
+      "old_residual": 1,
+      "target_increment": 1
+    },
+    "old_debt_nonnegative_Z_H1": {
+      "weight_nonnegative": 1,
+      "source_room": 1
+    },
+    "incoming_nonnegative_Z2": {
+      "weight_nonnegative": 1,
+      "source_room": 1
+    }
+  },
+  "source_root_Score_not_required_mask_marked_verified": true,
+  "pair_primitive_order_checked_from_original_AST": true,
+  "completed_shadow_G_kind_price_provenance_reused_not_replayed": true,
+  "reused_provenance_file_sha256": "6fa31643661b6ddb918a69247e73069625026194b09cb478726f1bb8a419e3e4",
+  "target_empty_V_for_all_four_cases": true,
+  "each_previously_valid_LOW_row_preserved": true,
+  "all_Z_source_nonnegative_H1_rows_valid_even_before_new_cap": true,
+  "all_Z_source_zero_H1_F_residuals_exactly_zero": true,
+  "all_Z_source_LOW_rows_for_current_input_proved": true,
+  "all_Z_source_H1_current_F_residuals": "max(w,0)",
+  "negative_source_cap_inferred_only_on_actual_previously_valid_negative_rows": true,
+  "nonnegative_incoming_Z2_rows_proved": true,
+  "all_incoming_Z_rows_claimed": false,
+  "Gamma1_from_Z_excluded_by_no_anonymous_source_charge1_target": true,
+  "Gamma0_may_expose_hidden_marks_original_floor_reused": true,
+  "newly_exposed_depth1_G_children_checked_LL_RR": true,
+  "all_admissible_signatures_and_private_completions": true,
+  "strict_capacity_increase_uses_published_completed_B_fact_no_new_query": true,
+  "new_finite_tests": 0,
+  "new_source_transition_queries": 0,
+  "new_original_root_evaluations": 0,
+  "new_saved_psi_queries": 0,
+  "new_label_fits": 0,
+  "new_bank_censuses": 0,
+  "completed_semantic_checks_replayed": 0,
+  "source_hashes": {
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_STRICT_CLOSURE/STRICT_LOW_COMPILER.py": "d621355f3745c0e0ce182c60197fd3f3e83a126237013cc4b7ae951c4731183a",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/06_CERTIFICATES/DIRECT_CDK5N_11F_PARAMETRIC_PORT_COMPILER/PC_ROTATION_INTERPRETER.py": "f15a8de6ebdb0eec8935261269e77c3729cf1c8c12d8cb0f56172403c21e9c53"
+  },
+  "full_compiler_formalization_claimed": false,
+  "external_human_or_model_review_claimed": false,
+  "all_outside_S_grandchild_zero_H1_coverage_proved": false,
+  "global_zero_LOW_coverage_proved": false,
+  "full_M3_status": "OPEN",
+  "CPU_seconds": 0.140625,
+  "CPU_cap": 120.0
+}

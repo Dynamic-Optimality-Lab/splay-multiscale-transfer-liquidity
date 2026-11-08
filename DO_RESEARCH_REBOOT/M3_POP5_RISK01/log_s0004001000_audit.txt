@@ -1,0 +1,10 @@
+{"sigma": [0, 0, 0, 4, 0, 0, 1, 0, 0, 0], "helper": null, "word": [[0]], "canonical_queries": 33690, "private_visits": 34532, "CPU": 1.391}
+{"sigma": [0, 0, 0, 4, 0, 0, 1, 0, 0, 0], "helper": null, "word": [[1]], "canonical_queries": 67380, "private_visits": 69064, "CPU": 1.922}
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_POP5_RISK01\audit.py", line 149, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\M3_POP5_RISK01\audit.py", line 105, in main
+    assert queries<=2000000 and time.process_time()-start<CPU_CAP,'UNKNOWN independent query/CPU cap'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: UNKNOWN independent query/CPU cap

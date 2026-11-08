@@ -1,0 +1,187 @@
+{
+  "status": "NON_EXTREMAL_EXPOSURE_UNIVERSAL_SYMBOLIC_AUDIT_PASS",
+  "new_universal_term_certificates": [
+    "main_non_extremal_core_zero2",
+    "main_non_extremal_core_zero2_actual_other_side",
+    "T_plus1_zero_return",
+    "T_plus1_zero_return_actual_other_side",
+    "T_plus1_four_return",
+    "T_plus1_four_return_actual_other_side",
+    "R_zero4_return",
+    "R_zero4_return_actual_other_side",
+    "H_zero2_all_marks_shallow",
+    "H_zero2_all_marks_shallow_actual_other_side",
+    "main_A_to_T_no_left_guard",
+    "main_A_to_T_no_left_guard_actual_other_side",
+    "T_A_zero_at_L",
+    "T_A_zero_at_L_actual_other_side",
+    "T_A_zero_at_LL",
+    "T_A_zero_at_LL_actual_other_side",
+    "T_A_zero_at_LR",
+    "T_A_zero_at_LR_actual_other_side",
+    "T_A_four_to_CB",
+    "T_A_four_to_CB_actual_other_side",
+    "R_A_zero4_to_CA_unrestricted_right",
+    "R_A_zero4_to_CA_unrestricted_right_actual_other_side",
+    "CA_zero8_A_R",
+    "CA_zero8_A_R_actual_other_side",
+    "CA_zero8_A_RL",
+    "CA_zero8_A_RL_actual_other_side",
+    "CA_zero8_A_RR",
+    "CA_zero8_A_RR_actual_other_side",
+    "CB_zero8_A_RR_to_EB",
+    "CB_zero8_A_RR_to_EB_actual_other_side"
+  ],
+  "lower_zero_returns_from_T": [
+    {
+      "position": "L",
+      "public_target_region": "R",
+      "fresh_private_completion_required": false
+    },
+    {
+      "position": "LL",
+      "public_target_region": "ER",
+      "fresh_private_completion_required": false
+    },
+    {
+      "position": "LR",
+      "public_target_region": "R",
+      "fresh_private_completion_required": false
+    }
+  ],
+  "upper_zero_returns_from_CA": [
+    {
+      "position": "R",
+      "public_target_region": "H"
+    },
+    {
+      "position": "RL",
+      "public_target_region": "H"
+    },
+    {
+      "position": "RR",
+      "public_target_region": "EB"
+    }
+  ],
+  "helper_eligibility_depth_checks": [
+    {
+      "case": "H_max_R",
+      "eligible_marked_subset": [
+        "eight",
+        "four"
+      ],
+      "old_depth2_marks_pushed_below_charge1": true
+    },
+    {
+      "case": "H_max_RR",
+      "eligible_marked_subset": [
+        "eight",
+        "four"
+      ],
+      "old_depth2_marks_pushed_below_charge1": true
+    },
+    {
+      "case": "H_max_RL",
+      "eligible_marked_subset": [
+        "eight",
+        "four"
+      ],
+      "old_depth2_marks_pushed_below_charge1": true
+    },
+    {
+      "case": "R_min_L",
+      "eligible_marked_subset": [
+        "zero",
+        "two"
+      ],
+      "old_depth2_marks_pushed_below_charge1": true
+    },
+    {
+      "case": "R_min_LL",
+      "eligible_marked_subset": [
+        "zero",
+        "two"
+      ],
+      "old_depth2_marks_pushed_below_charge1": true
+    },
+    {
+      "case": "R_min_LR",
+      "eligible_marked_subset": [
+        "zero",
+        "two"
+      ],
+      "old_depth2_marks_pushed_below_charge1": true
+    }
+  ],
+  "source_proxy_depths": {
+    "T_minimum": 3,
+    "CB_minimum": 4,
+    "CA_CB_maximum_lower_bound": 3,
+    "CA_minimum_A_helper_absent": true,
+    "H_maximum": 1,
+    "R_minimum": 1
+  },
+  "global_deep_helper_Gamma1_weight_at_least2_reused_for_Score_bearing_exposures": true,
+  "H_zero2_all_marked_core_depths_at_most": 2,
+  "EB_ER_actual_sources_E1_proved_in_separate_prose": true,
+  "EB_ER_change_no_actual_LOW_source": true,
+  "new_return_predicates_have_no_V_filter": true,
+  "ER_parent_type_and_label_unrestricted_in_public_guard": true,
+  "CA_right_branch_unrestricted": true,
+  "T_left_branch_unrestricted": true,
+  "one_credit_rows_proved_when_source_newly_raised_to1": true,
+  "all_already_debt2_auxiliary_sources_claimed_solved": false,
+  "scope_countercheck_floor1_does_not_pay_arbitrary_source2_zero": {
+    "constant": -1
+  },
+  "operation_order": [
+    "floor1_EB_ER",
+    "floor1_H",
+    "floor1_CA_CB",
+    "floor1_R",
+    "cap2_T",
+    "cap2_G"
+  ],
+  "each_previously_valid_LOW_row_preserved_by_each_operation": true,
+  "all_T_G_source_original_LOW_rows_proved": true,
+  "main_G_zero_H1_source_and_target_values": 2,
+  "main_G_zero_H1_signed_residual": 0,
+  "mask_minus": [
+    0,
+    2,
+    4,
+    5,
+    8
+  ],
+  "mask_actual_opposite": [
+    0,
+    3,
+    4,
+    6,
+    8
+  ],
+  "target_non_extremal_and_new_lower_mark_exposure_included": true,
+  "all_admissible_signatures_upper_U_and_private_completions": true,
+  "incoming_nonnegative_T_G_rows_valid": true,
+  "incoming_weight_ge1_auxiliary_rows_valid": true,
+  "blanket_zero_incoming_to_floor1_claimed": false,
+  "new_finite_tests": 0,
+  "new_source_transition_queries": 0,
+  "new_original_root_evaluations": 0,
+  "new_saved_psi_queries": 0,
+  "new_label_fits": 0,
+  "new_bank_censuses": 0,
+  "completed_semantic_checks_replayed": 0,
+  "reused_proof_hashes": {
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER09/symbolic_audit.json": "6fa31643661b6ddb918a69247e73069625026194b09cb478726f1bb8a419e3e4",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER08/certificate.json": "dde7ef47f449c99555eb9979fc84cb7d4e30f950a13b5b44aca7bdd390b72a3b",
+    "C:/Users/Saif malik/OneDrive/Documents/Desktop/Temp/splay-multiscale-transfer-liquidity-k6c2/DO_RESEARCH_REBOOT/M3_XFER12/symbolic_audit.json": "fae302a35104cbafdae52dd6f1bd259881f0429e71559e42dc7606a32f25dbeb"
+  },
+  "full_compiler_formalization_claimed": false,
+  "external_human_or_model_review_claimed": false,
+  "all_non_extremal_H1_zero_coverage_proved": false,
+  "Step4_complete": false,
+  "full_M3_status": "OPEN",
+  "CPU_seconds": 0.09375,
+  "CPU_cap": 120.0
+}

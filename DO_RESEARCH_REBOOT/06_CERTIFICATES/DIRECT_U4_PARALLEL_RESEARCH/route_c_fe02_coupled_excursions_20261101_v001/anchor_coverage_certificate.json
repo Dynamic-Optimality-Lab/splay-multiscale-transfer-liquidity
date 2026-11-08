@@ -1,0 +1,3205 @@
+{
+  "status": "EXACT_FIXED_FE02_ANCHOR_COVERAGE_AUDIT",
+  "source_certificate_sha256": "5417ec9ffdcbb87826f1a8c08e75d8340d1bd9f0d70f17f2f86982a0c39af2bd",
+  "anchors": {
+    "1": {
+      "anchor": 1,
+      "excursion_count": 3,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 9,
+        "return_block": 33,
+        "indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "internal_keys": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "ordered": false,
+        "one_side": "R",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          null,
+          8
+        ],
+        "common_anchor_cut": true,
+        "opposite_subtree_A": null,
+        "opposite_subtree_B": null,
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 6,
+          "return_block": 9,
+          "indices": [
+            7,
+            8,
+            9
+          ],
+          "internal_keys": [
+            7,
+            11
+          ],
+          "ordered": true,
+          "one_side": "R",
+          "contains_negative": false,
+          "B_anchor_child_before": [
+            null,
+            2
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": null,
+          "opposite_subtree_B": null,
+          "whole_opposite_subtree_preserved": true,
+          "ordered_source_formula": {
+            "epsilon_A": [
+              1,
+              1
+            ],
+            "epsilon_B": [
+              2,
+              2
+            ],
+            "D": 0,
+            "return_depth_A": 2,
+            "return_depth_B": 4,
+            "source_reserve": 0,
+            "return_delta": 0,
+            "B_child_before": 2,
+            "B_child_after": 8,
+            "first_target": 7,
+            "source_last_B_parent": 8,
+            "strict_outward_drift": true
+          }
+        },
+        {
+          "start_after_block": 9,
+          "return_block": 33,
+          "indices": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "internal_keys": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            null,
+            8
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": null,
+          "opposite_subtree_B": null,
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 33,
+          "return_block": 6,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "internal_keys": [
+            11,
+            9,
+            11,
+            7,
+            3,
+            7
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            null,
+            2
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": null,
+          "opposite_subtree_B": null,
+          "whole_opposite_subtree_preserved": true
+        }
+      ]
+    },
+    "2": {
+      "anchor": 2,
+      "excursion_count": 2,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 10,
+        "return_block": 32,
+        "indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "internal_keys": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "ordered": false,
+        "one_side": "R",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          1,
+          8
+        ],
+        "common_anchor_cut": true,
+        "opposite_subtree_A": [
+          1,
+          null,
+          null
+        ],
+        "opposite_subtree_B": [
+          1,
+          null,
+          null
+        ],
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 10,
+          "return_block": 32,
+          "indices": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "internal_keys": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            1,
+            8
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            1,
+            null,
+            null
+          ],
+          "opposite_subtree_B": [
+            1,
+            null,
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 32,
+          "return_block": 10,
+          "indices": [
+            33,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "internal_keys": [
+            1,
+            11,
+            9,
+            11,
+            7,
+            3,
+            7,
+            1,
+            7,
+            11,
+            1
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            1,
+            3
+          ],
+          "common_anchor_cut": true
+        }
+      ]
+    },
+    "3": {
+      "anchor": 3,
+      "excursion_count": 3,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 4,
+        "return_block": 11,
+        "indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "internal_keys": [
+          7,
+          1,
+          7,
+          11,
+          1,
+          2
+        ],
+        "ordered": false,
+        "one_side": null,
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          null,
+          2
+        ],
+        "common_anchor_cut": false
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 4,
+          "return_block": 11,
+          "indices": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "internal_keys": [
+            7,
+            1,
+            7,
+            11,
+            1,
+            2
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            null,
+            2
+          ],
+          "common_anchor_cut": false
+        },
+        {
+          "start_after_block": 11,
+          "return_block": 31,
+          "indices": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "internal_keys": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            2,
+            8
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 31,
+          "return_block": 4,
+          "indices": [
+            32,
+            33,
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "internal_keys": [
+            2,
+            1,
+            11,
+            9,
+            11,
+            7
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            2,
+            4
+          ],
+          "common_anchor_cut": true
+        }
+      ]
+    },
+    "4": {
+      "anchor": 4,
+      "excursion_count": 2,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 12,
+        "return_block": 30,
+        "indices": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "internal_keys": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5
+        ],
+        "ordered": false,
+        "one_side": "R",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          3,
+          8
+        ],
+        "common_anchor_cut": true,
+        "opposite_subtree_A": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "opposite_subtree_B": [
+          3,
+          [
+            2,
+            [
+              1,
+              null,
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 12,
+          "return_block": 30,
+          "indices": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ],
+          "internal_keys": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            3,
+            8
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 30,
+          "return_block": 12,
+          "indices": [
+            31,
+            32,
+            33,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "internal_keys": [
+            3,
+            2,
+            1,
+            11,
+            9,
+            11,
+            7,
+            3,
+            7,
+            1,
+            7,
+            11,
+            1,
+            2,
+            3
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            3,
+            5
+          ],
+          "common_anchor_cut": true
+        }
+      ]
+    },
+    "5": {
+      "anchor": 5,
+      "excursion_count": 2,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 13,
+        "return_block": 29,
+        "indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "internal_keys": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6
+        ],
+        "ordered": false,
+        "one_side": "R",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          4,
+          8
+        ],
+        "common_anchor_cut": true,
+        "opposite_subtree_A": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "opposite_subtree_B": [
+          4,
+          [
+            3,
+            [
+              2,
+              [
+                1,
+                null,
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 13,
+          "return_block": 29,
+          "indices": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "internal_keys": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            4,
+            8
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 29,
+          "return_block": 13,
+          "indices": [
+            30,
+            31,
+            32,
+            33,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "internal_keys": [
+            4,
+            3,
+            2,
+            1,
+            11,
+            9,
+            11,
+            7,
+            3,
+            7,
+            1,
+            7,
+            11,
+            1,
+            2,
+            3,
+            4
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            4,
+            6
+          ],
+          "common_anchor_cut": true
+        }
+      ]
+    },
+    "6": {
+      "anchor": 6,
+      "excursion_count": 2,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 14,
+        "return_block": 28,
+        "indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "internal_keys": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "ordered": false,
+        "one_side": "R",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          5,
+          8
+        ],
+        "common_anchor_cut": true,
+        "opposite_subtree_A": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "opposite_subtree_B": [
+          5,
+          [
+            4,
+            [
+              3,
+              [
+                2,
+                [
+                  1,
+                  null,
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 14,
+          "return_block": 28,
+          "indices": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "internal_keys": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            12,
+            11,
+            10,
+            9,
+            8,
+            7
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            5,
+            8
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            5,
+            [
+              4,
+              [
+                3,
+                [
+                  2,
+                  [
+                    1,
+                    null,
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 28,
+          "return_block": 14,
+          "indices": [
+            29,
+            30,
+            31,
+            32,
+            33,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "internal_keys": [
+            5,
+            4,
+            3,
+            2,
+            1,
+            11,
+            9,
+            11,
+            7,
+            3,
+            7,
+            1,
+            7,
+            11,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            5,
+            7
+          ],
+          "common_anchor_cut": true
+        }
+      ]
+    },
+    "7": {
+      "anchor": 7,
+      "excursion_count": 5,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 7,
+        "return_block": 15,
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "internal_keys": [
+          11,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "ordered": false,
+        "one_side": null,
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          2,
+          8
+        ],
+        "common_anchor_cut": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 3,
+          "return_block": 5,
+          "indices": [
+            4,
+            5
+          ],
+          "internal_keys": [
+            3
+          ],
+          "ordered": true,
+          "one_side": "L",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            null,
+            2
+          ],
+          "common_anchor_cut": false,
+          "opposite_subtree_A": [
+            11,
+            [
+              9,
+              [
+                8,
+                null,
+                null
+              ],
+              [
+                10,
+                null,
+                null
+              ]
+            ],
+            [
+              12,
+              null,
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "opposite_subtree_B": [
+            8,
+            null,
+            [
+              9,
+              null,
+              [
+                10,
+                null,
+                [
+                  11,
+                  null,
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 5,
+          "return_block": 7,
+          "indices": [
+            6,
+            7
+          ],
+          "internal_keys": [
+            1
+          ],
+          "ordered": true,
+          "one_side": "L",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            null,
+            2
+          ],
+          "common_anchor_cut": false,
+          "opposite_subtree_A": [
+            11,
+            [
+              9,
+              [
+                8,
+                null,
+                null
+              ],
+              [
+                10,
+                null,
+                null
+              ]
+            ],
+            [
+              12,
+              null,
+              [
+                13,
+                null,
+                null
+              ]
+            ]
+          ],
+          "opposite_subtree_B": [
+            8,
+            null,
+            [
+              9,
+              null,
+              [
+                10,
+                null,
+                [
+                  11,
+                  null,
+                  [
+                    12,
+                    null,
+                    [
+                      13,
+                      null,
+                      null
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 7,
+          "return_block": 15,
+          "indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "internal_keys": [
+            11,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            2,
+            8
+          ],
+          "common_anchor_cut": true
+        },
+        {
+          "start_after_block": 15,
+          "return_block": 27,
+          "indices": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "internal_keys": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            12,
+            11,
+            10,
+            9,
+            8
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            6,
+            8
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            6,
+            [
+              5,
+              [
+                4,
+                [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            6,
+            [
+              5,
+              [
+                4,
+                [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 27,
+          "return_block": 3,
+          "indices": [
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            0,
+            1,
+            2,
+            3
+          ],
+          "internal_keys": [
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            11,
+            9,
+            11
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            6,
+            8
+          ],
+          "common_anchor_cut": true
+        }
+      ]
+    },
+    "8": {
+      "anchor": 8,
+      "excursion_count": 2,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 16,
+        "return_block": 26,
+        "indices": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "internal_keys": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          12,
+          11,
+          10,
+          9
+        ],
+        "ordered": false,
+        "one_side": "R",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          7,
+          11
+        ],
+        "common_anchor_cut": true,
+        "opposite_subtree_A": [
+          7,
+          [
+            6,
+            [
+              5,
+              [
+                4,
+                [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "opposite_subtree_B": [
+          7,
+          [
+            6,
+            [
+              5,
+              [
+                4,
+                [
+                  3,
+                  [
+                    2,
+                    [
+                      1,
+                      null,
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 16,
+          "return_block": 26,
+          "indices": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "internal_keys": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            12,
+            11,
+            10,
+            9
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            7,
+            11
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            7,
+            [
+              6,
+              [
+                5,
+                [
+                  4,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            7,
+            [
+              6,
+              [
+                5,
+                [
+                  4,
+                  [
+                    3,
+                    [
+                      2,
+                      [
+                        1,
+                        null,
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 26,
+          "return_block": 16,
+          "indices": [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "internal_keys": [
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            11,
+            9,
+            11,
+            7,
+            3,
+            7,
+            1,
+            7,
+            11,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            7,
+            9
+          ],
+          "common_anchor_cut": true
+        }
+      ]
+    },
+    "9": {
+      "anchor": 9,
+      "excursion_count": 3,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 1,
+        "return_block": 17,
+        "indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "internal_keys": [
+          11,
+          7,
+          3,
+          7,
+          1,
+          7,
+          11,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "ordered": false,
+        "one_side": null,
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          null,
+          2
+        ],
+        "common_anchor_cut": false
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 1,
+          "return_block": 17,
+          "indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "internal_keys": [
+            11,
+            7,
+            3,
+            7,
+            1,
+            7,
+            11,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            null,
+            2
+          ],
+          "common_anchor_cut": false
+        },
+        {
+          "start_after_block": 17,
+          "return_block": 25,
+          "indices": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "internal_keys": [
+            10,
+            11,
+            12,
+            13,
+            12,
+            11,
+            10
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            8,
+            10
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 25,
+          "return_block": 1,
+          "indices": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            0,
+            1
+          ],
+          "internal_keys": [
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            11
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            8,
+            10
+          ],
+          "common_anchor_cut": true
+        }
+      ]
+    },
+    "10": {
+      "anchor": 10,
+      "excursion_count": 2,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 18,
+        "return_block": 24,
+        "indices": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "internal_keys": [
+          11,
+          12,
+          13,
+          12,
+          11
+        ],
+        "ordered": false,
+        "one_side": "R",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          9,
+          11
+        ],
+        "common_anchor_cut": true,
+        "opposite_subtree_A": [
+          9,
+          [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "opposite_subtree_B": [
+          9,
+          [
+            8,
+            [
+              7,
+              [
+                6,
+                [
+                  5,
+                  [
+                    4,
+                    [
+                      3,
+                      [
+                        2,
+                        [
+                          1,
+                          null,
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          null
+        ],
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 18,
+          "return_block": 24,
+          "indices": [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "internal_keys": [
+            11,
+            12,
+            13,
+            12,
+            11
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            9,
+            11
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            9,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            9,
+            [
+              8,
+              [
+                7,
+                [
+                  6,
+                  [
+                    5,
+                    [
+                      4,
+                      [
+                        3,
+                        [
+                          2,
+                          [
+                            1,
+                            null,
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 24,
+          "return_block": 18,
+          "indices": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "internal_keys": [
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            11,
+            9,
+            11,
+            7,
+            3,
+            7,
+            1,
+            7,
+            11,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "ordered": false,
+          "one_side": null,
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            9,
+            11
+          ],
+          "common_anchor_cut": true
+        }
+      ]
+    },
+    "11": {
+      "anchor": 11,
+      "excursion_count": 5,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 2,
+        "return_block": 8,
+        "indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "internal_keys": [
+          7,
+          3,
+          7,
+          1,
+          7
+        ],
+        "ordered": false,
+        "one_side": "L",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          null,
+          2
+        ],
+        "common_anchor_cut": false,
+        "opposite_subtree_A": [
+          12,
+          null,
+          [
+            13,
+            null,
+            null
+          ]
+        ],
+        "opposite_subtree_B": [
+          12,
+          null,
+          [
+            13,
+            null,
+            null
+          ]
+        ],
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 0,
+          "return_block": 2,
+          "indices": [
+            1,
+            2
+          ],
+          "internal_keys": [
+            9
+          ],
+          "ordered": true,
+          "one_side": "L",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            null,
+            2
+          ],
+          "common_anchor_cut": false,
+          "opposite_subtree_A": [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ],
+          "opposite_subtree_B": [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 2,
+          "return_block": 8,
+          "indices": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "internal_keys": [
+            7,
+            3,
+            7,
+            1,
+            7
+          ],
+          "ordered": false,
+          "one_side": "L",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            null,
+            2
+          ],
+          "common_anchor_cut": false,
+          "opposite_subtree_A": [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ],
+          "opposite_subtree_B": [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 8,
+          "return_block": 19,
+          "indices": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "internal_keys": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "ordered": false,
+          "one_side": "L",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            8,
+            12
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ],
+          "opposite_subtree_B": [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 19,
+          "return_block": 23,
+          "indices": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "internal_keys": [
+            12,
+            13,
+            12
+          ],
+          "ordered": false,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            10,
+            12
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            10,
+            [
+              9,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            10,
+            [
+              9,
+              [
+                8,
+                [
+                  7,
+                  [
+                    6,
+                    [
+                      5,
+                      [
+                        4,
+                        [
+                          3,
+                          [
+                            2,
+                            [
+                              1,
+                              null,
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        },
+        {
+          "start_after_block": 23,
+          "return_block": 0,
+          "indices": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            0
+          ],
+          "internal_keys": [
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "ordered": true,
+          "one_side": "L",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            10,
+            12
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ],
+          "opposite_subtree_B": [
+            12,
+            null,
+            [
+              13,
+              null,
+              null
+            ]
+          ],
+          "whole_opposite_subtree_preserved": true
+        }
+      ]
+    },
+    "12": {
+      "anchor": 12,
+      "excursion_count": 2,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 22,
+        "return_block": 20,
+        "indices": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "internal_keys": [
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          11,
+          9,
+          11,
+          7,
+          3,
+          7,
+          1,
+          7,
+          11,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "ordered": false,
+        "one_side": "L",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          11,
+          13
+        ],
+        "common_anchor_cut": true,
+        "opposite_subtree_A": [
+          13,
+          null,
+          null
+        ],
+        "opposite_subtree_B": [
+          13,
+          null,
+          null
+        ],
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 20,
+          "return_block": 22,
+          "indices": [
+            21,
+            22
+          ],
+          "internal_keys": [
+            13
+          ],
+          "ordered": true,
+          "one_side": "R",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            11,
+            13
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            11,
+            [
+              10,
+              [
+                9,
+                [
+                  8,
+                  [
+                    7,
+                    [
+                      6,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            [
+                              2,
+                              [
+                                1,
+                                null,
+                                null
+                              ],
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "opposite_subtree_B": [
+            11,
+            [
+              10,
+              [
+                9,
+                [
+                  8,
+                  [
+                    7,
+                    [
+                      6,
+                      [
+                        5,
+                        [
+                          4,
+                          [
+                            3,
+                            [
+                              2,
+                              [
+                                1,
+                                null,
+                                null
+                              ],
+                              null
+                            ],
+                            null
+                          ],
+                          null
+                        ],
+                        null
+                      ],
+                      null
+                    ],
+                    null
+                  ],
+                  null
+                ],
+                null
+              ],
+              null
+            ],
+            null
+          ],
+          "whole_opposite_subtree_preserved": true,
+          "ordered_source_formula": {
+            "epsilon_A": [
+              1
+            ],
+            "epsilon_B": [
+              1
+            ],
+            "D": 1,
+            "return_depth_A": 1,
+            "return_depth_B": 1,
+            "source_reserve": 2,
+            "return_delta": -2
+          }
+        },
+        {
+          "start_after_block": 22,
+          "return_block": 20,
+          "indices": [
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "internal_keys": [
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            11,
+            9,
+            11,
+            7,
+            3,
+            7,
+            1,
+            7,
+            11,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "ordered": false,
+          "one_side": "L",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            11,
+            13
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": [
+            13,
+            null,
+            null
+          ],
+          "opposite_subtree_B": [
+            13,
+            null,
+            null
+          ],
+          "whole_opposite_subtree_preserved": true
+        }
+      ]
+    },
+    "13": {
+      "anchor": 13,
+      "excursion_count": 1,
+      "qualifies": false,
+      "first_bad_excursion": {
+        "start_after_block": 21,
+        "return_block": 21,
+        "indices": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "internal_keys": [
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          11,
+          9,
+          11,
+          7,
+          3,
+          7,
+          1,
+          7,
+          11,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "ordered": false,
+        "one_side": "L",
+        "contains_negative": true,
+        "B_anchor_child_before": [
+          12,
+          null
+        ],
+        "common_anchor_cut": true,
+        "opposite_subtree_A": null,
+        "opposite_subtree_B": null,
+        "whole_opposite_subtree_preserved": true
+      },
+      "all_excursions": [
+        {
+          "start_after_block": 21,
+          "return_block": 21,
+          "indices": [
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "internal_keys": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            11,
+            9,
+            11,
+            7,
+            3,
+            7,
+            1,
+            7,
+            11,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "ordered": false,
+          "one_side": "L",
+          "contains_negative": true,
+          "B_anchor_child_before": [
+            12,
+            null
+          ],
+          "common_anchor_cut": true,
+          "opposite_subtree_A": null,
+          "opposite_subtree_B": null,
+          "whole_opposite_subtree_preserved": true
+        }
+      ]
+    }
+  },
+  "qualifying_anchors": [],
+  "original_control": {
+    "blocks": 34,
+    "A": 46,
+    "Q": 16,
+    "positive_block": 7,
+    "exactly_one_positive": true
+  },
+  "unqualified_all_FE02_anchor_coverage": "REFUTED\u2014EXACT",
+  "all_saturated_counterexample_specific_anchor_coverage": "OPEN",
+  "no_new_source_word_or_size_searched": true,
+  "FE02_CD": "OPEN"
+}

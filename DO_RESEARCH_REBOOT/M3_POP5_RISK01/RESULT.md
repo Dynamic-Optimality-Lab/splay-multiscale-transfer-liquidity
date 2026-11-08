@@ -1,0 +1,22 @@
+# Total-five multi-support campaign
+
+**PROVED_RESTRICTED_DOMAIN_TOTAL5_PREFIX:** 140 new original signatures from 70 complete independent canonical audits plus source lifting. 1852/1992 total-five multi-support signatures remain. The ten total-five singles and all715 total-four sectors were already certified and remain unchanged.
+
+SOURCE_LIFT.md specializes the generic budget-consuming source induction to total5. This extends coverage; it does not extrapolate feasibility from total4. The DP, independent ordered-key/source-address enumeration, integer residual assertions, original predicates and resource guards are unchanged. Path/scope/label differences are exactly recorded in implementation_change_audit.json.
+All promoted vectors are reflection pairs. Odd total5 precludes self-reflecting ten-gap signatures. The reflection lift acts on the actual LOW image and reuses pinned selector/kernel/debt equivariance. Every private count/bill branch, literal-slot0 G read, current-child observation and unfolded F identity remains included. Only finite-audited AND source-complete sectors enter the public decoder.
+
+Independent checks: 2,014,034,390 exact residuals, minimum 0; 29,978,075 canonical profiles. Maximum successful queries 697,802; DP records 811,072; construction records 1,295,337.
+New original-source validation: 84 roots, 4 full147-O/same-actual127-M closed mixed cycles, 2 complete pre-registered source phases, 161.75 computation CPU seconds. No old source root or completed finite matrix/audit was replayed.
+
+For each newly certified sector J lies in[-2,0] and J<=-psi. Set W(O)=J-5chi8,W(M)=-5chi8; each original leg has w>=DeltaW. Telescoping gives original fully closed mixed walks>=0 and finite walks>=-7. All126 legal masks and both regions wherever realizable are covered. Sigma is conserved on original edges, so the old and new certificates combine without changing original state identity or shared midpoint.
+New signatures by support size: {"2": 92, "3": 48, "4": 0, "5": 0}. Combined bank: 3761 signatures/473886 mask sectors.
+
+CPU ledger: prior4055.96875 retained; additional 3139.234375; cumulative 7195.203125/7200. No allowance reset or cap increase. Whole child-process/finally CPU and parent metadata CPU are charged. Source keeps its separate per-phase300-second cap.
+Current caps preserved: enumeration120/construction300/independent-audit300 CPU seconds;2m canonical queries;2m live records;4m DAG nodes;5m edges;32GiB; inherited12h ceiling. Source phases of at most50 canonical cases were fixed upfront, each300 seconds/max4 cycles/max4 helpers; no failed phase was split/retried.
+First new finite stop: sigma=[0, 0, 0, 4, 0, 0, 1, 0, 0, 0], phase=audit, status=UNKNOWN_OR_FAILED, reason=None, error={'type': 'AssertionError', 'message': 'UNKNOWN independent query/CPU cap'}. Source failure: null. A cap/UNKNOWN proves no mathematical contradiction. A range-template obstruction in the superrelation would not certify an original negative cycle. No failed or source-incomplete sector is promoted.
+R1-R4, original q/weights/two sorts/private scopes/full closure and corrected h0 preserved. 11506 pinned prior files unchanged; HEAD/tracked tree unchanged. Concurrent U4 additions are recorded separately, not M3 evidence.
+
+Proof ledger: BEFORE0/1992 total-five multi-support sectors; RESULT140 new source-complete sectors; AFTER140/1992. New mathematical assumptions/observables:0. Unpromoted finite-only cases:[].
+Complete-boundary check: all total-five multi-support signatures with occupied-gap span at most2 covered = True. New signatures by span: {"1": 36, "2": 80, "3": 24, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0}.
+Aggregate CPU stop: the next case4e3+e6 had complete enumeration/construction saved (342,348 queries). Its new audit received only3.5625 CPU seconds from the remaining balance, rather than a full300-second allocation. It remains UNKNOWN, with no audit certificate or mathematical refutation. The last persisted completed-family count is67,380; the exact partial count is not invented. No later finite case or failed-phase retry was run. See STOP_NOTE.json and the four saved input hashes for future continuation.
+**Full M3 remains OPEN.** Unpromoted total-five and larger multi-support totals remain unresolved. No Stage04 or Dynamic Optimality claim. Certificates use exact independent computation and the written source lift, not proof-assistant formalization.
