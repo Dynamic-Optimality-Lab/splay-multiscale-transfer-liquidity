@@ -1,0 +1,1215 @@
+{
+  "independent": {
+    "passed": true,
+    "support": 257,
+    "operations": 686,
+    "A": 989,
+    "Q_B": 519,
+    "Omega_5": 2,
+    "paid_A_slot_assignments": 517,
+    "maximum_A_load": 10,
+    "whole_original_operations_completed": true,
+    "max_B_doubles_per_access": 54,
+    "greatest_cyclic_seam_verified": true,
+    "source_uniform_bound_proved": false
+  },
+  "old_frozen_policy_agrees": true,
+  "source_file": "run_003/complete_00.json.gz",
+  "A": 989,
+  "Q_B": 519,
+  "P_5": 517,
+  "Omega_5": 2,
+  "unpaid_original_events": [
+    {
+      "id": [
+        "B",
+        99,
+        14
+      ],
+      "scope": [
+        26,
+        27,
+        28,
+        45
+      ],
+      "priority": [
+        45,
+        28,
+        26,
+        27
+      ],
+      "type": "RR",
+      "bits": [
+        {
+          "promoted": 139,
+          "demoted": 138,
+          "grandparent": 134,
+          "middle": null
+        },
+        {
+          "promoted": 226,
+          "demoted": 139,
+          "grandparent": 134,
+          "middle": 143
+        }
+      ],
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "nearby_B_steps": [
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              9
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              38,
+              39,
+              45
+            ],
+            "priority": [
+              45,
+              39,
+              38
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 195,
+                "demoted": 193,
+                "grandparent": 191,
+                "middle": 194
+              },
+              {
+                "promoted": 226,
+                "demoted": 195,
+                "grandparent": 191,
+                "middle": 199
+              }
+            ]
+          },
+          "row": {
+            "event": 501,
+            "id": [
+              "B",
+              99,
+              9
+            ],
+            "priority": [
+              45,
+              39,
+              38
+            ],
+            "before": [
+              5,
+              0,
+              0
+            ],
+            "after": [
+              4,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              10
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              37,
+              38,
+              45
+            ],
+            "priority": [
+              45,
+              38,
+              37
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 191,
+                "demoted": 189,
+                "grandparent": 187,
+                "middle": 190
+              },
+              {
+                "promoted": 226,
+                "demoted": 191,
+                "grandparent": 187,
+                "middle": 195
+              }
+            ]
+          },
+          "row": {
+            "event": 502,
+            "id": [
+              "B",
+              99,
+              10
+            ],
+            "priority": [
+              45,
+              38,
+              37
+            ],
+            "before": [
+              4,
+              0,
+              0
+            ],
+            "after": [
+              3,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              11
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              36,
+              37,
+              38,
+              45
+            ],
+            "priority": [
+              45,
+              38,
+              36,
+              37
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 187,
+                "demoted": 185,
+                "grandparent": 183,
+                "middle": 186
+              },
+              {
+                "promoted": 226,
+                "demoted": 187,
+                "grandparent": 183,
+                "middle": 191
+              }
+            ]
+          },
+          "row": {
+            "event": 503,
+            "id": [
+              "B",
+              99,
+              11
+            ],
+            "priority": [
+              45,
+              38,
+              36,
+              37
+            ],
+            "before": [
+              3,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              12
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              28,
+              36,
+              37,
+              45
+            ],
+            "priority": [
+              45,
+              37,
+              28,
+              36
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 183,
+                "demoted": 181,
+                "grandparent": 143,
+                "middle": 182
+              },
+              {
+                "promoted": 226,
+                "demoted": 183,
+                "grandparent": 143,
+                "middle": 187
+              }
+            ]
+          },
+          "row": {
+            "event": 504,
+            "id": [
+              "B",
+              99,
+              12
+            ],
+            "priority": [
+              45,
+              37,
+              28,
+              36
+            ],
+            "before": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              13
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              27,
+              28,
+              36,
+              45
+            ],
+            "priority": [
+              45,
+              36,
+              27,
+              28
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 143,
+                "demoted": 141,
+                "grandparent": 139,
+                "middle": 142
+              },
+              {
+                "promoted": 226,
+                "demoted": 143,
+                "grandparent": 139,
+                "middle": 183
+              }
+            ]
+          },
+          "row": {
+            "event": 505,
+            "id": [
+              "B",
+              99,
+              13
+            ],
+            "priority": [
+              45,
+              36,
+              27,
+              28
+            ],
+            "before": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              14
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              26,
+              27,
+              28,
+              45
+            ],
+            "priority": [
+              45,
+              28,
+              26,
+              27
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 139,
+                "demoted": 138,
+                "grandparent": 134,
+                "middle": null
+              },
+              {
+                "promoted": 226,
+                "demoted": 139,
+                "grandparent": 134,
+                "middle": 143
+              }
+            ]
+          },
+          "row": {
+            "event": 506,
+            "id": [
+              "B",
+              99,
+              14
+            ],
+            "priority": [
+              45,
+              28,
+              26,
+              27
+            ],
+            "before": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 0,
+            "unpaid": 1
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              15
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              23,
+              25,
+              26,
+              27,
+              45
+            ],
+            "priority": [
+              45,
+              27,
+              23,
+              26,
+              25
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 134,
+                "demoted": 118,
+                "grandparent": 230,
+                "middle": 126
+              },
+              {
+                "promoted": 226,
+                "demoted": 134,
+                "grandparent": 230,
+                "middle": 139
+              }
+            ]
+          },
+          "row": {
+            "event": 507,
+            "id": [
+              "B",
+              99,
+              15
+            ],
+            "priority": [
+              45,
+              27,
+              23,
+              26,
+              25
+            ],
+            "before": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 0,
+            "unpaid": 1
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              16
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              45,
+              46,
+              50
+            ],
+            "priority": [
+              45,
+              50,
+              46
+            ],
+            "type": "LL",
+            "bits": [
+              {
+                "promoted": 230,
+                "demoted": 234,
+                "grandparent": 252,
+                "middle": 232
+              },
+              {
+                "promoted": 226,
+                "demoted": 230,
+                "grandparent": 252,
+                "middle": 227
+              }
+            ]
+          },
+          "row": {
+            "event": 508,
+            "id": [
+              "B",
+              99,
+              16
+            ],
+            "priority": [
+              45,
+              50,
+              46
+            ],
+            "before": [
+              0,
+              5,
+              5
+            ],
+            "after": [
+              5,
+              4,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": [
+        "B",
+        99,
+        15
+      ],
+      "scope": [
+        23,
+        25,
+        26,
+        27,
+        45
+      ],
+      "priority": [
+        45,
+        27,
+        23,
+        26,
+        25
+      ],
+      "type": "RR",
+      "bits": [
+        {
+          "promoted": 134,
+          "demoted": 118,
+          "grandparent": 230,
+          "middle": 126
+        },
+        {
+          "promoted": 226,
+          "demoted": 134,
+          "grandparent": 230,
+          "middle": 139
+        }
+      ],
+      "before": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nearby_B_steps": [
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              10
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              37,
+              38,
+              45
+            ],
+            "priority": [
+              45,
+              38,
+              37
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 191,
+                "demoted": 189,
+                "grandparent": 187,
+                "middle": 190
+              },
+              {
+                "promoted": 226,
+                "demoted": 191,
+                "grandparent": 187,
+                "middle": 195
+              }
+            ]
+          },
+          "row": {
+            "event": 502,
+            "id": [
+              "B",
+              99,
+              10
+            ],
+            "priority": [
+              45,
+              38,
+              37
+            ],
+            "before": [
+              4,
+              0,
+              0
+            ],
+            "after": [
+              3,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              11
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              36,
+              37,
+              38,
+              45
+            ],
+            "priority": [
+              45,
+              38,
+              36,
+              37
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 187,
+                "demoted": 185,
+                "grandparent": 183,
+                "middle": 186
+              },
+              {
+                "promoted": 226,
+                "demoted": 187,
+                "grandparent": 183,
+                "middle": 191
+              }
+            ]
+          },
+          "row": {
+            "event": 503,
+            "id": [
+              "B",
+              99,
+              11
+            ],
+            "priority": [
+              45,
+              38,
+              36,
+              37
+            ],
+            "before": [
+              3,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              12
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              28,
+              36,
+              37,
+              45
+            ],
+            "priority": [
+              45,
+              37,
+              28,
+              36
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 183,
+                "demoted": 181,
+                "grandparent": 143,
+                "middle": 182
+              },
+              {
+                "promoted": 226,
+                "demoted": 183,
+                "grandparent": 143,
+                "middle": 187
+              }
+            ]
+          },
+          "row": {
+            "event": 504,
+            "id": [
+              "B",
+              99,
+              12
+            ],
+            "priority": [
+              45,
+              37,
+              28,
+              36
+            ],
+            "before": [
+              2,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              13
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              27,
+              28,
+              36,
+              45
+            ],
+            "priority": [
+              45,
+              36,
+              27,
+              28
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 143,
+                "demoted": 141,
+                "grandparent": 139,
+                "middle": 142
+              },
+              {
+                "promoted": 226,
+                "demoted": 143,
+                "grandparent": 139,
+                "middle": 183
+              }
+            ]
+          },
+          "row": {
+            "event": 505,
+            "id": [
+              "B",
+              99,
+              13
+            ],
+            "priority": [
+              45,
+              36,
+              27,
+              28
+            ],
+            "before": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              14
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              26,
+              27,
+              28,
+              45
+            ],
+            "priority": [
+              45,
+              28,
+              26,
+              27
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 139,
+                "demoted": 138,
+                "grandparent": 134,
+                "middle": null
+              },
+              {
+                "promoted": 226,
+                "demoted": 139,
+                "grandparent": 134,
+                "middle": 143
+              }
+            ]
+          },
+          "row": {
+            "event": 506,
+            "id": [
+              "B",
+              99,
+              14
+            ],
+            "priority": [
+              45,
+              28,
+              26,
+              27
+            ],
+            "before": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 0,
+            "unpaid": 1
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              15
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              23,
+              25,
+              26,
+              27,
+              45
+            ],
+            "priority": [
+              45,
+              27,
+              23,
+              26,
+              25
+            ],
+            "type": "RR",
+            "bits": [
+              {
+                "promoted": 134,
+                "demoted": 118,
+                "grandparent": 230,
+                "middle": 126
+              },
+              {
+                "promoted": 226,
+                "demoted": 134,
+                "grandparent": 230,
+                "middle": 139
+              }
+            ]
+          },
+          "row": {
+            "event": 507,
+            "id": [
+              "B",
+              99,
+              15
+            ],
+            "priority": [
+              45,
+              27,
+              23,
+              26,
+              25
+            ],
+            "before": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "after": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "issued": 0,
+            "paid": 0,
+            "unpaid": 1
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              16
+            ],
+            "a": 0,
+            "q": 1,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              45,
+              46,
+              50
+            ],
+            "priority": [
+              45,
+              50,
+              46
+            ],
+            "type": "LL",
+            "bits": [
+              {
+                "promoted": 230,
+                "demoted": 234,
+                "grandparent": 252,
+                "middle": 232
+              },
+              {
+                "promoted": 226,
+                "demoted": 230,
+                "grandparent": 252,
+                "middle": 227
+              }
+            ]
+          },
+          "row": {
+            "event": 508,
+            "id": [
+              "B",
+              99,
+              16
+            ],
+            "priority": [
+              45,
+              50,
+              46
+            ],
+            "before": [
+              0,
+              5,
+              5
+            ],
+            "after": [
+              5,
+              4,
+              0
+            ],
+            "issued": 0,
+            "paid": 1,
+            "unpaid": 0
+          }
+        },
+        {
+          "event": {
+            "id": [
+              "B",
+              99,
+              17
+            ],
+            "a": 0,
+            "q": 0,
+            "k": 0,
+            "target": 226,
+            "scope": [
+              45,
+              50
+            ],
+            "priority": [
+              45,
+              50
+            ],
+            "type": "ZIG",
+            "bits": [
+              {
+                "promoted": 226,
+                "demoted": 252,
+                "grandparent": null,
+                "middle": 230
+              }
+            ]
+          },
+          "row": {
+            "event": 509,
+            "id": [
+              "B",
+              99,
+              17
+            ],
+            "priority": [
+              45,
+              50
+            ],
+            "before": [
+              5,
+              4
+            ],
+            "after": [
+              5,
+              4
+            ],
+            "issued": 0,
+            "paid": 0,
+            "unpaid": 0
+          }
+        }
+      ]
+    }
+  ],
+  "dry_packets": [
+    {
+      "operation": 99,
+      "last_funded_target_drain": [
+        "B",
+        99,
+        13
+      ],
+      "unpaid_original_ids": [
+        [
+          "B",
+          99,
+          14
+        ],
+        [
+          "B",
+          99,
+          15
+        ]
+      ],
+      "owner_blocks": [
+        23,
+        25,
+        26,
+        27,
+        28,
+        45
+      ]
+    }
+  ],
+  "scope": "A real frozen-policy failure; aggregate Omega5=O(A) remains OPEN."
+}

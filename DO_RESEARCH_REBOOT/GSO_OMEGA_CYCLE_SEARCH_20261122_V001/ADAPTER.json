@@ -1,0 +1,14 @@
+{
+  "entry_point": "gso_omega.py",
+  "predecessors": [
+    "GSO_ENGINE_20261121_V001",
+    "GSO_CONSERVATIVE_TRANSPORT_20261122_V001",
+    "GSO_JOINT_PROOF_SEARCH_20261122_V001",
+    "GSO_PAIRED_CREDIT_DYNAMICS_20261122_V001"
+  ],
+  "self_contained_runtime": true,
+  "source_compatibility": "Accepts original source objects or wrapper objects with source field.",
+  "policy_compatibility": "FROZEN_POLICY_COMPATIBILITY.json and POSITIVE_OMEGA_PHYSICAL_RECORD.json",
+  "universal_acceptance": "ROOT_ACCEPTANCE.json",
+  "prior_sealed_modules_modified": false
+}

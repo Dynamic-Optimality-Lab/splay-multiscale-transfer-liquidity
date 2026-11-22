@@ -1,0 +1,330 @@
+{
+  "engine": "WORKING_COMPLETE_HISTORY_OMEGA5_ADVERSARY",
+  "supports": [
+    13,
+    17,
+    33,
+    65,
+    129,
+    257
+  ],
+  "completed_evaluations": 3000,
+  "recurrent_periods_evaluated": 481,
+  "positive_residual_sources": 0,
+  "primary_objective": "exact Omega5/A on complete original paired-closed periods",
+  "initialization": "greatest clipped cyclic seam, no reaching-prefix credit",
+  "restoration": "counted or exact full-pair recurrence; never omitted",
+  "stop_at_failed_guard": false,
+  "seed": 120661,
+  "seconds": 27.772,
+  "records": [
+    {
+      "evaluation": 1,
+      "support": 13,
+      "origin": "seed",
+      "source": "H_1_2",
+      "A": 48,
+      "Q_B": 19,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 4
+    },
+    {
+      "evaluation": 3,
+      "support": 13,
+      "origin": "seed",
+      "source": "multiscale_N13",
+      "A": 244,
+      "Q_B": 92,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 3
+    },
+    {
+      "evaluation": 4,
+      "support": 13,
+      "origin": "recurrent",
+      "source": "recurrent_multiscale_N13_115_131",
+      "A": 18,
+      "Q_B": 8,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 3
+    },
+    {
+      "evaluation": 18,
+      "support": 17,
+      "origin": "recurrent",
+      "source": "recurrent_multiscale_N17_136_145",
+      "A": 13,
+      "Q_B": 7,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 3
+    },
+    {
+      "evaluation": 23,
+      "support": 17,
+      "origin": "seed",
+      "source": "alternating_N17",
+      "A": 121,
+      "Q_B": 76,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 3
+    },
+    {
+      "evaluation": 27,
+      "support": 33,
+      "origin": "seed",
+      "source": "H_1_7",
+      "A": 128,
+      "Q_B": 54,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 43,
+      "support": 65,
+      "origin": "seed",
+      "source": "H_1_15",
+      "A": 256,
+      "Q_B": 110,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 61,
+      "support": 129,
+      "origin": "seed",
+      "source": "H_1_31",
+      "A": 512,
+      "Q_B": 222,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 69,
+      "support": 129,
+      "origin": "seed",
+      "source": "H_5_1",
+      "A": 512,
+      "Q_B": 231,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 89,
+      "support": 257,
+      "origin": "seed",
+      "source": "H_5_3",
+      "A": 1024,
+      "Q_B": 473,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 565,
+      "support": 257,
+      "origin": "mutation",
+      "source": "mutated_N257_721e2e3108e6",
+      "A": 1023,
+      "Q_B": 473,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 774,
+      "support": 257,
+      "origin": "mutation",
+      "source": "mutated_N257_90c8ea0e350f",
+      "A": 1022,
+      "Q_B": 473,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 828,
+      "support": 257,
+      "origin": "mutation",
+      "source": "mutated_N257_9e426e30ac1c",
+      "A": 1023,
+      "Q_B": 479,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 1149,
+      "support": 33,
+      "origin": "mutation",
+      "source": "mutated_N33_d202b7d50af7",
+      "A": 134,
+      "Q_B": 63,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 1479,
+      "support": 33,
+      "origin": "mutation",
+      "source": "mutated_N33_2538892d234d",
+      "A": 118,
+      "Q_B": 56,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 1730,
+      "support": 257,
+      "origin": "mutation",
+      "source": "mutated_N257_dcbbd4ebf14d",
+      "A": 1020,
+      "Q_B": 486,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 1745,
+      "support": 33,
+      "origin": "mutation",
+      "source": "mutated_N33_eff9168b0d30",
+      "A": 134,
+      "Q_B": 64,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 2168,
+      "support": 33,
+      "origin": "mutation",
+      "source": "mutated_N33_5a873067ad34",
+      "A": 180,
+      "Q_B": 87,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 2255,
+      "support": 33,
+      "origin": "mutation",
+      "source": "mutated_N33_173351dcf824",
+      "A": 163,
+      "Q_B": 80,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 2539,
+      "support": 65,
+      "origin": "mutation",
+      "source": "mutated_N65_23664a6b29ae",
+      "A": 318,
+      "Q_B": 164,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 2841,
+      "support": 33,
+      "origin": "mutation",
+      "source": "mutated_N33_2241b2ee3b2c",
+      "A": 181,
+      "Q_B": 96,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 2940,
+      "support": 33,
+      "origin": "mutation",
+      "source": "mutated_N33_ca8e8b1b86a0",
+      "A": 191,
+      "Q_B": 109,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    },
+    {
+      "evaluation": 2951,
+      "support": 33,
+      "origin": "mutation",
+      "source": "mutated_N33_b61f488bc4d0",
+      "A": 184,
+      "Q_B": 109,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0",
+      "minimum_margin": 2
+    }
+  ],
+  "retained_certificates": [
+    {
+      "file": "run_001/complete_00.json.gz",
+      "source": "mutated_N33_b61f488bc4d0",
+      "A": 184,
+      "Q_B": 109,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0"
+    },
+    {
+      "file": "run_001/complete_01.json.gz",
+      "source": "mutated_N65_23664a6b29ae",
+      "A": 318,
+      "Q_B": 164,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0"
+    },
+    {
+      "file": "run_001/complete_02.json.gz",
+      "source": "mutated_N129_f194a17157f8",
+      "A": 491,
+      "Q_B": 240,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0"
+    },
+    {
+      "file": "run_001/complete_03.json.gz",
+      "source": "mutated_N257_7dc7cfa21f25",
+      "A": 1018,
+      "Q_B": 486,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0"
+    },
+    {
+      "file": "run_001/complete_04.json.gz",
+      "source": "recurrent_mutated_N17_7babe317d217_14_21",
+      "A": 12,
+      "Q_B": 11,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0"
+    },
+    {
+      "file": "run_001/complete_05.json.gz",
+      "source": "recurrent_mutated_N13_2cf85ac60284_39_44",
+      "A": 6,
+      "Q_B": 4,
+      "Omega_5": 0,
+      "Omega_5_over_A": "0"
+    }
+  ],
+  "best_Omega_5_over_A": "0",
+  "source_uniform_proof": false,
+  "universal_CD": "OPEN",
+  "scope": "Bounded adversarial search. Neither zero residual nor a maximum ratio in this population is a universal statement.",
+  "first_missing": "A physical all-source bound on accumulated dry B work with globally bounded original-A reuse."
+}

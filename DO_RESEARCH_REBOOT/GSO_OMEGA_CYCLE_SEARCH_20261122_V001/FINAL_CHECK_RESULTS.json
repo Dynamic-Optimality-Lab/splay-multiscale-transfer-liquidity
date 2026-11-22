@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "script": "tests.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "tests": 18,
+        "scope": "Implementation checks, not a universal cost proof."
+      }
+    },
+    {
+      "script": "preserve.py",
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "prior_paths": 5544,
+        "old_HEAD": "6d532b2c795c0778f57d8023b23b5fedfc48b010",
+        "authorized_git_commit_allowed": true
+      }
+    }
+  ],
+  "root_gate": {
+    "accepted": false,
+    "scope": "ALL_ORIGINAL_SOURCES",
+    "reason": "MISSING_INDEPENDENT_SOURCE_UNIFORM_OMEGA5_BOUND",
+    "universal_CD": "OPEN"
+  },
+  "independently_replayed_retained_sources": 13,
+  "independent_operation_total": 10570,
+  "frozen_policy_compatibility_passed": true,
+  "positive_Omega_original_replay_passed": true,
+  "positive_repetition": {
+    "passed": true,
+    "support": 257,
+    "operations": 1372,
+    "A": 1978,
+    "Q_B": 1038,
+    "Omega_5": 4,
+    "paid_A_slot_assignments": 1034,
+    "maximum_A_load": 10,
+    "whole_original_operations_completed": true,
+    "max_B_doubles_per_access": 54,
+    "greatest_cyclic_seam_verified": true,
+    "source_uniform_bound_proved": false
+  },
+  "vendor_byte_identical": true,
+  "global_bound_proved": false,
+  "universal_CD": "OPEN"
+}
