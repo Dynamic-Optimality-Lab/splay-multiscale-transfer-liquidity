@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "builds": [
+    {
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.21.0",
+        "CreditKernel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7982234999653883,
+      "stdout": "'PairedCredit.physical_RR_alias' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.all_cardinality_weights_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.learned_joint_preservation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.physical_support_identity' depends on axioms: [propext, Quot.sound]\n'PairedCredit.power_is_two_pow' depends on axioms: [propext]\n'PairedCredit.signed_size_energy_cannot_pay_all_bursts' depends on axioms: [propext, Quot.sound]\n'PairedCredit.memory_or_shape_must_supply' depends on axioms: [propext, Quot.sound]\n'PairedCredit.supply_preserves_required_credit' depends on axioms: [propext, Quot.sound]\n'PairedCredit.closed_balance_has_no_free_spend' depends on axioms: [propext, Quot.sound]\n'PairedCredit.bounded_unpaid_cost_is_permitted' depends on axioms: [propext, Quot.sound]\n'PairedCredit.complete_critical_credit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.descending_restoration_refills' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.arbitrary_forward_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.cyclic_reverse_restoration_refills' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.21.0",
+        "ExcursionKernel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.4013061000150628,
+      "stdout": "'OriginalCreditExcursion.greater_period_map_dominates_closed_balance' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.augmented_greatest_seam_dominates' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.persistent_A_supply_is_nondecreasing' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.every_pooling_coordinate_is_monotone' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.original_unpaid_cost_is_antitone' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.coupled_global_reserve_is_monotone' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.sum_matched_original_B_once' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.inherited_global_issuance' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.same_constant_lifts_from_loop_erased_sources' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.unpaid_bound_lifts_from_loop_erased_sources' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Independent implementations and Lean components; not external peer review or an end-to-end original BST formalization."
+}

@@ -1,0 +1,12 @@
+{
+  "prior_source_or_theorem_changes": false,
+  "records": [
+    {"item":"Recurrent versus transient graph edges","correction":"Only recurrent SCC edges are candidate closed-period counterexamples. Reachable transient edges may be in an uncredited reaching prefix, so they cannot be reported as period witnesses without a return path. All free-state certificates still check every graph edge. Fourteen transient edges were excluded from the period-row learner."},
+    {"item":"Rational LP recovery","correction":"Independent coefficient rounding produced a tiny positive residual256/75642253. The engine stopped rather than certify it. Exact reconstruction from the active rational LP basis corrected recovery. Both numerical attempts and their logs are retained."},
+    {"item":"Reverse source generator","correction":"An early reverse_guard3 tree accidentally retained its former right edge into N, giving two parents. The original tree validity assertion stopped the generator. The old edge was removed in the new generator; no invalid source enters any result."},
+    {"item":"Terminal H3q vector","correction":"The first draft omitted the old B root outside the marked A frontier. Complete H_(3,1) falsified the two predicted forward entries. They were corrected from(-q+4,-q) to(-q+3,-q-1); the terminal q slopes and all original source definitions were unchanged."},
+    {"item":"JSON serialization","correction":"SymPy Integer values in the terminal slope were converted to Python integers before serialization; the failed log is retained."},
+    {"item":"Opaque subtree scope","correction":"The symbolic checker refuses to continue if a frontier or ancestor query enters an arbitrary opaque hanging subtree. All seven accepted templates avoid that case."}
+  ],
+  "scope":"Development corrections are explicit. No archived result, prior seal, frozen eligibility predicate, original cost or source model was rewritten."
+}

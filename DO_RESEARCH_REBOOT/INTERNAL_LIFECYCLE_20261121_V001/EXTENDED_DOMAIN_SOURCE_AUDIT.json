@@ -1,0 +1,825 @@
+{
+  "passed": true,
+  "sources": [
+    {
+      "name": "J_p1_q2_d1_m2",
+      "parameters": {
+        "p": 1,
+        "q": 2,
+        "d": 1,
+        "m": 2,
+        "mode": "J",
+        "reflected": false,
+        "helpers": false,
+        "r": 13,
+        "n": 29,
+        "prefix": []
+      },
+      "totals": {
+        "a": 321,
+        "q_B": 156,
+        "z_B": 121,
+        "A_rotations": 441,
+        "B_rotations": 433,
+        "U_int": 8,
+        "critical_U": 4,
+        "lifecycle_U": 8,
+        "literal_complement_U": 0,
+        "c": 3,
+        "packets": 2,
+        "seed_births": 12,
+        "fixed_layer_births": 63,
+        "max_critical_A_load": 2,
+        "max_finite_lifecycle_A_load": 1,
+        "min_inner_birth_size": 3,
+        "inner_leaf_births": 0,
+        "operations": 249,
+        "real_rotations": 874
+      },
+      "packets": [
+        {
+          "initial_KEEP": 13,
+          "p": 1,
+          "q": 2,
+          "seeds": [
+            {
+              "birth": [
+                "B",
+                13,
+                6,
+                0
+              ],
+              "label": [
+                1,
+                3
+              ],
+              "first_hit": 50,
+              "A_payment": [
+                "A",
+                50,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                5,
+                0
+              ],
+              "label": [
+                5,
+                7
+              ],
+              "first_hit": 48,
+              "A_payment": [
+                "A",
+                48,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                4,
+                0
+              ],
+              "label": [
+                9,
+                11
+              ],
+              "first_hit": 46,
+              "A_payment": [
+                "A",
+                46,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                3,
+                0
+              ],
+              "label": [
+                13,
+                15
+              ],
+              "first_hit": 44,
+              "A_payment": [
+                "A",
+                44,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                2,
+                0
+              ],
+              "label": [
+                17,
+                19
+              ],
+              "first_hit": 42,
+              "A_payment": [
+                "A",
+                42,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                1,
+                0
+              ],
+              "label": [
+                21,
+                23
+              ],
+              "first_hit": 40,
+              "A_payment": [
+                "A",
+                40,
+                1,
+                0
+              ]
+            }
+          ],
+          "critical_operations": [
+            13,
+            14
+          ],
+          "critical_bound": 2,
+          "critical_U_ids": [
+            [
+              14,
+              1
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "restoration_mode": "J",
+          "restoration_operations": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "restoration_Q": 9,
+          "lifecycle_U_ids": [
+            [
+              14,
+              1
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              40,
+              1
+            ],
+            [
+              42,
+              1
+            ]
+          ],
+          "finite_lifecycle_capacity": 1
+        },
+        {
+          "initial_KEEP": 63,
+          "p": 1,
+          "q": 2,
+          "seeds": [
+            {
+              "birth": [
+                "B",
+                63,
+                6,
+                0
+              ],
+              "label": [
+                1,
+                3
+              ],
+              "first_hit": 100,
+              "A_payment": [
+                "A",
+                100,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                5,
+                0
+              ],
+              "label": [
+                5,
+                7
+              ],
+              "first_hit": 98,
+              "A_payment": [
+                "A",
+                98,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                4,
+                0
+              ],
+              "label": [
+                9,
+                11
+              ],
+              "first_hit": 96,
+              "A_payment": [
+                "A",
+                96,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                3,
+                0
+              ],
+              "label": [
+                13,
+                15
+              ],
+              "first_hit": 94,
+              "A_payment": [
+                "A",
+                94,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                2,
+                0
+              ],
+              "label": [
+                17,
+                19
+              ],
+              "first_hit": 92,
+              "A_payment": [
+                "A",
+                92,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                1,
+                0
+              ],
+              "label": [
+                21,
+                23
+              ],
+              "first_hit": 90,
+              "A_payment": [
+                "A",
+                90,
+                1,
+                0
+              ]
+            }
+          ],
+          "critical_operations": [
+            63,
+            64
+          ],
+          "critical_bound": 2,
+          "critical_U_ids": [
+            [
+              64,
+              1
+            ],
+            [
+              64,
+              2
+            ]
+          ],
+          "restoration_mode": "J",
+          "restoration_operations": [
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100
+          ],
+          "restoration_Q": 9,
+          "lifecycle_U_ids": [
+            [
+              64,
+              1
+            ],
+            [
+              64,
+              2
+            ],
+            [
+              90,
+              1
+            ],
+            [
+              92,
+              1
+            ]
+          ],
+          "finite_lifecycle_capacity": 1
+        }
+      ],
+      "potential_probes": [],
+      "full_pair_closure": true,
+      "full_original_Pi_audited": true,
+      "fixed_layer_global_injection_verified": true
+    },
+    {
+      "name": "I_p1_q2_d2_m2",
+      "parameters": {
+        "p": 1,
+        "q": 2,
+        "d": 2,
+        "m": 2,
+        "mode": "I",
+        "reflected": false,
+        "helpers": false,
+        "r": 13,
+        "n": 61,
+        "prefix": []
+      },
+      "totals": {
+        "a": 1303,
+        "q_B": 807,
+        "z_B": 476,
+        "A_rotations": 2072,
+        "B_rotations": 2090,
+        "U_int": 8,
+        "critical_U": 4,
+        "lifecycle_U": 8,
+        "literal_complement_U": 0,
+        "c": 7,
+        "packets": 2,
+        "seed_births": 12,
+        "fixed_layer_births": 196,
+        "max_critical_A_load": 2,
+        "max_finite_lifecycle_A_load": 1,
+        "min_inner_birth_size": 7,
+        "inner_leaf_births": 0,
+        "operations": 749,
+        "real_rotations": 4162
+      },
+      "packets": [
+        {
+          "initial_KEEP": 13,
+          "p": 1,
+          "q": 2,
+          "seeds": [
+            {
+              "birth": [
+                "B",
+                13,
+                6,
+                0
+              ],
+              "label": [
+                1,
+                7
+              ],
+              "first_hit": 26,
+              "A_payment": [
+                "A",
+                15,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                5,
+                0
+              ],
+              "label": [
+                9,
+                15
+              ],
+              "first_hit": 28,
+              "A_payment": [
+                "A",
+                28,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                4,
+                0
+              ],
+              "label": [
+                17,
+                23
+              ],
+              "first_hit": 30,
+              "A_payment": [
+                "A",
+                30,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                3,
+                0
+              ],
+              "label": [
+                25,
+                31
+              ],
+              "first_hit": 32,
+              "A_payment": [
+                "A",
+                32,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                2,
+                0
+              ],
+              "label": [
+                33,
+                39
+              ],
+              "first_hit": 34,
+              "A_payment": [
+                "A",
+                34,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                13,
+                1,
+                0
+              ],
+              "label": [
+                41,
+                47
+              ],
+              "first_hit": 36,
+              "A_payment": [
+                "A",
+                36,
+                1,
+                0
+              ]
+            }
+          ],
+          "critical_operations": [
+            13,
+            14
+          ],
+          "critical_bound": 2,
+          "critical_U_ids": [
+            [
+              14,
+              1
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "restoration_mode": "I",
+          "restoration_operations": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "restoration_Q": 10,
+          "lifecycle_U_ids": [
+            [
+              14,
+              1
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              28,
+              1
+            ],
+            [
+              32,
+              1
+            ]
+          ],
+          "finite_lifecycle_capacity": 1
+        },
+        {
+          "initial_KEEP": 63,
+          "p": 1,
+          "q": 2,
+          "seeds": [
+            {
+              "birth": [
+                "B",
+                63,
+                6,
+                0
+              ],
+              "label": [
+                1,
+                7
+              ],
+              "first_hit": 76,
+              "A_payment": [
+                "A",
+                65,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                5,
+                0
+              ],
+              "label": [
+                9,
+                15
+              ],
+              "first_hit": 78,
+              "A_payment": [
+                "A",
+                78,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                4,
+                0
+              ],
+              "label": [
+                17,
+                23
+              ],
+              "first_hit": 80,
+              "A_payment": [
+                "A",
+                80,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                3,
+                0
+              ],
+              "label": [
+                25,
+                31
+              ],
+              "first_hit": 82,
+              "A_payment": [
+                "A",
+                82,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                2,
+                0
+              ],
+              "label": [
+                33,
+                39
+              ],
+              "first_hit": 84,
+              "A_payment": [
+                "A",
+                84,
+                1,
+                0
+              ]
+            },
+            {
+              "birth": [
+                "B",
+                63,
+                1,
+                0
+              ],
+              "label": [
+                41,
+                47
+              ],
+              "first_hit": 86,
+              "A_payment": [
+                "A",
+                86,
+                1,
+                0
+              ]
+            }
+          ],
+          "critical_operations": [
+            63,
+            64
+          ],
+          "critical_bound": 2,
+          "critical_U_ids": [
+            [
+              64,
+              1
+            ],
+            [
+              64,
+              2
+            ]
+          ],
+          "restoration_mode": "I",
+          "restoration_operations": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100
+          ],
+          "restoration_Q": 10,
+          "lifecycle_U_ids": [
+            [
+              64,
+              1
+            ],
+            [
+              64,
+              2
+            ],
+            [
+              78,
+              1
+            ],
+            [
+              82,
+              1
+            ]
+          ],
+          "finite_lifecycle_capacity": 1
+        }
+      ],
+      "potential_probes": [
+        {
+          "operation": 28,
+          "target": 12,
+          "B_phi_delta": 1,
+          "A_gap": 1,
+          "a": 1,
+          "u": 1,
+          "B_decreases": 2,
+          "nontrivial_KEEP": 1
+        },
+        {
+          "operation": 78,
+          "target": 12,
+          "B_phi_delta": 1,
+          "A_gap": 1,
+          "a": 1,
+          "u": 1,
+          "B_decreases": 2,
+          "nontrivial_KEEP": 1
+        }
+      ],
+      "full_pair_closure": true,
+      "full_original_Pi_audited": true,
+      "fixed_layer_global_injection_verified": true
+    }
+  ],
+  "additional_rotations": 5036,
+  "cumulative_producer_rotations": 100172,
+  "cpu_seconds": 0.109375
+}

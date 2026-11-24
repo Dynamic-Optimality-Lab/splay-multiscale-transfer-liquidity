@@ -1,0 +1,7 @@
+{
+  "corrections": [
+    {"component": "Independent immutable replay adapter", "initial_failure": "Compared an entire old trace bit dictionary to the minimal physical dictionary; the sealed old format also has internal-block and port-packet metadata.", "correction": "Compare all seven required physical fields exactly and leave additional observer fields untouched. No physical field or assertion was weakened.", "scope": "Only new checker code changed; all old traces and sources remain immutable."},
+    {"component": "Block partition checker", "initial_failure": "Required maximal width-five chunks, although the admitted model permits any fixed disjoint consecutive blocks of size at most five. The sealed four-key noncommutation source uses blocks of sizes three and one.", "correction": "Verify every block has size1..5 and that ordered concatenation is exactly the complete ordered physical key set. This checks the stated domain including the original noncommutation witness.", "scope": "No source or partition changed."},
+    {"component": "Lean warmup induction", "initial_failure": "The untyped quantified index was inferred as Int before stock forced Nat; the rejected elaboration emitted sorryAx in error recovery.", "correction": "Declare the induction index Nat explicitly. Only a clean successful build without sorryAx is accepted.", "scope": "No accepted proof relies on the rejected error-recovery declarations."}
+  ]
+}

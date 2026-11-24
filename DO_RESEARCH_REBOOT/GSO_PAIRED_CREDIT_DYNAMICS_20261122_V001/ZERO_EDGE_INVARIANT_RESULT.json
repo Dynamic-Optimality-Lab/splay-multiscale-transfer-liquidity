@@ -1,0 +1,354 @@
+{
+  "status": "REFUTED_EXACT_ORIGINAL_PHYSICAL_INVARIANT",
+  "candidate": "ZERO_EDGE_INVARIANT_CANDIDATE.json",
+  "checked_boundaries": 38,
+  "counterexample": {
+    "complete_trace": "run/source_0_trace.json.gz",
+    "complete_policy": "run/source_0_local_bank.json.gz",
+    "q": 1,
+    "original_event": [
+      "B",
+      33,
+      5
+    ],
+    "event_index": 37,
+    "edge_present_only_in": "A",
+    "physical_directed_edge": [
+      22,
+      21,
+      0
+    ],
+    "edge_owner_banks": [
+      4,
+      4
+    ],
+    "owner_stocks": [
+      0,
+      0
+    ],
+    "counter_event_paid": 1,
+    "counter_event_unpaid": 0,
+    "initial_forest_relation": true,
+    "all_previous_checked_boundaries_satisfied": true,
+    "snapshots": {
+      "A": {
+        "root": 37,
+        "children": {
+          "1": [
+            null,
+            null
+          ],
+          "2": [
+            1,
+            null
+          ],
+          "3": [
+            2,
+            null
+          ],
+          "4": [
+            3,
+            null
+          ],
+          "5": [
+            4,
+            null
+          ],
+          "6": [
+            5,
+            null
+          ],
+          "7": [
+            6,
+            null
+          ],
+          "8": [
+            7,
+            null
+          ],
+          "9": [
+            8,
+            null
+          ],
+          "10": [
+            9,
+            null
+          ],
+          "11": [
+            10,
+            null
+          ],
+          "12": [
+            11,
+            null
+          ],
+          "13": [
+            12,
+            null
+          ],
+          "14": [
+            13,
+            null
+          ],
+          "15": [
+            14,
+            null
+          ],
+          "16": [
+            15,
+            null
+          ],
+          "17": [
+            16,
+            null
+          ],
+          "18": [
+            17,
+            null
+          ],
+          "19": [
+            18,
+            null
+          ],
+          "20": [
+            19,
+            null
+          ],
+          "21": [
+            20,
+            null
+          ],
+          "22": [
+            21,
+            null
+          ],
+          "23": [
+            22,
+            null
+          ],
+          "24": [
+            23,
+            null
+          ],
+          "25": [
+            24,
+            null
+          ],
+          "26": [
+            25,
+            null
+          ],
+          "27": [
+            26,
+            28
+          ],
+          "28": [
+            null,
+            29
+          ],
+          "29": [
+            null,
+            30
+          ],
+          "30": [
+            null,
+            31
+          ],
+          "31": [
+            null,
+            null
+          ],
+          "32": [
+            27,
+            null
+          ],
+          "33": [
+            32,
+            null
+          ],
+          "34": [
+            33,
+            null
+          ],
+          "35": [
+            34,
+            null
+          ],
+          "36": [
+            35,
+            null
+          ],
+          "37": [
+            36,
+            null
+          ]
+        }
+      },
+      "B": {
+        "root": 1,
+        "children": {
+          "1": [
+            null,
+            2
+          ],
+          "2": [
+            null,
+            3
+          ],
+          "3": [
+            null,
+            4
+          ],
+          "4": [
+            null,
+            5
+          ],
+          "5": [
+            null,
+            6
+          ],
+          "6": [
+            null,
+            7
+          ],
+          "7": [
+            null,
+            8
+          ],
+          "8": [
+            null,
+            9
+          ],
+          "9": [
+            null,
+            10
+          ],
+          "10": [
+            null,
+            11
+          ],
+          "11": [
+            null,
+            12
+          ],
+          "12": [
+            null,
+            13
+          ],
+          "13": [
+            null,
+            14
+          ],
+          "14": [
+            null,
+            15
+          ],
+          "15": [
+            null,
+            16
+          ],
+          "16": [
+            null,
+            17
+          ],
+          "17": [
+            null,
+            18
+          ],
+          "18": [
+            null,
+            19
+          ],
+          "19": [
+            null,
+            20
+          ],
+          "20": [
+            null,
+            21
+          ],
+          "21": [
+            null,
+            22
+          ],
+          "22": [
+            null,
+            37
+          ],
+          "23": [
+            null,
+            null
+          ],
+          "24": [
+            23,
+            26
+          ],
+          "25": [
+            null,
+            null
+          ],
+          "26": [
+            25,
+            32
+          ],
+          "27": [
+            null,
+            28
+          ],
+          "28": [
+            null,
+            29
+          ],
+          "29": [
+            null,
+            30
+          ],
+          "30": [
+            null,
+            31
+          ],
+          "31": [
+            null,
+            null
+          ],
+          "32": [
+            27,
+            34
+          ],
+          "33": [
+            null,
+            null
+          ],
+          "34": [
+            33,
+            36
+          ],
+          "35": [
+            null,
+            null
+          ],
+          "36": [
+            35,
+            null
+          ],
+          "37": [
+            24,
+            null
+          ]
+        }
+      }
+    },
+    "stock": [
+      5,
+      5,
+      5,
+      5,
+      0,
+      5,
+      5,
+      5
+    ]
+  },
+  "bank_funding_refuted": false,
+  "universal_CD": "OPEN"
+}

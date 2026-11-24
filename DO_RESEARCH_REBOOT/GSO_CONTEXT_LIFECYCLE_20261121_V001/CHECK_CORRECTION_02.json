@@ -1,0 +1,8 @@
+{
+  "failed_checks": ["Exact set equality between raw complete transitions and compressed contexts", "New CLI root-gate module import"],
+  "corrections": [
+    "Raw transitions include identical internal double prefixes. Their costs differ from the compressed tail by (p,p), and common diagonal KEEP transitions are discharged directly by q<=a. The soundness test now checks precisely that constructive compression, rather than asserting uncompressed row equality. Both finite certificates remain unchanged.",
+    "After loading the sealed kernel and teacher, remove the temporary previous-engine directory from the front of sys.path. This prevents a later import named gso from resolving to the old CLI. The original modules remain loaded read-only."
+  ],
+  "scope": "Implementation and test-interface corrections. No old artifact or source, core definition, candidate constant or proof assumption changed. The failed output is preserved in INITIAL_CHECK_RESULTS.json."
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\EXP03_FINAL_R6_ESCAPE_CONSERVATION\exp03_restart.py", line 75, in <module>
+    restart=restart_analysis(r,c['unhandled'],eps)
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\EXP03_FINAL_R6_ESCAPE_CONSERVATION\exp03_restart.py", line 52, in restart_analysis
+    ms=[f for f in frames if f['g']==g];assert len(ms)<=1
+                             ~^^^^^
+TypeError: 'int' object is not subscriptable

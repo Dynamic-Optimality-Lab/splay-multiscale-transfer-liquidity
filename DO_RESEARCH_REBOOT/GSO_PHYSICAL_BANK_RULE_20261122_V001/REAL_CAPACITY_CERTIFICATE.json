@@ -1,0 +1,568 @@
+{
+  "status": "REAL_CAPACITY_EXTENSION_SYMBOLICALLY_VERIFIED",
+  "universal_queries": [
+    "real_weighted_loss",
+    "real_a_formula",
+    "real_b_formula",
+    "finite_scalar_carry_descent",
+    "general_burn_window"
+  ],
+  "general_recipe": [
+    "Start a=b=H for any finite H>0.",
+    "While I=2a+b>=1, let a_next=max(0,I-2H-1), b_next=min(H,I-1). Weighted mass drops at least1; stop after at most floor(3H) stages.",
+    "For I>=2H+1 the upper carry is immediately stationary; otherwise delta=2H-I+1>0, and ceil(H/delta)+4 steps suffice.",
+    "At terminal I<1 choose dry packet L=floor(3H/(1-I))+1. Let burn dominate every local burn and L.",
+    "Choose p=number_of_stages+4, q=4*burn+8 in the complete original H_(p,q). The same nested interior proof forces an unpaid original U RR."
+  ],
+  "exact_rational_arithmetic_crosschecks": [
+    {
+      "H": "1/5",
+      "p": 4,
+      "q": 16,
+      "N": 545,
+      "global_burn": 2,
+      "dry_packet": 2,
+      "terminal_fresh_input": "3/5",
+      "profiles": [],
+      "materialized": false
+    },
+    {
+      "H": "1/2",
+      "p": 5,
+      "q": 28,
+      "N": 1857,
+      "global_burn": 5,
+      "dry_packet": 4,
+      "terminal_fresh_input": "1/2",
+      "profiles": [
+        {
+          "a": "1/2",
+          "b": "1/2",
+          "I": "3/2",
+          "a_next": "0",
+          "b_next": "1/2",
+          "burn": 5
+        }
+      ],
+      "materialized": false
+    },
+    {
+      "H": "1",
+      "p": 6,
+      "q": 28,
+      "N": 3713,
+      "global_burn": 5,
+      "dry_packet": 4,
+      "terminal_fresh_input": "0",
+      "profiles": [
+        {
+          "a": "1",
+          "b": "1",
+          "I": "3",
+          "a_next": "0",
+          "b_next": "1",
+          "burn": 2
+        },
+        {
+          "a": "0",
+          "b": "1",
+          "I": "1",
+          "a_next": "0",
+          "b_next": "0",
+          "burn": 5
+        }
+      ],
+      "materialized": false
+    },
+    {
+      "H": "3/2",
+      "p": 7,
+      "q": 48,
+      "N": 12545,
+      "global_burn": 10,
+      "dry_packet": 10,
+      "terminal_fresh_input": "1/2",
+      "profiles": [
+        {
+          "a": "3/2",
+          "b": "3/2",
+          "I": "9/2",
+          "a_next": "1/2",
+          "b_next": "3/2",
+          "burn": 2
+        },
+        {
+          "a": "1/2",
+          "b": "3/2",
+          "I": "5/2",
+          "a_next": "0",
+          "b_next": "3/2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "3/2",
+          "I": "3/2",
+          "a_next": "0",
+          "b_next": "1/2",
+          "burn": 5
+        }
+      ],
+      "materialized": false
+    },
+    {
+      "H": "8/3",
+      "p": 8,
+      "q": 108,
+      "N": 55809,
+      "global_burn": 25,
+      "dry_packet": 25,
+      "terminal_fresh_input": "2/3",
+      "profiles": [
+        {
+          "a": "8/3",
+          "b": "8/3",
+          "I": "8",
+          "a_next": "5/3",
+          "b_next": "8/3",
+          "burn": 2
+        },
+        {
+          "a": "5/3",
+          "b": "8/3",
+          "I": "6",
+          "a_next": "0",
+          "b_next": "8/3",
+          "burn": 12
+        },
+        {
+          "a": "0",
+          "b": "8/3",
+          "I": "8/3",
+          "a_next": "0",
+          "b_next": "5/3",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "5/3",
+          "I": "5/3",
+          "a_next": "0",
+          "b_next": "2/3",
+          "burn": 5
+        }
+      ],
+      "materialized": false
+    },
+    {
+      "H": "5",
+      "p": 12,
+      "q": 72,
+      "N": 598017,
+      "global_burn": 16,
+      "dry_packet": 16,
+      "terminal_fresh_input": "0",
+      "profiles": [
+        {
+          "a": "5",
+          "b": "5",
+          "I": "15",
+          "a_next": "4",
+          "b_next": "5",
+          "burn": 2
+        },
+        {
+          "a": "4",
+          "b": "5",
+          "I": "13",
+          "a_next": "2",
+          "b_next": "5",
+          "burn": 2
+        },
+        {
+          "a": "2",
+          "b": "5",
+          "I": "9",
+          "a_next": "0",
+          "b_next": "5",
+          "burn": 7
+        },
+        {
+          "a": "0",
+          "b": "5",
+          "I": "5",
+          "a_next": "0",
+          "b_next": "4",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "4",
+          "I": "4",
+          "a_next": "0",
+          "b_next": "3",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "3",
+          "I": "3",
+          "a_next": "0",
+          "b_next": "2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "2",
+          "I": "2",
+          "a_next": "0",
+          "b_next": "1",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "1",
+          "I": "1",
+          "a_next": "0",
+          "b_next": "0",
+          "burn": 5
+        }
+      ],
+      "materialized": false
+    },
+    {
+      "H": "8",
+      "p": 16,
+      "q": 108,
+      "N": 14286849,
+      "global_burn": 25,
+      "dry_packet": 25,
+      "terminal_fresh_input": "0",
+      "profiles": [
+        {
+          "a": "8",
+          "b": "8",
+          "I": "24",
+          "a_next": "7",
+          "b_next": "8",
+          "burn": 2
+        },
+        {
+          "a": "7",
+          "b": "8",
+          "I": "22",
+          "a_next": "5",
+          "b_next": "8",
+          "burn": 2
+        },
+        {
+          "a": "5",
+          "b": "8",
+          "I": "18",
+          "a_next": "1",
+          "b_next": "8",
+          "burn": 2
+        },
+        {
+          "a": "1",
+          "b": "8",
+          "I": "10",
+          "a_next": "0",
+          "b_next": "8",
+          "burn": 6
+        },
+        {
+          "a": "0",
+          "b": "8",
+          "I": "8",
+          "a_next": "0",
+          "b_next": "7",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "7",
+          "I": "7",
+          "a_next": "0",
+          "b_next": "6",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "6",
+          "I": "6",
+          "a_next": "0",
+          "b_next": "5",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "5",
+          "I": "5",
+          "a_next": "0",
+          "b_next": "4",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "4",
+          "I": "4",
+          "a_next": "0",
+          "b_next": "3",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "3",
+          "I": "3",
+          "a_next": "0",
+          "b_next": "2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "2",
+          "I": "2",
+          "a_next": "0",
+          "b_next": "1",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "1",
+          "I": "1",
+          "a_next": "0",
+          "b_next": "0",
+          "burn": 5
+        }
+      ],
+      "materialized": false
+    },
+    {
+      "H": "17/2",
+      "p": 16,
+      "q": 216,
+      "N": 28442625,
+      "global_burn": 52,
+      "dry_packet": 52,
+      "terminal_fresh_input": "1/2",
+      "profiles": [
+        {
+          "a": "17/2",
+          "b": "17/2",
+          "I": "51/2",
+          "a_next": "15/2",
+          "b_next": "17/2",
+          "burn": 2
+        },
+        {
+          "a": "15/2",
+          "b": "17/2",
+          "I": "47/2",
+          "a_next": "11/2",
+          "b_next": "17/2",
+          "burn": 2
+        },
+        {
+          "a": "11/2",
+          "b": "17/2",
+          "I": "39/2",
+          "a_next": "3/2",
+          "b_next": "17/2",
+          "burn": 2
+        },
+        {
+          "a": "3/2",
+          "b": "17/2",
+          "I": "23/2",
+          "a_next": "0",
+          "b_next": "17/2",
+          "burn": 6
+        },
+        {
+          "a": "0",
+          "b": "17/2",
+          "I": "17/2",
+          "a_next": "0",
+          "b_next": "15/2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "15/2",
+          "I": "15/2",
+          "a_next": "0",
+          "b_next": "13/2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "13/2",
+          "I": "13/2",
+          "a_next": "0",
+          "b_next": "11/2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "11/2",
+          "I": "11/2",
+          "a_next": "0",
+          "b_next": "9/2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "9/2",
+          "I": "9/2",
+          "a_next": "0",
+          "b_next": "7/2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "7/2",
+          "I": "7/2",
+          "a_next": "0",
+          "b_next": "5/2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "5/2",
+          "I": "5/2",
+          "a_next": "0",
+          "b_next": "3/2",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "3/2",
+          "I": "3/2",
+          "a_next": "0",
+          "b_next": "1/2",
+          "burn": 5
+        }
+      ],
+      "materialized": false
+    },
+    {
+      "H": "128/13",
+      "p": 17,
+      "q": 780,
+      "N": 204734465,
+      "global_burn": 193,
+      "dry_packet": 193,
+      "terminal_fresh_input": "11/13",
+      "profiles": [
+        {
+          "a": "128/13",
+          "b": "128/13",
+          "I": "384/13",
+          "a_next": "115/13",
+          "b_next": "128/13",
+          "burn": 2
+        },
+        {
+          "a": "115/13",
+          "b": "128/13",
+          "I": "358/13",
+          "a_next": "89/13",
+          "b_next": "128/13",
+          "burn": 2
+        },
+        {
+          "a": "89/13",
+          "b": "128/13",
+          "I": "306/13",
+          "a_next": "37/13",
+          "b_next": "128/13",
+          "burn": 2
+        },
+        {
+          "a": "37/13",
+          "b": "128/13",
+          "I": "202/13",
+          "a_next": "0",
+          "b_next": "128/13",
+          "burn": 6
+        },
+        {
+          "a": "0",
+          "b": "128/13",
+          "I": "128/13",
+          "a_next": "0",
+          "b_next": "115/13",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "115/13",
+          "I": "115/13",
+          "a_next": "0",
+          "b_next": "102/13",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "102/13",
+          "I": "102/13",
+          "a_next": "0",
+          "b_next": "89/13",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "89/13",
+          "I": "89/13",
+          "a_next": "0",
+          "b_next": "76/13",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "76/13",
+          "I": "76/13",
+          "a_next": "0",
+          "b_next": "63/13",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "63/13",
+          "I": "63/13",
+          "a_next": "0",
+          "b_next": "50/13",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "50/13",
+          "I": "50/13",
+          "a_next": "0",
+          "b_next": "37/13",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "37/13",
+          "I": "37/13",
+          "a_next": "0",
+          "b_next": "24/13",
+          "burn": 5
+        },
+        {
+          "a": "0",
+          "b": "24/13",
+          "I": "24/13",
+          "a_next": "0",
+          "b_next": "11/13",
+          "burn": 5
+        }
+      ],
+      "materialized": false
+    }
+  ],
+  "scope": "Same target-first/increasing-order rule with fractional balances permitted. No rounding assumption and no exclusion of other redistribution kernels. The general real-source proof is mathematical, not full Lean formalization.",
+  "universal_CD": "OPEN"
+}

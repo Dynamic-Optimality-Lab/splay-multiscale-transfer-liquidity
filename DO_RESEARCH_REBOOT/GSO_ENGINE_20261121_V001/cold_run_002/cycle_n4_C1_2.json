@@ -1,0 +1,92 @@
+{
+  "source": {
+    "name": "trial_n4_C1/2",
+    "initial_A": {
+      "root": 3,
+      "children": {
+        "1": [
+          null,
+          null
+        ],
+        "2": [
+          1,
+          null
+        ],
+        "3": [
+          2,
+          4
+        ],
+        "4": [
+          null,
+          null
+        ]
+      }
+    },
+    "initial_B": {
+      "root": 3,
+      "children": {
+        "1": [
+          null,
+          null
+        ],
+        "2": [
+          1,
+          null
+        ],
+        "3": [
+          2,
+          4
+        ],
+        "4": [
+          null,
+          null
+        ]
+      }
+    },
+    "diagonal": {
+      "root": 3,
+      "children": {
+        "1": [
+          null,
+          null
+        ],
+        "2": [
+          1,
+          null
+        ],
+        "3": [
+          2,
+          4
+        ],
+        "4": [
+          null,
+          null
+        ]
+      }
+    },
+    "prefix": [],
+    "operations": [
+      [
+        "K",
+        1
+      ],
+      [
+        "K",
+        3
+      ]
+    ],
+    "expected_A": 2,
+    "expected_Q": 2
+  },
+  "certificate": {
+    "status": "VIOLATING_CYCLE",
+    "C": "1/2",
+    "cycle": [
+      65,
+      5
+    ],
+    "scaled_excess": 2,
+    "pops": 202,
+    "cpu_seconds": 0.0
+  }
+}

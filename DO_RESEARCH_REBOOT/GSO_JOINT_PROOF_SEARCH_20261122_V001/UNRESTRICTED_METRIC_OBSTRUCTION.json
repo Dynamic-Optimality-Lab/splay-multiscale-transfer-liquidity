@@ -1,0 +1,74 @@
+{
+  "status": "PROVED_PARAMETRIC_ORIGINAL_SOURCE_METRIC_GRAMMAR_OBSTRUCTION",
+  "grammar": "Phi_N(A,B)=f_N(D_rot(A,B)), arbitrary real-valued f_N; no linearity, monotonicity or Lipschitz assumption.",
+  "attempted_law": "q_t+Phi_N(after)-Phi_N(before)<=C*a_t on every original operation of every admissible exactly paired-closed source.",
+  "distance_identity": "D_rot(T,left_vine_N)=N-left_spine_length(T). Each rotation changes spine length by at most1; flattening realizes exactly this many.",
+  "original_family": "Complete H3q with four counted A-only adjacent caps of6,6,7,7 zigs around its last critical KEEP. Empty prefix, full old restoration preserved. N=16(q+1)+1.",
+  "flat_fragment": "A=left_vine_N at both ends. B left spines are [N-3,2,1] and [N-7,2,1], hence D=N-3 at both ends. Actual fragment A=14,Q_B=q+1.",
+  "universal_contradiction": "Telescoping the proposed law on the original14-operation fragment gives q+1<=14C for every positive integer q. Choose q+1>14C. This excludes every finite real C and every family f_N.",
+  "proof_dependencies": [
+    "Original H3q full critical comb recurrence, j=2 and j=3 with T0=1 and r0=2.",
+    "Actual adjacent two-vine A zig identity; all DELETE caps leave B fixed.",
+    "General left-spine distance theorem, arbitrary hanging subtrees retained."
+  ],
+  "complete_witnesses": [
+    {
+      "parameter_q": 1,
+      "N": 33,
+      "target": 26,
+      "before_boundary": 45,
+      "after_boundary": 59,
+      "critical_operation": 52,
+      "fragment_A": 14,
+      "fragment_Q_B": 2,
+      "distance_both_ends": 30,
+      "trace": "metric/anchor_1_trace.json.gz",
+      "certificate": "metric/anchor_1_certificate.json.gz",
+      "full_A": 154,
+      "full_Q_B": 53,
+      "operations": 156,
+      "real_rotations": 315
+    },
+    {
+      "parameter_q": 17,
+      "N": 289,
+      "target": 282,
+      "before_boundary": 301,
+      "after_boundary": 315,
+      "critical_operation": 308,
+      "fragment_A": 14,
+      "fragment_Q_B": 18,
+      "distance_both_ends": 286,
+      "trace": "metric/anchor_17_trace.json.gz",
+      "certificate": "metric/anchor_17_certificate.json.gz",
+      "full_A": 1178,
+      "full_Q_B": 501,
+      "operations": 1180,
+      "real_rotations": 2683
+    },
+    {
+      "parameter_q": 129,
+      "N": 2081,
+      "target": 2074,
+      "before_boundary": 2093,
+      "after_boundary": 2107,
+      "critical_operation": 2100,
+      "fragment_A": 14,
+      "fragment_Q_B": 130,
+      "distance_both_ends": 2078,
+      "trace": "metric/anchor_129_trace.json.gz",
+      "certificate": "metric/anchor_129_certificate.json.gz",
+      "full_A": 8346,
+      "full_Q_B": 3637,
+      "operations": 8348,
+      "real_rotations": 19259
+    }
+  ],
+  "not_refuted": [
+    "Universal CD",
+    "Arbitrary shape-dependent potentials",
+    "Persistent globally shared overflow accounts with a proved physical invariant"
+  ],
+  "unrestricted_original_cost_obligations_deleted": 0,
+  "universal_CD": "OPEN"
+}

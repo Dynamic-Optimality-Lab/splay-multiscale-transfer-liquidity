@@ -1,0 +1,11 @@
+# Targeted construction after inherited audits
+
+The48 exact C_old workload audits and227 stored PF merge tests produced no merge failure. Do not infer MERGE0 is universal. A targeted physical configuration is now fixed: post-producer B has g as a right child of a smaller exterior key. Outside accesses move the original component so that its next right inside hit demotes g as an O old parent. A shadow omitting those outside accesses instead non-target-promotes g in an SS double, contaminating the opposite side. A subsequent left original old-g double can then fail to match.
+
+Fresh complete constructions:11-key kernel and a padded kernel (L5,31 keys), each with full reflection; repeated copies T2,T4 of the sealed55-key source. These are6 fresh source replays under the8-source cap. The kernel body's symbolic targets are9,2,10,8,4 with pivot5. Padding adds2L nodes below each of the first/last relevant old-g doubles, without adding those nodes to the critical A search paths. Exact prefix/whole-pair restoration is constructed, with A repair before the last KEEP and an inverse root zig, retaining the actual incoming A cost. The native original predicates will determine whether any endpoint is U/R6/R_*/C_old; physical counterexamples are not presumed to qualify.
+
+The repetition test targets label-only initialization deduplication across distinct source lifetimes. Repeated original words get fresh original IDs and A work; no universal F/C_old invariance is presumed. Recompute the full native selectors. A positive periodic certificate still pays the source.
+
+Distinct candidate being tested in addition to MERGE0: KEY-UNION-2, the global initialization overlap claim M_PF<=2 times the number of DISTINCT PHYSICAL keys in the union of all canonical path domains. This is a precise tempting deduplication rule, not the main M_PF<=K A target. A refutation would show that original timestamps/restoration lifetimes cannot be discarded; it would not refute A conservation, since repeated source words also repeat actual A work.
+
+Also investigate component-rooted one-sided shadows to remove the exterior stem, and demand-only subsequences to remove paid inside hits. Their original old-g coverage and global costs must be proved separately; neither is added to frozen F/H eligibility.

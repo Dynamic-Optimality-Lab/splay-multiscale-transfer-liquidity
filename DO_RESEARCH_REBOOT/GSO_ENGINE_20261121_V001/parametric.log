@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\GSO_ENGINE_20261121_V001\parametric.py", line 114, in <module>
+    run(Path(sys.argv[1]))
+    ~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\GSO_ENGINE_20261121_V001\parametric.py", line 70, in run
+    s=make(n,kind);w=selected_replay(s,{1,2});r0,r1=w['rows'];d=expected(n,kind)
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\GSO_ENGINE_20261121_V001\parametric.py", line 42, in make
+    prefix=reset(n,'D');A,B2=reach(B,prefix);assert A==v and B2==B
+                             ~~~~~^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\GSO_ENGINE_20261121_V001\parametric.py", line 22, in reach
+    keys=sorted(map(int,diagonal['children']));trees={a:OLD.Tree(diagonal,keys) for a in ('A','B')}
+                                                        ~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\INTERNAL_PIVOT_DONOR_20261121_V001\replay.py", line 15, in __init__
+    assert self.parent[c] is None;self.parent[c]=k
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

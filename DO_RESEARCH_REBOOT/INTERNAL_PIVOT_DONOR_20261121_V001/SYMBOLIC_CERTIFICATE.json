@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-21",
+  "main_outcome": "D—OPEN CHECKPOINT; C applies only to the explicitly refuted optimizer shortcut, not theta_1 or Universal CD.",
+  "theta_1_global_conservation": "OPEN",
+  "universal_coarse_double": "OPEN",
+  "six_A_interface": "Previous universal proof preserved unchanged: Q_B <= 6 A + U_int.",
+  "local_eligibility_theorem": {
+    "status": "PROVED—UNIVERSAL, local original-rotation statement only; not an aggregate conservation theorem",
+    "domain": "Any actual physical A rotation in the original model, either direction, arbitrary private A vertices and S-free hangers, any query original frame with S endpoints a<=b. Duplicate S-label representatives are counted once.",
+    "notation": "u=promoted key; v=demoted key; T=old whole physical rotation subtree; C=old physical subtree at u; D=new physical subtree at v. Cspan=[c_minus,c_plus], Dspan=[d_minus,d_plus]. C_S,T_S,D_S are their actual S-descendant key sets.",
+    "exact_theta_1_union": [
+      "Internal: a <= min(u,v) and max(u,v) <= b.",
+      "Cover enlargement: c_minus <= a <= u <= b <= c_plus AND C_S != T_S.",
+      "Cover shrink: d_minus <= a <= v <= b <= d_plus AND D_S != T_S."
+    ],
+    "proof": [
+      "Only u and v can change a query's physical endpoint LCA or its S-cover label. Outside and internal unaffected subtrees retain their labels.",
+      "If the old LCA is u, both query endpoints lie in old C and straddle u. The promoted u then carries whole T. The cover changes exactly when C_S!=T_S; this is the enlargement rectangle.",
+      "If the old LCA is v and both endpoints stay below new v, they lie in Dspan and straddle v. Its cover changes T_S->D_S exactly when unequal; this is the shrink rectangle.",
+      "If the old LCA is v but its endpoints do not both stay below it, new u carries unchanged T_S. If the LCA is elsewhere, its label is unchanged.",
+      "The frozen second donor clause is exactly the internal rectangle. Taking the union proves necessity and sufficiency. The same argument applies to both rotation orientations.",
+      "A StepEv has at most two real rotations and hence at most six such rectangles. These are predicates on existing endpoints and real events, not extra physical resources."
+    ],
+    "duplicate_labels": "Strict S-cover changes use actual label inequality. A duplicate representative cannot supply a second minimum cover containing both endpoints; private-only movement with equal S-labels gives no cover-change arc.",
+    "scope_limit": "This exact local table says which arcs are legal. It does not prove globally enough arcs or bounded overlap."
+  },
+  "refuted_shortcut": {
+    "status": "REFUTED—EXACT",
+    "law": "For arbitrary S=X sources, theta_1 eligibility is equivalent to at least one pivot touching the query interval.",
+    "complete_original_source": "W_2_1: X=S=[17], initial A=B=full right vine, empty prefix; D2,...,D17; K17 K16 D15 K14; K1,...,K17; K16,...,K1. Full physical closure, length53,A65,Q_B24.",
+    "original_consumer": "d=(18,1), F=[11,16], Gamma=B(17,3,1), kappa=previous-cycle B(18,2,1), full cyclic Pi A-absence verified.",
+    "original_A_unit": "A(21,5,0) names the cost-one StepEv; real bits promote 10 over11, then1 over10.",
+    "literal_LCA_check": "Both bits retain physical LCA(11,16)=14 and cover [1,17]. Neither bit has both pivots in F. The first touches11 but its whole rotation frame is only [1,11], excluding endpoint16.",
+    "meaning": "Touching is necessary but not sufficient in general. The guard caught the false shortcut before its results were accepted. theta_1 remained frozen; the optimizer was corrected to its exact three-rectangle predicate.",
+    "valid_restricted_shortcut": "If S=X AND every A bit is at the actual global physical root, pivot incidence is exact, since every query's endpoints lie in that whole bit frame. This explicit guard is implemented.",
+    "genuine_added_donor": "In the same source A(21,6,0) has a bit promoting12 over13, both in F. Both bits retain cover[1,17]; this unit is theta_1-eligible through internal work and ineligible under cover-only payment. Independently verified."
+  },
+  "exact_optimizer_contract": {
+    "demand_identity": "All original U_int IDs are reconstructed from two neutral signs, original whole-frame S-label, carrier extremes and every A snapshot on full Pi. Repeated frame labels group only identical whole-period neighborhoods; all individual IDs and multiplicities remain.",
+    "resource_identity": "Actual original A StepEv units, real bit zero names each cost-one unit. Original unit nodes keep capacity K regardless of how many geometric arcs reach them. Reaching-prefix work is checked but never eligible.",
+    "range_index": "Each real bit gives at most three rectangles on the already-existing physical endpoint coordinates (a,b). A static 2D range index routes a demand iff its point lies in an eligible rectangle. Resource groups retain all original unit IDs and capacity K times their multiplicity.",
+    "correctness": "A path through an outer endpoint range and its secondary interval tree exists exactly for point containment. Decompose each donor rectangle into canonical ranges, then connect those ranges to the actual resource node. Integer flow expands to literal demand-to-A-unit assignments with per-unit load at most K.",
+    "size_guarantee": "For m distinct demand frames and r distinct unit geometries, the 2D index uses O(m log(m+1)+r) nodes and O(m log(m+1)+r log^2(m+1)) arcs, instead of explicitly materializing all m*r possible pairs. This is an exact graph-index bound, not a speedup guarantee for proving the open theorem.",
+    "restricted_1D_index": "Used only when S=X and every A bit is a physical global-root rotation. Otherwise the exact 2D model is used, including arbitrary private A cases.",
+    "interval_diagnostic": "Split-pivot all-interval tests are exact for that guarded root-rotation class. For other full-carrier cases they test only a pivot-incidence supergraph, not theta_1. They are not used to certify theta_1 allocations.",
+    "root_class_copy_budget": "A StepEv has at most three distinct pivot keys. A split-pivot construction with load C per analytical key-role gives at most3C load on the original unit. These roles are not additional physical A units."
+  },
+  "finite_results": {
+    "status": "FINITE-EXACT",
+    "complete_sources": 273,
+    "historical_and_previous_sealed_sources": 209,
+    "generated_closed_cycles": 64,
+    "nonempty_U_sources": 194,
+    "U_empty_sources": 79,
+    "original_U_demands_checked": 24421,
+    "period_operations": 256882,
+    "period_real_rotations": 919237,
+    "reaching_prefix_real_rotations": 50869,
+    "proper_carrier_sources": 88,
+    "all_nonempty_finite_optima": "K=1, independently verified as valid original-event allocations. This is not a proposed universal constant or proof of one.",
+    "generated_source_limitation": "All64 newly generated cycles had U_int=0. They supply no evidence for packing positive hard demand and are not counted as an adversarial success.",
+    "independent_method": "Immutable functional full-BST replay, importing no mutable engine or donor predicate; literal LCA checks on every assigned donor, original carrier, full Pi histories, full labeled closure, reaching prefixes and unit loads checked. Same-agent implementation independence, not external or proof-assistant certification.",
+    "universal_inference": "NONE. No all-source packing proof or all-K theta_1 counterexample was obtained."
+  },
+  "strategy_review": {
+    "performed": true,
+    "trigger": "The cover-only and cover-plus-internal donor rounds have not established a new universal U_int payment. Further donor expansion cannot proceed automatically under the existing research rules.",
+    "finding": "A source-uniform cost bound does not require any particular restricted donor graph. Each chosen eligibility law adds potentially unnecessary all-subset capacity conditions. The cover-only refutation demonstrates this distinction. Refining legal arcs alone does not establish physical supply.",
+    "first_missing_implication": "For actual original frame runs, prove source-uniform bounded overlap against the exact eligible A events through ancestry recreation, arbitrary interleaving/scales and the cyclic seam. The local rectangle theorem, finite flow, and known H injection do not establish it.",
+    "blocked_shortcuts": [
+      "Do not sum one-size, one-origin or independently closed-window budgets without a global sharing proof.",
+      "Do not treat arbitrary interval restriction as an original splay source or erase private ancestors; inherited trace-commutation domains must be proved.",
+      "Do not replace the desired bound by universal Hall feasibility, a packet forest or a potential existence premise and call that progress.",
+      "Do not automatically enlarge theta_1 to theta_2 after this open result."
+    ],
+    "admission_status": "No next universal packing mechanism is admitted by this checkpoint. A later strategy needs a concrete aggregate physical construction or amortization and a fresh gate record; no promised reduction in total proof difficulty.",
+    "net_conservation_advancement": "No new universally funded U_int class. Previous six-A proof and all prior scoped results remain valid. Exact donor semantics and finite verification machinery improved."
+  }
+}

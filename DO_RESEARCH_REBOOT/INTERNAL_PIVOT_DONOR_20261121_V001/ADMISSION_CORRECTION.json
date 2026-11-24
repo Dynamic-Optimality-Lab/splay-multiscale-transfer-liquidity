@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-21",
+  "frozen_theta_1_policy_changed": false,
+  "refuted_auxiliary_law": "For arbitrary full-carrier sources, theta_1 equals any-pivot incidence in F.",
+  "counterexample": "Complete historical W_2_1, N=17,A=65,Q_B=24; original U_int demand (18,1), F=[11,16], and A StepEv (21,5). First bit promotes 10 over 11 in physical frame [1,11], second promotes 1 over 10. The unit touches F at 11 but changes neither its cover nor an internal edge with both pivots in F.",
+  "cause": "The old whole rotation frame need not contain both demand endpoints. Their physical LCA may be above it and remain unchanged.",
+  "guard": "Stop using the false pivot shortcut. Preserve the rejected implementation and exact witness. Independently reconstruct the complete original source and the actual LCA values.",
+  "corrected_concrete_attack": "The exact per-rotation theta_1 predicate is a union of three rectangles in the existing physical endpoint coordinates (a,b): internal a<=min(p,g),b>=max(p,g); expansion C_lo<=a<=p<=b<=C_hi when C_S!=H_S; shrink D_lo<=a<=g<=b<=D_hi when D_S!=H_S. This holds for arbitrary private A vertices. Use an exact 2D range-index flow graph, not the rejected incidence graph.",
+  "valid_restricted_shortcut": "With S=X and EVERY relevant A rotation at the global physical root, the old rotated frame contains all demand endpoints and pivot incidence is exact. Guard this condition explicitly.",
+  "budgets": "Original source, rotation, time and graph-size limits remain. No new source representation or second donor policy is adopted.",
+  "status": "Bounded diagnostic continues under the exact frozen predicate; universal theta_1 packing remains OPEN. The auxiliary refutation is not a refutation of theta_1 or Universal CD."
+}

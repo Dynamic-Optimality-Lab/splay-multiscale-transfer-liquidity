@@ -1,0 +1,22 @@
+{
+  "acceptance": "q_t + Phi_after - Phi_before <= c*a_t + d*k_t",
+  "state": "Exact named physical boundary ports plus local projected A/B trees, target, actor, mode, original StepEv/pairing state; optionally explicit signed bank balances.",
+  "required_proofs": [
+    "Initialization on every admissible diagonal-reaching source without period prefix credit",
+    "A-phase loop preservation with globally shared issuance, not credit per incident block",
+    "B-phase loop preservation including zero/one/two retained-bit cases and external-pivot pairing",
+    "Every original B double consumed once",
+    "Conservative transfers and no credit when ancestry is recreated",
+    "A symbolic whole-operation inequality for arbitrary depths and all hanging subtrees",
+    "Physical-state closure, or a separately constructed closed history-bank seam",
+    "Original K_B voucher injection into disjoint incoming A gaps"
+  ],
+  "not_acceptable": [
+    "Finite fitting accuracy",
+    "Unrestricted cycle feasibility asserted for all sources",
+    "An invariant classifier that excludes a legal successor of an included predecessor",
+    "Assuming history-bank closure from physical pair closure",
+    "Counting port update incidence as a paid B budget"
+  ],
+  "status": "OPEN_UNTIL_ALL_CONTRACTS_HAVE_PROOFS"
+}

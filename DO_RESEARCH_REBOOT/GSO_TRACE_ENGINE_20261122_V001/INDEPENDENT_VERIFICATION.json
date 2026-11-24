@@ -1,0 +1,997 @@
+{
+  "passed": true,
+  "sources": [
+    {
+      "index": 0,
+      "name": "optimum_n5",
+      "A": 4,
+      "Q_B": 6,
+      "K_B": 4,
+      "operations": 5,
+      "steps": 10,
+      "real_rotations": 18,
+      "literal_U": 0,
+      "A_port_packets": 6,
+      "masks": {
+        "11": 6
+      },
+      "invisible_costly": [],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 6,
+        "Q_B": 6,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 4,
+        "KEEP_vouchers": 4,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 1,
+      "name": "embedded_optimum5_two_rank_blocks",
+      "A": 4,
+      "Q_B": 6,
+      "K_B": 4,
+      "operations": 5,
+      "steps": 10,
+      "real_rotations": 18,
+      "literal_U": 0,
+      "A_port_packets": 10,
+      "masks": {
+        "00": 4,
+        "10": 2,
+        "11": 2,
+        "01": 2
+      },
+      "invisible_costly": [],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 6,
+        "Q_B": 6,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 4,
+        "KEEP_vouchers": 4,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 2,
+      "name": "recurrent_noncommuting_n4_I1_3",
+      "A": 6,
+      "Q_B": 2,
+      "K_B": 4,
+      "operations": 4,
+      "steps": 12,
+      "real_rotations": 16,
+      "literal_U": 0,
+      "A_port_packets": 10,
+      "masks": {
+        "01": 1,
+        "00": 2,
+        "11": 1
+      },
+      "invisible_costly": [],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 2,
+        "Q_B": 2,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 6,
+        "KEEP_vouchers": 4,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 3,
+      "name": "reverse_guard3_N8",
+      "A": 20,
+      "Q_B": 0,
+      "K_B": 2,
+      "operations": 21,
+      "steps": 22,
+      "real_rotations": 22,
+      "literal_U": 0,
+      "A_port_packets": 22,
+      "masks": {},
+      "invisible_costly": [],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 0,
+        "Q_B": 0,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 20,
+        "KEEP_vouchers": 2,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 4,
+      "name": "reverse_guard3_N32",
+      "A": 68,
+      "Q_B": 0,
+      "K_B": 2,
+      "operations": 69,
+      "steps": 70,
+      "real_rotations": 70,
+      "literal_U": 0,
+      "A_port_packets": 80,
+      "masks": {},
+      "invisible_costly": [],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 0,
+        "Q_B": 0,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 68,
+        "KEEP_vouchers": 2,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 5,
+      "name": "reverse_guard3_N128",
+      "A": 260,
+      "Q_B": 0,
+      "K_B": 2,
+      "operations": 261,
+      "steps": 262,
+      "real_rotations": 262,
+      "literal_U": 0,
+      "A_port_packets": 310,
+      "masks": {},
+      "invisible_costly": [],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 0,
+        "Q_B": 0,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 260,
+        "KEEP_vouchers": 2,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 6,
+      "name": "W_2_1",
+      "A": 65,
+      "Q_B": 24,
+      "K_B": 36,
+      "operations": 53,
+      "steps": 117,
+      "real_rotations": 160,
+      "literal_U": 5,
+      "A_port_packets": 120,
+      "masks": {
+        "00": 38,
+        "01": 6,
+        "10": 10,
+        "11": 4
+      },
+      "invisible_costly": [],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 24,
+        "Q_B": 24,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 65,
+        "KEEP_vouchers": 36,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 7,
+      "name": "G_4_1_L31_r4_z1",
+      "A": 524,
+      "Q_B": 297,
+      "K_B": 258,
+      "operations": 386,
+      "steps": 1011,
+      "real_rotations": 1496,
+      "literal_U": 34,
+      "A_port_packets": 1104,
+      "masks": {
+        "11": 42,
+        "00": 588,
+        "10": 114,
+        "01": 63
+      },
+      "invisible_costly": [
+        {
+          "op": 80,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        }
+      ],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 297,
+        "Q_B": 297,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 524,
+        "KEEP_vouchers": 258,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 8,
+      "name": "H3_rho2_Y1_copies2",
+      "A": 3960,
+      "Q_B": 1907,
+      "K_B": 1427,
+      "operations": 2945,
+      "steps": 6818,
+      "real_rotations": 10358,
+      "literal_U": 70,
+      "A_port_packets": 11401,
+      "masks": {
+        "00": 5606,
+        "11": 53,
+        "10": 516,
+        "01": 487
+      },
+      "invisible_costly": [
+        {
+          "op": 225,
+          "a": 0,
+          "q": 3,
+          "k": 1
+        },
+        {
+          "op": 234,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 240,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 243,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 252,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 264,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 267,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 270,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 329,
+          "a": 0,
+          "q": 5,
+          "k": 1
+        },
+        {
+          "op": 405,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 440,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 485,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 490,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 500,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 510,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 558,
+          "a": 0,
+          "q": 4,
+          "k": 1
+        },
+        {
+          "op": 563,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 617,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 650,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 679,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 696,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 709,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 730,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 784,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 804,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 820,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1087,
+          "a": 0,
+          "q": 3,
+          "k": 1
+        },
+        {
+          "op": 1096,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1102,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 1105,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1114,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1126,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 1129,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1132,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1191,
+          "a": 0,
+          "q": 5,
+          "k": 1
+        },
+        {
+          "op": 1267,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1302,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 1347,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1352,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1362,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1372,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1420,
+          "a": 0,
+          "q": 4,
+          "k": 1
+        },
+        {
+          "op": 1425,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 1479,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1512,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1541,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1558,
+          "a": 0,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 1571,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1592,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1646,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1666,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 1682,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        }
+      ],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 1907,
+        "Q_B": 1907,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 3960,
+        "KEEP_vouchers": 1427,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 9,
+      "name": "H_3_1",
+      "A": 128,
+      "Q_B": 53,
+      "K_B": 69,
+      "operations": 130,
+      "steps": 236,
+      "real_rotations": 289,
+      "literal_U": 15,
+      "A_port_packets": 152,
+      "masks": {
+        "00": 105,
+        "11": 7,
+        "10": 20,
+        "01": 14
+      },
+      "invisible_costly": [],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 53,
+        "Q_B": 53,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 128,
+        "KEEP_vouchers": 69,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 10,
+      "name": "H_3_3",
+      "A": 256,
+      "Q_B": 109,
+      "K_B": 133,
+      "operations": 258,
+      "steps": 476,
+      "real_rotations": 585,
+      "literal_U": 35,
+      "A_port_packets": 304,
+      "masks": {
+        "11": 14,
+        "00": 235,
+        "10": 42,
+        "01": 23
+      },
+      "invisible_costly": [],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 109,
+        "Q_B": 109,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 256,
+        "KEEP_vouchers": 133,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 11,
+      "name": "H_3_7",
+      "A": 512,
+      "Q_B": 221,
+      "K_B": 261,
+      "operations": 514,
+      "steps": 956,
+      "real_rotations": 1177,
+      "literal_U": 75,
+      "A_port_packets": 612,
+      "masks": {
+        "11": 23,
+        "00": 512,
+        "01": 47,
+        "10": 83
+      },
+      "invisible_costly": [],
+      "bank": {
+        "status": "EXACT_GRAMMAR_MINCUT",
+        "paid": 218,
+        "Q_B": 221,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 512,
+        "KEEP_vouchers": 261,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 12,
+      "name": "H_3_17",
+      "A": 1152,
+      "Q_B": 501,
+      "K_B": 581,
+      "operations": 1154,
+      "steps": 2156,
+      "real_rotations": 2657,
+      "literal_U": 175,
+      "A_port_packets": 1380,
+      "masks": {
+        "11": 51,
+        "00": 1188,
+        "01": 99,
+        "10": 191
+      },
+      "invisible_costly": [],
+      "bank": {
+        "status": "EXACT_GRAMMAR_MINCUT",
+        "paid": 476,
+        "Q_B": 501,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 1152,
+        "KEEP_vouchers": 581,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 13,
+      "name": "H_3_5",
+      "A": 384,
+      "Q_B": 165,
+      "K_B": 197,
+      "operations": 386,
+      "steps": 716,
+      "real_rotations": 881,
+      "literal_U": 55,
+      "A_port_packets": 460,
+      "masks": {
+        "00": 376,
+        "01": 33,
+        "10": 64,
+        "11": 18
+      },
+      "invisible_costly": [
+        {
+          "op": 104,
+          "a": 1,
+          "q": 6,
+          "k": 1
+        }
+      ],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 165,
+        "Q_B": 165,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 384,
+        "KEEP_vouchers": 197,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 14,
+      "name": "H_3_10",
+      "A": 704,
+      "Q_B": 305,
+      "K_B": 357,
+      "operations": 706,
+      "steps": 1316,
+      "real_rotations": 1621,
+      "literal_U": 105,
+      "A_port_packets": 844,
+      "masks": {
+        "00": 714,
+        "01": 59,
+        "10": 118,
+        "11": 32
+      },
+      "invisible_costly": [
+        {
+          "op": 184,
+          "a": 1,
+          "q": 11,
+          "k": 1
+        }
+      ],
+      "bank": {
+        "status": "EXACT_GRAMMAR_MINCUT",
+        "paid": 299,
+        "Q_B": 305,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 704,
+        "KEEP_vouchers": 357,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 15,
+      "name": "H_3_25",
+      "A": 1664,
+      "Q_B": 725,
+      "K_B": 837,
+      "operations": 1666,
+      "steps": 3116,
+      "real_rotations": 3841,
+      "literal_U": 255,
+      "A_port_packets": 1996,
+      "masks": {
+        "00": 1728,
+        "01": 137,
+        "10": 280,
+        "11": 74
+      },
+      "invisible_costly": [
+        {
+          "op": 424,
+          "a": 1,
+          "q": 26,
+          "k": 1
+        }
+      ],
+      "bank": {
+        "status": "EXACT_GRAMMAR_MINCUT",
+        "paid": 686,
+        "Q_B": 725,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 1664,
+        "KEEP_vouchers": 837,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 16,
+      "name": "uniform_gap5__H_3_1",
+      "A": 128,
+      "Q_B": 53,
+      "K_B": 69,
+      "operations": 130,
+      "steps": 236,
+      "real_rotations": 289,
+      "literal_U": 15,
+      "A_port_packets": 256,
+      "masks": {
+        "00": 261
+      },
+      "invisible_costly": [
+        {
+          "op": 33,
+          "a": 0,
+          "q": 16,
+          "k": 1
+        },
+        {
+          "op": 34,
+          "a": 1,
+          "q": 8,
+          "k": 1
+        },
+        {
+          "op": 36,
+          "a": 1,
+          "q": 4,
+          "k": 1
+        },
+        {
+          "op": 40,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 66,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 68,
+          "a": 1,
+          "q": 3,
+          "k": 1
+        },
+        {
+          "op": 76,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 84,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        }
+      ],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 53,
+        "Q_B": 53,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 128,
+        "KEEP_vouchers": 69,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    },
+    {
+      "index": 17,
+      "name": "uniform_gap5__H_3_5",
+      "A": 384,
+      "Q_B": 165,
+      "K_B": 197,
+      "operations": 386,
+      "steps": 716,
+      "real_rotations": 881,
+      "literal_U": 55,
+      "A_port_packets": 768,
+      "masks": {
+        "00": 837
+      },
+      "invisible_costly": [
+        {
+          "op": 97,
+          "a": 0,
+          "q": 48,
+          "k": 1
+        },
+        {
+          "op": 98,
+          "a": 1,
+          "q": 24,
+          "k": 1
+        },
+        {
+          "op": 100,
+          "a": 1,
+          "q": 12,
+          "k": 1
+        },
+        {
+          "op": 104,
+          "a": 1,
+          "q": 6,
+          "k": 1
+        },
+        {
+          "op": 194,
+          "a": 0,
+          "q": 1,
+          "k": 1
+        },
+        {
+          "op": 196,
+          "a": 1,
+          "q": 3,
+          "k": 1
+        },
+        {
+          "op": 204,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 212,
+          "a": 1,
+          "q": 3,
+          "k": 1
+        },
+        {
+          "op": 220,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 228,
+          "a": 1,
+          "q": 3,
+          "k": 1
+        },
+        {
+          "op": 236,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 244,
+          "a": 1,
+          "q": 3,
+          "k": 1
+        },
+        {
+          "op": 252,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 260,
+          "a": 1,
+          "q": 3,
+          "k": 1
+        },
+        {
+          "op": 268,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        },
+        {
+          "op": 276,
+          "a": 1,
+          "q": 2,
+          "k": 1
+        }
+      ],
+      "bank": {
+        "status": "FINITE_EXACT_BANK",
+        "paid": 165,
+        "Q_B": 165,
+        "cyclic_balances_conserved": true,
+        "A_issuance_units": 384,
+        "KEEP_vouchers": 197,
+        "prefix_credit": 0
+      },
+      "full_original_Pi_checked": true
+    }
+  ],
+  "original_operations": 9079,
+  "original_steps": 18256,
+  "real_rotations": 24641,
+  "literal_U": 894,
+  "finite_potential_exact": true,
+  "seconds": 678.3421893999912,
+  "trust": "Independent immutable physical implementation, two-split projection and separately reconstructed bank network. Same agent, not external peer review; no universal proof inferred.",
+  "root_status": "OPEN"
+}

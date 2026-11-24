@@ -1,0 +1,9 @@
+{
+  "before_execution": true,
+  "frozen_policy": "ADMISSION.json; saturated target-first then increasing physical block order",
+  "scope": "18 sealed original source traces at H=1,2,5,8,16; 28 additional full sources from original H/compressed/reflected/historical constructors at H=5,8,16,32.",
+  "scaling_trace_rotations_cap": 3000000,
+  "scaling_wall_seconds_cap": 300,
+  "no_automatic_policy_pivot": true,
+  "purpose": "Seek a physical all-parameter funding proof or exact original-source obstruction. A finite success or a failure at one capacity is not a universal result."
+}

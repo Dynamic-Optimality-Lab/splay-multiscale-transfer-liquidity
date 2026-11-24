@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "candidate": "ZERO_EDGE_INVARIANT_CANDIDATE.json",
+      "original_event": [
+        "B",
+        33,
+        5
+      ],
+      "physical_edge": [
+        22,
+        21,
+        0
+      ],
+      "owner_banks": [
+        4,
+        4
+      ],
+      "owner_stocks": [
+        0,
+        0
+      ],
+      "event_fully_paid": true,
+      "full_original_source_verified": true,
+      "all_prior_boundaries_satisfied": true,
+      "all_closed_balances_scope": "A zero coordinate at the greatest clipped cyclic balance is zero at every smaller closed balance; the physical edge discrepancy is independent of balances.",
+      "new_UF_escape_claim": false,
+      "original_operations": 130
+    },
+    {
+      "candidate": "CROSS_BLOCK_ZERO_EDGE_CANDIDATE.json",
+      "original_event": [
+        "B",
+        34,
+        5
+      ],
+      "physical_edge": [
+        11,
+        10,
+        0
+      ],
+      "owner_banks": [
+        2,
+        1
+      ],
+      "owner_stocks": [
+        0,
+        0
+      ],
+      "event_fully_paid": true,
+      "full_original_source_verified": true,
+      "all_prior_boundaries_satisfied": true,
+      "all_closed_balances_scope": "A zero coordinate at the greatest clipped cyclic balance is zero at every smaller closed balance; the physical edge discrepancy is independent of balances.",
+      "new_UF_escape_claim": false,
+      "original_operations": 130
+    }
+  ],
+  "selected_H5_bank_refuted": false,
+  "universal_CD": "OPEN",
+  "scope": "Two stated physical state-invariant candidates refuted on the same complete original source. This is not a failed funded guard or an aggregate-cost counterexample."
+}

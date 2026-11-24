@@ -1,0 +1,38 @@
+{
+  "created_date": "2026-11-20",
+  "purpose": "Complete original H_(3,q) preparation, burst and restoration analysis for a new signed cardinality-layer SET potential, with an exact proof or source obstruction.",
+  "original_source": {
+    "N": "2^(p+1)*(q+1)+1",
+    "initial_pair": "A=B=right vine on 1..N",
+    "reaching_prefix": [],
+    "word": ["DELETE 2..N", "descend N..1, KEEP exactly N+1-2^j for 0<=j<=p, DELETE every other target", "KEEP 1..N", "KEEP N-1..1"],
+    "required_closure": "Exact equality of complete labeled A and B trees separately",
+    "original_carrier": "S=M=X=[N]"
+  },
+  "candidate_frozen_before_replay": {
+    "name": "Signed perfect-block-cardinality SET potential",
+    "sizes": "M={2^h-1:h>=2}={3,7,15,...}",
+    "formula": "Phi_M(A,B;S)=-#{J in J_S(B) setminus J_S(A): |J| in M}",
+    "fixed_layer_control": "Phi_15=-#{J in J_S(B) setminus J_S(A): |J|=15}",
+    "A_claim": "Every actual real A rotation increases either candidate by at most1, including private nodes and SET duplicate suppression.",
+    "H3q_burst_claim": "At original t=N+7, Phi_M changes by -(q+1), Phi_15 by -q; u=q,d=2,k=1.",
+    "full_B_law_under_test": "There exist finite absolute beta,gamma>=0 with u_t+Delta_B Phi_M<=beta*d_t+gamma*k_t on every original B phase of every admissible source.",
+    "restoration_pressure_family": "Complete original H_(p,5), p>=1; inspect first ascending KEEP3 at original operation2N+2, without cutting out preparation or return work."
+  },
+  "scope_gate": {
+    "smaller": "One explicit potential and the complete H source grammar, not arbitrary feature synthesis or a universal coverage search.",
+    "mechanism": "The old RG03 plateau erases which SET-cardinality layers are replaced. Perfect-block recurrences permit exact layer counts; A locality follows from one true SET loss/creation per primitive rotation.",
+    "success": "Prove A locality and the parametric H3q drop, then prove the stated all-source B law or give an admissible complete source family refuting that exact candidate. A refutation does not refute other potentials or Universal CD.",
+    "novelty_limit": "Fixed-cardinality birth retirement has prior proofs. An exact-layer sharpening or potential encoding is not advertised as a strict enlargement of the current UF paid class.",
+    "upward_effect": "Decide whether this new candidate can supply the missing B-phase conservation interface. Preserve any valid scoped layer theorem and isolate its literal complement."
+  },
+  "verification_plan": {
+    "primary_H3q_q": [1,2,3,4,7,8,16,32],
+    "restoration_Hp5_p": [1,2,3,4,5,6],
+    "implementations": "New mutable parent-pointer primitive tracer checked operation-by-operation against the frozen independent tuple splay core. All real primitive IDs and before/after subtree SET changes are retained.",
+    "independence": "Two structurally different implementations; same-agent orchestration, not independent-agent, peer or formal proof-assistant certification.",
+    "new_replay_budget": "At most180 CPU seconds and200000 real rotations. No unrelated search, solver or prior campaign budget reset.",
+    "symbolic_requirement": "Finite replays validate implementation and witnesses only. Quantified q/p claims require symbolic full-source recurrence proofs."
+  },
+  "preservation": "Only new files under this directory and the authorized Notion research destination may be written. Prior code, source words, proofs, seals, owners, configuration and Git remain untouched. Use Python -B and prevent inherited imports from writing caches."
+}

@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "syntax_files": [
+    "audit.py",
+    "emit_lean.py",
+    "final_checks.py",
+    "global_barrier.py",
+    "global_energy.py",
+    "gso_joint.py",
+    "joint.py",
+    "metric_attack.py",
+    "preserve.py",
+    "proofcheck.py",
+    "relaxation.py",
+    "schemas.py",
+    "seal.py",
+    "tests.py",
+    "verify_audit.py",
+    "verify_barrier.py",
+    "verify_metric.py"
+  ],
+  "checks": [
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "proofcheck.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.35453160002361983,
+      "stdout": "{\"passed\": true, \"scope\": \"two_targets\", \"constant\": 1, \"root_acceptance\": false, \"source_uniform\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "verify_barrier.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.14354000001912937,
+      "stdout": "{\"passed\": true, \"exact_dual_coefficients\": [\"1\", \"0\", \"0\", \"0\", \"0\", \"-3\"], \"exact_rhs\": \"-3\", \"nonnegative_inequality_multipliers\": true, \"named_root_summary_cycle_checked\": true, \"original_source_counterexample\": false, \"scope\": \"The scalar entry relaxation only. It omits original ancestry and bank/path correlations.\", \"universal_CD\": \"OPEN\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "verify_audit.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9314287999877706,
+      "stdout": "{\"passed\": true, \"complete_sources\": 9, \"operations\": 17374, \"real_rotations\": 40108, \"real_other_target_depth\": 2064, \"universal_CD\": \"OPEN\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "verify_metric.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.203113400028087,
+      "stdout": "{\"passed\": true, \"complete_original_sources\": 3, \"operations\": 9684, \"real_rotations\": 22257, \"universal_CD\": \"OPEN\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "global_energy.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.24181820004014298,
+      "stdout": "{\"status\": \"UNRESTRICTED_GLOBAL_SEARCH_OPEN_WITH_EXACT_ORIGINAL_SOURCE_FAMILY_REJECTION\", \"scope_restriction_added_to_target\": false, \"new_unrestricted_root_cost_obligations_deleted\": 0, \"universal_CD\": \"OPEN\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "tests.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3455678999889642,
+      "stdout": "",
+      "stderr": ".................\n----------------------------------------------------------------------\nRan 17 tests in 0.095s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "preserve.py"
+      ],
+      "exit_code": 0,
+      "seconds": 85.69857519998914,
+      "stdout": "{\"passed\": true, \"prior_hashes\": 5625, \"previous_checkpoint_files\": 222}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.21.0",
+        "JointLearnedProof.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.6672281000064686,
+      "stdout": "'JointCertificate.arbitrary_hanging_subtrees' depends on axioms: [propext]\n'JointCertificate.learned_root_bound' depends on axioms: [propext, Quot.sound]\n'JointCertificate.all_original_frame_lengths' depends on axioms: [propext, Quot.sound]\n'JointCertificate.original_cyclic_entry_is_derived' depends on axioms: [propext]\n'JointCertificate.learned_path_double' depends on axioms: [propext, Quot.sound]\n'JointCertificate.learned_reserve_double' depends on axioms: [propext, Quot.sound]\n'JointCertificate.original_double_including_bank_overflow' depends on axioms: [propext, Quot.sound]\n'JointCertificate.original_closed_two_target_cost' depends on axioms: [propext, Quot.sound]\n'JointCertificate.learned_whole_original_q_energy' depends on axioms: [propext, Quot.sound]\n'JointCertificate.global_reserve_monotone' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "source_sha256": "aa2d79e8faae0702c03ad784588d4d6f585732a54ce19861a6c459230931d96e",
+      "new_axioms_or_error_recovery": false
+    },
+    {
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.21.0",
+        "MetricKernel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.2341837999993004,
+      "stdout": "'PhysicalMetric.one_rotation_spine_upper' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.next_flattening_rotation' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.exact_flattening' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.geodesic_lower_bound' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.flat_original_fragment_rejects_trial' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.no_integer_universal_fragment_bound' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.bank_or_shape_must_supply_deficit' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "source_sha256": "6c81be82c1fff96f1b16f7be015556277e9d245e3810e6ca49814dda7fb26921",
+      "new_axioms_or_error_recovery": false
+    }
+  ],
+  "python": "3.13.7",
+  "Lean": "Lean (version 4.21.0, x86_64-w64-windows-gnu, commit 6741444a63ee, Release)",
+  "preserved_prior_artifacts": 5625,
+  "scope": "Independent implementations and Lean proof components, not external peer review or a full original-model formalization.",
+  "universal_CD": "OPEN"
+}

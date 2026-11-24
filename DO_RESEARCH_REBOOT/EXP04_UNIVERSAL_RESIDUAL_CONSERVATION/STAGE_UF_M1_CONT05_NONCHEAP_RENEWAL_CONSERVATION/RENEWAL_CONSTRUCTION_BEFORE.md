@@ -1,0 +1,7 @@
+# Next focused attack: true repeated C_old plus competing packet parents
+
+The two cheap-entry sources have a_creator=a_consumer1 and physical width8/16, but the earlier noncheap creator has no original receiving cohort and no R_*/C_old gaps. This refutes the converse that an earlier physical noncheap use automatically exhausts E_old. It does not refute the RN-1 necessary original-C_old predecessor condition.
+
+Now retain C2's actual noncheap R_* column chain at g2, whose later uses genuinely lie after E_old. Change only the FUTURE support tour and exact restoration, seeking additional original R_* parents in that SAME consuming packet. The old ascending tour leaves most lower parents without the needed first-hit cohort. A descending or four-key grouped future tour may align their singleton outputs with enclosure outputs and create enough earlier D parents to defeat quota if H is omitted. Original Pi, F and E_old are all recomputed; loss of U or activation of F is retained as a failed prediction.
+
+Use k4,L5 and k8,L5 with descending tours, k4,L5 grouped tour, and k4,L9 descending. The original guarded A construction and actual core-coerce closure are retained with all work measured. Each source has a positive raw certificate by its verified cost (and small-support theorem), so any no-H overflow is a COUNTERFACTUAL diagnostic, not actual S_UU. This stage tests the missing conjunction after F/E_old/quota rather than packet width alone.

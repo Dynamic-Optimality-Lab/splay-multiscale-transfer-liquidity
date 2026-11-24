@@ -1,0 +1,34 @@
+{
+  "classification": "SUBSTANTIVE PARTIAL QUANTITATIVE PASS",
+  "corpus_operations": 76474,
+  "coverage": {
+    "EXP01": {
+      "R6_other": 95,
+      "adaptive_paid": 92,
+      "bridge_paid": 3,
+      "remaining": 0
+    },
+    "EXP02": {
+      "R6_other": 256,
+      "adaptive_paid": 2,
+      "bridge_paid": 240,
+      "remaining": 14
+    }
+  },
+  "global_final_residual_closed": false,
+  "inherited_sources": 133,
+  "interpretation": "Finite corpus coverage is not universal theorem closure. The 14 new unhandled events are full original certified R6_other.",
+  "new_physical_identity": "delta = number of actual-only double grandparents - number of shadow-only double grandparents, per retained original access",
+  "new_sources": 38,
+  "source_count": 171,
+  "theorems": {
+    "adaptive": "R_adaptive <= 6 C_seq A",
+    "bridge": "R_bridge <= (6 C_seq + 3) A",
+    "paid_union": "R_adaptive + R_bridge <= (12 C_seq + 3) A",
+    "remaining_scalar_interface": "Q_B <= (35 + 30 C_seq) A + R_unhandled; R_unhandled has no absolute A bound here"
+  },
+  "unhandled_counts": {
+    "omitted_consumers": 10,
+    "retained_missing_shadow_grandparents": 4
+  }
+}

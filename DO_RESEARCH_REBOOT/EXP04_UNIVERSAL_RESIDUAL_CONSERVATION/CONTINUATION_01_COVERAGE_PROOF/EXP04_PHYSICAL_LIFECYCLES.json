@@ -1,0 +1,918 @@
+{
+  "additional_complete_lifecycle_records_in": [
+    "OSCILLATION_RESULTS.json",
+    "RESCUE_ATTACK_RESULTS.json",
+    "COLUMN_RESULTS.json"
+  ],
+  "critical_original_escape": {
+    "last_loss_loads": {
+      "['A', 113, 1, 0]": 1
+    },
+    "maximum_load": 1,
+    "parents": [
+      {
+        "A_path": [
+          2,
+          65,
+          4,
+          6,
+          5
+        ],
+        "B_continuous_from_last_A_loss": true,
+        "B_path": [
+          2,
+          65,
+          58,
+          50,
+          34,
+          18,
+          10,
+          6,
+          4,
+          5
+        ],
+        "g": 18,
+        "g_is_A_ancestor_post_A": false,
+        "gaps": [
+          {
+            "category": "unpaid_omitted",
+            "consumer": 645,
+            "original_parent": [
+              645,
+              2
+            ],
+            "rho": [
+              645,
+              [
+                72,
+                3
+              ],
+              [
+                80,
+                1
+              ]
+            ],
+            "type": "O"
+          }
+        ],
+        "history": {
+          "changes": [
+            {
+              "added": [
+                [
+                  18,
+                  17,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  17,
+                  18,
+                  1
+                ]
+              ],
+              "external": null,
+              "id": [
+                "A",
+                17,
+                1,
+                0
+              ],
+              "middle": null,
+              "original_SET_sign": 1,
+              "pivot": 17,
+              "present_after": true,
+              "promoted": 18,
+              "time": 17
+            },
+            {
+              "added": [
+                [
+                  2,
+                  18,
+                  1
+                ],
+                [
+                  10,
+                  14,
+                  1
+                ],
+                [
+                  18,
+                  10,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  2,
+                  10,
+                  1
+                ],
+                [
+                  10,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  14,
+                  0
+                ]
+              ],
+              "external": 2,
+              "id": [
+                "B",
+                72,
+                3,
+                0
+              ],
+              "middle": 14,
+              "original_SET_sign": 0,
+              "pivot": 10,
+              "present_after": true,
+              "promoted": 18,
+              "time": 188
+            },
+            {
+              "added": [
+                [
+                  17,
+                  18,
+                  1
+                ]
+              ],
+              "deleted": [
+                [
+                  18,
+                  17,
+                  0
+                ]
+              ],
+              "external": null,
+              "id": [
+                "A",
+                113,
+                1,
+                0
+              ],
+              "middle": null,
+              "original_SET_sign": 0,
+              "pivot": 18,
+              "present_after": false,
+              "promoted": 17,
+              "time": 236
+            },
+            {
+              "added": [
+                [
+                  10,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  14,
+                  0
+                ],
+                [
+                  34,
+                  10,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  10,
+                  14,
+                  1
+                ],
+                [
+                  18,
+                  10,
+                  0
+                ],
+                [
+                  34,
+                  18,
+                  0
+                ]
+              ],
+              "external": 34,
+              "id": [
+                "B",
+                645,
+                2,
+                0
+              ],
+              "middle": 14,
+              "original_SET_sign": 0,
+              "pivot": 18,
+              "present_after": false,
+              "promoted": 10,
+              "time": 2377
+            },
+            {
+              "added": [
+                [
+                  16,
+                  17,
+                  1
+                ],
+                [
+                  18,
+                  16,
+                  0
+                ],
+                [
+                  20,
+                  18,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  16,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  17,
+                  0
+                ],
+                [
+                  20,
+                  16,
+                  0
+                ]
+              ],
+              "external": 20,
+              "id": [
+                "A",
+                1175,
+                1,
+                1
+              ],
+              "middle": 17,
+              "original_SET_sign": 1,
+              "pivot": 16,
+              "present_after": true,
+              "promoted": 18,
+              "time": 4185
+            },
+            {
+              "added": [
+                [
+                  16,
+                  17,
+                  1
+                ],
+                [
+                  18,
+                  16,
+                  0
+                ],
+                [
+                  20,
+                  18,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  16,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  17,
+                  0
+                ],
+                [
+                  20,
+                  16,
+                  0
+                ]
+              ],
+              "external": 20,
+              "id": [
+                "B",
+                1175,
+                1,
+                1
+              ],
+              "middle": 17,
+              "original_SET_sign": -1,
+              "pivot": 16,
+              "present_after": true,
+              "promoted": 18,
+              "time": 4190
+            },
+            {
+              "added": [
+                [
+                  10,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  12,
+                  0
+                ],
+                [
+                  50,
+                  10,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  10,
+                  12,
+                  1
+                ],
+                [
+                  18,
+                  10,
+                  0
+                ],
+                [
+                  50,
+                  18,
+                  0
+                ]
+              ],
+              "external": 50,
+              "id": [
+                "A",
+                1177,
+                3,
+                1
+              ],
+              "middle": 12,
+              "original_SET_sign": 1,
+              "pivot": 18,
+              "present_after": false,
+              "promoted": 10,
+              "time": 4211
+            },
+            {
+              "added": [
+                [
+                  10,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  12,
+                  0
+                ],
+                [
+                  50,
+                  10,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  10,
+                  12,
+                  1
+                ],
+                [
+                  18,
+                  10,
+                  0
+                ],
+                [
+                  50,
+                  18,
+                  0
+                ]
+              ],
+              "external": 50,
+              "id": [
+                "B",
+                1177,
+                3,
+                1
+              ],
+              "middle": 12,
+              "original_SET_sign": -1,
+              "pivot": 18,
+              "present_after": false,
+              "promoted": 10,
+              "time": 4218
+            },
+            {
+              "added": [
+                [
+                  10,
+                  12,
+                  1
+                ],
+                [
+                  18,
+                  10,
+                  0
+                ],
+                [
+                  42,
+                  18,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  10,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  12,
+                  0
+                ],
+                [
+                  42,
+                  10,
+                  0
+                ]
+              ],
+              "external": 42,
+              "id": [
+                "A",
+                1179,
+                3,
+                0
+              ],
+              "middle": 12,
+              "original_SET_sign": 1,
+              "pivot": 10,
+              "present_after": true,
+              "promoted": 18,
+              "time": 4238
+            },
+            {
+              "added": [
+                [
+                  10,
+                  12,
+                  1
+                ],
+                [
+                  18,
+                  10,
+                  0
+                ],
+                [
+                  42,
+                  18,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  10,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  12,
+                  0
+                ],
+                [
+                  42,
+                  10,
+                  0
+                ]
+              ],
+              "external": 42,
+              "id": [
+                "B",
+                1179,
+                3,
+                0
+              ],
+              "middle": 12,
+              "original_SET_sign": -1,
+              "pivot": 10,
+              "present_after": true,
+              "promoted": 18,
+              "time": 4245
+            },
+            {
+              "added": [
+                [
+                  6,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  8,
+                  0
+                ],
+                [
+                  42,
+                  6,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  6,
+                  8,
+                  1
+                ],
+                [
+                  18,
+                  6,
+                  0
+                ],
+                [
+                  42,
+                  18,
+                  0
+                ]
+              ],
+              "external": 42,
+              "id": [
+                "A",
+                1181,
+                2,
+                1
+              ],
+              "middle": 8,
+              "original_SET_sign": 1,
+              "pivot": 18,
+              "present_after": false,
+              "promoted": 6,
+              "time": 4262
+            },
+            {
+              "added": [
+                [
+                  6,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  8,
+                  0
+                ],
+                [
+                  58,
+                  6,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  6,
+                  8,
+                  1
+                ],
+                [
+                  18,
+                  6,
+                  0
+                ],
+                [
+                  58,
+                  18,
+                  0
+                ]
+              ],
+              "external": 58,
+              "id": [
+                "B",
+                1181,
+                3,
+                1
+              ],
+              "middle": 8,
+              "original_SET_sign": 0,
+              "pivot": 18,
+              "present_after": false,
+              "promoted": 6,
+              "time": 4270
+            },
+            {
+              "added": [
+                [
+                  6,
+                  8,
+                  1
+                ],
+                [
+                  18,
+                  6,
+                  0
+                ],
+                [
+                  38,
+                  18,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  6,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  8,
+                  0
+                ],
+                [
+                  38,
+                  6,
+                  0
+                ]
+              ],
+              "external": 38,
+              "id": [
+                "A",
+                1183,
+                3,
+                0
+              ],
+              "middle": 8,
+              "original_SET_sign": 1,
+              "pivot": 6,
+              "present_after": true,
+              "promoted": 18,
+              "time": 4292
+            },
+            {
+              "added": [
+                [
+                  14,
+                  18,
+                  1
+                ],
+                [
+                  18,
+                  16,
+                  0
+                ],
+                [
+                  22,
+                  14,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  14,
+                  16,
+                  1
+                ],
+                [
+                  18,
+                  14,
+                  0
+                ],
+                [
+                  22,
+                  18,
+                  0
+                ]
+              ],
+              "external": 22,
+              "id": [
+                "A",
+                1185,
+                3,
+                1
+              ],
+              "middle": 16,
+              "original_SET_sign": 0,
+              "pivot": 18,
+              "present_after": false,
+              "promoted": 14,
+              "time": 4319
+            },
+            {
+              "added": [
+                [
+                  18,
+                  17,
+                  0
+                ],
+                [
+                  19,
+                  18,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  17,
+                  18,
+                  1
+                ],
+                [
+                  19,
+                  17,
+                  0
+                ]
+              ],
+              "external": 19,
+              "id": [
+                "A",
+                1267,
+                1,
+                1
+              ],
+              "middle": null,
+              "original_SET_sign": 1,
+              "pivot": 17,
+              "present_after": true,
+              "promoted": 18,
+              "time": 5120
+            },
+            {
+              "added": [
+                [
+                  18,
+                  17,
+                  0
+                ],
+                [
+                  19,
+                  18,
+                  0
+                ]
+              ],
+              "deleted": [
+                [
+                  17,
+                  18,
+                  1
+                ],
+                [
+                  19,
+                  17,
+                  0
+                ]
+              ],
+              "external": 19,
+              "id": [
+                "B",
+                1267,
+                1,
+                1
+              ],
+              "middle": null,
+              "original_SET_sign": -1,
+              "pivot": 17,
+              "present_after": true,
+              "promoted": 18,
+              "time": 5123
+            },
+            {
+              "added": [
+                [
+                  17,
+                  18,
+                  1
+                ]
+              ],
+              "deleted": [
+                [
+                  18,
+                  17,
+                  0
+                ]
+              ],
+              "external": null,
+              "id": [
+                "A",
+                1268,
+                1,
+                0
+              ],
+              "middle": null,
+              "original_SET_sign": 1,
+              "pivot": 18,
+              "present_after": false,
+              "promoted": 17,
+              "time": 5125
+            },
+            {
+              "added": [
+                [
+                  17,
+                  18,
+                  1
+                ]
+              ],
+              "deleted": [
+                [
+                  18,
+                  17,
+                  0
+                ]
+              ],
+              "external": null,
+              "id": [
+                "B",
+                1268,
+                1,
+                0
+              ],
+              "middle": null,
+              "original_SET_sign": -1,
+              "pivot": 18,
+              "present_after": false,
+              "promoted": 17,
+              "time": 5126
+            }
+          ],
+          "g": 18,
+          "initial_relation": {
+            "A": false,
+            "B": false
+          },
+          "target": 5
+        },
+        "last_A_loss": {
+          "added": [
+            [
+              17,
+              18,
+              1
+            ]
+          ],
+          "deleted": [
+            [
+              18,
+              17,
+              0
+            ]
+          ],
+          "external": null,
+          "id": [
+            "A",
+            113,
+            1,
+            0
+          ],
+          "middle": null,
+          "original_SET_sign": 0,
+          "pivot": 18,
+          "present_after": false,
+          "previous_period": false,
+          "promoted": 17,
+          "time": 236,
+          "unrolled_time": 236
+        },
+        "original_parent": [
+          645,
+          2
+        ],
+        "original_parent_certificate": {
+          "F": 8589934588,
+          "Gamma": 200,
+          "J": 8589933568,
+          "case": "LL",
+          "events": [
+            2377,
+            2378
+          ],
+          "exposed": false,
+          "g": 18,
+          "h": 1159,
+          "hit_time": 3963,
+          "id": [
+            645,
+            2
+          ],
+          "kappa": -2804,
+          "nu": 2377,
+          "post_A": 2374,
+          "signs": [
+            0,
+            0
+          ]
+        },
+        "target": 5,
+        "type": "O"
+      }
+    ],
+    "source": "bothosc_p4_l256_r256_bitreverse_ret1_low2",
+    "undefined": 0
+  },
+  "original_lifecycles_are_not_reclassified_on_comparisons": true
+}

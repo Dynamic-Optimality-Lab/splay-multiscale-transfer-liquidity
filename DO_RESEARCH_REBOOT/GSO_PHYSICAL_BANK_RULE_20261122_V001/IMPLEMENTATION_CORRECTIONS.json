@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "stage": "First Lean kernel build",
+      "failure": "The installed Std-only Lean4.21 does not expose Nat.strong_induction_on, and local is a reserved binder name. The build reported errors and was rejected.",
+      "correction": "Use the installed Nat.strongRecOn eliminator and rename the binder to balance. Check the Lean return code separately from other commands.",
+      "scope": "Formal API/syntax correction; no source, policy, budget or mathematical claim was changed. Error-generated sorryAx output was never accepted as a checked proof."
+    }
+  ]
+}

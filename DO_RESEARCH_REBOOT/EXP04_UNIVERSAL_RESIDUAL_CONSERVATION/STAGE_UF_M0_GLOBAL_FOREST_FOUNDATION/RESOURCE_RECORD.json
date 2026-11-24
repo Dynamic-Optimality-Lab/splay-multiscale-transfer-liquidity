@@ -1,0 +1,75 @@
+{
+  "CPU_allocation_seconds": 600,
+  "control_cap": 24,
+  "controls_used": 20,
+  "failed_adapter_receipt_included": true,
+  "fresh_population_cap": 1027,
+  "measured_stage_CPU_seconds": 140.984375,
+  "not_a_host_quota_or_theorem_hypothesis": true,
+  "observed_peak_aim_bytes": 2147483648,
+  "observed_process_peak_working_set_bytes": 758886400,
+  "timed_stage_receipts": [
+    {
+      "completed": true,
+      "cpu_seconds": 17.171875,
+      "file": "CPU_finalization.json",
+      "memory": {
+        "peak_pagefile_bytes": 557998080,
+        "peak_working_set_bytes": 562319360,
+        "working_set_bytes": 60387328
+      },
+      "stage": "finalization",
+      "wall_seconds": 18.386283699946944
+    },
+    {
+      "completed": true,
+      "cpu_seconds": 10.859375,
+      "file": "CPU_preflight.json",
+      "memory": {
+        "peak_pagefile_bytes": 15712256,
+        "peak_working_set_bytes": 24055808,
+        "working_set_bytes": 22241280
+      },
+      "stage": "preflight",
+      "wall_seconds": 26.346936299989466
+    },
+    {
+      "completed": true,
+      "cpu_seconds": 2.4375,
+      "file": "CPU_residual_partition.json",
+      "memory": {
+        "peak_pagefile_bytes": 550576128,
+        "peak_working_set_bytes": 555266048,
+        "working_set_bytes": 53059584
+      },
+      "stage": "residual_partition",
+      "wall_seconds": 3.322197599976789
+    },
+    {
+      "completed": false,
+      "cpu_seconds": 0.359375,
+      "file": "CPU_structural_audit.json",
+      "memory": {
+        "peak_pagefile_bytes": 77410304,
+        "peak_working_set_bytes": 84267008,
+        "working_set_bytes": 45391872
+      },
+      "stage": "structural_audit",
+      "wall_seconds": 0.3679932999657467
+    },
+    {
+      "completed": true,
+      "controls": 20,
+      "cpu_seconds": 110.15625,
+      "file": "CPU_structural_audit_2.json",
+      "memory": {
+        "peak_pagefile_bytes": 754470912,
+        "peak_working_set_bytes": 758886400,
+        "working_set_bytes": 70225920
+      },
+      "stage": "structural_audit",
+      "wall_seconds": 113.63900179998018
+    }
+  ],
+  "unmetered": "Imports before meters, shell startup, short read-only inspections, prose reasoning/authoring, tool overhead, final hash/seal passes."
+}

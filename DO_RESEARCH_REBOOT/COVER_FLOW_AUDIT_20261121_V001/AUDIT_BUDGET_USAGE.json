@@ -1,0 +1,18 @@
+{
+  "complete_sources": 5,
+  "source_limit": 5,
+  "distinct_original_operations": 83002,
+  "distinct_original_real_rotations_in_suite": 195257,
+  "producer_rotation_limit_per_execution": 500000,
+  "mutable_producer_executions": 2,
+  "immutable_verifier_executions": 2,
+  "reason_for_second_execution_pair": "Added actual A SET-sign accounting and cyclic potential telescoping to the audit; the source words, eligibility policy, costs and cuts did not change.",
+  "actual_rotation_applications_in_two_producer_passes": 390514,
+  "actual_rotation_applications_in_two_independent_passes": 390514,
+  "recorded_mutable_command_wall_seconds": [8.7655653,8.6554604],
+  "recorded_immutable_command_wall_seconds": [4.2040462,4.5046763],
+  "latest_producer_cpu_seconds": 8.03125,
+  "latest_independent_cpu_seconds": 3.90625,
+  "cpu_limit_per_implementation_seconds": 240,
+  "notes": "The event census counts literal original occurrences once per complete source, not fresh resources on each replay. Repeated verification work is disclosed separately. No additional source family, altered eligibility predicate or budget escalation was introduced."
+}

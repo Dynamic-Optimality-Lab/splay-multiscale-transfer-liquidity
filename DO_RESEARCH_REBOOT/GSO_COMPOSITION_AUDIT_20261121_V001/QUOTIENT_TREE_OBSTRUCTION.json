@@ -1,0 +1,41 @@
+{
+  "status": "REFUTED_EXACT_UNQUALIFIED_BLOCK_CONTRACTION",
+  "complete_original_source": "source_01.json.gz",
+  "physical_A_path": [
+    7,
+    4,
+    6
+  ],
+  "blocks": [
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  ],
+  "block_path": [
+    1,
+    0,
+    1
+  ],
+  "contracted_edges": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "reason": "Identifying every key of a rank block produces a directed two-cycle. The quotient is not a BST; applying CD recursively to it is not licensed. Multiple ports/copies would require new semantics and work-sharing accounting."
+}

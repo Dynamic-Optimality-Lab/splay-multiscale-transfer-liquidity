@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "ast_parsed_python_modules": [
+    "bank_relax.py",
+    "extra_verify.py",
+    "finalize.py",
+    "finish_relaxed_resources.py",
+    "gso.py",
+    "joint_synthesis.py",
+    "padding_attack.py",
+    "pin_inputs.py",
+    "prepare_checks.py",
+    "preserve.py",
+    "research.py",
+    "resource_audit.py",
+    "seal.py",
+    "tests.py",
+    "trace.py",
+    "trace_induction.py",
+    "trace_symbolic.py",
+    "trace_teacher.py",
+    "verify.py",
+    "verify_joint.py"
+  ],
+  "source_verification": "INDEPENDENT_VERIFICATION.json",
+  "extra_verification": "EXTRA_INDEPENDENT_VERIFICATION.json",
+  "joint_verification": "JOINT_INDEPENDENT_VERIFICATION.json",
+  "observed_tests": {
+    "command": "python -B tests.py",
+    "passed": 8,
+    "last_observed_cpu_seconds": 0.678
+  },
+  "observed_Lean": {
+    "command": "lean +leanprover/lean4:v4.21.0 TraceKernel.lean",
+    "returncode": 0,
+    "checked": [
+      "exchangeConserves",
+      "ledgerStep",
+      "closedLedger",
+      "originalConstant",
+      "pumpObstruction"
+    ],
+    "printed_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "scope": "Conditional integer arithmetic and conservation only; mathematical source proof separately in verified Notion."
+  },
+  "no_sorry_or_new_axioms": true,
+  "preservation": "PRESERVATION_VERIFICATION.json",
+  "universal_CD": "OPEN"
+}

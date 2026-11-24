@@ -1,0 +1,686 @@
+{
+  "cuts": [
+    {
+      "witness": "H1_rho0_Y1_copies2_complete_witness.json",
+      "sha256": "bf7f5fc179ba2ee713a51fe6164e17c37bdae5a45178409132b2e34d2857ddf2",
+      "source_h": 1,
+      "source_n": 21,
+      "window_radius": 0,
+      "literal_birth_demands": [
+        [
+          "B",
+          93,
+          3,
+          0
+        ]
+      ],
+      "labels": [
+        [
+          5,
+          7
+        ]
+      ],
+      "alignment_deficits": [
+        0
+      ],
+      "common_first_hit": 144,
+      "allowed_KEEP_gaps": [
+        144
+      ],
+      "all_real_A_units": [
+        [
+          "A",
+          144,
+          1,
+          0
+        ]
+      ],
+      "Hall_demand": 1,
+      "Hall_capacity_at_load_C": "C",
+      "parametric_deficit": "h-C; positive for h>C",
+      "forced_genuine_U_records": []
+    },
+    {
+      "witness": "H2_rho1_Y1_copies2_complete_witness.json",
+      "sha256": "bdbaffcf47cf8bc8db280612e513367f100a7eaf359909568cd99083555ba58e",
+      "source_h": 2,
+      "source_n": 45,
+      "window_radius": 1,
+      "literal_birth_demands": [
+        [
+          "B",
+          319,
+          8,
+          0
+        ],
+        [
+          "B",
+          444,
+          3,
+          0
+        ]
+      ],
+      "labels": [
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          15
+        ]
+      ],
+      "alignment_deficits": [
+        0,
+        1
+      ],
+      "common_first_hit": 537,
+      "allowed_KEEP_gaps": [
+        536,
+        537,
+        538
+      ],
+      "all_real_A_units": [
+        [
+          "A",
+          537,
+          1,
+          0
+        ]
+      ],
+      "Hall_demand": 2,
+      "Hall_capacity_at_load_C": "C",
+      "parametric_deficit": "h-C; positive for h>C",
+      "forced_genuine_U_records": []
+    },
+    {
+      "witness": "H3_rho2_Y1_copies2_complete_witness.json",
+      "sha256": "7004da80335cac1530429a430e704024c96d15c852eff2e69aee5e169e441667",
+      "source_h": 3,
+      "source_n": 93,
+      "window_radius": 2,
+      "literal_birth_demands": [
+        [
+          "B",
+          907,
+          18,
+          0
+        ],
+        [
+          "B",
+          1188,
+          8,
+          0
+        ],
+        [
+          "B",
+          1420,
+          3,
+          0
+        ]
+      ],
+      "labels": [
+        [
+          17,
+          19
+        ],
+        [
+          17,
+          23
+        ],
+        [
+          17,
+          31
+        ]
+      ],
+      "alignment_deficits": [
+        0,
+        1,
+        2
+      ],
+      "common_first_hit": 1596,
+      "allowed_KEEP_gaps": [
+        1594,
+        1595,
+        1596,
+        1597,
+        1598
+      ],
+      "all_real_A_units": [
+        [
+          "A",
+          1596,
+          1,
+          0
+        ]
+      ],
+      "Hall_demand": 3,
+      "Hall_capacity_at_load_C": "C",
+      "parametric_deficit": "h-C; positive for h>C",
+      "forced_genuine_U_records": [
+        {
+          "id": [
+            1596,
+            1
+          ],
+          "frame": [
+            17,
+            31
+          ],
+          "type": "LL",
+          "neutral": true,
+          "interior": true,
+          "postA_clock": 6786,
+          "U_int": true,
+          "Gamma": [
+            "B",
+            1420,
+            3,
+            0
+          ],
+          "Gamma_clock": 6067,
+          "Gamma_lap": 0,
+          "kappa": [
+            "B",
+            734,
+            2,
+            1
+          ],
+          "kappa_clock": 3110,
+          "kappa_lap": 0,
+          "full_Pi_A_absent": true
+        }
+      ]
+    },
+    {
+      "witness": "H4_rho2_Y1_copies2_mirror_complete_witness.json",
+      "sha256": "49c61dbd6995bf10ae66e1588a64f952f841d9256a7d844d224d156699e38f8e",
+      "source_h": 4,
+      "source_n": 189,
+      "window_radius": 2,
+      "literal_birth_demands": [
+        [
+          "B",
+          2361,
+          38,
+          0
+        ],
+        [
+          "B",
+          2954,
+          18,
+          0
+        ],
+        [
+          "B",
+          3486,
+          8,
+          0
+        ],
+        [
+          "B",
+          3932,
+          3,
+          0
+        ]
+      ],
+      "labels": [
+        [
+          155,
+          157
+        ],
+        [
+          151,
+          157
+        ],
+        [
+          143,
+          157
+        ],
+        [
+          127,
+          157
+        ]
+      ],
+      "alignment_deficits": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_first_hit": 4272,
+      "allowed_KEEP_gaps": [
+        4270,
+        4271,
+        4272,
+        4273,
+        4274
+      ],
+      "all_real_A_units": [
+        [
+          "A",
+          4272,
+          1,
+          0
+        ]
+      ],
+      "Hall_demand": 4,
+      "Hall_capacity_at_load_C": "C",
+      "parametric_deficit": "h-C; positive for h>C",
+      "forced_genuine_U_records": [
+        {
+          "id": [
+            4272,
+            1
+          ],
+          "frame": [
+            143,
+            157
+          ],
+          "type": "RR",
+          "neutral": true,
+          "interior": true,
+          "postA_clock": 18034,
+          "U_int": true,
+          "Gamma": [
+            "B",
+            3486,
+            8,
+            0
+          ],
+          "Gamma_clock": 14841,
+          "Gamma_lap": 0,
+          "kappa": [
+            "B",
+            2004,
+            2,
+            1
+          ],
+          "kappa_clock": 8428,
+          "kappa_lap": 0,
+          "full_Pi_A_absent": true
+        }
+      ]
+    },
+    {
+      "witness": "H4_rho2_Y2_copies2_complete_witness.json",
+      "sha256": "534028bf36f3ce10dba369214e41ef302f0411ef322fefdf164ee55d61554db1",
+      "source_h": 4,
+      "source_n": 189,
+      "window_radius": 2,
+      "literal_birth_demands": [
+        [
+          "B",
+          3621,
+          38,
+          0
+        ],
+        [
+          "B",
+          4576,
+          18,
+          0
+        ],
+        [
+          "B",
+          5444,
+          8,
+          0
+        ],
+        [
+          "B",
+          6174,
+          3,
+          0
+        ]
+      ],
+      "labels": [
+        [
+          33,
+          35
+        ],
+        [
+          33,
+          39
+        ],
+        [
+          33,
+          47
+        ],
+        [
+          33,
+          63
+        ]
+      ],
+      "alignment_deficits": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_first_hit": 6792,
+      "allowed_KEEP_gaps": [
+        6790,
+        6791,
+        6792,
+        6793,
+        6794
+      ],
+      "all_real_A_units": [
+        [
+          "A",
+          6792,
+          1,
+          0
+        ]
+      ],
+      "Hall_demand": 4,
+      "Hall_capacity_at_load_C": "C",
+      "parametric_deficit": "h-C; positive for h>C",
+      "forced_genuine_U_records": [
+        {
+          "id": [
+            6792,
+            1
+          ],
+          "frame": [
+            33,
+            47
+          ],
+          "type": "LL",
+          "neutral": true,
+          "interior": true,
+          "postA_clock": 28172,
+          "U_int": true,
+          "Gamma": [
+            "B",
+            5444,
+            8,
+            0
+          ],
+          "Gamma_clock": 22714,
+          "Gamma_lap": 0,
+          "kappa": [
+            "B",
+            3264,
+            2,
+            1
+          ],
+          "kappa_clock": 13497,
+          "kappa_lap": 0,
+          "full_Pi_A_absent": true
+        }
+      ]
+    },
+    {
+      "witness": "H4_rho3_Y1_copies2_complete_witness.json",
+      "sha256": "23f9bcecca705fc7dd1812870d4d430c065632bcb59f0b8b06802978d48a64ed",
+      "source_h": 4,
+      "source_n": 189,
+      "window_radius": 3,
+      "literal_birth_demands": [
+        [
+          "B",
+          2363,
+          38,
+          0
+        ],
+        [
+          "B",
+          2956,
+          18,
+          0
+        ],
+        [
+          "B",
+          3488,
+          8,
+          0
+        ],
+        [
+          "B",
+          3934,
+          3,
+          0
+        ]
+      ],
+      "labels": [
+        [
+          33,
+          35
+        ],
+        [
+          33,
+          39
+        ],
+        [
+          33,
+          47
+        ],
+        [
+          33,
+          63
+        ]
+      ],
+      "alignment_deficits": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_first_hit": 4275,
+      "allowed_KEEP_gaps": [
+        4272,
+        4273,
+        4274,
+        4275,
+        4276,
+        4277,
+        4278
+      ],
+      "all_real_A_units": [
+        [
+          "A",
+          4275,
+          1,
+          0
+        ]
+      ],
+      "Hall_demand": 4,
+      "Hall_capacity_at_load_C": "C",
+      "parametric_deficit": "h-C; positive for h>C",
+      "forced_genuine_U_records": [
+        {
+          "id": [
+            4275,
+            1
+          ],
+          "frame": [
+            33,
+            47
+          ],
+          "type": "LL",
+          "neutral": true,
+          "interior": true,
+          "postA_clock": 18043,
+          "U_int": true,
+          "Gamma": [
+            "B",
+            3488,
+            8,
+            0
+          ],
+          "Gamma_clock": 14847,
+          "Gamma_lap": 0,
+          "kappa": [
+            "B",
+            2005,
+            2,
+            1
+          ],
+          "kappa_clock": 8431,
+          "kappa_lap": 0,
+          "full_Pi_A_absent": true
+        }
+      ]
+    },
+    {
+      "witness": "H5_rho4_Y1_copies2_complete_witness.json",
+      "sha256": "015fa13f242087021414a6b3a2c228950f065974ac037c5508ddc6ca692aac3a",
+      "source_h": 5,
+      "source_n": 381,
+      "window_radius": 4,
+      "literal_birth_demands": [
+        [
+          "B",
+          5843,
+          78,
+          0
+        ],
+        [
+          "B",
+          7060,
+          38,
+          0
+        ],
+        [
+          "B",
+          8192,
+          18,
+          0
+        ],
+        [
+          "B",
+          9226,
+          8,
+          0
+        ],
+        [
+          "B",
+          10100,
+          3,
+          0
+        ]
+      ],
+      "labels": [
+        [
+          65,
+          67
+        ],
+        [
+          65,
+          71
+        ],
+        [
+          65,
+          79
+        ],
+        [
+          65,
+          95
+        ],
+        [
+          65,
+          127
+        ]
+      ],
+      "alignment_deficits": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_first_hit": 10770,
+      "allowed_KEEP_gaps": [
+        10766,
+        10767,
+        10768,
+        10769,
+        10770,
+        10771,
+        10772,
+        10773,
+        10774
+      ],
+      "all_real_A_units": [
+        [
+          "A",
+          10770,
+          1,
+          0
+        ]
+      ],
+      "Hall_demand": 5,
+      "Hall_capacity_at_load_C": "C",
+      "parametric_deficit": "h-C; positive for h>C",
+      "forced_genuine_U_records": [
+        {
+          "id": [
+            10770,
+            1
+          ],
+          "frame": [
+            65,
+            79
+          ],
+          "type": "LL",
+          "neutral": true,
+          "interior": true,
+          "postA_clock": 45130,
+          "U_int": true,
+          "Gamma": [
+            "B",
+            8192,
+            18,
+            0
+          ],
+          "Gamma_clock": 34683,
+          "Gamma_lap": 0,
+          "kappa": [
+            "B",
+            5116,
+            2,
+            1
+          ],
+          "kappa_clock": 21362,
+          "kappa_lap": 0,
+          "full_Pi_A_absent": true
+        },
+        {
+          "id": [
+            10770,
+            2
+          ],
+          "frame": [
+            65,
+            127
+          ],
+          "type": "LL",
+          "neutral": true,
+          "interior": true,
+          "postA_clock": 45130,
+          "U_int": true,
+          "Gamma": [
+            "B",
+            10100,
+            3,
+            0
+          ],
+          "Gamma_clock": 42437,
+          "Gamma_lap": 0,
+          "kappa": [
+            "B",
+            5116,
+            3,
+            1
+          ],
+          "kappa_clock": 21364,
+          "kappa_lap": 0,
+          "full_Pi_A_absent": true
+        }
+      ]
+    }
+  ],
+  "exact_scope": "Deficient first-hit-window resource graph; not a deficient graph with all original A work as available resources."
+}

@@ -1,0 +1,28 @@
+{
+  "corrections": [
+    {
+      "component": "Integer gap optimizer",
+      "observation": "The first diagnostic failed because a constant branch mass remained a Python int when passed to model.eval.",
+      "correction": "Represent every mass, including absent-gap zero, as an exact Z3 integer expression.",
+      "accepted_unsound_certificate": false
+    },
+    {
+      "component": "Chronological phase hypothesis",
+      "observation": "The original reverse-only FIFO credit assertion failed on the first complete source.",
+      "correction": "Preserve the exact counter-assignment in CHRONOLOGY_CORRECTION.json. Report actual original-event provenance without imposing a reverse-only origin. The policy and source were not changed.",
+      "accepted_unsound_certificate": false
+    },
+    {
+      "component": "Lean emitter",
+      "observation": "The first draft used an unavailable unqualified power lemma and omitted a distributivity rewrite for a symbolic coefficient. Lean rejected the build.",
+      "correction": "Use Int.pow_succ and rewrite Int.add_mul; accept only the later clean build.",
+      "accepted_unsound_certificate": false
+    },
+    {
+      "component": "Signed-weight theorem quantifiers",
+      "observation": "Proof review found the draft statement quantified over all trial weight values, which was stronger than the premise supplied by one fixed weight function.",
+      "correction": "State the contradiction for fixed functions u,v with uniform lower bounds and a claimed law for all q; choose one q and apply those same functions. The emitted theorem and independent symbolic check now match the required quantifiers.",
+      "accepted_unsound_certificate": false
+    }
+  ]
+}

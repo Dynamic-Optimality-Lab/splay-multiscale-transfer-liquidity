@@ -1,0 +1,342 @@
+{
+  "A": 738,
+  "C_old": [
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 3,
+      "original_parent": [
+        3,
+        4
+      ],
+      "rho": [
+        3,
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "type": "X"
+    },
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 7,
+      "original_parent": [
+        7,
+        4
+      ],
+      "rho": [
+        7,
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "type": "X"
+    }
+  ],
+  "E_old": [
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 3,
+      "original_parent": [
+        3,
+        4
+      ],
+      "rho": [
+        3,
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "type": "X"
+    }
+  ],
+  "actual_S_UU": 0,
+  "disjoint_original_assignments": {
+    "E_old": [
+      {
+        "category": "outside_shadow_cover",
+        "consumer": 3,
+        "original_parent": [
+          3,
+          4
+        ],
+        "rho": [
+          3,
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "type": "X"
+      }
+    ],
+    "H_all": [
+      {
+        "category": "outside_shadow_cover",
+        "consumer": 7,
+        "original_parent": [
+          7,
+          4
+        ],
+        "rho": [
+          7,
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "type": "X"
+      }
+    ],
+    "Q_D": [],
+    "carrier": [],
+    "overflow": [],
+    "skipped_rank": [
+      {
+        "category": "outside_shadow_cover",
+        "consumer": 5,
+        "original_parent": [
+          5,
+          4
+        ],
+        "rho": [
+          5,
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "type": "X"
+      }
+    ]
+  },
+  "exact_D": [],
+  "frozen_carrier_eligible": [],
+  "frozen_skipped_after_carrier_eligible": [
+    {
+      "old_grandparent": 2,
+      "orientation": 1,
+      "original_parent": [
+        5,
+        4
+      ],
+      "rho": [
+        5,
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "shadow_double": [
+        3,
+        5,
+        4
+      ],
+      "strategy": "records",
+      "type": "X"
+    }
+  ],
+  "native_original_R_star": [
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 3,
+      "original_parent": [
+        3,
+        4
+      ],
+      "rho": [
+        3,
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "type": "X"
+    },
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 5,
+      "original_parent": [
+        5,
+        4
+      ],
+      "rho": [
+        5,
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "type": "X"
+    },
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 7,
+      "original_parent": [
+        7,
+        4
+      ],
+      "rho": [
+        7,
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "type": "X"
+    }
+  ],
+  "no_H_diagnostic": {
+    "all_selected": true,
+    "pool": [
+      {
+        "category": "outside_shadow_cover",
+        "consumer": 7,
+        "original_parent": [
+          7,
+          4
+        ],
+        "rho": [
+          7,
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "type": "X"
+      }
+    ],
+    "quota_rows": [
+      {
+        "A_gap": 1,
+        "b_h": 1,
+        "distinct_original_parents": [
+          [
+            7,
+            4
+          ]
+        ],
+        "h": 7,
+        "selected": [
+          [
+            7,
+            4
+          ]
+        ]
+      }
+    ],
+    "scope": "Counterfactual pool only; NOT original D or a redefined residual."
+  },
+  "periodic_H_eligible_noncheap": [
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 3,
+      "original_parent": [
+        3,
+        4
+      ],
+      "rho": [
+        3,
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "type": "X"
+    },
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 5,
+      "original_parent": [
+        5,
+        4
+      ],
+      "rho": [
+        5,
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "type": "X"
+    },
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 7,
+      "original_parent": [
+        7,
+        4
+      ],
+      "rho": [
+        7,
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "type": "X"
+    }
+  ],
+  "quota_rows": [],
+  "raw_periodic_certificate": 936,
+  "source": "M1C2_padded_silent_chain_k4_L3",
+  "source_sha256": "1c89dd685cf806b80e6f333e40f1f3df0c25a4397c56954acf6b48d90cea75ad"
+}

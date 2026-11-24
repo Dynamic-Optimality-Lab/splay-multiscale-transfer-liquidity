@@ -1,0 +1,63 @@
+{
+  "primary_quantity": "Phi_M(A,B;S)=-sum_{J in J_S(B)\\J_S(A)} 1[|J|=2^h-1 for some h>=2]",
+  "A_rotation_bound": {
+    "upper": 1,
+    "lower": -1,
+    "domain": "Any complete same-key BST pair and fixed S, with original SET duplicate suppression. All orientations and private nodes included."
+  },
+  "H3q_burst": {
+    "N": "16(q+1)+1",
+    "operation": "N+7",
+    "u": "q",
+    "d": 2,
+    "k": 1,
+    "Delta_B_Phi_M": "-q",
+    "Delta_B_Phi_15": "-q"
+  },
+  "H3q_first_maximum_obstruction": {
+    "operation": "N",
+    "a_current": 0,
+    "u": 0,
+    "d": 2,
+    "k": 1,
+    "Delta_B_Phi_M": "floor(log2 N)-1",
+    "parameter_choice": "q=2^(h-4)-1, h>=5 => N=2^h+1 and Delta=h-1",
+    "conclusion": "No finite absolute beta,gamma can bound u+Delta_B Phi_M by beta*d+gamma*k on all original B phases."
+  },
+  "positive_demand_restoration_obstruction": {
+    "source": "Complete H_(p,5), p>=1",
+    "N": "12*2^p+1",
+    "operation": "2N+2, first forward KEEP3",
+    "a_current": 1,
+    "incoming_A_KEEP_gap_cost": 1,
+    "u": "ceil(p/2)",
+    "d": "2+1[p even]",
+    "k": 1,
+    "Delta_B_Phi_M": "p",
+    "conclusion": "Positive-demand phases alone also violate every such fixed-coefficient law, even with an additional fixed multiple of the incoming A KEEP-gap cost."
+  },
+  "post_derivation_scope_extension": {
+    "quantity": "Phi_w=-sum_{h>=2} w_h * #{J in J_S(B)\\J_S(A): |J|=2^h-1}",
+    "weights": "Arbitrary fixed signed finite real values w_h, independent of source/support/ambient size. Only finitely many occur in each finite state.",
+    "critical_necessity": "For each p>=3, the last critical H_(p,q) phase has u=q, d=2,k=1,Delta=-q*w_(p+1). Letting q grow forces w_h>=1 for all h>=4.",
+    "restoration_contradiction": "The first forward KEEP3 in H_(p,5) has Delta=sum_(h=2)^(p+1) w_h. Then u+Delta >=ceil(p/2)+(p-2)+w2+w3 -> infinity, while d<=3,k=1 and incoming A gap=1.",
+    "claim": "The complete B-phase certificate is impossible throughout this entire reweighted layer family. This is a corollary of the same exact source transitions, not a changed success criterion."
+  },
+  "strictly_larger_obstruction_class": {
+    "quantity": "Phi_(lambda,w)=lambda_E*f_E+lambda_P*f_P+lambda_F*f_F+lambda_S*Psi+Phi_w",
+    "coefficients": "All fixed signed finite real lambda_i and fixed signed finite real scale weights w_h, independent of source and ambient population.",
+    "critical_old_feature_delta": "(0,0,0,-2) for all p>=3 at the last critical H_(p,q) phase",
+    "restoration_old_feature_delta": "(0,-1,-1,-d), d=2+1[p even], at first forward KEEP3 of H_(p,5), p>=3",
+    "proof": "Critical q variation still forces w_h>=1 for h>=4. Restoration contributes sum(w_h)-lambda_P-lambda_F-d*lambda_S, whose unbounded growth cannot be canceled by fixed old coefficients. Even a fixed multiple of incoming KEEP-gap A work is1 at that restoration access.",
+    "scope_limit": "Does not exclude arbitrary cardinality weights outside the Mersenne support, source-dependent weight assignments, other A/B geometry, or globally overlapping-window laws with a separately proved budget."
+  },
+  "fixed_layer_positive_theorem": {
+    "quantity": "B_r(W) = all actual B SET births with proper nonempty S-label cardinality exactly r",
+    "bound": "B_r<=K_B<=A, for every r>=1, uniformly in r and source",
+    "reason": "Every B SET death contains the accessed key, so at most one distinct size-r label dies per B access; new labels exclude that key and cannot die in that access. Cyclic birth/death totals agree.",
+    "scoped_demand_class": "Original U_int doubles whose own two bits include an actual size-r SET birth; choose the earliest such bit. The class has size<=A.",
+    "literal_complement": "Original U_int demands with no such own-double size-r birth.",
+    "novelty_limit": "An exact-layer potential realization/sharpening of the prior bounded-cardinality birth mechanism. No strict enlargement of the frozen UF paid class has been established."
+  },
+  "status": "Required A-locality and linear H3q burst response proved symbolically; the selected global B law has new exact parametric source obstructions. Universal CD and Dynamic Optimality remain open."
+}

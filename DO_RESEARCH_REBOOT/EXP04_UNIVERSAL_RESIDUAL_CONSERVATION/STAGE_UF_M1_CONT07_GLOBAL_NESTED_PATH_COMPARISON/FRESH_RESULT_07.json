@@ -1,0 +1,539 @@
+{
+  "A": 112,
+  "C_old_gaps": 0,
+  "KEY_UNION_2_refuted": false,
+  "M_PF": 0,
+  "PF_path_count": 0,
+  "Q_B": 32,
+  "actual_S_UU": [],
+  "assigned_counts": {
+    "E_old": 0,
+    "H_all": 0,
+    "Q_D": 0,
+    "carrier": 0,
+    "overflow": 0,
+    "skipped_rank": 0
+  },
+  "canonical_edges": [],
+  "distinct_domain_key_union": [],
+  "index": 7,
+  "maximal_PF_paths": [],
+  "operations": 96,
+  "original_R6": 0,
+  "original_R_star": [],
+  "physical_kernel": {
+    "full_physical_PF_path_test": {
+      "M_PF": 11,
+      "M_hit": 2,
+      "M_inside": 3,
+      "M_stem": 8,
+      "M_support_padding": 1,
+      "Q_two_sided_separate": [
+        2,
+        2
+      ],
+      "component_rooted_domains": [
+        [
+          4,
+          7
+        ],
+        [
+          7,
+          8,
+          9
+        ]
+      ],
+      "component_rooted_workload": 5,
+      "full_initial_domains": [
+        [
+          3,
+          4,
+          7,
+          10,
+          11
+        ],
+        [
+          3,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      ],
+      "inside_domain_parts": [
+        [
+          4
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "left_inside_hits": [
+        [
+          6,
+          4
+        ]
+      ],
+      "matched_original_doubles": [
+        [],
+        [
+          [
+            8,
+            1
+          ]
+        ]
+      ],
+      "merged_inside_shadow": {
+        "all_original_old_g_matched": false,
+        "full_g_component_failure": [
+          {
+            "actual_post_B": {
+              "children": {
+                "1": [
+                  null,
+                  null
+                ],
+                "10": [
+                  7,
+                  11
+                ],
+                "11": [
+                  null,
+                  null
+                ],
+                "2": [
+                  1,
+                  3
+                ],
+                "3": [
+                  null,
+                  null
+                ],
+                "4": [
+                  2,
+                  10
+                ],
+                "5": [
+                  null,
+                  null
+                ],
+                "6": [
+                  5,
+                  null
+                ],
+                "7": [
+                  6,
+                  9
+                ],
+                "8": [
+                  null,
+                  null
+                ],
+                "9": [
+                  8,
+                  null
+                ]
+              },
+              "root": 4
+            },
+            "actual_pre_B": {
+              "children": {
+                "1": [
+                  null,
+                  null
+                ],
+                "10": [
+                  3,
+                  11
+                ],
+                "11": [
+                  null,
+                  null
+                ],
+                "2": [
+                  1,
+                  10
+                ],
+                "3": [
+                  null,
+                  7
+                ],
+                "4": [
+                  null,
+                  6
+                ],
+                "5": [
+                  null,
+                  null
+                ],
+                "6": [
+                  5,
+                  null
+                ],
+                "7": [
+                  4,
+                  9
+                ],
+                "8": [
+                  null,
+                  null
+                ],
+                "9": [
+                  8,
+                  null
+                ]
+              },
+              "root": 2
+            },
+            "full_g_equal_after": false,
+            "full_g_equal_before": true,
+            "operation": 6,
+            "original_inside_parent_double": [
+              {
+                "F": 508,
+                "J": 4,
+                "P_output": 496,
+                "case": "RL",
+                "events": [
+                  24,
+                  25
+                ],
+                "g": 3,
+                "id": [
+                  6,
+                  1
+                ],
+                "p": 7,
+                "parent": [
+                  6,
+                  1
+                ],
+                "physical_J_interval": [
+                  3,
+                  3
+                ],
+                "physical_P_interval": [
+                  5,
+                  9
+                ],
+                "physical_frame_interval": [
+                  3,
+                  9
+                ],
+                "post_step_state": 13,
+                "pre_step_state": 10,
+                "signs": [
+                  0,
+                  0
+                ],
+                "target": 4
+              }
+            ],
+            "original_pre_path": [
+              2,
+              10,
+              3,
+              7,
+              4
+            ],
+            "shadow_post_B": {
+              "children": {
+                "1": [
+                  null,
+                  2
+                ],
+                "10": [
+                  9,
+                  null
+                ],
+                "11": [
+                  7,
+                  null
+                ],
+                "2": [
+                  null,
+                  null
+                ],
+                "3": [
+                  1,
+                  null
+                ],
+                "4": [
+                  3,
+                  11
+                ],
+                "5": [
+                  null,
+                  null
+                ],
+                "6": [
+                  5,
+                  null
+                ],
+                "7": [
+                  6,
+                  10
+                ],
+                "8": [
+                  null,
+                  null
+                ],
+                "9": [
+                  8,
+                  null
+                ]
+              },
+              "root": 4
+            },
+            "shadow_pre_B": {
+              "children": {
+                "1": [
+                  null,
+                  2
+                ],
+                "10": [
+                  7,
+                  null
+                ],
+                "11": [
+                  10,
+                  null
+                ],
+                "2": [
+                  null,
+                  null
+                ],
+                "3": [
+                  1,
+                  11
+                ],
+                "4": [
+                  null,
+                  6
+                ],
+                "5": [
+                  null,
+                  null
+                ],
+                "6": [
+                  5,
+                  null
+                ],
+                "7": [
+                  4,
+                  9
+                ],
+                "8": [
+                  null,
+                  null
+                ],
+                "9": [
+                  8,
+                  null
+                ]
+              },
+              "root": 3
+            },
+            "shadow_pre_path": [
+              3,
+              11,
+              10,
+              7,
+              4
+            ],
+            "target": 4
+          }
+        ],
+        "original_old_g_matches": [
+          {
+            "matched_old_g": false,
+            "original_parent": [
+              8,
+              1
+            ],
+            "shadow_double_j": null
+          }
+        ],
+        "retained_inside_hits": [
+          [
+            6,
+            4
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "shadow_Q": 4,
+        "traces": [
+          {
+            "full_g_equal_after": false,
+            "full_g_equal_before": true,
+            "operation": 6,
+            "q": 2,
+            "shadow_post_sha256": "2d37f1e589fbf49bde83c4ce2a537f6c171a640285624c646201cb60e2dabdd5",
+            "shadow_pre_sha256": "5ba84792b8b6ac10e0e4db05119a4daab55d17daef08d99869818cc49d68404c",
+            "target": 4
+          },
+          {
+            "full_g_equal_after": true,
+            "full_g_equal_before": false,
+            "operation": 8,
+            "q": 2,
+            "shadow_post_sha256": "f4d8204026dc898993265addca86fd132c5507c8158cae7f5db65895c5dcc5ac",
+            "shadow_pre_sha256": "2d37f1e589fbf49bde83c4ce2a537f6c171a640285624c646201cb60e2dabdd5",
+            "target": 8
+          }
+        ]
+      },
+      "old_g": 7,
+      "original_initial_B_sha256": "5ba84792b8b6ac10e0e4db05119a4daab55d17daef08d99869818cc49d68404c",
+      "original_initial_B_state": 4,
+      "path": [
+        [
+          1,
+          1
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "right_inside_hits": [
+        [
+          8,
+          8
+        ]
+      ],
+      "root_to_g_stem": [
+        3,
+        11,
+        10,
+        7
+      ],
+      "scope": "Maximal ORIGINAL C_old PF path before H/quota. Comparison costs are not source A credit.",
+      "unique_original_inside_pivot_bits": [
+        [
+          "B",
+          6,
+          1,
+          0
+        ],
+        [
+          "B",
+          8,
+          1,
+          1
+        ]
+      ]
+    },
+    "u": [
+      1,
+      1
+    ],
+    "u_C_old": false,
+    "u_U": true,
+    "u_double": {
+      "F": 510,
+      "J": 504,
+      "P_output": 2,
+      "case": "LR",
+      "events": [
+        1,
+        2
+      ],
+      "g": 7,
+      "id": [
+        1,
+        1
+      ],
+      "p": 2,
+      "parent": [
+        1,
+        1
+      ],
+      "physical_J_interval": [
+        4,
+        9
+      ],
+      "physical_P_interval": [
+        2,
+        2
+      ],
+      "physical_frame_interval": [
+        2,
+        9
+      ],
+      "post_step_state": 2,
+      "pre_step_state": 1,
+      "signs": [
+        0,
+        0
+      ],
+      "target": 3
+    },
+    "u_forest_type": "R",
+    "v": [
+      8,
+      1
+    ],
+    "v_C_old": false,
+    "v_R_star": [],
+    "v_U": true,
+    "v_double": {
+      "F": 496,
+      "J": 112,
+      "P_output": 256,
+      "case": "RL",
+      "events": [
+        32,
+        33
+      ],
+      "g": 7,
+      "id": [
+        8,
+        1
+      ],
+      "p": 9,
+      "parent": [
+        8,
+        1
+      ],
+      "physical_J_interval": [
+        5,
+        7
+      ],
+      "physical_P_interval": [
+        9,
+        9
+      ],
+      "physical_frame_interval": [
+        5,
+        9
+      ],
+      "post_step_state": 17,
+      "pre_step_state": 14,
+      "signs": [
+        0,
+        0
+      ],
+      "target": 8
+    },
+    "v_forest_type": "C",
+    "v_original_R6": [],
+    "v_sigma": false
+  },
+  "population": 11,
+  "prefix": {
+    "actual_A_StepEv_excluded": 62,
+    "complete_reached_pair_verified": true,
+    "operations": 54
+  },
+  "primitives": 283,
+  "raw_periodic_cost": 194,
+  "source": "M1C7_protected_merge_kernel11_mirror",
+  "source_sha256": "ccbf69d7e70d820c11d68532e9242603e8ba2118887f3b1126087936f67a881e",
+  "sum_z_h": 0
+}

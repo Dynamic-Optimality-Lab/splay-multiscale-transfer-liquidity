@@ -1,0 +1,11 @@
+{
+  "before_run_005": true,
+  "reason": "Adding energy coefficients exposed more unpriced/low-priced parameter escape. Preserve the bounded UNKNOWN runs; do not silently replace them by a success.",
+  "changes": [
+    "Propagate the admissible original depth-two entry into the synthesis solver as an exact symbolic original-q energy row. It is checked by the universal verifier, not assumed as a global theorem.",
+    "Reuse previously learned generic initialization/preservation and structural counterconstraints from run_003. These constraints are valid across energy choices and are not hard-coded invariant coefficients.",
+    "After actual unrestricted joint runs, use the independently checked all-parameter abstract-model barrier to stop further constant enumeration. This is an abstraction expressiveness result only; the original unrestricted theorem remains OPEN."
+  ],
+  "final_run_budget": {"control_CEGIS_iterations_max": 96,"control_wall_seconds_max": 240,"new_physical_sources": 0},
+  "scope_correction": "The audit created seven new control fixtures and reused two old witnesses. Its total nine sources respects the12-source audit limit. The initial max3 new-witness field was not expressly limited to counterexamples, so record this as a control-fixture count deviation rather than claiming strict compliance or silently amending it. No further original sources are materialized."
+}

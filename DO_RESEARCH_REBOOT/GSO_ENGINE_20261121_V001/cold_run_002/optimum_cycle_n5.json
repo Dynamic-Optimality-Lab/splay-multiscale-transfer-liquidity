@@ -1,0 +1,119 @@
+{
+  "source": {
+    "name": "optimum_n5",
+    "initial_A": {
+      "root": 3,
+      "children": {
+        "1": [
+          null,
+          2
+        ],
+        "2": [
+          null,
+          null
+        ],
+        "3": [
+          1,
+          5
+        ],
+        "4": [
+          null,
+          null
+        ],
+        "5": [
+          4,
+          null
+        ]
+      }
+    },
+    "initial_B": {
+      "root": 3,
+      "children": {
+        "1": [
+          null,
+          null
+        ],
+        "2": [
+          1,
+          null
+        ],
+        "3": [
+          2,
+          4
+        ],
+        "4": [
+          null,
+          5
+        ],
+        "5": [
+          null,
+          null
+        ]
+      }
+    },
+    "diagonal": {
+      "root": 1,
+      "children": {
+        "1": [
+          null,
+          2
+        ],
+        "2": [
+          null,
+          3
+        ],
+        "3": [
+          null,
+          4
+        ],
+        "4": [
+          null,
+          5
+        ],
+        "5": [
+          null,
+          null
+        ]
+      }
+    },
+    "prefix": [
+      [
+        "D",
+        4
+      ],
+      [
+        "D",
+        5
+      ],
+      [
+        "K",
+        3
+      ]
+    ],
+    "operations": [
+      [
+        "D",
+        1
+      ],
+      [
+        "K",
+        1
+      ],
+      [
+        "K",
+        5
+      ],
+      [
+        "K",
+        1
+      ],
+      [
+        "K",
+        3
+      ]
+    ],
+    "expected_A": 4,
+    "expected_Q": 6
+  },
+  "C": "3/2"
+}

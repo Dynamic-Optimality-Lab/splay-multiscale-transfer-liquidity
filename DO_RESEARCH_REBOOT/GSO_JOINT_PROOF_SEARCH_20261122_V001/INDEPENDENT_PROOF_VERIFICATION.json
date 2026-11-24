@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "scope": "two_targets",
+  "structural_cases": [
+    {
+      "case": "ZIG_L",
+      "arbitrary_holes_retained": true,
+      "post_old_root_depth": 1
+    },
+    {
+      "case": "ZIG_R",
+      "arbitrary_holes_retained": true,
+      "post_old_root_depth": 1
+    },
+    {
+      "case": "LL",
+      "arbitrary_holes_retained": true,
+      "post_old_root_depth": 2
+    },
+    {
+      "case": "RR",
+      "arbitrary_holes_retained": true,
+      "post_old_root_depth": 2
+    },
+    {
+      "case": "LR",
+      "arbitrary_holes_retained": true,
+      "post_old_root_depth": 1
+    },
+    {
+      "case": "RL",
+      "arbitrary_holes_retained": true,
+      "post_old_root_depth": 1
+    }
+  ],
+  "symbolic_checks": [
+    {
+      "obligation": "reserve_init",
+      "verified_unbounded": true
+    },
+    {
+      "obligation": "reserve_double_total",
+      "verified_unbounded": true
+    },
+    {
+      "obligation": "reserve_zig_total",
+      "verified_unbounded": true
+    },
+    {
+      "obligation": "original_q_bank_plus_overflow",
+      "verified_unbounded": true
+    }
+  ],
+  "cyclic_boundary": {
+    "scope": "At most two distinct original B targets; all physical support and A DELETE work unrestricted.",
+    "root_set_from_pair_closure": true,
+    "cut_after_real_nontrivial_KEEP": true,
+    "trivial_KEEP_and_DELETE_preserve_B": true,
+    "KB_zero_case": "Q_B=0",
+    "no_bank_or_ticket_prefix_credit": true
+  },
+  "constant": 1,
+  "root_acceptance": false,
+  "requested_scope_accepted": true,
+  "source_uniform": true,
+  "finite_source_fitting_used_as_proof": false,
+  "proof_kernel_scope": "Independent symbolic rotation/frame and affine-ledger certificate checks; complete original BST implementation is not fully formalized in Lean."
+}

@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "source": "W_2_1",
+  "demand": [
+    18,
+    1
+  ],
+  "frame": [
+    11,
+    16
+  ],
+  "unit": [
+    "A",
+    21,
+    5,
+    0
+  ],
+  "literal_original_bits": [
+    {
+      "bit": 0,
+      "promoted": 10,
+      "demoted": 11,
+      "old_LCA": 14,
+      "new_LCA": 14,
+      "old_cover": [
+        1,
+        17
+      ],
+      "new_cover": [
+        1,
+        17
+      ],
+      "internal": false
+    },
+    {
+      "bit": 1,
+      "promoted": 1,
+      "demoted": 10,
+      "old_LCA": 14,
+      "new_LCA": 14,
+      "old_cover": [
+        1,
+        17
+      ],
+      "new_cover": [
+        1,
+        17
+      ],
+      "internal": false
+    }
+  ],
+  "genuine_added_internal_donor": {
+    "unit": [
+      "A",
+      21,
+      6,
+      0
+    ],
+    "bits": [
+      {
+        "bit": 0,
+        "promoted": 12,
+        "demoted": 13,
+        "old_LCA": 14,
+        "new_LCA": 14,
+        "old_cover": [
+          1,
+          17
+        ],
+        "new_cover": [
+          1,
+          17
+        ],
+        "internal": true
+      },
+      {
+        "bit": 1,
+        "promoted": 1,
+        "demoted": 12,
+        "old_LCA": 14,
+        "new_LCA": 14,
+        "old_cover": [
+          1,
+          17
+        ],
+        "new_cover": [
+          1,
+          17
+        ],
+        "internal": false
+      }
+    ],
+    "theta_1_eligible": true,
+    "cover_only_eligible": false
+  },
+  "scope": "Refutes the pivot-incidence shortcut only; theta_1 and Universal CD are not refuted."
+}

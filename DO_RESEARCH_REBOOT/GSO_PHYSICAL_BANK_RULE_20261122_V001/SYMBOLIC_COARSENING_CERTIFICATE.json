@@ -1,0 +1,39 @@
+{
+  "status": "PROVED_SYMBOLIC_INTEGER_TRANSFER_AND_WINDOW_IDENTITIES",
+  "Z3_unsat_queries": [
+    "weighted_drop",
+    "priority_retired_at_least_persistent",
+    "closed_form_a",
+    "closed_form_b",
+    "lane_monotonicity",
+    "nested_window_upper_bound",
+    "nested_window_lower_bound"
+  ],
+  "carry": [
+    "target",
+    "current_parent_from_previous_external",
+    "previous_parent"
+  ],
+  "fresh_inputs": [
+    "external_old_spine:a",
+    "demoted_grandparent_old_spine:a",
+    "left_subtree_root:b"
+  ],
+  "ordered_output_lanes": [
+    "target",
+    "external",
+    "grandparent",
+    "old_left_root_retired",
+    "current_parent",
+    "previous_parent_persistent"
+  ],
+  "fixed_mass_identity": "2a+b =1+a_new+b_new+retired",
+  "priority_leak": "retired>=a_new",
+  "weighted_drop": "2*a_new+b_new <=2*a+b-1",
+  "closed_form": [
+    "a_new=max(0,2a+b-2H-1)",
+    "b_new=min(H,2a+b-1)"
+  ],
+  "source_proof_needed": "Actual H comb roles, no A replenishment in the nested good windows, and actual U/Pi eligibility are proved in the mathematical manuscript and independently bound on complete witnesses.",
+  "finite_constant_profile_crosschecks": 1784
+}

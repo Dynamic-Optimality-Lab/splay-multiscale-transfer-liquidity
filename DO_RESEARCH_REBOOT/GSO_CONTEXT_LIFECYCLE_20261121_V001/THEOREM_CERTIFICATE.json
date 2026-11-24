@@ -1,0 +1,45 @@
+{
+  "proof_reference": "https://app.notion.com/p/41f6251839be8158bbb5d6ca0680f32e",
+  "claims": [
+    {
+      "claim": "Q_B<=A for boundary core<=3",
+      "status": "PROVED_RESTRICTED_DOMAIN",
+      "constant": "1",
+      "unbounded_parameters": "Physical support, target population, hanging subtrees, period length, repetitions/interleavings within the exact boundary condition."
+    },
+    {
+      "claim": "Q_B<=3A/2 for boundary core<=5",
+      "status": "PROVED_RESTRICTED_DOMAIN",
+      "constant": "3/2",
+      "scope": "Original operation boundaries only; intermediate core sizes may be larger.",
+      "sharp_original_witness": "sources_001/source_02.json.gz"
+    },
+    {
+      "claim": "Global B core-drop budget <=2A",
+      "status": "PROVED_UNIVERSAL",
+      "scope": "All admissible exactly paired-closed original sources; whole-A-phase issuance <=real A rotations."
+    },
+    {
+      "claim": "Original neutral B bits are kappa-flat",
+      "status": "PROVED_UNIVERSAL",
+      "consequence": "Core-drop payments are already nonneutral SET-paid; no new hard-residual payment."
+    },
+    {
+      "claim": "All scalar F_N(kappa) and uniformly bounded corrections fail the whole-operation certificate for every finite C",
+      "status": "REFUTED_ALL_PARAMETER_FAMILY",
+      "evidence": "SCALAR_OBSTRUCTION_CERTIFICATE.json"
+    },
+    {
+      "claim": "Q_B<=9A+U_>5",
+      "status": "PROVED_UNIVERSAL_INEQUALITY_WITH_UNRESOLVED_RESIDUAL",
+      "scope": "Literal original U_int partition by pre-operation core size, plus the unchanged six-A theorem and K_B<=A. Not a pure global constant bound."
+    },
+    {
+      "claim": "Universal Coarse Double",
+      "status": "OPEN",
+      "first_missing": "Global conservation for large-core neutral original consumers, or another fully checked source-uniform accounting route."
+    }
+  ],
+  "original_hard_residual_classes_newly_paid": 0,
+  "proof_limits": "Mathematical structural proofs plus independently checked finite components; Lean only checks the stated identities/arithmetic, not the whole source model."
+}

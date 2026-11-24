@@ -1,0 +1,37 @@
+{
+  "corrections": [
+    {
+      "component": "Initial splay-schema literal",
+      "change": "Corrected the RL constructor's misplaced mark argument before any schema compilation or certificate acceptance.",
+      "accepted_unsound_result": false
+    },
+    {
+      "component": "Joint CEGIS objective",
+      "observation": "The first96-iteration runs left c=d=0 while invariant failures changed H/T; issuance was checked only after safety. This made unpriced hardware changes evade counterexamples instead of learning the reserve invariant.",
+      "correction": "Expose the exact necessary issuance rows c>=8H and d>=H+T to the synthesis solver. The independent universal cost teacher still checks them. Preserve the initial UNKNOWN receipts and write corrected runs to a new versioned output subdirectory.",
+      "scope": "No accounting semantics or theorem assumption changed; this is a search-order/objective correction."
+    },
+    {
+      "component": "Counterstate specialization",
+      "change": "Specialize H/T to concrete counterstate values inside the invariant row and guard hardware changes explicitly. This removes avoidable nonlinear products without changing the implication.",
+      "accepted_unsound_result": false
+    },
+    {
+      "component": "Joint energy search",
+      "change": "Encode bounded weights by exact finite ITEs and propagate the admissible depth-two original entry. Earlier bounded UNKNOWN results remain preserved. The final cold run learns all coefficients without cached counterconstraints.",
+      "accepted_unsound_result": false
+    },
+    {
+      "component": "Lean proof emitter",
+      "observation": "A first draft used invalid existential-introduction syntax and rfl for an inequality. Lean rejected that draft; error-recovery output included sorryAx.",
+      "change": "Correct the emitter and generated proof, rebuild successfully, and accept only a clean build with no sorry or added axioms. The emitted physical kernel remains a scoped certificate rather than a full formalization of the original BST implementation.",
+      "accepted_unsound_result": false
+    },
+    {
+      "component": "Metric Lean kernel",
+      "observation": "The first draft had an unnecessary omega after simp had closed the goal. The build was rejected, including its error-recovery sorryAx dependencies.",
+      "correction": "Remove that redundant tactic, then accept only a clean build with all printed dependencies free of sorryAx.",
+      "accepted_unsound_result": false
+    }
+  ]
+}

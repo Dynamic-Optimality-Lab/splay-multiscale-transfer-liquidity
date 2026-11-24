@@ -1,0 +1,1486 @@
+{
+  "cases": [
+    {
+      "index": 0,
+      "name": "optimum_n5",
+      "keys": 5,
+      "operations": 5,
+      "steps": 10,
+      "A": 4,
+      "Q_B": 6,
+      "K_B": 4,
+      "U": 0,
+      "R_A": 6,
+      "A_port_packets": 6,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 6,
+      "bank_credit_used": 6,
+      "projected_B_double_masks": {
+        "11": 6
+      },
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 1,
+      "name": "embedded_optimum5_two_rank_blocks",
+      "keys": 10,
+      "operations": 5,
+      "steps": 10,
+      "A": 4,
+      "Q_B": 6,
+      "K_B": 4,
+      "U": 0,
+      "R_A": 6,
+      "A_port_packets": 10,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 6,
+      "bank_credit_used": 6,
+      "projected_B_double_masks": {
+        "00": 4,
+        "10": 2,
+        "11": 2,
+        "01": 2
+      },
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 2,
+      "name": "recurrent_noncommuting_n4_I1_3",
+      "keys": 4,
+      "operations": 4,
+      "steps": 12,
+      "A": 6,
+      "Q_B": 2,
+      "K_B": 4,
+      "U": 0,
+      "R_A": 8,
+      "A_port_packets": 10,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 2,
+      "bank_credit_used": 2,
+      "projected_B_double_masks": {
+        "01": 1,
+        "00": 2,
+        "11": 1
+      },
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 3,
+      "name": "reverse_guard3_N8",
+      "keys": 9,
+      "operations": 21,
+      "steps": 22,
+      "A": 20,
+      "Q_B": 0,
+      "K_B": 2,
+      "U": 0,
+      "R_A": 20,
+      "A_port_packets": 22,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 0,
+      "bank_credit_used": 0,
+      "projected_B_double_masks": {},
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 4,
+      "name": "reverse_guard3_N32",
+      "keys": 33,
+      "operations": 69,
+      "steps": 70,
+      "A": 68,
+      "Q_B": 0,
+      "K_B": 2,
+      "U": 0,
+      "R_A": 68,
+      "A_port_packets": 80,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 0,
+      "bank_credit_used": 0,
+      "projected_B_double_masks": {},
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 5,
+      "name": "reverse_guard3_N128",
+      "keys": 129,
+      "operations": 261,
+      "steps": 262,
+      "A": 260,
+      "Q_B": 0,
+      "K_B": 2,
+      "U": 0,
+      "R_A": 260,
+      "A_port_packets": 310,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 0,
+      "bank_credit_used": 0,
+      "projected_B_double_masks": {},
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 6,
+      "name": "W_2_1",
+      "keys": 17,
+      "operations": 53,
+      "steps": 117,
+      "A": 65,
+      "Q_B": 24,
+      "K_B": 36,
+      "U": 5,
+      "R_A": 84,
+      "A_port_packets": 120,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 24,
+      "bank_credit_used": 24,
+      "projected_B_double_masks": {
+        "00": 38,
+        "01": 6,
+        "10": 10,
+        "11": 4
+      },
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 7,
+      "name": "G_4_1_L31_r4_z1",
+      "keys": 65,
+      "operations": 386,
+      "steps": 1011,
+      "A": 524,
+      "Q_B": 297,
+      "K_B": 258,
+      "U": 34,
+      "R_A": 712,
+      "A_port_packets": 1104,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 297,
+      "bank_credit_used": 297,
+      "projected_B_double_masks": {
+        "11": 42,
+        "00": 588,
+        "10": 114,
+        "01": 63
+      },
+      "invisible_costly_operations": [
+        {
+          "op": 80,
+          "a": 1,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 12,
+          "anonymous_delta": {
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"nil\",3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"lo\",\"nil\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"lo\",\"nil\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"nil\",\"lo\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"lo\",\"nil\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1
+          }
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "H3_rho2_Y1_copies2",
+      "keys": 93,
+      "operations": 2945,
+      "steps": 6818,
+      "A": 3960,
+      "Q_B": 1907,
+      "K_B": 1427,
+      "U": 70,
+      "R_A": 5593,
+      "A_port_packets": 11401,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 1907,
+      "bank_credit_used": 1907,
+      "projected_B_double_masks": {
+        "00": 5606,
+        "11": 53,
+        "10": 516,
+        "01": 487
+      },
+      "invisible_costly_operations": [
+        {
+          "op": 225,
+          "a": 0,
+          "q": 3,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 14,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 234,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 240,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 243,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 6,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 252,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 264,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 267,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 6,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 270,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 329,
+          "a": 0,
+          "q": 5,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 18,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 405,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 440,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 485,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 490,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 500,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 510,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 558,
+          "a": 0,
+          "q": 4,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 20,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 2,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -2,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -2,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 563,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 12,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 617,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 650,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 679,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 696,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 709,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 730,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 784,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 4,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 804,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 4,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 820,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 6,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1087,
+          "a": 0,
+          "q": 3,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 14,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1096,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1102,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1105,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 6,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1114,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1126,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1129,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 6,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1132,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1191,
+          "a": 0,
+          "q": 5,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 18,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1267,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1302,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1347,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1352,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1362,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1372,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1420,
+          "a": 0,
+          "q": 4,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 20,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 2,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -2,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -2,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1425,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 12,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1479,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1512,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1541,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1558,
+          "a": 0,
+          "q": 2,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 10,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1571,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1592,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 8,
+          "anonymous_delta": {
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"hi\",1,4],[3,\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"nil\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1
+          }
+        },
+        {
+          "op": 1646,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 4,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1666,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 4,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"nil\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -1,
+            "[5,[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[1,\"nil\",\"nil\"],[\"lo\",0,3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"nil\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        },
+        {
+          "op": 1682,
+          "a": 0,
+          "q": 1,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 6,
+          "anonymous_delta": {
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": 1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[4,[2,[0,null,[1,null,null]],[3,null,null]],null],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[4,0,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": -1,
+            "[5,[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[\"lo\",\"nil\",\"nil\"],[3,\"lo\",2],[1,\"nil\",\"nil\"],[\"nil\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]],[[0,null,[2,[1,null,null],[4,[3,null,null],null]]],[[\"nil\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1
+          }
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "H_3_1",
+      "keys": 33,
+      "operations": 130,
+      "steps": 236,
+      "A": 128,
+      "Q_B": 53,
+      "K_B": 69,
+      "U": 15,
+      "R_A": 128,
+      "A_port_packets": 152,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 53,
+      "bank_credit_used": 53,
+      "projected_B_double_masks": {
+        "00": 105,
+        "11": 7,
+        "10": 20,
+        "01": 14
+      },
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 10,
+      "name": "H_3_3",
+      "keys": 65,
+      "operations": 258,
+      "steps": 476,
+      "A": 256,
+      "Q_B": 109,
+      "K_B": 133,
+      "U": 35,
+      "R_A": 256,
+      "A_port_packets": 304,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 109,
+      "bank_credit_used": 109,
+      "projected_B_double_masks": {
+        "11": 14,
+        "00": 235,
+        "10": 42,
+        "01": 23
+      },
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 11,
+      "name": "H_3_7",
+      "keys": 129,
+      "operations": 514,
+      "steps": 956,
+      "A": 512,
+      "Q_B": 221,
+      "K_B": 261,
+      "U": 75,
+      "R_A": 512,
+      "A_port_packets": 612,
+      "bank_status": "EXACT_GRAMMAR_MINCUT",
+      "bank_paid": 218,
+      "bank_credit_used": 218,
+      "projected_B_double_masks": {
+        "11": 23,
+        "00": 512,
+        "01": 47,
+        "10": 83
+      },
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 12,
+      "name": "H_3_17",
+      "keys": 289,
+      "operations": 1154,
+      "steps": 2156,
+      "A": 1152,
+      "Q_B": 501,
+      "K_B": 581,
+      "U": 175,
+      "R_A": 1152,
+      "A_port_packets": 1380,
+      "bank_status": "EXACT_GRAMMAR_MINCUT",
+      "bank_paid": 476,
+      "bank_credit_used": 476,
+      "projected_B_double_masks": {
+        "11": 51,
+        "00": 1188,
+        "01": 99,
+        "10": 191
+      },
+      "invisible_costly_operations": []
+    },
+    {
+      "index": 13,
+      "name": "H_3_5",
+      "keys": 97,
+      "operations": 386,
+      "steps": 716,
+      "A": 384,
+      "Q_B": 165,
+      "K_B": 197,
+      "U": 55,
+      "R_A": 384,
+      "A_port_packets": 460,
+      "bank_status": "FINITE_EXACT_BANK",
+      "bank_paid": 165,
+      "bank_credit_used": 165,
+      "projected_B_double_masks": {
+        "00": 376,
+        "01": 33,
+        "10": 64,
+        "11": 18
+      },
+      "invisible_costly_operations": [
+        {
+          "op": 104,
+          "a": 1,
+          "q": 6,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 22,
+          "anonymous_delta": {
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"nil\",3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"lo\",\"nil\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -3,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"nil\",\"lo\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "H_3_10",
+      "keys": 177,
+      "operations": 706,
+      "steps": 1316,
+      "A": 704,
+      "Q_B": 305,
+      "K_B": 357,
+      "U": 105,
+      "R_A": 704,
+      "A_port_packets": 844,
+      "bank_status": "EXACT_GRAMMAR_MINCUT",
+      "bank_paid": 299,
+      "bank_credit_used": 299,
+      "projected_B_double_masks": {
+        "00": 714,
+        "01": 59,
+        "10": 118,
+        "11": 32
+      },
+      "invisible_costly_operations": [
+        {
+          "op": 184,
+          "a": 1,
+          "q": 11,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 40,
+          "anonymous_delta": {
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": 2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -2,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"nil\",3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"lo\",\"nil\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -5,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"nil\",\"lo\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "H_3_25",
+      "keys": 417,
+      "operations": 1666,
+      "steps": 3116,
+      "A": 1664,
+      "Q_B": 725,
+      "K_B": 837,
+      "U": 255,
+      "R_A": 1664,
+      "A_port_packets": 1996,
+      "bank_status": "EXACT_GRAMMAR_MINCUT",
+      "bank_paid": 686,
+      "bank_credit_used": 686,
+      "projected_B_double_masks": {
+        "00": 1728,
+        "01": 137,
+        "10": 280,
+        "11": 74
+      },
+      "invisible_costly_operations": [
+        {
+          "op": 424,
+          "a": 1,
+          "q": 26,
+          "k": 1,
+          "local_only_unchanged": true,
+          "anonymous_delta_l1": 94,
+          "anonymous_delta": {
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"hi\",0,\"hi\"]]]]": 5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": -5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": -5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"hi\",\"lo\",4],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[0,2,\"hi\"]]]]": 5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": -5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": 5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"]]]]": 5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"hi\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[\"lo\",\"lo\",1],[0,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[4,\"nil\",\"nil\"],[\"hi\",3,\"hi\"]]]]": 5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",3],[3,\"nil\",\"nil\"],[1,2,4],[3,\"nil\",\"nil\"]]]]": 5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[0,null,[4,[2,[1,null,null],[3,null,null]],null]],[[\"lo\",\"lo\",\"hi\"],[2,\"nil\",\"nil\"],[4,1,3],[2,\"nil\",\"nil\"],[\"hi\",2,\"hi\"]]]]": -5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"hi\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[2,[0,null,[1,null,null]],[4,[3,null,null],null]],[[2,\"lo\",1],[0,\"nil\",\"nil\"],[\"lo\",0,4],[4,\"nil\",\"nil\"],[2,3,\"hi\"]]]]": 5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[1,[0,null,null],[3,[2,null,null],[4,null,null]]],[[\"lo\",\"nil\",\"nil\"],[\"lo\",\"lo\",\"hi\"],[3,\"nil\",\"nil\"],[\"hi\",2,4],[3,\"nil\",\"nil\"]]]]": -5,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"nil\",3,\"hi\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[\"lo\",\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"]]]]": 1,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"lo\",\"nil\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[3,0,2],[1,\"nil\",\"nil\"],[\"lo\",1,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": 1,
+            "[5,[[4,[3,[2,[1,[0,null,null],null],null],null],null],[[1,\"lo\",\"nil\"],[2,0,\"nil\"],[3,1,\"nil\"],[4,2,\"nil\"],[\"hi\",3,\"nil\"]]],[[4,[0,null,[2,[1,null,null],[3,null,null]]],null],[[4,\"lo\",2],[2,\"nil\",\"nil\"],[0,1,3],[2,\"nil\",\"nil\"],[\"lo\",0,\"hi\"]]]]": -11,
+            "[5,[[0,null,[1,null,[2,null,[3,null,[4,null,null]]]]],[[\"nil\",\"lo\",1],[0,\"nil\",2],[1,\"nil\",3],[2,\"nil\",4],[3,\"nil\",\"hi\"]]],[[3,[1,[0,null,null],[2,null,null]],[4,null,null]],[[1,\"nil\",\"nil\"],[\"lo\",0,2],[1,\"nil\",\"nil\"],[\"nil\",\"lo\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": -1
+          }
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "status": "NUMERICAL_RATIONAL_RECOVERY_FAILED",
+    "c": "35971/52473",
+    "d": "782394/960599",
+    "c_plus_d": "75608266991/50405511327",
+    "rows": 8563,
+    "observer_states": 578,
+    "max_exact_slack": "8083697/46800381686175561",
+    "worst_original_id": [
+      "H_3_1",
+      32
+    ],
+    "universal": "OPEN",
+    "missing_contract": "Universal A/B loop induction, including unseen external-port pairings, not finite training accuracy."
+  },
+  "wall_seconds": 134.53437780000968,
+  "root_status": "OPEN",
+  "universal_claim": "NONE: finite teachers are diagnostics; physical symbolic induction is a separate required obligation."
+}

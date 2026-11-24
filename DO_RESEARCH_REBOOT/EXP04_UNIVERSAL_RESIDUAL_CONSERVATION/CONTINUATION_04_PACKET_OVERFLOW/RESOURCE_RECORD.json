@@ -1,0 +1,222 @@
+{
+  "additional_unmetered_costs": "Initial pre-Meter import-alias failure(tool wall1.93s), Python startup/imports, short inspections, report authoring, tool/shell overhead and final manifest hashing; see CORRECTIONS_AND_LIMITS.md.",
+  "hard_host_quota_claimed": false,
+  "interrupted_stage_conservative_CPU_upper_bound_seconds": 53.7955488,
+  "is_exact_total_campaign_CPU": false,
+  "measured_plus_interrupted_stage_upper_bound_seconds": 1603.8580488,
+  "measured_research_stage_CPU_seconds": 1550.0625,
+  "peak_observed_process_working_set_bytes": 1436413952,
+  "receipts": [
+    {
+      "CPU_qualification": "The .NET final CPU property returned null after own-process termination. Exact CPU unavailable. This single-threaded pure-Python phase ran no workers; entire process wall time is retained as a conservative CPU upper bound. Do not count null as zero.",
+      "conservative_CPU_upper_bound_seconds": 53.7955488,
+      "file": "RESOURCE_binding_stop.json",
+      "memory": {
+        "measurement": "sample immediately before own-process termination",
+        "peak_working_set_bytes": 128921600
+      },
+      "observed_CPU_seconds_rounded_at_previous_sample": 32.47,
+      "process_CPU_seconds": null,
+      "reason": "Use canonical JSON comparison for tuple/list-normalized U before retry. No mathematical result accepted.",
+      "stage": "verify_width_preempted_tuple_json_binding",
+      "status": "intentionally_stopped_before_known_tuple_list_controller_failure",
+      "wall_seconds": 53.7955488
+    },
+    {
+      "file": "RESOURCE_export_checkpoint.json",
+      "memory": {
+        "peak_pagefile_bytes": 27967488,
+        "peak_working_set_bytes": 35909632,
+        "working_set_bytes": 29519872
+      },
+      "process_CPU_seconds": 0.140625,
+      "stage": "export_checkpoint",
+      "status": "completed",
+      "wall_seconds": 0.2566849000286311
+    },
+    {
+      "file": "RESOURCE_export_checkpoint_2.json",
+      "memory": {
+        "peak_pagefile_bytes": 29298688,
+        "peak_working_set_bytes": 37761024,
+        "working_set_bytes": 31653888
+      },
+      "process_CPU_seconds": 0.0625,
+      "stage": "export_checkpoint",
+      "status": "completed",
+      "wall_seconds": 0.07895519997691736
+    },
+    {
+      "file": "RESOURCE_failuremode_checks.json",
+      "memory": {
+        "peak_pagefile_bytes": 33902592,
+        "peak_working_set_bytes": 41750528,
+        "working_set_bytes": 34754560
+      },
+      "process_CPU_seconds": 0.1875,
+      "stage": "failuremode_checks",
+      "status": "failed_or_interrupted",
+      "wall_seconds": 0.1947713999543339
+    },
+    {
+      "file": "RESOURCE_failuremode_checks_2.json",
+      "memory": {
+        "peak_pagefile_bytes": 34361344,
+        "peak_working_set_bytes": 42270720,
+        "working_set_bytes": 35954688
+      },
+      "process_CPU_seconds": 0.265625,
+      "stage": "failuremode_checks",
+      "status": "completed",
+      "wall_seconds": 0.2847351999953389
+    },
+    {
+      "file": "RESOURCE_finalization.json",
+      "memory": {
+        "peak_pagefile_bytes": 24236032,
+        "peak_working_set_bytes": 32395264,
+        "working_set_bytes": 32395264
+      },
+      "process_CPU_seconds": 14.140625,
+      "qualification": "Final manifest hashing and tool/authoring overhead are not timed research phases.",
+      "stage": "finalization",
+      "status": "completed",
+      "wall_seconds": 15.198518300021533
+    },
+    {
+      "file": "RESOURCE_packet_geometry.json",
+      "memory": {
+        "peak_pagefile_bytes": 19570688,
+        "peak_working_set_bytes": 27193344,
+        "working_set_bytes": 25915392
+      },
+      "process_CPU_seconds": 0.90625,
+      "stage": "packet_geometry",
+      "status": "completed",
+      "wall_seconds": 1.0149173000245355
+    },
+    {
+      "file": "RESOURCE_preflight.json",
+      "memory": {
+        "peak_pagefile_bytes": 15859712,
+        "peak_working_set_bytes": 24027136,
+        "working_set_bytes": 22204416
+      },
+      "process_CPU_seconds": 13.109375,
+      "stage": "preflight",
+      "status": "completed",
+      "wall_seconds": 37.93122809997294
+    },
+    {
+      "file": "RESOURCE_same_side_batch.json",
+      "memory": {
+        "peak_pagefile_bytes": 21991424,
+        "peak_working_set_bytes": 30167040,
+        "working_set_bytes": 25710592
+      },
+      "process_CPU_seconds": 0.125,
+      "stage": "same_side_batch",
+      "status": "completed",
+      "wall_seconds": 0.15751440002350137
+    },
+    {
+      "file": "RESOURCE_storage_check.json",
+      "memory": {
+        "peak_pagefile_bytes": 43827200,
+        "peak_working_set_bytes": 52252672,
+        "working_set_bytes": 50335744
+      },
+      "process_CPU_seconds": 0.953125,
+      "stage": "storage_check",
+      "status": "completed",
+      "wall_seconds": 0.9894476999761537
+    },
+    {
+      "file": "RESOURCE_storage_check_2.json",
+      "memory": {
+        "peak_pagefile_bytes": 48705536,
+        "peak_working_set_bytes": 56098816,
+        "working_set_bytes": 53706752
+      },
+      "process_CPU_seconds": 1.734375,
+      "stage": "storage_check",
+      "status": "completed",
+      "wall_seconds": 1.8202379000140354
+    },
+    {
+      "file": "RESOURCE_structural_checks.json",
+      "memory": {
+        "peak_pagefile_bytes": 49827840,
+        "peak_working_set_bytes": 56344576,
+        "working_set_bytes": 45633536
+      },
+      "process_CPU_seconds": 6.09375,
+      "stage": "structural_checks",
+      "status": "completed",
+      "wall_seconds": 6.1838453999953344
+    },
+    {
+      "file": "RESOURCE_trace_replay.json",
+      "memory": {
+        "peak_pagefile_bytes": 386641920,
+        "peak_working_set_bytes": 394625024,
+        "working_set_bytes": 159232000
+      },
+      "process_CPU_seconds": 75.5,
+      "stage": "trace_replay",
+      "status": "completed",
+      "wall_seconds": 78.05915169999935
+    },
+    {
+      "file": "RESOURCE_verify_width.json",
+      "memory": {
+        "peak_pagefile_bytes": 1422315520,
+        "peak_working_set_bytes": 1427468288,
+        "working_set_bytes": 334950400
+      },
+      "process_CPU_seconds": 375.0,
+      "stage": "verify_width",
+      "status": "failed_or_interrupted",
+      "wall_seconds": 382.93137040000875
+    },
+    {
+      "file": "RESOURCE_verify_width_2.json",
+      "memory": {
+        "peak_pagefile_bytes": 258551808,
+        "peak_working_set_bytes": 259997696,
+        "working_set_bytes": 255287296
+      },
+      "primary_selection_reused": true,
+      "process_CPU_seconds": 503.046875,
+      "stage": "verify_width",
+      "status": "completed",
+      "wall_seconds": 516.2780706999474
+    },
+    {
+      "file": "RESOURCE_width_attack.json",
+      "memory": {
+        "peak_pagefile_bytes": 167776256,
+        "peak_working_set_bytes": 176373760,
+        "working_set_bytes": 176373760
+      },
+      "process_CPU_seconds": 195.421875,
+      "stage": "width_attack",
+      "status": "failed_or_interrupted",
+      "wall_seconds": 199.2663207000005
+    },
+    {
+      "complete_sources": 2,
+      "file": "RESOURCE_width_attack_2.json",
+      "memory": {
+        "peak_pagefile_bytes": 1431105536,
+        "peak_working_set_bytes": 1436413952,
+        "working_set_bytes": 145866752
+      },
+      "process_CPU_seconds": 363.375,
+      "stage": "width_attack",
+      "status": "completed",
+      "wall_seconds": 373.9748010999756
+    }
+  ],
+  "reviewed_research_CPU_allocation_seconds": 1800
+}

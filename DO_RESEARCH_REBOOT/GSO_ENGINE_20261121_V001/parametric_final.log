@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\GSO_ENGINE_20261121_V001\parametric.py", line 114, in <module>
+    run(Path(sys.argv[1]))
+    ~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\GSO_ENGINE_20261121_V001\parametric.py", line 94, in run
+    assert r['delta']==d and r['a']==1 and r['q']==q+1,(q,r['delta'],d)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (1, [-6, -3, 2, -2, -2, -1, 0, 0, 6, 26, 4, 25], [-6, -3, 3, -2, -1, -1, 0, 0, 6, 26, 4, 25])

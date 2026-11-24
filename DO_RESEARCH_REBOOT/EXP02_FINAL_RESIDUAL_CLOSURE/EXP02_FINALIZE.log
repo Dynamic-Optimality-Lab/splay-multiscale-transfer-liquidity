@@ -1,0 +1,60 @@
+{
+  "partition": {
+    "common_grandparent_retained": 243,
+    "adaptive_paid": 94,
+    "unmatched_retained": 4,
+    "unpaid_omitted": 10
+  },
+  "resources": {
+    "common_grandparent_CPU_seconds": 0.046875,
+    "common_grandparent_wall_seconds": 0.03970510000362992,
+    "distortion_actual_operation_checks": 72330,
+    "distortion_peak_memory": {
+      "peak_pagefile_bytes": 985317376,
+      "peak_working_set_bytes": 982577152,
+      "working_set_bytes": 688062464
+    },
+    "distortion_process_CPU_seconds": 280.984375,
+    "distortion_wall_seconds": 320.1017665999825,
+    "frame_bridge_CPU_seconds": 34.34375,
+    "frame_bridge_additional_original_operations": 4144,
+    "frame_bridge_peak_memory": {
+      "peak_pagefile_bytes": 448126976,
+      "peak_working_set_bytes": 454094848,
+      "working_set_bytes": 406532096
+    },
+    "frame_bridge_wall_seconds": 41.29251590001513,
+    "independent_shadow_scan_accesses": 15170,
+    "independently_checked_inherited_operations": 55313,
+    "inherited_sources": 133,
+    "initial_memory_probe_correction": "The first G-gate probe used an untyped Win32 handle and returned zeros. It was corrected before inventory; zeros are invalid measurements. The corrected G gate is rerun.",
+    "inventory_process_CPU_seconds": 174.015625,
+    "inventory_wall_seconds": 202.6319191000075,
+    "limits": {
+      "new_sources": 100,
+      "operations_per_source": 20000,
+      "population": 513,
+      "recorded_Python_CPU_seconds": 900
+    },
+    "memory": {
+      "peak_pagefile_bytes": 681332736,
+      "peak_working_set_bytes": 686858240,
+      "working_set_bytes": 538865664
+    },
+    "new_complete_sources": 38,
+    "new_source_operations": 21161,
+    "recorded_CPU_subtotal": 577.4375,
+    "unmetered_pilots": "four-source two-direction pilot; five-source one-direction pilot; five-source first-hit-in-omission pilot. Final timed runs repeat all consequential cases.",
+    "inventory_enrichment_CPU_seconds": 87.65625,
+    "inventory_enrichment_wall_seconds": 96.0964673999988,
+    "inventory_enrichment_hash_verified_operations": 38993,
+    "inventory_enrichment_memory": {
+      "peak_working_set_bytes": 880119808,
+      "working_set_bytes": 664215552,
+      "peak_pagefile_bytes": 882466816
+    },
+    "g_gate_CPU_seconds": 0.234375,
+    "initial_invalid_memory_probe_CPU_seconds": 0.15625,
+    "failed_finalization_record": "One prior finalization replay finished but its timer write failed because an integer variable shadowed the time module. No canonical results were written by that failed attempt. Its exact CPU was not captured. The corrected finalization repeats the affected data extraction."
+  }
+}

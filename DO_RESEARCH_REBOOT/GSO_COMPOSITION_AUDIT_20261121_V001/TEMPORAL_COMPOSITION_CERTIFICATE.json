@@ -1,0 +1,55 @@
+{
+  "status": "PROVED_TEMPORAL_COMPOSITION_WITH_EXPLICIT_POTENTIAL_ENDPOINTS",
+  "complete_original_source": "source_00.json.gz",
+  "singleton_pieces": [
+    {
+      "original_op": 1,
+      "a": 1,
+      "q": 0,
+      "P_before": 1,
+      "P_after": 4,
+      "scaled_slack": 0
+    },
+    {
+      "original_op": 2,
+      "a": 0,
+      "q": 1,
+      "P_before": 4,
+      "P_after": 2,
+      "scaled_slack": 0
+    },
+    {
+      "original_op": 3,
+      "a": 1,
+      "q": 2,
+      "P_before": 2,
+      "P_after": 1,
+      "scaled_slack": 0
+    },
+    {
+      "original_op": 4,
+      "a": 1,
+      "q": 1,
+      "P_before": 1,
+      "P_after": 2,
+      "scaled_slack": 0
+    },
+    {
+      "original_op": 5,
+      "a": 1,
+      "q": 2,
+      "P_before": 2,
+      "P_after": 1,
+      "scaled_slack": 0
+    }
+  ],
+  "open_piece_counterexample": {
+    "original_op": 2,
+    "a": 0,
+    "q": 1,
+    "P_before": 4,
+    "P_after": 2,
+    "scaled_slack": 0
+  },
+  "scope": "An open piece has q+DeltaPhi<=3a/2, not necessarily q<=3a/2. Any temporal partition telescopes when the same physical state descriptor is used at adjacent interfaces. This does not spatially split a large irreducible core."
+}

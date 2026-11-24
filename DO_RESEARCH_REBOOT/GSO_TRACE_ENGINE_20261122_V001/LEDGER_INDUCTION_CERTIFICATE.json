@@ -1,0 +1,17 @@
+{
+  "status": "PROVED_CONDITIONAL_LEDGER_INDUCTION",
+  "learned_invariant": "paid+bank-issued=initial_bank",
+  "verified_symbolic_updates": [
+    "A_issuance",
+    "KEEP_voucher",
+    "B_double",
+    "B_zig_or_conservative_transfer"
+  ],
+  "closed_seam_consequence": "Q_B<=c*A+d*K_B<= (c+d)*A",
+  "assumptions_not_proved": [
+    "A source-uniform physical policy maintaining enough bank for every B demand",
+    "The constructed policy obeys total issuance and the chosen physical transfer scopes",
+    "A source-uniform closed nonnegative bank boundary state exists"
+  ],
+  "warning": "The loop algebra does not manufacture the physical bank policy or its missing induction guard bank>=1."
+}

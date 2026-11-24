@@ -1,0 +1,8 @@
+{
+  "stage": "Symbolic pre-replay derivation; original EXPERIMENT_SPEC preserved",
+  "candidate_formula_changed": false,
+  "old_expected_H3q_change": "-(q+1)",
+  "corrected_expected_H3q_change": "-q",
+  "reason": "The B-only count gains q size15 labels plus one size7 label. The extra size7 label is the suffix H3 and is shared with the actual post-A two-vine, so it is excluded from J_S(B) setminus J_S(A). The candidate is the signed mismatch count, not the B-only count.",
+  "additional_primary_obstruction": "At the first critical KEEP N, Phi_M increases by floor(log2(N))-1, while u=0,d=2,k=1. This may already exclude the complete B-phase law as q grows in the unchanged p=3 family. All source preparation and restoration will still be replayed."
+}

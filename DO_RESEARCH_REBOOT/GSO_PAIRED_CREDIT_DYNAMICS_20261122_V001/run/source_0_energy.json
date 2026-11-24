@@ -1,0 +1,42 @@
+{
+  "operation": 40,
+  "target": 26,
+  "A_cost": 1,
+  "Q_B_cost": 2,
+  "A_phase_delta": {},
+  "whole_operation_delta_Phi_w_coefficients": {
+    "31": 1,
+    "33": 1
+  },
+  "B_steps": [
+    {
+      "id": [
+        "B",
+        40,
+        1
+      ],
+      "type": "RR",
+      "branch_sizes": {
+        "a": 7,
+        "b": 7,
+        "c": 7,
+        "d": 7
+      },
+      "delta_Phi_w_coefficients": {}
+    },
+    {
+      "id": [
+        "B",
+        40,
+        2
+      ],
+      "type": "LR",
+      "branch_sizes": null,
+      "delta_Phi_w_coefficients": {
+        "33": 1,
+        "31": 1
+      }
+    }
+  ],
+  "meaning": "Phi_w=-sum of w(size) over full-physical B subtree intervals missing in A. Coefficients apply to every real weight function simultaneously."
+}

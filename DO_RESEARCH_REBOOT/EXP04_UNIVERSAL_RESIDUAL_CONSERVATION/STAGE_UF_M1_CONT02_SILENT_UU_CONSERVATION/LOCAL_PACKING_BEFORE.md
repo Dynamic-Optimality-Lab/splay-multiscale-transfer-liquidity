@@ -1,0 +1,9 @@
+# Direct local conservation candidate and final bounded falsification
+
+Candidate L-PACK: at every original KEEP h, the number of original U C consumers at physical distance>2, with U creator and unacquired relevant sibling, is at most2A(G_h). The still-stronger-than-needed version counts all such physical parents; a residual-only version counts those carrying original R6/R_* or current gaps. If the physical version held universally, summing over the disjoint incoming A gaps and using three slots would prove |S_UU|<=6A. No such implication is assumed from the inherited52 controls, which have no physical violation.
+
+This is a strictly smaller per-access packing lemma with an explicit2A bridge to full M1, not a renamed global existence object. Attack it by an alternating RL fan: one access creates nested U candidate outputs on many columns; the next cheap A access traverses their ascending B spine and can renew many C columns simultaneously. A following enclosure and descending future hits aim to avoid singleton receivers. Initial full A/B states, legal prefix and exact paired closure are constructive. The risk is full cyclic Pi through measured restoration, not just local signs.
+
+Use two complete fan fixtures, s16 and32, with one explicit DELETE divergence before B restoration. Reconstruct every original U/cohort/R6 predicate; do not add a condition or tune helpers after a failure. If the fan fails to qualify, preserve that exact failure and leave L-PACK OPEN. A finite pass is not a packing proof. Do not pursue a new existence problem or unbounded search.
+
+This completes the authorized bounded audit at16 unique fresh sources (12 padding,2 replication,2 fan), population<=1027. All measured CPU receipts remain cumulative under1200; no historical cap is reset. This is an alternative direct-conservation attack requested by the current brief, with no independent unproved prerequisite promoted to a theorem.

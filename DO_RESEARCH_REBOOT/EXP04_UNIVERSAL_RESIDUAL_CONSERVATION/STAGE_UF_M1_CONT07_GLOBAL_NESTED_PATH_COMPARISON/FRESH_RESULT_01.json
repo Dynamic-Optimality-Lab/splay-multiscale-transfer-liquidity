@@ -1,0 +1,889 @@
+{
+  "A": 527,
+  "C_old_gaps": 0,
+  "KEY_UNION_2_refuted": false,
+  "M_PF": 0,
+  "PF_path_count": 0,
+  "Q_B": 99,
+  "actual_S_UU": [],
+  "assigned_counts": {
+    "E_old": 0,
+    "H_all": 0,
+    "Q_D": 0,
+    "carrier": 0,
+    "overflow": 0,
+    "skipped_rank": 0
+  },
+  "canonical_edges": [],
+  "distinct_domain_key_union": [],
+  "index": 1,
+  "maximal_PF_paths": [],
+  "operations": 415,
+  "original_R6": 0,
+  "original_R_star": [],
+  "physical_kernel": {
+    "full_physical_PF_path_test": {
+      "M_PF": 21,
+      "M_hit": 2,
+      "M_inside": 13,
+      "M_stem": 8,
+      "M_support_padding": 11,
+      "Q_two_sided_separate": [
+        7,
+        2
+      ],
+      "component_rooted_domains": [
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        [
+          15,
+          18
+        ]
+      ],
+      "component_rooted_workload": 15,
+      "full_initial_domains": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          19
+        ],
+        [
+          1,
+          2,
+          15,
+          18,
+          19
+        ]
+      ],
+      "inside_domain_parts": [
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        [
+          18
+        ]
+      ],
+      "left_inside_hits": [
+        [
+          5,
+          14
+        ]
+      ],
+      "matched_original_doubles": [
+        [
+          [
+            5,
+            6
+          ]
+        ],
+        []
+      ],
+      "merged_inside_shadow": {
+        "all_original_old_g_matched": false,
+        "full_g_component_failure": [
+          {
+            "actual_post_B": {
+              "children": {
+                "1": [
+                  null,
+                  null
+                ],
+                "10": [
+                  null,
+                  11
+                ],
+                "11": [
+                  null,
+                  12
+                ],
+                "12": [
+                  null,
+                  13
+                ],
+                "13": [
+                  null,
+                  14
+                ],
+                "14": [
+                  null,
+                  null
+                ],
+                "15": [
+                  3,
+                  16
+                ],
+                "16": [
+                  null,
+                  17
+                ],
+                "17": [
+                  null,
+                  null
+                ],
+                "18": [
+                  2,
+                  30
+                ],
+                "19": [
+                  null,
+                  28
+                ],
+                "2": [
+                  1,
+                  15
+                ],
+                "20": [
+                  null,
+                  21
+                ],
+                "21": [
+                  null,
+                  null
+                ],
+                "22": [
+                  20,
+                  23
+                ],
+                "23": [
+                  null,
+                  null
+                ],
+                "24": [
+                  22,
+                  25
+                ],
+                "25": [
+                  null,
+                  null
+                ],
+                "26": [
+                  24,
+                  27
+                ],
+                "27": [
+                  null,
+                  null
+                ],
+                "28": [
+                  26,
+                  29
+                ],
+                "29": [
+                  null,
+                  null
+                ],
+                "3": [
+                  null,
+                  4
+                ],
+                "30": [
+                  19,
+                  31
+                ],
+                "31": [
+                  null,
+                  null
+                ],
+                "4": [
+                  null,
+                  5
+                ],
+                "5": [
+                  null,
+                  6
+                ],
+                "6": [
+                  null,
+                  7
+                ],
+                "7": [
+                  null,
+                  8
+                ],
+                "8": [
+                  null,
+                  9
+                ],
+                "9": [
+                  null,
+                  10
+                ]
+              },
+              "root": 18
+            },
+            "actual_pre_B": {
+              "children": {
+                "1": [
+                  null,
+                  null
+                ],
+                "10": [
+                  null,
+                  11
+                ],
+                "11": [
+                  null,
+                  12
+                ],
+                "12": [
+                  null,
+                  13
+                ],
+                "13": [
+                  null,
+                  14
+                ],
+                "14": [
+                  null,
+                  null
+                ],
+                "15": [
+                  3,
+                  18
+                ],
+                "16": [
+                  null,
+                  17
+                ],
+                "17": [
+                  null,
+                  null
+                ],
+                "18": [
+                  16,
+                  null
+                ],
+                "19": [
+                  15,
+                  28
+                ],
+                "2": [
+                  1,
+                  19
+                ],
+                "20": [
+                  null,
+                  21
+                ],
+                "21": [
+                  null,
+                  null
+                ],
+                "22": [
+                  20,
+                  23
+                ],
+                "23": [
+                  null,
+                  null
+                ],
+                "24": [
+                  22,
+                  25
+                ],
+                "25": [
+                  null,
+                  null
+                ],
+                "26": [
+                  24,
+                  27
+                ],
+                "27": [
+                  null,
+                  null
+                ],
+                "28": [
+                  26,
+                  29
+                ],
+                "29": [
+                  null,
+                  null
+                ],
+                "3": [
+                  null,
+                  4
+                ],
+                "30": [
+                  2,
+                  31
+                ],
+                "31": [
+                  null,
+                  null
+                ],
+                "4": [
+                  null,
+                  5
+                ],
+                "5": [
+                  null,
+                  6
+                ],
+                "6": [
+                  null,
+                  7
+                ],
+                "7": [
+                  null,
+                  8
+                ],
+                "8": [
+                  null,
+                  9
+                ],
+                "9": [
+                  null,
+                  10
+                ]
+              },
+              "root": 30
+            },
+            "full_g_equal_after": false,
+            "full_g_equal_before": true,
+            "operation": 4,
+            "original_inside_parent_double": [
+              {
+                "F": 536870908,
+                "J": 536608768,
+                "P_output": 131068,
+                "case": "LR",
+                "events": [
+                  31,
+                  32
+                ],
+                "g": 19,
+                "id": [
+                  4,
+                  1
+                ],
+                "p": 15,
+                "parent": [
+                  4,
+                  1
+                ],
+                "physical_J_interval": [
+                  19,
+                  29
+                ],
+                "physical_P_interval": [
+                  3,
+                  17
+                ],
+                "physical_frame_interval": [
+                  3,
+                  29
+                ],
+                "post_step_state": 16,
+                "pre_step_state": 14,
+                "signs": [
+                  -1,
+                  -1
+                ],
+                "target": 18
+              }
+            ],
+            "original_pre_path": [
+              30,
+              2,
+              19,
+              15,
+              18
+            ],
+            "shadow_post_B": {
+              "children": {
+                "1": [
+                  null,
+                  15
+                ],
+                "10": [
+                  null,
+                  11
+                ],
+                "11": [
+                  null,
+                  12
+                ],
+                "12": [
+                  null,
+                  13
+                ],
+                "13": [
+                  null,
+                  14
+                ],
+                "14": [
+                  null,
+                  null
+                ],
+                "15": [
+                  2,
+                  16
+                ],
+                "16": [
+                  null,
+                  17
+                ],
+                "17": [
+                  null,
+                  null
+                ],
+                "18": [
+                  1,
+                  19
+                ],
+                "19": [
+                  null,
+                  31
+                ],
+                "2": [
+                  null,
+                  3
+                ],
+                "20": [
+                  null,
+                  21
+                ],
+                "21": [
+                  null,
+                  null
+                ],
+                "22": [
+                  20,
+                  23
+                ],
+                "23": [
+                  null,
+                  null
+                ],
+                "24": [
+                  22,
+                  25
+                ],
+                "25": [
+                  null,
+                  null
+                ],
+                "26": [
+                  24,
+                  27
+                ],
+                "27": [
+                  null,
+                  null
+                ],
+                "28": [
+                  26,
+                  29
+                ],
+                "29": [
+                  null,
+                  null
+                ],
+                "3": [
+                  null,
+                  4
+                ],
+                "30": [
+                  28,
+                  null
+                ],
+                "31": [
+                  30,
+                  null
+                ],
+                "4": [
+                  null,
+                  5
+                ],
+                "5": [
+                  null,
+                  6
+                ],
+                "6": [
+                  null,
+                  7
+                ],
+                "7": [
+                  null,
+                  8
+                ],
+                "8": [
+                  null,
+                  9
+                ],
+                "9": [
+                  null,
+                  10
+                ]
+              },
+              "root": 18
+            },
+            "shadow_pre_B": {
+              "children": {
+                "1": [
+                  null,
+                  2
+                ],
+                "10": [
+                  null,
+                  11
+                ],
+                "11": [
+                  null,
+                  12
+                ],
+                "12": [
+                  null,
+                  13
+                ],
+                "13": [
+                  null,
+                  14
+                ],
+                "14": [
+                  null,
+                  null
+                ],
+                "15": [
+                  3,
+                  18
+                ],
+                "16": [
+                  null,
+                  17
+                ],
+                "17": [
+                  null,
+                  null
+                ],
+                "18": [
+                  16,
+                  null
+                ],
+                "19": [
+                  1,
+                  31
+                ],
+                "2": [
+                  null,
+                  15
+                ],
+                "20": [
+                  null,
+                  21
+                ],
+                "21": [
+                  null,
+                  null
+                ],
+                "22": [
+                  20,
+                  23
+                ],
+                "23": [
+                  null,
+                  null
+                ],
+                "24": [
+                  22,
+                  25
+                ],
+                "25": [
+                  null,
+                  null
+                ],
+                "26": [
+                  24,
+                  27
+                ],
+                "27": [
+                  null,
+                  null
+                ],
+                "28": [
+                  26,
+                  29
+                ],
+                "29": [
+                  null,
+                  null
+                ],
+                "3": [
+                  null,
+                  4
+                ],
+                "30": [
+                  28,
+                  null
+                ],
+                "31": [
+                  30,
+                  null
+                ],
+                "4": [
+                  null,
+                  5
+                ],
+                "5": [
+                  null,
+                  6
+                ],
+                "6": [
+                  null,
+                  7
+                ],
+                "7": [
+                  null,
+                  8
+                ],
+                "8": [
+                  null,
+                  9
+                ],
+                "9": [
+                  null,
+                  10
+                ]
+              },
+              "root": 19
+            },
+            "shadow_pre_path": [
+              19,
+              1,
+              2,
+              15,
+              18
+            ],
+            "target": 18
+          }
+        ],
+        "original_old_g_matches": [
+          {
+            "matched_old_g": false,
+            "original_parent": [
+              5,
+              6
+            ],
+            "shadow_double_j": null
+          }
+        ],
+        "retained_inside_hits": [
+          [
+            4,
+            18
+          ],
+          [
+            5,
+            14
+          ]
+        ],
+        "shadow_Q": 9,
+        "traces": [
+          {
+            "full_g_equal_after": false,
+            "full_g_equal_before": true,
+            "operation": 4,
+            "q": 2,
+            "shadow_post_sha256": "e7dffa0e2f54815608e554cf91fd79f4387c5c065821c8547cd8cd827af88661",
+            "shadow_pre_sha256": "842cb7277f40fe190d1f6ed9bdf2f7ca57853c01f4c5c6cf0736beee9edf30ae",
+            "target": 18
+          },
+          {
+            "full_g_equal_after": true,
+            "full_g_equal_before": false,
+            "operation": 5,
+            "q": 7,
+            "shadow_post_sha256": "7abfa76f4bdfb240ead293b2de32d87515ed7c066f1ec42bd3561e78def43ae1",
+            "shadow_pre_sha256": "e7dffa0e2f54815608e554cf91fd79f4387c5c065821c8547cd8cd827af88661",
+            "target": 14
+          }
+        ]
+      },
+      "old_g": 15,
+      "original_initial_B_sha256": "842cb7277f40fe190d1f6ed9bdf2f7ca57853c01f4c5c6cf0736beee9edf30ae",
+      "original_initial_B_state": 9,
+      "path": [
+        [
+          1,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "right_inside_hits": [
+        [
+          4,
+          18
+        ]
+      ],
+      "root_to_g_stem": [
+        19,
+        1,
+        2,
+        15
+      ],
+      "scope": "Maximal ORIGINAL C_old PF path before H/quota. Comparison costs are not source A credit.",
+      "unique_original_inside_pivot_bits": [
+        [
+          "B",
+          4,
+          1,
+          0
+        ],
+        [
+          "B",
+          5,
+          6,
+          1
+        ]
+      ]
+    },
+    "u": [
+      1,
+      6
+    ],
+    "u_C_old": false,
+    "u_U": true,
+    "u_double": {
+      "F": 1073741820,
+      "J": 262140,
+      "P_output": 1073217536,
+      "case": "RL",
+      "events": [
+        11,
+        12
+      ],
+      "g": 15,
+      "id": [
+        1,
+        6
+      ],
+      "p": 30,
+      "parent": [
+        1,
+        6
+      ],
+      "physical_J_interval": [
+        3,
+        18
+      ],
+      "physical_P_interval": [
+        20,
+        30
+      ],
+      "physical_frame_interval": [
+        3,
+        30
+      ],
+      "post_step_state": 7,
+      "pre_step_state": 6,
+      "signs": [
+        0,
+        0
+      ],
+      "target": 19
+    },
+    "u_forest_type": "C",
+    "v": [
+      5,
+      6
+    ],
+    "v_C_old": false,
+    "v_R_star": [],
+    "v_U": false,
+    "v_double": {
+      "F": 131068,
+      "J": 114688,
+      "P_output": 8188,
+      "case": "LR",
+      "events": [
+        49,
+        50
+      ],
+      "g": 15,
+      "id": [
+        5,
+        6
+      ],
+      "p": 3,
+      "parent": [
+        5,
+        6
+      ],
+      "physical_J_interval": [
+        15,
+        17
+      ],
+      "physical_P_interval": [
+        3,
+        13
+      ],
+      "physical_frame_interval": [
+        3,
+        17
+      ],
+      "post_step_state": 24,
+      "pre_step_state": 23,
+      "signs": [
+        -1,
+        -1
+      ],
+      "target": 14
+    },
+    "v_forest_type": "C",
+    "v_original_R6": [],
+    "v_sigma": false
+  },
+  "population": 31,
+  "prefix": {
+    "actual_A_StepEv_excluded": 253,
+    "complete_reached_pair_verified": true,
+    "operations": 201
+  },
+  "primitives": 1092,
+  "raw_periodic_cost": 604,
+  "source": "M1C7_merge_kernel_L5",
+  "source_sha256": "90485aedc21a05cba8cdd9c4471472f99fc24561f105d18bce44f2648354ba63",
+  "sum_z_h": 0
+}

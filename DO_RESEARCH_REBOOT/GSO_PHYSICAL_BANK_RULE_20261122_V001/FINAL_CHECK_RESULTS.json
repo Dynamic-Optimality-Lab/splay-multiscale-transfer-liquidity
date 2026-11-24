@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "created_utc": "2026-11-21T22:53:50.087622+00:00",
+  "independent_original_event_replay": {
+    "passed": true,
+    "witnesses": 2,
+    "operations": 70660,
+    "real_rotations": 166152,
+    "original_U": 12412
+  },
+  "previous_trace_independent_policy_replay": {
+    "passed": true,
+    "tests": 90
+  },
+  "soundness_regressions": {
+    "passed": true,
+    "tests": 8,
+    "record": "Observed tests.py completion before finalization; no bank logic changes afterward."
+  },
+  "symbolic_certificates": [
+    "SYMBOLIC_COARSENING_CERTIFICATE.json",
+    "SOURCE_INDUCTION_CERTIFICATE.json",
+    "REAL_CAPACITY_CERTIFICATE.json"
+  ],
+  "Lean": {
+    "passed": true,
+    "receipt": "LEAN_VERIFICATION.json",
+    "no_sorry_or_new_axiom_declaration": true,
+    "full_original_BST_formalization": false
+  },
+  "python_AST": {
+    "passed": true,
+    "files": 16
+  },
+  "preservation": {
+    "passed": true,
+    "prior_files": 5120,
+    "selected_input_pins": 271
+  },
+  "Notion": {
+    "passed": true,
+    "pages_readback_verified": 3,
+    "existing_page_prefixes_preserved": true
+  },
+  "research_claim": "Scoped bank closure/budget proved and frozen payment law refuted; root bound OPEN."
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PROVED_ABSTRACT_MODEL_OBSTRUCTION",
+  "domain": "The unrestricted scalar access-entry relaxation, which permits arbitrary B depth and no non-target local credit.",
+  "parameters": "Every finite nonnegative H,T; choose M>H+T and physical size bound N>=2M+1.",
+  "trace": "Start target reserve H, overflow tickets T, path depth2M; perform M legal abstract double cases with other local credit zero.",
+  "closed_forms": {
+    "target": "max(H-j,0)",
+    "ticket": "max(T-max(j-H,0),0)",
+    "unfunded": "max(j-H-T,0)",
+    "remaining_path": "2(M-j)"
+  },
+  "symbolic_queries": [
+    "target_update",
+    "ticket_update",
+    "unfunded_update",
+    "path_rank",
+    "nonnegative_balances",
+    "arbitrary_finite_accounts_exhausted"
+  ],
+  "invariant_consequence": "No inductive invariant containing this relaxed entry and closed under its successors can prove complete q accounting from these accounts. Excluding a successor would be unsound.",
+  "physical_concretization": "NOT_ESTABLISHED. Original depth, A/B ancestry and bank stocks have correlations omitted by this scalar entry model.",
+  "not_claimed": [
+    "No original paired-closed source with these bank stocks is asserted.",
+    "The selected H=5 old policy is not refuted.",
+    "Universal CD is not refuted.",
+    "Other structural energies or stronger original-state invariants are not excluded."
+  ],
+  "actual_missing_expressiveness": "A relation between unconsumed original B frames, physical bank ownership and prior original A work, valid for a next target different from both stored B roots.",
+  "universal_CD": "OPEN"
+}

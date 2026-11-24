@@ -1,0 +1,39 @@
+{
+  "status": "SYMBOLIC_COUNTER_INDUCTION_VERIFIED",
+  "learned_nullspace_basis": [
+    [
+      "0",
+      "-1",
+      "-1",
+      "1",
+      "0"
+    ],
+    [
+      "-1",
+      "-2",
+      "-1",
+      "0",
+      "1"
+    ]
+  ],
+  "variables": [
+    "remaining_depth",
+    "doubles",
+    "zigs",
+    "units",
+    "initial_depth"
+  ],
+  "invariants": [
+    "initial=remaining+2*doubles+zigs",
+    "units=doubles+zigs",
+    "zigs in{0,1}; zig implies remaining0"
+  ],
+  "Z3_checks": {
+    "initialization": "unsat",
+    "all_LL_RR_LR_RL_double_steps": "unsat",
+    "terminal_zig": "unsat",
+    "A_cost_at_exit": "unsat",
+    "B_double_cost_at_exit": "unsat"
+  },
+  "scope": "Exact counter-transition abstraction of the original splay loop. Physical rotation and target-depth semantics must also be checked; this is not a potential-credit or Universal CD proof."
+}

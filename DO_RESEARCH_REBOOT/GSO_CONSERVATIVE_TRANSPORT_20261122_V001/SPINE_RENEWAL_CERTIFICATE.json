@@ -1,0 +1,19 @@
+{
+  "status": "PROVED_RESTRICTED_PHYSICAL_STREAM",
+  "queries": [
+    "funded_unit_guard",
+    "target_accumulates_one",
+    "full_target_remains_full",
+    "persistent_spine_keeps_one_after_warmup",
+    "input_left_and_other_carry_may_be_zero"
+  ],
+  "quantifiers": "Every real H>=1, arbitrary initial target balance in[0,H], arbitrary other nonnegative carry/retiring inputs, two fresh distinct old spine banks each>=1.",
+  "rule": "Target first, second-middle persistent root second; other roles afterward.",
+  "initialization": "No target credit is assumed. Each funded step raises it by at least one until cap H; ceil(H) steps suffice.",
+  "renewal": "Once the target bank is full, every finalized persistent-spine bank receives at least one credit. The target stays full. The same lower spine profile can therefore be iterated at arbitrarily many certified coarsening scales.",
+  "physical_binding": "Exact LL/RR six-role windows from the original full H comb recurrence; owners must be distinct, fresh banks must enter with>=1, and nonreset interleavings must not invalidate those inputs.",
+  "arbitrary_source_gap": "Derive and maintain the fresh-spine entry lower bound under every legal original predecessor, including cross rotations, overlapping footprints, and restoration. This is not proved or assumed.",
+  "global_budget_and_seam": "The already proved9H A budget and monotone greatest-cyclic-balance construction apply to the selected physical-role policy.",
+  "unrestricted_root_cost_obligations_deleted": 0,
+  "universal_CD": "OPEN"
+}

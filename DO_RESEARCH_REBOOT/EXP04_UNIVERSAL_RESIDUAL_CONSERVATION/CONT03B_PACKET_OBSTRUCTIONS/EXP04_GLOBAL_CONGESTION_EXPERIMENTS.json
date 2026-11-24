@@ -1,0 +1,110 @@
+{
+  "actual_cyclic_KEEP_gap_resource_partition_load": 1,
+  "analytic_proofs": "PROOF_LEDGER.md P1-P3,N",
+  "counterexample_column_and_quota_donors": {
+    "A": 2715,
+    "actual_gap_steps_partition_verified": true,
+    "literal_overflow": [],
+    "maximum_actual_A_StepEv_gap_load": 2,
+    "original_gap_count": 3,
+    "selected_parent_allocations": [
+      {
+        "actual_A_StepEv": [
+          "A",
+          646,
+          1
+        ],
+        "original_gaps": [
+          [
+            646,
+            [
+              72,
+              3
+            ],
+            [
+              80,
+              1
+            ]
+          ]
+        ],
+        "original_parent": [
+          646,
+          3
+        ]
+      },
+      {
+        "actual_A_StepEv": [
+          "A",
+          653,
+          1
+        ],
+        "original_gaps": [
+          [
+            653,
+            [
+              68,
+              6
+            ],
+            [
+              646,
+              3
+            ]
+          ],
+          [
+            653,
+            [
+              646,
+              3
+            ],
+            [
+              649,
+              3
+            ]
+          ]
+        ],
+        "original_parent": [
+          653,
+          4
+        ]
+      }
+    ],
+    "source": "C3B_d9_x120_A118",
+    "whole_column_154_payment": {
+      "actual_A_gap_StepEv": [
+        [
+          "A",
+          646,
+          1
+        ],
+        [
+          "A",
+          653,
+          1
+        ]
+      ],
+      "all_original_C_gaps_paid": 3,
+      "global_proved_budget": "3A for the whole fixed-key column, not per epoch",
+      "maximum_load_in_this_source": 2
+    },
+    "whole_width_le_A_packet_gap_count": 3,
+    "width_by_KEEP": [
+      {
+        "actual_A_gap_steps": 1,
+        "distinct_original_parents": 1,
+        "h": 646
+      },
+      {
+        "actual_A_gap_steps": 1,
+        "distinct_original_parents": 1,
+        "h": 653
+      }
+    ]
+  },
+  "fixed_column_gap_load_per_actual_A_StepEv": 3,
+  "fixed_column_parent_per_KEEP_capacity": 1,
+  "new_missing_bound": "sum_h(b_h(D)-2A(G_h))_+ <= K0 A, source-uniform; OPEN",
+  "quota_gap_load_per_actual_A_StepEv": 6,
+  "quota_parent_load_per_actual_A_StepEv": 2,
+  "same_coefficient_new_Q_interface": "47+48 C_seq+102 C_DF plus literal overflow",
+  "source_uniform_packet_fit_or_column_count_assumed": false
+}

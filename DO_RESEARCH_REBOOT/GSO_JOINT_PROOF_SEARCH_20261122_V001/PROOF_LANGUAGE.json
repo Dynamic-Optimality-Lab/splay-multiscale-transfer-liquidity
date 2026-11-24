@@ -1,0 +1,444 @@
+{
+  "language": "original-splay-marker-and-affine-ledger.v1",
+  "rotation_schemas": [
+    {
+      "case": "ZIG_L",
+      "before": [
+        "node",
+        "p",
+        true,
+        [
+          "node",
+          "x",
+          false,
+          [
+            "hole",
+            "A"
+          ],
+          [
+            "hole",
+            "B"
+          ]
+        ],
+        [
+          "hole",
+          "C"
+        ]
+      ],
+      "rotations": [
+        [
+          "",
+          "right"
+        ]
+      ],
+      "after": [
+        "node",
+        "x",
+        false,
+        [
+          "hole",
+          "A"
+        ],
+        [
+          "node",
+          "p",
+          true,
+          [
+            "hole",
+            "B"
+          ],
+          [
+            "hole",
+            "C"
+          ]
+        ]
+      ],
+      "consumed_path_frames": 1,
+      "original_B_double_cost": 0,
+      "old_root_post_depth": 1,
+      "holes": "Each hole is any marker-free physical BST in its original inorder interval, including empty."
+    },
+    {
+      "case": "ZIG_R",
+      "before": [
+        "node",
+        "p",
+        true,
+        [
+          "hole",
+          "A"
+        ],
+        [
+          "node",
+          "x",
+          false,
+          [
+            "hole",
+            "B"
+          ],
+          [
+            "hole",
+            "C"
+          ]
+        ]
+      ],
+      "rotations": [
+        [
+          "",
+          "left"
+        ]
+      ],
+      "after": [
+        "node",
+        "x",
+        false,
+        [
+          "node",
+          "p",
+          true,
+          [
+            "hole",
+            "A"
+          ],
+          [
+            "hole",
+            "B"
+          ]
+        ],
+        [
+          "hole",
+          "C"
+        ]
+      ],
+      "consumed_path_frames": 1,
+      "original_B_double_cost": 0,
+      "old_root_post_depth": 1,
+      "holes": "Each hole is any marker-free physical BST in its original inorder interval, including empty."
+    },
+    {
+      "case": "LL",
+      "before": [
+        "node",
+        "g",
+        true,
+        [
+          "node",
+          "p",
+          false,
+          [
+            "node",
+            "x",
+            false,
+            [
+              "hole",
+              "A"
+            ],
+            [
+              "hole",
+              "B"
+            ]
+          ],
+          [
+            "hole",
+            "C"
+          ]
+        ],
+        [
+          "hole",
+          "D"
+        ]
+      ],
+      "rotations": [
+        [
+          "",
+          "right"
+        ],
+        [
+          "",
+          "right"
+        ]
+      ],
+      "after": [
+        "node",
+        "x",
+        false,
+        [
+          "hole",
+          "A"
+        ],
+        [
+          "node",
+          "p",
+          false,
+          [
+            "hole",
+            "B"
+          ],
+          [
+            "node",
+            "g",
+            true,
+            [
+              "hole",
+              "C"
+            ],
+            [
+              "hole",
+              "D"
+            ]
+          ]
+        ]
+      ],
+      "consumed_path_frames": 2,
+      "original_B_double_cost": 1,
+      "old_root_post_depth": 2,
+      "holes": "Each hole is any marker-free physical BST in its original inorder interval, including empty."
+    },
+    {
+      "case": "RR",
+      "before": [
+        "node",
+        "g",
+        true,
+        [
+          "hole",
+          "A"
+        ],
+        [
+          "node",
+          "p",
+          false,
+          [
+            "hole",
+            "B"
+          ],
+          [
+            "node",
+            "x",
+            false,
+            [
+              "hole",
+              "C"
+            ],
+            [
+              "hole",
+              "D"
+            ]
+          ]
+        ]
+      ],
+      "rotations": [
+        [
+          "",
+          "left"
+        ],
+        [
+          "",
+          "left"
+        ]
+      ],
+      "after": [
+        "node",
+        "x",
+        false,
+        [
+          "node",
+          "p",
+          false,
+          [
+            "node",
+            "g",
+            true,
+            [
+              "hole",
+              "A"
+            ],
+            [
+              "hole",
+              "B"
+            ]
+          ],
+          [
+            "hole",
+            "C"
+          ]
+        ],
+        [
+          "hole",
+          "D"
+        ]
+      ],
+      "consumed_path_frames": 2,
+      "original_B_double_cost": 1,
+      "old_root_post_depth": 2,
+      "holes": "Each hole is any marker-free physical BST in its original inorder interval, including empty."
+    },
+    {
+      "case": "LR",
+      "before": [
+        "node",
+        "g",
+        true,
+        [
+          "node",
+          "p",
+          false,
+          [
+            "hole",
+            "A"
+          ],
+          [
+            "node",
+            "x",
+            false,
+            [
+              "hole",
+              "B"
+            ],
+            [
+              "hole",
+              "C"
+            ]
+          ]
+        ],
+        [
+          "hole",
+          "D"
+        ]
+      ],
+      "rotations": [
+        [
+          "L",
+          "left"
+        ],
+        [
+          "",
+          "right"
+        ]
+      ],
+      "after": [
+        "node",
+        "x",
+        false,
+        [
+          "node",
+          "p",
+          false,
+          [
+            "hole",
+            "A"
+          ],
+          [
+            "hole",
+            "B"
+          ]
+        ],
+        [
+          "node",
+          "g",
+          true,
+          [
+            "hole",
+            "C"
+          ],
+          [
+            "hole",
+            "D"
+          ]
+        ]
+      ],
+      "consumed_path_frames": 2,
+      "original_B_double_cost": 1,
+      "old_root_post_depth": 1,
+      "holes": "Each hole is any marker-free physical BST in its original inorder interval, including empty."
+    },
+    {
+      "case": "RL",
+      "before": [
+        "node",
+        "g",
+        true,
+        [
+          "hole",
+          "A"
+        ],
+        [
+          "node",
+          "p",
+          false,
+          [
+            "node",
+            "x",
+            false,
+            [
+              "hole",
+              "B"
+            ],
+            [
+              "hole",
+              "C"
+            ]
+          ],
+          [
+            "hole",
+            "D"
+          ]
+        ]
+      ],
+      "rotations": [
+        [
+          "R",
+          "right"
+        ],
+        [
+          "",
+          "left"
+        ]
+      ],
+      "after": [
+        "node",
+        "x",
+        false,
+        [
+          "node",
+          "g",
+          true,
+          [
+            "hole",
+            "A"
+          ],
+          [
+            "hole",
+            "B"
+          ]
+        ],
+        [
+          "node",
+          "p",
+          false,
+          [
+            "hole",
+            "C"
+          ],
+          [
+            "hole",
+            "D"
+          ]
+        ]
+      ],
+      "consumed_path_frames": 2,
+      "original_B_double_cost": 1,
+      "old_root_post_depth": 1,
+      "holes": "Each hole is any marker-free physical BST in its original inorder interval, including empty."
+    }
+  ],
+  "frame_induction": {
+    "initial": "If original depth is zero the old root is current root. Otherwise the old root is the topmost unconsumed frame and absent from all hanging subtrees and the current subtree.",
+    "nonterminal": "With at least3 frames, consume the bottom2 by an unmarked LL/RR/LR/RL rewrite. At least1 outer frame remains; its marked original root is unchanged.",
+    "terminal": "With2 frames use one of the four marked double schemas. With1 frame use one of the two marked zig schemas.",
+    "ranking": "The nonnegative unconsumed path length decreases by2 or1. No bound on initial depth or on hanging-subtree size is assumed.",
+    "coverage": "Remaining depth is0,1,2 or>=3; two branch directions enumerate exactly LL,RR,LR,RL."
+  },
+  "scope_control": "At most two distinct original B targets, all physical keys and arbitrary A operations retained. Cyclic entry is derived, not assumed.",
+  "scope_unrestricted": "Any original B target, including a third target distinct from both stored roots. This branch may not be excluded."
+}

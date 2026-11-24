@@ -1,0 +1,11 @@
+# PC-2 predictions, before constructing new complete sources
+
+Freeze PC-1's exact minimum-separator/domain/first-hit explanation. The first experiments preserve initial lower B frames and alter only specified physical inputs. Recompute all original predicates and native R_*; do not carry old IDs across changed sources.
+
+1. Reorder the future g tour by increasing blocks of four, descending inside each block. This shortens the immediate decreasing records while preserving each Ky enclosure triple's largest selected singleton as its first hit. Hypothesis: the records system may fail, but earliest-feasible may still recover a long subsequence during the measured return. Test rather than assume either outcome.
+2. Insert an outside KEEP to p_s=b+1 between creator Kb and consumer Kx. It is outside every relevant J=[g,x]. Hypothesis: the intact-component theorem preserves matching when both ends remain retained, despite changed global B ancestry. Current incoming A cost is still1 after the root walk over distance2.
+3. Insert a KEEP to the global minimum, or an inside KEEP to g_s. The former can split a window and activate a new opening; the latter can destroy original first-hit eligibility for many outputs at once. Neither is assumed to produce unpaid U/R6 consumers.
+4. Add one new smaller guard key and force the return to end in the exact two-zig minimum/interior-root corner. This removes the old global-minimum separator. The records opening at that interior root has physical domain2 and may skip the whole body. Earliest-feasible is separately checked.
+5. Combine the smaller guard with extra upper support keys and/or the reordered future tour. This changes the global earliest-feasible length threshold without changing the old internal kernel. One shared change may affect many parents. No constant disruption load is assumed.
+
+Each new source has an explicit B word plus actual coerce return; A executes measured split-vine root walks, so full original U blindness can be tested and the inherited Lambda0/raw<=3A theorem already supplies a positive alternative hybrid payment. These first tests therefore target disappearance of F and multiplicity, not a false claim of post-hybrid survival. A later attempt beyond that source class must explicitly escape the raw certificate too.

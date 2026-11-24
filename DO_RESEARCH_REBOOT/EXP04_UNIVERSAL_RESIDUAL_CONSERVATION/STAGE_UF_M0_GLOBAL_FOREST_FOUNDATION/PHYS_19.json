@@ -1,0 +1,558 @@
+{
+  "boundaries": [
+    {
+      "A_path": [
+        1,
+        3,
+        5
+      ],
+      "B_path": [
+        1,
+        3,
+        5
+      ],
+      "a": 1,
+      "end_time": 4,
+      "post_A_state": 1,
+      "post_A_time": 2,
+      "post_B_state": 1,
+      "pre_A_state": 0,
+      "pre_B_state": 0,
+      "q": 1,
+      "start_time": 0,
+      "t": 1,
+      "tag": "K",
+      "x": 5
+    },
+    {
+      "A_path": [
+        5,
+        3,
+        1
+      ],
+      "B_path": [
+        5,
+        3,
+        1
+      ],
+      "a": 1,
+      "end_time": 8,
+      "post_A_state": 0,
+      "post_A_time": 6,
+      "post_B_state": 0,
+      "pre_A_state": 1,
+      "pre_B_state": 1,
+      "q": 1,
+      "start_time": 4,
+      "t": 2,
+      "tag": "K",
+      "x": 1
+    }
+  ],
+  "doubles": [
+    {
+      "F": 21,
+      "J": 1,
+      "P_output": 5,
+      "case": "RR",
+      "events": [
+        3,
+        4
+      ],
+      "g": 1,
+      "id": [
+        1,
+        1
+      ],
+      "p": 3,
+      "parent": [
+        1,
+        1
+      ],
+      "physical_J_interval": [
+        1,
+        2
+      ],
+      "physical_P_interval": [
+        1,
+        4
+      ],
+      "physical_frame_interval": [
+        1,
+        7
+      ],
+      "post_step_state": 1,
+      "pre_step_state": 0,
+      "signs": [
+        -1,
+        -1
+      ],
+      "target": 5
+    },
+    {
+      "F": 21,
+      "J": 16,
+      "P_output": 20,
+      "case": "LL",
+      "events": [
+        7,
+        8
+      ],
+      "g": 5,
+      "id": [
+        2,
+        1
+      ],
+      "p": 3,
+      "parent": [
+        2,
+        1
+      ],
+      "physical_J_interval": [
+        4,
+        7
+      ],
+      "physical_P_interval": [
+        2,
+        7
+      ],
+      "physical_frame_interval": [
+        1,
+        7
+      ],
+      "post_step_state": 0,
+      "pre_step_state": 1,
+      "signs": [
+        -1,
+        -1
+      ],
+      "target": 1
+    }
+  ],
+  "events": [
+    {
+      "actor": "A",
+      "added": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      "case": "RR",
+      "created": [
+        1
+      ],
+      "deleted": [
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          3,
+          2,
+          0
+        ]
+      ],
+      "demoted_label": 1,
+      "external": null,
+      "frame": 21,
+      "id": [
+        "A",
+        1,
+        1,
+        0
+      ],
+      "lost": [
+        20
+      ],
+      "middle": 2,
+      "pivot": 1,
+      "promoted": 3,
+      "side": 1,
+      "sign": 1,
+      "target": 5,
+      "time": 1
+    },
+    {
+      "actor": "A",
+      "added": [
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "case": "RR",
+      "created": [
+        5
+      ],
+      "deleted": [
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          5,
+          4,
+          0
+        ]
+      ],
+      "demoted_label": 5,
+      "external": null,
+      "frame": 21,
+      "id": [
+        "A",
+        1,
+        1,
+        1
+      ],
+      "lost": [
+        16
+      ],
+      "middle": 4,
+      "pivot": 3,
+      "promoted": 5,
+      "side": 1,
+      "sign": 1,
+      "target": 5,
+      "time": 2
+    },
+    {
+      "actor": "B",
+      "added": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      "case": "RR",
+      "created": [
+        1
+      ],
+      "deleted": [
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          3,
+          2,
+          0
+        ]
+      ],
+      "demoted_label": 1,
+      "external": null,
+      "frame": 21,
+      "id": [
+        "B",
+        1,
+        1,
+        0
+      ],
+      "lost": [
+        20
+      ],
+      "middle": 2,
+      "pivot": 1,
+      "promoted": 3,
+      "side": 1,
+      "sign": -1,
+      "target": 5,
+      "time": 3
+    },
+    {
+      "actor": "B",
+      "added": [
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "case": "RR",
+      "created": [
+        5
+      ],
+      "deleted": [
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          5,
+          4,
+          0
+        ]
+      ],
+      "demoted_label": 5,
+      "external": null,
+      "frame": 21,
+      "id": [
+        "B",
+        1,
+        1,
+        1
+      ],
+      "lost": [
+        16
+      ],
+      "middle": 4,
+      "pivot": 3,
+      "promoted": 5,
+      "side": 1,
+      "sign": -1,
+      "target": 5,
+      "time": 4
+    },
+    {
+      "actor": "A",
+      "added": [
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          5,
+          4,
+          0
+        ]
+      ],
+      "case": "LL",
+      "created": [
+        16
+      ],
+      "deleted": [
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "demoted_label": 16,
+      "external": null,
+      "frame": 21,
+      "id": [
+        "A",
+        2,
+        1,
+        0
+      ],
+      "lost": [
+        5
+      ],
+      "middle": 4,
+      "pivot": 5,
+      "promoted": 3,
+      "side": 0,
+      "sign": 1,
+      "target": 1,
+      "time": 5
+    },
+    {
+      "actor": "A",
+      "added": [
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          3,
+          2,
+          0
+        ]
+      ],
+      "case": "LL",
+      "created": [
+        20
+      ],
+      "deleted": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      "demoted_label": 20,
+      "external": null,
+      "frame": 21,
+      "id": [
+        "A",
+        2,
+        1,
+        1
+      ],
+      "lost": [
+        1
+      ],
+      "middle": 2,
+      "pivot": 3,
+      "promoted": 1,
+      "side": 0,
+      "sign": 1,
+      "target": 1,
+      "time": 6
+    },
+    {
+      "actor": "B",
+      "added": [
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          5,
+          4,
+          0
+        ]
+      ],
+      "case": "LL",
+      "created": [
+        16
+      ],
+      "deleted": [
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          5,
+          3,
+          0
+        ]
+      ],
+      "demoted_label": 16,
+      "external": null,
+      "frame": 21,
+      "id": [
+        "B",
+        2,
+        1,
+        0
+      ],
+      "lost": [
+        5
+      ],
+      "middle": 4,
+      "pivot": 5,
+      "promoted": 3,
+      "side": 0,
+      "sign": -1,
+      "target": 1,
+      "time": 7
+    },
+    {
+      "actor": "B",
+      "added": [
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          3,
+          2,
+          0
+        ]
+      ],
+      "case": "LL",
+      "created": [
+        20
+      ],
+      "deleted": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      "demoted_label": 20,
+      "external": null,
+      "frame": 21,
+      "id": [
+        "B",
+        2,
+        1,
+        1
+      ],
+      "lost": [
+        1
+      ],
+      "middle": 2,
+      "pivot": 3,
+      "promoted": 1,
+      "side": 0,
+      "sign": -1,
+      "target": 1,
+      "time": 8
+    }
+  ],
+  "original_S": [
+    1,
+    3,
+    5
+  ],
+  "original_genuine_M": [
+    1,
+    5
+  ],
+  "source": "M0_sparse_S_rigid_private_hangers",
+  "source_sha256": "695c021911ab164563bb966bfccba86f911c0722d0e2b507506a9be71c40b1ea",
+  "state_pool": {
+    "all_S_carrier_SETS_checked_at_every_actor_boundary": true,
+    "all_complete_operation_states_checked_against_immutable_engine": true,
+    "bits_per_pointer": 4,
+    "code_definition": "root at bit2*n*b; child k left/right at bit(2*k-2)*b/(2*k-1)*b; zero is null; all codes hexadecimal",
+    "format": "exact complete labelled child-pointer codes",
+    "n": 7,
+    "original_event_sha256": "b75a7d15af06c56e5e200b9da853198edf55c5821bc5ace6a0088987c0001692",
+    "states": [
+      "100706400520030",
+      "500706300410020"
+    ]
+  }
+}

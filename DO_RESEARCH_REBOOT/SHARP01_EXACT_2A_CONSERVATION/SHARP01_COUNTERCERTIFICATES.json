@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "potential_refutations": [
+    {
+      "template": "edges",
+      "source": "H_2_1",
+      "gap_index": 2,
+      "d": 2,
+      "Phi_start": 8,
+      "Phi_end": 11,
+      "delta": -3,
+      "conclusion": "no nonnegative scalar multiple satisfies every original gap inequality"
+    },
+    {
+      "template": "ancestry",
+      "source": "W_5_1",
+      "gap_index": 41,
+      "d": 1,
+      "Phi_start": 307,
+      "Phi_end": 311,
+      "delta": -4,
+      "conclusion": "no nonnegative scalar multiple satisfies every original gap inequality"
+    },
+    {
+      "template": "SET",
+      "source": "W_5_1",
+      "gap_index": 25,
+      "d": 1,
+      "Phi_start": 65,
+      "Phi_end": 65,
+      "delta": 0,
+      "conclusion": "no nonnegative scalar multiple satisfies every original gap inequality"
+    },
+    {
+      "template": "depth_sum",
+      "source": "W_5_1",
+      "gap_index": 25,
+      "d": 1,
+      "Phi_start": 53,
+      "Phi_end": 97,
+      "delta": -44,
+      "conclusion": "no nonnegative scalar multiple satisfies every original gap inequality"
+    },
+    {
+      "template": "depth_max",
+      "source": "W_5_1",
+      "gap_index": 25,
+      "d": 1,
+      "Phi_start": 5,
+      "Phi_end": 6,
+      "delta": -1,
+      "conclusion": "no nonnegative scalar multiple satisfies every original gap inequality"
+    }
+  ],
+  "representative_cyclic_replays": [
+    {
+      "source": "H_6_1",
+      "cut_after_original_operation": 100,
+      "pass": true
+    },
+    {
+      "source": "W_5",
+      "cut_after_original_operation": 35,
+      "pass": true
+    },
+    {
+      "source": "W_star",
+      "cut_after_original_operation": 78,
+      "pass": true
+    },
+    {
+      "source": "G_4_1_L31_r1_z1",
+      "cut_after_original_operation": 96,
+      "pass": true
+    },
+    {
+      "source": "lifted_H_4_1_r2",
+      "cut_after_original_operation": 975,
+      "pass": true
+    },
+    {
+      "source": "I^3Z",
+      "cut_after_original_operation": 63,
+      "pass": true
+    },
+    {
+      "source": "warm_marked_5_1_r3",
+      "cut_after_original_operation": 63,
+      "pass": true
+    },
+    {
+      "source": "C15_owner_r7_mirrorFalse",
+      "cut_after_original_operation": 20,
+      "pass": true
+    },
+    {
+      "source": "C15_zero_r7_mirrorFalse",
+      "cut_after_original_operation": 21,
+      "pass": true
+    }
+  ],
+  "first_restoration_unit_Hall_certificate": {
+    "source": "C15_owner_r7_mirrorFalse",
+    "demand_gap": 13,
+    "demand": 4,
+    "eligible_unit_ids": [
+      [
+        "A",
+        18,
+        2,
+        0
+      ],
+      [
+        "A",
+        18,
+        2,
+        1
+      ],
+      [
+        "A",
+        21,
+        1,
+        1
+      ]
+    ],
+    "capacity": 3,
+    "deficiency": 1
+  },
+  "Hall_witness_primitive_ancestry_checks": 288,
+  "cpu_seconds": 1.75,
+  "level": "same agent; separate immutable geometric reconstruction, not formal/external certification"
+}

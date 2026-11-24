@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "implementation": "Independent immutable functional full BST replay; no producer imports; same-agent implementation independence, not external/formal certification.",
+  "cases": [
+    {
+      "file": "H_p1_q2.json.gz",
+      "p": 1,
+      "q": 2,
+      "reflected": false,
+      "n": 13,
+      "original_ops": 50,
+      "original_real_rotations": 105,
+      "A": 48,
+      "Q_B": 19,
+      "partition": {
+        "exposed": 5,
+        "nonneutral": 10,
+        "U_int": 4
+      },
+      "selected_original_U": 2,
+      "all_period_cover_neighbors": 12,
+      "exact_optimum_K": 1,
+      "complete_full_pair_closure": true,
+      "all_original_events": true,
+      "full_cyclic_Pi": true,
+      "actual_SET_sign_telescope": true,
+      "independent_integer_assignment_and_lower_bound": true
+    },
+    {
+      "file": "H_p3_q3.json.gz",
+      "p": 3,
+      "q": 3,
+      "reflected": false,
+      "n": 65,
+      "original_ops": 258,
+      "original_real_rotations": 585,
+      "A": 256,
+      "Q_B": 109,
+      "partition": {
+        "exposed": 31,
+        "nonneutral": 43,
+        "U_int": 35
+      },
+      "selected_original_U": 9,
+      "all_period_cover_neighbors": 24,
+      "exact_optimum_K": 1,
+      "complete_full_pair_closure": true,
+      "all_original_events": true,
+      "full_cyclic_Pi": true,
+      "actual_SET_sign_telescope": true,
+      "independent_integer_assignment_and_lower_bound": true
+    },
+    {
+      "file": "H_p5_q2.json.gz",
+      "p": 5,
+      "q": 2,
+      "reflected": false,
+      "n": 193,
+      "original_ops": 770,
+      "original_real_rotations": 1797,
+      "A": 768,
+      "Q_B": 352,
+      "partition": {
+        "exposed": 95,
+        "nonneutral": 129,
+        "U_int": 128
+      },
+      "selected_original_U": 10,
+      "all_period_cover_neighbors": 28,
+      "exact_optimum_K": 1,
+      "complete_full_pair_closure": true,
+      "all_original_events": true,
+      "full_cyclic_Pi": true,
+      "actual_SET_sign_telescope": true,
+      "independent_integer_assignment_and_lower_bound": true
+    },
+    {
+      "file": "H_p9_q9.json.gz",
+      "p": 9,
+      "q": 9,
+      "reflected": false,
+      "n": 10241,
+      "original_ops": 40962,
+      "original_real_rotations": 96385,
+      "A": 40960,
+      "Q_B": 18914,
+      "partition": {
+        "exposed": 5119,
+        "nonneutral": 6567,
+        "U_int": 7228
+      },
+      "selected_original_U": 81,
+      "all_period_cover_neighbors": 72,
+      "exact_optimum_K": 2,
+      "complete_full_pair_closure": true,
+      "all_original_events": true,
+      "full_cyclic_Pi": true,
+      "actual_SET_sign_telescope": true,
+      "independent_integer_assignment_and_lower_bound": true
+    },
+    {
+      "file": "H_p9_q9_mirror.json.gz",
+      "p": 9,
+      "q": 9,
+      "reflected": true,
+      "n": 10241,
+      "original_ops": 40962,
+      "original_real_rotations": 96385,
+      "A": 40960,
+      "Q_B": 18914,
+      "partition": {
+        "exposed": 5119,
+        "nonneutral": 6567,
+        "U_int": 7228
+      },
+      "selected_original_U": 81,
+      "all_period_cover_neighbors": 72,
+      "exact_optimum_K": 2,
+      "complete_full_pair_closure": true,
+      "all_original_events": true,
+      "full_cyclic_Pi": true,
+      "actual_SET_sign_telescope": true,
+      "independent_integer_assignment_and_lower_bound": true
+    }
+  ],
+  "total_ops": 83002,
+  "total_real_rotations": 195257,
+  "cpu_seconds": 3.90625
+}

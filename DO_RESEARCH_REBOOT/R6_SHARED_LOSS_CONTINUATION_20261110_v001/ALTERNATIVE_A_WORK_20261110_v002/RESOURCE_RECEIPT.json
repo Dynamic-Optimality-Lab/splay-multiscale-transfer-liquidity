@@ -1,0 +1,38 @@
+{
+  "continuations": [
+    {
+      "failure": null,
+      "new_source_replays": 8,
+      "operations": 3856,
+      "phase": "descending_first_hit",
+      "process_CPU_seconds": 7.53125
+    },
+    {
+      "failure": null,
+      "new_source_replays": 0,
+      "phase": "independent_saved_event_load_verification",
+      "process_CPU_seconds": 2.796875
+    },
+    {
+      "failure": null,
+      "new_source_replays": 3,
+      "phase": "prespecified_cross_chain_overlap",
+      "process_CPU_seconds": 4.421875
+    },
+    {
+      "failure": null,
+      "new_source_replays": 0,
+      "phase": "independent_saved_event_load_verification",
+      "process_CPU_seconds": 2.078125
+    }
+  ],
+  "cumulative_ceiling": 180.0,
+  "cumulative_recorded_CPU_seconds": 128.03125,
+  "failure": null,
+  "new_process_CPU_seconds": 1.953125,
+  "note": "Old receipts preserved; CPU includes saved-certificate decoding, physical event graph construction and exact combinatorial matching.",
+  "prior_recorded_CPU_seconds": 109.25,
+  "saved_original_R6_audited": 222,
+  "source_replays": 0,
+  "total_new_source_replays": 11
+}

@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "complete_original_sources": 3,
+  "operations": 9684,
+  "real_rotations": 22257,
+  "cases": [
+    {
+      "q": 1,
+      "keys": 33,
+      "fragment_A": 14,
+      "fragment_Q_B": 2,
+      "equal_endpoint_distance": 30,
+      "operations": 156,
+      "real_rotations": 315,
+      "A": 154,
+      "Q_B": 53,
+      "K_B": 69
+    },
+    {
+      "q": 17,
+      "keys": 289,
+      "fragment_A": 14,
+      "fragment_Q_B": 18,
+      "equal_endpoint_distance": 286,
+      "operations": 1180,
+      "real_rotations": 2683,
+      "A": 1178,
+      "Q_B": 501,
+      "K_B": 581
+    },
+    {
+      "q": 129,
+      "keys": 2081,
+      "fragment_A": 14,
+      "fragment_Q_B": 130,
+      "equal_endpoint_distance": 2078,
+      "operations": 8348,
+      "real_rotations": 19259,
+      "A": 8346,
+      "Q_B": 3637,
+      "K_B": 4165
+    }
+  ],
+  "geodesic_upper_paths_checked": 6,
+  "distance_lower_bound": "Universal one-rotation left-spine bound, also checked in MetricKernel.lean.",
+  "all_parameter_proof": "Uses exact old H3q recurrence plus counted A-only cap identities; finite witnesses are not extrapolated.",
+  "scope": "Arbitrary rotation-distance-only whole-operation potentials, unrestricted original source domain.",
+  "original_counterexample_to_Universal_CD": false,
+  "universal_CD": "OPEN"
+}

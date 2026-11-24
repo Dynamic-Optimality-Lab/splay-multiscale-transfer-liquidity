@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "independent_original_and_flow_verification": "INDEPENDENT_VERIFICATION.json",
+  "independent_extended_policy_and_holdout_verification": "EXTENDED_INDEPENDENT_VERIFICATION.json",
+  "packet_monitor_verification": "PACKET_VERIFICATION.json",
+  "exact_entry_counterexample": "ENTRY_INVARIANT_OBSTRUCTION.json",
+  "symbolic_local_proofs": [
+    "SYMBOLIC_RETENTION_CERTIFICATE.json",
+    "SPINE_RENEWAL_CERTIFICATE.json"
+  ],
+  "Lean": {
+    "passed": true,
+    "theorems": 7,
+    "receipt": "LEAN_VERIFICATION.json",
+    "no_sorry_or_new_global_axiom": true,
+    "full_original_BST_formalization": false
+  },
+  "python_AST": {
+    "passed": true,
+    "files": 15
+  },
+  "soundness_tests": {
+    "passed": true,
+    "count": 9,
+    "observed_seconds": 1.669,
+    "new_logic_after_tests": false
+  },
+  "beam_physical_simulator_regression": {
+    "passed": true,
+    "legal_operations": 100,
+    "independent_reference": "Pinned immutable original primitive."
+  },
+  "Notion": {
+    "passed": true,
+    "pages_verified": 3,
+    "old_content_preserved": true
+  },
+  "preservation": {
+    "passed": true,
+    "prior_artifacts": 5403
+  },
+  "visual_QA": {
+    "passed": true,
+    "figure": "conservative_spine_renewal_v2.png",
+    "scope": "Local examples only; global statement labeled OPEN."
+  },
+  "root_status": "OPEN"
+}

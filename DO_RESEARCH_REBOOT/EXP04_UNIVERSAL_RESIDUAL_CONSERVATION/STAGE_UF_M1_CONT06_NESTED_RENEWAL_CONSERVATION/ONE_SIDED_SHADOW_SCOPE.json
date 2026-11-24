@@ -1,0 +1,19 @@
+{
+  "fresh_pending": false,
+  "historical_input_complete_sources": 104,
+  "intervals": 227,
+  "scope": "Every stored PF example of the sealed C5 physical audit except explicitly skipped long expansions, plus every fresh canonical C_old PF edge; NOT all historical PF transitions.",
+  "skipped_optional_long_expansions": [
+    {
+      "reason": "Lossless large-source expansion remains sealed; optional shadow test not re-expanded.",
+      "source": "M1C2_guarded_padded_with_extreme_identity_T141843",
+      "stored_PF_examples": 24
+    },
+    {
+      "reason": "Lossless large-source expansion remains sealed; optional shadow test not re-expanded.",
+      "source": "M1C4_protected_half_s256_extreme_identity_T39954",
+      "stored_PF_examples": 5
+    }
+  ],
+  "tested_sources": 30
+}

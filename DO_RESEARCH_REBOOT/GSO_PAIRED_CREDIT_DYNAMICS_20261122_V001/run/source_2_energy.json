@@ -1,0 +1,117 @@
+{
+  "operation": 120,
+  "target": 1018,
+  "A_cost": 1,
+  "Q_B_cost": 7,
+  "A_phase_delta": {},
+  "whole_operation_delta_Phi_w_coefficients": {
+    "1023": 1,
+    "1025": 1
+  },
+  "B_steps": [
+    {
+      "id": [
+        "B",
+        120,
+        1
+      ],
+      "type": "RR",
+      "branch_sizes": {
+        "a": 7,
+        "b": 7,
+        "c": 7,
+        "d": 7
+      },
+      "delta_Phi_w_coefficients": {}
+    },
+    {
+      "id": [
+        "B",
+        120,
+        2
+      ],
+      "type": "RR",
+      "branch_sizes": {
+        "a": 7,
+        "b": 23,
+        "c": 23,
+        "d": 7
+      },
+      "delta_Phi_w_coefficients": {}
+    },
+    {
+      "id": [
+        "B",
+        120,
+        3
+      ],
+      "type": "RR",
+      "branch_sizes": {
+        "a": 7,
+        "b": 55,
+        "c": 55,
+        "d": 7
+      },
+      "delta_Phi_w_coefficients": {}
+    },
+    {
+      "id": [
+        "B",
+        120,
+        4
+      ],
+      "type": "RR",
+      "branch_sizes": {
+        "a": 7,
+        "b": 119,
+        "c": 119,
+        "d": 7
+      },
+      "delta_Phi_w_coefficients": {}
+    },
+    {
+      "id": [
+        "B",
+        120,
+        5
+      ],
+      "type": "RR",
+      "branch_sizes": {
+        "a": 7,
+        "b": 247,
+        "c": 247,
+        "d": 7
+      },
+      "delta_Phi_w_coefficients": {}
+    },
+    {
+      "id": [
+        "B",
+        120,
+        6
+      ],
+      "type": "RR",
+      "branch_sizes": {
+        "a": 7,
+        "b": 503,
+        "c": 503,
+        "d": 7
+      },
+      "delta_Phi_w_coefficients": {}
+    },
+    {
+      "id": [
+        "B",
+        120,
+        7
+      ],
+      "type": "LR",
+      "branch_sizes": null,
+      "delta_Phi_w_coefficients": {
+        "1025": 1,
+        "1023": 1
+      }
+    }
+  ],
+  "meaning": "Phi_w=-sum of w(size) over full-physical B subtree intervals missing in A. Coefficients apply to every real weight function simultaneously."
+}

@@ -1,0 +1,30 @@
+{
+  "historical_complete_source": "GLOBAL_ACCOUNTING_SYNTHESIS_20261121_V001/F2_s2.json.gz",
+  "original_literal_gap": [
+    [
+      "D",
+      2
+    ],
+    [
+      "D",
+      1
+    ]
+  ],
+  "normalization": {
+    "kept": [],
+    "erased_loops": [
+      [
+        1,
+        2
+      ]
+    ],
+    "original_A_cost": 2,
+    "reduced_A_cost": 0,
+    "complete_A_state_preserved": true,
+    "kept_A_states_distinct": true,
+    "scope": "A single literal DELETE-only gap. Whole-source cyclic normalization uses a KEEP cut and unchanged physical boundary states."
+  },
+  "new_complete_source_materialized": false,
+  "root_scope_restriction": "None: explicit loop erasure preserves Q_B and does not increase A. This is a lossless normalization, not an assumption excluding difficult sources.",
+  "global_bound": "OPEN"
+}

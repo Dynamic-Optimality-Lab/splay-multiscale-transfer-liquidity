@@ -1,0 +1,13 @@
+{
+  "inherited_sequential_access": {
+    "theorem": "There is an absolute C_seq>=1 such that a full increasing sorted scan of an arbitrary r-node ordinary splay BST has B-double cost <=C_seq*r. Reflection covers decreasing order.",
+    "original_scope_anchor": "DO_RESEARCH_REBOOT/IAGS12_D5_BRANCH_RENEWAL_COST.md:152",
+    "primary_reference": "https://collaborate.princeton.edu/en/publications/sequential-access-in-splay-trees-takes-linear-time/",
+    "publication": "Robert E. Tarjan, Combinatorica 5(4), 367\u00e2\u20ac\u201c378, 1985; doi:10.1007/BF02579253",
+    "verification": "Inherited established classical theorem. Primary university publication abstract checked; full external proof and a numerical coefficient not newly audited.",
+    "normalized_numeric_constant": null,
+    "excluded_inference": "Levy\u00e2\u20ac\u201cTarjan 1907.06310v3 Appendix B's 7|T| statement concerns a postorder theorem, not this arbitrary-initial-tree sorted-scan normalization."
+  },
+  "fixed_layer_birth_law": "Already proved in prior H3q checkpoint; a self-contained fixed-cardinality first-hit-to-A proof is also in the new Notion manuscript.",
+  "other_preserved_interfaces": "No use of virtual A bits, owner vacancy, universal root-entry injection, UF residual identification or an unverified Dynamic Optimality reduction."
+}

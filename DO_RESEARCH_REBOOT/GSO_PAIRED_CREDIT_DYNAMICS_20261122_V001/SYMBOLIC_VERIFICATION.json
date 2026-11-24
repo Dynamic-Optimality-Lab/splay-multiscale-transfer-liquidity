@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "obligation": "initialization",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "joint_preservation",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "physical_support",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "nonnegative_padding",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "all_hanging_subtree_RR_size_alias",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "every_finite_signed_bounded_size_weight_family",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "every_nonnegative_size_weight_family",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "positive_unpaid_cost_must_use_earned_carry",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "supply_induction",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "demand_induction",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "closed_A_excursion_cannot_reduce_global_credit",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "all_q_exact_H_capacity_bounds",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    },
+    {
+      "obligation": "restoration_recharges_without_free_ancestry_credit",
+      "negation": "UNSAT",
+      "domain": "Unbounded integer variables, stated assumptions only."
+    }
+  ],
+  "learned_invariants_verified": true,
+  "parametric_source_bridge": "Original H3q j=2/3 comb, arbitrary rigid gaps, one current A zig, neutral RR aliases and final LR common children.",
+  "cardinality_grammar": "Phi_w=-sum_{I in full-X B labels minus A labels} w(|I|), arbitrary bounded signed w or arbitrary nonnegative w.",
+  "excluded": "Whole-original-operation cost certificates in this grammar for every finite constant.",
+  "persistent_global_banks_excluded": false,
+  "root_scope_restricted": false,
+  "new_unrestricted_root_cost_obligations_deleted": 0,
+  "universal_CD": "OPEN"
+}

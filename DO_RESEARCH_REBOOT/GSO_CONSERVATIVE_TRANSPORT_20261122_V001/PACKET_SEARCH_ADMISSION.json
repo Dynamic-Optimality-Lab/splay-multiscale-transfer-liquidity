@@ -1,0 +1,9 @@
+{
+  "before_execution": true,
+  "reason": "The exact entry conjecture has failed, so optimize the actual packet-deficit objective instead of the discarded two-fresh-banks proxy. Keep the selected H=5 policy frozen.",
+  "teacher": "Bounded beam search over exact original paired-tree and bank states, seeded by complete-source H preparation/critical prefixes from a common right vine. Legal KEEP/DELETE successors only. The score favors increasing true packet deficit and depleted reachable physical banks. No synthetic tree state is supplied as a source.",
+  "limits": {"physical_supports": [65,129,257], "transition_evaluations_total": 120000, "beam_width": 12, "depth_per_support_max": 40, "wall_seconds": 180, "additional_complete_source_materializations_max": 1},
+  "scope_amendment": "The36-source audit remains fixed. At most one additional complete source may be materialized if a failing full-vector prefix is found. Its counted KEEP restoration closes both full trees. A no-hit search is finite diagnostic evidence only.",
+  "success": "A full-vector failed guard refutes the frozen H=5 payment candidate on every cyclic initial balance for the resulting complete source, by monotonicity. Independently replay every original event and compare arbitrary conservative-flow feasibility at that same capacity.",
+  "failure_control": "Do not raise the capacity or change the role rule after a counterexample. No finite no-hit result establishes the universal packet bound."
+}

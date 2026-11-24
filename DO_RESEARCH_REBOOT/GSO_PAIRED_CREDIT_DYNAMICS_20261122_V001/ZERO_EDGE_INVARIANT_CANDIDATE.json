@@ -1,0 +1,10 @@
+{
+  "before_test": true,
+  "principal_rule_unchanged": "Frozen selected H=5 physical role bank, greatest cyclic clipped balances; no new donor arcs or capacity changes.",
+  "candidate": "At every completed original A/B StepEv and K-reset boundary, the directed physical A and B edge forests induced by keys whose owner bank is zero are equal.",
+  "full_domain": "Arbitrary admissible original paired-closed sources, all physical vertices retained. No target/support/ancestry restriction.",
+  "reason_to_test": "Initial common physical trees agree. Added A resets make every changed edge endpoint positive, so a valid zero-edge relation has an immediate A-preservation proof. If the relation held during B with A rooted at x, a failing all-zero footprint would contain the zero-zero B parent edge into x, impossible in A. Thus a full inductive proof would imply the universal funded guard for the selected bank and a finite absolute CD coefficient.",
+  "missing_case": "B successors may retire or pool stock into zero banks; their new zero-zero physical edges must be checked, not assumed common.",
+  "bounded_test": "Search the four already materialized complete original sources. Preserve any first literal counterexample together with its full original witness and independent event verification. No fifth original source is constructed.",
+  "acceptance": "A no-hit result is not a proof. A counterexample refutes only this candidate invariant, even if the physical bank still funds the event. Do not silently restrict the edge predicate to fit it."
+}

@@ -1,0 +1,6 @@
+{
+  "failure": "The first companion run compared an in-memory tuple-valued carrier frame directly with an already serialized JSON list. It stopped at the first source with nonempty U, after six empty-U companions.",
+  "diagnosis": "Original A, Q and U counts agreed exactly; all literal U records agree after JSON normalization. No mathematical or source discrepancy was found.",
+  "correction": "Normalize the in-memory U records through JSON before comparing. Retain and verify the six already written companions and continue without overwriting them.",
+  "acceptance": "The failed preparation is not acceptance evidence; require the independent complete original-event verifier to pass on every final companion."
+}

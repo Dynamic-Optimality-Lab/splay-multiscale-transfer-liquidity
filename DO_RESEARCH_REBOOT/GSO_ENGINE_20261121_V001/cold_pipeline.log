@@ -1,0 +1,55 @@
+{"support": 1, "trees": 1, "reachable_pairs": 1, "edges": 2, "exact_finite_C": "0", "status": "FINITE_EXACT_OPTIMUM", "build_cpu_seconds": 0.0}
+{"support": 2, "trees": 2, "reachable_pairs": 4, "edges": 16, "exact_finite_C": "0", "status": "FINITE_EXACT_OPTIMUM", "build_cpu_seconds": 0.0}
+{"support": 3, "trees": 5, "reachable_pairs": 19, "edges": 114, "exact_finite_C": "1", "status": "FINITE_EXACT_OPTIMUM", "build_cpu_seconds": 0.0}
+{"support": 4, "trees": 14, "reachable_pairs": 196, "edges": 1568, "exact_finite_C": "1", "status": "FINITE_EXACT_OPTIMUM", "build_cpu_seconds": 0.0}
+{"support": 5, "trees": 42, "reachable_pairs": 1764, "edges": 17640, "exact_finite_C": "3/2", "status": "FINITE_EXACT_OPTIMUM", "build_cpu_seconds": 0.03125}
+{"support": 6, "trees": 132, "reachable_pairs": 17424, "edges": 209088, "exact_finite_C": "3/2", "status": "FINITE_EXACT_OPTIMUM", "build_cpu_seconds": 0.3125}
+H_1_5 25 45
+H_2_5 49 49
+H_3_5 97 52
+H_4_5 193 54
+H_5_5 385 56
+H_6_5 769 57
+H_7_5 1537 58
+H_8_5 3073 59
+H_9_5 6145 60
+H_10_5 12289 61
+H_3_1 33 49
+H_3_17 289 54
+H_3_65 1057 54
+H_3_257 4129 54
+H_5_17 1153 56
+H_6_17 2305 57
+compressed_H3_q1 33 53
+compressed_H3_q5 97 60
+compressed_H3_q17 289 62
+compressed_H3_q65 1057 63
+F1_s2 6 15
+F2_s2 6 13
+F3_s2 6 13
+F1_s5 34 71
+F2_s5 34 69
+F3_s5 34 69
+F4_s2 7 17
+F4_s5 63 157
+W_2_1 17 53
+W_star 33 101
+G_4_1_L31_r4_z1 65 107
+nested_DH_d5_tail63_helpers1 128 107
+sparseH_p5_hits5-3-7_holeNone 257 108
+I_p1_q1_d2_m2_mirror_helpers 45 107
+J_p3_q1_d1_m2_altered_restore 69 110
+H3_rho2_Y1_copies2 93 113
+H5_rho4_Y1_copies2 381 113
+frontier3 0 13 0 ['graph', 1, 0]
+frontier3_roots_guarded 0 13 0 ['graph', 1, 0]
+{'symbolic_frontier_templates': 7, 'counter_induction': 'VERIFIED'}
+{'parametric_sources': 28, 'exact_terminal_contradiction': '0<=-1', 'dual': ['-2', '0', '-1', '-2', '1', '0', '-16']}
+verified graph 1 1 2 0
+verified graph 2 4 16 0
+verified graph 3 19 114 1
+verified graph 4 196 1568 1
+verified graph 5 1764 17640 3/2
+verified graph 6 17424 209088 3/2
+{"passed": true, "source_witness_files": 88, "distinct_source_names": 83, "all_graph_edges": 228428, "source_original_operations": 219241, "source_period_rotations": 650981, "selected_source_rows": 2521, "exact_dual": {"exact_dual_arithmetic": true, "nonnegative_inequality_weights": true, "contradiction": "0<=-1", "scope": "Universal row provenance is the separate symbolic state identity and explicit original-source spine proof, not finite interpolation."}, "cpu_seconds": 10.671875, "independence": "Immutable full tree rotations, insertion-permutation BST enumeration, literal marked-frontier ancestor closure and independent SCC implementation. Imports no current engine producer. Same-agent code independence, not peer review or a formal BST-source proof."}
+{"engine": "WORKING_VERSION_1", "root": "OPEN", "stages": 10}

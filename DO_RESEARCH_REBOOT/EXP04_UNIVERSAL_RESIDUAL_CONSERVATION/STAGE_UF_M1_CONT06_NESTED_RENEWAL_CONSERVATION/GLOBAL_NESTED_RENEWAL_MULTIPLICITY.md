@@ -1,0 +1,13 @@
+# Global load and cyclic reuse
+
+The canonical PF/PM split partitions literal gap fibers, without changing d_h(v) in1..3. A maximal PF path has one old g, but paths at different keys can overlap in operations, full frame domains and actual A ancestors. No global laminarity is proved. An A StepEv can have two real bits; virtual companions and prefix work have zero capacity.
+
+The proved PF path-opening bound is at most R_A plus the number of canonical PM edges, hence at most R_A+|V_P| using C5's injection. This counts openings, not paid paths. In a no-reset cyclic column, at least one PM edge is required; its preceding-lap copy is the same original event, not a new resource. Cutting that edge makes a finite lifted PF path. Epoch boundaries already cut columns with real resets.
+
+The two-sided shadow family explicitly counts every repeated domain in M_PF=sum_b,side |J_b^side|. The matching map has at most three ORIGINAL gap slots per shadow double. Across different shadows there is no asserted physical double or A-donor injection; the sum charges each copy. Thus |S_PF|<=3 C_seq M_PF is a valid unpriced envelope and makes its missing initialization/overlap budget visible.
+
+No new map from all actual PF demands to actual A donors is claimed. In particular a path's common epoch donor is not reassigned at every vertex. The arbitrary-height qualified chains and the pinned577 shared epoch forbid deriving unit repeat capacity merely from epoch membership. EXP-01's W Hall witnesses still refute the earlier unit/load-two root-entry rules. The new geometric proof does not evade those witnesses by changing donor names; it leaves the entire cross-path A charge open.
+
+B ancestry may be destroyed and recreated arbitrarily away from the fixed g. In a PF segment, g itself has no positive B-descendant transfer; it only loses. Between segments, SS non-target promotions can restore a large component. The primitive size of a gained component is not a cost-one A payment. Signed ownership potentials return cyclically and price first uses but have zero repeat debit, as proved in C5. Repeated source words repeat actual measured work and new original IDs; a cyclic lift inside one source does neither.
+
+The first required load theorem would either bound the initialized nested-shadow domains using original physical A work, find a smaller fully covering comparison family with bounded total cost, or map actual hybrid-negative PF demands to real A events with an absolute aggregate load. Such a theorem must use all frozen exclusions; the exact local-price counterexample rules out assuming affordability per natural edge. No finite observed load is substituted for this missing proof.

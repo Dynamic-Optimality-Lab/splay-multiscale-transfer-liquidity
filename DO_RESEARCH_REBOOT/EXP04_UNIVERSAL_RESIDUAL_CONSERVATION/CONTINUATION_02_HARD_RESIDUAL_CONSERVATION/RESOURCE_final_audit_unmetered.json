@@ -1,0 +1,9 @@
+{
+  "stage": "first final complete-source verification",
+  "status": "all 18 physical and 5 grammar checks completed; atexit resource write failed",
+  "process_CPU_seconds": null,
+  "reason": "Windows path-length limit for RESOURCE_final_complete_original_source_and_grammar_verification.json",
+  "accounting": "This completed research pass consumed CPU that cannot be recovered exactly from the exited process. It is explicitly unmetered, not zero and not included in the measured subtotal. The shorter-stage rerun has a separate measured receipt.",
+  "result_artifacts": ["FINAL_COMPLETE_SOURCE_VERIFICATION.json", "RESTRICTED_GRAMMAR_VERIFICATION.json"],
+  "correction": "Shorten stage to final_source_audit; preserve this accounting gap."
+}

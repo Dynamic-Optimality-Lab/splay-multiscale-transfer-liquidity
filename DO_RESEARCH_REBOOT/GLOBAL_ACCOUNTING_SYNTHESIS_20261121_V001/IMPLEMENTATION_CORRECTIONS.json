@@ -1,0 +1,23 @@
+{
+  "source_model_or_theorem_change": false,
+  "corrections": [
+    {
+      "item": "Producer validation scope",
+      "before": "The first run applied the H_(p,5) restoration Mersenne identity Delta=p also to q=1,17,65 validation controls.",
+      "exact_obstruction": "Complete H_(3,1), original operation68, has Mersenne change2, not3. Its full witness is retained as diagnostic_H_3_1.json.gz.",
+      "after": "The Mersenne identity is tested and used only at its frozen theorem scope q=5. The cross-skew identity is independently checked at all selected p,q. The off-scope control assertion was removed; no source or potential definition changed.",
+      "first_attempt": "Stopped at the q=1 assertion. Its already completed witnesses were reused after source/row checks. First attempt CPU was not retained; its enforced bound was360 seconds. Resume CPU is separately reported."
+    },
+    {
+      "item": "Independent control support assertion",
+      "before": "The independent checker initially required every physical control key to be a KEEP target.",
+      "after": "The parameterized obstruction sources do have full KEEP support. Historical nested/private controls preserve their original smaller KEEP support. They are checked as complete full physical trees with nonempty KEEP support contained in the physical universe.",
+      "reason": "Private physical vertices are admissible and must not be erased or reclassified. The frozen new potential features were explicitly full-X from the start."
+    },
+    {
+      "item": "Canonical common diagonal",
+      "after": "For a historical source with no stored separate diagonal, the original equal initial trees and empty prefix are used as its common diagonal; unequal initial states still require an explicit reaching prefix/diagonal."
+    }
+  ],
+  "scope": "Routine implementation corrections are recorded explicitly. They neither generalize a failed law nor modify any archived theorem, source, eligibility predicate, cost or preservation manifest."
+}

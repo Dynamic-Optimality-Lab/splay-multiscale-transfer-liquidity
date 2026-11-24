@@ -1,0 +1,41 @@
+1 holes_p3_h4_z1-33_r1 R* {} paid 0 remaining 0 eq 3 lossload 0 undefined 0
+2 holes_p3_h4_z5_r1 R* {} paid 0 remaining 0 eq 4 lossload 0 undefined 0
+3 holes_p3_h7_z1-33_r1 R* {} paid 0 remaining 0 eq 7 lossload 0 undefined 0
+4 holes_p3_h7_z5_r1 R* {} paid 0 remaining 0 eq 7 lossload 0 undefined 0
+5 holes_p3_h11_z1-33_r1 R* {} paid 0 remaining 0 eq 11 lossload 0 undefined 0
+6 holes_p3_h11_z5_r1 R* {'O': 2} paid 0 remaining 2 eq 11 lossload 1 undefined 0
+7 holes_p3_h4-7_z1-33_r1 R* {} paid 0 remaining 0 eq 3 lossload 0 undefined 0
+8 holes_p3_h4-7_z5_r1 R* {} paid 0 remaining 0 eq 4 lossload 0 undefined 0
+9 holes_p3_h7-11-19_z1-33_r1 R* {} paid 0 remaining 0 eq 7 lossload 0 undefined 0
+10 holes_p3_h7-11-19_z5_r1 R* {'O': 2} paid 0 remaining 2 eq 7 lossload 1 undefined 0
+11 holes_p4_h4_z1-65_r1 R* {'G': 1} paid 0 remaining 1 eq 3 lossload 1 undefined 0
+12 holes_p4_h4_z5_r1 R* {'G': 1} paid 0 remaining 1 eq 4 lossload 1 undefined 0
+13 holes_p4_h7_z1-65_r1 R* {} paid 0 remaining 0 eq 7 lossload 0 undefined 0
+14 holes_p4_h7_z5_r1 R* {} paid 0 remaining 0 eq 7 lossload 0 undefined 0
+15 holes_p4_h11_z1-65_r1 R* {} paid 0 remaining 0 eq 11 lossload 0 undefined 0
+16 holes_p4_h11_z5_r1 R* {'O': 2} paid 0 remaining 2 eq 11 lossload 1 undefined 0
+17 holes_p4_h4-7_z1-65_r1 R* {'G': 1} paid 0 remaining 1 eq 3 lossload 1 undefined 0
+18 holes_p4_h4-7_z5_r1 R* {'G': 1} paid 0 remaining 1 eq 4 lossload 1 undefined 0
+19 holes_p4_h7-11-19_z1-65_r1 R* {} paid 0 remaining 0 eq 7 lossload 0 undefined 0
+20 holes_p4_h7-11-19_z5_r1 R* {'O': 4} paid 0 remaining 4 eq 7 lossload 1 undefined 0
+21 holes_p5_h4_z1-129_r1 R* {'O': 5, 'G': 2} paid 0 remaining 7 eq 3 lossload 2 undefined 0
+22 holes_p5_h4_z5_r1 R* {'O': 5, 'G': 2} paid 0 remaining 7 eq 4 lossload 2 undefined 0
+23 holes_p5_h7_z1-129_r1 R* {'G': 2, 'O': 5} paid 0 remaining 7 eq 7 lossload 2 undefined 0
+24 holes_p5_h7_z5_r1 R* {'O': 5, 'G': 2} paid 0 remaining 7 eq 7 lossload 2 undefined 0
+25 holes_p5_h11_z1-129_r1 R* {'O': 3} paid 0 remaining 3 eq 11 lossload 1 undefined 0
+26 holes_p5_h11_z5_r1 R* {'O': 6} paid 0 remaining 6 eq 11 lossload 1 undefined 0
+27 holes_p5_h4-7_z1-129_r1 R* {'O': 5, 'G': 2} paid 0 remaining 7 eq 3 lossload 2 undefined 0
+28 holes_p5_h4-7_z5_r1 R* {'O': 5, 'G': 2} paid 0 remaining 7 eq 4 lossload 2 undefined 0
+29 holes_p5_h7-11-19_z1-129_r1 R* {'G': 2, 'O': 3} paid 0 remaining 5 eq 7 lossload 1 undefined 0
+30 holes_p5_h7-11-19_z5_r1 R* {'O': 8, 'G': 2} paid 0 remaining 10 eq 7 lossload 2 undefined 0
+31 O_p3_q1_L2_hits5_c2_protected5_cut0 R* {} paid 0 remaining 0 eq 0 lossload 0 undefined 0
+32 O_p3_q1_L2_hits5_c2_protected5_cut261 R* {} paid 0 remaining 0 eq 0 lossload 0 undefined 0
+33 mixed_p3_Gcopies2_protected5_cut0 R* {} paid 0 remaining 0 eq 0 lossload 0 undefined 0
+34 mixed_p3_Gcopies2_protected5_cut130 R* {} paid 0 remaining 0 eq 0 lossload 0 undefined 0
+Traceback (most recent call last):
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\EXP04_UNIVERSAL_RESIDUAL_CONSERVATION\exp04_cycles.py", line 33, in <module>
+    r=Replay(s);events,c,old=original_residual(r);m=metrics(r,events)
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\EXP01_PHYSICAL_RESIDUAL_DISCOVERY\exp01_oracle.py", line 187, in __init__
+    assert self.closed, (source["name"], "not paired closed")
+           ^^^^^^^^^^^
+AssertionError: ('Xprobe_p3_L3_hitNone_boundary1_protected5_cut0', 'not paired closed')

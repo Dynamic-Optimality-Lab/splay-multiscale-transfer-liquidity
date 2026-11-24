@@ -1,0 +1,148 @@
+{
+  "status": "PROVED_GENERIC_PERIODIC_ROOT_BST_TRANSFER_USING_CITED_EXTERNAL_THEOREM_FOR_ITS_FACTOR",
+  "generic_hypothesis": "Splay cost <= f(n)*OPT + g(n), arbitrary initial splay tree, optimal initial reference tree, finite g(n).",
+  "root_BST_costs": "Reference uses exactly R_A+K_B per period; original B cost is R_B+K_B after omitting root repeats.",
+  "repetition": "For every integer t>=1, t*(R_B+K_B) <= f(n)*t*(R_A+K_B)+g(n). Divide by t and let t grow at fixed n.",
+  "conclusion": "Q_B <= f(n)*(R_A+K_B)/2 <= (3/2)*f(n)*A",
+  "external_primary": {
+    "url": "https://arxiv.org/html/2607.18498v1#S5",
+    "version": "v1, submitted20July2026",
+    "input": "Theorem1, with f(n)=O(log log n * log^2 log log n) and g(n)=O(n f(n)).",
+    "status": "Primary external theorem used, not independently reproved by this audit."
+  },
+  "all_source_corollary": "Q_B(W) = O(log log n * log^2 log log n)*A(W), with small n absorbed in the absolute constant.",
+  "limitation": "The factor depends on physical support n and is unbounded. This is not the requested universal finite constant; cyclic repetition does not remove a multiplicative support factor.",
+  "finite_reference_audits": [
+    {
+      "source": "optimum_n5",
+      "source_A": 4,
+      "Q_B": 6,
+      "K_B": 4,
+      "R_A": 6,
+      "R_B": 12,
+      "reference_cost": 10,
+      "B_root_BST_cost": 16
+    },
+    {
+      "source": "embedded_optimum5_two_rank_blocks",
+      "source_A": 4,
+      "Q_B": 6,
+      "K_B": 4,
+      "R_A": 6,
+      "R_B": 12,
+      "reference_cost": 10,
+      "B_root_BST_cost": 16
+    },
+    {
+      "source": "recurrent_noncommuting_n4_I1_3",
+      "source_A": 6,
+      "Q_B": 2,
+      "K_B": 4,
+      "R_A": 8,
+      "R_B": 8,
+      "reference_cost": 12,
+      "B_root_BST_cost": 12
+    },
+    {
+      "source": "reverse_guard3_N8",
+      "source_A": 20,
+      "Q_B": 0,
+      "K_B": 2,
+      "R_A": 20,
+      "R_B": 2,
+      "reference_cost": 22,
+      "B_root_BST_cost": 4
+    },
+    {
+      "source": "reverse_guard3_N32",
+      "source_A": 68,
+      "Q_B": 0,
+      "K_B": 2,
+      "R_A": 68,
+      "R_B": 2,
+      "reference_cost": 70,
+      "B_root_BST_cost": 4
+    },
+    {
+      "source": "reverse_guard3_N128",
+      "source_A": 260,
+      "Q_B": 0,
+      "K_B": 2,
+      "R_A": 260,
+      "R_B": 2,
+      "reference_cost": 262,
+      "B_root_BST_cost": 4
+    },
+    {
+      "source": "W_2_1",
+      "source_A": 65,
+      "Q_B": 24,
+      "K_B": 36,
+      "R_A": 84,
+      "R_B": 76,
+      "reference_cost": 120,
+      "B_root_BST_cost": 112
+    },
+    {
+      "source": "G_4_1_L31_r4_z1",
+      "source_A": 524,
+      "Q_B": 297,
+      "K_B": 258,
+      "R_A": 712,
+      "R_B": 784,
+      "reference_cost": 970,
+      "B_root_BST_cost": 1042
+    },
+    {
+      "source": "H3_rho2_Y1_copies2",
+      "source_A": 3960,
+      "Q_B": 1907,
+      "K_B": 1427,
+      "R_A": 5593,
+      "R_B": 4765,
+      "reference_cost": 7020,
+      "B_root_BST_cost": 6192
+    },
+    {
+      "source": "H_3_1",
+      "source_A": 128,
+      "Q_B": 53,
+      "K_B": 69,
+      "R_A": 128,
+      "R_B": 161,
+      "reference_cost": 197,
+      "B_root_BST_cost": 230
+    },
+    {
+      "source": "H_3_3",
+      "source_A": 256,
+      "Q_B": 109,
+      "K_B": 133,
+      "R_A": 256,
+      "R_B": 329,
+      "reference_cost": 389,
+      "B_root_BST_cost": 462
+    },
+    {
+      "source": "H_3_7",
+      "source_A": 512,
+      "Q_B": 221,
+      "K_B": 261,
+      "R_A": 512,
+      "R_B": 665,
+      "reference_cost": 773,
+      "B_root_BST_cost": 926
+    },
+    {
+      "source": "H_3_17",
+      "source_A": 1152,
+      "Q_B": 501,
+      "K_B": 581,
+      "R_A": 1152,
+      "R_B": 1505,
+      "reference_cost": 1733,
+      "B_root_BST_cost": 2086
+    }
+  ],
+  "unrestricted_constant_root": "OPEN"
+}

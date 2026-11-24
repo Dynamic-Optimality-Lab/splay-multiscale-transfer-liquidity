@@ -1,0 +1,959 @@
+{
+  "audit_date": "2026-11-20",
+  "task": "CD5/CD6, internal doubles and least-new-mathematics route assessment",
+  "scope": "Source/report semantic audit and publication-byte checks only; no original semantic experiments, source-engine runs, witness replays, solver/proof-assistant or transitive proof recompilation.",
+  "primary_read_count": 22,
+  "primary_source_records": [
+    {
+      "path": "DO_RESEARCH_REBOOT/CD5_BASE01/CD5_PROOF.md",
+      "sha256": "6380c55270c8c52505e2726e27a8fee734cac9812f39271b608cc282b34e88be",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/CD5_BASE01/DOMAIN_AUDIT.md",
+      "sha256": "db06f776bda5a2c093d954c94384176d5f336969378c3fc101eeb6e42afdf59e",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/CD5_BASE01/PROOF_AUDIT.md",
+      "sha256": "7bd8a529a26c19e7b5b65b7150c6114a48042358d23501b629b3d8084f092b91",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/CD5_BASE01/RESULT.md",
+      "sha256": "ba37e351e0ce082fb75d43f259193acdf168c10a8a6d7392b37a4ea1e3dacd5e",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CD6_THEOREM.md",
+      "sha256": "45ad72acb656ebec5b54f57715a71b4a37c04b67db00afc5894e084ba9702b1b",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/UNIFORM_R_TRANSFER.md",
+      "sha256": "0d60121dfd15db899c900e9bde73b0a9ca1354787f5682cbfe0070c69c8fa664",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/FINAL_VERDICT.md",
+      "sha256": "3f3b26059b9a8ab251572f088c92f9dad0279c06a5c42d30fe6f80a457f1387f",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/FULL_PROOF.md",
+      "sha256": "4b4a422fa81046012cb749a29cd86965faff9f5f88d0ce0c3fdf9f13a34357bb",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/INDEPENDENT_AUDIT.md",
+      "sha256": "7b12661d5d16a4cb69af0f4ea40879f47d3fa7fd7570a6af70dcfd625525b70a",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CORE_DOMAIN_EXHAUSTIVENESS.md",
+      "sha256": "62c97a5be95ae80dae682dfb15280f7e7731a20f2081a889156d83b8620ba9d9",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/GLOBAL_PHYSICAL_INJECTION.md",
+      "sha256": "888463828896074d5b934940cb4c9828e89ec1c281a9b03eab4ed0f8042ec21e",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/FROZEN_OWNER_COMPATIBILITY.md",
+      "sha256": "01e85fb8988445ac335a9547ba2f679f0adf1426cd836d113f0c10b80b62218d",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CLOSED_PERIOD_CORE_CONSTANCY.md",
+      "sha256": "fca0d40279d526357d1ad7a40330e79d23e4196f12ed9dac449574a37cc4a5c0",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/ABSOLUTE_PERIOD_ALIGNMENT.md",
+      "sha256": "2c2e3b80b59478d50bc4f5a7d3f3021e4bbf16c07a13316576237946f75fe41e",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP01.md",
+      "sha256": "4b26f5071b193f3fafcf1d79d57629d4c173057d584a5afcea81ecab58f0b056",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP02.md",
+      "sha256": "49024ecaf32e016dfe2c9cb6e86b62937af1344a7cd292f8f90e5baae9997553",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP03_GLOBAL_REDUCTION.md",
+      "sha256": "7e05903ef5683b2ec5befe4af676082e7235eb43d2135a1953f5555ddac6dfb0",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01.md",
+      "sha256": "2304e5c6f9f030bba07f593fd7d3cb35eac742b4220a848d64bcb44f48dd37d0",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02.md",
+      "sha256": "98d827fca54d74820f7bfb598fe7198ef2b694e9c553da7f168bc193b2cd99e6",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_GLOBAL_COUPLING.md",
+      "sha256": "98d827fca54d74820f7bfb598fe7198ef2b694e9c553da7f168bc193b2cd99e6",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/ROUTE04_RELAXED_UNIVERSAL_CD_20261108/RELAXED_UNIVERSAL_CD_DISCOVERY_STEP01.md",
+      "sha256": "f85354f04eed727e3bdc4c0ddca72c1a6f706885c35721ced525ee52fa26e712",
+      "role": "primary canonical report body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35/ROUTE2_CD6_FUNDING_GATE_VERDICT.md",
+      "sha256": "a9b2f40043d764a55edc77c6b15f0733c0ff51a37f46ca892858fad38083befb",
+      "role": "primary canonical report body"
+    }
+  ],
+  "duplicate": {
+    "paths": [
+      "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02.md",
+      "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_GLOBAL_COUPLING.md"
+    ],
+    "identical": true,
+    "sha256": "98d827fca54d74820f7bfb598fe7198ef2b694e9c553da7f168bc193b2cd99e6"
+  },
+  "additional_reads": [
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35/ND35_COMPLEMENT_08/EXACT_OPEN_OBSTRUCTION.md",
+      "coverage": "full 83-line theorem/frontier body"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35/ND35_COMPLEMENT_08/INTERNAL_NEUTRAL_RESEARCH_DOSSIER.md",
+      "coverage": "headings, definitions, inventories, exact open conclusion and evidence register; middle mechanisms partly inspected, not full independent proof reconstruction"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/CD5_BASE01/CD5_CERTIFICATE.json",
+      "coverage": "full certificate fields"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/CD5_BASE01/final_manifest.json",
+      "coverage": "status and all 25 publication hashes checked"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/CD5_BASE01/independent_audit.json",
+      "coverage": "status/scalar properties; old affine proof schemas not rerun"
+    },
+    {
+      "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CD6_FINAL_CERTIFICATE.json",
+      "coverage": "full certificate fields and all 44 publication entries checked"
+    }
+  ],
+  "publication_hash_checks": [
+    {
+      "source": "DO_RESEARCH_REBOOT/CD5_BASE01/final_manifest.json",
+      "entries": 25,
+      "unique_paths": 25,
+      "all_match": true,
+      "records": [
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/assembly.json",
+          "expected_sha256": "95e944f39f836a359dafbf5eac6c2d7d2f03289f6b2eb9919a4ab292dc708521",
+          "actual_sha256": "95e944f39f836a359dafbf5eac6c2d7d2f03289f6b2eb9919a4ab292dc708521",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/audit_assemble.py",
+          "expected_sha256": "a74b58430a3b740d1bb5013f0710673970f8c04fc83a7504e7b639c5eae1b300",
+          "actual_sha256": "a74b58430a3b740d1bb5013f0710673970f8c04fc83a7504e7b639c5eae1b300",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/audit_assemble_exit.json",
+          "expected_sha256": "3c15fcfe6b7e81bea53a216590a43d32339de8e3030a6084d88345151697489b",
+          "actual_sha256": "3c15fcfe6b7e81bea53a216590a43d32339de8e3030a6084d88345151697489b",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/audit_independent.py",
+          "expected_sha256": "3250420d2af6ec55b50bef669c9bd915209f9171b7802142df6d8d0edac42c3d",
+          "actual_sha256": "3250420d2af6ec55b50bef669c9bd915209f9171b7802142df6d8d0edac42c3d",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/audit_independent_exit.json",
+          "expected_sha256": "1bd197f541d57c1b84736350130f7bdab5bbe644a763edf1a7b37459d194da88",
+          "actual_sha256": "1bd197f541d57c1b84736350130f7bdab5bbe644a763edf1a7b37459d194da88",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/CD5_CERTIFICATE.json",
+          "expected_sha256": "50211ecb18ada4f0ac09ecca50c8f162a7377ff6f86835f67affd6ef94089a66",
+          "actual_sha256": "50211ecb18ada4f0ac09ecca50c8f162a7377ff6f86835f67affd6ef94089a66",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/CD5_PROOF.md",
+          "expected_sha256": "6380c55270c8c52505e2726e27a8fee734cac9812f39271b608cc282b34e88be",
+          "actual_sha256": "6380c55270c8c52505e2726e27a8fee734cac9812f39271b608cc282b34e88be",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/controller_assemble_exit.json",
+          "expected_sha256": "bead9f6a5360152bfcdd204fcb5f578072cd9f7fdbbff300fff65c7b0c595570",
+          "actual_sha256": "bead9f6a5360152bfcdd204fcb5f578072cd9f7fdbbff300fff65c7b0c595570",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/controller_independent_exit.json",
+          "expected_sha256": "f598d945374cb99172696b8fff9efcc642dc00607b9d38ce75f75ca9ca823658",
+          "actual_sha256": "f598d945374cb99172696b8fff9efcc642dc00607b9d38ce75f75ca9ca823658",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/CURRENT_STATE.json",
+          "expected_sha256": "804f510c0990c6acefa65f36c811a0c85b004521cd24e2b8dbf9f64837a9f7fa",
+          "actual_sha256": "804f510c0990c6acefa65f36c811a0c85b004521cd24e2b8dbf9f64837a9f7fa",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/dependency_pins.json",
+          "expected_sha256": "97de96c6ef22c0b31deb9902c31d0367129dae0624038347dc6f0081ca0309b5",
+          "actual_sha256": "97de96c6ef22c0b31deb9902c31d0367129dae0624038347dc6f0081ca0309b5",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/DOMAIN_AUDIT.md",
+          "expected_sha256": "db06f776bda5a2c093d954c94384176d5f336969378c3fc101eeb6e42afdf59e",
+          "actual_sha256": "db06f776bda5a2c093d954c94384176d5f336969378c3fc101eeb6e42afdf59e",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/entry.json",
+          "expected_sha256": "1928465bf138d4dcfb4af31cf7d87d35627b4575998d1aacb49237586784cc26",
+          "actual_sha256": "1928465bf138d4dcfb4af31cf7d87d35627b4575998d1aacb49237586784cc26",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/independent_audit.json",
+          "expected_sha256": "a98f8654ada908a9506bc1d198853876695c5b5d33ad3412de0a79441d068a30",
+          "actual_sha256": "a98f8654ada908a9506bc1d198853876695c5b5d33ad3412de0a79441d068a30",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/log_assemble.txt",
+          "expected_sha256": "b3005c335904d0f9a2e1c6a6129a346839c0ab812da8acbafb2d3b03a3e36716",
+          "actual_sha256": "b3005c335904d0f9a2e1c6a6129a346839c0ab812da8acbafb2d3b03a3e36716",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/log_independent.txt",
+          "expected_sha256": "949bed294fde2745101eca5dbefdd803714c34682b79419ff4fad7c729c2a812",
+          "actual_sha256": "949bed294fde2745101eca5dbefdd803714c34682b79419ff4fad7c729c2a812",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/PRE_EXECUTION.md",
+          "expected_sha256": "3d1c3413b3ec5b4017f1a84d23ce1e8015a059fa44452c3323381fd4380dc2f0",
+          "actual_sha256": "3d1c3413b3ec5b4017f1a84d23ce1e8015a059fa44452c3323381fd4380dc2f0",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/prepare_entry.py",
+          "expected_sha256": "f67440d944d06fe580a110fb59f2ffe0faabf86f0e6a9a4b70ee7882094ce9b8",
+          "actual_sha256": "f67440d944d06fe580a110fb59f2ffe0faabf86f0e6a9a4b70ee7882094ce9b8",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/PROOF_AUDIT.md",
+          "expected_sha256": "7bd8a529a26c19e7b5b65b7150c6114a48042358d23501b629b3d8084f092b91",
+          "actual_sha256": "7bd8a529a26c19e7b5b65b7150c6114a48042358d23501b629b3d8084f092b91",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/resources_final.json",
+          "expected_sha256": "c530eb7012c8d924a05ee6d71550d67af97c9d572c6c8c1e7b8119106fa153c8",
+          "actual_sha256": "c530eb7012c8d924a05ee6d71550d67af97c9d572c6c8c1e7b8119106fa153c8",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/RESULT.md",
+          "expected_sha256": "ba37e351e0ce082fb75d43f259193acdf168c10a8a6d7392b37a4ea1e3dacd5e",
+          "actual_sha256": "ba37e351e0ce082fb75d43f259193acdf168c10a8a6d7392b37a4ea1e3dacd5e",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/run_assemble_result.json",
+          "expected_sha256": "5d7cf7a457f4b769e1aa1deadcc3b621d6f34e6f44391cbe85462a2ac4a499aa",
+          "actual_sha256": "5d7cf7a457f4b769e1aa1deadcc3b621d6f34e6f44391cbe85462a2ac4a499aa",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/run_independent_result.json",
+          "expected_sha256": "eaa8db6275b8ea6230718ff1206d7b5e6d17e0e26c079e04311a73a377d8769e",
+          "actual_sha256": "eaa8db6275b8ea6230718ff1206d7b5e6d17e0e26c079e04311a73a377d8769e",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/run_phase.py",
+          "expected_sha256": "8fbe77e2fe18ce02f7fc3fda7a86a9a719dfd5389a1b9bd334e4c14c009f6955",
+          "actual_sha256": "8fbe77e2fe18ce02f7fc3fda7a86a9a719dfd5389a1b9bd334e4c14c009f6955",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/seal.py",
+          "expected_sha256": "d72f67c6cebc22f27893bab85a45011acdaa4e37f6f37428e32075b51018d165",
+          "actual_sha256": "d72f67c6cebc22f27893bab85a45011acdaa4e37f6f37428e32075b51018d165",
+          "match": true
+        }
+      ],
+      "scope": "publication-byte integrity only; no historical semantic computation rerun"
+    },
+    {
+      "source": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CD6_FINAL_CERTIFICATE.json",
+      "entries": 44,
+      "unique_paths": 43,
+      "all_match": true,
+      "records": [
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/SOURCE_SPEC.md",
+          "expected_sha256": "2afc510aec106e3ec8ee0565d0a2db536410105b1dfa41917f1f3794c70d2546",
+          "actual_sha256": "2afc510aec106e3ec8ee0565d0a2db536410105b1dfa41917f1f3794c70d2546",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CORE_DOMAIN_EXHAUSTIVENESS.md",
+          "expected_sha256": "62c97a5be95ae80dae682dfb15280f7e7731a20f2081a889156d83b8620ba9d9",
+          "actual_sha256": "62c97a5be95ae80dae682dfb15280f7e7731a20f2081a889156d83b8620ba9d9",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CLOSED_PERIOD_CORE_CONSTANCY.md",
+          "expected_sha256": "fca0d40279d526357d1ad7a40330e79d23e4196f12ed9dac449574a37cc4a5c0",
+          "actual_sha256": "fca0d40279d526357d1ad7a40330e79d23e4196f12ed9dac449574a37cc4a5c0",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/SIX_CORE_CERTIFICATE_LEDGER.md",
+          "expected_sha256": "76ebd83ef4579de7b7c37f20ddeaefad78d77d2c6f936abb184556c1e9fa481f",
+          "actual_sha256": "76ebd83ef4579de7b7c37f20ddeaefad78d77d2c6f936abb184556c1e9fa481f",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/ABSOLUTE_PERIOD_ALIGNMENT.md",
+          "expected_sha256": "2c2e3b80b59478d50bc4f5a7d3f3021e4bbf16c07a13316576237946f75fe41e",
+          "actual_sha256": "2c2e3b80b59478d50bc4f5a7d3f3021e4bbf16c07a13316576237946f75fe41e",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/FROZEN_OWNER_COMPATIBILITY.md",
+          "expected_sha256": "01e85fb8988445ac335a9547ba2f679f0adf1426cd836d113f0c10b80b62218d",
+          "actual_sha256": "01e85fb8988445ac335a9547ba2f679f0adf1426cd836d113f0c10b80b62218d",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CHART_SIGNED_CORRECTIONS.md",
+          "expected_sha256": "73582120d2ebfa8e2e5d338746be9768a5df625d23d3463ab65798168b9e27dd",
+          "actual_sha256": "73582120d2ebfa8e2e5d338746be9768a5df625d23d3463ab65798168b9e27dd",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CARRY_STORAGE_SEAM.md",
+          "expected_sha256": "5e0160b9b1e5af492aecce7aae5e1bf9d1ef5654303dd902c63018a8adcbfc9c",
+          "actual_sha256": "5e0160b9b1e5af492aecce7aae5e1bf9d1ef5654303dd902c63018a8adcbfc9c",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/GLOBAL_PHYSICAL_INJECTION.md",
+          "expected_sha256": "888463828896074d5b934940cb4c9828e89ec1c281a9b03eab4ed0f8042ec21e",
+          "actual_sha256": "888463828896074d5b934940cb4c9828e89ec1c281a9b03eab4ed0f8042ec21e",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CD6_THEOREM.md",
+          "expected_sha256": "45ad72acb656ebec5b54f57715a71b4a37c04b67db00afc5894e084ba9702b1b",
+          "actual_sha256": "45ad72acb656ebec5b54f57715a71b4a37c04b67db00afc5894e084ba9702b1b",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/UNIFORM_R_TRANSFER.md",
+          "expected_sha256": "0d60121dfd15db899c900e9bde73b0a9ca1354787f5682cbfe0070c69c8fa664",
+          "actual_sha256": "0d60121dfd15db899c900e9bde73b0a9ca1354787f5682cbfe0070c69c8fa664",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CASE_LEDGER.md",
+          "expected_sha256": "791d578d961a09be2c39cc1f82c7bf29303eaa51db559ced83b366bb9e29372d",
+          "actual_sha256": "791d578d961a09be2c39cc1f82c7bf29303eaa51db559ced83b366bb9e29372d",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/INDEPENDENT_AUDIT.md",
+          "expected_sha256": "7b12661d5d16a4cb69af0f4ea40879f47d3fa7fd7570a6af70dcfd625525b70a",
+          "actual_sha256": "7b12661d5d16a4cb69af0f4ea40879f47d3fa7fd7570a6af70dcfd625525b70a",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/ADVERSARIAL_AUDIT.md",
+          "expected_sha256": "409a2cdb93f4f144fe4ab236cd2b429f47402bcea5aa208bb204fb79953cbd2c",
+          "actual_sha256": "409a2cdb93f4f144fe4ab236cd2b429f47402bcea5aa208bb204fb79953cbd2c",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/FULL_PROOF.md",
+          "expected_sha256": "4b4a422fa81046012cb749a29cd86965faff9f5f88d0ce0c3fdf9f13a34357bb",
+          "actual_sha256": "4b4a422fa81046012cb749a29cd86965faff9f5f88d0ce0c3fdf9f13a34357bb",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/FINAL_VERDICT.md",
+          "expected_sha256": "3f3b26059b9a8ab251572f088c92f9dad0279c06a5c42d30fe6f80a457f1387f",
+          "actual_sha256": "3f3b26059b9a8ab251572f088c92f9dad0279c06a5c42d30fe6f80a457f1387f",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CHECKPOINT.md",
+          "expected_sha256": "c35e18192a62f47c2dcb958ff7e11e2e553b7481934e51506dba8ee05e465934",
+          "actual_sha256": "c35e18192a62f47c2dcb958ff7e11e2e553b7481934e51506dba8ee05e465934",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/cd6_allocator.py",
+          "expected_sha256": "c170ae04d3432478e9c43f662ebab5d4afd450c55dce32988a30d0492cb58f9a",
+          "actual_sha256": "c170ae04d3432478e9c43f662ebab5d4afd450c55dce32988a30d0492cb58f9a",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/audit_final.py",
+          "expected_sha256": "35a9f0a87d12a38433cacf228ab7965930f626fdcd27b717878db0af928be042",
+          "actual_sha256": "35a9f0a87d12a38433cacf228ab7965930f626fdcd27b717878db0af928be042",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/audit_resume.py",
+          "expected_sha256": "fdee1b8d1157b7057d968161948be2e3c9f2536f535225a7fd13d18cb5268062",
+          "actual_sha256": "fdee1b8d1157b7057d968161948be2e3c9f2536f535225a7fd13d18cb5268062",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/audit_resume2.py",
+          "expected_sha256": "cec27543090ac35c3053a68dc85c0d98a984ab0582321edf4913ae26238f0acd",
+          "actual_sha256": "cec27543090ac35c3053a68dc85c0d98a984ab0582321edf4913ae26238f0acd",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/audit_resume3.py",
+          "expected_sha256": "a403bf0ceac72a02c0c17d8264357efe46933baec6227063829761000a3f2f54",
+          "actual_sha256": "a403bf0ceac72a02c0c17d8264357efe46933baec6227063829761000a3f2f54",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/AUDIT_CONTINUATION.md",
+          "expected_sha256": "7a530f3fd753206514f65606a5c63b34a96bacff58bed38ad0f34a36ff15d268",
+          "actual_sha256": "7a530f3fd753206514f65606a5c63b34a96bacff58bed38ad0f34a36ff15d268",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_receipt_recovery.json",
+          "expected_sha256": "22a174d6d8b3e5b8575905b2b646eaf0326a4bb49b35680e7ba18bbd079a83cf",
+          "actual_sha256": "22a174d6d8b3e5b8575905b2b646eaf0326a4bb49b35680e7ba18bbd079a83cf",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/six_core_certificate_ledger.json",
+          "expected_sha256": "fffda15568516d633c938776a14a5fb61aa026ada1741e116cf007b98920237c",
+          "actual_sha256": "fffda15568516d633c938776a14a5fb61aa026ada1741e116cf007b98920237c",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/assembly_protocol_certificate.json",
+          "expected_sha256": "6dd037390bf61b9858b56af9bdcca746cee207783d60135091dc4a670cbd8a56",
+          "actual_sha256": "6dd037390bf61b9858b56af9bdcca746cee207783d60135091dc4a670cbd8a56",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/independent_audit.json",
+          "expected_sha256": "64a86685f08ae61dcaa55449e2923bb679be5a21408997a299f9f224df855e09",
+          "actual_sha256": "64a86685f08ae61dcaa55449e2923bb679be5a21408997a299f9f224df855e09",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/gamma_period_replay.json",
+          "expected_sha256": "611ad74cc5e1695810697793d60ac198ef16aead297f8e845b34b3f571deba86",
+          "actual_sha256": "611ad74cc5e1695810697793d60ac198ef16aead297f8e845b34b3f571deba86",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/dependency_pins.json",
+          "expected_sha256": "c0f979f725600bb8b96adda489b79f964621bba157f85aea3852d26e38c6793b",
+          "actual_sha256": "c0f979f725600bb8b96adda489b79f964621bba157f85aea3852d26e38c6793b",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core10_0.json",
+          "expected_sha256": "698e6c9472b5b33db874a820e1db6c50a59be6ac1379acd715b802d74a2fde7f",
+          "actual_sha256": "698e6c9472b5b33db874a820e1db6c50a59be6ac1379acd715b802d74a2fde7f",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core10_1.json",
+          "expected_sha256": "8b4d35def54fa9cee12322be30808d10aeb08a6e607d112a256b0447037d2509",
+          "actual_sha256": "8b4d35def54fa9cee12322be30808d10aeb08a6e607d112a256b0447037d2509",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core11_0.json",
+          "expected_sha256": "0865cca82e209e3d5ff2c24605547aa8eacfef6c26b684da103e77762cdb666d",
+          "actual_sha256": "0865cca82e209e3d5ff2c24605547aa8eacfef6c26b684da103e77762cdb666d",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core11_1.json",
+          "expected_sha256": "7609c0b34bd1839b44c6ba753c2e1184c4eccbafef2ccb17a8f5e434655a84ff",
+          "actual_sha256": "7609c0b34bd1839b44c6ba753c2e1184c4eccbafef2ccb17a8f5e434655a84ff",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core6.json",
+          "expected_sha256": "bea32c659e35705bec2c196aabe99bc17e57bb093261428dabc54e19459c3e0d",
+          "actual_sha256": "bea32c659e35705bec2c196aabe99bc17e57bb093261428dabc54e19459c3e0d",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core7_0.json",
+          "expected_sha256": "f99d42da595b06edc24f4cd1266dc0f47e363aa2f670aed11fe78ea645179db3",
+          "actual_sha256": "f99d42da595b06edc24f4cd1266dc0f47e363aa2f670aed11fe78ea645179db3",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core7_1.json",
+          "expected_sha256": "4090a1e83cfb5183ba434bc043567992d3b7c9494dd1ced0a52d387c55311659",
+          "actual_sha256": "4090a1e83cfb5183ba434bc043567992d3b7c9494dd1ced0a52d387c55311659",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core8_0.json",
+          "expected_sha256": "aa5c6bbc51c4e7e4cf74240bc3950eb1002f63df721aa49c8b272946afbb6267",
+          "actual_sha256": "aa5c6bbc51c4e7e4cf74240bc3950eb1002f63df721aa49c8b272946afbb6267",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core8_1.json",
+          "expected_sha256": "7b415e39bea6c80af47ff8dd7133431dd498bd05b1b4bd35e1d19a3dc75ff151",
+          "actual_sha256": "7b415e39bea6c80af47ff8dd7133431dd498bd05b1b4bd35e1d19a3dc75ff151",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core9_0.json",
+          "expected_sha256": "d83e07dc16e97d28a9918d5a43b9961057e9af5e15144d5708ec3afadecb42d7",
+          "actual_sha256": "d83e07dc16e97d28a9918d5a43b9961057e9af5e15144d5708ec3afadecb42d7",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_core9_1.json",
+          "expected_sha256": "6eb37f2300a64f5bd746f71cf9d74d86d5ac4734fea0a4dcb0860ba095b8a460",
+          "actual_sha256": "6eb37f2300a64f5bd746f71cf9d74d86d5ac4734fea0a4dcb0860ba095b8a460",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_Gamma26.json",
+          "expected_sha256": "3880a5c9958fdacfe7653b98346247b57da2c30027000d36e09648c617bc7911",
+          "actual_sha256": "3880a5c9958fdacfe7653b98346247b57da2c30027000d36e09648c617bc7911",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_receipt_recovery.json",
+          "expected_sha256": "22a174d6d8b3e5b8575905b2b646eaf0326a4bb49b35680e7ba18bbd079a83cf",
+          "actual_sha256": "22a174d6d8b3e5b8575905b2b646eaf0326a4bb49b35680e7ba18bbd079a83cf",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_Sigma.json",
+          "expected_sha256": "7b33b5ce02330209ea23293c0ec93d70eee97ca5cf7be618aac9eb785a52ce47",
+          "actual_sha256": "7b33b5ce02330209ea23293c0ec93d70eee97ca5cf7be618aac9eb785a52ce47",
+          "match": true
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/source_Sigma_reflected.json",
+          "expected_sha256": "ed69bc7e512810c3b9ff0634c9d1587686231774ebc03e3c1f0f7d716bab3410",
+          "actual_sha256": "ed69bc7e512810c3b9ff0634c9d1587686231774ebc03e3c1f0f7d716bab3410",
+          "match": true
+        }
+      ],
+      "scope": "publication-byte integrity only; no historical semantic computation rerun"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cd5_complete_support_base",
+      "label": "CD(5): genuine KEEP support at most five",
+      "statement": "For every finite ordered physical key set and every original reachable exactly paired-closed W with |G(W)|<=5, Q_B(W)<=2A(W).",
+      "assumptions": "Present-key ordinary bottom-up splay; A processes KEEP and DELETE, B only KEEP; reachability from some permitted common-tree diagonal; both full labeled trees close; source itself may start nondiagonally.",
+      "budget": "Q_B<=2A using the appropriate single whole-period class theorem; all ambient sizes, private populations, DELETE supports and finite lengths allowed.",
+      "recorded_status": "Sealed computer-assisted symbolic assembly, same-agent separate checker; no external peer review or whole-compiler formalization.",
+      "dependency_chain": "If G empty then Q=0; otherwise all KEEP targets equal G by cyclic root provenance. Marked-core set inclusion plus B closure yields fixed S and |G|<=|S|<=2|G|-1. Exhaustive leaves: <=3 marks, 4 marks, 5 marks/core<=8, 5 marks/core9.",
+      "not_controlled": "Unbounded genuine KEEP support; nonclosed prefixes; a stronger uniform physical I(5) allocator at every auxiliary scope.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/CD5_PROOF.md",
+          "line": 5,
+          "end_line": 25,
+          "meaning": "Exact theorem/domain/costs"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/CD5_PROOF.md",
+          "line": 86,
+          "end_line": 128,
+          "meaning": "Exhaustive class assembly and trust limits"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/CD5_BASE01/RESULT.md",
+          "line": 31,
+          "end_line": 37,
+          "meaning": "Sealed result and remaining uniform extension"
+        }
+      ]
+    },
+    {
+      "id": "cd6_complete_support_base",
+      "label": "CD(6): genuine KEEP support exactly six",
+      "statement": "For every original admitted closed W with exactly six genuine KEEP target keys, an explicit total injection from full B-double occurrence IDs into two original A accounting bits per StepEv gives Q_B<=2A.",
+      "budget": "Two accounting bits per original A StepEv. Select ONE whole-period backend from fixed B core sizes 6..11; its independent source witness has working bound <=11 within Bank25=25.",
+      "dependency_chain": "Core constancy and |S|<=11 -> exhaustive 57 necessary masks -> own/predecessor/signed backends preserving same h0 -> actual occurrence bijection -> optional licensed complete-h/locked-owner exchange -> cardinality.",
+      "recorded_status": "CD6_FINAL_CERTIFICATE status PROVED_COMPLETE_ORIGINAL_SIX_KEY_COARSE_DOUBLE. Historical 2746 input pins and separate immutable implementation accepted by same agent; not formal/external review.",
+      "not_controlled": "A universal source-credit premise for arbitrary support, all-r I(r), or an owner map invented on an auxiliary domain absent from its original contract.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/CD6_THEOREM.md",
+          "line": 3,
+          "end_line": 54,
+          "meaning": "Theorem and distinction between scalar and stronger owner scope"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/FULL_PROOF.md",
+          "line": 16,
+          "end_line": 79,
+          "meaning": "Actual source construction and accounting"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/FROZEN_OWNER_COMPATIBILITY.md",
+          "line": 33,
+          "end_line": 48,
+          "meaning": "Owner retirement and raw versus stronger interface"
+        }
+      ]
+    },
+    {
+      "id": "uniform_physical_transfer_conditional",
+      "label": "Uniform transfer is conditional on source credit",
+      "statement": "I(r-1)+E_r implies I(r), and I(r) implies CD(r), when E_r supplies an independently source-proved disjoint seed law or valid owner-inclusive signed packet law, exact alignment and Bank25-compatible storage.",
+      "budget": "License B: 2c_e-Q_e+D_r(t)-D_r(s)>=0, D_r in [0,K_r], natural h0 owners among chosen 2c_e bits. K_r+2max c_e<=25 is a sufficient working bound, not an established all-r fact.",
+      "recorded_status": "U-B sufficient transfer proved in source record; universal source hypotheses OPEN. Stronger I(5) cannot be deduced from scalar CD5.",
+      "first_missing_implication": "Arbitrary original larger-support geometry -> independent source supply/sign license with complete coverage and permitted physical storage. Uniform representation and owner exchange do not establish supply.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/UNIFORM_R_TRANSFER.md",
+          "line": 9,
+          "end_line": 89,
+          "meaning": "Precise noncircular licenses and transfer"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/UNIFORM_R_TRANSFER.md",
+          "line": 107,
+          "end_line": 149,
+          "meaning": "Uniform active-frame reduction, <=2r+2H-3 known nodes"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35/ROUTE2_CD6_FUNDING_GATE_VERDICT.md",
+          "line": 180,
+          "end_line": 221,
+          "meaning": "Deep-pair grouping is only a first bridge, not universally sufficient by itself"
+        }
+      ]
+    },
+    {
+      "id": "fixed_carry_gamma_obstruction",
+      "label": "Gamma_r refutes unchanged bounded carry",
+      "statement": "The modified Gamma_r original qmax/q1 packet has H=2,Q=r, so any local signed law on those unchanged packets needs width>=r-4. The complete original paired-closed source has A=6r,Q_F=6r-6.",
+      "consequence": "Width3 fails r>=8. Original natural h0 uses 3/4 local bits and leaves r-3 residual demands with only one local spare; incoming carry>=r-4 exceeds Bank25 at r>=30. This falsifies that fixed-packet carry extrapolation, not CD(r), aggregate O(A), or all packet/grouping architectures.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP2_CD6_FINAL_ASSEMBLY_14/UNIFORM_R_TRANSFER.md",
+          "line": 151,
+          "end_line": 179,
+          "meaning": "Exact parameterized obstruction and scope"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35/ROUTE2_CD6_FUNDING_GATE_VERDICT.md",
+          "line": 149,
+          "end_line": 164,
+          "meaning": "Original full-demand rule is not automatically g1 residual F"
+        }
+      ]
+    },
+    {
+      "id": "internal_neutral_exact_accounting",
+      "label": "Exact internal-neutral residual and inventory",
+      "statement": "For Psi=|J_S(B)\\J_S(A)| with SET labels, 2A=P+N+T_A+V_A and P=N+B1+2B2+Z1. Therefore 2A-Q_B=2N+T_A+V_A+B2+Z1-B0.",
+      "budget": "ND35 pays every nonneutral double using its first-decrease lambda upcrossing. ZRC35 pays every neutral LAST double using its following decreasing terminal B zig. PC35 then pays same-access releases: F has |F|=sum(B0_t-B2_t-Z1_t)_+, and raw complement R1 has |R1|=2N+T_A+V_A+sum(B2_t+Z1_t-B0_t)_+.",
+      "first_missing_implication": "A source-uniform augmentation/cost law for the literal surviving strictly internal neutral occurrences. |R1|-|F|=2A-Q is an identity and cannot be reintroduced as a new solved solvency lemma.",
+      "recorded_status": "ND35/ZRC35/PC35 recorded scopes are raw whole-period source accounting; later symbolic comparisons have their own pending audit flags. Raw normalization is not stronger frozen-owner permission.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01.md",
+          "line": 40,
+          "end_line": 73,
+          "meaning": "Conservation and physical/accounting distinction"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01.md",
+          "line": 90,
+          "end_line": 160,
+          "meaning": "gZ and PC35 disjoint exact partition"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/SE03_STEP3_RECURSIVE_SOURCE_CLOSURE_35/ND35_COMPLEMENT_08/EXACT_OPEN_OBSTRUCTION.md",
+          "line": 7,
+          "end_line": 26,
+          "meaning": "Uniform completed classes and exact open child"
+        }
+      ]
+    },
+    {
+      "id": "chain_boundary_structure",
+      "label": "Boundary-switch chains have no branching",
+      "statement": "Every selected opposite-boundary neutral-output history has a unique last B parent switch; the selector is globally injective. Designated-output continuations form disjoint same-producer chains with strict label inclusion and exact co-consumption/near-side attachment.",
+      "budget": "One B rotation can be one such switch; at most two per B double. This is no A-work bound by itself. Arbitrary-length descending-scan chains refute constant demand per chain endpoint.",
+      "recorded_status": "Symbolic/self-reviewed, independent-audit pending.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01.md",
+          "line": 237,
+          "end_line": 314,
+          "meaning": "Switch uniqueness, chain theorem and attachment"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP01.md",
+          "line": 358,
+          "end_line": 382,
+          "meaning": "Unbounded complete-source family and restricted refutation"
+        }
+      ]
+    },
+    {
+      "id": "producer_child_work_class",
+      "label": "Producer-child transitions have global A multiplicity one",
+      "statement": "On unacquired designated outputs currently directly attached to their original B producer, each actual producer-flag transition is a real zero A rotation, and choosing one transition per demand is globally injective across producers, sides and runs: |T|<=T_A.",
+      "budget": "Activated erasures are quiet and unused under exact g_pre; decreasing reverse switches force activation and two distinct actual A rotations, yielding |D|<=A. Cross-access inner links have a separate aggregate <=2A bound. Recognized complete descending scans supply 2L distinct nonpositive real A units, disjoint from producer-child transitions. Counts of overlapping certificates are not added as new physical capacity.",
+      "literal_complement": "Producer-silent same-access bursts; cross-access neutral reattachments whose A root avoids the interval and later jumps across it with potentially shared positive work; producer-near-side demands already flagged at every attachment entry; larger maps' actual outside owners/reservations.",
+      "recorded_status": "New symbolic scope, independent-audit pending. Explicit h_cov covers only its declared domain; source COV is not proved necessary or universal.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_GLOBAL_COUPLING.md",
+          "line": 187,
+          "end_line": 208,
+          "meaning": "Cross-access <=2A cost association; units may be owned"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_GLOBAL_COUPLING.md",
+          "line": 210,
+          "end_line": 284,
+          "meaning": "Quiet erasures and exact raw payment"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_GLOBAL_COUPLING.md",
+          "line": 333,
+          "end_line": 408,
+          "meaning": "Mixed zero-transition theorem, occupied L6 owner descent, silent complement"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_GLOBAL_COUPLING.md",
+          "line": 611,
+          "end_line": 690,
+          "meaning": "Scan separation and independently defined covered comparison"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_20261108/PARALLEL_SCALAR_INTERNAL_NEUTRAL_STEP02_GLOBAL_COUPLING.md",
+          "line": 728,
+          "end_line": 774,
+          "meaning": "Exact missing cases and audit status"
+        }
+      ]
+    },
+    {
+      "id": "guarded_detour_reduction",
+      "label": "Guarded detour deletion has positive signed price",
+      "statement": "Two adjacent constant-target runs z then y, each containing KEEP, with z child and y in one of three exact admitted frames in BOTH actual A and full B, admit deletion of the z run. Complete endpoints agree; A_hat=A-m and Q_hat=Q-sum beta, beta in {-1,0,1}.",
+      "budget": "Delta(W)=Delta(W_hat)+sum(2-beta) with local prices 3,2,1. Shadow A inventories inject into original units, omitting distinct first-z events. Full coverage of one key yields a smaller-support source; partial deletion only reduces length.",
+      "recorded_status": "Analytic author-checked source theorem, not new independent/formal certification.",
+      "not_controlled": "No universal availability, favorable-key, or nonnegative sign theorem on packet-free sources. Changing erased seeds changes E, not original full source guards.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP02.md",
+          "line": 198,
+          "end_line": 227,
+          "meaning": "Exact inspectable guards"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP02.md",
+          "line": 294,
+          "end_line": 445,
+          "meaning": "Source/price proof and owner limitation"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP03_GLOBAL_REDUCTION.md",
+          "line": 485,
+          "end_line": 539,
+          "meaning": "Fixed-key guard tests imply disjoint complete cover"
+        }
+      ]
+    },
+    {
+      "id": "guarded_induction_universal_barrier",
+      "label": "Deep accesses and maximal cores escape guarded induction",
+      "statement": "Every original full-B KEEP of depth>=3, with complete A/F pre-state and charge, survives every guarded detour rewrite. All closed sources of s genuine keys and maximal core 2s-1 have even positive genuine KEEP depth, so contain no depth-one guarded packet.",
+      "witness": "Arbitrary-fringe diagonal all-KEEP W_s=K3 K5 ... K(2s-1) K(2s-3) ... K3 K1 is exactly closed, all genuine depths2, A=Q=C=2s-2, positive slack2s-2. It refutes universal packet availability and automatic support drop, not the negative-source-only implication.",
+      "quantitative_invariant": "E_src=A-C and D_deep=sum(q-2)_+ are invariant under rewrites; only shallow surplus is removed. A negative source must have q>=3 (depth>=6), a permanent occurrence. Thus this rewrite alone does not address its deep deficit.",
+      "first_missing_implication": "A minimum negative original source has an eligible source reduction, or every irreducible source (including all maximal-core sources) has nonnegative slack. This is unproved, not supplied by well-founded termination.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP03_GLOBAL_REDUCTION.md",
+          "line": 228,
+          "end_line": 361,
+          "meaning": "Deep permanence and quantitative invariants"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP03_GLOBAL_REDUCTION.md",
+          "line": 365,
+          "end_line": 416,
+          "meaning": "Source-uniform maximal-core obstruction and actual complete family"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP03_GLOBAL_REDUCTION.md",
+          "line": 570,
+          "end_line": 635,
+          "meaning": "First missing implication and failure of routine induction"
+        }
+      ]
+    },
+    {
+      "id": "phase_seed_exact_scope",
+      "label": "Erased recurrent price depends on reached seed",
+      "statement": "Transporting an actual recurrent erased orbit across a cyclic cut preserves normalized erased cost. Starting erasure afresh from another reached FULL state is a different source and can select a different recurrent orbit and charge.",
+      "witness": "For all k>=4,m>=1, explicit arbitrary-fringe W_(m,k)=P^m C_k on k+3 genuine keys has Q_F=2m. One erased-p seed has Q_E=0,D=0,J=2m after warmup; another reached seed has Q_E=Q_F=2m,D=J=0. An all-KEEP diagonal realization has A=6m+2k and is CD-safe.",
+      "consequence": "A smaller erased core need not give a smaller signed marginal. More legal comparison choices do not prove a favorable universal choice.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP01.md",
+          "line": 258,
+          "end_line": 323,
+          "meaning": "Actual-orbit transport and fresh phase seeding"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP01.md",
+          "line": 324,
+          "end_line": 546,
+          "meaning": "Complete free-term family and exact scope"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/PARALLEL_ROUTE03_CD_INDUCTION_20261108_01/PARALLEL_CD_INDUCTION_STEP01.md",
+          "line": 573,
+          "end_line": 604,
+          "meaning": "Missing universal source-complete signed repayment theorem"
+        }
+      ]
+    },
+    {
+      "id": "aggregate_exposed_frame_class",
+      "label": "Whole-frame exposure gives Q<=4A+u",
+      "statement": "For each neutral double use its proper whole grandparent frame, unique preceding B creator and prior removal. Exposed means A-present at some snapshot from that preceding removal through current post-A/pre-B birth. Real A SET-creation and following loss selectors have global multiplicity one each. Thus e<=R_A<=2A; all nonneutral doubles <=2A; Q_B<=4A+u for independently defined unexposed neutral count u.",
+      "budget": "Real A rotation count R_A=2A-V_A. No owner vacancy or unused donor premise. Each selected rotation supplies at most one creation role and one loss role; exact union cardinality is retained. Nested exposed-frame collections have e<=A.",
+      "recorded_status": "Symbolic source-uniform derivation, no external/formal audit and no finite-C conclusion. u/A boundedness remains equivalent to full relaxed CD, so its assertion alone is no new proof.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/ROUTE04_RELAXED_UNIVERSAL_CD_20261108/RELAXED_UNIVERSAL_CD_DISCOVERY_STEP01.md",
+          "line": 379,
+          "end_line": 415,
+          "meaning": "Nonneutral bound and honest support-dependent Q<=(r-1)A"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/ROUTE04_RELAXED_UNIVERSAL_CD_20261108/RELAXED_UNIVERSAL_CD_DISCOVERY_STEP01.md",
+          "line": 426,
+          "end_line": 507,
+          "meaning": "Exact independent exposure predicate, global uniqueness and residual inequality"
+        }
+      ]
+    },
+    {
+      "id": "relaxed_aggregate_owner_bypass",
+      "label": "Aggregate constants bypass owner vacancy",
+      "statement": "If a concrete source-defined class selector maps its demands into REAL A rotations with global multiplicity at most k, then class size<=k R_A<=2kA, even if those rotations already pay old demands. A finite exhaustive partition of such independently controlled classes sums their constants honestly.",
+      "assumptions": "Concrete eligibility; universal coverage or a separately controlled literal complement; bounded GLOBAL multiplicity on complete original sources including recreation, repeated demand and cyclic closure.",
+      "not_required_for_scalar_bound": "Extending old g1/fE/h0 injections; owner vacancy; a physical carry trace under Bank25; exactly coefficient2. Existing physical owners remain unchanged.",
+      "not_permitted": "Calling kA new physical bits; using virtual A zig accounting units as real rotation credit; summing a variable number of uncontrolled classes; inferring globally bounded congestion from per-demand witness existence.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/ROUTE04_RELAXED_UNIVERSAL_CD_20261108/RELAXED_UNIVERSAL_CD_DISCOVERY_STEP01.md",
+          "line": 342,
+          "end_line": 375,
+          "meaning": "Exact aggregate relaxation and limits"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/ROUTE04_RELAXED_UNIVERSAL_CD_20261108/RELAXED_UNIVERSAL_CD_DISCOVERY_STEP01.md",
+          "line": 495,
+          "end_line": 525,
+          "meaning": "Ownership-free count and coverage still open"
+        }
+      ]
+    },
+    {
+      "id": "relaxed_cd_do_bridge",
+      "label": "Any absolute coarse-double constant suffices for DO",
+      "statement": "If some absolute C bounds Q_B<=CA on EVERY original diagonally reachable closed source at all supports and starting trees, C.ZIG gives B<=(C+1)A. Reachable-cycle excision gives E_B<=(C+1)S_A+g(T0), g=(Cat_n^2-1)floor(n/2). Exact LT cost conversion gives eventual monotonicity with universal multiplier, hence external Levy-Tarjan Theorem4.3 yields DO.",
+      "constants": "Conservative L(Y,T0)<=(2C+3)L(X,T0)+2g(T0); stronger C+2 multiplier available in same proof. C need not be2. g may depend arbitrarily on the fixed initial tree, not source/mask/sequence length.",
+      "converse": "Eventual monotonicity with universal b and tree-only overhead implies relaxed CD with C=3b/2 after cyclic same-target-run normalization and repeating a reachable paired-closed word. Thus finite-C existence is equivalent to DO in the audited model, subject to the external characterization and exact source assumptions.",
+      "recorded_status": "Conditional downstream implications and converse are source-recorded symbolic proofs. External paper not independently browsed/reverified in this subtask; parent must verify precise citation/model. No DO proof supplied because universal finite-C premise is open.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/ROUTE04_RELAXED_UNIVERSAL_CD_20261108/RELAXED_UNIVERSAL_CD_DISCOVERY_STEP01.md",
+          "line": 139,
+          "end_line": 264,
+          "meaning": "Full sufficiency chain, exact costs and initialization"
+        },
+        {
+          "path": "DO_RESEARCH_REBOOT/ROUTE04_RELAXED_UNIVERSAL_CD_20261108/RELAXED_UNIVERSAL_CD_DISCOVERY_STEP01.md",
+          "line": 265,
+          "end_line": 317,
+          "meaning": "Converse transfer and limitations"
+        }
+      ]
+    },
+    {
+      "id": "historical_absolute_renewal_candidate",
+      "label": "Historical absolute unexposed-forest renewal candidate",
+      "statement": "Candidate L_h says every path in the unexposed induced whole-frame forest has at most absolute h vertices. Forest outdegree<=2 and roots<=B1+2e would yield Q_B<=(6*2^h-2)A.",
+      "recorded_status": "Unproved in the Nov8 report; its implication is complete, but no established reason it holds or is easier. This subtask does not assert its current status after later EXP04/UF investigations.",
+      "first_missing_implication": "Nested neutral creators, continuous A absence on full history windows and exact paired closure -> A SET exposure within an absolute number of ancestry links. Strict inclusion only gives size-dependent rank.",
+      "evidence": [
+        {
+          "path": "DO_RESEARCH_REBOOT/ROUTE04_RELAXED_UNIVERSAL_CD_20261108/RELAXED_UNIVERSAL_CD_DISCOVERY_STEP01.md",
+          "line": 529,
+          "end_line": 649,
+          "meaning": "Exact candidate, complete conditional coefficient and failed proof step"
+        }
+      ]
+    }
+  ],
+  "recommendation": {
+    "preferred_working_route": "A source-uniform aggregate relaxed Coarse-Double bound with any absolute constant, integrating all independently controlled physical classes.",
+    "reason": "Its final implication is already audited; it preserves all sharp bounded-support results while avoiding extra exact-2A allocation, vacancy, stronger physical-I(r) and Bank25 proof obligations unnecessary for scalar DO. This is a practical recommendation from existing interfaces, not a theorem of relative proof difficulty.",
+    "do_not_make_primary": "Routine CD6-to-all-support guarded induction or unchanged fixed-width carry. The former cannot touch permanent deep requests and all maximal cores; the latter is quantitatively refuted by Gamma_r.",
+    "smallest_concrete_unsolved_physical_issue_in_this_branch": "Preparation/restoration A work outside a same-access silent neutral-link burst, with a joint GLOBAL multiplicity bound across nested/recreated chains and near-side/outside-owner histories. The recognized descending-scan family proves one real model of such nonlocal work, not exhaustive coverage.",
+    "comparison_limit": "This subtask has not audited the original MSTL Pair Access machinery or newest EXP04 UF/M1 C7 branch. Parent must compare those before final recommendation and must not treat Nov8 renewal status as latest.",
+    "no_percentage": "Neither bounded support progress nor finite saved control counts imply a numerical fraction of the universal theorem remaining. Unbounded support source law is the hard missing mathematical implication."
+  },
+  "token_accounting": {
+    "available": false,
+    "graph_zero_fields_mean": "unavailable, not measured zero"
+  }
+}

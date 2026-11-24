@@ -1,0 +1,6 @@
+{
+  "stage": "Independent checker, after context enumeration passed and before source verification completed",
+  "failure": "A canonical historical source records diagonal:null for a source beginning at a common pair. The new verifier attempted to decode null rather than using the already common initial tree.",
+  "correction": "Require initial_A == initial_B and empty reaching prefix when diagonal is null, then decode that common initial tree. No source, cost, mathematical assumption or prior artifact changed.",
+  "acceptance": "The first failed run is not a verification pass. The whole checker must rerun successfully."
+}

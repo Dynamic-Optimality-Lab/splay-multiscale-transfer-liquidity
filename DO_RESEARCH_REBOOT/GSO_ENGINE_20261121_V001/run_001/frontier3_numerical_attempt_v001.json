@@ -1,0 +1,47 @@
+{
+  "status": "OPEN_RATIONAL_RECOVERY",
+  "grammar": "frontier3",
+  "candidate": {
+    "grammar": "frontier3",
+    "theta": [
+      "1/2",
+      "0",
+      "6105/7421",
+      "0",
+      "10603/61158",
+      "0"
+    ],
+    "C": "13",
+    "potential": "Single-valued function of original physical pair; arbitrary fixed signed coefficients.",
+    "invariant": "Well-formed same-key BST pair; finite reachable-state teacher is separate from universal structural proof.",
+    "contracts": {
+      "initialization": "STRUCTURAL_ROTATION_CERTIFICATE_REQUIRED",
+      "A_loop": "AFFINE_COUNTER_AND_ROTATION_PROOF_REQUIRED",
+      "B_loop": "AFFINE_COUNTER_AND_ROTATION_PROOF_REQUIRED",
+      "whole_operation_cost": "OPEN until a universal symbolic proof is checked",
+      "boundary": "Equal physical pair implies equal physical feature potential"
+    },
+    "universal_CD": "OPEN"
+  },
+  "history": [
+    {
+      "round": 0,
+      "active_original_rows": 966,
+      "C": "13",
+      "theta": [
+        "1/2",
+        "0",
+        "6105/7421",
+        "0",
+        "10603/61158",
+        "0"
+      ],
+      "worst_exact_slack": "256/75642253",
+      "worst_row": [
+        "H_10_5",
+        12290
+      ],
+      "violating_rows": 1
+    }
+  ]
+}

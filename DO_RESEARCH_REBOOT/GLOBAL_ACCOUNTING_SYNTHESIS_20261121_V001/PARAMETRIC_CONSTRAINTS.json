@@ -1,0 +1,27 @@
+{
+  "status": "PROVED—UNIVERSAL necessary constraints for the declared whole-operation linear potential family; not a conservation theorem",
+  "N": "N=2^s+2, s>=2; h=N-2. H is the full right vine on3,...,N.",
+  "states": "V=1(-,2(-,H)); T=2(1,H).",
+  "full_sources": {
+    "F1": "Common diagonal V; reaching prefix P=K2,D1 gives pair(V,T). Period D2,D1; K1,...,KN; K(N-1),...,K1; P. Both full trees close; all N keys are genuine KEEP targets. First two original period operations are inverse actual root zigs of cost one.",
+    "F2": "Common diagonal(V,V); period D2,D1; K1,...,KN; K(N-1),...,K1. Both full trees close. First two operations are inverse actual root zigs.",
+    "F3": "Common diagonal(V,V); period K2,K1; K1,...,KN; K(N-1),...,K1. Both full trees close. The first KEEP pair consists of inverse cost-one A zigs and terminal B zigs with Q=0."
+  },
+  "exact_first_operation_feature_differences": {
+    "feature_order": ["C_AB","C_BA","depth_sum_A","depth_sum_B","depth_B_of_A_root","depth_A_of_B_root","full_X_SET_discordance","physical_edge_discordance","Mersenne_defect","full_X_size_weighted_defect"],
+    "F1_D2": [-1,-1,"-h",0,-1,-1,-1,-1,0,-1],
+    "F2_D2": [1,1,"-h",0,1,1,1,1,0,"h+1"],
+    "F3_K2": [0,0,"-h","-h",0,0,0,0,0,0],
+    "inverse": "The second operation has the exact negative feature difference. Both operations have a=1,q=0."
+  },
+  "proof": [
+    "C_AB and C_BA vanish on diagonal states and equal1 for either (V,T) or (T,V): all internal H contributions cancel, and the two outer nodes contribute exactly1.",
+    "Depth sums differ by h. The two root-reference depths, full-X SET mismatch and physical edge mismatch each equal1 on the nondiagonal pairs.",
+    "For (V,T), the only missing B label is {1}, giving weighted defect1. For (T,V), it is [2,N], giving h+1.",
+    "The only possible missing label sizes are1 and h+1=2^s+1, neither a Mersenne size>=3 for s>=2. Thus Mersenne defect is zero throughout the selected pairs.",
+    "For fixed finite coefficients and C, the two inverse cost-one inequalities force the absolute feature-potential difference to be at most C for every h. F1 therefore forces theta_depthA=0. F2 then forces theta_sizeDefect=0. F3 forces theta_depthA+theta_depthB=0, hence theta_depthB=0."
+  ],
+  "mandatory_equalities": ["theta[2]=0","theta[3]=0","theta[9]=0"],
+  "remaining_feature_indices": [0,1,4,5,6,7,8],
+  "scope": "These restrictions apply to a single fixed coefficient vector satisfying the frozen per-operation law on every original source. They do not rule out other potentials, source-dependent certificates, aggregate proofs or Universal CD. Complete source work remains in every witness; selected-row inequalities alone refute only a universal per-operation claim."
+}

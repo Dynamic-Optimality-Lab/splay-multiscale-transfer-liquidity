@@ -1,0 +1,371 @@
+{
+  "A": 1111,
+  "C_old": [
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 3,
+      "original_parent": [
+        3,
+        6
+      ],
+      "rho": [
+        3,
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "type": "X"
+    },
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 5,
+      "original_parent": [
+        5,
+        6
+      ],
+      "rho": [
+        5,
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "type": "X"
+    }
+  ],
+  "E_old": [
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 3,
+      "original_parent": [
+        3,
+        6
+      ],
+      "rho": [
+        3,
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "type": "X"
+    }
+  ],
+  "actual_S_UU": 0,
+  "disjoint_original_assignments": {
+    "E_old": [
+      {
+        "category": "outside_shadow_cover",
+        "consumer": 3,
+        "original_parent": [
+          3,
+          6
+        ],
+        "rho": [
+          3,
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "type": "X"
+      }
+    ],
+    "H_all": [
+      {
+        "category": "outside_shadow_cover",
+        "consumer": 5,
+        "original_parent": [
+          5,
+          6
+        ],
+        "rho": [
+          5,
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "type": "X"
+      }
+    ],
+    "Q_D": [
+      {
+        "category": "unpaid_omitted",
+        "consumer": 52,
+        "original_parent": [
+          52,
+          1
+        ],
+        "rho": [
+          52,
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "type": "O"
+      }
+    ],
+    "carrier": [],
+    "overflow": [],
+    "skipped_rank": []
+  },
+  "exact_D": [
+    {
+      "category": "unpaid_omitted",
+      "consumer": 52,
+      "original_parent": [
+        52,
+        1
+      ],
+      "rho": [
+        52,
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "type": "O"
+    }
+  ],
+  "frozen_carrier_eligible": [],
+  "frozen_skipped_after_carrier_eligible": [],
+  "native_original_R_star": [
+    {
+      "category": "unpaid_omitted",
+      "consumer": 52,
+      "original_parent": [
+        52,
+        1
+      ],
+      "rho": [
+        52,
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 3,
+      "original_parent": [
+        3,
+        6
+      ],
+      "rho": [
+        3,
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "type": "X"
+    },
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 5,
+      "original_parent": [
+        5,
+        6
+      ],
+      "rho": [
+        5,
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "type": "X"
+    }
+  ],
+  "no_H_diagnostic": {
+    "all_selected": true,
+    "pool": [
+      {
+        "category": "unpaid_omitted",
+        "consumer": 52,
+        "original_parent": [
+          52,
+          1
+        ],
+        "rho": [
+          52,
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "outside_shadow_cover",
+        "consumer": 5,
+        "original_parent": [
+          5,
+          6
+        ],
+        "rho": [
+          5,
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "type": "X"
+      }
+    ],
+    "quota_rows": [
+      {
+        "A_gap": 1,
+        "b_h": 1,
+        "distinct_original_parents": [
+          [
+            5,
+            6
+          ]
+        ],
+        "h": 5,
+        "selected": [
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      {
+        "A_gap": 4,
+        "b_h": 1,
+        "distinct_original_parents": [
+          [
+            52,
+            1
+          ]
+        ],
+        "h": 52,
+        "selected": [
+          [
+            52,
+            1
+          ]
+        ]
+      }
+    ],
+    "scope": "Counterfactual pool only; NOT original D or a redefined residual."
+  },
+  "periodic_H_eligible_noncheap": [
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 3,
+      "original_parent": [
+        3,
+        6
+      ],
+      "rho": [
+        3,
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "type": "X"
+    },
+    {
+      "category": "outside_shadow_cover",
+      "consumer": 5,
+      "original_parent": [
+        5,
+        6
+      ],
+      "rho": [
+        5,
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "type": "X"
+    }
+  ],
+  "quota_rows": [
+    {
+      "A_gap": 4,
+      "b_h": 1,
+      "distinct_original_parents": [
+        [
+          52,
+          1
+        ]
+      ],
+      "h": 52,
+      "selected": [
+        [
+          52,
+          1
+        ]
+      ]
+    }
+  ],
+  "raw_periodic_certificate": 1337,
+  "source": "M1C5_repeated_chain_k4_L5_groups",
+  "source_sha256": "35d5c15dc8432a5f0c0be9fad56ab06799280d4124f0f3d018e6766e0f2a02b3"
+}

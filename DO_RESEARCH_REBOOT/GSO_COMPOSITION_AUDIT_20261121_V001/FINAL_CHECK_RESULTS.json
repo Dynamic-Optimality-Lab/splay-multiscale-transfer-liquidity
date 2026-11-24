@@ -1,0 +1,20 @@
+{
+  "tests_exit_code": 0,
+  "tests_output": "test_finite_or_numeric_success_cannot_bypass_the_semantic_gate (__main__.Soundness.test_finite_or_numeric_success_cannot_bypass_the_semantic_gate) ... ok\r\ntest_open_component_needs_signed_boundary_credit (__main__.Soundness.test_open_component_needs_signed_boundary_credit) ... ok\r\ntest_reference_uses_each_real_A_bit_once (__main__.Soundness.test_reference_uses_each_real_A_bit_once) ... ok\r\ntest_unlimited_local_A_cannot_repair_the_unreachable_B_state (__main__.Soundness.test_unlimited_local_A_cannot_repair_the_unreachable_B_state) ... ok\r\ntest_zero_original_A_interface_is_not_a_free_local_KEEP (__main__.Soundness.test_zero_original_A_interface_is_not_a_free_local_KEEP) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 5 tests in 0.020s\r\n\r\nOK\r\n",
+  "lean_exit_code": 0,
+  "lean_observed_session": 18914,
+  "lean_source": "CompositionKernel.lean",
+  "lean_theorems_checked": [
+    "compose",
+    "residualSandwich",
+    "stepClosed",
+    "noLocalSplayHistory"
+  ],
+  "lean_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice (residualSandwich)"
+  ],
+  "independent_verification": "INDEPENDENT_VERIFICATION.json",
+  "preparation_failure_preserved": "PREPARE_CHECK_FAILURE_01.json"
+}

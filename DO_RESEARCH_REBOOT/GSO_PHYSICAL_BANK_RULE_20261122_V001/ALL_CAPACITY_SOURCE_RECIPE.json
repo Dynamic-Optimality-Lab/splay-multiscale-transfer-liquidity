@@ -1,0 +1,17 @@
+{
+  "source_family": "W_H = original complete H_(p,q), p=3H+4, q=12H+32, H any positive integer",
+  "N": "2^(p+1)*(q+1)+1",
+  "initial_pair": "Both complete right vines on every rank1,...,N; empty reaching prefix",
+  "period": [
+    "DELETE2,...,N",
+    "Access N,...,1, KEEP exactly at N+1-2^j for0<=j<=p, DELETE elsewhere",
+    "KEEP1,...,N",
+    "KEEP N-1,...,1"
+  ],
+  "closure": "The actual adjacent A sweeps close A. Counted increasing/decreasing KEEP restoration closes both full trees. All ranks are genuine; source valid for every p,q.",
+  "bank_demand_relaxation": "Only original RR doubles at critical phases j>=4 cost one; every other original B step costs zero in the accounting diagnostic. Original algorithm, full Q_B and all predicates remain unchanged. These charged RR IDs are genuine original U_int.",
+  "coarse_bound": "After base phase3 take uniform upper bounds a=b=H on old spine and old left-root banks. Burn 3H+1 RR steps per coarsening interior. At stationary upper carry, 2a_new+b_new <=2a+b-1.",
+  "windows": "Initial l=1,u=2^(p-3)*(q+1)-3; next l=ceil((l+2)/2)+1<=4 and u=floor(u/2)-(3H+1). Uniformly u_r>=2^(p-3-r)*(q+1)-2(3H+1)-3.",
+  "forced_failure": "By phase p-1=3+3H the interior fresh-input bounds are zero. Phase p has at least3H+1 consecutive valid interior RR steps. At entry its three carry banks contain at most3H credits. No fresh input occurs, so at least one original U demand is unpaid.",
+  "scope": "All finite integer capacities for this frozen target-first/increasing-order transfer law, even with maximal A/KEEP replenishment and arbitrary initial balances. Not arbitrary redistribution or Universal CD."
+}

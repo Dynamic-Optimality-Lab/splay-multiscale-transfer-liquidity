@@ -1,0 +1,14 @@
+{
+  "process_CPU_seconds": null,
+  "observed_CPU_seconds_rounded_at_previous_sample": 32.47,
+  "conservative_CPU_upper_bound_seconds": 53.7955488,
+  "CPU_qualification": "The .NET final CPU property returned null after own-process termination. Exact CPU unavailable. This single-threaded pure-Python phase ran no workers; entire process wall time is retained as a conservative CPU upper bound. Do not count null as zero.",
+  "stage": "verify_width_preempted_tuple_json_binding",
+  "reason": "Use canonical JSON comparison for tuple/list-normalized U before retry. No mathematical result accepted.",
+  "status": "intentionally_stopped_before_known_tuple_list_controller_failure",
+  "memory": {
+    "peak_working_set_bytes": 128921600,
+    "measurement": "sample immediately before own-process termination"
+  },
+  "wall_seconds": 53.7955488
+}

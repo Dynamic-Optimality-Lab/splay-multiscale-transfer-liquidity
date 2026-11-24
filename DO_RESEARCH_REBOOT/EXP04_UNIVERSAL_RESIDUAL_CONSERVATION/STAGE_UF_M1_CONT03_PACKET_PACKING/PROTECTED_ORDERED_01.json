@@ -1,0 +1,939 @@
+{
+  "A": 592,
+  "C_old": [],
+  "E_old": [],
+  "actual_S_UU": 0,
+  "disjoint_original_assignments": {
+    "E_old": [],
+    "H_all": [],
+    "Q_D": [],
+    "carrier": [],
+    "overflow": [],
+    "skipped_rank": [
+      {
+        "category": "unpaid_omitted",
+        "consumer": 2,
+        "original_parent": [
+          2,
+          1
+        ],
+        "rho": [
+          2,
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 2,
+        "original_parent": [
+          2,
+          3
+        ],
+        "rho": [
+          2,
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 2,
+        "original_parent": [
+          2,
+          3
+        ],
+        "rho": [
+          2,
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 2,
+        "original_parent": [
+          2,
+          4
+        ],
+        "rho": [
+          2,
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 2,
+        "original_parent": [
+          2,
+          4
+        ],
+        "rho": [
+          2,
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 2,
+        "original_parent": [
+          2,
+          5
+        ],
+        "rho": [
+          2,
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 2,
+        "original_parent": [
+          2,
+          5
+        ],
+        "rho": [
+          2,
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            10
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 2,
+        "original_parent": [
+          2,
+          7
+        ],
+        "rho": [
+          2,
+          [
+            1,
+            12
+          ],
+          [
+            1,
+            13
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 2,
+        "original_parent": [
+          2,
+          7
+        ],
+        "rho": [
+          2,
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 8,
+        "original_parent": [
+          8,
+          1
+        ],
+        "rho": [
+          8,
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "type": "O"
+      },
+      {
+        "category": "unpaid_omitted",
+        "consumer": 8,
+        "original_parent": [
+          8,
+          1
+        ],
+        "rho": [
+          8,
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "type": "O"
+      }
+    ]
+  },
+  "exact_D": [],
+  "frozen_carrier_eligible": [],
+  "frozen_skipped_after_carrier_eligible": [
+    {
+      "old_grandparent": 17,
+      "orientation": -1,
+      "original_parent": [
+        2,
+        1
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "shadow_double": [
+        5,
+        2,
+        1
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 13,
+      "orientation": -1,
+      "original_parent": [
+        2,
+        3
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "shadow_double": [
+        5,
+        2,
+        3
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 13,
+      "orientation": -1,
+      "original_parent": [
+        2,
+        3
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "shadow_double": [
+        5,
+        2,
+        3
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 11,
+      "orientation": -1,
+      "original_parent": [
+        2,
+        4
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "shadow_double": [
+        5,
+        2,
+        4
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 11,
+      "orientation": -1,
+      "original_parent": [
+        2,
+        4
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "shadow_double": [
+        5,
+        2,
+        4
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 9,
+      "orientation": -1,
+      "original_parent": [
+        2,
+        5
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "shadow_double": [
+        5,
+        2,
+        5
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 9,
+      "orientation": -1,
+      "original_parent": [
+        2,
+        5
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "shadow_double": [
+        5,
+        2,
+        5
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 5,
+      "orientation": -1,
+      "original_parent": [
+        2,
+        7
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "shadow_double": [
+        5,
+        2,
+        7
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 5,
+      "orientation": -1,
+      "original_parent": [
+        2,
+        7
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          14
+        ]
+      ],
+      "shadow_double": [
+        5,
+        2,
+        7
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 10,
+      "orientation": -1,
+      "original_parent": [
+        8,
+        1
+      ],
+      "rho": [
+        8,
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "shadow_double": [
+        5,
+        8,
+        1
+      ],
+      "strategy": "records",
+      "type": "O"
+    },
+    {
+      "old_grandparent": 10,
+      "orientation": -1,
+      "original_parent": [
+        8,
+        1
+      ],
+      "rho": [
+        8,
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "shadow_double": [
+        5,
+        8,
+        1
+      ],
+      "strategy": "records",
+      "type": "O"
+    }
+  ],
+  "native_original_R_star": [
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        1
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        3
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        3
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        4
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        4
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        5
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        5
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        7
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        7
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          14
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 8,
+      "original_parent": [
+        8,
+        1
+      ],
+      "rho": [
+        8,
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 8,
+      "original_parent": [
+        8,
+        1
+      ],
+      "rho": [
+        8,
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "type": "O"
+    }
+  ],
+  "no_H_diagnostic": {
+    "all_selected": true,
+    "pool": [],
+    "quota_rows": [],
+    "scope": "Counterfactual pool only; NOT original D or a redefined residual."
+  },
+  "periodic_H_eligible_noncheap": [
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        1
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        3
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        3
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        4
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        4
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        5
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        5
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        7
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "type": "O"
+    },
+    {
+      "category": "unpaid_omitted",
+      "consumer": 2,
+      "original_parent": [
+        2,
+        7
+      ],
+      "rho": [
+        2,
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          14
+        ]
+      ],
+      "type": "O"
+    }
+  ],
+  "quota_rows": [],
+  "raw_periodic_certificate": 1014,
+  "source": "M1C3_protected_fan_s16_mirror0",
+  "source_sha256": "223bd7e56680aa7d03bc96b0322ba480bf8650751199021967e4cd7539068b95"
+}

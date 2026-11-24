@@ -1,0 +1,1084 @@
+{
+  "actual": {
+    "canonical_sources": 380,
+    "maximum_new_operations": 3332,
+    "maximum_population": 513,
+    "new_complete_sources": 120
+  },
+  "allocation": {
+    "initial_measured_CPU_seconds": 1200,
+    "new_complete_sources": 120,
+    "operations_per_new_source": 12000,
+    "population": 513,
+    "reviewed_measured_CPU_seconds": 1800
+  },
+  "checkpoint_reason": "Recorded new-source allocation120 is used. Universal research remains open; no mathematical completion or host-impossibility claim.",
+  "peak_pagefile_bytes": 2281218048,
+  "peak_working_set_bytes": 2262319104,
+  "recorded_process_CPU_seconds": 1358.1875,
+  "stages": [
+    {
+      "memory": {
+        "peak_pagefile_bytes": 363581440,
+        "peak_working_set_bytes": 367071232,
+        "working_set_bytes": 343576576
+      },
+      "process_CPU_seconds": 4.046875,
+      "stage": "EXP04_boundary",
+      "status": "completed",
+      "wall_seconds": 4.2010406000190414
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 57790464,
+        "peak_working_set_bytes": 64671744,
+        "working_set_bytes": 50479104
+      },
+      "process_CPU_seconds": 0.28125,
+      "stage": "EXP04_cycle10_weighted_drift",
+      "status": "completed",
+      "wall_seconds": 0.275495600013528
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 14626816,
+        "peak_working_set_bytes": 22896640,
+        "working_set_bytes": 21856256
+      },
+      "process_CPU_seconds": 0.609375,
+      "stage": "EXP04_cycle9_weighted_potential",
+      "status": "completed",
+      "wall_seconds": 0.6428702999837697
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 152510464,
+        "peak_working_set_bytes": 159834112,
+        "working_set_bytes": 105111552
+      },
+      "process_CPU_seconds": 34.609375,
+      "stage": "EXP04_cycles_2_3",
+      "status": "failed_or_interrupted",
+      "wall_seconds": 38.30328160000499
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 152993792,
+        "peak_working_set_bytes": 161615872,
+        "working_set_bytes": 97509376
+      },
+      "new_R_star": 92,
+      "new_sources": 42,
+      "process_CPU_seconds": 10.109375,
+      "remaining": 86,
+      "stage": "EXP04_cycles_2_3_resume",
+      "status": "completed",
+      "wall_seconds": 11.112894700025208
+    },
+    {
+      "R_star": 120,
+      "memory": {
+        "peak_pagefile_bytes": 871137280,
+        "peak_working_set_bytes": 873885696,
+        "working_set_bytes": 647766016
+      },
+      "new_sources": 36,
+      "process_CPU_seconds": 449.703125,
+      "remaining": 0,
+      "stage": "EXP04_cycles_4_5_adversarial",
+      "status": "completed",
+      "wall_seconds": 551.2789243000443
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 807960576,
+        "peak_working_set_bytes": 812933120,
+        "working_set_bytes": 387395584
+      },
+      "new_sources": 30,
+      "process_CPU_seconds": 110.171875,
+      "remaining": 0,
+      "stage": "EXP04_cycles_6_7",
+      "status": "completed",
+      "wall_seconds": 114.07672219997039
+    },
+    {
+      "R_next_finite": 0,
+      "R_star": 499,
+      "assignment_totals": {
+        "actual_density_window": 52,
+        "cycle_rank_certificate": 136,
+        "gappy_monotone": 276,
+        "zero_two_direction": 35
+      },
+      "canonical_sources": 380,
+      "families": {
+        "IH": {
+          "A": 2705,
+          "Q_B": 1193,
+          "R_star": 9,
+          "remaining": 0,
+          "sources": 5
+        },
+        "IH_reflected": {
+          "A": 259,
+          "Q_B": 110,
+          "R_star": 1,
+          "remaining": 0,
+          "sources": 1
+        },
+        "O": {
+          "A": 11495,
+          "Q_B": 5017,
+          "R_star": 38,
+          "remaining": 0,
+          "sources": 16
+        },
+        "O_reflected": {
+          "A": 515,
+          "Q_B": 230,
+          "R_star": 2,
+          "remaining": 0,
+          "sources": 1
+        },
+        "composed_scramble_oscillations": {
+          "A": 23096,
+          "Q_B": 15775,
+          "R_star": 150,
+          "remaining": 0,
+          "sources": 12
+        },
+        "extreme_oscillations": {
+          "A": 31224,
+          "Q_B": 19503,
+          "R_star": 36,
+          "remaining": 0,
+          "sources": 27
+        },
+        "inherited": {
+          "A": 96291,
+          "Q_B": 45792,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 204
+        },
+        "missing_rank_barriers": {
+          "A": 10080,
+          "Q_B": 4148,
+          "R_star": 80,
+          "remaining": 0,
+          "sources": 30
+        },
+        "mixed_complete_periods": {
+          "A": 18050,
+          "Q_B": 7115,
+          "R_star": 13,
+          "remaining": 0,
+          "sources": 6
+        },
+        "multi_interruptions": {
+          "A": 7552,
+          "Q_B": 3357,
+          "R_star": 21,
+          "remaining": 0,
+          "sources": 12
+        },
+        "outside_probe": {
+          "A": 5421,
+          "Q_B": 2402,
+          "R_star": 18,
+          "remaining": 0,
+          "sources": 9
+        },
+        "outside_probe_reflected": {
+          "A": 261,
+          "Q_B": 110,
+          "R_star": 1,
+          "remaining": 0,
+          "sources": 1
+        },
+        "private_hangers": {
+          "A": 2352,
+          "Q_B": 1444,
+          "R_star": 17,
+          "remaining": 0,
+          "sources": 5
+        },
+        "protected_fringe": {
+          "A": 5040,
+          "Q_B": 2064,
+          "R_star": 12,
+          "remaining": 0,
+          "sources": 12
+        },
+        "scrambled_continuations": {
+          "A": 5178,
+          "Q_B": 3114,
+          "R_star": 84,
+          "remaining": 0,
+          "sources": 9
+        },
+        "sparse_leaf_cycles": {
+          "A": 753,
+          "Q_B": 546,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 18
+        },
+        "warmed_sparse_H": {
+          "A": 3638,
+          "Q_B": 1585,
+          "R_star": 17,
+          "remaining": 0,
+          "sources": 12
+        }
+      },
+      "inherited_R_star": 120,
+      "inherited_sources": 260,
+      "maximum_new_operations": 3332,
+      "maximum_population": 513,
+      "memory": {
+        "peak_pagefile_bytes": 695451648,
+        "peak_working_set_bytes": 701349888,
+        "working_set_bytes": 440221696
+      },
+      "new_R_star": 379,
+      "new_no_complete_equality_sources": 18,
+      "new_original_operations": 63015,
+      "new_sources": 120,
+      "new_types": {
+        "G": 24,
+        "O": 353,
+        "X": 2
+      },
+      "noncontinuous_B_histories": 14,
+      "original_operations": 184770,
+      "own_access_grandparent_parents": 1,
+      "process_CPU_seconds": 21.375,
+      "stage": "EXP04_finalize",
+      "status": "completed",
+      "universal_verdict": "OPEN; finite covered corpus does not establish completeness",
+      "wall_seconds": 22.527706300024875
+    },
+    {
+      "independent_original_operations": 121755,
+      "memory": {
+        "peak_pagefile_bytes": 2281218048,
+        "peak_working_set_bytes": 2262319104,
+        "working_set_bytes": 1916628992
+      },
+      "process_CPU_seconds": 284.390625,
+      "sources": 260,
+      "stage": "EXP04_inheritance",
+      "status": "completed",
+      "wall_seconds": 295.1389473999734
+    },
+    {
+      "after_monotone": 7,
+      "memory": {
+        "peak_pagefile_bytes": 2202079232,
+        "peak_working_set_bytes": 2181926912,
+        "working_set_bytes": 787816448
+      },
+      "process_CPU_seconds": 313.03125,
+      "remaining": 0,
+      "sources": 80,
+      "stage": "EXP04_monotone_inherited_new42",
+      "status": "completed",
+      "wall_seconds": 371.0650795000256
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 199815168,
+        "peak_working_set_bytes": 206823424,
+        "working_set_bytes": 198012928
+      },
+      "process_CPU_seconds": 36.03125,
+      "sources": 12,
+      "stage": "EXP04_sparse_lifecycle",
+      "status": "completed",
+      "undefined_loss": 0,
+      "wall_seconds": 52.58540569996694
+    },
+    {
+      "checks": 10838,
+      "critical_sources": 12,
+      "independent_operations": 9862,
+      "memory": {
+        "peak_pagefile_bytes": 809005056,
+        "peak_working_set_bytes": 813608960,
+        "working_set_bytes": 409620480
+      },
+      "process_CPU_seconds": 34.609375,
+      "stage": "EXP04_verification",
+      "status": "completed",
+      "wall_seconds": 36.881773399945814
+    },
+    {
+      "process_CPU_seconds": null,
+      "reason": "The inherited Meter used the same resource filename for the first and second cycle10 run. The second measured record survives; the first CPU/memory record cannot be recovered. No value is estimated. The EXP04 Meter was then changed to preserve versioned resource records. Both mathematical computations completed; this affects resource completeness only.",
+      "stage": "cycle10_weighted_drift_first_run",
+      "status": "measurement_overwritten_by_rerun",
+      "wall_seconds": null
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 57610240,
+        "peak_working_set_bytes": 64565248,
+        "working_set_bytes": 50700288
+      },
+      "process_CPU_seconds": 0.28125,
+      "stage": "EXP04_cycle10_weighted_drift_v002",
+      "status": "completed",
+      "wall_seconds": 0.28266680001979694
+    },
+    {
+      "R_next_finite": 0,
+      "R_star": 499,
+      "assignment_totals": {
+        "actual_density_window": 52,
+        "cycle_rank_certificate": 136,
+        "gappy_monotone": 276,
+        "zero_two_direction": 35
+      },
+      "canonical_sources": 380,
+      "families": {
+        "C15": {
+          "A": 778,
+          "Q_B": 500,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 8
+        },
+        "DH": {
+          "A": 7452,
+          "Q_B": 3241,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 14
+        },
+        "DH_reflected": {
+          "A": 258,
+          "Q_B": 109,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "DH_repeats": {
+          "A": 1548,
+          "Q_B": 654,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 2
+        },
+        "DW": {
+          "A": 3215,
+          "Q_B": 1316,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 5
+        },
+        "DW_reflected": {
+          "A": 556,
+          "Q_B": 231,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "G": {
+          "A": 16103,
+          "Q_B": 7817,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 33
+        },
+        "G_helpers": {
+          "A": 1444,
+          "Q_B": 624,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 4
+        },
+        "G_partial_prep": {
+          "A": 1023,
+          "Q_B": 468,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 3
+        },
+        "G_reflected": {
+          "A": 323,
+          "Q_B": 156,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "H": {
+          "A": 3584,
+          "Q_B": 1551,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 12
+        },
+        "H_dec": {
+          "A": 139,
+          "Q_B": 53,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "H_reflected": {
+          "A": 1024,
+          "Q_B": 459,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "IH": {
+          "A": 20757,
+          "Q_B": 8428,
+          "R_star": 9,
+          "remaining": 0,
+          "sources": 31
+        },
+        "IH_reflected": {
+          "A": 1156,
+          "Q_B": 464,
+          "R_star": 1,
+          "remaining": 0,
+          "sources": 3
+        },
+        "IH_repeated": {
+          "A": 1914,
+          "Q_B": 738,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 2
+        },
+        "I_m_Z": {
+          "A": 808,
+          "Q_B": 345,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 3
+        },
+        "O": {
+          "A": 16608,
+          "Q_B": 7113,
+          "R_star": 38,
+          "remaining": 0,
+          "sources": 29
+        },
+        "O_reflected": {
+          "A": 648,
+          "Q_B": 285,
+          "R_star": 2,
+          "remaining": 0,
+          "sources": 2
+        },
+        "W": {
+          "A": 2984,
+          "Q_B": 1213,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 11
+        },
+        "W_reflected": {
+          "A": 130,
+          "Q_B": 53,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "W_star": {
+          "A": 282,
+          "Q_B": 53,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "W_star_reflected": {
+          "A": 282,
+          "Q_B": 53,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "auxiliary_closure_control": {
+          "A": 17,
+          "Q_B": 0,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "composed_scramble_oscillations": {
+          "A": 23096,
+          "Q_B": 15775,
+          "R_star": 150,
+          "remaining": 0,
+          "sources": 12
+        },
+        "cut_DH": {
+          "A": 774,
+          "Q_B": 327,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 3
+        },
+        "cut_G": {
+          "A": 1292,
+          "Q_B": 624,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 4
+        },
+        "extreme_oscillations": {
+          "A": 31224,
+          "Q_B": 19503,
+          "R_star": 36,
+          "remaining": 0,
+          "sources": 27
+        },
+        "lifted_H": {
+          "A": 15930,
+          "Q_B": 10162,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 6
+        },
+        "lifted_H_reflected": {
+          "A": 5662,
+          "Q_B": 3753,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "missing_rank_barriers": {
+          "A": 10080,
+          "Q_B": 4148,
+          "R_star": 80,
+          "remaining": 0,
+          "sources": 30
+        },
+        "mixed_complete_periods": {
+          "A": 18050,
+          "Q_B": 7115,
+          "R_star": 13,
+          "remaining": 0,
+          "sources": 6
+        },
+        "multi_interruptions": {
+          "A": 7552,
+          "Q_B": 3357,
+          "R_star": 21,
+          "remaining": 0,
+          "sources": 12
+        },
+        "nested_DH": {
+          "A": 2598,
+          "Q_B": 872,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 8
+        },
+        "nested_DH_reflected": {
+          "A": 525,
+          "Q_B": 109,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "outside_probe": {
+          "A": 5421,
+          "Q_B": 2402,
+          "R_star": 18,
+          "remaining": 0,
+          "sources": 9
+        },
+        "outside_probe_reflected": {
+          "A": 261,
+          "Q_B": 110,
+          "R_star": 1,
+          "remaining": 0,
+          "sources": 1
+        },
+        "private_hangers": {
+          "A": 2526,
+          "Q_B": 1546,
+          "R_star": 17,
+          "remaining": 0,
+          "sources": 6
+        },
+        "protected_fringe": {
+          "A": 5040,
+          "Q_B": 2064,
+          "R_star": 12,
+          "remaining": 0,
+          "sources": 12
+        },
+        "scrambled_continuations": {
+          "A": 5178,
+          "Q_B": 3114,
+          "R_star": 84,
+          "remaining": 0,
+          "sources": 9
+        },
+        "sparse_leaf_cycles": {
+          "A": 753,
+          "Q_B": 546,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 18
+        },
+        "warm_local": {
+          "A": 228,
+          "Q_B": 156,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 4
+        },
+        "warm_marked": {
+          "A": 558,
+          "Q_B": 42,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 3
+        },
+        "warmed_private": {
+          "A": 474,
+          "Q_B": 270,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 24
+        },
+        "warmed_sparse_H": {
+          "A": 3638,
+          "Q_B": 1585,
+          "R_star": 17,
+          "remaining": 0,
+          "sources": 12
+        },
+        "zig_distortion": {
+          "A": 17,
+          "Q_B": 1,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        }
+      },
+      "inherited_R_star": 120,
+      "inherited_sources": 260,
+      "maximum_new_operations": 3332,
+      "maximum_population": 513,
+      "memory": {
+        "peak_pagefile_bytes": 694779904,
+        "peak_working_set_bytes": 700628992,
+        "working_set_bytes": 439504896
+      },
+      "new_R_star": 379,
+      "new_no_complete_equality_sources": 18,
+      "new_original_operations": 63015,
+      "new_sources": 120,
+      "new_types": {
+        "G": 24,
+        "O": 353,
+        "X": 2
+      },
+      "noncontinuous_B_histories": 14,
+      "original_operations": 184770,
+      "own_access_grandparent_parents": 1,
+      "process_CPU_seconds": 4.140625,
+      "stage": "EXP04_finalize",
+      "status": "completed",
+      "universal_verdict": "OPEN; finite covered corpus does not establish completeness",
+      "wall_seconds": 4.441453899955377
+    },
+    {
+      "R_next_finite": 0,
+      "R_star": 499,
+      "assignment_totals": {
+        "actual_density_window": 52,
+        "cycle_rank_certificate": 136,
+        "gappy_monotone": 276,
+        "zero_two_direction": 35
+      },
+      "canonical_sources": 380,
+      "families": {
+        "C15": {
+          "A": 778,
+          "Q_B": 500,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 8
+        },
+        "DH": {
+          "A": 7452,
+          "Q_B": 3241,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 14
+        },
+        "DH_reflected": {
+          "A": 258,
+          "Q_B": 109,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "DH_repeats": {
+          "A": 1548,
+          "Q_B": 654,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 2
+        },
+        "DW": {
+          "A": 3215,
+          "Q_B": 1316,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 5
+        },
+        "DW_reflected": {
+          "A": 556,
+          "Q_B": 231,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "G": {
+          "A": 16103,
+          "Q_B": 7817,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 33
+        },
+        "G_helpers": {
+          "A": 1444,
+          "Q_B": 624,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 4
+        },
+        "G_partial_prep": {
+          "A": 1023,
+          "Q_B": 468,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 3
+        },
+        "G_reflected": {
+          "A": 323,
+          "Q_B": 156,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "H": {
+          "A": 3584,
+          "Q_B": 1551,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 12
+        },
+        "H_dec": {
+          "A": 139,
+          "Q_B": 53,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "H_reflected": {
+          "A": 1024,
+          "Q_B": 459,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "IH": {
+          "A": 20757,
+          "Q_B": 8428,
+          "R_star": 9,
+          "remaining": 0,
+          "sources": 31
+        },
+        "IH_reflected": {
+          "A": 1156,
+          "Q_B": 464,
+          "R_star": 1,
+          "remaining": 0,
+          "sources": 3
+        },
+        "IH_repeated": {
+          "A": 1914,
+          "Q_B": 738,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 2
+        },
+        "I_m_Z": {
+          "A": 808,
+          "Q_B": 345,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 3
+        },
+        "O": {
+          "A": 16608,
+          "Q_B": 7113,
+          "R_star": 38,
+          "remaining": 0,
+          "sources": 29
+        },
+        "O_reflected": {
+          "A": 648,
+          "Q_B": 285,
+          "R_star": 2,
+          "remaining": 0,
+          "sources": 2
+        },
+        "W": {
+          "A": 2984,
+          "Q_B": 1213,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 11
+        },
+        "W_reflected": {
+          "A": 130,
+          "Q_B": 53,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "W_star": {
+          "A": 282,
+          "Q_B": 53,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "W_star_reflected": {
+          "A": 282,
+          "Q_B": 53,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "auxiliary_closure_control": {
+          "A": 17,
+          "Q_B": 0,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "composed_scramble_oscillations": {
+          "A": 23096,
+          "Q_B": 15775,
+          "R_star": 150,
+          "remaining": 0,
+          "sources": 12
+        },
+        "cut_DH": {
+          "A": 774,
+          "Q_B": 327,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 3
+        },
+        "cut_G": {
+          "A": 1292,
+          "Q_B": 624,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 4
+        },
+        "extreme_oscillations": {
+          "A": 31224,
+          "Q_B": 19503,
+          "R_star": 36,
+          "remaining": 0,
+          "sources": 27
+        },
+        "lifted_H": {
+          "A": 15930,
+          "Q_B": 10162,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 6
+        },
+        "lifted_H_reflected": {
+          "A": 5662,
+          "Q_B": 3753,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "missing_rank_barriers": {
+          "A": 10080,
+          "Q_B": 4148,
+          "R_star": 80,
+          "remaining": 0,
+          "sources": 30
+        },
+        "mixed_complete_periods": {
+          "A": 18050,
+          "Q_B": 7115,
+          "R_star": 13,
+          "remaining": 0,
+          "sources": 6
+        },
+        "multi_interruptions": {
+          "A": 7552,
+          "Q_B": 3357,
+          "R_star": 21,
+          "remaining": 0,
+          "sources": 12
+        },
+        "nested_DH": {
+          "A": 2598,
+          "Q_B": 872,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 8
+        },
+        "nested_DH_reflected": {
+          "A": 525,
+          "Q_B": 109,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        },
+        "outside_probe": {
+          "A": 5421,
+          "Q_B": 2402,
+          "R_star": 18,
+          "remaining": 0,
+          "sources": 9
+        },
+        "outside_probe_reflected": {
+          "A": 261,
+          "Q_B": 110,
+          "R_star": 1,
+          "remaining": 0,
+          "sources": 1
+        },
+        "private_hangers": {
+          "A": 2526,
+          "Q_B": 1546,
+          "R_star": 17,
+          "remaining": 0,
+          "sources": 6
+        },
+        "protected_fringe": {
+          "A": 5040,
+          "Q_B": 2064,
+          "R_star": 12,
+          "remaining": 0,
+          "sources": 12
+        },
+        "scrambled_continuations": {
+          "A": 5178,
+          "Q_B": 3114,
+          "R_star": 84,
+          "remaining": 0,
+          "sources": 9
+        },
+        "sparse_leaf_cycles": {
+          "A": 753,
+          "Q_B": 546,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 18
+        },
+        "warm_local": {
+          "A": 228,
+          "Q_B": 156,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 4
+        },
+        "warm_marked": {
+          "A": 558,
+          "Q_B": 42,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 3
+        },
+        "warmed_private": {
+          "A": 474,
+          "Q_B": 270,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 24
+        },
+        "warmed_sparse_H": {
+          "A": 3638,
+          "Q_B": 1585,
+          "R_star": 17,
+          "remaining": 0,
+          "sources": 12
+        },
+        "zig_distortion": {
+          "A": 17,
+          "Q_B": 1,
+          "R_star": 0,
+          "remaining": 0,
+          "sources": 1
+        }
+      },
+      "inherited_R_star": 120,
+      "inherited_sources": 260,
+      "maximum_new_operations": 3332,
+      "maximum_population": 513,
+      "memory": {
+        "peak_pagefile_bytes": 717705216,
+        "peak_working_set_bytes": 724238336,
+        "working_set_bytes": 441262080
+      },
+      "new_R_star": 379,
+      "new_no_complete_equality_sources": 18,
+      "new_original_operations": 63015,
+      "new_sources": 120,
+      "new_types": {
+        "G": 24,
+        "O": 353,
+        "X": 2
+      },
+      "noncontinuous_B_histories": 14,
+      "original_operations": 184770,
+      "own_access_grandparent_parents": 1,
+      "process_CPU_seconds": 28.9375,
+      "stage": "EXP04_finalize",
+      "status": "completed",
+      "universal_verdict": "OPEN; finite covered corpus does not establish completeness",
+      "wall_seconds": 32.072034600016195
+    },
+    {
+      "measurement_boundary": "preflight only; subsequent resource aggregation and final manifest hashing are excluded",
+      "memory": {
+        "peak_pagefile_bytes": 370069504,
+        "peak_working_set_bytes": 374099968,
+        "working_set_bytes": 152502272
+      },
+      "process_CPU_seconds": 14.390625,
+      "stage": "package_preflight",
+      "status": "completed",
+      "wall_seconds": 28.86397309997119
+    },
+    {
+      "measurement_boundary": "preflight only; subsequent resource aggregation and final manifest hashing are excluded",
+      "memory": {
+        "peak_pagefile_bytes": 370155520,
+        "peak_working_set_bytes": 374173696,
+        "working_set_bytes": 151736320
+      },
+      "process_CPU_seconds": 11.46875,
+      "stage": "package_preflight",
+      "status": "completed",
+      "wall_seconds": 19.25882350001484
+    }
+  ],
+  "sum_recorded_stage_wall_seconds": 1583.0090934999753,
+  "unmeasured": "First cycle10 resource record was overwritten; marked explicitly, not estimated. Interactive inspections/prose and final hashing are not continuously measured. No exact total session CPU or hard scheduler quota is claimed."
+}

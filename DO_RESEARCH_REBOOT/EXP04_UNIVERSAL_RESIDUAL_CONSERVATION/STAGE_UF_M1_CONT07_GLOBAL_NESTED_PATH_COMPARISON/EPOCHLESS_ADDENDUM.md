@@ -1,0 +1,5 @@
+# Two explicit epochless physical controls
+
+Before construction, extend the fresh complete-source allocation from8 to10 solely to add two five-key epochless controls (one reflection). The1800 measured script CPU, population1027,40000-word and2GiB peak aims are unchanged. The existing8 sources stay preserved. This tests a mandatory cyclic branch that prior all-key support tours did not instantiate: an original B old-grandparent column with NO actual A demotion anywhere in the period.
+
+The fixed B state is root3,left2(left1),right4(right5). The A state is root3,left2(left1),right5(left4). Use the complete word K5,K1,K2,K5,K1,K5,K2,K3. Target4 is absent, A4 is a permanently fixed leaf, and both full trees are asserted to close. The only old-grandparent4 use is predicted at operation5; its preceding-lap self-copy is separated by an actual SS non-target promotion, not by A work. Recompute the full forest and original selectors. This does not presume an epochless ORIGINAL C_old or positive S_PF occurrence.

@@ -1,0 +1,5860 @@
+{
+  "causal_results": "EXP03_CAUSAL_EPISODE_RESULTS.json",
+  "parent_records": [
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              49,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 48,
+            "present_after": false,
+            "promoted": 49,
+            "time": 97
+          },
+          {
+            "added": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              49,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 48,
+            "present_after": false,
+            "promoted": 49,
+            "time": 98
+          },
+          {
+            "added": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              82,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 49,
+            "present_after": true,
+            "promoted": 48,
+            "time": 147
+          },
+          {
+            "added": [
+              [
+                48,
+                56,
+                1
+              ],
+              [
+                56,
+                52,
+                0
+              ],
+              [
+                64,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                48,
+                52,
+                1
+              ],
+              [
+                56,
+                48,
+                0
+              ],
+              [
+                64,
+                56,
+                0
+              ]
+            ],
+            "external": 64,
+            "id": [
+              "B",
+              137,
+              3,
+              0
+            ],
+            "middle": 52,
+            "original_SET_sign": 0,
+            "pivot": 56,
+            "present_after": true,
+            "promoted": 48,
+            "time": 318
+          },
+          {
+            "added": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              178,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 48,
+            "present_after": false,
+            "promoted": 49,
+            "time": 366
+          },
+          {
+            "added": [
+              [
+                32,
+                56,
+                1
+              ],
+              [
+                48,
+                52,
+                1
+              ],
+              [
+                56,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                32,
+                48,
+                1
+              ],
+              [
+                48,
+                56,
+                1
+              ],
+              [
+                56,
+                52,
+                0
+              ]
+            ],
+            "external": 32,
+            "id": [
+              "B",
+              197,
+              2,
+              0
+            ],
+            "middle": 52,
+            "original_SET_sign": 0,
+            "pivot": 48,
+            "present_after": false,
+            "promoted": 56,
+            "time": 390
+          },
+          {
+            "added": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              215,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 49,
+            "present_after": true,
+            "promoted": 48,
+            "time": 448
+          },
+          {
+            "added": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              215,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 49,
+            "present_after": true,
+            "promoted": 48,
+            "time": 449
+          }
+        ],
+        "g": 48,
+        "initial_relation": {
+          "A": true,
+          "B": true
+        },
+        "target": 63
+      },
+      "consumer_A": 1,
+      "g": 48,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            49,
+            48,
+            0
+          ]
+        ],
+        "deleted": [
+          [
+            48,
+            49,
+            1
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          178,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 0,
+        "pivot": 48,
+        "present_after": false,
+        "previous_period": false,
+        "promoted": 49,
+        "time": 366,
+        "unrolled_time": 366
+      },
+      "original_A_path": [
+        64,
+        63
+      ],
+      "original_B_path": [
+        64,
+        16,
+        32,
+        48,
+        56,
+        60,
+        62,
+        63
+      ],
+      "original_parent": [
+        197,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 9223372032559808512,
+        "Gamma": 330,
+        "J": 36028792723996672,
+        "case": "RR",
+        "events": [
+          390,
+          391
+        ],
+        "exposed": false,
+        "g": 48,
+        "h": 208,
+        "hit_time": 424,
+        "id": [
+          197,
+          2
+        ],
+        "kappa": -203,
+        "nu": 390,
+        "post_A": 387,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "Xprobe_p4_L3_hitNone_boundary1",
+      "target": 63,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              49,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 48,
+            "present_after": false,
+            "promoted": 49,
+            "time": 97
+          },
+          {
+            "added": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              49,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 48,
+            "present_after": false,
+            "promoted": 49,
+            "time": 98
+          },
+          {
+            "added": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              82,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 49,
+            "present_after": true,
+            "promoted": 48,
+            "time": 147
+          },
+          {
+            "added": [
+              [
+                48,
+                56,
+                1
+              ],
+              [
+                56,
+                52,
+                0
+              ],
+              [
+                64,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                48,
+                52,
+                1
+              ],
+              [
+                56,
+                48,
+                0
+              ],
+              [
+                64,
+                56,
+                0
+              ]
+            ],
+            "external": 64,
+            "id": [
+              "B",
+              137,
+              3,
+              0
+            ],
+            "middle": 52,
+            "original_SET_sign": 0,
+            "pivot": 56,
+            "present_after": true,
+            "promoted": 48,
+            "time": 318
+          },
+          {
+            "added": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              178,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 48,
+            "present_after": false,
+            "promoted": 49,
+            "time": 366
+          },
+          {
+            "added": [
+              [
+                32,
+                56,
+                1
+              ],
+              [
+                48,
+                52,
+                1
+              ],
+              [
+                56,
+                48,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                32,
+                48,
+                1
+              ],
+              [
+                48,
+                56,
+                1
+              ],
+              [
+                56,
+                52,
+                0
+              ]
+            ],
+            "external": 32,
+            "id": [
+              "B",
+              197,
+              2,
+              0
+            ],
+            "middle": 52,
+            "original_SET_sign": 0,
+            "pivot": 48,
+            "present_after": false,
+            "promoted": 56,
+            "time": 392
+          },
+          {
+            "added": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              215,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 49,
+            "present_after": true,
+            "promoted": 48,
+            "time": 452
+          },
+          {
+            "added": [
+              [
+                48,
+                49,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                49,
+                48,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              215,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 49,
+            "present_after": true,
+            "promoted": 48,
+            "time": 453
+          }
+        ],
+        "g": 48,
+        "initial_relation": {
+          "A": true,
+          "B": true
+        },
+        "target": 61
+      },
+      "consumer_A": 2,
+      "g": 48,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            49,
+            48,
+            0
+          ]
+        ],
+        "deleted": [
+          [
+            48,
+            49,
+            1
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          178,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 0,
+        "pivot": 48,
+        "present_after": false,
+        "previous_period": false,
+        "promoted": 49,
+        "time": 366,
+        "unrolled_time": 366
+      },
+      "original_A_path": [
+        64,
+        63,
+        62,
+        61
+      ],
+      "original_B_path": [
+        64,
+        16,
+        32,
+        48,
+        56,
+        60,
+        62,
+        61
+      ],
+      "original_parent": [
+        197,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 9223372032559808512,
+        "Gamma": 330,
+        "J": 36028792723996672,
+        "case": "RR",
+        "events": [
+          392,
+          393
+        ],
+        "exposed": false,
+        "g": 48,
+        "h": 208,
+        "hit_time": 428,
+        "id": [
+          197,
+          2
+        ],
+        "kappa": -205,
+        "nu": 392,
+        "post_A": 389,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "Xprobe_p4_L2_hit61_boundary1",
+      "target": 61,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              113,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 112,
+            "present_after": false,
+            "promoted": 113,
+            "time": 225
+          },
+          {
+            "added": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              113,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 112,
+            "present_after": false,
+            "promoted": 113,
+            "time": 226
+          },
+          {
+            "added": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              146,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 113,
+            "present_after": true,
+            "promoted": 112,
+            "time": 275
+          },
+          {
+            "added": [
+              [
+                112,
+                120,
+                1
+              ],
+              [
+                120,
+                116,
+                0
+              ],
+              [
+                128,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                112,
+                116,
+                1
+              ],
+              [
+                120,
+                112,
+                0
+              ],
+              [
+                128,
+                120,
+                0
+              ]
+            ],
+            "external": 128,
+            "id": [
+              "B",
+              265,
+              7,
+              0
+            ],
+            "middle": 116,
+            "original_SET_sign": 0,
+            "pivot": 120,
+            "present_after": true,
+            "promoted": 112,
+            "time": 630
+          },
+          {
+            "added": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              370,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 112,
+            "present_after": false,
+            "promoted": 113,
+            "time": 750
+          },
+          {
+            "added": [
+              [
+                96,
+                120,
+                1
+              ],
+              [
+                112,
+                116,
+                1
+              ],
+              [
+                120,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                96,
+                112,
+                1
+              ],
+              [
+                112,
+                120,
+                1
+              ],
+              [
+                120,
+                116,
+                0
+              ]
+            ],
+            "external": 96,
+            "id": [
+              "B",
+              389,
+              2,
+              0
+            ],
+            "middle": 116,
+            "original_SET_sign": 0,
+            "pivot": 112,
+            "present_after": false,
+            "promoted": 120,
+            "time": 774
+          },
+          {
+            "added": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              407,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 113,
+            "present_after": true,
+            "promoted": 112,
+            "time": 841
+          },
+          {
+            "added": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              407,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 113,
+            "present_after": true,
+            "promoted": 112,
+            "time": 842
+          }
+        ],
+        "g": 112,
+        "initial_relation": {
+          "A": true,
+          "B": true
+        },
+        "target": 127
+      },
+      "consumer_A": 1,
+      "g": 112,
+      "gap_multiplicity": 2,
+      "last_A_loss": {
+        "added": [
+          [
+            113,
+            112,
+            0
+          ]
+        ],
+        "deleted": [
+          [
+            112,
+            113,
+            1
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          370,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 0,
+        "pivot": 112,
+        "present_after": false,
+        "previous_period": false,
+        "promoted": 113,
+        "time": 750,
+        "unrolled_time": 750
+      },
+      "original_A_path": [
+        128,
+        127
+      ],
+      "original_B_path": [
+        128,
+        32,
+        64,
+        96,
+        112,
+        120,
+        124,
+        126,
+        127
+      ],
+      "original_parent": [
+        389,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 170141183381241069217422966122340155392,
+        "Gamma": 646,
+        "J": 664613918664295422187565936596221952,
+        "case": "RR",
+        "events": [
+          774,
+          775
+        ],
+        "exposed": false,
+        "g": 112,
+        "h": 400,
+        "hit_time": 815,
+        "id": [
+          389,
+          2
+        ],
+        "kappa": -426,
+        "nu": 774,
+        "post_A": 771,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "Xprobe_p5_L3_hitNone_boundary1",
+      "target": 127,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              113,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 112,
+            "present_after": false,
+            "promoted": 113,
+            "time": 225
+          },
+          {
+            "added": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              113,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 112,
+            "present_after": false,
+            "promoted": 113,
+            "time": 226
+          },
+          {
+            "added": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              146,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 113,
+            "present_after": true,
+            "promoted": 112,
+            "time": 275
+          },
+          {
+            "added": [
+              [
+                112,
+                120,
+                1
+              ],
+              [
+                120,
+                116,
+                0
+              ],
+              [
+                128,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                112,
+                116,
+                1
+              ],
+              [
+                120,
+                112,
+                0
+              ],
+              [
+                128,
+                120,
+                0
+              ]
+            ],
+            "external": 128,
+            "id": [
+              "B",
+              265,
+              7,
+              0
+            ],
+            "middle": 116,
+            "original_SET_sign": 0,
+            "pivot": 120,
+            "present_after": true,
+            "promoted": 112,
+            "time": 630
+          },
+          {
+            "added": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              370,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 112,
+            "present_after": false,
+            "promoted": 113,
+            "time": 750
+          },
+          {
+            "added": [
+              [
+                96,
+                120,
+                1
+              ],
+              [
+                112,
+                116,
+                1
+              ],
+              [
+                120,
+                112,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                96,
+                112,
+                1
+              ],
+              [
+                112,
+                120,
+                1
+              ],
+              [
+                120,
+                116,
+                0
+              ]
+            ],
+            "external": 96,
+            "id": [
+              "B",
+              389,
+              2,
+              0
+            ],
+            "middle": 116,
+            "original_SET_sign": 0,
+            "pivot": 112,
+            "present_after": false,
+            "promoted": 120,
+            "time": 776
+          },
+          {
+            "added": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              407,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 113,
+            "present_after": true,
+            "promoted": 112,
+            "time": 843
+          },
+          {
+            "added": [
+              [
+                112,
+                113,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                113,
+                112,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              407,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 113,
+            "present_after": true,
+            "promoted": 112,
+            "time": 844
+          }
+        ],
+        "g": 112,
+        "initial_relation": {
+          "A": true,
+          "B": true
+        },
+        "target": 125
+      },
+      "consumer_A": 2,
+      "g": 112,
+      "gap_multiplicity": 2,
+      "last_A_loss": {
+        "added": [
+          [
+            113,
+            112,
+            0
+          ]
+        ],
+        "deleted": [
+          [
+            112,
+            113,
+            1
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          370,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 0,
+        "pivot": 112,
+        "present_after": false,
+        "previous_period": false,
+        "promoted": 113,
+        "time": 750,
+        "unrolled_time": 750
+      },
+      "original_A_path": [
+        128,
+        127,
+        126,
+        125
+      ],
+      "original_B_path": [
+        128,
+        32,
+        64,
+        96,
+        112,
+        120,
+        124,
+        126,
+        125
+      ],
+      "original_parent": [
+        389,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 170141183381241069217422966122340155392,
+        "Gamma": 646,
+        "J": 664613918664295422187565936596221952,
+        "case": "RR",
+        "events": [
+          776,
+          777
+        ],
+        "exposed": false,
+        "g": 112,
+        "h": 400,
+        "hit_time": 817,
+        "id": [
+          389,
+          2
+        ],
+        "kappa": -426,
+        "nu": 776,
+        "post_A": 773,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "Xprobe_p5_L2_hit125_boundary1",
+      "target": 125,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              241,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 240,
+            "present_after": false,
+            "promoted": 241,
+            "time": 481
+          },
+          {
+            "added": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              241,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 240,
+            "present_after": false,
+            "promoted": 241,
+            "time": 482
+          },
+          {
+            "added": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              274,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 241,
+            "present_after": true,
+            "promoted": 240,
+            "time": 531
+          },
+          {
+            "added": [
+              [
+                240,
+                248,
+                1
+              ],
+              [
+                248,
+                244,
+                0
+              ],
+              [
+                256,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                240,
+                244,
+                1
+              ],
+              [
+                248,
+                240,
+                0
+              ],
+              [
+                256,
+                248,
+                0
+              ]
+            ],
+            "external": 256,
+            "id": [
+              "B",
+              521,
+              15,
+              0
+            ],
+            "middle": 244,
+            "original_SET_sign": 0,
+            "pivot": 248,
+            "present_after": true,
+            "promoted": 240,
+            "time": 1254
+          },
+          {
+            "added": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              754,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 240,
+            "present_after": false,
+            "promoted": 241,
+            "time": 1518
+          },
+          {
+            "added": [
+              [
+                224,
+                248,
+                1
+              ],
+              [
+                240,
+                244,
+                1
+              ],
+              [
+                248,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                224,
+                240,
+                1
+              ],
+              [
+                240,
+                248,
+                1
+              ],
+              [
+                248,
+                244,
+                0
+              ]
+            ],
+            "external": 224,
+            "id": [
+              "B",
+              773,
+              2,
+              0
+            ],
+            "middle": 244,
+            "original_SET_sign": 0,
+            "pivot": 240,
+            "present_after": false,
+            "promoted": 248,
+            "time": 1542
+          },
+          {
+            "added": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              791,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 241,
+            "present_after": true,
+            "promoted": 240,
+            "time": 1610
+          },
+          {
+            "added": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              791,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 241,
+            "present_after": true,
+            "promoted": 240,
+            "time": 1611
+          }
+        ],
+        "g": 240,
+        "initial_relation": {
+          "A": true,
+          "B": true
+        },
+        "target": 255
+      },
+      "consumer_A": 1,
+      "g": 240,
+      "gap_multiplicity": 2,
+      "last_A_loss": {
+        "added": [
+          [
+            241,
+            240,
+            0
+          ]
+        ],
+        "deleted": [
+          [
+            240,
+            241,
+            1
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          754,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 0,
+        "pivot": 240,
+        "present_after": false,
+        "previous_period": false,
+        "promoted": 241,
+        "time": 1518,
+        "unrolled_time": 1518
+      },
+      "original_A_path": [
+        256,
+        255
+      ],
+      "original_B_path": [
+        256,
+        64,
+        128,
+        192,
+        224,
+        240,
+        248,
+        252,
+        254,
+        255
+      ],
+      "original_parent": [
+        773,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 57896044591698151044634852709676938839615361659183137597188219522852954570752,
+        "Gamma": 1278,
+        "J": 226156397331686527036022285428078483006287265162934804098993112661845082112,
+        "case": "RR",
+        "events": [
+          1542,
+          1543
+        ],
+        "exposed": false,
+        "g": 240,
+        "h": 784,
+        "hit_time": 1584,
+        "id": [
+          773,
+          2
+        ],
+        "kappa": -849,
+        "nu": 1542,
+        "post_A": 1539,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "Xprobe_p6_L3_hitNone_boundary1",
+      "target": 255,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              193,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 192,
+            "present_after": false,
+            "promoted": 193,
+            "time": 385
+          },
+          {
+            "added": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              193,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 192,
+            "present_after": false,
+            "promoted": 193,
+            "time": 386
+          },
+          {
+            "added": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              322,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 193,
+            "present_after": true,
+            "promoted": 192,
+            "time": 579
+          },
+          {
+            "added": [
+              [
+                192,
+                224,
+                1
+              ],
+              [
+                224,
+                208,
+                0
+              ],
+              [
+                256,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                192,
+                208,
+                1
+              ],
+              [
+                224,
+                192,
+                0
+              ],
+              [
+                256,
+                224,
+                0
+              ]
+            ],
+            "external": 256,
+            "id": [
+              "B",
+              545,
+              3,
+              0
+            ],
+            "middle": 208,
+            "original_SET_sign": 0,
+            "pivot": 224,
+            "present_after": true,
+            "promoted": 192,
+            "time": 1302
+          },
+          {
+            "added": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              706,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 192,
+            "present_after": false,
+            "promoted": 193,
+            "time": 1470
+          },
+          {
+            "added": [
+              [
+                128,
+                224,
+                1
+              ],
+              [
+                192,
+                208,
+                1
+              ],
+              [
+                224,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                128,
+                192,
+                1
+              ],
+              [
+                192,
+                224,
+                1
+              ],
+              [
+                224,
+                208,
+                0
+              ]
+            ],
+            "external": 128,
+            "id": [
+              "B",
+              773,
+              3,
+              0
+            ],
+            "middle": 208,
+            "original_SET_sign": 0,
+            "pivot": 192,
+            "present_after": false,
+            "promoted": 224,
+            "time": 1544
+          },
+          {
+            "added": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              839,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 193,
+            "present_after": true,
+            "promoted": 192,
+            "time": 1770
+          },
+          {
+            "added": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              839,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 193,
+            "present_after": true,
+            "promoted": 192,
+            "time": 1771
+          }
+        ],
+        "g": 192,
+        "initial_relation": {
+          "A": true,
+          "B": true
+        },
+        "target": 255
+      },
+      "consumer_A": 1,
+      "g": 192,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            193,
+            192,
+            0
+          ]
+        ],
+        "deleted": [
+          [
+            192,
+            193,
+            1
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          706,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 0,
+        "pivot": 192,
+        "present_after": false,
+        "previous_period": false,
+        "promoted": 193,
+        "time": 1470,
+        "unrolled_time": 1470
+      },
+      "original_A_path": [
+        256,
+        255
+      ],
+      "original_B_path": [
+        256,
+        64,
+        128,
+        192,
+        224,
+        240,
+        248,
+        252,
+        254,
+        255
+      ],
+      "original_parent": [
+        773,
+        3
+      ],
+      "original_parent_certificate": {
+        "F": 57896044618658097711785492504343953926294709965899343556265417396524796608512,
+        "Gamma": 1338,
+        "J": 13479973333575319897333507543169532969897633747806911633120036913152,
+        "case": "RR",
+        "events": [
+          1544,
+          1545
+        ],
+        "exposed": false,
+        "g": 192,
+        "h": 808,
+        "hit_time": 1666,
+        "id": [
+          773,
+          3
+        ],
+        "kappa": -847,
+        "nu": 1544,
+        "post_A": 1539,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "Xprobe_p6_L3_hitNone_boundary1",
+      "target": 255,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              241,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 240,
+            "present_after": false,
+            "promoted": 241,
+            "time": 481
+          },
+          {
+            "added": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              241,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 240,
+            "present_after": false,
+            "promoted": 241,
+            "time": 482
+          },
+          {
+            "added": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              274,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 241,
+            "present_after": true,
+            "promoted": 240,
+            "time": 531
+          },
+          {
+            "added": [
+              [
+                240,
+                248,
+                1
+              ],
+              [
+                248,
+                244,
+                0
+              ],
+              [
+                256,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                240,
+                244,
+                1
+              ],
+              [
+                248,
+                240,
+                0
+              ],
+              [
+                256,
+                248,
+                0
+              ]
+            ],
+            "external": 256,
+            "id": [
+              "B",
+              521,
+              15,
+              0
+            ],
+            "middle": 244,
+            "original_SET_sign": 0,
+            "pivot": 248,
+            "present_after": true,
+            "promoted": 240,
+            "time": 1254
+          },
+          {
+            "added": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              754,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 240,
+            "present_after": false,
+            "promoted": 241,
+            "time": 1518
+          },
+          {
+            "added": [
+              [
+                224,
+                248,
+                1
+              ],
+              [
+                240,
+                244,
+                1
+              ],
+              [
+                248,
+                240,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                224,
+                240,
+                1
+              ],
+              [
+                240,
+                248,
+                1
+              ],
+              [
+                248,
+                244,
+                0
+              ]
+            ],
+            "external": 224,
+            "id": [
+              "B",
+              773,
+              2,
+              0
+            ],
+            "middle": 244,
+            "original_SET_sign": 0,
+            "pivot": 240,
+            "present_after": false,
+            "promoted": 248,
+            "time": 1544
+          },
+          {
+            "added": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              791,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 241,
+            "present_after": true,
+            "promoted": 240,
+            "time": 1612
+          },
+          {
+            "added": [
+              [
+                240,
+                241,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                241,
+                240,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              791,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 241,
+            "present_after": true,
+            "promoted": 240,
+            "time": 1613
+          }
+        ],
+        "g": 240,
+        "initial_relation": {
+          "A": true,
+          "B": true
+        },
+        "target": 253
+      },
+      "consumer_A": 2,
+      "g": 240,
+      "gap_multiplicity": 2,
+      "last_A_loss": {
+        "added": [
+          [
+            241,
+            240,
+            0
+          ]
+        ],
+        "deleted": [
+          [
+            240,
+            241,
+            1
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          754,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 0,
+        "pivot": 240,
+        "present_after": false,
+        "previous_period": false,
+        "promoted": 241,
+        "time": 1518,
+        "unrolled_time": 1518
+      },
+      "original_A_path": [
+        256,
+        255,
+        254,
+        253
+      ],
+      "original_B_path": [
+        256,
+        64,
+        128,
+        192,
+        224,
+        240,
+        248,
+        252,
+        254,
+        253
+      ],
+      "original_parent": [
+        773,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 57896044591698151044634852709676938839615361659183137597188219522852954570752,
+        "Gamma": 1278,
+        "J": 226156397331686527036022285428078483006287265162934804098993112661845082112,
+        "case": "RR",
+        "events": [
+          1544,
+          1545
+        ],
+        "exposed": false,
+        "g": 240,
+        "h": 784,
+        "hit_time": 1586,
+        "id": [
+          773,
+          2
+        ],
+        "kappa": -849,
+        "nu": 1544,
+        "post_A": 1541,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "Xprobe_p6_L2_hit253_boundary1",
+      "target": 253,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              193,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 192,
+            "present_after": false,
+            "promoted": 193,
+            "time": 385
+          },
+          {
+            "added": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              193,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 192,
+            "present_after": false,
+            "promoted": 193,
+            "time": 386
+          },
+          {
+            "added": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              322,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 193,
+            "present_after": true,
+            "promoted": 192,
+            "time": 579
+          },
+          {
+            "added": [
+              [
+                192,
+                224,
+                1
+              ],
+              [
+                224,
+                208,
+                0
+              ],
+              [
+                256,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                192,
+                208,
+                1
+              ],
+              [
+                224,
+                192,
+                0
+              ],
+              [
+                256,
+                224,
+                0
+              ]
+            ],
+            "external": 256,
+            "id": [
+              "B",
+              545,
+              3,
+              0
+            ],
+            "middle": 208,
+            "original_SET_sign": 0,
+            "pivot": 224,
+            "present_after": true,
+            "promoted": 192,
+            "time": 1302
+          },
+          {
+            "added": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              706,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 192,
+            "present_after": false,
+            "promoted": 193,
+            "time": 1470
+          },
+          {
+            "added": [
+              [
+                128,
+                224,
+                1
+              ],
+              [
+                192,
+                208,
+                1
+              ],
+              [
+                224,
+                192,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                128,
+                192,
+                1
+              ],
+              [
+                192,
+                224,
+                1
+              ],
+              [
+                224,
+                208,
+                0
+              ]
+            ],
+            "external": 128,
+            "id": [
+              "B",
+              773,
+              3,
+              0
+            ],
+            "middle": 208,
+            "original_SET_sign": 0,
+            "pivot": 192,
+            "present_after": false,
+            "promoted": 224,
+            "time": 1546
+          },
+          {
+            "added": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              839,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 193,
+            "present_after": true,
+            "promoted": 192,
+            "time": 1772
+          },
+          {
+            "added": [
+              [
+                192,
+                193,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                193,
+                192,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              839,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 193,
+            "present_after": true,
+            "promoted": 192,
+            "time": 1773
+          }
+        ],
+        "g": 192,
+        "initial_relation": {
+          "A": true,
+          "B": true
+        },
+        "target": 253
+      },
+      "consumer_A": 2,
+      "g": 192,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            193,
+            192,
+            0
+          ]
+        ],
+        "deleted": [
+          [
+            192,
+            193,
+            1
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          706,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 0,
+        "pivot": 192,
+        "present_after": false,
+        "previous_period": false,
+        "promoted": 193,
+        "time": 1470,
+        "unrolled_time": 1470
+      },
+      "original_A_path": [
+        256,
+        255,
+        254,
+        253
+      ],
+      "original_B_path": [
+        256,
+        64,
+        128,
+        192,
+        224,
+        240,
+        248,
+        252,
+        254,
+        253
+      ],
+      "original_parent": [
+        773,
+        3
+      ],
+      "original_parent_certificate": {
+        "F": 57896044618658097711785492504343953926294709965899343556265417396524796608512,
+        "Gamma": 1338,
+        "J": 13479973333575319897333507543169532969897633747806911633120036913152,
+        "case": "RR",
+        "events": [
+          1546,
+          1547
+        ],
+        "exposed": false,
+        "g": 192,
+        "h": 808,
+        "hit_time": 1668,
+        "id": [
+          773,
+          3
+        ],
+        "kappa": -847,
+        "nu": 1546,
+        "post_A": 1541,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "Xprobe_p6_L2_hit253_boundary1",
+      "target": 253,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                17,
+                18,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                18,
+                17,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              49,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 18,
+            "present_after": false,
+            "promoted": 17,
+            "time": 97
+          },
+          {
+            "added": [
+              [
+                17,
+                18,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                18,
+                17,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              49,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 18,
+            "present_after": false,
+            "promoted": 17,
+            "time": 98
+          },
+          {
+            "added": [
+              [
+                18,
+                17,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                17,
+                18,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              82,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 17,
+            "present_after": true,
+            "promoted": 18,
+            "time": 147
+          },
+          {
+            "added": [
+              [
+                2,
+                18,
+                1
+              ],
+              [
+                10,
+                14,
+                1
+              ],
+              [
+                18,
+                10,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                2,
+                10,
+                1
+              ],
+              [
+                10,
+                18,
+                1
+              ],
+              [
+                18,
+                14,
+                0
+              ]
+            ],
+            "external": 2,
+            "id": [
+              "B",
+              137,
+              3,
+              0
+            ],
+            "middle": 14,
+            "original_SET_sign": 0,
+            "pivot": 10,
+            "present_after": true,
+            "promoted": 18,
+            "time": 318
+          },
+          {
+            "added": [
+              [
+                17,
+                18,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                18,
+                17,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              178,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 18,
+            "present_after": false,
+            "promoted": 17,
+            "time": 366
+          },
+          {
+            "added": [
+              [
+                10,
+                18,
+                1
+              ],
+              [
+                18,
+                14,
+                0
+              ],
+              [
+                34,
+                10,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                10,
+                14,
+                1
+              ],
+              [
+                18,
+                10,
+                0
+              ],
+              [
+                34,
+                18,
+                0
+              ]
+            ],
+            "external": 34,
+            "id": [
+              "B",
+              197,
+              2,
+              0
+            ],
+            "middle": 14,
+            "original_SET_sign": 0,
+            "pivot": 18,
+            "present_after": false,
+            "promoted": 10,
+            "time": 390
+          },
+          {
+            "added": [
+              [
+                18,
+                17,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                17,
+                18,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              215,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 17,
+            "present_after": true,
+            "promoted": 18,
+            "time": 448
+          },
+          {
+            "added": [
+              [
+                18,
+                17,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                17,
+                18,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              215,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 17,
+            "present_after": true,
+            "promoted": 18,
+            "time": 449
+          }
+        ],
+        "g": 18,
+        "initial_relation": {
+          "A": true,
+          "B": true
+        },
+        "target": 3
+      },
+      "consumer_A": 1,
+      "g": 18,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            17,
+            18,
+            1
+          ]
+        ],
+        "deleted": [
+          [
+            18,
+            17,
+            0
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          178,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 0,
+        "pivot": 18,
+        "present_after": false,
+        "previous_period": false,
+        "promoted": 17,
+        "time": 366,
+        "unrolled_time": 366
+      },
+      "original_A_path": [
+        2,
+        3
+      ],
+      "original_B_path": [
+        2,
+        50,
+        34,
+        18,
+        10,
+        6,
+        4,
+        3
+      ],
+      "original_parent": [
+        197,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 8589934588,
+        "Gamma": 330,
+        "J": 8589933568,
+        "case": "LL",
+        "events": [
+          390,
+          391
+        ],
+        "exposed": false,
+        "g": 18,
+        "h": 208,
+        "hit_time": 424,
+        "id": [
+          197,
+          2
+        ],
+        "kappa": -203,
+        "nu": 390,
+        "post_A": 387,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "Xprobe_p4_L3_hitNone_boundary1_reflected",
+      "target": 3,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                7,
+                11,
+                1
+              ],
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                11,
+                9,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                7,
+                9,
+                1
+              ],
+              [
+                9,
+                11,
+                1
+              ],
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "external": 7,
+            "id": [
+              "B",
+              36,
+              6,
+              0
+            ],
+            "middle": 10,
+            "original_SET_sign": 0,
+            "pivot": 9,
+            "present_after": true,
+            "promoted": 11,
+            "time": 148
+          },
+          {
+            "added": [
+              [
+                9,
+                11,
+                1
+              ],
+              [
+                11,
+                10,
+                0
+              ],
+              [
+                15,
+                9,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                11,
+                9,
+                0
+              ],
+              [
+                15,
+                11,
+                0
+              ]
+            ],
+            "external": 15,
+            "id": [
+              "B",
+              54,
+              1,
+              0
+            ],
+            "middle": 10,
+            "original_SET_sign": 0,
+            "pivot": 11,
+            "present_after": false,
+            "promoted": 9,
+            "time": 191
+          },
+          {
+            "added": [
+              [
+                11,
+                10,
+                0
+              ],
+              [
+                12,
+                11,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                10,
+                11,
+                1
+              ],
+              [
+                12,
+                10,
+                0
+              ]
+            ],
+            "external": 12,
+            "id": [
+              "A",
+              109,
+              1,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 10,
+            "present_after": true,
+            "promoted": 11,
+            "time": 463
+          },
+          {
+            "added": [
+              [
+                4,
+                11,
+                1
+              ],
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                4,
+                10,
+                1
+              ],
+              [
+                10,
+                11,
+                1
+              ]
+            ],
+            "external": 4,
+            "id": [
+              "B",
+              109,
+              1,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 10,
+            "present_after": true,
+            "promoted": 11,
+            "time": 466
+          },
+          {
+            "added": [
+              [
+                10,
+                11,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              110,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 11,
+            "present_after": false,
+            "promoted": 10,
+            "time": 469
+          },
+          {
+            "added": [
+              [
+                10,
+                11,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              110,
+              1,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 11,
+            "present_after": false,
+            "promoted": 10,
+            "time": 471
+          }
+        ],
+        "g": 11,
+        "initial_relation": {
+          "A": false,
+          "B": false
+        },
+        "target": 8
+      },
+      "consumer_A": 2,
+      "g": 11,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            10,
+            11,
+            1
+          ]
+        ],
+        "deleted": [
+          [
+            11,
+            10,
+            0
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          110,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 1,
+        "pivot": 11,
+        "present_after": false,
+        "previous_period": true,
+        "promoted": 10,
+        "time": 469,
+        "unrolled_time": -37
+      },
+      "original_A_path": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "original_B_path": [
+        2,
+        7,
+        26,
+        15,
+        11,
+        9,
+        8
+      ],
+      "original_parent": [
+        54,
+        1
+      ],
+      "original_parent_certificate": {
+        "F": 32512,
+        "Gamma": 161,
+        "J": 31744,
+        "case": "LL",
+        "events": [
+          191,
+          192
+        ],
+        "exposed": false,
+        "g": 11,
+        "h": 56,
+        "hit_time": 207,
+        "id": [
+          54,
+          1
+        ],
+        "kappa": -312,
+        "nu": 191,
+        "post_A": 190,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "closed_private_p2_L2_hits5-3-7_c1",
+      "target": 8,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                7,
+                11,
+                1
+              ],
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                11,
+                9,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                7,
+                9,
+                1
+              ],
+              [
+                9,
+                11,
+                1
+              ],
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "external": 7,
+            "id": [
+              "B",
+              68,
+              14,
+              0
+            ],
+            "middle": 10,
+            "original_SET_sign": 0,
+            "pivot": 9,
+            "present_after": true,
+            "promoted": 11,
+            "time": 310
+          },
+          {
+            "added": [
+              [
+                9,
+                11,
+                1
+              ],
+              [
+                11,
+                10,
+                0
+              ],
+              [
+                15,
+                9,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                11,
+                9,
+                0
+              ],
+              [
+                15,
+                11,
+                0
+              ]
+            ],
+            "external": 15,
+            "id": [
+              "B",
+              102,
+              1,
+              0
+            ],
+            "middle": 10,
+            "original_SET_sign": 0,
+            "pivot": 11,
+            "present_after": false,
+            "promoted": 9,
+            "time": 387
+          },
+          {
+            "added": [
+              [
+                11,
+                10,
+                0
+              ],
+              [
+                12,
+                11,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                10,
+                11,
+                1
+              ],
+              [
+                12,
+                10,
+                0
+              ]
+            ],
+            "external": 12,
+            "id": [
+              "A",
+              221,
+              1,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 10,
+            "present_after": true,
+            "promoted": 11,
+            "time": 1008
+          },
+          {
+            "added": [
+              [
+                11,
+                10,
+                0
+              ],
+              [
+                12,
+                11,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                10,
+                11,
+                1
+              ],
+              [
+                12,
+                10,
+                0
+              ]
+            ],
+            "external": 12,
+            "id": [
+              "B",
+              221,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 10,
+            "present_after": true,
+            "promoted": 11,
+            "time": 1010
+          },
+          {
+            "added": [
+              [
+                10,
+                11,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              222,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 11,
+            "present_after": false,
+            "promoted": 10,
+            "time": 1012
+          },
+          {
+            "added": [
+              [
+                10,
+                11,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              222,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 11,
+            "present_after": false,
+            "promoted": 10,
+            "time": 1013
+          }
+        ],
+        "g": 11,
+        "initial_relation": {
+          "A": false,
+          "B": false
+        },
+        "target": 8
+      },
+      "consumer_A": 2,
+      "g": 11,
+      "gap_multiplicity": 2,
+      "last_A_loss": {
+        "added": [
+          [
+            10,
+            11,
+            1
+          ]
+        ],
+        "deleted": [
+          [
+            11,
+            10,
+            0
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          222,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 1,
+        "pivot": 11,
+        "present_after": false,
+        "previous_period": true,
+        "promoted": 10,
+        "time": 1012,
+        "unrolled_time": -38
+      },
+      "original_A_path": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "original_B_path": [
+        2,
+        7,
+        50,
+        23,
+        15,
+        11,
+        9,
+        8
+      ],
+      "original_parent": [
+        102,
+        1
+      ],
+      "original_parent_certificate": {
+        "F": 32512,
+        "Gamma": 331,
+        "J": 31744,
+        "case": "LL",
+        "events": [
+          387,
+          388
+        ],
+        "exposed": false,
+        "g": 11,
+        "h": 104,
+        "hit_time": 404,
+        "id": [
+          102,
+          1
+        ],
+        "kappa": -660,
+        "nu": 387,
+        "post_A": 386,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "closed_private_p3_L2_hits5-3-7_c1",
+      "target": 8,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                23,
+                39,
+                1
+              ],
+              [
+                31,
+                35,
+                1
+              ],
+              [
+                39,
+                31,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                23,
+                31,
+                1
+              ],
+              [
+                31,
+                39,
+                1
+              ],
+              [
+                39,
+                35,
+                0
+              ]
+            ],
+            "external": 23,
+            "id": [
+              "B",
+              138,
+              7,
+              0
+            ],
+            "middle": 35,
+            "original_SET_sign": 0,
+            "pivot": 31,
+            "present_after": true,
+            "promoted": 39,
+            "time": 696
+          },
+          {
+            "added": [
+              [
+                31,
+                39,
+                1
+              ],
+              [
+                39,
+                35,
+                0
+              ],
+              [
+                55,
+                31,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                31,
+                35,
+                1
+              ],
+              [
+                39,
+                31,
+                0
+              ],
+              [
+                55,
+                39,
+                0
+              ]
+            ],
+            "external": 55,
+            "id": [
+              "B",
+              209,
+              2,
+              0
+            ],
+            "middle": 35,
+            "original_SET_sign": 0,
+            "pivot": 39,
+            "present_after": false,
+            "promoted": 31,
+            "time": 846
+          },
+          {
+            "added": [
+              [
+                39,
+                38,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                38,
+                39,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              217,
+              3,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 38,
+            "present_after": true,
+            "promoted": 39,
+            "time": 893
+          },
+          {
+            "added": [
+              [
+                38,
+                39,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                39,
+                38,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              306,
+              1,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 39,
+            "present_after": false,
+            "promoted": 38,
+            "time": 1211
+          },
+          {
+            "added": [
+              [
+                39,
+                38,
+                0
+              ],
+              [
+                40,
+                39,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                38,
+                39,
+                1
+              ],
+              [
+                40,
+                38,
+                0
+              ]
+            ],
+            "external": 40,
+            "id": [
+              "A",
+              415,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 38,
+            "present_after": true,
+            "promoted": 39,
+            "time": 1950
+          },
+          {
+            "added": [
+              [
+                39,
+                38,
+                0
+              ],
+              [
+                40,
+                39,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                38,
+                39,
+                1
+              ],
+              [
+                40,
+                38,
+                0
+              ]
+            ],
+            "external": 40,
+            "id": [
+              "B",
+              415,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 38,
+            "present_after": true,
+            "promoted": 39,
+            "time": 1952
+          },
+          {
+            "added": [
+              [
+                38,
+                39,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                39,
+                38,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              416,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 39,
+            "present_after": false,
+            "promoted": 38,
+            "time": 1954
+          },
+          {
+            "added": [
+              [
+                38,
+                39,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                39,
+                38,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              416,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 39,
+            "present_after": false,
+            "promoted": 38,
+            "time": 1955
+          }
+        ],
+        "g": 39,
+        "initial_relation": {
+          "A": false,
+          "B": false
+        },
+        "target": 24
+      },
+      "consumer_A": 1,
+      "g": 39,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            38,
+            39,
+            1
+          ]
+        ],
+        "deleted": [
+          [
+            39,
+            38,
+            0
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          416,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 1,
+        "pivot": 39,
+        "present_after": false,
+        "previous_period": true,
+        "promoted": 38,
+        "time": 1954,
+        "unrolled_time": -164
+      },
+      "original_A_path": [
+        22,
+        24
+      ],
+      "original_B_path": [
+        22,
+        23,
+        98,
+        55,
+        39,
+        31,
+        27,
+        25,
+        24
+      ],
+      "original_parent": [
+        209,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 36028797002186752,
+        "Gamma": 716,
+        "J": 36028792723996672,
+        "case": "LL",
+        "events": [
+          846,
+          847
+        ],
+        "exposed": false,
+        "g": 39,
+        "h": 213,
+        "hit_time": 867,
+        "id": [
+          209,
+          2
+        ],
+        "kappa": -1269,
+        "nu": 846,
+        "post_A": 843,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "closed_private_p4_L2_hits5_c1",
+      "target": 24,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                55,
+                71,
+                1
+              ],
+              [
+                63,
+                67,
+                1
+              ],
+              [
+                71,
+                63,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                55,
+                63,
+                1
+              ],
+              [
+                63,
+                71,
+                1
+              ],
+              [
+                71,
+                67,
+                0
+              ]
+            ],
+            "external": 55,
+            "id": [
+              "B",
+              138,
+              5,
+              0
+            ],
+            "middle": 67,
+            "original_SET_sign": 0,
+            "pivot": 63,
+            "present_after": true,
+            "promoted": 71,
+            "time": 692
+          },
+          {
+            "added": [
+              [
+                63,
+                71,
+                1
+              ],
+              [
+                71,
+                67,
+                0
+              ],
+              [
+                87,
+                63,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                63,
+                67,
+                1
+              ],
+              [
+                71,
+                63,
+                0
+              ],
+              [
+                87,
+                71,
+                0
+              ]
+            ],
+            "external": 87,
+            "id": [
+              "B",
+              225,
+              2,
+              0
+            ],
+            "middle": 67,
+            "original_SET_sign": 0,
+            "pivot": 71,
+            "present_after": false,
+            "promoted": 63,
+            "time": 932
+          },
+          {
+            "added": [
+              [
+                71,
+                70,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                70,
+                71,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              233,
+              3,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 70,
+            "present_after": true,
+            "promoted": 71,
+            "time": 979
+          },
+          {
+            "added": [
+              [
+                70,
+                71,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                71,
+                70,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              290,
+              1,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 71,
+            "present_after": false,
+            "promoted": 70,
+            "time": 1176
+          },
+          {
+            "added": [
+              [
+                44,
+                71,
+                1
+              ],
+              [
+                58,
+                64,
+                1
+              ],
+              [
+                71,
+                58,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                44,
+                58,
+                1
+              ],
+              [
+                58,
+                71,
+                1
+              ],
+              [
+                71,
+                64,
+                0
+              ]
+            ],
+            "external": 44,
+            "id": [
+              "B",
+              329,
+              4,
+              0
+            ],
+            "middle": 64,
+            "original_SET_sign": 0,
+            "pivot": 58,
+            "present_after": true,
+            "promoted": 71,
+            "time": 1523
+          },
+          {
+            "added": [
+              [
+                71,
+                70,
+                0
+              ],
+              [
+                72,
+                71,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                70,
+                71,
+                1
+              ],
+              [
+                72,
+                70,
+                0
+              ]
+            ],
+            "external": 72,
+            "id": [
+              "A",
+              383,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 70,
+            "present_after": true,
+            "promoted": 71,
+            "time": 1795
+          },
+          {
+            "added": [
+              [
+                70,
+                71,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                71,
+                70,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              384,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 71,
+            "present_after": false,
+            "promoted": 70,
+            "time": 1798
+          },
+          {
+            "added": [
+              [
+                70,
+                71,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                71,
+                70,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              384,
+              3,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 71,
+            "present_after": false,
+            "promoted": 70,
+            "time": 1804
+          }
+        ],
+        "g": 71,
+        "initial_relation": {
+          "A": false,
+          "B": false
+        },
+        "target": 56
+      },
+      "consumer_A": 1,
+      "g": 71,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            70,
+            71,
+            1
+          ]
+        ],
+        "deleted": [
+          [
+            71,
+            70,
+            0
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          384,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 1,
+        "pivot": 71,
+        "present_after": false,
+        "previous_period": true,
+        "promoted": 70,
+        "time": 1798,
+        "unrolled_time": -320
+      },
+      "original_A_path": [
+        54,
+        56
+      ],
+      "original_B_path": [
+        54,
+        55,
+        98,
+        87,
+        71,
+        63,
+        59,
+        57,
+        56
+      ],
+      "original_parent": [
+        225,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 154742504838614940324462592,
+        "Gamma": 714,
+        "J": 154742486463928460652838912,
+        "case": "LL",
+        "events": [
+          932,
+          933
+        ],
+        "exposed": false,
+        "g": 71,
+        "h": 229,
+        "hit_time": 953,
+        "id": [
+          225,
+          2
+        ],
+        "kappa": -1183,
+        "nu": 932,
+        "post_A": 929,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "closed_private_p4_L2_hits5_c1",
+      "target": 56,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                7,
+                11,
+                1
+              ],
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                11,
+                9,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                7,
+                9,
+                1
+              ],
+              [
+                9,
+                11,
+                1
+              ],
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "external": 7,
+            "id": [
+              "B",
+              132,
+              30,
+              0
+            ],
+            "middle": 10,
+            "original_SET_sign": 0,
+            "pivot": 9,
+            "present_after": true,
+            "promoted": 11,
+            "time": 638
+          },
+          {
+            "added": [
+              [
+                9,
+                11,
+                1
+              ],
+              [
+                11,
+                10,
+                0
+              ],
+              [
+                15,
+                9,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                11,
+                9,
+                0
+              ],
+              [
+                15,
+                11,
+                0
+              ]
+            ],
+            "external": 15,
+            "id": [
+              "B",
+              198,
+              1,
+              0
+            ],
+            "middle": 10,
+            "original_SET_sign": 0,
+            "pivot": 11,
+            "present_after": false,
+            "promoted": 9,
+            "time": 784
+          },
+          {
+            "added": [
+              [
+                11,
+                10,
+                0
+              ],
+              [
+                12,
+                11,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                10,
+                11,
+                1
+              ],
+              [
+                12,
+                10,
+                0
+              ]
+            ],
+            "external": 12,
+            "id": [
+              "A",
+              445,
+              1,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 10,
+            "present_after": true,
+            "promoted": 11,
+            "time": 2088
+          },
+          {
+            "added": [
+              [
+                11,
+                10,
+                0
+              ],
+              [
+                12,
+                11,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                10,
+                11,
+                1
+              ],
+              [
+                12,
+                10,
+                0
+              ]
+            ],
+            "external": 12,
+            "id": [
+              "B",
+              445,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 10,
+            "present_after": true,
+            "promoted": 11,
+            "time": 2090
+          },
+          {
+            "added": [
+              [
+                10,
+                11,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              446,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 11,
+            "present_after": false,
+            "promoted": 10,
+            "time": 2092
+          },
+          {
+            "added": [
+              [
+                10,
+                11,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                11,
+                10,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              446,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 11,
+            "present_after": false,
+            "promoted": 10,
+            "time": 2093
+          }
+        ],
+        "g": 11,
+        "initial_relation": {
+          "A": false,
+          "B": false
+        },
+        "target": 8
+      },
+      "consumer_A": 2,
+      "g": 11,
+      "gap_multiplicity": 2,
+      "last_A_loss": {
+        "added": [
+          [
+            10,
+            11,
+            1
+          ]
+        ],
+        "deleted": [
+          [
+            11,
+            10,
+            0
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          446,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 1,
+        "pivot": 11,
+        "present_after": false,
+        "previous_period": true,
+        "promoted": 10,
+        "time": 2092,
+        "unrolled_time": -38
+      },
+      "original_A_path": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "original_B_path": [
+        2,
+        7,
+        98,
+        23,
+        15,
+        11,
+        9,
+        8
+      ],
+      "original_parent": [
+        198,
+        1
+      ],
+      "original_parent_certificate": {
+        "F": 32512,
+        "Gamma": 675,
+        "J": 31744,
+        "case": "LL",
+        "events": [
+          784,
+          785
+        ],
+        "exposed": false,
+        "g": 11,
+        "h": 200,
+        "hit_time": 801,
+        "id": [
+          198,
+          1
+        ],
+        "kappa": -1343,
+        "nu": 784,
+        "post_A": 783,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "closed_private_p4_L2_hits5-3-7_c1",
+      "target": 8,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                23,
+                39,
+                1
+              ],
+              [
+                31,
+                35,
+                1
+              ],
+              [
+                39,
+                31,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                23,
+                31,
+                1
+              ],
+              [
+                31,
+                39,
+                1
+              ],
+              [
+                39,
+                35,
+                0
+              ]
+            ],
+            "external": 23,
+            "id": [
+              "B",
+              138,
+              7,
+              0
+            ],
+            "middle": 35,
+            "original_SET_sign": 0,
+            "pivot": 31,
+            "present_after": true,
+            "promoted": 39,
+            "time": 696
+          },
+          {
+            "added": [
+              [
+                31,
+                39,
+                1
+              ],
+              [
+                39,
+                35,
+                0
+              ],
+              [
+                55,
+                31,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                31,
+                35,
+                1
+              ],
+              [
+                39,
+                31,
+                0
+              ],
+              [
+                55,
+                39,
+                0
+              ]
+            ],
+            "external": 55,
+            "id": [
+              "B",
+              211,
+              2,
+              0
+            ],
+            "middle": 35,
+            "original_SET_sign": 0,
+            "pivot": 39,
+            "present_after": false,
+            "promoted": 31,
+            "time": 861
+          },
+          {
+            "added": [
+              [
+                39,
+                38,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                38,
+                39,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              219,
+              3,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 38,
+            "present_after": true,
+            "promoted": 39,
+            "time": 908
+          },
+          {
+            "added": [
+              [
+                38,
+                39,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                39,
+                38,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              308,
+              1,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 39,
+            "present_after": false,
+            "promoted": 38,
+            "time": 1226
+          },
+          {
+            "added": [
+              [
+                39,
+                38,
+                0
+              ],
+              [
+                40,
+                39,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                38,
+                39,
+                1
+              ],
+              [
+                40,
+                38,
+                0
+              ]
+            ],
+            "external": 40,
+            "id": [
+              "A",
+              417,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 38,
+            "present_after": true,
+            "promoted": 39,
+            "time": 1962
+          },
+          {
+            "added": [
+              [
+                39,
+                38,
+                0
+              ],
+              [
+                40,
+                39,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                38,
+                39,
+                1
+              ],
+              [
+                40,
+                38,
+                0
+              ]
+            ],
+            "external": 40,
+            "id": [
+              "B",
+              417,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 38,
+            "present_after": true,
+            "promoted": 39,
+            "time": 1964
+          },
+          {
+            "added": [
+              [
+                38,
+                39,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                39,
+                38,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              418,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 39,
+            "present_after": false,
+            "promoted": 38,
+            "time": 1966
+          },
+          {
+            "added": [
+              [
+                38,
+                39,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                39,
+                38,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              418,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 39,
+            "present_after": false,
+            "promoted": 38,
+            "time": 1967
+          }
+        ],
+        "g": 39,
+        "initial_relation": {
+          "A": false,
+          "B": false
+        },
+        "target": 24
+      },
+      "consumer_A": 1,
+      "g": 39,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            38,
+            39,
+            1
+          ]
+        ],
+        "deleted": [
+          [
+            39,
+            38,
+            0
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          418,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 1,
+        "pivot": 39,
+        "present_after": false,
+        "previous_period": true,
+        "promoted": 38,
+        "time": 1966,
+        "unrolled_time": -164
+      },
+      "original_A_path": [
+        22,
+        24
+      ],
+      "original_B_path": [
+        22,
+        23,
+        98,
+        55,
+        39,
+        31,
+        27,
+        25,
+        24
+      ],
+      "original_parent": [
+        211,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 36028797002186752,
+        "Gamma": 716,
+        "J": 36028792723996672,
+        "case": "LL",
+        "events": [
+          861,
+          862
+        ],
+        "exposed": false,
+        "g": 39,
+        "h": 215,
+        "hit_time": 882,
+        "id": [
+          211,
+          2
+        ],
+        "kappa": -1266,
+        "nu": 861,
+        "post_A": 858,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "closed_private_p4_L2_hits5-3-7_c1",
+      "target": 24,
+      "type": "X"
+    },
+    {
+      "actual_episode": 0,
+      "ancestry_history": {
+        "changes": [
+          {
+            "added": [
+              [
+                55,
+                71,
+                1
+              ],
+              [
+                63,
+                67,
+                1
+              ],
+              [
+                71,
+                63,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                55,
+                63,
+                1
+              ],
+              [
+                63,
+                71,
+                1
+              ],
+              [
+                71,
+                67,
+                0
+              ]
+            ],
+            "external": 55,
+            "id": [
+              "B",
+              138,
+              5,
+              0
+            ],
+            "middle": 67,
+            "original_SET_sign": 0,
+            "pivot": 63,
+            "present_after": true,
+            "promoted": 71,
+            "time": 692
+          },
+          {
+            "added": [
+              [
+                63,
+                71,
+                1
+              ],
+              [
+                71,
+                67,
+                0
+              ],
+              [
+                87,
+                63,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                63,
+                67,
+                1
+              ],
+              [
+                71,
+                63,
+                0
+              ],
+              [
+                87,
+                71,
+                0
+              ]
+            ],
+            "external": 87,
+            "id": [
+              "B",
+              227,
+              2,
+              0
+            ],
+            "middle": 67,
+            "original_SET_sign": 0,
+            "pivot": 71,
+            "present_after": false,
+            "promoted": 63,
+            "time": 947
+          },
+          {
+            "added": [
+              [
+                71,
+                70,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                70,
+                71,
+                1
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              235,
+              3,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 0,
+            "pivot": 70,
+            "present_after": true,
+            "promoted": 71,
+            "time": 994
+          },
+          {
+            "added": [
+              [
+                70,
+                71,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                71,
+                70,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              292,
+              1,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 71,
+            "present_after": false,
+            "promoted": 70,
+            "time": 1191
+          },
+          {
+            "added": [
+              [
+                44,
+                71,
+                1
+              ],
+              [
+                58,
+                64,
+                1
+              ],
+              [
+                71,
+                58,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                44,
+                58,
+                1
+              ],
+              [
+                58,
+                71,
+                1
+              ],
+              [
+                71,
+                64,
+                0
+              ]
+            ],
+            "external": 44,
+            "id": [
+              "B",
+              331,
+              4,
+              0
+            ],
+            "middle": 64,
+            "original_SET_sign": 0,
+            "pivot": 58,
+            "present_after": true,
+            "promoted": 71,
+            "time": 1535
+          },
+          {
+            "added": [
+              [
+                71,
+                70,
+                0
+              ],
+              [
+                72,
+                71,
+                0
+              ]
+            ],
+            "deleted": [
+              [
+                70,
+                71,
+                1
+              ],
+              [
+                72,
+                70,
+                0
+              ]
+            ],
+            "external": 72,
+            "id": [
+              "A",
+              385,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 70,
+            "present_after": true,
+            "promoted": 71,
+            "time": 1807
+          },
+          {
+            "added": [
+              [
+                70,
+                71,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                71,
+                70,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "A",
+              386,
+              1,
+              0
+            ],
+            "middle": null,
+            "original_SET_sign": 1,
+            "pivot": 71,
+            "present_after": false,
+            "promoted": 70,
+            "time": 1810
+          },
+          {
+            "added": [
+              [
+                70,
+                71,
+                1
+              ]
+            ],
+            "deleted": [
+              [
+                71,
+                70,
+                0
+              ]
+            ],
+            "external": null,
+            "id": [
+              "B",
+              386,
+              3,
+              1
+            ],
+            "middle": null,
+            "original_SET_sign": -1,
+            "pivot": 71,
+            "present_after": false,
+            "promoted": 70,
+            "time": 1816
+          }
+        ],
+        "g": 71,
+        "initial_relation": {
+          "A": false,
+          "B": false
+        },
+        "target": 56
+      },
+      "consumer_A": 1,
+      "g": 71,
+      "gap_multiplicity": 1,
+      "last_A_loss": {
+        "added": [
+          [
+            70,
+            71,
+            1
+          ]
+        ],
+        "deleted": [
+          [
+            71,
+            70,
+            0
+          ]
+        ],
+        "external": null,
+        "id": [
+          "A",
+          386,
+          1,
+          0
+        ],
+        "middle": null,
+        "original_SET_sign": 1,
+        "pivot": 71,
+        "present_after": false,
+        "previous_period": true,
+        "promoted": 70,
+        "time": 1810,
+        "unrolled_time": -320
+      },
+      "original_A_path": [
+        54,
+        56
+      ],
+      "original_B_path": [
+        54,
+        55,
+        98,
+        87,
+        71,
+        63,
+        59,
+        57,
+        56
+      ],
+      "original_parent": [
+        227,
+        2
+      ],
+      "original_parent_certificate": {
+        "F": 154742504838614940324462592,
+        "Gamma": 714,
+        "J": 154742486463928460652838912,
+        "case": "LL",
+        "events": [
+          947,
+          948
+        ],
+        "exposed": false,
+        "g": 71,
+        "h": 231,
+        "hit_time": 968,
+        "id": [
+          227,
+          2
+        ],
+        "kappa": -1180,
+        "nu": 947,
+        "post_A": 944,
+        "signs": [
+          0,
+          0
+        ]
+      },
+      "source": "closed_private_p4_L2_hits5-3-7_c1",
+      "target": 56,
+      "type": "X"
+    }
+  ],
+  "source_words": "EXP03_SOURCE_WITNESSES.json",
+  "status": "nonempty exact class; no universal A bound established"
+}

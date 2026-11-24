@@ -1,0 +1,11 @@
+{
+  "completed": false,
+  "phase": "First finalization, before delivery sealing",
+  "failed_assertion": "canonical loaded-JSON source digest equals guarded generator source digest",
+  "cause": "core_labels and gap_labels used integer keys before JSON; sorting the reloaded string keys changes serialization order for k>=16",
+  "mathematical_or_physical_replay_mismatch": false,
+  "source_event_evidence_rewritten": false,
+  "resolution": "SOURCE_HASH_PROVENANCE.json validates both serializations and identical nonmetadata fields; finalizer records both hash scopes",
+  "cpu_seconds": null,
+  "cpu_scope": "Not captured for this failed finalization attempt; included in explicit unmetered work"
+}

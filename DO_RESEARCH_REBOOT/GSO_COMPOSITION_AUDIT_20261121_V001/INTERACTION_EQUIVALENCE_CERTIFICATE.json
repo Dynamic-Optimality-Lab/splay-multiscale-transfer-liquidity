@@ -1,0 +1,57 @@
+{
+  "status": "PROVED_SOURCE_UNIFORM_IDENTITIES_AND_LOCAL_ALL_PARAMETER_OBSTRUCTION",
+  "fixed_partition": "Any fixed disjoint physical-key blocks of size<=5, constant within a source; contiguous blocks for the projection witness and exact critical formula.",
+  "definitions": "I counts literal original B doubles with all three pivots in one block. E is their literal complement. Each original A StepEv is attributed internally to at most one block.",
+  "identities": [
+    "sum attributed original A units <= A (L=1 for physical attribution)",
+    "Q_B=I+E",
+    "I<=2K_B<=2A",
+    "E<=Q_B<=E+2A"
+  ],
+  "global_equivalence": "A universal bound on E/A for these fixed small blocks is equivalent up to additive2 in the constant to Universal Coarse Double itself. The local decomposition has not independently proved it.",
+  "critical_H3q": "For every q>=1 and every consecutive rank-block partition of size<=5, the q critical RR steps have old parent/grandparent keys differing by8. The final LR connects target N-7 to parent2. All q+1 steps cross blocks; E_t=q+1, a_t=1.",
+  "local_law_refuted": "E_t<=D a_t for every finite D. The aggregate law E(W)<=D A(W) is NOT refuted.",
+  "finite_complete_examples": [
+    {
+      "source_file": "source_09.json.gz",
+      "q": 1,
+      "N": 33,
+      "original_op": 40,
+      "A": 1,
+      "interaction": 2,
+      "full_period_A": 128,
+      "full_period_Q_B": 53
+    },
+    {
+      "source_file": "source_10.json.gz",
+      "q": 3,
+      "N": 65,
+      "original_op": 72,
+      "A": 1,
+      "interaction": 4,
+      "full_period_A": 256,
+      "full_period_Q_B": 109
+    },
+    {
+      "source_file": "source_11.json.gz",
+      "q": 7,
+      "N": 129,
+      "original_op": 136,
+      "A": 1,
+      "interaction": 8,
+      "full_period_A": 512,
+      "full_period_Q_B": 221
+    },
+    {
+      "source_file": "source_12.json.gz",
+      "q": 17,
+      "N": 289,
+      "original_op": 296,
+      "A": 1,
+      "interaction": 18,
+      "full_period_A": 1152,
+      "full_period_Q_B": 501
+    }
+  ],
+  "root_status": "OPEN"
+}

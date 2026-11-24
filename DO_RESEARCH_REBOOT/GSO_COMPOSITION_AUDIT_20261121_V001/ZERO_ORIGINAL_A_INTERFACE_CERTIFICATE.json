@@ -1,0 +1,112 @@
+{
+  "status": "REFUTED_EXACT_ZERO_COST_COMPONENT_REALIZATION",
+  "complete_original_source": "source_01.json.gz",
+  "period_A": 4,
+  "period_Q_B": 6,
+  "witness": {
+    "op": 2,
+    "target": 4,
+    "mode": "K",
+    "component": {
+      "block": 1,
+      "physical_keys": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "before_A": [
+        7,
+        [
+          6,
+          null,
+          null
+        ],
+        [
+          9,
+          [
+            8,
+            null,
+            null
+          ],
+          [
+            10,
+            null,
+            null
+          ]
+        ]
+      ],
+      "before_B": [
+        7,
+        [
+          6,
+          null,
+          null
+        ],
+        [
+          8,
+          null,
+          [
+            9,
+            null,
+            [
+              10,
+              null,
+              null
+            ]
+          ]
+        ]
+      ],
+      "after_A": [
+        7,
+        [
+          6,
+          null,
+          null
+        ],
+        [
+          9,
+          [
+            8,
+            null,
+            null
+          ],
+          [
+            10,
+            null,
+            null
+          ]
+        ]
+      ],
+      "after_B": [
+        6,
+        null,
+        [
+          7,
+          null,
+          [
+            8,
+            null,
+            [
+              9,
+              null,
+              [
+                10,
+                null,
+                null
+              ]
+            ]
+          ]
+        ]
+      ],
+      "original_target_in_block": false,
+      "attributed_original_A_units": 0,
+      "internal_real_A_bits": 0,
+      "internal_real_B_bits": 1,
+      "deleting_outside_operations_is_legal_here": false,
+      "zero_A_legal_source_obstruction": true
+    }
+  },
+  "reason": "At original KEEP4 the component A projection has no attributed original work and stays rooted at7. Its B projection changes from root7 to root6. Every local history of A cost zero can only target7; B is then frozen or splays its existing root7, so it cannot change. Any ordinary legalization needs extra A credit or an explicitly costed non-splay interface."
+}

@@ -1,0 +1,224 @@
+{
+  "status": "REFUTED\u2014EXACT, declared whole-operation linear potential grammar only",
+  "variables": [
+    "C_AB",
+    "C_BA",
+    "depth_sum_A",
+    "depth_sum_B",
+    "depth_B_of_A_root",
+    "depth_A_of_B_root",
+    "full_X_SET_discordance",
+    "physical_edge_discordance",
+    "Mersenne_defect",
+    "full_X_size_weighted_defect",
+    "C"
+  ],
+  "mandatory_equations": [
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "rref": [
+    [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "eliminated_feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    9
+  ],
+  "remaining_indices": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "necessary_limit_inequalities": [
+    {
+      "lhs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "rhs": -1,
+      "source": "H_(p,5) first KEEP3, p->infinity after the parity constraint"
+    },
+    {
+      "lhs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "rhs": -1,
+      "source": "compressed H_(3,q) final critical KEEP, q->infinity"
+    }
+  ],
+  "exact_Farkas_multipliers": [
+    "1",
+    "2"
+  ],
+  "combined_lhs": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "combined_rhs": "-3",
+  "contradiction": "0 <= -3",
+  "floating_solver_status": 2,
+  "floating_solver_role": "Search cross-check only; exact rational row sum is the infeasibility certificate.",
+  "pruned_grammars": [
+    "cross_core",
+    "ancestry_linear",
+    "extended"
+  ],
+  "cancelled_jobs": [
+    "finite-state graph fitting through support6",
+    "free state-potential teachers",
+    "up to16 finite CEGIS fits per grammar"
+  ],
+  "cancellation_reason": "The source-uniform necessary constraints already exclude the complete declared span. Finite fits cannot rescue it.",
+  "universal_CD": "OPEN",
+  "all_other_global_accounting_architectures": "Not refuted."
+}

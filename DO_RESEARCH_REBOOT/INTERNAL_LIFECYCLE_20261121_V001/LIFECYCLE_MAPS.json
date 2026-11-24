@@ -1,0 +1,7732 @@
+{
+  "sources": [
+    {
+      "witness": "I_p1_q1_d1_m3_complete_witness.json",
+      "sha256": "19bf33dcd847e9cf187d244d1aa444acd465c0188655e8f7be8053a8603a9582",
+      "packets": [
+        {
+          "initial_KEEP": 9,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 6,
+          "lifecycle_U": 2,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 43,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 6,
+          "lifecycle_U": 2,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 77,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 6,
+          "lifecycle_U": 2,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            10,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            11,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            20,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            20,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            44,
+            1
+          ],
+          "packet": 43,
+          "birth": [
+            "B",
+            43,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            45,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            54,
+            1
+          ],
+          "packet": 43,
+          "birth": [
+            "B",
+            43,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            54,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            78,
+            1
+          ],
+          "packet": 77,
+          "birth": [
+            "B",
+            77,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            79,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            88,
+            1
+          ],
+          "packet": 77,
+          "birth": [
+            "B",
+            77,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            88,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 6,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "I1:prep": {
+          "A_phi_delta": -2
+        },
+        "I1:critical": {
+          "B_phi_delta": -2,
+          "A_phi_delta": -2
+        },
+        "I1:restore_up": {
+          "B_phi_delta": 8,
+          "A_phi_delta": -2
+        },
+        "I1:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "I2:prep": {
+          "A_phi_delta": -2
+        },
+        "I2:critical": {
+          "B_phi_delta": -2,
+          "A_phi_delta": -2
+        },
+        "I2:restore_up": {
+          "B_phi_delta": 8,
+          "A_phi_delta": -2
+        },
+        "I2:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "I3:prep": {
+          "A_phi_delta": -2
+        },
+        "I3:critical": {
+          "B_phi_delta": -2,
+          "A_phi_delta": -2
+        },
+        "I3:restore_up": {
+          "B_phi_delta": 8,
+          "A_phi_delta": -2
+        },
+        "I3:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "outer": {
+          "A_phi_delta": -58,
+          "B_phi_delta": 58
+        }
+      }
+    },
+    {
+      "witness": "I_p1_q1_d2_m2_mirror_helpers_complete_witness.json",
+      "sha256": "a3d8d5b24c39569f40782e3ef41a10338f71c118531216a7e45af7ea3e018a5b",
+      "packets": [
+        {
+          "initial_KEEP": 9,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 6,
+          "lifecycle_U": 2,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 47,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 6,
+          "lifecycle_U": 2,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            12,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            13,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            24,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            24,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            1
+          ],
+          "packet": 47,
+          "birth": [
+            "B",
+            47,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            51,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            62,
+            1
+          ],
+          "packet": 47,
+          "birth": [
+            "B",
+            47,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            62,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 4,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "I1:prep": {
+          "A_phi_delta": 0
+        },
+        "I1:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -3
+        },
+        "I1:helper": {
+          "A_phi_delta": -1
+        },
+        "I1:restore_up": {
+          "B_phi_delta": 6,
+          "A_phi_delta": 1
+        },
+        "I1:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "I2:prep": {
+          "A_phi_delta": 0
+        },
+        "I2:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -3
+        },
+        "I2:helper": {
+          "A_phi_delta": 0
+        },
+        "I2:restore_up": {
+          "B_phi_delta": 6,
+          "A_phi_delta": 1
+        },
+        "I2:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "outer": {
+          "A_phi_delta": -321,
+          "B_phi_delta": 322
+        }
+      }
+    },
+    {
+      "witness": "I_p1_q1_d2_m3_complete_witness.json",
+      "sha256": "ae7a25a7cbb1b1b2750632ff77f5a8c838d9227b2308cd358b480dc20dee8565",
+      "packets": [
+        {
+          "initial_KEEP": 9,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 6,
+          "lifecycle_U": 2,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 43,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 6,
+          "lifecycle_U": 2,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 77,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 6,
+          "lifecycle_U": 2,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            10,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            11,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            20,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            20,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            44,
+            1
+          ],
+          "packet": 43,
+          "birth": [
+            "B",
+            43,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            45,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            54,
+            1
+          ],
+          "packet": 43,
+          "birth": [
+            "B",
+            43,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            54,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            78,
+            1
+          ],
+          "packet": 77,
+          "birth": [
+            "B",
+            77,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            79,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            88,
+            1
+          ],
+          "packet": 77,
+          "birth": [
+            "B",
+            77,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            88,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 6,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "I1:prep": {
+          "A_phi_delta": 0
+        },
+        "I1:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "I1:restore_up": {
+          "B_phi_delta": 6,
+          "A_phi_delta": 0
+        },
+        "I1:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "I2:prep": {
+          "A_phi_delta": 0
+        },
+        "I2:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "I2:restore_up": {
+          "B_phi_delta": 6,
+          "A_phi_delta": 0
+        },
+        "I2:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "I3:prep": {
+          "A_phi_delta": 0
+        },
+        "I3:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "I3:restore_up": {
+          "B_phi_delta": 6,
+          "A_phi_delta": 0
+        },
+        "I3:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "outer": {
+          "A_phi_delta": -322,
+          "B_phi_delta": 322
+        }
+      }
+    },
+    {
+      "witness": "I_p1_q2_d2_m2_complete_witness.json",
+      "sha256": "b3323a5d79e5c55905c9e504371ea46664d85c9e447a3d30f5fe3484258610f2",
+      "packets": [
+        {
+          "initial_KEEP": 13,
+          "s": 6,
+          "C": 2,
+          "critical_U": 2,
+          "restoration_Q": 10,
+          "lifecycle_U": 4,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 63,
+          "s": 6,
+          "C": 2,
+          "critical_U": 2,
+          "restoration_Q": 10,
+          "lifecycle_U": 4,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            14,
+            1
+          ],
+          "packet": 13,
+          "birth": [
+            "B",
+            13,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            15,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            14,
+            2
+          ],
+          "packet": 13,
+          "birth": [
+            "B",
+            13,
+            5,
+            0
+          ],
+          "A_payment": [
+            "A",
+            28,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            28,
+            1
+          ],
+          "packet": 13,
+          "birth": [
+            "B",
+            13,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            30,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            32,
+            1
+          ],
+          "packet": 13,
+          "birth": [
+            "B",
+            13,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            32,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            64,
+            1
+          ],
+          "packet": 63,
+          "birth": [
+            "B",
+            63,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            65,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            64,
+            2
+          ],
+          "packet": 63,
+          "birth": [
+            "B",
+            63,
+            5,
+            0
+          ],
+          "A_payment": [
+            "A",
+            78,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            78,
+            1
+          ],
+          "packet": 63,
+          "birth": [
+            "B",
+            63,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            80,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            82,
+            1
+          ],
+          "packet": 63,
+          "birth": [
+            "B",
+            63,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            82,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 8,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "I1:prep": {
+          "A_phi_delta": 0
+        },
+        "I1:critical": {
+          "B_phi_delta": -7,
+          "A_phi_delta": -1
+        },
+        "I1:restore_up": {
+          "B_phi_delta": 8,
+          "A_phi_delta": 0
+        },
+        "I1:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "I2:prep": {
+          "A_phi_delta": 0
+        },
+        "I2:critical": {
+          "B_phi_delta": -7,
+          "A_phi_delta": -1
+        },
+        "I2:restore_up": {
+          "B_phi_delta": 8,
+          "A_phi_delta": 0
+        },
+        "I2:restore_down": {
+          "A_phi_delta": -3,
+          "B_phi_delta": 3
+        },
+        "outer": {
+          "A_phi_delta": -582,
+          "B_phi_delta": 582
+        }
+      }
+    },
+    {
+      "witness": "I_p1_q5_d1_m2_complete_witness.json",
+      "sha256": "461ae07fc339e6df462ff6447aea7c18256d82060132c866c8bbec5340efb6b8",
+      "packets": [
+        {
+          "initial_KEEP": 25,
+          "s": 12,
+          "C": 5,
+          "critical_U": 5,
+          "restoration_Q": 22,
+          "lifecycle_U": 10,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 123,
+          "s": 12,
+          "C": 5,
+          "critical_U": 5,
+          "restoration_Q": 22,
+          "lifecycle_U": 10,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            26,
+            1
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            27,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            26,
+            2
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            52,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            26,
+            3
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            54,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            26,
+            4
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            9,
+            0
+          ],
+          "A_payment": [
+            "A",
+            56,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            26,
+            5
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            8,
+            0
+          ],
+          "A_payment": [
+            "A",
+            58,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            1
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            7,
+            0
+          ],
+          "A_payment": [
+            "A",
+            60,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            56,
+            1
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            62,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            60,
+            1
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            5,
+            0
+          ],
+          "A_payment": [
+            "A",
+            64,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            64,
+            1
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            66,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            68,
+            1
+          ],
+          "packet": 25,
+          "birth": [
+            "B",
+            25,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            68,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            124,
+            1
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            125,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            124,
+            2
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            150,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            124,
+            3
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            152,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            124,
+            4
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            9,
+            0
+          ],
+          "A_payment": [
+            "A",
+            154,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            124,
+            5
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            8,
+            0
+          ],
+          "A_payment": [
+            "A",
+            156,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            150,
+            1
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            7,
+            0
+          ],
+          "A_payment": [
+            "A",
+            158,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            154,
+            1
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            160,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            158,
+            1
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            5,
+            0
+          ],
+          "A_payment": [
+            "A",
+            162,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            162,
+            1
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            164,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            166,
+            1
+          ],
+          "packet": 123,
+          "birth": [
+            "B",
+            123,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            166,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 20,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "I1:prep": {
+          "A_phi_delta": -3
+        },
+        "I1:critical": {
+          "B_phi_delta": -13,
+          "A_phi_delta": -1
+        },
+        "I1:restore_up": {
+          "B_phi_delta": 20,
+          "A_phi_delta": -3
+        },
+        "I1:restore_down": {
+          "A_phi_delta": -4,
+          "B_phi_delta": 4
+        },
+        "I2:prep": {
+          "A_phi_delta": -3
+        },
+        "I2:critical": {
+          "B_phi_delta": -13,
+          "A_phi_delta": -1
+        },
+        "I2:restore_up": {
+          "B_phi_delta": 20,
+          "A_phi_delta": -3
+        },
+        "I2:restore_down": {
+          "A_phi_delta": -4,
+          "B_phi_delta": 4
+        },
+        "outer": {
+          "A_phi_delta": -368,
+          "B_phi_delta": 368
+        }
+      }
+    },
+    {
+      "witness": "I_p2_q5_d1_m2_complete_witness.json",
+      "sha256": "41f10eb371790e371504568e16b6d1367da0cd0f865c4a87cea6e64d4c6173b2",
+      "packets": [
+        {
+          "initial_KEEP": 49,
+          "s": 23,
+          "C": 16,
+          "critical_U": 16,
+          "restoration_Q": 34,
+          "lifecycle_U": 21,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 243,
+          "s": 23,
+          "C": 16,
+          "critical_U": 16,
+          "restoration_Q": 34,
+          "lifecycle_U": 21,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            50,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            53,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            2
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            100,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            3
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            102,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            4
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            21,
+            0
+          ],
+          "A_payment": [
+            "A",
+            104,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            5
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            20,
+            0
+          ],
+          "A_payment": [
+            "A",
+            106,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            6
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            19,
+            0
+          ],
+          "A_payment": [
+            "A",
+            108,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            7
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            18,
+            0
+          ],
+          "A_payment": [
+            "A",
+            110,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            8
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            17,
+            0
+          ],
+          "A_payment": [
+            "A",
+            112,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            9
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            114,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            10
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            116,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            11
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            118,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            120,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            2
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            122,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            3
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            124,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            4
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            126,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            5
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            9,
+            0
+          ],
+          "A_payment": [
+            "A",
+            128,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            8,
+            0
+          ],
+          "A_payment": [
+            "A",
+            130,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            108,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            7,
+            0
+          ],
+          "A_payment": [
+            "A",
+            132,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            116,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            134,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            124,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            5,
+            0
+          ],
+          "A_payment": [
+            "A",
+            136,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            132,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            138,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            247,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            2
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            294,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            3
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            296,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            4
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            21,
+            0
+          ],
+          "A_payment": [
+            "A",
+            298,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            5
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            20,
+            0
+          ],
+          "A_payment": [
+            "A",
+            300,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            6
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            19,
+            0
+          ],
+          "A_payment": [
+            "A",
+            302,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            7
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            18,
+            0
+          ],
+          "A_payment": [
+            "A",
+            304,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            8
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            17,
+            0
+          ],
+          "A_payment": [
+            "A",
+            306,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            9
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            308,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            10
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            310,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            11
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            312,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            314,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            2
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            316,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            3
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            318,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            4
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            320,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            5
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            9,
+            0
+          ],
+          "A_payment": [
+            "A",
+            322,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            294,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            8,
+            0
+          ],
+          "A_payment": [
+            "A",
+            324,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            302,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            7,
+            0
+          ],
+          "A_payment": [
+            "A",
+            326,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            310,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            328,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            318,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            5,
+            0
+          ],
+          "A_payment": [
+            "A",
+            330,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            326,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            332,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 42,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "I1:prep": {
+          "A_phi_delta": -4
+        },
+        "I1:critical": {
+          "B_phi_delta": -35,
+          "A_phi_delta": -1
+        },
+        "I1:restore_up": {
+          "B_phi_delta": 44,
+          "A_phi_delta": -4
+        },
+        "I1:restore_down": {
+          "A_phi_delta": -5,
+          "B_phi_delta": 5
+        },
+        "I2:prep": {
+          "A_phi_delta": -4
+        },
+        "I2:critical": {
+          "B_phi_delta": -35,
+          "A_phi_delta": -1
+        },
+        "I2:restore_up": {
+          "B_phi_delta": 44,
+          "A_phi_delta": -4
+        },
+        "I2:restore_down": {
+          "A_phi_delta": -5,
+          "B_phi_delta": 5
+        },
+        "outer": {
+          "A_phi_delta": -1340,
+          "B_phi_delta": 1340
+        }
+      }
+    },
+    {
+      "witness": "I_p3_q5_d1_m2_complete_witness.json",
+      "sha256": "a03952f9ec628bf2eb438653a31fd30c517c2072640f8b758094bb800f486019",
+      "packets": [
+        {
+          "initial_KEEP": 97,
+          "s": 45,
+          "C": 39,
+          "critical_U": 39,
+          "restoration_Q": 75,
+          "lifecycle_U": 55,
+          "finite_capacity": 2
+        },
+        {
+          "initial_KEEP": 483,
+          "s": 45,
+          "C": 39,
+          "critical_U": 39,
+          "restoration_Q": 75,
+          "lifecycle_U": 55,
+          "finite_capacity": 2
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            98,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            48,
+            0
+          ],
+          "A_payment": [
+            "A",
+            105,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            2
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            48,
+            0
+          ],
+          "A_payment": [
+            "A",
+            105,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            3
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            47,
+            0
+          ],
+          "A_payment": [
+            "A",
+            196,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            4
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            47,
+            0
+          ],
+          "A_payment": [
+            "A",
+            196,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            5
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            46,
+            0
+          ],
+          "A_payment": [
+            "A",
+            198,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            6
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            46,
+            0
+          ],
+          "A_payment": [
+            "A",
+            198,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            7
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            45,
+            0
+          ],
+          "A_payment": [
+            "A",
+            200,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            8
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            45,
+            0
+          ],
+          "A_payment": [
+            "A",
+            200,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            9
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            44,
+            0
+          ],
+          "A_payment": [
+            "A",
+            202,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            10
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            44,
+            0
+          ],
+          "A_payment": [
+            "A",
+            202,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            11
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            43,
+            0
+          ],
+          "A_payment": [
+            "A",
+            204,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            12
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            43,
+            0
+          ],
+          "A_payment": [
+            "A",
+            204,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            13
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            42,
+            0
+          ],
+          "A_payment": [
+            "A",
+            206,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            14
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            42,
+            0
+          ],
+          "A_payment": [
+            "A",
+            206,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            15
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            41,
+            0
+          ],
+          "A_payment": [
+            "A",
+            208,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            16
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            41,
+            0
+          ],
+          "A_payment": [
+            "A",
+            208,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            17
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            40,
+            0
+          ],
+          "A_payment": [
+            "A",
+            210,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            18
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            40,
+            0
+          ],
+          "A_payment": [
+            "A",
+            210,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            19
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            39,
+            0
+          ],
+          "A_payment": [
+            "A",
+            212,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            20
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            39,
+            0
+          ],
+          "A_payment": [
+            "A",
+            212,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            21
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            38,
+            0
+          ],
+          "A_payment": [
+            "A",
+            214,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            22
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            38,
+            0
+          ],
+          "A_payment": [
+            "A",
+            214,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            98,
+            23
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            37,
+            0
+          ],
+          "A_payment": [
+            "A",
+            216,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            37,
+            0
+          ],
+          "A_payment": [
+            "A",
+            216,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            2
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            36,
+            0
+          ],
+          "A_payment": [
+            "A",
+            218,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            3
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            36,
+            0
+          ],
+          "A_payment": [
+            "A",
+            218,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            4
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            35,
+            0
+          ],
+          "A_payment": [
+            "A",
+            220,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            5
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            35,
+            0
+          ],
+          "A_payment": [
+            "A",
+            220,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            6
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            34,
+            0
+          ],
+          "A_payment": [
+            "A",
+            222,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            7
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            34,
+            0
+          ],
+          "A_payment": [
+            "A",
+            222,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            8
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            33,
+            0
+          ],
+          "A_payment": [
+            "A",
+            224,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            9
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            33,
+            0
+          ],
+          "A_payment": [
+            "A",
+            224,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            10
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            32,
+            0
+          ],
+          "A_payment": [
+            "A",
+            226,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            100,
+            11
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            32,
+            0
+          ],
+          "A_payment": [
+            "A",
+            226,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            104,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            31,
+            0
+          ],
+          "A_payment": [
+            "A",
+            228,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            104,
+            2
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            31,
+            0
+          ],
+          "A_payment": [
+            "A",
+            228,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            104,
+            3
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            30,
+            0
+          ],
+          "A_payment": [
+            "A",
+            230,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            104,
+            4
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            30,
+            0
+          ],
+          "A_payment": [
+            "A",
+            230,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            104,
+            5
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            29,
+            0
+          ],
+          "A_payment": [
+            "A",
+            232,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            196,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            29,
+            0
+          ],
+          "A_payment": [
+            "A",
+            232,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            196,
+            2
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            28,
+            0
+          ],
+          "A_payment": [
+            "A",
+            234,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            204,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            28,
+            0
+          ],
+          "A_payment": [
+            "A",
+            234,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            212,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            27,
+            0
+          ],
+          "A_payment": [
+            "A",
+            236,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            212,
+            2
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            27,
+            0
+          ],
+          "A_payment": [
+            "A",
+            236,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            220,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            26,
+            0
+          ],
+          "A_payment": [
+            "A",
+            238,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            228,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            26,
+            0
+          ],
+          "A_payment": [
+            "A",
+            238,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            228,
+            2
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            25,
+            0
+          ],
+          "A_payment": [
+            "A",
+            240,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            236,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            25,
+            0
+          ],
+          "A_payment": [
+            "A",
+            240,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            242,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            2
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            242,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            252,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            244,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            260,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            244,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            260,
+            2
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            246,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            268,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            246,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            276,
+            1
+          ],
+          "packet": 97,
+          "birth": [
+            "B",
+            97,
+            21,
+            0
+          ],
+          "A_payment": [
+            "A",
+            248,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            48,
+            0
+          ],
+          "A_payment": [
+            "A",
+            491,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            2
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            48,
+            0
+          ],
+          "A_payment": [
+            "A",
+            491,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            3
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            47,
+            0
+          ],
+          "A_payment": [
+            "A",
+            582,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            4
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            47,
+            0
+          ],
+          "A_payment": [
+            "A",
+            582,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            5
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            46,
+            0
+          ],
+          "A_payment": [
+            "A",
+            584,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            6
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            46,
+            0
+          ],
+          "A_payment": [
+            "A",
+            584,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            7
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            45,
+            0
+          ],
+          "A_payment": [
+            "A",
+            586,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            8
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            45,
+            0
+          ],
+          "A_payment": [
+            "A",
+            586,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            9
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            44,
+            0
+          ],
+          "A_payment": [
+            "A",
+            588,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            10
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            44,
+            0
+          ],
+          "A_payment": [
+            "A",
+            588,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            11
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            43,
+            0
+          ],
+          "A_payment": [
+            "A",
+            590,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            12
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            43,
+            0
+          ],
+          "A_payment": [
+            "A",
+            590,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            13
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            42,
+            0
+          ],
+          "A_payment": [
+            "A",
+            592,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            14
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            42,
+            0
+          ],
+          "A_payment": [
+            "A",
+            592,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            15
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            41,
+            0
+          ],
+          "A_payment": [
+            "A",
+            594,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            16
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            41,
+            0
+          ],
+          "A_payment": [
+            "A",
+            594,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            17
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            40,
+            0
+          ],
+          "A_payment": [
+            "A",
+            596,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            18
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            40,
+            0
+          ],
+          "A_payment": [
+            "A",
+            596,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            19
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            39,
+            0
+          ],
+          "A_payment": [
+            "A",
+            598,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            20
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            39,
+            0
+          ],
+          "A_payment": [
+            "A",
+            598,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            21
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            38,
+            0
+          ],
+          "A_payment": [
+            "A",
+            600,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            22
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            38,
+            0
+          ],
+          "A_payment": [
+            "A",
+            600,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            484,
+            23
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            37,
+            0
+          ],
+          "A_payment": [
+            "A",
+            602,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            37,
+            0
+          ],
+          "A_payment": [
+            "A",
+            602,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            2
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            36,
+            0
+          ],
+          "A_payment": [
+            "A",
+            604,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            3
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            36,
+            0
+          ],
+          "A_payment": [
+            "A",
+            604,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            4
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            35,
+            0
+          ],
+          "A_payment": [
+            "A",
+            606,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            5
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            35,
+            0
+          ],
+          "A_payment": [
+            "A",
+            606,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            6
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            34,
+            0
+          ],
+          "A_payment": [
+            "A",
+            608,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            7
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            34,
+            0
+          ],
+          "A_payment": [
+            "A",
+            608,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            8
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            33,
+            0
+          ],
+          "A_payment": [
+            "A",
+            610,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            9
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            33,
+            0
+          ],
+          "A_payment": [
+            "A",
+            610,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            10
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            32,
+            0
+          ],
+          "A_payment": [
+            "A",
+            612,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            486,
+            11
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            32,
+            0
+          ],
+          "A_payment": [
+            "A",
+            612,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            490,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            31,
+            0
+          ],
+          "A_payment": [
+            "A",
+            614,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            490,
+            2
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            31,
+            0
+          ],
+          "A_payment": [
+            "A",
+            614,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            490,
+            3
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            30,
+            0
+          ],
+          "A_payment": [
+            "A",
+            616,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            490,
+            4
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            30,
+            0
+          ],
+          "A_payment": [
+            "A",
+            616,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            490,
+            5
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            29,
+            0
+          ],
+          "A_payment": [
+            "A",
+            618,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            582,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            29,
+            0
+          ],
+          "A_payment": [
+            "A",
+            618,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            582,
+            2
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            28,
+            0
+          ],
+          "A_payment": [
+            "A",
+            620,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            590,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            28,
+            0
+          ],
+          "A_payment": [
+            "A",
+            620,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            598,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            27,
+            0
+          ],
+          "A_payment": [
+            "A",
+            622,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            598,
+            2
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            27,
+            0
+          ],
+          "A_payment": [
+            "A",
+            622,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            606,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            26,
+            0
+          ],
+          "A_payment": [
+            "A",
+            624,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            614,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            26,
+            0
+          ],
+          "A_payment": [
+            "A",
+            624,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            614,
+            2
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            25,
+            0
+          ],
+          "A_payment": [
+            "A",
+            626,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            622,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            25,
+            0
+          ],
+          "A_payment": [
+            "A",
+            626,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            630,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            628,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            630,
+            2
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            628,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            638,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            630,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            646,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            630,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            646,
+            2
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            632,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            654,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            632,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            662,
+            1
+          ],
+          "packet": 483,
+          "birth": [
+            "B",
+            483,
+            21,
+            0
+          ],
+          "A_payment": [
+            "A",
+            634,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 110,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 2,
+      "phase_potential_ledger": {
+        "I1:prep": {
+          "A_phi_delta": -5
+        },
+        "I1:critical": {
+          "B_phi_delta": -81,
+          "A_phi_delta": -1
+        },
+        "I1:restore_up": {
+          "B_phi_delta": 92,
+          "A_phi_delta": -5
+        },
+        "I1:restore_down": {
+          "A_phi_delta": -6,
+          "B_phi_delta": 6
+        },
+        "I2:prep": {
+          "A_phi_delta": -5
+        },
+        "I2:critical": {
+          "B_phi_delta": -81,
+          "A_phi_delta": -1
+        },
+        "I2:restore_up": {
+          "B_phi_delta": 92,
+          "A_phi_delta": -5
+        },
+        "I2:restore_down": {
+          "A_phi_delta": -6,
+          "B_phi_delta": 6
+        },
+        "outer": {
+          "A_phi_delta": -5058,
+          "B_phi_delta": 5058
+        }
+      }
+    },
+    {
+      "witness": "J_p1_q1_d1_m3_complete_witness.json",
+      "sha256": "d5c4832a905b751dd5e9d2d43c3687a6b2fdfa07c0192556e34b54dea1f0bd9a",
+      "packets": [
+        {
+          "initial_KEEP": 9,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 43,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 77,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            10,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            34,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            44,
+            1
+          ],
+          "packet": 43,
+          "birth": [
+            "B",
+            43,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            68,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            78,
+            1
+          ],
+          "packet": 77,
+          "birth": [
+            "B",
+            77,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            102,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 3,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "J1:prep": {
+          "A_phi_delta": -2
+        },
+        "J1:critical": {
+          "B_phi_delta": -2,
+          "A_phi_delta": -2
+        },
+        "J1:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J1:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "J2:prep": {
+          "A_phi_delta": -2
+        },
+        "J2:critical": {
+          "B_phi_delta": -2,
+          "A_phi_delta": -2
+        },
+        "J2:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J2:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "J3:prep": {
+          "A_phi_delta": -2
+        },
+        "J3:critical": {
+          "B_phi_delta": -2,
+          "A_phi_delta": -2
+        },
+        "J3:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J3:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "outer": {
+          "A_phi_delta": -58,
+          "B_phi_delta": 58
+        }
+      }
+    },
+    {
+      "witness": "J_p1_q1_d2_m2_mirror_complete_witness.json",
+      "sha256": "243197834b3db36361b15053fde57b8ed1af3ec51fc5e6a4acb99bd15e26a846",
+      "packets": [
+        {
+          "initial_KEEP": 9,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 43,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            10,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            34,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            44,
+            1
+          ],
+          "packet": 43,
+          "birth": [
+            "B",
+            43,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            68,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 2,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "J1:prep": {
+          "A_phi_delta": 0
+        },
+        "J1:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "J1:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J1:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "J2:prep": {
+          "A_phi_delta": 0
+        },
+        "J2:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "J2:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J2:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "outer": {
+          "A_phi_delta": -322,
+          "B_phi_delta": 322
+        }
+      }
+    },
+    {
+      "witness": "J_p1_q1_d2_m3_complete_witness.json",
+      "sha256": "cf47e48935bafed745801b9eddf2a0e3f7dc784101a09f37fe6dd2457c927718",
+      "packets": [
+        {
+          "initial_KEEP": 9,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 43,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 77,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            10,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            34,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            44,
+            1
+          ],
+          "packet": 43,
+          "birth": [
+            "B",
+            43,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            68,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            78,
+            1
+          ],
+          "packet": 77,
+          "birth": [
+            "B",
+            77,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            102,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 3,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "J1:prep": {
+          "A_phi_delta": 0
+        },
+        "J1:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "J1:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J1:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "J2:prep": {
+          "A_phi_delta": 0
+        },
+        "J2:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "J2:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J2:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "J3:prep": {
+          "A_phi_delta": 0
+        },
+        "J3:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "J3:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J3:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "outer": {
+          "A_phi_delta": -322,
+          "B_phi_delta": 322
+        }
+      }
+    },
+    {
+      "witness": "J_p1_q1_d3_m2_complete_witness.json",
+      "sha256": "63e48db138fc22c992c5c499bf2afe660ba135a4b7d62fcd1e23ed2e1453bfb5",
+      "packets": [
+        {
+          "initial_KEEP": 9,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 43,
+          "s": 4,
+          "C": 1,
+          "critical_U": 1,
+          "restoration_Q": 3,
+          "lifecycle_U": 1,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            10,
+            1
+          ],
+          "packet": 9,
+          "birth": [
+            "B",
+            9,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            34,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            44,
+            1
+          ],
+          "packet": 43,
+          "birth": [
+            "B",
+            43,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            68,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 2,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "J1:prep": {
+          "A_phi_delta": 0
+        },
+        "J1:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "J1:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J1:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "J2:prep": {
+          "A_phi_delta": 0
+        },
+        "J2:critical": {
+          "B_phi_delta": -4,
+          "A_phi_delta": -2
+        },
+        "J2:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J2:restore_down": {
+          "B_phi_delta": 7,
+          "A_phi_delta": -3
+        },
+        "outer": {
+          "A_phi_delta": -1450,
+          "B_phi_delta": 1450
+        }
+      }
+    },
+    {
+      "witness": "J_p1_q2_d1_m2_complete_witness.json",
+      "sha256": "d2cac4ee4e4ede207a7b03c433caa6aebac274f7f1a6d33960011bf40028e9c7",
+      "packets": [
+        {
+          "initial_KEEP": 13,
+          "s": 6,
+          "C": 2,
+          "critical_U": 2,
+          "restoration_Q": 9,
+          "lifecycle_U": 4,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 63,
+          "s": 6,
+          "C": 2,
+          "critical_U": 2,
+          "restoration_Q": 9,
+          "lifecycle_U": 4,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            14,
+            1
+          ],
+          "packet": 13,
+          "birth": [
+            "B",
+            13,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            50,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            14,
+            2
+          ],
+          "packet": 13,
+          "birth": [
+            "B",
+            13,
+            5,
+            0
+          ],
+          "A_payment": [
+            "A",
+            48,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            40,
+            1
+          ],
+          "packet": 13,
+          "birth": [
+            "B",
+            13,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            46,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            42,
+            1
+          ],
+          "packet": 13,
+          "birth": [
+            "B",
+            13,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            44,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            64,
+            1
+          ],
+          "packet": 63,
+          "birth": [
+            "B",
+            63,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            100,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            64,
+            2
+          ],
+          "packet": 63,
+          "birth": [
+            "B",
+            63,
+            5,
+            0
+          ],
+          "A_payment": [
+            "A",
+            98,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            90,
+            1
+          ],
+          "packet": 63,
+          "birth": [
+            "B",
+            63,
+            4,
+            0
+          ],
+          "A_payment": [
+            "A",
+            96,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            92,
+            1
+          ],
+          "packet": 63,
+          "birth": [
+            "B",
+            63,
+            3,
+            0
+          ],
+          "A_payment": [
+            "A",
+            94,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 8,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "J1:prep": {
+          "A_phi_delta": -2
+        },
+        "J1:critical": {
+          "B_phi_delta": -5,
+          "A_phi_delta": -1
+        },
+        "J1:restore_prep": {
+          "A_phi_delta": 1
+        },
+        "J1:restore_down": {
+          "B_phi_delta": 10,
+          "A_phi_delta": -3
+        },
+        "J2:prep": {
+          "A_phi_delta": -2
+        },
+        "J2:critical": {
+          "B_phi_delta": -5,
+          "A_phi_delta": -1
+        },
+        "J2:restore_prep": {
+          "A_phi_delta": 1
+        },
+        "J2:restore_down": {
+          "B_phi_delta": 10,
+          "A_phi_delta": -3
+        },
+        "outer": {
+          "A_phi_delta": -105,
+          "B_phi_delta": 105
+        }
+      }
+    },
+    {
+      "witness": "J_p2_q5_d1_m2_complete_witness.json",
+      "sha256": "0cce12deacbaa9d84a72a3e60155eb57494dddc2f80ef209e964922c145fa89b",
+      "packets": [
+        {
+          "initial_KEEP": 49,
+          "s": 23,
+          "C": 16,
+          "critical_U": 16,
+          "restoration_Q": 42,
+          "lifecycle_U": 27,
+          "finite_capacity": 2
+        },
+        {
+          "initial_KEEP": 243,
+          "s": 23,
+          "C": 16,
+          "critical_U": 16,
+          "restoration_Q": 42,
+          "lifecycle_U": 27,
+          "finite_capacity": 2
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            50,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            194,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            2
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            194,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            3
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            192,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            4
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            192,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            5
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            190,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            6
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            190,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            7
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            21,
+            0
+          ],
+          "A_payment": [
+            "A",
+            188,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            8
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            21,
+            0
+          ],
+          "A_payment": [
+            "A",
+            188,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            9
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            20,
+            0
+          ],
+          "A_payment": [
+            "A",
+            186,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            10
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            20,
+            0
+          ],
+          "A_payment": [
+            "A",
+            186,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            50,
+            11
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            19,
+            0
+          ],
+          "A_payment": [
+            "A",
+            184,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            19,
+            0
+          ],
+          "A_payment": [
+            "A",
+            184,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            2
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            18,
+            0
+          ],
+          "A_payment": [
+            "A",
+            182,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            3
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            18,
+            0
+          ],
+          "A_payment": [
+            "A",
+            182,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            4
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            17,
+            0
+          ],
+          "A_payment": [
+            "A",
+            180,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            52,
+            5
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            17,
+            0
+          ],
+          "A_payment": [
+            "A",
+            180,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            150,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            178,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            150,
+            2
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            178,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            150,
+            3
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            176,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            151,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            176,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            152,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            174,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            154,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            174,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            162,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            172,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            162,
+            2
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            172,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            170,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            170,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            178,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            170,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            186,
+            1
+          ],
+          "packet": 49,
+          "birth": [
+            "B",
+            49,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            168,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            388,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            2
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            24,
+            0
+          ],
+          "A_payment": [
+            "A",
+            388,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            3
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            386,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            4
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            23,
+            0
+          ],
+          "A_payment": [
+            "A",
+            386,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            5
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            384,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            6
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            22,
+            0
+          ],
+          "A_payment": [
+            "A",
+            384,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            7
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            21,
+            0
+          ],
+          "A_payment": [
+            "A",
+            382,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            8
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            21,
+            0
+          ],
+          "A_payment": [
+            "A",
+            382,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            9
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            20,
+            0
+          ],
+          "A_payment": [
+            "A",
+            380,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            10
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            20,
+            0
+          ],
+          "A_payment": [
+            "A",
+            380,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            11
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            19,
+            0
+          ],
+          "A_payment": [
+            "A",
+            378,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            19,
+            0
+          ],
+          "A_payment": [
+            "A",
+            378,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            2
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            18,
+            0
+          ],
+          "A_payment": [
+            "A",
+            376,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            3
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            18,
+            0
+          ],
+          "A_payment": [
+            "A",
+            376,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            4
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            17,
+            0
+          ],
+          "A_payment": [
+            "A",
+            374,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            246,
+            5
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            17,
+            0
+          ],
+          "A_payment": [
+            "A",
+            374,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            344,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            372,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            344,
+            2
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            372,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            344,
+            3
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            370,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            345,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            370,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            346,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            368,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            348,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            368,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            356,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            366,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            356,
+            2
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            366,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            364,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            364,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            372,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            364,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            380,
+            1
+          ],
+          "packet": 243,
+          "birth": [
+            "B",
+            243,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            362,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 54,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 2,
+      "phase_potential_ledger": {
+        "J1:prep": {
+          "A_phi_delta": -4
+        },
+        "J1:critical": {
+          "B_phi_delta": -35,
+          "A_phi_delta": -1
+        },
+        "J1:restore_prep": {
+          "A_phi_delta": 1
+        },
+        "J1:restore_down": {
+          "B_phi_delta": 44,
+          "A_phi_delta": -5
+        },
+        "J2:prep": {
+          "A_phi_delta": -4
+        },
+        "J2:critical": {
+          "B_phi_delta": -35,
+          "A_phi_delta": -1
+        },
+        "J2:restore_prep": {
+          "A_phi_delta": 1
+        },
+        "J2:restore_down": {
+          "B_phi_delta": 44,
+          "A_phi_delta": -5
+        },
+        "outer": {
+          "A_phi_delta": -1340,
+          "B_phi_delta": 1340
+        }
+      }
+    },
+    {
+      "witness": "J_p3_q1_d1_m2_altered_restore_complete_witness.json",
+      "sha256": "0eeb0e23bd6bcbb1933eeb0e88a8a30caebff5764af3422dd68b9f82e196ac26",
+      "packets": [
+        {
+          "initial_KEEP": 33,
+          "s": 13,
+          "C": 11,
+          "critical_U": 11,
+          "restoration_Q": 0,
+          "lifecycle_U": 11,
+          "finite_capacity": 1
+        },
+        {
+          "initial_KEEP": 167,
+          "s": 13,
+          "C": 11,
+          "critical_U": 11,
+          "restoration_Q": 0,
+          "lifecycle_U": 11,
+          "finite_capacity": 1
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            34,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            134,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            2
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            41,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            3
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            130,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            4
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            128,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            5
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            126,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            6
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            124,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            7
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            122,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            9,
+            0
+          ],
+          "A_payment": [
+            "A",
+            120,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            2
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            8,
+            0
+          ],
+          "A_payment": [
+            "A",
+            118,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            3
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            7,
+            0
+          ],
+          "A_payment": [
+            "A",
+            116,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            40,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            114,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            168,
+            1
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            268,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            168,
+            2
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            175,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            168,
+            3
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            264,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            168,
+            4
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            262,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            168,
+            5
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            260,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            168,
+            6
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            258,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            168,
+            7
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            256,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            170,
+            1
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            9,
+            0
+          ],
+          "A_payment": [
+            "A",
+            254,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            170,
+            2
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            8,
+            0
+          ],
+          "A_payment": [
+            "A",
+            252,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            170,
+            3
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            7,
+            0
+          ],
+          "A_payment": [
+            "A",
+            250,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            174,
+            1
+          ],
+          "packet": 167,
+          "birth": [
+            "B",
+            167,
+            6,
+            0
+          ],
+          "A_payment": [
+            "A",
+            248,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 22,
+      "literal_complement_U": [
+        [
+          110,
+          1
+        ],
+        [
+          118,
+          1
+        ],
+        [
+          244,
+          1
+        ],
+        [
+          252,
+          1
+        ]
+      ],
+      "maximum_finite_A_load": 1,
+      "phase_potential_ledger": {
+        "J1:prep": {
+          "A_phi_delta": -4
+        },
+        "J1:critical": {
+          "B_phi_delta": -21,
+          "A_phi_delta": -2
+        },
+        "J1:restore_prep": {
+          "A_phi_delta": 1
+        },
+        "J1:unstructured": {
+          "A_phi_delta": 18,
+          "B_phi_delta": 5
+        },
+        "J1:restore_down": {
+          "A_phi_delta": -27,
+          "B_phi_delta": 30
+        },
+        "J2:prep": {
+          "A_phi_delta": -4
+        },
+        "J2:critical": {
+          "B_phi_delta": -21,
+          "A_phi_delta": -2
+        },
+        "J2:restore_prep": {
+          "A_phi_delta": 1
+        },
+        "J2:unstructured": {
+          "A_phi_delta": 18,
+          "B_phi_delta": 5
+        },
+        "J2:restore_down": {
+          "A_phi_delta": -27,
+          "B_phi_delta": 30
+        },
+        "outer": {
+          "A_phi_delta": -644,
+          "B_phi_delta": 644
+        }
+      }
+    },
+    {
+      "witness": "J_p3_q1_d1_m2_complete_witness.json",
+      "sha256": "50327b3b21708a93572c57ac4c1c41adc8485b7164426a269246fd227332cda0",
+      "packets": [
+        {
+          "initial_KEEP": 33,
+          "s": 13,
+          "C": 11,
+          "critical_U": 11,
+          "restoration_Q": 23,
+          "lifecycle_U": 14,
+          "finite_capacity": 2
+        },
+        {
+          "initial_KEEP": 163,
+          "s": 13,
+          "C": 11,
+          "critical_U": 11,
+          "restoration_Q": 23,
+          "lifecycle_U": 14,
+          "finite_capacity": 2
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            34,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            130,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            2
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            130,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            3
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            128,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            4
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            128,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            5
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            126,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            6
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            126,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            34,
+            7
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            124,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            124,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            2
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            122,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            3
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            122,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            40,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            120,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            106,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            120,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            114,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            118,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            122,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            118,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            164,
+            1
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            260,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            164,
+            2
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            260,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            164,
+            3
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            258,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            164,
+            4
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            258,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            164,
+            5
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            256,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            164,
+            6
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            256,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            164,
+            7
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            254,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            166,
+            1
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            254,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            166,
+            2
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            252,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            166,
+            3
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            252,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            170,
+            1
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            250,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            236,
+            1
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            250,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            244,
+            1
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            248,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            252,
+            1
+          ],
+          "packet": 163,
+          "birth": [
+            "B",
+            163,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            248,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 28,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 2,
+      "phase_potential_ledger": {
+        "J1:prep": {
+          "A_phi_delta": -4
+        },
+        "J1:critical": {
+          "B_phi_delta": -21,
+          "A_phi_delta": -2
+        },
+        "J1:restore_prep": {
+          "A_phi_delta": 1
+        },
+        "J1:restore_down": {
+          "B_phi_delta": 31,
+          "A_phi_delta": -5
+        },
+        "J2:prep": {
+          "A_phi_delta": -4
+        },
+        "J2:critical": {
+          "B_phi_delta": -21,
+          "A_phi_delta": -2
+        },
+        "J2:restore_prep": {
+          "A_phi_delta": 1
+        },
+        "J2:restore_down": {
+          "B_phi_delta": 31,
+          "A_phi_delta": -5
+        },
+        "outer": {
+          "A_phi_delta": -644,
+          "B_phi_delta": 644
+        }
+      }
+    },
+    {
+      "witness": "J_p3_q1_d1_m2_helpers_complete_witness.json",
+      "sha256": "12ea825997baf108481698434c1c3964f1c6e6546f1328dcfa84e63a03fdb2a6",
+      "packets": [
+        {
+          "initial_KEEP": 33,
+          "s": 13,
+          "C": 11,
+          "critical_U": 11,
+          "restoration_Q": 23,
+          "lifecycle_U": 14,
+          "finite_capacity": 2
+        },
+        {
+          "initial_KEEP": 171,
+          "s": 13,
+          "C": 11,
+          "critical_U": 11,
+          "restoration_Q": 23,
+          "lifecycle_U": 14,
+          "finite_capacity": 2
+        }
+      ],
+      "literal_lifecycle_U_charge_map": [
+        {
+          "demand": [
+            36,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            138,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            2
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            138,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            3
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            136,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            4
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            136,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            5
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            134,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            6
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            134,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            36,
+            7
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            132,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            40,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            132,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            40,
+            2
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            130,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            40,
+            3
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            130,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            46,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            128,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            114,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            128,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            122,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            126,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            130,
+            1
+          ],
+          "packet": 33,
+          "birth": [
+            "B",
+            33,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            126,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            174,
+            1
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            276,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            174,
+            2
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            16,
+            0
+          ],
+          "A_payment": [
+            "A",
+            276,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            174,
+            3
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            274,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            174,
+            4
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            15,
+            0
+          ],
+          "A_payment": [
+            "A",
+            274,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            174,
+            5
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            272,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            174,
+            6
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            14,
+            0
+          ],
+          "A_payment": [
+            "A",
+            272,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            174,
+            7
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            270,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            178,
+            1
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            13,
+            0
+          ],
+          "A_payment": [
+            "A",
+            270,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            178,
+            2
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            268,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            178,
+            3
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            12,
+            0
+          ],
+          "A_payment": [
+            "A",
+            268,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            184,
+            1
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            266,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            252,
+            1
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            11,
+            0
+          ],
+          "A_payment": [
+            "A",
+            266,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            260,
+            1
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            264,
+            1,
+            0
+          ]
+        },
+        {
+          "demand": [
+            268,
+            1
+          ],
+          "packet": 171,
+          "birth": [
+            "B",
+            171,
+            10,
+            0
+          ],
+          "A_payment": [
+            "A",
+            264,
+            1,
+            0
+          ]
+        }
+      ],
+      "covered_U": 28,
+      "literal_complement_U": [],
+      "maximum_finite_A_load": 2,
+      "phase_potential_ledger": {
+        "J1:prep": {
+          "A_phi_delta": -4
+        },
+        "J1:critical": {
+          "B_phi_delta": -21,
+          "A_phi_delta": 1
+        },
+        "J1:helper": {
+          "A_phi_delta": -4
+        },
+        "J1:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J1:restore_down": {
+          "B_phi_delta": 31,
+          "A_phi_delta": -5
+        },
+        "J2:prep": {
+          "A_phi_delta": -4
+        },
+        "J2:critical": {
+          "B_phi_delta": -21,
+          "A_phi_delta": 1
+        },
+        "J2:helper": {
+          "A_phi_delta": -4
+        },
+        "J2:restore_prep": {
+          "A_phi_delta": 2
+        },
+        "J2:restore_down": {
+          "B_phi_delta": 31,
+          "A_phi_delta": -5
+        },
+        "outer": {
+          "A_phi_delta": -644,
+          "B_phi_delta": 644
+        }
+      }
+    }
+  ],
+  "note": "Finite capacities are recorded separately from the theorem constant. The uniform upper bound is proved symbolically."
+}

@@ -1,0 +1,112 @@
+{
+  "Git_mutations": 0,
+  "administrative_failure": "Original gate1 tuple/list representation comparison; retained and corrected in gate1_v2 with no changed selector.",
+  "agents_or_external_reviewers_used": 0,
+  "all_caps_operational_not_mathematical": true,
+  "allocation": {
+    "fresh_complete_source_cap": 12,
+    "fresh_population_cap": 1027,
+    "measured_script_CPU_seconds": 1200,
+    "per_process_peak_working_set_aim_bytes": 2147483648
+  },
+  "failed_semantic_or_source_run": false,
+  "fresh_complete_sources": 12,
+  "fresh_max_population": 134,
+  "historical_writes": 0,
+  "installations": 0,
+  "maximum_measured_process_peak_working_set_bytes": 793292800,
+  "measured_script_CPU_seconds_total": 423.96875,
+  "receipts": {
+    "CPU_fan_exposure_and_closure_tickets.json": {
+      "completed": true,
+      "cpu_seconds": 1.390625,
+      "memory": {
+        "peak_pagefile_bytes": 140816384,
+        "peak_working_set_bytes": 147202048,
+        "working_set_bytes": 56078336
+      },
+      "wall_seconds": 2.401266500004567
+    },
+    "CPU_finalization.json": {
+      "completed": true,
+      "cpu_seconds": 99.734375,
+      "memory": {
+        "peak_pagefile_bytes": 149430272,
+        "peak_working_set_bytes": 155848704,
+        "working_set_bytes": 59068416
+      },
+      "scope": "Seal consistency checks, full new edge/mask/signed SET replay, prefixes, original packet and transitive preservation checks; import time excluded.",
+      "wall_seconds": 138.94095780001953
+    },
+    "CPU_gate1_exact_packet_reduction.json": {
+      "completed": false,
+      "cpu_seconds": 6.390625,
+      "memory": {
+        "peak_pagefile_bytes": 788553728,
+        "peak_working_set_bytes": 793292800,
+        "working_set_bytes": 635088896
+      },
+      "wall_seconds": 6.795811499992851
+    },
+    "CPU_gate1_exact_packet_reduction_2.json": {
+      "completed": true,
+      "cpu_seconds": 5.65625,
+      "memory": {
+        "peak_pagefile_bytes": 788107264,
+        "peak_working_set_bytes": 792952832,
+        "working_set_bytes": 58986496
+      },
+      "wall_seconds": 6.017552200006321
+    },
+    "CPU_original_LCA_rank_law.json": {
+      "complete_sources": 80,
+      "completed": true,
+      "cpu_seconds": 49.328125,
+      "memory": {
+        "peak_pagefile_bytes": 786214912,
+        "peak_working_set_bytes": 790257664,
+        "working_set_bytes": 158654464
+      },
+      "wall_seconds": 59.22431179997511
+    },
+    "CPU_preflight.json": {
+      "completed": true,
+      "cpu_seconds": 34.4375,
+      "memory": {
+        "peak_pagefile_bytes": 17911808,
+        "peak_working_set_bytes": 25481216,
+        "working_set_bytes": 23470080
+      },
+      "wall_seconds": 66.33352440001909
+    },
+    "CPU_protected_fan_audit.json": {
+      "completed": true,
+      "cpu_seconds": 49.671875,
+      "fresh_complete_sources": 6,
+      "memory": {
+        "peak_pagefile_bytes": 123408384,
+        "peak_working_set_bytes": 131813376,
+        "working_set_bytes": 61911040
+      },
+      "wall_seconds": 53.461245300015435
+    },
+    "CPU_splitvine_fan_audit.json": {
+      "completed": true,
+      "cpu_seconds": 177.359375,
+      "fresh_complete_sources": 6,
+      "memory": {
+        "peak_pagefile_bytes": 239468544,
+        "peak_working_set_bytes": 247554048,
+        "working_set_bytes": 82223104
+      },
+      "wall_seconds": 183.03338079998503
+    }
+  },
+  "resource_numbers_are": "Measured script scope only; not a total wall-time or full reasoning CPU claim.",
+  "unmetered": [
+    "Module imports before meters",
+    "Read-only source and schema inspections, including a truncated oversized catalog print",
+    "Proof reasoning, prose and patch construction",
+    "Final JSON/manifest serialization and read-only seal verification"
+  ]
+}

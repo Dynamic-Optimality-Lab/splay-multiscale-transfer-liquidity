@@ -1,0 +1,350 @@
+{
+  "status": "REFUTED_EXACT_PROJECTED_COMPONENT_HISTORY",
+  "complete_original_source": "source_02.json.gz",
+  "original_operation": 1,
+  "physical_interval": [
+    1,
+    3
+  ],
+  "component_before": [
+    1,
+    null,
+    [
+      2,
+      null,
+      [
+        3,
+        null,
+        null
+      ]
+    ]
+  ],
+  "component_after": [
+    3,
+    [
+      1,
+      null,
+      [
+        2,
+        null,
+        null
+      ]
+    ],
+    null
+  ],
+  "closed_reachable_B_states": [
+    [
+      1,
+      null,
+      [
+        2,
+        null,
+        [
+          3,
+          null,
+          null
+        ]
+      ]
+    ],
+    [
+      2,
+      [
+        1,
+        null,
+        null
+      ],
+      [
+        3,
+        null,
+        null
+      ]
+    ],
+    [
+      3,
+      [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        null
+      ],
+      null
+    ]
+  ],
+  "all_ordinary_splay_transitions_from_closed_set": [
+    {
+      "before": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "target": 1,
+      "after": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "depth": 0
+    },
+    {
+      "before": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "target": 2,
+      "after": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          null
+        ]
+      ],
+      "depth": 1
+    },
+    {
+      "before": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "target": 3,
+      "after": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "depth": 2
+    },
+    {
+      "before": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          null
+        ]
+      ],
+      "target": 1,
+      "after": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "depth": 1
+    },
+    {
+      "before": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          null
+        ]
+      ],
+      "target": 2,
+      "after": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          null
+        ]
+      ],
+      "depth": 0
+    },
+    {
+      "before": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          null
+        ]
+      ],
+      "target": 3,
+      "after": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "depth": 1
+    },
+    {
+      "before": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "target": 1,
+      "after": [
+        1,
+        null,
+        [
+          2,
+          null,
+          [
+            3,
+            null,
+            null
+          ]
+        ]
+      ],
+      "depth": 2
+    },
+    {
+      "before": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "target": 2,
+      "after": [
+        2,
+        [
+          1,
+          null,
+          null
+        ],
+        [
+          3,
+          null,
+          null
+        ]
+      ],
+      "depth": 1
+    },
+    {
+      "before": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "target": 3,
+      "after": [
+        3,
+        [
+          2,
+          [
+            1,
+            null,
+            null
+          ],
+          null
+        ],
+        null
+      ],
+      "depth": 0
+    }
+  ],
+  "proof": "The displayed finite set contains the start and is closed under every possible local KEEP. DELETE freezes B. The actual projected destination is outside the set. No legal local Pair Access history realizes this transition, regardless of local A cost or the number of extra operations.",
+  "scope": "Refutes direct interval restriction and every ordinary local-word legalization with this retained key set and these endpoints. Not arbitrary adaptive/overlapping composition or Universal CD."
+}

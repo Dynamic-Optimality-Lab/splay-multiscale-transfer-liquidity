@@ -1,0 +1,59 @@
+{
+  "scope": "Complete exact finite original-state graphs only. Increasing support requires a separate source-uniform proof.",
+  "cases": [
+    {
+      "support": 1,
+      "trees": 1,
+      "reachable_pairs": 1,
+      "edges": 2,
+      "exact_finite_C": "0",
+      "status": "FINITE_EXACT_OPTIMUM",
+      "build_cpu_seconds": 0.0
+    },
+    {
+      "support": 2,
+      "trees": 2,
+      "reachable_pairs": 4,
+      "edges": 16,
+      "exact_finite_C": "0",
+      "status": "FINITE_EXACT_OPTIMUM",
+      "build_cpu_seconds": 0.0
+    },
+    {
+      "support": 3,
+      "trees": 5,
+      "reachable_pairs": 19,
+      "edges": 114,
+      "exact_finite_C": "1",
+      "status": "FINITE_EXACT_OPTIMUM",
+      "build_cpu_seconds": 0.0
+    },
+    {
+      "support": 4,
+      "trees": 14,
+      "reachable_pairs": 196,
+      "edges": 1568,
+      "exact_finite_C": "1",
+      "status": "FINITE_EXACT_OPTIMUM",
+      "build_cpu_seconds": 0.015625
+    },
+    {
+      "support": 5,
+      "trees": 42,
+      "reachable_pairs": 1764,
+      "edges": 17640,
+      "exact_finite_C": "3/2",
+      "status": "FINITE_EXACT_OPTIMUM",
+      "build_cpu_seconds": 0.03125
+    },
+    {
+      "support": 6,
+      "trees": 132,
+      "reachable_pairs": 17424,
+      "edges": 209088,
+      "exact_finite_C": "3/2",
+      "status": "FINITE_EXACT_OPTIMUM",
+      "build_cpu_seconds": 0.53125
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+{
+  "status": "PROVED_SCOPED_SYMBOLIC_CERTIFICATE",
+  "scope": "two_targets",
+  "candidate": {
+    "root_bound": 2,
+    "bank_capacity": 0,
+    "overflow_ticket": 1,
+    "A_coefficient": 0,
+    "KEEP_coefficient": 1,
+    "priority": 0,
+    "extra_A_allowance": 0,
+    "global_capacity_scale": 1,
+    "overflow_mode": 1,
+    "path_invariant": [
+      1,
+      -1,
+      -2,
+      -1
+    ],
+    "bank_invariant": [
+      1,
+      -1,
+      -1,
+      -1,
+      1
+    ],
+    "ticket_invariant": [
+      1,
+      -1,
+      1,
+      1
+    ],
+    "reserve_invariant": [
+      1,
+      1,
+      1,
+      0,
+      -1
+    ]
+  },
+  "proof_dag": [
+    {
+      "obligation": "path_initialization",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "path_preservation_double",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "path_preservation_zig",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "bank_initialization",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "bank_preservation_A",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "bank_preservation_KEEP",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "bank_preservation_B",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "ticket_initialization",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "ticket_preservation_KEEP",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "ticket_preservation_B",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "ticket_preservation_expire",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "reserve_initialization",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "reserve_total_double_preservation",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "reserve_zig_preservation",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "final_ZIG_L",
+      "result": "STRUCTURAL_NORMAL_FORM",
+      "old_root_depth": 1
+    },
+    {
+      "obligation": "final_ZIG_R",
+      "result": "STRUCTURAL_NORMAL_FORM",
+      "old_root_depth": 1
+    },
+    {
+      "obligation": "final_LL",
+      "result": "STRUCTURAL_NORMAL_FORM",
+      "old_root_depth": 2
+    },
+    {
+      "obligation": "final_RR",
+      "result": "STRUCTURAL_NORMAL_FORM",
+      "old_root_depth": 2
+    },
+    {
+      "obligation": "final_LR",
+      "result": "STRUCTURAL_NORMAL_FORM",
+      "old_root_depth": 1
+    },
+    {
+      "obligation": "final_RL",
+      "result": "STRUCTURAL_NORMAL_FORM",
+      "old_root_depth": 1
+    },
+    {
+      "obligation": "original_double_all_cost_accounted",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "shared_A_cost",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "once_per_KEEP_cost",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "global_reserve_access_entry",
+      "result": "UNSAT_NEGATION",
+      "quantification": "All values satisfying the displayed symbolic transition domain."
+    },
+    {
+      "obligation": "global_resource_conservation",
+      "result": "GENERIC_BANK_INVARIANT_INSTANTIATED_AT_GLOBAL_RESERVE"
+    },
+    {
+      "obligation": "whole_loop_termination",
+      "result": "NATURAL_FRAME_RANK_DECREASES"
+    },
+    {
+      "obligation": "cyclic_entry",
+      "result": "PROVED_TWO_TARGET_ROOT_RETURN"
+    },
+    {
+      "obligation": "cyclic_bank_seam",
+      "result": "COUPLED_MONOTONE_GLOBAL_RESERVE"
+    },
+    {
+      "obligation": "ticket_boundary",
+      "result": "PERSISTENT_GLOBAL_RESERVE_CLOSED_BY_CONSTRUCTION"
+    },
+    {
+      "obligation": "original_voucher_interface",
+      "result": "PINNED_K_B_LE_A"
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 0,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "bank_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ticket_invariant": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "INIT",
+        "obligation": "path_initialization",
+        "values": {
+          "initialDepth": 1
+        },
+        "post": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "vector": "path_invariant"
+      },
+      "checked_obligations": 0
+    },
+    {
+      "iteration": 1,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "bank_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ticket_invariant": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "ICE_EQ",
+        "obligation": "path_preservation_double",
+        "values": {
+          "initialDepth": 2,
+          "remaining": 2,
+          "doubles": 0,
+          "zigs": 0
+        },
+        "pre": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "post": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "vector": "path_invariant"
+      },
+      "checked_obligations": 1
+    },
+    {
+      "iteration": 2,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          0
+        ],
+        "bank_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ticket_invariant": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "ICE_EQ",
+        "obligation": "path_preservation_zig",
+        "values": {
+          "initialDepth": 1,
+          "remaining": 1,
+          "doubles": 0,
+          "zigs": 0
+        },
+        "pre": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "post": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "vector": "path_invariant"
+      },
+      "checked_obligations": 2
+    },
+    {
+      "iteration": 3,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ticket_invariant": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "INIT",
+        "obligation": "bank_initialization",
+        "values": {
+          "initialBank": 1
+        },
+        "post": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "vector": "bank_invariant"
+      },
+      "checked_obligations": 3
+    },
+    {
+      "iteration": 4,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "ticket_invariant": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "ICE_EQ",
+        "obligation": "bank_preservation_A",
+        "values": {
+          "bank": 0,
+          "initialBank": 0,
+          "Aissued": 0,
+          "Kissued": 0,
+          "bankPaid": 0,
+          "issuance": 1,
+          "payment": 0
+        },
+        "pre": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "post": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "vector": "bank_invariant"
+      },
+      "checked_obligations": 4
+    },
+    {
+      "iteration": 5,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "ticket_invariant": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "ICE_EQ",
+        "obligation": "bank_preservation_KEEP",
+        "values": {
+          "bank": 0,
+          "initialBank": 0,
+          "Aissued": 0,
+          "Kissued": 0,
+          "bankPaid": 0,
+          "issuance": 1,
+          "payment": 0
+        },
+        "pre": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "post": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "vector": "bank_invariant"
+      },
+      "checked_obligations": 5
+    },
+    {
+      "iteration": 6,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        "ticket_invariant": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "ICE_EQ",
+        "obligation": "bank_preservation_B",
+        "values": {
+          "bank": 1,
+          "initialBank": 0,
+          "Aissued": 1,
+          "Kissued": 0,
+          "bankPaid": 0,
+          "issuance": 0,
+          "payment": 1
+        },
+        "pre": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "post": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "vector": "bank_invariant"
+      },
+      "checked_obligations": 6
+    },
+    {
+      "iteration": 7,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "ICE_EQ",
+        "obligation": "ticket_preservation_KEEP",
+        "values": {
+          "ticket": 0,
+          "ticketIssued": 0,
+          "overflowPaid": 0,
+          "expired": 0,
+          "issuance": 1,
+          "debit": 0
+        },
+        "pre": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "post": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "vector": "ticket_invariant"
+      },
+      "checked_obligations": 8
+    },
+    {
+      "iteration": 8,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "ICE_EQ",
+        "obligation": "ticket_preservation_B",
+        "values": {
+          "ticket": 1,
+          "ticketIssued": 1,
+          "overflowPaid": 0,
+          "expired": 0,
+          "issuance": 0,
+          "debit": 1
+        },
+        "pre": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "post": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "vector": "ticket_invariant"
+      },
+      "checked_obligations": 9
+    },
+    {
+      "iteration": 9,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "ICE_EQ",
+        "obligation": "ticket_preservation_expire",
+        "values": {
+          "ticket": 1,
+          "ticketIssued": 1,
+          "overflowPaid": 0,
+          "expired": 0,
+          "issuance": 0,
+          "debit": 0
+        },
+        "pre": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "post": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "vector": "ticket_invariant"
+      },
+      "checked_obligations": 10
+    },
+    {
+      "iteration": 10,
+      "candidate": {
+        "root_bound": 0,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "STRUCTURAL_BOUND",
+        "obligation": "final_ZIG_L",
+        "required_bound": 1
+      },
+      "checked_obligations": 14
+    },
+    {
+      "iteration": 11,
+      "candidate": {
+        "root_bound": 1,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "STRUCTURAL_BOUND",
+        "obligation": "final_LL",
+        "required_bound": 2
+      },
+      "checked_obligations": 16
+    },
+    {
+      "iteration": 12,
+      "candidate": {
+        "root_bound": 2,
+        "bank_capacity": 0,
+        "overflow_ticket": 0,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 0,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "SAFETY",
+        "obligation": "original_double_all_cost_accounted",
+        "values": {
+          "initialDepth": 2,
+          "remaining": 2,
+          "doubles": 0,
+          "zigs": 0,
+          "target": 0,
+          "ticket": 0,
+          "H": 0,
+          "T": 0,
+          "other": 0
+        },
+        "pre": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "vector": "reserve_invariant",
+        "path_pre_symbolic": true,
+        "scope": "two_targets"
+      },
+      "checked_obligations": 20
+    },
+    {
+      "iteration": 13,
+      "candidate": {
+        "root_bound": 2,
+        "bank_capacity": 0,
+        "overflow_ticket": 1,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 1,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "result": {
+        "kind": "SAFETY",
+        "obligation": "original_double_all_cost_accounted",
+        "values": {
+          "initialDepth": 2,
+          "remaining": 2,
+          "doubles": 0,
+          "zigs": 0,
+          "target": 0,
+          "ticket": 0,
+          "H": 0,
+          "T": 1,
+          "other": 0
+        },
+        "pre": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "vector": "reserve_invariant",
+        "path_pre_symbolic": true,
+        "scope": "two_targets"
+      },
+      "checked_obligations": 20
+    },
+    {
+      "iteration": 14,
+      "candidate": {
+        "root_bound": 2,
+        "bank_capacity": 0,
+        "overflow_ticket": 1,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 1,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "reserve_invariant": [
+          1,
+          0,
+          0,
+          0,
+          -1
+        ]
+      },
+      "result": {
+        "kind": "INIT_GE",
+        "obligation": "reserve_initialization",
+        "values": {
+          "H": 0,
+          "T": 1,
+          "entryReserve": 1
+        },
+        "post": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "vector": "reserve_invariant"
+      },
+      "checked_obligations": 11
+    },
+    {
+      "iteration": 15,
+      "candidate": {
+        "root_bound": 2,
+        "bank_capacity": 0,
+        "overflow_ticket": 1,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 1,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "reserve_invariant": [
+          1,
+          1,
+          0,
+          0,
+          -1
+        ]
+      },
+      "result": {
+        "kind": "ICE_GE",
+        "obligation": "reserve_total_double_preservation",
+        "values": {
+          "target": 0,
+          "ticket": 1,
+          "spentDoubles": 0,
+          "H": 0,
+          "T": 1,
+          "other": 0
+        },
+        "pre": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "post": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "vector": "reserve_invariant"
+      },
+      "checked_obligations": 12
+    },
+    {
+      "iteration": 16,
+      "candidate": {
+        "root_bound": 2,
+        "bank_capacity": 0,
+        "overflow_ticket": 1,
+        "A_coefficient": 0,
+        "KEEP_coefficient": 1,
+        "priority": 0,
+        "extra_A_allowance": 0,
+        "global_capacity_scale": 1,
+        "overflow_mode": 1,
+        "path_invariant": [
+          1,
+          -1,
+          -2,
+          -1
+        ],
+        "bank_invariant": [
+          1,
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "ticket_invariant": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "reserve_invariant": [
+          1,
+          1,
+          1,
+          0,
+          -1
+        ]
+      },
+      "result": {
+        "kind": "ALL_OBLIGATIONS_PROVED"
+      },
+      "checked_obligations": 30
+    }
+  ],
+  "constant": 1,
+  "seconds": 3.807344699976966,
+  "universal_CD": "OPEN"
+}

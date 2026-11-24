@@ -1,0 +1,112 @@
+{
+  "runs": [
+    {
+      "failure": null,
+      "operations": 2444,
+      "phase": "pilot",
+      "process_CPU_seconds": 3.515625,
+      "sources": 13
+    },
+    {
+      "failure": null,
+      "operations": 0,
+      "phase": "audit_saved",
+      "process_CPU_seconds": 0.109375,
+      "sources": 0
+    },
+    {
+      "failure": null,
+      "operations": 21976,
+      "phase": "expand",
+      "process_CPU_seconds": 58.671875,
+      "sources": 53
+    },
+    {
+      "failure": null,
+      "operations": 4768,
+      "phase": "attacks",
+      "process_CPU_seconds": 7.234375,
+      "sources": 30
+    },
+    {
+      "failure": null,
+      "operations": 0,
+      "phase": "audit_saved",
+      "process_CPU_seconds": 1.359375,
+      "sources": 0
+    },
+    {
+      "failure": null,
+      "operations": 3820,
+      "phase": "dense",
+      "process_CPU_seconds": 13.234375,
+      "sources": 6
+    },
+    {
+      "failure": null,
+      "operations": 0,
+      "phase": "final_saved_global_audit",
+      "process_CPU_seconds": 2.6875,
+      "sources": 0
+    },
+    {
+      "failure": null,
+      "operations": 3080,
+      "phase": "bands",
+      "process_CPU_seconds": 11.609375,
+      "sources": 4
+    },
+    {
+      "failure": null,
+      "operations": 0,
+      "phase": "final_saved_global_audit",
+      "process_CPU_seconds": 2.59375,
+      "sources": 0
+    },
+    {
+      "failure": null,
+      "operations": 1659,
+      "phase": "repeat_lift",
+      "process_CPU_seconds": 1.265625,
+      "sources": 3
+    },
+    {
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\R6_SHARED_LOSS_CONTINUATION_20261110_v001\\shared_loss.py\", line 379, in main\n    for src in sources(phase):\n               ~~~~~~~^^^^^^^\n  File \"C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\R6_SHARED_LOSS_CONTINUATION_20261110_v001\\shared_loss.py\", line 321, in sources\n    for seed in range(6):yield lift_core(even_scan_cycle(32,seed),65,3)\n                               ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Temp\\splay-multiscale-transfer-liquidity-k6c2\\DO_RESEARCH_REBOOT\\R6_SHARED_LOSS_CONTINUATION_20261110_v001\\shared_loss.py\", line 285, in lift_core\n    else:raise AssertionError(\"A preparation construction failed\",core[\"name\"])\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('A preparation construction failed', 'even_scan_a32_seed0')\n",
+      "operations": 0,
+      "phase": "even_lift",
+      "process_CPU_seconds": 0.078125,
+      "sources": 0
+    },
+    {
+      "failure": null,
+      "operations": 504,
+      "phase": "even_cycles",
+      "process_CPU_seconds": 0.765625,
+      "sources": 6
+    },
+    {
+      "failure": null,
+      "operations": 0,
+      "phase": "verify_new_witnesses",
+      "process_CPU_seconds": 0.40625,
+      "sources": 0
+    },
+    {
+      "failure": null,
+      "operations": 0,
+      "phase": "verify_new_witnesses",
+      "process_CPU_seconds": 0.8125,
+      "sources": 0
+    },
+    {
+      "failure": null,
+      "operations": 0,
+      "phase": "final_saved_global_audit",
+      "process_CPU_seconds": 4.90625,
+      "sources": 0
+    }
+  ],
+  "total_operations": 38251,
+  "total_process_CPU_seconds": 109.25,
+  "total_sources": 115
+}

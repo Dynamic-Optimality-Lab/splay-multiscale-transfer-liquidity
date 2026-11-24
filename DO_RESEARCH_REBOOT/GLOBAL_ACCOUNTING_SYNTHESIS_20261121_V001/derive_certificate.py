@@ -1,0 +1,59 @@
+"""Machine-readable proof dependency and scope ledger; proof lives in Notion."""
+import json
+from pathlib import Path
+HERE=Path(__file__).resolve().parent
+
+
+def main():
+    assert not (HERE/'FINAL_MANIFEST.json').exists()
+    audit=json.loads((HERE/'AUDIT_RESULTS.json').read_text(encoding='utf-8'))
+    independent=json.loads((HERE/'INDEPENDENT_VERIFICATION.json').read_text(encoding='utf-8'))
+    certificate={
+      'theorem':'No source-uniform whole-operation q+Delta Phi<=C a certificate exists in the declared ten-feature fixed signed linear span, for any finite C.',
+      'status':'REFUTED—EXACT for this certificate grammar; Universal Coarse Double OPEN',
+      'manuscript':'https://app.notion.com/p/41f6251839be815dbaabd3a74b9d5882',
+      'positive_identity':{'domain':'Every actual B rotation after the original A splay, on arbitrary complete same-key pairs, both orientations and all private vertices.',
+                           'equation':'Delta_B C_AB=min_A(old proper child interval)-min_A(new demoted interval)=-min_A(new interval)<=-1',
+                           'reason':'Old interval contains the current A root; new interval excludes it; full frame is transported.'},
+      'raw_global_credit_obstruction':{'sources':'Complete original H_(p,q), N=2^(p+1)(q+1)+1','first_max_operation':'N',
+                                      'first_B_energy_drop':'(N-1)(N+3)/4','original_A':'4(N-1)',
+                                      'signed_sum_A_energy_over_A_lower_bound':'(N+3)/16 -> infinity',
+                                      'uses':'All B changes nonpositive; exact full pair closure equates signed A increase to negative signed B change.',
+                                      'not_a_counterexample_to':'Original Q_B/A bound'},
+      'universal_dependency_chain':[
+        {'source':'F1 inverse cost-one root zigs, N=2^s+2','limit':'s->infinity','implies':'theta[2]=0'},
+        {'source':'F2 inverse cost-one root zigs, N=2^s+2','uses':['theta[2]=0'],'limit':'s->infinity','implies':'theta[9]=0'},
+        {'source':'F3 inverse KEEP zigs on common diagonal','limit':'s->infinity','implies':'theta[2]+theta[3]=0'},
+        {'source':'F4 inverse root walk, k=2^s, N=2k-1','uses':['theta[2]=theta[3]=theta[9]=0'],'limit':'s->infinity','implies':'theta[0]+theta[1]=0'},
+        {'source':'H_(p,5), first restoration KEEP3','uses':['theta[2]=theta[3]=theta[9]=0','theta[0]+theta[1]=0'],'limits':'unbounded even and odd p','implies':'theta[0]=theta[1]=0'},
+        {'source':'H_(p,5), same original restoration operation','uses':['theta[0]=theta[1]=theta[2]=theta[3]=theta[9]=0'],'limit':'p->infinity after dividing by p','implies':'2*theta[8]<=-1'},
+        {'source':'Complete compressed H3q, final critical KEEP','uses':['theta[0]=theta[1]=theta[2]=theta[3]=theta[9]=0'],'limit':'q->infinity after dividing by q','implies':'-theta[8]<=-1'},
+        {'operation':'First limit inequality plus twice the second','multipliers':[1,2],'conclusion':'0<=-3'}],
+      'F4_first_vector':['k-1','k-1',-1,0,1,1,1,1,0,'k'],
+      'restoration':{'original_operation':'2N+2','a':1,'q_B':'floor((p+3)/2)','root_reference_deltas':[0,0],
+                     'cross_skew_all_positive_p_q':{'even_p':'((6q-7)*2^p+1)/3','odd_p':'((1-6q)*2^p+4)/3'},
+                     'q5_only':{'SET_delta':'-1 if odd p, -2 if even p','edge_delta':0,'Mersenne_delta':'p'},
+                     'proof_recurrence':{'left_spine_edges':'p+2','right_sizes':['2^p-1','(2q-1)*2^p-1','2^(p+2-i)-1 for i>=2'],
+                                          'off_root_LL':'Delta F_R=b+2c+3; w_new=w+b+c+2','root_LL':'Delta F_R=-b-w','root_zig':'Delta F_R=-w',
+                                          'lower_double_j_from_zero':'b=2*4^j-1,c=4*4^j-1; Delta F_R=10*4^j; Delta w=6*4^j'}},
+      'compressed_source':{'N':'16(q+1)+1','initial':'Common full right vine','prefix':[],
+                            'full_word':['DELETE2..N','KEEP N,N-1,N-3,N-7','KEEP1..N','KEEP N-1..1'],
+                            'length':'3N+2','original_critical_operation':'N+3','a':2,'q_B':'q+1','root_reference_deltas':[0,0],
+                            'uniform_whole_operation_bounds':{'absolute_SET':18,'absolute_edges':26,'absolute_Mersenne_plus_q':16},
+                            'bound_derivation':'Four real A rotations; only the seven high physical keys differ from the standard target-rooted two-vine. At most6 labels and7 edges differ per side. B states and its KEEP sequence are unchanged from H3q.'},
+      'unrefuted':['arbitrary state potentials','nonlinear or source-history accounting','original theta_1 donor eligibility','source-uniform U_int<=K A','Universal Coarse Double'],
+      'net_proof_advancement':{'new_original_paid_class':None,'original_root_obligations_deleted':0,'strategic_result':'Whole declared proof family excluded for all coefficients and finite constants.','next_mechanism':'Not automatically admitted.'}}
+    (HERE/'DERIVATION_CERTIFICATE.json').write_text(json.dumps(certificate,indent=2),encoding='utf-8')
+    out={'frozen_limits':{'parameterized_sources':24,'historical_sources':40,'generated_period_rotations':3000000,'feature_snapshots':300000,'producer_cpu_seconds':360,'independent_cpu_seconds':360},
+         'used_final_distinct_sources':{'parameterized':24,'historical':9,'total':33},'period_rotations_in_final_distinct_sources':audit['period_real_rotations'],
+         'feature_snapshots_final_sources':audit['feature_snapshots'],'selected_original_rows':independent['selected_rows'],
+         'independent_cpu_seconds':independent['cpu_seconds'],'producer_resume_cpu_seconds':audit['resume_attempt_cpu_seconds'],
+         'producer_first_attempt_cpu_seconds':None,'resource_measurement_limit':'The first stopped attempt enforced its per-invocation360 CPU guard but its duration was lost. A strict cumulative producer360-second certificate cannot be reconstructed from the retained logs; no claim of that measurement is made.',
+         'repeated_diagnostic_sources':3,'finite_LP_fits_executed':0,'asymptotic_constraint_LP_feasibility_crosscheck':1,
+         'cancelled':['small-state graph fitting','free potential teachers','finite CEGIS coefficient fits'],
+         'reason_for_cancellation':'Exact universal constraints already refute all declared grammars; no additional fitting could certify them.'}
+    (HERE/'AUDIT_BUDGET_USAGE.json').write_text(json.dumps(out,indent=2),encoding='utf-8')
+    print(json.dumps({'derived_certificate':True,'root':'OPEN','declared_grammar':'REFUTED—EXACT','sources':33}))
+
+
+if __name__=='__main__':main()

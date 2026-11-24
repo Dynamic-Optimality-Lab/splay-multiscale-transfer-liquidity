@@ -1,0 +1,129 @@
+{
+  "status": "SYMBOLIC_WINDOW_ARITHMETIC_VERIFIED",
+  "universal_H_queries": [
+    "Final interior has at least3H+1 RR steps",
+    "All preceding retained interior windows are nonempty by the same lower bound"
+  ],
+  "induction_invariants": [
+    "1<=l_r<=4",
+    "u_r>=2^(p-3-r)*(q+1)-2*(3H+1)-3",
+    "M_r<=max(3H-r,0) until a zero-input phase already forces failure"
+  ],
+  "source_parameters": "p=3H+4,q=12H+32,N=2^(p+1)*(q+1)+1",
+  "finite_arithmetic_crosschecks": [
+    {
+      "H": 1,
+      "p": 7,
+      "q": 44,
+      "profile_zero": true,
+      "last_old_good_window": [
+        4,
+        82
+      ],
+      "good_RR_steps_in_final_phase": 39,
+      "max_carry": 3,
+      "last_phase_original_RR_count": 44,
+      "finite_recipe_arithmetic_only": true
+    },
+    {
+      "H": 2,
+      "p": 10,
+      "q": 56,
+      "profile_zero": true,
+      "last_old_good_window": [
+        4,
+        100
+      ],
+      "good_RR_steps_in_final_phase": 48,
+      "max_carry": 6,
+      "last_phase_original_RR_count": 56,
+      "finite_recipe_arithmetic_only": true
+    },
+    {
+      "H": 3,
+      "p": 13,
+      "q": 68,
+      "profile_zero": true,
+      "last_old_good_window": [
+        4,
+        118
+      ],
+      "good_RR_steps_in_final_phase": 57,
+      "max_carry": 9,
+      "last_phase_original_RR_count": 68,
+      "finite_recipe_arithmetic_only": true
+    },
+    {
+      "H": 5,
+      "p": 19,
+      "q": 92,
+      "profile_zero": true,
+      "last_old_good_window": [
+        4,
+        154
+      ],
+      "good_RR_steps_in_final_phase": 75,
+      "max_carry": 15,
+      "last_phase_original_RR_count": 92,
+      "finite_recipe_arithmetic_only": true
+    },
+    {
+      "H": 8,
+      "p": 28,
+      "q": 128,
+      "profile_zero": true,
+      "last_old_good_window": [
+        4,
+        208
+      ],
+      "good_RR_steps_in_final_phase": 102,
+      "max_carry": 24,
+      "last_phase_original_RR_count": 128,
+      "finite_recipe_arithmetic_only": true
+    },
+    {
+      "H": 16,
+      "p": 52,
+      "q": 224,
+      "profile_zero": true,
+      "last_old_good_window": [
+        4,
+        352
+      ],
+      "good_RR_steps_in_final_phase": 174,
+      "max_carry": 48,
+      "last_phase_original_RR_count": 224,
+      "finite_recipe_arithmetic_only": true
+    },
+    {
+      "H": 32,
+      "p": 100,
+      "q": 416,
+      "profile_zero": true,
+      "last_old_good_window": [
+        4,
+        640
+      ],
+      "good_RR_steps_in_final_phase": 318,
+      "max_carry": 96,
+      "last_phase_original_RR_count": 416,
+      "finite_recipe_arithmetic_only": true
+    },
+    {
+      "H": 65,
+      "p": 199,
+      "q": 812,
+      "profile_zero": true,
+      "last_old_good_window": [
+        4,
+        1234
+      ],
+      "good_RR_steps_in_final_phase": 615,
+      "max_carry": 195,
+      "last_phase_original_RR_count": 812,
+      "finite_recipe_arithmetic_only": true
+    }
+  ],
+  "source_uniform_claim_dependency": "The explicit physical comb-role and untouched-interior proof in Notion, together with SYMBOLIC_COARSENING_CERTIFICATE.json. No finite sample supplies that dependency.",
+  "universal_CD": "OPEN"
+}

@@ -1,0 +1,137 @@
+{
+  "candidate": {
+    "grammar": "frontier3",
+    "theta": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    "C": "4",
+    "potential": "Single-valued function of original physical pair; arbitrary fixed signed coefficients.",
+    "invariant": "Well-formed same-key BST pair; finite reachable-state teacher is separate from universal structural proof.",
+    "contracts": {
+      "initialization": "STRUCTURAL_ROTATION_CERTIFICATE_REQUIRED",
+      "A_loop": "AFFINE_COUNTER_AND_ROTATION_PROOF_REQUIRED",
+      "B_loop": "AFFINE_COUNTER_AND_ROTATION_PROOF_REQUIRED",
+      "whole_operation_cost": "OPEN until a universal symbolic proof is checked",
+      "boundary": "Equal physical pair implies equal physical feature potential"
+    },
+    "universal_CD": "OPEN"
+  },
+  "max_exact_slack": "33",
+  "worst_original_row": {
+    "id": [
+      "compressed_H3_q65",
+      1072
+    ],
+    "mode": "K",
+    "target": 12,
+    "a": 1,
+    "q": 1,
+    "before": [
+      0,
+      0,
+      1,
+      6,
+      8,
+      11,
+      0,
+      0,
+      1,
+      6,
+      8,
+      11
+    ],
+    "after": [
+      0,
+      0,
+      8,
+      5,
+      44,
+      11,
+      0,
+      0,
+      8,
+      5,
+      44,
+      11
+    ],
+    "delta": [
+      0,
+      0,
+      7,
+      -1,
+      36,
+      0,
+      0,
+      0,
+      7,
+      -1,
+      36,
+      0
+    ],
+    "bits": [
+      {
+        "id": [
+          "A",
+          1072,
+          1,
+          0
+        ],
+        "type": "ZIG",
+        "promoted": 12,
+        "demoted": 11,
+        "old_child_span": [
+          12,
+          1057
+        ],
+        "new_demoted_span": [
+          1,
+          11
+        ]
+      },
+      {
+        "id": [
+          "B",
+          1072,
+          1,
+          0
+        ],
+        "type": "RL",
+        "promoted": 12,
+        "demoted": 18,
+        "old_child_span": [
+          12,
+          17
+        ],
+        "new_demoted_span": [
+          13,
+          1057
+        ]
+      },
+      {
+        "id": [
+          "B",
+          1072,
+          1,
+          1
+        ],
+        "type": "RL",
+        "promoted": 12,
+        "demoted": 11,
+        "old_child_span": [
+          12,
+          1057
+        ],
+        "new_demoted_span": [
+          1,
+          11
+        ]
+      }
+    ]
+  },
+  "status": "REFUTED\u2014EXACT candidate only"
+}

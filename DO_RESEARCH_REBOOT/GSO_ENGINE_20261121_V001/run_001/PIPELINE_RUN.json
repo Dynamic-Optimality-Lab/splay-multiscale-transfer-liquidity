@@ -1,0 +1,57 @@
+{
+  "engine": "GSO bounded version1",
+  "stages": [
+    {
+      "stage": "complete_original_graphs_and_exact_teacher",
+      "reused_existing_certificate": true,
+      "wall_seconds": 3.00002284348011e-07
+    },
+    {
+      "stage": "bounded_CEGIS_on_frozen_nonlinear_grammars",
+      "reused_existing_certificate": true,
+      "wall_seconds": 4.00003045797348e-07
+    },
+    {
+      "stage": "holdout_original_source_adversary",
+      "reused_existing_certificate": false,
+      "wall_seconds": 0.012778099975548685
+    },
+    {
+      "stage": "rigid_subtree_and_learned_loop_invariants",
+      "reused_existing_certificate": true,
+      "wall_seconds": 3.00002284348011e-07
+    },
+    {
+      "stage": "parametric_source_constraints_and_exact_dual",
+      "reused_existing_certificate": true,
+      "wall_seconds": 2.00001522898674e-07
+    },
+    {
+      "stage": "literal_complete_source_counterexamples",
+      "reused_existing_certificate": false,
+      "wall_seconds": 0.03212980000535026
+    },
+    {
+      "stage": "frozen_flow_oracle_and_independent_original_U_checker",
+      "reused_existing_certificate": true,
+      "wall_seconds": 1.00000761449337e-07
+    },
+    {
+      "stage": "installed_Lean_certificate_kernel",
+      "reused_existing_certificate": false,
+      "wall_seconds": 0.950186499976553
+    },
+    {
+      "stage": "independent_graph_source_feature_and_dual_verification",
+      "reused_existing_certificate": true,
+      "wall_seconds": 2.9994407668709755e-07
+    },
+    {
+      "stage": "typed_registry_and_universal_acceptance_gate",
+      "reused_existing_certificate": false,
+      "wall_seconds": 0.018597399990539998
+    }
+  ],
+  "driver_cpu_seconds": 0.765625,
+  "reproduction": "Cached stages are rechecked by the independent verifier; a new output directory executes them afresh. A sealed artifact is read-only."
+}

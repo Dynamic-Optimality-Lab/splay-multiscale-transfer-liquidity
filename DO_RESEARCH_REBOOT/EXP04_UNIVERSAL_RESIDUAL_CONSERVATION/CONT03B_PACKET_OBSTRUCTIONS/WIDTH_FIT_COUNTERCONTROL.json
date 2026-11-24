@@ -1,0 +1,207 @@
+{
+  "A": 4876,
+  "actual_gap_steps_partition_verified": true,
+  "literal_overflow": [],
+  "maximum_actual_A_StepEv_gap_load": 3,
+  "original_gap_count": 8,
+  "refuted_statement": "Every packet of original R_star parents has width<=A(G_h).",
+  "scope": "Original R_star pool only; existing old hybrid pays this source. No post-hybrid overflow escape claimed.",
+  "selected_parent_allocations": [
+    {
+      "actual_A_StepEv": [
+        "A",
+        1030,
+        1
+      ],
+      "original_gaps": [
+        [
+          1030,
+          [
+            264,
+            15
+          ],
+          [
+            272,
+            7
+          ]
+        ],
+        [
+          1030,
+          [
+            272,
+            7
+          ],
+          [
+            288,
+            3
+          ]
+        ]
+      ],
+      "original_parent": [
+        1030,
+        3
+      ]
+    },
+    {
+      "actual_A_StepEv": [
+        "A",
+        1030,
+        1
+      ],
+      "original_gaps": [
+        [
+          1030,
+          [
+            288,
+            3
+          ],
+          [
+            320,
+            1
+          ]
+        ]
+      ],
+      "original_parent": [
+        1030,
+        4
+      ]
+    },
+    {
+      "actual_A_StepEv": [
+        "A",
+        1544,
+        1
+      ],
+      "original_gaps": [
+        [
+          1544,
+          [
+            1030,
+            4
+          ],
+          [
+            1543,
+            1
+          ]
+        ]
+      ],
+      "original_parent": [
+        1544,
+        3
+      ]
+    },
+    {
+      "actual_A_StepEv": [
+        "A",
+        1545,
+        1
+      ],
+      "original_gaps": [
+        [
+          1545,
+          [
+            272,
+            6
+          ],
+          [
+            1544,
+            3
+          ]
+        ],
+        [
+          1545,
+          [
+            1544,
+            3
+          ],
+          [
+            1544,
+            4
+          ]
+        ]
+      ],
+      "original_parent": [
+        1545,
+        2
+      ]
+    },
+    {
+      "actual_A_StepEv": [
+        "A",
+        1547,
+        1
+      ],
+      "original_gaps": [
+        [
+          1547,
+          [
+            264,
+            14
+          ],
+          [
+            1030,
+            3
+          ]
+        ]
+      ],
+      "original_parent": [
+        1547,
+        1
+      ]
+    },
+    {
+      "actual_A_StepEv": [
+        "A",
+        1557,
+        1
+      ],
+      "original_gaps": [
+        [
+          1557,
+          [
+            264,
+            9
+          ],
+          [
+            1549,
+            2
+          ]
+        ]
+      ],
+      "original_parent": [
+        1557,
+        1
+      ]
+    }
+  ],
+  "source": "C03_private_p6_d3_c1",
+  "stronger_quota_fit_statement_width_le_2A": "NOT REFUTED by this control; the original failed expectation confused total gaps with same-KEEP parent width.",
+  "whole_width_le_A_packet_gap_count": 5,
+  "width_by_KEEP": [
+    {
+      "actual_A_gap_steps": 1,
+      "distinct_original_parents": 2,
+      "h": 1030
+    },
+    {
+      "actual_A_gap_steps": 17,
+      "distinct_original_parents": 1,
+      "h": 1544
+    },
+    {
+      "actual_A_gap_steps": 5,
+      "distinct_original_parents": 1,
+      "h": 1545
+    },
+    {
+      "actual_A_gap_steps": 4,
+      "distinct_original_parents": 1,
+      "h": 1547
+    },
+    {
+      "actual_A_gap_steps": 5,
+      "distinct_original_parents": 1,
+      "h": 1557
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+built
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from exp03_core import *; from exp03_sources import separated_private; meter=Meter('private_diagnostic'); s=separated_private(1); print('built',flush=True); r=Replay(s); print(r.A,r.Q,flush=True); meter.success=True
+                                                                                                                                                                   ~~~~~~^^^
+  File "C:\Users\Saif malik\OneDrive\Documents\Desktop\Temp\splay-multiscale-transfer-liquidity-k6c2\DO_RESEARCH_REBOOT\EXP01_PHYSICAL_RESIDUAL_DISCOVERY\exp01_oracle.py", line 187, in __init__
+    assert self.closed, (source["name"], "not paired closed")
+           ^^^^^^^^^^^
+AssertionError: ('private_p1_L2_hits5_c1', 'not paired closed')

@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "syntax_files": [
+    "attack.py",
+    "capture_checks.py",
+    "chronology.py",
+    "emit_proof.py",
+    "gso_credit.py",
+    "induction.py",
+    "normalize.py",
+    "optimize.py",
+    "preserve.py",
+    "proofcheck.py",
+    "reserve.py",
+    "sources.py",
+    "tests.py",
+    "verify.py",
+    "verify_zero.py",
+    "zero_edge.py"
+  ],
+  "checks": [
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "proofcheck.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.27118360000895336,
+      "stdout": "{\"passed\": true, \"unbounded_checks\": 13, \"universal_CD\": \"OPEN\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "verify.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6890671000001021,
+      "stdout": "{\"q\": 1, \"full_original_source_verified\": true, \"size_aliases\": 1, \"cyclic_credit_verified\": true}\n{\"q\": 3, \"full_original_source_verified\": true, \"size_aliases\": 3, \"cyclic_credit_verified\": true}\n{\"q\": 6, \"full_original_source_verified\": true, \"size_aliases\": 6, \"cyclic_credit_verified\": true}\n{\"q\": 9, \"full_original_source_verified\": true, \"size_aliases\": 9, \"cyclic_credit_verified\": true}\n{\"passed\": true, \"complete_original_sources\": 4, \"operations\": 1480, \"real_rotations\": 3376, \"universal_CD\": \"OPEN\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "verify_zero.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.19669929996598512,
+      "stdout": "{\"passed\": true, \"counterevents\": [[\"B\", 33, 5], [\"B\", 34, 5]], \"bank_funding_refuted\": false, \"universal_CD\": \"OPEN\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "normalize.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.1600973000167869,
+      "stdout": "{\"erased_original_DELETE_operations\": 2, \"A_before\": 2, \"A_after\": 0, \"root_scope_restricted\": false}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "tests.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.41848779999418184,
+      "stdout": "",
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.144s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Saif malik\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "preserve.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.453388799971435,
+      "stdout": "{\"passed\": true, \"prior_hashes\": 5711, \"previous_checkpoint_files\": 86}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.21.0",
+        "CreditKernel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7982234999653883,
+      "stdout": "'PairedCredit.physical_RR_alias' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.all_cardinality_weights_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.learned_joint_preservation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.physical_support_identity' depends on axioms: [propext, Quot.sound]\n'PairedCredit.power_is_two_pow' depends on axioms: [propext]\n'PairedCredit.signed_size_energy_cannot_pay_all_bursts' depends on axioms: [propext, Quot.sound]\n'PairedCredit.memory_or_shape_must_supply' depends on axioms: [propext, Quot.sound]\n'PairedCredit.supply_preserves_required_credit' depends on axioms: [propext, Quot.sound]\n'PairedCredit.closed_balance_has_no_free_spend' depends on axioms: [propext, Quot.sound]\n'PairedCredit.bounded_unpaid_cost_is_permitted' depends on axioms: [propext, Quot.sound]\n'PairedCredit.complete_critical_credit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.descending_restoration_refills' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.arbitrary_forward_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairedCredit.cyclic_reverse_restoration_refills' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.21.0",
+        "ExcursionKernel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.4013061000150628,
+      "stdout": "'OriginalCreditExcursion.greater_period_map_dominates_closed_balance' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.augmented_greatest_seam_dominates' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.persistent_A_supply_is_nondecreasing' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.every_pooling_coordinate_is_monotone' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.original_unpaid_cost_is_antitone' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.coupled_global_reserve_is_monotone' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.sum_matched_original_B_once' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.inherited_global_issuance' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.same_constant_lifts_from_loop_erased_sources' depends on axioms: [propext, Quot.sound]\n'OriginalCreditExcursion.unpaid_bound_lifts_from_loop_erased_sources' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "prior_artifacts": 5711,
+  "scope": "Independent implementations and Lean components; not external peer review or an end-to-end original BST formalization.",
+  "universal_CD": "OPEN"
+}

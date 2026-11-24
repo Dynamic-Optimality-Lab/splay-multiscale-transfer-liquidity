@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "builds": [
+    {
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.21.0",
+        "JointLearnedProof.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.6672281000064686,
+      "stdout": "'JointCertificate.arbitrary_hanging_subtrees' depends on axioms: [propext]\n'JointCertificate.learned_root_bound' depends on axioms: [propext, Quot.sound]\n'JointCertificate.all_original_frame_lengths' depends on axioms: [propext, Quot.sound]\n'JointCertificate.original_cyclic_entry_is_derived' depends on axioms: [propext]\n'JointCertificate.learned_path_double' depends on axioms: [propext, Quot.sound]\n'JointCertificate.learned_reserve_double' depends on axioms: [propext, Quot.sound]\n'JointCertificate.original_double_including_bank_overflow' depends on axioms: [propext, Quot.sound]\n'JointCertificate.original_closed_two_target_cost' depends on axioms: [propext, Quot.sound]\n'JointCertificate.learned_whole_original_q_energy' depends on axioms: [propext, Quot.sound]\n'JointCertificate.global_reserve_monotone' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "source_sha256": "aa2d79e8faae0702c03ad784588d4d6f585732a54ce19861a6c459230931d96e",
+      "new_axioms_or_error_recovery": false
+    },
+    {
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.21.0",
+        "MetricKernel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.2341837999993004,
+      "stdout": "'PhysicalMetric.one_rotation_spine_upper' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.next_flattening_rotation' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.exact_flattening' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.geodesic_lower_bound' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.flat_original_fragment_rejects_trial' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.no_integer_universal_fragment_bound' depends on axioms: [propext, Quot.sound]\n'PhysicalMetric.bank_or_shape_must_supply_deficit' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "source_sha256": "6c81be82c1fff96f1b16f7be015556277e9d245e3810e6ca49814dda7fb26921",
+      "new_axioms_or_error_recovery": false
+    }
+  ],
+  "scope": "Independent implementations and Lean proof components, not external peer review or a full original-model formalization."
+}

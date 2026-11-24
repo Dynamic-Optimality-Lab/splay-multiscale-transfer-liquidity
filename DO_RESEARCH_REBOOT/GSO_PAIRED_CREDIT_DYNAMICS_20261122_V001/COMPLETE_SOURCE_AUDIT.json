@@ -1,0 +1,199 @@
+{
+  "cases": [
+    {
+      "index": 0,
+      "q": 1,
+      "carrier_support": 33,
+      "physical_support": 37,
+      "A": 128,
+      "Q_B": 53,
+      "operations": 130,
+      "real_rotations": 289,
+      "local_H5_paid": 53,
+      "local_H5_unpaid": 0,
+      "global_C4_min_capacity": 20,
+      "global_C4_issued": 53,
+      "critical_credit": [
+        {
+          "operation": 33,
+          "A": 0,
+          "Q_B": 16,
+          "credit_before_B": 20,
+          "credit_after_B": 4
+        },
+        {
+          "operation": 34,
+          "A": 1,
+          "Q_B": 8,
+          "credit_before_B": 8,
+          "credit_after_B": 0
+        },
+        {
+          "operation": 36,
+          "A": 1,
+          "Q_B": 4,
+          "credit_before_B": 8,
+          "credit_after_B": 4
+        },
+        {
+          "operation": 40,
+          "A": 1,
+          "Q_B": 2,
+          "credit_before_B": 20,
+          "credit_after_B": 18
+        }
+      ],
+      "trace": "run/source_0_trace.json.gz",
+      "energy": "run/source_0_energy.json",
+      "local_bank": "run/source_0_local_bank.json.gz",
+      "global_credit": "run/source_0_global_credit.json.gz"
+    },
+    {
+      "index": 1,
+      "q": 3,
+      "carrier_support": 65,
+      "physical_support": 133,
+      "A": 256,
+      "Q_B": 109,
+      "operations": 258,
+      "real_rotations": 585,
+      "local_H5_paid": 109,
+      "local_H5_unpaid": 0,
+      "global_C4_min_capacity": 44,
+      "global_C4_issued": 109,
+      "critical_credit": [
+        {
+          "operation": 65,
+          "A": 0,
+          "Q_B": 32,
+          "credit_before_B": 44,
+          "credit_after_B": 12
+        },
+        {
+          "operation": 66,
+          "A": 1,
+          "Q_B": 16,
+          "credit_before_B": 16,
+          "credit_after_B": 0
+        },
+        {
+          "operation": 68,
+          "A": 1,
+          "Q_B": 8,
+          "credit_before_B": 8,
+          "credit_after_B": 0
+        },
+        {
+          "operation": 72,
+          "A": 1,
+          "Q_B": 4,
+          "credit_before_B": 16,
+          "credit_after_B": 12
+        }
+      ],
+      "trace": "run/source_1_trace.json.gz",
+      "energy": "run/source_1_energy.json",
+      "local_bank": "run/source_1_local_bank.json.gz",
+      "global_credit": "run/source_1_global_credit.json.gz"
+    },
+    {
+      "index": 2,
+      "q": 6,
+      "carrier_support": 113,
+      "physical_support": 1029,
+      "A": 448,
+      "Q_B": 193,
+      "operations": 450,
+      "real_rotations": 1029,
+      "local_H5_paid": 193,
+      "local_H5_unpaid": 0,
+      "global_C4_min_capacity": 86,
+      "global_C4_issued": 193,
+      "critical_credit": [
+        {
+          "operation": 113,
+          "A": 0,
+          "Q_B": 56,
+          "credit_before_B": 86,
+          "credit_after_B": 30
+        },
+        {
+          "operation": 114,
+          "A": 1,
+          "Q_B": 28,
+          "credit_before_B": 34,
+          "credit_after_B": 6
+        },
+        {
+          "operation": 116,
+          "A": 1,
+          "Q_B": 14,
+          "credit_before_B": 14,
+          "credit_after_B": 0
+        },
+        {
+          "operation": 120,
+          "A": 1,
+          "Q_B": 7,
+          "credit_before_B": 16,
+          "credit_after_B": 9
+        }
+      ],
+      "trace": "run/source_2_trace.json.gz",
+      "energy": "run/source_2_energy.json",
+      "local_bank": "run/source_2_local_bank.json.gz",
+      "global_credit": "run/source_2_global_credit.json.gz"
+    },
+    {
+      "index": 3,
+      "q": 9,
+      "carrier_support": 161,
+      "physical_support": 8197,
+      "A": 640,
+      "Q_B": 277,
+      "operations": 642,
+      "real_rotations": 1473,
+      "local_H5_paid": 277,
+      "local_H5_unpaid": 0,
+      "global_C4_min_capacity": 128,
+      "global_C4_issued": 277,
+      "critical_credit": [
+        {
+          "operation": 161,
+          "A": 0,
+          "Q_B": 80,
+          "credit_before_B": 128,
+          "credit_after_B": 48
+        },
+        {
+          "operation": 162,
+          "A": 1,
+          "Q_B": 40,
+          "credit_before_B": 52,
+          "credit_after_B": 12
+        },
+        {
+          "operation": 164,
+          "A": 1,
+          "Q_B": 20,
+          "credit_before_B": 20,
+          "credit_after_B": 0
+        },
+        {
+          "operation": 168,
+          "A": 1,
+          "Q_B": 10,
+          "credit_before_B": 16,
+          "credit_after_B": 6
+        }
+      ],
+      "trace": "run/source_3_trace.json.gz",
+      "energy": "run/source_3_energy.json",
+      "local_bank": "run/source_3_local_bank.json.gz",
+      "global_credit": "run/source_3_global_credit.json.gz"
+    }
+  ],
+  "scope": "Complete original sources and exact credit flow; no finite population proves Universal CD.",
+  "all_q_mathematics": "Original rigid-gap and H3q recurrences, with separate learned induction certificate.",
+  "universal_CD": "OPEN"
+}

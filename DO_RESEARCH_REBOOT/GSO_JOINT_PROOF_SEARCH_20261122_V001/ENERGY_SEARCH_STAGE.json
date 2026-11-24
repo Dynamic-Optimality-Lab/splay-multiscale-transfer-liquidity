@@ -1,0 +1,9 @@
+{
+  "before_execution": true,
+  "part_of_declared_language": "Activate the affine state-energy coefficients in the same joint compiler: Phi=beta*localBankTotal+gamma*globalOverflowReserve. No new structural-feature family is added.",
+  "joint_variables": "beta,gamma in0..8, H,J,T,g, role priority, structural bound, invariant coefficients and cost coefficients. Parameter limits are only this bounded synthesis run, not claims that larger finite constants are excluded.",
+  "original_cost": "The verifier checks original q directly against beta*p_bank+gamma*p_global. Bank underpayment is permitted. Both clips remain total legal transitions.",
+  "interface": "c>=8*beta*H+gamma*J; d>=beta*H+gamma*T, all once per original A unit or genuine KEEP. Products with bounded weights are exact linear ITE encodings.",
+  "search_correction": "Safety counterexamples now use concrete counterstate H/T guarded by equality of hardware parameters; a changed energy can discharge the original cost. This removes unnecessary nonlinear products without changing the universal checker.",
+  "scope": "Same symbolic-marker/affine-ledger language. The generated restricted proof and the unrestricted attempt stay separately gated. No claim of a general arbitrary-energy synthesizer."
+}

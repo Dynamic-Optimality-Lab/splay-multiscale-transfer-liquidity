@@ -1,0 +1,36 @@
+"""Bind checked finite receipts and verified Notion proof; never invent a root proof."""
+import sys
+import ast
+import json
+import hashlib
+from pathlib import Path
+sys.dont_write_bytecode=True
+HERE=Path(__file__).resolve().parent
+
+
+def read(name):return json.loads((HERE/name).read_text(encoding='utf-8'))
+
+
+def write(name,value):
+    assert not (HERE/'FINAL_MANIFEST.json').exists(),'sealed output';p=HERE/name;assert not p.exists();p.write_text(json.dumps(value,indent=2),encoding='utf-8')
+
+
+def main():
+    old=read('PRESERVATION_VERIFICATION.json');verify=read('INDEPENDENT_VERIFICATION.json');extra=read('EXTRA_INDEPENDENT_VERIFICATION.json');joint=read('JOINT_INDEPENDENT_VERIFICATION.json');notion=read('NOTION_WRITE_VERIFICATION.json')
+    assert all(r['passed'] for r in (old,verify,extra,joint)) and old['prior_hashes']==5000
+    assert all(notion[k]['exact_normalized_match'] and notion[k]['old_preserved'] for k in ('main','hub'))
+    parsed=[]
+    for p in HERE.glob('*.py'):ast.parse(p.read_text(encoding='utf-8'));parsed.append(p.name)
+    lean=(HERE/'TraceKernel.lean').read_text(encoding='utf-8');assert 'sorry' not in lean and '\naxiom ' not in lean
+    hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(HERE.glob('*.py'))};hashes['TraceKernel.lean']=hashlib.sha256((HERE/'TraceKernel.lean').read_bytes()).hexdigest()
+    proof={'url':notion['main_url'],'readback_verified':True,'old_content_preserved':True,'mathematical_status':'PROVED_SOURCE_UNIFORM_BOUNDARY_EMBEDDING_AND_DECLARED_ANONYMOUS_GRAMMAR_OBSTRUCTION','physical_source_proof_reviewed':True,'universal_CD':'OPEN','source_proof':'Notion appended proof, Sections3-5: arbitrary rigid-gap inflation, exact finite observer factorization, H3q nonroot-RR type exchange and endpoint bound.','not_a_full_Lean_source_formalization':True,'code_sha256':hashes,'verification':notion}
+    write('NOTION_PROOF_REFERENCE.json',proof)
+    theorem={'source_model':'Original admissible exactly paired-closed full physical A/B sources; reaching-prefix work excluded; original carrier and all cyclic predicates retained.','boundary_embedding':{'status':'PROVED_UNIVERSAL_EMBEDDING','construction':'Old rank k ->5k; insert identical fixed four-key complete gap subtree immediately before every active key in A/B/diagonal. Map all requests and prefixes.','preserved':['per-operation original A/Q/K costs','original StepEv and real bit positions','scaled physical pivots','reaching prefix','exact full paired closure','original carrier-rank labels, cyclic Gamma/kappa/Pi and U occurrence IDs'],'consequence':'Every local block tree is constant and every real rotation crosses blocks. The boundary-only source subclass contains a cost-preserving copy of every original source.','root_obligations_deleted':0},'anonymous_obstruction':{'status':'REFUTED_EXACT_ALL_FINITE_CONSTANTS','class':'F_(5N)(kappa) + sum_I f(sigma_I) + H; f is a fixed shared signed finite-valued function of the implemented anonymous two-tree block observer; H has uniformly bounded oscillation. F may be nonlinear and support dependent.','source_family':'Uniform-gap5 inflation of complete original H_(3,q), every q>=1','original_critical':'t=N+7, N=16(q+1)+1, a=k=1, q_B=q+1; q original U consumers.','physical_identity':'Every nonroot critical RR bit exchanges two identical-A-profile anonymous B-parent types; sum f is unchanged. A zig touches<=2 blocks; final LR touches<=8. Core scalar has zero whole-operation change.','contradiction':'q+1 <= c+d+10*range(f)+osc(H) for all q is impossible.','not_excluded':['named outside connection geometry','nonlocal or unbounded physical state functions','history-aware conservative banks','arbitrary adaptive or overlapping composition','Universal Coarse Double']},'finite_joint':joint,'global_original_root':'OPEN','original_residual_classes_newly_paid':0,'first_missing_implication':'A source-uniform physical named-port/history update rule with a preserved funded-B guard, shared bounded original-A issuance and a justified closed bank seam. Per-history bank tables do not supply this construction.','prior_interfaces_preserved':['U_int<=Q_B<=6A+U_int','R_A<=2A','K_B<=A','sharp Q_B<=3A/2 at every-boundary core<=5','all old carrier/skipped-rank/periodic/guarded payments and exact refutations at their scopes'],'source_proof_reference':'NOTION_PROOF_REFERENCE.json'}
+    write('THEOREM_CERTIFICATE.json',theorem)
+    result={'engine_status':'WORKING_TRACE_PORT_AND_JOINT_BANK_BACKEND','universal_CD':'OPEN','acceptance_status':'NOT_ACHIEVED_UNIVERSALLY','implemented':['Exact original paired rotation traces and zero/one/two-bit views','Named external ports and four-endpoint change packets','Joint local/interface value teacher with exact rational checks','Conservative cyclic bounded-bank flow/min-cut teacher','Original-unit resource path decomposition and cyclic KEEP-gap injection','Simultaneous local/interface AND bank synthesis','ICE successor feedback and learned conditional ledger induction','Independent immutable source/Pi/port/bank/provenance/joint checks','Lean conditional conservation and pump arithmetic','Read-only adapters to sealed GSO v1/context/composition engines'],'finite_receipts':{'sources':len(verify['sources']),'original_operations':verify['original_operations'],'real_rotations':verify['real_rotations'],'literal_original_U':verify['literal_U'],'all_finite_B_doubles_funded_at_c4_H5':extra['full_distinct_demands_paid_at_c4_H5'],'joint_certificate_events':joint['events'],'joint_c':joint['c'],'joint_d':joint['d'],'joint_H':joint['H']},'all_finite_receipts_are_not_universal':True,'proved_source_uniform_results':['Cost-preserving arbitrary-source embedding into boundary-only padded executions','All-finite-constant obstruction to declared anonymous observer state sums, scalar-core augmentations and bounded corrections'],'first_missing_implication':theorem['first_missing_implication'],'not_implemented':['General automatic invention of mathematical proof mechanisms','Complete arbitrary-tree symbolic induction prover','Complete Lean original-source model formalization','A verified source-uniform physical bank update policy'],'original_root_obligations_deleted':0,'prior_artifacts_preserved':5000,'main_proof_url':notion['main_url']}
+    write('ENGINE_RESULT.json',result)
+    write('FINAL_CHECK_RESULTS.json',{'passed':True,'ast_parsed_python_modules':parsed,'source_verification':'INDEPENDENT_VERIFICATION.json','extra_verification':'EXTRA_INDEPENDENT_VERIFICATION.json','joint_verification':'JOINT_INDEPENDENT_VERIFICATION.json','observed_tests':{'command':'python -B tests.py','passed':8,'last_observed_cpu_seconds':0.678},'observed_Lean':{'command':'lean +leanprover/lean4:v4.21.0 TraceKernel.lean','returncode':0,'checked':['exchangeConserves','ledgerStep','closedLedger','originalConstant','pumpObstruction'],'printed_axioms':['propext','Quot.sound'],'scope':'Conditional integer arithmetic and conservation only; mathematical source proof separately in verified Notion.'},'no_sorry_or_new_axioms':True,'preservation':'PRESERVATION_VERIFICATION.json','universal_CD':'OPEN'})
+    print(json.dumps({'engine':result['engine_status'],'universal_CD':'OPEN','sources':len(verify['sources']),'old_artifacts':5000,'modules_parsed':len(parsed)}))
+
+
+if __name__=='__main__':main()

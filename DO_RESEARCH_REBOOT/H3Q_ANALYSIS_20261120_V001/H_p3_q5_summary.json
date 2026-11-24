@@ -1,0 +1,426 @@
+{
+  "p": 3,
+  "q": 5,
+  "N": 97,
+  "length": 386,
+  "prefix": [],
+  "exact_diagonal_closure": true,
+  "totals": {
+    "a": 384,
+    "q_B": 165,
+    "z_B": 167,
+    "u": 55,
+    "d": 293,
+    "k": 197,
+    "A_rotations": 384,
+    "B_rotations": 497
+  },
+  "phase_totals": {
+    "prep": {
+      "a": 96,
+      "q_B": 0,
+      "z_B": 0,
+      "u": 0,
+      "d": 0,
+      "k": 0,
+      "A_rotations": 96,
+      "B_rotations": 0
+    },
+    "descent": {
+      "a": 96,
+      "q_B": 90,
+      "z_B": 0,
+      "u": 39,
+      "d": 8,
+      "k": 4,
+      "A_rotations": 96,
+      "B_rotations": 180
+    },
+    "forward": {
+      "a": 96,
+      "q_B": 75,
+      "z_B": 71,
+      "u": 16,
+      "d": 189,
+      "k": 97,
+      "A_rotations": 96,
+      "B_rotations": 221
+    },
+    "reverse": {
+      "a": 96,
+      "q_B": 0,
+      "z_B": 96,
+      "u": 0,
+      "d": 96,
+      "k": 96,
+      "A_rotations": 96,
+      "B_rotations": 96
+    }
+  },
+  "phase_potential_changes": {
+    "prep:A": {
+      "M": -5,
+      "15": -1
+    },
+    "descent:B": {
+      "M": -34,
+      "15": -4
+    },
+    "descent:A": {
+      "M": 0,
+      "15": 0
+    },
+    "forward:B": {
+      "M": 44,
+      "15": 6
+    },
+    "forward:A": {
+      "M": -5,
+      "15": -1
+    },
+    "reverse:A": {
+      "M": -5,
+      "15": -1
+    },
+    "reverse:B": {
+      "M": 5,
+      "15": 1
+    }
+  },
+  "critical": [
+    {
+      "id": 97,
+      "phase": "descent",
+      "mode": "K",
+      "target": 97,
+      "a_depth": 0,
+      "a": 0,
+      "b_depth": 96,
+      "q_B": 48,
+      "z_B": 0,
+      "u": 0,
+      "b0": 47,
+      "d": 2,
+      "k": 1,
+      "A_rotations": 0,
+      "B_rotations": 96,
+      "B_types": [
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR"
+      ],
+      "phi_start": {
+        "M": -5,
+        "15": -1
+      },
+      "phi_postA": {
+        "M": -5,
+        "15": -1
+      },
+      "phi_postB": {
+        "M": 0,
+        "15": 0
+      },
+      "A_phi_delta": {
+        "M": 0,
+        "15": 0
+      },
+      "B_phi_delta": {
+        "M": 5,
+        "15": 1
+      }
+    },
+    {
+      "id": 98,
+      "phase": "descent",
+      "mode": "K",
+      "target": 96,
+      "a_depth": 1,
+      "a": 1,
+      "b_depth": 48,
+      "q_B": 24,
+      "z_B": 0,
+      "u": 23,
+      "b0": 23,
+      "d": 2,
+      "k": 1,
+      "A_rotations": 1,
+      "B_rotations": 48,
+      "B_types": [
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "LR"
+      ],
+      "phi_start": {
+        "M": 0,
+        "15": 0
+      },
+      "phi_postA": {
+        "M": 0,
+        "15": 0
+      },
+      "phi_postB": {
+        "M": -23,
+        "15": 0
+      },
+      "A_phi_delta": {
+        "M": 0,
+        "15": 0
+      },
+      "B_phi_delta": {
+        "M": -23,
+        "15": 0
+      }
+    },
+    {
+      "id": 100,
+      "phase": "descent",
+      "mode": "K",
+      "target": 94,
+      "a_depth": 1,
+      "a": 1,
+      "b_depth": 24,
+      "q_B": 12,
+      "z_B": 0,
+      "u": 11,
+      "b0": 11,
+      "d": 2,
+      "k": 1,
+      "A_rotations": 1,
+      "B_rotations": 24,
+      "B_types": [
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "LR"
+      ],
+      "phi_start": {
+        "M": -23,
+        "15": 0
+      },
+      "phi_postA": {
+        "M": -23,
+        "15": 0
+      },
+      "phi_postB": {
+        "M": -34,
+        "15": 0
+      },
+      "A_phi_delta": {
+        "M": 0,
+        "15": 0
+      },
+      "B_phi_delta": {
+        "M": -11,
+        "15": 0
+      }
+    },
+    {
+      "id": 104,
+      "phase": "descent",
+      "mode": "K",
+      "target": 90,
+      "a_depth": 1,
+      "a": 1,
+      "b_depth": 12,
+      "q_B": 6,
+      "z_B": 0,
+      "u": 5,
+      "b0": 5,
+      "d": 2,
+      "k": 1,
+      "A_rotations": 1,
+      "B_rotations": 12,
+      "B_types": [
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "LR"
+      ],
+      "phi_start": {
+        "M": -34,
+        "15": 0
+      },
+      "phi_postA": {
+        "M": -34,
+        "15": 0
+      },
+      "phi_postB": {
+        "M": -39,
+        "15": -5
+      },
+      "A_phi_delta": {
+        "M": 0,
+        "15": 0
+      },
+      "B_phi_delta": {
+        "M": -5,
+        "15": -5
+      }
+    }
+  ],
+  "first_forward_keep1": {
+    "id": 194,
+    "phase": "forward",
+    "mode": "K",
+    "target": 1,
+    "a_depth": 0,
+    "a": 0,
+    "b_depth": 2,
+    "q_B": 1,
+    "z_B": 0,
+    "u": 0,
+    "b0": 0,
+    "d": 2,
+    "k": 1,
+    "A_rotations": 0,
+    "B_rotations": 2,
+    "B_types": [
+      "LL"
+    ],
+    "phi_start": {
+      "M": -39,
+      "15": -5
+    },
+    "phi_postA": {
+      "M": -39,
+      "15": -5
+    },
+    "phi_postB": {
+      "M": -39,
+      "15": -5
+    },
+    "A_phi_delta": {
+      "M": 0,
+      "15": 0
+    },
+    "B_phi_delta": {
+      "M": 0,
+      "15": 0
+    }
+  },
+  "first_forward_keep3": {
+    "id": 196,
+    "phase": "forward",
+    "mode": "K",
+    "target": 3,
+    "a_depth": 1,
+    "a": 1,
+    "b_depth": 6,
+    "q_B": 3,
+    "z_B": 0,
+    "u": 2,
+    "b0": 2,
+    "d": 2,
+    "k": 1,
+    "A_rotations": 1,
+    "B_rotations": 6,
+    "B_types": [
+      "LL",
+      "LL",
+      "RL"
+    ],
+    "phi_start": {
+      "M": -39,
+      "15": -5
+    },
+    "phi_postA": {
+      "M": -39,
+      "15": -5
+    },
+    "phi_postB": {
+      "M": -36,
+      "15": -4
+    },
+    "A_phi_delta": {
+      "M": 0,
+      "15": 0
+    },
+    "B_phi_delta": {
+      "M": 3,
+      "15": 1
+    }
+  },
+  "max_A_increase": {
+    "M": 0,
+    "15": 0
+  },
+  "all_original_accesses_crosschecked": 386,
+  "original_U_demands_with_full_cyclic_records": 55
+}

@@ -1,0 +1,10 @@
+{
+  "before_execution": true,
+  "reason": "The first expiring per-KEEP account is a useful proof-search control but is narrower than the requested aggregate unpaid-cost mechanism. Add a globally shared nonlocal overflow reserve before the final root attempt.",
+  "rule": "One overflow reserve G in[0,gN], persistent across all accesses. Each actual A unit may add at most J, each genuine KEEP at most T, with saturation. It pays clipped local-bank overflow by min(G,u). It never expires or resets at an access/ancestry boundary. Local bank and global reserve transfers supply no extra work.",
+  "joint_variables": "H, priority, J,T,g, accounting coefficients, structural bound and invariant coefficients. The same universal CEGIS checks initialize, preserve and account for original q, including both accounting failures.",
+  "global_budget": "Combined actual issuance is at most(8H+J)A+(H+T)K_B <=(9H+J+T)A. All payments to local-bank-unpaid demands are included. Any remaining unpaid cost is still reported, never silently discarded.",
+  "cyclic_construction": "The coupled local-bank/global-reserve map is monotone: larger local stock lowers overflow and therefore cannot lower the next G; saturation is monotone. Descending iteration from the full finite box has at most mH+gN strict passes. No all-source funded feasibility is assumed.",
+  "scope": "Same joint compiler and declared structural-marker/affine invariant language; not an automatic new donor family. The existing scoped control is preserved. An abstract obstruction is not an original-source refutation.",
+  "run_budget": {"CEGIS_iterations": 96,"search_wall_seconds": 240,"parameter_bounds_are_discovery_only": true}
+}

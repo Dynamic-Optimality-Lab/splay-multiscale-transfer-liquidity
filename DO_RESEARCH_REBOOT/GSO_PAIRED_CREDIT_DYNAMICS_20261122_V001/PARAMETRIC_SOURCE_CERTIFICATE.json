@@ -1,0 +1,31 @@
+{
+  "status": "PROVED_PARAMETRIC_ORIGINAL_SOURCE_GRAMMAR_OBSTRUCTION",
+  "old_source": "Complete original H3q, m=16(q+1)+1, q>=1, common right-vine start, empty prefix and both full restoration scans.",
+  "full_source": "Rigid right-vine gap expansion, old gap m-6 has4 vertices; gap16(q-j)-5 has16*(2^j-1), j=0..q-1; all other gaps empty. Keys relabeled by full physical rank; operation word accesses only mapped old keys.",
+  "physical_support": "16*2^q+5",
+  "original_carrier_support": "16(q+1)+1",
+  "A": "64(q+1)",
+  "Q_B": "28q+25",
+  "source_model_changed": false,
+  "original_critical_operation": "m+7, KEEP mapped(m-7), a=1, q_B=q+1",
+  "RR_physical_profile": "a=d=7,b=c=16*2^j-9; c_next=2c+9. Proper size pairs are equal, all full hanging subtrees retained.",
+  "energy": "Phi_w=-sum_{I in J_X(B) minus J_X(A)} w(|I|), full physical X.",
+  "whole_operation_energy_change": "w(16*2^q-1)+w(16*2^q+1); A change0 and every neutral RR change0.",
+  "bounded_signed_weights": "For |w|<=M, q_B+DeltaPhi>=q+1-2M; choose q+1>C+2M. No finite C whole-operation certificate.",
+  "nonnegative_weights": "DeltaPhi>=0, so q+1>C refutes every finite C even without a bounded-weight assumption.",
+  "does_not_refute": [
+    "Universal CD",
+    "Original-carrier cardinality energies",
+    "Arbitrary nonlinear shape energies",
+    "Persistent global history banks"
+  ],
+  "proof_dependencies": [
+    "Old H3q j=2/3 comb recurrence",
+    "Exact arbitrary rigid-gap rotation substitution",
+    "Joint affine induction and physical RR size algebra",
+    "Final original LR creates the two A-common child intervals"
+  ],
+  "full_source_ratio": "Q_B/A<7/16",
+  "new_UF_escape_claim": false,
+  "proof": "https://app.notion.com/p/4206251839be81539be0f4a0d96124b5"
+}

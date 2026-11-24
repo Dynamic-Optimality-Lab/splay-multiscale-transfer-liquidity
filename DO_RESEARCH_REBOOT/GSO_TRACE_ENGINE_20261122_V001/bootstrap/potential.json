@@ -1,0 +1,24 @@
+{
+  "status": "FINITE_EXACT",
+  "c": "1/3",
+  "d": "0",
+  "c_plus_d": "1/3",
+  "values": {
+    "[1,[[0,null,null],[[\"lo\",\"lo\",\"nil\"]]],[[0,null,null],[[\"lo\",\"lo\",\"nil\"]]]]": "-1/3",
+    "[1,[[0,null,null],[[\"lo\",\"nil\",\"nil\"]]],[[0,null,null],[[\"lo\",\"nil\",\"nil\"]]]]": "-1/3",
+    "[1,[[0,null,null],[[\"nil\",\"lo\",\"nil\"]]],[[0,null,null],[[\"nil\",\"lo\",\"nil\"]]]]": "0",
+    "[3,[[0,null,[1,null,[2,null,null]]],[[\"nil\",\"nil\",1],[0,\"nil\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[0,null,[1,null,[2,null,null]]],[[\"nil\",\"nil\",1],[0,\"nil\",\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": "1/3",
+    "[3,[[1,[0,null,null],[2,null,null]],[[1,\"nil\",\"nil\"],[\"nil\",0,\"hi\"],[\"hi\",\"nil\",\"nil\"]]],[[1,[0,null,null],[2,null,null]],[[1,\"nil\",\"nil\"],[\"nil\",0,\"hi\"],[\"hi\",\"nil\",\"nil\"]]]]": "0",
+    "[3,[[2,[0,null,[1,null,null]],null],[[2,\"nil\",1],[0,\"nil\",\"nil\"],[\"hi\",0,\"nil\"]]],[[2,[0,null,[1,null,null]],null],[[2,\"nil\",1],[0,\"nil\",\"nil\"],[\"hi\",0,\"nil\"]]]]": "0",
+    "[3,[[2,[0,null,[1,null,null]],null],[[2,\"nil\",1],[0,\"nil\",\"nil\"],[\"nil\",0,\"hi\"]]],[[2,[0,null,[1,null,null]],null],[[2,\"nil\",1],[0,\"nil\",\"nil\"],[\"nil\",0,\"hi\"]]]]": "0"
+  },
+  "rows": 4,
+  "observer_states": 7,
+  "max_exact_slack": "0",
+  "worst_original_id": [
+    "recurrent_noncommuting_n4_I1_3",
+    1
+  ],
+  "universal": "OPEN",
+  "missing_contract": "Universal A/B loop induction, including unseen external-port pairings, not finite training accuracy."
+}

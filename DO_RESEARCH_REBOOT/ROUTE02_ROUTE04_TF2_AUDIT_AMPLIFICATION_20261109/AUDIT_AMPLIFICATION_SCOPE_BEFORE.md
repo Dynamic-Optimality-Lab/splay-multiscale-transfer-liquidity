@@ -1,0 +1,15 @@
+# TF2 audit and amplification — scope before report construction
+
+Date: 2026-11-09, Asia/Karachi. Branch coarse-double-branch; actual HEAD inspected 6d532b2c795c0778f57d8023b23b5fedfc48b010. Current bytes, rather than old report HEAD metadata, are authoritative.
+
+One principal source mechanism: repeated actual-target output propagation in a descending vine access family. The requested investigation has four authorized parts within that mechanism: freshly reconstruct the 97-key certificate; prove a parametric ordinary-source recurrence; count COMPLETE-period A work and ALL interior demands or sufficient bounds; identify the exact limit of any all-source inference. No TF2 repair, new target conjecture or exact-CD ownership system is introduced.
+
+Audit plan: derive the ordinary RR transformation directly, recover the complete C,D,E,Q B trees and fifteen original beta/tau pairs; separately prove an extremal-ancestor invariant across EVERY reset rotation. All full forest branches are retained; irrelevant first-output children are excluded by their actual label bounds, not deleted from the selector. A fresh same-agent symbolic reconstruction is not a separate-agent, external or proof-assistant verification.
+
+Parametric starting identity: a target-created chain with spacing 2^j is compressed to spacing 2^(j+1) at the next selected descending backbone root. Choose B targets b_j=N+1-2^j, and include all intervening adjacent descending A operations as DELETEs. This controlled variant is distinct from the original 97,96,95,94 base word. Do not silently replace or claim to reparameterize that literal period. Candidate N=2^(p+1)(q+1)+1 makes the final cohort contain q interior RR frames plus its boundary event. Prove the full subtree recurrence and original selector for every parameter.
+
+Cost plan: preparation N-1; critical A work 2^p-1; reverse restoration N-1; bound the actual forward scan using the established sequential-access theorem, whose primary publisher statement has been read, without introducing a new potential. Also give a direct finite depth bound for the original A_forward rather than a fabricated exact total. Count all critical interior frames and bound the entire remaining U_int by the full reset Q, never by the pq selected subset alone.
+
+Upward connection: genuine K_(p,q) subgraphs reject uniform arboricity/endpoint-only load, not automatically a global full-graph density or all-source cost theorem. A complete-period family bound can identify a source-work mechanism but cannot delete the unrestricted U_int<=cA obligation without a globally applicable overlap theorem. Stop that extension at its first unsupported implication.
+
+Only new isolated artifacts in this folder may be written. All historical reports, owner maps, sources, resource caps, Git and Routes 01/03/04 remain unchanged. No source-engine queries, replay, experiment, enumeration, solver or computational proof run is used. The one primary-paper metadata/abstract read verifies the standard sequential-access theorem and is recorded separately from source-engine activity. No independent computational checker is launched.

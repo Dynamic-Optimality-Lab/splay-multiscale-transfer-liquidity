@@ -1,0 +1,116 @@
+{
+  "source": {
+    "name": "trial_n6_C1/2",
+    "initial_A": {
+      "root": 2,
+      "children": {
+        "1": [
+          null,
+          null
+        ],
+        "2": [
+          1,
+          3
+        ],
+        "3": [
+          null,
+          4
+        ],
+        "4": [
+          null,
+          5
+        ],
+        "5": [
+          null,
+          6
+        ],
+        "6": [
+          null,
+          null
+        ]
+      }
+    },
+    "initial_B": {
+      "root": 2,
+      "children": {
+        "1": [
+          null,
+          null
+        ],
+        "2": [
+          1,
+          3
+        ],
+        "3": [
+          null,
+          4
+        ],
+        "4": [
+          null,
+          5
+        ],
+        "5": [
+          null,
+          6
+        ],
+        "6": [
+          null,
+          null
+        ]
+      }
+    },
+    "diagonal": {
+      "root": 2,
+      "children": {
+        "1": [
+          null,
+          null
+        ],
+        "2": [
+          1,
+          3
+        ],
+        "3": [
+          null,
+          4
+        ],
+        "4": [
+          null,
+          5
+        ],
+        "5": [
+          null,
+          6
+        ],
+        "6": [
+          null,
+          null
+        ]
+      }
+    },
+    "prefix": [],
+    "operations": [
+      [
+        "K",
+        4
+      ],
+      [
+        "K",
+        2
+      ]
+    ],
+    "expected_A": 2,
+    "expected_Q": 2
+  },
+  "certificate": {
+    "status": "VIOLATING_CYCLE",
+    "C": "1/2",
+    "cycle": [
+      511,
+      891
+    ],
+    "scaled_excess": 2,
+    "pops": 17505,
+    "cpu_seconds": 0.0625
+  }
+}

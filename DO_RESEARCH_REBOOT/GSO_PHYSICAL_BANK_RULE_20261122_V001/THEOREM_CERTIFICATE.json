@@ -1,0 +1,81 @@
+{
+  "proof": "https://app.notion.com/p/41f6251839be8161b101fd41e62eda46",
+  "frozen_rule": "ADMISSION.json",
+  "persistent_owners": "Fixed disjoint consecutive physical-rank blocks of at most five keys; no ancestry-birth reset.",
+  "A_issuance_per_original_unit": "At most 8H total over its actual footprint.",
+  "KEEP_voucher": "At most H once per genuine B KEEP; distinct incoming cyclic A-gap units.",
+  "shared_global_issuance": "8H*A + H*K_B <= 9H*A",
+  "B_rule": "Pool actual footprint, pay original double once, then target first and remaining touched blocks in increasing key order.",
+  "cyclic_construction": {
+    "status": "PROVED_SOURCE_UNIFORM_FOR_FROZEN_MONOTONE_KERNEL",
+    "algorithm": "Iterate clipped full-period map from full capacity vector.",
+    "integer_termination": "At most mH strict descending period passes; one further evaluation can detect equality.",
+    "real_extension": "Continuous monotone maps have a greatest coordinatewise descending limit.",
+    "invariance": "Compatible with cyclic cuts and repeated periods; arbitrary physical interleavings/recreated ancestry allowed.",
+    "limitation": "Closure and maximality do not imply that every funded-B guard holds."
+  },
+  "conditional_costs": {
+    "all_original_Q": "Q_B <= 9H*A",
+    "all_original_U_plus_old_interface": "Q_B <= (6+9H)*A"
+  },
+  "funding_guard_status": "REFUTED_EXACT_FOR_EVERY_FINITE_POSITIVE_REAL_CAPACITY",
+  "integer_counterfamily": {
+    "source": "H_(p,q), p=3H+4, q=12H+32, N=2^(p+1)*(q+1)+1",
+    "word": "D2..N; descend N..1 keeping exactly x_j=N+1-2^j, j=0..p; K1..N; K(N-1)..1.",
+    "initial_pair": "Both full physical right vines; empty reaching prefix.",
+    "closure": "The final counted increasing/decreasing KEEP scans restore the exact labeled pair.",
+    "relaxed_demand": "Only original critical RR doubles at phases >=4; all other B costs free, physical operations unchanged.",
+    "profile": "M=2a+b upper-bounds future connector inputs, not total bank mass.",
+    "drop": "M_next <= M-1 when M>=1; zero remains zero.",
+    "stationary_values": "a_next=max(0,2a+b-2H-1), b_next=min(H,2a+b-1).",
+    "physical_reason": "Retired middle-root output is at least the persistent coarse-spine output under the frozen priority.",
+    "window": "ell_next=ceil((ell+2)/2)+1; u_next=floor(u/2)-(3H+1).",
+    "dry_packet": "After 3H stages, at least 3H+1 original U RR demands have zero fresh input and carry at most 3H."
+  },
+  "real_extension": {
+    "status": "PROVED_WITHOUT_ROUNDING_CAPACITY",
+    "recipe": "After R weighted-loss stages reach I<1. Choose finite L dominating all stationary burns and floor(3H/(1-I))+1; p=R+4,q=4L+8.",
+    "checks": "REAL_CAPACITY_CERTIFICATE.json"
+  },
+  "independent_original_event_witnesses": [
+    {
+      "source": "H_(9,5)",
+      "keys": 6145,
+      "H": 8,
+      "unpaid_original_U_ids": [
+        [
+          "B",
+          6400,
+          9
+        ],
+        [
+          "B",
+          6400,
+          10
+        ]
+      ]
+    },
+    {
+      "source": "H_(7,44)",
+      "keys": 11521,
+      "H": 1,
+      "charged_original_U": 671,
+      "unpaid_original_U": 129,
+      "first_unpaid_id": [
+        "B",
+        11584,
+        2
+      ]
+    }
+  ],
+  "scope_cautions": [
+    "These H sources keep old periodic certificates; they are not new escapes from the final frozen UF/hybrid partition.",
+    "The obstruction excludes this transfer kernel, not all banks, nonlocal potentials or Universal CD.",
+    "Increasing issuance is already dominated by saturation at fixed capacity.",
+    "The all-parameter source/comb proof is mathematical, not a complete Lean formalization.",
+    "Finite SMT and replay evidence are separately scoped and are not the universal source proof."
+  ],
+  "unrestricted_root_cost_obligations_deleted": 0,
+  "universal_CD": "OPEN",
+  "Dynamic_Optimality": "OPEN"
+}

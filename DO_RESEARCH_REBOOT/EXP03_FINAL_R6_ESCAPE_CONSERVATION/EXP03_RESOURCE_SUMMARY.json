@@ -1,0 +1,209 @@
+{
+  "actual": {
+    "additional_pilot_records": {
+      "Xprobe_p3_L3_hitNone": "EXP03_OUTSIDE_PILOT.json",
+      "Xprobe_p3_L3_hitNone_boundary1": "EXP03_OUTSIDE_BOUNDARY_PILOT.json",
+      "Xprobe_p4_L2_hit61": "EXP03_OUTSIDE_PILOT.json",
+      "Xprobe_p4_L3_hitNone": "EXP03_OUTSIDE_PILOT.json",
+      "Xprobe_p5_L3_hitNone": "EXP03_OUTSIDE_PILOT.json"
+    },
+    "canonical_new_sources": 89,
+    "new_named_complete_source_records_including_pilots": 94,
+    "operations_per_source": 6155,
+    "physical_population": 513
+  },
+  "bounds": {
+    "new_sources": 100,
+    "operations_per_source": 20000,
+    "physical_population": 513,
+    "recorded_CPU_seconds": 1000
+  },
+  "peak_pagefile_bytes": 3075420160,
+  "peak_working_set_bytes": 3050033152,
+  "recorded_process_CPU_seconds": 757.4375,
+  "stages": [
+    {
+      "independent_original_operations": 9476,
+      "memory": {
+        "peak_pagefile_bytes": 3075420160,
+        "peak_working_set_bytes": 3050033152,
+        "working_set_bytes": 2211086336
+      },
+      "new_sources": 26,
+      "process_CPU_seconds": 243.46875,
+      "stage": "adversarial",
+      "status": "completed",
+      "wall_seconds": 256.9410074999905
+    },
+    {
+      "independent_original_operations": 40327,
+      "inherited_sources_reanalyzed": 8,
+      "memory": {
+        "peak_pagefile_bytes": 777285632,
+        "peak_working_set_bytes": 782684160,
+        "working_set_bytes": 527962112
+      },
+      "new_sources": 63,
+      "process_CPU_seconds": 170.296875,
+      "remaining_new": 103,
+      "stage": "experiments",
+      "status": "completed",
+      "unhandled_new": 151,
+      "wall_seconds": 182.48162119998597
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 334471168,
+        "peak_working_set_bytes": 337977344,
+        "working_set_bytes": 208510976
+      },
+      "new_sources": 89,
+      "process_CPU_seconds": 1.203125,
+      "stage": "finalize_data",
+      "status": "completed",
+      "wall_seconds": 1.2354778999870177
+    },
+    {
+      "independent_original_operations": 76474,
+      "memory": {
+        "peak_pagefile_bytes": 727973888,
+        "peak_working_set_bytes": 726384640,
+        "working_set_bytes": 201691136
+      },
+      "parent_types": {
+        "G": 4,
+        "O": 7,
+        "X": 0
+      },
+      "process_CPU_seconds": 125.96875,
+      "sources": 171,
+      "stage": "inheritance",
+      "status": "completed",
+      "unhandled_gaps": 14,
+      "unhandled_parents": 11,
+      "wall_seconds": 134.55488429998513
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 72417280,
+        "peak_working_set_bytes": 80957440,
+        "working_set_bytes": 77213696
+      },
+      "process_CPU_seconds": 1.484375,
+      "sources": 4,
+      "stage": "outside_boundary_pilot",
+      "status": "completed",
+      "wall_seconds": 1.6899369999882765
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 17199104,
+        "peak_working_set_bytes": 24887296,
+        "working_set_bytes": 24887296
+      },
+      "process_CPU_seconds": 0.09375,
+      "stage": "outside_pilot",
+      "status": "failed_or_interrupted",
+      "wall_seconds": 0.1023797000234481
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 72654848,
+        "peak_working_set_bytes": 81063936,
+        "working_set_bytes": 77791232
+      },
+      "process_CPU_seconds": 1.390625,
+      "sources": 4,
+      "stage": "outside_pilot_v002",
+      "status": "completed",
+      "wall_seconds": 1.6327929999970365
+    },
+    {
+      "measurement_boundary": "input/delivery preflight; subsequent resource-summary serialization and final file hashing excluded from this small stage measurement",
+      "memory": {
+        "peak_pagefile_bytes": 57344000,
+        "peak_working_set_bytes": 64557056,
+        "working_set_bytes": 50184192
+      },
+      "process_CPU_seconds": 0.90625,
+      "stage": "package",
+      "status": "completed",
+      "wall_seconds": 1.0336561999865808
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 15286272,
+        "peak_working_set_bytes": 23674880,
+        "working_set_bytes": 23674880
+      },
+      "process_CPU_seconds": 0.046875,
+      "stage": "private_closed_control",
+      "status": "completed",
+      "wall_seconds": 0.04396340000675991
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 13176832,
+        "peak_working_set_bytes": 21229568,
+        "working_set_bytes": 20938752
+      },
+      "process_CPU_seconds": 0.0625,
+      "stage": "private_diagnostic",
+      "status": "failed_or_interrupted",
+      "wall_seconds": 0.0628407999756746
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 13230080,
+        "peak_working_set_bytes": 21385216,
+        "working_set_bytes": 20795392
+      },
+      "process_CPU_seconds": 0.03125,
+      "stage": "private_pilot",
+      "status": "failed_or_interrupted",
+      "wall_seconds": 0.030858499987516552
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 62484480,
+        "peak_working_set_bytes": 69820416,
+        "working_set_bytes": 68513792
+      },
+      "process_CPU_seconds": 0.734375,
+      "stage": "restart_pilot",
+      "status": "failed_or_interrupted",
+      "wall_seconds": 0.8613968999998178
+    },
+    {
+      "memory": {
+        "peak_pagefile_bytes": 260657152,
+        "peak_working_set_bytes": 267653120,
+        "working_set_bytes": 208760832
+      },
+      "process_CPU_seconds": 10.296875,
+      "sources": 8,
+      "stage": "restart_pilot_v002",
+      "status": "completed",
+      "wall_seconds": 11.008657200000016
+    },
+    {
+      "additional_independent_original_operations": 49803,
+      "checks": 51362,
+      "independent_restart_shadow_accesses": 10174,
+      "legal_prefix_operations": 3192,
+      "limitations": "Independent immutable tuple engine validates physical states/costs. Full Pi/cohort/R6 certification remains the inherited exact oracle, not a second independent symbolic certifier. New universal proofs are same-agent mathematical arguments, not formal or external certification.",
+      "memory": {
+        "peak_pagefile_bytes": 2620624896,
+        "peak_working_set_bytes": 2596593664,
+        "working_set_bytes": 738779136
+      },
+      "process_CPU_seconds": 201.453125,
+      "sources_replayed": 97,
+      "stage": "tests",
+      "status": "PASS",
+      "wall_seconds": 233.61177499999758
+    }
+  ],
+  "sum_recorded_stage_wall_seconds": 825.2912485999113,
+  "unmeasured": "Interactive shell inspections, brief diagnostic snippets without Meter, prose drafting, and final manifest hashing are not included. No total session CPU or peak across every interactive tool process is claimed."
+}
